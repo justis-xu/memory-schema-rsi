@@ -1,5 +1,6 @@
 {
   "scope": "2026-09-25 中文无图与融合图全量原始归档中可见的记忆元数据；零模型调用",
+  "source_dataset": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
   "turn_id_keys_checked": [
     "dia_id",
     "dia_ids",
@@ -32,6 +33,16 @@
         "with_session_date": 1780,
         "with_turn_id": 0
       },
+      "source_session_ambiguity": {
+        "distinct_retrieved_memory_ids": 1780,
+        "source_session_min_turns": 10,
+        "source_session_median_turns": 21.0,
+        "source_session_p90_turns_nearest_rank": 35,
+        "source_session_max_turns": 47,
+        "memories_from_sessions_with_query": 1691,
+        "memories_from_sessions_with_at_least_two_queries": 1383,
+        "memories_from_sessions_with_caption": 1763
+      },
       "unique_graph_candidate_ids": 0,
       "unique_selected_graph_ids": 0,
       "unique_selected_vector_ids": 1780,
@@ -62,6 +73,16 @@
         "with_session_date": 1780,
         "with_turn_id": 0
       },
+      "source_session_ambiguity": {
+        "distinct_retrieved_memory_ids": 1780,
+        "source_session_min_turns": 10,
+        "source_session_median_turns": 21.0,
+        "source_session_p90_turns_nearest_rank": 35,
+        "source_session_max_turns": 47,
+        "memories_from_sessions_with_query": 1691,
+        "memories_from_sessions_with_at_least_two_queries": 1383,
+        "memories_from_sessions_with_caption": 1763
+      },
       "unique_graph_candidate_ids": 1476,
       "unique_selected_graph_ids": 735,
       "unique_selected_vector_ids": 1780,
@@ -71,6 +92,7 @@
   "limits": [
     "只能断言归档检索记录和最终上下文缺精确 turn ID；不证明底层其他系统绝无来源信息。",
     "一条记忆可能由同会话多个 turn 合成，单一 dia_id 字段未必足够，应保存来源 turn 列表及支持关系。",
-    "graph 候选与 vector 同 ID 可从 vector 补部分会话元数据，但无法凭 session_id 还原精确来源 turn。"
+    "graph 候选与 vector 同 ID 可从 vector 补部分会话元数据，但无法凭 session_id 还原精确来源 turn。",
+    "某记忆所属会话有 query/caption，不表示这条记忆必然提取自该字段；计数只量化来源定位的歧义范围。"
   ]
 }
