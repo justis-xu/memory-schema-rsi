@@ -1,0 +1,834 @@
+{
+  "scope": "2026-09-25 中文无图与融合图归档 J 类答题上下文",
+  "method": "镜像 prompts_official.format_memories_official 的原始 session_date 字符串排序；再对比仅继承图日期，以及解析为 ISO 后真正按时间排序。",
+  "limits": "只验证提示输入的顺序和日期，不测答案效应。日期继承使用同次归档其他向量召回的相同 ID/内容；两种修正仅作离线对照。",
+  "arms": {
+    "baseline": {
+      "counts": {
+        "renderer_order_checked": 100,
+        "cases": 1540,
+        "raw_date_nonchronological_cases": 1540,
+        "raw_date_adjacent_inversions": 7876,
+        "parsed_chronological_order_changes": 1540,
+        "graph_selected_cases": 0,
+        "graph_selected_instances": 0,
+        "graph_dates_recovered": 0
+      },
+      "by_category": {
+        "multi-hop": {
+          "cases": 282,
+          "raw_date_nonchronological_cases": 282,
+          "raw_date_adjacent_inversions": 1447,
+          "parsed_chronological_order_changes": 282,
+          "graph_selected_cases": 0,
+          "graph_selected_instances": 0,
+          "graph_dates_recovered": 0
+        },
+        "open-domain": {
+          "cases": 96,
+          "raw_date_nonchronological_cases": 96,
+          "raw_date_adjacent_inversions": 496,
+          "parsed_chronological_order_changes": 96,
+          "graph_selected_cases": 0,
+          "graph_selected_instances": 0,
+          "graph_dates_recovered": 0
+        },
+        "single-hop": {
+          "cases": 841,
+          "raw_date_nonchronological_cases": 841,
+          "raw_date_adjacent_inversions": 4260,
+          "parsed_chronological_order_changes": 841,
+          "graph_selected_cases": 0,
+          "graph_selected_instances": 0,
+          "graph_dates_recovered": 0
+        },
+        "temporal": {
+          "cases": 321,
+          "raw_date_nonchronological_cases": 321,
+          "raw_date_adjacent_inversions": 1673,
+          "parsed_chronological_order_changes": 321,
+          "graph_selected_cases": 0,
+          "graph_selected_instances": 0,
+          "graph_dates_recovered": 0
+        }
+      },
+      "examples": []
+    },
+    "graph": {
+      "counts": {
+        "renderer_order_checked": 100,
+        "cases": 1540,
+        "raw_date_nonchronological_cases": 1540,
+        "raw_date_adjacent_inversions": 7233,
+        "parsed_chronological_order_changes": 1540,
+        "graph_selected_cases": 1034,
+        "graph_selected_instances": 2042,
+        "graph_dates_recovered": 2034,
+        "all_graph_lines_before_dated_vectors": 1034,
+        "date_restore_changes_order": 1010,
+        "chronological_fix_changes_order_after_restore": 1034,
+        "all_graph_dates_recovered_cases": 1026
+      },
+      "by_category": {
+        "multi-hop": {
+          "cases": 282,
+          "raw_date_nonchronological_cases": 282,
+          "raw_date_adjacent_inversions": 1332,
+          "parsed_chronological_order_changes": 282,
+          "graph_selected_cases": 194,
+          "graph_selected_instances": 387,
+          "graph_dates_recovered": 387,
+          "all_graph_lines_before_dated_vectors": 194,
+          "date_restore_changes_order": 190,
+          "chronological_fix_changes_order_after_restore": 194,
+          "all_graph_dates_recovered_cases": 194
+        },
+        "open-domain": {
+          "cases": 96,
+          "raw_date_nonchronological_cases": 96,
+          "raw_date_adjacent_inversions": 459,
+          "parsed_chronological_order_changes": 96,
+          "graph_selected_cases": 72,
+          "graph_selected_instances": 162,
+          "graph_dates_recovered": 161,
+          "all_graph_lines_before_dated_vectors": 72,
+          "date_restore_changes_order": 70,
+          "chronological_fix_changes_order_after_restore": 72,
+          "all_graph_dates_recovered_cases": 71
+        },
+        "single-hop": {
+          "cases": 841,
+          "raw_date_nonchronological_cases": 841,
+          "raw_date_adjacent_inversions": 3897,
+          "parsed_chronological_order_changes": 841,
+          "graph_selected_cases": 571,
+          "graph_selected_instances": 1132,
+          "graph_dates_recovered": 1126,
+          "all_graph_lines_before_dated_vectors": 571,
+          "date_restore_changes_order": 561,
+          "chronological_fix_changes_order_after_restore": 571,
+          "all_graph_dates_recovered_cases": 565
+        },
+        "temporal": {
+          "cases": 321,
+          "raw_date_nonchronological_cases": 321,
+          "raw_date_adjacent_inversions": 1545,
+          "parsed_chronological_order_changes": 321,
+          "graph_selected_cases": 197,
+          "graph_selected_instances": 361,
+          "graph_dates_recovered": 360,
+          "all_graph_lines_before_dated_vectors": 197,
+          "date_restore_changes_order": 189,
+          "chronological_fix_changes_order_after_restore": 197,
+          "all_graph_dates_recovered_cases": 196
+        }
+      },
+      "examples": [
+        {
+          "case_id": "locomo_conv-26_qa12",
+          "question": "卡罗琳的18岁生日是多久以前？",
+          "gold": "10年前",
+          "archive_answer": "2013年，约十年前（参考时间2023年）。",
+          "graph_selected": 3,
+          "current_prompt_head": [
+            {
+              "id": "416338bd-1cfe-4a5b-959e-88fa592e9683",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "1170bc8e-b34b-4733-b62d-ad686f1c9d89",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "b028a359-5aa6-4c49-a1f4-c0612987779a",
+              "graph": false,
+              "date": "10:37 am on 27 June, 2023"
+            },
+            {
+              "id": "1715b4cc-621f-43de-b58b-871d4886e5b4",
+              "graph": false,
+              "date": "12:09 am on 13 September, 2023"
+            }
+          ],
+          "date_restored_head": [
+            {
+              "id": "b028a359-5aa6-4c49-a1f4-c0612987779a",
+              "graph": false,
+              "date": "10:37 am on 27 June, 2023"
+            },
+            {
+              "id": "1715b4cc-621f-43de-b58b-871d4886e5b4",
+              "graph": false,
+              "date": "12:09 am on 13 September, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "01037f17-c73c-4d43-9cc6-0c5cddf7ec9f",
+              "graph": false,
+              "date": "1:50 pm on 17 August, 2023"
+            },
+            {
+              "id": "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+              "graph": false,
+              "date": "1:51 pm on 15 July, 2023"
+            }
+          ],
+          "chronological_head": [
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": false,
+              "date": "7:55 pm on 9 June, 2023"
+            },
+            {
+              "id": "7a2a08ec-7b47-4586-b14b-0422a98767e9",
+              "graph": false,
+              "date": "7:55 pm on 9 June, 2023"
+            },
+            {
+              "id": "b028a359-5aa6-4c49-a1f4-c0612987779a",
+              "graph": false,
+              "date": "10:37 am on 27 June, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "0afdd357-f6f6-45d6-b22e-dbec6673797c",
+              "graph": false,
+              "date": "8:18 pm on 6 July, 2023"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-26_qa20",
+          "question": "梅拉妮是什么时候去博物馆的？",
+          "gold": "2023年7月5日",
+          "archive_answer": "梅拉妮于2023年7月5日带孩子们去博物馆看恐龙展览。",
+          "graph_selected": 1,
+          "current_prompt_head": [
+            {
+              "id": "986695a1-cfdd-4b80-82b0-0f4bf6327000",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+              "graph": false,
+              "date": "12:09 am on 13 September, 2023"
+            },
+            {
+              "id": "b38fcc7d-f091-4eb5-80a6-32b007c6ff74",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            }
+          ],
+          "date_restored_head": [
+            {
+              "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+              "graph": false,
+              "date": "12:09 am on 13 September, 2023"
+            },
+            {
+              "id": "b38fcc7d-f091-4eb5-80a6-32b007c6ff74",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            }
+          ],
+          "chronological_head": [
+            {
+              "id": "b38fcc7d-f091-4eb5-80a6-32b007c6ff74",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "6c2db0d3-6944-4461-96d9-1b0d5c65282e",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "64393dc0-b146-4e40-a411-7bf1d540c910",
+              "graph": false,
+              "date": "8:18 pm on 6 July, 2023"
+            },
+            {
+              "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+              "graph": false,
+              "date": "1:51 pm on 15 July, 2023"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-26_qa21",
+          "question": "卡罗琳是什么时候去野餐的？",
+          "gold": "2023年7月6日之前的那一周",
+          "archive_answer": "卡罗琳在2023年6月底去野餐的。",
+          "graph_selected": 1,
+          "current_prompt_head": [
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "97cdca39-aca0-4d0f-8115-e1b32f5824a2",
+              "graph": false,
+              "date": "12:09 am on 13 September, 2023"
+            },
+            {
+              "id": "d3af3e2f-67c6-44e4-ae84-7a4c6da343e6",
+              "graph": false,
+              "date": "1:33 pm on 25 August, 2023"
+            },
+            {
+              "id": "f69a31d2-1f1e-4529-bdd1-918f5eb3e806",
+              "graph": false,
+              "date": "1:33 pm on 25 August, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            }
+          ],
+          "date_restored_head": [
+            {
+              "id": "97cdca39-aca0-4d0f-8115-e1b32f5824a2",
+              "graph": false,
+              "date": "12:09 am on 13 September, 2023"
+            },
+            {
+              "id": "d3af3e2f-67c6-44e4-ae84-7a4c6da343e6",
+              "graph": false,
+              "date": "1:33 pm on 25 August, 2023"
+            },
+            {
+              "id": "f69a31d2-1f1e-4529-bdd1-918f5eb3e806",
+              "graph": false,
+              "date": "1:33 pm on 25 August, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+              "graph": false,
+              "date": "1:50 pm on 17 August, 2023"
+            }
+          ],
+          "chronological_head": [
+            {
+              "id": "c40fb182-e28f-40d1-8537-defda073f4f7",
+              "graph": false,
+              "date": "7:55 pm on 9 June, 2023"
+            },
+            {
+              "id": "7a2a08ec-7b47-4586-b14b-0422a98767e9",
+              "graph": false,
+              "date": "7:55 pm on 9 June, 2023"
+            },
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": true,
+              "date": "7:55 pm on 9 June, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "0afdd357-f6f6-45d6-b22e-dbec6673797c",
+              "graph": false,
+              "date": "8:18 pm on 6 July, 2023"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-26_qa28",
+          "question": "卡罗琳是什么时候去参加领养会议的？",
+          "gold": "2023年7月15日之前的那个周五",
+          "archive_answer": "卡罗琳于2023年7月14日（周五）参加了关于领养的委员会会议。此外，她于2023年10月20日通过了领养机构的面试。",
+          "graph_selected": 1,
+          "current_prompt_head": [
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "e7753964-a35f-44e0-b637-fdaf295446d7",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "b9f04d44-a0c7-4467-92bd-9bcdf0783b94",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "02056f25-5c34-4e71-bc61-281199c30645",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            }
+          ],
+          "date_restored_head": [
+            {
+              "id": "e7753964-a35f-44e0-b637-fdaf295446d7",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "b9f04d44-a0c7-4467-92bd-9bcdf0783b94",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "02056f25-5c34-4e71-bc61-281199c30645",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+              "graph": false,
+              "date": "1:51 pm on 15 July, 2023"
+            }
+          ],
+          "chronological_head": [
+            {
+              "id": "4726ac6f-474b-4795-b1b5-e73d6016b428",
+              "graph": false,
+              "date": "1:56 pm on 8 May, 2023"
+            },
+            {
+              "id": "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": true,
+              "date": "7:55 pm on 9 June, 2023"
+            },
+            {
+              "id": "02056f25-5c34-4e71-bc61-281199c30645",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "416338bd-1cfe-4a5b-959e-88fa592e9683",
+              "graph": false,
+              "date": "4:33 pm on 12 July, 2023"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-26_qa29",
+          "question": "梅拉妮是什么时候去陶艺工作坊的？",
+          "gold": "2023年7月15日之前的那个周五",
+          "archive_answer": "梅拉妮于2023年7月14日（周五）带孩子们参加了陶艺工作坊，一家人各自做了自己的陶罐。",
+          "graph_selected": 1,
+          "current_prompt_head": [
+            {
+              "id": "986695a1-cfdd-4b80-82b0-0f4bf6327000",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+              "graph": false,
+              "date": "12:09 am on 13 September, 2023"
+            },
+            {
+              "id": "b38fcc7d-f091-4eb5-80a6-32b007c6ff74",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            }
+          ],
+          "date_restored_head": [
+            {
+              "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+              "graph": false,
+              "date": "12:09 am on 13 September, 2023"
+            },
+            {
+              "id": "b38fcc7d-f091-4eb5-80a6-32b007c6ff74",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "5c43f1b2-8289-4513-9e28-914dedd5ae03",
+              "graph": false,
+              "date": "1:33 pm on 25 August, 2023"
+            }
+          ],
+          "chronological_head": [
+            {
+              "id": "b38fcc7d-f091-4eb5-80a6-32b007c6ff74",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "6c2db0d3-6944-4461-96d9-1b0d5c65282e",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+              "graph": false,
+              "date": "1:51 pm on 15 July, 2023"
+            },
+            {
+              "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+              "graph": false,
+              "date": "1:51 pm on 15 July, 2023"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-26_qa41",
+          "question": "卡罗琳是什么时候加入一个新的活动组织的？",
+          "gold": "2023年7月20日之前的那个星期二",
+          "archive_answer": "卡罗琳于2023年7月18日（周二）加入了新的LGBTQ活动组织\"Connected LGBTQ Activists\"。",
+          "graph_selected": 1,
+          "current_prompt_head": [
+            {
+              "id": "784e5545-ce5d-4a7f-a937-ff6a172906b1",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "b9f04d44-a0c7-4467-92bd-9bcdf0783b94",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "1ebaa089-9feb-4828-a972-4dd151e2928f",
+              "graph": false,
+              "date": "1:33 pm on 25 August, 2023"
+            },
+            {
+              "id": "02056f25-5c34-4e71-bc61-281199c30645",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            }
+          ],
+          "date_restored_head": [
+            {
+              "id": "b9f04d44-a0c7-4467-92bd-9bcdf0783b94",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "784e5545-ce5d-4a7f-a937-ff6a172906b1",
+              "graph": true,
+              "date": "10:37 am on 27 June, 2023"
+            },
+            {
+              "id": "1ebaa089-9feb-4828-a972-4dd151e2928f",
+              "graph": false,
+              "date": "1:33 pm on 25 August, 2023"
+            },
+            {
+              "id": "02056f25-5c34-4e71-bc61-281199c30645",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            }
+          ],
+          "chronological_head": [
+            {
+              "id": "4726ac6f-474b-4795-b1b5-e73d6016b428",
+              "graph": false,
+              "date": "1:56 pm on 8 May, 2023"
+            },
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": false,
+              "date": "7:55 pm on 9 June, 2023"
+            },
+            {
+              "id": "784e5545-ce5d-4a7f-a937-ff6a172906b1",
+              "graph": true,
+              "date": "10:37 am on 27 June, 2023"
+            },
+            {
+              "id": "02056f25-5c34-4e71-bc61-281199c30645",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-26_qa49",
+          "question": "卡罗琳和梅拉妮是什么时候一起参加骄傲节的？",
+          "gold": "2022",
+          "archive_answer": "2022年的骄傲节。",
+          "graph_selected": 3,
+          "current_prompt_head": [
+            {
+              "id": "cfd8268a-c56a-4c4b-8cbc-627e4ad86bac",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "1170bc8e-b34b-4733-b62d-ad686f1c9d89",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "b9f04d44-a0c7-4467-92bd-9bcdf0783b94",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "f69a31d2-1f1e-4529-bdd1-918f5eb3e806",
+              "graph": false,
+              "date": "1:33 pm on 25 August, 2023"
+            }
+          ],
+          "date_restored_head": [
+            {
+              "id": "b9f04d44-a0c7-4467-92bd-9bcdf0783b94",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "f69a31d2-1f1e-4529-bdd1-918f5eb3e806",
+              "graph": false,
+              "date": "1:33 pm on 25 August, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "02056f25-5c34-4e71-bc61-281199c30645",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "c734d436-8e25-47db-a9b0-1ccb30abe405",
+              "graph": false,
+              "date": "1:50 pm on 17 August, 2023"
+            }
+          ],
+          "chronological_head": [
+            {
+              "id": "4726ac6f-474b-4795-b1b5-e73d6016b428",
+              "graph": false,
+              "date": "1:56 pm on 8 May, 2023"
+            },
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": true,
+              "date": "7:55 pm on 9 June, 2023"
+            },
+            {
+              "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "02056f25-5c34-4e71-bc61-281199c30645",
+              "graph": false,
+              "date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "id": "416338bd-1cfe-4a5b-959e-88fa592e9683",
+              "graph": false,
+              "date": "4:33 pm on 12 July, 2023"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-26_qa53",
+          "question": "卡罗琳是什么时候向领养机构提交申请的？",
+          "gold": "2023年8月23日所在的那一周",
+          "archive_answer": "卡罗琳于2023年8月下旬（8月23日当周）向领养机构提交了领养申请。",
+          "graph_selected": 2,
+          "current_prompt_head": [
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "416338bd-1cfe-4a5b-959e-88fa592e9683",
+              "graph": true,
+              "date": null
+            },
+            {
+              "id": "e7753964-a35f-44e0-b637-fdaf295446d7",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "c1601350-b1af-4eb7-b06b-9227e9a75b4d",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            }
+          ],
+          "date_restored_head": [
+            {
+              "id": "e7753964-a35f-44e0-b637-fdaf295446d7",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "c1601350-b1af-4eb7-b06b-9227e9a75b4d",
+              "graph": false,
+              "date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "id": "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "ea7a854e-1b14-48c6-ba3d-ae3a55ed982d",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "cddb7913-c433-46cd-a87e-c7d029eef28b",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            }
+          ],
+          "chronological_head": [
+            {
+              "id": "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "ea7a854e-1b14-48c6-ba3d-ae3a55ed982d",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "cddb7913-c433-46cd-a87e-c7d029eef28b",
+              "graph": false,
+              "date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+              "graph": true,
+              "date": "7:55 pm on 9 June, 2023"
+            },
+            {
+              "id": "416338bd-1cfe-4a5b-959e-88fa592e9683",
+              "graph": true,
+              "date": "4:33 pm on 12 July, 2023"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
