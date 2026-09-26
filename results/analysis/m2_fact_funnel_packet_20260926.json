@@ -1,0 +1,5185 @@
+{
+  "scope": "中文历史无图首轮，来源 session 已在 top-15 但严格非 exact 的题；按对话×题型固定哈希选一题，原始 evidence ID 必须存在",
+  "selection": "每个非空对话×题型格选 SHA-256(case_id) 最小的一题；排除已在时间金标专题详查的题与 conv-30_qa31。样本用于机制诊断，不估计总体占比。",
+  "raw_archive": "results_zh/zhfull_locomo_20260925_115806.jsonl",
+  "grades": "results/precision_regrade_zhfull.jsonl",
+  "source_dataset": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
+  "candidate_strata": {
+    "conv-26/multi-hop": 5,
+    "conv-26/open-domain": 5,
+    "conv-26/single-hop": 17,
+    "conv-26/temporal": 14,
+    "conv-30/multi-hop": 3,
+    "conv-30/single-hop": 11,
+    "conv-30/temporal": 4,
+    "conv-43/multi-hop": 9,
+    "conv-43/open-domain": 8,
+    "conv-43/single-hop": 23,
+    "conv-43/temporal": 6,
+    "conv-44/multi-hop": 5,
+    "conv-44/open-domain": 3,
+    "conv-44/single-hop": 11,
+    "conv-44/temporal": 7
+  },
+  "selected_case_ids": [
+    "locomo_conv-26_qa43",
+    "locomo_conv-26_qa22",
+    "locomo_conv-26_qa145",
+    "locomo_conv-26_qa58",
+    "locomo_conv-30_qa5",
+    "locomo_conv-30_qa71",
+    "locomo_conv-30_qa7",
+    "locomo_conv-43_qa41",
+    "locomo_conv-43_qa5",
+    "locomo_conv-43_qa96",
+    "locomo_conv-43_qa37",
+    "locomo_conv-44_qa49",
+    "locomo_conv-44_qa53",
+    "locomo_conv-44_qa75",
+    "locomo_conv-44_qa4"
+  ],
+  "cases": [
+    {
+      "case_id": "locomo_conv-26_qa43",
+      "stratum": {
+        "conversation": "conv-26",
+        "category": "multi-hop"
+      },
+      "question": "卡罗琳创作什么类型的艺术？",
+      "gold": "抽象艺术",
+      "answer": "卡罗琳主要创作**绘画**（画画是她一直以来的主要艺术形式），作品围绕她作为跨性别女性的经历，主题包括自我接纳、身份探索、团结与包容（如彩虹心形画、红蓝背景画作、《拥抱自我》、跨性别旗帜元素画作），此外她还制作过一扇彩绘玻璃窗，并近期开始尝试抽象绘画风格。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "抽象艺术"
+        ],
+        "reason": "Answer only mentions she recently began trying abstract painting, rather than stating abstract art as the type of art she creates."
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_11",
+          "session_date": "2:24 pm on 14 August, 2023",
+          "index": 11,
+          "turn": {
+            "speaker": "卡罗琳",
+            "img_url": [
+              "https://media.artsper.com/artwork/2013795_1_l.jpg"
+            ],
+            "blip_caption": "a photo of a painting of a woman with a red shirt",
+            "query": "painting embracing identity purple blue",
+            "dia_id": "D11:12",
+            "text": "谢谢，梅拉妮。这一幅——《拥抱自我》，讲的是在做自己中找到安慰和爱。画中的女人代表着接纳的旅程。我的目标是展现温暖、爱和自我接纳。"
+          }
+        },
+        {
+          "session_id": "session_11",
+          "session_date": "2:24 pm on 14 August, 2023",
+          "index": 7,
+          "turn": {
+            "speaker": "卡罗琳",
+            "img_url": [
+              "https://www.dawnsilerart.com/wp-content/uploads/sites/3130/2020/11/YCNHTMC-CU9.jpg"
+            ],
+            "blip_caption": "a photo of a painting with a painting brush and paint on it",
+            "query": "painting vibrant colors diverse representation",
+            "dia_id": "D11:8",
+            "text": "这张照片很酷！在我的艺术中体现包容性和多样性对我来说很重要。我也用它为LGBTQ+群体发声，推动社会的接纳。这是最近的一幅画！"
+          }
+        },
+        {
+          "session_id": "session_9",
+          "session_date": "2:31 pm on 17 July, 2023",
+          "index": 13,
+          "turn": {
+            "speaker": "卡罗琳",
+            "img_url": [
+              "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/abstract-landscape-bold-colorful-painting-megan-duncanson.jpg"
+            ],
+            "blip_caption": "a photography of a painting of a tree with a bright sun in the background",
+            "query": "preview painting art show",
+            "dia_id": "D9:14",
+            "re-download": true,
+            "text": "看看我为艺术展画的这幅画！希望你喜欢。"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": false,
+          "id": "6165c0bd-747e-415d-9c50-6d82d5411326",
+          "content": "受诗歌朗诵会启发，卡罗琳创作了一幅画作（画中一位穿裙子的女子，配有跨性别旗帜元素），代表自由和真实，提醒自己始终做真实的自我、拥抱女性身份",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_17",
+            "session_date": "10:31 am on 13 October, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "1fca1a15-6f00-4467-89a4-27382584884c",
+          "content": "卡罗琳还没尝试过陶艺，她的艺术创作一直以画画为主",
+          "metadata": {
+            "session_date": "1:33 pm on 25 August, 2023",
+            "session_id": "session_14",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "aa653bd2-c401-4b06-bc91-89ca34363058",
+          "content": "画花是卡罗琳最喜欢的绘画题材之一，艺术给她带来快乐，帮助她表达情感、定格美好瞬间",
+          "metadata": {
+            "session_id": "session_14",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": true,
+          "id": "427e9a22-a52f-4c2c-ba62-de9303794a03",
+          "content": "卡罗琳为艺术展创作了一幅树与明亮太阳背景的画，灵感来自她参观的一个LGBTQ中心，想表达大家团结一致、坚强有力的感觉",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "2:31 pm on 17 July, 2023",
+            "session_id": "session_9",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "b88125e4-6065-4384-9be3-a397a47dabbd",
+          "content": "卡罗琳想做一件象征团结、庆祝彼此差异的新艺术作品，类似她为教堂制作的彩绘玻璃窗",
+          "metadata": {
+            "session_id": "session_14",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "66a656c4-7dfb-4c22-9aec-b5122d29f11d",
+          "content": "卡罗琳于2023年9月创作了一幅红蓝背景的画作，展现她作为跨性别女性的历程：红色和蓝色代表二元性别体系，色彩的交融意味着打破僵化的二元思维；走到接纳自己这一步花了很久，她终于为自己感到骄傲",
+          "metadata": {
+            "session_date": "12:09 am on 13 September, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "c4d11b80-1b80-4192-b3cf-1082164ffb20",
+          "content": "卡罗琳为一座当地教堂制作了一扇彩绘玻璃窗，主题是时间改变我们的生活，展现她作为跨性别女性的历程以及接受成长与改变，寓意每个人内心都藏着发现真正潜能的钥匙",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_14",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "67cae9ed-5a31-4724-945f-ebd7c03e7684",
+          "content": "卡罗琳近期开始尝试抽象绘画风格，觉得把感受直接画在画布上、不需太多计划是一种自由的自我表达方式",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_17",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "10:31 am on 13 October, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": true,
+          "id": "ca3af241-c336-4089-8ca4-a2496adf2c87",
+          "content": "卡罗琳的艺术围绕她的跨性别经历展开，是她讲述自己故事、帮助人们理解跨性别群体的方式",
+          "metadata": {
+            "session_id": "session_11",
+            "session_date": "2:24 pm on 14 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "1ebaa089-9feb-4828-a972-4dd151e2928f",
+          "content": "卡罗琳于2023年9月（对话次月）筹备一场LGBTQ艺术展，将展出自己的画作，希望展示LGBTQ艺术家的才华并传播理解与接纳",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_14",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": true,
+          "id": "5525e8d3-07d1-4a2f-b276-6fd890c70282",
+          "content": "卡罗琳的艺术创作重视包容性和多样性，并以此为她LGBTQ+群体发声，推动社会接纳",
+          "metadata": {
+            "session_date": "2:24 pm on 14 August, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_11",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "016ef7e3-e571-4929-b73d-5feff7276029",
+          "content": "卡罗琳的LGBTQ+志愿工作让她深受鼓舞，她很感谢朋友、家人和导师们的支持，这也激励她继续创作艺术；她分享了一幅彩虹色心形画作，象征团结和力量",
+          "metadata": {
+            "session_date": "12:09 am on 13 September, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_16",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": true,
+          "id": "12515f6f-9c39-4f6e-9485-bb6621da2554",
+          "content": "卡罗琳的一幅画作《拥抱自我》（描绘一位女子）讲述在做自己中找到安慰与爱的主题，画中的女人代表接纳的旅程，旨在展现温暖、爱和自我接纳",
+          "metadata": {
+            "session_date": "2:24 pm on 14 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_11",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "206ea82e-8571-45e5-a0b5-af8bf58aeec5",
+          "content": "卡罗琳于2023年8月中旬（8月23日前一周）画了一幅蓝色面孔的自画像，画的时候感到解放和充满力量，认为画画帮助她探索身份、忠于自我，具有疗愈作用",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "3:31 pm on 23 August, 2023",
+            "session_id": "session_13",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "c3738d68-536a-48a0-accf-c62b814913ad",
+          "content": "卡罗琳分享了一张跨性别骄傲旗帜壁画的照片，画中是一位女性，旁边有一只狗经过",
+          "metadata": {
+            "session_id": "session_1",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:56 pm on 8 May, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "1170bc8e-b34b-4733-b62d-ad686f1c9d89",
+          "content": "卡罗琳于2023年7月8-9日的周末参加了一个面向LGBTQ青少年的导师项目，认为帮助社群非常有意义，遇到了很多坚韧、令人鼓舞的年轻人",
+          "score": 0.531917104178731,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_9",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "2:31 pm on 17 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "731ab848-95f3-496a-b884-28184b4b84a5",
+          "content": "卡罗琳于2023年8月11日（周五）参加了一场骄傲游行，感受到充满活力和爱的氛围，感到自豪，并深受激励要继续为平等和LGBTQ权利发声",
+          "score": 0.5840883527660233,
+          "metadata": {
+            "session_id": "session_11",
+            "benchmark": "locomo",
+            "session_date": "2:24 pm on 14 August, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "9159cc06-86ac-4a03-be8d-aae6230d85fa",
+          "content": "卡罗琳和她指导的跨性别青少年于2023年6月一起参加了一场LGBTQ骄傲活动，度过了美好时光；最令卡罗琳感动的是看到孩子看到大家支持时脸上焕发光彩的时刻",
+          "score": 0.48952310903307755,
+          "metadata": {
+            "session_id": "session_9",
+            "benchmark": "locomo",
+            "session_date": "2:31 pm on 17 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "97f3a4fc-ea2e-4e8d-9f49-402d63a83d9d",
+          "content": "截至2023年7月17日，梅拉妮和孩子们刚又完成了一幅画，延续了他们之前一起创作大自然灵感画作的习惯",
+          "score": 0.5592050610922914,
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "2:31 pm on 17 July, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_9",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "0319c2f7-bfaa-4705-be23-453c21e142a3",
+          "content": "Melanie（对话伙伴）于2023年8月13日晚带女儿们庆祝生日，观看了一场户外演唱会，孩子们玩得开心；梅拉妮还曾在之前带孩子去海滩玩飞盘、放风筝",
+          "score": 0.5971707278700942,
+          "metadata": {
+            "session_id": "session_11",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "2:24 pm on 14 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+          "content": "梅拉妮全家在2023年7月初（对话两个周末前）去露营，她度过了一个安静的周末，很享受放下一切陪伴孩子们的时光",
+          "score": 0.5095254552931108,
+          "metadata": {
+            "session_date": "2:31 pm on 17 July, 2023",
+            "session_id": "session_9",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "4a9787d4-8a87-45aa-b2ae-24f0ce01aa85",
+          "content": "卡罗琳指导一位与自己经历相似的跨性别青少年，两人一起努力建立自信、寻找积极的应对策略，并取得了效果",
+          "score": 0.5228409396667959,
+          "metadata": {
+            "session_id": "session_9",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "2:31 pm on 17 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "5df83a11-b2ea-4bfa-bc59-358f818d426b",
+          "content": "卡罗琳认为艺术帮助她探索自己的性别转变和身体变化，是她消化自身经历的方式，并教会她欣赏不完美之美",
+          "score": 0.5351508942139249,
+          "metadata": {
+            "session_date": "2:24 pm on 14 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_11",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "c7c58a4a-d827-47c0-8bbf-7e30f9dec1c9",
+          "content": "卡罗琳计划于2023年8月举办一场LGBTQ艺术展，展出自己的画作",
+          "score": 0.5087536832388788,
+          "metadata": {
+            "session_date": "2:31 pm on 17 July, 2023",
+            "session_id": "session_9",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "986695a1-cfdd-4b80-82b0-0f4bf6327000",
+          "content": "Melanie于2023年8月13日晚观看了歌手马特·帕森（Matt Paterson）的演唱会，称赞他的嗓音和歌曲才华出众",
+          "score": 0.5327564975005827,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "2:24 pm on 14 August, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_11",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa22",
+      "stratum": {
+        "conversation": "conv-26",
+        "category": "open-domain"
+      },
+      "question": "卡罗琳的书架上可能会有苏斯博士的书吗？",
+      "gold": "会，因为她收藏经典儿童读物",
+      "answer": "**相关记忆：** 2023年7月6日——卡罗琳正在为她未来的孩子建一个小图书馆，收藏包括经典童书、来自不同文化的故事和教育类书籍。\n\n苏斯博士的书是经典的美国童书，属于她提到的“经典童书”范畴。\n\n**回答：** 很有可能。卡罗琳正在为将来有了孩子建一个小图书馆，收藏包括经典童书、来自不同文化的故事和教育类书籍——苏斯博士的书作为经典童书的代表，很可能在她的收藏之中。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [],
+        "reason": "{\"grade\": \"partial\", \"missing\": [\"结论带有\"很有可能\"的限定，弱于金答案\"会\"的确定程度\"], \"reason\": \"结论方向和支持理由（经典童书）与金答案一致，但承诺程度被弱化为\"很有可能\"。\"}"
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_6",
+          "session_date": "8:18 pm on 6 July, 2023",
+          "index": 8,
+          "turn": {
+            "speaker": "卡罗琳",
+            "dia_id": "D6:9",
+            "text": "我有很多童书——经典作品、来自不同文化的故事、教育类书籍，应有尽有。你童年时记得最喜欢的一本书是什么？"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "7a763b85-c73f-4ae8-a234-b7d74a0a4b34",
+          "content": "卡罗琳正在为将来有了孩子建一个小图书馆，期待给孩子读书、开阔他们的眼界，收藏包括经典童书、来自不同文化的故事和教育类书籍",
+          "metadata": {
+            "session_date": "8:18 pm on 6 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_6",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "1839c8fe-775a-439a-b0c3-e71a04354957",
+          "content": "卡罗琳最喜欢的引路书是艾米·埃利斯·纳特写的《Becoming 妮可》，一个关于跨性别女孩和她的家庭的真实故事；这本书让她产生共鸣、带来希望，教会了她自我接纳、寻求支持，以及艰难时刻不会永远持续——她强烈推荐这本书",
+          "metadata": {
+            "session_date": "4:33 pm on 12 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_7",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "5525e8d3-07d1-4a2f-b276-6fd890c70282",
+          "content": "卡罗琳的艺术创作重视包容性和多样性，并以此为她LGBTQ+群体发声，推动社会接纳",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "2:24 pm on 14 August, 2023",
+            "session_id": "session_11",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+          "content": "卡罗琳正在研究收养机构，希望拥有一个家庭、给需要的孩子一个充满爱的家，这是她一直以来的梦想",
+          "metadata": {
+            "session_date": "1:14 pm on 25 May, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_2",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "4a9787d4-8a87-45aa-b2ae-24f0ce01aa85",
+          "content": "卡罗琳指导一位与自己经历相似的跨性别青少年，两人一起努力建立自信、寻找积极的应对策略，并取得了效果",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "2:31 pm on 17 July, 2023",
+            "session_id": "session_9",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "292941f2-e2aa-447c-b041-d73fae0738d4",
+          "content": "卡罗琳仍在研究心理咨询和心理健康方面的职业选择，她认为让人们有可以倾诉的对象很重要；她曾经历过心理健康方面的挣扎，得到的支持帮助了她，因此想像当初被帮助那样帮助其他人",
+          "metadata": {
+            "session_id": "session_7",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "4:33 pm on 12 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "171a6fa1-0d36-43ea-8ef4-ed19e73df18a",
+          "content": "卡罗琳重视真实地活着并帮助他人忠于自我，身边有倡导LGBTQ权益的支持者给了她自由的感觉",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "3:31 pm on 23 August, 2023",
+            "session_id": "session_13",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "40c26c6a-ba45-48c1-9a0a-7a47f92efff2",
+          "content": "卡罗琳看到青年中心的年轻人面对重重挑战依然坚强，深受触动，这让她想起自己过去的挣扎和孤独感，能引导和支持他们让她感到充实，觉得自己真的能带来改变",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_15",
+            "session_date": "3:19 pm on 28 August, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "be4435a7-90d8-466a-ad11-c4b6a2085b81",
+          "content": "卡罗琳正在学钢琴，作为发挥创造力的方式",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:36 pm on 3 July, 2023",
+            "session_id": "session_5",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "a26453c9-029b-4469-ad78-92a2547543cd",
+          "content": "卡罗琳计划继续学业并探索职业选择，希望从事心理咨询或心理健康方面的工作，帮助有类似困扰的人",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "1:56 pm on 8 May, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_1",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "e7753964-a35f-44e0-b637-fdaf295446d7",
+          "content": "卡罗琳于2023年10月联系了她的导师咨询收养建议，表示自己已准备好当妈妈，收养孩子并为需要的孩子提供安全有爱的家一直是她的梦想",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "10:31 am on 13 October, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_17",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "13997250-1586-44f4-b376-031fcab1b514",
+          "content": "卡罗琳所在的\"Connected LGBTQ Activists\"组织由致力于积极改变的人组成，定期开会策划活动和运动，并聚在一起互相支持",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_10",
+            "session_date": "8:56 pm on 20 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "ca3af241-c336-4089-8ca4-a2496adf2c87",
+          "content": "卡罗琳的艺术围绕她的跨性别经历展开，是她讲述自己故事、帮助人们理解跨性别群体的方式",
+          "metadata": {
+            "session_date": "2:24 pm on 14 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_11",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "cddb7913-c433-46cd-a87e-c7d029eef28b",
+          "content": "卡罗琳即将成为单亲父母，她承认这会很艰难，但已准备好迎接挑战，为需要家庭的孩子组建一个充满爱的家，并对朋友和导师的支持心怀感激",
+          "metadata": {
+            "session_id": "session_2",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:14 pm on 25 May, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "fa565253-0ae1-472b-b399-eaeea2bbc68b",
+          "content": "卡罗琳的对话对象名为梅拉妮（梅尔），她被孩子和工作忙得团团转，并计划带孩子去游泳",
+          "metadata": {
+            "session_date": "1:56 pm on 8 May, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_1",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "4b6c96d1-5e14-4b85-b2a9-3a48d04b2ad9",
+          "content": "梅拉妮分享了一张家人在海滩露营的篝火照片，表示家人很喜欢露营，露营让他们更亲近",
+          "score": 0.5868115205389433,
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_6",
+            "session_date": "8:18 pm on 6 July, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "fb97cf3e-f459-489f-86e3-569f12f0ac41",
+          "content": "卡罗琳自2023年7月初以来一直在深入研究心理咨询或心理健康方面的工作，她热心于帮助他人、产生积极的影响，认为这条路虽不容易但非常有意义",
+          "score": 0.630577799827859,
+          "metadata": {
+            "session_date": "8:18 pm on 6 July, 2023",
+            "session_id": "session_6",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "bd67c529-4845-42d4-bf5b-b0262c03cf96",
+          "content": "卡罗琳表示朋友和家人在她的性别转变过程中给予了爱、指引和接纳，在他们每一步的陪伴下她得以接纳并成长为真实的自己，这个支持网络对她的转变起到了关键作用",
+          "score": 0.5228292410637769,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "8:18 pm on 6 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_6",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "64393dc0-b146-4e40-a411-7bf1d540c910",
+          "content": "梅拉妮于2023年7月5日带孩子们去博物馆看恐龙展览，孩子们喜欢了解动物、觉得骨头很酷，这让她想起自己为什么喜欢当妈妈",
+          "score": 0.4930769096028879,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "8:18 pm on 6 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_6",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "fd375711-a43c-472d-8c37-61c944efe67d",
+          "content": "梅拉妮小时候最爱读的书是《夏洛的网》，友谊和同情心能带来改变这一点深深打动了她",
+          "score": 0.5267682223288074,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_6",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "8:18 pm on 6 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "0afdd357-f6f6-45d6-b22e-dbec6673797c",
+          "content": "卡罗琳和朋友家人于2023年6月底（对话前一周）去公园野餐，并分享了合照",
+          "score": 0.5691694670176698,
+          "metadata": {
+            "session_id": "session_6",
+            "session_date": "8:18 pm on 6 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa145",
+      "stratum": {
+        "conversation": "conv-26",
+        "category": "single-hop"
+      },
+      "question": "事故发生后，梅拉妮对家人有什么感受？",
+      "gold": "家人很重要，对她来说就是全世界",
+      "answer": "事故发生后，梅拉妮深感生命宝贵、更加珍惜家人，认为孩子们是她坚持下去的最大动力和支柱；孩子们在惊吓后表现出的坚强韧性让她欣慰，全家继续在大峡谷游玩，她更加感恩与家人共度的时光。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "家人对她来说就是全世界（核心比喻未提及）"
+        ],
+        "reason": "答案表达了珍惜家人但缺少金答案的核心表述'家人是她的全世界'。"
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023",
+          "index": 4,
+          "turn": {
+            "speaker": "梅拉妮",
+            "img_url": [
+              "https://familyadventuresva.files.wordpress.com/2022/03/img_5030.jpg"
+            ],
+            "blip_caption": "a photo of two children standing on a rocky cliff overlooking a canyon",
+            "query": "grand canyon family photo",
+            "dia_id": "D18:5",
+            "text": "你说得对，卡罗琳。家人对我来说超级重要。尤其是在事故之后，我想了很多，知道自己多么需要他们。他们就是我的全世界，我很感激拥有他们。还好，他们在科罗拉多大峡谷玩得很开心！"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+          "content": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末）公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇事故，全家人都吓坏了，所幸孩子没事。梅拉妮形容这是一次可怕但已过去的经历，并让她感悟到生命宝贵、要珍惜家人",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "6:55 pm on 20 October, 2023",
+            "session_id": "session_18",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+          "content": "梅拉妮在2023年10月20日的公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性",
+          "metadata": {
+            "session_id": "session_19",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "9:55 am on 22 October, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": true,
+          "id": "2ec90c89-e8d4-4fd1-80bd-2eca86fb2c2f",
+          "content": "车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱",
+          "metadata": {
+            "session_date": "6:55 pm on 20 October, 2023",
+            "session_id": "session_18",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": true,
+          "id": "846921c3-b6db-4879-9f05-4499084b5510",
+          "content": "卡罗琳对梅拉妮车祸中儿子平安无事表示庆幸和宽慰，认为家人就是一切",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "6:55 pm on 20 October, 2023",
+            "session_id": "session_18",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "fdc0edd7-de96-45f1-9cc5-f18b8a715160",
+          "content": "梅拉妮很幸运有丈夫和孩子们的支持，他们激励着她、让她保持动力，并分享了一张丈夫和小女孩站在瀑布前的全家福照片",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_3",
+            "session_date": "7:55 pm on 9 June, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+          "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "3f8d7567-dcac-4cc4-8af5-2e0245684373",
+          "content": "梅拉妮意识到自我关怀的重要性，认为照顾好自己才能更好地照顾家人，把自我关怀视为一段旅程",
+          "metadata": {
+            "session_id": "session_2",
+            "session_date": "1:14 pm on 25 May, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "29c8496b-83a9-47b7-aa46-3c33aaa62e9e",
+          "content": "梅拉妮和家人一起去流浪者收容所做志愿者，看到有些人被忽视很难受，但感到他们做出了改变",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_14",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "fcea2e55-c8c1-47ad-a406-91a4aecead16",
+          "content": "梅拉妮永远不会忘记她小女儿迈出人生第一步的那天，看着女儿摇摇晃晃的最初几步让她体会到生命的短暂和分享这些时刻的幸运",
+          "metadata": {
+            "session_date": "8:56 pm on 20 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_10",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": true,
+          "id": "e537f6f0-14f3-4d99-bfbf-308ad0903300",
+          "content": "梅拉妮非常喜欢和家人一起露营，认为大自然带来宁静安详的感觉，帮她reset充电；露营是通过讲故事、篝火和大自然与家人增进感情、活在当下的机会，伴着鸟鸣和清新空气醒来总能净化她的心灵",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "6:55 pm on 20 October, 2023",
+            "session_id": "session_18",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "444a158f-f7e8-4dc2-aa22-cead845f1cb8",
+          "content": "梅拉妮正在进行搬家，家人在这个过程中帮了很多忙，给了她满满的爱和支持",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "cf4e3728-fa86-49b8-bbe4-54810130882e",
+          "content": "梅拉妮永远难忘去年（2022年）露营时全家一起看英仙座流星雨的经历——清澈繁星的天空下全家许愿，让她感到与宇宙融为一体、渺小而充满敬畏",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "8:56 pm on 20 July, 2023",
+            "session_id": "session_10",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "c40fb182-e28f-40d1-8537-defda073f4f7",
+          "content": "梅拉妮和丈夫以及孩子们在2023年6月初去公园野餐，一起玩游戏、吃美食，她感到特别开心，认为与家人在一起的时光让她真正感到充满活力和幸福",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "session_date": "7:55 pm on 9 June, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "b6264989-18d4-47ac-885d-80841ab97f92",
+          "content": "梅拉妮每天为自己留出专属时间，包括跑步、阅读和拉小提琴，这让她焕然一新并能在家人面前保持专注",
+          "metadata": {
+            "session_date": "1:14 pm on 25 May, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_2",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "4b6c96d1-5e14-4b85-b2a9-3a48d04b2ad9",
+          "content": "梅拉妮分享了一张家人在海滩露营的篝火照片，表示家人很喜欢露营，露营让他们更亲近",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_6",
+            "benchmark": "locomo",
+            "session_date": "8:18 pm on 6 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "137a6569-6e2e-4878-97d5-71289efc1f4a",
+          "content": "梅拉妮在2023年9月受了伤，不得不暂停陶艺——那是她用来自我表达和获得平静的方式，这让她很难受",
+          "score": 0.5870664457092301,
+          "metadata": {
+            "session_id": "session_18",
+            "session_date": "6:55 pm on 20 October, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "65dc20b5-1cc1-4c95-ac07-40f204046256",
+          "content": "2023年10月19日（公路旅行后的次日），梅拉妮和孩子们去山里徒步，孩子们很喜欢，她说这是公路旅行后放松的好方式",
+          "score": 0.5014778265931311,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_18",
+            "session_date": "6:55 pm on 20 October, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "e1d4aaff-9f75-4038-ad6a-adea6c83e671",
+          "content": "在2023年10月20日的对话中，卡罗琳表示正在咨询导师、准备通过收养成为母亲，这是她一直以来的梦想，为需要的孩子提供一个安全有爱的家；她建议梅拉妮（若考虑收养）先找收养机构或律师，准备好推荐信、财务信息和体检文件，并做好等待煎熬的心理准备",
+          "score": 0.5305453345736704,
+          "metadata": {
+            "session_id": "session_18",
+            "benchmark": "locomo",
+            "session_date": "6:55 pm on 20 October, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "152651b0-3166-44fb-81dc-e338cec9bda7",
+          "content": "梅拉妮的一个朋友去年收养了孩子，过程漫长但如今全家很幸福；梅拉妮受此启发觉得也许自己也应该收养，并向卡罗琳询问了入门建议",
+          "score": 0.521726421096122,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "6:55 pm on 20 October, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_18",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa58",
+      "stratum": {
+        "conversation": "conv-26",
+        "category": "temporal"
+      },
+      "question": "梅拉妮是什么时候在陶艺课上做了一个盘子的？",
+      "gold": "2023年8月24日",
+      "answer": "2023年8月25日之前不久（2023年8月下旬）——梅拉妮在陶艺课上做了一个带花卉图案的紫色碗/盘子。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "具体日期2023年8月24日"
+        ],
+        "reason": "答案给出的是模糊的时间（8月下旬/25日之前不久），而非确切的8月24日。"
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_14",
+          "session_date": "1:33 pm on 25 August, 2023",
+          "index": 3,
+          "turn": {
+            "speaker": "梅拉妮",
+            "dia_id": "D14:4",
+            "text": "是啊，我昨天在陶艺课上做的。我很喜欢！陶艺既放松又有创意。你试过吗？"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "5c43f1b2-8289-4513-9e28-914dedd5ae03",
+          "content": "梅拉妮最近在陶艺课上做了一个带花卉图案的紫色碗/盘子，她很喜欢，觉得陶艺既放松又有创意",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "session_id": "session_14",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "cbb7277a-4e32-41e7-8ee7-f8670582a9e2",
+          "content": "梅拉妮于2023年8月中旬完成了另一个陶艺作品——一个色彩鲜艳的陶碗，她为这件作品感到自豪，并说设计的颜色和图案是想做一件吸引眼球、让人微笑的作品",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_12",
+            "benchmark": "locomo",
+            "session_date": "1:50 pm on 17 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+          "content": "梅拉妮做艺术已有七年，找到了自己真正的灵感来源：绘画和陶艺；她于2023年9月分享了自己制作的带复杂花纹和紫色釉面的陶艺碗作品照片",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "12:09 am on 13 September, 2023",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "6c2db0d3-6944-4461-96d9-1b0d5c65282e",
+          "content": "梅拉妮于2023年7月2日报了一个陶艺课，觉得陶艺像治疗一样，帮助她表达自己、发挥创造力并带来平静",
+          "metadata": {
+            "session_date": "1:36 pm on 3 July, 2023",
+            "session_id": "session_5",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+          "content": "梅拉妮在陶艺课上做了一个黑白花朵图案的碗，花了不少功夫并为此感到自豪；她说陶艺不只是爱好，而是帮助她表达情感、带来快乐的重要部分",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_5",
+            "session_date": "1:36 pm on 3 July, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+          "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+          "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间",
+          "metadata": {
+            "session_date": "10:31 am on 13 October, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_17",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "137a6569-6e2e-4878-97d5-71289efc1f4a",
+          "content": "梅拉妮在2023年9月受了伤，不得不暂停陶艺——那是她用来自我表达和获得平静的方式，这让她很难受",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "6:55 pm on 20 October, 2023",
+            "session_id": "session_18",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+          "content": "梅拉妮于2023年10月初（对话前一周）画了一幅日落画，灵感来自日落，鲜艳的颜色让她感到平静",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_17",
+            "session_date": "10:31 am on 13 October, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "0319c2f7-bfaa-4705-be23-453c21e142a3",
+          "content": "Melanie（对话伙伴）于2023年8月13日晚带女儿们庆祝生日，观看了一场户外演唱会，孩子们玩得开心；梅拉妮还曾在之前带孩子去海滩玩飞盘、放风筝",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_11",
+            "session_date": "2:24 pm on 14 August, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "97f3a4fc-ea2e-4e8d-9f49-402d63a83d9d",
+          "content": "截至2023年7月17日，梅拉妮和孩子们刚又完成了一幅画，延续了他们之前一起创作大自然灵感画作的习惯",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_9",
+            "benchmark": "locomo",
+            "session_date": "2:31 pm on 17 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "b38fcc7d-f091-4eb5-80a6-32b007c6ff74",
+          "content": "梅拉妮（梅尔）于2023年5月20日（对话前一周六）参加了一场心理健康公益跑，认为活动很有意义并发人深省，促使她认真思考如何照顾心理健康",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_2",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:14 pm on 25 May, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "afb6c064-969a-497d-932d-ec1fde376700",
+          "content": "梅拉妮一家在科罗拉多大峡谷玩得很开心，她于2023年10月21日买了彩绘木制家庭人偶，让她想起家人之间的爱",
+          "metadata": {
+            "session_date": "9:55 am on 22 October, 2023",
+            "session_id": "session_19",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "de3a1918-0ba7-4586-853f-5badfd2f1922",
+          "content": "梅拉妮在2023年9月初的几周前带孩子们去露营，探索森林、徒步，还在篝火边烤棉花糖、讲故事，大家玩得很尽兴，并分享了一张秋天黄叶小路的照片",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "12:09 am on 13 September, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+          "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+          "metadata": {
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "f69a31d2-1f1e-4529-bdd1-918f5eb3e806",
+          "content": "卡罗琳在2023年8月下旬家附近散步时看到一条为骄傲月铺设的彩虹人行道，觉得它色彩鲜艳、充满欢迎氛围，提醒她爱与接纳无处不在",
+          "score": 0.5731467156762234,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_14",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "2b624cc0-657d-4c6a-9837-269ce8550ca4",
+          "content": "卡罗琳于2023年8月完成了一幅日落海滩画作，灵感来自她上周（2023年8月中旬）去海边看太阳沉入地平线的经历，那些绚丽的色彩既震撼又让人平静",
+          "score": 0.5200184373716883,
+          "metadata": {
+            "session_id": "session_14",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "c4d11b80-1b80-4192-b3cf-1082164ffb20",
+          "content": "卡罗琳为一座当地教堂制作了一扇彩绘玻璃窗，主题是时间改变我们的生活，展现她作为跨性别女性的历程以及接受成长与改变，寓意每个人内心都藏着发现真正潜能的钥匙",
+          "score": 0.508810925661852,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_14",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "b88125e4-6065-4384-9be3-a397a47dabbd",
+          "content": "卡罗琳想做一件象征团结、庆祝彼此差异的新艺术作品，类似她为教堂制作的彩绘玻璃窗",
+          "score": 0.5004275219244804,
+          "metadata": {
+            "session_id": "session_14",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "d3af3e2f-67c6-44e4-ae84-7a4c6da343e6",
+          "content": "卡罗琳于2023年8月中旬去徒步时与一些人闹得不愉快，感到很心烦，并试着向他们道歉",
+          "score": 0.5513490559176817,
+          "metadata": {
+            "session_id": "session_14",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "1ebaa089-9feb-4828-a972-4dd151e2928f",
+          "content": "卡罗琳于2023年9月（对话次月）筹备一场LGBTQ艺术展，将展出自己的画作，希望展示LGBTQ艺术家的才华并传播理解与接纳",
+          "score": 0.5567224775672964,
+          "metadata": {
+            "session_date": "1:33 pm on 25 August, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_14",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "29c8496b-83a9-47b7-aa46-3c33aaa62e9e",
+          "content": "梅拉妮和家人一起去流浪者收容所做志愿者，看到有些人被忽视很难受，但感到他们做出了改变",
+          "score": 0.5034521301419455,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_14",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "268b0881-a634-43ca-b230-c5466617353a",
+          "content": "梅拉妮最喜欢画风景和静物，热爱大自然，计划画几幅以秋天景色为灵感的作品",
+          "score": 0.5818879619450102,
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_14",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "1fca1a15-6f00-4467-89a4-27382584884c",
+          "content": "卡罗琳还没尝试过陶艺，她的艺术创作一直以画画为主",
+          "score": 0.5774520624930216,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "session_id": "session_14",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "aa653bd2-c401-4b06-bc91-89ca34363058",
+          "content": "画花是卡罗琳最喜欢的绘画题材之一，艺术给她带来快乐，帮助她表达情感、定格美好瞬间",
+          "score": 0.5709017729475602,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_14",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "28dc3c22-5a24-4ee4-b736-fa4f93b7bb3f",
+          "content": "卡罗琳珍视一幅彩虹旗壁画，因为它体现了跨性别群体的勇气和力量，画中的鹰象征自由和自豪，代表她自己和他人的坚韧；找到一个接纳、爱护、支持她的跨性别群体对她意义重大",
+          "score": 0.49694791358614465,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_14",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa5",
+      "stratum": {
+        "conversation": "conv-30",
+        "category": "multi-hop"
+      },
+      "question": "乔恩认为理想的舞蹈工作室应该是什么样的？",
+      "gold": "在水边，有自然光和马利地胶",
+      "answer": "一个俯瞰大海/水边的开放空间（2023年1月20日他在照片中分享了这个概念）。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "自然光",
+          "马利地胶"
+        ],
+        "reason": "答对了水边这一要素，但缺少自然光和马利地胶两个要素。"
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_1",
+          "session_date": "4:04 pm on 20 January, 2023",
+          "index": 19,
+          "turn": {
+            "speaker": "乔恩",
+            "img_url": [
+              "https://live.staticflickr.com/2730/4360526470_6bee96b5d7_b.jpg"
+            ],
+            "blip_caption": "a photography of a room with a view of the ocean and a few yoga mats",
+            "query": "dance studio overlooking ocean",
+            "dia_id": "D1:20",
+            "re-download": true,
+            "text": "哇，那一定很棒！看看我心目中理想的临水舞蹈工作室吧。"
+          }
+        },
+        {
+          "session_id": "session_2",
+          "session_date": "2:32 pm on 29 January, 2023",
+          "index": 3,
+          "turn": {
+            "speaker": "乔恩",
+            "img_url": [
+              "https://avvay-aws-production.imgix.net/space-media/space-media-422692-prod.jpg"
+            ],
+            "blip_caption": "a photo of a bathroom with a blue floor and a pink wall",
+            "query": "dance studio natural lighting spacious room large windows dance mirrors",
+            "dia_id": "D2:4",
+            "text": "嘿，吉娜！谢谢关心。我正在为舞蹈工作室寻找理想的场地，这一路真是不容易！我看了很多不同的地方，想象着空间会是什么样子。我甚至找到了一个自然采光很好的地方！哦，我昨天去了巴黎！真的太酷了。"
+          }
+        },
+        {
+          "session_id": "session_2",
+          "session_date": "2:32 pm on 29 January, 2023",
+          "index": 7,
+          "turn": {
+            "speaker": "乔恩",
+            "dia_id": "D2:8",
+            "text": "是啊，好的地板很关键。我想要马利地胶，那是舞蹈工作室通常用的。它很棒，因为有一定摩擦力但又能让你自如移动，而且耐用又容易清洁。"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "0d8e6624-802d-4167-b7d3-3746bd16c393",
+          "content": "乔恩理想中的舞蹈工作室是一个俯瞰大海（水边）的开放空间，他在一张照片中分享了这个概念。",
+          "metadata": {
+            "session_date": "4:04 pm on 20 January, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_1",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+          "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+          "metadata": {
+            "session_date": "1:25 pm on 9 July, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_17",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "198933a8-1c27-4c06-ac74-8c03c01e3c79",
+          "content": "截至2023年2月8日，乔恩已经开办了自己的舞蹈工作室并亲自经营，他很享受打造一个帮助各种年龄和水平的舞者表达自我的空间的自由，每天为跳舞和看到学生进步而兴奋",
+          "metadata": {
+            "session_date": "9:32 am on 8 February, 2023",
+            "session_id": "session_5",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": true,
+          "id": "9050d972-6347-4473-a97d-ccabe7f6a903",
+          "content": "截至2023年1月29日，乔恩正在为舞蹈工作室寻找理想场地，看了很多不同的地方；他找到一个市中心、交通方便且自然采光很好的候选场地，还需要检查面积和地板质量",
+          "metadata": {
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_2",
+            "session_date": "2:32 pm on 29 January, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "0e612a29-79e8-4182-894e-6842be55d59a",
+          "content": "截至2023年6月13日，乔恩正以前所未有的劲头为他的舞蹈工作室做准备，并表示开设工作室是一段很棒的经历，希望它成为能给所有舞者支持和鼓励的地方",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_13",
+            "session_date": "8:29 pm on 13 June, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": true,
+          "id": "13c9777f-dbd6-41f1-8eec-15802adfb5f4",
+          "content": "乔恩的舞蹈工作室计划使用马利（Marley）地胶地板，因为它摩擦力和滑动的平衡恰到好处，且耐用易清洁，能保障他和学生安全跳舞",
+          "metadata": {
+            "session_date": "2:32 pm on 29 January, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_2",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": true,
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_1",
+            "session_date": "4:04 pm on 20 January, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "6a72c49b-078c-40d9-8378-be182b653376",
+          "content": "截至2023年3月23日，乔恩表示经营舞蹈工作室的动力来自看到学生取得成功，帮助他们学习并实现目标让他感到非常棒；他分享了一张舞蹈课后一群女性跳舞的照片",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_7",
+            "session_date": "7:28 pm on 23 March, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "20444ab5-c7f7-4859-a841-a18f9dae322c",
+          "content": "乔恩表示兼顾跳舞和经营舞蹈工作室两种热爱虽有难度但回报丰厚，两者互相给予能量——舞步让他充满干劲去实现事业目标，事业成功又激励他继续追梦",
+          "metadata": {
+            "session_date": "9:32 am on 8 February, 2023",
+            "session_id": "session_5",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "0e642f24-4428-4881-824d-b05c43d73fbf",
+          "content": "乔恩的舞蹈工作室除了舞蹈课和工作坊之外，还提供一对一的指导和训练，帮助舞者们充分发挥潜力",
+          "metadata": {
+            "session_date": "8:29 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_13",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": true,
+          "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+          "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_2",
+            "session_date": "2:32 pm on 29 January, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "e792d3ed-61b3-4e90-81c4-98b1febc9d11",
+          "content": "乔恩使用一块白板记录舞蹈工作室生意的好点子、想法、日期和里程碑，帮助他直观地看到进展并保持有条不紊（2023年5月下旬）",
+          "metadata": {
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_12",
+            "benchmark": "locomo",
+            "session_date": "7:18 pm on 27 May, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "a231b871-ee0c-4175-abd4-214872c6bcda",
+          "content": "乔恩表示以前特别害怕别人怎么看自己，但后来明白了自己的快乐才是最重要的；对他来说跳舞是表达自我、寻找快乐的方式，虽然不容易但也是最美好的事",
+          "metadata": {
+            "session_id": "session_9",
+            "benchmark": "locomo",
+            "session_date": "10:33 am on 9 April, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+          "content": "乔恩计划在2023年5月举办一场舞蹈比赛，他的舞蹈工作室和其他一些学校将带来最棒的舞步，呈现充满表演和评审的夜晚，旨在展示本地人才并为工作室带来更多关注；他邀请吉娜到场，吉娜已答应去看演出",
+          "metadata": {
+            "session_id": "session_8",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_date": "1:26 pm on 3 April, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": true,
+          "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+          "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+          "metadata": {
+            "session_date": "4:04 pm on 20 January, 2023",
+            "session_id": "session_1",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "b5e16073-b382-47f6-a293-b194661eaca7",
+          "content": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。",
+          "score": 0.5221931081170461,
+          "metadata": {
+            "session_id": "session_1",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "4:04 pm on 20 January, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "59c4a905-0755-48b6-b9cf-200fe3da8f2f",
+          "content": "吉娜（Gina）也在2023年1月那个月失去了她在 Door Dash 的工作。",
+          "score": 0.5142581973883732,
+          "metadata": {
+            "session_date": "4:04 pm on 20 January, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_1",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+          "content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。",
+          "score": 0.6104460503189982,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "4:04 pm on 20 January, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_1",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+          "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+          "score": 0.5260076010364759,
+          "metadata": {
+            "session_date": "4:04 pm on 20 January, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_1",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+          "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+          "score": 0.5847539321468318,
+          "metadata": {
+            "session_date": "4:04 pm on 20 January, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_1",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "f51ec223-a73f-4b8a-8184-fe7bdf0c66b8",
+          "content": "乔恩（Jon）于2023年1月28日去了巴黎，觉得很酷；吉娜说一直没机会去巴黎，只去过一次罗马",
+          "score": 0.5450937869595439,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "2:32 pm on 29 January, 2023",
+            "session_id": "session_2",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "4762791a-a099-4dd1-9971-dc9e1f4a11fb",
+          "content": "乔恩的舞蹈团队正在完成一支编舞，将于2023年2月（下个月）在附近的节日上表演，他们将穿着白色裙子在舞台上表演。",
+          "score": 0.48527338470140174,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_1",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "4:04 pm on 20 January, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "9fbb9b83-a653-40e9-882e-d0afacce9e98",
+          "content": "去年（2022年），乔恩的舞蹈团队在当地舞蹈比赛中获得第一名；一张他在舞台上穿西装表演的照片记录了这一时刻。",
+          "score": 0.5045605041967273,
+          "metadata": {
+            "session_date": "4:04 pm on 20 January, 2023",
+            "session_id": "session_1",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "c5b159bb-44b7-4d2b-adc2-795308e303a1",
+          "content": "吉娜（Gina）为她的服装店发起了一个广告活动（约2023年1月下旬），希望把生意做大；她表示开店、承担风险既让人害怕又很有成就感，并分享了一张店里服装陈列的照片",
+          "score": 0.5204815557324425,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "2:32 pm on 29 January, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_2",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+          "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+          "score": 0.5707499340534957,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_1",
+            "session_date": "4:04 pm on 20 January, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa71",
+      "stratum": {
+        "conversation": "conv-30",
+        "category": "single-hop"
+      },
+      "question": "吉娜如何形容乔恩开设的工作室？",
+      "gold": "太棒了",
+      "answer": "吉娜把乔恩的舞蹈工作室形容为一个值得骄傲和支持的梦想事业——一场值得庆祝和共同创造美好回忆的\"盛大开幕式\"级别的大事，并一直鼓励乔恩坚持下去、不放弃。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "太棒了"
+        ],
+        "reason": "The answer is topically positive about the studio but does not state the exact description '太棒了'."
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_15",
+          "session_date": "10:04 am on 19 June, 2023",
+          "index": 5,
+          "turn": {
+            "speaker": "吉娜",
+            "dia_id": "D15:6",
+            "text": "恭喜你，乔恩！工作室看起来太棒了。你为此付出了很多努力，我为明天的开业感到非常兴奋。千万别出岔子！"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": false,
+          "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+          "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+          "metadata": {
+            "session_id": "session_2",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "2:32 pm on 29 January, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "0e612a29-79e8-4182-894e-6842be55d59a",
+          "content": "截至2023年6月13日，乔恩正以前所未有的劲头为他的舞蹈工作室做准备，并表示开设工作室是一段很棒的经历，希望它成为能给所有舞者支持和鼓励的地方",
+          "metadata": {
+            "session_date": "8:29 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_13",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "0d8e6624-802d-4167-b7d3-3746bd16c393",
+          "content": "乔恩理想中的舞蹈工作室是一个俯瞰大海（水边）的开放空间，他在一张照片中分享了这个概念。",
+          "metadata": {
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "4:04 pm on 20 January, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_1",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+          "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_17",
+            "session_date": "1:25 pm on 9 July, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_1",
+            "session_date": "4:04 pm on 20 January, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "8492ec99-94bc-4afd-be62-b427b264b531",
+          "content": "截至2023年7月9日，乔恩全职投入舞蹈工作室创业，舞蹈练习既有趣又累人，他会保持坚定走出自己的路",
+          "metadata": {
+            "session_date": "1:25 pm on 9 July, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_17",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": true,
+          "id": "387c7cd4-3660-4823-8016-dcd7a2bd918b",
+          "content": "吉娜于2023年6月19日确认会出席乔恩舞蹈工作室的盛大开幕式，两人相约一起狂欢、共同创造美好回忆，吉娜表示一直为乔恩感到骄傲并会一直支持他",
+          "metadata": {
+            "session_id": "session_15",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "10:04 am on 19 June, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "ec4d6a48-15a1-47b7-b4fa-88663c1b8b09",
+          "content": "2023年4月24日，乔恩带舞蹈工作室参加了集市展示，既紧张又很棒，获得了一些潜在客户线索；他意识到这行并不轻松，要有自信才能把生意做成功",
+          "metadata": {
+            "session_id": "session_10",
+            "session_date": "11:24 am on 25 April, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+          "content": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好",
+          "metadata": {
+            "session_date": "10:33 am on 9 April, 2023",
+            "session_id": "session_9",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "e3049c9c-1066-48e4-a2ad-836d0408e25c",
+          "content": "乔恩小时候很喜欢和朋友们一起上舞蹈课，那些回忆非常珍贵；很开心现在能通过自己的舞蹈工作室继续享受跳舞",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "10:33 am on 9 April, 2023",
+            "session_id": "session_9",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+          "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_18",
+            "session_date": "5:44 pm on 21 July, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "0e642f24-4428-4881-824d-b05c43d73fbf",
+          "content": "乔恩的舞蹈工作室除了舞蹈课和工作坊之外，还提供一对一的指导和训练，帮助舞者们充分发挥潜力",
+          "metadata": {
+            "session_id": "session_13",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_date": "8:29 pm on 13 June, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+          "content": "吉娜鼓励乔恩在创业遇到困难时坚持下去、继续努力、不要放弃，并肯定他把计划和目标写下来是掌握进步图景的关键做法",
+          "metadata": {
+            "session_id": "session_16",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "2:15 pm on 21 June, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "b5e16073-b382-47f6-a293-b194661eaca7",
+          "content": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。",
+          "metadata": {
+            "session_id": "session_1",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "4:04 pm on 20 January, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "761df2c0-23e4-439c-ba6b-b0947f72b8b9",
+          "content": "乔恩感谢吉娜的不离不弃和一直以来的支持，并表示不会放弃，会继续努力奋斗让舞蹈工作室的梦想成真（2023年6月13日）",
+          "metadata": {
+            "session_id": "session_13",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "8:29 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "1aa1c91b-6f66-45a3-a5e9-c53bc8e03dff",
+          "content": "乔恩的舞蹈工作室正式开幕之夜定于2023年6月20日，他为此努力把一切做到完美，分享了一张工作室门口年轻舞者排练的照片，并感慨这一路走来不容易但准备全力以赴",
+          "score": 0.44264010089858713,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "10:04 am on 19 June, 2023",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "1c2323ba-6f0e-4386-aad5-b21632d23c02",
+          "content": "乔恩于2023年6月中旬（开幕前一周，约6月12-16日）去罗马短途旅行放松心情，为舞蹈工作室开业做准备，截至2023年6月19日仍在忙生意和筹备舞蹈工作室",
+          "score": 0.596434083239611,
+          "metadata": {
+            "session_id": "session_15",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_date": "10:04 am on 19 June, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa7",
+      "stratum": {
+        "conversation": "conv-30",
+        "category": "temporal"
+      },
+      "question": "吉娜什么时候为她的店发起了广告活动？",
+      "gold": "2023年1月29日",
+      "answer": "约2023年1月下旬（1月29日前后）。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "hedged with '约' and '前后' instead of the definitive date"
+        ],
+        "reason": "Contains the correct date 2023年1月29日 but hedges it as approximate, which is not exact per temporal rules."
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_2",
+          "session_date": "2:32 pm on 29 January, 2023",
+          "index": 0,
+          "turn": {
+            "speaker": "吉娜",
+            "blip_caption": "a photo of a clothing store with a variety of clothes on display",
+            "dia_id": "D2:1",
+            "re-download": true,
+            "text": "嘿，乔恩！好久不见！最近事情特别忙。我刚为我的服装店发起了一个广告活动，希望能把生意做大。开自己的店、承担风险，既让人害怕又很有成就感。我很期待它能把带向何方！"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "c5b159bb-44b7-4d2b-adc2-795308e303a1",
+          "content": "吉娜（Gina）为她的服装店发起了一个广告活动（约2023年1月下旬），希望把生意做大；她表示开店、承担风险既让人害怕又很有成就感，并分享了一张店里服装陈列的照片",
+          "metadata": {
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_date": "2:32 pm on 29 January, 2023",
+            "session_id": "session_2",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "c535d200-a553-484c-bd86-2340481e0d30",
+          "content": "截至2023年4月3日，吉娜计划在未来几个月与时尚博主和网红合作，并投放更多广告，以扩大网上服装店的知名度和触达更多人",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "1:26 pm on 3 April, 2023",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "67260ddc-f5f5-4900-8fe9-3c721232687a",
+          "content": "截至2023年4月3日，吉娜在她的网上服装店推出了新的优惠和促销活动以吸引新顾客，顾客反响很好，销量在增加；她目前的主要目标是扩大顾客群，把店打造成时尚爱好者的首选目的地",
+          "metadata": {
+            "session_id": "session_8",
+            "session_date": "1:26 pm on 3 April, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "8ab6d4a1-69aa-44a0-a5fe-0194899c41c3",
+          "content": "2023年6月21日，吉娜为她的服装网店进了一些新的独特商品，并推出了一个限量版连帽衫系列（迷彩印花）来展示自己的风格和创意，设计灵感来自脱颖而出、面对挑战所需的韧性",
+          "metadata": {
+            "session_id": "session_16",
+            "session_date": "2:15 pm on 21 June, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "5218751e-7120-4f63-9489-197a24a11fb8",
+          "content": "截至2023年3月23日，吉娜一直在为她的服装店努力打造强大的品牌形象和建立顾客关系，并认为保持积极心态是关键",
+          "metadata": {
+            "session_id": "session_7",
+            "session_date": "7:28 pm on 23 March, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "bf5fd57d-3dc5-4e92-a709-65c2a1b91883",
+          "content": "2023年2月1日前后，吉娜给一些批发商发了邮件，其中一个当天回复并答应了合作，使她能够扩大服装店规模、更贴近顾客",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_3",
+            "session_date": "12:48 am on 1 February, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "82ba5980-2797-46c7-83e3-9252fa87937d",
+          "content": "吉娜为服装店找到了一个新位置（一家有玻璃入口和招牌的购物中心），并在2023年2月1日分享了店铺设计预览图：温馨又有吸引力，配有既好看又舒适的家具和增添华丽感的吊灯，希望为顾客营造舒适的购物体验，让他们愿意再来",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_3",
+            "session_date": "12:48 am on 1 February, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+          "content": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）",
+          "metadata": {
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_date": "9:38 pm on 16 June, 2023",
+            "session_id": "session_14",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "25be9ad4-ffa0-4bc4-a219-7041966a2ee5",
+          "content": "截至2023年7月21日，吉娜为自己的服装店建了一个方便顾客下单的新网站，过程不易但她很享受",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "5:44 pm on 21 July, 2023",
+            "session_id": "session_18",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "3f548823-9546-4a8a-8a3d-299b16b943b6",
+          "content": "截至2023年6月16日，乔恩一直在为舞蹈工作室做推广，并采纳吉娜的建议开始在社交媒体上发布自己的舞蹈视频，已经引起了一点轰动",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_14",
+            "session_date": "9:38 pm on 16 June, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "5639ced7-a143-4f4c-a465-877fc9ccccc4",
+          "content": "截至2023年2月8日，吉娜经营着一家网店，并与一位本地艺术家合作推出了独特的服装设计；她的灵感来自一本时尚杂志，她发现市面上缺少类似的设计，希望走在潮流前面给顾客与众不同的东西",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_5",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "9:32 am on 8 February, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "e1935b84-df3f-4f21-b721-e24cff7c5501",
+          "content": "吉娜于2023年7月初被时尚编辑们注意到，感到兴奋但压力也大，她经营的服装店事业正在持续上升",
+          "metadata": {
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "1:25 pm on 9 July, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_17",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "0a6a14af-0836-4821-b30c-ff35c50e71b1",
+          "content": "截至2023年6月16日，吉娜的网上服装店经营得很不错，她正在努力扩大客户群，并表示当自己的老板、做自己喜欢的事感觉很棒",
+          "metadata": {
+            "session_id": "session_14",
+            "benchmark": "locomo",
+            "session_date": "9:38 pm on 16 June, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "5931c7af-9d38-4bfa-a6f0-4d8e8179c4b3",
+          "content": "吉娜的网上服装店于2023年3月16日左右正式开张，这是她梦想已久的事；开店动机是她热衷时尚潮流和淘独特单品，并希望把对舞蹈和时尚的热爱结合起来",
+          "metadata": {
+            "session_date": "2:35 pm on 16 March, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_6",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "1d8e3583-621a-4e2b-900d-447a556e313e",
+          "content": "吉娜分享的照片显示一件带有'June Bunty'标牌的裙子，暗示这可能是她的服装品牌或店铺名称（2023年4月3日）",
+          "metadata": {
+            "session_date": "1:26 pm on 3 April, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+          "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+          "score": 0.5127806885678489,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_2",
+            "session_date": "2:32 pm on 29 January, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "9050d972-6347-4473-a97d-ccabe7f6a903",
+          "content": "截至2023年1月29日，乔恩正在为舞蹈工作室寻找理想场地，看了很多不同的地方；他找到一个市中心、交通方便且自然采光很好的候选场地，还需要检查面积和地板质量",
+          "score": 0.5029947695753273,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "2:32 pm on 29 January, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_2",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "13c9777f-dbd6-41f1-8eec-15802adfb5f4",
+          "content": "乔恩的舞蹈工作室计划使用马利（Marley）地胶地板，因为它摩擦力和滑动的平衡恰到好处，且耐用易清洁，能保障他和学生安全跳舞",
+          "score": 0.5905322673313639,
+          "metadata": {
+            "session_date": "2:32 pm on 29 January, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_2",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "f51ec223-a73f-4b8a-8184-fe7bdf0c66b8",
+          "content": "乔恩（Jon）于2023年1月28日去了巴黎，觉得很酷；吉娜说一直没机会去巴黎，只去过一次罗马",
+          "score": 0.5450937869595439,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "2:32 pm on 29 January, 2023",
+            "session_id": "session_2",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa41",
+      "stratum": {
+        "conversation": "conv-43",
+        "category": "multi-hop"
+      },
+      "question": "蒂姆写什么类型的小说？",
+      "gold": "带有情节转折的奇幻小说",
+      "answer": "蒂姆写奇幻小说（fantasy），目前正在创作一部进展顺利的奇幻小说。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "情节转折"
+        ],
+        "reason": "Answer says fantasy but omits the plot twist element of the gold."
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_15",
+          "session_date": "5:51 pm on 21 October, 2023",
+          "index": 2,
+          "turn": {
+            "speaker": "蒂姆",
+            "dia_id": "D15:3",
+            "text": "那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！"
+          }
+        },
+        {
+          "session_id": "session_16",
+          "session_date": "11:41 am on 6 November, 2023",
+          "index": 0,
+          "turn": {
+            "speaker": "蒂姆",
+            "dia_id": "D16:1",
+            "text": "嘿约翰，好久不见！希望你一切都好。自上次聊天以来，发生了一些事。上周，我遇到了一个巨大的写作难题——卡在一个情节转折上，怎么也找不到出路。真是令人抓狂，但我一直坚持，最终思路又畅通了。"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+          "content": "蒂姆正在写一部奇幻小说，进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作能创造一个全新的世界，带给他很多快乐",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "11:41 am on 6 November, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": true,
+          "id": "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+          "content": "蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作带给他巨大快乐",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_date": "5:51 pm on 21 October, 2023",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "8e28216f-45dd-4aa9-b731-bd127ade0d5f",
+          "content": "蒂姆最近写了更多关于奇幻小说的文章，这让他能结合对阅读的热爱和分享好故事的快乐，并分享了一篇文章截图",
+          "metadata": {
+            "session_id": "session_6",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "1:08 pm on 11 August, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+          "content": "蒂姆（Tim）写奇幻文章时特别喜欢《哈利·波特》和《权力的游戏》，对这两部作品完全着迷，可以永远聊下去",
+          "metadata": {
+            "session_id": "session_4",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "4:17 pm on 2 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "03425545-f53f-4f81-997b-e60165215fc4",
+          "content": "蒂姆（Tim）于2023年8月开始为一家在线杂志撰写关于奇幻小说的文章，分析角色、主题并做书籍推荐，这个机会来自他在奇幻文学论坛上的发现；杂志社很喜欢他的想法，他为此感到非常有成就感",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "4:17 pm on 2 August, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_4",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": true,
+          "id": "983b9769-e399-435b-81f6-b1d94008c683",
+          "content": "蒂姆（Tim）在2023年10月底遇到一个巨大的写作难题——在奇幻小说的一个情节转折上卡住，最终坚持下来思路重新畅通；他认为挣扎过后的满足感正是写作的美妙之处",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "11:41 am on 6 November, 2023",
+            "session_id": "session_16",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "ae69dcc5-b020-4dc7-bd75-cf5705e44737",
+          "content": "蒂姆分享了自己书架的照片，上面摆满了他最喜欢的奇幻小说，他说这些书点燃他的想象力、带他去另一个世界，是他逃离现实的去处",
+          "metadata": {
+            "session_date": "3:00 pm on 2 October, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_12",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "df795392-83c3-4203-892c-c51c003b7b9e",
+          "content": "蒂姆（Tim）从未参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种不同的魔法世界里",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_10",
+            "session_date": "2:52 pm on 31 August, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "d1e2eb4d-e34a-4c4f-949b-10cd43022797",
+          "content": "蒂姆喜欢沉浸在奇幻故事中，也喜欢通过关于成长、心理学和自我提升的书籍探索变得更好的方法",
+          "metadata": {
+            "session_date": "10:22 am on 21 November, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_19",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+          "content": "蒂姆从来没有参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种魔法世界里，这也是他喜欢去新地方旅行的原因之一",
+          "metadata": {
+            "session_date": "6:59 pm on 26 August, 2023",
+            "session_id": "session_9",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+          "content": "蒂姆（Tim）正在读一套关于友谊和忠诚主题的奇幻系列小说，觉得很鼓舞人心，但尚未读《权力的游戏》系列以外的乔治·R·R·马丁其他作品",
+          "metadata": {
+            "session_id": "session_22",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_date": "7:42 pm on 8 December, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "29beb6e9-1124-4323-98c8-86f158bab695",
+          "content": "蒂姆于2023年8月26日前后被作业和考试压得喘不过气，但他决心不放弃，正努力在学业和阅读奇幻小说的爱好之间找到平衡",
+          "metadata": {
+            "session_id": "session_9",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "6:59 pm on 26 August, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+          "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+          "metadata": {
+            "session_id": "session_20",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_date": "9:52 am on 1 December, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "301911d3-603e-4a1d-a9bf-49aca44b0e5a",
+          "content": "蒂姆（Tim）于2023年8月上旬正在读帕特里克·罗斯福斯（Patrick Rothfuss）写的一本让他着迷的奇幻小说，书把他带到另一个世界，他称赞作者构建世界和角色的能力，并推荐约翰去读",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_date": "10:29 am on 9 August, 2023",
+            "session_id": "session_5",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "6a67ba10-b774-478c-8f16-179d28e90cb9",
+          "content": "蒂姆（Tim）自上次与约翰聊天以来一直专注于学业，还读了很多奇幻小说作为从压力中放松的方式",
+          "metadata": {
+            "session_id": "session_8",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "e9fed4c1-5852-4827-a574-1951e48e4233",
+          "content": "烹饪对约翰来说是一种疗愈，是离开球场后发挥创造力、尝试不同口味的放松方式；他最喜欢的菜之一是蜂蜜蒜香鸡配烤蔬菜，并答应把食谱写给蒂姆",
+          "score": 0.5561682229916459,
+          "metadata": {
+            "session_date": "5:51 pm on 21 October, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_15",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+          "content": "约翰在白板上写激励性格言和策略来帮助自己在艰苦训练中保持专注和动力，桌上还放着一块提醒自己相信能力的牌匾，实物提醒帮助他保持动力",
+          "score": 0.5034026726056036,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_15",
+            "session_date": "5:51 pm on 21 October, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "f1cbcea3-bdd1-42e9-a37d-c10e5e2b956a",
+          "content": "蒂姆喜欢和朋友家人一起自驾游、探索、徒步或玩桌游；空闲时间喜欢捧一本好书蜷着读，逃离现实、沉浸在不同的世界里",
+          "score": 0.5226089879738869,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "5:51 pm on 21 October, 2023",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+          "score": 0.5639419671287612,
+          "metadata": {
+            "session_id": "session_16",
+            "session_date": "11:41 am on 6 November, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "6eb755dd-bb3d-4dec-af5c-f2066c0faf2c",
+          "content": "约翰（John）去年（约2022年）有一场篮球赛在第四节大幅落后，球队拼尽全力追赶并最终翻盘，终场哨响起时他觉得难以忘怀",
+          "score": 0.5363591309898287,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_16",
+            "benchmark": "locomo",
+            "session_date": "11:41 am on 6 November, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+          "content": "蒂姆于2023年10月21日告诉约翰，他读了一本关于英国城堡的超棒的书，大为震撼，梦想有一天能去参观英国城堡",
+          "score": 0.5070458733851702,
+          "metadata": {
+            "session_date": "5:51 pm on 21 October, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "5dccb4ae-6baf-4a99-aad1-33280a571494",
+          "content": "J.K. 罗琳是蒂姆最鼓舞人心的作家之一，他欣赏她细节丰富、极具创意的叙事，认为她能把读者带入另一个世界；他一直在为自己的写作记下她风格方面的笔记，并且已经读她的作品很多年",
+          "score": 0.5176397424959788,
+          "metadata": {
+            "session_id": "session_16",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "11:41 am on 6 November, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "7fcfed96-a727-4702-86ed-435b8c8e51ab",
+          "content": "约翰的队友信任他，他也热爱提升技能，这是他在困难时保持动力的原因；队友总是支持他、即使他犯错也鼓励他，他觉得队友像他的第二个家庭",
+          "score": 0.4599942323931023,
+          "metadata": {
+            "session_date": "5:51 pm on 21 October, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_15",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "bd5e05ac-8fff-4146-9701-0796790c5f10",
+          "content": "蒂姆的写作灵感来源包括书籍、电影和现实生活经历；阅读关于英国城堡的内容给了他很多灵感，他梦想有一天能去参观英国城堡",
+          "score": 0.49224150875992,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "11:41 am on 6 November, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "08e2ae89-965a-4668-a290-dd160b20d60e",
+          "content": "约翰和妻子于2023年11月初出发去欧洲短期度假，约翰向蒂姆询问推荐；蒂姆推荐他们去参观欧洲的城堡",
+          "score": 0.5532580799471212,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_16",
+            "session_date": "11:41 am on 6 November, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+          "content": "蒂姆的写作灵感来自书籍、电影和现实生活经历，阅读关于英国城堡的内容给了他很多灵感，某些作者对他来说像灵感宝库",
+          "score": 0.4926158200431248,
+          "metadata": {
+            "session_id": "session_15",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "5:51 pm on 21 October, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "eb23bfe9-cd70-4fed-a36e-dffd624aa7f1",
+          "content": "蒂姆认为J.K. 罗琳是非常鼓舞人心的作家，欣赏她细节丰富、创意十足的叙事，并总是为自己的写作记下她风格方面的笔记，他分享了一张翻旧的《哈利·波特与魔法石》的照片",
+          "score": 0.502780179465969,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "5:51 pm on 21 October, 2023",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "1a240463-b254-4e3c-b654-849617378f9b",
+          "content": "蒂姆喜欢看勒布朗·詹姆斯打球；几年前一场总决赛中勒布朗的史诗级盖帽（2016年总决赛第七场追防伊戈达拉把球按在篮板上）彻底改变了比赛并最终获胜，这种永不放弃的精神让蒂姆深受鼓舞，也让他热爱体育",
+          "score": 0.551550195418586,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_16",
+            "session_date": "11:41 am on 6 November, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "940a63ac-573f-428e-8913-7becee23b00e",
+          "content": "约翰（作为运动员）分享了一张俯瞰悬崖的苏格兰城堡照片，表示参观城堡在他的愿望清单上，他特别期待探索世界、体验美丽的历史建筑",
+          "score": 0.4922482967377828,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_15",
+            "benchmark": "locomo",
+            "session_date": "5:51 pm on 21 October, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "074401d8-fa72-451a-8ea9-3b4874fdf883",
+          "content": "约翰有一群无论如何都支持他的朋友，家人也总在他身边，与家人聚会带给他极大的快乐",
+          "score": 0.5281830196555726,
+          "metadata": {
+            "session_id": "session_15",
+            "benchmark": "locomo",
+            "session_date": "5:51 pm on 21 October, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "29c3c1cb-c4eb-4be1-b37c-5e5f597ec02e",
+          "content": "蒂姆感激有支持自己的朋友和家人，认为拥有支持网络非常重要",
+          "score": 0.5172921410839803,
+          "metadata": {
+            "session_date": "5:51 pm on 21 October, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_15",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "a3139982-20ae-4490-9d98-d2c9b45bcd68",
+          "content": "蒂姆最喜欢的一句J.K. 罗琳名言是'点亮灯光——幸福就藏在最黑暗的时刻里'，这是他在艰难时期保持希望的方式",
+          "score": 0.4932620048671106,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "5:51 pm on 21 October, 2023",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa5",
+      "stratum": {
+        "conversation": "conv-43",
+        "category": "open-domain"
+      },
+      "question": "根据蒂姆的收藏，他会喜欢逛纽约市的哪家店？",
+      "gold": "House of MinaLima",
+      "answer": "蒂姆收藏了哈利·波特纪念品，他最喜欢的系列是《哈利·波特》，他计划去更多哈利·波特主题的地方。虽然记忆中没有提到具体的商店名称，但基于他的收藏和兴趣，他很可能喜欢逛纽约市的哈利·波特主题商店。\n\n回答：纽约市的哈利·波特主题商店（比如哈利·波特旗舰店这类商店），因为蒂姆收藏哈利·波特纪念品，把《哈利·波特》列为他的最爱，并计划去更多哈利·波特主题的地方。",
+      "strict_final": "wrong",
+      "strict_judge": null,
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_2",
+          "session_date": "5:08 pm on 15 June, 2023",
+          "index": 8,
+          "turn": {
+            "speaker": "蒂姆",
+            "dia_id": "D2:9",
+            "text": "谢谢！那张图片来自MinaLima。他们为哈利·波特电影制作了所有道具，我很喜欢他们的作品。就像在家里拥有魔法世界的一角！"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "content": "蒂姆收藏了很多哈利·波特等纪念物，这对他来说是一种逃离现实的方式，让他感觉自己走进了书里；他计划以后去更多哈利·波特主题的地方",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "5:08 pm on 15 June, 2023",
+            "session_id": "session_2",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "eda0952c-ee7c-4be4-b342-5e8e52038810",
+          "content": "约翰喜欢探索新城市，曾去纽约市旅行，觉得那里走到哪里都有新鲜刺激的东西，特别喜欢探索城市和品尝各家餐厅的美食，并强烈推荐蒂姆去",
+          "metadata": {
+            "session_date": "6:59 pm on 26 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_9",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "f1cbcea3-bdd1-42e9-a37d-c10e5e2b956a",
+          "content": "蒂姆喜欢和朋友家人一起自驾游、探索、徒步或玩桌游；空闲时间喜欢捧一本好书蜷着读，逃离现实、沉浸在不同的世界里",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_15",
+            "session_date": "5:51 pm on 21 October, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+          "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+          "metadata": {
+            "session_date": "10:22 am on 21 November, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_19",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "a7cb56be-cc70-47d7-8b39-f6b4d5705b7b",
+          "content": "蒂姆收藏了很多书，喜欢沉浸在书中世界里，这是他热爱阅读的原因；《哈利·波特》是他最喜欢的书，觉得非常让人沉浸其中",
+          "metadata": {
+            "session_date": "5:26 pm on 2 January, 2024",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_27",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "d1e2eb4d-e34a-4c4f-949b-10cd43022797",
+          "content": "蒂姆喜欢沉浸在奇幻故事中，也喜欢通过关于成长、心理学和自我提升的书籍探索变得更好的方法",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_19",
+            "session_date": "10:22 am on 21 November, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+          "content": "蒂姆从来没有参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种魔法世界里，这也是他喜欢去新地方旅行的原因之一",
+          "metadata": {
+            "session_id": "session_9",
+            "session_date": "6:59 pm on 26 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "ae69dcc5-b020-4dc7-bd75-cf5705e44737",
+          "content": "蒂姆分享了自己书架的照片，上面摆满了他最喜欢的奇幻小说，他说这些书点燃他的想象力、带他去另一个世界，是他逃离现实的去处",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_12",
+            "session_date": "3:00 pm on 2 October, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+          "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+          "metadata": {
+            "session_date": "9:52 am on 1 December, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_20",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "9abb3a00-e77d-4bd3-aa2f-8eeeed1ff3cb",
+          "content": "蒂姆一直想去纽约看看，于2023年8月下旬把纽约加进了自己的旅行清单，期待将来亲自去体验",
+          "metadata": {
+            "session_id": "session_9",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_date": "6:59 pm on 26 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "c5dcfd75-6bb5-47a9-823e-1dd2de5cf92a",
+          "content": "蒂姆（Tim）不会冲浪，但读一本好的奇幻小说能让他逃离现实、感受自由；他在家里有一个舒适的读书角（有棕色沙发和白色脚凳），在那里读书让他感觉像置身极乐、进入另一个世界",
+          "metadata": {
+            "session_id": "session_3",
+            "session_date": "4:21 pm on 16 July, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+          "metadata": {
+            "session_date": "11:41 am on 6 November, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+          "content": "蒂姆（Tim）计划于2023年9月去环球影城玩，这是他第一次去，他对哈利·波特主题的东西超级兴奋，并表示回来后会告诉约翰体验如何",
+          "metadata": {
+            "session_date": "2:52 pm on 31 August, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_10",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+          "metadata": {
+            "session_date": "8:17 pm on 21 September, 2023",
+            "session_id": "session_11",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+          "metadata": {
+            "session_id": "session_26",
+            "session_date": "3:35 pm on 26 December, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "050d6d54-3907-4ebf-aee5-59f15d8cbf0d",
+          "content": "约翰（John）于2023年6月开始探索代言机会，目前正在考虑耐克（Nike）和安德玛（Under Armour）等运动品牌，也愿意探索符合他价值观和兴趣的其他品牌，他感到兴奋且有成就感",
+          "score": 0.4975253643628744,
+          "metadata": {
+            "session_id": "session_2",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "5:08 pm on 15 June, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+          "content": "约翰在2023年6月中旬刚打完一场篮球比赛并分享了比赛现场照片，他表示能在场上做热爱的事情感觉真好，每次上场都全力以赴",
+          "score": 0.4820852341696649,
+          "metadata": {
+            "session_date": "5:08 pm on 15 June, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_2",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "bd972e77-4065-42eb-88b3-9f873971bdc0",
+          "content": "蒂姆（Tim）于2023年6月14日晚加入了一个奇幻文学论坛，与他人畅聊自己最喜欢的书籍，感觉特别尽兴、收获满满",
+          "score": 0.49946788019593824,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "5:08 pm on 15 June, 2023",
+            "session_id": "session_2",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+          "content": "蒂姆展示了自己的藏书书架，上面有一张来自MinaLima的图片——MinaLima是为哈利·波特电影制作道具的工作室，蒂姆很喜欢他们的作品，觉得像在家里拥有魔法世界的一角",
+          "score": 0.5083027520920599,
+          "metadata": {
+            "session_id": "session_2",
+            "session_date": "5:08 pm on 15 June, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa96",
+      "stratum": {
+        "conversation": "conv-43",
+        "category": "single-hop"
+      },
+      "question": "蒂姆最喜欢弹哪部电影的主题曲？",
+      "gold": "《哈利·波特与魔法石》",
+      "answer": "《星球大战》的主题曲。蒂姆最钟爱的电影系列是《星球大战》，百看不厌，而他学钢琴时最喜欢弹的就是自己非常喜欢的电影的主题曲，对应《星球大战》。\n\nANSWER：《星球大战》",
+      "strict_final": "wrong",
+      "strict_judge": null,
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_8",
+          "session_date": "4:29 pm on 21 August, 2023",
+          "index": 13,
+          "turn": {
+            "speaker": "蒂姆",
+            "dia_id": "D8:14",
+            "text": "谢谢！我喜欢在钢琴上弹各种曲子，但我最喜欢弹的是一首我非常喜欢的电影的主题曲。它让我想起很多美好的回忆。"
+          }
+        },
+        {
+          "session_id": "session_8",
+          "session_date": "4:29 pm on 21 August, 2023",
+          "index": 15,
+          "turn": {
+            "speaker": "蒂姆",
+            "dia_id": "D8:16",
+            "text": "好啊，《哈利·波特与魔法石》对我来说很特别。它是这个系列的第一部电影，带给我很多美好的回忆。和家人一起看太棒了。真是太神奇了！"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": false,
+          "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+          "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "10:22 am on 21 November, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_19",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+          "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+          "metadata": {
+            "session_id": "session_27",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "5:26 pm on 2 January, 2024",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": true,
+          "id": "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+          "content": "蒂姆开始学弹钢琴，虽然有个学习曲线，但看到自己进步很有成就感；他最喜欢弹的是一首他非常喜欢的电影的主题曲",
+          "metadata": {
+            "session_date": "4:29 pm on 21 August, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_26",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "3:35 pm on 26 December, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": true,
+          "id": "e1addb3c-0fc9-4f48-bbb4-435134132183",
+          "content": "蒂姆家假日期间喜欢看《小鬼当家》《Elf》和《The Santa Clause》等节日电影，这些电影带来很多欢笑并让他们充满节日气氛",
+          "metadata": {
+            "session_id": "session_8",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+          "content": "蒂姆（Tim）写奇幻文章时特别喜欢《哈利·波特》和《权力的游戏》，对这两部作品完全着迷，可以永远聊下去",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_4",
+            "session_date": "4:17 pm on 2 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": true,
+          "id": "e5298e7a-052a-41d5-9c67-1da47589696c",
+          "content": "《哈利·波特与魔法石》对蒂姆来说很特别，是该系列的第一部电影，他常和家人一起拿着零食、盖上毯子舒舒服服地看，带给他很多美好回忆",
+          "metadata": {
+            "session_date": "4:29 pm on 21 August, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+          "content": "蒂姆（Tim）计划于2023年9月去环球影城玩，这是他第一次去，他对哈利·波特主题的东西超级兴奋，并表示回来后会告诉约翰体验如何",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_10",
+            "benchmark": "locomo",
+            "session_date": "2:52 pm on 31 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "2e04ff93-a685-49c4-b5be-21c2f7539a48",
+          "content": "蒂姆（Tim）在2023年12月开始学拉小提琴，主要喜欢古典音乐，也想尝试爵士乐和电影配乐，觉得这是放松和发挥创造力的好方式；他一直很羡慕音乐家，终于开始学了",
+          "metadata": {
+            "session_id": "session_21",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_date": "5:34 pm on 6 December, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "9d717fa9-9e17-4171-b3ee-c31236749a40",
+          "content": "蒂姆（Tim）闲暇时仍喜欢读书，《哈利·波特》系列是他的最爱之一，认为那是可以让人暂时逃离现实的魔法世界；他也看过所有《哈利·波特》的电影，喜欢将电影与原著比较",
+          "metadata": {
+            "session_id": "session_26",
+            "session_date": "3:35 pm on 26 December, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": true,
+          "id": "42d43d4e-bf46-4b9d-9363-fe71e986161b",
+          "content": "蒂姆自己装饰了一棵哈利·波特主题的圣诞树，全力以赴，觉得这是个非常有趣的项目，并对最终效果非常满意",
+          "metadata": {
+            "session_id": "session_8",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "9f77396c-7ff4-4d47-9c81-0497a1c097a9",
+          "content": "蒂姆（Tim）于2023年12月8日参加了一个哈利·波特主题派对，遇到很多兴趣相投的人，玩得很开心；他没有打扮成角色，但戴了格兰芬多围巾，并获得了巧克力蛙作为奖励",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "7:42 pm on 8 December, 2023",
+            "session_id": "session_22",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+          "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+          "metadata": {
+            "session_date": "3:36 pm on 11 November, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_17",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+          "metadata": {
+            "session_id": "session_16",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "11:41 am on 6 November, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "a7cb56be-cc70-47d7-8b39-f6b4d5705b7b",
+          "content": "蒂姆收藏了很多书，喜欢沉浸在书中世界里，这是他热爱阅读的原因；《哈利·波特》是他最喜欢的书，觉得非常让人沉浸其中",
+          "metadata": {
+            "session_date": "5:26 pm on 2 January, 2024",
+            "session_id": "session_27",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "score": 0.4863516305136511,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_8",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "c035e289-5b71-4f39-9a4b-ad883547445b",
+          "content": "约翰的家人也经常聚在一起；他分享了一棵挂满彩灯和装饰品的圣诞树照片（2022年圣诞）",
+          "score": 0.5021128752689503,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "6a67ba10-b774-478c-8f16-179d28e90cb9",
+          "content": "蒂姆（Tim）自上次与约翰聊天以来一直专注于学业，还读了很多奇幻小说作为从压力中放松的方式",
+          "score": 0.5010679176767091,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_8",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "3840c8e9-e0e0-40f8-b013-450b873dd086",
+          "content": "约翰（John）在2023年8月21日左右的前几天找了一家新健身房以保持篮球状态，健身房里有篮球场，他一开始需要适应环境并调整训练计划，最终通过反复尝试上手了",
+          "score": 0.5275992956166802,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "decf0285-cbd0-4097-8e56-570e10d384a9",
+          "content": "蒂姆家的感恩节传统包括一起准备大餐、聊聊各自感恩的事情，以及之后一起看电影",
+          "score": 0.6712509484793423,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "0f8de77b-2e05-45a9-a0a4-34d624bf8b5b",
+          "content": "约翰认为力量训练能增强肌肉、提高爆发力并预防受伤；加入力量训练改变了他的比赛，提高了投篮命中率、敏捷性和速度，给了他面对挑战的信心",
+          "score": 0.556345275430309,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "f91b641a-6c6e-412b-b3b7-0c14e35ec0da",
+          "content": "约翰制定了一份兼顾篮球训练和力量训练的训练计划，注重倾听身体的声音并给身体足够的休息",
+          "score": 0.5847850760392062,
+          "metadata": {
+            "session_id": "session_8",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "298be17b-2aa3-4e79-bbc3-1944ab4614c7",
+          "content": "蒂姆的全家曾聚在一起吃饭，那是充满爱和欢笑的美好一天，家庭时光对他意义重大",
+          "score": 0.5617676638949536,
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_8",
+            "session_date": "4:29 pm on 21 August, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa37",
+      "stratum": {
+        "conversation": "conv-43",
+        "category": "temporal"
+      },
+      "question": "蒂姆哪一周去英国参加哈利·波特大会？",
+      "gold": "2023年10月13日的前一周。",
+      "answer": "2023年10月初（约10月6日那一周）",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "明确指出是2023年10月13日的前一周"
+        ],
+        "reason": "周次推断正确但用'约'进行了模糊限定，缺乏黄金答案的确切性。"
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_13",
+          "session_date": "1:50 pm on 13 October, 2023",
+          "index": 0,
+          "turn": {
+            "speaker": "蒂姆",
+            "dia_id": "D13:1",
+            "text": "嘿，约翰！好久没聊了。猜猜怎么着？上周我去英国参加了一场哈利·波特大会——太棒了！那里有那么多和我一样热爱哈利·波特的人，就像一个神奇的大家庭。我深受鼓舞，感觉焕发了新的活力。我喜欢这种对奇幻事物的热情让我和世界各地的人拉近距离的感觉，真的很酷。"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+          "content": "蒂姆（Tim）于2023年10月初（约10月6日那一周）去英国参加了一场哈利·波特大会，遇到很多同样热爱哈利·波特的人，感觉像神奇的大家庭，深受鼓舞、焕发新活力，认为对奇幻事物的热情拉近了他与世界各地的人的距离",
+          "metadata": {
+            "session_id": "session_13",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "1:50 pm on 13 October, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "9f77396c-7ff4-4d47-9c81-0497a1c097a9",
+          "content": "蒂姆（Tim）于2023年12月8日参加了一个哈利·波特主题派对，遇到很多兴趣相投的人，玩得很开心；他没有打扮成角色，但戴了格兰芬多围巾，并获得了巧克力蛙作为奖励",
+          "metadata": {
+            "session_date": "7:42 pm on 8 December, 2023",
+            "session_id": "session_22",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+          "content": "蒂姆（Tim）计划于2023年9月去环球影城玩，这是他第一次去，他对哈利·波特主题的东西超级兴奋，并表示回来后会告诉约翰体验如何",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_date": "2:52 pm on 31 August, 2023",
+            "session_id": "session_10",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "8432ae70-9aad-4815-ba60-7a521afd96ad",
+          "content": "蒂姆（Tim）希望参加一个下个月（2023年9月）的图书大会，那是一个由作者、出版商和书迷组成的聚会，大家会讨论最喜欢的小说和新书，他期待借此更深入地了解文学并与文学建立更紧密的联系",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_7",
+            "benchmark": "locomo",
+            "session_date": "7:54 pm on 17 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "03a3796a-febb-47c4-964d-0d7cb75ecdf1",
+          "content": "蒂姆几年前（约2021年）去过伦敦一个哈利·波特相关的景点并参加了游览，感觉就像走进哈利·波特电影一样，体验非常棒",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "session_date": "7:48 pm on 21 May, 2023",
+            "session_id": "session_1",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+          "content": "蒂姆（Tim）于2023年7月上旬在加利福尼亚州与一位《哈利·波特》粉丝聊得很开心，感到周围都是志同道合的人充满爱意，体验非常神奇",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "4:21 pm on 16 July, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_3",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+          "content": "约翰和新队友计划在2023年10月进行一次团队旅行，探索一座新城市，目的地尚未确定；蒂姆建议去苏格兰爱丁堡，称其为哈利·波特诞生地，有魔法氛围和出色的历史建筑",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_11",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "8:17 pm on 21 September, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "b2ba489b-9e17-4fed-a43d-9cefb701c278",
+          "content": "蒂姆于2023年8月参加了一场他热爱的粉丝活动，和其他同样热爱它的粉丝在一起让他感到特别",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_6",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "1:08 pm on 11 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+          "content": "蒂姆（Tim）正在做一个哈利·波特粉丝项目，并与一位哈利·波特粉丝朋友合作，于2023年5月中旬开始讨论构思创意",
+          "metadata": {
+            "session_date": "7:48 pm on 21 May, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "session_id": "session_1",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "c633c40a-bc46-4b1d-9386-63baf3287af7",
+          "content": "蒂姆（Tim）表示上个月（2023年7月）参加的那场活动是他最喜欢的经历之一，在那里感觉就像置身于一个人人都懂的世界，他很感激有人欣赏并分享他的兴趣",
+          "metadata": {
+            "session_id": "session_7",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "7:54 pm on 17 August, 2023",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+          "content": "蒂姆（Tim）于2023年11月10日前后去英国旅行时参观了一座城堡，被那里的建筑和历史震撼，此前他一直梦想参观英国城堡",
+          "metadata": {
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "3:59 pm on 16 November, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_18",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "cac74226-d275-465a-b177-a0b9e1351242",
+          "content": "蒂姆（Tim）于2023年8月上旬和在加州认识的哈利·波特粉丝视频通话，聊得很开心，讨论了角色并可能一起合作，他觉得和一个懂他的人聊天非常酷",
+          "metadata": {
+            "session_id": "session_5",
+            "benchmark": "locomo",
+            "session_date": "10:29 am on 9 August, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "31d881b7-59ee-4aa9-a2a7-3e103a828ad1",
+          "content": "蒂姆上周（2023年11月中旬）写故事时遇到挫折——他试着根据英国城堡之旅的经历写一个故事，但结果不如意，感到难受，并接受约翰的建议，尝试反思哪里出了问题以及如何改进来重回正轨",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_19",
+            "session_date": "10:22 am on 21 November, 2023",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "3a97d245-26c9-4941-8f4a-7c62765cd967",
+          "content": "蒂姆（Tim）于2024年1月上旬正在研究他想去的国家的签证要求，虽然过程让人头大但很兴奋，并为主动出击推进旅行梦想感到自豪",
+          "metadata": {
+            "session_date": "1:41 pm on 12 January, 2024",
+            "session_id": "session_29",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "f358ed03-4b9c-4275-a94b-5c49f0044eff",
+          "content": "蒂姆（Tim）于2024年1月初（周五，约1月5日）被其申请的留学项目录取，将于2024年2月（下个月）前往爱尔兰待一个学期",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "session_date": "5:24 pm on 7 January, 2024",
+            "session_id": "session_28",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "0a3693bd-6407-4584-9b63-a4fda5a49d81",
+          "content": "约翰（John）的篮球队在2023年秋季赛季经历了激烈比赛，既有惨痛失利也有精彩胜利，面对强队互相支持、绝不放弃，最终赢得了一个奖杯，他觉得辛勤付出得到了回报",
+          "score": 0.5250916527745715,
+          "metadata": {
+            "session_date": "1:50 pm on 13 October, 2023",
+            "session_id": "session_13",
+            "case_id": "locomo_conv-43_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "content": "约翰（John）在2023年10月表示由于打了很多场比赛，需要买一双新鞋，并对蒂姆推荐的网络购买记忆棉运动鞋表示感兴趣",
+          "score": 0.4923093102863826,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "1:50 pm on 13 October, 2023",
+            "session_id": "session_13",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        },
+        {
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "content": "蒂姆（Tim）最近在网上买了一双黑粉色的记忆棉（memory foam）运动鞋，感觉像走在云上一样舒服，称其为改变游戏规则的存在，并强烈推荐给约翰",
+          "score": 0.49807635809783296,
+          "metadata": {
+            "session_date": "1:50 pm on 13 October, 2023",
+            "session_id": "session_13",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-43_qa0",
+            "user_id": "zhfull:locomo:conv-43"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa49",
+      "stratum": {
+        "conversation": "conv-44",
+        "category": "multi-hop"
+      },
+      "question": "奥黛丽把她的宠物视为什么？",
+      "gold": "家人",
+      "answer": "奥黛丽把她的狗狗们视为她的全世界（她的一切）——一个给她无条件的爱、陪伴与欢乐的小家庭，也是她在忙碌城市生活与艰难时刻中忠实的伙伴和心灵的避风港。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "家人"
+        ],
+        "reason": "The answer describes her pets as her 'whole world' and 'little family', which is close but less precise and enumerated with alternatives rather than stating '家人' directly."
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_15",
+          "session_date": "9:58 pm on 16 August, 2023",
+          "index": 14,
+          "turn": {
+            "speaker": "奥黛丽",
+            "img_url": [
+              "https://i2.pickpik.com/photos/498/107/776/dog-girl-de-dogue-preview.jpg"
+            ],
+            "blip_caption": "a photography of a woman sitting in a field with two dogs",
+            "query": "person lying grass dogs",
+            "dia_id": "D15:15",
+            "re-download": true,
+            "text": "对，宠物就是家人。看到它们之间的感情真的很温馨。这是我躺在草地上和它们在一起的照片。"
+          }
+        },
+        {
+          "session_id": "session_23",
+          "session_date": "4:22 pm on 13 October, 2023",
+          "index": 17,
+          "turn": {
+            "speaker": "奥黛丽",
+            "img_url": [
+              "https://i.pinimg.com/originals/55/47/8f/55478f3a1f3c22e60a729cd3806d2830.jpg"
+            ],
+            "blip_caption": "a photo of a tattoo of a flower on a wrist",
+            "query": "tattoo arm four dogs",
+            "dia_id": "D23:18",
+            "text": "我觉得这话我说过很多次了，但我真的无法想象没有它们的生活——我的小家庭。它们总是让我微笑，给我满满的爱和陪伴。还记得我有一个四只狗狗的纹身吗？所以我去了纹身店，在那个纹身上又加了一些图案。"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": false,
+          "id": "e87450bf-1132-4cf8-ad6b-559185e3b816",
+          "content": "奥黛丽认为大自然是忙碌城市生活的避风港，在艰难的时刻她的宠物一直是她忠实的伙伴，让她无比快乐，对她来说它们就是全世界",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "11:05 am on 4 August, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_14",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": true,
+          "id": "e72fa9a4-b106-460e-840a-467c56c59805",
+          "content": "奥黛丽把她的狗狗们称为自己的小家庭，说无法想象没有它们的生活，它们给她无条件的爱、陪伴，总让她微笑",
+          "metadata": {
+            "session_date": "4:22 pm on 13 October, 2023",
+            "session_id": "session_23",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "edb0aa0a-5dba-4c82-a640-24b69f9b2b10",
+          "content": "奥黛丽表示狗狗们对她来说就是一切，虽然照顾它们很有挑战，但她一定会让它们健康快乐，给它们最好的",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_26",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "2:36 pm on 28 October, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "76c52e74-45b1-4c7d-a03a-2db7b237d721",
+          "content": "奥黛丽说她狗狗们是她的全世界，给她的狗狗们满满的爱和幸福；有它们在身边，大自然让她感到平静、治愈",
+          "metadata": {
+            "session_id": "session_10",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "8:32 pm on 3 July, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "919eba7b-ef5a-4545-8c1a-2cab4d7034ed",
+          "content": "奥黛丽说自己无法想象没有狗狗的生活，它们就是她的一切，给她带来满满的爱与幸福",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "5:53 pm on 24 September, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_19",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "45ce64aa-5885-40e0-8d97-c0f4aa1779a6",
+          "content": "奥黛丽强烈认为正向强化是对待宠物的正确方式，惩罚从来都不是对待宠物的正确方式，她不想伤害她的任何一只狗；她认为这类训练是每个狗主人的必修课",
+          "metadata": {
+            "session_date": "2:03 pm on 11 May, 2023",
+            "session_id": "session_6",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "c24e0872-d014-4f91-8eba-dc4626cf991d",
+          "content": "奥黛丽表示她和狗狗们之间有很深的感情，它们对她来说就是全世界，她觉得自己能有它们非常幸运，希望它们尽可能快乐；她还建议安德鲁培养和托比的感情需要时间，别着急",
+          "metadata": {
+            "session_id": "session_17",
+            "session_date": "12:24 am on 24 August, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "58aeafed-30f6-458f-915c-988e67187ca1",
+          "content": "对奥黛丽来说，带她的狗狗们去公园散步能帮她找回内心的平静并重新充满能量；她说无法想象没有狗狗们的生活，它们是她的全世界",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "ef7f7abd-b850-4926-bc5a-400c48eff409",
+          "content": "奥黛丽表示她的狗狗们生活得很好，到处探索、认识新朋友，感受到被爱和安全感；她非常感激狗狗们成为她生活和家庭的一部分，带来很多欢乐和陪伴",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_28",
+            "session_date": "9:02 am on 22 November, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "39c4c495-fc94-40e9-8fbb-a4e1248f5f0d",
+          "content": "奥黛丽 (Audrey) 养了三只狗——佩珀 (Pepper)、普雷舍斯 (Precious) 和潘达 (Panda)——已经养了三年，她说没有它们活不下去",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_1",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "1:10 pm on 27 March, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "7e620293-8a3e-4077-8c94-42424bd641fa",
+          "content": "截至2023年5月初，奥黛丽忙着照顾和陪伴她的狗狗们（佩珀、普雷舍斯、潘达和皮克西），她觉得真的很有满足感，并表示自上次聊天以来没有其他新变化",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_4",
+            "benchmark": "locomo",
+            "session_date": "5:41 pm on 3 May, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "5e40b8ce-8063-4bcf-903e-c029d5d02c96",
+          "content": "奥黛丽 (Audrey) 有四只狗狗，照顾它们、确保它们开心健康占去了她大部分空闲时间",
+          "metadata": {
+            "session_id": "session_6",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "2:03 pm on 11 May, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "440eadbb-d76c-4184-8951-556b7fecb11e",
+          "content": "奥黛丽的狗狗们喜欢在她的花园里跑来跑去、探索玩耍，她觉得非常可爱；它们只和自家的毛孩子们一起玩",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_19",
+            "session_date": "5:53 pm on 24 September, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": true,
+          "id": "e8057023-5a1f-43aa-85eb-2d272e56d2e7",
+          "content": "奥黛丽的狗狗们总是依偎在她最喜欢的毯子上一起睡觉，尤其在午睡时间，它们是最好的朋友，总是互相陪伴，看到它们在一起让她特别开心",
+          "metadata": {
+            "session_date": "9:58 pm on 16 August, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_15",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "0eb282c3-348e-45d3-8218-ab6e49aa4b91",
+          "content": "奥黛丽亲手为她的狗狗们制作了个性化木制名牌，每一款都与众不同、符合狗狗们的个性，她希望宠物们能感受到被关注和被爱",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_12",
+            "session_date": "10:05 am on 11 July, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "afbdbe1a-f8f1-428e-bb32-03911d2d3e9f",
+          "content": "奥黛丽在2023年8月带全部四只狗一起去兽医那里做检查，场面很混乱，她决定下次要一只一只地带去",
+          "score": 0.5863369214859642,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "9:58 pm on 16 August, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "2dbc19f2-7e61-41c1-a71f-71a4b0d7fb4a",
+          "content": "截至2023年8月16日，奥黛丽又在手臂上添加了新的纹身，图案是她全部四只狗狗；因为狗狗们对她非常重要，她想无论走到哪里都能带着它们",
+          "score": 0.4840664357842508,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "9:58 pm on 16 August, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "c5205bee-41f2-4de0-bac8-87ee0a0af785",
+          "content": "奥黛丽和狗狗们在2023年8月的一个天气特别好的一天在户外草地上尽情玩耍，她说会永远珍惜那些时刻，狗狗们真的让生活变得明亮多了",
+          "score": 0.5338322534004839,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_date": "9:58 pm on 16 August, 2023",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "95f378f6-6de8-44b0-ae1e-f0c96410945e",
+          "content": "奥黛丽原本有一个四只狗狗的纹身，2023年10月在那个纹身上又加了一些图案（花和向日葵元素），并觉得现在够了，除非以后再养一只狗可能才会再纹",
+          "score": 0.5161381464095589,
+          "metadata": {
+            "session_id": "session_23",
+            "session_date": "4:22 pm on 13 October, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "e35886c3-7f88-4825-9811-f581cc2fe302",
+          "content": "安德鲁（对话对方）在2023年8月中旬和女朋友托比去了一个农场买新鲜蔬菜做晚饭，感觉特别好",
+          "score": 0.53997341782777,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "9:58 pm on 16 August, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "45a00619-eddf-4a40-bfe9-e31a61a57d9a",
+          "content": "2023年10月中旬，安德鲁计划周末去一家前几天刚开张的新咖啡馆，那里视野和氛围都很棒；他还推荐了一家附近新开的可以俯瞰城市景观的屋顶酒吧",
+          "score": 0.5581314331537514,
+          "metadata": {
+            "session_date": "4:22 pm on 13 October, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_23",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "db80a1f0-5897-43e7-9bd5-323c68c74347",
+          "content": "2023年10月初，安德鲁、他的女朋友和小狗托比在周五晚上一起玩桌游，度过了非常愉快的夜晚",
+          "score": 0.5379896550317627,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_23",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:22 pm on 13 October, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "31de2bdb-da32-4ee7-95c9-a82cd9d7ef36",
+          "content": "2023年10月，奥黛丽做了一些自制狗狗零食送给对她家狗狗很友好的邻居们，觉得这是给周围带来快乐的好方式",
+          "score": 0.5033218454108721,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_23",
+            "session_date": "4:22 pm on 13 October, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "92291bd1-360e-46d3-952b-8d6c66b1e988",
+          "content": "奥黛丽起初把做回收首饰当爱好，后来开始出售，并把一部分利润捐给她关心的一家动物收容所，把做首饰和改变世界两个热爱结合起来",
+          "score": 0.5621348532658285,
+          "metadata": {
+            "session_date": "4:22 pm on 13 October, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_23",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "863a2a93-df91-47c5-b7c3-e0fc56f9fa4f",
+          "content": "安德鲁住在城市里，很想念大自然，只要有机会就会去附近的公园或远足，觉得那是平和快乐的体验",
+          "score": 0.5224233730272831,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "4:22 pm on 13 October, 2023",
+            "session_id": "session_23",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "950664a8-b2aa-4d98-9cbf-94b3b56b433d",
+          "content": "奥黛丽想再养几只狗，但现在四只已经够了——它们让她很忙，她想确保给每一只应有的关注",
+          "score": 0.574887712103833,
+          "metadata": {
+            "session_date": "9:58 pm on 16 August, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "71294984-190f-4ecb-acdb-e55a9402b5b6",
+          "content": "2023年10月初，奥黛丽因膝盖受伤有一段时间不能遛狗，那段时间挺难熬，因为狗狗们给她带来很多快乐；重新开始遛狗后感觉真好",
+          "score": 0.5408704630145533,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:22 pm on 13 October, 2023",
+            "session_id": "session_23",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "986645e9-4556-4cee-a2c0-f036e3a48638",
+          "content": "奥黛丽的四只狗都有自己最爱放松的地方：Pepper喜欢窝在沙发上，Pixie总是蜷在自己的窝里，Precious有她的椅子，Panda喜欢在他的地毯上放松",
+          "score": 0.4790682671915248,
+          "metadata": {
+            "session_date": "9:58 pm on 16 August, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_15",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "9a453ea8-a00e-415a-808c-cb4b25894e82",
+          "content": "奥黛丽的狗狗们对捡球游戏和飞盘特别疯狂，喜欢跑来跑去和结识其他狗狗，可以连续跑好几个小时",
+          "score": 0.5498868120243166,
+          "metadata": {
+            "session_date": "4:22 pm on 13 October, 2023",
+            "session_id": "session_23",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "987421f4-89ba-4a49-958d-4185ac1732d4",
+          "content": "奥黛丽喜欢用回收材料（瓶盖、纽扣、坏掉的首饰等）做首饰，认为这是展现创造力和可持续发展热爱的好方式，每件作品都有特别的故事",
+          "score": 0.5920788026024735,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:22 pm on 13 October, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_23",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "4e57ba42-0b85-4d3b-83cc-ed3ab2d29279",
+          "content": "安德鲁的狗狗托比是德国牧羊犬，非常好动，喜欢穿可爱的毛衣",
+          "score": 0.5361525190950545,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_23",
+            "session_date": "4:22 pm on 13 October, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "5ff97380-a9a1-486d-8726-9625e084b383",
+          "content": "奥黛丽的狗狗们讨厌雪——去年冬天（2022-2023年冬）她带它们去下雪的公园时它们完全懵了，它们更喜欢阳光明媚的日子在草地上玩",
+          "score": 0.5392245711738183,
+          "metadata": {
+            "session_date": "4:22 pm on 13 October, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_23",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "12d60f46-81f2-4e27-89cd-ee2c8a3e8d26",
+          "content": "托比在狗狗公园有一次追着松鼠跑，绕着树跑来跑去，而松鼠在树枝上看着，非常搞笑",
+          "score": 0.48434405497195276,
+          "metadata": {
+            "session_date": "4:22 pm on 13 October, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_23",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "c1f1521d-436f-431b-81d9-9d1128f2b8c3",
+          "content": "截至2023年10月中旬，奥黛丽最近生活很忙，好久没带狗狗们出去散步了，计划带它们去远足，认为那会是很好的治愈方式",
+          "score": 0.5490710062037647,
+          "metadata": {
+            "session_date": "4:22 pm on 13 October, 2023",
+            "session_id": "session_23",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa53",
+      "stratum": {
+        "conversation": "conv-44",
+        "category": "open-domain"
+      },
+      "question": "凭借对动物和自然的热爱，安德鲁可能从事什么职业？",
+      "gold": "公园管理员或国家公园管理局的类似职位。",
+      "answer": "** 凭借对自然和动物的热爱，安德鲁可能从事公园护林员、自然向导或野生动物保护工作者（如生态导览员）这类结合户外与动物的职业。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "enumerates additional alternatives (nature guide, wildlife conservation worker) instead of the gold's specific conclusion of park ranger/NPS-type position"
+        ],
+        "reason": "Contains the correct park ranger option but mixes it with other alternatives, making it less exact than the gold's specific conclusion."
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_2",
+          "session_date": "2:42 pm on 2 April, 2023",
+          "index": 17,
+          "turn": {
+            "speaker": "安德鲁",
+            "img_url": [
+              "https://www.kingdukes.com/cdn/shop/articles/man_walking_dog_on_portland_trail_1200x.jpg"
+            ],
+            "blip_caption": "a photo of a man walking a dog on a trail",
+            "query": "dog hiking trail",
+            "dia_id": "D2:18",
+            "text": "这张照片太可爱了！和狗狗一起依偎着玩肯定很有意思。这让我想起了我以前远足的照片，好怀念和我家狗狗一起探索自然小径的日子。啊，大自然中那些宁静的时光！"
+          }
+        },
+        {
+          "session_id": "session_3",
+          "session_date": "4:19 pm on 16 April, 2023",
+          "index": 0,
+          "turn": {
+            "speaker": "安德鲁",
+            "dia_id": "D3:1",
+            "text": "嘿，奥黛丽！最近怎么样？很想和你聊天！你看，上个周末我和我女朋友去尝试了城里那家新开的咖啡馆！超级好玩，但没能到大自然里去还是有点遗憾——只有在那种时候我才觉得自己真正充满活力。唉，真怀念远足时那份宁静。"
+          }
+        },
+        {
+          "session_id": "session_5",
+          "session_date": "10:47 am on 6 May, 2023",
+          "index": 6,
+          "turn": {
+            "speaker": "安德鲁",
+            "dia_id": "D5:7",
+            "text": "我想找个靠近公园或树林的地方，这样既能亲近自然，也能给狗一片开阔的场地奔跑。"
+          }
+        },
+        {
+          "session_id": "session_8",
+          "session_date": "5:23 pm on 13 June, 2023",
+          "index": 26,
+          "turn": {
+            "speaker": "安德鲁",
+            "dia_id": "D8:27",
+            "text": "同意！大自然很适合放松心情、带来不同的视角。每当我需要重新调整状态时，我就会投向大自然的怀抱。"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": false,
+          "id": "1d0bf48d-b1d8-48e3-ba98-9579e36b49d5",
+          "content": "安德鲁对观鸟很了解，喜欢在大自然中观察鸟类，读过关于生态系统的书，学到了很多动物、植物和生态系统如何协同运作的知识；他和奥黛丽计划一起安排一次观鸟出行，他会带双筒望远镜和笔记本记录看到的鸟",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_20",
+            "session_date": "7:09 pm on 1 October, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "ff90c577-a7d8-4de7-99ff-8d5d0ae2af64",
+          "content": "安德鲁和他的女朋友于2023年7月24日（星期一）在一家宠物收容所做志愿者，觉得体验非常有意义，很喜欢和动物们在一起",
+          "metadata": {
+            "session_id": "session_13",
+            "session_date": "3:52 pm on 27 July, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": true,
+          "id": "eede77c3-366d-4b5f-8f1c-8adb98dd92f7",
+          "content": "安德鲁以前养过狗，怀念和它一起远足、探索自然小径的日子，并分享了它的照片（趴在沙发上、走在小径上）",
+          "metadata": {
+            "session_date": "2:42 pm on 2 April, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_2",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "8a7db361-28c4-4463-b3a6-b62ed80cbd22",
+          "content": "安德鲁在2023年8月中旬的周末和女朋友去附近一个湖钓鱼，钓到了几条鱼，玩得很开心。他养了一只小狗托比，分享了一张托比戴着牵引绳坐在地板上的照片，说很爱托比，并计划带托比一起户外探险",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "12:24 am on 24 August, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_17",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": true,
+          "id": "105c7a81-5322-44ce-a762-bbac8c8fd363",
+          "content": "安德鲁正在联系房东、考察各个街区寻找允许养宠物的地方，希望住在靠近公园或树林的区域，既能亲近自然也能给狗一片开阔的场地奔跑",
+          "metadata": {
+            "session_id": "session_5",
+            "benchmark": "locomo",
+            "session_date": "10:47 am on 6 May, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": true,
+          "id": "83602e08-86d1-4223-a43d-b4135ea3ffcb",
+          "content": "安德鲁对攀岩完全上瘾了，这次登顶经历鼓励他去尝试更多户外活动，比如皮划艇，也许还有蹦极；他说大自然总能把他推出舒适区",
+          "metadata": {
+            "session_id": "session_8",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "5:23 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "86dfd427-d087-4ce0-b0d6-ec9756df5218",
+          "content": "安德鲁表示可能会去了解并报名奥黛丽推荐的宠物正向强化训练课程，差点被她说服",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_6",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "2:03 pm on 11 May, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "d91335f2-6bfb-4cf3-8d72-740ff566b305",
+          "content": "安德鲁目前没有养宠物，但喜欢动物，一直对鸟类着迷，尤其是鹰，他欣赏它们的力量与优雅",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "1:10 pm on 27 March, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_1",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "72027e82-5868-4108-a0db-af3232570bec",
+          "content": "安德鲁和巴迪喜欢一起散步和探索新的徒步小径，巴迪对大自然的一切都很兴奋；安德鲁计划很快带托比和巴迪两只狗一起去小径",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "6:12 pm on 19 October, 2023",
+            "session_id": "session_24",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "9208c459-dbb9-4242-bcb3-11e4d46b0e8f",
+          "content": "安德鲁的小狗托比是德国牧羊犬，安德鲁说他聪明又忠诚，并计划带托比去当地小径短途徒步",
+          "metadata": {
+            "session_id": "session_14",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "11:05 am on 4 August, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": true,
+          "id": "7e840d06-679a-46a3-96b5-b749175e5973",
+          "content": "安德鲁觉得大自然像他灵魂的家园，能在其中感到一种联结；当生活变得混乱时，大自然有一种抚慰人心、像重置键一样的力量",
+          "metadata": {
+            "session_date": "4:19 pm on 16 April, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "218524ad-9a61-42ae-8436-4e4933ed83c7",
+          "content": "安德鲁通常每个周末至少逃离城市一次去远足，把这当作他急需的放松方式；大自然对他来说就是治愈，他喜欢被绿色环绕或站在山顶呼吸新鲜空气的宁静与振奋感",
+          "metadata": {
+            "session_date": "5:41 pm on 3 May, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_4",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": true,
+          "id": "186ace2d-6be3-4586-8e1e-9ac2fadc9641",
+          "content": "安德鲁把带狗去公路旅行加进了自己的愿望清单，期待将来能和自己领养的狗一起旅行",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "10:47 am on 6 May, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_5",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": true,
+          "id": "d97168ff-7123-45cc-8ef8-c0e83a2e9df2",
+          "content": "截至2023年5月初，安德鲁正在积极寻找想领养的狗狗——浏览网站、参观收容所、询问朋友，过程既有趣又烦人，并表示有进展会告诉奥黛丽",
+          "metadata": {
+            "session_date": "10:47 am on 6 May, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_5",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "4458d928-aace-4e7c-bd1b-8b8d60d5061a",
+          "content": "安德鲁最喜欢的户外活动是徒步，置身于大自然、树木和新鲜空气中让他焕然一新；他喜欢有挑战性的路线，登上山顶时感觉所有烦恼都烟消云散",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_date": "11:05 am on 4 August, 2023",
+            "session_id": "session_14",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "0a91150b-2e44-44b7-8776-af970675299c",
+          "content": "2023年4月初，奥黛丽 (Audrey) 领养了一只名叫Pixie的小狗，她是一只白色的小狗，非常可爱，让全家忙个不停",
+          "score": 0.5631086391977103,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_date": "2:42 pm on 2 April, 2023",
+            "session_id": "session_2",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "7cba641f-5c9d-40bc-95e0-de03fd9b04da",
+          "content": "安德鲁 (Andrew) 正考虑养狗，2023年4月时正在城里寻找允许养狗的公寓；奥黛丽建议他使用带筛选功能的宠物友好住房网站，他自己也找到了一个对狗狗友好的地方",
+          "score": 0.5649641474468408,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "2:42 pm on 2 April, 2023",
+            "session_id": "session_2",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "e2f6dd2a-844f-48f4-8a6f-d8d220014553",
+          "content": "2023年4月9日左右的周末，安德鲁 (Andrew) 和女朋友去了城里新开的一家咖啡馆，玩得很开心，但他因没能到大自然中而感到遗憾——只有置身大自然时他才觉得真正充满活力，并怀念远足时的宁静",
+          "score": 0.5254431703900033,
+          "metadata": {
+            "session_date": "4:19 pm on 16 April, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "98bd13a7-5d1c-4519-910c-4756aedadaee",
+          "content": "2023年4月初，奥黛丽 (Audrey) 用蓝莓做了几样她最爱的点心（蓝莓玛芬），并与安德鲁约定找时间办一个糕点派对，她的狗狗们也会参加",
+          "score": 0.4796255943927438,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_3",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "c282c52a-f301-41f9-bcf1-890cc4b8d07f",
+          "content": "安德鲁和他女朋友喜欢在城里发掘新的吃饭地方，作为尝试新东西、在漫长一周后放松的方式",
+          "score": 0.6128926670968586,
+          "metadata": {
+            "session_date": "4:19 pm on 16 April, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_3",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "2e0ce82e-b3b5-4a16-9742-6e9127ab8d2d",
+          "content": "安德鲁和女朋友找到一家超棒的咖啡馆，糕点非常好吃；他们吃了美味的可颂、玛芬和挞，并拍下了糕点展示柜的照片",
+          "score": 0.4933611621871371,
+          "metadata": {
+            "session_id": "session_3",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "7a390caf-5862-4688-9e94-5aaa86e25915",
+          "content": "2023年6月上旬（对话前一周），奥黛丽找到了一个遛狗的好地方——一个小公园，有一条被树木环绕的小径，景色很美，她的狗也很喜欢。她邀请安德鲁一起和狗狗们去那里散步，安德鲁很乐意",
+          "score": 0.5499297100740502,
+          "metadata": {
+            "session_id": "session_8",
+            "session_date": "5:23 pm on 13 June, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "50fc5445-084f-4945-8b9a-3ec8d8869404",
+          "content": "奥黛丽和她的狗狗们因为忙于照顾小狗Pixie，还没来得及去之前讨论的福克斯霍洛 (Foxhollow) 远足地点（截至2023年4月初）",
+          "score": 0.5226478656665552,
+          "metadata": {
+            "session_date": "2:42 pm on 2 April, 2023",
+            "session_id": "session_2",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "49569387-e5c4-4db4-9fc5-646b885da652",
+          "content": "Pixie花了几天时间才适应奥黛丽的其他狗狗（佩珀、普雷舍斯和潘达），但现在它们已经是很棒的朋友，喜欢一起玩耍、在家里四处探索",
+          "score": 0.5423509299273647,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_2",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "2:42 pm on 2 April, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "e6d2211b-48c3-4a08-9512-baf0a072042f",
+          "content": "2023年4月28日（对话前一周的周五），奥黛丽带她的狗狗们公路旅行去了一个美丽的国家公园，狗狗们在草地花田里奔跑玩得非常开心",
+          "score": 0.5851024925805551,
+          "metadata": {
+            "session_date": "10:47 am on 6 May, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_5",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "3946df25-f149-4f77-8ac6-14584307c812",
+          "content": "奥黛丽每隔一两个月就带狗狗们去一次公路旅行，认为这是让它们探索和保持活力的好方式",
+          "score": 0.5866437993804041,
+          "metadata": {
+            "session_date": "10:47 am on 6 May, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_5",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "a4731df9-da35-4ccb-bf15-18efa0cc1938",
+          "content": "佩珀 (Pepper) 花了一些时间才习惯新小狗Pixie，但现在它们总是形影不离",
+          "score": 0.519883337164933,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_2",
+            "session_date": "2:42 pm on 2 April, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "dc2493e1-45ab-42a7-97bc-80d9202c497e",
+          "content": "2023年6月11日（对话当周周日），安德鲁和朋友们去上了一堂攀岩课并成功登顶。作为新手他觉得攀爬过程很难，但在朋友们的支持加油下完成了，登顶让他特别有成就感、非常骄傲，山顶风景美极了",
+          "score": 0.46754936501945304,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "session_date": "5:23 pm on 13 June, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "cd4a93f5-80f6-4e9d-98ca-f7b3a6f20ede",
+          "content": "奥黛丽通常每天遛狗大约一个小时，时间每天不一样，让狗狗们按自己的节奏探索。狗狗们总是带着微笑和疲惫回家，散步是它们一天中最喜欢的时光——她一准备出门，它们的脸就亮起来",
+          "score": 0.5724501252809241,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "5:23 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "f569b5ad-f114-4bcd-ae49-2b9d30396500",
+          "content": "安德鲁住在城市里，觉得城市生活让他难以亲近大自然，有时感觉自己错过了很多东西，并怀念那种联结与陪伴",
+          "score": 0.5118958336969271,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "session_id": "session_3",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "991ee02e-9c9f-47b4-83dc-3a57ecce3f24",
+          "content": "安德鲁住公寓，认为小型犬最适合他的居住空间；他还建议想养狗的人要考虑居住空间大小和犬种的运动需求是否匹配",
+          "score": 0.423382655923917,
+          "metadata": {
+            "session_date": "10:47 am on 6 May, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_5",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "9cc73ff8-b933-4078-97ed-325342aa5917",
+          "content": "奥黛丽的手臂上有一个狗狗和向日葵图案的纹身，代表她对她家狗狗们的爱和大自然之美；她是因为与狗狗们感情深厚、它们让她特别开心而决定纹的，想在狗狗不在身边时也能看到它们开心的样子",
+          "score": 0.5304598003154578,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "58aeafed-30f6-458f-915c-988e67187ca1",
+          "content": "对奥黛丽来说，带她的狗狗们去公园散步能帮她找回内心的平静并重新充满能量；她说无法想象没有狗狗们的生活，它们是她的全世界",
+          "score": 0.5700990193213404,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "2c843d1c-29a0-4f24-ba1f-cc7f54cf7209",
+          "content": "奥黛丽说狗和大自然给她带来了太多的快乐与平静，大自然能让人以不同的方式思考、感到充满活力和内心安定，我们要珍惜大自然给予的一切",
+          "score": 0.5032196102250317,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "5:23 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "599f97f4-9626-4840-b85e-e6add57cbabd",
+          "content": "奥黛丽在公园散步时拍了狗狗们玩耍的照片：一张是两只狗叼着球在田野里奔跑，另一张是两只狗在草地上玩飞盘。她说狗狗们让她太开心了，和它们在户外会让她进入既宁静又令人振奋的幸福状态",
+          "score": 0.5511424503391796,
+          "metadata": {
+            "session_date": "5:23 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa75",
+      "stratum": {
+        "conversation": "conv-44",
+        "category": "single-hop"
+      },
+      "question": "攀岩课之后，安德鲁计划尝试什么户外活动？",
+      "gold": "皮划艇和蹦极",
+      "answer": "皮划艇，也许还有蹦极（他在6月攀岩登顶后计划尝试更多户外活动）。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "蹦极（答案中对蹦极使用了“也许”这一限定词，但金标答案是明确的）"
+        ],
+        "reason": "皮划艇是正确的，但蹦极被含糊地表述为“也许还有”，而金标答案是明确的。"
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_8",
+          "session_date": "5:23 pm on 13 June, 2023",
+          "index": 6,
+          "turn": {
+            "speaker": "安德鲁",
+            "dia_id": "D8:7",
+            "text": "是啊，攀岩太棒了——登顶的时候特别有成就感。这确实鼓励我去尝试更多户外活动，比如皮划艇，也许还有蹦极？大自然总能把我推出舒适区！"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "83602e08-86d1-4223-a43d-b4135ea3ffcb",
+          "content": "安德鲁对攀岩完全上瘾了，这次登顶经历鼓励他去尝试更多户外活动，比如皮划艇，也许还有蹦极；他说大自然总能把他推出舒适区",
+          "metadata": {
+            "session_date": "5:23 pm on 13 June, 2023",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "30203d0b-4197-42d2-865d-02cb4fff8348",
+          "content": "安德鲁计划带斯考特、托比和巴迪去附近一个不大的公园玩，作为斯考特的第一次户外冒险；斯考特目前还在适应户外环境，外出时会一直牵着绳",
+          "metadata": {
+            "session_date": "9:02 am on 22 November, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_28",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "abc444b8-3052-464c-8622-f57204e1b75d",
+          "content": "安德鲁计划在2023年8月去远足，并邀请奥黛丽带着她的狗狗们一起参加，托比也将和奥黛丽的狗狗们第一次见面",
+          "metadata": {
+            "session_date": "10:05 am on 11 July, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_12",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "4458d928-aace-4e7c-bd1b-8b8d60d5061a",
+          "content": "安德鲁最喜欢的户外活动是徒步，置身于大自然、树木和新鲜空气中让他焕然一新；他喜欢有挑战性的路线，登上山顶时感觉所有烦恼都烟消云散",
+          "metadata": {
+            "session_id": "session_14",
+            "session_date": "11:05 am on 4 August, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "72027e82-5868-4108-a0db-af3232570bec",
+          "content": "安德鲁和巴迪喜欢一起散步和探索新的徒步小径，巴迪对大自然的一切都很兴奋；安德鲁计划很快带托比和巴迪两只狗一起去小径",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_24",
+            "session_date": "6:12 pm on 19 October, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "f282b741-7fa1-4364-9449-804255409c61",
+          "content": "安德鲁答应带奥黛丽看看河边最好的骑行路线，这一带有多条路线，两人都很期待这次出行",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_20",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "7:09 pm on 1 October, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "0d138bc0-4560-4030-a802-424747219804",
+          "content": "安德鲁考虑过带小狗托比一起去徒步，但到2023年9月为止托比还太小，带去徒步有点困难",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_18",
+            "benchmark": "locomo",
+            "session_date": "7:49 pm on 6 September, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "218524ad-9a61-42ae-8436-4e4933ed83c7",
+          "content": "安德鲁通常每个周末至少逃离城市一次去远足，把这当作他急需的放松方式；大自然对他来说就是治愈，他喜欢被绿色环绕或站在山顶呼吸新鲜空气的宁静与振奋感",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "5:41 pm on 3 May, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_4",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "80960341-3671-412a-a610-f8e0b9185223",
+          "content": "安德鲁和他的女朋友计划在2023年8月4日那个周末去露营，好几个月没有亲近大自然了",
+          "metadata": {
+            "session_date": "11:05 am on 4 August, 2023",
+            "session_id": "session_14",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "827d7a83-e657-416f-a6f3-5d7600296bfa",
+          "content": "安德鲁分享了一张乡间小路上的照片（红卡车行驶在田野间的路上），说那里离城市不远、是逃离城市的好去处；两人约定为徒步找一个同样棒的地方，奥黛丽负责调查寻找最佳徒步地点",
+          "metadata": {
+            "session_id": "session_24",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_date": "6:12 pm on 19 October, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "48e9401b-91fa-41ad-ac69-9d10bc1e2e95",
+          "content": "安德鲁提议下次出游去另一条秋色步道（附近一条有彩色秋叶的步道），奥黛丽觉得秋色拍照一定很好看，非常期待带狗狗们去那里",
+          "metadata": {
+            "session_date": "2:36 pm on 28 October, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_26",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "22e1df09-0220-41b2-8296-92ad01dcc4fa",
+          "content": "安德鲁好一阵子没去海滩了，很想念户外活动；他以前经常徒步，但要在工作和生活之间取得平衡变得很难，他心里有种空虚感——探索大自然曾是他的解脱方式和寻找平静的途径",
+          "metadata": {
+            "session_id": "session_21",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:18 pm on 4 October, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "d6c61b5c-4668-4ff6-9fc3-3c987acf5dfd",
+          "content": "2023年5月初，安德鲁在附近找到了一处新的开阔地带可以远足，这让他感到非常清爽，缓解了之前因无法多出门而低落的情绪；他分享了一张日落时分湖光山色的照片",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_4",
+            "session_date": "5:41 pm on 3 May, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "8a7db361-28c4-4463-b3a6-b62ed80cbd22",
+          "content": "安德鲁在2023年8月中旬的周末和女朋友去附近一个湖钓鱼，钓到了几条鱼，玩得很开心。他养了一只小狗托比，分享了一张托比戴着牵引绳坐在地板上的照片，说很爱托比，并计划带托比一起户外探险",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_17",
+            "session_date": "12:24 am on 24 August, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "c619a4ca-ab8d-4b29-b8ea-e43d6d8499e2",
+          "content": "安德鲁在2023年9月初的上周末出去徒步了，远离城市让他感到放松，并分享了一张山顶日落和城市景观的照片",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_18",
+            "session_date": "7:49 pm on 6 September, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "7a390caf-5862-4688-9e94-5aaa86e25915",
+          "content": "2023年6月上旬（对话前一周），奥黛丽找到了一个遛狗的好地方——一个小公园，有一条被树木环绕的小径，景色很美，她的狗也很喜欢。她邀请安德鲁一起和狗狗们去那里散步，安德鲁很乐意",
+          "score": 0.5499297100740502,
+          "metadata": {
+            "session_id": "session_8",
+            "session_date": "5:23 pm on 13 June, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "dc2493e1-45ab-42a7-97bc-80d9202c497e",
+          "content": "2023年6月11日（对话当周周日），安德鲁和朋友们去上了一堂攀岩课并成功登顶。作为新手他觉得攀爬过程很难，但在朋友们的支持加油下完成了，登顶让他特别有成就感、非常骄傲，山顶风景美极了",
+          "score": 0.46754936501945304,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "session_date": "5:23 pm on 13 June, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "cd4a93f5-80f6-4e9d-98ca-f7b3a6f20ede",
+          "content": "奥黛丽通常每天遛狗大约一个小时，时间每天不一样，让狗狗们按自己的节奏探索。狗狗们总是带着微笑和疲惫回家，散步是它们一天中最喜欢的时光——她一准备出门，它们的脸就亮起来",
+          "score": 0.5724501252809241,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "5:23 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "2c843d1c-29a0-4f24-ba1f-cc7f54cf7209",
+          "content": "奥黛丽说狗和大自然给她带来了太多的快乐与平静，大自然能让人以不同的方式思考、感到充满活力和内心安定，我们要珍惜大自然给予的一切",
+          "score": 0.5032196102250317,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "5:23 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "599f97f4-9626-4840-b85e-e6add57cbabd",
+          "content": "奥黛丽在公园散步时拍了狗狗们玩耍的照片：一张是两只狗叼着球在田野里奔跑，另一张是两只狗在草地上玩飞盘。她说狗狗们让她太开心了，和它们在户外会让她进入既宁静又令人振奋的幸福状态",
+          "score": 0.5511424503391796,
+          "metadata": {
+            "session_date": "5:23 pm on 13 June, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa4",
+      "stratum": {
+        "conversation": "conv-44",
+        "category": "temporal"
+      },
+      "question": "奥黛丽是什么时候给自己做玛芬蛋糕的？",
+      "gold": "4月3日至9日那一周",
+      "answer": "答案：奥黛丽是在2023年4月初用蓝莓给自己做玛芬蛋糕的。",
+      "strict_final": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "specific week of April 3–9"
+        ],
+        "reason": "Only says early April 2023, less specific than the gold's April 3–9 week."
+      },
+      "gold_evidence_turns": [
+        {
+          "session_id": "session_3",
+          "session_date": "4:19 pm on 16 April, 2023",
+          "index": 17,
+          "turn": {
+            "speaker": "奥黛丽",
+            "img_url": [
+              "https://allisoncooksgoodeats.files.wordpress.com/2017/09/img_4467.jpg"
+            ],
+            "blip_caption": "a photo of a muffin pan filled with blueberries and muffins",
+            "query": "homemade blueberry muffin pastry",
+            "dia_id": "D3:18",
+            "text": "哇，听起来太棒了！很高兴你能享受它们。既然你提到了糕点，我上周也做了几样我最爱的点心。我们找时间办个糕点派对吧！"
+          }
+        }
+      ],
+      "top15_memories": [
+        {
+          "rank": 1,
+          "same_gold_session": true,
+          "id": "98bd13a7-5d1c-4519-910c-4756aedadaee",
+          "content": "2023年4月初，奥黛丽 (Audrey) 用蓝莓做了几样她最爱的点心（蓝莓玛芬），并与安德鲁约定找时间办一个糕点派对，她的狗狗们也会参加",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 2,
+          "same_gold_session": false,
+          "id": "31de2bdb-da32-4ee7-95c9-a82cd9d7ef36",
+          "content": "2023年10月，奥黛丽做了一些自制狗狗零食送给对她家狗狗很友好的邻居们，觉得这是给周围带来快乐的好方式",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:22 pm on 13 October, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_23",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 3,
+          "same_gold_session": false,
+          "id": "0372146d-58c8-418d-9c89-9ec56ab4f600",
+          "content": "奥黛丽每天都保证至少做一件自我关怀的事来犒劳自己，认为找到属于自己的时间很难但自我照顾很重要",
+          "metadata": {
+            "session_date": "7:49 pm on 6 September, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_18",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 4,
+          "same_gold_session": false,
+          "id": "68df486f-7ddb-4022-b880-adad63f95211",
+          "content": "截至2023年8月19日，奥黛丽完成了一个狗狗美容课程，学会亲自给她的四只狗狗做美容，美容后它们看起来柔软蓬松，这让她和狗狗们更亲近",
+          "metadata": {
+            "session_date": "9:19 pm on 19 August, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 5,
+          "same_gold_session": false,
+          "id": "54eb308d-9709-4911-a6c8-3a1969acfa9a",
+          "content": "2023年10月中旬（约10月16-20日），奥黛丽在公园和狗狗们玩耍时出了意外，一只手臂打了石膏，用一只手臂照顾狗狗们很麻烦，但她们在努力应对，她每天都在好转",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_25",
+            "session_date": "10:14 am on 24 October, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 6,
+          "same_gold_session": false,
+          "id": "9adb54ee-cdbb-460a-90e8-77ad299f5cc8",
+          "content": "奥黛丽热爱做饭，喜欢尝试新菜谱、在厨房做实验——对她来说像一种逃避，减压效果很好还能让创意流淌。她喜欢放音乐、倒一杯葡萄酒，在厨房里随性发挥，觉得像自我关爱、很治愈",
+          "metadata": {
+            "session_id": "session_10",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_date": "8:32 pm on 3 July, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 7,
+          "same_gold_session": false,
+          "id": "8eb50251-b0ef-4bfb-b192-1dffa30ee041",
+          "content": "受安德鲁寿司经历的启发，奥黛丽在2023年10月24日当天打算晚饭点寿司吃",
+          "metadata": {
+            "session_id": "session_25",
+            "session_date": "10:14 am on 24 October, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 8,
+          "same_gold_session": false,
+          "id": "e56cf9cc-b731-4eba-bae2-7b16bb2798fc",
+          "content": "2023年11月左右，奥黛丽加入了一个养狗人小组，每周与其他养狗人聚一次，向其他“狗爸妈”学习如何更好地照顾狗狗，也让狗狗们一起玩",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_27",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "7:59 pm on 4 November, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 9,
+          "same_gold_session": false,
+          "id": "3d4dbc1d-ca9e-41a7-a0ef-c2ea804e87cf",
+          "content": "2023年6月底（约6月30日），奥黛丽在家里办了一次狗狗聚会，有点疯狂但非常好玩",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "8:32 pm on 3 July, 2023",
+            "session_id": "session_10",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 10,
+          "same_gold_session": false,
+          "id": "1f9fb979-b82c-4558-998b-e22f8956f54b",
+          "content": "奥黛丽在2023年5月国家公园徒步时拍了很多照片，其中她最喜欢的之一是一张日落山景与两匹马在围栏田野里吃草的照片；她还说大自然总能让她振作起来、心怀感激",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_7",
+            "session_date": "11:27 am on 2 June, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 11,
+          "same_gold_session": false,
+          "id": "f83ad83e-d71f-4421-868d-47a6ecbcd7e2",
+          "content": "2023年9月初（游乐会前一周左右），奥黛丽给她的狗狗们买了一些新窝，想让它们在天凉下来后更舒服，狗狗们非常喜欢，蜷缩依偎在上面睡觉，她形容像睡在云朵里一样",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "7:49 pm on 6 September, 2023",
+            "session_id": "session_18",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 12,
+          "same_gold_session": false,
+          "id": "c5205bee-41f2-4de0-bac8-87ee0a0af785",
+          "content": "奥黛丽和狗狗们在2023年8月的一个天气特别好的一天在户外草地上尽情玩耍，她说会永远珍惜那些时刻，狗狗们真的让生活变得明亮多了",
+          "metadata": {
+            "session_id": "session_15",
+            "benchmark": "locomo",
+            "session_date": "9:58 pm on 16 August, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 13,
+          "same_gold_session": false,
+          "id": "92291bd1-360e-46d3-952b-8d6c66b1e988",
+          "content": "奥黛丽起初把做回收首饰当爱好，后来开始出售，并把一部分利润捐给她关心的一家动物收容所，把做首饰和改变世界两个热爱结合起来",
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_23",
+            "session_date": "4:22 pm on 13 October, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 14,
+          "same_gold_session": false,
+          "id": "1283c8c7-f8a8-4a24-9cb3-2d529881ec87",
+          "content": "2023年10月4日的对话中，奥黛丽建议安德鲁通过在家里养植物或周末去公园走走来在城里欣赏自然；安德鲁接受了建议，表示会给家里添些植物并感谢她",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_21",
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:18 pm on 4 October, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "rank": 15,
+          "same_gold_session": false,
+          "id": "afbdbe1a-f8f1-428e-bb32-03911d2d3e9f",
+          "content": "奥黛丽在2023年8月带全部四只狗一起去兽医那里做检查，场面很混乱，她决定下次要一只一只地带去",
+          "metadata": {
+            "session_date": "9:58 pm on 16 August, 2023",
+            "session_id": "session_15",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        }
+      ],
+      "other_archived_retrieved_memories_from_gold_sessions": [
+        {
+          "id": "e2f6dd2a-844f-48f4-8a6f-d8d220014553",
+          "content": "2023年4月9日左右的周末，安德鲁 (Andrew) 和女朋友去了城里新开的一家咖啡馆，玩得很开心，但他因没能到大自然中而感到遗憾——只有置身大自然时他才觉得真正充满活力，并怀念远足时的宁静",
+          "score": 0.5254431703900033,
+          "metadata": {
+            "session_date": "4:19 pm on 16 April, 2023",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "c282c52a-f301-41f9-bcf1-890cc4b8d07f",
+          "content": "安德鲁和他女朋友喜欢在城里发掘新的吃饭地方，作为尝试新东西、在漫长一周后放松的方式",
+          "score": 0.6128926670968586,
+          "metadata": {
+            "session_date": "4:19 pm on 16 April, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-44_qa0",
+            "session_id": "session_3",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "2e0ce82e-b3b5-4a16-9742-6e9127ab8d2d",
+          "content": "安德鲁和女朋友找到一家超棒的咖啡馆，糕点非常好吃；他们吃了美味的可颂、玛芬和挞，并拍下了糕点展示柜的照片",
+          "score": 0.4933611621871371,
+          "metadata": {
+            "session_id": "session_3",
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "f569b5ad-f114-4bcd-ae49-2b9d30396500",
+          "content": "安德鲁住在城市里，觉得城市生活让他难以亲近大自然，有时感觉自己错过了很多东西，并怀念那种联结与陪伴",
+          "score": 0.5118958336969271,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "benchmark": "locomo",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "session_id": "session_3",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "7e840d06-679a-46a3-96b5-b749175e5973",
+          "content": "安德鲁觉得大自然像他灵魂的家园，能在其中感到一种联结；当生活变得混乱时，大自然有一种抚慰人心、像重置键一样的力量",
+          "score": 0.5100365894936552,
+          "metadata": {
+            "session_date": "4:19 pm on 16 April, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_3",
+            "case_id": "locomo_conv-44_qa0",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "9cc73ff8-b933-4078-97ed-325342aa5917",
+          "content": "奥黛丽的手臂上有一个狗狗和向日葵图案的纹身，代表她对她家狗狗们的爱和大自然之美；她是因为与狗狗们感情深厚、它们让她特别开心而决定纹的，想在狗狗不在身边时也能看到它们开心的样子",
+          "score": 0.5304598003154578,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        },
+        {
+          "id": "58aeafed-30f6-458f-915c-988e67187ca1",
+          "content": "对奥黛丽来说，带她的狗狗们去公园散步能帮她找回内心的平静并重新充满能量；她说无法想象没有狗狗们的生活，它们是她的全世界",
+          "score": 0.5700990193213404,
+          "metadata": {
+            "case_id": "locomo_conv-44_qa0",
+            "session_date": "4:19 pm on 16 April, 2023",
+            "session_id": "session_3",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-44"
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "other_archived_retrieved_memories 是所有题 top-15 的并集，不等于完整历史 Mem0 库。",
+    "gold evidence turn 可能不完整或语义错标；人工逐题核查，不将 session 出现当成事实出现。",
+    "这批题按严格非 exact 条件选择，只能诊断错误类型，不能估算全量错题的机制比例。"
+  ]
+}
