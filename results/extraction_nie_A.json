@@ -1,0 +1,5160 @@
+[
+ {
+  "case_id": "locomo_conv-26_qa2",
+  "conv": "conv-26",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "psychology",
+  "words": [
+   "psychology"
+  ],
+  "q": "What fields would Caroline be likely to pursue in her educaton?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa5",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct day: the Sunday before 25 May 2023 is May 21, 2023, not May 20",
+  "words": [
+   "sunday",
+   "2023",
+   "2023"
+  ],
+  "q": "When did Melanie run a charity race?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa21",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "the specific point/period 'the week before 6 July 2023'",
+  "words": [
+   "july",
+   "2023"
+  ],
+  "q": "When did Caroline have a picnic?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa23",
+  "conv": "conv-26",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "\"Nothing is Impossible\" title missing; unnamed book recommended by Caroline lacks specific title",
+  "words": [
+   "nothing",
+   "impossible",
+   "title",
+   "unnamed",
+   "book",
+   "recommended",
+   "caroline",
+   "lacks",
+   "title"
+  ],
+  "q": "What books has Melanie read?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa31",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific week: the week before 27 June 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "q": "When did Melanie go camping in June?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa29",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "answer hedges between July 14 and July 7, 2023 instead of committing to the single correct date",
+  "words": [
+   "hedges",
+   "between",
+   "july",
+   "july",
+   "2023",
+   "committing"
+  ],
+  "q": "When did Melanie go to the pottery workshop?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa30",
+  "conv": "conv-26",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Gold's key supporting reasoning that Melanie does not refer to herself as part of the LGBTQ community",
+  "words": [
+   "key",
+   "supporting",
+   "reasoning",
+   "melanie",
+   "refer",
+   "herself",
+   "part",
+   "lgbtq",
+   "community"
+  ],
+  "q": "Would Melanie be considered a member of the LGBTQ community?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa33",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "the week before 3 July 2023 (gold period) is not stated; 'late June 2023' is vague and an incorrect alternative (Aug 11) is added",
+  "words": [
+   "july",
+   "2023",
+   "stated",
+   "june",
+   "2023",
+   "alternative",
+   "aug",
+   "added"
+  ],
+  "q": "When did Caroline go to a pride parade during the summer?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa26",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "2022",
+  "words": [
+   "2022"
+  ],
+  "q": "When did Melanie read the book \"nothing is impossible\"?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa50",
+  "conv": "conv-26",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Enumerates an alternative ('progressive/liberal') rather than stating the gold's single conclusion 'liberal'",
+  "words": [
+   "enumerates",
+   "alternative",
+   "progressive",
+   "liberal",
+   "stating",
+   "conclusion",
+   "liberal"
+  ],
+  "q": "What would Caroline's political leaning likely be?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa54",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "week BEFORE 23 August 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "q": "When did Caroline draw a self-portrait?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa57",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive date of the week before 25 August 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "q": "When did Caroline encounter people on a hike and have a negative experience?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa59",
+  "conv": "conv-26",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Somewhat, but not extremely religious",
+  "words": [
+   "somewhat",
+   "but",
+   "extremely",
+   "religious"
+  ],
+  "q": "Would Caroline be considered religious?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa67",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact date phrasing — 'around September 9-10' is hedged",
+  "words": [
+   "exact",
+   "phrasing",
+   "september"
+  ],
+  "q": "When did Caroline go biking with friends?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa70",
+  "conv": "conv-26",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "includes events (LGBTQ+ counseling workshop, school talk) not in the gold answer",
+  "words": [
+   "includes",
+   "events",
+   "lgbtq",
+   "counseling",
+   "workshop",
+   "school",
+   "talk"
+  ],
+  "q": "What transgender-specific events has Caroline attended?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa69",
+  "conv": "conv-26",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "driven",
+  "words": [
+   "driven"
+  ],
+  "q": "What personality traits might Melanie say Caroline has?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa74",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive statement — 'around mid-October' hedges the precise date",
+  "words": [
+   "statement",
+   "mid",
+   "october",
+   "hedges"
+  ],
+  "q": "When did Melanie's family go on a roadtrip?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa80",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "21 October 2023",
+  "words": [
+   "october",
+   "2023"
+  ],
+  "q": "When did Melanie buy the figurines?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa81",
+  "conv": "conv-26",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "gold",
+  "text": "No; she's in the process of adopting children.",
+  "words": [
+   "process",
+   "adopting",
+   "children"
+  ],
+  "q": "Would Caroline want to move back to her home country soon?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa84",
+  "conv": "conv-26",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold specifies playing the violin, but answer adds clarinet as an equal alternative",
+  "words": [
+   "playing",
+   "violin",
+   "but",
+   "clarinet",
+   "equal",
+   "alternative"
+  ],
+  "q": "How does Melanie prioritize self-care?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa9",
+  "conv": "conv-26",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "The week before 9 June 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "q": "When did Caroline meet up with her friends, family, and mentors?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa135",
+  "conv": "conv-26",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "core fact is present, but answer adds an unverifiable car accident claim, mixing the correct setback with an incorrect alternative",
+  "words": [
+   "core",
+   "fact",
+   "present",
+   "but",
+   "unverifiable",
+   "car",
+   "accident",
+   "claim",
+   "setback",
+   "alternative"
+  ],
+  "q": "What setback did Melanie face in October 2023?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa133",
+  "conv": "conv-26",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "A sign stating that someone is not being able to leave",
+  "words": [
+   "sign",
+   "stating",
+   "someone",
+   "able",
+   "leave"
+  ],
+  "q": "What precautionary sign did Melanie see at the café?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa138",
+  "conv": "conv-26",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "An abstract painting with blue streaks on a wall.",
+  "words": [
+   "abstract",
+   "painting",
+   "blue",
+   "streaks",
+   "wall"
+  ],
+  "q": "What kind of painting did Caroline share with Melanie on October 13, 2023?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa140",
+  "conv": "conv-26",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "\"Trans Lives Matter\"",
+  "words": [
+   "trans",
+   "lives",
+   "matter"
+  ],
+  "q": "What did the posters at the poetry reading say?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa19",
+  "conv": "conv-26",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "dinosaurs",
+  "words": [
+   "dinosaurs"
+  ],
+  "q": "What do Melanie's kids like?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa7",
+  "conv": "conv-30",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged with 'around' despite definitive gold date",
+  "words": [
+   "despite"
+  ],
+  "q": "When did Gina launch an ad campaign for her store?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa10",
+  "conv": "conv-30",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "February, 2023",
+  "words": [
+   "february",
+   "2023"
+  ],
+  "q": "When did Gina team up with a local artist for some cool designs?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa13",
+  "conv": "conv-30",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "16 March, 2023",
+  "words": [
+   "march",
+   "2023"
+  ],
+  "q": "When did Gina open her online clothing store?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa22",
+  "conv": "conv-30",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "June, 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "q": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa21",
+  "conv": "conv-30",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "May, 2023",
+  "words": [
+   "2023"
+  ],
+  "q": "When did Jon start reading \"The Lean Startup\"?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa20",
+  "conv": "conv-30",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedges the exact date with 'around late May'",
+  "words": [
+   "hedges",
+   "exact"
+  ],
+  "q": "When did Gina get accepted for the design internship?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa24",
+  "conv": "conv-30",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "dance competition",
+  "words": [
+   "dance",
+   "competition"
+  ],
+  "q": "Which events has Jon participated in to promote his business venture?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa32",
+  "conv": "conv-30",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged precision: 'around mid-June 2023' vs definitive 'June 2023'",
+  "words": [
+   "mid",
+   "june",
+   "2023",
+   "june",
+   "2023"
+  ],
+  "q": "When did Gina design a limited collection of hoodies?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa34",
+  "conv": "conv-30",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "July 2023",
+  "words": [
+   "july",
+   "2023"
+  ],
+  "q": "When did Gina start being recognized by fashion editors?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa33",
+  "conv": "conv-30",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged 'around June 20, 2023' instead of definitive date",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "q": "When did Jon visit networking events for his store?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa31",
+  "conv": "conv-30",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "six months",
+  "words": [
+   "six",
+   "months"
+  ],
+  "q": "How long did it take for Jon to open his studio?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa48",
+  "conv": "conv-30",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "decor",
+  "words": [
+   "decor"
+  ],
+  "q": "What did Gina design for her store?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa44",
+  "conv": "conv-30",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "They look graceful",
+  "words": [
+   "look",
+   "graceful"
+  ],
+  "q": "What does Gina say about the dancers in the photo?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa45",
+  "conv": "conv-30",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "the specific attitude 'glad' is only conveyed as broader 'extremely positive'",
+  "words": [
+   "attitude",
+   "glad",
+   "only",
+   "conveyed",
+   "broader",
+   "extremely",
+   "positive"
+  ],
+  "q": "What is Jon's attitude towards being part of the dance festival?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa56",
+  "conv": "conv-30",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "dancing together and supporting each other",
+  "words": [
+   "dancing",
+   "together",
+   "supporting",
+   "each",
+   "other"
+  ],
+  "q": "What did Jon and Gina compare their entrepreneurial journeys to?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa57",
+  "conv": "conv-30",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "create a strong brand image",
+  "words": [
+   "create",
+   "strong",
+   "brand",
+   "image"
+  ],
+  "q": "What advice does Gina give to Jon about running a successful business?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-30_qa68",
+  "conv": "conv-30",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "precise fact 'quit' stated definitively rather than as an alternative",
+  "words": [
+   "fact",
+   "quit",
+   "stated",
+   "alternative"
+  ],
+  "q": "What does Jon tell Gina he won't do?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa4",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "week-level specificity: 'the week before 1 January 2023'",
+  "words": [
+   "level",
+   "specificity",
+   "january",
+   "2023"
+  ],
+  "q": "When did John join the online support group?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa5",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "a definitive single answer of December 2022",
+  "words": [
+   "december",
+   "2022"
+  ],
+  "q": "When did Maria go to the beach?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa2",
+  "conv": "conv-41",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "Kickboxing (denied rather than asserted)",
+  "words": [
+   "kickboxing",
+   "denied",
+   "asserted"
+  ],
+  "q": "What martial arts has John done?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa8",
+  "conv": "conv-41",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Middle-class or wealthy",
+  "words": [
+   "middle",
+   "class",
+   "wealthy"
+  ],
+  "q": "What might John's financial status be?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa13",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific date anchor 'the week before 6 March 2023'",
+  "words": [
+   "anchor",
+   "march",
+   "2023"
+  ],
+  "q": "When did Maria's grandmother pass away?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa16",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific date 'week before 2 April 2023' not stated",
+  "words": [
+   "april",
+   "2023",
+   "stated"
+  ],
+  "q": "When did John get his degree?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa17",
+  "conv": "conv-41",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Political science, Public administration, Public affairs",
+  "words": [
+   "political",
+   "science",
+   "public",
+   "administration",
+   "public",
+   "affairs"
+  ],
+  "q": "What might John's degree be in?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa25",
+  "conv": "conv-41",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "England (answered 'United Kingdom (London)' instead of the specific country England)",
+  "words": [
+   "england",
+   "answered",
+   "united",
+   "kingdom",
+   "london",
+   "country",
+   "england"
+  ],
+  "q": "What European countries has Maria been to?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa31",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedge 'Around' softens the definitive year 2013",
+  "words": [
+   "softens",
+   "2013"
+  ],
+  "q": "When did John get his dog Max?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa28",
+  "conv": "conv-41",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "schools (only 'improving education' mentioned, cut off)",
+  "words": [
+   "schools",
+   "only",
+   "improving",
+   "education",
+   "mentioned",
+   "cut",
+   "off"
+  ],
+  "q": "What causes does John feel passionate about supporting?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa41",
+  "conv": "conv-41",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive commitment to 'beach'",
+  "words": [
+   "commitment",
+   "beach"
+  ],
+  "q": "Does John live close to a beach or the mountains?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa43",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific week-before-7-July-2023 anchoring",
+  "words": [
+   "july",
+   "2023",
+   "anchoring"
+  ],
+  "q": "When was John's old area hit with a flood?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa48",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "The sunday before 3` July 2023",
+  "words": [
+   "sunday",
+   "july",
+   "2023"
+  ],
+  "q": "When did John have his first firefighter call-out?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa54",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "August 4, 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "q": "When did Maria take up community work with her church friends?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa55",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific week anchored to 9 August 2023",
+  "words": [
+   "anchored",
+   "august",
+   "2023"
+  ],
+  "q": "When did Maria receive a medal from the homeless shelter?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa50",
+  "conv": "conv-41",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "selfless",
+  "words": [
+   "selfless"
+  ],
+  "q": "What attributes describe John?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa50",
+  "conv": "conv-41",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "rational",
+  "words": [
+   "rational"
+  ],
+  "q": "What attributes describe John?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa61",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedge 'around early August' adds vagueness to the otherwise correct date",
+  "words": [
+   "august",
+   "vagueness",
+   "otherwise"
+  ],
+  "q": "When did Maria adopt Shadow?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa51",
+  "conv": "conv-41",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "August 2022",
+  "words": [
+   "august",
+   "2022"
+  ],
+  "q": "When did Maria start volunteering at the homeless shelter?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa64",
+  "conv": "conv-41",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "counselor",
+  "words": [
+   "counselor"
+  ],
+  "q": "What job might Maria pursue in the future?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa80",
+  "conv": "conv-41",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "answer mixes the correct 'painting of a castle on a hill' with an incorrect alternative (cardboard castle with fairy lights)",
+  "words": [
+   "mixes",
+   "painting",
+   "castle",
+   "hill",
+   "alternative",
+   "cardboard",
+   "castle",
+   "fairy",
+   "lights"
+  ],
+  "q": "What did Maria make for her home to remind her of a trip to England?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa88",
+  "conv": "conv-41",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "answer mixes gold fact with unsupported specifics (education reform, infrastructure development, April 2023)",
+  "words": [
+   "mixes",
+   "fact",
+   "unsupported",
+   "specifics",
+   "education",
+   "reform",
+   "infrastructure",
+   "development",
+   "april",
+   "2023"
+  ],
+  "q": "What topic has John been blogging about recently?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa126",
+  "conv": "conv-41",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "appreciation for giving back as a single stated takeaway",
+  "words": [
+   "appreciation",
+   "giving",
+   "back",
+   "stated",
+   "takeaway"
+  ],
+  "q": "What did John take away from visiting the veteran's hospital?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-41_qa131",
+  "conv": "conv-41",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "volunteered at the shelter (answer describes dropping off baked goods instead)",
+  "words": [
+   "volunteered",
+   "shelter",
+   "describes",
+   "dropping",
+   "off",
+   "baked",
+   "goods"
+  ],
+  "q": "What community service did Maria mention that she was involved in on 31 July, 2023?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa2",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged 'around'/'early' precision when gold is definitive year 2019",
+  "words": [
+   "2019"
+  ],
+  "q": "When did Joanna first watch \"Eternal Sunshine of the Spotless Mind?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa0",
+  "conv": "conv-42",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Supporting reasoning: teammates on his video game team",
+  "words": [
+   "supporting",
+   "reasoning",
+   "teammates",
+   "video",
+   "game",
+   "team"
+  ],
+  "q": "Is it likely that Nate has friends besides Joanna?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa3",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "the week before January 21, 2022, not the week of",
+  "words": [
+   "january",
+   "2022"
+  ],
+  "q": "When did Nate win his first video game tournament?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa8",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged precision: 'Around' January 2019",
+  "words": [
+   "january",
+   "2019"
+  ],
+  "q": "When did Nate get his first two turtles?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa15",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific week-before-April-15 anchoring",
+  "words": [
+   "april",
+   "anchoring"
+  ],
+  "q": "When did Nate get purple hair?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa12",
+  "conv": "conv-42",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "asthma",
+  "words": [
+   "asthma"
+  ],
+  "q": "What underlying condition might Joanna have based on her allergies?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa20",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "May 2022",
+  "words": [
+   "2022"
+  ],
+  "q": "When did Nate adopt Max?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa4",
+  "conv": "conv-42",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Hairless cats or pigs,since they don't have fur, which is one of the main causes of Joanna's allergy.",
+  "words": [
+   "hairless",
+   "cats",
+   "pigs",
+   "don",
+   "fur",
+   "which",
+   "main",
+   "causes",
+   "joanna",
+   "allergy"
+  ],
+  "q": "What pets wouldn't cause any discomfort to Joanna?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa24",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "correct date: the weekend after June 3, 2022 (June 10-11)",
+  "words": [
+   "weekend",
+   "june",
+   "2022",
+   "june"
+  ],
+  "q": "When is Nate hosting a gaming party?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa22",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "May 2022",
+  "words": [
+   "2022"
+  ],
+  "q": "When did Joanna start writing her third screenplay?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa26",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged with 'Around', not the definitive 'week before June 3, 2022'",
+  "words": [
+   "june",
+   "2022"
+  ],
+  "q": "When did Nate win his third tourney?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa27",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "contains unverified/likely incorrect extra entities: 'a major company, a production company, and producers'",
+  "words": [
+   "major",
+   "company",
+   "production",
+   "company",
+   "producers"
+  ],
+  "q": "What places has Joanna submitted her work to?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa29",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive answer of the weekend of June 24, 2022",
+  "words": [
+   "weekend",
+   "june",
+   "2022"
+  ],
+  "q": "When is Joanna going to make Nate's ice cream for her family?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa33",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged with 'Around mid-August' rather than the definitive week before 14 August 2022",
+  "words": [
+   "mid",
+   "august",
+   "august",
+   "2022"
+  ],
+  "q": "When did someone write Joanna a touching letter?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa36",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific time: the week before 22 August 2022",
+  "words": [
+   "august",
+   "2022"
+  ],
+  "q": "When did Joanna share her book with her writers group?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa23",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "first screenplay (drama and romance)",
+  "words": [
+   "first",
+   "screenplay",
+   "drama",
+   "romance"
+  ],
+  "q": "Which of Joanna's screenplay were rejected from production companies?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa23",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "third screenplay attribution is hedged ('likely') and mislabeled as drama-romance",
+  "words": [
+   "third",
+   "screenplay",
+   "drama",
+   "romance"
+  ],
+  "q": "Which of Joanna's screenplay were rejected from production companies?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa40",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specifies a single day (September 7) rather than the gold's week before 14 September 2022",
+  "words": [
+   "september",
+   "september",
+   "2022"
+  ],
+  "q": "When did Joanna's laptop crash?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa35",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "The weekend of 22August, 2022.",
+  "words": [
+   "weekend",
+   "22august",
+   "2022"
+  ],
+  "q": "When did Nate take time off to chill with his pets?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa47",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "answer adds a 'gaming party' not in the gold, mixing correct places with an unverifiable/incorrect extra",
+  "words": [
+   "gaming",
+   "party",
+   "places",
+   "unverifiable"
+  ],
+  "q": "What places has Nate met new people?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa43",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "four months",
+  "words": [
+   "four",
+   "months"
+  ],
+  "q": "How long did it take for Joanna to finish writing her book?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa45",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "does not state week before October 6, 2022 precisely",
+  "words": [
+   "state",
+   "october",
+   "2022",
+   "precisely"
+  ],
+  "q": "When did Joanna finish up the writing for her book?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa51",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive date (answer hedges with 'around')",
+  "words": [
+   "hedges"
+  ],
+  "q": "When did Nate get Tilly for Joanna?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa53",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Twice.",
+  "words": [
+   "twice"
+  ],
+  "q": "How many times has Nate taken his turtles on a walk?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa54",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "The Sunday before 25October, 2022.",
+  "words": [
+   "sunday",
+   "25october",
+   "2022"
+  ],
+  "q": "When was Joanna's second movie script shown on the big screens?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa52",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "two",
+  "words": [
+   "two"
+  ],
+  "q": "How many of Joanna's writing have made it to the big screen?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa59",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hanging memories on a corkboard",
+  "words": [
+   "hanging",
+   "memories",
+   "corkboard"
+  ],
+  "q": "What does Joanna do to remember happy memories?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa55",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "validation",
+  "words": [
+   "validation"
+  ],
+  "q": "What is Joanna inspired by?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa55",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "imagination",
+  "words": [
+   "imagination"
+  ],
+  "q": "What is Joanna inspired by?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa58",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "Project Hail Mary book",
+  "words": [
+   "project",
+   "hail",
+   "mary",
+   "book"
+  ],
+  "q": "What things has Nate reccomended to Joanna?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa58",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "a pet",
+  "words": [
+   "pet"
+  ],
+  "q": "What things has Nate reccomended to Joanna?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa61",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "Gamecube",
+  "words": [
+   "gamecube"
+  ],
+  "q": "What mediums does Nate use to play games?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa61",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "Playstation",
+  "words": [
+   "playstation"
+  ],
+  "q": "What mediums does Nate use to play games?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa66",
+  "conv": "conv-42",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "an animalkeeper at a localzoo and workingwith turtles; as heknows a great dealabout turtles andhow to care for them,and he enjoys it.",
+  "words": [
+   "animalkeeper",
+   "localzoo",
+   "workingwith",
+   "turtles",
+   "heknows",
+   "great",
+   "dealabout",
+   "turtles",
+   "andhow",
+   "care",
+   "enjoys"
+  ],
+  "q": "What alternative career might Nate consider after gaming?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa65",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct date anchoring (Oct 29 given instead of beginning of November)",
+  "words": [
+   "anchoring",
+   "oct",
+   "given",
+   "beginning",
+   "november"
+  ],
+  "q": "Which torunament did Nate win in the beginning of November 2022?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa65",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "confusing/contradictory extra claims",
+  "words": [
+   "confusing",
+   "contradictory",
+   "claims"
+  ],
+  "q": "Which torunament did Nate win in the beginning of November 2022?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa72",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged precision: 'around' November 10, 2022",
+  "words": [
+   "november",
+   "2022"
+  ],
+  "q": "When did Joanna plan on going to Nate's to watch him play with his turtles?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa70",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "feeds them strawberries (answer only says vegetables, fruits, and insects, less specific than gold)",
+  "words": [
+   "feeds",
+   "strawberries",
+   "only",
+   "says",
+   "vegetables",
+   "fruits",
+   "insects",
+   "less"
+  ],
+  "q": "What activities does Nate do with his turtles?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa68",
+  "conv": "conv-42",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Definitive count of four; answer hedges with 'at least 4'",
+  "words": [
+   "count",
+   "four",
+   "hedges",
+   "least"
+  ],
+  "q": "How many hikes has Joanna been on?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa77",
+  "conv": "conv-42",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific day-level anchoring ('the week before 2 May 2022')",
+  "words": [
+   "level",
+   "anchoring",
+   "2022"
+  ],
+  "q": "When did Nate win his second tournament?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa74",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific book title 'A Court of Thorns and Roses' (only 'a fantasy book series' given)",
+  "words": [
+   "book",
+   "title",
+   "court",
+   "thorns",
+   "roses",
+   "only",
+   "fantasy",
+   "book",
+   "series",
+   "given"
+  ],
+  "q": "What recommendations has Nate received from Joanna?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa81",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "blueberry cheesecake bars",
+  "words": [
+   "blueberry",
+   "cheesecake",
+   "bars"
+  ],
+  "q": "What recipes has Joanna made?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa81",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "parfait (correct version)",
+  "words": [
+   "parfait",
+   "version"
+  ],
+  "q": "What recipes has Joanna made?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa85",
+  "conv": "conv-42",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "answer hedges/alternates between 'filmmaker' and 'director' rather than stating 'filmmaker' cleanly",
+  "words": [
+   "hedges",
+   "alternates",
+   "between",
+   "filmmaker",
+   "director",
+   "stating",
+   "filmmaker",
+   "cleanly"
+  ],
+  "q": "What kind of job is Joanna beginning to preform the duties of because of her movie scripts",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa84",
+  "conv": "conv-42",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "supporting reasoning: both faced career setbacks",
+  "words": [
+   "supporting",
+   "reasoning",
+   "both",
+   "faced",
+   "career",
+   "setbacks"
+  ],
+  "q": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer ",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa79",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold count 'three' contradicted by leading answer 'Four'",
+  "words": [
+   "count",
+   "three",
+   "contradicted",
+   "leading",
+   "four"
+  ],
+  "q": "How many screenplays has Joanna written?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa92",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "red and purple lighting",
+  "words": [
+   "red",
+   "purple",
+   "lighting"
+  ],
+  "q": "What kind of lighting does Nate's gaming room have?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa91",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "dragons",
+  "words": [
+   "dragons"
+  ],
+  "q": "What is Nate's favorite book series about?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa78",
+  "conv": "conv-42",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "nine",
+  "words": [
+   "nine"
+  ],
+  "q": "How many video game tournaments has Nate participated in?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa105",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "includes unverified 'almond chunks' not in gold",
+  "words": [
+   "includes",
+   "almond",
+   "chunks"
+  ],
+  "q": "What flavor of ice cream did Nate make for his friend on 25 February, 2022?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa115",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "adds unsupported 'romcoms' alongside the correct 'dramas'",
+  "words": [
+   "unsupported",
+   "romcoms",
+   "alongside",
+   "dramas"
+  ],
+  "q": "What kind of films does Joanna enjoy?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa119",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct attribution to Nate",
+  "words": [
+   "nate"
+  ],
+  "q": "What does Nate feel he could do when out in cool places like Whispering Falls?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa127",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "screenplay bits (exact wording 'screenplay bits' vs. broader 'movie script')",
+  "words": [
+   "screenplay",
+   "bits",
+   "exact",
+   "wording",
+   "screenplay",
+   "bits",
+   "broader",
+   "movie",
+   "script"
+  ],
+  "q": "What did Joanna write yesterday that appeared on the big screen?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa141",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Won a video game tournament",
+  "words": [
+   "won",
+   "video",
+   "game",
+   "tournament"
+  ],
+  "q": "What did Nate do while Joanna was on her road trip?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa165",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a bookcase filled with dvds and movies",
+  "words": [
+   "bookcase",
+   "filled",
+   "dvds",
+   "movies"
+  ],
+  "q": "What did Nate share a photo of when mentioning unwinding at home?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa174",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold is specifically his turtles; answer adds dog Max as an additional alternative",
+  "words": [
+   "specifically",
+   "turtles",
+   "dog",
+   "max",
+   "additional",
+   "alternative"
+  ],
+  "q": "What does Nate rely on for cheer and joy?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-42_qa179",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "cool",
+  "words": [
+   "cool"
+  ],
+  "q": "How did Joanna feel on October 25, 2022 about seeing her characters come alive on the big ",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa193",
+  "conv": "conv-42",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "adds unverifiable specifics (sunflower, hike) not in gold",
+  "words": [
+   "unverifiable",
+   "specifics",
+   "sunflower",
+   "hike"
+  ],
+  "q": "What inspired Joanna to take a picture of the sunset in the field near Fort Wayne?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa3",
+  "conv": "conv-43",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive commitment to C. S. Lewis without hedging",
+  "words": [
+   "commitment",
+   "lewis"
+  ],
+  "q": "Would Tim enjoy reading books by C. S. Lewis or John Greene?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa6",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "June 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "q": "In which month's game did John achieve a career-high score in points?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa12",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "2018",
+  "words": [
+   "2018"
+  ],
+  "q": "What year did John start surfing?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa10",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "'early August' granularity — answer only gives the month",
+  "words": [
+   "august",
+   "granularity",
+   "only",
+   "gives"
+  ],
+  "q": "When was John in Seattle for a game?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa16",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "three weeks",
+  "words": [
+   "three",
+   "weeks"
+  ],
+  "q": "After how many weeks did Tim reconnect with the fellow Harry Potter fan from California?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa18",
+  "conv": "conv-43",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Paulo Coelho",
+  "words": [
+   "paulo",
+   "coelho"
+  ],
+  "q": "What authors has Tim read books from?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa19",
+  "conv": "conv-43",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Good Sports, because they work with Nike, Gatorade, and Under Armour and they aim toprovide youth sports opportunities for kids ages 3-18 in high-need communities.",
+  "words": [
+   "good",
+   "sports",
+   "because",
+   "work",
+   "nike",
+   "gatorade",
+   "under",
+   "armour",
+   "aim",
+   "toprovide",
+   "youth",
+   "sports",
+   "opportunities",
+   "kids",
+   "ages",
+   "high",
+   "communities"
+  ],
+  "q": "What is a prominent charity organization that John might want to work with and why?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa32",
+  "conv": "conv-43",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "California as a possible state",
+  "words": [
+   "california",
+   "possible",
+   "state"
+  ],
+  "q": "Which US states might Tim be in during September 2023 based on his plans of visiting Unive",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa37",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive date commitment — hedged with 'around early October 2023'",
+  "words": [
+   "commitment",
+   "october",
+   "2023"
+  ],
+  "q": "Which week did Tim visit the UK for the Harry Potter Conference?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa30",
+  "conv": "conv-43",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "Paris",
+  "words": [
+   "paris"
+  ],
+  "q": "Which cities has John been to?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa34",
+  "conv": "conv-43",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "become a basketball coach",
+  "words": [
+   "become",
+   "basketball",
+   "coach"
+  ],
+  "q": "What could John do after his basketball career?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa34",
+  "conv": "conv-43",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "giving back and leadership reasoning",
+  "words": [
+   "giving",
+   "back",
+   "leadership",
+   "reasoning"
+  ],
+  "q": "What could John do after his basketball career?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa44",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "unhedged month-level date",
+  "words": [
+   "unhedged",
+   "level"
+  ],
+  "q": "When did John and his wife go on a European vacation?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa48",
+  "conv": "conv-43",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific date ~November 16, 2023",
+  "words": [
+   "november",
+   "2023"
+  ],
+  "q": "When did John get an ankle injury in 2023?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa56",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "August 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "q": "When did Tim start playing the violin?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa53",
+  "conv": "conv-43",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Sprinting, long-distance running, and boxing.",
+  "words": [
+   "sprinting",
+   "long",
+   "distance",
+   "running",
+   "boxing"
+  ],
+  "q": "What other exercises can help John with his basketball performance?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa55",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific month (May 2023)",
+  "words": [
+   "2023"
+  ],
+  "q": "When did John start playing professionally?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa58",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedge 'around' makes the date imprecise",
+  "words": [
+   "makes",
+   "imprecise"
+  ],
+  "q": "When did John attend the Harry Potter trivia?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa54",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "unhedged, definitive date",
+  "words": [
+   "unhedged"
+  ],
+  "q": "When did John take a trip to the Rocky Mountains?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa60",
+  "conv": "conv-43",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct day: December 11, 2023",
+  "words": [
+   "december",
+   "2023"
+  ],
+  "q": "When did John achieve a career-high assist performance?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa66",
+  "conv": "conv-43",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
+  "words": [
+   "star",
+   "wars",
+   "jedi",
+   "apprentice",
+   "judy",
+   "blundell",
+   "david",
+   "farland",
+   "highly",
+   "rated",
+   "immersive",
+   "series",
+   "favorite",
+   "movies"
+  ],
+  "q": "What is a Star Wars book that Tim might enjoy?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa70",
+  "conv": "conv-43",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Loop Head",
+  "words": [
+   "loop",
+   "head"
+  ],
+  "q": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa70",
+  "conv": "conv-43",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Brow Head",
+  "words": [
+   "brow",
+   "head"
+  ],
+  "q": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa102",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "culture specifically (only food/restaurants mentioned)",
+  "words": [
+   "culture",
+   "specifically",
+   "only",
+   "food",
+   "restaurants",
+   "mentioned"
+  ],
+  "q": "What did John say about NYC, enticing Tim to visit?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa116",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "not quitting",
+  "words": [
+   "quitting"
+  ],
+  "q": "How does John say his team handles tough opponents?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa113",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "Tim supports the Wolves",
+  "words": [
+   "tim",
+   "supports",
+   "wolves"
+  ],
+  "q": "Which basketball team does Tim support?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa117",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold specifies facing tough opponents as the motivation; the answer enumerates multiple additional motivations as alternatives",
+  "words": [
+   "facing",
+   "tough",
+   "opponents",
+   "motivation",
+   "enumerates",
+   "multiple",
+   "additional",
+   "motivations",
+   "alternatives"
+  ],
+  "q": "What motivates John's team to get better, according to John?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa128",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "link to slow cooker",
+  "words": [
+   "link",
+   "slow",
+   "cooker"
+  ],
+  "q": "What type of meal does John often cook using a slow cooker?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa140",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "focused on growth",
+  "words": [
+   "focused",
+   "growth"
+  ],
+  "q": "How did John overcome a mistake he made during a big game in basketball?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa152",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "basketball",
+  "words": [
+   "basketball"
+  ],
+  "q": "What kind of game did John have a career-high in assists in?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa151",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Academic achievements and sports successes",
+  "words": [
+   "academic",
+   "achievements",
+   "sports",
+   "successes"
+  ],
+  "q": "What is the topic of discussion between John and Tim on 11 December, 2023?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa154",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "intense",
+  "words": [
+   "intense"
+  ],
+  "q": "How did John feel about the atmosphere during the big game against the rival team?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa165",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "does not state Tim got a cooking book; contradicts the premise by attributing it to John",
+  "words": [
+   "state",
+   "tim",
+   "got",
+   "cooking",
+   "book",
+   "contradicts",
+   "premise",
+   "attributing",
+   "john"
+  ],
+  "q": "What book did Tim get in Italy that inspired him to cook?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa174",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct 2024 timing",
+  "words": [
+   "2024",
+   "timing"
+  ],
+  "q": "What charity event did John organize recently in 2024?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-43_qa176",
+  "conv": "conv-43",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "sense of accomplishment",
+  "words": [
+   "sense",
+   "accomplishment"
+  ],
+  "q": "What was Johns's reaction to sealing the deal with the beverage company?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa1",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged with 'around' instead of the definitive week before March 27, 2023",
+  "words": [
+   "march",
+   "2023"
+  ],
+  "q": "When did Andrew start his new job as a financial analyst?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa2",
+  "conv": "conv-44",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "boardgames",
+  "words": [
+   "boardgames"
+  ],
+  "q": "What kind of indoor activities has Andrew pursued with his girlfriend?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa4",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "week of April 3rd to 9th",
+  "words": [
+   "april",
+   "3rd",
+   "9th"
+  ],
+  "q": "When did Audrey make muffins for herself?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa6",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific day (April 2)",
+  "words": [
+   "april"
+  ],
+  "q": "When did Audrey adopt Pixie?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa5",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "first week of May 2023",
+  "words": [
+   "first",
+   "2023"
+  ],
+  "q": "When did Audrey see a hummingbird?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa11",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct day: June 11, 2023 (answer says June 4, 2023)",
+  "words": [
+   "june",
+   "2023",
+   "says",
+   "june",
+   "2023"
+  ],
+  "q": "When did Andrew go rock climbing?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa13",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged precision ('around', 'late') when gold is definitive June 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "q": "When did Audrey move to a new place?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa16",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "August",
+  "words": [
+   "august"
+  ],
+  "q": "When is Andrew going to go hiking with Audrey?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa19",
+  "conv": "conv-44",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "cook dog treats",
+  "words": [
+   "cook",
+   "dog",
+   "treats"
+  ],
+  "q": "What is an indoor activity that Andrew would enjoy doing while make his dog happy?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa25",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged with 'around August 19-20, 2023'",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "q": "When did Andrew and his girlfriend go fishing?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa17",
+  "conv": "conv-44",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "three times",
+  "words": [
+   "three",
+   "times"
+  ],
+  "q": "How many times did Audrey and Andew plan to hike together?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa30",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged as 'around November 2023'",
+  "words": [
+   "november",
+   "2023"
+  ],
+  "q": "When is Andrew planning to go to the beach with his girlfriend?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa24",
+  "conv": "conv-44",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Gold answer 'Yes' applies to both Audrey and Andrew; the generated answer says Andrew likely did not grow up with a dog, contradicting the gold",
+  "words": [
+   "yes",
+   "applies",
+   "both",
+   "audrey",
+   "andrew",
+   "generated",
+   "says",
+   "andrew",
+   "grow",
+   "dog",
+   "contradicting"
+  ],
+  "q": "Did Audrey and Andrew grow up with a pet dog?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa34",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged precision: 'About 3 months'",
+  "words": [
+   "months"
+  ],
+  "q": "How many months passed between Andrew adopting Toby and Buddy?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa37",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact date range of October 19–24, 2023",
+  "words": [
+   "exact",
+   "range",
+   "october",
+   "2023"
+  ],
+  "q": "When did Audrey get into an accident in the park?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa33",
+  "conv": "conv-44",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Change to hybrid or remote job",
+  "words": [
+   "change",
+   "hybrid",
+   "remote",
+   "job"
+  ],
+  "q": "What can Andrew potentially do to improve his stress and accomodate his living situation w",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa33",
+  "conv": "conv-44",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Move to suburbs for larger living space",
+  "words": [
+   "move",
+   "suburbs",
+   "larger",
+   "living",
+   "space"
+  ],
+  "q": "What can Andrew potentially do to improve his stress and accomodate his living situation w",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa33",
+  "conv": "conv-44",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Be closer to nature",
+  "words": [
+   "closer",
+   "nature"
+  ],
+  "q": "What can Andrew potentially do to improve his stress and accomodate his living situation w",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa43",
+  "conv": "conv-44",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Minnesota",
+  "words": [
+   "minnesota"
+  ],
+  "q": "Which US state do Audrey and Andrew potentially live in?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa57",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold's relative timeframe 'a few days before November 2023' stated definitively",
+  "words": [
+   "relative",
+   "timeframe",
+   "few",
+   "days",
+   "november",
+   "2023",
+   "stated"
+  ],
+  "q": "When did Andrew adopt Scout?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa52",
+  "conv": "conv-44",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Install a bird feeder outside where he can see the birds without going outdoors.",
+  "words": [
+   "install",
+   "bird",
+   "feeder",
+   "outside",
+   "where",
+   "can",
+   "see",
+   "birds",
+   "going",
+   "outdoors"
+  ],
+  "q": "What is something that Andrew could do to make birdwatching hobby to fit in his city sched",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa53",
+  "conv": "conv-44",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Park ranger or National Park Services role",
+  "words": [
+   "park",
+   "ranger",
+   "national",
+   "park",
+   "services",
+   "role"
+  ],
+  "q": "What is a career that Andrew could potentially pursue with his love for animals and nature",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa59",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact duration of 4 months",
+  "words": [
+   "exact",
+   "duration",
+   "months"
+  ],
+  "q": "How long has it been since Andrew adopted his first pet, as of November 2023?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa55",
+  "conv": "conv-44",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "few days before November 22, 2023",
+  "words": [
+   "few",
+   "days",
+   "november",
+   "2023"
+  ],
+  "q": "When did Andrew make his dogs a fun indoor area?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa65",
+  "conv": "conv-44",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "chatting with people (the gold's key element about what Audrey herself does)",
+  "words": [
+   "chatting",
+   "people",
+   "key",
+   "element",
+   "what",
+   "audrey",
+   "herself"
+  ],
+  "q": "What does Audrey do during dog playdates in the park?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-44_qa85",
+  "conv": "conv-44",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "date hedged to 'around early August 2023' instead of 4 August 2023",
+  "words": [
+   "august",
+   "2023",
+   "august",
+   "2023"
+  ],
+  "q": "What type of classes did Audrey start with her pups recently on 4 August, 2023?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa119",
+  "conv": "conv-44",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "photography of a basket full of stuffed animals",
+  "words": [
+   "photography",
+   "basket",
+   "full",
+   "stuffed",
+   "animals"
+  ],
+  "q": "What did Audrey share to show ways to keep dogs active in the city?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa0",
+  "conv": "conv-47",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Obesity",
+  "words": [
+   "obesity"
+  ],
+  "q": "What are John's suspected health problems?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa2",
+  "conv": "conv-47",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Includes unverified extra items (movie night, donation organization) not in gold",
+  "words": [
+   "includes",
+   "items",
+   "movie",
+   "night",
+   "donation",
+   "organization"
+  ],
+  "q": "Which places or events have John and James planned to meet at?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa4",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "precise unhedged date: February 2022",
+  "words": [
+   "unhedged",
+   "february",
+   "2022"
+  ],
+  "q": "When did John resume playing drums in his adulthood?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa15",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged with 'around late March 2022' rather than definitive March 2022",
+  "words": [
+   "march",
+   "2022",
+   "march",
+   "2022"
+  ],
+  "q": "When did James start playing Civilization VI?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa12",
+  "conv": "conv-47",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold's hedged commitment level ('presumably not') vs. definitive 'No'",
+  "words": [
+   "commitment",
+   "level",
+   "presumably"
+  ],
+  "q": "Did James have a girlfriend during April 2022?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa11",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "seeking solitude as the specific feeling",
+  "words": [
+   "seeking",
+   "solitude",
+   "feeling"
+  ],
+  "q": "How was John feeling on April 10, 2022?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa6",
+  "conv": "conv-47",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Likely yes",
+  "words": [
+   "yes"
+  ],
+  "q": "Does James live in Connecticut?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa17",
+  "conv": "conv-47",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "Mafia",
+  "words": [
+   "mafia"
+  ],
+  "q": "What is the board game where you have to find the imposter that John mentions to James?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa10",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "first week of April 2022",
+  "words": [
+   "first",
+   "april",
+   "2022"
+  ],
+  "q": "When did James adopt Ned?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa21",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged date precision ('Around May 7, 2022')",
+  "words": [
+   "2022"
+  ],
+  "q": "When did John first organize a charity tournament with his friends?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa25",
+  "conv": "conv-47",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "which team James supports (Liverpool)",
+  "words": [
+   "which",
+   "team",
+   "james",
+   "supports",
+   "liverpool"
+  ],
+  "q": "Are John and James fans of the same football team?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa24",
+  "conv": "conv-47",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "virtual world inspired by Witcher 3",
+  "words": [
+   "virtual",
+   "world",
+   "inspired",
+   "witcher"
+  ],
+  "q": "What kind of games has James tried to develop?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa19",
+  "conv": "conv-47",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Most likely yes, because he mentioned that the only creatures that gave him joy are dogs and he was actively trying to date.",
+  "words": [
+   "most",
+   "yes",
+   "because",
+   "mentioned",
+   "only",
+   "creatures",
+   "gave",
+   "joy",
+   "dogs",
+   "actively",
+   "trying"
+  ],
+  "q": "Was James feeling lonely before meeting Samantha?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa36",
+  "conv": "conv-47",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Most likely John's partner.",
+  "words": [
+   "most",
+   "john",
+   "partner"
+  ],
+  "q": "Who is Jill?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa31",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "19 days",
+  "words": [
+   "days"
+  ],
+  "q": "How many days did James plan to spend on his trip in Canada?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa39",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "2019 given only as inferred and hedged (around mid-2019), not definitively stated",
+  "words": [
+   "2019",
+   "given",
+   "only",
+   "inferred",
+   "mid",
+   "2019",
+   "stated"
+  ],
+  "q": "When did John start his job in IT?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa38",
+  "conv": "conv-47",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "aspires to become an eSports competition organizer",
+  "words": [
+   "aspires",
+   "become",
+   "esports",
+   "competition",
+   "organizer"
+  ],
+  "q": "What happened to John's job situation in 2022?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa40",
+  "conv": "conv-47",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "swimming",
+  "words": [
+   "swimming"
+  ],
+  "q": "What kind of tricks do James's pets know?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa37",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "unhedged exact date",
+  "words": [
+   "unhedged",
+   "exact"
+  ],
+  "q": "When did John spend time with his sister and dogs?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa44",
+  "conv": "conv-47",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold's hedged 'possibly' commitment",
+  "words": [
+   "possibly",
+   "commitment"
+  ],
+  "q": "Why didn't John want to go to Starbucks?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa33",
+  "conv": "conv-47",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Yes",
+  "words": [
+   "yes"
+  ],
+  "q": "Did John and James study together?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa50",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact date without hedging",
+  "words": [
+   "exact"
+  ],
+  "q": "When did James start taking cooking classes?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa45",
+  "conv": "conv-47",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "lager (mentioned only as a truncated fragment, never stated as served)",
+  "words": [
+   "lager",
+   "mentioned",
+   "only",
+   "truncated",
+   "fragment",
+   "never",
+   "stated",
+   "served"
+  ],
+  "q": "What kind of beer does McGee's bar serve?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa55",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct week anchor: the week before 13 October 2022, not before 3 October 2022",
+  "words": [
+   "anchor",
+   "october",
+   "2022",
+   "october",
+   "2022"
+  ],
+  "q": "When did John and his programming friends host an online programming competition?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa62",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "nearly three months",
+  "words": [
+   "nearly",
+   "three",
+   "months"
+  ],
+  "q": "How long did James and Samantha date for before deciding to move in together?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa65",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged date 'Around November 7, 2022'",
+  "words": [
+   "november",
+   "2022"
+  ],
+  "q": "When did James and his family visit Mark and Josh?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa64",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "nearly four months",
+  "words": [
+   "nearly",
+   "four",
+   "months"
+  ],
+  "q": "How long did John practice chess for before winning the chess tournament?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa59",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "The night spans October 30 to 31, 2022; answer omits the 'to 31' portion",
+  "words": [
+   "night",
+   "spans",
+   "october",
+   "2022",
+   "omits",
+   "portion"
+  ],
+  "q": "When did John and his gaming friends organize the charity tournament?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa66",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific day (November 5-6)",
+  "words": [
+   "november"
+  ],
+  "q": "When did John work with a game developer on a project?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa53",
+  "conv": "conv-47",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "six months",
+  "words": [
+   "six",
+   "months"
+  ],
+  "q": "How long did it take for James to complete his Witcher-inspired game?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa88",
+  "conv": "conv-47",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Date imprecise/incorrect ('around May 7' vs May 8, 2022)",
+  "words": [
+   "imprecise",
+   "2022"
+  ],
+  "q": "What did John organize with his friends on May 8, 2022?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa97",
+  "conv": "conv-47",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "which team will perform better in the championship (answer says final standings rather than the championship)",
+  "words": [
+   "which",
+   "team",
+   "perform",
+   "better",
+   "championship",
+   "says",
+   "final",
+   "standings",
+   "championship"
+  ],
+  "q": "What disagreement do James and John have about their football teams?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa132",
+  "conv": "conv-47",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "date consistency — answer states launch in October 2022 while the question specifies September 2022",
+  "words": [
+   "consistency",
+   "states",
+   "launch",
+   "october",
+   "2022",
+   "september",
+   "2022"
+  ],
+  "q": "What career milestone did John achieve recently in September 2022?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-47_qa145",
+  "conv": "conv-47",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "loving spending time together at the bar",
+  "words": [
+   "loving",
+   "spending",
+   "together",
+   "bar"
+  ],
+  "q": "Why did James and Samantha choose an apartment near McGee's bar?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa9",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "January 25, 2023",
+  "words": [
+   "january",
+   "2023"
+  ],
+  "q": "When did Deborah's father pass away?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa12",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact date stated without hedging",
+  "words": [
+   "exact",
+   "stated"
+  ],
+  "q": "When did Deborah receive an appreciation letter from her community?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa17",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged date 'Around 2022'",
+  "words": [
+   "2022"
+  ],
+  "q": "When did Jolene buy her pet Seraphim?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa21",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged precision: 'around' qualifying the correct date of Saturday, January 28, 2023",
+  "words": [
+   "qualifying",
+   "saturday",
+   "january",
+   "2023"
+  ],
+  "q": "When do Jolene and her partner plan to complete the game \"Walking Dead\"?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa19",
+  "conv": "conv-48",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive count 'two times' hedged as 'at least 2'",
+  "words": [
+   "count",
+   "two",
+   "times",
+   "least"
+  ],
+  "q": "How many times has Jolene been to France?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa23",
+  "conv": "conv-48",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "She's more interested in playing video games",
+  "words": [
+   "more",
+   "interested",
+   "playing",
+   "video",
+   "games"
+  ],
+  "q": "Why did Jolene sometimes put off doing yoga?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa29",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct day (gold is Wednesday before 9 Feb 2023, i.e., Feb 8; answer gives Feb 1)",
+  "words": [
+   "wednesday",
+   "feb",
+   "2023",
+   "feb",
+   "gives",
+   "feb"
+  ],
+  "q": "When did Jolene have a mini-retreat to reflect on her career?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa33",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact duration without hedging",
+  "words": [
+   "exact",
+   "duration"
+  ],
+  "q": "How long have Jolene and her partner been together?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa50",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged with 'Around' instead of definitive 2020",
+  "words": [
+   "2020"
+  ],
+  "q": "Which year did Jolene start practicing yoga?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa51",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedge 'Around' softens a definitive date",
+  "words": [
+   "softens"
+  ],
+  "q": "When did Jolene buy a new aquarium for Seraphim?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa45",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct completion month May 2023 for the robotics project itself",
+  "words": [
+   "completion",
+   "2023",
+   "robotics",
+   "project",
+   "itself"
+  ],
+  "q": "When did Jolene finish her robotics project?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa46",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "four months",
+  "words": [
+   "four",
+   "months"
+  ],
+  "q": "How long did Jolene work on the robotics project given to her by her Professor?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa53",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "in 2021",
+  "words": [
+   "2021"
+  ],
+  "q": "When did Jolene adopt her snake Susie?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa52",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "last week of July 2023",
+  "words": [
+   "last",
+   "july",
+   "2023"
+  ],
+  "q": "When did Jolene lose a lot of progress in her work?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa56",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "week before 16 August, 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "q": "When did Deborah lead a meditation session during the sunset?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa60",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct week: a week before 24 August 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "q": "When did Deborah go to a yoga retreat near her mom's place?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa68",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged date with 'Around 2020' instead of definitive 2020",
+  "words": [
+   "2020",
+   "2020"
+  ],
+  "q": "When did Deborah visit Brazil?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa70",
+  "conv": "conv-48",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged/qualified commitment level ('likely')",
+  "words": [
+   "qualified",
+   "commitment",
+   "level"
+  ],
+  "q": "Is the friend who wrote Deborah the motivational quote no longer alive?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa75",
+  "conv": "conv-48",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Exploding Kittens",
+  "words": [
+   "exploding",
+   "kittens"
+  ],
+  "q": "What card game is Deborah talking about?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa71",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "last week of August 2023",
+  "words": [
+   "last",
+   "august",
+   "2023"
+  ],
+  "q": "When did Deborah go to a community meetup?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa76",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "partner's participation",
+  "words": [
+   "partner",
+   "participation"
+  ],
+  "q": "When did Jolene and her partner try scuba diving lessons?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa81",
+  "conv": "conv-48",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold agreement date of October 2023; answer gives September 17, 2023 as agreement date and October 2023 only as trip date",
+  "words": [
+   "agreement",
+   "october",
+   "2023",
+   "gives",
+   "september",
+   "2023",
+   "agreement",
+   "october",
+   "2023",
+   "only",
+   "trip"
+  ],
+  "q": "When did the Deboran and Jolene agree to go surfing?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa86",
+  "conv": "conv-48",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "heart-shaped pendant/amulet is not a gold gift",
+  "words": [
+   "heart",
+   "shaped",
+   "pendant",
+   "amulet",
+   "gift"
+  ],
+  "q": "What gifts has Deborah received?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa87",
+  "conv": "conv-48",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "Thailand",
+  "words": [
+   "thailand"
+  ],
+  "q": "Which countries has Deborah traveled to?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa88",
+  "conv": "conv-48",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "going to art shows",
+  "words": [
+   "going",
+   "art",
+   "shows"
+  ],
+  "q": "What activities does Deborah pursue besides practicing and teaching yoga?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa105",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "design element — she designed AND built the purifier",
+  "words": [
+   "design",
+   "element",
+   "designed",
+   "built",
+   "purifier"
+  ],
+  "q": "What milestone did Jolene achieve recently on 4 February, 2023?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa119",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a photo of a desk with a notebook and a computer monitor",
+  "words": [
+   "photo",
+   "desk",
+   "notebook",
+   "computer",
+   "monitor"
+  ],
+  "q": "What picture did Jolene share related to feeling overwhelmed?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa134",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive duration 'one year' — hedged as 'about one year'",
+  "words": [
+   "duration"
+  ],
+  "q": "For how long has Jolene had Seraphim as a pet?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa135",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "comforted",
+  "words": [
+   "comforted"
+  ],
+  "q": "How does Jolene feel when spending time with Seraphim?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa145",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "includes unverified extra activities (yoga/meditation, beach trips, hikes) mixed with the gold answer",
+  "words": [
+   "includes",
+   "activities",
+   "yoga",
+   "meditation",
+   "beach",
+   "trips",
+   "hikes"
+  ],
+  "q": "What activities have been helping Jolene stay distracted during tough times?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa155",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "mindfulness",
+  "words": [
+   "mindfulness"
+  ],
+  "q": "What habits does Jolene practice to feel balanced?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa159",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "'rewarded' rendered as 'rewarding'",
+  "words": [
+   "rewarded",
+   "rendered",
+   "rewarding"
+  ],
+  "q": "How did Jolene feel after receiving positive feedback at the virtual conference?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa171",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "nintendo game console",
+  "words": [
+   "nintendo",
+   "game",
+   "console"
+  ],
+  "q": "What was the video game console that Jolene's parents got her at age 10?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa189",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "bopping around",
+  "words": [
+   "bopping"
+  ],
+  "q": "What activity did Deborah enjoy at the music festival with their pals on September 20, 202",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa190",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "bopping around",
+  "words": [
+   "bopping"
+  ],
+  "q": "What did Deborah find freeing at the music festival?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa188",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Surfing",
+  "words": [
+   "surfing"
+  ],
+  "q": "What outdoor activity did Jolene suggest doing together with Deborah?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa7",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "running",
+  "words": [
+   "running"
+  ],
+  "q": "What new hobbies did Sam consider trying?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa7",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "incorrectly includes weight lifting",
+  "words": [
+   "incorrectly",
+   "includes",
+   "weight",
+   "lifting"
+  ],
+  "q": "What new hobbies did Sam consider trying?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa13",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "first week of June 2023 — answer hedges with a range including late May",
+  "words": [
+   "first",
+   "june",
+   "2023",
+   "hedges",
+   "range",
+   "including"
+  ],
+  "q": "When did Evan have his sudden heart palpitation incident that really shocked him up?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa17",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged date 'around July 21, 2023' instead of definitive day; gold is 'Friday before 27 July 2023' (i.e., Friday, July 21)",
+  "words": [
+   "july",
+   "2023",
+   "friday",
+   "july",
+   "2023",
+   "friday",
+   "july"
+  ],
+  "q": "When did Sam's friends mock him for being overweight?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa21",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "she's cool",
+  "words": [
+   "cool"
+  ],
+  "q": "How does Evan describe the woman and his feelings for her that he met in Canada?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa18",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "grilled chicken salad with avocado",
+  "words": [
+   "grilled",
+   "chicken",
+   "salad",
+   "avocado"
+  ],
+  "q": "What kind of healthy food suggestions has Evan given to Sam?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa23",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged with 'around July 28, 2023'",
+  "words": [
+   "july",
+   "2023"
+  ],
+  "q": "When did Sam start working out at the gym?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa20",
+  "conv": "conv-49",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "healthy meal delivery service subscription",
+  "words": [
+   "healthy",
+   "meal",
+   "delivery",
+   "service",
+   "subscription"
+  ],
+  "q": "In light of the health and dietary changes discussed, what would be an appropriate gift fo",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-48_qa117",
+  "conv": "conv-48",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a yellow coffee cup with a handwritten message",
+  "words": [
+   "yellow",
+   "coffee",
+   "cup",
+   "handwritten",
+   "message"
+  ],
+  "q": "What did Deb share a photo of, which brought a smile to Jolene's face?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa19",
+  "conv": "conv-49",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "stress-relieving activities like hiking, painting, and road trips",
+  "words": [
+   "stress",
+   "relieving",
+   "activities",
+   "like",
+   "hiking",
+   "painting",
+   "road",
+   "trips"
+  ],
+  "q": "Considering their conversations and personal growth, what advice might Evan and Sam give t",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa19",
+  "conv": "conv-49",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "importance of friendship and support",
+  "words": [
+   "importance",
+   "friendship",
+   "support"
+  ],
+  "q": "Considering their conversations and personal growth, what advice might Evan and Sam give t",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa30",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedge 'around' obscures exact date precision",
+  "words": [
+   "obscures",
+   "exact"
+  ],
+  "q": "When Evan get back from a vacation with his SO?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa36",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "grilled vegetables (says 'roasted' vegetables instead)",
+  "words": [
+   "grilled",
+   "vegetables",
+   "says",
+   "roasted",
+   "vegetables"
+  ],
+  "q": "What kind of foods or recipes has Sam recommended to Evan?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa36",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "poutine",
+  "words": [
+   "poutine"
+  ],
+  "q": "What kind of foods or recipes has Sam recommended to Evan?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa31",
+  "conv": "conv-49",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "conclusion that they view challenges as opportunities for growth and change",
+  "words": [
+   "conclusion",
+   "view",
+   "challenges",
+   "opportunities",
+   "growth",
+   "change"
+  ],
+  "q": "How might Evan and Sam's experiences with health and lifestyle changes influence their app",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa31",
+  "conv": "conv-49",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "explicit statement that both embrace healthier lifestyles indicating a proactive approach",
+  "words": [
+   "explicit",
+   "statement",
+   "both",
+   "embrace",
+   "healthier",
+   "lifestyles",
+   "indicating",
+   "proactive",
+   "approach"
+  ],
+  "q": "How might Evan and Sam's experiences with health and lifestyle changes influence their app",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa37",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "Beef Merlot (only 'beef and vegetables')",
+  "words": [
+   "beef",
+   "merlot",
+   "only",
+   "beef",
+   "vegetables"
+  ],
+  "q": "What kind of healthy meals did Sam start eating after getting a health scare?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa37",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "fruit bowl (only 'healthy fruit snacks')",
+  "words": [
+   "fruit",
+   "bowl",
+   "only",
+   "healthy",
+   "fruit",
+   "snacks"
+  ],
+  "q": "What kind of healthy meals did Sam start eating after getting a health scare?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa39",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact value without hedging",
+  "words": [
+   "exact",
+   "value"
+  ],
+  "q": "How many months lapsed between Sam's first and second doctor's appointment?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa44",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "portraits",
+  "words": [
+   "portraits"
+  ],
+  "q": "What kind of subjects does Evan enjoy painting?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa44",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "abstract minimalism",
+  "words": [
+   "abstract",
+   "minimalism"
+  ],
+  "q": "What kind of subjects does Evan enjoy painting?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa43",
+  "conv": "conv-49",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive 'every three months' frequency",
+  "words": [
+   "every",
+   "three",
+   "months",
+   "frequency"
+  ],
+  "q": "How often does Sam get health checkups?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa50",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "reading books",
+  "words": [
+   "reading",
+   "books"
+  ],
+  "q": "What kind of hobbies does Evan pursue?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa51",
+  "conv": "conv-49",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "enrolling in cooking classes",
+  "words": [
+   "enrolling",
+   "cooking",
+   "classes"
+  ],
+  "q": "What challenges does Sam face in his quest for a healthier lifestyle, and how does he addr",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa51",
+  "conv": "conv-49",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "seeking support from friends like Evan",
+  "words": [
+   "seeking",
+   "support",
+   "friends",
+   "like",
+   "evan"
+  ],
+  "q": "What challenges does Sam face in his quest for a healthier lifestyle, and how does he addr",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa51",
+  "conv": "conv-49",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "answer cut off before explaining how challenges are addressed",
+  "words": [
+   "cut",
+   "off",
+   "explaining",
+   "how",
+   "challenges",
+   "addressed"
+  ],
+  "q": "What challenges does Sam face in his quest for a healthier lifestyle, and how does he addr",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa58",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged date 'around October 2022'",
+  "words": [
+   "october",
+   "2022"
+  ],
+  "q": "When did Evan start lifting weights?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa59",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedged precision: 'Around' October 14, 2023",
+  "words": [
+   "october",
+   "2023"
+  ],
+  "q": "When did Sam and his friend decide to try kayaking?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa66",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "end of (specific timing within October 2023)",
+  "words": [
+   "end",
+   "timing",
+   "within",
+   "october",
+   "2023"
+  ],
+  "q": "When did Evan lose his job?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa61",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold specifies work-related stress as the kind of stress; answer enumerates multiple alternative stress types instead of giving the definitive answer",
+  "words": [
+   "work",
+   "related",
+   "stress",
+   "kind",
+   "stress",
+   "enumerates",
+   "multiple",
+   "alternative",
+   "stress",
+   "types",
+   "giving"
+  ],
+  "q": "What kind of stress was Sam dealing with in October 2023?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa63",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "weekend before 17 October, 2023.",
+  "words": [
+   "weekend",
+   "october",
+   "2023"
+  ],
+  "q": "When was Sam in the ER?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa67",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "The planning date is stated as November 2023, not December 2023",
+  "words": [
+   "planning",
+   "stated",
+   "november",
+   "2023",
+   "december",
+   "2023"
+  ],
+  "q": "When did Evan and Sam planned a trip to the beach together?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa62",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Sam's scare is incomplete — the answer cuts off and never states stomach pains/gastritis",
+  "words": [
+   "sam",
+   "scare",
+   "incomplete",
+   "cuts",
+   "off",
+   "never",
+   "states",
+   "stomach",
+   "pains",
+   "gastritis"
+  ],
+  "q": "What health scares did Sam and Evan experience?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa74",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "correct day: Thursday before December 17, 2023 (Dec 14)",
+  "words": [
+   "thursday",
+   "december",
+   "2023",
+   "dec"
+  ],
+  "q": "When did Evan's son fall off his bike?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa70",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact duration of four months",
+  "words": [
+   "exact",
+   "duration",
+   "four",
+   "months"
+  ],
+  "q": "How long did Evan and his partner date before getting married?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa78",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "his and his wife's families (only 'extended family' mentioned)",
+  "words": [
+   "wife",
+   "families",
+   "only",
+   "extended",
+   "family",
+   "mentioned"
+  ],
+  "q": "Who did Evan tell about his marriage?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa80",
+  "conv": "conv-49",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "January 9, 2023",
+  "words": [
+   "january",
+   "2023"
+  ],
+  "q": "When did Evan have a drunken night with his friends?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa81",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "traveling",
+  "words": [
+   "traveling"
+  ],
+  "q": "What is a stress reliever for Evan?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa81",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "places with a beautiful view",
+  "words": [
+   "places",
+   "beautiful",
+   "view"
+  ],
+  "q": "What is a stress reliever for Evan?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa82",
+  "conv": "conv-49",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Unhealthy snacks, sweets, yoga, places with beautiful views",
+  "words": [
+   "unhealthy",
+   "snacks",
+   "sweets",
+   "yoga",
+   "places",
+   "beautiful",
+   "views"
+  ],
+  "q": "What is a stress reliever for Sam?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa104",
+  "conv": "conv-49",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "bowl of spinach, avocado, and strawberries",
+  "words": [
+   "bowl",
+   "spinach",
+   "avocado",
+   "strawberries"
+  ],
+  "q": "What food did Sam share a photo of on 19 August, 2023?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa108",
+  "conv": "conv-49",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "sunsets over the ocean",
+  "words": [
+   "sunsets",
+   "over",
+   "ocean"
+  ],
+  "q": "What type of landscapes does Evan love painting the most?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa106",
+  "conv": "conv-49",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "forest scene",
+  "words": [
+   "forest",
+   "scene"
+  ],
+  "q": "What did Evan start painting years ago due to being inspired by a friend's gift?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa102",
+  "conv": "conv-49",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "salmon (answer says chicken instead)",
+  "words": [
+   "salmon",
+   "says",
+   "chicken"
+  ],
+  "q": "What dish did Sam make on 18 August, 2023 that turned out flavorful?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa117",
+  "conv": "conv-49",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold specifies only creative writing; 'journaling' adds an unverified alternative",
+  "words": [
+   "only",
+   "creative",
+   "writing",
+   "journaling",
+   "alternative"
+  ],
+  "q": "What kind of writing does Sam enjoy as a form of expression?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-49_qa116",
+  "conv": "conv-49",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a cactus in the desert",
+  "words": [
+   "cactus",
+   "desert"
+  ],
+  "q": "What painting did Evan share with Sam in October?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa132",
+  "conv": "conv-49",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "support",
+  "words": [
+   "support"
+  ],
+  "q": "What did Sam offer Evan regarding yoga?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa144",
+  "conv": "conv-49",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a photo of a man standing on a rock looking out over a valley",
+  "words": [
+   "photo",
+   "man",
+   "standing",
+   "rock",
+   "looking",
+   "out",
+   "over",
+   "valley"
+  ],
+  "q": "What did Evan share with Sam after their hiking trip?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa0",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "specific date range 26 March – 20 April 2023",
+  "words": [
+   "range",
+   "march",
+   "april",
+   "2023"
+  ],
+  "q": "When did Calvin first travel to Tokyo?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa8",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "May 1, 2023",
+  "words": [
+   "2023"
+  ],
+  "q": "When did Dave start his car maintenance shop?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa10",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "hedge 'around' reduces definitive precision",
+  "words": [
+   "reduces"
+  ],
+  "q": "When did Calvin's place get flooded in Tokyo?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa9",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive date; 'Around May 9, 2023' hedges the precise date (a week before 16 May 2023)",
+  "words": [
+   "2023",
+   "hedges",
+   "2023"
+  ],
+  "q": "When did a mishap occur with Calvin's musical gear and favorite mic?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa7",
+  "conv": "conv-50",
+  "cat": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Yes",
+  "words": [
+   "yes"
+  ],
+  "q": "Does Dave's shop employ a lot of people?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa13",
+  "conv": "conv-50",
+  "cat": "open-domain",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold is definitive 'Yes' while answer hedges with 'very likely'",
+  "words": [
+   "yes",
+   "hedges",
+   "very"
+  ],
+  "q": "Would Calvin enjoy performing at the Hollywood Bowl?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa12",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "gold specifies only last week of May 2023; answer adds an August 2023 show as an alternative",
+  "words": [
+   "only",
+   "last",
+   "2023",
+   "august",
+   "2023",
+   "show",
+   "alternative"
+  ],
+  "q": "When was Calvin's concert in Tokyo?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa27",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Miami",
+  "words": [
+   "miami"
+  ],
+  "q": "Which city was Calvin visiting in August 2023?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa35",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "week-level specificity: 'last week of August'",
+  "words": [
+   "level",
+   "specificity",
+   "last",
+   "august"
+  ],
+  "q": "When did Calvin book flight tickets to Boston?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa50",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact date phrase 'first week of October 2023'",
+  "words": [
+   "exact",
+   "phrase",
+   "first",
+   "october",
+   "2023"
+  ],
+  "q": "When did Calvin buy his second Ferrari?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa47",
+  "conv": "conv-50",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "two",
+  "words": [
+   "two"
+  ],
+  "q": "How many car shows has Dave attended?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa60",
+  "conv": "conv-50",
+  "cat": "multi-hop",
+  "grade": "wrong",
+  "src": "jm",
+  "text": "gold chain (answer says 'gold necklace with a diamond pendant', adding a fabricated detail)",
+  "words": [
+   "chain",
+   "says",
+   "necklace",
+   "diamond",
+   "pendant",
+   "fabricated",
+   "detail"
+  ],
+  "q": "What gifts has Calvin received from his artist friends?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa63",
+  "conv": "conv-50",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "yellow color of the custom guitar",
+  "words": [
+   "yellow",
+   "color",
+   "custom",
+   "guitar"
+  ],
+  "q": "What style of guitars does Calvin own?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa61",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "nearly two months",
+  "words": [
+   "nearly",
+   "two",
+   "months"
+  ],
+  "q": "How long did Dave's work on the Ford Mustang take?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa65",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive date — hedges with 'around September 2023'",
+  "words": [
+   "hedges",
+   "september",
+   "2023"
+  ],
+  "q": "When did Dave take a photo of a Boston clock tower?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa64",
+  "conv": "conv-50",
+  "cat": "multi-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "weekly visits to local parks",
+  "words": [
+   "weekly",
+   "visits",
+   "local",
+   "parks"
+  ],
+  "q": "What activities has Dave participated in with his friends?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa62",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "exact duration 'two weeks'",
+  "words": [
+   "exact",
+   "duration",
+   "two",
+   "weeks"
+  ],
+  "q": "How long was the car modification workshop in San Francisco?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa68",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "definitive 'last week of October 2023' — answer hedges with 'around late October 2023'",
+  "words": [
+   "last",
+   "october",
+   "2023",
+   "hedges",
+   "october",
+   "2023"
+  ],
+  "q": "When did Dave find the car he repaired and started sharing in his blog?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa67",
+  "conv": "conv-50",
+  "cat": "temporal",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Tokyo (specific city)",
+  "words": [
+   "tokyo",
+   "city"
+  ],
+  "q": "Where was Calvin located in the last week of October 2023?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa109",
+  "conv": "conv-50",
+  "cat": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "exploring and growing his brand",
+  "words": [
+   "exploring",
+   "growing",
+   "brand"
+  ],
+  "q": "What is Calvin excited about after the tour?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa127",
+  "conv": "conv-50",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "Shibuya Crossing is presented as the primary answer, mixing a different specific value with the gold",
+  "words": [
+   "shibuya",
+   "crossing",
+   "presented",
+   "primary",
+   "different",
+   "value"
+  ],
+  "q": "What specific location in Tokyo does Calvin mention being excited to explore?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa138",
+  "conv": "conv-50",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "'unreal' element of the feeling",
+  "words": [
+   "unreal",
+   "element",
+   "feeling"
+  ],
+  "q": "How did Calvin feel about performing with someone he admires?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa137",
+  "conv": "conv-50",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "at an early age",
+  "words": [
+   "age"
+  ],
+  "q": "When did Calvin first get interested in cars?",
+  "tag": "conv有+库有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa156",
+  "conv": "conv-50",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "answer enumerates an additional alternative location (White Mountains), presenting two options instead of the single gold answer",
+  "words": [
+   "enumerates",
+   "additional",
+   "alternative",
+   "location",
+   "white",
+   "mountains",
+   "presenting",
+   "two",
+   "options"
+  ],
+  "q": "Where did Dave take a stunning photo of a waterfall?",
+  "tag": "conv也没有(需综合/转述)"
+ },
+ {
+  "case_id": "locomo_conv-50_qa115",
+  "conv": "conv-50",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "'shiny' descriptor replaced with 'sleek vintage'",
+  "words": [
+   "shiny",
+   "descriptor",
+   "replaced",
+   "sleek",
+   "vintage"
+  ],
+  "q": "What project did Calvin work on to chill out?",
+  "tag": "conv有+库没有(提取丢失!)"
+ },
+ {
+  "case_id": "locomo_conv-26_qa150",
+  "conv": "conv-26",
+  "cat": "single-hop",
+  "grade": "partial",
+  "src": "jm",
+  "text": "explicit statement that she appreciated them a lot",
+  "words": [
+   "explicit",
+   "statement",
+   "appreciated",
+   "lot"
+  ],
+  "q": "How did Melanie feel about her family supporting her?",
+  "tag": "conv有+库没有(提取丢失!)"
+ }
+]

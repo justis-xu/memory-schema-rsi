@@ -1,0 +1,85 @@
+{
+  "zhfull": {
+    "label": "zhfull",
+    "n": 1982,
+    "per_category": {
+      "multi-hop": {
+        "n": 282,
+        "lenient_correct": 270,
+        "exact": 155,
+        "partial": 84,
+        "wrong": 43,
+        "unknown": 0,
+        "lenient_rate": 0.9574,
+        "precise_rate": 0.5496
+      },
+      "temporal": {
+        "n": 321,
+        "lenient_correct": 299,
+        "exact": 172,
+        "partial": 118,
+        "wrong": 31,
+        "unknown": 0,
+        "lenient_rate": 0.9315,
+        "precise_rate": 0.5358
+      },
+      "open-domain": {
+        "n": 96,
+        "lenient_correct": 71,
+        "exact": 33,
+        "partial": 33,
+        "wrong": 30,
+        "unknown": 0,
+        "lenient_rate": 0.7396,
+        "precise_rate": 0.3438
+      },
+      "single-hop": {
+        "n": 839,
+        "lenient_correct": 773,
+        "exact": 635,
+        "partial": 126,
+        "wrong": 78,
+        "unknown": 0,
+        "lenient_rate": 0.9213,
+        "precise_rate": 0.7569
+      }
+    },
+    "adversarial": {
+      "n": 444,
+      "lenient_correct": 190,
+      "exact": 45,
+      "partial": 26,
+      "wrong": 373,
+      "unknown": 0,
+      "lenient_rate": 0.4279,
+      "precise_rate": 0.1014,
+      "interpretation": {
+        "exact": "干净拒答（无编造）",
+        "partial": "拒答但附带猜测",
+        "wrong": "编造答案"
+      }
+    },
+    "J_score": {
+      "n": 1538,
+      "lenient_official": 0.9187,
+      "precise_exact_only": 0.6469,
+      "exact_plus_partial": 0.8817,
+      "vague_share_of_lenient_correct": 0.2555,
+      "counts": {
+        "exact": 995,
+        "partial": 361,
+        "wrong": 182
+      }
+    },
+    "hedge_stats": {
+      "answered": 1982,
+      "with_hedge_words": 0,
+      "hedge_word_counter": {}
+    },
+    "det_vs_judge": {
+      "n": 209,
+      "agree": 149,
+      "agreement": 0.7129
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# 100 轮多图探索 · wave 2（v10 概念化 + 组合空间 + answer 轴组合）
+# 参考 = r000_calib 同条件参考臂；噪声半径见 docs/search_ledger.md
+- {id: r100_v10,        graphs: [v10concept],  answer_preset: official}
+- {id: r101_v10s1,      graphs: [s1, v10concept], answer_preset: official}
+- {id: r102_v10s2,      graphs: [s2, v10concept], answer_preset: official}
+- {id: r103_v10_precise, graphs: [v10concept, s1], answer_preset: official_precise}
+- {id: r104_big,        graphs: [s1, v4session, v5month, v6pair, v8cluster, v10concept], answer_preset: official}
+- {id: r105_big_precise, graphs: [s1, v4session, v5month, v6pair, v8cluster, v10concept], answer_preset: official_precise}
+- {id: r106_time,       graphs: [s1, v5month, v10concept], answer_preset: official}
+- {id: r107_time_precise, graphs: [s1, v5month, v10concept], answer_preset: official_precise}
+- {id: r108_pair10,     graphs: [s1, v6pair, v10concept],  answer_preset: official}
+- {id: r109_s2v10_precise, graphs: [s2, v10concept], answer_preset: official_precise}
+- {id: r110_pn30_precise, graphs: [s2], retrieval: {per_node: 30}, answer_preset: official_precise}
+- {id: r111_big_pn30_precise, graphs: [s2, v8cluster, v10concept], retrieval: {per_node: 30}, answer_preset: official_precise}

@@ -1,0 +1,827 @@
+[
+ {
+  "case_id": "locomo_conv-26_qa69",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "open-domain",
+  "src": "judge_missing",
+  "item": "thoughtful",
+  "words": [
+   "thoughtful"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   7,
+   13,
+   16
+  ],
+  "question": "What personality traits might Melanie say Caroline has?",
+  "gold": "Thoughtful, authentic, driven",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-26_qa142",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "src": "gold",
+  "item": "An ongoing adventure of learning and growing.",
+  "words": [
+   "ongoing",
+   "adventure",
+   "learning",
+   "growing"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   17
+  ],
+  "question": "How do Melanie and Caroline describe their journey through life together?",
+  "gold": "An ongoing adventure of learning and growing.",
+  "grade": "wrong"
+ },
+ {
+  "case_id": "locomo_conv-30_qa52",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "key to making customers feel welcome and coming back",
+  "words": [
+   "key",
+   "making",
+   "customers",
+   "feel",
+   "welcome",
+   "coming",
+   "back"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   3
+  ],
+  "question": "What did Jon say about creating a special experience for customers?",
+  "gold": "It's the key to making them feel welcome and coming back",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-30_qa74",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "exact phrase 'savor all the good vibes'",
+  "words": [
+   "exact",
+   "phrase",
+   "savor",
+   "all",
+   "good",
+   "vibes"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   15
+  ],
+  "question": "What does Jon plan to do at the grand opening of his dance studio?",
+  "gold": "savor all the good vibes",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-30_qa73",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "magical",
+  "words": [
+   "magical"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   15
+  ],
+  "question": "How does Gina describe the feeling that dance brings?",
+  "gold": "magical",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-30_qa75",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "exact quote 'Let's live it up and make some great memories'",
+  "words": [
+   "exact",
+   "quote",
+   "let",
+   "live",
+   "make",
+   "some",
+   "great",
+   "memories"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   15
+  ],
+  "question": "What does Gina say to Jon about the grand opening?",
+  "gold": "Let's live it up and make some great memories",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-30_qa78",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "positivity",
+  "words": [
+   "positivity"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   17
+  ],
+  "question": "According to Gina, what makes Jon a perfect mentor and guide?",
+  "gold": "His positivity and determination",
+  "grade": "wrong"
+ },
+ {
+  "case_id": "locomo_conv-41_qa45",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "open-domain",
+  "src": "judge_missing",
+  "item": "gold's key reasoning: joining the military and running for office",
+  "words": [
+   "key",
+   "reasoning",
+   "joining",
+   "military",
+   "running",
+   "office"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   7,
+   24
+  ],
+  "question": "Would John be open to moving to another country?",
+  "gold": "No, he has goals specifically in the U.S. like joining the military and running for office.",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-41_qa118",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "the desire to show support",
+  "words": [
+   "desire",
+   "show",
+   "support"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   21
+  ],
+  "question": "What inspired John to join the marching event for veterans' rights?",
+  "gold": "Respect for the military and the desire to show support",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-41_qa129",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "the specific view that trying new classes is a fun way to switch up the exercise routine",
+  "words": [
+   "view",
+   "trying",
+   "new",
+   "classes",
+   "fun",
+   "way",
+   "switch",
+   "exercise",
+   "routine"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   25
+  ],
+  "question": "What does John think about trying new classes at the yoga studio?",
+  "gold": "Trying new classes is a fun way to switch up the exercise routine.",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-42_qa146",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "knowing that her writing can make a difference",
+  "words": [
+   "knowing",
+   "writing",
+   "can",
+   "make",
+   "difference"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   18
+  ],
+  "question": "What motivates Joanna to keep writing even on tough days?",
+  "gold": "Knowing that her writing can make a difference",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-42_qa144",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "'share her stories and hopefully have an impact' stated directly",
+  "words": [
+   "share",
+   "stories",
+   "hopefully",
+   "impact",
+   "stated",
+   "directly"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   18
+  ],
+  "question": "What kind of impact does Joanna hope to have with her writing?",
+  "gold": "share her stories and hopefully have an impact",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-42_qa172",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "gold specifies 'respect' for bouncing back",
+  "words": [
+   "respect",
+   "bouncing",
+   "back"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   24
+  ],
+  "question": "How does Nate feel about Joanna's ability to bounce back from setbacks?",
+  "gold": "respect Joanna for being able to bounce back",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-42_qa173",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "rejections don't define her",
+  "words": [
+   "rejections",
+   "don",
+   "define"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   24
+  ],
+  "question": "What encouragement does Nate give to Joanna after her setback?",
+  "gold": "rejections don't define her, keep grinding and she'll find the perfect opportunity",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-42_qa173",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "she'll find the perfect opportunity",
+  "words": [
+   "find",
+   "perfect",
+   "opportunity"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   24
+  ],
+  "question": "What encouragement does Nate give to Joanna after her setback?",
+  "gold": "rejections don't define her, keep grinding and she'll find the perfect opportunity",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-42_qa191",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "src": "gold",
+  "item": "Watch other people's videos to understand what the audience likes",
+  "words": [
+   "watch",
+   "other",
+   "people",
+   "videos",
+   "understand",
+   "what",
+   "audience",
+   "likes"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   28
+  ],
+  "question": "What advice does Joanna give to Nate about making YouTube videos?",
+  "gold": "Watch other people's videos to understand what the audience likes",
+  "grade": "wrong"
+ },
+ {
+  "case_id": "locomo_conv-43_qa43",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "src": "judge_missing",
+  "item": "heart",
+  "words": [
+   "heart"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   12,
+   16
+  ],
+  "question": "What does John like about Lebron James?",
+  "gold": "His heart, determination, skills, and leadership.",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-43_qa42",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "src": "judge_missing",
+  "item": "slow cooker meal",
+  "words": [
+   "slow",
+   "cooker",
+   "meal"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   10,
+   15
+  ],
+  "question": "What has John cooked?",
+  "gold": "Soup, a slow cooker meal, and honey garlic chicken with roasted veg.",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-43_qa67",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "src": "judge_missing",
+  "item": "definitive single answer 'writing a travel blog' — instead offers 'travel writing (or travel blogging)' as two alternatives",
+  "words": [
+   "writing",
+   "travel",
+   "blog",
+   "offers",
+   "travel",
+   "writing",
+   "travel",
+   "blogging",
+   "two",
+   "alternatives"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   4,
+   6,
+   15,
+   27
+  ],
+  "question": "What would be a good hobby related to his travel dreams for Tim to pick up?",
+  "gold": "Writing a travel blog.",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-43_qa94",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "learning more about literature",
+  "words": [
+   "learning",
+   "more",
+   "literature"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   7
+  ],
+  "question": "What is the main intention behind Tim wanting to attend the book conference?",
+  "gold": "to learn more about literature and create a stronger bond to it",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-43_qa138",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "stayed focused on recovery",
+  "words": [
+   "stayed",
+   "focused",
+   "recovery"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   19
+  ],
+  "question": "How did John overcome his ankle injury from last season?",
+  "gold": "stayed focused on recovery and worked hard to strengthen his body",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-43_qa142",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "'think again' (reconsideration) nuance from gold",
+  "words": [
+   "think",
+   "again",
+   "reconsideration",
+   "nuance"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   19
+  ],
+  "question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
+  "gold": "made him think again about following dreams and searching for personal legends",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-43_qa168",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "brave",
+  "words": [
+   "brave"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   27
+  ],
+  "question": "Why does John like Aragorn from Lord of the Rings?",
+  "gold": "brave, selfless, down-to-earth attitude",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-43_qa168",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "down-to-earth attitude",
+  "words": [
+   "down",
+   "earth",
+   "attitude"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   27
+  ],
+  "question": "Why does John like Aragorn from Lord of the Rings?",
+  "gold": "brave, selfless, down-to-earth attitude",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-44_qa21",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "src": "judge_missing",
+  "item": "positive reinforcement training class for bonding (replaced with incorrect 'dog grooming course')",
+  "words": [
+   "positive",
+   "reinforcement",
+   "training",
+   "class",
+   "bonding",
+   "replaced",
+   "dog",
+   "grooming",
+   "course"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   6,
+   10,
+   14
+  ],
+  "question": "What are the classes that Audrey took for her dogs to?",
+  "gold": "Positive reinforcement training class for bonding, dog training course, agility class",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-44_qa41",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "src": "judge_missing",
+  "item": "presents a conflicting alternative (two Jack Russell mixes) alongside the correct breeds",
+  "words": [
+   "presents",
+   "conflicting",
+   "alternative",
+   "two",
+   "jack",
+   "russell",
+   "mixes",
+   "alongside",
+   "breeds"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   19,
+   26
+  ],
+  "question": "What are the breeds of Audrey's dogs?",
+  "gold": "Mongrel mixed with Lab for Pepper and Panda. Mongrel mixed with Chihuahua for Precious and Pixie.",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-44_qa72",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "To have pets learn how to behave in a positive way",
+  "words": [
+   "pets",
+   "learn",
+   "how",
+   "behave",
+   "positive",
+   "way"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   6
+  ],
+  "question": "Why did Audrey think positive reinforcement training is important for pets?",
+  "gold": "To have pets learn how to behave in a positive way",
+  "grade": "wrong"
+ },
+ {
+  "case_id": "locomo_conv-44_qa92",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "'comfy'",
+  "words": [
+   "comfy"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   18
+  ],
+  "question": "How does Audrey describe the new beds for her dogs?",
+  "gold": "Super cozy and comfy",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-44_qa109",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "exact phrase 'exploring the great outdoors'",
+  "words": [
+   "exact",
+   "phrase",
+   "exploring",
+   "great",
+   "outdoors"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   23
+  ],
+  "question": "What kind of experiences are Audrey's dogs the best companions for?",
+  "gold": "Exploring the great outdoors",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-47_qa80",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "the specific reason: her appearance and eyes were amazing",
+  "words": [
+   "reason",
+   "appearance",
+   "eyes",
+   "amazing"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   6
+  ],
+  "question": "Why did James embody the appearance of the game character from the woman he saw during a walk?",
+  "gold": "He found her appearance and eyes amazing.",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-49_qa136",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "src": "gold",
+  "item": "Your worth is not defined by your weight",
+  "words": [
+   "your",
+   "worth",
+   "defined",
+   "your",
+   "weight"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   20
+  ],
+  "question": "According to Evan, what is important for Sam to believe in concerning his weight?",
+  "gold": "Your worth is not defined by your weight",
+  "grade": "wrong"
+ },
+ {
+  "case_id": "locomo_conv-49_qa142",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "embracing the creative process without restraint",
+  "words": [
+   "embracing",
+   "creative",
+   "process",
+   "restraint"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   21
+  ],
+  "question": "How did Evan describe the process of creating the painting with the bird flying over it?",
+  "gold": "embracing the creative process without restraint",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-50_qa29",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "src": "judge_missing",
+  "item": "go hiking",
+  "words": [
+   "hiking"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   5,
+   8,
+   27
+  ],
+  "question": "What are Dave's hobbies other than fixing cars?",
+  "gold": "take a walk, go hiking, listen to favorite albums, live concerts, photography",
+  "grade": "wrong"
+ },
+ {
+  "case_id": "locomo_conv-50_qa51",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "src": "judge_missing",
+  "item": "definitive statement that collaboration started in August 2022",
+  "words": [
+   "statement",
+   "collaboration",
+   "started",
+   "august",
+   "2022"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   15,
+   24
+  ],
+  "question": "When did Calvin and Frank Ocean start collaborating?",
+  "gold": "August 2022",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-50_qa80",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "explore other things",
+  "words": [
+   "explore",
+   "other",
+   "things"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   5
+  ],
+  "question": "How does Calvin plan to jumpstart his inspiration?",
+  "gold": "explore other things and have some fun",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-50_qa87",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "exact phrasing 'get back on the road'",
+  "words": [
+   "exact",
+   "phrasing",
+   "get",
+   "back",
+   "road"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   10
+  ],
+  "question": "What was Calvin excited to do after getting his car fixed on 7 July, 2023?",
+  "gold": "get back on the road",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-50_qa93",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "src": "judge_missing",
+  "item": "to never forget his dreams",
+  "words": [
+   "never",
+   "forget",
+   "dreams"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   12
+  ],
+  "question": "What is Dave's advice to Calvin regarding his dreams?",
+  "gold": "to never forget his dreams",
+  "grade": "partial"
+ },
+ {
+  "case_id": "locomo_conv-50_qa134",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "src": "gold",
+  "item": "Paying extra attention to detail",
+  "words": [
+   "paying",
+   "attention",
+   "detail"
+  ],
+  "in_evidence": true,
+  "evidence_sessions": [
+   25
+  ],
+  "question": "What is the toughest part of car restoration according to Dave?",
+  "gold": "Paying extra attention to detail",
+  "grade": "wrong"
+ }
+]

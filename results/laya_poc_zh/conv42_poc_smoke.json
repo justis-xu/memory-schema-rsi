@@ -1,0 +1,174 @@
+{
+ "conv": "conv-42",
+ "track": {
+  "config": "config/locomo_zh.yaml",
+  "prefix": "zhfull",
+  "audit": "results/laya_poc_zh/audit.json"
+ },
+ "endpoints_used": {
+  "laya": {
+   "url": "https://u1172328-qpd4-5f1abfb1.weste.seetacloud.com:8443",
+   "mode": "public"
+  },
+  "decider": {
+   "url": "https://uu1172328-qpd4-5f1abfb1.weste.seetacloud.com:8443",
+   "mode": "public"
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "session_1",
+   "n_turns": 22,
+   "n_memories": 7,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜最近在做一个小项目，她觉得挺有意思"
+   ],
+   "state_chars": 1430,
+   "laya": {
+    "missing": 0.7931,
+    "unsupported": 0.7186,
+    "conflict": 0.68,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 1430
+   },
+   "decider": {
+    "missing": 0.0987,
+    "unsupported": 0.1076,
+    "conflict": 0.0158,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1430
+   }
+  },
+  {
+   "session_id": "session_2",
+   "n_turns": 29,
+   "n_memories": 6,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜希望剧本能带来积极的反馈和新的机会",
+    "内特养乌龟给他带来了很多快乐",
+    "即使输了比赛，内特也会为竞争对手加油"
+   ],
+   "state_chars": 1766,
+   "laya": {
+    "missing": 0.6415,
+    "unsupported": 0.6478,
+    "conflict": 0.4529,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1766
+   },
+   "decider": {
+    "missing": 0.0793,
+    "unsupported": 0.0759,
+    "conflict": 0.0421,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1766
+   }
+  }
+ ],
+ "metrics": {
+  "laya": {
+   "n_scored": 2,
+   "risk": "missing P(B)",
+   "auc": null,
+   "mean_risk_pos": 0.7173,
+   "mean_risk_neg": null,
+   "auc_by_question": {
+    "missing": null,
+    "unsupported": null,
+    "conflict": null
+   },
+   "threshold_table": {
+    "0.3": {
+     "升级数": 2,
+     "其中有真漏数": 2,
+     "漏检数": 0
+    },
+    "0.4": {
+     "升级数": 2,
+     "其中有真漏数": 2,
+     "漏检数": 0
+    },
+    "0.5": {
+     "升级数": 2,
+     "其中有真漏数": 2,
+     "漏检数": 0
+    },
+    "0.6": {
+     "升级数": 2,
+     "其中有真漏数": 2,
+     "漏检数": 0
+    },
+    "0.7": {
+     "升级数": 1,
+     "其中有真漏数": 1,
+     "漏检数": 1
+    }
+   }
+  },
+  "decider": {
+   "n_scored": 2,
+   "risk": "missing P(B)",
+   "auc": null,
+   "mean_risk_pos": 0.089,
+   "mean_risk_neg": null,
+   "auc_by_question": {
+    "missing": null,
+    "unsupported": null,
+    "conflict": null
+   },
+   "threshold_table": {
+    "0.3": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 2
+    },
+    "0.4": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 2
+    },
+    "0.5": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 2
+    },
+    "0.6": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 2
+    },
+    "0.7": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 2
+    }
+   }
+  }
+ },
+ "payoff": {
+  "skipped": true,
+  "note": "中文轨道无非 flash 对照库（nf53:），nf53 payoff 跳过"
+ }
+}

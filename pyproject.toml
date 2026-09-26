@@ -1,0 +1,28 @@
+[project]
+name = "schema-rsi"
+version = "0.1.0"
+description = "Long-term memory graph-schema evolution experiment infrastructure (Phase 0: Mem0 + HugeGraph + benchmarks)"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "mem0ai>=0.1.90",
+    "chromadb>=0.5.0",
+    "openai>=1.40.0",
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

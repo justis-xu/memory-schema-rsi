@@ -1,0 +1,218 @@
+The 'chroma' vector store does not support keyword search. Hybrid (BM25) scoring will be disabled and search will use semantic similarity only. To enable hybrid search, switch to a store with keyword_search support (e.g. qdrant, elasticsearch, pgvector).
+[PostHog] Multiple active PostHog clients detected for the same project API key and host. Reuse one Posthog instance per app or process when possible to avoid competing background queues and missed shutdown flushes. Multiple clients are supported when intentional.
+记忆 1829 条
+[variant] s2: {'preexisting': {'Entity': 1455, 'Event': 1074, 'Preference': 978, 'Concept': 274}}
+[Resume] 已完成 50 轮
+本轮执行 8 轮，dev 题集 616
+
+===== round r600_noatomic: graphs=['s2'] retrieval={} preset=official
+Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+Failed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+    评测 150/616 (118s)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    评测 300/616 (218s)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    评测 450/616 (326s)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    评测 600/616 (430s)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  → exact 347/616 (参考 327) Δ=+20 ↑51 ↓31 | {'exact': 347, 'partial': 152, 'wrong': 117} | 575.1s
+
+===== round r601_atomic: graphs=['s2'] retrieval={} preset=official
+    评测 150/616 (105s)
+    评测 300/616 (204s)
+    评测 450/616 (300s)
+    评测 600/616 (406s)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  → exact 373/616 (参考 327) Δ=+46 ↑79 ↓33 | {'exact': 373, 'wrong': 88, 'partial': 155} | 563.2s
+
+===== round r602_atomic_rep: graphs=['s2'] retrieval={} preset=official
+    评测 150/616 (133s)
+judge failed: unrecognized LoCoMo verdict: 
+    ⚠ locomo_conv-41_qa63 失败: unrecognized LoCoMo verdict: 
+    评测 300/616 (234s)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    评测 450/616 (370s)
+    评测 600/616 (472s)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  → exact 357/615 (参考 327) Δ=+30 ↑79 ↓49 | {'exact': 357, 'partial': 163, 'wrong': 95} | 621.1s
+
+===== round r603_atomic_precise: graphs=['s2'] retrieval={} preset=official_precise
+    评测 150/616 (117s)
+    评测 300/616 (203s)
+    评测 450/616 (330s)
+    评测 600/616 (431s)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  → exact 370/616 (参考 327) Δ=+43 ↑82 ↓39 | {'exact': 370, 'partial': 142, 'wrong': 104} | 587.4s
+
+===== round r604_atomic_nograph: graphs=无图 retrieval={} preset=official
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    评测 150/616 (107s)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    评测 300/616 (217s)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    评测 450/616 (316s)
+    评测 600/616 (417s)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  → exact 367/616 (参考 327) Δ=+40 ↑75 ↓35 | {'exact': 367, 'partial': 152, 'wrong': 97} | 589.4s
+
+===== round r605_jev_stop: graphs=['s2'] retrieval={} preset=official
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+    评测 150/616 (153s)
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+    评测 300/616 (257s)
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+    评测 450/616 (385s)
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+rerank failed, fallback to vector order: rerank request error: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/rerank/text-rerank/text-rerank (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)'))); /rerank -> HTTP 404: 
+pool rerank failed: rerank request error: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/rerank/text-rerank/text-rerank (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)'))); /rerank -> HTTP 404: 
+pool rerank failed: rerank request error: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/rerank/text-rerank/text-rerank (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)'))); /rerank -> HTTP 404: 
+pool rerank failed: rerank request error: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/rerank/text-rerank/text-rerank (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)'))); /rerank -> HTTPSConnectionPool(host='llm-3fxty64h73mpmn7j.cn-beijing.maas.aliyuncs.com', port=443): Max retries exceeded with url: /rerank (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
+pool rerank failed: rerank request error: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/rerank/text-rerank/text-rerank (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)'))); /rerank -> HTTPSConnectionPool(host='llm-3fxty64h73mpmn7j.cn-beijing.maas.aliyuncs.com', port=443): Max retries exceeded with url: /rerank (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
+rerank failed, fallback to vector order: rerank request error: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/rerank/text-rerank/text-rerank (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)'))); /rerank -> HTTPSConnectionPool(host='llm-3fxty64h73mpmn7j.cn-beijing.maas.aliyuncs.com', port=443): Max retries exceeded with url: /rerank (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+    评测 600/616 (515s)
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  → exact 379/616 (参考 327) Δ=+52 ↑88 ↓36 | {'exact': 379, 'partial': 146, 'wrong': 91} | 663.2s
+
+===== round r606_jev_filter: graphs=['s2'] retrieval={} preset=official
+    评测 150/616 (145s)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    评测 300/616 (273s)
+    评测 450/616 (402s)
+    评测 600/616 (599s)
+laya filter failed, keep all: laya decide failed: HTTPSConnectionPool(host='u1172328-qpd4-5f1abfb1.weste.seetacloud.com', port=844
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  → exact 364/616 (参考 327) Δ=+37 ↑73 ↓36 | {'exact': 364, 'partial': 159, 'wrong': 93} | 765.3s
+
+===== round r607_all: graphs=['s2'] retrieval={} preset=official_precise
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+    评测 150/616 (230s)
+    评测 300/616 (431s)
+jev_stop failed: can't multiply sequence by non-int of type 'float'
+    评测 450/616 (637s)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    评测 600/616 (864s)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  → exact 380/616 (参考 327) Δ=+53 ↑95 ↓42 | {'exact': 380, 'partial': 139, 'wrong': 97} | 1015.8s
+
+✓ 完成，结果追加在 results/search_rounds.jsonl

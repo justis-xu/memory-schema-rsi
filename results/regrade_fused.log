@@ -1,0 +1,158 @@
+precision judge model=glm-5.3, cached=3158
+
+===== regrade [fused] results/full_locomo_fused_20260924_055131.jsonl
+  [fused] strict-judged 200/1642 (conc=7)
+  [fused] strict-judged 400/1642 (conc=9)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  [fused] strict-judged 600/1642 (conc=10)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  [fused] strict-judged 800/1642 (conc=11)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  [fused] strict-judged 1000/1642 (conc=4)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 2 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+precision judge attempt 3 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+  [fused] strict-judged 1200/1642 (conc=4)
+  [fused] strict-judged 1400/1642 (conc=6)
+  [fused] strict-judged 1600/1642 (conc=7)
+precision judge attempt 1 failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+{
+  "label": "fused",
+  "n": 1985,
+  "per_category": {
+    "multi-hop": {
+      "n": 282,
+      "lenient_correct": 267,
+      "exact": 167,
+      "partial": 66,
+      "wrong": 49,
+      "unknown": 0,
+      "lenient_rate": 0.9468,
+      "precise_rate": 0.5922
+    },
+    "temporal": {
+      "n": 321,
+      "lenient_correct": 305,
+      "exact": 182,
+      "partial": 113,
+      "wrong": 26,
+      "unknown": 0,
+      "lenient_rate": 0.9502,
+      "precise_rate": 0.567
+    },
+    "open-domain": {
+      "n": 96,
+      "lenient_correct": 75,
+      "exact": 39,
+      "partial": 31,
+      "wrong": 26,
+      "unknown": 0,
+      "lenient_rate": 0.7812,
+      "precise_rate": 0.4062
+    },
+    "single-hop": {
+      "n": 841,
+      "lenient_correct": 784,
+      "exact": 653,
+      "partial": 110,
+      "wrong": 78,
+      "unknown": 0,
+      "lenient_rate": 0.9322,
+      "precise_rate": 0.7765
+    }
+  },
+  "adversarial": {
+    "n": 445,
+    "lenient_correct": 211,
+    "exact": 75,
+    "partial": 29,
+    "wrong": 341,
+    "unknown": 0,
+    "lenient_rate": 0.4742,
+    "precise_rate": 0.1685,
+    "interpretation": {
+      "exact": "干净拒答（无编造）",
+      "partial": "拒答但附带猜测",
+      "wrong": "编造答案"
+    }
+  },
+  "J_score": {
+    "n": 1540,
+    "lenient_official": 0.9292,
+    "precise_exact_only": 0.676,
+    "exact_plus_partial": 0.8838,
+    "vague_share_of_lenient_correct": 0.2236,
+    "counts": {
+      "exact": 1041,
+      "partial": 320,
+      "wrong": 179
+    }
+  },
+  "hedge_stats": {
+    "answered": 1985,
+    "with_hedge_words": 418,
+    "hedge_word_counter": {
+      "around": 322,
+      "no record": 30,
+      "likely": 22,
+      "possibly": 13,
+      "appears": 10,
+      "might": 10,
+      "no specific": 8,
+      "roughly": 8,
+      "no information": 7,
+      "not mentioned": 2
+    }
+  },
+  "det_vs_judge": {
+    "n": 1282,
+    "agree": 962,
+    "agreement": 0.7504
+  }
+}
+
+summary -> results/precision_summary_20260924_061925.json

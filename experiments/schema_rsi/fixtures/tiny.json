@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {"id": "a1", "user_id": "a", "kind": "M"},
+    {"id": "a2", "user_id": "a", "kind": "M"},
+    {"id": "a3", "user_id": "a", "kind": "M"},
+    {"id": "a4", "user_id": "a", "kind": "M"},
+    {"id": "a5", "user_id": "a", "kind": "M"},
+    {"id": "a6", "user_id": "a", "kind": "M"},
+    {"id": "ah", "user_id": "a", "kind": "H"},
+    {"id": "b1", "user_id": "b", "kind": "M"},
+    {"id": "b2", "user_id": "b", "kind": "M"},
+    {"id": "b3", "user_id": "b", "kind": "M"},
+    {"id": "b4", "user_id": "b", "kind": "M"},
+    {"id": "b5", "user_id": "b", "kind": "M"},
+    {"id": "b6", "user_id": "b", "kind": "M"},
+    {"id": "bh", "user_id": "b", "kind": "H"}
+  ],
+  "edges": [
+    {"source": "a1", "target": "a4", "channel": "r0", "score": 0.95},
+    {"source": "b1", "target": "b4", "channel": "r0", "score": 0.95},
+    {"source": "a2", "target": "ah", "channel": "r1", "score": 0.90},
+    {"source": "ah", "target": "a5", "channel": "r1", "score": 0.90},
+    {"source": "b2", "target": "bh", "channel": "r1", "score": 0.90},
+    {"source": "bh", "target": "b5", "channel": "r1", "score": 0.90},
+    {"source": "a1", "target": "a6", "channel": "r2", "score": 0.85},
+    {"source": "b1", "target": "b6", "channel": "r2", "score": 0.85}
+  ],
+  "cases": [
+    {"id": "train_direct_a", "user_id": "a", "split": "train", "base_ranked": ["a1", "a2", "a3", "a6", "a4", "a5"], "gold": ["a4"]},
+    {"id": "train_hub_a", "user_id": "a", "split": "train", "base_ranked": ["a2", "a1", "a3", "a4", "a5", "a6"], "gold": ["a5"]},
+    {"id": "validation_direct_b", "user_id": "b", "split": "validation", "base_ranked": ["b1", "b2", "b3", "b6", "b4", "b5"], "gold": ["b4"]},
+    {"id": "validation_hub_b", "user_id": "b", "split": "validation", "base_ranked": ["b2", "b1", "b3", "b4", "b5", "b6"], "gold": ["b5"]},
+    {"id": "test_direct_b", "user_id": "b", "split": "test", "base_ranked": ["b1", "b2", "b6", "b3", "b4", "b5"], "gold": ["b4"]},
+    {"id": "test_hub_a", "user_id": "a", "split": "test", "base_ranked": ["a2", "a1", "a6", "a4", "a5", "a3"], "gold": ["a5"]}
+  ]
+}

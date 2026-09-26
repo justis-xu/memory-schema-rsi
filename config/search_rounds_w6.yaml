@@ -1,0 +1,13 @@
+# 50 轮目标 · wave 6（11 轮）：answer 多采样轴 + 关键复现 + rerank×precise 交叉
+# s3 = answer_samples=3 多数票（答题方差 ±6-9 是当前最大噪声源）
+- {id: r501_calib4,  graphs: [s2], answer_preset: official}                                # 四号校准
+- {id: r500_s3_precise, graphs: [s2], answer_preset: official_precise, answer_samples: 3}  # 多采样×精准轴
+- {id: r502_s3_nograph_precise, graphs: [], answer_preset: official_precise, answer_samples: 3}  # 无图×精准×s3（图的必要性检验）
+- {id: r503_s2v8_precise_rep, graphs: [s2, v8cluster], answer_preset: official_precise}     # r013(345) 复现
+- {id: r504_laya_both_rep, graphs: [s2], laya_route: true, laya_filter: true, answer_preset: official}  # r404(340) 复现
+- {id: r505_rerank_off_precise, graphs: [s2], rerank: false, answer_preset: official_precise}  # rerank 关闭在精准轴下的代价
+- {id: r506_s3_precise_rep, graphs: [s2], answer_preset: official_precise, answer_samples: 3}  # 冠军复现
+- {id: r507_pool45_precise, graphs: [s2], retrieval: {pool: 45}, answer_preset: official_precise}
+- {id: r508_s1_precise, graphs: [s1], answer_preset: official_precise}
+- {id: r509_seed3_precise, graphs: [s2], retrieval: {seed_k: 3}, answer_preset: official_precise}
+- {id: r510_allv8_precise, graphs: [s1, v4session, v5month, v6pair, v8cluster], answer_preset: official_precise}

@@ -1,0 +1,1066 @@
+{
+ "conv": "conv-42",
+ "endpoints_used": {
+  "laya": {
+   "url": "https://u1172328-qpd4-5f1abfb1.weste.seetacloud.com:8443",
+   "mode": "public"
+  },
+  "decider": {
+   "url": "https://uu1172328-qpd4-5f1abfb1.weste.seetacloud.com:8443",
+   "mode": "public"
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "session_1",
+   "n_turns": 22,
+   "n_memories": 8,
+   "has_known_miss": true,
+   "miss_items": [
+    "specific book title 'A Court of Thorns and Roses' (only 'a fantasy book series' given)"
+   ],
+   "state_chars": 3220,
+   "laya": {
+    "missing": 0.4887,
+    "unsupported": 0.379,
+    "conflict": 0.3205,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3220
+   },
+   "decider": {
+    "missing": 0.1987,
+    "unsupported": 0.2398,
+    "conflict": 0.0987,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3220
+   }
+  },
+  {
+   "session_id": "session_2",
+   "n_turns": 29,
+   "n_memories": 6,
+   "has_known_miss": true,
+   "miss_items": [
+    "contains unverified/likely incorrect extra entities: 'a major company, a production company, and producers'",
+    "Project Hail Mary book"
+   ],
+   "state_chars": 4773,
+   "laya": {
+    "missing": 0.3684,
+    "unsupported": 0.4223,
+    "conflict": 0.4019,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4773
+   },
+   "decider": {
+    "missing": 0.0987,
+    "unsupported": 0.0829,
+    "conflict": 0.0506,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4773
+   }
+  },
+  {
+   "session_id": "session_3",
+   "n_turns": 25,
+   "n_memories": 6,
+   "has_known_miss": true,
+   "miss_items": [
+    "specific book title 'A Court of Thorns and Roses' (only 'a fantasy book series' given)"
+   ],
+   "state_chars": 3795,
+   "laya": {
+    "missing": 0.4168,
+    "unsupported": 0.4439,
+    "conflict": 0.3863,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3795
+   },
+   "decider": {
+    "missing": 0.1076,
+    "unsupported": 0.1031,
+    "conflict": 0.0366,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3795
+   }
+  },
+  {
+   "session_id": "session_4",
+   "n_turns": 19,
+   "n_memories": 5,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 3094,
+   "laya": {
+    "missing": 0.4168,
+    "unsupported": 0.3994,
+    "conflict": 0.3076,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3094
+   },
+   "decider": {
+    "missing": 0.1505,
+    "unsupported": 0.1632,
+    "conflict": 0.0793,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3094
+   }
+  },
+  {
+   "session_id": "session_5",
+   "n_turns": 21,
+   "n_memories": 6,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 4280,
+   "laya": {
+    "missing": 0.4673,
+    "unsupported": 0.4268,
+    "conflict": 0.4163,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4280
+   },
+   "decider": {
+    "missing": 0.133,
+    "unsupported": 0.0866,
+    "conflict": 0.0634,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4280
+   }
+  },
+  {
+   "session_id": "session_6",
+   "n_turns": 13,
+   "n_memories": 4,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 2455,
+   "laya": {
+    "missing": 0.4078,
+    "unsupported": 0.4263,
+    "conflict": 0.449,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2455
+   },
+   "decider": {
+    "missing": 0.1076,
+    "unsupported": 0.1031,
+    "conflict": 0.0483,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2455
+   }
+  },
+  {
+   "session_id": "session_7",
+   "n_turns": 13,
+   "n_memories": 5,
+   "has_known_miss": true,
+   "miss_items": [
+    "the 'like him' comparison"
+   ],
+   "state_chars": 2151,
+   "laya": {
+    "missing": 0.3833,
+    "unsupported": 0.4872,
+    "conflict": 0.6339,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 2151
+   },
+   "decider": {
+    "missing": 0.524,
+    "unsupported": 0.512,
+    "conflict": 0.2487,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2151
+   }
+  },
+  {
+   "session_id": "session_8",
+   "n_turns": 22,
+   "n_memories": 7,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 3931,
+   "laya": {
+    "missing": 0.4561,
+    "unsupported": 0.3618,
+    "conflict": 0.378,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3931
+   },
+   "decider": {
+    "missing": 0.0905,
+    "unsupported": 0.0866,
+    "conflict": 0.035,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3931
+   }
+  },
+  {
+   "session_id": "session_9",
+   "n_turns": 18,
+   "n_memories": 7,
+   "has_known_miss": true,
+   "miss_items": [
+    "Project Hail Mary book",
+    "adds unsupported 'romcoms' alongside the correct 'dramas'"
+   ],
+   "state_chars": 4686,
+   "laya": {
+    "missing": 0.4642,
+    "unsupported": 0.4158,
+    "conflict": 0.2679,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4686
+   },
+   "decider": {
+    "missing": 0.1172,
+    "unsupported": 0.0987,
+    "conflict": 0.029,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4686
+   }
+  },
+  {
+   "session_id": "session_10",
+   "n_turns": 16,
+   "n_memories": 7,
+   "has_known_miss": true,
+   "miss_items": [
+    "Project Hail Mary book",
+    "red and purple lighting"
+   ],
+   "state_chars": 3577,
+   "laya": {
+    "missing": 0.4398,
+    "unsupported": 0.4088,
+    "conflict": 0.2672,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3577
+   },
+   "decider": {
+    "missing": 0.1444,
+    "unsupported": 0.1172,
+    "conflict": 0.0793,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3577
+   }
+  },
+  {
+   "session_id": "session_11",
+   "n_turns": 20,
+   "n_memories": 5,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 3059,
+   "laya": {
+    "missing": 0.4581,
+    "unsupported": 0.4103,
+    "conflict": 0.4203,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3059
+   },
+   "decider": {
+    "missing": 0.0866,
+    "unsupported": 0.1031,
+    "conflict": 0.0182,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3059
+   }
+  },
+  {
+   "session_id": "session_12",
+   "n_turns": 19,
+   "n_memories": 6,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 3603,
+   "laya": {
+    "missing": 0.4308,
+    "unsupported": 0.3656,
+    "conflict": 0.3427,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3603
+   },
+   "decider": {
+    "missing": 0.0663,
+    "unsupported": 0.0793,
+    "conflict": 0.0441,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3603
+   }
+  },
+  {
+   "session_id": "session_13",
+   "n_turns": 23,
+   "n_memories": 3,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 3321,
+   "laya": {
+    "missing": 0.5338,
+    "unsupported": 0.3848,
+    "conflict": 0.3325,
+    "choices": {
+     "missing": "B",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3321
+   },
+   "decider": {
+    "missing": 0.1505,
+    "unsupported": 0.1567,
+    "conflict": 0.0945,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3321
+   }
+  },
+  {
+   "session_id": "session_14",
+   "n_turns": 27,
+   "n_memories": 5,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 3799,
+   "laya": {
+    "missing": 0.451,
+    "unsupported": 0.4218,
+    "conflict": 0.2757,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3799
+   },
+   "decider": {
+    "missing": 0.0905,
+    "unsupported": 0.0905,
+    "conflict": 0.0905,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3799
+   }
+  },
+  {
+   "session_id": "session_15",
+   "n_turns": 17,
+   "n_memories": 7,
+   "has_known_miss": true,
+   "miss_items": [
+    "hanging memories on a corkboard",
+    "specific book title 'A Court of Thorns and Roses' (only 'a fantasy book series' given)"
+   ],
+   "state_chars": 3846,
+   "laya": {
+    "missing": 0.4662,
+    "unsupported": 0.4469,
+    "conflict": 0.279,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3846
+   },
+   "decider": {
+    "missing": 0.3708,
+    "unsupported": 0.3821,
+    "conflict": 0.1275,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3846
+   }
+  },
+  {
+   "session_id": "session_16",
+   "n_turns": 16,
+   "n_memories": 5,
+   "has_known_miss": true,
+   "miss_items": [
+    "contains unverified/likely incorrect extra entities: 'a major company, a production company, and producers'"
+   ],
+   "state_chars": 2393,
+   "laya": {
+    "missing": 0.4429,
+    "unsupported": 0.4872,
+    "conflict": 0.4754,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2393
+   },
+   "decider": {
+    "missing": 0.1172,
+    "unsupported": 0.1031,
+    "conflict": 0.0384,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2393
+   }
+  },
+  {
+   "session_id": "session_17",
+   "n_turns": 21,
+   "n_memories": 4,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 4140,
+   "laya": {
+    "missing": 0.3931,
+    "unsupported": 0.3449,
+    "conflict": 0.399,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4140
+   },
+   "decider": {
+    "missing": 0.1386,
+    "unsupported": 0.1172,
+    "conflict": 0.0461,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4140
+   }
+  },
+  {
+   "session_id": "session_18",
+   "n_turns": 16,
+   "n_memories": 5,
+   "has_known_miss": true,
+   "miss_items": [
+    "knowing that her writing can make a difference",
+    "'share her stories and hopefully have an impact' stated directly"
+   ],
+   "state_chars": 3754,
+   "laya": {
+    "missing": 0.4328,
+    "unsupported": 0.4138,
+    "conflict": 0.363,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3754
+   },
+   "decider": {
+    "missing": 0.1444,
+    "unsupported": 0.1172,
+    "conflict": 0.0483,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3754
+   }
+  },
+  {
+   "session_id": "session_19",
+   "n_turns": 22,
+   "n_memories": 10,
+   "has_known_miss": true,
+   "miss_items": [
+    "Project Hail Mary book",
+    "specific book title 'A Court of Thorns and Roses' (only 'a fantasy book series' given)",
+    "Taking time off to chill with pets"
+   ],
+   "state_chars": 5138,
+   "laya": {
+    "missing": 0.4785,
+    "unsupported": 0.4378,
+    "conflict": 0.3197,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 5138
+   },
+   "decider": {
+    "missing": 0.4402,
+    "unsupported": 0.405,
+    "conflict": 0.2398,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 5138
+   }
+  },
+  {
+   "session_id": "session_20",
+   "n_turns": 19,
+   "n_memories": 10,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 4486,
+   "laya": {
+    "missing": 0.4479,
+    "unsupported": 0.4188,
+    "conflict": 0.4724,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4486
+   },
+   "decider": {
+    "missing": 0.1076,
+    "unsupported": 0.0829,
+    "conflict": 0.0304,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4486
+   }
+  },
+  {
+   "session_id": "session_21",
+   "n_turns": 20,
+   "n_memories": 9,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 4916,
+   "laya": {
+    "missing": 0.3843,
+    "unsupported": 0.4233,
+    "conflict": 0.3683,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4916
+   },
+   "decider": {
+    "missing": 0.1567,
+    "unsupported": 0.1505,
+    "conflict": 0.1031,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4916
+   }
+  },
+  {
+   "session_id": "session_22",
+   "n_turns": 23,
+   "n_memories": 8,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 4909,
+   "laya": {
+    "missing": 0.3408,
+    "unsupported": 0.333,
+    "conflict": 0.238,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4909
+   },
+   "decider": {
+    "missing": 0.0905,
+    "unsupported": 0.1076,
+    "conflict": 0.0252,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 4909
+   }
+  },
+  {
+   "session_id": "session_23",
+   "n_turns": 30,
+   "n_memories": 9,
+   "has_known_miss": true,
+   "miss_items": [
+    "specific book title 'A Court of Thorns and Roses' (only 'a fantasy book series' given)",
+    "a bookcase filled with dvds and movies"
+   ],
+   "state_chars": 6782,
+   "laya": {
+    "missing": 0.4248,
+    "unsupported": 0.3608,
+    "conflict": 0.4343,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 6782
+   },
+   "decider": {
+    "missing": 0.1172,
+    "unsupported": 0.0829,
+    "conflict": 0.0264,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 6782
+   }
+  },
+  {
+   "session_id": "session_24",
+   "n_turns": 19,
+   "n_memories": 5,
+   "has_known_miss": true,
+   "miss_items": [
+    "gold specifies 'respect' for bouncing back",
+    "rejections don't define her",
+    "she'll find the perfect opportunity"
+   ],
+   "state_chars": 3078,
+   "laya": {
+    "missing": 0.4846,
+    "unsupported": 0.3771,
+    "conflict": 0.4576,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3078
+   },
+   "decider": {
+    "missing": 0.2398,
+    "unsupported": 0.2578,
+    "conflict": 0.1386,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3078
+   }
+  },
+  {
+   "session_id": "session_25",
+   "n_turns": 29,
+   "n_memories": 7,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 5441,
+   "laya": {
+    "missing": 0.4218,
+    "unsupported": 0.3618,
+    "conflict": 0.2423,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 5441
+   },
+   "decider": {
+    "missing": 0.1839,
+    "unsupported": 0.1699,
+    "conflict": 0.1699,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 5441
+   }
+  },
+  {
+   "session_id": "session_26",
+   "n_turns": 24,
+   "n_memories": 8,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 5165,
+   "laya": {
+    "missing": 0.4857,
+    "unsupported": 0.4611,
+    "conflict": 0.2937,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 5165
+   },
+   "decider": {
+    "missing": 0.2227,
+    "unsupported": 0.1987,
+    "conflict": 0.0829,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 5165
+   }
+  },
+  {
+   "session_id": "session_27",
+   "n_turns": 38,
+   "n_memories": 10,
+   "has_known_miss": true,
+   "miss_items": [
+    "hanging memories on a corkboard",
+    "Project Hail Mary book"
+   ],
+   "state_chars": 7957,
+   "laya": {
+    "missing": 0.4449,
+    "unsupported": 0.3747,
+    "conflict": 0.2893,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 7957
+   },
+   "decider": {
+    "missing": 0.1632,
+    "unsupported": 0.1275,
+    "conflict": 0.0866,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 7957
+   }
+  },
+  {
+   "session_id": "session_28",
+   "n_turns": 33,
+   "n_memories": 10,
+   "has_known_miss": true,
+   "miss_items": [
+    "Watch other people's videos to understand what the audience likes"
+   ],
+   "state_chars": 6900,
+   "laya": {
+    "missing": 0.452,
+    "unsupported": 0.4178,
+    "conflict": 0.3226,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 6900
+   },
+   "decider": {
+    "missing": 0.1386,
+    "unsupported": 0.1505,
+    "conflict": 0.1172,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 6900
+   }
+  },
+  {
+   "session_id": "session_29",
+   "n_turns": 15,
+   "n_memories": 5,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 3399,
+   "laya": {
+    "missing": 0.4218,
+    "unsupported": 0.4188,
+    "conflict": 0.2922,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3399
+   },
+   "decider": {
+    "missing": 0.1444,
+    "unsupported": 0.1123,
+    "conflict": 0.0506,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3399
+   }
+  }
+ ],
+ "metrics": {
+  "laya": {
+   "n_scored": 29,
+   "risk": "missing P(B)",
+   "auc": 0.569047619047619,
+   "mean_risk_pos": 0.44199285714285713,
+   "mean_risk_neg": 0.4344733333333333,
+   "auc_by_question": {
+    "missing": 0.569047619047619,
+    "unsupported": 0.6238095238095238,
+    "conflict": 0.5428571428571428
+   },
+   "threshold_table": {
+    "0.3": {
+     "升级数": 29,
+     "其中有真漏数": 14,
+     "漏检数": 0
+    },
+    "0.4": {
+     "升级数": 24,
+     "其中有真漏数": 12,
+     "漏检数": 2
+    },
+    "0.5": {
+     "升级数": 1,
+     "其中有真漏数": 0,
+     "漏检数": 14
+    },
+    "0.6": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 14
+    },
+    "0.7": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 14
+    }
+   }
+  },
+  "decider": {
+   "n_scored": 29,
+   "risk": "missing P(B)",
+   "auc": 0.6976190476190476,
+   "mean_risk_pos": 0.2087142857142857,
+   "mean_risk_neg": 0.12799333333333335,
+   "auc_by_question": {
+    "missing": 0.6976190476190476,
+    "unsupported": 0.6404761904761904,
+    "conflict": 0.6261904761904762
+   },
+   "threshold_table": {
+    "0.3": {
+     "升级数": 3,
+     "其中有真漏数": 3,
+     "漏检数": 11
+    },
+    "0.4": {
+     "升级数": 2,
+     "其中有真漏数": 2,
+     "漏检数": 12
+    },
+    "0.5": {
+     "升级数": 1,
+     "其中有真漏数": 1,
+     "漏检数": 13
+    },
+    "0.6": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 14
+    },
+    "0.7": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 14
+    }
+   }
+  }
+ },
+ "payoff": {
+  "漏提取条数": 15,
+  "nf53_覆盖数": 5
+ }
+}

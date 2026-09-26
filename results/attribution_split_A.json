@@ -1,0 +1,9333 @@
+[
+ {
+  "case_id": "locomo_conv-26_qa2",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "psychology",
+  "words": [
+   "psychology"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa5",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct day: the Sunday before 25 May 2023 is May 21, 2023, not May 20",
+  "words": [
+   "sunday",
+   "2023",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa21",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "the specific point/period 'the week before 6 July 2023'",
+  "words": [
+   "july",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa23",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "\"Nothing is Impossible\" title missing; unnamed book recommended by Caroline lacks specific title",
+  "words": [
+   "nothing",
+   "impossible",
+   "title",
+   "book",
+   "recommended",
+   "caroline",
+   "lacks",
+   "title"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa24",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "running",
+  "words": [
+   "running"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa31",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific week: the week before 27 June 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa29",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "answer hedges between July 14 and July 7, 2023 instead of committing to the single correct date",
+  "words": [
+   "between",
+   "july",
+   "july",
+   "2023",
+   "committing"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa32",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "school speech",
+  "words": [
+   "school",
+   "speech"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa32",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "support group",
+  "words": [
+   "support",
+   "group"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa30",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Gold's key supporting reasoning that Melanie does not refer to herself as part of the LGBTQ community",
+  "words": [
+   "key",
+   "supporting",
+   "reasoning",
+   "melanie",
+   "refer",
+   "herself",
+   "part",
+   "lgbtq",
+   "community"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa33",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "the week before 3 July 2023 (gold period) is not stated; 'late June 2023' is vague and an incorrect alternative (Aug 11) is added",
+  "words": [
+   "july",
+   "2023",
+   "stated",
+   "june",
+   "2023",
+   "aug",
+   "added"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa26",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "2022",
+  "words": [
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa38",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "museum",
+  "words": [
+   "museum"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa38",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "swimming",
+  "words": [
+   "swimming"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa39",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "joining an activist group",
+  "words": [
+   "joining",
+   "activist",
+   "group"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa39",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "mentoring program",
+  "words": [
+   "mentoring",
+   "program"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa50",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Enumerates an alternative ('progressive/liberal') rather than stating the gold's single conclusion 'liberal'",
+  "words": [
+   "enumerates",
+   "progressive",
+   "liberal",
+   "stating",
+   "conclusion",
+   "liberal"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa54",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "week BEFORE 23 August 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa57",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive date of the week before 25 August 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa59",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Somewhat, but not extremely religious",
+  "words": [
+   "somewhat",
+   "but",
+   "extremely",
+   "religious"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa67",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact date phrasing — 'around September 9-10' is hedged",
+  "words": [
+   "exact",
+   "phrasing",
+   "september"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa66",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Roast marshmallows, tell stories",
+  "words": [
+   "roast",
+   "marshmallows",
+   "tell",
+   "stories"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa65",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "changes to her body",
+  "words": [
+   "changes",
+   "body"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa71",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "\"Becoming Nicole\"",
+  "words": [
+   "becoming",
+   "nicole"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa70",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "includes events (LGBTQ+ counseling workshop, school talk) not in the gold answer",
+  "words": [
+   "includes",
+   "events",
+   "lgbtq",
+   "counseling",
+   "workshop",
+   "school",
+   "talk"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa69",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "thoughtful",
+  "words": [
+   "thoughtful"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa69",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "driven",
+  "words": [
+   "driven"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa74",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive statement — 'around mid-October' hedges the precise date",
+  "words": [
+   "statement",
+   "mid",
+   "october"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa80",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "21 October 2023",
+  "words": [
+   "october",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa81",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "gold",
+  "text": "No; she's in the process of adopting children.",
+  "words": [
+   "process",
+   "adopting",
+   "children"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa85",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "researching adoption agencies",
+  "words": [
+   "researching",
+   "adoption",
+   "agencies"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa84",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold specifies playing the violin, but answer adds clarinet as an equal alternative",
+  "words": [
+   "playing",
+   "violin",
+   "but"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa89",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "that Caroline is doing something amazing",
+  "words": [
+   "caroline",
+   "doing",
+   "something",
+   "amazing"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa89",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "that she will be an awesome mom",
+  "words": [
+   "awesome",
+   "mom"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa9",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "The week before 9 June 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa115",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "remind her to appreciate the small moments",
+  "words": [
+   "remind",
+   "appreciate",
+   "small",
+   "moments"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa136",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "read a book (answer says only 'reading')",
+  "words": [
+   "read",
+   "book",
+   "says",
+   "only",
+   "reading"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa135",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "core fact is present, but answer adds an unverifiable car accident claim, mixing the correct setback with an incorrect alternative",
+  "words": [
+   "core",
+   "fact",
+   "present",
+   "but",
+   "unverifiable",
+   "car",
+   "accident",
+   "claim",
+   "setback"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-26_qa133",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "A sign stating that someone is not being able to leave",
+  "words": [
+   "sign",
+   "stating",
+   "someone",
+   "able",
+   "leave"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa138",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "An abstract painting with blue streaks on a wall.",
+  "words": [
+   "abstract",
+   "painting",
+   "blue",
+   "streaks",
+   "wall"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa142",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "An ongoing adventure of learning and growing.",
+  "words": [
+   "ongoing",
+   "adventure",
+   "learning",
+   "growing"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa145",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "family is important and means the world to her",
+  "words": [
+   "family",
+   "important",
+   "means",
+   "world"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa144",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "he was scared",
+  "words": [
+   "scared"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa144",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "reassured by his family",
+  "words": [
+   "reassured",
+   "family"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa148",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "thankful",
+  "words": [
+   "thankful"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa147",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Grateful and thankful for her family",
+  "words": [
+   "grateful",
+   "thankful",
+   "family"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa140",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "\"Trans Lives Matter\"",
+  "words": [
+   "trans",
+   "lives",
+   "matter"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa19",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "dinosaurs",
+  "words": [
+   "dinosaurs"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa3",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "lost their jobs",
+  "words": [
+   "lost",
+   "jobs"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa7",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged with 'around' despite definitive gold date",
+  "words": [
+   "despite"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa10",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "February, 2023",
+  "words": [
+   "february",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa9",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Rome",
+  "words": [
+   "rome"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa13",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "16 March, 2023",
+  "words": [
+   "march",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa22",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "June, 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa21",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "May, 2023",
+  "words": [
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa20",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedges the exact date with 'around late May'",
+  "words": [
+   "exact"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa23",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "limited-edition sweatshirts",
+  "words": [
+   "limited",
+   "edition",
+   "sweatshirts"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa24",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "dance competition",
+  "words": [
+   "dance",
+   "competition"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa32",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged precision: 'around mid-June 2023' vs definitive 'June 2023'",
+  "words": [
+   "mid",
+   "june",
+   "2023",
+   "june",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa34",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "July 2023",
+  "words": [
+   "july",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa33",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged 'around June 20, 2023' instead of definitive date",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa31",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "six months",
+  "words": [
+   "six",
+   "months"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa43",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "performing at the festival",
+  "words": [
+   "performing",
+   "festival"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa48",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "decor",
+  "words": [
+   "decor"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa44",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "They look graceful",
+  "words": [
+   "look",
+   "graceful"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa45",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "the specific attitude 'glad' is only conveyed as broader 'extremely positive'",
+  "words": [
+   "attitude",
+   "glad",
+   "only",
+   "conveyed",
+   "broader",
+   "extremely",
+   "positive"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa49",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "comfortable",
+  "words": [
+   "comfortable"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa51",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "personal style",
+  "words": [
+   "personal",
+   "style"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa50",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "hard work's paying off",
+  "words": [
+   "hard",
+   "work",
+   "paying",
+   "off"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa52",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "key to making customers feel welcome and coming back",
+  "words": [
+   "key",
+   "making",
+   "customers",
+   "feel",
+   "welcome",
+   "coming",
+   "back"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa56",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "dancing together and supporting each other",
+  "words": [
+   "dancing",
+   "together",
+   "supporting",
+   "each",
+   "other"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa57",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "build relationships with customers",
+  "words": [
+   "build",
+   "relationships",
+   "customers"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa57",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "create a strong brand image",
+  "words": [
+   "create",
+   "strong",
+   "brand",
+   "image"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa62",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "reminding herself of her successes and progress",
+  "words": [
+   "reminding",
+   "herself",
+   "successes",
+   "progress"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa68",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "precise fact 'quit' stated definitively rather than as an alternative",
+  "words": [
+   "fact",
+   "quit",
+   "stated"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-30_qa74",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact phrase 'savor all the good vibes'",
+  "words": [
+   "exact",
+   "phrase",
+   "savor",
+   "all",
+   "good",
+   "vibes"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa73",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "magical",
+  "words": [
+   "magical"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa75",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact quote 'Let's live it up and make some great memories'",
+  "words": [
+   "exact",
+   "quote",
+   "let",
+   "live",
+   "make",
+   "some",
+   "great",
+   "memories"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa77",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Hoodies — the specific item of the limited edition line",
+  "words": [
+   "hoodies",
+   "item",
+   "limited",
+   "edition",
+   "line"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-30_qa71",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "amazing",
+  "words": [
+   "amazing"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa78",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "positivity",
+  "words": [
+   "positivity"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-30_qa78",
+  "conv": "conv-30",
+  "user_id": "full:locomo:conv-30",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "determination",
+  "words": [
+   "determination"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa4",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "week-level specificity: 'the week before 1 January 2023'",
+  "words": [
+   "specificity",
+   "january",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa5",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "a definitive single answer of December 2022",
+  "words": [
+   "december",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa2",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Taekwondo",
+  "words": [
+   "taekwondo"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-41_qa2",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Kickboxing (denied rather than asserted)",
+  "words": [
+   "kickboxing",
+   "denied",
+   "asserted"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa8",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Middle-class or wealthy",
+  "words": [
+   "middle",
+   "class",
+   "wealthy"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa13",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific date anchor 'the week before 6 March 2023'",
+  "words": [
+   "anchor",
+   "march",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa16",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific date 'week before 2 April 2023' not stated",
+  "words": [
+   "april",
+   "2023",
+   "stated"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa17",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Political science, Public administration, Public affairs",
+  "words": [
+   "political",
+   "science",
+   "public",
+   "administration",
+   "public",
+   "affairs"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa23",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "banana split sundae",
+  "words": [
+   "banana",
+   "split",
+   "sundae"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa25",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "England (answered 'United Kingdom (London)' instead of the specific country England)",
+  "words": [
+   "england",
+   "answered",
+   "united",
+   "kingdom",
+   "london",
+   "country",
+   "england"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa27",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct day: Friday before 20 May 2023 (i.e., 19 May)",
+  "words": [
+   "friday",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa31",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedge 'Around' softens the definitive year 2013",
+  "words": [
+   "softens",
+   "2013"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa32",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "mountaineering",
+  "words": [
+   "mountaineering"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-41_qa28",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "infrastructure",
+  "words": [
+   "infrastructure"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa28",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "schools (only 'improving education' mentioned, cut off)",
+  "words": [
+   "schools",
+   "only",
+   "improving",
+   "education",
+   "mentioned",
+   "cut",
+   "off"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa41",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive commitment to 'beach'",
+  "words": [
+   "beach"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa43",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific week-before-7-July-2023 anchoring",
+  "words": [
+   "july",
+   "2023",
+   "anchoring"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa44",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "volunteer work",
+  "words": [
+   "volunteer",
+   "work"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa45",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold's key reasoning: joining the military and running for office",
+  "words": [
+   "key",
+   "reasoning",
+   "joining",
+   "military",
+   "running",
+   "office"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-41_qa49",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Cakes — 'baked goods' is less specific than the gold answer",
+  "words": [
+   "cakes",
+   "baked",
+   "goods",
+   "less"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa48",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "The sunday before 3` July 2023",
+  "words": [
+   "sunday",
+   "july",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa54",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "August 4, 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa55",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific week anchored to 9 August 2023",
+  "words": [
+   "anchored",
+   "august",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa47",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "circuit training",
+  "words": [
+   "circuit",
+   "training"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa47",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "kickboxing",
+  "words": [
+   "kickboxing"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa50",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "selfless",
+  "words": [
+   "selfless"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa50",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "rational",
+  "words": [
+   "rational"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa58",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "Two weeks before 11 August 2023",
+  "words": [
+   "two",
+   "weeks",
+   "august",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa61",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedge 'around early August' adds vagueness to the otherwise correct date",
+  "words": [
+   "august",
+   "vagueness",
+   "otherwise"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa51",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "August 2022",
+  "words": [
+   "august",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa64",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "shelter coordinator",
+  "words": [
+   "shelter",
+   "coordinator"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa64",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "counselor",
+  "words": [
+   "counselor"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa63",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "two weeks",
+  "words": [
+   "two",
+   "weeks"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa80",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "answer mixes the correct 'painting of a castle on a hill' with an incorrect alternative (cardboard castle with fairy lights)",
+  "words": [
+   "mixes",
+   "painting",
+   "castle",
+   "hill",
+   "cardboard",
+   "castle",
+   "fairy",
+   "lights"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa85",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "career fair",
+  "words": [
+   "career",
+   "fair"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa88",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "answer mixes gold fact with unsupported specifics (education reform, infrastructure development, April 2023)",
+  "words": [
+   "mixes",
+   "fact",
+   "specifics",
+   "education",
+   "reform",
+   "infrastructure",
+   "development",
+   "april",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa118",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "the desire to show support",
+  "words": [
+   "desire",
+   "show",
+   "support"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-41_qa126",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "appreciation for giving back as a single stated takeaway",
+  "words": [
+   "appreciation",
+   "giving",
+   "back",
+   "stated",
+   "takeaway"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-41_qa129",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "the specific view that trying new classes is a fun way to switch up the exercise routine",
+  "words": [
+   "view",
+   "trying",
+   "new",
+   "classes",
+   "fun",
+   "way",
+   "switch",
+   "exercise",
+   "routine"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-41_qa131",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "volunteered at the shelter (answer describes dropping off baked goods instead)",
+  "words": [
+   "volunteered",
+   "shelter",
+   "describes",
+   "dropping",
+   "off",
+   "baked",
+   "goods"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-41_qa135",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "To remember and appreciate those who served",
+  "words": [
+   "remember",
+   "appreciate",
+   "who",
+   "served"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa145",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "peaceful",
+  "words": [
+   "peaceful"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-41_qa145",
+  "conv": "conv-41",
+  "user_id": "full:locomo:conv-41",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "awesome",
+  "words": [
+   "awesome"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa15",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "swimming",
+  "words": [
+   "swimming"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa2",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged 'around'/'early' precision when gold is definitive year 2019",
+  "words": [
+   "2019"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa0",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Supporting reasoning: teammates on his video game team",
+  "words": [
+   "supporting",
+   "reasoning",
+   "teammates",
+   "video",
+   "game",
+   "team"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa3",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "the week before January 21, 2022, not the week of",
+  "words": [
+   "january",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa1",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "watching movies",
+  "words": [
+   "watching",
+   "movies"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa5",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "exploring nature",
+  "words": [
+   "exploring",
+   "nature"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa5",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "hanging with friends",
+  "words": [
+   "hanging",
+   "friends"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa8",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged precision: 'Around' January 2019",
+  "words": [
+   "january",
+   "2019"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa6",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged duration 'about 3 years' rather than definitive 'three years'",
+  "words": [
+   "duration",
+   "years",
+   "three",
+   "years"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa10",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "anxiety",
+  "words": [
+   "anxiety"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa15",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific week-before-April-15 anchoring",
+  "words": [
+   "april",
+   "anchoring"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa12",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "asthma",
+  "words": [
+   "asthma"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa20",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "May 2022",
+  "words": [
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa4",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Hairless cats or pigs,since they don't have fur, which is one of the main causes of Joanna's allergy.",
+  "words": [
+   "hairless",
+   "cats",
+   "pigs",
+   "don",
+   "fur",
+   "which",
+   "main",
+   "causes",
+   "joanna",
+   "allergy"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa24",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "correct date: the weekend after June 3, 2022 (June 10-11)",
+  "words": [
+   "weekend",
+   "june",
+   "2022",
+   "june"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa22",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "May 2022",
+  "words": [
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa26",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged with 'Around', not the definitive 'week before June 3, 2022'",
+  "words": [
+   "june",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa27",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "contains unverified/likely incorrect extra entities: 'a major company, a production company, and producers'",
+  "words": [
+   "major",
+   "company",
+   "production",
+   "company",
+   "producers"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa30",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "online blog posts",
+  "words": [
+   "online",
+   "blog",
+   "posts"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa29",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive answer of the weekend of June 24, 2022",
+  "words": [
+   "weekend",
+   "june",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa33",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged with 'Around mid-August' rather than the definitive week before 14 August 2022",
+  "words": [
+   "mid",
+   "august",
+   "august",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa36",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific time: the week before 22 August 2022",
+  "words": [
+   "august",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa23",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "first screenplay (drama and romance)",
+  "words": [
+   "first",
+   "screenplay",
+   "drama",
+   "romance"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa23",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "third screenplay attribution is hedged ('likely') and mislabeled as drama-romance",
+  "words": [
+   "third",
+   "screenplay",
+   "drama",
+   "romance"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa34",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Little Women",
+  "words": [
+   "little",
+   "women"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa40",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specifies a single day (September 7) rather than the gold's week before 14 September 2022",
+  "words": [
+   "september",
+   "september",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa35",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "The weekend of 22August, 2022.",
+  "words": [
+   "weekend",
+   "22august",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa47",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "answer adds a 'gaming party' not in the gold, mixing correct places with an unverifiable/incorrect extra",
+  "words": [
+   "gaming",
+   "party",
+   "places",
+   "unverifiable"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa43",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "four months",
+  "words": [
+   "four",
+   "months"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa45",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "does not state week before October 6, 2022 precisely",
+  "words": [
+   "state",
+   "october",
+   "2022",
+   "precisely"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa51",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "gold",
+  "text": "25 May, 2022",
+  "words": [
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa53",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Twice.",
+  "words": [
+   "twice"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa54",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "The Sunday before 25October, 2022.",
+  "words": [
+   "sunday",
+   "25october",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa52",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "two",
+  "words": [
+   "two"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa59",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hanging memories on a corkboard",
+  "words": [
+   "hanging",
+   "memories",
+   "corkboard"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa55",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Nate",
+  "words": [
+   "nate"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa55",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "validation",
+  "words": [
+   "validation"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa55",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "stories about finding courage and taking risks",
+  "words": [
+   "stories",
+   "finding",
+   "courage",
+   "taking",
+   "risks"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa55",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "imagination",
+  "words": [
+   "imagination"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa58",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Project Hail Mary book",
+  "words": [
+   "project",
+   "hail",
+   "mary",
+   "book"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa58",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "dragon book series (only vague 'fantasy book series')",
+  "words": [
+   "dragon",
+   "book",
+   "series",
+   "only",
+   "fantasy",
+   "book",
+   "series"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa58",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "coconut flavoring",
+  "words": [
+   "coconut",
+   "flavoring"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa58",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "dairy-free margarine",
+  "words": [
+   "dairy",
+   "free",
+   "margarine"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa58",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "coconut oil",
+  "words": [
+   "coconut",
+   "oil"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa58",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "a pet",
+  "words": [
+   "pet"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa63",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Valorant",
+  "words": [
+   "valorant"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa61",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Gamecube",
+  "words": [
+   "gamecube"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa61",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Playstation",
+  "words": [
+   "playstation"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa66",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "an animalkeeper at a localzoo and workingwith turtles; as heknows a great dealabout turtles andhow to care for them,and he enjoys it.",
+  "words": [
+   "animalkeeper",
+   "localzoo",
+   "workingwith",
+   "turtles",
+   "heknows",
+   "great",
+   "dealabout",
+   "turtles",
+   "andhow",
+   "care",
+   "enjoys"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa65",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct date anchoring (Oct 29 given instead of beginning of November)",
+  "words": [
+   "anchoring",
+   "oct",
+   "given",
+   "beginning",
+   "november"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa65",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "confusing/contradictory extra claims",
+  "words": [
+   "confusing",
+   "contradictory",
+   "claims"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa72",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged precision: 'around' November 10, 2022",
+  "words": [
+   "november",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa70",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "feeds them strawberries (answer only says vegetables, fruits, and insects, less specific than gold)",
+  "words": [
+   "feeds",
+   "strawberries",
+   "only",
+   "says",
+   "vegetables",
+   "fruits",
+   "insects",
+   "less"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa75",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "dairy-free chocolate cake with berries",
+  "words": [
+   "dairy",
+   "free",
+   "chocolate",
+   "cake",
+   "berries"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa75",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "chocolate and mixed-berry icecream",
+  "words": [
+   "chocolate",
+   "berry",
+   "icecream"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa68",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Definitive count of four; answer hedges with 'at least 4'",
+  "words": [
+   "four"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa77",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific day-level anchoring ('the week before 2 May 2022')",
+  "words": [
+   "anchoring",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa74",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific book title 'A Court of Thorns and Roses' (only 'a fantasy book series' given)",
+  "words": [
+   "book",
+   "title",
+   "court",
+   "thorns",
+   "roses",
+   "only",
+   "fantasy",
+   "book",
+   "series",
+   "given"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa71",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Nature",
+  "words": [
+   "nature"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa81",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "dairy free vanilla cake with strawberry filling and coconut cream frosting",
+  "words": [
+   "dairy",
+   "free",
+   "vanilla",
+   "cake",
+   "strawberry",
+   "filling",
+   "coconut",
+   "cream",
+   "frosting"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa81",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "strawberry chocolate cake",
+  "words": [
+   "strawberry",
+   "chocolate",
+   "cake"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa81",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "chocolate coconut cupcakes",
+  "words": [
+   "chocolate",
+   "coconut",
+   "cupcakes"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa81",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "blueberry cheesecake bars",
+  "words": [
+   "blueberry",
+   "cheesecake",
+   "bars"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa81",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "parfait (correct version)",
+  "words": [
+   "parfait",
+   "version"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa85",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "answer hedges/alternates between 'filmmaker' and 'director' rather than stating 'filmmaker' cleanly",
+  "words": [
+   "alternates",
+   "between",
+   "filmmaker",
+   "director",
+   "stating",
+   "filmmaker",
+   "cleanly"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa84",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "supporting reasoning: both faced career setbacks",
+  "words": [
+   "supporting",
+   "reasoning",
+   "both",
+   "faced",
+   "career",
+   "setbacks"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa79",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold count 'three' contradicted by leading answer 'Four'",
+  "words": [
+   "three",
+   "contradicted",
+   "leading",
+   "four"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa92",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "red and purple lighting",
+  "words": [
+   "red",
+   "purple",
+   "lighting"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa91",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "dragons",
+  "words": [
+   "dragons"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa95",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Xenoblade Chronicles",
+  "words": [
+   "xenoblade",
+   "chronicles"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa78",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "nine",
+  "words": [
+   "nine"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa102",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "chocolate and mixed berry only — answer adds coconut milk as an alternative flavor",
+  "words": [
+   "chocolate",
+   "berry",
+   "only",
+   "coconut",
+   "milk",
+   "flavor"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa101",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'super good' rendered as 'pretty good'",
+  "words": [
+   "super",
+   "good",
+   "rendered",
+   "pretty",
+   "good"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa105",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "includes unverified 'almond chunks' not in gold",
+  "words": [
+   "includes",
+   "almond",
+   "chunks"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa110",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "the 'like him' comparison",
+  "words": [
+   "like",
+   "comparison"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa113",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "fantasy",
+  "words": [
+   "fantasy"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa115",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "adds unsupported 'romcoms' alongside the correct 'dramas'",
+  "words": [
+   "romcoms",
+   "alongside",
+   "dramas"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa116",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "watching fantasy and sci-fi movies",
+  "words": [
+   "watching",
+   "fantasy",
+   "sci",
+   "movies"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa114",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Adventures",
+  "words": [
+   "adventures"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa114",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Magic",
+  "words": [
+   "magic"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa119",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct attribution to Nate",
+  "words": [
+   "nate"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa123",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "stuffed animal",
+  "words": [
+   "stuffed",
+   "animal"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa127",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "screenplay bits (exact wording 'screenplay bits' vs. broader 'movie script')",
+  "words": [
+   "screenplay",
+   "bits",
+   "exact",
+   "wording",
+   "screenplay",
+   "bits",
+   "broader",
+   "movie",
+   "script"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa138",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "collection (only a single book mentioned, not the cool old book collection)",
+  "words": [
+   "collection",
+   "only",
+   "book",
+   "mentioned",
+   "cool",
+   "old",
+   "book",
+   "collection"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa141",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Won a video game tournament",
+  "words": [
+   "won",
+   "video",
+   "game",
+   "tournament"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa146",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "knowing that her writing can make a difference",
+  "words": [
+   "knowing",
+   "writing",
+   "can",
+   "make",
+   "difference"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa140",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Woodhaven's interesting past and people",
+  "words": [
+   "woodhaven",
+   "interesting",
+   "past",
+   "people"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa144",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'share her stories and hopefully have an impact' stated directly",
+  "words": [
+   "share",
+   "stories",
+   "hopefully",
+   "impact",
+   "stated",
+   "directly"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa151",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Taking time off to chill with pets",
+  "words": [
+   "taking",
+   "off",
+   "chill",
+   "pets"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa167",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "fluffy blanket (answer says weighted blanket instead)",
+  "words": [
+   "fluffy",
+   "blanket",
+   "says",
+   "weighted",
+   "blanket"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa172",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold specifies 'respect' for bouncing back",
+  "words": [
+   "respect",
+   "bouncing",
+   "back"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa165",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a bookcase filled with dvds and movies",
+  "words": [
+   "bookcase",
+   "filled",
+   "dvds",
+   "movies"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa169",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "have a stuffed animal dog named Tilly with her",
+  "words": [
+   "stuffed",
+   "animal",
+   "dog",
+   "named",
+   "tilly"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa174",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold is specifically his turtles; answer adds dog Max as an additional alternative",
+  "words": [
+   "specifically",
+   "turtles",
+   "dog",
+   "max",
+   "additional"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-42_qa173",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "rejections don't define her",
+  "words": [
+   "rejections",
+   "don",
+   "define"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa173",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "she'll find the perfect opportunity",
+  "words": [
+   "find",
+   "perfect",
+   "opportunity"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa177",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "visuals to help bring the characters alive in her head so she can write better",
+  "words": [
+   "visuals",
+   "help",
+   "bring",
+   "characters",
+   "alive",
+   "head",
+   "can",
+   "write",
+   "better"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa179",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "cool",
+  "words": [
+   "cool"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa193",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact framing 'incredible sunset and surrounding beauty'",
+  "words": [
+   "exact",
+   "framing",
+   "incredible",
+   "sunset",
+   "surrounding",
+   "beauty"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa193",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "adds unverifiable specifics (sunflower, hike) not in gold",
+  "words": [
+   "unverifiable",
+   "specifics",
+   "sunflower",
+   "hike"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-42_qa191",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Watch other people's videos to understand what the audience likes",
+  "words": [
+   "watch",
+   "other",
+   "people",
+   "videos",
+   "understand",
+   "what",
+   "audience",
+   "likes"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa187",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "A suspenseful thriller set in a small Midwestern town",
+  "words": [
+   "suspenseful",
+   "thriller",
+   "set",
+   "small",
+   "midwestern",
+   "town"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-42_qa195",
+  "conv": "conv-42",
+  "user_id": "full:locomo:conv-42",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Watch one of Joanna's movies together or go to the park",
+  "words": [
+   "watch",
+   "joanna",
+   "movies",
+   "together",
+   "park"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa2",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "fantasy movie DVDs",
+  "words": [
+   "fantasy",
+   "movie",
+   "dvds"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa4",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "The Hobbit",
+  "words": [
+   "hobbit"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa4",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "The Wheel of Time",
+  "words": [
+   "wheel"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa3",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive commitment to C. S. Lewis without hedging",
+  "words": [
+   "lewis"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa6",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "June 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa12",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "2018",
+  "words": [
+   "2018"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa7",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "California",
+  "words": [
+   "california"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa7",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "the Smoky Mountains",
+  "words": [
+   "smoky",
+   "mountains"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa10",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'early August' granularity — answer only gives the month",
+  "words": [
+   "august",
+   "only",
+   "gives"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa9",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Moxie (specific beverage company not named, only 'a popular beverage company')",
+  "words": [
+   "moxie",
+   "beverage",
+   "company",
+   "named",
+   "only",
+   "popular",
+   "beverage",
+   "company"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa8",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Under Armour",
+  "words": [
+   "under",
+   "armour"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa14",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "comments on favorite books in a fantasy literature forum",
+  "words": [
+   "comments",
+   "favorite",
+   "books",
+   "fantasy",
+   "literature",
+   "forum"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa11",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "surfing",
+  "words": [
+   "surfing"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa16",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "three weeks",
+  "words": [
+   "three",
+   "weeks"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa18",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Paulo Coelho",
+  "words": [
+   "paulo",
+   "coelho"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa20",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Seattle",
+  "words": [
+   "seattle"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa19",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Good Sports, because they work with Nike, Gatorade, and Under Armour and they aim toprovide youth sports opportunities for kids ages 3-18 in high-need communities.",
+  "words": [
+   "good",
+   "sports",
+   "because",
+   "work",
+   "nike",
+   "gatorade",
+   "under",
+   "armour",
+   "aim",
+   "toprovide",
+   "youth",
+   "sports",
+   "opportunities",
+   "kids",
+   "ages",
+   "high",
+   "communities"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa21",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Seattle",
+  "words": [
+   "seattle"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa26",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Wheel of Time",
+  "words": [
+   "wheel"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa32",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "California as a possible state",
+  "words": [
+   "california",
+   "possible",
+   "state"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa37",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive date commitment — hedged with 'around early October 2023'",
+  "words": [
+   "october",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa30",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Seattle",
+  "words": [
+   "seattle"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa30",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Paris",
+  "words": [
+   "paris"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa34",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "become a basketball coach",
+  "words": [
+   "become",
+   "basketball",
+   "coach"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa34",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "giving back and leadership reasoning",
+  "words": [
+   "giving",
+   "back",
+   "leadership",
+   "reasoning"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa41",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "plot twists",
+  "words": [
+   "plot",
+   "twists"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa44",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "unhedged month-level date",
+  "words": [
+   "unhedged"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa43",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "heart",
+  "words": [
+   "heart"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa43",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "determination",
+  "words": [
+   "determination"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa48",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific date ~November 16, 2023",
+  "words": [
+   "november",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa42",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "slow cooker meal",
+  "words": [
+   "slow",
+   "cooker",
+   "meal"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa50",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "The Alchemist",
+  "words": [
+   "alchemist"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa51",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Hatha Yoga as the specific yoga style",
+  "words": [
+   "hatha",
+   "yoga",
+   "yoga",
+   "style"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa52",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "yoga",
+  "words": [
+   "yoga"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa56",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "August 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa53",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Sprinting, long-distance running, and boxing.",
+  "words": [
+   "sprinting",
+   "long",
+   "distance",
+   "running",
+   "boxing"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa55",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific month (May 2023)",
+  "words": [
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa58",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedge 'around' makes the date imprecise",
+  "words": [
+   "makes",
+   "imprecise"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa54",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "unhedged, definitive date",
+  "words": [
+   "unhedged"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa60",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct day: December 11, 2023",
+  "words": [
+   "december",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa61",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "inspiring book on dreaming big",
+  "words": [
+   "inspiring",
+   "book",
+   "dreaming",
+   "big"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa61",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "fantasy series",
+  "words": [
+   "fantasy",
+   "series"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa61",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "non-fiction books on personal development",
+  "words": [
+   "non",
+   "fiction",
+   "books",
+   "personal",
+   "development"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa66",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
+  "words": [
+   "star",
+   "wars",
+   "jedi",
+   "apprentice",
+   "judy",
+   "blundell",
+   "david",
+   "farland",
+   "highly",
+   "rated",
+   "immersive",
+   "series",
+   "favorite",
+   "movies"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa67",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive single answer 'writing a travel blog' — instead offers 'travel writing (or travel blogging)' as two alternatives",
+  "words": [
+   "writing",
+   "travel",
+   "blog",
+   "travel",
+   "writing",
+   "travel",
+   "blogging",
+   "two",
+   "alternatives"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa76",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "MinaLima's creation from the Harry Potter films",
+  "words": [
+   "minalima",
+   "creation",
+   "harry",
+   "potter",
+   "films"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa70",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Loop Head",
+  "words": [
+   "loop",
+   "head"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa70",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Brow Head",
+  "words": [
+   "brow",
+   "head"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa87",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "awesome",
+  "words": [
+   "awesome"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa86",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Characters from Harry Potter",
+  "words": [
+   "characters",
+   "harry",
+   "potter"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa94",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "learning more about literature",
+  "words": [
+   "learning",
+   "more",
+   "literature"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa98",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Home Alone should be identified as the specific movie, not one of several alternatives",
+  "words": [
+   "home",
+   "alone",
+   "identified",
+   "movie",
+   "several",
+   "alternatives"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa102",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "culture specifically (only food/restaurants mentioned)",
+  "words": [
+   "culture",
+   "specifically",
+   "only",
+   "food",
+   "restaurants",
+   "mentioned"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa106",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a new city",
+  "words": [
+   "new",
+   "city"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa116",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "backing each other up",
+  "words": [
+   "backing",
+   "each",
+   "other"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa116",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "not quitting",
+  "words": [
+   "quitting"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa113",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Tim supports the Wolves",
+  "words": [
+   "tim",
+   "supports",
+   "wolves"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa117",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold specifies facing tough opponents as the motivation; the answer enumerates multiple additional motivations as alternatives",
+  "words": [
+   "facing",
+   "tough",
+   "opponents",
+   "motivation",
+   "enumerates",
+   "multiple",
+   "additional",
+   "motivations",
+   "alternatives"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa121",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "confidence",
+  "words": [
+   "confidence"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa128",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "link to slow cooker",
+  "words": [
+   "link",
+   "slow",
+   "cooker"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa132",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "determination",
+  "words": [
+   "determination"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa132",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Game 7 of the '16 Finals specificity (answer misstates the block as winning the game)",
+  "words": [
+   "game",
+   "finals",
+   "specificity",
+   "misstates",
+   "block",
+   "winning",
+   "game"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa135",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Visualizing goals and success",
+  "words": [
+   "visualizing",
+   "goals",
+   "success"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa140",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "focused on growth",
+  "words": [
+   "focused",
+   "growth"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa138",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "stayed focused on recovery",
+  "words": [
+   "stayed",
+   "focused",
+   "recovery"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa138",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "worked hard to strengthen his body",
+  "words": [
+   "worked",
+   "hard",
+   "strengthen",
+   "body"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa142",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'think again' (reconsideration) nuance from gold",
+  "words": [
+   "think",
+   "again",
+   "reconsideration",
+   "nuance"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa136",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "The doctor said it's not too serious",
+  "words": [
+   "doctor",
+   "said",
+   "too",
+   "serious"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa139",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Love for writing and reading",
+  "words": [
+   "love",
+   "writing",
+   "reading"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa152",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "basketball",
+  "words": [
+   "basketball"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa151",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Academic achievements and sports successes",
+  "words": [
+   "academic",
+   "achievements",
+   "sports",
+   "successes"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa154",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "intense",
+  "words": [
+   "intense"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa161",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "fair chances specified as 'in sports' rather than generally 'for underserved communities'",
+  "words": [
+   "fair",
+   "chances",
+   "specified",
+   "sports",
+   "generally",
+   "underserved",
+   "communities"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa164",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Spanish",
+  "words": [
+   "spanish"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa165",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "does not state Tim got a cooking book; contradicts the premise by attributing it to John",
+  "words": [
+   "state",
+   "tim",
+   "got",
+   "cooking",
+   "book",
+   "contradicts",
+   "premise",
+   "attributing",
+   "john"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa168",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "brave",
+  "words": [
+   "brave"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa168",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "down-to-earth attitude",
+  "words": [
+   "down",
+   "earth",
+   "attitude"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa166",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Harry Potter",
+  "words": [
+   "harry",
+   "potter"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-43_qa174",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct 2024 timing",
+  "words": [
+   "2024",
+   "timing"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-43_qa176",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "crazy feeling",
+  "words": [
+   "crazy",
+   "feeling"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-43_qa176",
+  "conv": "conv-43",
+  "user_id": "full:locomo:conv-43",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "sense of accomplishment",
+  "words": [
+   "sense",
+   "accomplishment"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa1",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged with 'around' instead of the definitive week before March 27, 2023",
+  "words": [
+   "march",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa2",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "boardgames",
+  "words": [
+   "boardgames"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa2",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "growing flowers",
+  "words": [
+   "growing",
+   "flowers"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa4",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "week of April 3rd to 9th",
+  "words": [
+   "april",
+   "3rd",
+   "9th"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa6",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific day (April 2)",
+  "words": [
+   "april"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa5",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "first week of May 2023",
+  "words": [
+   "first",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa3",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "open space for hikes",
+  "words": [
+   "open",
+   "space",
+   "hikes"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa3",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "pet shelter",
+  "words": [
+   "pet",
+   "shelter"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa3",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "park",
+  "words": [
+   "park"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa11",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct day: June 11, 2023 (answer says June 4, 2023)",
+  "words": [
+   "june",
+   "2023",
+   "says",
+   "june",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa13",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged precision ('around', 'late') when gold is definitive June 2023",
+  "words": [
+   "june",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa15",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "pet-friendly spots rather than rental housing",
+  "words": [
+   "pet",
+   "friendly",
+   "spots",
+   "rental",
+   "housing"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa16",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "August",
+  "words": [
+   "august"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa9",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "positive reinforcement training workshop specified as positive reinforcement training / to bond with pets",
+  "words": [
+   "positive",
+   "reinforcement",
+   "training",
+   "workshop",
+   "specified",
+   "positive",
+   "reinforcement",
+   "training",
+   "bond",
+   "pets"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa19",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "cook dog treats",
+  "words": [
+   "cook",
+   "dog",
+   "treats"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa21",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "positive reinforcement training class for bonding (replaced with incorrect 'dog grooming course')",
+  "words": [
+   "positive",
+   "reinforcement",
+   "training",
+   "class",
+   "bonding",
+   "replaced",
+   "dog",
+   "grooming",
+   "course"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa25",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged with 'around August 19-20, 2023'",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa17",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "three times",
+  "words": [
+   "three",
+   "times"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa30",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged as 'around November 2023'",
+  "words": [
+   "november",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa24",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Gold answer 'Yes' applies to both Audrey and Andrew; the generated answer says Andrew likely did not grow up with a dog, contradicting the gold",
+  "words": [
+   "yes",
+   "applies",
+   "both",
+   "audrey",
+   "andrew",
+   "generated",
+   "says",
+   "andrew",
+   "grow",
+   "dog",
+   "contradicting"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa23",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "finding the right dog",
+  "words": [
+   "finding",
+   "right",
+   "dog"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa34",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged precision: 'About 3 months'",
+  "words": [
+   "months"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa37",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact date range of October 19–24, 2023",
+  "words": [
+   "exact",
+   "range",
+   "october",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa41",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "presents a conflicting alternative (two Jack Russell mixes) alongside the correct breeds",
+  "words": [
+   "presents",
+   "conflicting",
+   "two",
+   "jack",
+   "russell",
+   "mixes",
+   "alongside",
+   "breeds"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa41",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'mutts/Lab mixes' less precise than 'Mongrel mixed with Lab'",
+  "words": [
+   "mutts",
+   "lab",
+   "mixes",
+   "less",
+   "mongrel",
+   "lab"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa33",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Change to hybrid or remote job",
+  "words": [
+   "change",
+   "hybrid",
+   "remote",
+   "job"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa33",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Move to suburbs for larger living space",
+  "words": [
+   "move",
+   "suburbs",
+   "larger",
+   "living",
+   "space"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa33",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Be closer to nature",
+  "words": [
+   "closer",
+   "nature"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa39",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Companionship",
+  "words": [
+   "companionship"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa43",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Minnesota",
+  "words": [
+   "minnesota"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa57",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold's relative timeframe 'a few days before November 2023' stated definitively",
+  "words": [
+   "relative",
+   "timeframe",
+   "few",
+   "days",
+   "november",
+   "2023",
+   "stated"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa52",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Install a bird feeder outside where he can see the birds without going outdoors.",
+  "words": [
+   "install",
+   "bird",
+   "feeder",
+   "outside",
+   "where",
+   "can",
+   "see",
+   "birds",
+   "going",
+   "outdoors"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa44",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Voyageurs National Park",
+  "words": [
+   "voyageurs",
+   "national",
+   "park"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa53",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Park ranger or National Park Services role",
+  "words": [
+   "park",
+   "ranger",
+   "national",
+   "park",
+   "services",
+   "role"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa59",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact duration of 4 months",
+  "words": [
+   "exact",
+   "duration",
+   "months"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa58",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "sushi",
+  "words": [
+   "sushi"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa55",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "few days before November 22, 2023",
+  "words": [
+   "few",
+   "days",
+   "november",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa65",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "chatting with people (the gold's key element about what Audrey herself does)",
+  "words": [
+   "chatting",
+   "people",
+   "key",
+   "element",
+   "what",
+   "audrey",
+   "herself"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-44_qa72",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "To have pets learn how to behave in a positive way",
+  "words": [
+   "pets",
+   "learn",
+   "how",
+   "behave",
+   "positive",
+   "way"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa75",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "bungee jumping is hedged as 'possibly'",
+  "words": [
+   "bungee",
+   "jumping"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa85",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "date hedged to 'around early August 2023' instead of 4 August 2023",
+  "words": [
+   "august",
+   "2023",
+   "august",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa96",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "how they work together",
+  "words": [
+   "how",
+   "work",
+   "together"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa93",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "spoke calmly to the dog",
+  "words": [
+   "spoke",
+   "calmly",
+   "dog"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa92",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'super cozy'",
+  "words": [
+   "super",
+   "cozy"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa92",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'comfy'",
+  "words": [
+   "comfy"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa97",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "public transport as an option (answer frames it as biking instead of transit)",
+  "words": [
+   "public",
+   "transport",
+   "option",
+   "frames",
+   "biking",
+   "transit"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa107",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "unsupported additions: dogs 'hated' snow, preferred sunny days in grass",
+  "words": [
+   "additions",
+   "dogs",
+   "hated",
+   "snow",
+   "preferred",
+   "sunny",
+   "days",
+   "grass"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa109",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact phrase 'exploring the great outdoors'",
+  "words": [
+   "exact",
+   "phrase",
+   "exploring",
+   "great",
+   "outdoors"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-44_qa118",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "precise frequency 'once a week' hedged as 'about once a week'",
+  "words": [
+   "frequency",
+   "once",
+   "once"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-44_qa119",
+  "conv": "conv-44",
+  "user_id": "full:locomo:conv-44",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "photography of a basket full of stuffed animals",
+  "words": [
+   "photography",
+   "basket",
+   "full",
+   "stuffed",
+   "animals"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-26_qa12",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "10 years ago",
+  "words": [
+   "years",
+   "ago"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa0",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Obesity",
+  "words": [
+   "obesity"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa2",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Includes unverified extra items (movie night, donation organization) not in gold",
+  "words": [
+   "includes",
+   "items",
+   "movie",
+   "night",
+   "donation",
+   "organization"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa5",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "John's favorite game is CS:GO, not FIFA 23",
+  "words": [
+   "john",
+   "favorite",
+   "game",
+   "fifa"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa4",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "precise unhedged date: February 2022",
+  "words": [
+   "unhedged",
+   "february",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa15",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged with 'around late March 2022' rather than definitive March 2022",
+  "words": [
+   "march",
+   "2022",
+   "march",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa12",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold's hedged commitment level ('presumably not') vs. definitive 'No'",
+  "words": [
+   "presumably"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa11",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "seeking solitude as the specific feeling",
+  "words": [
+   "seeking",
+   "solitude",
+   "feeling"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa6",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Likely yes",
+  "words": [
+   "yes"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa17",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Mafia",
+  "words": [
+   "mafia"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa10",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "first week of April 2022",
+  "words": [
+   "first",
+   "april",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa21",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged date precision ('Around May 7, 2022')",
+  "words": [
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa25",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "which team James supports (Liverpool)",
+  "words": [
+   "which",
+   "team",
+   "james",
+   "supports",
+   "liverpool"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa25",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "which team John supports (Manchester City)",
+  "words": [
+   "which",
+   "team",
+   "john",
+   "supports",
+   "manchester",
+   "city"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa24",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "virtual world inspired by Witcher 3",
+  "words": [
+   "virtual",
+   "world",
+   "inspired",
+   "witcher"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa27",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "game design course (answer hedges with 'gaming/programming course' instead of the specific game design course)",
+  "words": [
+   "game",
+   "design",
+   "course",
+   "gaming",
+   "programming",
+   "course",
+   "game",
+   "design",
+   "course"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa19",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Most likely yes, because he mentioned that the only creatures that gave him joy are dogs and he was actively trying to date.",
+  "words": [
+   "most",
+   "yes",
+   "because",
+   "mentioned",
+   "only",
+   "creatures",
+   "gave",
+   "joy",
+   "dogs",
+   "actively",
+   "trying"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa36",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Most likely John's partner.",
+  "words": [
+   "most",
+   "john",
+   "partner"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa31",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "19 days",
+  "words": [
+   "days"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa39",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "2019 given only as inferred and hedged (around mid-2019), not definitively stated",
+  "words": [
+   "2019",
+   "given",
+   "only",
+   "inferred",
+   "mid",
+   "2019",
+   "stated"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa38",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "aspires to become an eSports competition organizer",
+  "words": [
+   "aspires",
+   "become",
+   "esports",
+   "competition",
+   "organizer"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa40",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "swimming",
+  "words": [
+   "swimming"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa40",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "catching frisbees",
+  "words": [
+   "catching",
+   "frisbees"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa40",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "balancing on a skateboard",
+  "words": [
+   "balancing",
+   "skateboard"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa37",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "unhedged exact date",
+  "words": [
+   "unhedged",
+   "exact"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa44",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "gold",
+  "text": "Possibly because he likes to drink beer on his days off.",
+  "words": [
+   "because",
+   "likes",
+   "drink",
+   "beer",
+   "days",
+   "off"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa33",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Yes",
+  "words": [
+   "yes"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa50",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact date without hedging",
+  "words": [
+   "exact"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa45",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "lager (mentioned only as a truncated fragment, never stated as served)",
+  "words": [
+   "lager",
+   "mentioned",
+   "only",
+   "truncated",
+   "fragment",
+   "never",
+   "stated",
+   "served"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa55",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct week anchor: the week before 13 October 2022, not before 3 October 2022",
+  "words": [
+   "anchor",
+   "october",
+   "2022",
+   "october",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa51",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Witcher 3",
+  "words": [
+   "witcher"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa51",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "futuristic dystopian game",
+  "words": [
+   "futuristic",
+   "dystopian",
+   "game"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa62",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "nearly three months",
+  "words": [
+   "nearly",
+   "three",
+   "months"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa65",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged date 'Around November 7, 2022'",
+  "words": [
+   "november",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa64",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "nearly four months",
+  "words": [
+   "nearly",
+   "four",
+   "months"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa59",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "The night spans October 30 to 31, 2022; answer omits the 'to 31' portion",
+  "words": [
+   "night",
+   "spans",
+   "october",
+   "2022",
+   "omits",
+   "portion"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa66",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific day (November 5-6)",
+  "words": [
+   "november"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa53",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "six months",
+  "words": [
+   "six",
+   "months"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa80",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "the specific reason: her appearance and eyes were amazing",
+  "words": [
+   "reason",
+   "appearance",
+   "eyes",
+   "amazing"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa75",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Apex Legends",
+  "words": [
+   "apex",
+   "legends"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa88",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Date imprecise/incorrect ('around May 7' vs May 8, 2022)",
+  "words": [
+   "imprecise",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa94",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "that it is a new part of the football simulator",
+  "words": [
+   "new",
+   "part",
+   "football",
+   "simulator"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa97",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "which team will perform better in the championship (answer says final standings rather than the championship)",
+  "words": [
+   "which",
+   "team",
+   "perform",
+   "better",
+   "championship",
+   "says",
+   "final",
+   "standings",
+   "championship"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa101",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Reading",
+  "words": [
+   "reading"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa119",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "basic (gold says 'basic games', answer says 'small games')",
+  "words": [
+   "basic",
+   "says",
+   "basic",
+   "games",
+   "says",
+   "small",
+   "games"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa132",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "date consistency — answer states launch in October 2022 while the question specifies September 2022",
+  "words": [
+   "consistency",
+   "states",
+   "launch",
+   "october",
+   "2022",
+   "september",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-47_qa136",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "inspired",
+  "words": [
+   "inspired"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-47_qa137",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "RPGs",
+  "words": [
+   "rpgs"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-47_qa145",
+  "conv": "conv-47",
+  "user_id": "full:locomo:conv-47",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "loving spending time together at the bar",
+  "words": [
+   "loving",
+   "spending",
+   "together",
+   "bar"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa9",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "January 25, 2023",
+  "words": [
+   "january",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa12",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact date stated without hedging",
+  "words": [
+   "exact",
+   "stated"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa17",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged date 'Around 2022'",
+  "words": [
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa8",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "yoga",
+  "words": [
+   "yoga"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa8",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "roses and dahlias in a flower garden",
+  "words": [
+   "roses",
+   "dahlias",
+   "flower",
+   "garden"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa8",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "nature",
+  "words": [
+   "nature"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa13",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "sitting in a spot by the window in her Mom's house (only vaguely rendered as 'waterside spot near her late mother's old house')",
+  "words": [
+   "sitting",
+   "spot",
+   "window",
+   "mom",
+   "house",
+   "only",
+   "vaguely",
+   "rendered",
+   "waterside",
+   "spot",
+   "near",
+   "mother",
+   "old",
+   "house"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa21",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged precision: 'around' qualifying the correct date of Saturday, January 28, 2023",
+  "words": [
+   "qualifying",
+   "saturday",
+   "january",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa20",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Battlefield 1 (not mentioned)",
+  "words": [
+   "battlefield",
+   "mentioned"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa20",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Walking Dead (stated as only planned, not played)",
+  "words": [
+   "walking",
+   "dead",
+   "stated",
+   "only",
+   "planned",
+   "played"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa19",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive count 'two times' hedged as 'at least 2'",
+  "words": [
+   "two",
+   "times"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa25",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Sapiens",
+  "words": [
+   "sapiens"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa24",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Warrior II",
+  "words": [
+   "warrior"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa23",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "She's more interested in playing video games",
+  "words": [
+   "more",
+   "interested",
+   "playing",
+   "video",
+   "games"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa29",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct day (gold is Wednesday before 9 Feb 2023, i.e., Feb 8; answer gives Feb 1)",
+  "words": [
+   "wednesday",
+   "feb",
+   "2023",
+   "feb",
+   "gives",
+   "feb"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa33",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact duration without hedging",
+  "words": [
+   "exact",
+   "duration"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa39",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Pomodoro Technique specifics: 25 minutes work and 5-minute break",
+  "words": [
+   "pomodoro",
+   "technique",
+   "specifics",
+   "minutes",
+   "work",
+   "minute",
+   "break"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa36",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "likely no more than 30; since she's in school",
+  "words": [
+   "more",
+   "school"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa42",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Sleep",
+  "words": [
+   "sleep"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa50",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged with 'Around' instead of definitive 2020",
+  "words": [
+   "2020"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa51",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedge 'Around' softens a definitive date",
+  "words": [
+   "softens"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa45",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct completion month May 2023 for the robotics project itself",
+  "words": [
+   "completion",
+   "2023",
+   "robotics",
+   "project",
+   "itself"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa46",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "four months",
+  "words": [
+   "four",
+   "months"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa53",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "in 2021",
+  "words": [
+   "2021"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa52",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "last week of July 2023",
+  "words": [
+   "last",
+   "july",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa56",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "week before 16 August, 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa60",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct week: a week before 24 August 2023",
+  "words": [
+   "august",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa68",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged date with 'Around 2020' instead of definitive 2020",
+  "words": [
+   "2020",
+   "2020"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa70",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "gold",
+  "text": "likely yes",
+  "words": [
+   "yes"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa75",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Exploding Kittens",
+  "words": [
+   "exploding",
+   "kittens"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa71",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "last week of August 2023",
+  "words": [
+   "last",
+   "august",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa77",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Phuket",
+  "words": [
+   "phuket"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa74",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "fresh pastries",
+  "words": [
+   "fresh",
+   "pastries"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa76",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "partner's participation",
+  "words": [
+   "partner",
+   "participation"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa81",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold agreement date of October 2023; answer gives September 17, 2023 as agreement date and October 2023 only as trip date",
+  "words": [
+   "agreement",
+   "october",
+   "2023",
+   "gives",
+   "september",
+   "2023",
+   "agreement",
+   "october",
+   "2023",
+   "only",
+   "trip"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa82",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "her mother's old home",
+  "words": [
+   "mother",
+   "old",
+   "home"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa86",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "motivational quote from a friend",
+  "words": [
+   "motivational",
+   "quote",
+   "friend"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa86",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "appreciation letter attributed to her community rather than yoga group",
+  "words": [
+   "appreciation",
+   "letter",
+   "attributed",
+   "community",
+   "yoga",
+   "group"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa86",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "heart-shaped pendant/amulet is not a gold gift",
+  "words": [
+   "heart",
+   "shaped",
+   "pendant",
+   "amulet",
+   "gift"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa87",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Thailand",
+  "words": [
+   "thailand"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa88",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "biking",
+  "words": [
+   "biking"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa88",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "going to art shows",
+  "words": [
+   "going",
+   "art",
+   "shows"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa88",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "running",
+  "words": [
+   "running"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa88",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "surfing",
+  "words": [
+   "surfing"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa88",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "gardening",
+  "words": [
+   "gardening"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa90",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Sapiens",
+  "words": [
+   "sapiens"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa101",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "a year ago",
+  "words": [
+   "ago"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa104",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "play the console",
+  "words": [
+   "play",
+   "console"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa106",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "\"Sapiens\"",
+  "words": [
+   "sapiens"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa105",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "design element — she designed AND built the purifier",
+  "words": [
+   "design",
+   "element",
+   "designed",
+   "built",
+   "purifier"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa99",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "fresh pastries",
+  "words": [
+   "fresh",
+   "pastries"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa115",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "spending time with loved ones",
+  "words": [
+   "spending",
+   "loved",
+   "ones"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa116",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "connected to her body",
+  "words": [
+   "connected",
+   "body"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa119",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a photo of a desk with a notebook and a computer monitor",
+  "words": [
+   "photo",
+   "desk",
+   "notebook",
+   "computer",
+   "monitor"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa131",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "valuable",
+  "words": [
+   "valuable"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa134",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive duration 'one year' — hedged as 'about one year'",
+  "words": [
+   "duration"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa135",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "comforted",
+  "words": [
+   "comforted"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa136",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "tree pose",
+  "words": [
+   "tree",
+   "pose"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa145",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "includes unverified extra activities (yoga/meditation, beach trips, hikes) mixed with the gold answer",
+  "words": [
+   "includes",
+   "activities",
+   "yoga",
+   "meditation",
+   "beach",
+   "trips",
+   "hikes"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa155",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "walks",
+  "words": [
+   "walks"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa155",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "mindfulness",
+  "words": [
+   "mindfulness"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa157",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged with 'about 3 years' instead of definitive '3 years'",
+  "words": [
+   "years",
+   "years"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa159",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'rewarded' rendered as 'rewarding'",
+  "words": [
+   "rewarded",
+   "rendered",
+   "rewarding"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa162",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "developing innovative solutions for environmental issues (answer substitutes specific projects like renewable energy and clean water instead)",
+  "words": [
+   "developing",
+   "innovative",
+   "solutions",
+   "environmental",
+   "issues",
+   "substitutes",
+   "projects",
+   "like",
+   "renewable",
+   "energy",
+   "clean",
+   "water"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa169",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "relationship with her partner",
+  "words": [
+   "relationship",
+   "partner"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa171",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "nintendo game console",
+  "words": [
+   "nintendo",
+   "game",
+   "console"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa174",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Jolene already had plans",
+  "words": [
+   "jolene",
+   "already",
+   "plans"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa183",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "little",
+  "words": [
+   "little"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-48_qa179",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a card game about cats",
+  "words": [
+   "card",
+   "game",
+   "cats"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-48_qa189",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "bopping around",
+  "words": [
+   "bopping"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa190",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "bopping around",
+  "words": [
+   "bopping"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa188",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Surfing",
+  "words": [
+   "surfing"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa7",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "hiking",
+  "words": [
+   "hiking"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa7",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "cooking",
+  "words": [
+   "cooking"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa7",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "running",
+  "words": [
+   "running"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa7",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "incorrectly includes weight lifting",
+  "words": [
+   "incorrectly",
+   "includes",
+   "weight",
+   "lifting"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa9",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive date (weekend before May 24, 2023)",
+  "words": [
+   "weekend",
+   "2023"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa13",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "first week of June 2023 — answer hedges with a range including late May",
+  "words": [
+   "first",
+   "june",
+   "2023",
+   "range",
+   "including"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa17",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged date 'around July 21, 2023' instead of definitive day; gold is 'Friday before 27 July 2023' (i.e., Friday, July 21)",
+  "words": [
+   "july",
+   "2023",
+   "friday",
+   "july",
+   "2023",
+   "friday",
+   "july"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa21",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "she's cool",
+  "words": [
+   "cool"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa21",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "every moment with her is fun",
+  "words": [
+   "every",
+   "moment",
+   "fun"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa21",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Evan feels really lucky to have someone who gets him",
+  "words": [
+   "evan",
+   "feels",
+   "really",
+   "lucky",
+   "someone",
+   "who",
+   "gets"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa18",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "grilled chicken salad with avocado",
+  "words": [
+   "grilled",
+   "chicken",
+   "salad",
+   "avocado"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa18",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "healthy sandwich snacks",
+  "words": [
+   "healthy",
+   "sandwich",
+   "snacks"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa23",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged with 'around July 28, 2023'",
+  "words": [
+   "july",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa20",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "cookbook with healthy recipes",
+  "words": [
+   "cookbook",
+   "healthy",
+   "recipes"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa20",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "healthy meal delivery service subscription",
+  "words": [
+   "healthy",
+   "meal",
+   "delivery",
+   "service",
+   "subscription"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-48_qa117",
+  "conv": "conv-48",
+  "user_id": "full:locomo:conv-48",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a yellow coffee cup with a handwritten message",
+  "words": [
+   "yellow",
+   "coffee",
+   "cup",
+   "handwritten",
+   "message"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa24",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "He fell in love with a Canadian woman",
+  "words": [
+   "fell",
+   "love",
+   "canadian",
+   "woman"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa19",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "stress-relieving activities like hiking, painting, and road trips",
+  "words": [
+   "stress",
+   "relieving",
+   "activities",
+   "like",
+   "hiking",
+   "painting",
+   "road",
+   "trips"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa19",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "importance of friendship and support",
+  "words": [
+   "importance",
+   "friendship",
+   "support"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa30",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedge 'around' obscures exact date precision",
+  "words": [
+   "obscures",
+   "exact"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa36",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "grilled vegetables (says 'roasted' vegetables instead)",
+  "words": [
+   "grilled",
+   "vegetables",
+   "says",
+   "roasted",
+   "vegetables"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa36",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "poutine",
+  "words": [
+   "poutine"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa31",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "conclusion that they view challenges as opportunities for growth and change",
+  "words": [
+   "conclusion",
+   "view",
+   "challenges",
+   "opportunities",
+   "growth",
+   "change"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa31",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "explicit statement that both embrace healthier lifestyles indicating a proactive approach",
+  "words": [
+   "explicit",
+   "statement",
+   "both",
+   "embrace",
+   "healthier",
+   "lifestyles",
+   "indicating",
+   "proactive",
+   "approach"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa37",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Beef Merlot (only 'beef and vegetables')",
+  "words": [
+   "beef",
+   "merlot",
+   "only",
+   "beef",
+   "vegetables"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa37",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "fruit bowl (only 'healthy fruit snacks')",
+  "words": [
+   "fruit",
+   "bowl",
+   "only",
+   "healthy",
+   "fruit",
+   "snacks"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa39",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact value without hedging",
+  "words": [
+   "exact",
+   "value"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa44",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "portraits",
+  "words": [
+   "portraits"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa44",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "abstract minimalism",
+  "words": [
+   "abstract",
+   "minimalism"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa43",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive 'every three months' frequency",
+  "words": [
+   "every",
+   "three",
+   "months",
+   "frequency"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa50",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "reading books",
+  "words": [
+   "reading",
+   "books"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa50",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "swimming",
+  "words": [
+   "swimming"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa50",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "kayaking",
+  "words": [
+   "kayaking"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa48",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hiking",
+  "words": [
+   "hiking"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa51",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "enrolling in cooking classes",
+  "words": [
+   "enrolling",
+   "cooking",
+   "classes"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa51",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "seeking support from friends like Evan",
+  "words": [
+   "seeking",
+   "support",
+   "friends",
+   "like",
+   "evan"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa51",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "answer cut off before explaining how challenges are addressed",
+  "words": [
+   "cut",
+   "off",
+   "explaining",
+   "how",
+   "challenges",
+   "addressed"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa55",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "experiencing unexpected adventures in the city",
+  "words": [
+   "experiencing",
+   "unexpected",
+   "adventures",
+   "city"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa58",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged date 'around October 2022'",
+  "words": [
+   "october",
+   "2022"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa54",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "twisted ankle",
+  "words": [
+   "twisted",
+   "ankle"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa54",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "twisted ankle",
+  "words": [
+   "twisted",
+   "ankle"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa59",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedged precision: 'Around' October 14, 2023",
+  "words": [
+   "october",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa66",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "end of (specific timing within October 2023)",
+  "words": [
+   "end",
+   "timing",
+   "within",
+   "october",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa61",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold specifies work-related stress as the kind of stress; answer enumerates multiple alternative stress types instead of giving the definitive answer",
+  "words": [
+   "work",
+   "related",
+   "stress",
+   "kind",
+   "stress",
+   "enumerates",
+   "multiple",
+   "stress",
+   "types",
+   "giving"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa63",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "weekend before 17 October, 2023.",
+  "words": [
+   "weekend",
+   "october",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa67",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "The planning date is stated as November 2023, not December 2023",
+  "words": [
+   "planning",
+   "stated",
+   "november",
+   "2023",
+   "december",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa62",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Sam's scare is incomplete — the answer cuts off and never states stomach pains/gastritis",
+  "words": [
+   "sam",
+   "scare",
+   "incomplete",
+   "cuts",
+   "off",
+   "never",
+   "states",
+   "stomach",
+   "pains",
+   "gastritis"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa74",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "correct day: Thursday before December 17, 2023 (Dec 14)",
+  "words": [
+   "thursday",
+   "december",
+   "2023",
+   "dec"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa70",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact duration of four months",
+  "words": [
+   "exact",
+   "duration",
+   "four",
+   "months"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa78",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Sam",
+  "words": [
+   "sam"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa78",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "his and his wife's families (only 'extended family' mentioned)",
+  "words": [
+   "wife",
+   "families",
+   "only",
+   "extended",
+   "family",
+   "mentioned"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa77",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "family get-together",
+  "words": [
+   "family",
+   "get",
+   "together"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa80",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "January 9, 2023",
+  "words": [
+   "january",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa81",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "drawing (replaced with watercolor painting)",
+  "words": [
+   "drawing",
+   "replaced",
+   "watercolor",
+   "painting"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa81",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "traveling",
+  "words": [
+   "traveling"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa81",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "places with a beautiful view",
+  "words": [
+   "places",
+   "beautiful",
+   "view"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa81",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "sunsets",
+  "words": [
+   "sunsets"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa82",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Unhealthy snacks, sweets, yoga, places with beautiful views",
+  "words": [
+   "unhealthy",
+   "snacks",
+   "sweets",
+   "yoga",
+   "places",
+   "beautiful",
+   "views"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-49_qa104",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "bowl of spinach, avocado, and strawberries",
+  "words": [
+   "bowl",
+   "spinach",
+   "avocado",
+   "strawberries"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa108",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "sunsets over the ocean",
+  "words": [
+   "sunsets",
+   "over",
+   "ocean"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa106",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "forest scene",
+  "words": [
+   "forest",
+   "scene"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa102",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "salmon (answer says chicken instead)",
+  "words": [
+   "salmon",
+   "says",
+   "chicken"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa103",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "recipes with more vegetables",
+  "words": [
+   "recipes",
+   "more",
+   "vegetables"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa117",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold specifies only creative writing; 'journaling' adds an unverified alternative",
+  "words": [
+   "only",
+   "creative",
+   "writing",
+   "journaling"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa115",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Watercolor painting",
+  "words": [
+   "watercolor",
+   "painting"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa112",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "physical therapy",
+  "words": [
+   "physical",
+   "therapy"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa116",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a cactus in the desert",
+  "words": [
+   "cactus",
+   "desert"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa132",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "support",
+  "words": [
+   "support"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa132",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "tips",
+  "words": [
+   "tips"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa136",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Your worth is not defined by your weight",
+  "words": [
+   "your",
+   "worth",
+   "defined",
+   "your",
+   "weight"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa142",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "embracing the creative process without restraint",
+  "words": [
+   "embracing",
+   "creative",
+   "process",
+   "restraint"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa145",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "cookies (specifically) — answer says 'recipes for his healthy snacks' instead of the recipes for cookies",
+  "words": [
+   "cookies",
+   "specifically",
+   "says",
+   "recipes",
+   "healthy",
+   "snacks",
+   "recipes",
+   "cookies"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-49_qa144",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "a photo of a man standing on a rock looking out over a valley",
+  "words": [
+   "photo",
+   "man",
+   "standing",
+   "rock",
+   "looking",
+   "out",
+   "over",
+   "valley"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa141",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Keep trying new things",
+  "words": [
+   "keep",
+   "trying",
+   "new",
+   "things"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa149",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "diet plan",
+  "words": [
+   "diet",
+   "plan"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-49_qa149",
+  "conv": "conv-49",
+  "user_id": "full:locomo:conv-49",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "low-impact exercises",
+  "words": [
+   "low",
+   "impact",
+   "exercises"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa0",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "specific date range 26 March – 20 April 2023",
+  "words": [
+   "range",
+   "march",
+   "april",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa8",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "gold",
+  "text": "May 1, 2023",
+  "words": [
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa10",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "hedge 'around' reduces definitive precision",
+  "words": [
+   "reduces"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa9",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive date; 'Around May 9, 2023' hedges the precise date (a week before 16 May 2023)",
+  "words": [
+   "2023",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa7",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "open-domain",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Yes",
+  "words": [
+   "yes"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa13",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "open-domain",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold is definitive 'Yes' while answer hedges with 'very likely'",
+  "words": [
+   "yes",
+   "very"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa12",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "gold specifies only last week of May 2023; answer adds an August 2023 show as an alternative",
+  "words": [
+   "only",
+   "last",
+   "2023",
+   "august",
+   "2023",
+   "show"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa19",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "car museum",
+  "words": [
+   "car",
+   "museum"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa19",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Shibuya crossing",
+  "words": [
+   "shibuya",
+   "crossing"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa19",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Shinjuku",
+  "words": [
+   "shinjuku"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa27",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Miami",
+  "words": [
+   "miami"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa30",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Japanese music",
+  "words": [
+   "japanese",
+   "music"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa29",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "take a walk",
+  "words": [
+   "take",
+   "walk"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa29",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "go hiking",
+  "words": [
+   "hiking"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa29",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "live concerts",
+  "words": [
+   "live",
+   "concerts"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa35",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "week-level specificity: 'last week of August'",
+  "words": [
+   "specificity",
+   "last",
+   "august"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa50",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact date phrase 'first week of October 2023'",
+  "words": [
+   "exact",
+   "phrase",
+   "first",
+   "october",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa45",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "working on cars",
+  "words": [
+   "working",
+   "cars"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa47",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "two",
+  "words": [
+   "two"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa51",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive statement that collaboration started in August 2022",
+  "words": [
+   "statement",
+   "collaboration",
+   "started",
+   "august",
+   "2022"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa54",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "staying up-to-date on world events",
+  "words": [
+   "staying",
+   "world",
+   "events"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa60",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "gold chain (answer says 'gold necklace with a diamond pendant', adding a fabricated detail)",
+  "words": [
+   "chain",
+   "says",
+   "necklace",
+   "diamond",
+   "pendant",
+   "fabricated",
+   "detail"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa63",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "yellow color of the custom guitar",
+  "words": [
+   "yellow",
+   "color",
+   "custom",
+   "guitar"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa63",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "distinct shiny purple guitar (conflated into a 'purple glow finish' of one guitar)",
+  "words": [
+   "distinct",
+   "shiny",
+   "purple",
+   "guitar",
+   "conflated",
+   "purple",
+   "glow",
+   "finish",
+   "guitar"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa61",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "nearly two months",
+  "words": [
+   "nearly",
+   "two",
+   "months"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa65",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive date — hedges with 'around September 2023'",
+  "words": [
+   "september",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa64",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "multi-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "weekly visits to local parks",
+  "words": [
+   "weekly",
+   "visits",
+   "local",
+   "parks"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa62",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact duration 'two weeks'",
+  "words": [
+   "exact",
+   "duration",
+   "two",
+   "weeks"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa68",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "definitive 'last week of October 2023' — answer hedges with 'around late October 2023'",
+  "words": [
+   "last",
+   "october",
+   "2023",
+   "october",
+   "2023"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa80",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "explore other things",
+  "words": [
+   "explore",
+   "other",
+   "things"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa80",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "have some fun",
+  "words": [
+   "some",
+   "fun"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa79",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "immerse himself in something he loves",
+  "words": [
+   "immerse",
+   "himself",
+   "something",
+   "loves"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa67",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "temporal",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Tokyo (specific city)",
+  "words": [
+   "tokyo",
+   "city"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa87",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "exact phrasing 'get back on the road'",
+  "words": [
+   "exact",
+   "phrasing",
+   "get",
+   "back",
+   "road"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa90",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "fresh vibe",
+  "words": [
+   "fresh",
+   "vibe"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa89",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "experimenting with different genres",
+  "words": [
+   "experimenting",
+   "different",
+   "genres"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa93",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "to never forget his dreams",
+  "words": [
+   "never",
+   "forget",
+   "dreams"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa97",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "attention to small details",
+  "words": [
+   "attention",
+   "small",
+   "details"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa109",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "exploring and growing his brand",
+  "words": [
+   "exploring",
+   "growing",
+   "brand"
+  ],
+  "bucket": "上下文已有"
+ },
+ {
+  "case_id": "locomo_conv-50_qa110",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Check out Dave's garage and maybe get some ideas for future projects",
+  "words": [
+   "check",
+   "out",
+   "dave",
+   "garage",
+   "maybe",
+   "get",
+   "some",
+   "ideas",
+   "future",
+   "projects"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa120",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "judge_missing",
+  "text": "Take something broken and make it into something awesome",
+  "words": [
+   "take",
+   "something",
+   "broken",
+   "make",
+   "something",
+   "awesome"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa118",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Hard work and determination",
+  "words": [
+   "hard",
+   "work",
+   "determination"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa127",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "Shibuya Crossing is presented as the primary answer, mixing a different specific value with the gold",
+  "words": [
+   "shibuya",
+   "crossing",
+   "presented",
+   "primary",
+   "different",
+   "value"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa133",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "fascinated with how machines work",
+  "words": [
+   "fascinated",
+   "how",
+   "machines",
+   "work"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa138",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'unreal' element of the feeling",
+  "words": [
+   "unreal",
+   "element",
+   "feeling"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa134",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Paying extra attention to detail",
+  "words": [
+   "paying",
+   "attention",
+   "detail"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa140",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "It's fulfilling and motivating",
+  "words": [
+   "fulfilling",
+   "motivating"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa137",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "at an early age",
+  "words": [
+   "age"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa147",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Writing lyrics and notes",
+  "words": [
+   "writing",
+   "lyrics",
+   "notes"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa156",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "answer enumerates an additional alternative location (White Mountains), presenting two options instead of the single gold answer",
+  "words": [
+   "enumerates",
+   "additional",
+   "location",
+   "white",
+   "mountains",
+   "presenting",
+   "two",
+   "options"
+  ],
+  "bucket": "对话没明说"
+ },
+ {
+  "case_id": "locomo_conv-50_qa157",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "nature helps us appreciate life",
+  "words": [
+   "nature",
+   "helps",
+   "appreciate",
+   "life"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa151",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "wrong",
+  "src": "gold",
+  "text": "Photography",
+  "words": [
+   "photography"
+  ],
+  "bucket": "召回丢失"
+ },
+ {
+  "case_id": "locomo_conv-50_qa115",
+  "conv": "conv-50",
+  "user_id": "full:locomo:conv-50",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "'shiny' descriptor replaced with 'sleek vintage'",
+  "words": [
+   "shiny",
+   "descriptor",
+   "replaced",
+   "sleek",
+   "vintage"
+  ],
+  "bucket": "提取丢失"
+ },
+ {
+  "case_id": "locomo_conv-26_qa150",
+  "conv": "conv-26",
+  "user_id": "full:locomo:conv-26",
+  "category": "single-hop",
+  "grade": "partial",
+  "src": "judge_missing",
+  "text": "explicit statement that she appreciated them a lot",
+  "words": [
+   "explicit",
+   "statement",
+   "appreciated",
+   "lot"
+  ],
+  "bucket": "提取丢失"
+ }
+]

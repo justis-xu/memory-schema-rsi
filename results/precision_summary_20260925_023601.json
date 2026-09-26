@@ -1,0 +1,232 @@
+{
+  "A": {
+    "label": "A",
+    "n": 1985,
+    "per_category": {
+      "multi-hop": {
+        "n": 282,
+        "lenient_correct": 267,
+        "exact": 164,
+        "partial": 70,
+        "wrong": 48,
+        "unknown": 0,
+        "lenient_rate": 0.9468,
+        "precise_rate": 0.5816
+      },
+      "temporal": {
+        "n": 320,
+        "lenient_correct": 303,
+        "exact": 173,
+        "partial": 124,
+        "wrong": 23,
+        "unknown": 0,
+        "lenient_rate": 0.9469,
+        "precise_rate": 0.5406
+      },
+      "open-domain": {
+        "n": 96,
+        "lenient_correct": 73,
+        "exact": 40,
+        "partial": 31,
+        "wrong": 25,
+        "unknown": 0,
+        "lenient_rate": 0.7604,
+        "precise_rate": 0.4167
+      },
+      "single-hop": {
+        "n": 841,
+        "lenient_correct": 784,
+        "exact": 645,
+        "partial": 119,
+        "wrong": 77,
+        "unknown": 0,
+        "lenient_rate": 0.9322,
+        "precise_rate": 0.7669
+      }
+    },
+    "adversarial": {
+      "n": 446,
+      "lenient_correct": 232,
+      "exact": 70,
+      "partial": 28,
+      "wrong": 348,
+      "unknown": 0,
+      "lenient_rate": 0.5202,
+      "precise_rate": 0.157,
+      "interpretation": {
+        "exact": "干净拒答（无编造）",
+        "partial": "拒答但附带猜测",
+        "wrong": "编造答案"
+      }
+    },
+    "J_score": {
+      "n": 1539,
+      "lenient_official": 0.9272,
+      "precise_exact_only": 0.6641,
+      "exact_plus_partial": 0.8876,
+      "vague_share_of_lenient_correct": 0.2411,
+      "counts": {
+        "exact": 1022,
+        "partial": 344,
+        "wrong": 173
+      }
+    },
+    "hedge_stats": {
+      "answered": 1985,
+      "with_hedge_words": 374,
+      "hedge_word_counter": {
+        "around": 309,
+        "no record": 21,
+        "likely": 19,
+        "roughly": 10,
+        "possibly": 9,
+        "appears": 7,
+        "might": 5,
+        "no specific": 5,
+        "probably": 3,
+        "no information": 3
+      }
+    },
+    "det_vs_judge": {
+      "n": 1281,
+      "agree": 963,
+      "agreement": 0.7518
+    }
+  },
+  "B": {
+    "label": "B",
+    "n": 1986,
+    "per_category": {
+      "multi-hop": {
+        "n": 282,
+        "lenient_correct": 264,
+        "exact": 166,
+        "partial": 65,
+        "wrong": 51,
+        "unknown": 0,
+        "lenient_rate": 0.9362,
+        "precise_rate": 0.5887
+      },
+      "temporal": {
+        "n": 321,
+        "lenient_correct": 302,
+        "exact": 184,
+        "partial": 111,
+        "wrong": 26,
+        "unknown": 0,
+        "lenient_rate": 0.9408,
+        "precise_rate": 0.5732
+      },
+      "open-domain": {
+        "n": 96,
+        "lenient_correct": 74,
+        "exact": 39,
+        "partial": 31,
+        "wrong": 26,
+        "unknown": 0,
+        "lenient_rate": 0.7708,
+        "precise_rate": 0.4062
+      },
+      "single-hop": {
+        "n": 841,
+        "lenient_correct": 777,
+        "exact": 640,
+        "partial": 121,
+        "wrong": 80,
+        "unknown": 0,
+        "lenient_rate": 0.9239,
+        "precise_rate": 0.761
+      }
+    },
+    "adversarial": {
+      "n": 446,
+      "lenient_correct": 201,
+      "exact": 61,
+      "partial": 28,
+      "wrong": 357,
+      "unknown": 0,
+      "lenient_rate": 0.4507,
+      "precise_rate": 0.1368,
+      "interpretation": {
+        "exact": "干净拒答（无编造）",
+        "partial": "拒答但附带猜测",
+        "wrong": "编造答案"
+      }
+    },
+    "J_score": {
+      "n": 1540,
+      "lenient_official": 0.9201,
+      "precise_exact_only": 0.6682,
+      "exact_plus_partial": 0.8812,
+      "vague_share_of_lenient_correct": 0.2315,
+      "counts": {
+        "exact": 1029,
+        "partial": 328,
+        "wrong": 183
+      }
+    },
+    "hedge_stats": {
+      "answered": 1986,
+      "with_hedge_words": 332,
+      "hedge_word_counter": {
+        "around": 257,
+        "no record": 26,
+        "likely": 17,
+        "possibly": 11,
+        "roughly": 9,
+        "appears": 6,
+        "no specific": 6,
+        "not specified": 4,
+        "might": 4,
+        "not mentioned": 4
+      }
+    },
+    "det_vs_judge": {
+      "n": 1267,
+      "agree": 957,
+      "agreement": 0.7553
+    }
+  },
+  "paired": {
+    "J_categories": {
+      "name": "J (cats 1-4) exact 翻转",
+      "n": 1539,
+      "exact_base": 1022,
+      "exact_graph": 1029,
+      "base_only_exact": 80,
+      "graph_only_exact": 87,
+      "mcnemar_p": 0.6426,
+      "transitions": {
+        "exact->exact": 942,
+        "exact->partial": 68,
+        "exact->wrong": 12,
+        "partial->exact": 77,
+        "partial->partial": 229,
+        "partial->wrong": 38,
+        "wrong->exact": 10,
+        "wrong->partial": 30,
+        "wrong->wrong": 133
+      }
+    },
+    "adversarial": {
+      "name": "adversarial 干净拒答（exact=干净拒答）翻转",
+      "n": 446,
+      "exact_base": 70,
+      "exact_graph": 61,
+      "base_only_exact": 41,
+      "graph_only_exact": 32,
+      "mcnemar_p": 0.3492,
+      "transitions": {
+        "exact->exact": 29,
+        "exact->partial": 6,
+        "exact->wrong": 35,
+        "partial->exact": 5,
+        "partial->partial": 3,
+        "partial->wrong": 20,
+        "wrong->exact": 27,
+        "wrong->partial": 19,
+        "wrong->wrong": 302
+      }
+    }
+  }
+}

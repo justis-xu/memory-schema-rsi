@@ -1,0 +1,89 @@
+========================================================================
+全量融合评测（graphs=none, per_node=15, pool=30, preset=official, samples=1, workers=8）
+========================================================================
+图状态（S2）: {'Memory': 1829, 'Entity': 1455, 'Event': 1074, 'Preference': 978, 'Concept': 274}
+The 'chroma' vector store does not support keyword search. Hybrid (BM25) scoring will be disabled and search will use semantic similarity only. To enable hybrid search, switch to a store with keyword_search support (e.g. qdrant, elasticsearch, pgvector).
+[PostHog] Multiple active PostHog clients detected for the same project API key and host. Reuse one Posthog instance per app or process when possible to avoid competing background queues and missed shutdown flushes. Multiple clients are supported when intentional.
+[axes] atomic=False jev_stop=False laya_filter=False
+
+[Evaluate] 待评测 1986 QA → full_locomo_finalC_ctrl_20260925_090746.jsonl
+Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+Failed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+    进度 100/1986 (1.5 题/s, 并发 10, 图入选均值 0.0, ETA 21min)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    ⚡ 限流，并发降至 10，重试 locomo_conv-26_qa133
+    ⚡ 限流，并发降至 10，重试 locomo_conv-26_qa152
+    进度 200/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 20min)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    进度 300/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 19min)
+    ⚡ 限流，并发降至 5，重试 locomo_conv-30_qa49
+    进度 400/1986 (1.6 题/s, 并发 4, 图入选均值 0.0, ETA 17min)
+    ⚡ 限流，并发降至 5，重试 locomo_conv-30_qa103
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    进度 500/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 17min)
+    ⚡ 限流，并发降至 5，重试 locomo_conv-26_qa198
+    ⚡ 限流，并发降至 5，重试 locomo_conv-42_qa18
+    进度 600/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 16min)
+    ⚡ 限流，并发降至 5，重试 locomo_conv-41_qa93
+    ⚡ 限流，并发降至 5，重试 locomo_conv-41_qa43
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    进度 700/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 14min)
+    进度 800/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 13min)
+    ⚡ 限流，并发降至 5，重试 locomo_conv-41_qa43
+    ⚡ 限流，并发降至 5，重试 locomo_conv-43_qa25
+    进度 900/1986 (1.5 题/s, 并发 5, 图入选均值 0.0, ETA 12min)
+    ⚡ 限流，并发降至 5，重试 locomo_conv-41_qa132
+    ⚡ 限流，并发降至 5，重试 locomo_conv-42_qa113
+    进度 1000/1986 (1.4 题/s, 并发 4, 图入选均值 0.0, ETA 11min)
+    进度 1100/1986 (1.5 题/s, 并发 6, 图入选均值 0.0, ETA 10min)
+    ⚡ 限流，并发降至 7，重试 locomo_conv-43_qa117
+    ⚡ 限流，并发降至 5，重试 locomo_conv-41_qa170
+    ⚡ 限流，并发降至 5，重试 locomo_conv-41_qa43
+    进度 1200/1986 (1.4 题/s, 并发 5, 图入选均值 0.0, ETA 9min)
+    ⚡ 限流，并发降至 6，重试 locomo_conv-26_qa162
+    进度 1300/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 8min)
+    ⚡ 限流，并发降至 6，重试 locomo_conv-43_qa173
+    进度 1400/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 7min)
+    ⚡ 限流，并发降至 5，重试 locomo_conv-42_qa249
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    ⚡ 限流，并发降至 5，重试 locomo_conv-47_qa10
+    进度 1500/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 6min)
+judge failed: Error code: 429 - {'error': {'code': '1302', 'message': '您的账户已达到速率限制，请您控制请求频率'}}
+    ⚡ 限流，并发降至 4，重试 locomo_conv-48_qa167
+    ⚡ 限流，并发降至 4，重试 locomo_conv-48_qa167
+    ⚡ 限流，并发降至 4，重试 locomo_conv-48_qa167
+    ⚡ 限流，并发降至 5，重试 locomo_conv-42_qa70
+    进度 1600/1986 (1.5 题/s, 并发 6, 图入选均值 0.0, ETA 4min)
+    ⚡ 限流，并发降至 8，重试 locomo_conv-26_qa162    进度 1700/1986 (1.5 题/s, 并发 8, 图入选均值 0.0, ETA 3min)
+
+    ⚡ 限流，并发降至 4，重试 locomo_conv-49_qa164
+    ⚡ 限流，并发降至 4，重试 locomo_conv-49_qa170
+    ⚡ 限流，并发降至 5，重试 locomo_conv-44_qa130
+    进度 1800/1986 (1.5 题/s, 并发 5, 图入选均值 0.0, ETA 2min)
+    ⚡ 限流，并发降至 5，重试 locomo_conv-47_qa62
+    ⚡ 限流，并发降至 6，重试 locomo_conv-48_qa64
+    进度 1900/1986 (1.5 题/s, 并发 4, 图入选均值 0.0, ETA 1min)
+    ⚡ 限流，并发降至 5，重试 locomo_conv-42_qa178
+    ⚡ 限流，并发降至 5，重试 locomo_conv-48_qa110
+    ⚡ 限流，并发降至 4，重试 locomo_conv-42_qa70
+    ⚡ 限流，并发降至 4，重试 locomo_conv-43_qa201
+    ⚡ 限流，并发降至 4，重试 locomo_conv-50_qa26
+    ⚡ 限流，并发降至 4，重试 locomo_conv-50_qa166
+    ⚡ 限流，并发降至 4，重试 locomo_conv-42_qa113
+    ⚡ 限流，并发降至 4，重试 locomo_conv-50_qa35
+    ⚡ 限流，并发降至 4，重试 locomo_conv-50_qa201
+    ⚡ 限流，并发降至 4，重试 locomo_conv-48_qa163
+    ⚡ 限流，并发降至 4，重试 locomo_conv-26_qa161
+    ⚡ 限流，并发降至 4，重试 locomo_conv-50_qa123
+    ⚡ 限流，并发降至 4，重试 locomo_conv-26_qa162
+
+[汇总] 有效 1986/1986 题，耗时 23.1 分钟
+    官方口径 J-score（类别1-4，1540 题）: 93.0%
+    adversarial: 44.4%
+      adversarial    446 题  judge 44.4%
+      multi-hop      282 题  judge 94.7%
+      open-domain     96 题  judge 79.2%
+      single-hop     841 题  judge 93.6%
+      temporal       321 题  judge 94.1%
+
+✓ 融合评测完成：/Users/xu/git/memory-schema-rsi/results/full_locomo_finalC_ctrl_20260925_090746.jsonl

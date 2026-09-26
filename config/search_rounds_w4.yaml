@@ -1,0 +1,5 @@
+# 100 轮多图探索 · wave 4（rerank 成本轴：关闭 rerank 的词面兜底 A/B）
+# 前提：DashScope 恢复（query embedding 仍需百炼；rerank 关闭省掉的是大头）
+- {id: r300_norerank_calib, graphs: [s2], rerank: false, answer_preset: official}
+- {id: r301_norerank_r111,  graphs: [s2, v8cluster, v10concept], rerank: false, retrieval: {per_node: 30}, answer_preset: official_precise}
+- {id: r302_rerank_rep,     graphs: [s2, v8cluster, v10concept], retrieval: {per_node: 30}, answer_preset: official_precise}  # r111 复现（wave 3 顺延）

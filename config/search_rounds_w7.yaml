@@ -1,0 +1,10 @@
+# 提取层重做 · wave 7（8 轮，同夜配对）：原子池 on/off 隔离 + Jev 轴
+# 原子池 = 4888 条原子事实（vs mem0 1829 条合并式），RRF 合流（原子 ×1.25 权重）
+- {id: r600_noatomic,   graphs: [s2], atomic: false, answer_preset: official}            # 对照：关原子池
+- {id: r601_atomic,      graphs: [s2], atomic: true,  answer_preset: official}            # 处理：开原子池
+- {id: r602_atomic_rep,  graphs: [s2], atomic: true,  answer_preset: official}            # 噪声校准（同 r601 配置）
+- {id: r603_atomic_precise, graphs: [s2], atomic: true, answer_preset: official_precise}
+- {id: r604_atomic_nograph, graphs: [],  atomic: true, answer_preset: official}           # 隔离：图 off
+- {id: r605_jev_stop,    graphs: [s2], atomic: true, jev_stop: true, answer_preset: official}       # Jev 停止准则
+- {id: r606_jev_filter,  graphs: [s2], atomic: true, laya_filter: true, answer_preset: official}    # 四维过滤
+- {id: r607_all,         graphs: [s2], atomic: true, jev_stop: true, laya_filter: true, answer_preset: official_precise}

@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# secrets —— 真实 key 绝不入库
+.env
+
+# benchmark 数据（大文件本地放置，不放 git）
+data/locomo/*.json
+data/longmemeval/*.json
+
+# 本地向量库 / mem0 运行时数据
+data/vector_store/
+
+# HugeGraph 发行包与运行时数据（vendored mem0 源码纳入版本管理）
+third_party/*
+!third_party/mem0-src/
+
+# 评测输出（JSONL 原始证据与运行时缓存上 HF：justis-xu/memory-schema-rsi-data）
+results/*.jsonl
+results_zh/*.jsonl
+data/vector_store_zh/
+data/graph/memory_embeddings.json
+data/graph_zh/memory_embeddings.json
+data/search/
+data/precision_judge_cache.json
+data/chroma_*/
+
+# misc
+.DS_Store
+.zcode/

@@ -1,0 +1,18 @@
+# 100 轮多图探索 · wave 1（14 轮：噪声校准 + answer 轴 + 确定性图变体 + 检索参数）
+# 判分：内环 glm-5.3-flash 严格（缓存 data/search/flash_strict_cache.json）
+# 参考臂 = fused 全量 run（S2, seed_k=5, per_node=15, pool=30, official）
+- {id: r000_calib,      graphs: [s2], answer_preset: official}          # 同参考配置复跑 → 量化噪声带
+- {id: r001_precise,    graphs: [s2], answer_preset: official_precise}  # answer 轴：精准输出要求
+- {id: r002_base,       graphs: [],    answer_preset: official}         # 无图臂（基线 sanity）
+- {id: r003_s1,         graphs: [s1], answer_preset: official}
+- {id: r004_v4sess,     graphs: [s1, v4session],  answer_preset: official}
+- {id: r005_v5month,    graphs: [s1, v5month],    answer_preset: official}
+- {id: r006_v6pair,     graphs: [s1, v6pair],     answer_preset: official}
+- {id: r007_v8clu,      graphs: [s1, v8cluster],  answer_preset: official}
+- {id: r008_all,        graphs: [s1, v4session, v5month, v6pair, v8cluster], answer_preset: official}
+- {id: r009_all_precise, graphs: [s1, v4session, v5month, v6pair, v8cluster], answer_preset: official_precise}
+- {id: r010_pool60,     graphs: [s2], retrieval: {pool: 60},    answer_preset: official}
+- {id: r011_seed8,      graphs: [s2], retrieval: {seed_k: 8},   answer_preset: official}
+- {id: r012_pernode30,  graphs: [s2], retrieval: {per_node: 30}, answer_preset: official}
+- {id: r013_s2v8_precise, graphs: [s2, v8cluster], answer_preset: official_precise}
+- {id: r014_recalib,   graphs: [s2], answer_preset: official}          # 末尾重校准：量化时间漂移

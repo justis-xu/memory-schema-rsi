@@ -1,0 +1,7 @@
+# 100 轮多图探索 · wave 3（复现验证 + r111 邻域细化）
+- {id: r200_r111_rep,     graphs: [s2, v8cluster, v10concept], retrieval: {per_node: 30}, answer_preset: official_precise}  # r111 复现
+- {id: r201_r012_rep,     graphs: [s2], retrieval: {per_node: 30}, answer_preset: official}                                 # r012 复现
+- {id: r202_pn50,         graphs: [s2, v8cluster, v10concept], retrieval: {per_node: 50}, answer_preset: official_precise}
+- {id: r203_pool45,       graphs: [s2, v8cluster, v10concept], retrieval: {per_node: 30, pool: 45}, answer_preset: official_precise}
+- {id: r204_plus_v5,      graphs: [s2, v8cluster, v10concept, v5month], retrieval: {per_node: 30}, answer_preset: official_precise}
+- {id: r205_no_v8,        graphs: [s2, v10concept], retrieval: {per_node: 30}, answer_preset: official_precise}             # 消融：去掉 v8

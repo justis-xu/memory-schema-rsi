@@ -1,0 +1,9 @@
+# 这是 HugeGraph 发行包内 conf/graphs/hugegraph.properties 中、我们关心/修改的键。
+# scripts/setup_hugegraph.sh 会自动确保这些值（幂等），本文件仅作记录，不需要拷贝。
+#
+# 单机模式 + RocksDB 后端（二进制包默认即 rocksdb，脚本会兜底确认）
+backend=rocksdb
+serializer=binary
+# 数据目录相对于 HugeGraph 发行包根目录（保持默认即可）
+# rocksdb.data_path=rocksdb/data
+# rocksdb.wal_path=rocksdb/wal

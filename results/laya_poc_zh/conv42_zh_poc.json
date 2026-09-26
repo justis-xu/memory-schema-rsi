@@ -1,0 +1,1785 @@
+{
+ "conv": "conv-42",
+ "track": {
+  "config": "config/locomo_zh.yaml",
+  "prefix": "zhfull",
+  "audit": "results/laya_poc_zh/audit.json",
+  "nf_prefix": "nf53"
+ },
+ "endpoints_used": {
+  "laya": {
+   "url": "https://u1172328-qpd4-5f1abfb1.weste.seetacloud.com:8443",
+   "mode": "public"
+  },
+  "decider": {
+   "url": "https://uu1172328-qpd4-5f1abfb1.weste.seetacloud.com:8443",
+   "mode": "public"
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "session_1",
+   "n_turns": 22,
+   "n_memories": 7,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特在上周赢得了第一场电子游戏比赛",
+    "乔安娜最近在做一个小项目，觉得挺有意思",
+    "乔安娜大约三年前第一次看《美丽心灵的永恒阳光》"
+   ],
+   "state_chars": 1430,
+   "laya": {
+    "missing": 0.7931,
+    "unsupported": 0.7186,
+    "conflict": 0.68,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 1430
+   },
+   "decider": {
+    "missing": 0.0987,
+    "unsupported": 0.1076,
+    "conflict": 0.0158,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1430
+   }
+  },
+  {
+   "session_id": "session_2",
+   "n_turns": 29,
+   "n_memories": 6,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特 (Nate) 表示即使输了也会为竞争对手加油",
+    "内特 (Nate) 喜欢在事情特别重要、自己紧张的时候让乌龟在身边保持平静"
+   ],
+   "state_chars": 1766,
+   "laya": {
+    "missing": 0.6415,
+    "unsupported": 0.6478,
+    "conflict": 0.4529,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1766
+   },
+   "decider": {
+    "missing": 0.0793,
+    "unsupported": 0.0759,
+    "conflict": 0.0421,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1766
+   }
+  },
+  {
+   "session_id": "session_3",
+   "n_turns": 25,
+   "n_memories": 5,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜刚看完《小妇人》后表示乐于推荐电影，内特说没东西看时会找她要推荐，并约定看完后第一个告诉乔安娜他的感受",
+    "内特最近没有看过什么好电影，请乔安娜推荐，并把《小妇人》加到片单里",
+    "内特表示椰奶冰淇淋可能会成为他的新最爱零食",
+    "内特认为在厨房里做实验总是很有趣"
+   ],
+   "state_chars": 1448,
+   "laya": {
+    "missing": 0.1236,
+    "unsupported": 0.4941,
+    "conflict": 0.4688,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1448
+   },
+   "decider": {
+    "missing": 0.1031,
+    "unsupported": 0.1386,
+    "conflict": 0.0529,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1448
+   }
+  },
+  {
+   "session_id": "session_4",
+   "n_turns": 19,
+   "n_memories": 4,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜表示甜食永远来者不拒",
+    "乔安娜希望剧本能被注意到，最终搬上银幕"
+   ],
+   "state_chars": 1215,
+   "laya": {
+    "missing": 0.566,
+    "unsupported": 0.6243,
+    "conflict": 0.4301,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1215
+   },
+   "decider": {
+    "missing": 0.0793,
+    "unsupported": 0.1031,
+    "conflict": 0.023,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1215
+   }
+  },
+  {
+   "session_id": "session_5",
+   "n_turns": 21,
+   "n_memories": 7,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特在乔安娜完成剧本后鼓励她相信自己的努力和付出一定会被发现的，并希望她忙完后能抽时间放松一下",
+    "乔安娜表示她一直在放松自己，但很难完全放空，心里总是有希望和怀疑在拉锯",
+    "乔安娜说内特的支持对她意义重大，在整个过程中有个人一直支持她是一种福分，给了她继续前进的动力"
+   ],
+   "state_chars": 1806,
+   "laya": {
+    "missing": 0.4766,
+    "unsupported": 0.6993,
+    "conflict": 0.5679,
+    "choices": {
+     "missing": "A",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 1806
+   },
+   "decider": {
+    "missing": 0.476,
+    "unsupported": 0.6179,
+    "conflict": 0.3821,
+    "choices": {
+     "missing": "A",
+     "unsupported": "B",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1806
+   }
+  },
+  {
+   "session_id": "session_6",
+   "n_turns": 13,
+   "n_memories": 4,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特 (Nate) 表示自己想从事写作",
+    "内特 (Nate) 表示会继续努力写作，看看会有什么结果",
+    "内特 (Nate) 祝贺乔安娜的写作项目并相信一定会很棒"
+   ],
+   "state_chars": 986,
+   "laya": {
+    "missing": 0.5983,
+    "unsupported": 0.7527,
+    "conflict": 0.5775,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 986
+   },
+   "decider": {
+    "missing": 0.0694,
+    "unsupported": 0.0829,
+    "conflict": 0.029,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 986
+   }
+  },
+  {
+   "session_id": "session_7",
+   "n_turns": 13,
+   "n_memories": 4,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特染发后感觉超级兴奋，表示染发让他感觉很自由（乔安娜猜测）",
+    "内特询问乔安娜接下来的旅行计划",
+    "内特表示理解大项目真的很累人，请乔安娜有进展随时告诉他",
+    "乔安娜说内特的支持对她意义重大，她一定会随时告诉他"
+   ],
+   "state_chars": 907,
+   "laya": {
+    "missing": 0.2147,
+    "unsupported": 0.4054,
+    "conflict": 0.3355,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 907
+   },
+   "decider": {
+    "missing": 0.0987,
+    "unsupported": 0.1567,
+    "conflict": 0.0694,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 907
+   }
+  },
+  {
+   "session_id": "session_8",
+   "n_turns": 22,
+   "n_memories": 8,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜是自然/大自然的超级粉丝，所以才常去（徒步/自然中）",
+    "内特表示陪伴宠物和做爱好让他暂时逃离现实，小事对幸福感有很大影响",
+    "内特提到听说他家北边就有一条不错的徒步小径",
+    "乔安娜夸赞内特的冰淇淋，说真希望自己能做得像他一样"
+   ],
+   "state_chars": 1658,
+   "laya": {
+    "missing": 0.1385,
+    "unsupported": 0.3433,
+    "conflict": 0.5718,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 1658
+   },
+   "decider": {
+    "missing": 0.0634,
+    "unsupported": 0.0634,
+    "conflict": 0.035,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1658
+   }
+  },
+  {
+   "session_id": "session_9",
+   "n_turns": 18,
+   "n_memories": 8,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特 (Nate) 喜欢一套有冒险、魔法和出色角色的奇幻系列小说（图片显示为带龙的封面的奇幻小说系列）",
+    "乔安娜 (Joanna) 分享了一张戏剧舞台照片，照片中是她本人（穿条纹西装在舞台上表演的男性形象照片其实是她）",
+    "乔安娜 (Joanna) 分享了一张写着笔记、便签和纸张的笔记本照片（写作小组相关）"
+   ],
+   "state_chars": 2268,
+   "laya": {
+    "missing": 0.2651,
+    "unsupported": 0.5195,
+    "conflict": 0.5804,
+    "choices": {
+     "missing": "A",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 2268
+   },
+   "decider": {
+    "missing": 0.0829,
+    "unsupported": 0.0483,
+    "conflict": 0.0209,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2268
+   }
+  },
+  {
+   "session_id": "session_10",
+   "n_turns": 16,
+   "n_memories": 8,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜最近除了剧本之外没什么新鲜事，一直在做一些项目",
+    "内特认为《指环王》可能是有史以来最伟大的三部曲",
+    "内特表示生活还行，正在忙游戏房相关的事"
+   ],
+   "state_chars": 1469,
+   "laya": {
+    "missing": 0.3486,
+    "unsupported": 0.4111,
+    "conflict": 0.3594,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1469
+   },
+   "decider": {
+    "missing": 0.1172,
+    "unsupported": 0.0987,
+    "conflict": 0.035,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1469
+   }
+  },
+  {
+   "session_id": "session_11",
+   "n_turns": 20,
+   "n_memories": 5,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜 (Joanna) 有时出门在外时也会思考人生",
+    "乔安娜 (Joanna) 说这些步道有种特别之处，让她有想写一部戏剧的冲动"
+   ],
+   "state_chars": 1242,
+   "laya": {
+    "missing": 0.2101,
+    "unsupported": 0.2227,
+    "conflict": 0.3504,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1242
+   },
+   "decider": {
+    "missing": 0.1123,
+    "unsupported": 0.1444,
+    "conflict": 0.0334,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1242
+   }
+  },
+  {
+   "session_id": "session_12",
+   "n_turns": 19,
+   "n_memories": 7,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特问乔安娜是否考虑再自己养一只宠物",
+    "内特称赞乔安娜有很多才华和潜力，鼓励她追逐梦想"
+   ],
+   "state_chars": 1556,
+   "laya": {
+    "missing": 0.4707,
+    "unsupported": 0.717,
+    "conflict": 0.6893,
+    "choices": {
+     "missing": "A",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 1556
+   },
+   "decider": {
+    "missing": 0.0726,
+    "unsupported": 0.0694,
+    "conflict": 0.0277,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1556
+   }
+  },
+  {
+   "session_id": "session_13",
+   "n_turns": 23,
+   "n_memories": 3,
+   "has_known_miss": true,
+   "miss_items": [
+    "马克斯真的很喜欢那对夫妇的狗",
+    "内特特别享受看宠物们一起玩耍，看到自己的狗开心像梦想成真",
+    "内特认为有个散步伙伴对马克斯来说会很棒",
+    "乔安娜认为身边有个平静的存在能帮助缓解压力，回到家有带来安宁的存在有助于放松",
+    "内特觉得毛绒玩具就像把快乐装进口袋，每次看到都会咧嘴一笑",
+    "内特认为关键在于发现并珍惜小事物，否则很容易情绪低落"
+   ],
+   "state_chars": 1251,
+   "laya": {
+    "missing": 0.4282,
+    "unsupported": 0.5583,
+    "conflict": 0.3363,
+    "choices": {
+     "missing": "A",
+     "unsupported": "B",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1251
+   },
+   "decider": {
+    "missing": 0.1699,
+    "unsupported": 0.1699,
+    "conflict": 0.0987,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1251
+   }
+  },
+  {
+   "session_id": "session_14",
+   "n_turns": 27,
+   "n_memories": 6,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜这些年来一直听内特讲锦标赛的事",
+    "内特提到距离他第一次参加锦标赛已经有一段时间了",
+    "内特表示他喜欢帮助别人",
+    "内特嘱咐乔安娜徒步时多拍点照片"
+   ],
+   "state_chars": 1501,
+   "laya": {
+    "missing": 0.4552,
+    "unsupported": 0.6876,
+    "conflict": 0.5927,
+    "choices": {
+     "missing": "A",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 1501
+   },
+   "decider": {
+    "missing": 0.1223,
+    "unsupported": 0.1172,
+    "conflict": 0.0663,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1501
+   }
+  },
+  {
+   "session_id": "session_15",
+   "n_turns": 17,
+   "n_memories": 4,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜的包上别着一个蜘蛛侠胸针",
+    "乔安娜也喜欢钢铁侠的科技感和搞笑段子",
+    "内特说他也应该做一个自己的软木板，似乎觉得非常有价值",
+    "内特看到钢铁侠人物模型就觉得自己无敌了"
+   ],
+   "state_chars": 1418,
+   "laya": {
+    "missing": 0.566,
+    "unsupported": 0.2247,
+    "conflict": 0.7439,
+    "choices": {
+     "missing": "B",
+     "unsupported": "A",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 1418
+   },
+   "decider": {
+    "missing": 0.0987,
+    "unsupported": 0.1076,
+    "conflict": 0.0384,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1418
+   }
+  },
+  {
+   "session_id": "session_16",
+   "n_turns": 16,
+   "n_memories": 5,
+   "has_known_miss": false,
+   "miss_items": [],
+   "state_chars": 998,
+   "laya": {
+    "missing": 0.5302,
+    "unsupported": 0.6379,
+    "conflict": 0.3666,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 998
+   },
+   "decider": {
+    "missing": 0.0634,
+    "unsupported": 0.0793,
+    "conflict": 0.023,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 998
+   }
+  },
+  {
+   "session_id": "session_17",
+   "n_turns": 21,
+   "n_memories": 5,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜的电影表现不错之后开始写书",
+    "自驾游对乔安娜是一次急需的休息，也是探索新地方、寻找灵感的机会"
+   ],
+   "state_chars": 1915,
+   "laya": {
+    "missing": 0.5429,
+    "unsupported": 0.7326,
+    "conflict": 0.6049,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 1915
+   },
+   "decider": {
+    "missing": 0.0945,
+    "unsupported": 0.0829,
+    "conflict": 0.0506,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1915
+   }
+  },
+  {
+   "session_id": "session_18",
+   "n_turns": 16,
+   "n_memories": 6,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特表示乔安娜很鼓舞人心，称赞她正在改变人们的生活",
+    "内特对乔安娜说过：她的话对他意义重大",
+    "乔安娜向内特表达了感谢，感谢他分享对无乳制品甜点的热爱"
+   ],
+   "state_chars": 2443,
+   "laya": {
+    "missing": 0.3537,
+    "unsupported": 0.4454,
+    "conflict": 0.4421,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2443
+   },
+   "decider": {
+    "missing": 0.0987,
+    "unsupported": 0.0945,
+    "conflict": 0.035,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2443
+   }
+  },
+  {
+   "session_id": "session_19",
+   "n_turns": 22,
+   "n_memories": 8,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特说他总在找新书看，有好多书可以选",
+    "乔安娜说大多数小说系列都是放松时的好读物"
+   ],
+   "state_chars": 2248,
+   "laya": {
+    "missing": 0.3372,
+    "unsupported": 0.3998,
+    "conflict": 0.4417,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2248
+   },
+   "decider": {
+    "missing": 0.0829,
+    "unsupported": 0.1031,
+    "conflict": 0.0483,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2248
+   }
+  },
+  {
+   "session_id": "session_20",
+   "n_turns": 19,
+   "n_memories": 9,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特 (Nate) 于2022年9月因锦标赛失利受挫，但表示会努力保持积极心态",
+    "内特 (Nate) 说每次看到乔安娜进入状态做出来的东西，总是特别让人满足",
+    "乔安娜 (Joanna) 除了那个食谱外还在摆弄另外几个食谱",
+    "内特 (Nate) 表示有问题可以随时问他，很乐意帮忙",
+    "乔安娜 (Joanna) 很喜欢内特的烘焙建议，等不及要试试"
+   ],
+   "state_chars": 1953,
+   "laya": {
+    "missing": 0.2767,
+    "unsupported": 0.3242,
+    "conflict": 0.3522,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1953
+   },
+   "decider": {
+    "missing": 0.1172,
+    "unsupported": 0.0866,
+    "conflict": 0.0264,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1953
+   }
+  },
+  {
+   "session_id": "session_21",
+   "n_turns": 20,
+   "n_memories": 9,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特 (Nate) 表示要试着烤一下乔安娜的巧克力覆盆子挞"
+   ],
+   "state_chars": 2266,
+   "laya": {
+    "missing": 0.3149,
+    "unsupported": 0.5467,
+    "conflict": 0.6077,
+    "choices": {
+     "missing": "A",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 2266
+   },
+   "decider": {
+    "missing": 0.0829,
+    "unsupported": 0.0759,
+    "conflict": 0.02,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2266
+   }
+  },
+  {
+   "session_id": "session_22",
+   "n_turns": 23,
+   "n_memories": 7,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜认为《小妇人》把姐妹情、爱和追逐梦想这些主题展现得特别好",
+    "乔安娜为写作俱乐部女士做书签时提到'我知道她也一样'爱做手工",
+    "内特让乔安娜到时候告诉他书签送礼的结果如何"
+   ],
+   "state_chars": 2095,
+   "laya": {
+    "missing": 0.1753,
+    "unsupported": 0.4785,
+    "conflict": 0.4533,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2095
+   },
+   "decider": {
+    "missing": 0.0945,
+    "unsupported": 0.0866,
+    "conflict": 0.0506,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2095
+   }
+  },
+  {
+   "session_id": "session_23",
+   "n_turns": 30,
+   "n_memories": 9,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特 (Nate) 上周五（展会那天）之前与乔安娜好几天没聊天了",
+    "内特 (Nate) 今晚在家放松，玩电子游戏或看电影来减压",
+    "内特 (Nate) 喜欢电影带他进入新世界、充满各种情感，忙碌一天后用电影放松最好不过",
+    "内特 (Nate) 打算在客厅添置乔安娜建议的舒适配置（沙发、毯子、可调暗的灯）",
+    "乔安娜 (Joanna) 对'写作展会'感兴趣，打算去查查看是否真有这种展会",
+    "内特 (Nate) 说这次展会的经历真是难忘",
+    "乔安娜 (Joanna) 认为电影有力量带人远离现实，是绝佳的逃离"
+   ],
+   "state_chars": 2963,
+   "laya": {
+    "missing": 0.2991,
+    "unsupported": 0.4863,
+    "conflict": 0.4287,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2963
+   },
+   "decider": {
+    "missing": 0.1123,
+    "unsupported": 0.0945,
+    "conflict": 0.0209,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2963
+   }
+  },
+  {
+   "session_id": "session_24",
+   "n_turns": 19,
+   "n_memories": 8,
+   "has_known_miss": true,
+   "miss_items": [
+    "乔安娜保留的毛绒小狗是内特送给她的礼物（当前记忆误写为'乔安娜给内特送的'）",
+    "内特说看着乌龟慢慢爬来爬去会让他开心，说不清原因，他庆幸有这样的快乐",
+    "内特表示很敬佩乔安娜，每当有伤心事发生她都能重新振作",
+    "内特安慰乔安娜被拒绝不能定义她，坚持下去会遇到完美的机会"
+   ],
+   "state_chars": 1329,
+   "laya": {
+    "missing": 0.2075,
+    "unsupported": 0.8069,
+    "conflict": 0.2082,
+    "choices": {
+     "missing": "A",
+     "unsupported": "B",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1329
+   },
+   "decider": {
+    "missing": 0.524,
+    "unsupported": 0.464,
+    "conflict": 0.1912,
+    "choices": {
+     "missing": "B",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1329
+   }
+  },
+  {
+   "session_id": "session_25",
+   "n_turns": 29,
+   "n_memories": 6,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特 (Nate) 表示带乌龟散步是因为他那天很无聊"
+   ],
+   "state_chars": 2471,
+   "laya": {
+    "missing": 0.7114,
+    "unsupported": 0.5195,
+    "conflict": 0.4417,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2471
+   },
+   "decider": {
+    "missing": 0.1123,
+    "unsupported": 0.1223,
+    "conflict": 0.0606,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2471
+   }
+  },
+  {
+   "session_id": "session_26",
+   "n_turns": 24,
+   "n_memories": 8,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特提到他赢得电竞比赛锦标赛时感觉超棒",
+    "内特说自己就是喜欢乌龟"
+   ],
+   "state_chars": 2099,
+   "laya": {
+    "missing": 0.1854,
+    "unsupported": 0.4417,
+    "conflict": 0.3868,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2099
+   },
+   "decider": {
+    "missing": 0.2766,
+    "unsupported": 0.1699,
+    "conflict": 0.0945,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 2099
+   }
+  },
+  {
+   "session_id": "session_27",
+   "n_turns": 38,
+   "n_memories": 10,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特 (Nate) 表示他每天都有一份自己喜欢的工作，对此很感激",
+    "内特 (Nate) 正在准备其他锦标赛，特别忙但很享受",
+    "内特 (Nate) 表示很感激每天有喜欢的工作；乔安娜问内特最喜欢的事，内特问乔安娜什么给她带来快乐，乔安娜回答创作故事并看着它们活起来给她快乐和满足感",
+    "内特 (Nate) 说朋友向乔安娜推荐电影通常更合他意，他喜欢乔安娜给他推荐电影",
+    "内特 (Nate) 喜欢乔安娜给他推荐电影，认为比随便看一部更合他意",
+    "内特 (Nate) 在准备其他无畏契约锦标赛",
+    "内特 (Nate) 有时和朋友一起玩游戏时使用他的游戏电脑",
+    "内特 (Nate) 认为拥有专门的游戏空间（专属小天地）可以让他逃进虚拟世界",
+    "内特 (Nate) 曾对乔安娜说，他肯定她至少有一部剧本能登上银幕，成为她第三部上映的电影（暗示乔安娜已有两部上映电影）",
+    "内特 (Nate) 表示他喜欢乔安娜给他推荐电影，觉得通常更合他意",
+    "内特 (Nate) 在准备其他锦标赛，特别忙但很享受；乔安娜认为忙碌虽累但值得",
+    "乔安娜 (Joanna) 表示不会放弃写作，并做出保证",
+    "内特 (Nate) 说他从现在起也要开始记录他和乔安娜之间最美好的回忆",
+    "内特 (Nate) 曾带他的宠物们去公园，它们惊讶不已，看着它们开心的脸那天变得难忘（原文还提到是内特主动讲述）",
+    "内特 (Nate) 表示比起随便看一部电影，乔安娜推荐的电影通常更合他意"
+   ],
+   "state_chars": 3856,
+   "laya": {
+    "missing": 0.3208,
+    "unsupported": 0.4533,
+    "conflict": 0.502,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 3856
+   },
+   "decider": {
+    "missing": 0.1987,
+    "unsupported": 0.1699,
+    "conflict": 0.1632,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3856
+   }
+  },
+  {
+   "session_id": "session_28",
+   "n_turns": 33,
+   "n_memories": 10,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特分享了一张YouTube视频正面评论的截图",
+    "内特表示已经在看其他人的视频了",
+    "乔安娜说她现在感觉根本停不下来写作",
+    "内特表示很乐意再次邀请乔安娜来家里",
+    "内特问乔安娜在笔记本上写什么"
+   ],
+   "state_chars": 3046,
+   "laya": {
+    "missing": 0.4523,
+    "unsupported": 0.7833,
+    "conflict": 0.538,
+    "choices": {
+     "missing": "A",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 3046
+   },
+   "decider": {
+    "missing": 0.1123,
+    "unsupported": 0.1386,
+    "conflict": 0.0945,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 3046
+   }
+  },
+  {
+   "session_id": "session_29",
+   "n_turns": 15,
+   "n_memories": 7,
+   "has_known_miss": true,
+   "miss_items": [
+    "内特在乔安娜开始拍电影时祝贺她，说她的努力得到回报，他一点也不意外",
+    "内特表示看到乔安娜的剧本在电影中活起来，一定感觉很棒",
+    "乔安娜问内特最喜欢养乌龟的哪一点",
+    "内特表示希望乔安娜喜欢冰淇淋，乔安娜说很高兴和内特聊近况"
+   ],
+   "state_chars": 1758,
+   "laya": {
+    "missing": 0.5361,
+    "unsupported": 0.7106,
+    "conflict": 0.6671,
+    "choices": {
+     "missing": "B",
+     "unsupported": "B",
+     "conflict": "B"
+    },
+    "truncated": false,
+    "state_chars": 1758
+   },
+   "decider": {
+    "missing": 0.3486,
+    "unsupported": 0.3378,
+    "conflict": 0.3821,
+    "choices": {
+     "missing": "A",
+     "unsupported": "A",
+     "conflict": "A"
+    },
+    "truncated": false,
+    "state_chars": 1758
+   }
+  }
+ ],
+ "metrics": {
+  "laya": {
+   "n_scored": 29,
+   "risk": "missing P(B)",
+   "auc": 0.2857142857142857,
+   "mean_risk_pos": 0.3931964285714285,
+   "mean_risk_neg": 0.5302,
+   "auc_by_question": {
+    "missing": 0.2857142857142857,
+    "unsupported": 0.35714285714285715,
+    "conflict": 0.7857142857142857
+   },
+   "threshold_table": {
+    "0.3": {
+     "升级数": 19,
+     "其中有真漏数": 18,
+     "漏检数": 10
+    },
+    "0.4": {
+     "升级数": 14,
+     "其中有真漏数": 13,
+     "漏检数": 15
+    },
+    "0.5": {
+     "升级数": 9,
+     "其中有真漏数": 8,
+     "漏检数": 20
+    },
+    "0.6": {
+     "升级数": 3,
+     "其中有真漏数": 3,
+     "漏检数": 25
+    },
+    "0.7": {
+     "升级数": 2,
+     "其中有真漏数": 2,
+     "漏检数": 26
+    }
+   }
+  },
+  "decider": {
+   "n_scored": 29,
+   "risk": "missing P(B)",
+   "auc": 0.9821428571428571,
+   "mean_risk_pos": 0.1464035714285714,
+   "mean_risk_neg": 0.0634,
+   "auc_by_question": {
+    "missing": 0.9821428571428571,
+    "unsupported": 0.8214285714285714,
+    "conflict": 0.8392857142857143
+   },
+   "threshold_table": {
+    "0.3": {
+     "升级数": 3,
+     "其中有真漏数": 3,
+     "漏检数": 25
+    },
+    "0.4": {
+     "升级数": 2,
+     "其中有真漏数": 2,
+     "漏检数": 26
+    },
+    "0.5": {
+     "升级数": 1,
+     "其中有真漏数": 1,
+     "漏检数": 27
+    },
+    "0.6": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 28
+    },
+    "0.7": {
+     "升级数": 0,
+     "其中有真漏数": 0,
+     "漏检数": 28
+    }
+   }
+  }
+ },
+ "payoff": {
+  "漏点条数": 103,
+  "nf_covered": 16,
+  "nf_prefix": "nf53",
+  "明细": [
+   {
+    "session_id": "session_1",
+    "fact": "内特在上周赢得了第一场电子游戏比赛",
+    "keyphrase": "了第一场电子游戏比赛",
+    "covered": false
+   },
+   {
+    "session_id": "session_1",
+    "fact": "乔安娜最近在做一个小项目，觉得挺有意思",
+    "keyphrase": "最近在做一个小项目",
+    "covered": false
+   },
+   {
+    "session_id": "session_1",
+    "fact": "乔安娜大约三年前第一次看《美丽心灵的永恒阳光》",
+    "keyphrase": "大约三年前第一次看",
+    "covered": false
+   },
+   {
+    "session_id": "session_2",
+    "fact": "内特 (Nate) 表示即使输了也会为竞争对手加油",
+    "keyphrase": "竞争对手",
+    "covered": false
+   },
+   {
+    "session_id": "session_2",
+    "fact": "内特 (Nate) 喜欢在事情特别重要、自己紧张的时候让乌龟在身边保持平静",
+    "keyphrase": "喜欢在事情特别重要、",
+    "covered": false
+   },
+   {
+    "session_id": "session_3",
+    "fact": "乔安娜刚看完《小妇人》后表示乐于推荐电影，内特说没东西看时会找她要推荐，并约定看完后第一个告诉乔安娜他的感受",
+    "keyphrase": "乐于推荐电影",
+    "covered": false
+   },
+   {
+    "session_id": "session_3",
+    "fact": "内特最近没有看过什么好电影，请乔安娜推荐，并把《小妇人》加到片单里",
+    "keyphrase": "看过什么好电影",
+    "covered": false
+   },
+   {
+    "session_id": "session_3",
+    "fact": "内特表示椰奶冰淇淋可能会成为他的新最爱零食",
+    "keyphrase": "的新最爱零食",
+    "covered": false
+   },
+   {
+    "session_id": "session_3",
+    "fact": "内特认为在厨房里做实验总是很有趣",
+    "keyphrase": "在厨房里做实验总是很有趣",
+    "covered": false
+   },
+   {
+    "session_id": "session_4",
+    "fact": "乔安娜表示甜食永远来者不拒",
+    "keyphrase": "永远来者不拒",
+    "covered": false
+   },
+   {
+    "session_id": "session_4",
+    "fact": "乔安娜希望剧本能被注意到，最终搬上银幕",
+    "keyphrase": "剧本能被注意到，最终搬上银幕",
+    "covered": false
+   },
+   {
+    "session_id": "session_5",
+    "fact": "内特在乔安娜完成剧本后鼓励她相信自己的努力和付出一定会被发现的，并希望她忙完后能抽时间放松一下",
+    "keyphrase": "的努力和付出一定会",
+    "covered": false
+   },
+   {
+    "session_id": "session_5",
+    "fact": "乔安娜表示她一直在放松自己，但很难完全放空，心里总是有希望和怀疑在拉锯",
+    "keyphrase": "一直在放松自己，但很难完全放空",
+    "covered": false
+   },
+   {
+    "session_id": "session_5",
+    "fact": "乔安娜说内特的支持对她意义重大，在整个过程中有个人一直支持她是一种福分，给了她继续前进的动力",
+    "keyphrase": "在整个过程中有个人一直支持",
+    "covered": false
+   },
+   {
+    "session_id": "session_6",
+    "fact": "内特 (Nate) 表示自己想从事写作",
+    "keyphrase": "想从事写作",
+    "covered": false
+   },
+   {
+    "session_id": "session_6",
+    "fact": "内特 (Nate) 表示会继续努力写作，看看会有什么结果",
+    "keyphrase": "，看看会有什么结果",
+    "covered": false
+   },
+   {
+    "session_id": "session_6",
+    "fact": "内特 (Nate) 祝贺乔安娜的写作项目并相信一定会很棒",
+    "keyphrase": "相信一定会很棒",
+    "covered": false
+   },
+   {
+    "session_id": "session_7",
+    "fact": "内特染发后感觉超级兴奋，表示染发让他感觉很自由（乔安娜猜测）",
+    "keyphrase": "感觉很自由",
+    "covered": false
+   },
+   {
+    "session_id": "session_7",
+    "fact": "内特询问乔安娜接下来的旅行计划",
+    "keyphrase": "的旅行计划",
+    "covered": false
+   },
+   {
+    "session_id": "session_7",
+    "fact": "内特表示理解大项目真的很累人，请乔安娜有进展随时告诉他",
+    "keyphrase": "大项目真的很累人",
+    "covered": false
+   },
+   {
+    "session_id": "session_7",
+    "fact": "乔安娜说内特的支持对她意义重大，她一定会随时告诉他",
+    "keyphrase": "一定会随时告诉",
+    "covered": false
+   },
+   {
+    "session_id": "session_8",
+    "fact": "乔安娜是自然/大自然的超级粉丝，所以才常去（徒步/自然中）",
+    "keyphrase": "的超级粉丝，所以",
+    "covered": false
+   },
+   {
+    "session_id": "session_8",
+    "fact": "内特表示陪伴宠物和做爱好让他暂时逃离现实，小事对幸福感有很大影响",
+    "keyphrase": "暂时逃离现实",
+    "covered": false
+   },
+   {
+    "session_id": "session_8",
+    "fact": "内特提到听说他家北边就有一条不错的徒步小径",
+    "keyphrase": "家北边就有一条不错的",
+    "covered": false
+   },
+   {
+    "session_id": "session_8",
+    "fact": "乔安娜夸赞内特的冰淇淋，说真希望自己能做得像他一样",
+    "keyphrase": "的冰淇淋",
+    "covered": true
+   },
+   {
+    "session_id": "session_9",
+    "fact": "内特 (Nate) 喜欢一套有冒险、魔法和出色角色的奇幻系列小说（图片显示为带龙的封面的奇幻小说系列）",
+    "keyphrase": "有冒险、魔法和出色",
+    "covered": false
+   },
+   {
+    "session_id": "session_9",
+    "fact": "乔安娜 (Joanna) 分享了一张戏剧舞台照片，照片中是她本人（穿条纹西装在舞台上表演的男性形象照片其实是她）",
+    "keyphrase": "在舞台上",
+    "covered": false
+   },
+   {
+    "session_id": "session_9",
+    "fact": "乔安娜 (Joanna) 分享了一张写着笔记、便签和纸张的笔记本照片（写作小组相关）",
+    "keyphrase": "写作小组",
+    "covered": true
+   },
+   {
+    "session_id": "session_10",
+    "fact": "乔安娜最近除了剧本之外没什么新鲜事，一直在做一些项目",
+    "keyphrase": "除了剧本之外没什么新鲜事",
+    "covered": false
+   },
+   {
+    "session_id": "session_10",
+    "fact": "内特认为《指环王》可能是有史以来最伟大的三部曲",
+    "keyphrase": "可能是有史以来最伟大的三部曲",
+    "covered": false
+   },
+   {
+    "session_id": "session_10",
+    "fact": "内特表示生活还行，正在忙游戏房相关的事",
+    "keyphrase": "生活还行，",
+    "covered": false
+   },
+   {
+    "session_id": "session_11",
+    "fact": "乔安娜 (Joanna) 有时出门在外时也会思考人生",
+    "keyphrase": "时也会思考人生",
+    "covered": false
+   },
+   {
+    "session_id": "session_11",
+    "fact": "乔安娜 (Joanna) 说这些步道有种特别之处，让她有想写一部戏剧的冲动",
+    "keyphrase": "这些步道有种特别之处，让",
+    "covered": false
+   },
+   {
+    "session_id": "session_12",
+    "fact": "内特问乔安娜是否考虑再自己养一只宠物",
+    "keyphrase": "自己养一只",
+    "covered": false
+   },
+   {
+    "session_id": "session_12",
+    "fact": "内特称赞乔安娜有很多才华和潜力，鼓励她追逐梦想",
+    "keyphrase": "有很多才华和潜力",
+    "covered": false
+   },
+   {
+    "session_id": "session_13",
+    "fact": "马克斯真的很喜欢那对夫妇的狗",
+    "keyphrase": "真的很喜欢那",
+    "covered": false
+   },
+   {
+    "session_id": "session_13",
+    "fact": "内特特别享受看宠物们一起玩耍，看到自己的狗开心像梦想成真",
+    "keyphrase": "宠物们一起玩耍",
+    "covered": false
+   },
+   {
+    "session_id": "session_13",
+    "fact": "内特认为有个散步伙伴对马克斯来说会很棒",
+    "keyphrase": "有个散步伙伴对马克斯来说会很棒",
+    "covered": false
+   },
+   {
+    "session_id": "session_13",
+    "fact": "乔安娜认为身边有个平静的存在能帮助缓解压力，回到家有带来安宁的存在有助于放松",
+    "keyphrase": "身边有个平静的存在能帮助缓解压力",
+    "covered": false
+   },
+   {
+    "session_id": "session_13",
+    "fact": "内特觉得毛绒玩具就像把快乐装进口袋，每次看到都会咧嘴一笑",
+    "keyphrase": "就像把快乐装进口袋",
+    "covered": false
+   },
+   {
+    "session_id": "session_13",
+    "fact": "内特认为关键在于发现并珍惜小事物，否则很容易情绪低落",
+    "keyphrase": "小事物，否则很容易情绪低落",
+    "covered": false
+   },
+   {
+    "session_id": "session_14",
+    "fact": "乔安娜这些年来一直听内特讲锦标赛的事",
+    "keyphrase": "讲锦标赛的事",
+    "covered": false
+   },
+   {
+    "session_id": "session_14",
+    "fact": "内特提到距离他第一次参加锦标赛已经有一段时间了",
+    "keyphrase": "第一次参加锦标赛已经有一段时间了",
+    "covered": false
+   },
+   {
+    "session_id": "session_14",
+    "fact": "内特表示他喜欢帮助别人",
+    "keyphrase": "喜欢帮助别人",
+    "covered": false
+   },
+   {
+    "session_id": "session_14",
+    "fact": "内特嘱咐乔安娜徒步时多拍点照片",
+    "keyphrase": "多拍点照片",
+    "covered": false
+   },
+   {
+    "session_id": "session_15",
+    "fact": "乔安娜的包上别着一个蜘蛛侠胸针",
+    "keyphrase": "包上别着一个蜘蛛侠胸针",
+    "covered": true
+   },
+   {
+    "session_id": "session_15",
+    "fact": "乔安娜也喜欢钢铁侠的科技感和搞笑段子",
+    "keyphrase": "也喜欢钢铁侠的科技感和搞笑段子",
+    "covered": false
+   },
+   {
+    "session_id": "session_15",
+    "fact": "内特说他也应该做一个自己的软木板，似乎觉得非常有价值",
+    "keyphrase": "做一个自己的软木板，",
+    "covered": false
+   },
+   {
+    "session_id": "session_15",
+    "fact": "内特看到钢铁侠人物模型就觉得自己无敌了",
+    "keyphrase": "觉得自己无敌了",
+    "covered": false
+   },
+   {
+    "session_id": "session_17",
+    "fact": "乔安娜的电影表现不错之后开始写书",
+    "keyphrase": "的电影表现不错之后",
+    "covered": false
+   },
+   {
+    "session_id": "session_17",
+    "fact": "自驾游对乔安娜是一次急需的休息，也是探索新地方、寻找灵感的机会",
+    "keyphrase": "急需的休息，也是探索新地方、寻找灵感的",
+    "covered": false
+   },
+   {
+    "session_id": "session_18",
+    "fact": "内特表示乔安娜很鼓舞人心，称赞她正在改变人们的生活",
+    "keyphrase": "正在改变人们的生活",
+    "covered": false
+   },
+   {
+    "session_id": "session_18",
+    "fact": "内特对乔安娜说过：她的话对他意义重大",
+    "keyphrase": "意义重大",
+    "covered": true
+   },
+   {
+    "session_id": "session_18",
+    "fact": "乔安娜向内特表达了感谢，感谢他分享对无乳制品甜点的热爱",
+    "keyphrase": "对无乳制品甜点的热爱",
+    "covered": false
+   },
+   {
+    "session_id": "session_19",
+    "fact": "内特说他总在找新书看，有好多书可以选",
+    "keyphrase": "有好多书可以选",
+    "covered": false
+   },
+   {
+    "session_id": "session_19",
+    "fact": "乔安娜说大多数小说系列都是放松时的好读物",
+    "keyphrase": "大多数小说系列都是放松时的好读物",
+    "covered": false
+   },
+   {
+    "session_id": "session_20",
+    "fact": "内特 (Nate) 于2022年9月因锦标赛失利受挫，但表示会努力保持积极心态",
+    "keyphrase": "会努力保持积极心态",
+    "covered": false
+   },
+   {
+    "session_id": "session_20",
+    "fact": "内特 (Nate) 说每次看到乔安娜进入状态做出来的东西，总是特别让人满足",
+    "keyphrase": "做出来的东西，总是特别让人满足",
+    "covered": false
+   },
+   {
+    "session_id": "session_20",
+    "fact": "乔安娜 (Joanna) 除了那个食谱外还在摆弄另外几个食谱",
+    "keyphrase": "那个食谱",
+    "covered": false
+   },
+   {
+    "session_id": "session_20",
+    "fact": "内特 (Nate) 表示有问题可以随时问他，很乐意帮忙",
+    "keyphrase": "很乐意帮忙",
+    "covered": false
+   },
+   {
+    "session_id": "session_20",
+    "fact": "乔安娜 (Joanna) 很喜欢内特的烘焙建议，等不及要试试",
+    "keyphrase": "建议，等不及要试试",
+    "covered": false
+   },
+   {
+    "session_id": "session_21",
+    "fact": "内特 (Nate) 表示要试着烤一下乔安娜的巧克力覆盆子挞",
+    "keyphrase": "的巧克力覆盆子挞",
+    "covered": false
+   },
+   {
+    "session_id": "session_22",
+    "fact": "乔安娜认为《小妇人》把姐妹情、爱和追逐梦想这些主题展现得特别好",
+    "keyphrase": "把姐妹情、爱和追逐梦想这些主题",
+    "covered": true
+   },
+   {
+    "session_id": "session_22",
+    "fact": "乔安娜为写作俱乐部女士做书签时提到'我知道她也一样'爱做手工",
+    "keyphrase": "我知道她也一样",
+    "covered": false
+   },
+   {
+    "session_id": "session_22",
+    "fact": "内特让乔安娜到时候告诉他书签送礼的结果如何",
+    "keyphrase": "到时候告诉",
+    "covered": false
+   },
+   {
+    "session_id": "session_23",
+    "fact": "内特 (Nate) 上周五（展会那天）之前与乔安娜好几天没聊天了",
+    "keyphrase": "好几天没聊",
+    "covered": false
+   },
+   {
+    "session_id": "session_23",
+    "fact": "内特 (Nate) 今晚在家放松，玩电子游戏或看电影来减压",
+    "keyphrase": "玩电子游戏或看电影",
+    "covered": false
+   },
+   {
+    "session_id": "session_23",
+    "fact": "内特 (Nate) 喜欢电影带他进入新世界、充满各种情感，忙碌一天后用电影放松最好不过",
+    "keyphrase": "，忙碌一天后用电影",
+    "covered": false
+   },
+   {
+    "session_id": "session_23",
+    "fact": "内特 (Nate) 打算在客厅添置乔安娜建议的舒适配置（沙发、毯子、可调暗的灯）",
+    "keyphrase": "调暗的灯",
+    "covered": true
+   },
+   {
+    "session_id": "session_23",
+    "fact": "乔安娜 (Joanna) 对'写作展会'感兴趣，打算去查查看是否真有这种展会",
+    "keyphrase": "写作展会",
+    "covered": true
+   },
+   {
+    "session_id": "session_23",
+    "fact": "内特 (Nate) 说这次展会的经历真是难忘",
+    "keyphrase": "这次展会的经历真是难忘",
+    "covered": false
+   },
+   {
+    "session_id": "session_23",
+    "fact": "乔安娜 (Joanna) 认为电影有力量带人远离现实，是绝佳的逃离",
+    "keyphrase": "电影有力量带",
+    "covered": false
+   },
+   {
+    "session_id": "session_24",
+    "fact": "乔安娜保留的毛绒小狗是内特送给她的礼物（当前记忆误写为'乔安娜给内特送的'）",
+    "keyphrase": "毛绒小狗",
+    "covered": true
+   },
+   {
+    "session_id": "session_24",
+    "fact": "内特说看着乌龟慢慢爬来爬去会让他开心，说不清原因，他庆幸有这样的快乐",
+    "keyphrase": "乌龟慢慢爬来爬去会让",
+    "covered": false
+   },
+   {
+    "session_id": "session_24",
+    "fact": "内特表示很敬佩乔安娜，每当有伤心事发生她都能重新振作",
+    "keyphrase": "，每当有伤心事发生",
+    "covered": false
+   },
+   {
+    "session_id": "session_24",
+    "fact": "内特安慰乔安娜被拒绝不能定义她，坚持下去会遇到完美的机会",
+    "keyphrase": "会遇到完美的机会",
+    "covered": true
+   },
+   {
+    "session_id": "session_25",
+    "fact": "内特 (Nate) 表示带乌龟散步是因为他那天很无聊",
+    "keyphrase": "天很无聊",
+    "covered": false
+   },
+   {
+    "session_id": "session_26",
+    "fact": "内特提到他赢得电竞比赛锦标赛时感觉超棒",
+    "keyphrase": "赢得电竞比赛锦标赛时",
+    "covered": false
+   },
+   {
+    "session_id": "session_26",
+    "fact": "内特说自己就是喜欢乌龟",
+    "keyphrase": "就是喜欢乌龟",
+    "covered": false
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 表示他每天都有一份自己喜欢的工作，对此很感激",
+    "keyphrase": "每天都有一份自己喜欢的工作",
+    "covered": false
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 正在准备其他锦标赛，特别忙但很享受",
+    "keyphrase": "在准备其他锦标赛，",
+    "covered": true
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 表示很感激每天有喜欢的工作；乔安娜问内特最喜欢的事，内特问乔安娜什么给她带来快乐，乔安娜回答创作故事并看着它们活起来给她快乐和满足感",
+    "keyphrase": "创作故事并看着它们活起来",
+    "covered": true
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 说朋友向乔安娜推荐电影通常更合他意，他喜欢乔安娜给他推荐电影",
+    "keyphrase": "推荐电影",
+    "covered": false
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 喜欢乔安娜给他推荐电影，认为比随便看一部更合他意",
+    "keyphrase": "推荐电影，",
+    "covered": false
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 在准备其他无畏契约锦标赛",
+    "keyphrase": "在准备其他",
+    "covered": true
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 有时和朋友一起玩游戏时使用他的游戏电脑",
+    "keyphrase": "和朋友一起玩游戏时",
+    "covered": false
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 认为拥有专门的游戏空间（专属小天地）可以让他逃进虚拟世界",
+    "keyphrase": "逃进虚拟世界",
+    "covered": true
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 曾对乔安娜说，他肯定她至少有一部剧本能登上银幕，成为她第三部上映的电影（暗示乔安娜已有两部上映电影）",
+    "keyphrase": "能登上银幕，成为",
+    "covered": false
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 表示他喜欢乔安娜给他推荐电影，觉得通常更合他意",
+    "keyphrase": "推荐电影，",
+    "covered": false
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 在准备其他锦标赛，特别忙但很享受；乔安娜认为忙碌虽累但值得",
+    "keyphrase": "在准备其他锦标赛，",
+    "covered": true
+   },
+   {
+    "session_id": "session_27",
+    "fact": "乔安娜 (Joanna) 表示不会放弃写作，并做出保证",
+    "keyphrase": "不会放弃",
+    "covered": true
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 说他从现在起也要开始记录他和乔安娜之间最美好的回忆",
+    "keyphrase": "也要开始记录",
+    "covered": false
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 曾带他的宠物们去公园，它们惊讶不已，看着它们开心的脸那天变得难忘（原文还提到是内特主动讲述）",
+    "keyphrase": "它们惊讶不已，看着它们开心的脸",
+    "covered": false
+   },
+   {
+    "session_id": "session_27",
+    "fact": "内特 (Nate) 表示比起随便看一部电影，乔安娜推荐的电影通常更合他意",
+    "keyphrase": "比起随便看一部",
+    "covered": false
+   },
+   {
+    "session_id": "session_28",
+    "fact": "内特分享了一张YouTube视频正面评论的截图",
+    "keyphrase": "YouTube",
+    "covered": true
+   },
+   {
+    "session_id": "session_28",
+    "fact": "内特表示已经在看其他人的视频了",
+    "keyphrase": "看其他人的视频",
+    "covered": false
+   },
+   {
+    "session_id": "session_28",
+    "fact": "乔安娜说她现在感觉根本停不下来写作",
+    "keyphrase": "根本停不下来写作",
+    "covered": false
+   },
+   {
+    "session_id": "session_28",
+    "fact": "内特表示很乐意再次邀请乔安娜来家里",
+    "keyphrase": "再次邀请",
+    "covered": false
+   },
+   {
+    "session_id": "session_28",
+    "fact": "内特问乔安娜在笔记本上写什么",
+    "keyphrase": "笔记本上写什么",
+    "covered": false
+   },
+   {
+    "session_id": "session_29",
+    "fact": "内特在乔安娜开始拍电影时祝贺她，说她的努力得到回报，他一点也不意外",
+    "keyphrase": "的努力得到回报，",
+    "covered": false
+   },
+   {
+    "session_id": "session_29",
+    "fact": "内特表示看到乔安娜的剧本在电影中活起来，一定感觉很棒",
+    "keyphrase": "的剧本在电影中活起来，一定感觉很棒",
+    "covered": false
+   },
+   {
+    "session_id": "session_29",
+    "fact": "乔安娜问内特最喜欢养乌龟的哪一点",
+    "keyphrase": "最喜欢养",
+    "covered": false
+   },
+   {
+    "session_id": "session_29",
+    "fact": "内特表示希望乔安娜喜欢冰淇淋，乔安娜说很高兴和内特聊近况",
+    "keyphrase": "，乔安娜",
+    "covered": false
+   }
+  ]
+ }
+}

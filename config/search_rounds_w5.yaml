@@ -1,0 +1,14 @@
+# 50 轮目标 · wave 5（12 轮）：r111 复现 + 新校准 + Laya 路由/过滤轴
+# 基础设施已全部恢复（MaaS 端点，同向量空间同 rerank 模型，与历史 27 轮可比）
+- {id: r400_calib3,    graphs: [s2], answer_preset: official}                            # 三号校准：恢复后漂移复验
+- {id: r401_r111_rep,  graphs: [s2, v8cluster, v10concept], retrieval: {per_node: 30}, answer_preset: official_precise}  # r111 复现（关键闸门）
+- {id: r402_laya_route, graphs: [s2], laya_route: true, answer_preset: official}         # 仅路由
+- {id: r403_laya_filter, graphs: [s2], laya_filter: true, answer_preset: official}       # 仅过滤
+- {id: r404_laya_both, graphs: [s2], laya_route: true, laya_filter: true, answer_preset: official}
+- {id: r405_laya_r111, graphs: [s2, v8cluster, v10concept], laya_route: true, laya_filter: true, retrieval: {per_node: 30}, answer_preset: official_precise}  # 全叠加
+- {id: r406_laya_precise, graphs: [s2], laya_route: true, laya_filter: true, answer_preset: official_precise}
+- {id: r407_pn30_rep,  graphs: [s2], retrieval: {per_node: 30}, answer_preset: official}  # r012 复现
+- {id: r408_laya_only_list, graphs: [s2], laya_filter: true, retrieval: {pool: 45}, answer_preset: official}  # 宽池+过滤（列表题假设）
+- {id: r409_norerank,  graphs: [s2], rerank: false, answer_preset: official}             # rerank 关闭对照（词面兜底）
+- {id: r410_seed3,     graphs: [s2], retrieval: {seed_k: 3}, answer_preset: official}    # 更少种子（噪声候选↓）
+- {id: r411_laya_filter_pn30, graphs: [s2], laya_filter: true, retrieval: {per_node: 30}, answer_preset: official_precise}

@@ -1,0 +1,81 @@
+# schema-rsi 默认配置。
+# 模型相关 base_url/api_key/model 一律从 .env 读取（见 .env.example）；此处只放行为参数。
+# 环境变量覆盖：HUGEGRAPH_URL / LOCOMO_DATASET_PATH / LONGMEMEVAL_DATASET_PATH。
+
+mem0:
+  top_k: 15
+  collection_name: schema_rsi_memories
+  vector_store_path: data/vector_store/chroma     # Chroma 本地持久化目录
+  history_db_path: data/vector_store/mem0_history.db
+  # 提取 prompt：使用 mem0 官方默认（vendored 源码 third_party/mem0-src，含日期锚 system 头注入于 pipeline.ingest_case）。
+
+llm:
+  temperature: 0.0
+
+rerank:
+  enabled: true
+  top_k: 15       # rerank 后保留的记忆条数
+
+judge:
+  enabled: false  # Phase 0 不启用 LLM 判题（评测用 token-F1/contains）
+
+hugegraph:
+  url: http://127.0.0.1:8080
+  graph: hugegraph
+  timeout: 60
+  auth:
+    enabled: false      # 若服务端返回 401 再开启（默认账号见 HugeGraph 文档）
+    username: admin
+    password: admin
+  jvm_xmx: 1g           # start_hugegraph.sh 使用
+  # 1.7.0 tarball 为 pd+server+store 三合一包，此处指向 server 子目录
+  dist_dir: third_party/apache-hugegraph-incubating-1.7.0/apache-hugegraph-server-incubating-1.7.0
+
+graph:
+  extract_batch_size: 10
+  entities_cache: data/graph/entities_cache.json
+  structured_cache: data/graph/structured_cache.json
+  topic_cache: data/graph/topic_cache.json
+
+datasets:
+  locomo_path: data/locomo/locomo10.json
+  # 直接引用本机已有的英文原版（避免复制 265MB）；换中文版改这里即可
+  longmemeval_path: /Users/xu/git/eval-datasets/longmemeval-zh/longmemeval_s_cleaned.json
+
+evaluation:
+  graph_enabled: false     # Mem0 Only（false） vs Mem0 + Graph（true）对照开关
+  results_dir: results
+  max_context_memories: 20 # 作答上限；实际不超过检索 top_k，两臂预算相同
+  graph_seed_k: 5          # 从前 5 条向量记忆进入图
+  graph_slots: 3           # bypass 模式：最多用 3 条图邻居替换尾部向量记忆
+  graph_mode: bypass       # bypass = 尾部替换（对照）；fused = 节点聚合召回进统一重排池
+  fused_pool: 30           # fused：图聚合候选进入重排池的上限
+  fused_per_node: 15       # fused：单个节点一次带出的记忆上限（聚合召回）
+  # prompt 预设：official = mem0 官方 benchmark 原文（与官方分数可比）；custom = 自研
+  answer_prompt_preset: official
+  judge_prompt_preset: official
+
+user_id_strategy: per_case   # per_case: user_id = "{benchmark}:{case_id}"；global: 全部共用一个 user
+
+e2e:                        # smoke_e2e 截断参数（控制 LLM 调用量）
+  locomo_conversation_index: 0
+  locomo_max_turns: 60
+  lme_num_cases: 3
+  lme_max_turns_per_case: 100
+
+baseline:                   # 无图基线评测（scripts/eval_baseline.py）
+  locomo_num_cases: 12      # 从 evidence-in-window 的 QA 中选取的数量
+  locomo_max_turns: 400     # ingest 窗口（conv-30 全量 369 turns；同 conversation 共享一次 ingest）
+  locomo_categories: [single-hop, multi-hop]   # 官方类别名（4=single-hop, 1=multi-hop；temporal 需日期换算另行验证）
+  # 历史上曾因内容过滤损伤而跳过 conv-26；官方口径验证已推翻该结论
+  # （conv-26 官方提取 138 条记忆、J-score 95.4%），保留空列表以备后续需要
+  locomo_skip_conversations: []
+  lme_num_cases: 10
+  lme_max_turns: 200        # 按"答案子串在窗口内"粗筛后取前 N 个 case
+  use_judge: true           # LLM-judge 判分复核（词面 F1 之外的第二口径；.env 的 JUDGE_* 留空则用 LLM_*）
+  answer_samples: 5         # 作答自洽采样次数（>1 时 judge 多数票定最终答案，摊平方差）
+
+full:                       # 全量评测（scripts/eval_full.py）
+  answer_samples: 1         # 全量 1986 题控成本用 1 采样（基线口径）；需要更高稳定度可调 3/5
+  workers: 8                # 评测并行度（LLM API 并发）
+  lme_num_cases: 10         # 本轮 LME 复用已 ingest 的 10 题；扩容改这里（50/500 需相应 ingest）
