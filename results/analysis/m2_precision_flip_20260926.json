@@ -1,0 +1,349 @@
+{
+  "scope": "中文 2026-09-25 严格重判的 5 组配对 J 类运行",
+  "method": "NFKC 归一化并去标点/空白后计算 SequenceMatcher 字符相似度；记录相似度≥0.9、最终上下文完全相同、exact 翻转的逐题答案与裁判理由。",
+  "limits": "0.9 是人工核查筛选阈值，不是语义等价判定；高度相似不保证事实相同。配对共享题目和金标，但答案/裁判均是独立运行。",
+  "arms": {
+    "zh_baseline_repeat": {
+      "counts": {
+        "paired_J": 1538,
+        "same_full_context": 1431,
+        "exact_flips": 168,
+        "same_context_exact_flips": 158,
+        "normalized_equal_answers": 60,
+        "normalized_equal_exact_flips": 1,
+        "near_same_answer_exact_flips": 2,
+        "near_same_answer_same_context_exact_flips": 2
+      },
+      "near_same_answer_same_context_flips": [
+        {
+          "case_id": "locomo_conv-44_qa107",
+          "category": "single-hop",
+          "similarity": 0.9915,
+          "normalized_equal": false,
+          "gold": "困惑",
+          "left_answer": "奥黛丽的狗狗们讨厌雪。去年冬天（2022-2023年冬）她带它们去下雪的公园时，它们完全懵了，它们更喜欢阳光明媚的日子在草地上玩耍。",
+          "right_answer": "奥黛丽的狗狗们讨厌雪——去年冬天（2022-2023年冬）她带它们去下雪的公园时它们完全懵了，它们更喜欢阳光明媚的日子在草地上玩。",
+          "left_final": "partial",
+          "right_final": "exact",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "partial",
+            "missing": [
+              "困惑作为狗狗们的主要反应（答案强调'讨厌'，仅附带提及'懵了'）"
+            ],
+            "reason": "答案将'讨厌雪'作为主要反应，与金标'困惑'不完全一致，虽提及'完全懵了'但属于混合表述。"
+          },
+          "right_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案包含了精确的事实（狗狗们完全懵了/困惑），并附有正确的补充细节。"
+          }
+        },
+        {
+          "case_id": "locomo_conv-50_qa108",
+          "category": "single-hop",
+          "similarity": 1.0,
+          "normalized_equal": true,
+          "gold": "波士顿",
+          "left_answer": "波士顿（卡尔文于2023年8月底订了飞往波士顿的机票）",
+          "right_answer": "波士顿（卡尔文于2023年8月底订了飞往波士顿的机票）。",
+          "left_final": "partial",
+          "right_final": "exact",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "partial",
+            "missing": [
+              "correct date: the booking was on 2023年9月1日, not 8月底"
+            ],
+            "reason": "Destination (Boston) is correct, but the answer wrongly states the booking was made in late August instead of September 1, 2023."
+          },
+          "right_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "The answer states Boston, matching the gold exactly; the extra date detail is not part of the gold."
+          }
+        }
+      ]
+    },
+    "zh_graph_repeat": {
+      "counts": {
+        "paired_J": 1539,
+        "same_full_context": 1439,
+        "exact_flips": 167,
+        "same_context_exact_flips": 158,
+        "normalized_equal_answers": 70,
+        "normalized_equal_exact_flips": 0,
+        "near_same_answer_exact_flips": 2,
+        "near_same_answer_same_context_exact_flips": 2
+      },
+      "near_same_answer_same_context_flips": [
+        {
+          "case_id": "locomo_conv-47_qa86",
+          "category": "single-hop",
+          "similarity": 0.9024,
+          "normalized_equal": false,
+          "gold": "意式辣香肠披萨",
+          "left_answer": "意式辣香肠（pepperoni）披萨——他喜欢辣香肠与奶酪的组合；他也喜欢奶酪披萨和火腿披萨。",
+          "right_answer": "意式辣香肠（pepperoni）披萨——他喜欢辣香肠与芝士的组合。他也喜欢芝士披萨和火腿披萨。",
+          "left_final": "exact",
+          "right_final": "partial",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "回答明确指出意式辣香肠披萨为最喜欢的披萨，与金标准一致，额外细节不影响精确性。"
+          },
+          "right_judge": {
+            "grade": "partial",
+            "missing": [
+              "呈现方式不精确：混入额外信息暗示芝士披萨和火腿披萨也是他的最爱"
+            ],
+            "reason": "正确答案意式辣香肠披萨已给出，但通过列举其他“喜欢”的披萨稀释了单一事实。"
+          }
+        },
+        {
+          "case_id": "locomo_conv-47_qa89",
+          "category": "single-hop",
+          "similarity": 0.96,
+          "normalized_equal": false,
+          "gold": "买了食品杂货并为无家可归者做饭",
+          "left_answer": "用剩下的钱买了食材，为无家可归的人做饭，他们非常高兴。",
+          "right_answer": "约翰用剩下的钱买了食材，为无家可归的人做饭，他们非常高兴。",
+          "left_final": "exact",
+          "right_final": "partial",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案指出他们用剩余的钱购买食品杂货并为无家可归者做饭，这与黄金标准相符。"
+          },
+          "right_judge": {
+            "grade": "partial",
+            "missing": [],
+            "reason": "{\"grade\": \"partial\", \"missing\": [\"食品杂货\"], \"reason\": \"答案说“食材”而不是“食品杂货”，精确度略低，但核心事实（为无家可归者做饭）是正确的。"
+          }
+        }
+      ]
+    },
+    "zh_graph": {
+      "counts": {
+        "paired_J": 1540,
+        "same_full_context": 482,
+        "exact_flips": 169,
+        "same_context_exact_flips": 59,
+        "normalized_equal_answers": 63,
+        "normalized_equal_exact_flips": 0,
+        "near_same_answer_exact_flips": 1,
+        "near_same_answer_same_context_exact_flips": 0
+      },
+      "near_same_answer_same_context_flips": []
+    },
+    "zh_jevdec": {
+      "counts": {
+        "paired_J": 1539,
+        "same_full_context": 1149,
+        "exact_flips": 174,
+        "same_context_exact_flips": 129,
+        "normalized_equal_answers": 56,
+        "normalized_equal_exact_flips": 0,
+        "near_same_answer_exact_flips": 4,
+        "near_same_answer_same_context_exact_flips": 4
+      },
+      "near_same_answer_same_context_flips": [
+        {
+          "case_id": "locomo_conv-30_qa17",
+          "category": "multi-hop",
+          "similarity": 0.951,
+          "normalized_equal": false,
+          "gold": "她一直喜欢时尚潮流和寻找独特的单品，而且她丢了工作，所以决定是时候自己创业了。",
+          "left_answer": "吉娜在失去Door Dash的工作后想掌控自己的命运，加上她热衷时尚潮流、喜欢淘独特单品，并希望把对舞蹈和时尚的热爱结合起来，所以决定开自己的网上服装店。",
+          "right_answer": "吉娜在失去 Door Dash 的工作后，希望掌控自己的命运，加上她热衷时尚潮流、喜欢淘独特单品，并希望把对舞蹈和时尚的热爱结合起来，于是决定开自己的网上服装店。",
+          "left_final": "partial",
+          "right_final": "exact",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "partial",
+            "missing": [
+              "answer adds unverifiable specifics (Door Dash job, controlling her destiny, dance, online store) not in the gold"
+            ],
+            "reason": "Core elements (love of fashion/unique pieces and job loss) are present but the answer mixes in extra claimed details that go beyond and may contradict the gold."
+          },
+          "right_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "All gold elements present (love of fashion trends, hunting unique pieces, losing her job), with additional detail; core reasons all covered."
+          }
+        },
+        {
+          "case_id": "locomo_conv-44_qa107",
+          "category": "single-hop",
+          "similarity": 0.9908,
+          "normalized_equal": false,
+          "gold": "困惑",
+          "left_answer": "奥黛丽的狗狗们讨厌雪。2022-2023年冬她带它们去下雪的公园时，它们完全懵了；它们更喜欢阳光明媚的日子在草地上玩。",
+          "right_answer": "奥黛丽的狗狗们讨厌雪——2022-2023年冬天她带它们去下雪的公园时，它们完全懵了；它们更喜欢阳光明媚的日子在草地上玩。",
+          "left_final": "partial",
+          "right_final": "exact",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "partial",
+            "missing": [
+              "答案断言狗'讨厌雪'，与金标准'困惑'不符，尽管提到'完全懵了'"
+            ],
+            "reason": "答案包含正确要素（懵了/困惑），但也加入金标准中没有的'讨厌雪'这一不同表述，属混合答案。"
+          },
+          "right_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "The answer states the dogs were 'completely dumbfounded/confused', matching the gold fact 'confused', with extra correct detail."
+          }
+        },
+        {
+          "case_id": "locomo_conv-44_qa13",
+          "category": "temporal",
+          "similarity": 0.9041,
+          "normalized_equal": false,
+          "gold": "2023年6月",
+          "left_answer": "奥黛丽在2023年6月下旬（2023年6月26日左右）搬到了一个后院更大的新家。",
+          "right_answer": "2023年6月下旬（2023年6月26日左右），奥黛丽搬到了一个后院更大的新家。",
+          "left_final": "exact",
+          "right_final": "partial",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer correctly states June 2023, matching the gold's month-level granularity; the additional approximate day detail does not reduce the correctness of the gold-level date."
+          },
+          "right_judge": {
+            "grade": "partial",
+            "missing": [
+              "exact date without hedging"
+            ],
+            "reason": "Contains the right month but hedges with '下旬/左右' (around June 26), which is hedged precision against a definitive gold."
+          }
+        },
+        {
+          "case_id": "locomo_conv-50_qa153",
+          "category": "single-hop",
+          "similarity": 0.9545,
+          "normalized_equal": false,
+          "gold": "自然——日落、海滩、海浪",
+          "left_answer": "大自然风景照——日落、海滩、海浪、瀑布和池塘等自然景观。",
+          "right_answer": "大自然风景照片（日落、海滩、海浪、瀑布、池塘等自然景观）",
+          "left_final": "exact",
+          "right_final": "partial",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "All gold elements (nature—sunsets, beach, waves) are present; additional details are extra correct detail."
+          },
+          "right_judge": {
+            "grade": "partial",
+            "missing": [
+              "包含金答案中不存在的额外项（瀑布、池塘），无法核实"
+            ],
+            "reason": "答案包含了全部金答案元素，但额外添加了未经金答案支持的项（瀑布、池塘），使精确度下降。"
+          }
+        }
+      ]
+    },
+    "zh_jevlaya": {
+      "counts": {
+        "paired_J": 1539,
+        "same_full_context": 1351,
+        "exact_flips": 191,
+        "same_context_exact_flips": 169,
+        "normalized_equal_answers": 64,
+        "normalized_equal_exact_flips": 0,
+        "near_same_answer_exact_flips": 3,
+        "near_same_answer_same_context_exact_flips": 3
+      },
+      "near_same_answer_same_context_flips": [
+        {
+          "case_id": "locomo_conv-42_qa190",
+          "category": "single-hop",
+          "similarity": 0.9846,
+          "normalized_equal": false,
+          "gold": "游戏视频",
+          "left_answer": "内特于2022年11月开始制作YouTube游戏内容，灵感来自他对游戏视频的喜爱，希望在没有锦标赛时分享对游戏的热爱并与游戏爱好者交流。",
+          "right_answer": "内特在2022年11月开始制作YouTube游戏内容，灵感来自他对游戏视频的喜爱，希望在没有锦标赛时分享对游戏的热爱并与游戏爱好者交流。",
+          "left_final": "exact",
+          "right_final": "partial",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer states Nate is creating YouTube gaming content (游戏内容), matching the gold fact of 游戏视频."
+          },
+          "right_judge": {
+            "grade": "partial",
+            "missing": [
+              "游戏视频（answer says 游戏内容, less precise than gold's 游戏视频）"
+            ],
+            "reason": "Answer describes gaming content but the gold requires the specific '游戏视频'."
+          }
+        },
+        {
+          "case_id": "locomo_conv-42_qa194",
+          "category": "single-hop",
+          "similarity": 0.9358,
+          "normalized_equal": false,
+          "gold": "他在宠物店看到了另一只乌龟，想买下它",
+          "left_answer": "内特在2022年11月初买了第三只乌龟，因为他一看到就忍不住（太喜欢了），而且他的鱼缸足够大，可以养三只。他对这个决定非常满意。",
+          "right_answer": "内特在2022年11月初买了第三只乌龟，因为他看到后忍不住，而且他的鱼缸足够大可以养三只；他对这个决定非常满意。",
+          "left_final": "partial",
+          "right_final": "exact",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "partial",
+            "missing": [
+              "在宠物店看到乌龟"
+            ],
+            "reason": "核心动机（看到就喜欢想买）大致正确，但缺少“在宠物店看到”这一具体细节，且加入了鱼缸大等额外原因。"
+          },
+          "right_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "回答指出他看到了乌龟忍不住买下，符合标准答案；额外细节也无误。"
+          }
+        },
+        {
+          "case_id": "locomo_conv-44_qa41",
+          "category": "multi-hop",
+          "similarity": 0.9005,
+          "normalized_equal": false,
+          "gold": "Pepper和Panda是混种拉布拉多犬。Precious和Pixie是混种吉娃娃。",
+          "left_answer": "奥黛丽的四只狗狗都是混种狗（串串）。根据最新信息（2023年10月28日）：Pepper（佩珀）和Panda（潘达）是拉布拉多混血，Precious（普雷舍斯）和Pixie（皮克西）是吉娃娃混血。此外较早的记录提到两只是杰克罗素梗串、两只是吉娃娃串。",
+          "right_answer": "奥黛丽的四只狗狗都是混种狗。根据最近（2023年10月28日）的记录：Pepper（佩珀）和Panda（潘达）是拉布拉多混血，Precious（普雷舍斯）和Pixie（皮克西）是吉娃娃混血。（另有较早的记录提到它们是杰克罗素梗串和吉娃娃串。）",
+          "left_final": "partial",
+          "right_final": "exact",
+          "left_lenient": true,
+          "right_lenient": true,
+          "left_judge": {
+            "grade": "partial",
+            "missing": [
+              "答案包含冲突的替代说法（杰克罗素梗串），削弱了精确性"
+            ],
+            "reason": "所有正确信息都在，但答案同时列出了过时的矛盾版本（两只是杰克罗素梗串），属于枚举备选而非确定答案。"
+          },
+          "right_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer states Pepper and Panda are Labrador mixes and Precious and Pixie are Chihuahua mixes, matching all gold elements; the additional earlier-record note is extra detail, not a hedge of the main an"
+          }
+        }
+      ]
+    }
+  }
+}
