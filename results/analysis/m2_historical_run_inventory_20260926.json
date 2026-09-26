@@ -1,0 +1,4597 @@
+{
+  "scope": "Top-level JSONL runs in results/ and results_zh/, search-round JSONL, experiment JSONL; derived JSON and binary stores listed separately by docs",
+  "counts": {
+    "jsonl_files": 135,
+    "evaluation_files": 46,
+    "search_round_files": 64,
+    "experiment_jsonl_files": 13,
+    "chinese_locomo_eval_files": 8,
+    "longmemeval_eval_files": 21,
+    "longmemeval_eval_files_with_chinese_questions": 0
+  },
+  "chinese_locomo_runs": [
+    {
+      "path": "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+      "bytes": 46329122,
+      "kind": "evaluation",
+      "rows": 1980,
+      "unique_case_ids": 1980,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1980
+      },
+      "question_language_rows": {
+        "zh": 1980
+      },
+      "categories": {
+        "multi-hop": 282,
+        "open-domain": 96,
+        "temporal": 321,
+        "single-hop": 841,
+        "adversarial": 440
+      },
+      "field_presence": {
+        "question": 1980,
+        "expected_answer": 1980,
+        "predicted_answer": 1980,
+        "retrieved_memories": 1980,
+        "graph_memories": 1980,
+        "metrics": 1980,
+        "metadata": 1980,
+        "metadata.answer_context_ids": 1980,
+        "metadata.graph_context_ids": 1980,
+        "metadata.answer_candidates": 1980,
+        "metadata.decision_model": 1980
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1980
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+      "bytes": 41221502,
+      "kind": "evaluation",
+      "rows": 1979,
+      "unique_case_ids": 1979,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1979
+      },
+      "question_language_rows": {
+        "zh": 1979
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 439
+      },
+      "field_presence": {
+        "question": 1979,
+        "expected_answer": 1979,
+        "predicted_answer": 1979,
+        "retrieved_memories": 1979,
+        "graph_memories": 1979,
+        "metrics": 1979,
+        "metadata": 1979,
+        "metadata.answer_context_ids": 1979,
+        "metadata.graph_context_ids": 1979,
+        "metadata.answer_candidates": 1979,
+        "metadata.decision_model": 1979
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1979
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_fused_locomo_20260925_161049.jsonl",
+      "bytes": 40257273,
+      "kind": "evaluation",
+      "rows": 1981,
+      "unique_case_ids": 1981,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1981
+      },
+      "question_language_rows": {
+        "zh": 1981
+      },
+      "categories": {
+        "temporal": 320,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 840,
+        "adversarial": 443
+      },
+      "field_presence": {
+        "question": 1981,
+        "expected_answer": 1981,
+        "predicted_answer": 1981,
+        "retrieved_memories": 1981,
+        "graph_memories": 1981,
+        "metrics": 1981,
+        "metadata": 1981,
+        "metadata.answer_context_ids": 1981,
+        "metadata.graph_context_ids": 1981,
+        "metadata.answer_candidates": 1981
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1981
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+      "bytes": 39625078,
+      "kind": "evaluation",
+      "rows": 1980,
+      "unique_case_ids": 1980,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1980
+      },
+      "question_language_rows": {
+        "zh": 1980
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 440
+      },
+      "field_presence": {
+        "question": 1980,
+        "expected_answer": 1980,
+        "predicted_answer": 1980,
+        "retrieved_memories": 1980,
+        "graph_memories": 1980,
+        "metrics": 1980,
+        "metadata": 1980,
+        "metadata.answer_context_ids": 1980,
+        "metadata.graph_context_ids": 1980,
+        "metadata.answer_candidates": 1980
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1980
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_fused_locomo_20260925_195248.jsonl",
+      "bytes": 39636352,
+      "kind": "evaluation",
+      "rows": 1981,
+      "unique_case_ids": 1981,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1981
+      },
+      "question_language_rows": {
+        "zh": 1981
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 840,
+        "adversarial": 442
+      },
+      "field_presence": {
+        "question": 1981,
+        "expected_answer": 1981,
+        "predicted_answer": 1981,
+        "retrieved_memories": 1981,
+        "graph_memories": 1981,
+        "metrics": 1981,
+        "metadata": 1981,
+        "metadata.answer_context_ids": 1981,
+        "metadata.graph_context_ids": 1981,
+        "metadata.answer_candidates": 1981
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1981
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_locomo_20260925_115806.jsonl",
+      "bytes": 16483229,
+      "kind": "evaluation",
+      "rows": 1982,
+      "unique_case_ids": 1982,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1982
+      },
+      "question_language_rows": {
+        "zh": 1982
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 839,
+        "adversarial": 444
+      },
+      "field_presence": {
+        "question": 1982,
+        "expected_answer": 1982,
+        "predicted_answer": 1982,
+        "retrieved_memories": 1982,
+        "graph_memories": 1982,
+        "metrics": 1982,
+        "metadata": 1982,
+        "metadata.answer_context_ids": 1982,
+        "metadata.graph_context_ids": 1982,
+        "metadata.answer_candidates": 1982
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1982
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_locomo_20260925_151059.jsonl",
+      "bytes": 16490757,
+      "kind": "evaluation",
+      "rows": 1981,
+      "unique_case_ids": 1981,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1981
+      },
+      "question_language_rows": {
+        "zh": 1981
+      },
+      "categories": {
+        "temporal": 319,
+        "multi-hop": 280,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 445
+      },
+      "field_presence": {
+        "question": 1981,
+        "expected_answer": 1981,
+        "predicted_answer": 1981,
+        "retrieved_memories": 1981,
+        "graph_memories": 1981,
+        "metrics": 1981,
+        "metadata": 1981,
+        "metadata.answer_context_ids": 1981,
+        "metadata.graph_context_ids": 1981,
+        "metadata.answer_candidates": 1981
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1981
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_locomo_20260925_164645.jsonl",
+      "bytes": 16457871,
+      "kind": "evaluation",
+      "rows": 1979,
+      "unique_case_ids": 1979,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1979
+      },
+      "question_language_rows": {
+        "zh": 1979
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 439
+      },
+      "field_presence": {
+        "question": 1979,
+        "expected_answer": 1979,
+        "predicted_answer": 1979,
+        "retrieved_memories": 1979,
+        "graph_memories": 1979,
+        "metrics": 1979,
+        "metadata": 1979,
+        "metadata.answer_context_ids": 1979,
+        "metadata.graph_context_ids": 1979,
+        "metadata.answer_candidates": 1979
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1979
+        }
+      ]
+    }
+  ],
+  "chinese_locomo_case_coverage": {
+    "dataset_case_ids": 1986,
+    "run_count": 8,
+    "case_ids_in_all_runs": 1941,
+    "case_ids_in_any_run": 1986,
+    "case_ids_missing_from_at_least_one_run": 45,
+    "case_ids_missing_from_every_run": 0,
+    "missing_by_run": {
+      "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl": [
+        "locomo_conv-26_qa163",
+        "locomo_conv-41_qa152",
+        "locomo_conv-41_qa178",
+        "locomo_conv-41_qa186",
+        "locomo_conv-42_qa258",
+        "locomo_conv-49_qa160"
+      ],
+      "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": [
+        "locomo_conv-26_qa190",
+        "locomo_conv-30_qa90",
+        "locomo_conv-41_qa159",
+        "locomo_conv-42_qa223",
+        "locomo_conv-43_qa193",
+        "locomo_conv-48_qa235",
+        "locomo_conv-49_qa157"
+      ],
+      "results_zh/zhfull_fused_locomo_20260925_161049.jsonl": [
+        "locomo_conv-41_qa55",
+        "locomo_conv-43_qa196",
+        "locomo_conv-43_qa235",
+        "locomo_conv-47_qa181",
+        "locomo_conv-50_qa71"
+      ],
+      "results_zh/zhfull_fused_locomo_20260925_172126.jsonl": [
+        "locomo_conv-26_qa177",
+        "locomo_conv-30_qa87",
+        "locomo_conv-42_qa204",
+        "locomo_conv-43_qa188",
+        "locomo_conv-43_qa199",
+        "locomo_conv-48_qa211"
+      ],
+      "results_zh/zhfull_fused_locomo_20260925_195248.jsonl": [
+        "locomo_conv-42_qa246",
+        "locomo_conv-47_qa122",
+        "locomo_conv-48_qa192",
+        "locomo_conv-48_qa210",
+        "locomo_conv-48_qa229"
+      ],
+      "results_zh/zhfull_locomo_20260925_115806.jsonl": [
+        "locomo_conv-42_qa255",
+        "locomo_conv-43_qa113",
+        "locomo_conv-44_qa115",
+        "locomo_conv-47_qa188"
+      ],
+      "results_zh/zhfull_locomo_20260925_151059.jsonl": [
+        "locomo_conv-42_qa26",
+        "locomo_conv-48_qa24",
+        "locomo_conv-48_qa68",
+        "locomo_conv-49_qa173",
+        "locomo_conv-49_qa77"
+      ],
+      "results_zh/zhfull_locomo_20260925_164645.jsonl": [
+        "locomo_conv-42_qa218",
+        "locomo_conv-42_qa244",
+        "locomo_conv-42_qa247",
+        "locomo_conv-43_qa226",
+        "locomo_conv-47_qa177",
+        "locomo_conv-47_qa179",
+        "locomo_conv-49_qa178"
+      ]
+    },
+    "missing_category_codes": {
+      "5": 36,
+      "4": 4,
+      "2": 3,
+      "1": 2
+    },
+    "unexpected_case_ids_by_run": {}
+  },
+  "longmemeval_runs": [
+    {
+      "path": "results/baseline_mem0only_20260922_215235.jsonl",
+      "bytes": 32495,
+      "kind": "evaluation",
+      "rows": 12,
+      "unique_case_ids": 12,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 4
+      },
+      "question_language_rows": {
+        "non_zh": 12
+      },
+      "categories": {
+        "multi_hop": 5,
+        "single_hop": 3,
+        "single-session-user": 4
+      },
+      "field_presence": {
+        "question": 12,
+        "expected_answer": 12,
+        "predicted_answer": 12,
+        "retrieved_memories": 12,
+        "graph_memories": 12,
+        "metrics": 12,
+        "metadata": 12
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 12
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260922_230914.jsonl",
+      "bytes": 34699,
+      "kind": "evaluation",
+      "rows": 12,
+      "unique_case_ids": 12,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 4
+      },
+      "question_language_rows": {
+        "non_zh": 12
+      },
+      "categories": {
+        "multi_hop": 5,
+        "single_hop": 3,
+        "single-session-user": 4
+      },
+      "field_presence": {
+        "question": 12,
+        "expected_answer": 12,
+        "predicted_answer": 12,
+        "retrieved_memories": 12,
+        "graph_memories": 12,
+        "metrics": 12,
+        "metadata": 12
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 12
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_002105.jsonl",
+      "bytes": 60485,
+      "kind": "evaluation",
+      "rows": 18,
+      "unique_case_ids": 18,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 18
+      },
+      "categories": {
+        "multi_hop": 6,
+        "single_hop": 2,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 18,
+        "expected_answer": 18,
+        "predicted_answer": 18,
+        "retrieved_memories": 18,
+        "graph_memories": 18,
+        "metrics": 18,
+        "metadata": 18
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 18
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_002324.jsonl",
+      "bytes": 92514,
+      "kind": "evaluation",
+      "rows": 18,
+      "unique_case_ids": 18,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 18
+      },
+      "categories": {
+        "multi_hop": 6,
+        "single_hop": 2,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 18,
+        "expected_answer": 18,
+        "predicted_answer": 18,
+        "retrieved_memories": 18,
+        "graph_memories": 18,
+        "metrics": 18,
+        "metadata": 18
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 18
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_002723.jsonl",
+      "bytes": 90820,
+      "kind": "evaluation",
+      "rows": 18,
+      "unique_case_ids": 18,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 18
+      },
+      "categories": {
+        "multi_hop": 6,
+        "single_hop": 2,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 18,
+        "expected_answer": 18,
+        "predicted_answer": 18,
+        "retrieved_memories": 18,
+        "graph_memories": 18,
+        "metrics": 18,
+        "metadata": 18
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 18
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_003609.jsonl",
+      "bytes": 112777,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "multi_hop": 9,
+        "single_hop": 3,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_003853.jsonl",
+      "bytes": 163477,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "multi_hop": 9,
+        "single_hop": 3,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_004521.jsonl",
+      "bytes": 163262,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "multi_hop": 9,
+        "single_hop": 3,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_005425.jsonl",
+      "bytes": 171329,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "multi_hop": 9,
+        "single_hop": 3,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22,
+        "metadata.answer_candidates": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '5'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_072351.jsonl",
+      "bytes": 183026,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "single-hop": 2,
+        "multi-hop": 10,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22,
+        "metadata.answer_candidates": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '5'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094617_graphoff.jsonl",
+      "bytes": 2512,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094633_graphon.jsonl",
+      "bytes": 2539,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094812_graphoff.jsonl",
+      "bytes": 11578,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094917_graphoff.jsonl",
+      "bytes": 11508,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094948_graphon.jsonl",
+      "bytes": 20290,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_101800_graphoff.jsonl",
+      "bytes": 11593,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_101846_graphon.jsonl",
+      "bytes": 19341,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260926_132740_graphoff.jsonl",
+      "bytes": 34936,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "temporal": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4,
+        "metadata.answer_context_ids": 4,
+        "metadata.graph_context_ids": 4,
+        "metadata.answer_candidates": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260926_132751_graphon.jsonl",
+      "bytes": 47529,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "temporal": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4,
+        "metadata.answer_context_ids": 4,
+        "metadata.graph_context_ids": 4,
+        "metadata.answer_candidates": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'bypass'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/full_lme_20260923_120251.jsonl",
+      "bytes": 151380,
+      "kind": "evaluation",
+      "rows": 20,
+      "unique_case_ids": 20,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "longmemeval_s": 20
+      },
+      "question_language_rows": {
+        "non_zh": 20
+      },
+      "categories": {
+        "single-session-user": 20
+      },
+      "field_presence": {
+        "question": 20,
+        "expected_answer": 20,
+        "predicted_answer": 20,
+        "retrieved_memories": 20,
+        "graph_memories": 20,
+        "metrics": 20,
+        "metadata": 20,
+        "metadata.answer_candidates": 20
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 20
+        }
+      ]
+    },
+    {
+      "path": "results/full_lme_20260924_013242.jsonl",
+      "bytes": 348492,
+      "kind": "evaluation",
+      "rows": 39,
+      "unique_case_ids": 39,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "longmemeval_s": 39
+      },
+      "question_language_rows": {
+        "non_zh": 39
+      },
+      "categories": {
+        "single-session-user": 6,
+        "knowledge-update": 7,
+        "temporal-reasoning": 6,
+        "multi-session": 7,
+        "single-session-preference": 7,
+        "single-session-assistant": 6
+      },
+      "field_presence": {
+        "question": 39,
+        "expected_answer": 39,
+        "predicted_answer": 39,
+        "retrieved_memories": 39,
+        "graph_memories": 39,
+        "metrics": 39,
+        "metadata": 39,
+        "metadata.answer_context_ids": 39,
+        "metadata.graph_context_ids": 39,
+        "metadata.answer_candidates": 39
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 39
+        }
+      ]
+    }
+  ],
+  "all_jsonl_manifest": [
+    {
+      "path": "results/baseline_mem0only_20260922_215235.jsonl",
+      "bytes": 32495,
+      "kind": "evaluation",
+      "rows": 12,
+      "unique_case_ids": 12,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 4
+      },
+      "question_language_rows": {
+        "non_zh": 12
+      },
+      "categories": {
+        "multi_hop": 5,
+        "single_hop": 3,
+        "single-session-user": 4
+      },
+      "field_presence": {
+        "question": 12,
+        "expected_answer": 12,
+        "predicted_answer": 12,
+        "retrieved_memories": 12,
+        "graph_memories": 12,
+        "metrics": 12,
+        "metadata": 12
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 12
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260922_230914.jsonl",
+      "bytes": 34699,
+      "kind": "evaluation",
+      "rows": 12,
+      "unique_case_ids": 12,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 4
+      },
+      "question_language_rows": {
+        "non_zh": 12
+      },
+      "categories": {
+        "multi_hop": 5,
+        "single_hop": 3,
+        "single-session-user": 4
+      },
+      "field_presence": {
+        "question": 12,
+        "expected_answer": 12,
+        "predicted_answer": 12,
+        "retrieved_memories": 12,
+        "graph_memories": 12,
+        "metrics": 12,
+        "metadata": 12
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 12
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_002105.jsonl",
+      "bytes": 60485,
+      "kind": "evaluation",
+      "rows": 18,
+      "unique_case_ids": 18,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 18
+      },
+      "categories": {
+        "multi_hop": 6,
+        "single_hop": 2,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 18,
+        "expected_answer": 18,
+        "predicted_answer": 18,
+        "retrieved_memories": 18,
+        "graph_memories": 18,
+        "metrics": 18,
+        "metadata": 18
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 18
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_002324.jsonl",
+      "bytes": 92514,
+      "kind": "evaluation",
+      "rows": 18,
+      "unique_case_ids": 18,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 18
+      },
+      "categories": {
+        "multi_hop": 6,
+        "single_hop": 2,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 18,
+        "expected_answer": 18,
+        "predicted_answer": 18,
+        "retrieved_memories": 18,
+        "graph_memories": 18,
+        "metrics": 18,
+        "metadata": 18
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 18
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_002723.jsonl",
+      "bytes": 90820,
+      "kind": "evaluation",
+      "rows": 18,
+      "unique_case_ids": 18,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 8,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 18
+      },
+      "categories": {
+        "multi_hop": 6,
+        "single_hop": 2,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 18,
+        "expected_answer": 18,
+        "predicted_answer": 18,
+        "retrieved_memories": 18,
+        "graph_memories": 18,
+        "metrics": 18,
+        "metadata": 18
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 18
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_003609.jsonl",
+      "bytes": 112777,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "multi_hop": 9,
+        "single_hop": 3,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_003853.jsonl",
+      "bytes": 163477,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "multi_hop": 9,
+        "single_hop": 3,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_004521.jsonl",
+      "bytes": 163262,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "multi_hop": 9,
+        "single_hop": 3,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_005425.jsonl",
+      "bytes": 171329,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "multi_hop": 9,
+        "single_hop": 3,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22,
+        "metadata.answer_candidates": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '5'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_072351.jsonl",
+      "bytes": 183026,
+      "kind": "evaluation",
+      "rows": 22,
+      "unique_case_ids": 22,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 12,
+        "longmemeval_s": 10
+      },
+      "question_language_rows": {
+        "non_zh": 22
+      },
+      "categories": {
+        "single-hop": 2,
+        "multi-hop": 10,
+        "single-session-user": 10
+      },
+      "field_presence": {
+        "question": 22,
+        "expected_answer": 22,
+        "predicted_answer": 22,
+        "retrieved_memories": 22,
+        "graph_memories": 22,
+        "metrics": 22,
+        "metadata": 22,
+        "metadata.answer_candidates": 22
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '5'))",
+          "rows": 22
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094617_graphoff.jsonl",
+      "bytes": 2512,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094633_graphon.jsonl",
+      "bytes": 2539,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094812_graphoff.jsonl",
+      "bytes": 11578,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094917_graphoff.jsonl",
+      "bytes": 11508,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_094948_graphon.jsonl",
+      "bytes": 20290,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_101800_graphoff.jsonl",
+      "bytes": 11593,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260922_101846_graphon.jsonl",
+      "bytes": 19341,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "multi_hop": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', 'None'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260926_132740_graphoff.jsonl",
+      "bytes": 34936,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "temporal": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4,
+        "metadata.answer_context_ids": 4,
+        "metadata.graph_context_ids": 4,
+        "metadata.answer_candidates": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/eval_20260926_132751_graphon.jsonl",
+      "bytes": 47529,
+      "kind": "evaluation",
+      "rows": 4,
+      "unique_case_ids": 4,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1,
+        "longmemeval_s": 3
+      },
+      "question_language_rows": {
+        "non_zh": 4
+      },
+      "categories": {
+        "temporal": 1,
+        "single-session-user": 3
+      },
+      "field_presence": {
+        "question": 4,
+        "expected_answer": 4,
+        "predicted_answer": 4,
+        "retrieved_memories": 4,
+        "graph_memories": 4,
+        "metrics": 4,
+        "metadata": 4,
+        "metadata.answer_context_ids": 4,
+        "metadata.graph_context_ids": 4,
+        "metadata.answer_candidates": 4
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'bypass'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 4
+        }
+      ]
+    },
+    {
+      "path": "results/full_lme_20260923_120251.jsonl",
+      "bytes": 151380,
+      "kind": "evaluation",
+      "rows": 20,
+      "unique_case_ids": 20,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "longmemeval_s": 20
+      },
+      "question_language_rows": {
+        "non_zh": 20
+      },
+      "categories": {
+        "single-session-user": 20
+      },
+      "field_presence": {
+        "question": 20,
+        "expected_answer": 20,
+        "predicted_answer": 20,
+        "retrieved_memories": 20,
+        "graph_memories": 20,
+        "metrics": 20,
+        "metadata": 20,
+        "metadata.answer_candidates": 20
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 20
+        }
+      ]
+    },
+    {
+      "path": "results/full_lme_20260924_013242.jsonl",
+      "bytes": 348492,
+      "kind": "evaluation",
+      "rows": 39,
+      "unique_case_ids": 39,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "longmemeval_s": 39
+      },
+      "question_language_rows": {
+        "non_zh": 39
+      },
+      "categories": {
+        "single-session-user": 6,
+        "knowledge-update": 7,
+        "temporal-reasoning": 6,
+        "multi-session": 7,
+        "single-session-preference": 7,
+        "single-session-assistant": 6
+      },
+      "field_presence": {
+        "question": 39,
+        "expected_answer": 39,
+        "predicted_answer": 39,
+        "retrieved_memories": 39,
+        "graph_memories": 39,
+        "metrics": 39,
+        "metadata": 39,
+        "metadata.answer_context_ids": 39,
+        "metadata.graph_context_ids": 39,
+        "metadata.answer_candidates": 39
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 39
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_20260923_073809.jsonl",
+      "bytes": 1495967,
+      "kind": "evaluation",
+      "rows": 199,
+      "unique_case_ids": 199,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 199
+      },
+      "question_language_rows": {
+        "non_zh": 199
+      },
+      "categories": {
+        "temporal": 37,
+        "multi-hop": 32,
+        "open-domain": 13,
+        "single-hop": 70,
+        "adversarial": 47
+      },
+      "field_presence": {
+        "question": 199,
+        "expected_answer": 199,
+        "predicted_answer": 199,
+        "retrieved_memories": 199,
+        "graph_memories": 199,
+        "metrics": 199,
+        "metadata": 199,
+        "metadata.answer_candidates": 199
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 199
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_20260923_083304.jsonl",
+      "bytes": 224326,
+      "kind": "evaluation",
+      "rows": 30,
+      "unique_case_ids": 30,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 30
+      },
+      "question_language_rows": {
+        "non_zh": 30
+      },
+      "categories": {
+        "temporal": 16,
+        "multi-hop": 10,
+        "open-domain": 4
+      },
+      "field_presence": {
+        "question": 30,
+        "expected_answer": 30,
+        "predicted_answer": 30,
+        "retrieved_memories": 30,
+        "graph_memories": 30,
+        "metrics": 30,
+        "metadata": 30,
+        "metadata.answer_candidates": 30
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 30
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_20260923_083352.jsonl",
+      "bytes": 14683941,
+      "kind": "evaluation",
+      "rows": 1986,
+      "unique_case_ids": 1986,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1986
+      },
+      "question_language_rows": {
+        "non_zh": 1986
+      },
+      "categories": {
+        "open-domain": 96,
+        "multi-hop": 282,
+        "temporal": 321,
+        "single-hop": 841,
+        "adversarial": 446
+      },
+      "field_presence": {
+        "question": 1986,
+        "expected_answer": 1986,
+        "predicted_answer": 1986,
+        "retrieved_memories": 1986,
+        "graph_memories": 1986,
+        "metrics": 1986,
+        "metadata": 1986,
+        "metadata.answer_candidates": 1986
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1986
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_finalA_base_20260925_013909.jsonl",
+      "bytes": 16349234,
+      "kind": "evaluation",
+      "rows": 1985,
+      "unique_case_ids": 1985,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1985
+      },
+      "question_language_rows": {
+        "non_zh": 1985
+      },
+      "categories": {
+        "temporal": 320,
+        "open-domain": 96,
+        "multi-hop": 282,
+        "single-hop": 841,
+        "adversarial": 446
+      },
+      "field_presence": {
+        "question": 1985,
+        "expected_answer": 1985,
+        "predicted_answer": 1985,
+        "retrieved_memories": 1985,
+        "graph_memories": 1985,
+        "metrics": 1985,
+        "metadata": 1985,
+        "metadata.answer_context_ids": 1985,
+        "metadata.graph_context_ids": 1985,
+        "metadata.answer_candidates": 1985
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1985
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_finalB_stack_20260925_020543.jsonl",
+      "bytes": 40465128,
+      "kind": "evaluation",
+      "rows": 1986,
+      "unique_case_ids": 1986,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1986
+      },
+      "question_language_rows": {
+        "non_zh": 1986
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 446
+      },
+      "field_presence": {
+        "question": 1986,
+        "expected_answer": 1986,
+        "predicted_answer": 1986,
+        "retrieved_memories": 1986,
+        "graph_memories": 1986,
+        "metrics": 1986,
+        "metadata": 1986,
+        "metadata.answer_context_ids": 1986,
+        "metadata.graph_context_ids": 1986,
+        "metadata.answer_candidates": 1986
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1986
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_finalC_ctrl_20260925_090746.jsonl",
+      "bytes": 16438470,
+      "kind": "evaluation",
+      "rows": 1986,
+      "unique_case_ids": 1986,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1986
+      },
+      "question_language_rows": {
+        "non_zh": 1986
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 446
+      },
+      "field_presence": {
+        "question": 1986,
+        "expected_answer": 1986,
+        "predicted_answer": 1986,
+        "retrieved_memories": 1986,
+        "graph_memories": 1986,
+        "metrics": 1986,
+        "metadata": 1986,
+        "metadata.answer_context_ids": 1986,
+        "metadata.graph_context_ids": 1986,
+        "metadata.answer_candidates": 1986
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1986
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_finalD_champ_20260925_093052.jsonl",
+      "bytes": 19465109,
+      "kind": "evaluation",
+      "rows": 1985,
+      "unique_case_ids": 1985,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1985
+      },
+      "question_language_rows": {
+        "non_zh": 1985
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 445
+      },
+      "field_presence": {
+        "question": 1985,
+        "expected_answer": 1985,
+        "predicted_answer": 1985,
+        "retrieved_memories": 1985,
+        "graph_memories": 1985,
+        "metrics": 1985,
+        "metadata": 1985,
+        "metadata.answer_context_ids": 1985,
+        "metadata.graph_context_ids": 1985,
+        "metadata.answer_candidates": 1985
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'True'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1985
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_fused_20260924_055131.jsonl",
+      "bytes": 38925041,
+      "kind": "evaluation",
+      "rows": 1985,
+      "unique_case_ids": 1985,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1985
+      },
+      "question_language_rows": {
+        "non_zh": 1985
+      },
+      "categories": {
+        "temporal": 321,
+        "open-domain": 96,
+        "multi-hop": 282,
+        "single-hop": 841,
+        "adversarial": 445
+      },
+      "field_presence": {
+        "question": 1985,
+        "expected_answer": 1985,
+        "predicted_answer": 1985,
+        "retrieved_memories": 1985,
+        "graph_memories": 1985,
+        "metrics": 1985,
+        "metadata": 1985,
+        "metadata.answer_context_ids": 1985,
+        "metadata.graph_context_ids": 1985,
+        "metadata.answer_candidates": 1985
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1985
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_graph_20260923_214222.jsonl",
+      "bytes": 11705331,
+      "kind": "evaluation",
+      "rows": 975,
+      "unique_case_ids": 975,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 975
+      },
+      "question_language_rows": {
+        "non_zh": 975
+      },
+      "categories": {
+        "temporal": 156,
+        "multi-hop": 142,
+        "open-domain": 46,
+        "single-hop": 418,
+        "adversarial": 213
+      },
+      "field_presence": {
+        "question": 975,
+        "expected_answer": 975,
+        "predicted_answer": 975,
+        "retrieved_memories": 975,
+        "graph_memories": 975,
+        "metrics": 975,
+        "metadata": 975,
+        "metadata.answer_candidates": 975
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 975
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_graph_COMPLETE.jsonl",
+      "bytes": 24887170,
+      "kind": "evaluation",
+      "rows": 1986,
+      "unique_case_ids": 1986,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1986
+      },
+      "question_language_rows": {
+        "non_zh": 1986
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 446
+      },
+      "field_presence": {
+        "question": 1986,
+        "expected_answer": 1986,
+        "predicted_answer": 1986,
+        "retrieved_memories": 1986,
+        "graph_memories": 1986,
+        "metrics": 1986,
+        "metadata": 1986,
+        "metadata.answer_candidates": 1986,
+        "metadata.answer_context_ids": 1011,
+        "metadata.graph_context_ids": 1011
+      },
+      "config_variant_count": 2,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1011
+        },
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 975
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_graph_resume.jsonl",
+      "bytes": 13181839,
+      "kind": "evaluation",
+      "rows": 1011,
+      "unique_case_ids": 1011,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1011
+      },
+      "question_language_rows": {
+        "non_zh": 1011
+      },
+      "categories": {
+        "adversarial": 233,
+        "temporal": 165,
+        "multi-hop": 140,
+        "open-domain": 50,
+        "single-hop": 423
+      },
+      "field_presence": {
+        "question": 1011,
+        "expected_answer": 1011,
+        "predicted_answer": 1011,
+        "retrieved_memories": 1011,
+        "graph_memories": 1011,
+        "metrics": 1011,
+        "metadata": 1011,
+        "metadata.answer_context_ids": 1011,
+        "metadata.graph_context_ids": 1011,
+        "metadata.answer_candidates": 1011
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1011
+        }
+      ]
+    },
+    {
+      "path": "results/full_locomo_graph_scoped_20260924_020330.jsonl",
+      "bytes": 25613106,
+      "kind": "evaluation",
+      "rows": 1986,
+      "unique_case_ids": 1986,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1986
+      },
+      "question_language_rows": {
+        "non_zh": 1986
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 446
+      },
+      "field_presence": {
+        "question": 1986,
+        "expected_answer": 1986,
+        "predicted_answer": 1986,
+        "retrieved_memories": 1986,
+        "graph_memories": 1986,
+        "metrics": 1986,
+        "metadata": 1986,
+        "metadata.answer_context_ids": 1986,
+        "metadata.graph_context_ids": 1986,
+        "metadata.answer_candidates": 1986
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1986
+        }
+      ]
+    },
+    {
+      "path": "results/graph_ab_20260923_212407.jsonl",
+      "bytes": 107434,
+      "kind": "evaluation",
+      "rows": 9,
+      "unique_case_ids": 9,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 9
+      },
+      "question_language_rows": {
+        "non_zh": 9
+      },
+      "categories": {
+        "multi-hop": 3,
+        "single-hop": 5,
+        "temporal": 1
+      },
+      "field_presence": {
+        "question": 9,
+        "expected_answer": 9,
+        "predicted_answer": 9,
+        "retrieved_memories": 9,
+        "graph_memories": 9,
+        "metrics": 9,
+        "metadata": 9,
+        "metadata.answer_candidates": 9
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 9
+        }
+      ]
+    },
+    {
+      "path": "results/graph_ab_20260923_212603.jsonl",
+      "bytes": 445465,
+      "kind": "evaluation",
+      "rows": 37,
+      "unique_case_ids": 37,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 37
+      },
+      "question_language_rows": {
+        "non_zh": 37
+      },
+      "categories": {
+        "temporal": 7,
+        "multi-hop": 7,
+        "open-domain": 8,
+        "single-hop": 15
+      },
+      "field_presence": {
+        "question": 37,
+        "expected_answer": 37,
+        "predicted_answer": 37,
+        "retrieved_memories": 37,
+        "graph_memories": 37,
+        "metrics": 37,
+        "metadata": 37,
+        "metadata.answer_candidates": 37
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 37
+        }
+      ]
+    },
+    {
+      "path": "results/graph_ab_20260923_213253.jsonl",
+      "bytes": 1904540,
+      "kind": "evaluation",
+      "rows": 157,
+      "unique_case_ids": 157,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 157
+      },
+      "question_language_rows": {
+        "non_zh": 157
+      },
+      "categories": {
+        "open-domain": 25,
+        "temporal": 26,
+        "multi-hop": 26,
+        "single-hop": 80
+      },
+      "field_presence": {
+        "question": 157,
+        "expected_answer": 157,
+        "predicted_answer": 157,
+        "retrieved_memories": 157,
+        "graph_memories": 157,
+        "metrics": 157,
+        "metadata": 157,
+        "metadata.answer_candidates": 157
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 157
+        }
+      ]
+    },
+    {
+      "path": "results/precision_regrade_A.jsonl",
+      "bytes": 1249774,
+      "kind": "derived_or_experiment",
+      "rows": 1985,
+      "unique_case_ids": 1985,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "non_zh": 1985
+      },
+      "categories": {
+        "temporal": 320,
+        "open-domain": 96,
+        "multi-hop": 282,
+        "single-hop": 841,
+        "adversarial": 446
+      },
+      "field_presence": {
+        "question": 1985
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_B.jsonl",
+      "bytes": 1210921,
+      "kind": "derived_or_experiment",
+      "rows": 1986,
+      "unique_case_ids": 1986,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "non_zh": 1986
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 446
+      },
+      "field_presence": {
+        "question": 1986
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_C.jsonl",
+      "bytes": 1320548,
+      "kind": "derived_or_experiment",
+      "rows": 1986,
+      "unique_case_ids": 1986,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "non_zh": 1986
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 446
+      },
+      "field_presence": {
+        "question": 1986
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_D.jsonl",
+      "bytes": 1265645,
+      "kind": "derived_or_experiment",
+      "rows": 1985,
+      "unique_case_ids": 1985,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "non_zh": 1985
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 445
+      },
+      "field_presence": {
+        "question": 1985
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_base.jsonl",
+      "bytes": 1316827,
+      "kind": "derived_or_experiment",
+      "rows": 1979,
+      "unique_case_ids": 1979,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "zh": 1979
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 439
+      },
+      "field_presence": {
+        "question": 1979
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_fused.jsonl",
+      "bytes": 1324162,
+      "kind": "derived_or_experiment",
+      "rows": 1981,
+      "unique_case_ids": 1981,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "zh": 1981
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 840,
+        "adversarial": 442
+      },
+      "field_presence": {
+        "question": 1981
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_graph.jsonl",
+      "bytes": 1321152,
+      "kind": "derived_or_experiment",
+      "rows": 1980,
+      "unique_case_ids": 1980,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "zh": 1980
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 440
+      },
+      "field_presence": {
+        "question": 1980
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_jevdec.jsonl",
+      "bytes": 1328811,
+      "kind": "derived_or_experiment",
+      "rows": 1980,
+      "unique_case_ids": 1980,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "zh": 1980
+      },
+      "categories": {
+        "multi-hop": 282,
+        "open-domain": 96,
+        "temporal": 321,
+        "single-hop": 841,
+        "adversarial": 440
+      },
+      "field_presence": {
+        "question": 1980
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_jevlaya.jsonl",
+      "bytes": 1333686,
+      "kind": "derived_or_experiment",
+      "rows": 1979,
+      "unique_case_ids": 1979,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "zh": 1979
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 439
+      },
+      "field_presence": {
+        "question": 1979
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_s1.jsonl",
+      "bytes": 74412,
+      "kind": "derived_or_experiment",
+      "rows": 127,
+      "unique_case_ids": 127,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "non_zh": 127
+      },
+      "categories": {
+        "single-hop": 64,
+        "open-domain": 23,
+        "temporal": 20,
+        "multi-hop": 20
+      },
+      "field_presence": {
+        "question": 127
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/precision_regrade_zhfull.jsonl",
+      "bytes": 1314939,
+      "kind": "derived_or_experiment",
+      "rows": 1982,
+      "unique_case_ids": 1982,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {
+        "zh": 1982
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 839,
+        "adversarial": 444
+      },
+      "field_presence": {
+        "question": 1982
+      },
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results/s1_ab_20260923_220724.jsonl",
+      "bytes": 951749,
+      "kind": "evaluation",
+      "rows": 127,
+      "unique_case_ids": 127,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 127
+      },
+      "question_language_rows": {
+        "non_zh": 127
+      },
+      "categories": {
+        "single-hop": 64,
+        "multi-hop": 20,
+        "temporal": 20,
+        "open-domain": 23
+      },
+      "field_presence": {
+        "question": 127,
+        "expected_answer": 127,
+        "predicted_answer": 127,
+        "retrieved_memories": 127,
+        "graph_memories": 127,
+        "metrics": 127,
+        "metadata": 127,
+        "metadata.answer_candidates": 127
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 127
+        }
+      ]
+    },
+    {
+      "path": "results/s1_scoped_20260924_034022.jsonl",
+      "bytes": 1628278,
+      "kind": "evaluation",
+      "rows": 127,
+      "unique_case_ids": 127,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 127
+      },
+      "question_language_rows": {
+        "non_zh": 127
+      },
+      "categories": {
+        "single-hop": 64,
+        "open-domain": 23,
+        "temporal": 20,
+        "multi-hop": 20
+      },
+      "field_presence": {
+        "question": 127,
+        "expected_answer": 127,
+        "predicted_answer": 127,
+        "retrieved_memories": 127,
+        "graph_memories": 127,
+        "metrics": 127,
+        "metadata": 127,
+        "metadata.answer_context_ids": 127,
+        "metadata.graph_context_ids": 127,
+        "metadata.answer_candidates": 127
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'None'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'None'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 127
+        }
+      ]
+    },
+    {
+      "path": "results/search_rounds.jsonl",
+      "bytes": 140628,
+      "kind": "derived_or_experiment",
+      "rows": 58,
+      "unique_case_ids": 58,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+      "bytes": 46329122,
+      "kind": "evaluation",
+      "rows": 1980,
+      "unique_case_ids": 1980,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1980
+      },
+      "question_language_rows": {
+        "zh": 1980
+      },
+      "categories": {
+        "multi-hop": 282,
+        "open-domain": 96,
+        "temporal": 321,
+        "single-hop": 841,
+        "adversarial": 440
+      },
+      "field_presence": {
+        "question": 1980,
+        "expected_answer": 1980,
+        "predicted_answer": 1980,
+        "retrieved_memories": 1980,
+        "graph_memories": 1980,
+        "metrics": 1980,
+        "metadata": 1980,
+        "metadata.answer_context_ids": 1980,
+        "metadata.graph_context_ids": 1980,
+        "metadata.answer_candidates": 1980,
+        "metadata.decision_model": 1980
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1980
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+      "bytes": 41221502,
+      "kind": "evaluation",
+      "rows": 1979,
+      "unique_case_ids": 1979,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1979
+      },
+      "question_language_rows": {
+        "zh": 1979
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 439
+      },
+      "field_presence": {
+        "question": 1979,
+        "expected_answer": 1979,
+        "predicted_answer": 1979,
+        "retrieved_memories": 1979,
+        "graph_memories": 1979,
+        "metrics": 1979,
+        "metadata": 1979,
+        "metadata.answer_context_ids": 1979,
+        "metadata.graph_context_ids": 1979,
+        "metadata.answer_candidates": 1979,
+        "metadata.decision_model": 1979
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1979
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_fused_locomo_20260925_161049.jsonl",
+      "bytes": 40257273,
+      "kind": "evaluation",
+      "rows": 1981,
+      "unique_case_ids": 1981,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1981
+      },
+      "question_language_rows": {
+        "zh": 1981
+      },
+      "categories": {
+        "temporal": 320,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 840,
+        "adversarial": 443
+      },
+      "field_presence": {
+        "question": 1981,
+        "expected_answer": 1981,
+        "predicted_answer": 1981,
+        "retrieved_memories": 1981,
+        "graph_memories": 1981,
+        "metrics": 1981,
+        "metadata": 1981,
+        "metadata.answer_context_ids": 1981,
+        "metadata.graph_context_ids": 1981,
+        "metadata.answer_candidates": 1981
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1981
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+      "bytes": 39625078,
+      "kind": "evaluation",
+      "rows": 1980,
+      "unique_case_ids": 1980,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1980
+      },
+      "question_language_rows": {
+        "zh": 1980
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 440
+      },
+      "field_presence": {
+        "question": 1980,
+        "expected_answer": 1980,
+        "predicted_answer": 1980,
+        "retrieved_memories": 1980,
+        "graph_memories": 1980,
+        "metrics": 1980,
+        "metadata": 1980,
+        "metadata.answer_context_ids": 1980,
+        "metadata.graph_context_ids": 1980,
+        "metadata.answer_candidates": 1980
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1980
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_fused_locomo_20260925_195248.jsonl",
+      "bytes": 39636352,
+      "kind": "evaluation",
+      "rows": 1981,
+      "unique_case_ids": 1981,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1981
+      },
+      "question_language_rows": {
+        "zh": 1981
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 840,
+        "adversarial": 442
+      },
+      "field_presence": {
+        "question": 1981,
+        "expected_answer": 1981,
+        "predicted_answer": 1981,
+        "retrieved_memories": 1981,
+        "graph_memories": 1981,
+        "metrics": 1981,
+        "metadata": 1981,
+        "metadata.answer_context_ids": 1981,
+        "metadata.graph_context_ids": 1981,
+        "metadata.answer_candidates": 1981
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'True'), ('graph_mode', 'fused'), ('graph_seed_k', '5'), ('graph_slots', '3'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1981
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_locomo_20260925_115806.jsonl",
+      "bytes": 16483229,
+      "kind": "evaluation",
+      "rows": 1982,
+      "unique_case_ids": 1982,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1982
+      },
+      "question_language_rows": {
+        "zh": 1982
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 839,
+        "adversarial": 444
+      },
+      "field_presence": {
+        "question": 1982,
+        "expected_answer": 1982,
+        "predicted_answer": 1982,
+        "retrieved_memories": 1982,
+        "graph_memories": 1982,
+        "metrics": 1982,
+        "metadata": 1982,
+        "metadata.answer_context_ids": 1982,
+        "metadata.graph_context_ids": 1982,
+        "metadata.answer_candidates": 1982
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1982
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_locomo_20260925_151059.jsonl",
+      "bytes": 16490757,
+      "kind": "evaluation",
+      "rows": 1981,
+      "unique_case_ids": 1981,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1981
+      },
+      "question_language_rows": {
+        "zh": 1981
+      },
+      "categories": {
+        "temporal": 319,
+        "multi-hop": 280,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 445
+      },
+      "field_presence": {
+        "question": 1981,
+        "expected_answer": 1981,
+        "predicted_answer": 1981,
+        "retrieved_memories": 1981,
+        "graph_memories": 1981,
+        "metrics": 1981,
+        "metadata": 1981,
+        "metadata.answer_context_ids": 1981,
+        "metadata.graph_context_ids": 1981,
+        "metadata.answer_candidates": 1981
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1981
+        }
+      ]
+    },
+    {
+      "path": "results_zh/zhfull_locomo_20260925_164645.jsonl",
+      "bytes": 16457871,
+      "kind": "evaluation",
+      "rows": 1979,
+      "unique_case_ids": 1979,
+      "malformed_lines": 0,
+      "benchmarks": {
+        "locomo": 1979
+      },
+      "question_language_rows": {
+        "zh": 1979
+      },
+      "categories": {
+        "temporal": 321,
+        "multi-hop": 282,
+        "open-domain": 96,
+        "single-hop": 841,
+        "adversarial": 439
+      },
+      "field_presence": {
+        "question": 1979,
+        "expected_answer": 1979,
+        "predicted_answer": 1979,
+        "retrieved_memories": 1979,
+        "graph_memories": 1979,
+        "metrics": 1979,
+        "metadata": 1979,
+        "metadata.answer_context_ids": 1979,
+        "metadata.graph_context_ids": 1979,
+        "metadata.answer_candidates": 1979
+      },
+      "config_variant_count": 1,
+      "config_variants": [
+        {
+          "signature": "(('graph_enabled', 'False'), ('graph_mode', 'None'), ('graph_seed_k', 'None'), ('graph_slots', 'None'), ('atomic_pool', 'False'), ('answerer_model', 'glm-5.3-flash'), ('answer_samples', '1'))",
+          "rows": 1979
+        }
+      ]
+    },
+    {
+      "path": "data/search/rounds/r000_calib.jsonl",
+      "bytes": 166937,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r001_precise.jsonl",
+      "bytes": 159094,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r002_base.jsonl",
+      "bytes": 171658,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r003_s1.jsonl",
+      "bytes": 167467,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r004_v4sess.jsonl",
+      "bytes": 168893,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r005_v5month.jsonl",
+      "bytes": 168903,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r006_v6pair.jsonl",
+      "bytes": 167386,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r007_v8clu.jsonl",
+      "bytes": 168927,
+      "kind": "derived_or_experiment",
+      "rows": 615,
+      "unique_case_ids": 615,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 300,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r008_all.jsonl",
+      "bytes": 167811,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r009_all_precise.jsonl",
+      "bytes": 158091,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r010_pool60.jsonl",
+      "bytes": 166838,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r011_seed8.jsonl",
+      "bytes": 168085,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r012_pernode30.jsonl",
+      "bytes": 167236,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r013_s2v8_precise.jsonl",
+      "bytes": 158866,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r014_recalib.jsonl",
+      "bytes": 169240,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r100_v10.jsonl",
+      "bytes": 170045,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r101_v10s1.jsonl",
+      "bytes": 168287,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r102_v10s2.jsonl",
+      "bytes": 166002,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r103_v10_precise.jsonl",
+      "bytes": 159110,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r104_big.jsonl",
+      "bytes": 169176,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r105_big_precise.jsonl",
+      "bytes": 161877,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r106_time.jsonl",
+      "bytes": 168144,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r107_time_precise.jsonl",
+      "bytes": 158514,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r108_pair10.jsonl",
+      "bytes": 168669,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r109_s2v10_precise.jsonl",
+      "bytes": 157717,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r110_pn30_precise.jsonl",
+      "bytes": 159528,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r111_big_pn30_precise.jsonl",
+      "bytes": 156830,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r200_r111_rep.jsonl",
+      "bytes": 0,
+      "kind": "derived_or_experiment",
+      "rows": 0,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r201_r012_rep.jsonl",
+      "bytes": 0,
+      "kind": "derived_or_experiment",
+      "rows": 0,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r202_pn50.jsonl",
+      "bytes": 0,
+      "kind": "derived_or_experiment",
+      "rows": 0,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r203_pool45.jsonl",
+      "bytes": 0,
+      "kind": "derived_or_experiment",
+      "rows": 0,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r204_plus_v5.jsonl",
+      "bytes": 0,
+      "kind": "derived_or_experiment",
+      "rows": 0,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r205_no_v8.jsonl",
+      "bytes": 0,
+      "kind": "derived_or_experiment",
+      "rows": 0,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r400_calib3.jsonl",
+      "bytes": 194111,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r401_r111_rep.jsonl",
+      "bytes": 186103,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r402_laya_route.jsonl",
+      "bytes": 195217,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r403_laya_filter.jsonl",
+      "bytes": 185274,
+      "kind": "derived_or_experiment",
+      "rows": 615,
+      "unique_case_ids": 615,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 140,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r404_laya_both.jsonl",
+      "bytes": 182242,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r405_laya_r111.jsonl",
+      "bytes": 173642,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r406_laya_precise.jsonl",
+      "bytes": 174617,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r407_pn30_rep.jsonl",
+      "bytes": 193153,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r408_laya_only_list.jsonl",
+      "bytes": 183205,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r409_norerank.jsonl",
+      "bytes": 205152,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r410_seed3.jsonl",
+      "bytes": 193065,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r411_laya_filter_pn30.jsonl",
+      "bytes": 174798,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r500_s3_precise.jsonl",
+      "bytes": 185623,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r501_calib4.jsonl",
+      "bytes": 196477,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r502_s3_nograph_precise.jsonl",
+      "bytes": 171351,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r503_s2v8_precise_rep.jsonl",
+      "bytes": 188790,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r504_laya_both_rep.jsonl",
+      "bytes": 184333,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r505_rerank_off_precise.jsonl",
+      "bytes": 196479,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r506_s3_precise_rep.jsonl",
+      "bytes": 187196,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r507_pool45_precise.jsonl",
+      "bytes": 190556,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r508_s1_precise.jsonl",
+      "bytes": 178741,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r509_seed3_precise.jsonl",
+      "bytes": 180899,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r510_allv8_precise.jsonl",
+      "bytes": 200017,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r600_noatomic.jsonl",
+      "bytes": 195492,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r601_atomic.jsonl",
+      "bytes": 180508,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r602_atomic_rep.jsonl",
+      "bytes": 178667,
+      "kind": "derived_or_experiment",
+      "rows": 615,
+      "unique_case_ids": 615,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 140,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r603_atomic_precise.jsonl",
+      "bytes": 173820,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r604_atomic_nograph.jsonl",
+      "bytes": 179276,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r605_jev_stop.jsonl",
+      "bytes": 179842,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r606_jev_filter.jsonl",
+      "bytes": 176216,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "data/search/rounds/r607_all.jsonl",
+      "bytes": 169902,
+      "kind": "derived_or_experiment",
+      "rows": 616,
+      "unique_case_ids": 616,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 141,
+        "single-hop": 301,
+        "multi-hop": 117,
+        "open-domain": 57
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_graph_ingest_01/ingest.jsonl",
+      "bytes": 12717,
+      "kind": "derived_or_experiment",
+      "rows": 19,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_source_optimized.jsonl",
+      "bytes": 6026,
+      "kind": "derived_or_experiment",
+      "rows": 2,
+      "unique_case_ids": 2,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "single-hop": 2
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_success_replacement_24.jsonl",
+      "bytes": 81153,
+      "kind": "derived_or_experiment",
+      "rows": 25,
+      "unique_case_ids": 24,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "single-hop": 7,
+        "multi-hop": 6,
+        "temporal": 6,
+        "open-domain": 6
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_success_verifier_qa23.jsonl",
+      "bytes": 1764,
+      "kind": "derived_or_experiment",
+      "rows": 1,
+      "unique_case_ids": 1,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "multi-hop": 1
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_support_ids_probe.jsonl",
+      "bytes": 1296,
+      "kind": "derived_or_experiment",
+      "rows": 1,
+      "unique_case_ids": 1,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 1
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_verify_repair_final.jsonl",
+      "bytes": 24785,
+      "kind": "derived_or_experiment",
+      "rows": 15,
+      "unique_case_ids": 15,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 5,
+        "open-domain": 2,
+        "multi-hop": 5,
+        "single-hop": 3
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_verify_repair_v1.jsonl",
+      "bytes": 23128,
+      "kind": "derived_or_experiment",
+      "rows": 15,
+      "unique_case_ids": 15,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 5,
+        "open-domain": 2,
+        "multi-hop": 5,
+        "single-hop": 3
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_verify_repair_v2.jsonl",
+      "bytes": 23673,
+      "kind": "derived_or_experiment",
+      "rows": 15,
+      "unique_case_ids": 15,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 5,
+        "open-domain": 2,
+        "multi-hop": 5,
+        "single-hop": 3
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_verify_repair_v3.jsonl",
+      "bytes": 14798,
+      "kind": "derived_or_experiment",
+      "rows": 7,
+      "unique_case_ids": 7,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {
+        "temporal": 1,
+        "open-domain": 1,
+        "multi-hop": 2,
+        "single-hop": 3
+      },
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000107786191Z/raw/trials.jsonl",
+      "bytes": 26722,
+      "kind": "derived_or_experiment",
+      "rows": 28,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000107786191Z/wiki/impact.jsonl",
+      "bytes": 7434,
+      "kind": "derived_or_experiment",
+      "rows": 12,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000649010998Z/raw/trials.jsonl",
+      "bytes": 26719,
+      "kind": "derived_or_experiment",
+      "rows": 28,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000649010998Z/wiki/impact.jsonl",
+      "bytes": 7431,
+      "kind": "derived_or_experiment",
+      "rows": 12,
+      "unique_case_ids": 0,
+      "malformed_lines": 0,
+      "benchmarks": {},
+      "question_language_rows": {},
+      "categories": {},
+      "field_presence": {},
+      "config_variant_count": 0,
+      "config_variants": []
+    }
+  ],
+  "limits": [
+    "Question language uses a Chinese-character heuristic, not dataset file provenance",
+    "A row count is not an independent sample count or causal comparison",
+    "Historical run names alone do not prove shared memory store, prompt, random seed or model settings"
+  ]
+}
