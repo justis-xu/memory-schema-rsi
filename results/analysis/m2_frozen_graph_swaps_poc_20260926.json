@@ -1,0 +1,293 @@
+{
+  "scope": "Three retrospective Chinese cases; one slot swapped; two responses per arm; no judge calls",
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_calls": 12,
+  "max_completion_tokens_per_call": 1200,
+  "order_per_case": [
+    "base",
+    "swap",
+    "swap",
+    "base"
+  ],
+  "prompt_template": "official LoCoMo answer template; fixed retrieval-order numbered memories without date tags",
+  "source_packet": "results/analysis/m2_graph_fact_bridge_cases_20260926.json",
+  "cases": [
+    {
+      "case_id": "locomo_conv-47_qa96",
+      "question": "约翰支持哪家足球俱乐部？",
+      "gold": "曼彻斯特城",
+      "replace_rank": 15,
+      "removed_memory": {
+        "id": "6e0bebd1-7993-4ec0-a65d-88f64843e62d",
+        "content": "John was asked to serve as a programming mentor for game developers at the non-profit, teaching programming and assisting with project development; he felt especially excited and inspired, and hopes it leads to more opportunities"
+      },
+      "added_memory": {
+        "id": "3cded448-5856-4da0-81c6-aa9c84cdf61d",
+        "content": "John is a Manchester City fan; he and James made a friendly bet around June 2022 that their teams (Liverpool vs Man City) will battle for the championship, with John confident City will win"
+      },
+      "base_context_ids": [
+        "2bef1c5f-d808-43c5-840b-d169618c0f57",
+        "b6ef2063-6cc7-4a45-b60c-7958e9aaa945",
+        "fbb1568d-3ffd-4ec2-8157-70931c48e74e",
+        "ad4e85cd-d24a-4b39-861e-641e89656603",
+        "73feda98-03f2-4bc4-affc-c617ce4a38ad",
+        "d8d3d2a2-f41d-4e7d-a65a-ecd0d39e2ed7",
+        "2f826b80-edc4-4ef3-98ef-fe50712f920f",
+        "eff83c5f-9f8e-474b-91ad-d148c96ba800",
+        "99b9ac37-de5a-42d7-8715-fd6e93f173b0",
+        "bd53f79f-e6f9-4367-8178-d39e3084184a",
+        "64381c12-67f7-4ef7-beb6-5fdd1c603513",
+        "aee99d85-c0c2-4b4d-82b7-03e34e5865f3",
+        "122ee9fe-a4a4-472b-9199-203413a5cd78",
+        "4095abe2-6966-4cad-9694-eaf27b251c4c",
+        "6e0bebd1-7993-4ec0-a65d-88f64843e62d"
+      ],
+      "swap_context_ids": [
+        "2bef1c5f-d808-43c5-840b-d169618c0f57",
+        "b6ef2063-6cc7-4a45-b60c-7958e9aaa945",
+        "fbb1568d-3ffd-4ec2-8157-70931c48e74e",
+        "ad4e85cd-d24a-4b39-861e-641e89656603",
+        "73feda98-03f2-4bc4-affc-c617ce4a38ad",
+        "d8d3d2a2-f41d-4e7d-a65a-ecd0d39e2ed7",
+        "2f826b80-edc4-4ef3-98ef-fe50712f920f",
+        "eff83c5f-9f8e-474b-91ad-d148c96ba800",
+        "99b9ac37-de5a-42d7-8715-fd6e93f173b0",
+        "bd53f79f-e6f9-4367-8178-d39e3084184a",
+        "64381c12-67f7-4ef7-beb6-5fdd1c603513",
+        "aee99d85-c0c2-4b4d-82b7-03e34e5865f3",
+        "122ee9fe-a4a4-472b-9199-203413a5cd78",
+        "4095abe2-6966-4cad-9694-eaf27b251c4c",
+        "3cded448-5856-4da0-81c6-aa9c84cdf61d"
+      ],
+      "calls": [
+        {
+          "index": 1,
+          "arm": "base",
+          "answer": "扫描记忆后：Memory 1 明确说支持利物浦（Liverpool）的是 James，不是 John。关于 John 的记忆只提到他玩 FIFA 23、参加慈善电竞比赛、组织电竞锦标赛等，没有提到他本人支持哪家足球俱乐部。\n\nANSWER: 记忆中没有记录约翰支持的足球俱乐部——支持利物浦足球俱乐部的是他的朋友 James（James 是死忠利物浦球迷，从不错过比赛）。约翰虽然玩 FIFA 23 并热爱足球游戏，但他本人支持的俱乐部在记忆中没有提及。",
+          "usage": {
+            "prompt_tokens": 2042,
+            "completion_tokens": 182
+          }
+        },
+        {
+          "index": 2,
+          "arm": "swap",
+          "answer": "Memory 15: John is a Manchester City fan.\n\nANSWER: 约翰支持曼城（Manchester City）。他曾与詹姆斯打赌曼城会与利物浦争夺冠军，并坚信曼城会赢。",
+          "usage": {
+            "prompt_tokens": 2043,
+            "completion_tokens": 44
+          }
+        },
+        {
+          "index": 3,
+          "arm": "swap",
+          "answer": "Memory 15: John is a Manchester City fan.\n\nANSWER: 约翰支持曼彻斯特城（曼城）。",
+          "usage": {
+            "prompt_tokens": 2043,
+            "completion_tokens": 28
+          }
+        },
+        {
+          "index": 4,
+          "arm": "base",
+          "answer": "利物浦是詹姆斯支持的球队，不是约翰的。没有记忆表明约翰支持某个俱乐部——他只是玩FIFA 23。\n\nANSWER: 记忆中没有记录约翰支持哪家足球俱乐部；支持利物浦的是詹姆斯（约翰的朋友）。",
+          "usage": {
+            "prompt_tokens": 2042,
+            "completion_tokens": 49
+          }
+        }
+      ],
+      "prompt_sha256": {
+        "base": "147c7f3efec38353fc9d2e04518d9f0d9b79043d6fe810da2a89f41ff4869e8f",
+        "swap": "a1418c49621390a70c85e721f67c3152137cc3ffffbba01196584121e1df5426"
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa86",
+      "question": "约翰做了什么事让他的钱包吃不消？",
+      "gold": "他的车抛锚了",
+      "replace_rank": 15,
+      "removed_memory": {
+        "id": "e9ead35e-3c3b-49ad-8212-86c2e70faa88",
+        "content": "Around April 10, 2023, John's car broke down on his way to work the previous Friday and he was dealing with costly repairs; he remained positive while searching for solutions"
+      },
+      "added_memory": {
+        "id": "f8681a3d-0e6a-4d52-b20e-871a78f9495c",
+        "content": "约翰在2023年8月9日组织了一场为退伍军人及其家人筹款的社区5公里慈善跑，需要拉赞助、与市政府协调并做宣传；拉赞助很困难，需要通过不同方式联系多家企业，但最终找到了很棒的赞助商，活动大获成功并筹到了善款"
+      },
+      "base_context_ids": [
+        "6ce9ccd6-2863-44fa-a8cc-315d1d61bffe",
+        "64d56bfe-1ecd-4939-8585-953350e5da5f",
+        "bb2851b4-bf3b-48bf-8a75-d6a9c80924da",
+        "d53af5f5-79d7-432f-9cf6-5b85847f5b1e",
+        "3a947793-7513-426a-8d6d-d9e5d54d3554",
+        "173b9922-c1dc-4628-808b-1dba4b7c1e2b",
+        "165dea2d-4caa-46da-960e-9cb27743f3cf",
+        "18e48bc7-bb4c-4764-a249-171499bfcfdf",
+        "c1a39482-06c6-4cd4-bbcb-5b9b9e7f0bc8",
+        "4f6efccd-7b5e-4259-ab9c-8d1168293a36",
+        "13f651aa-2c90-4bbf-9b0b-a8462e2b59dd",
+        "ac275927-0dd0-4e12-aedc-adcd761f29a8",
+        "3ab73473-080a-4899-b85d-ae2c327a48cf",
+        "ef918bad-805a-4308-98ac-036200369b18",
+        "e9ead35e-3c3b-49ad-8212-86c2e70faa88"
+      ],
+      "swap_context_ids": [
+        "6ce9ccd6-2863-44fa-a8cc-315d1d61bffe",
+        "64d56bfe-1ecd-4939-8585-953350e5da5f",
+        "bb2851b4-bf3b-48bf-8a75-d6a9c80924da",
+        "d53af5f5-79d7-432f-9cf6-5b85847f5b1e",
+        "3a947793-7513-426a-8d6d-d9e5d54d3554",
+        "173b9922-c1dc-4628-808b-1dba4b7c1e2b",
+        "165dea2d-4caa-46da-960e-9cb27743f3cf",
+        "18e48bc7-bb4c-4764-a249-171499bfcfdf",
+        "c1a39482-06c6-4cd4-bbcb-5b9b9e7f0bc8",
+        "4f6efccd-7b5e-4259-ab9c-8d1168293a36",
+        "13f651aa-2c90-4bbf-9b0b-a8462e2b59dd",
+        "ac275927-0dd0-4e12-aedc-adcd761f29a8",
+        "3ab73473-080a-4899-b85d-ae2c327a48cf",
+        "ef918bad-805a-4308-98ac-036200369b18",
+        "f8681a3d-0e6a-4d52-b20e-871a78f9495c"
+      ],
+      "calls": [
+        {
+          "index": 1,
+          "arm": "base",
+          "answer": "记忆中提到，2023年4月10日左右，约翰的车在上班路上抛锚，他正在处理昂贵的维修费用，这让他的钱包吃不消。\n\nANSWER: 他的车抛锚了，需要支付昂贵的汽车维修费用。",
+          "usage": {
+            "prompt_tokens": 2062,
+            "completion_tokens": 54
+          }
+        },
+        {
+          "index": 2,
+          "arm": "swap",
+          "answer": "回顾记忆：2023年8月9日，约翰组织了一场为退伍军人及其家人筹款的社区5公里慈善跑，需要拉赞助、与市政府协调并做宣传。其中拉赞助很困难，他需要通过不同方式联系多家企业，最终才找到赞助商。此外他还参与了多项捐赠/公益支出相关的活动（2月的food drive、8月初的捐赠活动收集物资）。组织慈善跑过程中协调、宣传和拉赞助的开销和精力让他的钱包吃不消。\n\nANSWER: 约翰在2023年8月9日组织了一场为退伍军人及其家人筹款的社区5公里慈善跑。他需要拉赞助、与市政府协调并做宣传，拉赞助的过程非常困难，不得不通过不同方式联系多家企业，这让他的钱包（和精力）都吃不消，但最终找到赞助商、活动大获成功。",
+          "usage": {
+            "prompt_tokens": 2093,
+            "completion_tokens": 256
+          }
+        },
+        {
+          "index": 3,
+          "arm": "swap",
+          "answer": "扫描记忆：没有明确写“钱包吃不消”的句子，但与金钱负担相关的记忆包括：#3/#1 捐赠与食物捐赠、#5/#15 组织慈善跑需要拉赞助筹款、#14 竞选公职。其中最相关的解释是：约翰在参与和组织这些公益活动中不断捐款出钱（如捐赠食品、物资，并组织需要资金的慈善跑活动），这些持续的捐款让他的钱包吃不消。\n\nANSWER: 约翰因为在各种公益活动中持续捐款出钱（参加食物捐赠活动、为消防队小组的捐赠活动捐物，以及自掏腰包组织为退伍军人筹款的慈善跑）让他的钱包吃不消。",
+          "usage": {
+            "prompt_tokens": 2093,
+            "completion_tokens": 242
+          }
+        },
+        {
+          "index": 4,
+          "arm": "base",
+          "answer": "Memory 15: his car broke down and he faced costly repairs.\n\nANSWER: 约翰的车在上班路上抛锚了，昂贵的维修费用让他的钱包吃不消。",
+          "usage": {
+            "prompt_tokens": 2062,
+            "completion_tokens": 41
+          }
+        }
+      ],
+      "prompt_sha256": {
+        "base": "eb1a42736d157d87eb5b9870b1e886569efd8792745b1b9f40216bbc8d156f0d",
+        "swap": "462e6bb133fd80daa59e365a69951f9b4ecc8eea5fc8c4cff1158f42b9e1934a"
+      }
+    },
+    {
+      "case_id": "locomo_conv-30_qa80",
+      "question": "乔恩在社交活动上得到建议后有什么计划？",
+      "gold": "完善他的商业计划，调整对投资人的推介，并开发一个线上平台。",
+      "replace_rank": 14,
+      "removed_memory": {
+        "id": "2bf90403-4875-4381-a465-d400520cf9e2",
+        "content": "2023年6月21日，乔恩把所有的计划和目标写下来，认为看到目标写在纸上能帮助他保持动力、专注于该做的事情"
+      },
+      "added_memory": {
+        "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+        "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助"
+      },
+      "base_context_ids": [
+        "3f548823-9546-4a8a-8a3d-299b16b943b6",
+        "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+        "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+        "0e4e7516-a78f-4885-b138-39489ea9ea11",
+        "18251b9f-f071-458a-a610-c6684ac95a45",
+        "f597103f-48ad-476e-956c-4a5e5a250207",
+        "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+        "20fc0980-03ad-41f3-a33a-6db73a040e49",
+        "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+        "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+        "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+        "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+        "418ed457-c66e-42aa-8d07-3277e60001d8",
+        "2bf90403-4875-4381-a465-d400520cf9e2",
+        "c4a339d5-2833-4d97-bf80-8d414c99e18d"
+      ],
+      "swap_context_ids": [
+        "3f548823-9546-4a8a-8a3d-299b16b943b6",
+        "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+        "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+        "0e4e7516-a78f-4885-b138-39489ea9ea11",
+        "18251b9f-f071-458a-a610-c6684ac95a45",
+        "f597103f-48ad-476e-956c-4a5e5a250207",
+        "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+        "20fc0980-03ad-41f3-a33a-6db73a040e49",
+        "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+        "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+        "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+        "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+        "418ed457-c66e-42aa-8d07-3277e60001d8",
+        "72c1939a-c0be-463d-bb94-481e0779fa2a",
+        "c4a339d5-2833-4d97-bf80-8d414c99e18d"
+      ],
+      "calls": [
+        {
+          "index": 1,
+          "arm": "base",
+          "answer": "根据记忆15，乔恩于2023年7月参加社交活动，见到了一些投资人并获得好建议。\n\nANSWER: 乔恩计划做人际拓展，并继续完善商业计划、调整给投资人的推介，搭建线上平台来展示舞蹈工作室（记忆7、8），为舞蹈工作室争取投资和推广机会。",
+          "usage": {
+            "prompt_tokens": 2062,
+            "completion_tokens": 69
+          }
+        },
+        {
+          "index": 2,
+          "arm": "swap",
+          "answer": "相关记忆：#15（2023年7月参加社交活动，见到投资人并获得好建议）和#7（截至2023年7月21日，他完善商业计划、调整投资人推介、搭建线上平台）。\n\n**ANSWER:** 在2023年7月的社交活动上见到投资人并得到好建议后，乔恩计划完善他的商业计划书、调整给投资人的推介，并搭建一个线上平台来展示他的舞蹈工作室（截至2023年7月21日）。",
+          "usage": {
+            "prompt_tokens": 2076,
+            "completion_tokens": 135
+          }
+        },
+        {
+          "index": 3,
+          "arm": "swap",
+          "answer": "相关记忆：15（2023年7月社交活动，获得投资人建议并带来好机会）、7（7月21日完善商业计划、调整投资人推介、搭建线上平台）。\n\nANSWER: 乔恩在2023年7月的社交活动上见到了投资人并获得好建议后，他的计划是继续完善舞蹈工作室的商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室，同时继续做人际拓展，以争取投资人的支持。",
+          "usage": {
+            "prompt_tokens": 2076,
+            "completion_tokens": 101
+          }
+        },
+        {
+          "index": 4,
+          "arm": "base",
+          "answer": "ANSWER：根据记忆，乔恩在2023年7月的社交活动上见到投资人并获得好建议后，随后（截至2023年7月21日）的计划是：完善商业计划书、调整给投资人的推介（pitch），并搭建一个线上平台来展示他的舞蹈工作室，以争取融资和推广工作室。",
+          "usage": {
+            "prompt_tokens": 2062,
+            "completion_tokens": 87
+          }
+        }
+      ],
+      "prompt_sha256": {
+        "base": "f017a7d5aea377a9a679dff5b978782047702784ff0cd5cebe8446cc58b15461",
+        "swap": "8c32d459c4f724df3fc597e2997cbef741f69da10a27b31e1ee251cdbac63a78"
+      }
+    }
+  ],
+  "limits": [
+    "Old mixed-language archived memories, not the current pure-Chinese memory store.",
+    "The one-slot swap tests candidate content, not historical graph traversal, ranker, dates or overall net score.",
+    "Two responses per arm are a diagnostic noise check, not a variance estimate.",
+    "Manual fact checks are needed; archived strict judge labels are not reused as POC results."
+  ]
+}

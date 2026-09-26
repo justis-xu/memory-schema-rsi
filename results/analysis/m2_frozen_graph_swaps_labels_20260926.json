@@ -1,0 +1,106 @@
+{
+  "scope": "Manual fact-level labels for 12 fixed-context generation calls",
+  "raw_results": "results/analysis/m2_frozen_graph_swaps_poc_20260926.json",
+  "usage": {
+    "calls": 12,
+    "prompt_tokens": 24756,
+    "completion_tokens": 1288
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-47_qa96",
+      "criterion": "最终答案明确说约翰支持曼彻斯特城；不能把詹姆斯的利物浦归给约翰",
+      "calls": [
+        {
+          "index": 1,
+          "arm": "base",
+          "final_answer": "记忆中没有记录约翰支持的足球俱乐部——支持利物浦足球俱乐部的是他的朋友 James（James 是死忠利物浦球迷，从不错过比赛）。约翰虽然玩 FIFA 23 并热爱足球游戏，但他本人支持的俱乐部在记忆中没有提及。",
+          "contains_source_supported_required_fact": false
+        },
+        {
+          "index": 2,
+          "arm": "swap",
+          "final_answer": "约翰支持曼城（Manchester City）。他曾与詹姆斯打赌曼城会与利物浦争夺冠军，并坚信曼城会赢。",
+          "contains_source_supported_required_fact": true
+        },
+        {
+          "index": 3,
+          "arm": "swap",
+          "final_answer": "约翰支持曼彻斯特城（曼城）。",
+          "contains_source_supported_required_fact": true
+        },
+        {
+          "index": 4,
+          "arm": "base",
+          "final_answer": "记忆中没有记录约翰支持哪家足球俱乐部；支持利物浦的是詹姆斯（约翰的朋友）。",
+          "contains_source_supported_required_fact": false
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa86",
+      "criterion": "最终答案指出约翰的车抛锚且维修费让钱包吃不消；慈善开销没有源话支持",
+      "calls": [
+        {
+          "index": 1,
+          "arm": "base",
+          "final_answer": "他的车抛锚了，需要支付昂贵的汽车维修费用。",
+          "contains_source_supported_required_fact": true
+        },
+        {
+          "index": 2,
+          "arm": "swap",
+          "final_answer": "约翰在2023年8月9日组织了一场为退伍军人及其家人筹款的社区5公里慈善跑。他需要拉赞助、与市政府协调并做宣传，拉赞助的过程非常困难，不得不通过不同方式联系多家企业，这让他的钱包（和精力）都吃不消，但最终找到赞助商、活动大获成功。",
+          "contains_source_supported_required_fact": false
+        },
+        {
+          "index": 3,
+          "arm": "swap",
+          "final_answer": "约翰因为在各种公益活动中持续捐款出钱（参加食物捐赠活动、为消防队小组的捐赠活动捐物，以及自掏腰包组织为退伍军人筹款的慈善跑）让他的钱包吃不消。",
+          "contains_source_supported_required_fact": false
+        },
+        {
+          "index": 4,
+          "arm": "base",
+          "final_answer": "约翰的车在上班路上抛锚了，昂贵的维修费用让他的钱包吃不消。",
+          "contains_source_supported_required_fact": true
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa80",
+      "criterion": "最终答案包含完善商业计划、调整投资推介、搭建线上平台三项；额外社媒泛谈不替代必需项",
+      "calls": [
+        {
+          "index": 1,
+          "arm": "base",
+          "final_answer": "乔恩计划做人际拓展，并继续完善商业计划、调整给投资人的推介，搭建线上平台来展示舞蹈工作室（记忆7、8），为舞蹈工作室争取投资和推广机会。",
+          "contains_source_supported_required_fact": true
+        },
+        {
+          "index": 2,
+          "arm": "swap",
+          "final_answer": "** 在2023年7月的社交活动上见到投资人并得到好建议后，乔恩计划完善他的商业计划书、调整给投资人的推介，并搭建一个线上平台来展示他的舞蹈工作室（截至2023年7月21日）。",
+          "contains_source_supported_required_fact": true
+        },
+        {
+          "index": 3,
+          "arm": "swap",
+          "final_answer": "乔恩在2023年7月的社交活动上见到了投资人并获得好建议后，他的计划是继续完善舞蹈工作室的商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室，同时继续做人际拓展，以争取投资人的支持。",
+          "contains_source_supported_required_fact": true
+        },
+        {
+          "index": 4,
+          "arm": "base",
+          "final_answer": "根据记忆，乔恩在2023年7月的社交活动上见到投资人并获得好建议后，随后（截至2023年7月21日）的计划是：完善商业计划书、调整给投资人的推介（pitch），并搭建一个线上平台来展示他的舞蹈工作室，以争取融资和推广工作室。",
+          "contains_source_supported_required_fact": true
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Retrospectively selected three cases; no population effect size",
+    "Two samples per arm; no judge calls",
+    "Only one memory slot changed; historical multi-slot graph path not reproduced"
+  ]
+}
