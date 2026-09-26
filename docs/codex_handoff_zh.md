@@ -68,6 +68,7 @@
 - 历史 JSONL 覆盖矩阵见 `docs/m2_historical_run_coverage_zh.md`、`results/analysis/m2_historical_run_inventory_20260926.json`。135 个 JSONL 中 46 个评测文件；八份中文 LoCoMo 主运行交集 1,941/1,986 题，45 个至少缺一臂（其中 36 个 adversarial），并集为全题。运行器打印异常但不结构化保存失败题原因，预重排候选／Jev 首判上下文也未完整归档。接下来需清点非 JSONL 产物与版本依赖，再据此收束总复盘。
 - 非 JSONL 与可见记忆版本审计见 `docs/m2_artifact_version_coverage_zh.md`、`results/analysis/m2_artifact_version_inventory_20260926.json`。指定目录有 196 个非 JSONL 文件；八份中文主运行的向量检索并集恰为同一组 1,780 个 ID，正文和 session 元数据逐项一致。图候选并集 1,674 个 ID，1,668 个与该向量并集同 ID 同内容，6 个只见于图候选。可见记忆一致增强配对证据，但没有证明未召回库、图结构或模型条件全同；当前缓存不能冒充历史冻结快照。
 - 六个图独见 ID 的来源追查见 `docs/m2_graph_only_ids_zh.md`。五条仍在当前 Chroma，正文同图候选且有会话日期；一条乔琳记忆当前已无，但 history 记载 2026-09-25 ADD、2026-09-26 DELETE，核心事实可回源中文 `D8:14/16`。先前 2,042 图入选中 8 次不能从归档向量检索回填日期，恰由这条贡献 6 次、另一条当前有日期的记忆贡献 2 次。不能将“图独见”直接判为历史脏记忆或有效新证据；下一步核这些图独见入选的答案贡献与挤出项。
+- 图独见入槽的八题人工审计见 `docs/m2_graph_only_answer_exposure_zh.md`、`results/analysis/m2_graph_only_answer_exposure_20260926.json`。在一对中文无图／融合图运行中，3 个图独见 ID 入槽 8 次，伴随 25 条换入和 25 条挤出；逐题未见图独见记忆直接补齐金标必要事实。宽松裁判的一正一负翻分均为 adversarial，答案内容相近，不能算作图收益与反伤各一次。下一步应寻找有源、图独得且具体事实确实独有的中文题；不在这八题继续重复试验。
 
 - EvoOntology 已完成针对性阅读和本地来源映射审计：`docs/m2_evoontology_evidence_mapping_zh.md`。可迁移的是有源证据映射、按失败层局部编辑、同条件配对接受门控；不能把 DDR-Bench 增益搬成中文图/Jev 预期收益。
 - 当前主要阶段文档还包括：`docs/m2_fact_level_funnel_zh.md`、`docs/m2_precision_judge_flips_zh.md`、`docs/m2_temporal_flip_sources_zh.md`、`docs/m2_relative_day_funnel_zh.md`、`docs/m2_speaker_surface_audit_zh.md`、`docs/m2_image_query_provenance_zh.md` 及对应小 POC 文档。它们是有边界的专项，不意味着“全部历史数据已穷尽”。

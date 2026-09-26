@@ -1,0 +1,658 @@
+{
+  "scope": "One archived Chinese no-graph vs fused-graph pair; cases where a graph-only ID was selected",
+  "base_run": "results_zh/zhfull_locomo_20260925_115806.jsonl",
+  "graph_run": "results_zh/zhfull_fused_locomo_20260925_161049.jsonl",
+  "counts": {
+    "paired_cases": 8,
+    "by_category": {
+      "temporal": 1,
+      "single-hop": 4,
+      "adversarial": 2,
+      "open-domain": 1
+    },
+    "selected_graph_only_occurrences": 8,
+    "gained_context_memories": 25,
+    "displaced_context_memories": 25,
+    "archived_judge_base_only": 1,
+    "archived_judge_graph_only": 1
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-44_qa38",
+      "category": "temporal",
+      "question": "安德鲁和他的女朋友是什么时候去品酒之旅的？",
+      "gold": "2023年10月24日之前的那个周末",
+      "base_answer": "2023年10月21-22日的周末，安德鲁和女朋友去参加了葡萄酒品鉴会。",
+      "graph_answer": "安德鲁和他的女朋友在2023年10月21-22日的周末去参加了葡萄酒品鉴会（品酒之旅），尝了很多独特的葡萄酒并学到了很多。",
+      "base_archived_judge_correct": true,
+      "graph_archived_judge_correct": true,
+      "base_context_ids": [
+        "b36bc77e-217e-406c-8cf0-d33e7dea6c10",
+        "19e71a08-03fd-4124-a02a-f507dc7b9811",
+        "abc444b8-3052-464c-8622-f57204e1b75d",
+        "ffc82c33-6a13-4930-9330-0bb34332869f",
+        "80960341-3671-412a-a610-f8e0b9185223",
+        "e2f6dd2a-844f-48f4-8a6f-d8d220014553",
+        "e35886c3-7f88-4825-9811-f581cc2fe302",
+        "ff90c577-a7d8-4de7-99ff-8d5d0ae2af64",
+        "edab5c7c-0b88-42cb-b480-54a88fd7ab4c",
+        "45a00619-eddf-4a40-bfe9-e31a61a57d9a",
+        "591838e8-347c-4684-a851-4d9e3c0b4267",
+        "db80a1f0-5897-43e7-9bd5-323c68c74347",
+        "8a7db361-28c4-4463-b3a6-b62ed80cbd22",
+        "c282c52a-f301-41f9-bcf1-890cc4b8d07f",
+        "7a390caf-5862-4688-9e94-5aaa86e25915"
+      ],
+      "graph_context_ids": [
+        "b36bc77e-217e-406c-8cf0-d33e7dea6c10",
+        "19e71a08-03fd-4124-a02a-f507dc7b9811",
+        "abc444b8-3052-464c-8622-f57204e1b75d",
+        "ffc82c33-6a13-4930-9330-0bb34332869f",
+        "80960341-3671-412a-a610-f8e0b9185223",
+        "e2f6dd2a-844f-48f4-8a6f-d8d220014553",
+        "e35886c3-7f88-4825-9811-f581cc2fe302",
+        "ff90c577-a7d8-4de7-99ff-8d5d0ae2af64",
+        "edab5c7c-0b88-42cb-b480-54a88fd7ab4c",
+        "45a00619-eddf-4a40-bfe9-e31a61a57d9a",
+        "591838e8-347c-4684-a851-4d9e3c0b4267",
+        "db80a1f0-5897-43e7-9bd5-323c68c74347",
+        "7f50bc2e-fb48-4af7-8f97-91834f98037f",
+        "8a7db361-28c4-4463-b3a6-b62ed80cbd22",
+        "c282c52a-f301-41f9-bcf1-890cc4b8d07f"
+      ],
+      "selected_graph_only_memories": [
+        {
+          "id": "7f50bc2e-fb48-4af7-8f97-91834f98037f",
+          "content": "2023年6月30日（周五），助理和女朋友去了一座翻修过的公园野餐，带了各种零食和饮料，玩得很开心，并表示亲近大自然总能带来快乐"
+        }
+      ],
+      "gained_memories": [
+        {
+          "id": "7f50bc2e-fb48-4af7-8f97-91834f98037f",
+          "content": "2023年6月30日（周五），助理和女朋友去了一座翻修过的公园野餐，带了各种零食和饮料，玩得很开心，并表示亲近大自然总能带来快乐"
+        }
+      ],
+      "displaced_memories": [
+        {
+          "id": "7a390caf-5862-4688-9e94-5aaa86e25915",
+          "content": "2023年6月上旬（对话前一周），奥黛丽找到了一个遛狗的好地方——一个小公园，有一条被树木环绕的小径，景色很美，她的狗也很喜欢。她邀请安德鲁一起和狗狗们去那里散步，安德鲁很乐意"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa81",
+      "category": "single-hop",
+      "question": "在2023年7月24日之前的那个星期一，安德鲁和他的女朋友做了什么？",
+      "gold": "在宠物收容所做志愿者",
+      "base_answer": "安德鲁和他的女朋友在2023年7月24日（星期一）在一家宠物收容所做志愿者，他们觉得这次体验非常有意义，很喜欢和动物们在一起。",
+      "graph_answer": "安德鲁和他的女朋友在星期一（2023年7月24日）去了一家宠物收容所做志愿者，他们觉得这次体验非常有意义，很喜欢和动物们在一起。",
+      "base_archived_judge_correct": true,
+      "graph_archived_judge_correct": true,
+      "base_context_ids": [
+        "19e71a08-03fd-4124-a02a-f507dc7b9811",
+        "c282c52a-f301-41f9-bcf1-890cc4b8d07f",
+        "ff90c577-a7d8-4de7-99ff-8d5d0ae2af64",
+        "e2f6dd2a-844f-48f4-8a6f-d8d220014553",
+        "7a390caf-5862-4688-9e94-5aaa86e25915",
+        "dc2493e1-45ab-42a7-97bc-80d9202c497e",
+        "98bd13a7-5d1c-4519-910c-4756aedadaee",
+        "9a5da43c-f2b3-4c7e-acfa-aab4a47f9172",
+        "39994f63-04ee-4426-824b-cd23844c0a70",
+        "1e0af2ae-a073-416a-a5c4-98b251d33866",
+        "d97168ff-7123-45cc-8ef8-c0e83a2e9df2",
+        "80960341-3671-412a-a610-f8e0b9185223",
+        "218524ad-9a61-42ae-8436-4e4933ed83c7",
+        "7cba641f-5c9d-40bc-95e0-de03fd9b04da",
+        "d6c61b5c-4668-4ff6-9fc3-3c987acf5dfd"
+      ],
+      "graph_context_ids": [
+        "19e71a08-03fd-4124-a02a-f507dc7b9811",
+        "2e0ce82e-b3b5-4a16-9742-6e9127ab8d2d",
+        "c282c52a-f301-41f9-bcf1-890cc4b8d07f",
+        "ff90c577-a7d8-4de7-99ff-8d5d0ae2af64",
+        "e2f6dd2a-844f-48f4-8a6f-d8d220014553",
+        "7a390caf-5862-4688-9e94-5aaa86e25915",
+        "7f50bc2e-fb48-4af7-8f97-91834f98037f",
+        "dc2493e1-45ab-42a7-97bc-80d9202c497e",
+        "98bd13a7-5d1c-4519-910c-4756aedadaee",
+        "9a5da43c-f2b3-4c7e-acfa-aab4a47f9172",
+        "39994f63-04ee-4426-824b-cd23844c0a70",
+        "1e0af2ae-a073-416a-a5c4-98b251d33866",
+        "d97168ff-7123-45cc-8ef8-c0e83a2e9df2",
+        "324b3dd9-b967-4fdd-98e4-8897f2d943b6",
+        "80960341-3671-412a-a610-f8e0b9185223"
+      ],
+      "selected_graph_only_memories": [
+        {
+          "id": "7f50bc2e-fb48-4af7-8f97-91834f98037f",
+          "content": "2023年6月30日（周五），助理和女朋友去了一座翻修过的公园野餐，带了各种零食和饮料，玩得很开心，并表示亲近大自然总能带来快乐"
+        }
+      ],
+      "gained_memories": [
+        {
+          "id": "2e0ce82e-b3b5-4a16-9742-6e9127ab8d2d",
+          "content": "安德鲁和女朋友找到一家超棒的咖啡馆，糕点非常好吃；他们吃了美味的可颂、玛芬和挞，并拍下了糕点展示柜的照片"
+        },
+        {
+          "id": "7f50bc2e-fb48-4af7-8f97-91834f98037f",
+          "content": "2023年6月30日（周五），助理和女朋友去了一座翻修过的公园野餐，带了各种零食和饮料，玩得很开心，并表示亲近大自然总能带来快乐"
+        },
+        {
+          "id": "324b3dd9-b967-4fdd-98e4-8897f2d943b6",
+          "content": "奥黛丽推荐了狗狗公园作为结识狗狗玩伴的好地方，它就在她们平时散步的公园旁边，有很多树和长椅，可以坐在那儿看狗狗们玩耍；安德鲁表示一定要去看看"
+        }
+      ],
+      "displaced_memories": [
+        {
+          "id": "218524ad-9a61-42ae-8436-4e4933ed83c7",
+          "content": "安德鲁通常每个周末至少逃离城市一次去远足，把这当作他急需的放松方式；大自然对他来说就是治愈，他喜欢被绿色环绕或站在山顶呼吸新鲜空气的宁静与振奋感"
+        },
+        {
+          "id": "7cba641f-5c9d-40bc-95e0-de03fd9b04da",
+          "content": "安德鲁 (Andrew) 正考虑养狗，2023年4月时正在城里寻找允许养狗的公寓；奥黛丽建议他使用带筛选功能的宠物友好住房网站，他自己也找到了一个对狗狗友好的地方"
+        },
+        {
+          "id": "d6c61b5c-4668-4ff6-9fc3-3c987acf5dfd",
+          "content": "2023年5月初，安德鲁在附近找到了一处新的开阔地带可以远足，这让他感到非常清爽，缓解了之前因无法多出门而低落的情绪；他分享了一张日落时分湖光山色的照片"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa137",
+      "category": "adversarial",
+      "question": "2023年8月4日，安德鲁最近和他的狗狗们开始上什么类型的课程？",
+      "gold": "",
+      "base_answer": "敏捷训练课（agility training classes）——不过根据记忆，2023年8月初开始上这门课的是奥黛丽（她每周带狗狗们去狗狗公园上两次敏捷训练课），而不是安德鲁。",
+      "graph_answer": "根据记忆，2023年8月4日前后开始上的是狗狗敏捷训练课——不过需要说明的是，记录显示上这门课（每周去狗狗公园练习两次）的实际上是奥黛丽；安德鲁本人只是在2023年5月11日表示可能去了解奥黛丽推荐的宠物正向强化训练课程，尚无他实际开始上课的记录。",
+      "base_archived_judge_correct": true,
+      "graph_archived_judge_correct": false,
+      "base_context_ids": [
+        "86dfd427-d087-4ce0-b0d6-ec9756df5218",
+        "abc444b8-3052-464c-8622-f57204e1b75d",
+        "0e1e261f-b65e-4eb5-8200-6653e13bb2eb",
+        "3276124e-86a6-4296-8551-a455260602a1",
+        "b84d6118-6fbf-48b0-8042-c54299f4576d",
+        "68df486f-7ddb-4022-b880-adad63f95211",
+        "ffb28d0a-1672-4d67-8c1b-88f6db8c0044",
+        "8fdcfee9-30c6-4533-9e25-c7167093b043",
+        "7a390caf-5862-4688-9e94-5aaa86e25915",
+        "bd380b01-ec60-4bec-9286-27a0dc110c75",
+        "186ace2d-6be3-4586-8e1e-9ac2fadc9641",
+        "ff90c577-a7d8-4de7-99ff-8d5d0ae2af64",
+        "8a7db361-28c4-4463-b3a6-b62ed80cbd22",
+        "450b0e14-5c19-4ebe-9ab7-d43c191e35bf",
+        "bd8b386e-3317-4e6a-8e94-2f690008e435"
+      ],
+      "graph_context_ids": [
+        "86dfd427-d087-4ce0-b0d6-ec9756df5218",
+        "abc444b8-3052-464c-8622-f57204e1b75d",
+        "0e1e261f-b65e-4eb5-8200-6653e13bb2eb",
+        "9208c459-dbb9-4242-bcb3-11e4d46b0e8f",
+        "3276124e-86a6-4296-8551-a455260602a1",
+        "b84d6118-6fbf-48b0-8042-c54299f4576d",
+        "68df486f-7ddb-4022-b880-adad63f95211",
+        "c9f3b78c-be7b-421c-96ef-5d9ab52ad7e6",
+        "ffb28d0a-1672-4d67-8c1b-88f6db8c0044",
+        "8fdcfee9-30c6-4533-9e25-c7167093b043",
+        "7a390caf-5862-4688-9e94-5aaa86e25915",
+        "bd380b01-ec60-4bec-9286-27a0dc110c75",
+        "7f77d80e-e192-4256-b208-c81439f1b443",
+        "186ace2d-6be3-4586-8e1e-9ac2fadc9641",
+        "ff90c577-a7d8-4de7-99ff-8d5d0ae2af64"
+      ],
+      "selected_graph_only_memories": [
+        {
+          "id": "7f77d80e-e192-4256-b208-c81439f1b443",
+          "content": "用户和助理计划在2023年8月天气更舒适时一起带用户的狗狗们去远足，助理推荐了一条能远眺海景的陡峭步道并分享了步道地图，双方约定要确保步道对狗狗安全，用户会提前研究那条步道"
+        }
+      ],
+      "gained_memories": [
+        {
+          "id": "9208c459-dbb9-4242-bcb3-11e4d46b0e8f",
+          "content": "安德鲁的小狗托比是德国牧羊犬，安德鲁说他聪明又忠诚，并计划带托比去当地小径短途徒步"
+        },
+        {
+          "id": "c9f3b78c-be7b-421c-96ef-5d9ab52ad7e6",
+          "content": "安德鲁分享了一张徒步时拍摄的照片（山顶教堂上的日落/日出），并希望以后学习给托比做美容"
+        },
+        {
+          "id": "7f77d80e-e192-4256-b208-c81439f1b443",
+          "content": "用户和助理计划在2023年8月天气更舒适时一起带用户的狗狗们去远足，助理推荐了一条能远眺海景的陡峭步道并分享了步道地图，双方约定要确保步道对狗狗安全，用户会提前研究那条步道"
+        }
+      ],
+      "displaced_memories": [
+        {
+          "id": "8a7db361-28c4-4463-b3a6-b62ed80cbd22",
+          "content": "安德鲁在2023年8月中旬的周末和女朋友去附近一个湖钓鱼，钓到了几条鱼，玩得很开心。他养了一只小狗托比，分享了一张托比戴着牵引绳坐在地板上的照片，说很爱托比，并计划带托比一起户外探险"
+        },
+        {
+          "id": "450b0e14-5c19-4ebe-9ab7-d43c191e35bf",
+          "content": "2023年7月初，奥黛丽在上狗狗训练课程，觉得挺有挑战但很值得，她的狗狗们已经表现得更好了；她表示错过探索新步道，因为训练课很费时间"
+        },
+        {
+          "id": "bd8b386e-3317-4e6a-8e94-2f690008e435",
+          "content": "奥黛丽和安德鲁计划先探索湖边那条风景优美的步道，步道附近有一个湖，适合带狗狗们安静地玩一天；安德鲁分享了步道和湖的照片"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa23",
+      "category": "open-domain",
+      "question": "乔琳为什么有时会推迟做瑜伽？",
+      "gold": "她更想玩电子游戏",
+      "base_answer": "因为她忙于学业和实习，日程繁忙，难以腾出时间把瑜伽等锻炼安排进学习和工作计划中。",
+      "graph_answer": "乔琳有时会推迟做瑜伽，主要是因为学业和实习太繁忙——她常常埋头苦干于学习、考试和截止日期，难以平衡工作与生活，抽不出时间来发展爱好和进行自我照顾。",
+      "base_archived_judge_correct": false,
+      "graph_archived_judge_correct": false,
+      "base_context_ids": [
+        "b571e662-6ab1-480f-82a8-cb19f00f3e2f",
+        "3a643da3-da23-4730-9891-5aab3b266f17",
+        "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+        "7d65a711-db27-4671-8541-076f81bc45ca",
+        "3b8871be-fc08-46a6-8a2b-cbbdf209866d",
+        "42e992c5-59a3-4494-8993-d0a3f4caf711",
+        "1689cf0a-b174-4422-8d34-2d9c04a58145",
+        "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+        "0583e104-bd69-40c8-9849-1bae95ed58f8",
+        "c9ae659d-60b2-45f2-aa95-75b88edba631",
+        "6a8f7415-be13-46c1-9b6d-4e98ce607aad",
+        "cd166422-6046-4d94-9d4e-4f6d67d58750",
+        "2931ebb0-a14a-48b1-ac70-9ffafabce146",
+        "45db1fc6-4300-475f-b1e2-969371dd9cc4",
+        "e2491f78-2166-473c-8114-d6cf7cad951f"
+      ],
+      "graph_context_ids": [
+        "b571e662-6ab1-480f-82a8-cb19f00f3e2f",
+        "3a643da3-da23-4730-9891-5aab3b266f17",
+        "a049467e-7e50-47e7-b4fb-5052503e9863",
+        "bae6d454-5c37-4d97-9258-5b385204bf5e",
+        "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+        "7d65a711-db27-4671-8541-076f81bc45ca",
+        "3b8871be-fc08-46a6-8a2b-cbbdf209866d",
+        "42e992c5-59a3-4494-8993-d0a3f4caf711",
+        "1689cf0a-b174-4422-8d34-2d9c04a58145",
+        "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+        "0583e104-bd69-40c8-9849-1bae95ed58f8",
+        "c9ae659d-60b2-45f2-aa95-75b88edba631",
+        "96b864be-9840-4274-b53d-cda5520f9e8e",
+        "7e0cfedf-3c97-458d-bb79-1c345df947e7",
+        "42b3a28e-049d-41fe-a26f-d2d4c08375d8"
+      ],
+      "selected_graph_only_memories": [
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        }
+      ],
+      "gained_memories": [
+        {
+          "id": "a049467e-7e50-47e7-b4fb-5052503e9863",
+          "content": "Jolene is balancing studying engineering at university with caring for her partner; she does yoga and meditation to stay calm in the chaos (around February 2023)"
+        },
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        },
+        {
+          "id": "96b864be-9840-4274-b53d-cda5520f9e8e",
+          "content": "黛布有时会去她已故母亲的老房子里做瑜伽以纪念母亲；坐在窗边那个位置让她感到平静，并能感觉到母亲的存在，这让她感到安慰"
+        },
+        {
+          "id": "7e0cfedf-3c97-458d-bb79-1c345df947e7",
+          "content": "Jolene shared a photo of herself doing a yoga pose on a yoga mat and said yoga 'saves' her, helping her relax, gain perspective, and feel clearer and more motivated"
+        },
+        {
+          "id": "42b3a28e-049d-41fe-a26f-d2d4c08375d8",
+          "content": "Jolene has been together with her partner for three years (as of February 2023) but they are not married and are in no rush; the ring he wears is decorative, not a wedding ring. He sometimes joins her yoga practice, which strengthens their bond"
+        }
+      ],
+      "displaced_memories": [
+        {
+          "id": "6a8f7415-be13-46c1-9b6d-4e98ce607aad",
+          "content": "乔琳在2023年8月正同时应付学业、感情和个人成长，感到压力起伏，并向黛布倾诉不知如何应对多重压力"
+        },
+        {
+          "id": "cd166422-6046-4d94-9d4e-4f6d67d58750",
+          "content": "乔琳练瑜伽时喜欢听尼尔斯·弗拉姆和奥拉维尔·阿纳尔兹的音乐，觉得非常舒缓、能让她进入另一种心境"
+        },
+        {
+          "id": "2931ebb0-a14a-48b1-ac70-9ffafabce146",
+          "content": "乔琳练瑜伽或做活动时感到放松，喜欢用音乐和薰衣草、迷迭香等舒缓香气营造宁静的空间"
+        },
+        {
+          "id": "45db1fc6-4300-475f-b1e2-969371dd9cc4",
+          "content": "乔琳自2023年8月初丢失了工作文件后压力很大，一度不知所措，但冥想帮助她保持平静并找回清晰的头脑，她非常感激这一练习"
+        },
+        {
+          "id": "e2491f78-2166-473c-8114-d6cf7cad951f",
+          "content": "乔琳在2023年7月正努力把锻炼安排进自己的学习计划里，虽然挺难但也觉得有趣"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa108",
+      "category": "single-hop",
+      "question": "2023年2月9日的迷你静修营之后，乔琳获得了什么新的心态？",
+      "gold": "自信心的提升",
+      "base_answer": "乔琳发现自己取得的成就远超自己的想象，这极大地提升了她的信心，并让她在工程项目上想出了一些很棒的解决方案。",
+      "graph_answer": "她发现自己取得的成就远超自己的想象，这极大地提升了她的信心，还因此在工程项目上想出了一些很棒的解决方案。",
+      "base_archived_judge_correct": true,
+      "graph_archived_judge_correct": true,
+      "base_context_ids": [
+        "d1be991f-b9d9-4862-ae40-b1f7537b09b9",
+        "964edf52-69a0-4ff5-babe-d3a65a9f31de",
+        "9cfc7788-e908-464b-a92e-8c73cf4faa72",
+        "99a358ca-af75-4db7-872b-292eed3fa036",
+        "69663adb-8c91-4e02-aaea-03d538dc0323",
+        "3b8871be-fc08-46a6-8a2b-cbbdf209866d",
+        "b96334ec-035d-4903-9a3a-60ea4e422761",
+        "9129973c-4258-4d40-bc41-62e9d873750e",
+        "3de49e0c-f4f8-4661-905b-7f8f232a9c49",
+        "0e9af621-1052-4455-8a03-fb5c65263c4f",
+        "7d65a711-db27-4671-8541-076f81bc45ca",
+        "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+        "45db1fc6-4300-475f-b1e2-969371dd9cc4",
+        "f9b967c9-1c63-4ec1-b6da-73c0b0a78278",
+        "a1a88ba1-3b0b-4e33-886e-e266e1fd0015"
+      ],
+      "graph_context_ids": [
+        "d1be991f-b9d9-4862-ae40-b1f7537b09b9",
+        "964edf52-69a0-4ff5-babe-d3a65a9f31de",
+        "39e2c5e3-f925-48a8-b572-7c3b48b4a16e",
+        "9cfc7788-e908-464b-a92e-8c73cf4faa72",
+        "99a358ca-af75-4db7-872b-292eed3fa036",
+        "69663adb-8c91-4e02-aaea-03d538dc0323",
+        "3b8871be-fc08-46a6-8a2b-cbbdf209866d",
+        "b96334ec-035d-4903-9a3a-60ea4e422761",
+        "1cd55e29-e74a-48c9-9244-f55e60461658",
+        "337e797e-97dc-4ae6-93fb-d06c46270a19",
+        "bae6d454-5c37-4d97-9258-5b385204bf5e",
+        "9129973c-4258-4d40-bc41-62e9d873750e",
+        "3de49e0c-f4f8-4661-905b-7f8f232a9c49",
+        "a049467e-7e50-47e7-b4fb-5052503e9863",
+        "d6e621fb-b097-46c4-9a26-e2b54b2439eb"
+      ],
+      "selected_graph_only_memories": [
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        }
+      ],
+      "gained_memories": [
+        {
+          "id": "39e2c5e3-f925-48a8-b572-7c3b48b4a16e",
+          "content": "乔琳的工程学教授给她布置了一个大型机器人项目（2023年2月1日前后）；她起初既兴奋又紧张，但现在很享受，觉得像解谜题一样设计机器人的结构和编程，看到机器人一步步成型让她很有满足感"
+        },
+        {
+          "id": "1cd55e29-e74a-48c9-9244-f55e60461658",
+          "content": "乔琳对绿色科技很感兴趣，认为它可以为欠发达地区带来改变，她想深入研究并看看自己能做什么贡献。"
+        },
+        {
+          "id": "337e797e-97dc-4ae6-93fb-d06c46270a19",
+          "content": "乔琳对爬行动物很着迷，所以决定养蛇；照顾蛇让她感到平静，也是亲近自然的好方式"
+        },
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        },
+        {
+          "id": "a049467e-7e50-47e7-b4fb-5052503e9863",
+          "content": "Jolene is balancing studying engineering at university with caring for her partner; she does yoga and meditation to stay calm in the chaos (around February 2023)"
+        },
+        {
+          "id": "d6e621fb-b097-46c4-9a26-e2b54b2439eb",
+          "content": "乔琳在2023年2月初想出了一个志愿项目计划：让工程师给贫困儿童教STEM课程，考虑与当地学校或中心合作开展工作坊，并邀请工程师做客座演讲者让孩子们了解职业选择。计划尚未完成，她希望先确定计划再联系学校，截至2023年2月9日还没有联系任何学校或中心。"
+        }
+      ],
+      "displaced_memories": [
+        {
+          "id": "0e9af621-1052-4455-8a03-fb5c65263c4f",
+          "content": "黛布和乔琳约定成立一个互相支持的小圈子，互相激励、互相鼓励，一起踏上正念和感恩的旅程"
+        },
+        {
+          "id": "7d65a711-db27-4671-8541-076f81bc45ca",
+          "content": "乔琳在2023年8月正试着把自我照顾放在优先位置，比如瑜伽和冥想，这帮助她保持平衡和踏实"
+        },
+        {
+          "id": "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+          "content": "乔琳断断续续练习瑜伽和冥想约三年，认为它们对缓解压力、保持内心平静有非常积极的影响，是她度过困难时刻的重要支持"
+        },
+        {
+          "id": "45db1fc6-4300-475f-b1e2-969371dd9cc4",
+          "content": "乔琳自2023年8月初丢失了工作文件后压力很大，一度不知所措，但冥想帮助她保持平静并找回清晰的头脑，她非常感激这一练习"
+        },
+        {
+          "id": "f9b967c9-1c63-4ec1-b6da-73c0b0a78278",
+          "content": "乔琳和她的伴侣于2023年9月上旬（约9月8日之前的周末开始）去普吉岛参加了一个为期几周的冥想静修营，体验了大自然和反思，从工程学业中抽身休息，帮她找回了内心的平静"
+        },
+        {
+          "id": "a1a88ba1-3b0b-4e33-886e-e266e1fd0015",
+          "content": "乔琳表示迫不及待想尝试黛布推荐的温和流动式瑜伽练习，并会练习后向黛布汇报感受"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa120",
+      "category": "single-hop",
+      "question": "乔琳和黛布讨论了哪些有助于学习和时间管理的策略？",
+      "gold": "把任务拆分成小块并设定目标，使用计划本或日程表",
+      "base_answer": "乔琳和黛布讨论的学习与时间管理策略包括：把学习任务拆分成小块并设定目标、使用日程表/计划本保持条理并留出个人时间（2023年3月2日黛布建议）；黛布分享每日日程/待办清单照片并介绍艾森豪威尔矩阵，按紧急和重要性把任务分为四个象限排优先级（3月22日）；乔琳从2023年8月开始使用子弹笔记（bullet journal）追踪任务、保持条理；固定作息，为上课、学习和个人时间分别安排日程，并用瑜伽、冥想等自我关怀活动保持平衡放松（9月8日）；以及分清主次、为学习和爱好分别安排特定时间的原则（黛布，8月19日）。",
+      "graph_answer": "乔琳和黛布讨论的学习与时间管理策略包括：\n\n1. **番茄工作法**——工作25分钟、休息5分钟，乔琳用它应对考试和截止日期压力（2023年3月）\n2. **艾森豪威尔矩阵**——黛布介绍按紧急程度和重要性把任务分成四个象限来排定优先级（2023年3月22日，并分享了自己的每日日程/待办清单照片）\n3. **把学习任务拆分成小块、设定目标、使用日程表/计划本**，同时留出自我时间（黛布2023年3月2日建议）\n4. **子弹笔记**——乔琳2023年8月开始用它追踪任务、保持条理，划掉清单任务时感到满足\n5. **固定作息、分清主次**——为上课、学习和个人时间分别安排日程，黛布认为有效时间管理和为学习与爱好安排特定时间是平衡的秘诀\n6. **正念与呼吸练习/冥想**——黛布推荐正念，建议配合瑜伽练习正念呼吸；乔琳用瑜伽、冥想和呼吸练习来保持平衡、缓解压力\n7. **互相支持小圈子**——两人（2023年9月12日）约定成立小圈子，互相激励，一起实践正念和感恩",
+      "base_archived_judge_correct": true,
+      "graph_archived_judge_correct": true,
+      "base_context_ids": [
+        "42e992c5-59a3-4494-8993-d0a3f4caf711",
+        "032206e8-4d3a-4a10-b303-2aada213fc95",
+        "3efda3a1-b907-4111-918d-3c00e01738a3",
+        "d6c002c2-5cfd-43d6-8e6e-1a4339c7977b",
+        "aa223067-097e-4734-a05c-bcde9d9683c3",
+        "2b24496e-cfdc-4c5a-92c4-0178d8b9f0e0",
+        "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+        "301e0e7c-dc99-4267-8297-84f7b4049e3f",
+        "d1be991f-b9d9-4862-ae40-b1f7537b09b9",
+        "0e9af621-1052-4455-8a03-fb5c65263c4f",
+        "7229078f-abfa-4b72-b365-5b4a05a7e1df",
+        "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+        "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+        "a8d73db4-587e-46cc-9ccf-94fa8efcfd34",
+        "22ce4213-87fa-4dfc-a10d-39126a79dd9e"
+      ],
+      "graph_context_ids": [
+        "42e992c5-59a3-4494-8993-d0a3f4caf711",
+        "032206e8-4d3a-4a10-b303-2aada213fc95",
+        "3efda3a1-b907-4111-918d-3c00e01738a3",
+        "d6c002c2-5cfd-43d6-8e6e-1a4339c7977b",
+        "aa223067-097e-4734-a05c-bcde9d9683c3",
+        "2b24496e-cfdc-4c5a-92c4-0178d8b9f0e0",
+        "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+        "8f83084c-1dc8-4bad-b0c8-cb646a24cf17",
+        "301e0e7c-dc99-4267-8297-84f7b4049e3f",
+        "3a643da3-da23-4730-9891-5aab3b266f17",
+        "d1be991f-b9d9-4862-ae40-b1f7537b09b9",
+        "0e9af621-1052-4455-8a03-fb5c65263c4f",
+        "7229078f-abfa-4b72-b365-5b4a05a7e1df",
+        "bae6d454-5c37-4d97-9258-5b385204bf5e",
+        "7e0cfedf-3c97-458d-bb79-1c345df947e7"
+      ],
+      "selected_graph_only_memories": [
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        }
+      ],
+      "gained_memories": [
+        {
+          "id": "8f83084c-1dc8-4bad-b0c8-cb646a24cf17",
+          "content": "Jolene（工程师）在2023年3月22日的对话中表示她正在使用番茄工作法（工作25分钟、休息5分钟）应对考试和截止日期的压力，但仍难以分清轻重缓急，面对大量任务时常常感到无从下手"
+        },
+        {
+          "id": "3a643da3-da23-4730-9891-5aab3b266f17",
+          "content": "When Jolene feels overwhelmed she stops to do breathing exercises or meditation, which makes her calmer and clearer so she can handle challenges more easily"
+        },
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        },
+        {
+          "id": "7e0cfedf-3c97-458d-bb79-1c345df947e7",
+          "content": "Jolene shared a photo of herself doing a yoga pose on a yoga mat and said yoga 'saves' her, helping her relax, gain perspective, and feel clearer and more motivated"
+        }
+      ],
+      "displaced_memories": [
+        {
+          "id": "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+          "content": "乔琳断断续续练习瑜伽和冥想约三年，认为它们对缓解压力、保持内心平静有非常积极的影响，是她度过困难时刻的重要支持"
+        },
+        {
+          "id": "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+          "content": "乔琳养蛇作为宠物，觉得和蛇在一起的时光很宝贵，教会她放慢脚步、与自己保持协调"
+        },
+        {
+          "id": "a8d73db4-587e-46cc-9ccf-94fa8efcfd34",
+          "content": "乔琳设计了带有星系和电路元素的笔记本，灵感来自她对太空和发动机的热爱，并于2023年8月与黛布分享了这些作品"
+        },
+        {
+          "id": "22ce4213-87fa-4dfc-a10d-39126a79dd9e",
+          "content": "Jolene在2023年3月22日表示想学冲浪，已经在收集信息、看视频，还买了一本冲浪入门指南，只差找到合适的时间和地点去上课；黛布鼓励她追逐梦想，她表示备受鼓舞"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa174",
+      "category": "single-hop",
+      "question": "乔琳为什么不得不改期2023年9月8日与黛博拉的会面？",
+      "gold": "乔琳已经有别的安排了",
+      "base_answer": "乔琳改期（改到2023年9月15日下午5点）是因为她在去咖啡馆见黛布之前需要先整理书柜里的工程教科书，之后才有空赴约。（此外，之前考虑的星期三下午4点也因黛布已有安排而改期。）",
+      "graph_answer": "乔琳在赴约前需要先整理书柜里的工程教科书，腾不出时间，因此她与黛布把见面改到了2023年9月15日（星期五）下午5点在黛布最喜欢的咖啡馆。（另外，此前原定星期三4点的会面是因为黛布已有安排而改期。）",
+      "base_archived_judge_correct": false,
+      "graph_archived_judge_correct": false,
+      "base_context_ids": [
+        "e23d4e20-6971-449c-a929-11d1b6d7acd9",
+        "1689cf0a-b174-4422-8d34-2d9c04a58145",
+        "6a8f7415-be13-46c1-9b6d-4e98ce607aad",
+        "a0a619e4-00fc-4aad-bfa7-094ca35f5078",
+        "c4450728-e813-4352-9d0f-5833bcc9702e",
+        "c9ae659d-60b2-45f2-aa95-75b88edba631",
+        "2b24496e-cfdc-4c5a-92c4-0178d8b9f0e0",
+        "288e08a1-3b13-492e-a3dc-8077b144a11e",
+        "7d65a711-db27-4671-8541-076f81bc45ca",
+        "0583e104-bd69-40c8-9849-1bae95ed58f8",
+        "7229078f-abfa-4b72-b365-5b4a05a7e1df",
+        "76132e9c-5c99-49b2-b011-cd39c956d239",
+        "7af49e89-ffd9-4660-8235-8c00f838b880",
+        "a24292a4-594b-4b4c-b980-4297cd1efabf",
+        "aa6b24c2-5ab1-4ce5-83d4-2d66980345aa"
+      ],
+      "graph_context_ids": [
+        "e23d4e20-6971-449c-a929-11d1b6d7acd9",
+        "1689cf0a-b174-4422-8d34-2d9c04a58145",
+        "6a8f7415-be13-46c1-9b6d-4e98ce607aad",
+        "a0a619e4-00fc-4aad-bfa7-094ca35f5078",
+        "c4450728-e813-4352-9d0f-5833bcc9702e",
+        "c9ae659d-60b2-45f2-aa95-75b88edba631",
+        "2b24496e-cfdc-4c5a-92c4-0178d8b9f0e0",
+        "288e08a1-3b13-492e-a3dc-8077b144a11e",
+        "7d65a711-db27-4671-8541-076f81bc45ca",
+        "520c2331-ac04-4359-838d-ac54aa390d83",
+        "0583e104-bd69-40c8-9849-1bae95ed58f8",
+        "7229078f-abfa-4b72-b365-5b4a05a7e1df",
+        "76132e9c-5c99-49b2-b011-cd39c956d239",
+        "7af49e89-ffd9-4660-8235-8c00f838b880",
+        "bae6d454-5c37-4d97-9258-5b385204bf5e"
+      ],
+      "selected_graph_only_memories": [
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        }
+      ],
+      "gained_memories": [
+        {
+          "id": "520c2331-ac04-4359-838d-ac54aa390d83",
+          "content": "黛布的父亲于2023年1月25日突然去世，他的离世让家人感到震惊；黛布通过花更多时间陪伴家人和珍惜回忆来化解悲痛"
+        },
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        }
+      ],
+      "displaced_memories": [
+        {
+          "id": "a24292a4-594b-4b4c-b980-4297cd1efabf",
+          "content": "黛布的朋友乔琳是一名工程从业者，2023年3月24日（周五）她的工程项目取得突破，找到了一直困扰她的问题的解决方案，她为此感到非常开心和有成就感"
+        },
+        {
+          "id": "aa6b24c2-5ab1-4ce5-83d4-2d66980345aa",
+          "content": "乔琳在2023年8月中旬表示还没尝试过正念但很想试试，希望借此减压并寻找平静，黛布表示愿意帮助她入门"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa205",
+      "category": "adversarial",
+      "question": "乔琳建议黛博拉尝试用什么方法来按重要性和紧急程度整理任务？",
+      "gold": "",
+      "base_answer": "使用艾森豪威尔矩阵（按紧急程度和重要性将任务分为四个象限来排定优先级）。\n\n（注：实际是黛布在2023年3月22日向乔琳分享了她的每日日程照片并介绍了艾森豪威尔矩阵这一方法。）",
+      "graph_answer": "艾森豪威尔矩阵——按紧急程度和重要性把任务分成四个象限来排定优先级。",
+      "base_archived_judge_correct": false,
+      "graph_archived_judge_correct": true,
+      "base_context_ids": [
+        "3efda3a1-b907-4111-918d-3c00e01738a3",
+        "aa223067-097e-4734-a05c-bcde9d9683c3",
+        "032206e8-4d3a-4a10-b303-2aada213fc95",
+        "42e992c5-59a3-4494-8993-d0a3f4caf711",
+        "8f83084c-1dc8-4bad-b0c8-cb646a24cf17",
+        "d6c002c2-5cfd-43d6-8e6e-1a4339c7977b",
+        "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+        "2b24496e-cfdc-4c5a-92c4-0178d8b9f0e0",
+        "7d65a711-db27-4671-8541-076f81bc45ca",
+        "8dbaeaa0-ff44-4cf4-847c-000c6c9f0d22",
+        "45db1fc6-4300-475f-b1e2-969371dd9cc4",
+        "57c7e42a-5896-4116-8116-f0dbf6444551",
+        "6a8f7415-be13-46c1-9b6d-4e98ce607aad",
+        "a1a88ba1-3b0b-4e33-886e-e266e1fd0015",
+        "aa6b24c2-5ab1-4ce5-83d4-2d66980345aa"
+      ],
+      "graph_context_ids": [
+        "3efda3a1-b907-4111-918d-3c00e01738a3",
+        "aa223067-097e-4734-a05c-bcde9d9683c3",
+        "032206e8-4d3a-4a10-b303-2aada213fc95",
+        "42e992c5-59a3-4494-8993-d0a3f4caf711",
+        "8f83084c-1dc8-4bad-b0c8-cb646a24cf17",
+        "d6c002c2-5cfd-43d6-8e6e-1a4339c7977b",
+        "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+        "2b24496e-cfdc-4c5a-92c4-0178d8b9f0e0",
+        "7d65a711-db27-4671-8541-076f81bc45ca",
+        "bae6d454-5c37-4d97-9258-5b385204bf5e",
+        "8dbaeaa0-ff44-4cf4-847c-000c6c9f0d22",
+        "45db1fc6-4300-475f-b1e2-969371dd9cc4",
+        "57c7e42a-5896-4116-8116-f0dbf6444551",
+        "6a8f7415-be13-46c1-9b6d-4e98ce607aad",
+        "a1a88ba1-3b0b-4e33-886e-e266e1fd0015"
+      ],
+      "selected_graph_only_memories": [
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        }
+      ],
+      "gained_memories": [
+        {
+          "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+          "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)"
+        }
+      ],
+      "displaced_memories": [
+        {
+          "id": "aa6b24c2-5ab1-4ce5-83d4-2d66980345aa",
+          "content": "乔琳在2023年8月中旬表示还没尝试过正念但很想试试，希望借此减压并寻找平静，黛布表示愿意帮助她入门"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Cross-run paired answers are observational; generation and grading noise remain",
+    "The graph-only memory is one of multiple context changes and cannot be isolated as the cause",
+    "Gold support and answer correctness require source/semantic review"
+  ]
+}
