@@ -1,0 +1,4853 @@
+{
+  "scope": "四个 2026-09-25 中文归档共同且四臂均有严格重判的 J 类题；仅用人工回源标为旧事实跨场写入的 12 对记忆",
+  "common_J_cases": 1537,
+  "stale_pairs": [
+    {
+      "pair_id": "conv-41_051a88fcd77c",
+      "conversation": "conv-41",
+      "earlier_id": "a5f1a15b-1ec4-4f1d-b5be-1e4e79fef5e0",
+      "earlier_session": "session_22",
+      "later_id": "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+      "later_session": "session_23"
+    },
+    {
+      "pair_id": "conv-44_0c8afd94ba05",
+      "conversation": "conv-44",
+      "earlier_id": "99549aa7-4b96-4b21-828b-dd5725ddcb04",
+      "earlier_session": "session_22",
+      "later_id": "987421f4-89ba-4a49-958d-4185ac1732d4",
+      "later_session": "session_23"
+    },
+    {
+      "pair_id": "conv-44_9b37baddbb91",
+      "conversation": "conv-44",
+      "earlier_id": "950664a8-b2aa-4d98-9cbf-94b3b56b433d",
+      "earlier_session": "session_15",
+      "later_id": "9e959d13-b2ca-4578-821b-7d3010788724",
+      "later_session": "session_16"
+    },
+    {
+      "pair_id": "conv-44_b514edf1ce25",
+      "conversation": "conv-44",
+      "earlier_id": "e6c84260-6dcb-48dc-a397-f77717b75069",
+      "earlier_session": "session_22",
+      "later_id": "92291bd1-360e-46d3-952b-8d6c66b1e988",
+      "later_session": "session_23"
+    },
+    {
+      "pair_id": "conv-43_de89be96dda6",
+      "conversation": "conv-43",
+      "earlier_id": "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+      "earlier_session": "session_15",
+      "later_id": "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+      "later_session": "session_16"
+    },
+    {
+      "pair_id": "conv-43_269540f8e596",
+      "conversation": "conv-43",
+      "earlier_id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+      "earlier_session": "session_27",
+      "later_id": "6c6124a0-0532-43a5-b03b-659cf973fe32",
+      "later_session": "session_28"
+    },
+    {
+      "pair_id": "conv-26_444350391e64",
+      "conversation": "conv-26",
+      "earlier_id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+      "earlier_session": "session_17",
+      "later_id": "137a6569-6e2e-4878-97d5-71289efc1f4a",
+      "later_session": "session_18"
+    },
+    {
+      "pair_id": "conv-43_c95588df7268",
+      "conversation": "conv-43",
+      "earlier_id": "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+      "earlier_session": "session_15",
+      "later_id": "bd5e05ac-8fff-4146-9701-0796790c5f10",
+      "later_session": "session_16"
+    },
+    {
+      "pair_id": "conv-43_d9a2fb3f97f7",
+      "conversation": "conv-43",
+      "earlier_id": "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+      "earlier_session": "session_9",
+      "later_id": "df795392-83c3-4203-892c-c51c003b7b9e",
+      "later_session": "session_10"
+    },
+    {
+      "pair_id": "conv-41_e94a25c4f01c",
+      "conversation": "conv-41",
+      "earlier_id": "3e16e4e6-83cf-4aa2-8624-c82467940f00",
+      "earlier_session": "session_11",
+      "later_id": "f7c86a35-4130-43b2-bbdc-93b3a78074e1",
+      "later_session": "session_12"
+    },
+    {
+      "pair_id": "conv-47_abc3c4fb4edf",
+      "conversation": "conv-47",
+      "earlier_id": "c2ba2b0e-d255-474e-b350-3938c6a66e91",
+      "earlier_session": "session_12",
+      "later_id": "dbfa0f57-3172-4392-ac82-b59843cacd05",
+      "later_session": "session_13"
+    },
+    {
+      "pair_id": "conv-47_12946f1346c5",
+      "conversation": "conv-47",
+      "earlier_id": "15b9ea7a-2b58-4953-8af3-0ed5732a1294",
+      "earlier_session": "session_7",
+      "later_id": "a1e812c7-b1d3-484a-8a14-3f1e74615039",
+      "later_session": "session_8"
+    }
+  ],
+  "arm_counts": {
+    "无图": {
+      "pair_co_selected_cases": 73,
+      "exposed_cases": 101,
+      "later_memory_slots": 115,
+      "later_via_vector_slots": 115,
+      "later_via_graph_slots": 0,
+      "exposed_grade_exact": 68,
+      "exposed_grade_partial": 23,
+      "exposed_grade_wrong": 10
+    },
+    "融合图": {
+      "pair_co_selected_cases": 72,
+      "exposed_cases": 104,
+      "later_memory_slots": 116,
+      "later_via_vector_slots": 105,
+      "later_via_graph_slots": 11,
+      "exposed_grade_exact": 72,
+      "exposed_grade_partial": 21,
+      "exposed_grade_wrong": 11
+    },
+    "Jev_decider": {
+      "pair_co_selected_cases": 70,
+      "exposed_cases": 102,
+      "later_memory_slots": 113,
+      "later_via_vector_slots": 100,
+      "later_via_graph_slots": 13,
+      "exposed_grade_exact": 69,
+      "exposed_grade_partial": 23,
+      "exposed_grade_wrong": 10
+    },
+    "Jev_laya": {
+      "pair_co_selected_cases": 72,
+      "exposed_cases": 103,
+      "later_memory_slots": 115,
+      "later_via_vector_slots": 104,
+      "later_via_graph_slots": 11,
+      "exposed_grade_exact": 69,
+      "exposed_grade_wrong": 10,
+      "exposed_grade_partial": 24
+    }
+  },
+  "vs_no_graph_transitions": {
+    "融合图": {
+      "both_exposed": 93,
+      "base_only": 8,
+      "arm_only": 11
+    },
+    "Jev_decider": {
+      "both_exposed": 91,
+      "base_only": 10,
+      "arm_only": 11
+    },
+    "Jev_laya": {
+      "both_exposed": 92,
+      "base_only": 9,
+      "arm_only": 11
+    }
+  },
+  "cases_with_any_exposure": [
+    {
+      "case_id": "locomo_conv-26_qa1",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa101",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa109",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa110",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa115",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa119",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa122",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa132",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa133",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa135",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa144",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa146",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa147",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa16",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa20",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa24",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa26",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "wrong"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa29",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa37",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa40",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa48",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa5",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa58",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa60",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa68",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa73",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa80",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa84",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "137a6569-6e2e-4878-97d5-71289efc1f4a"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-26_444350391e64"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa108",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa119",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa144",
+      "category": "single-hop",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa145",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa20",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa21",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa25",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa35",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa41",
+      "category": "open-domain",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa42",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3a4760bc-5e23-43a0-8e00-499b54e0232c"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa46",
+      "category": "temporal",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa5",
+      "category": "temporal",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa79",
+      "category": "single-hop",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa81",
+      "category": "single-hop",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-41_qa87",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "f7c86a35-4130-43b2-bbdc-93b3a78074e1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-41_e94a25c4f01c"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa105",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa114",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa123",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa124",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa125",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa13",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa130",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa131",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa134",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa135",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "wrong"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa137",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa139",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa14",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa160",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "wrong"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa162",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa165",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "wrong"
+        },
+        "融合图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa175",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa18",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa21",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa28",
+      "category": "open-domain",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa3",
+      "category": "open-domain",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa31",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa36",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa38",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa39",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa40",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa41",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa45",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa57",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa65",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa66",
+      "category": "open-domain",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "融合图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa67",
+      "category": "open-domain",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa68",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa7",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "bd5e05ac-8fff-4146-9701-0796790c5f10"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa70",
+      "category": "open-domain",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_d9a2fb3f97f7"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa75",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "6c6124a0-0532-43a5-b03b-659cf973fe32"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_269540f8e596"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa83",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+            "bd5e05ac-8fff-4146-9701-0796790c5f10",
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-43_de89be96dda6",
+            "conv-43_c95588df7268"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa98",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa99",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "df795392-83c3-4203-892c-c51c003b7b9e"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa101",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa102",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa103",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa104",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa106",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa15",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "9e959d13-b2ca-4578-821b-7d3010788724"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_9b37baddbb91"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "9e959d13-b2ca-4578-821b-7d3010788724"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_9b37baddbb91"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "9e959d13-b2ca-4578-821b-7d3010788724"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_9b37baddbb91"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "9e959d13-b2ca-4578-821b-7d3010788724"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_9b37baddbb91"
+          ],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa18",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "wrong"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa20",
+      "category": "open-domain",
+      "arms": {
+        "Jev_decider": {
+          "later_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa32",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05",
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa36",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa4",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa64",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa69",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_b514edf1ce25"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa7",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "9e959d13-b2ca-4578-821b-7d3010788724"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "9e959d13-b2ca-4578-821b-7d3010788724"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "9e959d13-b2ca-4578-821b-7d3010788724"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "9e959d13-b2ca-4578-821b-7d3010788724"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa70",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "92291bd1-360e-46d3-952b-8d6c66b1e988",
+            "987421f4-89ba-4a49-958d-4185ac1732d4"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-44_0c8afd94ba05"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa10",
+      "category": "temporal",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa105",
+      "category": "single-hop",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa12",
+      "category": "open-domain",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa128",
+      "category": "single-hop",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa20",
+      "category": "multi-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa21",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa29",
+      "category": "temporal",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa42",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa6",
+      "category": "open-domain",
+      "arms": {
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa63",
+      "category": "temporal",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        },
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa7",
+      "category": "open-domain",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa72",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa73",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [],
+          "strict_grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa78",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "a1e812c7-b1d3-484a-8a14-3f1e74615039"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_12946f1346c5"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa90",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa93",
+      "category": "single-hop",
+      "arms": {
+        "无图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "融合图": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_decider": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        },
+        "Jev_laya": {
+          "later_ids": [
+            "dbfa0f57-3172-4392-ac82-b59843cacd05"
+          ],
+          "later_via_graph_ids": [],
+          "co_selected_pair_ids": [
+            "conv-47_abc3c4fb4edf"
+          ],
+          "strict_grade": "exact"
+        }
+      }
+    }
+  ],
+  "limits": [
+    "这些是固定高相似候选中的 12 条较晚记忆，不是全部错误来源记忆。",
+    "图/Jev 与无图为独立运行；不同臂的入槽变化不能直接解释答题因果效应。",
+    "归档向量检索只保存最终 top-15，未保留预重排 top-45 与得分；不能零调用推断删去重复记忆后的第 16 名或答案。",
+    "Jev 扩拉后的 graph_context_ids 可过期；图来源按最终 answer_context_ids 与 graph_memories ID 交集计算。"
+  ]
+}
