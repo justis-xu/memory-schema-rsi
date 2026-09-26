@@ -1,0 +1,246 @@
+{
+  "method": "Archived Jev first/second probabilities; paired strict exact as a proxy; conversation-cluster AUC bootstrap.",
+  "limits": "First score was computed on an unrecorded pre-expansion context digest. Control and Jev retrieval can differ. AUC against answer correctness is not direct evidence-sufficiency calibration. Scores are rounded to 0.01; threshold replays are call-count predictions only.",
+  "arms": {
+    "decider": {
+      "raw_rows": 1980,
+      "grade_rows": 1980,
+      "missing_jev_metadata": 0,
+      "first_scores": 1980,
+      "first_mean": 0.4002,
+      "threshold_counts_from_rounded_first": {
+        "0.3": 734,
+        "0.4": 1091,
+        "0.5": 1341
+      },
+      "expanded": 1091,
+      "second_below_0_4": 1052,
+      "second_minus_first": {
+        "mean": 0.0042,
+        "median": 0.0,
+        "positive": 244,
+        "zero_at_0_01_precision": 644,
+        "negative": 203
+      },
+      "known_initial_context_visibility": {
+        "records": 13335,
+        "content_longer_than_60_characters": 7746,
+        "records_with_session_date_metadata": 12207,
+        "note": "The decision digest includes only the first 60 content characters per memory and never includes session_date metadata; the answer prompt sees full content and dates."
+      },
+      "gold_literal_probe_nonexpanded_J": {
+        "eligible": 512,
+        "gold_literal_in_full_content": 188,
+        "gold_literal_in_digest": 187,
+        "full_but_not_digest": 1
+      },
+      "gold_literal_hidden_examples": [
+        {
+          "case_id": "locomo_conv-42_qa102",
+          "category": "single-hop",
+          "question": "内特喜欢哪些无乳制品甜点的口味？",
+          "gold": "巧克力和混合莓果",
+          "first_score": 0.65,
+          "strict_grade": "partial"
+        }
+      ],
+      "paired_J": 1539,
+      "auc_first_vs_control_exact": {
+        "point": 0.533,
+        "conversation_bootstrap_95": [
+          0.4901,
+          0.5721
+        ],
+        "draws": 4000,
+        "seed": 20260926
+      },
+      "auc_first_vs_jev_exact": {
+        "point": 0.5491,
+        "conversation_bootstrap_95": [
+          0.4887,
+          0.6055
+        ],
+        "draws": 4000,
+        "seed": 20260926
+      },
+      "by_trigger": {
+        "expanded": {
+          "cases": 732,
+          "control_exact": 459,
+          "jev_exact": 443
+        },
+        "not_expanded": {
+          "cases": 807,
+          "control_exact": 536,
+          "jev_exact": 550
+        }
+      },
+      "per_category": {
+        "multi-hop": {
+          "cases": 282,
+          "expanded": 111,
+          "auc_first_vs_control_exact": 0.4545
+        },
+        "open-domain": {
+          "cases": 96,
+          "expanded": 68,
+          "auc_first_vs_control_exact": 0.5012
+        },
+        "single-hop": {
+          "cases": 840,
+          "expanded": 391,
+          "auc_first_vs_control_exact": 0.5341
+        },
+        "temporal": {
+          "cases": 321,
+          "expanded": 162,
+          "auc_first_vs_control_exact": 0.5569
+        }
+      }
+    },
+    "laya": {
+      "raw_rows": 1979,
+      "grade_rows": 1979,
+      "missing_jev_metadata": 2,
+      "first_scores": 1977,
+      "first_mean": 0.7942,
+      "threshold_counts_from_rounded_first": {
+        "0.3": 204,
+        "0.4": 245,
+        "0.5": 313
+      },
+      "expanded": 246,
+      "second_below_0_4": 196,
+      "second_minus_first": {
+        "mean": 0.0875,
+        "median": 0.0,
+        "positive": 79,
+        "zero_at_0_01_precision": 119,
+        "negative": 48
+      },
+      "known_initial_context_visibility": {
+        "records": 25965,
+        "content_longer_than_60_characters": 16059,
+        "records_with_session_date_metadata": 23582,
+        "note": "The decision digest includes only the first 60 content characters per memory and never includes session_date metadata; the answer prompt sees full content and dates."
+      },
+      "gold_literal_probe_nonexpanded_J": {
+        "eligible": 923,
+        "gold_literal_in_full_content": 284,
+        "gold_literal_in_digest": 277,
+        "full_but_not_digest": 7
+      },
+      "gold_literal_hidden_examples": [
+        {
+          "case_id": "locomo_conv-41_qa111",
+          "category": "single-hop",
+          "question": "玛丽亚一直在尝试什么瑜伽活动来提高力量和耐力？",
+          "gold": "昆达里尼瑜伽",
+          "first_score": 0.97,
+          "strict_grade": "exact"
+        },
+        {
+          "case_id": "locomo_conv-42_qa98",
+          "category": "single-hop",
+          "question": "乔安娜的第一个剧本是什么类型？",
+          "gold": "剧情和爱情",
+          "first_score": 0.89,
+          "strict_grade": "exact"
+        },
+        {
+          "case_id": "locomo_conv-42_qa102",
+          "category": "single-hop",
+          "question": "内特喜欢哪些无乳制品甜点的口味？",
+          "gold": "巧克力和混合莓果",
+          "first_score": 0.98,
+          "strict_grade": "partial"
+        },
+        {
+          "case_id": "locomo_conv-44_qa114",
+          "category": "single-hop",
+          "question": "安德鲁星期天要去进行什么类型的约会？",
+          "gold": "野餐约会",
+          "first_score": 0.52,
+          "strict_grade": "exact"
+        },
+        {
+          "case_id": "locomo_conv-48_qa26",
+          "category": "temporal",
+          "question": "乔琳在2023年1月读了哪本书？",
+          "gold": "尼尔·斯蒂芬森的《雪崩》",
+          "first_score": 0.95,
+          "strict_grade": "partial"
+        },
+        {
+          "case_id": "locomo_conv-49_qa129",
+          "category": "single-hop",
+          "question": "埃文的新普锐斯抛锚让他沮丧的主要原因是什么？",
+          "gold": "他的活跃生活方式和公路旅行都依赖这辆车",
+          "first_score": 0.98,
+          "strict_grade": "exact"
+        },
+        {
+          "case_id": "locomo_conv-50_qa155",
+          "category": "single-hop",
+          "question": "卡尔文和他在晚宴上遇到的那位很酷的艺术家聊了什么？",
+          "gold": "音乐和艺术",
+          "first_score": 0.83,
+          "strict_grade": "exact"
+        }
+      ],
+      "paired_J": 1537,
+      "auc_first_vs_control_exact": {
+        "point": 0.5272,
+        "conversation_bootstrap_95": [
+          0.491,
+          0.5594
+        ],
+        "draws": 4000,
+        "seed": 20260926
+      },
+      "auc_first_vs_jev_exact": {
+        "point": 0.54,
+        "conversation_bootstrap_95": [
+          0.5063,
+          0.5746
+        ],
+        "draws": 4000,
+        "seed": 20260926
+      },
+      "by_trigger": {
+        "expanded": {
+          "cases": 166,
+          "control_exact": 102,
+          "jev_exact": 98
+        },
+        "not_expanded": {
+          "cases": 1371,
+          "control_exact": 891,
+          "jev_exact": 890
+        }
+      },
+      "per_category": {
+        "multi-hop": {
+          "cases": 282,
+          "expanded": 30,
+          "auc_first_vs_control_exact": 0.4791
+        },
+        "open-domain": {
+          "cases": 96,
+          "expanded": 24,
+          "auc_first_vs_control_exact": 0.6125
+        },
+        "single-hop": {
+          "cases": 838,
+          "expanded": 72,
+          "auc_first_vs_control_exact": 0.5304
+        },
+        "temporal": {
+          "cases": 321,
+          "expanded": 40,
+          "auc_first_vs_control_exact": 0.4749
+        }
+      }
+    }
+  }
+}

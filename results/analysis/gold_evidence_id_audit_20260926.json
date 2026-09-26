@@ -1,0 +1,149 @@
+{
+  "scope": "All 1,986 aligned English/Chinese LoCoMo QA evidence lists and source turn IDs.",
+  "warning": "A structurally valid evidence ID can still point to an irrelevant turn or support the wrong relation; this script cannot detect those semantic errors.",
+  "counts": {
+    "qa": 1986,
+    "empty_evidence_qa": 4,
+    "evidence_list_items": 2815,
+    "parsed_references": 2823,
+    "multiple_ids_in_one_item": 4,
+    "missing_references": 2,
+    "unparseable_items": 1,
+    "noncanonical_references": 2
+  },
+  "anomalies": [
+    {
+      "case_id": "locomo_conv-26_qa37",
+      "kind": "multiple_ids_in_one_item",
+      "raw": "D8:6; D9:17",
+      "normalized": [
+        "D8:6",
+        "D9:17"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa58",
+      "kind": "missing_turn",
+      "raw": "D10:19",
+      "normalized": "D10:19"
+    },
+    {
+      "case_id": "locomo_conv-42_qa88",
+      "kind": "unparseable",
+      "raw": "D"
+    },
+    {
+      "case_id": "locomo_conv-43_qa18",
+      "kind": "noncanonical",
+      "raw": "D:11:26",
+      "normalized": "D11:26"
+    },
+    {
+      "case_id": "locomo_conv-47_qa38",
+      "kind": "missing_turn",
+      "raw": "D4:36",
+      "normalized": "D4:36"
+    },
+    {
+      "case_id": "locomo_conv-49_qa31",
+      "kind": "multiple_ids_in_one_item",
+      "raw": "D9:1 D4:4 D4:6",
+      "normalized": [
+        "D9:1",
+        "D4:4",
+        "D4:6"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa38",
+      "kind": "multiple_ids_in_one_item",
+      "raw": "D22:1 D22:2 D9:10 D9:11",
+      "normalized": [
+        "D22:1",
+        "D22:2",
+        "D9:10",
+        "D9:11"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa46",
+      "kind": "multiple_ids_in_one_item",
+      "raw": "D21:18 D21:22 D11:15 D11:19",
+      "normalized": [
+        "D21:18",
+        "D21:22",
+        "D11:15",
+        "D11:19"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa69",
+      "kind": "noncanonical",
+      "raw": "D30:05",
+      "normalized": "D30:5"
+    }
+  ],
+  "rsi_frozen_snapshots": {
+    "counts": {
+      "scored_cases": 1536,
+      "unreachable_cases": 9,
+      "unreachable_raw_items": 9
+    },
+    "unreachable_cases": [
+      {
+        "case_id": "locomo_conv-26_qa37",
+        "unreachable_raw_items": [
+          "D8:6; D9:17"
+        ]
+      },
+      {
+        "case_id": "locomo_conv-42_qa58",
+        "unreachable_raw_items": [
+          "D10:19"
+        ]
+      },
+      {
+        "case_id": "locomo_conv-42_qa88",
+        "unreachable_raw_items": [
+          "D"
+        ]
+      },
+      {
+        "case_id": "locomo_conv-43_qa18",
+        "unreachable_raw_items": [
+          "D:11:26"
+        ]
+      },
+      {
+        "case_id": "locomo_conv-47_qa38",
+        "unreachable_raw_items": [
+          "D4:36"
+        ]
+      },
+      {
+        "case_id": "locomo_conv-49_qa31",
+        "unreachable_raw_items": [
+          "D9:1 D4:4 D4:6"
+        ]
+      },
+      {
+        "case_id": "locomo_conv-49_qa38",
+        "unreachable_raw_items": [
+          "D22:1 D22:2 D9:10 D9:11"
+        ]
+      },
+      {
+        "case_id": "locomo_conv-49_qa46",
+        "unreachable_raw_items": [
+          "D21:18 D21:22 D11:15 D11:19"
+        ]
+      },
+      {
+        "case_id": "locomo_conv-50_qa69",
+        "unreachable_raw_items": [
+          "D30:05"
+        ]
+      }
+    ]
+  }
+}

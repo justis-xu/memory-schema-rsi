@@ -1,0 +1,120 @@
+{
+  "purpose": "Single-memory visibility sensitivity; not a replication of historical 15-memory Jev decisions.",
+  "max_calls": 12,
+  "cases": [
+    {
+      "case_id": "locomo_conv-41_qa111",
+      "question": "玛丽亚一直在尝试什么瑜伽活动来提高力量和耐力？",
+      "gold": "昆达里尼瑜伽",
+      "memory_id": "a67fadc9-48ea-4630-a1bd-ff4cf7429e70",
+      "short": "Maria（约翰的朋友）在 2023 年 6 月 9 日左右的一周加入了健身房，坚持锻炼计划，喜欢那里的友好氛围，目标是",
+      "full": "Maria（约翰的朋友）在 2023 年 6 月 9 日左右的一周加入了健身房，坚持锻炼计划，喜欢那里的友好氛围，目标是变得更强壮、提高耐力，还在尝试昆达里尼瑜伽",
+      "scores": {
+        "laya": {
+          "short": {
+            "http_status": 200,
+            "seconds": 0.168,
+            "noul": 0.1493,
+            "choice": null
+          },
+          "full": {
+            "http_status": 200,
+            "seconds": 0.239,
+            "noul": 0.9289,
+            "choice": null
+          }
+        },
+        "decider": {
+          "short": {
+            "http_status": 200,
+            "seconds": 0.414,
+            "noul": 0.0319,
+            "choice": null
+          },
+          "full": {
+            "http_status": 200,
+            "seconds": 0.345,
+            "noul": 0.8013,
+            "choice": null
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa98",
+      "question": "乔安娜的第一个剧本是什么类型？",
+      "gold": "剧情和爱情",
+      "memory_id": "b2f77505-14cf-4713-b9c9-25d9ae60e2d9",
+      "short": "乔安娜 (Joanna) 于2022年1月中旬完成了她的第一个完整电影剧本，并于1月21日（周五）打印出来，剧本融合了剧",
+      "full": "乔安娜 (Joanna) 于2022年1月中旬完成了她的第一个完整电影剧本，并于1月21日（周五）打印出来，剧本融合了剧情和爱情元素，她感到如释重负、兴奋又有些焦虑",
+      "scores": {
+        "laya": {
+          "short": {
+            "http_status": 200,
+            "seconds": 0.261,
+            "noul": 0.1097,
+            "choice": null
+          },
+          "full": {
+            "http_status": 200,
+            "seconds": 0.239,
+            "noul": 0.6447,
+            "choice": null
+          }
+        },
+        "decider": {
+          "short": {
+            "http_status": 200,
+            "seconds": 0.189,
+            "noul": 0.3708,
+            "choice": null
+          },
+          "full": {
+            "http_status": 200,
+            "seconds": 0.188,
+            "noul": 0.9013,
+            "choice": null
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa102",
+      "question": "内特喜欢哪些无乳制品甜点的口味？",
+      "gold": "巧克力和混合莓果",
+      "memory_id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+      "short": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料",
+      "full": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+      "scores": {
+        "laya": {
+          "short": {
+            "http_status": 200,
+            "seconds": 0.145,
+            "noul": 0.3709,
+            "choice": null
+          },
+          "full": {
+            "http_status": 200,
+            "seconds": 0.182,
+            "noul": 0.9816,
+            "choice": null
+          }
+        },
+        "decider": {
+          "short": {
+            "http_status": 200,
+            "seconds": 0.189,
+            "noul": 0.0663,
+            "choice": null
+          },
+          "full": {
+            "http_status": 200,
+            "seconds": 0.185,
+            "noul": 0.9274,
+            "choice": null
+          }
+        }
+      }
+    }
+  ]
+}

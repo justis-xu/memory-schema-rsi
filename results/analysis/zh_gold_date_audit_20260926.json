@@ -1,0 +1,29 @@
+{
+  "scope": "Explicit year/month values in aligned English and Chinese LoCoMo gold answers only.",
+  "warning": "A value detected on only one side is not flagged. The audit does not validate relative dates, source consistency, numbers expressed as words, or other translation content.",
+  "paired_qa": 1986,
+  "paired_explicit_years": 260,
+  "paired_explicit_months": 208,
+  "mismatches": [
+    {
+      "case_id": "locomo_conv-30_qa15",
+      "category": 2,
+      "en_question": "When did Jon host a dance competition?",
+      "zh_question": "乔恩什么时候举办了舞蹈比赛？",
+      "en_gold": "May, 2023",
+      "zh_gold": "2023年七月",
+      "en_years": [
+        2023
+      ],
+      "zh_years": [
+        2023
+      ],
+      "en_months": [
+        5
+      ],
+      "zh_months": [
+        7
+      ]
+    }
+  ]
+}

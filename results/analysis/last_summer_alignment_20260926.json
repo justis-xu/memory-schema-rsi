@@ -1,0 +1,241 @@
+{
+  "method": "All English source turns containing exact phrase 'last summer', aligned by dia_id to Chinese turns and QA evidence references.",
+  "warning": "Linked QA golds may be unrelated to the date or have no answer. The English phrase is context-dependent; this listing is not a translation-error count.",
+  "matched_turns": 10,
+  "translated_as_previous_year_summer": 10,
+  "rows": [
+    {
+      "conversation": "conv-41",
+      "dia_id": "D30:6",
+      "session": "session_30",
+      "session_date": "12:10 am on 11 August, 2023",
+      "en_text": "Thanks, Maria! Max and I had a blast on our camping trip last summer. We hiked, swam, and made great memories. It was a really peaceful and awesome experience.",
+      "zh_text": "谢谢，玛丽亚！去年夏天我和马克斯去露营玩得特别开心。我们一起远足、游泳，留下了很多美好回忆。那是一次非常宁静、棒极了的经历。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": [
+        {
+          "case_id": "locomo_conv-41_qa59",
+          "category": 2,
+          "en_question": "When did John go on a camping trip with Max?",
+          "en_gold": "The summer of 2022",
+          "zh_gold": "2022年夏天"
+        },
+        {
+          "case_id": "locomo_conv-41_qa144",
+          "category": 4,
+          "en_question": "What activity did John and Max enjoy together last summer?",
+          "en_gold": "Camping",
+          "zh_gold": "露营"
+        },
+        {
+          "case_id": "locomo_conv-41_qa145",
+          "category": 4,
+          "en_question": "How does John describe the camping trip with Max?",
+          "en_gold": "Peaceful and awesome",
+          "zh_gold": "宁静而美妙"
+        },
+        {
+          "case_id": "locomo_conv-41_qa190",
+          "category": 5,
+          "en_question": "How does Maria describe the camping trip with Max?",
+          "en_gold": null,
+          "zh_gold": null
+        }
+      ]
+    },
+    {
+      "conversation": "conv-42",
+      "dia_id": "D28:22",
+      "session": "session_28",
+      "session_date": "5:54 pm on 9 November, 2022",
+      "en_text": "Thanks, Nate! I took that pic on a hike last summer near Fort Wayne. The sunset and the surrounding beauty were just incredible. It was an awesome reminder of nature's beauty.",
+      "zh_text": "谢谢，内特！那是去年夏天在韦恩堡附近徒步时拍的。日落和周围的美景简直令人难以置信。那真是大自然之美的一个绝佳提醒。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": [
+        {
+          "case_id": "locomo_conv-42_qa68",
+          "category": 3,
+          "en_question": "How many hikes has Joanna been on?",
+          "en_gold": "Four",
+          "zh_gold": "四次"
+        },
+        {
+          "case_id": "locomo_conv-42_qa73",
+          "category": 3,
+          "en_question": "What state did Joanna visit in summer 2021?",
+          "en_gold": "Indiana",
+          "zh_gold": "印第安纳州"
+        },
+        {
+          "case_id": "locomo_conv-42_qa192",
+          "category": 4,
+          "en_question": "What did Joanna take a picture of near Fort Wayne last summer?",
+          "en_gold": "Sunset",
+          "zh_gold": "日落"
+        },
+        {
+          "case_id": "locomo_conv-42_qa193",
+          "category": 4,
+          "en_question": "What inspired Joanna to take a picture of the sunset in the field near Fort Wayne?",
+          "en_gold": "The incredible sunset and surrounding beauty",
+          "zh_gold": "令人惊叹的日落和周围的美景"
+        },
+        {
+          "case_id": "locomo_conv-42_qa256",
+          "category": 5,
+          "en_question": "What did Nate take a picture of near Fort Wayne last summer?",
+          "en_gold": null,
+          "zh_gold": null
+        }
+      ]
+    },
+    {
+      "conversation": "conv-43",
+      "dia_id": "D14:14",
+      "session": "session_14",
+      "session_date": "1:50 pm on 17 October, 2023",
+      "en_text": "I took this pic last summer. Seeing it was so stunning. Thanks for appreciating it. It means a lot to me.",
+      "zh_text": "这张照片是我去年夏天拍的。它实在太美了。谢谢你的欣赏。这对我来说意义重大。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": []
+    },
+    {
+      "conversation": "conv-43",
+      "dia_id": "D20:33",
+      "session": "session_20",
+      "session_date": "9:52 am on 1 December, 2023",
+      "en_text": "That picture looks super peaceful! It reminds me of a trip I took last summer.",
+      "zh_text": "那张照片看起来超级宁静！让我想起了去年夏天的一次旅行。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": []
+    },
+    {
+      "conversation": "conv-43",
+      "dia_id": "D26:23",
+      "session": "session_26",
+      "session_date": "3:35 pm on 26 December, 2023",
+      "en_text": "Organizing a basketball camp for kids in my hometown last summer was an awesome experience! Seeing their faces light up when they hit the court was priceless. It was a week full of laughs, high-fives, and personal growth for us all. That opportunity to inspire those kids and show them just how much potential they have was truly incredible.",
+      "zh_text": "去年夏天在我家乡为孩子们组织篮球训练营是一次很棒的经历！看到他们踏上球场时脸上放光的表情，真是无价。那一周充满了欢笑、击掌和我们每个人的成长。能有这样的机会激励那些孩子，让他们看到自己的巨大潜力，真是不可思议。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": [
+        {
+          "case_id": "locomo_conv-43_qa63",
+          "category": 2,
+          "en_question": "When did John organize a basketball camp for kids?",
+          "en_gold": "summer 2023",
+          "zh_gold": "2023年夏天"
+        }
+      ]
+    },
+    {
+      "conversation": "conv-44",
+      "dia_id": "D26:11",
+      "session": "session_26",
+      "session_date": "2:36 pm on 28 October, 2023",
+      "en_text": "Thanks! They're really special to me and I want the best for them. Here's a pic of them having a blast last summer, so happy! I'm looking forward the day they are back to normal.",
+      "zh_text": "谢谢！它们对我来说真的很特别，我想给它们最好的。这是它们去年夏天玩得超开心的一张照片，多开心啊！我盼着它们恢复正常的那一天。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": []
+    },
+    {
+      "conversation": "conv-48",
+      "dia_id": "D4:33",
+      "session": "session_4",
+      "session_date": "9:48 am on 4 February, 2023",
+      "en_text": "Here's a picture I took on vacation last summer in Bogota. It was so beautiful and calming watching the sunset over the water. It definitely made me appreciate nature's calming power.",
+      "zh_text": "这是我去年夏天在波哥大度假时拍的照片。看着水面上的日落，美得让人心静。它确实让我感受到大自然抚慰人心的力量。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": [
+        {
+          "case_id": "locomo_conv-48_qa27",
+          "category": 2,
+          "en_question": "When was Jolene in Bogota?",
+          "en_gold": "in summer 2022",
+          "zh_gold": "2022年夏天"
+        },
+        {
+          "case_id": "locomo_conv-48_qa28",
+          "category": 3,
+          "en_question": "In what country was Jolene during summer 2022?",
+          "en_gold": "Colombia",
+          "zh_gold": "哥伦比亚"
+        }
+      ]
+    },
+    {
+      "conversation": "conv-48",
+      "dia_id": "D6:8",
+      "session": "session_6",
+      "session_date": "4:12 pm on 22 February, 2023",
+      "en_text": "Memories keep our loved ones close. This is the last photo with Karlie which was taken last summer when we hiked. It was our last one. We had such a great time! Every time I see it, I can't help but smile.",
+      "zh_text": "回忆让我们所爱的人常伴身边。这是和卡莉的 last 一张合影，是去年夏天我们一起徒步时拍的。那是我们最后一次一起出游。我们玩得特别开心！每次看到这张照片，我都会忍不住微笑。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": [
+        {
+          "case_id": "locomo_conv-48_qa31",
+          "category": 2,
+          "en_question": "When was the last photo of Deborah and Karlie taken?",
+          "en_gold": "in summer 2022",
+          "zh_gold": "2022年夏天"
+        }
+      ]
+    },
+    {
+      "conversation": "conv-49",
+      "dia_id": "D25:8",
+      "session": "session_25",
+      "session_date": "9:37 pm on 11 January, 2024",
+      "en_text": "Glad to hear it! Nature really has a way of calming and reviving the soul. Last summer, I took this pic on a camping trip - it was such an amazing sunset. Moments like these remind us of the beauty of life, even during tough times.",
+      "zh_text": "很高兴听到！大自然确实有种让人心灵平静、焕发活力的力量。去年夏天露营时我拍了这张照片——那场日落太美了。这样的时刻提醒我们，即使在困难时期，生活依然美好。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": [
+        {
+          "case_id": "locomo_conv-49_qa50",
+          "category": 1,
+          "en_question": "What kind of hobbies does Evan pursue?",
+          "en_gold": "painting, hiking, reading books, biking, skiing, snowboarding, ice skating, swimming, camping, kayaking",
+          "zh_gold": "绘画、徒步、读书、骑行、滑雪、单板滑雪、滑冰、游泳、露营、皮划艇"
+        },
+        {
+          "case_id": "locomo_conv-49_qa153",
+          "category": 4,
+          "en_question": "What did Evan share a photo of that was taken on a camping trip?",
+          "en_gold": "a kayak",
+          "zh_gold": "一艘皮划艇"
+        },
+        {
+          "case_id": "locomo_conv-49_qa195",
+          "category": 5,
+          "en_question": "What did Sam share a photo of that was taken on a camping trip?",
+          "en_gold": null,
+          "zh_gold": null
+        }
+      ]
+    },
+    {
+      "conversation": "conv-49",
+      "dia_id": "D25:10",
+      "session": "session_25",
+      "session_date": "9:37 pm on 11 January, 2024",
+      "en_text": "I had a great time kayaking and watching the sunset last summer - it was truly unforgettable. Being out on the water is so peaceful.",
+      "zh_text": "去年夏天划皮划艇看日落真的很开心——太难忘了。在水上特别宁静。",
+      "zh_says_previous_year_summer": true,
+      "linked_qa": [
+        {
+          "case_id": "locomo_conv-49_qa50",
+          "category": 1,
+          "en_question": "What kind of hobbies does Evan pursue?",
+          "en_gold": "painting, hiking, reading books, biking, skiing, snowboarding, ice skating, swimming, camping, kayaking",
+          "zh_gold": "绘画、徒步、读书、骑行、滑雪、单板滑雪、滑冰、游泳、露营、皮划艇"
+        },
+        {
+          "case_id": "locomo_conv-49_qa155",
+          "category": 4,
+          "en_question": "How does Evan describe being out on the water while kayaking and watching the sunset?",
+          "en_gold": "peaceful",
+          "zh_gold": "宁静"
+        }
+      ]
+    }
+  ]
+}
