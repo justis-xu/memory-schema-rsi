@@ -1,0 +1,128 @@
+{
+  "objective": "隔离 D27:6 的错误图片 query，比较提取结果是否包含白山瀑布与上个月拍钟楼关系",
+  "case_id": "locomo_conv-50_qa65",
+  "dataset": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_calls": 2,
+  "target_dia_ids": [
+    "D27:4",
+    "D27:5",
+    "D27:6",
+    "D27:7",
+    "D27:8"
+  ],
+  "arms": [
+    "original",
+    "without_d27_6_query"
+  ],
+  "request_sha256": {
+    "original": "0685950922286f5a22a9861b8715d15d1bf4f8216bb5ed4cac79738724dee19a",
+    "without_d27_6_query": "a5af2eddba144b072b3121988070d4b8cb987f7f0ff7a551c74909d4bdf47493"
+  },
+  "only_changed_message_index": 3,
+  "original_d27_6_input": "那是波士顿，卡尔！看看这张，我上个月拍的，拍到了一张超棒的照片——太惊艳了！ [shared image: waterfall white mountains new hampshire | a photography of a clock tower in a city with buildings]",
+  "ablated_d27_6_input": "那是波士顿，卡尔！看看这张，我上个月拍的，拍到了一张超棒的照片——太惊艳了！ [shared image:  | a photography of a clock tower in a city with buildings]",
+  "method_limits": [
+    "只取 session_27 的 D27:4–8，existing memories 与 last k messages 置空；不重放原全量 ingest。",
+    "将 observation date 显式设为 2023-10-29；旧运行靠 system 日期行而 Mem0 内部 observation date 默认当前日。",
+    "新中文提示词与 2026-09-25 旧混合语言记忆库使用的提取配置不同。",
+    "每臂只调用一次；差异可能含采样波动，不能外推总体收益。"
+  ],
+  "results": {
+    "original": {
+      "status": "ok",
+      "raw_response": "{\"memory\":[{\"id\":\"0\",\"text\":\"用户名叫卡尔（卡尔文），几年前去过波士顿，认为那是一座美丽的城市\",\"attributed_to\":\"user\"},{\"id\":\"1\",\"text\":\"戴夫拍摄了一张波士顿天际线日落照片，画面中有一座钟楼，摄于2023年10月29日左右的日落时分\",\"attributed_to\":\"assistant\"},{\"id\":\"2\",\"text\":\"戴夫于2023年9月（上个月）拍摄了一张新罕布什尔州白山瀑布的照片，他觉得很惊艳\",\"attributed_to\":\"assistant\"},{\"id\":\"3\",\"text\":\"戴夫热爱摄影，把摄影作为创意出口，认为摄影帮助他捕捉和欣赏大自然的美\",\"attributed_to\":\"assistant\"}]}",
+      "memories": [
+        {
+          "id": "0",
+          "text": "用户名叫卡尔（卡尔文），几年前去过波士顿，认为那是一座美丽的城市",
+          "attributed_to": "user"
+        },
+        {
+          "id": "1",
+          "text": "戴夫拍摄了一张波士顿天际线日落照片，画面中有一座钟楼，摄于2023年10月29日左右的日落时分",
+          "attributed_to": "assistant"
+        },
+        {
+          "id": "2",
+          "text": "戴夫于2023年9月（上个月）拍摄了一张新罕布什尔州白山瀑布的照片，他觉得很惊艳",
+          "attributed_to": "assistant"
+        },
+        {
+          "id": "3",
+          "text": "戴夫热爱摄影，把摄影作为创意出口，认为摄影帮助他捕捉和欣赏大自然的美",
+          "attributed_to": "assistant"
+        }
+      ],
+      "usage": {
+        "completion_tokens": 257,
+        "prompt_tokens": 8561,
+        "total_tokens": 8818,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 75,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        }
+      },
+      "duration_seconds": 5.78,
+      "finished_at_utc": "2026-09-26T07:50:12.746725+00:00"
+    },
+    "without_d27_6_query": {
+      "status": "ok",
+      "raw_response": "{\"memory\":[{\"id\":\"0\",\"text\":\"戴夫（Dave）热爱摄影，他拍摄了一张波士顿天际线日落时分的照片，认为摄影帮助他捕捉和欣赏大自然的美，是一个很棒的创意出口\",\"attributed_to\":\"assistant\"},{\"id\":\"1\",\"text\":\"戴夫在2023年9月（上个月）拍摄了一张城市中钟楼与建筑物的照片\",\"attributed_to\":\"assistant\"},{\"id\":\"2\",\"text\":\"用户名叫卡尔文（Calvin），几年前去过波士顿，认为波士顿是一座美丽的城市\",\"attributed_to\":\"user\"},{\"id\":\"3\",\"text\":\"卡尔文非常欣赏戴夫的摄影作品，称赞他太有才华了\",\"attributed_to\":\"user\"}]}",
+      "memories": [
+        {
+          "id": "0",
+          "text": "戴夫（Dave）热爱摄影，他拍摄了一张波士顿天际线日落时分的照片，认为摄影帮助他捕捉和欣赏大自然的美，是一个很棒的创意出口",
+          "attributed_to": "assistant"
+        },
+        {
+          "id": "1",
+          "text": "戴夫在2023年9月（上个月）拍摄了一张城市中钟楼与建筑物的照片",
+          "attributed_to": "assistant"
+        },
+        {
+          "id": "2",
+          "text": "用户名叫卡尔文（Calvin），几年前去过波士顿，认为波士顿是一座美丽的城市",
+          "attributed_to": "user"
+        },
+        {
+          "id": "3",
+          "text": "卡尔文非常欣赏戴夫的摄影作品，称赞他太有才华了",
+          "attributed_to": "user"
+        }
+      ],
+      "usage": {
+        "completion_tokens": 225,
+        "prompt_tokens": 8555,
+        "total_tokens": 8780,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 46,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        }
+      },
+      "duration_seconds": 4.76,
+      "finished_at_utc": "2026-09-26T07:50:17.507141+00:00"
+    }
+  }
+}
