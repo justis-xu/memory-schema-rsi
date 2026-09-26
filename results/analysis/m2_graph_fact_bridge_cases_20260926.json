@@ -1,0 +1,1386 @@
+{
+  "scope": "Five retrospectively selected Chinese paired graph flips, not a prevalence sample or causal effect estimate",
+  "base_run": "results_zh/zhfull_locomo_20260925_164645.jsonl",
+  "graph_run": "results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+  "source_dataset": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
+  "cases": [
+    {
+      "case_id": "locomo_conv-47_qa96",
+      "category": "single-hop",
+      "question": "约翰支持哪家足球俱乐部？",
+      "gold": "曼彻斯特城",
+      "gold_evidence_ids": [
+        "D13:15"
+      ],
+      "source_turns": [
+        {
+          "dia_id": "D13:15",
+          "session_id": "session_13",
+          "session_date": "4:30 pm on 13 June, 2022",
+          "speaker": "约翰",
+          "text": "作为曼城球迷，我可不能同意你的看法。你走着瞧，我们两支球队会为冠军而战，而赢的会是我们！",
+          "query": null,
+          "blip_caption": null
+        }
+      ],
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "Answer states 曼彻斯特城 matching the gold precisely, with additional correct context."
+      },
+      "base_answer": "扫描记忆：唯一的足球俱乐部信息是詹姆斯是利物浦铁杆球迷（2022年6月13日）。没有记忆明确说明约翰支持哪家俱乐部——只提到他喜欢玩《FIFA 23》足球游戏，并在网上与全球玩家对战。不能将詹姆斯的利物浦偏好归于约翰。\n\n回答：记忆中没有明确记录约翰本人支持的足球俱乐部。不过詹姆斯是利物浦的铁杆球迷。约翰对足球的兴趣主要体现在玩《FIFA 23》这款足球游戏上。",
+      "graph_answer": "约翰支持曼彻斯特城（Manchester City）。他曾与詹姆斯（利物浦球迷）打赌，坚信曼城会赢得英超冠军。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "2bef1c5f-d808-43c5-840b-d169618c0f57",
+          "source_path": "vector",
+          "content": "James is a die-hard Liverpool fan — he says there's no better sport than football and no better club than Liverpool, never misses their matches, and hopes they win the league next season",
+          "session_date": "4:30 pm on 13 June, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "b6ef2063-6cc7-4a45-b60c-7958e9aaa945",
+          "source_path": "vector",
+          "content": "As of early November 2022, John is hooked on FIFA 23, a soccer game he enjoys playing online against players from around the world",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "fbb1568d-3ffd-4ec2-8157-70931c48e74e",
+          "source_path": "vector",
+          "content": "John shared a photo from the charity gaming tournament showing an intense match during a thrilling moment in support of the good cause",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "ad4e85cd-d24a-4b39-861e-641e89656603",
+          "source_path": "vector",
+          "content": "As of April 2022, John is building a website for a local small business — his first real project outside his programming class",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "73feda98-03f2-4bc4-affc-c617ce4a38ad",
+          "source_path": "vector",
+          "content": "As of late April 2022, John has been playing Assassin's Creed Valhalla (刺客信条：英灵殿)",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "d8d3d2a2-f41d-4e7d-a65a-ecd0d39e2ed7",
+          "source_path": "vector",
+          "content": "John (the friend) recently started playing chess to improve his strategic skills, mainly plays online, and joined a chess club to practice with others; he was drawn to chess because he loves strategy games and believes it improves decision-making",
+          "session_date": "9:49 am on 22 July, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "2f826b80-edc4-4ef3-98ef-fe50712f920f",
+          "source_path": "vector",
+          "content": "John follows the principle that only well-rested people work well, so relaxing and traveling with friends gives him motivation to keep working",
+          "session_date": "9:32 pm on 20 April, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "eff83c5f-9f8e-474b-91ad-d148c96ba800",
+          "source_path": "vector",
+          "content": "John also wants to organize Fortnite tournaments and has already made connections with people who can help him with this",
+          "session_date": "1:45 pm on 6 August, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "99b9ac37-de5a-42d7-8715-fd6e93f173b0",
+          "source_path": "vector",
+          "content": "James decided to try the sports game genre, starting with FIFA 23, and planned to practice it so he and John could play together; John said it's easy to learn, needing just a controller and a sense of rhythm",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "bd53f79f-e6f9-4367-8178-d39e3084184a",
+          "source_path": "vector",
+          "content": "As of June 19, 2022, John is reflecting on his career and future, driven to make a positive impact on the world and determined to use his skills and passion for causes he cares about",
+          "session_date": "9:59 pm on 19 June, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "64381c12-67f7-4ef7-beb6-5fdd1c603513",
+          "source_path": "vector",
+          "content": "John does not consider his recent programming collaboration a return to programming work — it was a learning and teamwork experience; he remains passionate about organizing esports tournaments",
+          "session_date": "3:57 pm on 21 August, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "aee99d85-c0c2-4b4d-82b7-03e34e5865f3",
+          "source_path": "vector",
+          "content": "James offered to support John's new esports career, saying he can reach out anytime for financial help or advice",
+          "session_date": "1:45 pm on 6 August, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "122ee9fe-a4a4-472b-9199-203413a5cd78",
+          "source_path": "vector",
+          "content": "Around early October 2022, John received an email offering a volunteering opportunity at a game development non-profit organization, something he had wanted to do for a long time, as it combines his two passions — gaming and helping others",
+          "session_date": "9:20 am on 3 October, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "4095abe2-6966-4cad-9694-eaf27b251c4c",
+          "source_path": "vector",
+          "content": "John does not have any pets but plans to get one in the future",
+          "session_date": "9:49 am on 22 July, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "6e0bebd1-7993-4ec0-a65d-88f64843e62d",
+          "source_path": "vector",
+          "content": "John was asked to serve as a programming mentor for game developers at the non-profit, teaching programming and assisting with project development; he felt especially excited and inspired, and hopes it leads to more opportunities",
+          "session_date": "9:20 am on 3 October, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "3cded448-5856-4da0-81c6-aa9c84cdf61d",
+          "source_path": "graph",
+          "content": "John is a Manchester City fan; he and James made a friendly bet around June 2022 that their teams (Liverpool vs Man City) will battle for the championship, with John confident City will win",
+          "session_date": null
+        },
+        {
+          "rank": 2,
+          "id": "2bef1c5f-d808-43c5-840b-d169618c0f57",
+          "source_path": "vector",
+          "content": "James is a die-hard Liverpool fan — he says there's no better sport than football and no better club than Liverpool, never misses their matches, and hopes they win the league next season",
+          "session_date": "4:30 pm on 13 June, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "b6ef2063-6cc7-4a45-b60c-7958e9aaa945",
+          "source_path": "vector",
+          "content": "As of early November 2022, John is hooked on FIFA 23, a soccer game he enjoys playing online against players from around the world",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "fbb1568d-3ffd-4ec2-8157-70931c48e74e",
+          "source_path": "vector",
+          "content": "John shared a photo from the charity gaming tournament showing an intense match during a thrilling moment in support of the good cause",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "ad4e85cd-d24a-4b39-861e-641e89656603",
+          "source_path": "vector",
+          "content": "As of April 2022, John is building a website for a local small business — his first real project outside his programming class",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "73feda98-03f2-4bc4-affc-c617ce4a38ad",
+          "source_path": "vector",
+          "content": "As of late April 2022, John has been playing Assassin's Creed Valhalla (刺客信条：英灵殿)",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "d8d3d2a2-f41d-4e7d-a65a-ecd0d39e2ed7",
+          "source_path": "vector",
+          "content": "John (the friend) recently started playing chess to improve his strategic skills, mainly plays online, and joined a chess club to practice with others; he was drawn to chess because he loves strategy games and believes it improves decision-making",
+          "session_date": "9:49 am on 22 July, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "918bbeed-6374-4495-99bd-83ef345d8548",
+          "source_path": "graph",
+          "content": "John attended a gaming convention between his conversations with James in March 2022, where he tried many games, met developers, and competed in a CS:GO tournament; watching skilled players inspired him to improve his own gaming skills",
+          "session_date": null
+        },
+        {
+          "rank": 9,
+          "id": "2f826b80-edc4-4ef3-98ef-fe50712f920f",
+          "source_path": "vector",
+          "content": "John follows the principle that only well-rested people work well, so relaxing and traveling with friends gives him motivation to keep working",
+          "session_date": "9:32 pm on 20 April, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "eff83c5f-9f8e-474b-91ad-d148c96ba800",
+          "source_path": "vector",
+          "content": "John also wants to organize Fortnite tournaments and has already made connections with people who can help him with this",
+          "session_date": "1:45 pm on 6 August, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "99b9ac37-de5a-42d7-8715-fd6e93f173b0",
+          "source_path": "vector",
+          "content": "James decided to try the sports game genre, starting with FIFA 23, and planned to practice it so he and John could play together; John said it's easy to learn, needing just a controller and a sense of rhythm",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "bd53f79f-e6f9-4367-8178-d39e3084184a",
+          "source_path": "vector",
+          "content": "As of June 19, 2022, John is reflecting on his career and future, driven to make a positive impact on the world and determined to use his skills and passion for causes he cares about",
+          "session_date": "9:59 pm on 19 June, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "64381c12-67f7-4ef7-beb6-5fdd1c603513",
+          "source_path": "vector",
+          "content": "John does not consider his recent programming collaboration a return to programming work — it was a learning and teamwork experience; he remains passionate about organizing esports tournaments",
+          "session_date": "3:57 pm on 21 August, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "aee99d85-c0c2-4b4d-82b7-03e34e5865f3",
+          "source_path": "vector",
+          "content": "James offered to support John's new esports career, saying he can reach out anytime for financial help or advice",
+          "session_date": "1:45 pm on 6 August, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "122ee9fe-a4a4-472b-9199-203413a5cd78",
+          "source_path": "vector",
+          "content": "Around early October 2022, John received an email offering a volunteering opportunity at a game development non-profit organization, something he had wanted to do for a long time, as it combines his two passions — gaming and helping others",
+          "session_date": "9:20 am on 3 October, 2022"
+        }
+      ],
+      "gained_ids": [
+        "3cded448-5856-4da0-81c6-aa9c84cdf61d",
+        "918bbeed-6374-4495-99bd-83ef345d8548"
+      ],
+      "displaced_ids": [
+        "4095abe2-6966-4cad-9694-eaf27b251c4c",
+        "6e0bebd1-7993-4ec0-a65d-88f64843e62d"
+      ],
+      "critical_memory_ids": [
+        "3cded448-5856-4da0-81c6-aa9c84cdf61d"
+      ],
+      "manual_diagnosis": "图补入独有的曼城球迷事实；源文字 D13:15 直接支持；无图 15 条缺该事实"
+    },
+    {
+      "case_id": "locomo_conv-48_qa39",
+      "category": "multi-hop",
+      "question": "黛博拉和乔琳使用了哪些时间管理方法？",
+      "gold": "番茄工作法——工作25分钟休息5分钟、日程表或待办清单、艾森豪威尔矩阵、子弹笔记",
+      "gold_evidence_ids": [
+        "D10:4",
+        "D10:5",
+        "D10:6",
+        "D10:13",
+        "D18:3"
+      ],
+      "source_turns": [
+        {
+          "dia_id": "D10:4",
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023",
+          "speaker": "乔琳",
+          "text": "我在用番茄工作法——工作25分钟，休息5分钟——来避免过度疲劳，但我还是很难分清轻重缓急。你还有什么时间管理方面的建议吗？",
+          "query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D10:5",
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023",
+          "speaker": "黛博拉",
+          "text": "我会制定每日日程或待办清单。这是我今天的一个例子。",
+          "query": "daily schedule template",
+          "blip_caption": "a photo of a notepad with a list of things to do"
+        },
+        {
+          "dia_id": "D10:6",
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023",
+          "speaker": "乔琳",
+          "text": "我试过做清单，但任务一大堆的时候就会让人喘不过气。这是上周五的一个例子。",
+          "query": "colorful to-do list crossed off tasks",
+          "blip_caption": "a photo of a notepad with notes on it on a counter"
+        },
+        {
+          "dia_id": "D10:13",
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023",
+          "speaker": "黛博拉",
+          "text": "艾森豪威尔矩阵把任务分成四个象限，按照紧急程度和重要性进行分类。它对整理和排定优先级非常有用。给你详细说明一下。",
+          "query": "eisenhower matrix",
+          "blip_caption": "a photo of a pair of scissors sitting on top of a piece of paper"
+        },
+        {
+          "dia_id": "D18:3",
+          "session_id": "session_18",
+          "session_date": "2:58 pm on 16 August, 2023",
+          "speaker": "乔琳",
+          "text": "谢谢你，黛布！我最近在尝试一些时间管理方法，开始用子弹笔记。它对追踪我的任务和保持条理真的很有帮助。",
+          "query": null,
+          "blip_caption": null
+        }
+      ],
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "番茄工作法（25分钟工作+5分钟休息）"
+        ],
+        "reason": "答案包含日程表/待办清单、艾森豪威尔矩阵和子弹笔记，但遗漏了番茄工作法这一要素。"
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "All four gold elements (Pomodoro, schedule/todo list, Eisenhower matrix, bullet journal) are present and correctly attributed, with extra correct detail."
+      },
+      "base_answer": "黛博拉（黛布）和乔琳使用过的时间管理方法包括：\n\n1. **每日日程/待办清单**——黛布在2023年3月22日分享了她的每日日程和待办清单照片给乔琳。\n2. **艾森豪威尔矩阵**——黛布介绍的方法，按紧急程度和重要性将任务分为四个象限来排定优先级，乔琳表示愿意尝试。\n3. **子弹笔记（bullet journal）**——乔琳在2023年8月开始使用，用来追踪任务和保持条理，划掉清单任务时感到特别满足。\n4. **固定作息/安排特定时间**——两人都采用：乔琳为上课、学习和个人时间分别安排日程（2023年9月），黛布则为学习和爱好分别安排特定时间（2023年8月）。\n5. **任务分块和计划表**——黛布在2023年3月2日建议乔琳把学习任务分解成小块、设定目标、使用计划表或日程表保持条理，并留出自我时间。\n6. **正念与自我照顾活动（瑜伽、冥想）**——黛布通过工作坊和书籍接触正念并推荐给乔琳；乔琳用瑜伽、冥想等自我关怀活动保持平衡和放松。",
+      "graph_answer": "乔琳使用了番茄工作法、子弹笔记（bullet journal）、艾森豪威尔矩阵（黛布介绍）、固定作息/为上课、学习、个人时间分别安排日程；黛布分享了她的每日日程/待办清单方法，并强调分清主次、为学习和爱好分别安排特定时间。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "3efda3a1-b907-4111-918d-3c00e01738a3",
+          "source_path": "vector",
+          "content": "黛布在2023年3月22日向乔琳分享了她的每日日程/待办清单照片作为时间管理方法，并介绍了艾森豪威尔矩阵——按紧急程度和重要性把任务分成四个象限来排定优先级，乔琳表示愿意尝试",
+          "session_date": "5:35 pm on 22 March, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "42e992c5-59a3-4494-8993-d0a3f4caf711",
+          "source_path": "vector",
+          "content": "乔琳通过固定作息来掌控繁忙日程——为上课、学习和个人时间分别安排日程，并用瑜伽和冥想等自我关怀活动保持平衡和放松；她愿意和黛布详细分享这套方法",
+          "session_date": "7:39 pm on 8 September, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "032206e8-4d3a-4a10-b303-2aada213fc95",
+          "source_path": "vector",
+          "content": "Deb advised Jolene to break study tasks into small chunks, set goals, and use a planner or schedule to stay organized while leaving time for herself, and offered to help create a study plan",
+          "session_date": "7:18 pm on 2 March, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "aa223067-097e-4734-a05c-bcde9d9683c3",
+          "source_path": "vector",
+          "content": "乔琳在2023年8月开始尝试时间管理方法——子弹笔记（bullet journal），用它追踪任务和保持条理，划掉清单任务时感到特别满足，并分享了一张带有她最喜欢的名言的排版截图",
+          "session_date": "2:58 pm on 16 August, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "d6c002c2-5cfd-43d6-8e6e-1a4339c7977b",
+          "source_path": "vector",
+          "content": "黛布专注教瑜伽并与社区相处，认为平衡爱好与学习的秘诀是分清主次和有效时间管理——为学习和爱好分别安排特定时间",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+          "source_path": "vector",
+          "content": "黛布通过工作坊和书籍开始接触正念，如今正念已成为她生活中很大的一部分；她向乔琳推荐了正念",
+          "session_date": "2:58 pm on 16 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "7d65a711-db27-4671-8541-076f81bc45ca",
+          "source_path": "vector",
+          "content": "乔琳在2023年8月正试着把自我照顾放在优先位置，比如瑜伽和冥想，这帮助她保持平衡和踏实",
+          "session_date": "9:26 am on 1 August, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+          "source_path": "vector",
+          "content": "乔琳断断续续练习瑜伽和冥想约三年，认为它们对缓解压力、保持内心平静有非常积极的影响，是她度过困难时刻的重要支持",
+          "session_date": "3:56 pm on 6 June, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "c4450728-e813-4352-9d0f-5833bcc9702e",
+          "source_path": "vector",
+          "content": "乔琳和黛布约定于2023年9月15日（星期五）下午5点在黛布最喜欢的咖啡馆（有多台咖啡机）见面喝咖啡叙旧，并品尝新鲜糕点；之前曾考虑过星期三4点但因黛布已有安排而改期",
+          "session_date": "7:39 pm on 8 September, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "2b24496e-cfdc-4c5a-92c4-0178d8b9f0e0",
+          "source_path": "vector",
+          "content": "乔琳在2023年3月13日的对话中表示她在应付工程学作业时遇到困难，要管理的事情太多、难以跟上进度，希望和黛布聊聊时间管理的话题；两人计划查日程后尽快见面",
+          "session_date": "11:22 am on 13 March, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+          "source_path": "vector",
+          "content": "乔琳养蛇作为宠物，觉得和蛇在一起的时光很宝贵，教会她放慢脚步、与自己保持协调",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "8dbaeaa0-ff44-4cf4-847c-000c6c9f0d22",
+          "source_path": "vector",
+          "content": "黛布尝试过冲浪，而乔琳刚开始对潜水感兴趣但还没实际下水；两人约定一起尝试，计划在2023年10月（下个月）安排一次共同的潜水冒险，乔琳会查日程后确认具体时间",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "7229078f-abfa-4b72-b365-5b4a05a7e1df",
+          "source_path": "vector",
+          "content": "黛布向乔琳保证随时提供支持，两人约定尽快聚一聚解决乔琳的学业压力",
+          "session_date": "11:22 am on 13 March, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "0e9af621-1052-4455-8a03-fb5c65263c4f",
+          "source_path": "vector",
+          "content": "黛布和乔琳约定成立一个互相支持的小圈子，互相激励、互相鼓励，一起踏上正念和感恩的旅程",
+          "session_date": "2:18 pm on 12 September, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "b571e662-6ab1-480f-82a8-cb19f00f3e2f",
+          "source_path": "vector",
+          "content": "乔琳坦言在实习期间难以平衡工作与生活，总是埋头苦干，很难腾出时间发展爱好和放松",
+          "session_date": "3:56 pm on 6 June, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "3efda3a1-b907-4111-918d-3c00e01738a3",
+          "source_path": "vector",
+          "content": "黛布在2023年3月22日向乔琳分享了她的每日日程/待办清单照片作为时间管理方法，并介绍了艾森豪威尔矩阵——按紧急程度和重要性把任务分成四个象限来排定优先级，乔琳表示愿意尝试",
+          "session_date": "5:35 pm on 22 March, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "42e992c5-59a3-4494-8993-d0a3f4caf711",
+          "source_path": "vector",
+          "content": "乔琳通过固定作息来掌控繁忙日程——为上课、学习和个人时间分别安排日程，并用瑜伽和冥想等自我关怀活动保持平衡和放松；她愿意和黛布详细分享这套方法",
+          "session_date": "7:39 pm on 8 September, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "032206e8-4d3a-4a10-b303-2aada213fc95",
+          "source_path": "vector",
+          "content": "Deb advised Jolene to break study tasks into small chunks, set goals, and use a planner or schedule to stay organized while leaving time for herself, and offered to help create a study plan",
+          "session_date": "7:18 pm on 2 March, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "aa223067-097e-4734-a05c-bcde9d9683c3",
+          "source_path": "vector",
+          "content": "乔琳在2023年8月开始尝试时间管理方法——子弹笔记（bullet journal），用它追踪任务和保持条理，划掉清单任务时感到特别满足，并分享了一张带有她最喜欢的名言的排版截图",
+          "session_date": "2:58 pm on 16 August, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "d6c002c2-5cfd-43d6-8e6e-1a4339c7977b",
+          "source_path": "vector",
+          "content": "黛布专注教瑜伽并与社区相处，认为平衡爱好与学习的秘诀是分清主次和有效时间管理——为学习和爱好分别安排特定时间",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+          "source_path": "vector",
+          "content": "黛布通过工作坊和书籍开始接触正念，如今正念已成为她生活中很大的一部分；她向乔琳推荐了正念",
+          "session_date": "2:58 pm on 16 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "8f83084c-1dc8-4bad-b0c8-cb646a24cf17",
+          "source_path": "graph",
+          "content": "Jolene（工程师）在2023年3月22日的对话中表示她正在使用番茄工作法（工作25分钟、休息5分钟）应对考试和截止日期的压力，但仍难以分清轻重缓急，面对大量任务时常常感到无从下手",
+          "session_date": null
+        },
+        {
+          "rank": 8,
+          "id": "7d65a711-db27-4671-8541-076f81bc45ca",
+          "source_path": "vector",
+          "content": "乔琳在2023年8月正试着把自我照顾放在优先位置，比如瑜伽和冥想，这帮助她保持平衡和踏实",
+          "session_date": "9:26 am on 1 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "aafbfa07-841e-4847-8a6d-9b23bff1e2ed",
+          "source_path": "graph",
+          "content": "On Friday, February 24, 2023, Jolene did yoga and meditation to relax while trying to carve out time for herself amid her studies",
+          "session_date": null
+        },
+        {
+          "rank": 10,
+          "id": "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+          "source_path": "vector",
+          "content": "乔琳断断续续练习瑜伽和冥想约三年，认为它们对缓解压力、保持内心平静有非常积极的影响，是她度过困难时刻的重要支持",
+          "session_date": "3:56 pm on 6 June, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "a049467e-7e50-47e7-b4fb-5052503e9863",
+          "source_path": "graph",
+          "content": "Jolene is balancing studying engineering at university with caring for her partner; she does yoga and meditation to stay calm in the chaos (around February 2023)",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "c4450728-e813-4352-9d0f-5833bcc9702e",
+          "source_path": "vector",
+          "content": "乔琳和黛布约定于2023年9月15日（星期五）下午5点在黛布最喜欢的咖啡馆（有多台咖啡机）见面喝咖啡叙旧，并品尝新鲜糕点；之前曾考虑过星期三4点但因黛布已有安排而改期",
+          "session_date": "7:39 pm on 8 September, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "2b24496e-cfdc-4c5a-92c4-0178d8b9f0e0",
+          "source_path": "vector",
+          "content": "乔琳在2023年3月13日的对话中表示她在应付工程学作业时遇到困难，要管理的事情太多、难以跟上进度，希望和黛布聊聊时间管理的话题；两人计划查日程后尽快见面",
+          "session_date": "11:22 am on 13 March, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+          "source_path": "vector",
+          "content": "乔琳养蛇作为宠物，觉得和蛇在一起的时光很宝贵，教会她放慢脚步、与自己保持协调",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "8dbaeaa0-ff44-4cf4-847c-000c6c9f0d22",
+          "source_path": "vector",
+          "content": "黛布尝试过冲浪，而乔琳刚开始对潜水感兴趣但还没实际下水；两人约定一起尝试，计划在2023年10月（下个月）安排一次共同的潜水冒险，乔琳会查日程后确认具体时间",
+          "session_date": "1:24 pm on 17 September, 2023"
+        }
+      ],
+      "gained_ids": [
+        "8f83084c-1dc8-4bad-b0c8-cb646a24cf17",
+        "aafbfa07-841e-4847-8a6d-9b23bff1e2ed",
+        "a049467e-7e50-47e7-b4fb-5052503e9863"
+      ],
+      "displaced_ids": [
+        "7229078f-abfa-4b72-b365-5b4a05a7e1df",
+        "0e9af621-1052-4455-8a03-fb5c65263c4f",
+        "b571e662-6ab1-480f-82a8-cb19f00f3e2f"
+      ],
+      "critical_memory_ids": [
+        "8f83084c-1dc8-4bad-b0c8-cb646a24cf17"
+      ],
+      "manual_diagnosis": "图补入独有的番茄工作法；源文字 D10:4 直接支持；无图答案漏此项"
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "category": "multi-hop",
+      "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+      "gold": "签名篮球",
+      "gold_evidence_ids": [
+        "D7:7",
+        "D7:9",
+        "D16:7",
+        "D16:9"
+      ],
+      "source_turns": [
+        {
+          "dia_id": "D7:7",
+          "session_id": "session_7",
+          "session_date": "7:54 pm on 17 August, 2023",
+          "speaker": "约翰",
+          "text": "你真是个书虫！能和你一起去图书大会就太棒了。看看这张照片，是我们见面时队友们送给我的。这是友谊的象征，也是我们彼此之间所有爱的体现。",
+          "query": "basketball signed teammates",
+          "blip_caption": "a photography of a basketball with autographs on it sitting on a table"
+        },
+        {
+          "dia_id": "D7:8",
+          "session_id": "session_7",
+          "session_date": "7:54 pm on 17 August, 2023",
+          "speaker": "蒂姆",
+          "text": "你的队友们真是太好了。他们签名有什么特别的原因吗？",
+          "query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D7:9",
+          "session_id": "session_7",
+          "session_date": "7:54 pm on 17 August, 2023",
+          "speaker": "约翰",
+          "text": "谢谢！他们签名是为了表达我们的友谊和感激之情。这很好地提醒着我们的纽带。",
+          "query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D16:7",
+          "session_id": "session_16",
+          "session_date": "11:41 am on 6 November, 2023",
+          "speaker": "蒂姆",
+          "text": "哇，那感觉一定难以置信！你真的展现了决心和毅力。那场比赛你有照片或纪念品吗？我很想看看！顺便说，我也有个特别的东西——这是我最珍视的宝贝，一个由我最喜欢的球员签名的篮球。它提醒着我所有的努力。",
+          "query": "basketball signed by favorite basketball player",
+          "blip_caption": "a photo of a basketball in a case with a signed ball"
+        },
+        {
+          "dia_id": "D16:9",
+          "session_id": "session_16",
+          "session_date": "11:41 am on 6 November, 2023",
+          "speaker": "蒂姆",
+          "text": "我就是爱看勒布朗打球。几年前有一场总决赛，他有一次史诗级的盖帽彻底改变了比赛，最后还赢了下来。看他那样拼尽全力真是太鼓舞人心了——永不放弃，你懂吧？",
+          "query": null,
+          "blip_caption": null
+        }
+      ],
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "签名篮球（共同收藏品）"
+        ],
+        "reason": "答案描述了两人各自的篮球收藏，但没有指出他们共同拥有的相似收藏品是签名篮球；约翰的部分（球衣和运动鞋）偏离了金标准。"
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "Answer states signed basketballs, matching the gold exactly with correct supporting detail."
+      },
+      "base_answer": "两者都有与篮球相关的收藏：蒂姆有一双由他最喜欢的球员签名的篮球；约翰收集篮球球衣和运动鞋（包括他那双幸运的篮球鞋）。\n\n答案：与篮球相关的收藏品——蒂姆收藏了一双由他最喜欢的球员签名的篮球（放在展示盒中），而约翰则收集篮球球衣和篮球运动鞋，这表明他们都对篮球纪念品充满热情。",
+      "graph_answer": "签名篮球——蒂姆有他最喜欢的球员签名的篮球（装在展示盒中），约翰也收到了队友们签名赠送的篮球。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source_path": "vector",
+          "content": "约翰喜欢收集篮球球衣，分享了他的球衣收藏照片",
+          "session_date": "3:00 pm on 2 October, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source_path": "vector",
+          "content": "约翰喜欢和别人聊他的球鞋收藏，并分享了一张球鞋摆成圆形的照片",
+          "session_date": "7:48 pm on 21 May, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source_path": "vector",
+          "content": "约翰有一双幸运篮球鞋，从打球之初就陪伴着他，见证了他的成功、失败和友谊，象征坚韧、决心和对篮球的热爱，提醒他取得的成就和走过的路",
+          "session_date": "1:08 pm on 11 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "source_path": "vector",
+          "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+          "session_date": "11:41 am on 6 November, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "source_path": "vector",
+          "content": "蒂姆（Tim）最近在网上买了一双黑粉色的记忆棉（memory foam）运动鞋，感觉像走在云上一样舒服，称其为改变游戏规则的存在，并强烈推荐给约翰",
+          "session_date": "1:50 pm on 13 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "source_path": "vector",
+          "content": "约翰（John）在2023年10月表示由于打了很多场比赛，需要买一双新鞋，并对蒂姆推荐的网络购买记忆棉运动鞋表示感兴趣",
+          "session_date": "1:50 pm on 13 October, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "source_path": "vector",
+          "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+          "session_date": "9:52 am on 1 December, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source_path": "vector",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "session_date": "4:29 pm on 21 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "source_path": "vector",
+          "content": "蒂姆收藏了很多哈利·波特等纪念物，这对他来说是一种逃离现实的方式，让他感觉自己走进了书里；他计划以后去更多哈利·波特主题的地方",
+          "session_date": "5:08 pm on 15 June, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "source_path": "vector",
+          "content": "约翰热爱篮球，当事情变得艰难时会提醒自己为什么热爱篮球，这份爱和热情让他保持动力",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source_path": "vector",
+          "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "source_path": "vector",
+          "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+          "session_date": "3:35 pm on 26 December, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+          "source_path": "vector",
+          "content": "蒂姆表示会支持约翰的慈善工作和篮球事业，认为他充满决心和热情",
+          "session_date": "1:08 pm on 11 August, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "511649c4-ae44-44e0-b0ec-788d21dc4355",
+          "source_path": "vector",
+          "content": "蒂姆和约翰都认为友谊对彼此很重要，蒂姆非常感激约翰的支持和鼓励，说这段友谊让他的旅程变得更美好",
+          "session_date": "9:52 am on 1 December, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+          "source_path": "vector",
+          "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+          "session_date": "3:36 pm on 11 November, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source_path": "vector",
+          "content": "约翰喜欢收集篮球球衣，分享了他的球衣收藏照片",
+          "session_date": "3:00 pm on 2 October, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source_path": "vector",
+          "content": "约翰喜欢和别人聊他的球鞋收藏，并分享了一张球鞋摆成圆形的照片",
+          "session_date": "7:48 pm on 21 May, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source_path": "vector",
+          "content": "约翰有一双幸运篮球鞋，从打球之初就陪伴着他，见证了他的成功、失败和友谊，象征坚韧、决心和对篮球的热爱，提醒他取得的成就和走过的路",
+          "session_date": "1:08 pm on 11 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "source_path": "vector",
+          "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+          "session_date": "11:41 am on 6 November, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "source_path": "vector",
+          "content": "蒂姆（Tim）最近在网上买了一双黑粉色的记忆棉（memory foam）运动鞋，感觉像走在云上一样舒服，称其为改变游戏规则的存在，并强烈推荐给约翰",
+          "session_date": "1:50 pm on 13 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "source_path": "vector",
+          "content": "约翰（John）在2023年10月表示由于打了很多场比赛，需要买一双新鞋，并对蒂姆推荐的网络购买记忆棉运动鞋表示感兴趣",
+          "session_date": "1:50 pm on 13 October, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "source_path": "vector",
+          "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+          "session_date": "9:52 am on 1 December, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source_path": "vector",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "session_date": "4:29 pm on 21 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "source_path": "vector",
+          "content": "蒂姆收藏了很多哈利·波特等纪念物，这对他来说是一种逃离现实的方式，让他感觉自己走进了书里；他计划以后去更多哈利·波特主题的地方",
+          "session_date": "5:08 pm on 15 June, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "e849e488-2d13-4fc3-910e-7c86318cd897",
+          "source_path": "graph",
+          "content": "约翰（John）刚与耐克（Nike）签了一份篮球鞋和装备的代言合同，还在与佳得乐（Gatorade）洽谈可能的赞助，并一直很喜欢安德玛（Under Armour），希望未来能与他们合作（2023年7月）",
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "source_path": "graph",
+          "content": "约翰（John）的队友们在2023年8月见面时送给他一个签名篮球，签名象征他们的友谊和感激之情；这个球提醒他为什么开始打篮球以及他的篮球之路，激励他保持坚强、全力以赴",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "source_path": "vector",
+          "content": "约翰热爱篮球，当事情变得艰难时会提醒自己为什么热爱篮球，这份爱和热情让他保持动力",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source_path": "vector",
+          "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "source_path": "vector",
+          "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+          "session_date": "3:35 pm on 26 December, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+          "source_path": "vector",
+          "content": "蒂姆表示会支持约翰的慈善工作和篮球事业，认为他充满决心和热情",
+          "session_date": "1:08 pm on 11 August, 2023"
+        }
+      ],
+      "gained_ids": [
+        "e849e488-2d13-4fc3-910e-7c86318cd897",
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc"
+      ],
+      "displaced_ids": [
+        "511649c4-ae44-44e0-b0ec-788d21dc4355",
+        "aae114a6-d224-48a4-ba5b-2fab1cc0e51a"
+      ],
+      "critical_memory_ids": [
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc"
+      ],
+      "manual_diagnosis": "图补入约翰的签名篮球；D7:7 图片 caption 和 D7:8-9 对话共同支持，文字单独不点明篮球"
+    },
+    {
+      "case_id": "locomo_conv-41_qa86",
+      "category": "single-hop",
+      "question": "约翰做了什么事让他的钱包吃不消？",
+      "gold": "他的车抛锚了",
+      "gold_evidence_ids": [
+        "D11:1"
+      ],
+      "source_turns": [
+        {
+          "dia_id": "D11:1",
+          "session_id": "session_11",
+          "session_date": "6:13 pm on 10 April, 2023",
+          "speaker": "约翰",
+          "text": "嘿，玛丽亚，好几天没聊了。这一周过得挺疯狂，上周五上班路上我的车抛锚了。正想办法修车，但挺不容易的，钱包也吃不消。不过我还是保持积极，在寻找解决办法。",
+          "query": null,
+          "blip_caption": null
+        }
+      ],
+      "base_grade": "exact",
+      "graph_grade": "wrong",
+      "base_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "The answer states the exact gold fact (his car broke down); the hedged date is extra detail, not part of the gold."
+      },
+      "graph_judge": null,
+      "base_answer": "2023年4月10日左右，约翰的车在上班路上抛锚，昂贵的维修费用让他的钱包吃不消。",
+      "graph_answer": "约翰持续参与各种公益慈善活动让他的钱包吃不消——包括2023年8月他消防队组织的捐赠募集活动（罐头食品、洗漱用品、衣物）、他自费筹办的退伍军人5公里慈善跑及拉赞助、2月的食品募集志愿活动，以及计划去收容所领养小狗等开销。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "6ce9ccd6-2863-44fa-a8cc-315d1d61bffe",
+          "source_path": "vector",
+          "content": "John began helping with a food drive in early February 2023 to help people who lost their jobs, motivated by seeing unemployment affect his neighbors; he volunteered packing food bags at the local food bank",
+          "session_date": "2:33 pm on 5 February, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "64d56bfe-1ecd-4939-8585-953350e5da5f",
+          "source_path": "vector",
+          "content": "John made apple pie for his children the day before May 4, 2023",
+          "session_date": "3:18 pm on 4 May, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "bb2851b4-bf3b-48bf-8a75-d6a9c80924da",
+          "source_path": "vector",
+          "content": "In a ~2-hour team effort around August 2023, John's fire brigade group ran a donation drive that collected canned food, toiletries, and clothing, giving John a strong sense of purpose and fulfillment",
+          "session_date": "11:08 am on 16 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "d53af5f5-79d7-432f-9cf6-5b85847f5b1e",
+          "source_path": "vector",
+          "content": "John's community food drive response and volunteer turnout exceeded expectations at its recent event in early February 2023",
+          "session_date": "2:33 pm on 5 February, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "3a947793-7513-426a-8d6d-d9e5d54d3554",
+          "source_path": "vector",
+          "content": "约翰在2023年8月初的周末参加了一场为公益筹款的社区活动，活动现场来了很多人，他分享了一张小女孩举着牌子以及5公里慈善跑人群欢呼的照片",
+          "session_date": "12:10 am on 11 August, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "173b9922-c1dc-4628-808b-1dba4b7c1e2b",
+          "source_path": "vector",
+          "content": "In 2022, John helped renovate a run-down community center in his hometown; the work was demanding but worthwhile, and he was heartened to see the community come together and the center become lively again",
+          "session_date": "5:19 pm on 5 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "165dea2d-4caa-46da-960e-9cb27743f3cf",
+          "source_path": "vector",
+          "content": "John practices freestyle kickboxing, which energizes him",
+          "session_date": "11:01 am on 17 December, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "18e48bc7-bb4c-4764-a249-171499bfcfdf",
+          "source_path": "vector",
+          "content": "John shared a photo of his family having a picnic in the park; his family is his reason for never giving up and their love gives him strength and keeps him grounded",
+          "session_date": "6:10 pm on 22 December, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "c1a39482-06c6-4cd4-bbcb-5b9b9e7f0bc8",
+          "source_path": "vector",
+          "content": "约翰受到Maria领养小狗的启发，打算去自己附近的收容所看看，希望能领养一只新的小狗",
+          "session_date": "3:14 pm on 13 August, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "4f6efccd-7b5e-4259-ab9c-8d1168293a36",
+          "source_path": "vector",
+          "content": "John copes with stressful situations by watching sunsets, which remind him to enjoy the small things in life",
+          "session_date": "7:06 pm on 9 January, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "13f651aa-2c90-4bbf-9b0b-a8462e2b59dd",
+          "source_path": "vector",
+          "content": "John is motivated to improve his community through education and infrastructure work; he finds it an uphill battle at times and sometimes doubts he is making a difference, but encouragement helps him keep going",
+          "session_date": "6:59 pm on 5 July, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "ac275927-0dd0-4e12-aedc-adcd761f29a8",
+          "source_path": "vector",
+          "content": "约翰 (John) 找到了一份新工作并且很喜欢，他的团队非常鼓励人、令人振奋（截至 2023 年 7 月 22 日左右）",
+          "session_date": "6:21 pm on 22 July, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "3ab73473-080a-4899-b85d-ae2c327a48cf",
+          "source_path": "vector",
+          "content": "John and his family had a dinner gathering where they made pizzas together; he loved the process of choosing toppings and sharing food, saying meal times full of food, laughter, and conversation keep them close",
+          "session_date": "6:10 pm on 22 December, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "ef918bad-805a-4308-98ac-036200369b18",
+          "source_path": "vector",
+          "content": "Around late April 2023, John decided to run for public office again despite previous unsuccessful attempts, feeling it is like a dream come true and unable to give up his dream of changing his community",
+          "session_date": "5:04 pm on 6 May, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "e9ead35e-3c3b-49ad-8212-86c2e70faa88",
+          "source_path": "vector",
+          "content": "Around April 10, 2023, John's car broke down on his way to work the previous Friday and he was dealing with costly repairs; he remained positive while searching for solutions",
+          "session_date": "7:34 pm on 18 April, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "6ce9ccd6-2863-44fa-a8cc-315d1d61bffe",
+          "source_path": "vector",
+          "content": "John began helping with a food drive in early February 2023 to help people who lost their jobs, motivated by seeing unemployment affect his neighbors; he volunteered packing food bags at the local food bank",
+          "session_date": "2:33 pm on 5 February, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "f8681a3d-0e6a-4d52-b20e-871a78f9495c",
+          "source_path": "graph",
+          "content": "约翰在2023年8月9日组织了一场为退伍军人及其家人筹款的社区5公里慈善跑，需要拉赞助、与市政府协调并做宣传；拉赞助很困难，需要通过不同方式联系多家企业，但最终找到了很棒的赞助商，活动大获成功并筹到了善款",
+          "session_date": null
+        },
+        {
+          "rank": 3,
+          "id": "64d56bfe-1ecd-4939-8585-953350e5da5f",
+          "source_path": "vector",
+          "content": "John made apple pie for his children the day before May 4, 2023",
+          "session_date": "3:18 pm on 4 May, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "bb2851b4-bf3b-48bf-8a75-d6a9c80924da",
+          "source_path": "vector",
+          "content": "In a ~2-hour team effort around August 2023, John's fire brigade group ran a donation drive that collected canned food, toiletries, and clothing, giving John a strong sense of purpose and fulfillment",
+          "session_date": "11:08 am on 16 August, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "d53af5f5-79d7-432f-9cf6-5b85847f5b1e",
+          "source_path": "vector",
+          "content": "John's community food drive response and volunteer turnout exceeded expectations at its recent event in early February 2023",
+          "session_date": "2:33 pm on 5 February, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "f2c124c3-466a-4b75-bb2e-cfe1cf9871c1",
+          "source_path": "graph",
+          "content": "Around late December 2022, John attended group events including distributing food and supplies at a homeless shelter and organizing a toy drive for children in need, which brought smiles and lifted community spirits",
+          "session_date": null
+        },
+        {
+          "rank": 7,
+          "id": "3a947793-7513-426a-8d6d-d9e5d54d3554",
+          "source_path": "vector",
+          "content": "约翰在2023年8月初的周末参加了一场为公益筹款的社区活动，活动现场来了很多人，他分享了一张小女孩举着牌子以及5公里慈善跑人群欢呼的照片",
+          "session_date": "12:10 am on 11 August, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "173b9922-c1dc-4628-808b-1dba4b7c1e2b",
+          "source_path": "vector",
+          "content": "In 2022, John helped renovate a run-down community center in his hometown; the work was demanding but worthwhile, and he was heartened to see the community come together and the center become lively again",
+          "session_date": "5:19 pm on 5 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "165dea2d-4caa-46da-960e-9cb27743f3cf",
+          "source_path": "vector",
+          "content": "John practices freestyle kickboxing, which energizes him",
+          "session_date": "11:01 am on 17 December, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "18e48bc7-bb4c-4764-a249-171499bfcfdf",
+          "source_path": "vector",
+          "content": "John shared a photo of his family having a picnic in the park; his family is his reason for never giving up and their love gives him strength and keeps him grounded",
+          "session_date": "6:10 pm on 22 December, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "c1a39482-06c6-4cd4-bbcb-5b9b9e7f0bc8",
+          "source_path": "vector",
+          "content": "约翰受到Maria领养小狗的启发，打算去自己附近的收容所看看，希望能领养一只新的小狗",
+          "session_date": "3:14 pm on 13 August, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "4f6efccd-7b5e-4259-ab9c-8d1168293a36",
+          "source_path": "vector",
+          "content": "John copes with stressful situations by watching sunsets, which remind him to enjoy the small things in life",
+          "session_date": "7:06 pm on 9 January, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "13f651aa-2c90-4bbf-9b0b-a8462e2b59dd",
+          "source_path": "vector",
+          "content": "John is motivated to improve his community through education and infrastructure work; he finds it an uphill battle at times and sometimes doubts he is making a difference, but encouragement helps him keep going",
+          "session_date": "6:59 pm on 5 July, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "ac275927-0dd0-4e12-aedc-adcd761f29a8",
+          "source_path": "vector",
+          "content": "约翰 (John) 找到了一份新工作并且很喜欢，他的团队非常鼓励人、令人振奋（截至 2023 年 7 月 22 日左右）",
+          "session_date": "6:21 pm on 22 July, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "3ab73473-080a-4899-b85d-ae2c327a48cf",
+          "source_path": "vector",
+          "content": "John and his family had a dinner gathering where they made pizzas together; he loved the process of choosing toppings and sharing food, saying meal times full of food, laughter, and conversation keep them close",
+          "session_date": "6:10 pm on 22 December, 2022"
+        }
+      ],
+      "gained_ids": [
+        "f8681a3d-0e6a-4d52-b20e-871a78f9495c",
+        "f2c124c3-466a-4b75-bb2e-cfe1cf9871c1"
+      ],
+      "displaced_ids": [
+        "ef918bad-805a-4308-98ac-036200369b18",
+        "e9ead35e-3c3b-49ad-8212-86c2e70faa88"
+      ],
+      "critical_memory_ids": [
+        "e9ead35e-3c3b-49ad-8212-86c2e70faa88"
+      ],
+      "manual_diagnosis": "无图第 15 条的汽车抛锚证据被图候选挤出；新增图记忆谈慈善而非修车"
+    },
+    {
+      "case_id": "locomo_conv-30_qa80",
+      "category": "single-hop",
+      "question": "乔恩在社交活动上得到建议后有什么计划？",
+      "gold": "完善他的商业计划，调整对投资人的推介，并开发一个线上平台。",
+      "gold_evidence_ids": [
+        "D18:10"
+      ],
+      "source_turns": [
+        {
+          "dia_id": "D18:10",
+          "session_id": "session_18",
+          "session_date": "5:44 pm on 21 July, 2023",
+          "speaker": "乔恩",
+          "text": "采纳你的建议，我正在完善我的商业计划，并调整给投资人的推介。我还在搭建一个线上平台，用来展示舞蹈工作室的各项内容。",
+          "query": null,
+          "blip_caption": null
+        }
+      ],
+      "base_grade": "exact",
+      "graph_grade": "wrong",
+      "base_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "All three gold elements (完善商业计划、调整投资推介、开发线上平台) are present; extra detail about Gina is additional correct info."
+      },
+      "graph_judge": null,
+      "base_answer": "乔恩计划完善商业计划、调整给投资人的推介，并搭建线上平台展示舞蹈工作室，同时与吉娜合作制作内容和运营社交媒体来推广工作室。",
+      "graph_answer": "在获得建议后，乔恩计划：在2023年3月参加附近的一场舞蹈比赛，展示舞技并希望获得舞蹈圈伙伴的认可；继续寻找场地开设舞蹈工作室；扩展社交媒体影响力（发布舞蹈视频、与网红和舞蹈社群合作），并为当地学校和社区中心提供工作坊和课程。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "3f548823-9546-4a8a-8a3d-299b16b943b6",
+          "source_path": "vector",
+          "content": "截至2023年6月16日，乔恩一直在为舞蹈工作室做推广，并采纳吉娜的建议开始在社交媒体上发布自己的舞蹈视频，已经引起了一点轰动",
+          "session_date": "9:38 pm on 16 June, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+          "source_path": "vector",
+          "content": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）",
+          "session_date": "9:38 pm on 16 June, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+          "source_path": "vector",
+          "content": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想",
+          "session_date": "9:38 pm on 16 June, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+          "source_path": "vector",
+          "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+          "session_date": "2:32 pm on 29 January, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "source_path": "vector",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "session_date": "10:43 am on 4 February, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+          "source_path": "vector",
+          "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+          "source_path": "vector",
+          "content": "截至2023年7月21日，乔恩正在完善商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "20fc0980-03ad-41f3-a33a-6db73a040e49",
+          "source_path": "vector",
+          "content": "截至2023年4月3日，乔恩正在扩展舞蹈工作室的社交媒体影响力，并为当地学校和社区中心提供工作坊和课程；他表示努力已有回报，看到进步，舞者们非常兴奋",
+          "session_date": "1:26 pm on 3 April, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+          "source_path": "vector",
+          "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+          "session_date": "1:25 pm on 9 July, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+          "source_path": "vector",
+          "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+          "source_path": "vector",
+          "content": "截至2023年2月1日，乔恩仍在寻找场地开设他的舞蹈工作室，虽然过程有些坎坷，但他决心把这件事做成，继续追寻对舞蹈的热情",
+          "session_date": "12:48 am on 1 February, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+          "source_path": "vector",
+          "content": "吉娜鼓励乔恩在创业遇到困难时坚持下去、继续努力、不要放弃，并肯定他把计划和目标写下来是掌握进步图景的关键做法",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+          "source_path": "vector",
+          "content": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好",
+          "session_date": "10:33 am on 9 April, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "2bf90403-4875-4381-a465-d400520cf9e2",
+          "source_path": "vector",
+          "content": "2023年6月21日，乔恩把所有的计划和目标写下来，认为看到目标写在纸上能帮助他保持动力、专注于该做的事情",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "c4a339d5-2833-4d97-bf80-8d414c99e18d",
+          "source_path": "vector",
+          "content": "2023年7月，乔恩参加了一次社交活动，见到了一些投资人并获得好建议，现场氛围鼓舞人心；他也在做人际拓展并带来了不少好机会",
+          "session_date": "5:44 pm on 21 July, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+          "source_path": "graph",
+          "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+          "session_date": null
+        },
+        {
+          "rank": 2,
+          "id": "3f548823-9546-4a8a-8a3d-299b16b943b6",
+          "source_path": "vector",
+          "content": "截至2023年6月16日，乔恩一直在为舞蹈工作室做推广，并采纳吉娜的建议开始在社交媒体上发布自己的舞蹈视频，已经引起了一点轰动",
+          "session_date": "9:38 pm on 16 June, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+          "source_path": "vector",
+          "content": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）",
+          "session_date": "9:38 pm on 16 June, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+          "source_path": "vector",
+          "content": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想",
+          "session_date": "9:38 pm on 16 June, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+          "source_path": "vector",
+          "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+          "session_date": "2:32 pm on 29 January, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "source_path": "vector",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "session_date": "10:43 am on 4 February, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+          "source_path": "vector",
+          "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+          "source_path": "vector",
+          "content": "截至2023年7月21日，乔恩正在完善商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "20fc0980-03ad-41f3-a33a-6db73a040e49",
+          "source_path": "vector",
+          "content": "截至2023年4月3日，乔恩正在扩展舞蹈工作室的社交媒体影响力，并为当地学校和社区中心提供工作坊和课程；他表示努力已有回报，看到进步，舞者们非常兴奋",
+          "session_date": "1:26 pm on 3 April, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+          "source_path": "vector",
+          "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+          "session_date": "1:25 pm on 9 July, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+          "source_path": "vector",
+          "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+          "source_path": "vector",
+          "content": "截至2023年2月1日，乔恩仍在寻找场地开设他的舞蹈工作室，虽然过程有些坎坷，但他决心把这件事做成，继续追寻对舞蹈的热情",
+          "session_date": "12:48 am on 1 February, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+          "source_path": "vector",
+          "content": "吉娜鼓励乔恩在创业遇到困难时坚持下去、继续努力、不要放弃，并肯定他把计划和目标写下来是掌握进步图景的关键做法",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "source_path": "graph",
+          "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+          "source_path": "vector",
+          "content": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好",
+          "session_date": "10:33 am on 9 April, 2023"
+        }
+      ],
+      "gained_ids": [
+        "72c1939a-c0be-463d-bb94-481e0779fa2a",
+        "5651babb-7658-4e24-8dd2-77907367bd6e"
+      ],
+      "displaced_ids": [
+        "2bf90403-4875-4381-a465-d400520cf9e2",
+        "c4a339d5-2833-4d97-bf80-8d414c99e18d"
+      ],
+      "critical_memory_ids": [
+        "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8"
+      ],
+      "manual_diagnosis": "商业计划/投资推介/线上平台的直接记忆仍入槽，但图臂答案转向社媒等其他计划；属答案受干扰病例，非直接证据挤出"
+    }
+  ],
+  "limits": [
+    "Two independent runs differ in more than graph selection; answer and judge variability remains.",
+    "The image-backed signed-ball fact combines caption and dialogue; source text alone is insufficient.",
+    "Retrospective selection enriches interpretable examples and cannot estimate frequency among all flips."
+  ]
+}
