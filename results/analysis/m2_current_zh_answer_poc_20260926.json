@@ -1,0 +1,167 @@
+{
+  "scope": "Five current Chinese no-graph answer calls on frozen reranked top-15, no judge calls",
+  "source_retrieval": "results/analysis/m2_current_zh_retrieval_probe_20260926.json",
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_calls": 5,
+  "vector_db_sha256_before": "183dd964cf0958c7cab08ec28c0ddca622c5da9bcb6d55713da608fe3aa6f9f6",
+  "cases": [
+    {
+      "case_id": "locomo_conv-47_qa96",
+      "question": "约翰支持哪家足球俱乐部？",
+      "gold": "曼彻斯特城",
+      "context_ids": [
+        "6956a2b8-082c-4373-aa77-2c925378ddf3",
+        "597ee1c5-9271-43db-ab82-dd158e08a930",
+        "95c0a845-1a18-42b7-8fd5-23a3291215db",
+        "224835e4-14de-450f-9129-7c653b6b7733",
+        "ff261bf2-1124-433d-ab28-21c48a2be1c1",
+        "85196647-d71f-4cea-aeec-c4b0e8635476",
+        "07c399d4-1b27-415a-b27f-e6b4631edff8",
+        "720b7a31-1081-440c-8375-b17ece0e3639",
+        "63f5ec89-4bbd-417e-be04-c1272c7a0192",
+        "d43b56f8-f52d-46a9-a22e-53e16b43a1b5",
+        "a6909334-5317-4feb-bdac-abb6c3c04010",
+        "37c10383-f628-4a62-8bde-416fc2b822ea",
+        "beef5cce-897f-44c4-aac3-e43bf3db397b",
+        "4c886ef8-5964-41d6-af9b-448874955b25",
+        "9cd0faa8-79cd-4c96-adc3-f9c328c5c3b0"
+      ],
+      "reference_date": "2022-11-07T20:57:00",
+      "prompt_sha256": "4dce76f71363a03c9e26e6d044cc8e8256be7bf872f62f49b85d136646d791a2",
+      "answer": "曼城（Manchester City）",
+      "usage": {
+        "prompt_tokens": 2197,
+        "completion_tokens": 27
+      },
+      "answer_latency_s": 2.584
+    },
+    {
+      "case_id": "locomo_conv-48_qa39",
+      "question": "黛博拉和乔琳使用了哪些时间管理方法？",
+      "gold": "番茄工作法——工作25分钟休息5分钟、日程表或待办清单、艾森豪威尔矩阵、子弹笔记",
+      "context_ids": [
+        "c24f04ca-38ea-4eaf-b63c-80a00a66b2cf",
+        "40508905-b7bc-40b3-a98b-e16abdfeef53",
+        "d8593ef3-971a-46ec-a822-e8745c92ecb4",
+        "6be3f355-65c9-4ce2-807e-d538d6fd65a6",
+        "6bec2654-3991-4a1d-ad50-1c1f8ecf762e",
+        "c7208451-276a-4d78-a75a-8efc1ff97b98",
+        "8e613554-777c-49a2-89c3-8e123f6124c6",
+        "2b2e3c92-316e-4f23-b494-06359698b17b",
+        "2b9c0967-1dde-4475-9df0-317dd84ed788",
+        "77081ed6-6c37-47db-9eb6-1ccdfa635366",
+        "01f94896-0fd1-4aa7-b07e-d779154a8f2f",
+        "88e43d20-0ede-490f-90f0-386c540f35d3",
+        "5b65bef1-2adb-478c-8b10-cf18a957e890",
+        "eba52f22-34d0-4216-8f3b-070fb306b3ca",
+        "6cf2f756-9157-4819-ae9a-c9ad731ce439"
+      ],
+      "reference_date": "2023-09-20T10:17:00",
+      "prompt_sha256": "1c951608f0e9c4ad664024d5aef5fd2c9d485f8d330e2cee564e40236c93ae4e",
+      "answer": "** 黛博拉和乔琳讨论并使用的时间管理方法包括：\n\n1. **子弹笔记（Bullet Journal）**——乔琳从2023年8月开始使用，用于追踪任务、保持条理\n2. **艾森豪威尔矩阵**——黛布于2023年3月22日向乔琳介绍，用四个象限按紧急程度和重要性给任务分类\n3. **番茄工作法**——乔琳使用（工作25分钟、休息5分钟）以避免过度疲劳\n4. **制定时间表/计划表**——黛布建议为学习和爱好分别留出特定时间，并帮乔琳制定学习计划\n5. **任务拆分与设定目标**——黛布建议把任务拆成小块逐步完成\n6. **固定作息安排日程**——乔琳依靠固定的作息，为上课、学习和个人时间都安排日程",
+      "usage": {
+        "prompt_tokens": 2258,
+        "completion_tokens": 190
+      },
+      "answer_latency_s": 5.411
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+      "gold": "签名篮球",
+      "context_ids": [
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+        "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+        "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+        "4e5abf64-a6e5-43fb-939e-a853809328cb",
+        "1acb6522-5397-4a62-8624-5f209f1bf34c",
+        "ffefd5b9-b385-4618-983c-9bd545d408a7",
+        "3d9696ac-a639-4862-980b-dc534b960d18",
+        "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+        "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+        "511649c4-ae44-44e0-b0ec-788d21dc4355",
+        "aae114a6-d224-48a4-ba5b-2fab1cc0e51a"
+      ],
+      "reference_date": "2024-01-12T13:41:00",
+      "prompt_sha256": "823b409d5c3671e3b08345d7727cc64688c1afed86a36b0f5aa27f38f71101e3",
+      "answer": "篮球相关的运动收藏品——蒂姆珍藏着 favorite 球员签名的篮球（装在展示盒中），约翰则收藏篮球球衣和篮球鞋（包括一双幸运篮球鞋），两人都围绕篮球拥有相似的收藏爱好。",
+      "usage": {
+        "prompt_tokens": 2186,
+        "completion_tokens": 84
+      },
+      "answer_latency_s": 4.196
+    },
+    {
+      "case_id": "locomo_conv-41_qa86",
+      "question": "约翰做了什么事让他的钱包吃不消？",
+      "gold": "他的车抛锚了",
+      "context_ids": [
+        "2266b983-264c-4562-8f72-f1d2aa25d49b",
+        "1512066b-5bbe-455f-ab5f-bfd41aa8ed67",
+        "bdb28053-0602-4711-8601-fef445b5874f",
+        "197c1dc7-9a1b-4f13-ba5c-cdc9becf6da9",
+        "eedd9b8b-f1e9-4316-9c23-19ca3b620682",
+        "6fe799e4-9243-479f-ac94-79a257e55a5d",
+        "8528c86f-b2be-40bb-98a5-4940ac590e58",
+        "ceb1a846-9b6f-45f8-8ae9-959e07e65e6b",
+        "35071f9e-c480-44bc-8c30-6087812bbd0d",
+        "eb2241bf-e4bd-4ce3-b622-a10091a114c7",
+        "093b7fec-7081-40dc-a897-a7d9c90dbbcf",
+        "dccbdd97-4ac6-4028-8068-840070dcabff",
+        "46b7c813-f812-4f1f-8334-33e01a70e6dd",
+        "c8e8ae34-81ca-440f-9add-a44889f8aa81",
+        "9cee58e9-a51c-4482-8dc2-0a949b1d59ed"
+      ],
+      "reference_date": "2023-08-16T11:08:00",
+      "prompt_sha256": "2fcc66e9aeb5a227efccb09c2441f7adaa32ef8a717ae9df710491515d02f59b",
+      "answer": "2023年4月7日约翰的车在上班路上抛锚，昂贵的修车费用让他的钱包吃不消。",
+      "usage": {
+        "prompt_tokens": 2270,
+        "completion_tokens": 70
+      },
+      "answer_latency_s": 2.856
+    },
+    {
+      "case_id": "locomo_conv-30_qa80",
+      "question": "乔恩在社交活动上得到建议后有什么计划？",
+      "gold": "完善他的商业计划，调整对投资人的推介，并开发一个线上平台。",
+      "context_ids": [
+        "3f548823-9546-4a8a-8a3d-299b16b943b6",
+        "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+        "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+        "0e4e7516-a78f-4885-b138-39489ea9ea11",
+        "18251b9f-f071-458a-a610-c6684ac95a45",
+        "f597103f-48ad-476e-956c-4a5e5a250207",
+        "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+        "20fc0980-03ad-41f3-a33a-6db73a040e49",
+        "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+        "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+        "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+        "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+        "418ed457-c66e-42aa-8d07-3277e60001d8",
+        "2bf90403-4875-4381-a465-d400520cf9e2",
+        "c4a339d5-2833-4d97-bf80-8d414c99e18d"
+      ],
+      "reference_date": "2023-07-23T18:46:00",
+      "prompt_sha256": "405be7b1f23488642ccfc48c2cdc4bc6d428a074b37c4d8313eef44fce5a93d5",
+      "answer": "乔恩计划完善商业计划、调整面向投资人的推介，并搭建线上平台展示舞蹈工作室（同时与吉娜合作制作内容、运营社交媒体来推广工作室）。",
+      "usage": {
+        "prompt_tokens": 2218,
+        "completion_tokens": 103
+      },
+      "answer_latency_s": 3.715
+    }
+  ],
+  "limits": [
+    "Five retrospective mechanism cases do not estimate overall accuracy",
+    "Single answer sample per case; generation and judge noise unmeasured",
+    "Current graph not rebuilt or evaluated"
+  ],
+  "vector_db_sha256_after": "183dd964cf0958c7cab08ec28c0ddca622c5da9bcb6d55713da608fe3aa6f9f6",
+  "vector_db_unchanged": true
+}

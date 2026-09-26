@@ -1,0 +1,50 @@
+{
+  "scope": "Manual source-backed fact labels for five current Chinese no-graph answer calls; targeted mechanism cases, not a prevalence sample",
+  "raw_results": "results/analysis/m2_current_zh_answer_poc_20260926.json",
+  "cases": [
+    {
+      "case_id": "locomo_conv-47_qa96",
+      "required_atoms": [{"fact": "约翰支持曼彻斯特城", "answer_contains": true}],
+      "all_required_atoms_present": true,
+      "note": "当前无图重排第 1 条已有曼城球迷记忆，回答为曼城。"
+    },
+    {
+      "case_id": "locomo_conv-48_qa39",
+      "required_atoms": [
+        {"fact": "番茄工作法，工作25分钟休息5分钟", "answer_contains": true},
+        {"fact": "日程表或待办清单", "answer_contains": true},
+        {"fact": "艾森豪威尔矩阵", "answer_contains": true},
+        {"fact": "子弹笔记", "answer_contains": true}
+      ],
+      "all_required_atoms_present": true,
+      "note": "答案列出番茄工作法和25/5、计划表、矩阵、子弹笔记；额外列项另需源支持核查，不把本标签当全答无瑕证明。"
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "required_atoms": [
+        {"fact": "蒂姆有签名篮球", "answer_contains": true},
+        {"fact": "约翰也有签名篮球，故两人相似收藏为签名篮球", "answer_contains": false}
+      ],
+      "all_required_atoms_present": false,
+      "note": "当前检索前45条缺约翰的签名篮球；答案把约翰写成球衣和球鞋。"
+    },
+    {
+      "case_id": "locomo_conv-41_qa86",
+      "required_atoms": [{"fact": "车抛锚且昂贵维修让钱包吃不消", "answer_contains": true}],
+      "all_required_atoms_present": true,
+      "note": "当前无图重排第12条保留修车直证，答案忠实于 D11:1。"
+    },
+    {
+      "case_id": "locomo_conv-30_qa80",
+      "required_atoms": [
+        {"fact": "完善商业计划", "answer_contains": true},
+        {"fact": "调整投资人推介", "answer_contains": true},
+        {"fact": "搭建线上平台", "answer_contains": true}
+      ],
+      "all_required_atoms_present": true,
+      "note": "当前无图重排第7条保留三项计划，回答均包含；额外社媒内容不替代金标三项。"
+    }
+  ],
+  "counts": {"cases": 5, "all_required_atoms_present_cases": 4, "required_atoms": 11, "required_atoms_present": 10},
+  "limits": ["One answer per case; no repeat generation or judge calls", "Five retrospective mechanism cases do not estimate overall accuracy", "Labels check required source-backed atoms and do not certify every extra claim in the answer"]
+}
