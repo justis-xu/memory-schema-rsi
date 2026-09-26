@@ -1,0 +1,210 @@
+{
+  "scope": "One archived Chinese fused Graph run, conv-41 only; observed candidate tags and selected IDs",
+  "run": "results_zh/zhfull_fused_locomo_20260925_161049.jsonl",
+  "counts": {
+    "questions": 192,
+    "user_memory_final_context_occurrences": 30,
+    "user_memory_final_context_questions": 20,
+    "user_memory_retrieved_occurrences": 32,
+    "graph_candidate_occurrences_anchored_by_user_memory": 145,
+    "questions_with_user_memory_anchor": 14,
+    "entity:User_candidate_occurrences": 11,
+    "entity:User_candidate_questions": 8,
+    "entity:User_selected_occurrences": 1,
+    "entity:User_selected_questions": 1,
+    "entity:John_candidate_occurrences": 1495,
+    "entity:John_candidate_questions": 138,
+    "entity:John_selected_occurrences": 67,
+    "entity:John_selected_questions": 48,
+    "entity:约翰_candidate_occurrences": 163,
+    "entity:约翰_candidate_questions": 43,
+    "entity:约翰_selected_occurrences": 9,
+    "entity:约翰_selected_questions": 8,
+    "entity:User_distinct_candidate_ids": 4,
+    "entity:John_distinct_candidate_ids": 15,
+    "entity:约翰_distinct_candidate_ids": 15
+  },
+  "cases_with_user_entity_candidate": [
+    {
+      "case_id": "locomo_conv-41_qa42",
+      "category": "multi-hop",
+      "question": "哪个地区遭受了洪水袭击？",
+      "gold": "西区",
+      "prediction": "用户的老社区——West County——在2023年7月初遭受了严重洪水袭击，摧毁了许多房屋。",
+      "alias_candidates": [
+        {
+          "id": "fe0f098e-5c50-46d7-8f9a-6aa7194740bd",
+          "content": "User says Maria's support and friendship mean everything to him and motivate him to keep working for community change; he sometimes doubts he is making a difference but her encouragement helps him persevere",
+          "selected": false,
+          "anchor_memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+          "via": [
+            "entity:User"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa73",
+      "category": "single-hop",
+      "question": "是谁激励玛丽亚开始做志愿者的？",
+      "gold": "她的姨妈",
+      "prediction": "她的姨妈（aunt）",
+      "alias_candidates": [
+        {
+          "id": "c10122e0-ec23-4065-81ad-4072971a5686",
+          "content": "In early July 2023, User was gathering people together to discuss the flood damage and possible solutions, and invited Maria to join the meeting, which she gladly accepted",
+          "selected": false,
+          "anchor_memory_id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+          "via": [
+            "entity:User",
+            "entity:flood-recovery community meeting"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa95",
+      "category": "single-hop",
+      "question": "2023年5月玛丽亚和她妈妈一起做了什么活动？",
+      "gold": "一起做晚饭",
+      "prediction": "2023年5月3日晚上（5月4日的前一晚），玛丽亚和她妈妈一起做晚饭，做了沙拉、三明治和自制甜点，她最喜欢的是志愿者服务后吃的香蕉船圣代。此外，5月初她还加入了附近的一间教会。",
+      "alias_candidates": [
+        {
+          "id": "c10122e0-ec23-4065-81ad-4072971a5686",
+          "content": "In early July 2023, User was gathering people together to discuss the flood damage and possible solutions, and invited Maria to join the meeting, which she gladly accepted",
+          "selected": false,
+          "anchor_memory_id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+          "via": [
+            "entity:User",
+            "entity:flood-recovery community meeting"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa96",
+      "category": "single-hop",
+      "question": "玛丽亚做了什么来更贴近社区和自己的信仰？",
+      "gold": "加入了附近的一所教会",
+      "prediction": "玛丽亚在2023年5月初（约5月5日）加入了附近的一所教堂（joined a nearby church），以此让自己更贴近社区和信仰，她觉得这段经历到目前为止感觉很好。",
+      "alias_candidates": [
+        {
+          "id": "c10122e0-ec23-4065-81ad-4072971a5686",
+          "content": "In early July 2023, User was gathering people together to discuss the flood damage and possible solutions, and invited Maria to join the meeting, which she gladly accepted",
+          "selected": false,
+          "anchor_memory_id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+          "via": [
+            "entity:User",
+            "entity:flood-recovery community meeting"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa120",
+      "category": "single-hop",
+      "question": "2023年7月7日，什么自然灾害影响了约翰的家乡地区？",
+      "gold": "洪水",
+      "prediction": "严重洪水（2023年7月7日前一周，约翰家乡所在的社区遭遇了严重洪水，摧毁了许多房屋）。",
+      "alias_candidates": [
+        {
+          "id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+          "content": "Maria agreed to attend the flood-recovery community meeting and continue working with User to improve their neighborhood, calling User's helping spirit inspiring",
+          "selected": true,
+          "anchor_memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+          "via": [
+            "entity:User",
+            "entity:flood-recovery community meeting"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa121",
+      "category": "single-hop",
+      "question": "洪水对约翰家乡地区的房屋造成了什么影响？",
+      "gold": "很多房屋被毁了。",
+      "prediction": "2023年7月初，约翰的家乡街区遭遇严重洪水，由于基础设施老化，洪水摧毁了许多房屋。",
+      "alias_candidates": [
+        {
+          "id": "c10122e0-ec23-4065-81ad-4072971a5686",
+          "content": "In early July 2023, User was gathering people together to discuss the flood damage and possible solutions, and invited Maria to join the meeting, which she gladly accepted",
+          "selected": false,
+          "anchor_memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+          "via": [
+            "entity:User"
+          ]
+        },
+        {
+          "id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+          "content": "Maria agreed to attend the flood-recovery community meeting and continue working with User to improve their neighborhood, calling User's helping spirit inspiring",
+          "selected": false,
+          "anchor_memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+          "via": [
+            "entity:User"
+          ]
+        },
+        {
+          "id": "fe0f098e-5c50-46d7-8f9a-6aa7194740bd",
+          "content": "User says Maria's support and friendship mean everything to him and motivate him to keep working for community change; he sometimes doubts he is making a difference but her encouragement helps him persevere",
+          "selected": false,
+          "anchor_memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+          "via": [
+            "entity:User"
+          ]
+        },
+        {
+          "id": "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+          "content": "User keeps a photo of his family — taken on a trip for his daughter Sara's birthday in fall 2022, showing them on train tracks in autumn — and looks at it during hard times as a reminder of why he works for community change",
+          "selected": false,
+          "anchor_memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+          "via": [
+            "entity:User"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa131",
+      "category": "single-hop",
+      "question": "2023年7月31日，玛丽亚提到她参与了什么社区服务？",
+      "gold": "在流浪者收容所做志愿者",
+      "prediction": "2023年7月下旬（约7月24日那周），玛丽亚把烤好的食物送到了流浪者收容所，这让她比以往更有动力去帮助别人。",
+      "alias_candidates": [
+        {
+          "id": "c10122e0-ec23-4065-81ad-4072971a5686",
+          "content": "In early July 2023, User was gathering people together to discuss the flood damage and possible solutions, and invited Maria to join the meeting, which she gladly accepted",
+          "selected": false,
+          "anchor_memory_id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+          "via": [
+            "entity:User",
+            "entity:flood-recovery community meeting"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa179",
+      "category": "adversarial",
+      "question": "干旱对约翰老家的房屋造成了什么影响？",
+      "gold": "",
+      "prediction": "查阅记忆后，约翰老家遭受的灾害是**严重洪水**（而非干旱）。2023年7月7日前的一周，他的老家社区遭遇严重洪水，摧毁了许多房屋，原因在于现有基础设施质量差；这一灾害强化了他改善社区基础设施的决心。\n\n回答：没有关于干旱的记录——记忆显示的是老家因基础设施薄弱而遭受严重洪水，摧毁了许多房屋。",
+      "alias_candidates": [
+        {
+          "id": "c10122e0-ec23-4065-81ad-4072971a5686",
+          "content": "In early July 2023, User was gathering people together to discuss the flood damage and possible solutions, and invited Maria to join the meeting, which she gladly accepted",
+          "selected": false,
+          "anchor_memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+          "via": [
+            "entity:User"
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "The archive does not contain the full pre-graph seed list or untruncated node neighbors",
+    "A via tag is one retrieval route, not proof that the candidate uniquely answered the question",
+    "This is one historical graph build, not a controlled alias-merge replay"
+  ]
+}
