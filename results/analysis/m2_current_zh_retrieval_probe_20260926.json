@@ -1,0 +1,2820 @@
+{
+  "scope": "Five fixed Chinese questions, current Mem0 zhfull users; one vector search and one rerank operation per question",
+  "vector_db_sha256_before": "183dd964cf0958c7cab08ec28c0ddca622c5da9bcb6d55713da608fe3aa6f9f6",
+  "embedding_model": "qwen3.7-text-embedding-flash",
+  "rerank_model": "qwen3.7-text-rerank",
+  "top_k_vector": 45,
+  "top_k_final": 15,
+  "cases": [
+    {
+      "case_id": "locomo_conv-47_qa96",
+      "question": "约翰支持哪家足球俱乐部？",
+      "gold": "曼彻斯特城",
+      "user_id": "zhfull:locomo:conv-47",
+      "target_memory_ids": [
+        "6956a2b8-082c-4373-aa77-2c925378ddf3"
+      ],
+      "vector": [
+        {
+          "rank": 1,
+          "id": "d43b56f8-f52d-46a9-a22e-53e16b43a1b5",
+          "content": "詹姆斯表示会在经济援助和建议上支持约翰的新事业",
+          "session_id": "session_18",
+          "session_date": "1:45 pm on 6 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 2,
+          "id": "d15093da-fcb7-4070-be7e-aafbf4d563be",
+          "content": "约翰（assistant）很感激自己和兄弟姐妹之间的情谊，认为家人朋友带来很多爱和欢乐，有时候日子很难但他们的支持对他来说就是一切",
+          "session_id": "session_17",
+          "session_date": "9:49 am on 22 July, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 3,
+          "id": "224835e4-14de-450f-9129-7c653b6b7733",
+          "content": "约翰迷上了FIFA 23，这是一款可以和世界各地玩家在线对战的足球游戏",
+          "session_id": "session_30",
+          "session_date": "5:20 pm on 5 November, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 4,
+          "id": "450dd1ed-8c63-4ad1-82b2-0ef0db81e7d3",
+          "content": "詹姆斯考虑凭借约翰的HTML知识邀请他帮忙做游戏中的东西，约翰表示愿意合作",
+          "session_id": "session_1",
+          "session_date": "3:47 pm on 17 March, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 5,
+          "id": "37c10383-f628-4a62-8bde-416fc2b822ea",
+          "content": "约翰（assistant角色，詹姆斯的朋友）的弟弟妹妹们参加了编程课程，约翰一直在帮他们学编程，看到他们乐在其中感到很高兴",
+          "session_id": "session_21",
+          "session_date": "9:18 pm on 26 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 6,
+          "id": "beef5cce-897f-44c4-aac3-e43bf3db397b",
+          "content": "约翰表示参加编程小组只是一次学习新东西和体验团队合作的经历，并不意味着回归编程工作，他仍然满腔热情地想举办电子竞技比赛",
+          "session_id": "session_20",
+          "session_date": "3:57 pm on 21 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 7,
+          "id": "f1853387-b918-42d0-9973-12373b608e78",
+          "content": "约翰下个月（2022年9月）正在和兄弟姐妹们组织一次家庭游戏之夜，大家都很期待",
+          "session_id": "session_20",
+          "session_date": "3:57 pm on 21 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 8,
+          "id": "b9c125a5-d87f-49a7-bdd5-d3834648ad6c",
+          "content": "詹姆斯超爱角色扮演游戏，期待用新显卡玩新游戏，并询问约翰《赛博朋克2077》是否值得关注",
+          "session_id": "session_26",
+          "session_date": "9:20 am on 3 October, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 9,
+          "id": "f17fddc2-3576-440c-be02-928aa6b28288",
+          "content": "约翰表示自己最近游戏方面没什么进展，工作和生活都很忙，认为玩游戏是忘却生活压力的好方式",
+          "session_id": "session_5",
+          "session_date": "9:52 am on 12 April, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 10,
+          "id": "a6909334-5317-4feb-bdac-abb6c3c04010",
+          "content": "约翰还计划举办Fortnite比赛，作为其电竞赛事组织事业的一部分",
+          "session_id": "session_18",
+          "session_date": "1:45 pm on 6 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 11,
+          "id": "f5ddae9f-e638-4ff1-83f4-9cecea766d2c",
+          "content": "约翰（assistant）没有宠物，但表示将来一定会养一只，并感慨我们和宠物之间的感情很神奇",
+          "session_id": "session_17",
+          "session_date": "9:49 am on 22 July, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 12,
+          "id": "0217ef7b-f014-4ff9-ab87-ed68bf959b89",
+          "content": "约翰的弟弟妹妹们在2022年9月时已能自己写程序，从简单的做起，做一些基础的游戏和故事，学得快、玩得开心；他们和约翰一样热爱电子游戏，约翰为他们感到骄傲",
+          "session_id": "session_22",
+          "session_date": "6:53 pm on 1 September, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 13,
+          "id": "9ddc31ea-9f23-495e-87f3-1183c4d00cc9",
+          "content": "约翰被邀请担任游戏开发非营利组织的编程导师，负责教编程并协助游戏项目开发，他期待分享知识并激励对游戏充满热情的人，感到特别兴奋且深受鼓舞，希望这能带来更多机会",
+          "session_id": "session_26",
+          "session_date": "9:20 am on 3 October, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 14,
+          "id": "b367719d-bf8d-4e0b-b268-7357462d8435",
+          "content": "约翰表示很想养宠物但还没准备好，詹姆斯主动提出可以帮他找到最适合他的宠物，约翰表示感谢并会记住这个提议",
+          "session_id": "session_2",
+          "session_date": "9:26 pm on 20 March, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 15,
+          "id": "07c399d4-1b27-415a-b27f-e6b4631edff8",
+          "content": "约翰（assistant角色，詹姆斯的朋友）在2022年10月初收到一封邮件，获得在一家游戏开发非营利组织做志愿者的机会，他一直想做这件事，认为这能把游戏和助人两件热爱的事结合起来，感到非常兴奋",
+          "session_id": "session_26",
+          "session_date": "9:20 am on 3 October, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 16,
+          "id": "85a6a9ca-3b1d-477e-af28-82a68cd7b3b0",
+          "content": "约翰不喜欢保龄球，觉得自己手指太粗不适合；他想开始锻炼，比如早上跑步",
+          "session_id": "session_1",
+          "session_date": "3:47 pm on 17 March, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 17,
+          "id": "ff261bf2-1124-433d-ab28-21c48a2be1c1",
+          "content": "约翰（assistant）最近开始下国际象棋以提高策略能力，非常喜欢，认为像解一道无穷无尽的谜题；他目前主要在线上玩，并加入了国际象棋俱乐部和别人一起练习，分享了一场激烈对局的照片",
+          "session_id": "session_17",
+          "session_date": "9:49 am on 22 July, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 18,
+          "id": "a742df70-e0cb-46aa-99f3-6611b8acedca",
+          "content": "约翰小时候他的兄弟姐妹们为他办过一次通宵游戏马拉松，拉近了彼此的关系；他和兄弟姐妹现在不住在一起、见面不多，但每次聚在一起总会计划游戏之夜",
+          "session_id": "session_20",
+          "session_date": "3:57 pm on 21 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 19,
+          "id": "8fbda395-0c23-457b-bc55-daec280e1733",
+          "content": "詹姆斯喜欢带解谜的2D冒险游戏，比如《塞尔达传说》，并主动提出想看约翰的手机游戏或帮忙测试",
+          "session_id": "session_25",
+          "session_date": "8:56 pm on 20 September, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 20,
+          "id": "72e064bb-7987-4c22-8d5b-d9416fba0a11",
+          "content": "詹姆斯打算尝试体育类游戏作为新的游戏类型，决定去练习FIFA 23，之后想和约翰一起玩；约翰说FIFA 23不难上手，只需要游戏手柄和节奏感",
+          "session_id": "session_30",
+          "session_date": "5:20 pm on 5 November, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 21,
+          "id": "fb270669-6504-4fe4-a12e-0fd8f7c559e0",
+          "content": "约翰最近买了好多新书，书架几乎完全放满了",
+          "session_id": "session_14",
+          "session_date": "5:07 pm on 16 June, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 22,
+          "id": "fc85789d-4c97-47c4-8c5c-419a0747c83d",
+          "content": "约翰最近几天开始思考自己的未来和职业发展方向，他很有干劲和热情，希望把能力和热情用在自己真正关心的事业上，给世界带来积极影响，正在了解志愿服务并考虑进入非营利组织工作",
+          "session_id": "session_15",
+          "session_date": "9:59 pm on 19 June, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 23,
+          "id": "63f5ec89-4bbd-417e-be04-c1272c7a0192",
+          "content": "约翰在2022年10月第一周与程序员朋友们组织了一场线上比赛，玩得很开心",
+          "session_id": "session_27",
+          "session_date": "2:14 pm on 13 October, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 24,
+          "id": "d8e2437e-8097-4cde-917a-8ee7075c41ae",
+          "content": "约翰近期情绪起伏较大，一方面充满决心和热情，另一方面感到不堪重负、压力大，觉得平衡个人生活和工作是个挑战",
+          "session_id": "session_16",
+          "session_date": "5:13 pm on 9 July, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 25,
+          "id": "e5d4609c-df11-4365-831c-70eef076f105",
+          "content": "约翰和弟弟妹妹们一起做一个编程项目：一个帮助孩子们一边练习编程技能一边玩得开心的简单文字冒险游戏，约翰为他们感到非常骄傲，甚至设想他们以后能自己开发电子游戏",
+          "session_id": "session_21",
+          "session_date": "9:18 pm on 26 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 26,
+          "id": "fd398a7e-50a4-44a8-b04b-a5ce2f27bedd",
+          "content": "约翰表示测试准备好时会通知詹姆斯帮忙测试他的2D冒险游戏",
+          "session_id": "session_25",
+          "session_date": "8:56 pm on 20 September, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 27,
+          "id": "85196647-d71f-4cea-aeec-c4b0e8635476",
+          "content": "约翰信奉'只有休息得好的人才能工作得好'的原则，通过和朋友放松、旅行来获得工作动力",
+          "session_id": "session_6",
+          "session_date": "9:32 pm on 20 April, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 28,
+          "id": "31720145-0003-448d-9447-150ddb75645f",
+          "content": "约翰邀请詹姆斯下次一起参加他的活动（之前曾提到欢迎詹姆斯参加看电影聚会）",
+          "session_id": "session_10",
+          "session_date": "12:45 am on 8 May, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 29,
+          "id": "27a54835-d355-43cb-829c-1a59db395c4c",
+          "content": "约翰读过詹姆斯推荐的那本游戏杂志，认为教程、开发者访谈和技巧都很实用，对他很有帮助",
+          "session_id": "session_25",
+          "session_date": "8:56 pm on 20 September, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 30,
+          "id": "240849ff-6eca-4182-9830-2ecfa1488aa2",
+          "content": "约翰在2022年9月初告诉詹姆斯自己正在经历一些困难时期，并表示詹姆斯的友谊对自己很重要；詹姆斯表示如果约翰需要找人聊天倾诉，自己随时都在",
+          "session_id": "session_22",
+          "session_date": "6:53 pm on 1 September, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 31,
+          "id": "6956a2b8-082c-4373-aa77-2c925378ddf3",
+          "content": "约翰是曼城球迷，认为曼城会和利物浦为冠军而战并最终获胜，他相信曼城的教练能应对球队的困境",
+          "session_id": "session_13",
+          "session_date": "4:30 pm on 13 June, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 32,
+          "id": "2e5bdcff-726b-4dae-9d76-5b7eb343abd6",
+          "content": "约翰在慈善锦标赛筹款后用剩余的钱购买食材，为无家可归的人做饭，他们对此非常高兴",
+          "session_id": "session_10",
+          "session_date": "12:45 am on 8 May, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 33,
+          "id": "720b7a31-1081-440c-8375-b17ece0e3639",
+          "content": "约翰组织的CS:GO慈善锦标赛的主要目标是为一家离他住的街道不远的流浪狗收容所筹款，并且成功了",
+          "session_id": "session_10",
+          "session_date": "12:45 am on 8 May, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 34,
+          "id": "4c886ef8-5964-41d6-af9b-448874955b25",
+          "content": "约翰表示这次慈善锦标赛很棒，既结合了自己的兴趣又能帮助社区，他打算将来办更多类似的活动，不会就此止步，会做越来越多善事",
+          "session_id": "session_10",
+          "session_date": "12:45 am on 8 May, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 35,
+          "id": "d82484aa-6d28-4fdd-a02d-fdaeaefaba2f",
+          "content": "詹姆斯表示这周过得不错，正在努力平衡工作和其它活动；约翰则这周各种事情堆在一起很忙，但表示会给自己留点时间休息",
+          "session_id": "session_25",
+          "session_date": "8:56 pm on 20 September, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 36,
+          "id": "9cd0faa8-79cd-4c96-adc3-f9c328c5c3b0",
+          "content": "约翰不喜欢黑啤，但同意去麦基酒吧喝清淡的啤酒",
+          "session_id": "session_21",
+          "session_date": "9:18 pm on 26 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 37,
+          "id": "af3c53ff-c6e2-46f0-a64e-065315425fb5",
+          "content": "詹姆斯计划于2022年9月11日（下周日）和萨曼莎去看棒球赛，并邀请约翰一起去，想让约翰看看萨曼莎的样子；约翰答应了",
+          "session_id": "session_23",
+          "session_date": "9:23 pm on 4 September, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 38,
+          "id": "95c0a845-1a18-42b7-8fd5-23a3291215db",
+          "content": "詹姆斯是利物浦足球俱乐部的铁杆球迷，认为没有比足球更好的运动、没有比利物浦更好的俱乐部，利物浦的比赛他一场都不错过，并希望球队下个赛季能夺冠",
+          "session_id": "session_13",
+          "session_date": "4:30 pm on 13 June, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 39,
+          "id": "a5bc0f54-8617-495a-b82c-1db16416359a",
+          "content": "这段志愿服务经历激励约翰考虑用编程技能产生积极影响，他正在考虑志愿服务角色，甚至可能朝非营利领域的职业方向发展，但目前还没寻找合适的非营利组织",
+          "session_id": "session_11",
+          "session_date": "5:00 pm on 11 May, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 40,
+          "id": "37e61e41-c3ec-40fe-888c-2a2cac805700",
+          "content": "约翰一直在思考职业未来，想给世界带来积极影响，在了解志愿服务并考虑进入非营利组织工作，把热情和能力用在自己关心的事业上",
+          "session_id": "session_16",
+          "session_date": "5:13 pm on 9 July, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 41,
+          "id": "2a780350-fc75-45c3-8555-7eccefbe67c0",
+          "content": "约翰想进入游戏行业，希望成为本州各类电脑游戏电竞赛事（如CS:GO）的组织者，并计划积累经验、提升技能，已结识一些能帮忙的人脉",
+          "session_id": "session_18",
+          "session_date": "1:45 pm on 6 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 42,
+          "id": "58fa16f1-4628-4d5c-87d7-61abc7daa3d0",
+          "content": "詹姆斯喜欢阅读，尤其喜欢在寒冷的冬日里裹在被窝里看书；约翰则喜欢靠阅读放松，享受进入作者构建的想象世界",
+          "session_id": "session_16",
+          "session_date": "5:13 pm on 9 July, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 43,
+          "id": "92008d4e-8999-4446-a408-1b9703d1a742",
+          "content": "约翰刚报了一个编程班，几年前用HTML和CSS写过代码，想通过课程重温技能",
+          "session_id": "session_1",
+          "session_date": "3:47 pm on 17 March, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 44,
+          "id": "597ee1c5-9271-43db-ab82-dd158e08a930",
+          "content": "詹姆斯认为曼城状态不佳、转会政策糟糕，并于2022年6月与约翰打赌：英超最终排名利物浦会在曼城前面",
+          "session_id": "session_13",
+          "session_date": "4:30 pm on 13 June, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        },
+        {
+          "rank": 45,
+          "id": "25226322-9433-4d47-a582-531efa29bbb1",
+          "content": "约翰经过多次面试和熬夜，终于拿到了梦寐以求的工作，非常激动，并于2022年7月开始上班",
+          "session_id": "session_13",
+          "session_date": "4:30 pm on 13 June, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": null
+        }
+      ],
+      "reranked": [
+        {
+          "rank": 1,
+          "id": "6956a2b8-082c-4373-aa77-2c925378ddf3",
+          "content": "约翰是曼城球迷，认为曼城会和利物浦为冠军而战并最终获胜，他相信曼城的教练能应对球队的困境",
+          "session_id": "session_13",
+          "session_date": "4:30 pm on 13 June, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.9449567410400537
+        },
+        {
+          "rank": 2,
+          "id": "597ee1c5-9271-43db-ab82-dd158e08a930",
+          "content": "詹姆斯认为曼城状态不佳、转会政策糟糕，并于2022年6月与约翰打赌：英超最终排名利物浦会在曼城前面",
+          "session_id": "session_13",
+          "session_date": "4:30 pm on 13 June, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.6850228423801266
+        },
+        {
+          "rank": 3,
+          "id": "95c0a845-1a18-42b7-8fd5-23a3291215db",
+          "content": "詹姆斯是利物浦足球俱乐部的铁杆球迷，认为没有比足球更好的运动、没有比利物浦更好的俱乐部，利物浦的比赛他一场都不错过，并希望球队下个赛季能夺冠",
+          "session_id": "session_13",
+          "session_date": "4:30 pm on 13 June, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.4729231210555119
+        },
+        {
+          "rank": 4,
+          "id": "224835e4-14de-450f-9129-7c653b6b7733",
+          "content": "约翰迷上了FIFA 23，这是一款可以和世界各地玩家在线对战的足球游戏",
+          "session_id": "session_30",
+          "session_date": "5:20 pm on 5 November, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.3665861028620623
+        },
+        {
+          "rank": 5,
+          "id": "ff261bf2-1124-433d-ab28-21c48a2be1c1",
+          "content": "约翰（assistant）最近开始下国际象棋以提高策略能力，非常喜欢，认为像解一道无穷无尽的谜题；他目前主要在线上玩，并加入了国际象棋俱乐部和别人一起练习，分享了一场激烈对局的照片",
+          "session_id": "session_17",
+          "session_date": "9:49 am on 22 July, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.2810058653919615
+        },
+        {
+          "rank": 6,
+          "id": "85196647-d71f-4cea-aeec-c4b0e8635476",
+          "content": "约翰信奉'只有休息得好的人才能工作得好'的原则，通过和朋友放松、旅行来获得工作动力",
+          "session_id": "session_6",
+          "session_date": "9:32 pm on 20 April, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.2321975777490647
+        },
+        {
+          "rank": 7,
+          "id": "07c399d4-1b27-415a-b27f-e6b4631edff8",
+          "content": "约翰（assistant角色，詹姆斯的朋友）在2022年10月初收到一封邮件，获得在一家游戏开发非营利组织做志愿者的机会，他一直想做这件事，认为这能把游戏和助人两件热爱的事结合起来，感到非常兴奋",
+          "session_id": "session_26",
+          "session_date": "9:20 am on 3 October, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.2099474521961644
+        },
+        {
+          "rank": 8,
+          "id": "720b7a31-1081-440c-8375-b17ece0e3639",
+          "content": "约翰组织的CS:GO慈善锦标赛的主要目标是为一家离他住的街道不远的流浪狗收容所筹款，并且成功了",
+          "session_id": "session_10",
+          "session_date": "12:45 am on 8 May, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.20875930346288202
+        },
+        {
+          "rank": 9,
+          "id": "63f5ec89-4bbd-417e-be04-c1272c7a0192",
+          "content": "约翰在2022年10月第一周与程序员朋友们组织了一场线上比赛，玩得很开心",
+          "session_id": "session_27",
+          "session_date": "2:14 pm on 13 October, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.18529118181468002
+        },
+        {
+          "rank": 10,
+          "id": "d43b56f8-f52d-46a9-a22e-53e16b43a1b5",
+          "content": "詹姆斯表示会在经济援助和建议上支持约翰的新事业",
+          "session_id": "session_18",
+          "session_date": "1:45 pm on 6 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.1743803120794556
+        },
+        {
+          "rank": 11,
+          "id": "a6909334-5317-4feb-bdac-abb6c3c04010",
+          "content": "约翰还计划举办Fortnite比赛，作为其电竞赛事组织事业的一部分",
+          "session_id": "session_18",
+          "session_date": "1:45 pm on 6 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.17168840783953004
+        },
+        {
+          "rank": 12,
+          "id": "37c10383-f628-4a62-8bde-416fc2b822ea",
+          "content": "约翰（assistant角色，詹姆斯的朋友）的弟弟妹妹们参加了编程课程，约翰一直在帮他们学编程，看到他们乐在其中感到很高兴",
+          "session_id": "session_21",
+          "session_date": "9:18 pm on 26 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.16737548506916772
+        },
+        {
+          "rank": 13,
+          "id": "beef5cce-897f-44c4-aac3-e43bf3db397b",
+          "content": "约翰表示参加编程小组只是一次学习新东西和体验团队合作的经历，并不意味着回归编程工作，他仍然满腔热情地想举办电子竞技比赛",
+          "session_id": "session_20",
+          "session_date": "3:57 pm on 21 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.164815911463166
+        },
+        {
+          "rank": 14,
+          "id": "4c886ef8-5964-41d6-af9b-448874955b25",
+          "content": "约翰表示这次慈善锦标赛很棒，既结合了自己的兴趣又能帮助社区，他打算将来办更多类似的活动，不会就此止步，会做越来越多善事",
+          "session_id": "session_10",
+          "session_date": "12:45 am on 8 May, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.16154108408468848
+        },
+        {
+          "rank": 15,
+          "id": "9cd0faa8-79cd-4c96-adc3-f9c328c5c3b0",
+          "content": "约翰不喜欢黑啤，但同意去麦基酒吧喝清淡的啤酒",
+          "session_id": "session_21",
+          "session_date": "9:18 pm on 26 August, 2022",
+          "user_id": "zhfull:locomo:conv-47",
+          "rerank_score": 0.15918519932860264
+        }
+      ],
+      "target_vector_ranks": {
+        "6956a2b8-082c-4373-aa77-2c925378ddf3": 31
+      },
+      "target_rerank_ranks": {
+        "6956a2b8-082c-4373-aa77-2c925378ddf3": 1
+      },
+      "rerank_endpoint_style": "dashscope native text-rerank"
+    },
+    {
+      "case_id": "locomo_conv-48_qa39",
+      "question": "黛博拉和乔琳使用了哪些时间管理方法？",
+      "gold": "番茄工作法——工作25分钟休息5分钟、日程表或待办清单、艾森豪威尔矩阵、子弹笔记",
+      "user_id": "zhfull:locomo:conv-48",
+      "target_memory_ids": [
+        "6bec2654-3991-4a1d-ad50-1c1f8ecf762e"
+      ],
+      "vector": [
+        {
+          "rank": 1,
+          "id": "c24f04ca-38ea-4eaf-b63c-80a00a66b2cf",
+          "content": "黛布建议乔琳把任务拆成小块、设定目标，用计划表或日程工具保持条理并留出属于自己的时间，并提出可以帮忙制定学习计划",
+          "session_id": "session_8",
+          "session_date": "7:18 pm on 2 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 2,
+          "id": "01f94896-0fd1-4aa7-b07e-d779154a8f2f",
+          "content": "黛布鼓励乔琳在追求目标的同时享受旅程、给自己留时间寻找乐趣，并表示会一直支持她",
+          "session_id": "session_21",
+          "session_date": "9:34 am on 24 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 3,
+          "id": "1b2ab722-ce7b-4cdd-9d28-4a6e86d0f315",
+          "content": "黛布和乔琳约好尽快见面，黛布表示随时支持乔琳解决她的学业压力问题",
+          "session_id": "session_9",
+          "session_date": "11:22 am on 13 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 4,
+          "id": "1b2166fd-fea1-4bcc-9b95-d46c80105157",
+          "content": "用户名叫黛布，她有一个朋友乔琳，两人于2023年1月23日的对话中初次认识",
+          "session_id": "session_1",
+          "session_date": "4:06 pm on 23 January, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 5,
+          "id": "091c0495-31ec-4890-a148-72d189386a6e",
+          "content": "乔琳感谢黛博拉的专辑推荐，答应去听《Sleep》",
+          "session_id": "session_11",
+          "session_date": "4:03 pm on 28 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 6,
+          "id": "eba52f22-34d0-4216-8f3b-070fb306b3ca",
+          "content": "乔琳在2023年3月13日表示自己在应付工程学作业时遇到困难，难以跟上进度，希望和黛布找时间聊聊时间管理的话题，之后会查日程安排回复",
+          "session_id": "session_9",
+          "session_date": "11:22 am on 13 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 7,
+          "id": "9f858349-324d-4fa9-9982-74b52b21edea",
+          "content": "乔琳（黛布的朋友）的目标是在自己的领域取得成功并产生积极影响，为此一直在学习、参加研讨会和拓展人脉",
+          "session_id": "session_21",
+          "session_date": "9:34 am on 24 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 8,
+          "id": "44710e0a-1a4c-465d-bdfc-d81a7fe1b0f9",
+          "content": "黛布和乔琳约定2023年9月15日（星期五）下午5点在乔琳最爱的咖啡馆见面喝咖啡、吃新鲜糕点并叙旧；乔琳在那之前要先整理书柜里的工程教科书",
+          "session_id": "session_26",
+          "session_date": "7:39 pm on 8 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 9,
+          "id": "061ba09a-c301-4b82-a624-cfec400acbaf",
+          "content": "乔琳的大项目很难，但她一直在坚持推进，并感谢黛布的支持",
+          "session_id": "session_25",
+          "session_date": "8:31 pm on 6 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 10,
+          "id": "e4a5c16d-c226-4af5-b1fc-3be714203c3d",
+          "content": "黛布和乔琳约定组成互相支持的小圈子，互相激励、互相鼓励，一起踏上正念与感恩的旅程",
+          "session_id": "session_27",
+          "session_date": "2:18 pm on 12 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 11,
+          "id": "5b65bef1-2adb-478c-8b10-cf18a957e890",
+          "content": "黛布表示在正念入门上愿意帮助乔琳，两人互相支持，约定有需要随时找对方",
+          "session_id": "session_18",
+          "session_date": "2:58 pm on 16 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 12,
+          "id": "474801c6-867d-43de-a80e-10b0c4041fc2",
+          "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+          "session_id": "session_26",
+          "session_date": "7:39 pm on 8 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 13,
+          "id": "6be3f355-65c9-4ce2-807e-d538d6fd65a6",
+          "content": "乔琳依靠固定的作息来掌控日程，为上课、学习和个人时间都安排了日程，瑜伽和冥想等自我关怀活动帮助她保持平衡和放松",
+          "session_id": "session_26",
+          "session_date": "7:39 pm on 8 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 14,
+          "id": "c7208451-276a-4d78-a75a-8efc1ff97b98",
+          "content": "黛布认为平衡爱好和学业的方法是分清主次、有效管理时间，制定时间表为学习和爱好分别留出特定时间",
+          "session_id": "session_19",
+          "session_date": "12:52 am on 19 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 15,
+          "id": "88e43d20-0ede-490f-90f0-386c540f35d3",
+          "content": "黛布试过冲浪；乔琳刚开始学冲浪但还没去过，两人约定一起去尝试，并于2023年9月17日计划在2023年10月安排时间，乔琳会查日程后确认",
+          "session_id": "session_29",
+          "session_date": "1:24 pm on 17 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 16,
+          "id": "77081ed6-6c37-47db-9eb6-1ccdfa635366",
+          "content": "黛布相信自我照顾的重要性，信奉'空杯子倒不出水来'的理念——照顾好自己才有精力帮助别人，并鼓励乔琳也把自己放在首位",
+          "session_id": "session_7",
+          "session_date": "4:50 pm on 25 February, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 17,
+          "id": "a9792ba8-0216-46d9-8afd-495b4ac2a6a1",
+          "content": "黛布最近玩了一个关于猫的卡牌游戏（不记得名字），玩法是从牌堆抽牌并用其攻击对手，她想和乔琳一起玩这个游戏",
+          "session_id": "session_27",
+          "session_date": "2:18 pm on 12 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 18,
+          "id": "d8593ef3-971a-46ec-a822-e8745c92ecb4",
+          "content": "乔琳从2023年8月开始使用子弹笔记（bullet journal）做时间管理，认为它对追踪任务和保持条理很有帮助，划掉完成任务时感觉特别满足",
+          "session_id": "session_18",
+          "session_date": "2:58 pm on 16 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 19,
+          "id": "62d47345-6faf-469e-9a35-249d3c71617f",
+          "content": "黛布分享了她在社区瑜伽空间练瑜伽的照片，并表示愿意给乔琳推荐日常练习",
+          "session_id": "session_16",
+          "session_date": "9:26 am on 1 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 20,
+          "id": "0e60bab4-2102-438d-a10c-57db822e7f95",
+          "content": "乔琳热衷于提出新想法、提高效率、用工程才能做好事，并牢记妈妈强调的帮助他人的价值",
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 21,
+          "id": "56b70992-f53c-4d8a-9dc1-02df78a4ebbe",
+          "content": "乔琳在2023年4月9日提到自己正在做一个辛苦但逐渐成形的大项目，很期待最终成果，并表示会随时告诉黛布进展",
+          "session_id": "session_12",
+          "session_date": "4:30 pm on 9 April, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 22,
+          "id": "6bec2654-3991-4a1d-ad50-1c1f8ecf762e",
+          "content": "乔琳在2023年3月22日表示正在使用番茄工作法（工作25分钟、休息5分钟）避免过度疲劳，但仍难以分清任务轻重缓急，任务一多就无从下手",
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 23,
+          "id": "2290dda6-70d6-447c-9d28-a6f66921c986",
+          "content": "乔琳忙碌一天后会和伴侣一起打电子游戏放松，这让两人更亲密",
+          "session_id": "session_12",
+          "session_date": "4:30 pm on 9 April, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 24,
+          "id": "91261b1f-9237-4413-b824-dca5729d6819",
+          "content": "乔琳通常在自己房间里放松、安心休息，那是她忙碌一天后宁静休憩、放松充电的小天地",
+          "session_id": "session_28",
+          "session_date": "3:09 pm on 15 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 25,
+          "id": "5c8bcbff-5203-477d-b698-1c12fbdb250e",
+          "content": "乔琳看到黛布的日出照片想起了自己上次惬意美好的海滩度假，并提议也许有一天两人能一起看日出，黛布欣然接受了这个提议",
+          "session_id": "session_25",
+          "session_date": "8:31 pm on 6 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 26,
+          "id": "2b9c0967-1dde-4475-9df0-317dd84ed788",
+          "content": "乔琳还没试过正念，但很想尝试，希望借此减压并获得平静；黛布是通过工作坊和书籍开始正念的，如今正念已成为她生活中的重要部分",
+          "session_id": "session_18",
+          "session_date": "2:58 pm on 16 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 27,
+          "id": "41460471-9d98-417a-873d-0824b3f76a00",
+          "content": "截至2023年8月，乔琳的工程学学习进展顺利，她强调平衡生活对自己来说是关键",
+          "session_id": "session_19",
+          "session_date": "12:52 am on 19 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 28,
+          "id": "40508905-b7bc-40b3-a98b-e16abdfeef53",
+          "content": "黛布向乔琳介绍了艾森豪威尔矩阵，用四个象限按紧急程度和重要性给任务分类，以帮助乔琳整理安排、保持专注并减轻压力，乔琳表示愿意尝试",
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 29,
+          "id": "676c57a2-84eb-4d45-bf00-ac4fc0d95838",
+          "content": "乔琳（assistant）最近专注于学业和与伴侣的感情，两人计划去海边小旅行作为放松方式",
+          "session_id": "session_24",
+          "session_date": "2:14 pm on 3 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 30,
+          "id": "c696bbf7-f023-4a28-845c-18da1670bf96",
+          "content": "乔琳计划和她的伴侣去露营，亲近大自然并练习瑜伽（2023年9月8日左右提及）",
+          "session_id": "session_26",
+          "session_date": "7:39 pm on 8 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 31,
+          "id": "5f285239-4232-4c94-9f17-b07ab54dcf0c",
+          "content": "乔琳的妈妈已经去世，她教会乔琳坚持不懈；乔琳伴侣的爸爸也已去世，示范了坚定决心；乔琳学工程，伴侣从事创作事业，他们通过追求各自的热爱来纪念他们",
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 32,
+          "id": "8d3bb9b5-677e-4f0d-86c7-909e97d56885",
+          "content": "乔琳迫不及待想尝试黛布推荐的温和流动式瑜伽练习，并答应练习后向黛布汇报感受",
+          "session_id": "session_16",
+          "session_date": "9:26 am on 1 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 33,
+          "id": "9504398e-7248-412e-9448-07bbbba1c2f4",
+          "content": "乔琳的笔记本里有一句激励她的话，提醒她抛弃消极、专注于成长和保持积极",
+          "session_id": "session_23",
+          "session_date": "11:46 am on 30 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 34,
+          "id": "6cf2f756-9157-4819-ae9a-c9ad731ce439",
+          "content": "乔琳在2023年8月表示正把自我照顾放在优先位置，练习瑜伽和冥想来保持平衡和踏实",
+          "session_id": "session_16",
+          "session_date": "9:26 am on 1 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 35,
+          "id": "8e613554-777c-49a2-89c3-8e123f6124c6",
+          "content": "黛布通过倾听内心、自我反思、做瑜伽拉伸、散步和保证充足睡眠来保持工作与自我照顾的平衡",
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 36,
+          "id": "6320aa07-c8f3-4dd9-92c2-baa9298da133",
+          "content": "乔琳在静修期间的工程项目上做出了成果，想出了一些很棒的解决方案，对此非常兴奋",
+          "session_id": "session_5",
+          "session_date": "9:03 pm on 9 February, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 37,
+          "id": "2b2e3c92-316e-4f23-b494-06359698b17b",
+          "content": "乔琳在2023年2月24日（'上周五'）做了瑜伽和冥想来放松，一直在努力挤出属于自己的时间",
+          "session_id": "session_8",
+          "session_date": "7:18 pm on 2 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 38,
+          "id": "10f42cfe-40eb-44ce-9fb6-056455436fcd",
+          "content": "乔琳在2023年7月正努力把锻炼安排进学习计划里，觉得挺难但也很有趣",
+          "session_id": "session_15",
+          "session_date": "7:37 pm on 9 July, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 39,
+          "id": "0fa071d7-ae10-431f-ac2b-7cf6a041cc48",
+          "content": "乔琳在2023年3月初因考试和截止日期感到不堪重负，待办事项清单似乎永远做不完，但她仍在尽力应对",
+          "session_id": "session_8",
+          "session_date": "7:18 pm on 2 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 40,
+          "id": "f9f35e3b-c552-4389-a4f0-9f3f1d59d0f0",
+          "content": "乔琳和伴侣是在大学的一门工程课上认识的，先成为朋友，友谊后来发展成恋爱关系，两人还喜欢一起做工程项目",
+          "session_id": "session_7",
+          "session_date": "4:50 pm on 25 February, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 41,
+          "id": "90953461-8a3f-4f44-ab95-93433a8c39d0",
+          "content": "黛布在2023年3月送给乔琳一个黄色咖啡杯，杯上有手写的励志信息（'believe in yourself'风格），这个杯子让乔琳很开心",
+          "session_id": "session_8",
+          "session_date": "7:18 pm on 2 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 42,
+          "id": "31d0216c-1517-42f6-95a6-7efee6d728d0",
+          "content": "乔琳练瑜伽时喜欢听尼尔斯·弗拉姆和奥拉维尔·阿纳尔兹的音乐，觉得非常舒缓，并向黛布寻求类似歌手或曲目推荐",
+          "session_id": "session_11",
+          "session_date": "4:03 pm on 28 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 43,
+          "id": "54b9ab89-5306-4b7f-9c88-468d201501ae",
+          "content": "乔琳在2023年6月表示实习期间很难找到工作与生活的平衡，一直埋头苦干，难以腾出时间发展爱好和放松",
+          "session_id": "session_13",
+          "session_date": "3:56 pm on 6 June, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 44,
+          "id": "92eff024-cc55-49e9-930b-ca19f4cdad8a",
+          "content": "乔琳与她的伴侣一起在主机上玩游戏，两人对游戏都很着迷；上周（2023年1月中旬）他们一起玩了《底特律》；乔琳从孩子时期就自己学会了玩游戏；他们计划在2023年1月28日（下周六）玩《Walking Dead》",
+          "session_id": "session_2",
+          "session_date": "9:49 am on 27 January, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        },
+        {
+          "rank": 45,
+          "id": "be040143-e08d-4b9a-b366-2d18ae92fb5d",
+          "content": "黛布家附近有一家很棒的隐蔽咖啡馆（带庭院的照片），乔琳提议见面时听她介绍，也许下次可以去那里",
+          "session_id": "session_26",
+          "session_date": "7:39 pm on 8 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": null
+        }
+      ],
+      "reranked": [
+        {
+          "rank": 1,
+          "id": "c24f04ca-38ea-4eaf-b63c-80a00a66b2cf",
+          "content": "黛布建议乔琳把任务拆成小块、设定目标，用计划表或日程工具保持条理并留出属于自己的时间，并提出可以帮忙制定学习计划",
+          "session_id": "session_8",
+          "session_date": "7:18 pm on 2 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.9994179969759169
+        },
+        {
+          "rank": 2,
+          "id": "40508905-b7bc-40b3-a98b-e16abdfeef53",
+          "content": "黛布向乔琳介绍了艾森豪威尔矩阵，用四个象限按紧急程度和重要性给任务分类，以帮助乔琳整理安排、保持专注并减轻压力，乔琳表示愿意尝试",
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.9848116447373303
+        },
+        {
+          "rank": 3,
+          "id": "d8593ef3-971a-46ec-a822-e8745c92ecb4",
+          "content": "乔琳从2023年8月开始使用子弹笔记（bullet journal）做时间管理，认为它对追踪任务和保持条理很有帮助，划掉完成任务时感觉特别满足",
+          "session_id": "session_18",
+          "session_date": "2:58 pm on 16 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.9425044289042006
+        },
+        {
+          "rank": 4,
+          "id": "6be3f355-65c9-4ce2-807e-d538d6fd65a6",
+          "content": "乔琳依靠固定的作息来掌控日程，为上课、学习和个人时间都安排了日程，瑜伽和冥想等自我关怀活动帮助她保持平衡和放松",
+          "session_id": "session_26",
+          "session_date": "7:39 pm on 8 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.9420468597571694
+        },
+        {
+          "rank": 5,
+          "id": "6bec2654-3991-4a1d-ad50-1c1f8ecf762e",
+          "content": "乔琳在2023年3月22日表示正在使用番茄工作法（工作25分钟、休息5分钟）避免过度疲劳，但仍难以分清任务轻重缓急，任务一多就无从下手",
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.8981635619741642
+        },
+        {
+          "rank": 6,
+          "id": "c7208451-276a-4d78-a75a-8efc1ff97b98",
+          "content": "黛布认为平衡爱好和学业的方法是分清主次、有效管理时间，制定时间表为学习和爱好分别留出特定时间",
+          "session_id": "session_19",
+          "session_date": "12:52 am on 19 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.8798647609718595
+        },
+        {
+          "rank": 7,
+          "id": "8e613554-777c-49a2-89c3-8e123f6124c6",
+          "content": "黛布通过倾听内心、自我反思、做瑜伽拉伸、散步和保证充足睡眠来保持工作与自我照顾的平衡",
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.8432931358204322
+        },
+        {
+          "rank": 8,
+          "id": "2b2e3c92-316e-4f23-b494-06359698b17b",
+          "content": "乔琳在2023年2月24日（'上周五'）做了瑜伽和冥想来放松，一直在努力挤出属于自己的时间",
+          "session_id": "session_8",
+          "session_date": "7:18 pm on 2 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.7261130594512151
+        },
+        {
+          "rank": 9,
+          "id": "2b9c0967-1dde-4475-9df0-317dd84ed788",
+          "content": "乔琳还没试过正念，但很想尝试，希望借此减压并获得平静；黛布是通过工作坊和书籍开始正念的，如今正念已成为她生活中的重要部分",
+          "session_id": "session_18",
+          "session_date": "2:58 pm on 16 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.7015817415569565
+        },
+        {
+          "rank": 10,
+          "id": "77081ed6-6c37-47db-9eb6-1ccdfa635366",
+          "content": "黛布相信自我照顾的重要性，信奉'空杯子倒不出水来'的理念——照顾好自己才有精力帮助别人，并鼓励乔琳也把自己放在首位",
+          "session_id": "session_7",
+          "session_date": "4:50 pm on 25 February, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.647913058159889
+        },
+        {
+          "rank": 11,
+          "id": "01f94896-0fd1-4aa7-b07e-d779154a8f2f",
+          "content": "黛布鼓励乔琳在追求目标的同时享受旅程、给自己留时间寻找乐趣，并表示会一直支持她",
+          "session_id": "session_21",
+          "session_date": "9:34 am on 24 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.6291107050094116
+        },
+        {
+          "rank": 12,
+          "id": "88e43d20-0ede-490f-90f0-386c540f35d3",
+          "content": "黛布试过冲浪；乔琳刚开始学冲浪但还没去过，两人约定一起去尝试，并于2023年9月17日计划在2023年10月安排时间，乔琳会查日程后确认",
+          "session_id": "session_29",
+          "session_date": "1:24 pm on 17 September, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.6288888229441457
+        },
+        {
+          "rank": 13,
+          "id": "5b65bef1-2adb-478c-8b10-cf18a957e890",
+          "content": "黛布表示在正念入门上愿意帮助乔琳，两人互相支持，约定有需要随时找对方",
+          "session_id": "session_18",
+          "session_date": "2:58 pm on 16 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.5953463420854109
+        },
+        {
+          "rank": 14,
+          "id": "eba52f22-34d0-4216-8f3b-070fb306b3ca",
+          "content": "乔琳在2023年3月13日表示自己在应付工程学作业时遇到困难，难以跟上进度，希望和黛布找时间聊聊时间管理的话题，之后会查日程安排回复",
+          "session_id": "session_9",
+          "session_date": "11:22 am on 13 March, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.5647679970446312
+        },
+        {
+          "rank": 15,
+          "id": "6cf2f756-9157-4819-ae9a-c9ad731ce439",
+          "content": "乔琳在2023年8月表示正把自我照顾放在优先位置，练习瑜伽和冥想来保持平衡和踏实",
+          "session_id": "session_16",
+          "session_date": "9:26 am on 1 August, 2023",
+          "user_id": "zhfull:locomo:conv-48",
+          "rerank_score": 0.5598957619679626
+        }
+      ],
+      "target_vector_ranks": {
+        "6bec2654-3991-4a1d-ad50-1c1f8ecf762e": 22
+      },
+      "target_rerank_ranks": {
+        "6bec2654-3991-4a1d-ad50-1c1f8ecf762e": 5
+      },
+      "rerank_endpoint_style": "dashscope native text-rerank"
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+      "gold": "签名篮球",
+      "user_id": "zhfull:locomo:conv-43",
+      "target_memory_ids": [
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99"
+      ],
+      "vector": [
+        {
+          "rank": 1,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+          "session_id": "session_20",
+          "session_date": "9:52 am on 1 December, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 2,
+          "id": "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+          "content": "蒂姆表示会支持约翰的慈善工作和篮球事业，认为他充满决心和热情",
+          "session_id": "session_6",
+          "session_date": "1:08 pm on 11 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 3,
+          "id": "511649c4-ae44-44e0-b0ec-788d21dc4355",
+          "content": "蒂姆和约翰都认为友谊对彼此很重要，蒂姆非常感激约翰的支持和鼓励，说这段友谊让他的旅程变得更美好",
+          "session_id": "session_20",
+          "session_date": "9:52 am on 1 December, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 4,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "content": "约翰（John）在2023年10月表示由于打了很多场比赛，需要买一双新鞋，并对蒂姆推荐的网络购买记忆棉运动鞋表示感兴趣",
+          "session_id": "session_13",
+          "session_date": "1:50 pm on 13 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 5,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "content": "约翰喜欢收集篮球球衣，分享了他的球衣收藏照片",
+          "session_id": "session_12",
+          "session_date": "3:00 pm on 2 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 6,
+          "id": "b0712fd1-0b3a-47a9-aa5b-d2c4f206c8ef",
+          "content": "约翰（John）在2023年10月中旬之前没太多时间读书，但在和蒂姆聊过之后开始读一本书，感觉很棒",
+          "session_id": "session_14",
+          "session_date": "1:50 pm on 17 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 7,
+          "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+          "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+          "session_id": "session_17",
+          "session_date": "3:36 pm on 11 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 8,
+          "id": "df795392-83c3-4203-892c-c51c003b7b9e",
+          "content": "蒂姆（Tim）从未参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种不同的魔法世界里",
+          "session_id": "session_10",
+          "session_date": "2:52 pm on 31 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 9,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "content": "蒂姆（Tim）最近在网上买了一双黑粉色的记忆棉（memory foam）运动鞋，感觉像走在云上一样舒服，称其为改变游戏规则的存在，并强烈推荐给约翰",
+          "session_id": "session_13",
+          "session_date": "1:50 pm on 13 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 10,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+          "session_id": "session_16",
+          "session_date": "11:41 am on 6 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 11,
+          "id": "1847372a-3c20-4c79-abf2-8a971c927ba9",
+          "content": "约翰（John）提出等他的赛季结束后可能顺路去爱尔兰看蒂姆，并同意如果去的话会告知蒂姆",
+          "session_id": "session_28",
+          "session_date": "5:24 pm on 7 January, 2024",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 12,
+          "id": "6a67ba10-b774-478c-8f16-179d28e90cb9",
+          "content": "蒂姆（Tim）自上次与约翰聊天以来一直专注于学业，还读了很多奇幻小说作为从压力中放松的方式",
+          "session_id": "session_8",
+          "session_date": "4:29 pm on 21 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 13,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+          "session_id": "session_26",
+          "session_date": "3:35 pm on 26 December, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 14,
+          "id": "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+          "content": "蒂姆从来没有参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种魔法世界里，这也是他喜欢去新地方旅行的原因之一",
+          "session_id": "session_9",
+          "session_date": "6:59 pm on 26 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 15,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+          "session_id": "session_11",
+          "session_date": "8:17 pm on 21 September, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 16,
+          "id": "dc32e124-0a2a-4e09-961c-3b7730a9e739",
+          "content": "蒂姆一直忙于学习各种项目，并以写作和阅读作为在艰难时刻保持动力的热爱所在",
+          "session_id": "session_19",
+          "session_date": "10:22 am on 21 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 17,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "content": "约翰喜欢和别人聊他的球鞋收藏，并分享了一张球鞋摆成圆形的照片",
+          "session_id": "session_1",
+          "session_date": "7:48 pm on 21 May, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 18,
+          "id": "1e57dad3-62d8-48e6-b509-ffdda3c61894",
+          "content": "约翰（John）和妻子为庆祝康复进展，在2023年12月中旬与亲朋好友办了一次小型聚会，大家玩得特别开心，约翰感谢朋友蒂姆的支持和鼓励，并表示会继续努力、保持积极心态",
+          "session_id": "session_24",
+          "session_date": "3:37 pm on 16 December, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 19,
+          "id": "b2ba489b-9e17-4fed-a43d-9cefb701c278",
+          "content": "蒂姆于2023年8月参加了一场他热爱的粉丝活动，和其他同样热爱它的粉丝在一起让他感到特别",
+          "session_id": "session_6",
+          "session_date": "1:08 pm on 11 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 20,
+          "id": "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+          "content": "蒂姆（Tim）正在做一个哈利·波特粉丝项目，并与一位哈利·波特粉丝朋友合作，于2023年5月中旬开始讨论构思创意",
+          "session_id": "session_1",
+          "session_date": "7:48 pm on 21 May, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 21,
+          "id": "eda0952c-ee7c-4be4-b342-5e8e52038810",
+          "content": "约翰喜欢探索新城市，曾去纽约市旅行，觉得那里走到哪里都有新鲜刺激的东西，特别喜欢探索城市和品尝各家餐厅的美食，并强烈推荐蒂姆去",
+          "session_id": "session_9",
+          "session_date": "6:59 pm on 26 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 22,
+          "id": "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+          "content": "蒂姆于2023年10月21日告诉约翰，他读了一本关于英国城堡的超棒的书，大为震撼，梦想有一天能去参观英国城堡",
+          "session_id": "session_15",
+          "session_date": "5:51 pm on 21 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 23,
+          "id": "958d3131-dd7b-40a7-8ac0-934d28d4b0d9",
+          "content": "约翰去过巴黎，参观了埃菲尔铁塔并非常喜欢，觉得从上面看到的景色难以置信；蒂姆表示迫不及待想亲眼看看巴黎",
+          "session_id": "session_27",
+          "session_date": "5:26 pm on 2 January, 2024",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 24,
+          "id": "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+          "content": "蒂姆（Tim）计划于2023年9月去环球影城玩，这是他第一次去，他对哈利·波特主题的东西超级兴奋，并表示回来后会告诉约翰体验如何",
+          "session_id": "session_10",
+          "session_date": "2:52 pm on 31 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 25,
+          "id": "813dedd4-af3e-4a89-bcef-8980e3d5ee16",
+          "content": "蒂姆（Tim）在2023年10月中旬正在读一本书，完全被吸引住了",
+          "session_id": "session_14",
+          "session_date": "1:50 pm on 17 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 26,
+          "id": "08e2ae89-965a-4668-a290-dd160b20d60e",
+          "content": "约翰和妻子于2023年11月初出发去欧洲短期度假，约翰向蒂姆询问推荐；蒂姆推荐他们去参观欧洲的城堡",
+          "session_id": "session_16",
+          "session_date": "11:41 am on 6 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 27,
+          "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+          "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+          "session_id": "session_19",
+          "session_date": "10:22 am on 21 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 28,
+          "id": "cd8c7b44-179c-4994-ad8c-e0218a58aab5",
+          "content": "约翰（John）认为身边充满激情的队友形成紧密纽带，大家互相激励做到最好，就像拥有第二个家庭",
+          "session_id": "session_3",
+          "session_date": "4:21 pm on 16 July, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 29,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "content": "蒂姆收藏了很多哈利·波特等纪念物，这对他来说是一种逃离现实的方式，让他感觉自己走进了书里；他计划以后去更多哈利·波特主题的地方",
+          "session_id": "session_2",
+          "session_date": "5:08 pm on 15 June, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 30,
+          "id": "e9fed4c1-5852-4827-a574-1951e48e4233",
+          "content": "烹饪对约翰来说是一种疗愈，是离开球场后发挥创造力、尝试不同口味的放松方式；他最喜欢的菜之一是蜂蜜蒜香鸡配烤蔬菜，并答应把食谱写给蒂姆",
+          "session_id": "session_15",
+          "session_date": "5:51 pm on 21 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 31,
+          "id": "0fddf2fc-4c52-47c4-be25-1fdc92e4abdb",
+          "content": "蒂姆（Tim）在2023年12月初加入了一个旅行俱乐部，因为一直对不同文化和国家很感兴趣，期待认识新朋友并了解他们的独特之处",
+          "session_id": "session_21",
+          "session_date": "5:34 pm on 6 December, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 32,
+          "id": "d1e2eb4d-e34a-4c4f-949b-10cd43022797",
+          "content": "蒂姆喜欢沉浸在奇幻故事中，也喜欢通过关于成长、心理学和自我提升的书籍探索变得更好的方法",
+          "session_id": "session_19",
+          "session_date": "10:22 am on 21 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 33,
+          "id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+          "content": "蒂姆（Tim）在2024年1月初加入了一群和他志趣相投的环球旅行者，认识他们、听他们讲旅行经历让他觉得很棒",
+          "session_id": "session_27",
+          "session_date": "5:26 pm on 2 January, 2024",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 34,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "session_id": "session_8",
+          "session_date": "4:29 pm on 21 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 35,
+          "id": "ffea61b7-4d7e-4f4a-96ef-5df131abe7d2",
+          "content": "约翰从未去过真正的哈利·波特相关地点，但去那些地方在他的待办清单上；蒂姆表示如果约翰需要游览建议可以找他",
+          "session_id": "session_1",
+          "session_date": "7:48 pm on 21 May, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 36,
+          "id": "98272be5-3f17-4a2e-9942-a81fd9e8f00a",
+          "content": "蒂姆（Tim）是一名学生，2023年10月时学习很忙，但会抽时间看书放松，保持着不错的平衡",
+          "session_id": "session_14",
+          "session_date": "1:50 pm on 17 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 37,
+          "id": "f1cbcea3-bdd1-42e9-a37d-c10e5e2b956a",
+          "content": "蒂姆喜欢和朋友家人一起自驾游、探索、徒步或玩桌游；空闲时间喜欢捧一本好书蜷着读，逃离现实、沉浸在不同的世界里",
+          "session_id": "session_15",
+          "session_date": "5:51 pm on 21 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 38,
+          "id": "298be17b-2aa3-4e79-bbc3-1944ab4614c7",
+          "content": "蒂姆的全家曾聚在一起吃饭，那是充满爱和欢笑的美好一天，家庭时光对他意义重大",
+          "session_id": "session_8",
+          "session_date": "4:29 pm on 21 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 39,
+          "id": "4c83db57-0cb0-4098-853e-983d1ad879db",
+          "content": "蒂姆于2023年9月分享了一张爱丁堡城堡日落时分的照片来推荐爱丁堡作为约翰团队旅行的目的地",
+          "session_id": "session_11",
+          "session_date": "8:17 pm on 21 September, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 40,
+          "id": "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+          "content": "蒂姆（Tim）写奇幻文章时特别喜欢《哈利·波特》和《权力的游戏》，对这两部作品完全着迷，可以永远聊下去",
+          "session_id": "session_4",
+          "session_date": "4:17 pm on 2 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 41,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "content": "约翰有一双幸运篮球鞋，从打球之初就陪伴着他，见证了他的成功、失败和友谊，象征坚韧、决心和对篮球的热爱，提醒他取得的成就和走过的路",
+          "session_id": "session_6",
+          "session_date": "1:08 pm on 11 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 42,
+          "id": "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+          "content": "蒂姆（Tim）于2023年7月上旬在加利福尼亚州与一位《哈利·波特》粉丝聊得很开心，感到周围都是志同道合的人充满爱意，体验非常神奇",
+          "session_id": "session_3",
+          "session_date": "4:21 pm on 16 July, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 43,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "content": "约翰热爱篮球，当事情变得艰难时会提醒自己为什么热爱篮球，这份爱和热情让他保持动力",
+          "session_id": "session_19",
+          "session_date": "10:22 am on 21 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 44,
+          "id": "301911d3-603e-4a1d-a9bf-49aca44b0e5a",
+          "content": "蒂姆（Tim）于2023年8月上旬正在读帕特里克·罗斯福斯（Patrick Rothfuss）写的一本让他着迷的奇幻小说，书把他带到另一个世界，他称赞作者构建世界和角色的能力，并推荐约翰去读",
+          "session_id": "session_5",
+          "session_date": "10:29 am on 9 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        },
+        {
+          "rank": 45,
+          "id": "cac74226-d275-465a-b177-a0b9e1351242",
+          "content": "蒂姆（Tim）于2023年8月上旬和在加州认识的哈利·波特粉丝视频通话，聊得很开心，讨论了角色并可能一起合作，他觉得和一个懂他的人聊天非常酷",
+          "session_id": "session_5",
+          "session_date": "10:29 am on 9 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": null
+        }
+      ],
+      "reranked": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "content": "约翰喜欢收集篮球球衣，分享了他的球衣收藏照片",
+          "session_id": "session_12",
+          "session_date": "3:00 pm on 2 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.7736261417243457
+        },
+        {
+          "rank": 2,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "content": "约翰喜欢和别人聊他的球鞋收藏，并分享了一张球鞋摆成圆形的照片",
+          "session_id": "session_1",
+          "session_date": "7:48 pm on 21 May, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.7214817430599932
+        },
+        {
+          "rank": 3,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "content": "约翰有一双幸运篮球鞋，从打球之初就陪伴着他，见证了他的成功、失败和友谊，象征坚韧、决心和对篮球的热爱，提醒他取得的成就和走过的路",
+          "session_id": "session_6",
+          "session_date": "1:08 pm on 11 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.7199673839750398
+        },
+        {
+          "rank": 4,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+          "session_id": "session_16",
+          "session_date": "11:41 am on 6 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.6974798522311307
+        },
+        {
+          "rank": 5,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "content": "蒂姆（Tim）最近在网上买了一双黑粉色的记忆棉（memory foam）运动鞋，感觉像走在云上一样舒服，称其为改变游戏规则的存在，并强烈推荐给约翰",
+          "session_id": "session_13",
+          "session_date": "1:50 pm on 13 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.6813084417236526
+        },
+        {
+          "rank": 6,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "content": "约翰（John）在2023年10月表示由于打了很多场比赛，需要买一双新鞋，并对蒂姆推荐的网络购买记忆棉运动鞋表示感兴趣",
+          "session_id": "session_13",
+          "session_date": "1:50 pm on 13 October, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.6387690415808978
+        },
+        {
+          "rank": 7,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+          "session_id": "session_20",
+          "session_date": "9:52 am on 1 December, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.5769563049629883
+        },
+        {
+          "rank": 8,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "session_id": "session_8",
+          "session_date": "4:29 pm on 21 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.5693196864635233
+        },
+        {
+          "rank": 9,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "content": "蒂姆收藏了很多哈利·波特等纪念物，这对他来说是一种逃离现实的方式，让他感觉自己走进了书里；他计划以后去更多哈利·波特主题的地方",
+          "session_id": "session_2",
+          "session_date": "5:08 pm on 15 June, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.561560243243415
+        },
+        {
+          "rank": 10,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "content": "约翰热爱篮球，当事情变得艰难时会提醒自己为什么热爱篮球，这份爱和热情让他保持动力",
+          "session_id": "session_19",
+          "session_date": "10:22 am on 21 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.45897456101681816
+        },
+        {
+          "rank": 11,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+          "session_id": "session_11",
+          "session_date": "8:17 pm on 21 September, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.44050776865298963
+        },
+        {
+          "rank": 12,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+          "session_id": "session_26",
+          "session_date": "3:35 pm on 26 December, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.43185359413936275
+        },
+        {
+          "rank": 13,
+          "id": "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+          "content": "蒂姆表示会支持约翰的慈善工作和篮球事业，认为他充满决心和热情",
+          "session_id": "session_6",
+          "session_date": "1:08 pm on 11 August, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.4316687150335452
+        },
+        {
+          "rank": 14,
+          "id": "511649c4-ae44-44e0-b0ec-788d21dc4355",
+          "content": "蒂姆和约翰都认为友谊对彼此很重要，蒂姆非常感激约翰的支持和鼓励，说这段友谊让他的旅程变得更美好",
+          "session_id": "session_20",
+          "session_date": "9:52 am on 1 December, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.39080531300348503
+        },
+        {
+          "rank": 15,
+          "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+          "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+          "session_id": "session_17",
+          "session_date": "3:36 pm on 11 November, 2023",
+          "user_id": "zhfull:locomo:conv-43",
+          "rerank_score": 0.3594007251342628
+        }
+      ],
+      "target_vector_ranks": {
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc": null,
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99": 10
+      },
+      "target_rerank_ranks": {
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc": null,
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99": 4
+      },
+      "rerank_endpoint_style": "dashscope native text-rerank"
+    },
+    {
+      "case_id": "locomo_conv-41_qa86",
+      "question": "约翰做了什么事让他的钱包吃不消？",
+      "gold": "他的车抛锚了",
+      "user_id": "zhfull:locomo:conv-41",
+      "target_memory_ids": [
+        "dccbdd97-4ac6-4028-8068-840070dcabff"
+      ],
+      "vector": [
+        {
+          "rank": 1,
+          "id": "6fe799e4-9243-479f-ac94-79a257e55a5d",
+          "content": "约翰在练自由搏击，它让他精力充沛",
+          "session_id": "session_1",
+          "session_date": "11:01 am on 17 December, 2022",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 2,
+          "id": "46b7c813-f812-4f1f-8334-33e01a70e6dd",
+          "content": "约翰认为教育对成功的社会至关重要，主张为学校争取更多资金和资源；他有孩子，并认为自己的孩子拥有很多而别的孩子却没有，为此感到心痛，觉得孩子们值得更好的条件",
+          "session_id": "session_5",
+          "session_date": "1:17 pm on 28 January, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 3,
+          "id": "2cca2ad5-142f-48c9-96b4-bbe0cefd3695",
+          "content": "约翰的家人是他永不放弃的原因，家人的爱给他力量，帮助他保持内心平衡，是他困难时刻的依靠",
+          "session_id": "session_2",
+          "session_date": "6:10 pm on 22 December, 2022",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 4,
+          "id": "d9d93932-9b77-4c7c-a3ac-a1b4dcbf40c7",
+          "content": "约翰的家人是他做社区改变工作的动力和灵感来源；当日子艰难时，他会看看家人照片，提醒自己为什么要坚持做这些事",
+          "session_id": "session_22",
+          "session_date": "6:59 pm on 5 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 5,
+          "id": "6a86c410-ebb5-4d7a-81f7-a2b9f4b7a027",
+          "content": "约翰曾在军队服役，后来退役",
+          "session_id": "session_26",
+          "session_date": "1:59 pm on 31 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 6,
+          "id": "3453c612-5cd5-4eb2-af83-ec3d39a9a164",
+          "content": "约翰的家庭包括他和太太以及孩子们，家人即使在他艰难的时候也总是支持他",
+          "session_id": "session_31",
+          "session_date": "3:14 pm on 13 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 7,
+          "id": "d95bab2d-8b14-4a08-89c1-6bcd7ddab802",
+          "content": "约翰喜欢看日落，日落提醒他享受生活中的小事",
+          "session_id": "session_4",
+          "session_date": "7:06 pm on 9 January, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 8,
+          "id": "0f201009-d6ea-4231-baba-832ba8fa738e",
+          "content": "约翰相信小小的善举也能产生很大的影响，能照亮某人的一天，认为持续传播正能量、传播爱、带来改变很重要",
+          "session_id": "session_24",
+          "session_date": "3:34 pm on 17 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 9,
+          "id": "dccbdd97-4ac6-4028-8068-840070dcabff",
+          "content": "约翰的车在2023年4月7日（上周五）上班路上抛锚了，正在修车，费用负担较重，但他保持积极态度寻找解决办法",
+          "session_id": "session_11",
+          "session_date": "6:13 pm on 10 April, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 10,
+          "id": "668c9e81-4a87-42ff-b868-7a48a1999507",
+          "content": "约翰的消防队训练强度很大很累人，但很有成就感，改变了他对帮助他人的看法",
+          "session_id": "session_26",
+          "session_date": "1:59 pm on 31 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 11,
+          "id": "197c1dc7-9a1b-4f13-ba5c-cdc9becf6da9",
+          "content": "约翰在消防队首次出警中与队友齐心协力从一栋着火的大楼里救出了一家人，场面混乱但惊险刺激，帮上忙让他觉得一切都值得",
+          "session_id": "session_26",
+          "session_date": "1:59 pm on 31 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 12,
+          "id": "ce3f2dd0-f81f-41d0-b5b5-c4032819a26c",
+          "content": "约翰成长过程中目睹了教育匮乏和基础设施破败对社区的影响，因此不希望子孙后代经历这些，认为学校和基础设施应得到充足资金",
+          "session_id": "session_1",
+          "session_date": "11:01 am on 17 December, 2022",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 13,
+          "id": "f490c914-8e6b-433f-bc0e-aeec7e0975b8",
+          "content": "约翰所在社区的道路坑洼遍布，对司机很危险并会损坏汽车，急需改善",
+          "session_id": "session_14",
+          "session_date": "5:04 pm on 6 May, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 14,
+          "id": "d40487e7-dc18-4870-bdca-0ab1bf294d55",
+          "content": "约翰小时候有一台胶片相机，拍过很多海滩照片",
+          "session_id": "session_3",
+          "session_date": "8:30 pm on 1 January, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 15,
+          "id": "1e2ec2e6-7340-4c46-a079-1aa55975049f",
+          "content": "约翰在政治上主要关注改善社区的教育和基础设施两大领域",
+          "session_id": "session_1",
+          "session_date": "11:01 am on 17 December, 2022",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 16,
+          "id": "b6a5765e-0525-43af-8e2a-8fa19d46a826",
+          "content": "约翰应对意外事件的方式是保持冷静并寻求帮助，事后感到如释重负和感恩，认为这提醒自己在困难时期要保持坚强",
+          "session_id": "session_4",
+          "session_date": "7:06 pm on 9 January, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 17,
+          "id": "9cee58e9-a51c-4482-8dc2-0a949b1d59ed",
+          "content": "约翰通常在正常工作时间工作，但有时会把工作带回家；他努力安排好时间确保在重要的事情上都在场，认为关键是找到平衡、让那些时刻有意义",
+          "session_id": "session_19",
+          "session_date": "7:20 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 18,
+          "id": "0cd5ac75-0dd8-429e-b597-f7eeae6f38a7",
+          "content": "截至2023年4月，约翰的博客文章收到了一些不错的反馈",
+          "session_id": "session_12",
+          "session_date": "7:34 pm on 18 April, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 19,
+          "id": "1512066b-5bbe-455f-ab5f-bfd41aa8ed67",
+          "content": "2022年（去年），约翰帮忙翻修了老家一个破旧的社区中心，花了不少功夫，看到它对社区产生的积极影响和大家的齐心协力，觉得一切都值得",
+          "session_id": "session_28",
+          "session_date": "5:19 pm on 5 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 20,
+          "id": "7aef3cf9-4643-4fb3-8d45-d5187867707c",
+          "content": "约翰最近没通过军队能力测试，之后一直感到有些压力大",
+          "session_id": "session_3",
+          "session_date": "8:30 pm on 1 January, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 21,
+          "id": "f3c80fd4-e63a-4787-8dd1-3bfd5f120045",
+          "content": "约翰希望进入地方政界，热衷于帮助社区并将其变得更美好",
+          "session_id": "session_1",
+          "session_date": "11:01 am on 17 December, 2022",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 22,
+          "id": "bdb28053-0602-4711-8601-fef445b5874f",
+          "content": "约翰的服务小组去了一个无家可归者收容所分发食物和物资，并组织了一次为有需要的孩子的玩具募捐活动，社区齐心协力传递快乐",
+          "session_id": "session_3",
+          "session_date": "8:30 pm on 1 January, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 23,
+          "id": "c8e8ae34-81ca-440f-9add-a44889f8aa81",
+          "content": "约翰有一种为国家和社区服务的强烈愿望，竞选公职是他发挥影响力的机会",
+          "session_id": "session_6",
+          "session_date": "2:33 pm on 5 February, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 24,
+          "id": "0f7b1204-01bf-440d-a20b-772b4cc53614",
+          "content": "约翰在2023年8月上旬经历了一段艰难时期，感觉自己没产生多大影响，开始怀疑自己的决定和目标，但渴望对人们和世界产生积极影响",
+          "session_id": "session_30",
+          "session_date": "12:10 am on 11 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 25,
+          "id": "423be8ab-94e3-4533-8179-a83b6736f9e6",
+          "content": "约翰于2023年4月底决定再次竞选公职，尽管以前一直没有成功，但他无法放下为社区做出改变的梦想，感觉像梦想成真；有时感到压力太大，但玛丽亚的鼓励给了他继续下去的力量",
+          "session_id": "session_14",
+          "session_date": "5:04 pm on 6 May, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 26,
+          "id": "6b77f838-270a-4aad-8a39-75da1bc62a67",
+          "content": "约翰有一个金色奖杯放在办公桌上，纪念他的历程，象征着他在职业道路上必须克服的所有障碍",
+          "session_id": "session_19",
+          "session_date": "7:20 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 27,
+          "id": "48f4fb62-954a-454d-913e-ceb0fb6b7bf3",
+          "content": "约翰在2023年1月初忙于工作和家庭，上周在回家路上遇到意外——汽车挡风玻璃破碎，但平安无事",
+          "session_id": "session_4",
+          "session_date": "7:06 pm on 9 January, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 28,
+          "id": "4e63029c-78d9-446a-b9c5-49e0a36fb78b",
+          "content": "约翰一家晚餐时一起做披萨，挑选配料并分享美食，他觉得一起做披萨的过程特别开心",
+          "session_id": "session_2",
+          "session_date": "6:10 pm on 22 December, 2022",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 29,
+          "id": "35071f9e-c480-44bc-8c30-6087812bbd0d",
+          "content": "约翰丢掉了在机械工程公司的工作，公司倒闭了（2023年8月初），他从未料到会这样，日子一直很难熬，但他在努力保持乐观",
+          "session_id": "session_28",
+          "session_date": "5:19 pm on 5 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 30,
+          "id": "2266b983-264c-4562-8f72-f1d2aa25d49b",
+          "content": "约翰于2023年2月初开始帮忙为社区食物募集活动出力，帮助失业的人，起因是看到失业对邻居的影响；反响和志愿者人数都超出了预期",
+          "session_id": "session_6",
+          "session_date": "2:33 pm on 5 February, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 31,
+          "id": "8528c86f-b2be-40bb-98a5-4940ac590e58",
+          "content": "约翰所在的消防队募捐活动收到了大量捐款，包括罐头食品、洗漱用品和衣物，捐款甚至帮助买了一辆全新的消防车（2023年8月）",
+          "session_id": "session_32",
+          "session_date": "11:08 am on 16 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 32,
+          "id": "32daada6-d7f7-4936-b034-c0b990f5ca96",
+          "content": "约翰认为欢笑和快乐很重要，通过游戏让大家玩得开心、展现创意和俏皮一面是件很棒的事",
+          "session_id": "session_24",
+          "session_date": "3:34 pm on 17 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 33,
+          "id": "2844bef1-2e53-463c-b25a-df023aebdcad",
+          "content": "约翰觉得身处大自然、远离喧嚣能重启身心，让他记起生活中的小事、品味平静时刻，他拍的照片（夕阳、林中帐篷等）捕捉了这种感觉",
+          "session_id": "session_30",
+          "session_date": "12:10 am on 11 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 34,
+          "id": "ceb1a846-9b6f-45f8-8ae9-959e07e65e6b",
+          "content": "约翰在2023年5月3日（前一天）给孩子们做了苹果派（配香草冰淇淋）",
+          "session_id": "session_13",
+          "session_date": "3:18 pm on 4 May, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 35,
+          "id": "3c25d58d-32e5-4abb-8774-92a9775122e6",
+          "content": "约翰于2022年12月16日从一次家庭自驾游回来，感觉很有意思",
+          "session_id": "session_1",
+          "session_date": "11:01 am on 17 December, 2022",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 36,
+          "id": "cfe9ff89-2e45-4eb7-9346-c2a82e280342",
+          "content": "约翰保持灵感的来源是家人、锻炼，以及和朋友共度的时光",
+          "session_id": "session_22",
+          "session_date": "6:59 pm on 5 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 37,
+          "id": "9f811828-3b36-4562-a740-13cc72702376",
+          "content": "约翰以前居住的地区在2023年7月初（约6月30日当周）被一场严重的洪水袭击，由于基础设施本就不好，很多房屋被毁坏",
+          "session_id": "session_23",
+          "session_date": "6:29 pm on 7 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 38,
+          "id": "fdd3da31-61c3-4372-b85c-6d6aba9d3728",
+          "content": "约翰一家喜欢一起进行户外活动，如远足、逛公园、野餐，此外还在家玩桌游和举办电影之夜",
+          "session_id": "session_31",
+          "session_date": "3:14 pm on 13 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 39,
+          "id": "3cff0331-db05-4691-8bb0-806c21a3b73c",
+          "content": "约翰一直在思考教育和基础设施如何塑造社区，认为它们的缺失阻碍社区发展令人难过，这激励他尽己所能去改善现状",
+          "session_id": "session_23",
+          "session_date": "6:29 pm on 7 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 40,
+          "id": "eb2241bf-e4bd-4ce3-b622-a10091a114c7",
+          "content": "约翰组织5公里慈善跑的过程中面临挑战，尤其是拉赞助很困难，需要通过不同方式联系多家企业，最终找到很棒的赞助商使活动大获成功",
+          "session_id": "session_29",
+          "session_date": "8:06 pm on 9 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 41,
+          "id": "093b7fec-7081-40dc-a897-a7d9c90dbbcf",
+          "content": "约翰在2023年4月初的上周末在当地一所学校的招聘会上做志愿者，看到资源匮乏对孩子们梦想的影响令人震撼，帮助这些孩子是一次非常有意义的经历。",
+          "session_id": "session_10",
+          "session_date": "12:24 am on 7 April, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 42,
+          "id": "082f66dd-4dbe-4cfb-beca-848d3e1e4993",
+          "content": "2023年4月底约翰所在的地区停电，让他意识到升级基础设施、为每个人提供稳定服务的重要性",
+          "session_id": "session_14",
+          "session_date": "5:04 pm on 6 May, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 43,
+          "id": "7d37d663-d296-491f-92c5-7b7a78d26ab8",
+          "content": "约翰计划去东海岸旅行（2023年4月）",
+          "session_id": "session_12",
+          "session_date": "7:34 pm on 18 April, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 44,
+          "id": "eedd9b8b-f1e9-4316-9c23-19ca3b620682",
+          "content": "约翰于2023年8月初的周末在社区组织了一场5公里慈善跑，为退伍军人及其家人筹款并筹到了善款，活动来了很多人，他感到身边有众多支持者",
+          "session_id": "session_29",
+          "session_date": "8:06 pm on 9 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        },
+        {
+          "rank": 45,
+          "id": "fc941a1f-5196-4257-9b74-1c98a2f3c813",
+          "content": "约翰认为马克斯教会了他们无条件的爱和忠诚，他希望孩子们也能学到这一点，与马克斯的羁绊是他非常珍视的东西",
+          "session_id": "session_17",
+          "session_date": "11:51 am on 3 June, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": null
+        }
+      ],
+      "reranked": [
+        {
+          "rank": 1,
+          "id": "2266b983-264c-4562-8f72-f1d2aa25d49b",
+          "content": "约翰于2023年2月初开始帮忙为社区食物募集活动出力，帮助失业的人，起因是看到失业对邻居的影响；反响和志愿者人数都超出了预期",
+          "session_id": "session_6",
+          "session_date": "2:33 pm on 5 February, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.7629265083365276
+        },
+        {
+          "rank": 2,
+          "id": "1512066b-5bbe-455f-ab5f-bfd41aa8ed67",
+          "content": "2022年（去年），约翰帮忙翻修了老家一个破旧的社区中心，花了不少功夫，看到它对社区产生的积极影响和大家的齐心协力，觉得一切都值得",
+          "session_id": "session_28",
+          "session_date": "5:19 pm on 5 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.7300106175611003
+        },
+        {
+          "rank": 3,
+          "id": "bdb28053-0602-4711-8601-fef445b5874f",
+          "content": "约翰的服务小组去了一个无家可归者收容所分发食物和物资，并组织了一次为有需要的孩子的玩具募捐活动，社区齐心协力传递快乐",
+          "session_id": "session_3",
+          "session_date": "8:30 pm on 1 January, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.709894059600338
+        },
+        {
+          "rank": 4,
+          "id": "197c1dc7-9a1b-4f13-ba5c-cdc9becf6da9",
+          "content": "约翰在消防队首次出警中与队友齐心协力从一栋着火的大楼里救出了一家人，场面混乱但惊险刺激，帮上忙让他觉得一切都值得",
+          "session_id": "session_26",
+          "session_date": "1:59 pm on 31 July, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.7016196815026162
+        },
+        {
+          "rank": 5,
+          "id": "eedd9b8b-f1e9-4316-9c23-19ca3b620682",
+          "content": "约翰于2023年8月初的周末在社区组织了一场5公里慈善跑，为退伍军人及其家人筹款并筹到了善款，活动来了很多人，他感到身边有众多支持者",
+          "session_id": "session_29",
+          "session_date": "8:06 pm on 9 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.6529172479252012
+        },
+        {
+          "rank": 6,
+          "id": "6fe799e4-9243-479f-ac94-79a257e55a5d",
+          "content": "约翰在练自由搏击，它让他精力充沛",
+          "session_id": "session_1",
+          "session_date": "11:01 am on 17 December, 2022",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.6503007950373636
+        },
+        {
+          "rank": 7,
+          "id": "8528c86f-b2be-40bb-98a5-4940ac590e58",
+          "content": "约翰所在的消防队募捐活动收到了大量捐款，包括罐头食品、洗漱用品和衣物，捐款甚至帮助买了一辆全新的消防车（2023年8月）",
+          "session_id": "session_32",
+          "session_date": "11:08 am on 16 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.6369539422500479
+        },
+        {
+          "rank": 8,
+          "id": "ceb1a846-9b6f-45f8-8ae9-959e07e65e6b",
+          "content": "约翰在2023年5月3日（前一天）给孩子们做了苹果派（配香草冰淇淋）",
+          "session_id": "session_13",
+          "session_date": "3:18 pm on 4 May, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.6338104008049006
+        },
+        {
+          "rank": 9,
+          "id": "35071f9e-c480-44bc-8c30-6087812bbd0d",
+          "content": "约翰丢掉了在机械工程公司的工作，公司倒闭了（2023年8月初），他从未料到会这样，日子一直很难熬，但他在努力保持乐观",
+          "session_id": "session_28",
+          "session_date": "5:19 pm on 5 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.6334723125523865
+        },
+        {
+          "rank": 10,
+          "id": "eb2241bf-e4bd-4ce3-b622-a10091a114c7",
+          "content": "约翰组织5公里慈善跑的过程中面临挑战，尤其是拉赞助很困难，需要通过不同方式联系多家企业，最终找到很棒的赞助商使活动大获成功",
+          "session_id": "session_29",
+          "session_date": "8:06 pm on 9 August, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.6147991646932695
+        },
+        {
+          "rank": 11,
+          "id": "093b7fec-7081-40dc-a897-a7d9c90dbbcf",
+          "content": "约翰在2023年4月初的上周末在当地一所学校的招聘会上做志愿者，看到资源匮乏对孩子们梦想的影响令人震撼，帮助这些孩子是一次非常有意义的经历。",
+          "session_id": "session_10",
+          "session_date": "12:24 am on 7 April, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.6117627507955515
+        },
+        {
+          "rank": 12,
+          "id": "dccbdd97-4ac6-4028-8068-840070dcabff",
+          "content": "约翰的车在2023年4月7日（上周五）上班路上抛锚了，正在修车，费用负担较重，但他保持积极态度寻找解决办法",
+          "session_id": "session_11",
+          "session_date": "6:13 pm on 10 April, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.5925315522883086
+        },
+        {
+          "rank": 13,
+          "id": "46b7c813-f812-4f1f-8334-33e01a70e6dd",
+          "content": "约翰认为教育对成功的社会至关重要，主张为学校争取更多资金和资源；他有孩子，并认为自己的孩子拥有很多而别的孩子却没有，为此感到心痛，觉得孩子们值得更好的条件",
+          "session_id": "session_5",
+          "session_date": "1:17 pm on 28 January, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.5797110733869446
+        },
+        {
+          "rank": 14,
+          "id": "c8e8ae34-81ca-440f-9add-a44889f8aa81",
+          "content": "约翰有一种为国家和社区服务的强烈愿望，竞选公职是他发挥影响力的机会",
+          "session_id": "session_6",
+          "session_date": "2:33 pm on 5 February, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.5459185110136051
+        },
+        {
+          "rank": 15,
+          "id": "9cee58e9-a51c-4482-8dc2-0a949b1d59ed",
+          "content": "约翰通常在正常工作时间工作，但有时会把工作带回家；他努力安排好时间确保在重要的事情上都在场，认为关键是找到平衡、让那些时刻有意义",
+          "session_id": "session_19",
+          "session_date": "7:20 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-41",
+          "rerank_score": 0.5406082096190085
+        }
+      ],
+      "target_vector_ranks": {
+        "dccbdd97-4ac6-4028-8068-840070dcabff": 9
+      },
+      "target_rerank_ranks": {
+        "dccbdd97-4ac6-4028-8068-840070dcabff": 12
+      },
+      "rerank_endpoint_style": "dashscope native text-rerank"
+    },
+    {
+      "case_id": "locomo_conv-30_qa80",
+      "question": "乔恩在社交活动上得到建议后有什么计划？",
+      "gold": "完善他的商业计划，调整对投资人的推介，并开发一个线上平台。",
+      "user_id": "zhfull:locomo:conv-30",
+      "target_memory_ids": [
+        "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8"
+      ],
+      "vector": [
+        {
+          "rank": 1,
+          "id": "c4a339d5-2833-4d97-bf80-8d414c99e18d",
+          "content": "2023年7月，乔恩参加了一次社交活动，见到了一些投资人并获得好建议，现场氛围鼓舞人心；他也在做人际拓展并带来了不少好机会",
+          "session_id": "session_18",
+          "session_date": "5:44 pm on 21 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 2,
+          "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+          "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+          "session_id": "session_18",
+          "session_date": "5:44 pm on 21 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 3,
+          "id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+          "content": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）",
+          "session_id": "session_14",
+          "session_date": "9:38 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 4,
+          "id": "eb772e3b-1522-4f68-a8ae-1f9fbb11ac0a",
+          "content": "2023年6月21日，乔恩前一天（6月20日）选择去参加社交活动来促成一些事业上的机会，虽然很难但会保持坚定和专注",
+          "session_id": "session_16",
+          "session_date": "2:15 pm on 21 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 5,
+          "id": "59f5daa4-9313-4a5a-916b-e50b013fdcc8",
+          "content": "乔恩和吉娜约定在创业路上继续互相激励、互相扶持",
+          "session_id": "session_10",
+          "session_date": "11:24 am on 25 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 6,
+          "id": "3f548823-9546-4a8a-8a3d-299b16b943b6",
+          "content": "截至2023年6月16日，乔恩一直在为舞蹈工作室做推广，并采纳吉娜的建议开始在社交媒体上发布自己的舞蹈视频，已经引起了一点轰动",
+          "session_id": "session_14",
+          "session_date": "9:38 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 7,
+          "id": "2bf90403-4875-4381-a465-d400520cf9e2",
+          "content": "2023年6月21日，乔恩把所有的计划和目标写下来，认为看到目标写在纸上能帮助他保持动力、专注于该做的事情",
+          "session_id": "session_16",
+          "session_date": "2:15 pm on 21 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 8,
+          "id": "0e642f24-4428-4881-824d-b05c43d73fbf",
+          "content": "乔恩的舞蹈工作室除了舞蹈课和工作坊之外，还提供一对一的指导和训练，帮助舞者们充分发挥潜力",
+          "session_id": "session_13",
+          "session_date": "8:29 pm on 13 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 9,
+          "id": "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+          "content": "吉娜鼓励乔恩在创业遇到困难时坚持下去、继续努力、不要放弃，并肯定他把计划和目标写下来是掌握进步图景的关键做法",
+          "session_id": "session_16",
+          "session_date": "2:15 pm on 21 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 10,
+          "id": "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+          "content": "截至2023年7月21日，乔恩正在完善商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室",
+          "session_id": "session_18",
+          "session_date": "5:44 pm on 21 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 11,
+          "id": "54470ad5-91a6-41e3-911f-369bedc20ebf",
+          "content": "乔恩在创业过程中遇到不少挫折，有时会感到难受，但他坚信坚持努力就能实现梦想；吉娜全力支持他，鼓励他把挫折当作东山再起的机会",
+          "session_id": "session_4",
+          "session_date": "10:43 am on 4 February, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 12,
+          "id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+          "content": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想",
+          "session_id": "session_14",
+          "session_date": "9:38 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 13,
+          "id": "f06f9146-ce1c-4433-b527-c2027bcdb4da",
+          "content": "乔恩（Jon）于2023年3月初（约3月9日那周）开始去健身房锻炼，为的是在创业路上保持身体状态，他表示需要平衡好一切但进展还不错",
+          "session_id": "session_6",
+          "session_date": "2:35 pm on 16 March, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 14,
+          "id": "7b8dac20-dc89-4524-9631-6fe952c9ca40",
+          "content": "截至2023年2月4日，乔恩在筹备生意的同时还在排练新的舞蹈动作，为即将到来的演出刻苦排练；他分享了一张穿灰色裙子的女舞者做技巧动作的照片，舞蹈带给他很多快乐和成就感",
+          "session_id": "session_4",
+          "session_date": "10:43 am on 4 February, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 15,
+          "id": "970a43bf-b03f-4c61-888c-90d41afcf9cb",
+          "content": "乔恩于2023年5月下旬表示他会坚持创业、永不放弃，并感谢吉娜的支持，称没有什么能打倒他",
+          "session_id": "session_12",
+          "session_date": "7:18 pm on 27 May, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 16,
+          "id": "89c97aa2-acbd-4005-ae72-426fe7a87094",
+          "content": "乔恩自失业后日子一直不好过，但他相信把时间投入到舞蹈工作室事业上最终会有回报",
+          "session_id": "session_16",
+          "session_date": "2:15 pm on 21 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 17,
+          "id": "2de70226-54ab-432a-af42-c43c1ca3a176",
+          "content": "吉娜给乔恩的创业建议：保持热情、专注和坚韧，相信自己坚持下去，同时保持开放心态、不断学习和进步（2023年6月16日）",
+          "session_id": "session_14",
+          "session_date": "9:38 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 18,
+          "id": "6bbd05be-7725-41a1-9c18-227a0a962c5e",
+          "content": "乔恩表示无论如何都不会放弃，吉娜的鼓励激励着他继续前进，知道她在背后支持让他更有动力坚持，也不会让她失望（2023年6月16日）",
+          "session_id": "session_14",
+          "session_date": "9:38 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 19,
+          "id": "7eeab192-83c1-4d04-a833-bc014270d4d3",
+          "content": "乔恩认为冒险是成功的关键，正是敢于冒险让他离开了朝九晚五的银行员稳定工作，目标是把舞蹈热情变成事业，并坦言这条路不好走但决心成功",
+          "session_id": "session_5",
+          "session_date": "9:32 am on 8 February, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 20,
+          "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+          "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+          "session_id": "session_1",
+          "session_date": "4:04 pm on 20 January, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 21,
+          "id": "5bead6cd-1f98-401d-acd1-965086a2804d",
+          "content": "乔恩表示吉娜的成功和毅力激励着他继续创业前行，两人面对相似的创业挑战，像舞伴一样互相支持、庆祝每一个成就，约好一起走向成功（2023年3月16日）",
+          "session_id": "session_6",
+          "session_date": "2:35 pm on 16 March, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 22,
+          "id": "20fc0980-03ad-41f3-a33a-6db73a040e49",
+          "content": "截至2023年4月3日，乔恩正在扩展舞蹈工作室的社交媒体影响力，并为当地学校和社区中心提供工作坊和课程；他表示努力已有回报，看到进步，舞者们非常兴奋",
+          "session_id": "session_8",
+          "session_date": "1:26 pm on 3 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 23,
+          "id": "ddb9944f-3c28-4a2b-aae3-3e1a27530692",
+          "content": "乔恩表示吉娜的支持对他意义重大，她的鼓励和陪伴帮助他在创业路上保持动力和相信自己，他承诺不会放弃并继续前行（2023年3月23日）",
+          "session_id": "session_7",
+          "session_date": "7:28 pm on 23 March, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 24,
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "session_id": "session_4",
+          "session_date": "10:43 am on 4 February, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 25,
+          "id": "b5e16073-b382-47f6-a293-b194661eaca7",
+          "content": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。",
+          "session_id": "session_1",
+          "session_date": "4:04 pm on 20 January, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 26,
+          "id": "61a10e72-a082-4c59-a073-0624d935909a",
+          "content": "截至2023年2月4日，乔恩仍在为舞蹈工作室寻找合适的场地，过程很麻烦但他下定决心找到合适的地方，相信找到后一切都会水到渠成",
+          "session_id": "session_4",
+          "session_date": "10:43 am on 4 February, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 27,
+          "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+          "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+          "session_id": "session_2",
+          "session_date": "2:32 pm on 29 January, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 28,
+          "id": "60d624fa-cc39-4e4e-9055-94bb88bf8cb2",
+          "content": "截至2023年5月11日，乔恩仍在经营舞蹈工作室，情况正在好转；他表示失去工作给了他开始梦想事业的动力，现在正踏入未知领域并希望有好结果",
+          "session_id": "session_11",
+          "session_date": "3:14 pm on 11 May, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 29,
+          "id": "f51ec223-a73f-4b8a-8184-fe7bdf0c66b8",
+          "content": "乔恩（Jon）于2023年1月28日去了巴黎，觉得很酷；吉娜说一直没机会去巴黎，只去过一次罗马",
+          "session_id": "session_2",
+          "session_date": "2:32 pm on 29 January, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 30,
+          "id": "e3049c9c-1066-48e4-a2ad-836d0408e25c",
+          "content": "乔恩小时候很喜欢和朋友们一起上舞蹈课，那些回忆非常珍贵；很开心现在能通过自己的舞蹈工作室继续享受跳舞",
+          "session_id": "session_9",
+          "session_date": "10:33 am on 9 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 31,
+          "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+          "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+          "session_id": "session_1",
+          "session_date": "4:04 pm on 20 January, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 32,
+          "id": "e6f27662-b069-4f8c-b48c-beed429c5961",
+          "content": "乔恩在2023年2月上旬参加了此前提到的艺术节并登台表演，获得很多人的称赞，这重新唤起了他对跳舞的热爱和快乐",
+          "session_id": "session_5",
+          "session_date": "9:32 am on 8 February, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 33,
+          "id": "ec4d6a48-15a1-47b7-b4fa-88663c1b8b09",
+          "content": "2023年4月24日，乔恩带舞蹈工作室参加了集市展示，既紧张又很棒，获得了一些潜在客户线索；他意识到这行并不轻松，要有自信才能把生意做成功",
+          "session_id": "session_10",
+          "session_date": "11:24 am on 25 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 34,
+          "id": "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+          "content": "截至2023年2月1日，乔恩仍在寻找场地开设他的舞蹈工作室，虽然过程有些坎坷，但他决心把这件事做成，继续追寻对舞蹈的热情",
+          "session_id": "session_3",
+          "session_date": "12:48 am on 1 February, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 35,
+          "id": "a1661dce-4783-4f5e-a33d-8ce0a34e0f72",
+          "content": "截至2023年4月3日，乔恩关闭了他的银行账户，以支持他的舞蹈工作室生意的发展；这是一个艰难的决定，但他保持乐观、向前看",
+          "session_id": "session_8",
+          "session_date": "1:26 pm on 3 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 36,
+          "id": "47d025c5-f534-45d5-9cf4-52fa2f3d3a97",
+          "content": "2023年3月23日，乔恩向吉娜建议经营生意的窍门：品牌形象是关键、要让品牌脱颖而出、和顾客建立关系让他们知道你在乎、保持积极心态激励他人，因为能量会感染别人",
+          "session_id": "session_7",
+          "session_date": "7:28 pm on 23 March, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 37,
+          "id": "4e116f5e-1d28-4a05-b142-030194997554",
+          "content": "截至2023年4月25日，乔恩感到有点缺乏自信，对自己没有信心时经营生意很难，向吉娜请教保持自信和动力的诀窍",
+          "session_id": "session_10",
+          "session_date": "11:24 am on 25 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 38,
+          "id": "761df2c0-23e4-439c-ba6b-b0947f72b8b9",
+          "content": "乔恩感谢吉娜的不离不弃和一直以来的支持，并表示不会放弃，会继续努力奋斗让舞蹈工作室的梦想成真（2023年6月13日）",
+          "session_id": "session_13",
+          "session_date": "8:29 pm on 13 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 39,
+          "id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+          "content": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好",
+          "session_id": "session_9",
+          "session_date": "10:33 am on 9 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 40,
+          "id": "b9048dcd-504b-48e4-aef2-65b2c9223b81",
+          "content": "截至2023年7月21日，乔恩的舞蹈工作室情况不太稳定，他找了份临时工作补贴开支，同时继续寻找投资人，保持乐观并决心把生意做成",
+          "session_id": "session_18",
+          "session_date": "5:44 pm on 21 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 41,
+          "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+          "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+          "session_id": "session_17",
+          "session_date": "1:25 pm on 9 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 42,
+          "id": "8492ec99-94bc-4afd-be62-b427b264b531",
+          "content": "截至2023年7月9日，乔恩全职投入舞蹈工作室创业，舞蹈练习既有趣又累人，他会保持坚定走出自己的路",
+          "session_id": "session_17",
+          "session_date": "1:25 pm on 9 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 43,
+          "id": "058faec8-92ee-4612-88b6-c57e735f035a",
+          "content": "吉娜告诉乔恩保持自信和动力的方法：提醒自己已取得的成功和进步、想着大目标和做这件事的初衷（因为热爱）、依靠支持自己的人、跳舞解压",
+          "session_id": "session_10",
+          "session_date": "11:24 am on 25 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 44,
+          "id": "54e104ab-f693-45bf-a6ca-48b57ef28a86",
+          "content": "截至2023年5月11日，乔恩最近一直在练习舞蹈动作，这帮助他保持专注和动力；他答应给吉娜发自己跳舞的视频",
+          "session_id": "session_11",
+          "session_date": "3:14 pm on 11 May, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        },
+        {
+          "rank": 45,
+          "id": "79f267de-2235-4325-af8e-6c8c4763897e",
+          "content": "截至2023年3月16日，乔恩仍在经营舞蹈工作室，他表示虽然失去工作很难受、创业不断遇到新挑战，但现在正活在梦想中，坚信最终都是值得的，一定会成功",
+          "session_id": "session_6",
+          "session_date": "2:35 pm on 16 March, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": null
+        }
+      ],
+      "reranked": [
+        {
+          "rank": 1,
+          "id": "3f548823-9546-4a8a-8a3d-299b16b943b6",
+          "content": "截至2023年6月16日，乔恩一直在为舞蹈工作室做推广，并采纳吉娜的建议开始在社交媒体上发布自己的舞蹈视频，已经引起了一点轰动",
+          "session_id": "session_14",
+          "session_date": "9:38 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.9235650251115357
+        },
+        {
+          "rank": 2,
+          "id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+          "content": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）",
+          "session_id": "session_14",
+          "session_date": "9:38 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.9020733308496915
+        },
+        {
+          "rank": 3,
+          "id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+          "content": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想",
+          "session_id": "session_14",
+          "session_date": "9:38 pm on 16 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.8752843188916395
+        },
+        {
+          "rank": 4,
+          "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+          "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+          "session_id": "session_2",
+          "session_date": "2:32 pm on 29 January, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.8632364044454064
+        },
+        {
+          "rank": 5,
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "session_id": "session_4",
+          "session_date": "10:43 am on 4 February, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.8605203263328071
+        },
+        {
+          "rank": 6,
+          "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+          "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+          "session_id": "session_18",
+          "session_date": "5:44 pm on 21 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.8491218958291935
+        },
+        {
+          "rank": 7,
+          "id": "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+          "content": "截至2023年7月21日，乔恩正在完善商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室",
+          "session_id": "session_18",
+          "session_date": "5:44 pm on 21 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.8472389641570582
+        },
+        {
+          "rank": 8,
+          "id": "20fc0980-03ad-41f3-a33a-6db73a040e49",
+          "content": "截至2023年4月3日，乔恩正在扩展舞蹈工作室的社交媒体影响力，并为当地学校和社区中心提供工作坊和课程；他表示努力已有回报，看到进步，舞者们非常兴奋",
+          "session_id": "session_8",
+          "session_date": "1:26 pm on 3 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.8345016001698047
+        },
+        {
+          "rank": 9,
+          "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+          "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+          "session_id": "session_17",
+          "session_date": "1:25 pm on 9 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.8153461018805434
+        },
+        {
+          "rank": 10,
+          "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+          "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+          "session_id": "session_1",
+          "session_date": "4:04 pm on 20 January, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.8035290497096579
+        },
+        {
+          "rank": 11,
+          "id": "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+          "content": "截至2023年2月1日，乔恩仍在寻找场地开设他的舞蹈工作室，虽然过程有些坎坷，但他决心把这件事做成，继续追寻对舞蹈的热情",
+          "session_id": "session_3",
+          "session_date": "12:48 am on 1 February, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.795577941279358
+        },
+        {
+          "rank": 12,
+          "id": "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+          "content": "吉娜鼓励乔恩在创业遇到困难时坚持下去、继续努力、不要放弃，并肯定他把计划和目标写下来是掌握进步图景的关键做法",
+          "session_id": "session_16",
+          "session_date": "2:15 pm on 21 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.7922735954321172
+        },
+        {
+          "rank": 13,
+          "id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+          "content": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好",
+          "session_id": "session_9",
+          "session_date": "10:33 am on 9 April, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.7749652221543999
+        },
+        {
+          "rank": 14,
+          "id": "2bf90403-4875-4381-a465-d400520cf9e2",
+          "content": "2023年6月21日，乔恩把所有的计划和目标写下来，认为看到目标写在纸上能帮助他保持动力、专注于该做的事情",
+          "session_id": "session_16",
+          "session_date": "2:15 pm on 21 June, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.7690730480906258
+        },
+        {
+          "rank": 15,
+          "id": "c4a339d5-2833-4d97-bf80-8d414c99e18d",
+          "content": "2023年7月，乔恩参加了一次社交活动，见到了一些投资人并获得好建议，现场氛围鼓舞人心；他也在做人际拓展并带来了不少好机会",
+          "session_id": "session_18",
+          "session_date": "5:44 pm on 21 July, 2023",
+          "user_id": "zhfull:locomo:conv-30",
+          "rerank_score": 0.7588071164698441
+        }
+      ],
+      "target_vector_ranks": {
+        "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8": 10
+      },
+      "target_rerank_ranks": {
+        "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8": 7
+      },
+      "rerank_endpoint_style": "dashscope native text-rerank"
+    }
+  ],
+  "limits": [
+    "Current vector store is later than old graph runs and is not an immutable snapshot after this probe.",
+    "Five retrospectively selected questions do not estimate current overall recall or answer accuracy.",
+    "This bypasses any future atomic pool; current SQLite has no schema_rsi_atomic collection."
+  ],
+  "vector_db_sha256_after": "183dd964cf0958c7cab08ec28c0ddca622c5da9bcb6d55713da608fe3aa6f9f6",
+  "vector_db_unchanged": true
+}
