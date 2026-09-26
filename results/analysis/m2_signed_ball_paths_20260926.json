@@ -1,0 +1,895 @@
+{
+  "scope": "Two person-split queries derived only from the original Chinese question; current zhfull conv-43 store",
+  "original_question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+  "user_id": "zhfull:locomo:conv-43",
+  "queries": [
+    {
+      "query": "约翰有哪些运动收藏品？",
+      "vector": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "content": "约翰喜欢收集篮球球衣，分享了他的球衣收藏照片",
+          "session_id": "session_12",
+          "rerank_score": null
+        },
+        {
+          "rank": 2,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "content": "约翰喜欢和别人聊他的球鞋收藏，并分享了一张球鞋摆成圆形的照片",
+          "session_id": "session_1",
+          "rerank_score": null
+        },
+        {
+          "rank": 3,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "session_id": "session_8",
+          "rerank_score": null
+        },
+        {
+          "rank": 4,
+          "id": "9594a3de-85ea-430c-961a-dbbb5e03b625",
+          "content": "约翰（John）作为职业篮球运动员在球场上整体水平不断提高，拿到了一些不错的代言合同，并且在学习如何营销自己、提升个人品牌，觉得很有成就感",
+          "session_id": "session_21",
+          "rerank_score": null
+        },
+        {
+          "rank": 5,
+          "id": "6fdb79eb-2f34-4cb7-8232-897d22bbc426",
+          "content": "约翰在高中当了四年的女子篮球队队友，和队友们一起打球很长时间",
+          "session_id": "session_9",
+          "rerank_score": null
+        },
+        {
+          "rank": 6,
+          "id": "34f8a829-bfae-4d8c-97e5-d6b36780d97e",
+          "content": "约翰（John）利用自己的影响力和资源支持自己信仰的事业，一直致力于支持青少年体育，并为欠发达社区争取体育方面的公平机会，与各种组织合作为年轻运动员创造更多机会",
+          "session_id": "session_26",
+          "rerank_score": null
+        },
+        {
+          "rank": 7,
+          "id": "1bb299a3-5fd4-420d-9472-975600a158fe",
+          "content": "约翰（John）在2023年12月中旬仍在从不久前的伤病中恢复，因伤错过了一些比赛、没能帮到队伍，他每天都做物理治疗康复练习并尽力保持活动",
+          "session_id": "session_24",
+          "rerank_score": null
+        },
+        {
+          "rank": 8,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "content": "约翰热爱篮球，当事情变得艰难时会提醒自己为什么热爱篮球，这份爱和热情让他保持动力",
+          "session_id": "session_19",
+          "rerank_score": null
+        },
+        {
+          "rank": 9,
+          "id": "15ea510a-b175-42d4-bcce-3d9b08669fad",
+          "content": "篮球对约翰仍然很重要，他每天练习训练来保持状态和提高，无法想象没有篮球的生活，篮球是他的热爱",
+          "session_id": "session_27",
+          "rerank_score": null
+        },
+        {
+          "rank": 10,
+          "id": "6be7f3c2-958d-41f3-ac51-4d11a9d419b1",
+          "content": "约翰（John）打职业篮球快一年了（截至2023年12月），这段旅程充满挑战和成长，他觉得非常美妙；他的队友们来自世界各地",
+          "session_id": "session_21",
+          "rerank_score": null
+        },
+        {
+          "rank": 11,
+          "id": "cd8c7b44-179c-4994-ad8c-e0218a58aab5",
+          "content": "约翰（John）认为身边充满激情的队友形成紧密纽带，大家互相激励做到最好，就像拥有第二个家庭",
+          "session_id": "session_3",
+          "rerank_score": null
+        },
+        {
+          "rank": 12,
+          "id": "f91b641a-6c6e-412b-b3b7-0c14e35ec0da",
+          "content": "约翰制定了一份兼顾篮球训练和力量训练的训练计划，注重倾听身体的声音并给身体足够的休息",
+          "session_id": "session_8",
+          "rerank_score": null
+        },
+        {
+          "rank": 13,
+          "id": "a19353b5-bf61-4e5e-b904-14b09d01a89b",
+          "content": "约翰在场外的目标是寻求更多代言并打造自己的品牌，为篮球生涯之后的生活做打算",
+          "session_id": "session_11",
+          "rerank_score": null
+        },
+        {
+          "rank": 14,
+          "id": "10d61023-a36a-4523-af05-d739f121408f",
+          "content": "约翰希望利用自己的篮球平台带来积极改变并激励他人，甚至可能成立一个基金会做慈善，希望留下有意义的遗产",
+          "session_id": "session_11",
+          "rerank_score": null
+        },
+        {
+          "rank": 15,
+          "id": "137b900b-84a9-4965-9f46-f0b67d388dcf",
+          "content": "约翰的首要篮球目标是赢得总冠军，同时也想在球场之外有所作为，通过慈善或激励他人回馈",
+          "session_id": "session_6",
+          "rerank_score": null
+        },
+        {
+          "rank": 16,
+          "id": "0f8de77b-2e05-45a9-a0a4-34d624bf8b5b",
+          "content": "约翰认为力量训练能增强肌肉、提高爆发力并预防受伤；加入力量训练改变了他的比赛，提高了投篮命中率、敏捷性和速度，给了他面对挑战的信心",
+          "session_id": "session_8",
+          "rerank_score": null
+        },
+        {
+          "rank": 17,
+          "id": "4e193f1a-08bd-415f-bd9e-cfda46377616",
+          "content": "约翰的篮球队通过团队聚餐、外出活动和训练之外的篮球比赛来建立和加强团队凝聚力",
+          "session_id": "session_22",
+          "rerank_score": null
+        },
+        {
+          "rank": 18,
+          "id": "720c6dd3-389b-43ce-8df1-59ec519f3f39",
+          "content": "约翰在芝加哥旅行时看过体育比赛，觉得体育场里所有人欢呼呐喊的氛围无与伦比，是非常特别的体验",
+          "session_id": "session_6",
+          "rerank_score": null
+        },
+        {
+          "rank": 19,
+          "id": "94ed36ca-69d9-432b-93f9-2ea02ad53d71",
+          "content": "约翰（John）于2023年12月中旬为户外装备代言拍摄宣传照，在一片美丽的森林中进行，摄影师拍出了超棒的照片；他分享了在田野中跳跃的照片",
+          "session_id": "session_25",
+          "rerank_score": null
+        },
+        {
+          "rank": 20,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "content": "约翰有一双幸运篮球鞋，从打球之初就陪伴着他，见证了他的成功、失败和友谊，象征坚韧、决心和对篮球的热爱，提醒他取得的成就和走过的路",
+          "session_id": "session_6",
+          "rerank_score": null
+        },
+        {
+          "rank": 21,
+          "id": "5627d94f-bc5d-4ac9-9878-cf8b75567651",
+          "content": "约翰热爱职业篮球，认为它是持续的挑战让他不断成长，与队友打球和球迷欢呼带给他巨大的满足感和人生目标",
+          "session_id": "session_11",
+          "rerank_score": null
+        },
+        {
+          "rank": 22,
+          "id": "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+          "content": "蒂姆表示会支持约翰的慈善工作和篮球事业，认为他充满决心和热情",
+          "session_id": "session_6",
+          "rerank_score": null
+        },
+        {
+          "rank": 23,
+          "id": "8265aea7-0c7b-4adc-9795-6aa34a02c83c",
+          "content": "约翰在高中当了四年女子篮球队的队友，2023年8月下旬回家时和老队友及家人朋友聚会，一起聊童年的往事聊得很开心",
+          "session_id": "session_10",
+          "rerank_score": null
+        },
+        {
+          "rank": 24,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "content": "约翰（John）的队友们在2023年8月见面时送给他一个签名篮球，签名象征他们的友谊和感激之情；这个球提醒他为什么开始打篮球以及他的篮球之路，激励他保持坚强、全力以赴",
+          "session_id": "session_7",
+          "rerank_score": null
+        },
+        {
+          "rank": 25,
+          "id": "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+          "content": "约翰在2023年6月中旬刚打完一场篮球比赛并分享了比赛现场照片，他表示能在场上做热爱的事情感觉真好，每次上场都全力以赴",
+          "session_id": "session_2",
+          "rerank_score": null
+        },
+        {
+          "rank": 26,
+          "id": "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+          "content": "约翰（John）经常在日出时进行晨练投篮，并分享了一张日落时分篮球架的照片，他说这张照片提醒他这段旅程可以很精彩",
+          "session_id": "session_24",
+          "rerank_score": null
+        },
+        {
+          "rank": 27,
+          "id": "468b7a3e-ce92-4bbe-89dc-c8ddbc04ce67",
+          "content": "约翰（John）通过篮球行业的人脉和营销技巧与大品牌建立联系，认为人脉关系在拿代言方面起很大作用",
+          "session_id": "session_3",
+          "rerank_score": null
+        },
+        {
+          "rank": 28,
+          "id": "b9e647e0-0ae7-4f2b-ad0b-ad5737b02177",
+          "content": "约翰（John）在2022年夏天于家乡为孩子们组织了一次篮球训练营，那一周充满欢笑和成长，能激励孩子们看到自己的潜力让他觉得不可思议",
+          "session_id": "session_26",
+          "rerank_score": null
+        },
+        {
+          "rank": 29,
+          "id": "e293f456-be11-4be7-9c92-81173a51ce03",
+          "content": "约翰（John）在2023年12月之前赢得了一个篮球冠军奖杯，他觉得夺冠的感觉太棒了",
+          "session_id": "session_21",
+          "rerank_score": null
+        },
+        {
+          "rank": 30,
+          "id": "a196e5f1-ad9f-4310-ab58-974b37df1c28",
+          "content": "约翰（John）自称是十足的电影迷，认为看电影是大银幕上故事鲜活起来的绝佳方式，也是很好的放松方式",
+          "session_id": "session_26",
+          "rerank_score": null
+        },
+        {
+          "rank": 31,
+          "id": "e468ce67-79d4-43c6-aa60-6545b34d3119",
+          "content": "约翰正在和一个本地组织合作开展慈善工作，帮助弱势儿童参与体育和学习，希望利用自己的影响力为社区带来积极影响",
+          "session_id": "session_6",
+          "rerank_score": null
+        },
+        {
+          "rank": 32,
+          "id": "82430c91-b24e-4a00-b876-78407640a009",
+          "content": "约翰（John）通过想象自己的目标和成功来保持专注和动力，这帮助他在艰苦学习中保持干劲",
+          "session_id": "session_18",
+          "rerank_score": null
+        },
+        {
+          "rank": 33,
+          "id": "e289c248-c3b1-4913-a40b-a537003da975",
+          "content": "约翰（John）小时候常在户外练几个小时篮球，梦想着打大赛，那是他排解怀疑和压力的方式；篮球一直是他人生的重要部分，让他能做真实的自己并追求热爱",
+          "session_id": "session_23",
+          "rerank_score": null
+        },
+        {
+          "rank": 34,
+          "id": "dce0c9c1-7851-4772-8401-e58140ae2a0a",
+          "content": "约翰（John）的有些年轻队员把他当作导师，他在场上场下都给他们提供建议和支持，把做他们的积极榜样视为己任，并为自己能帮助塑造他们的未来、激励他们追梦而感到满足",
+          "session_id": "session_14",
+          "rerank_score": null
+        },
+        {
+          "rank": 35,
+          "id": "1124c537-329b-4f5c-bd20-33919a08f41c",
+          "content": "约翰的工作与篮球相关，现场观看比赛的氛围让他感到'正是这样的时刻让我热爱我的工作'，他分享了比赛现场观众的照片",
+          "session_id": "session_12",
+          "rerank_score": null
+        },
+        {
+          "rank": 36,
+          "id": "7eea7b6a-aba8-49ae-8bc1-9375e8dddf00",
+          "content": "约翰（John）最近开始练瑜伽，想增强力量和柔韧性，觉得很有挑战但很值得，瑜伽还帮助他提升锻炼时的专注力和平衡感",
+          "session_id": "session_20",
+          "rerank_score": null
+        },
+        {
+          "rank": 37,
+          "id": "ea782de7-e976-4e36-9c88-ed2033285477",
+          "content": "约翰（John）认为激励队友的关键是：关心队友、庆祝他们的成就、提供建设性反馈、提醒他们更大的目标，并营造积极氛围、赛前打气，核心是互相支持和鼓励",
+          "session_id": "session_21",
+          "rerank_score": null
+        },
+        {
+          "rank": 38,
+          "id": "04291dc1-5a0b-4fa6-ad37-f152d087398d",
+          "content": "约翰（John）是一名棒球运动员，于2024年1月上旬（'上周'）与一家知名饮料公司签下了代言合同，称这是梦想成真，感觉所有训练和努力都得到了回报",
+          "session_id": "session_29",
+          "rerank_score": null
+        },
+        {
+          "rank": 39,
+          "id": "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+          "content": "约翰在白板上写激励性格言和策略来帮助自己在艰苦训练中保持专注和动力，桌上还放着一块提醒自己相信能力的牌匾，实物提醒帮助他保持动力",
+          "session_id": "session_15",
+          "rerank_score": null
+        },
+        {
+          "rank": 40,
+          "id": "895e6428-d669-4a07-95df-6e90ad3ead00",
+          "content": "约翰（John）于2023年12月26日当周开始举办研讨会，帮助人们解决体育和市场营销方面的问题，参加者热情积极，研讨会进展非常顺利，他很高兴能分享自己的知识",
+          "session_id": "session_26",
+          "rerank_score": null
+        },
+        {
+          "rank": 41,
+          "id": "3cd04cfb-33f0-4881-ada7-1922529a8741",
+          "content": "约翰目前的篮球目标是提升投篮、在球场上产生更大影响力、成为被认为稳定发挥并帮助球队的球员",
+          "session_id": "session_11",
+          "rerank_score": null
+        },
+        {
+          "rank": 42,
+          "id": "074401d8-fa72-451a-8ea9-3b4874fdf883",
+          "content": "约翰有一群无论如何都支持他的朋友，家人也总在他身边，与家人聚会带给他极大的快乐",
+          "session_id": "session_15",
+          "rerank_score": null
+        },
+        {
+          "rank": 43,
+          "id": "85800f05-2954-4c6e-bfd9-a4c56e7ba9ee",
+          "content": "约翰（John）在2023年8月2日之前的一周打了一场超级激烈的篮球比赛，球队以微弱分差获胜，他投进了最后一个球并听到观众欢呼，感到非常兴奋；他分享了比赛现场照片（球馆内激烈比赛、制胜一投、欢呼人群）",
+          "session_id": "session_5",
+          "rerank_score": null
+        },
+        {
+          "rank": 44,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "content": "约翰（John）在2023年10月表示由于打了很多场比赛，需要买一双新鞋，并对蒂姆推荐的网络购买记忆棉运动鞋表示感兴趣",
+          "session_id": "session_13",
+          "rerank_score": null
+        },
+        {
+          "rank": 45,
+          "id": "60a9e230-be64-4d2f-8a42-81943bd7c05a",
+          "content": "约翰于2023年8月中旬回了趟家，与家人和老朋友们聚会，一起开心地聊童年的往事，怀念美好的旧时光",
+          "session_id": "session_9",
+          "rerank_score": null
+        }
+      ],
+      "reranked": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "content": "约翰喜欢收集篮球球衣，分享了他的球衣收藏照片",
+          "session_id": "session_12",
+          "rerank_score": 0.9640679328058341
+        },
+        {
+          "rank": 2,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "content": "约翰有一双幸运篮球鞋，从打球之初就陪伴着他，见证了他的成功、失败和友谊，象征坚韧、决心和对篮球的热爱，提醒他取得的成就和走过的路",
+          "session_id": "session_6",
+          "rerank_score": 0.8987108867920683
+        },
+        {
+          "rank": 3,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "content": "约翰喜欢和别人聊他的球鞋收藏，并分享了一张球鞋摆成圆形的照片",
+          "session_id": "session_1",
+          "rerank_score": 0.8844324009798445
+        },
+        {
+          "rank": 4,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "session_id": "session_8",
+          "rerank_score": 0.7338916105173492
+        },
+        {
+          "rank": 5,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "content": "约翰（John）的队友们在2023年8月见面时送给他一个签名篮球，签名象征他们的友谊和感激之情；这个球提醒他为什么开始打篮球以及他的篮球之路，激励他保持坚强、全力以赴",
+          "session_id": "session_7",
+          "rerank_score": 0.7227929799116866
+        },
+        {
+          "rank": 6,
+          "id": "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+          "content": "约翰（John）经常在日出时进行晨练投篮，并分享了一张日落时分篮球架的照片，他说这张照片提醒他这段旅程可以很精彩",
+          "session_id": "session_24",
+          "rerank_score": 0.6765750661312135
+        },
+        {
+          "rank": 7,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "content": "约翰（John）在2023年10月表示由于打了很多场比赛，需要买一双新鞋，并对蒂姆推荐的网络购买记忆棉运动鞋表示感兴趣",
+          "session_id": "session_13",
+          "rerank_score": 0.666777884413115
+        },
+        {
+          "rank": 8,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "content": "约翰热爱篮球，当事情变得艰难时会提醒自己为什么热爱篮球，这份爱和热情让他保持动力",
+          "session_id": "session_19",
+          "rerank_score": 0.6658447448345474
+        },
+        {
+          "rank": 9,
+          "id": "5627d94f-bc5d-4ac9-9878-cf8b75567651",
+          "content": "约翰热爱职业篮球，认为它是持续的挑战让他不断成长，与队友打球和球迷欢呼带给他巨大的满足感和人生目标",
+          "session_id": "session_11",
+          "rerank_score": 0.657136891618588
+        },
+        {
+          "rank": 10,
+          "id": "e289c248-c3b1-4913-a40b-a537003da975",
+          "content": "约翰（John）小时候常在户外练几个小时篮球，梦想着打大赛，那是他排解怀疑和压力的方式；篮球一直是他人生的重要部分，让他能做真实的自己并追求热爱",
+          "session_id": "session_23",
+          "rerank_score": 0.6518447117278948
+        },
+        {
+          "rank": 11,
+          "id": "15ea510a-b175-42d4-bcce-3d9b08669fad",
+          "content": "篮球对约翰仍然很重要，他每天练习训练来保持状态和提高，无法想象没有篮球的生活，篮球是他的热爱",
+          "session_id": "session_27",
+          "rerank_score": 0.6339340563060942
+        },
+        {
+          "rank": 12,
+          "id": "1124c537-329b-4f5c-bd20-33919a08f41c",
+          "content": "约翰的工作与篮球相关，现场观看比赛的氛围让他感到'正是这样的时刻让我热爱我的工作'，他分享了比赛现场观众的照片",
+          "session_id": "session_12",
+          "rerank_score": 0.5866844176889519
+        },
+        {
+          "rank": 13,
+          "id": "7eea7b6a-aba8-49ae-8bc1-9375e8dddf00",
+          "content": "约翰（John）最近开始练瑜伽，想增强力量和柔韧性，觉得很有挑战但很值得，瑜伽还帮助他提升锻炼时的专注力和平衡感",
+          "session_id": "session_20",
+          "rerank_score": 0.5561457008839688
+        },
+        {
+          "rank": 14,
+          "id": "6fdb79eb-2f34-4cb7-8232-897d22bbc426",
+          "content": "约翰在高中当了四年的女子篮球队队友，和队友们一起打球很长时间",
+          "session_id": "session_9",
+          "rerank_score": 0.5485195631238581
+        },
+        {
+          "rank": 15,
+          "id": "85800f05-2954-4c6e-bfd9-a4c56e7ba9ee",
+          "content": "约翰（John）在2023年8月2日之前的一周打了一场超级激烈的篮球比赛，球队以微弱分差获胜，他投进了最后一个球并听到观众欢呼，感到非常兴奋；他分享了比赛现场照片（球馆内激烈比赛、制胜一投、欢呼人群）",
+          "session_id": "session_5",
+          "rerank_score": 0.5422833013761474
+        }
+      ],
+      "target_vector_ranks": {
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99": null,
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc": 24
+      },
+      "target_rerank_ranks": {
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99": null,
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc": 5
+      },
+      "rerank_endpoint_style": "dashscope native text-rerank"
+    },
+    {
+      "query": "蒂姆有哪些运动收藏品？",
+      "vector": [
+        {
+          "rank": 1,
+          "id": "df795392-83c3-4203-892c-c51c003b7b9e",
+          "content": "蒂姆（Tim）从未参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种不同的魔法世界里",
+          "session_id": "session_10",
+          "rerank_score": null
+        },
+        {
+          "rank": 2,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+          "session_id": "session_16",
+          "rerank_score": null
+        },
+        {
+          "rank": 3,
+          "id": "813dedd4-af3e-4a89-bcef-8980e3d5ee16",
+          "content": "蒂姆（Tim）在2023年10月中旬正在读一本书，完全被吸引住了",
+          "session_id": "session_14",
+          "rerank_score": null
+        },
+        {
+          "rank": 4,
+          "id": "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+          "content": "蒂姆从来没有参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种魔法世界里，这也是他喜欢去新地方旅行的原因之一",
+          "session_id": "session_9",
+          "rerank_score": null
+        },
+        {
+          "rank": 5,
+          "id": "dc32e124-0a2a-4e09-961c-3b7730a9e739",
+          "content": "蒂姆一直忙于学习各种项目，并以写作和阅读作为在艰难时刻保持动力的热爱所在",
+          "session_id": "session_19",
+          "rerank_score": null
+        },
+        {
+          "rank": 6,
+          "id": "0fddf2fc-4c52-47c4-be25-1fdc92e4abdb",
+          "content": "蒂姆（Tim）在2023年12月初加入了一个旅行俱乐部，因为一直对不同文化和国家很感兴趣，期待认识新朋友并了解他们的独特之处",
+          "session_id": "session_21",
+          "rerank_score": null
+        },
+        {
+          "rank": 7,
+          "id": "b2ba489b-9e17-4fed-a43d-9cefb701c278",
+          "content": "蒂姆于2023年8月参加了一场他热爱的粉丝活动，和其他同样热爱它的粉丝在一起让他感到特别",
+          "session_id": "session_6",
+          "rerank_score": null
+        },
+        {
+          "rank": 8,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+          "session_id": "session_26",
+          "rerank_score": null
+        },
+        {
+          "rank": 9,
+          "id": "98272be5-3f17-4a2e-9942-a81fd9e8f00a",
+          "content": "蒂姆（Tim）是一名学生，2023年10月时学习很忙，但会抽时间看书放松，保持着不错的平衡",
+          "session_id": "session_14",
+          "rerank_score": null
+        },
+        {
+          "rank": 10,
+          "id": "d3e215ab-e458-46b1-a92f-0c0e856cd94c",
+          "content": "蒂姆（Tim）喜欢尝试各种香料，打算自己找食谱试试做汤",
+          "session_id": "session_10",
+          "rerank_score": null
+        },
+        {
+          "rank": 11,
+          "id": "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+          "content": "蒂姆表示会支持约翰的慈善工作和篮球事业，认为他充满决心和热情",
+          "session_id": "session_6",
+          "rerank_score": null
+        },
+        {
+          "rank": 12,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "content": "蒂姆收藏了很多哈利·波特等纪念物，这对他来说是一种逃离现实的方式，让他感觉自己走进了书里；他计划以后去更多哈利·波特主题的地方",
+          "session_id": "session_2",
+          "rerank_score": null
+        },
+        {
+          "rank": 13,
+          "id": "d1e2eb4d-e34a-4c4f-949b-10cd43022797",
+          "content": "蒂姆喜欢沉浸在奇幻故事中，也喜欢通过关于成长、心理学和自我提升的书籍探索变得更好的方法",
+          "session_id": "session_19",
+          "rerank_score": null
+        },
+        {
+          "rank": 14,
+          "id": "298be17b-2aa3-4e79-bbc3-1944ab4614c7",
+          "content": "蒂姆的全家曾聚在一起吃饭，那是充满爱和欢笑的美好一天，家庭时光对他意义重大",
+          "session_id": "session_8",
+          "rerank_score": null
+        },
+        {
+          "rank": 15,
+          "id": "9c31c888-0652-4849-9ea2-366dad8429a2",
+          "content": "蒂姆（Tim）在2023年12月上旬的英国文学课过得艰难，他对正在读的那套关于友谊和忠诚的系列小说做了一个分析，觉得应该还过得去",
+          "session_id": "session_23",
+          "rerank_score": null
+        },
+        {
+          "rank": 16,
+          "id": "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+          "content": "蒂姆（Tim）正在做一个哈利·波特粉丝项目，并与一位哈利·波特粉丝朋友合作，于2023年5月中旬开始讨论构思创意",
+          "session_id": "session_1",
+          "rerank_score": null
+        },
+        {
+          "rank": 17,
+          "id": "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+          "content": "蒂姆（Tim）正在读一套关于友谊和忠诚主题的奇幻系列小说，觉得很鼓舞人心，但尚未读《权力的游戏》系列以外的乔治·R·R·马丁其他作品",
+          "session_id": "session_22",
+          "rerank_score": null
+        },
+        {
+          "rank": 18,
+          "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+          "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+          "session_id": "session_27",
+          "rerank_score": null
+        },
+        {
+          "rank": 19,
+          "id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+          "content": "蒂姆（Tim）在2024年1月初加入了一群和他志趣相投的环球旅行者，认识他们、听他们讲旅行经历让他觉得很棒",
+          "session_id": "session_27",
+          "rerank_score": null
+        },
+        {
+          "rank": 20,
+          "id": "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+          "content": "蒂姆的写作灵感来自书籍、电影和现实生活经历，阅读关于英国城堡的内容给了他很多灵感，某些作者对他来说像灵感宝库",
+          "session_id": "session_15",
+          "rerank_score": null
+        },
+        {
+          "rank": 21,
+          "id": "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+          "content": "蒂姆（Tim）于2023年11月10日前后去英国旅行时参观了一座城堡，被那里的建筑和历史震撼，此前他一直梦想参观英国城堡",
+          "session_id": "session_18",
+          "rerank_score": null
+        },
+        {
+          "rank": 22,
+          "id": "f1cbcea3-bdd1-42e9-a37d-c10e5e2b956a",
+          "content": "蒂姆喜欢和朋友家人一起自驾游、探索、徒步或玩桌游；空闲时间喜欢捧一本好书蜷着读，逃离现实、沉浸在不同的世界里",
+          "session_id": "session_15",
+          "rerank_score": null
+        },
+        {
+          "rank": 23,
+          "id": "eae136c8-9f70-4410-b17c-48d24ca2a8aa",
+          "content": "蒂姆（User）的英国文学课在2023年12月过得艰难，他对一个系列作品做了分析，觉得应该还行",
+          "session_id": "session_24",
+          "rerank_score": null
+        },
+        {
+          "rank": 24,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "content": "约翰（John）在2023年10月表示由于打了很多场比赛，需要买一双新鞋，并对蒂姆推荐的网络购买记忆棉运动鞋表示感兴趣",
+          "session_id": "session_13",
+          "rerank_score": null
+        },
+        {
+          "rank": 25,
+          "id": "29c3c1cb-c4eb-4be1-b37c-5e5f597ec02e",
+          "content": "蒂姆感激有支持自己的朋友和家人，认为拥有支持网络非常重要",
+          "session_id": "session_15",
+          "rerank_score": null
+        },
+        {
+          "rank": 26,
+          "id": "1a240463-b254-4e3c-b654-849617378f9b",
+          "content": "蒂姆喜欢看勒布朗·詹姆斯打球；几年前一场总决赛中勒布朗的史诗级盖帽（2016年总决赛第七场追防伊戈达拉把球按在篮板上）彻底改变了比赛并最终获胜，这种永不放弃的精神让蒂姆深受鼓舞，也让他热爱体育",
+          "session_id": "session_16",
+          "rerank_score": null
+        },
+        {
+          "rank": 27,
+          "id": "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+          "content": "蒂姆（Tim）于2023年7月上旬在加利福尼亚州与一位《哈利·波特》粉丝聊得很开心，感到周围都是志同道合的人充满爱意，体验非常神奇",
+          "session_id": "session_3",
+          "rerank_score": null
+        },
+        {
+          "rank": 28,
+          "id": "92c5654f-af95-4627-8f53-a115f0cae98c",
+          "content": "蒂姆（Tim）在2023年11月中旬被考试淹没，感觉有挑战但保持乐观并刻苦学习备考",
+          "session_id": "session_18",
+          "rerank_score": null
+        },
+        {
+          "rank": 29,
+          "id": "9f77396c-7ff4-4d47-9c81-0497a1c097a9",
+          "content": "蒂姆（Tim）于2023年12月8日参加了一个哈利·波特主题派对，遇到很多兴趣相投的人，玩得很开心；他没有打扮成角色，但戴了格兰芬多围巾，并获得了巧克力蛙作为奖励",
+          "session_id": "session_22",
+          "rerank_score": null
+        },
+        {
+          "rank": 30,
+          "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+          "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+          "session_id": "session_19",
+          "rerank_score": null
+        },
+        {
+          "rank": 31,
+          "id": "6a67ba10-b774-478c-8f16-179d28e90cb9",
+          "content": "蒂姆（Tim）自上次与约翰聊天以来一直专注于学业，还读了很多奇幻小说作为从压力中放松的方式",
+          "session_id": "session_8",
+          "rerank_score": null
+        },
+        {
+          "rank": 32,
+          "id": "31e7385d-3b47-4572-a963-8c13b8bbcf7c",
+          "content": "蒂姆（Tim）照例一直在读书，截至2023年11月11日分享了他一本翻旧的《冰与火之歌：剑刃风暴》（A Storm of Swords）的照片",
+          "session_id": "session_17",
+          "rerank_score": null
+        },
+        {
+          "rank": 33,
+          "id": "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+          "content": "蒂姆（Tim）写奇幻文章时特别喜欢《哈利·波特》和《权力的游戏》，对这两部作品完全着迷，可以永远聊下去",
+          "session_id": "session_4",
+          "rerank_score": null
+        },
+        {
+          "rank": 34,
+          "id": "c5dcfd75-6bb5-47a9-823e-1dd2de5cf92a",
+          "content": "蒂姆（Tim）不会冲浪，但读一本好的奇幻小说能让他逃离现实、感受自由；他在家里有一个舒适的读书角（有棕色沙发和白色脚凳），在那里读书让他感觉像置身极乐、进入另一个世界",
+          "session_id": "session_3",
+          "rerank_score": null
+        },
+        {
+          "rank": 35,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+          "session_id": "session_20",
+          "rerank_score": null
+        },
+        {
+          "rank": 36,
+          "id": "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+          "content": "蒂姆（Tim）计划于2023年9月去环球影城玩，这是他第一次去，他对哈利·波特主题的东西超级兴奋，并表示回来后会告诉约翰体验如何",
+          "session_id": "session_10",
+          "rerank_score": null
+        },
+        {
+          "rank": 37,
+          "id": "cac74226-d275-465a-b177-a0b9e1351242",
+          "content": "蒂姆（Tim）于2023年8月上旬和在加州认识的哈利·波特粉丝视频通话，聊得很开心，讨论了角色并可能一起合作，他觉得和一个懂他的人聊天非常酷",
+          "session_id": "session_5",
+          "rerank_score": null
+        },
+        {
+          "rank": 38,
+          "id": "8e28216f-45dd-4aa9-b731-bd127ade0d5f",
+          "content": "蒂姆最近写了更多关于奇幻小说的文章，这让他能结合对阅读的热爱和分享好故事的快乐，并分享了一篇文章截图",
+          "session_id": "session_6",
+          "rerank_score": null
+        },
+        {
+          "rank": 39,
+          "id": "9d717fa9-9e17-4171-b3ee-c31236749a40",
+          "content": "蒂姆（Tim）闲暇时仍喜欢读书，《哈利·波特》系列是他的最爱之一，认为那是可以让人暂时逃离现实的魔法世界；他也看过所有《哈利·波特》的电影，喜欢将电影与原著比较",
+          "session_id": "session_26",
+          "rerank_score": null
+        },
+        {
+          "rank": 40,
+          "id": "bd5e05ac-8fff-4146-9701-0796790c5f10",
+          "content": "蒂姆的写作灵感来源包括书籍、电影和现实生活经历；阅读关于英国城堡的内容给了他很多灵感，他梦想有一天能去参观英国城堡",
+          "session_id": "session_16",
+          "rerank_score": null
+        },
+        {
+          "rank": 41,
+          "id": "c356cde1-726f-4c2b-a000-af8a1e5f23a3",
+          "content": "蒂姆（Tim）的学习技巧是把学习分成小块：学习25分钟后休息5分钟做有趣的事，这样压力更小且能保持进度",
+          "session_id": "session_18",
+          "rerank_score": null
+        },
+        {
+          "rank": 42,
+          "id": "decf0285-cbd0-4097-8e56-570e10d384a9",
+          "content": "蒂姆家的感恩节传统包括一起准备大餐、聊聊各自感恩的事情，以及之后一起看电影",
+          "session_id": "session_8",
+          "rerank_score": null
+        },
+        {
+          "rank": 43,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "content": "蒂姆（Tim）最近在网上买了一双黑粉色的记忆棉（memory foam）运动鞋，感觉像走在云上一样舒服，称其为改变游戏规则的存在，并强烈推荐给约翰",
+          "session_id": "session_13",
+          "rerank_score": null
+        },
+        {
+          "rank": 44,
+          "id": "3a97d245-26c9-4941-8f4a-7c62765cd967",
+          "content": "蒂姆（Tim）于2024年1月上旬正在研究他想去的国家的签证要求，虽然过程让人头大但很兴奋，并为主动出击推进旅行梦想感到自豪",
+          "session_id": "session_29",
+          "rerank_score": null
+        },
+        {
+          "rank": 45,
+          "id": "f08ee55a-26e1-407e-b11b-edb57f29a4ed",
+          "content": "蒂姆在爱尔兰留学期间将住在戈尔韦（Galway），那里以艺术和爱尔兰音乐著称，氛围特别有活力",
+          "session_id": "session_28",
+          "rerank_score": null
+        }
+      ],
+      "reranked": [
+        {
+          "rank": 1,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+          "session_id": "session_16",
+          "rerank_score": 0.9237529306234311
+        },
+        {
+          "rank": 2,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "content": "蒂姆收藏了很多哈利·波特等纪念物，这对他来说是一种逃离现实的方式，让他感觉自己走进了书里；他计划以后去更多哈利·波特主题的地方",
+          "session_id": "session_2",
+          "rerank_score": 0.7707786776234382
+        },
+        {
+          "rank": 3,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "content": "蒂姆（Tim）最近在网上买了一双黑粉色的记忆棉（memory foam）运动鞋，感觉像走在云上一样舒服，称其为改变游戏规则的存在，并强烈推荐给约翰",
+          "session_id": "session_13",
+          "rerank_score": 0.759579031525802
+        },
+        {
+          "rank": 4,
+          "id": "df795392-83c3-4203-892c-c51c003b7b9e",
+          "content": "蒂姆（Tim）从未参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种不同的魔法世界里",
+          "session_id": "session_10",
+          "rerank_score": 0.6756227034955973
+        },
+        {
+          "rank": 5,
+          "id": "1a240463-b254-4e3c-b654-849617378f9b",
+          "content": "蒂姆喜欢看勒布朗·詹姆斯打球；几年前一场总决赛中勒布朗的史诗级盖帽（2016年总决赛第七场追防伊戈达拉把球按在篮板上）彻底改变了比赛并最终获胜，这种永不放弃的精神让蒂姆深受鼓舞，也让他热爱体育",
+          "session_id": "session_16",
+          "rerank_score": 0.6546175913577797
+        },
+        {
+          "rank": 6,
+          "id": "f1cbcea3-bdd1-42e9-a37d-c10e5e2b956a",
+          "content": "蒂姆喜欢和朋友家人一起自驾游、探索、徒步或玩桌游；空闲时间喜欢捧一本好书蜷着读，逃离现实、沉浸在不同的世界里",
+          "session_id": "session_15",
+          "rerank_score": 0.645995665669248
+        },
+        {
+          "rank": 7,
+          "id": "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+          "content": "蒂姆从来没有参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种魔法世界里，这也是他喜欢去新地方旅行的原因之一",
+          "session_id": "session_9",
+          "rerank_score": 0.6317125635168608
+        },
+        {
+          "rank": 8,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+          "session_id": "session_26",
+          "rerank_score": 0.6040863788525567
+        },
+        {
+          "rank": 9,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "content": "约翰（John）在2023年10月表示由于打了很多场比赛，需要买一双新鞋，并对蒂姆推荐的网络购买记忆棉运动鞋表示感兴趣",
+          "session_id": "session_13",
+          "rerank_score": 0.5565847420187906
+        },
+        {
+          "rank": 10,
+          "id": "c5dcfd75-6bb5-47a9-823e-1dd2de5cf92a",
+          "content": "蒂姆（Tim）不会冲浪，但读一本好的奇幻小说能让他逃离现实、感受自由；他在家里有一个舒适的读书角（有棕色沙发和白色脚凳），在那里读书让他感觉像置身极乐、进入另一个世界",
+          "session_id": "session_3",
+          "rerank_score": 0.5385466466336317
+        },
+        {
+          "rank": 11,
+          "id": "31e7385d-3b47-4572-a963-8c13b8bbcf7c",
+          "content": "蒂姆（Tim）照例一直在读书，截至2023年11月11日分享了他一本翻旧的《冰与火之歌：剑刃风暴》（A Storm of Swords）的照片",
+          "session_id": "session_17",
+          "rerank_score": 0.5227272921473999
+        },
+        {
+          "rank": 12,
+          "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+          "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+          "session_id": "session_27",
+          "rerank_score": 0.5193294408326692
+        },
+        {
+          "rank": 13,
+          "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+          "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+          "session_id": "session_19",
+          "rerank_score": 0.5087336407124883
+        },
+        {
+          "rank": 14,
+          "id": "9f77396c-7ff4-4d47-9c81-0497a1c097a9",
+          "content": "蒂姆（Tim）于2023年12月8日参加了一个哈利·波特主题派对，遇到很多兴趣相投的人，玩得很开心；他没有打扮成角色，但戴了格兰芬多围巾，并获得了巧克力蛙作为奖励",
+          "session_id": "session_22",
+          "rerank_score": 0.47730423493048607
+        },
+        {
+          "rank": 15,
+          "id": "9d717fa9-9e17-4171-b3ee-c31236749a40",
+          "content": "蒂姆（Tim）闲暇时仍喜欢读书，《哈利·波特》系列是他的最爱之一，认为那是可以让人暂时逃离现实的魔法世界；他也看过所有《哈利·波特》的电影，喜欢将电影与原著比较",
+          "session_id": "session_26",
+          "rerank_score": 0.47589763849623573
+        }
+      ],
+      "target_vector_ranks": {
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99": 2,
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc": null
+      },
+      "target_rerank_ranks": {
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99": 1,
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc": null
+      },
+      "rerank_endpoint_style": "dashscope native text-rerank"
+    }
+  ],
+  "current_cache_signed_basketball_entity_memory_ids": [
+    "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+    "219b4c97-f2af-4734-a4f4-1d93ebe19f99"
+  ],
+  "target_ids": {
+    "Tim": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+    "John": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc"
+  },
+  "vector_db_sha256_before": "183dd964cf0958c7cab08ec28c0ddca622c5da9bcb6d55713da608fe3aa6f9f6",
+  "limits": [
+    "Graph cache entity co-occurrence is a potential path, not proof of a live graph traversal",
+    "Two hand-written non-oracle subqueries are a local query-reformulation probe, not a trained general method",
+    "No answer model or judge calls"
+  ],
+  "vector_db_sha256_after": "75df0309d6488bd7fc9feb9eafbcef780708b6683e385af88660e84eeb1f6435",
+  "vector_db_unchanged": false
+}

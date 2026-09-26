@@ -1,0 +1,27 @@
+{
+  "scope": "Post-probe read-only integrity check after Chroma SQLite byte hash changed",
+  "probe_hash_before": "183dd964cf0958c7cab08ec28c0ddca622c5da9bcb6d55713da608fe3aa6f9f6",
+  "probe_hash_after": "75df0309d6488bd7fc9feb9eafbcef780708b6683e385af88660e84eeb1f6435",
+  "current_file_hash": "75df0309d6488bd7fc9feb9eafbcef780708b6683e385af88660e84eeb1f6435",
+  "embedding_count": 1995,
+  "user_counts": {
+    "nf53:locomo:conv-42": 195,
+    "zhfull:locomo:conv-26": 138,
+    "zhfull:locomo:conv-30": 102,
+    "zhfull:locomo:conv-41": 209,
+    "zhfull:locomo:conv-42": 195,
+    "zhfull:locomo:conv-43": 211,
+    "zhfull:locomo:conv-44": 186,
+    "zhfull:locomo:conv-47": 197,
+    "zhfull:locomo:conv-48": 224,
+    "zhfull:locomo:conv-49": 161,
+    "zhfull:locomo:conv-50": 177
+  },
+  "previously_retrieved_instances_checked": 225,
+  "prior_candidate_ids_missing": [],
+  "prior_candidate_contents_changed": [],
+  "limits": [
+    "The byte-level change is real; this check cannot reconstruct its cause or verify every prior record because no full logical snapshot was saved before the probe.",
+    "The probe script did not call memory write APIs, but Chroma initialization or another process may have changed SQLite bytes."
+  ]
+}
