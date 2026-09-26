@@ -1,0 +1,1281 @@
+{
+  "scope": "2026-09-25 中文无图归档、严格非 exact 的 temporal J 题；金标 evidence turn 直接含昨天/前天/明天/后天",
+  "method": "只按词面与会话日期做算术筛选；逐题保留源 turn、邻近 turn、同来源会话的 top-15 记忆、答案和严格裁判。词面命中不保证与所问事件相关。",
+  "source_dataset": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
+  "raw_archive": "results_zh/zhfull_locomo_20260925_115806.jsonl",
+  "grades": "results/precision_regrade_zhfull.jsonl",
+  "counts": {
+    "temporal_J_cases": 321,
+    "nonexact_temporal_J_cases": 149,
+    "cases_with_relative_day_in_gold_evidence": 12,
+    "grade_partial": 9,
+    "grade_wrong": 3
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-26_qa58",
+      "question": "梅拉妮是什么时候在陶艺课上做了一个盘子的？",
+      "gold": "2023年8月24日",
+      "all_gold_evidence_ids": [
+        "D14:4"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D14:4",
+          "session_id": "session_14",
+          "session_date": "2023-08-25",
+          "turn": {
+            "speaker": "梅拉妮",
+            "dia_id": "D14:4",
+            "text": "是啊，我昨天在陶艺课上做的。我很喜欢！陶艺既放松又有创意。你试过吗？"
+          }
+        }
+      ],
+      "grade": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "具体日期2023年8月24日"
+        ],
+        "reason": "答案给出的是模糊的时间（8月下旬/25日之前不久），而非确切的8月24日。"
+      },
+      "answer": "2023年8月25日之前不久（2023年8月下旬）——梅拉妮在陶艺课上做了一个带花卉图案的紫色碗/盘子。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D14:4",
+          "session_id": "session_14",
+          "session_date": "2023-08-25",
+          "tokens": [
+            "昨天"
+          ],
+          "arithmetic_dates": {
+            "昨天": "2023-08-24"
+          },
+          "turn": {
+            "speaker": "梅拉妮",
+            "dia_id": "D14:4",
+            "text": "是啊，我昨天在陶艺课上做的。我很喜欢！陶艺既放松又有创意。你试过吗？"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "梅拉妮",
+              "img_url": [
+                "https://i0.wp.com/bardith.com/wp-content/uploads/2022/05/IMG_4371-1.jpg"
+              ],
+              "blip_caption": "a photo of a plate with a bunch of flowers on it",
+              "query": "pottery purple bowl floral patterns",
+              "dia_id": "D14:2",
+              "text": "哇，卡罗琳！很抱歉你遇到了这种事。这种事情发生时确实很难受，但你道歉了，这很棒。这需要很大的勇气和成熟！你觉得这个怎么样？"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D14:3",
+              "text": "谢谢你，梅拉妮！这个盘子太棒了！是你做的吗？"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D14:4",
+              "text": "是啊，我昨天在陶艺课上做的。我很喜欢！陶艺既放松又有创意。你试过吗？"
+            },
+            {
+              "speaker": "卡罗琳",
+              "img_url": [
+                "https://i0.wp.com/makesomethingmondays.com/wp-content/uploads/2017/07/mini-beach-sunset-painting-diy.jpg"
+              ],
+              "blip_caption": "a photo of a painting of a sunset on a small easel",
+              "query": "vibrant sunset beach painting",
+              "dia_id": "D14:5",
+              "text": "没有，还没试过。我一直忙着画画——这是我刚完成的作品。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D14:6",
+              "text": "哇，卡罗琳，看起来太美了！那些颜色好鲜艳，真像一场真实的日落。你是什么灵感让你画了这幅画？"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "5c43f1b2-8289-4513-9e28-914dedd5ae03",
+          "content": "梅拉妮最近在陶艺课上做了一个带花卉图案的紫色碗/盘子，她很喜欢，觉得陶艺既放松又有创意",
+          "score": 0.6830944623563691,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "1:33 pm on 25 August, 2023",
+            "session_id": "session_14",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa19",
+      "question": "吉娜什么时候参加了设计实习的面试？",
+      "gold": "2023年5月10日",
+      "all_gold_evidence_ids": [
+        "D11:14"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D11:14",
+          "session_id": "session_11",
+          "session_date": "2023-05-11",
+          "turn": {
+            "speaker": "吉娜",
+            "dia_id": "D11:14",
+            "text": "谢谢！非常感谢你让我随时了解这个很棒的项目。迫不及待想听到更多消息，看着它变成现实！对了，我昨天参加了一个设计实习的面试！感觉太棒了。"
+          }
+        }
+      ],
+      "grade": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "hedged date precision: '左右' instead of exact date 2023年5月10日"
+        ],
+        "reason": "Correct date but hedged with 'around', which is not exact precision."
+      },
+      "answer": "2023年5月10日左右",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D11:14",
+          "session_id": "session_11",
+          "session_date": "2023-05-11",
+          "tokens": [
+            "昨天"
+          ],
+          "arithmetic_dates": {
+            "昨天": "2023-05-10"
+          },
+          "turn": {
+            "speaker": "吉娜",
+            "dia_id": "D11:14",
+            "text": "谢谢！非常感谢你让我随时了解这个很棒的项目。迫不及待想听到更多消息，看着它变成现实！对了，我昨天参加了一个设计实习的面试！感觉太棒了。"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "吉娜",
+              "dia_id": "D11:12",
+              "text": "这是个很棒的梦想，乔恩！给人们一个用舞蹈表达自我的地方真的很重要。你的工作室将会带来巨大的改变。迫不及待想看到它成真！"
+            },
+            {
+              "speaker": "乔恩",
+              "dia_id": "D11:13",
+              "text": "谢谢！你的帮助对我意义重大。我会随时向你汇报舞蹈工作室的进展。"
+            },
+            {
+              "speaker": "吉娜",
+              "dia_id": "D11:14",
+              "text": "谢谢！非常感谢你让我随时了解这个很棒的项目。迫不及待想听到更多消息，看着它变成现实！对了，我昨天参加了一个设计实习的面试！感觉太棒了。"
+            },
+            {
+              "speaker": "乔恩",
+              "dia_id": "D11:15",
+              "text": "哇，吉娜，我为此感到兴奋！冒险确实吓人，但我相信追逐梦想最终会有回报。面试进行得怎么样？"
+            },
+            {
+              "speaker": "吉娜",
+              "dia_id": "D11:16",
+              "text": "非常顺利！"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "8c8b33db-3e72-4091-8587-4322d94252dd",
+          "content": "吉娜在2023年5月10日左右参加了一个设计实习的面试，面试进行得非常顺利，她感觉很好",
+          "score": 0.7909290184877337,
+          "metadata": {
+            "session_date": "3:14 pm on 11 May, 2023",
+            "session_id": "session_11",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa33",
+      "question": "乔恩什么时候为他的店参加社交活动？",
+      "gold": "2023年6月20日",
+      "all_gold_evidence_ids": [
+        "D16:6"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D16:6",
+          "session_id": "session_16",
+          "session_date": "2023-06-21",
+          "turn": {
+            "speaker": "乔恩",
+            "dia_id": "D16:6",
+            "text": "太棒了，吉娜！昨天我选择去参加社交活动来促成一些事情。虽然很难，但我会保持坚定和专注。"
+          }
+        }
+      ],
+      "grade": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "提供一个明确、唯一的答案"
+        ],
+        "reason": "包含正确的日期 2023年6月20日，但也增加了一个额外的时间（2023年7月）作为替代答案，而不是单一明确的答案。"
+      },
+      "answer": "乔恩于2023年6月20日（他的舞蹈工作室正式开幕当天）选择去参加社交活动，以促成一些事业上的机会。此外，2023年7月他还参加过一次社交活动，见到了一些投资人并获得好建议。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D16:6",
+          "session_id": "session_16",
+          "session_date": "2023-06-21",
+          "tokens": [
+            "昨天"
+          ],
+          "arithmetic_dates": {
+            "昨天": "2023-06-20"
+          },
+          "turn": {
+            "speaker": "乔恩",
+            "dia_id": "D16:6",
+            "text": "太棒了，吉娜！昨天我选择去参加社交活动来促成一些事情。虽然很难，但我会保持坚定和专注。"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "乔恩",
+              "dia_id": "D16:4",
+              "text": "你是什么灵感让你想到这个的？"
+            },
+            {
+              "speaker": "吉娜",
+              "dia_id": "D16:5",
+              "text": "这个设计让我想起了脱颖而出、面对挑战所需要的韧性。"
+            },
+            {
+              "speaker": "乔恩",
+              "dia_id": "D16:6",
+              "text": "太棒了，吉娜！昨天我选择去参加社交活动来促成一些事情。虽然很难，但我会保持坚定和专注。"
+            },
+            {
+              "speaker": "吉娜",
+              "dia_id": "D16:7",
+              "text": "好样的，乔恩！参加那些社交活动需要勇气和干劲。继续保持！"
+            },
+            {
+              "speaker": "乔恩",
+              "dia_id": "D16:8",
+              "text": "谢谢！自从我失业后日子一直不好过，但我相信把时间投入到我的事业上最终会有回报的。非常感谢你的帮助。"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "eb772e3b-1522-4f68-a8ae-1f9fbb11ac0a",
+          "content": "2023年6月21日，乔恩前一天（6月20日）选择去参加社交活动来促成一些事业上的机会，虽然很难但会保持坚定和专注",
+          "score": 0.6132741792304252,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_16",
+            "session_date": "2:15 pm on 21 June, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "rank": 12,
+          "id": "f9d8116f-9572-4849-a089-c365ad2cd881",
+          "content": "2023年6月20日左右，乔恩的舞蹈工作室正式开幕前夜，他在开幕前还专程去罗马短途旅行放松心情，开幕之夜定为2023年6月20日",
+          "score": 0.5252855171971574,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "2:15 pm on 21 June, 2023",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa38",
+      "question": "玛丽亚是什么时候遭遇车祸的？",
+      "gold": "2023年7月2日",
+      "all_gold_evidence_ids": [
+        "D21:3"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D21:3",
+          "session_id": "session_21",
+          "session_date": "2023-07-03",
+          "turn": {
+            "speaker": "玛丽亚",
+            "img_url": [
+              "https://i2.pickpik.com/photos/866/469/190/crash-car-car-crash-accident-preview.jpg"
+            ],
+            "blip_caption": "a photography of a car that has been damaged and is sitting on a flatbed",
+            "query": "broken car homeless shelter kids",
+            "dia_id": "D21:3",
+            "re-download": true,
+            "text": "嘿，约翰！他们都很好，他们的笑容温暖了我的心。不过昨天发生了一件不太好的事……"
+          }
+        }
+      ],
+      "grade": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "exact date without hedging"
+        ],
+        "reason": "Answer states the correct date but hedges with '左右' (around), which is not exact for a definitive gold date."
+      },
+      "answer": "根据记忆，2023年7月2日左右，一辆车闯红灯撞上了玛丽亚的车，她的车被平板拖车拖走，但所有人都安然无恙。\n\n回答：玛丽亚是在2023年7月2日左右（2023年7月初）遭遇车祸的。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D21:3",
+          "session_id": "session_21",
+          "session_date": "2023-07-03",
+          "tokens": [
+            "昨天"
+          ],
+          "arithmetic_dates": {
+            "昨天": "2023-07-02"
+          },
+          "turn": {
+            "speaker": "玛丽亚",
+            "img_url": [
+              "https://i2.pickpik.com/photos/866/469/190/crash-car-car-crash-accident-preview.jpg"
+            ],
+            "blip_caption": "a photography of a car that has been damaged and is sitting on a flatbed",
+            "query": "broken car homeless shelter kids",
+            "dia_id": "D21:3",
+            "re-download": true,
+            "text": "嘿，约翰！他们都很好，他们的笑容温暖了我的心。不过昨天发生了一件不太好的事……"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "玛丽亚",
+              "img_url": [
+                "https://cdn.newswire.com/files/x/4b/eb/ec85ef6a588e010a38e5f40feeab.jpg"
+              ],
+              "blip_caption": "a photo of three children sitting on a step smiling",
+              "query": "group children shelter smiling",
+              "dia_id": "D21:1",
+              "text": "嘿，约翰，好久不见！抱歉没能早点回复你……发生了太多事！快看看我在收容所遇到的这些孩子！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D21:2",
+              "text": "嘿，玛丽亚！很高兴收到你的消息。这些小家伙真可爱，他们有什么新消息吗？你最近怎么样？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "img_url": [
+                "https://i2.pickpik.com/photos/866/469/190/crash-car-car-crash-accident-preview.jpg"
+              ],
+              "blip_caption": "a photography of a car that has been damaged and is sitting on a flatbed",
+              "query": "broken car homeless shelter kids",
+              "dia_id": "D21:3",
+              "re-download": true,
+              "text": "嘿，约翰！他们都很好，他们的笑容温暖了我的心。不过昨天发生了一件不太好的事……"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D21:4",
+              "text": "真令人难过。我能帮上什么忙吗？发生了什么事？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D21:5",
+              "text": "一辆车闯红灯撞上了我们，但幸好大家都没事。除此之外，我表妹最近遇到了困难，所以我正在帮她找一个新住处。"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "0268d2a4-b350-4cfe-9aeb-a697c0e5a135",
+          "content": "Around July 2, 2023, a car ran a red light and hit Maria's car, which had to be towed on a flatbed, but everyone was unharmed",
+          "score": 0.5681463408555116,
+          "metadata": {
+            "case_id": "locomo_conv-41_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_21",
+            "session_date": "8:43 pm on 3 July, 2023",
+            "user_id": "zhfull:locomo:conv-41"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa31",
+      "question": "詹姆斯计划在加拿大旅行多少天？",
+      "gold": "19天",
+      "all_gold_evidence_ids": [
+        "D16:9",
+        "D16:13"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D16:9",
+          "session_id": "session_16",
+          "session_date": "2022-07-09",
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D16:9",
+            "text": "我也喜欢阅读，尤其是在寒冷的冬日里裹在被窝里看书。不过现在已是夏天，我想要更刺激一点的东西！对了，我买了去多伦多的机票，后天晚上出发。"
+          }
+        },
+        {
+          "dia_id": "D16:13",
+          "session_id": "session_16",
+          "session_date": "2022-07-09",
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D16:13",
+            "text": "我打算7月20日回来，到时候一定给你带个纪念品！"
+          }
+        }
+      ],
+      "grade": "wrong",
+      "strict_judge": null,
+      "answer": "9天（2022年7月11日出发，7月20日返回）",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D16:9",
+          "session_id": "session_16",
+          "session_date": "2022-07-09",
+          "tokens": [
+            "后天"
+          ],
+          "arithmetic_dates": {
+            "后天": "2022-07-11"
+          },
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D16:9",
+            "text": "我也喜欢阅读，尤其是在寒冷的冬日里裹在被窝里看书。不过现在已是夏天，我想要更刺激一点的东西！对了，我买了去多伦多的机票，后天晚上出发。"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D16:7",
+              "text": "就在三天前，我去冲浪了。追上浪头的感觉太爽了！说来奇怪，但冲浪真的让我很放松。你喜欢怎么放松？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/d0eoj5t4py351.jpg"
+              ],
+              "blip_caption": "a photo of a book shelf filled with books and a guitar",
+              "query": "bookshelf novels fantasy books",
+              "dia_id": "D16:8",
+              "text": "我喜欢靠阅读放松。我喜欢进入作者们构建的想象世界——这是一种有趣的逃离现实的方式。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D16:9",
+              "text": "我也喜欢阅读，尤其是在寒冷的冬日里裹在被窝里看书。不过现在已是夏天，我想要更刺激一点的东西！对了，我买了去多伦多的机票，后天晚上出发。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:10",
+              "text": "真棒，这已经是你将要到访的第四个国家了！你只待在多伦多，还是会去其他地方？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D16:11",
+              "text": "我还计划去温哥华。也许还会去别的地方。"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "2e435dba-9b0b-4774-995a-785d1aeb51ac",
+          "content": "James plans to visit Vancouver during his July 2022 Canada trip, possibly other places too, and intends to return on July 20, 2022, bringing John a souvenir",
+          "score": 0.6060452898601768,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "5:13 pm on 9 July, 2022",
+            "case_id": "locomo_conv-47_qa0",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        },
+        {
+          "rank": 2,
+          "id": "0bcc1f65-e202-4860-b7bc-25f572759739",
+          "content": "James bought flight tickets to Toronto, departing in the evening of July 11, 2022 — his fourth country to visit",
+          "score": 0.6046735251915345,
+          "metadata": {
+            "session_date": "5:13 pm on 9 July, 2022",
+            "case_id": "locomo_conv-47_qa0",
+            "session_id": "session_16",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        },
+        {
+          "rank": 11,
+          "id": "8b51a26f-8947-4ae5-b148-cda3776bb76f",
+          "content": "James went surfing on July 6, 2022 and found chasing waves exhilarating and surprisingly relaxing",
+          "score": 0.48303310828739054,
+          "metadata": {
+            "session_date": "5:13 pm on 9 July, 2022",
+            "case_id": "locomo_conv-47_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_16",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        },
+        {
+          "rank": 13,
+          "id": "67ac7b65-e6f3-47f2-9ee3-1b7e41545751",
+          "content": "James went rope jumping on July 8, 2022, leaping from a height of 150 meters",
+          "score": 0.49810895016955736,
+          "metadata": {
+            "session_date": "5:13 pm on 9 July, 2022",
+            "session_id": "session_16",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-47_qa0",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa37",
+      "question": "约翰是什么时候陪他的妹妹和狗度过的？",
+      "gold": "2022年7月21日",
+      "all_gold_evidence_ids": [
+        "D17:28"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D17:28",
+          "session_id": "session_17",
+          "session_date": "2022-07-22",
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D17:28",
+            "text": "那是我妹妹和我的狗。我们昨天刚刚一起放松来着，它们给我的生活带来了那么多快乐。"
+          }
+        }
+      ],
+      "grade": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "2022年7月21日"
+        ],
+        "reason": "答案给出了正确的日期但带有“约”这一限定词，并非确切的日期。"
+      },
+      "answer": "ANSWER：根据记忆，是2022年7月21日左右——当时妹妹带着狗来看望，两人一起在家放松，还去了海边看日落（这次是James与他的妹妹和狗一起度过的；记忆中没有John与妹妹和狗相处的记录）。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D17:28",
+          "session_id": "session_17",
+          "session_date": "2022-07-22",
+          "tokens": [
+            "昨天"
+          ],
+          "arithmetic_dates": {
+            "昨天": "2022-07-21"
+          },
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D17:28",
+            "text": "那是我妹妹和我的狗。我们昨天刚刚一起放松来着，它们给我的生活带来了那么多快乐。"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "詹姆斯",
+              "img_url": [
+                "https://i.redd.it/yx1qjjtxk8e91.jpg"
+              ],
+              "blip_caption": "a photo of a woman and two dogs on a couch",
+              "query": "dogs sitting couch happiness love companions",
+              "dia_id": "D17:26",
+              "text": "不客气！对了，看看谁来看我了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D17:27",
+              "text": "好照片，詹姆斯！她们是谁？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D17:28",
+              "text": "那是我妹妹和我的狗。我们昨天刚刚一起放松来着，它们给我的生活带来了那么多快乐。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D17:29",
+              "text": "哇，它们看起来好开心！你能和妹妹还有毛茸茸的朋友们共度时光真是太好了。你们之间的感情真的很深。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D17:30",
+              "text": "我很幸运能和妹妹还有毛茸茸的朋友们有这么亲密的感情。我们一起度过美好时光，就像一家人！"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 2,
+          "id": "bc556ea3-f7e5-4a02-a19e-8bf89820093e",
+          "content": "James's sister visited him with his dogs around July 21, 2022; they relaxed together at home and went to the seaside where they saw a beautiful sunset, which James photographed and shared",
+          "score": 0.5399145268091611,
+          "metadata": {
+            "session_date": "9:49 am on 22 July, 2022",
+            "case_id": "locomo_conv-47_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_17",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        },
+        {
+          "rank": 3,
+          "id": "7173f2a1-81b4-4463-8a30-754fd16a2fc4",
+          "content": "James feels very close to his sister and his dogs, and spending time with them builds strong bonds and brings him happiness",
+          "score": 0.6024729045097229,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-47_qa0",
+            "session_id": "session_17",
+            "session_date": "9:49 am on 22 July, 2022",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        },
+        {
+          "rank": 10,
+          "id": "4095abe2-6966-4cad-9694-eaf27b251c4c",
+          "content": "John does not have any pets but plans to get one in the future",
+          "score": 0.5742439976752608,
+          "metadata": {
+            "case_id": "locomo_conv-47_qa0",
+            "session_date": "9:49 am on 22 July, 2022",
+            "session_id": "session_17",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        },
+        {
+          "rank": 11,
+          "id": "89ca3e66-4144-42f0-a6de-134b9a3c57a9",
+          "content": "John feels grateful for the bond with his siblings, whose support means everything to him during difficult times",
+          "score": 0.6016923774443684,
+          "metadata": {
+            "session_date": "9:49 am on 22 July, 2022",
+            "session_id": "session_17",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-47_qa0",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa62",
+      "question": "詹姆斯和萨曼莎在决定同居之前约会了多久？",
+      "gold": "将近三个月",
+      "all_gold_evidence_ids": [
+        "D19:14",
+        "D29:8",
+        "D29:10"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D19:14",
+          "session_id": "session_19",
+          "session_date": "2022-08-10",
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D19:14",
+            "text": "是的，我们玩得很开心，我还遇到了一位漂亮的女孩。我在考虑约她出去约会！她留了电话号码给我，我想我明天会打给她。"
+          }
+        },
+        {
+          "dia_id": "D29:8",
+          "session_id": "session_29",
+          "session_date": "2022-10-31",
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D29:8",
+            "text": "我确实有新消息，萨曼莎和我决定搬到一起住了！"
+          }
+        },
+        {
+          "dia_id": "D29:10",
+          "session_id": "session_29",
+          "session_date": "2022-10-31",
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D29:10",
+            "text": "当然，这是我们共同做出的深思熟虑的决定。我们租了一间离McGee's酒吧不远的公寓。"
+          }
+        }
+      ],
+      "grade": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "将近三个月"
+        ],
+        "reason": "Gold is the definitive '将近三个月'; the answer hedges with '大约三个月', which under temporal rules counts as hedged precision, not exact."
+      },
+      "answer": "大约三个月。詹姆斯于2022年8月9日在海滩认识萨曼莎并开始约会，9月3日确立恋人关系，随后在2022年10月31日决定搬在一起同居——从初次约会到决定同居大约三个月。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D19:14",
+          "session_id": "session_19",
+          "session_date": "2022-08-10",
+          "tokens": [
+            "明天"
+          ],
+          "arithmetic_dates": {
+            "明天": "2022-08-11"
+          },
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D19:14",
+            "text": "是的，我们玩得很开心，我还遇到了一位漂亮的女孩。我在考虑约她出去约会！她留了电话号码给我，我想我明天会打给她。"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D19:12",
+              "text": "昨天我带我的三只狗去海边游玩，和其他养狗的人一起玩乐、增进感情。"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a refrigerator with a calendar on it and a magnet",
+              "dia_id": "D19:13",
+              "text": "太好了！和其他爱狗人士交流肯定让你收获了新的体验吧！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D19:14",
+              "text": "是的，我们玩得很开心，我还遇到了一位漂亮的女孩。我在考虑约她出去约会！她留了电话号码给我，我想我明天会打给她。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D19:15",
+              "text": "哇！太棒了，她叫什么名字？一定要打给她，一切都会顺利的！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D19:16",
+              "text": "她叫萨曼莎。我一定会打给她的！"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "cc6afa9a-0e05-4216-842e-c33bc52e481c",
+          "content": "At the beach on August 9, 2022, James met a beautiful girl named Samantha who gave him her phone number; he planned to call her the next day (around August 11, 2022) to ask her out on a date",
+          "score": 0.5254288702738865,
+          "metadata": {
+            "case_id": "locomo_conv-47_qa0",
+            "session_date": "9:16 am on 10 August, 2022",
+            "benchmark": "locomo",
+            "session_id": "session_19",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa63",
+      "question": "詹姆斯、他的家人和狗狗们是什么时候开始公路旅行的？",
+      "gold": "2022年11月4日",
+      "all_gold_evidence_ids": [
+        "D30:1"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D30:1",
+          "session_id": "session_30",
+          "session_date": "2022-11-05",
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D30:1",
+            "text": "嘿，约翰，希望你一切都好。昨天我们开始了一次公路旅行。和家人还有我的狗狗们一起度过时光很开心。带着这些毛孩子们探索新地方、亲近大自然真是太棒了！"
+          }
+        }
+      ],
+      "grade": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "日期被限定词包裹（'约11月4日'），不够精确"
+        ],
+        "reason": "答案虽然包含了正确日期，但使用了限定词'约/around'来修饰，因此根据严格规则不属于精确匹配。"
+      },
+      "answer": "2022年11月初（约11月4日开始），詹姆斯和家人带着狗狗们开始了公路旅行。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D30:1",
+          "session_id": "session_30",
+          "session_date": "2022-11-05",
+          "tokens": [
+            "昨天"
+          ],
+          "arithmetic_dates": {
+            "昨天": "2022-11-04"
+          },
+          "turn": {
+            "speaker": "詹姆斯",
+            "dia_id": "D30:1",
+            "text": "嘿，约翰，希望你一切都好。昨天我们开始了一次公路旅行。和家人还有我的狗狗们一起度过时光很开心。带着这些毛孩子们探索新地方、亲近大自然真是太棒了！"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D30:1",
+              "text": "嘿，约翰，希望你一切都好。昨天我们开始了一次公路旅行。和家人还有我的狗狗们一起度过时光很开心。带着这些毛孩子们探索新地方、亲近大自然真是太棒了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D30:2",
+              "text": "嘿，詹姆斯！哇，真是一次冒险！最近我一直忙于一件事。猜猜怎么着？这周二我取得了一个了不起的成就！太棒了。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D30:3",
+              "text": "这真是个好消息。你做了什么？"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "de60b81d-4e69-418e-8d47-e71985b0cd6c",
+          "content": "Around November 4, 2022, James started a road trip with his family and his dogs, enjoying exploring new places and being close to nature with his pets",
+          "score": 0.6871273466446279,
+          "metadata": {
+            "session_date": "5:20 pm on 5 November, 2022",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-47_qa0",
+            "session_id": "session_30",
+            "user_id": "zhfull:locomo:conv-47"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa51",
+      "question": "乔琳是什么时候给塞拉菲姆买新鱼缸的？",
+      "gold": "2023年6月24日",
+      "all_gold_evidence_ids": [
+        "D14:4"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D14:4",
+          "session_id": "session_14",
+          "session_date": "2023-06-26",
+          "turn": {
+            "speaker": "乔琳",
+            "img_url": [
+              "https://i.redd.it/6moonjm3bypa1.jpg"
+            ],
+            "blip_caption": "a photo of a snake curled up in a plant filled area",
+            "query": "snake curled up pillow",
+            "dia_id": "D14:4",
+            "text": "你还是一如既往地厉害！这是塞拉菲姆在新鱼缸里的新照片，鱼缸是我前天买的。"
+          }
+        }
+      ],
+      "grade": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "exact date hedged as '2023年6月24日前后'"
+        ],
+        "reason": "The correct date is given but hedged with '前后', which is not exact precision."
+      },
+      "answer": "乔琳在2023年6月24日前后为塞拉菲姆买了一个新鱼缸，并分享了塞拉菲姆在新鱼缸里的照片。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D14:4",
+          "session_id": "session_14",
+          "session_date": "2023-06-26",
+          "tokens": [
+            "前天"
+          ],
+          "arithmetic_dates": {
+            "前天": "2023-06-24"
+          },
+          "turn": {
+            "speaker": "乔琳",
+            "img_url": [
+              "https://i.redd.it/6moonjm3bypa1.jpg"
+            ],
+            "blip_caption": "a photo of a snake curled up in a plant filled area",
+            "query": "snake curled up pillow",
+            "dia_id": "D14:4",
+            "text": "你还是一如既往地厉害！这是塞拉菲姆在新鱼缸里的新照片，鱼缸是我前天买的。"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "乔琳",
+              "dia_id": "D14:2",
+              "text": "嘿，黛布！实习和各种事情忙得不可开交。那个静修营听起来真不错，我确实需要休息一下！"
+            },
+            {
+              "speaker": "黛博拉",
+              "img_url": [
+                "https://assets-global.website-files.com/5909c340ec86374fefcb849c/65650a0fc42a7d8dbe0e4349_IMG_2131.jpg"
+              ],
+              "blip_caption": "a photo of a woman doing a yoga pose on the beach",
+              "query": "yoga meditation calming sunset",
+              "dia_id": "D14:3",
+              "text": "对了，我尝试了一个新体式——舞王式。给个评价，我成功了吗？"
+            },
+            {
+              "speaker": "乔琳",
+              "img_url": [
+                "https://i.redd.it/6moonjm3bypa1.jpg"
+              ],
+              "blip_caption": "a photo of a snake curled up in a plant filled area",
+              "query": "snake curled up pillow",
+              "dia_id": "D14:4",
+              "text": "你还是一如既往地厉害！这是塞拉菲姆在新鱼缸里的新照片，鱼缸是我前天买的。"
+            },
+            {
+              "speaker": "黛博拉",
+              "dia_id": "D14:5",
+              "text": "你在哪儿买的？我一直很喜欢动物，它们带来太多快乐了。它有什么故事？"
+            },
+            {
+              "speaker": "乔琳",
+              "dia_id": "D14:6",
+              "text": "我是去年养它的，它是个很棒的宠物。它总能让我开心，带来一种平静的感觉。和它在一起特别安心。"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "bd15d831-6242-4ed7-8cc5-52be3a89cfb5",
+          "content": "乔琳在2023年6月24日前后为宠物蛇塞拉菲姆买了一个新鱼缸，并分享了塞拉菲姆在新鱼缸里的照片",
+          "score": 0.7660811033690696,
+          "metadata": {
+            "case_id": "locomo_conv-48_qa0",
+            "session_id": "session_14",
+            "benchmark": "locomo",
+            "session_date": "9:17 am on 26 June, 2023",
+            "user_id": "zhfull:locomo:conv-48"
+          }
+        },
+        {
+          "rank": 2,
+          "id": "8e7b2f0f-a45e-411f-b9dc-df3d15708750",
+          "content": "乔琳是2022年（对话前一年）开始养塞拉菲姆的；她说塞拉菲姆是很棒的宠物，总能让她开心、带来平静和安心的感觉",
+          "score": 0.6589592819309815,
+          "metadata": {
+            "session_date": "9:17 am on 26 June, 2023",
+            "case_id": "locomo_conv-48_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_14",
+            "user_id": "zhfull:locomo:conv-48"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa66",
+      "question": "乔琳和她伴侣是什么时候从里约热内卢回家的？",
+      "gold": "2023年8月29日",
+      "all_gold_evidence_ids": [
+        "D23:1"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D23:1",
+          "session_id": "session_23",
+          "session_date": "2023-08-30",
+          "turn": {
+            "speaker": "乔琳",
+            "img_url": [
+              "https://thegoodstuffbyajaespoo.files.wordpress.com/2017/09/img_20170723_184612_691.jpg"
+            ],
+            "blip_caption": "a photo of a woman doing a yoga pose in a mirror",
+            "query": "colombian yoga studio vibrant colors people yoga poses",
+            "dia_id": "D23:1",
+            "text": "嘿，黛博拉，最近怎么样？猜猜看？昨天我和我的伙伴从里约热内卢的一次超棒的旅行回来了——我们还去体验了几节很酷的瑜伽课。"
+          }
+        }
+      ],
+      "grade": "partial",
+      "strict_judge": {
+        "grade": "partial",
+        "missing": [
+          "精确日期（答案用“大约”进行模糊表述）"
+        ],
+        "reason": "日期正确但使用了“大约”进行模糊，未给出确定的日期。"
+      },
+      "answer": "乔琳和她的伴侣于2023年8月29日左右从里约热内卢旅行归来。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D23:1",
+          "session_id": "session_23",
+          "session_date": "2023-08-30",
+          "tokens": [
+            "昨天"
+          ],
+          "arithmetic_dates": {
+            "昨天": "2023-08-29"
+          },
+          "turn": {
+            "speaker": "乔琳",
+            "img_url": [
+              "https://thegoodstuffbyajaespoo.files.wordpress.com/2017/09/img_20170723_184612_691.jpg"
+            ],
+            "blip_caption": "a photo of a woman doing a yoga pose in a mirror",
+            "query": "colombian yoga studio vibrant colors people yoga poses",
+            "dia_id": "D23:1",
+            "text": "嘿，黛博拉，最近怎么样？猜猜看？昨天我和我的伙伴从里约热内卢的一次超棒的旅行回来了——我们还去体验了几节很酷的瑜伽课。"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "乔琳",
+              "img_url": [
+                "https://thegoodstuffbyajaespoo.files.wordpress.com/2017/09/img_20170723_184612_691.jpg"
+              ],
+              "blip_caption": "a photo of a woman doing a yoga pose in a mirror",
+              "query": "colombian yoga studio vibrant colors people yoga poses",
+              "dia_id": "D23:1",
+              "text": "嘿，黛博拉，最近怎么样？猜猜看？昨天我和我的伙伴从里约热内卢的一次超棒的旅行回来了——我们还去体验了几节很酷的瑜伽课。"
+            },
+            {
+              "speaker": "黛博拉",
+              "dia_id": "D23:2",
+              "text": "这个瑜伽姿势看起来很棒。对你们俩来说一定是很酷的经历吧。这次旅行让你学到了什么？"
+            },
+            {
+              "speaker": "乔琳",
+              "dia_id": "D23:3",
+              "text": "这个国家太棒了！它让我了解了各种瑜伽流派及其背后的渊源，让我对瑜伽更加热爱了。我们还去了很多美味的咖啡馆！你去过对你来说很重要的地方吗？"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "e454b00e-db7e-470a-a6f9-ae291a19c275",
+          "content": "乔琳和她的伴侣于2023年8月29日左右从里约热内卢旅行归来，期间体验了几节瑜伽课，参观了色彩鲜艳的哥伦比亚风格瑜伽工作室，还去了很多美味的咖啡馆",
+          "score": 0.6575476816853322,
+          "metadata": {
+            "session_id": "session_23",
+            "benchmark": "locomo",
+            "session_date": "11:46 am on 30 August, 2023",
+            "case_id": "locomo_conv-48_qa0",
+            "user_id": "zhfull:locomo:conv-48"
+          }
+        },
+        {
+          "rank": 11,
+          "id": "db10a1eb-cea3-46f6-bb8d-33d037b376eb",
+          "content": "乔琳和伴侣在里约热内卢旅行期间进行了多次远足，并参观了一座古老的寺庙，那里的楼梯令人惊艳",
+          "score": 0.5977827132529504,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "11:46 am on 30 August, 2023",
+            "session_id": "session_23",
+            "case_id": "locomo_conv-48_qa0",
+            "user_id": "zhfull:locomo:conv-48"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa80",
+      "question": "埃文是什么时候和朋友们喝醉了一晚的？",
+      "gold": "2023年1月9日",
+      "all_gold_evidence_ids": [
+        "D24:3"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D24:3",
+          "session_id": "session_24",
+          "session_date": "2024-01-10",
+          "turn": {
+            "speaker": "埃文",
+            "dia_id": "D24:3",
+            "text": "昨天我和朋友们出去玩，喝得有点多。结果做了一件让我后悔的事，还牵扯到别人的玫瑰花。"
+          }
+        }
+      ],
+      "grade": "wrong",
+      "strict_judge": null,
+      "answer": "2024年1月9日，Evan与朋友外出并饮酒过量（之后发生了玫瑰丛附近尿湿裤子的事件，次日道歉）。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D24:3",
+          "session_id": "session_24",
+          "session_date": "2024-01-10",
+          "tokens": [
+            "昨天"
+          ],
+          "arithmetic_dates": {
+            "昨天": "2024-01-09"
+          },
+          "turn": {
+            "speaker": "埃文",
+            "dia_id": "D24:3",
+            "text": "昨天我和朋友们出去玩，喝得有点多。结果做了一件让我后悔的事，还牵扯到别人的玫瑰花。"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "埃文",
+              "dia_id": "D24:1",
+              "text": "嘿，萨姆，希望你一切都好。昨晚发生了件好玩的事。"
+            },
+            {
+              "speaker": "萨姆",
+              "dia_id": "D24:2",
+              "text": "嘿，埃文，怎么了？发生什么事了？快跟我说说。"
+            },
+            {
+              "speaker": "埃文",
+              "dia_id": "D24:3",
+              "text": "昨天我和朋友们出去玩，喝得有点多。结果做了一件让我后悔的事，还牵扯到别人的玫瑰花。"
+            },
+            {
+              "speaker": "萨姆",
+              "dia_id": "D24:4",
+              "text": "那件事怎么样了？现在都还好吧？"
+            },
+            {
+              "speaker": "埃文",
+              "dia_id": "D24:5",
+              "text": "哎，萨姆，太尴尬了！我在一些玫瑰花附近尿裤子了——你能相信吗？真的很抱歉。"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 1,
+          "id": "98079486-6f2d-4246-9300-5e74098e26aa",
+          "content": "在2024年1月9日与朋友外出并饮酒过量后，Evan在玫瑰丛附近小便时意外尿湿了裤子；他在第二天早上道歉，朋友们表现得非常体谅，他将其视为未来需要更加小心的教训",
+          "score": 0.5775407991158786,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_24",
+            "session_date": "12:17 am on 10 January, 2024",
+            "case_id": "locomo_conv-49_qa0",
+            "user_id": "zhfull:locomo:conv-49"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa62",
+      "question": "弗朗西斯科的汽车改装工作坊持续了多长时间？",
+      "gold": "两周",
+      "all_gold_evidence_ids": [
+        "D14:1",
+        "D17:1"
+      ],
+      "all_gold_evidence_turns": [
+        {
+          "dia_id": "D14:1",
+          "session_id": "session_14",
+          "session_date": "2023-08-14",
+          "turn": {
+            "speaker": "戴夫",
+            "dia_id": "D14:1",
+            "text": "嘿，卡尔，最近怎么样？上次我们聊完之后发生了一件很酷的事——我去参加了圣弗朗西斯科的一个汽车工作坊！深入了解汽车修复的世界，见识各种不同的技术，太酷了。人们真的很有热情和奉献精神——真是鼓舞人心！"
+          }
+        },
+        {
+          "dia_id": "D17:1",
+          "session_id": "session_17",
+          "session_date": "2023-09-02",
+          "turn": {
+            "speaker": "戴夫",
+            "dia_id": "D17:1",
+            "text": "嘿，卡尔文！好久不见，最近怎么样？我最近忙车的事儿，昨天刚从圣弗朗西斯科回来，带回来一些关于汽车改装的绝妙心得和知识，想和你分享！翻新改造，让一辆旧车焕发新生——太有成就感了！"
+          }
+        }
+      ],
+      "grade": "wrong",
+      "strict_judge": null,
+      "answer": "工作坊持续了约一个月——戴夫于2023年8月开始参加，到2023年9月1日结束返回。",
+      "relative_day_source_hits": [
+        {
+          "dia_id": "D17:1",
+          "session_id": "session_17",
+          "session_date": "2023-09-02",
+          "tokens": [
+            "昨天"
+          ],
+          "arithmetic_dates": {
+            "昨天": "2023-09-01"
+          },
+          "turn": {
+            "speaker": "戴夫",
+            "dia_id": "D17:1",
+            "text": "嘿，卡尔文！好久不见，最近怎么样？我最近忙车的事儿，昨天刚从圣弗朗西斯科回来，带回来一些关于汽车改装的绝妙心得和知识，想和你分享！翻新改造，让一辆旧车焕发新生——太有成就感了！"
+          },
+          "neighbor_turns": [
+            {
+              "speaker": "戴夫",
+              "dia_id": "D17:1",
+              "text": "嘿，卡尔文！好久不见，最近怎么样？我最近忙车的事儿，昨天刚从圣弗朗西斯科回来，带回来一些关于汽车改装的绝妙心得和知识，想和你分享！翻新改造，让一辆旧车焕发新生——太有成就感了！"
+            },
+            {
+              "speaker": "卡尔文",
+              "dia_id": "D17:2",
+              "text": "嘿，戴夫！很高兴收到你的消息。真不错！我完全理解你修车时获得的满足感。就像你赋予了它们新的生命。"
+            },
+            {
+              "speaker": "戴夫",
+              "dia_id": "D17:3",
+              "text": "是啊，把东西修好然后看着它变得更好，感觉棒极了。这真的很有成就感，给了我一种目标感。而且，当我修好别人的车时，感觉自己在做出改变。"
+            }
+          ]
+        }
+      ],
+      "same_source_session_memories_in_top15": [
+        {
+          "rank": 2,
+          "id": "6978e878-7947-4160-9ed2-6bef81570fc8",
+          "content": "戴夫于2023年9月1日（对话前一天）从圣弗朗西斯科回来，带回了关于汽车改装的心得和知识，并热衷于和卡尔文分享，称翻新改造旧车让他有成就感",
+          "score": 0.5123826607810863,
+          "metadata": {
+            "case_id": "locomo_conv-50_qa0",
+            "benchmark": "locomo",
+            "session_date": "9:19 am on 2 September, 2023",
+            "session_id": "session_17",
+            "user_id": "zhfull:locomo:conv-50"
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "会话日期是提及日；算术日期仅针对命中的词，不等于所问事件日期。",
+    "gold evidence 可能错标说话者、事件或年份；必须逐题核对。",
+    "只筛四个相对日词，不能估计全部 temporal 错误的机制比例。"
+  ]
+}
