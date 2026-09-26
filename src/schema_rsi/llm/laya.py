@@ -25,7 +25,7 @@ from schema_rsi.config import Settings, get_settings
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_LAYA_BASE = "https://u1172328-a3uc-8f103d7d.weste.seetacloud.com:8443"
+DEFAULT_LAYA_BASE = "https://u1172328-qpd4-5f1abfb1.weste.seetacloud.com:8443"
 
 _ROUTE_QUESTIONS = {
     "qtype": {

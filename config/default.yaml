@@ -54,6 +54,10 @@ evaluation:
   # prompt 预设：official = mem0 官方 benchmark 原文（与官方分数可比）；custom = 自研
   answer_prompt_preset: official
   judge_prompt_preset: official
+  max_workers: 1            # case 级并行（>1 时 ThreadPoolExecutor 并行 ingest+评测）；
+                            # 结果仍按 case 原顺序写 JSONL。注意 glm coding 端点限流，
+                            # 429 多发则调回 2；user_id_strategy=global 时并发会加大跨 case
+                            # 记忆交错（顺序执行同样存在，只是粒度更细）
 
 user_id_strategy: per_case   # per_case: user_id = "{benchmark}:{case_id}"；global: 全部共用一个 user
 

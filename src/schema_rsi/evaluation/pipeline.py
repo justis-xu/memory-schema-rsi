@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import logging
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
 from schema_rsi.benchmarks.base import BenchmarkCase
@@ -406,12 +407,20 @@ class EvaluationPipeline:
         write_jsonl: bool = True,
         user_id: str | None = None,
     ) -> list[EvaluationResult]:
-        results: list[EvaluationResult] = []
-        for case in cases:
+        def _one(case: BenchmarkCase) -> EvaluationResult:
             if ingest:
                 added = self.ingest_case(case, max_turns=max_turns, user_id=user_id)
                 logger.info("ingested %s (+%d memories)", case.case_id, added)
-            results.append(self.evaluate_case(case, graph_enabled=graph_enabled, user_id=user_id))
+            return self.evaluate_case(case, graph_enabled=graph_enabled, user_id=user_id)
+
+        max_workers = int(self._cfg().get("max_workers", 1) or 1)
+        if max_workers > 1 and len(cases) > 1:
+            # case 级并行：各 case 的 user_id/ingest/QA 相互独立（per_case 策略下完全隔离）；
+            # pool.map 保持结果与 cases 同序，JSONL 输出与串行版逐行可比
+            with ThreadPoolExecutor(max_workers=max_workers) as pool:
+                results = list(pool.map(_one, cases))
+        else:
+            results = [_one(case) for case in cases]
         if write_jsonl and results:
             use_graph = results[0].metadata.get("graph_enabled", False)
             stamp = datetime.now().strftime("%Y%m%d_%H%M%S")

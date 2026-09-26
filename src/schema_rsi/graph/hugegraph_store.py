@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import logging
+import threading
 from typing import Any
 
 import requests
@@ -36,6 +37,9 @@ class HugeGraphStore:
         self.cfg = config or self.settings.hugegraph
         self.graph = self.cfg.graph
         self._session = requests.Session()
+        # requests.Session 非线程安全；评测 max_workers>1 时 case 级并发会同时打 REST，
+        # 用 RLock 串行化发送（_request 的 401 重试会递归进入，需要可重入）
+        self._lock = threading.RLock()
         self._token: str | None = None
         # HugeGraph 1.7.0 起 REST 无 /apis 前缀；老版本在 /apis 下 —— 自动探测
         self.base = self.cfg.url.rstrip("/") + self._detect_prefix()
@@ -83,9 +87,10 @@ class HugeGraphStore:
         url = f"{self.base}{path}"
         data = None if body is None else json.dumps(body)
         try:
-            resp = self._session.request(
-                method, url, params=params, data=data, headers=self._headers(), timeout=self.cfg.timeout
-            )
+            with self._lock:
+                resp = self._session.request(
+                    method, url, params=params, data=data, headers=self._headers(), timeout=self.cfg.timeout
+                )
         except requests.RequestException as e:
             raise HugeGraphError(f"HugeGraph request error ({method} {path}): {e}") from e
         if resp.status_code == 401 and self._token is None and self.cfg.username:
@@ -405,12 +410,13 @@ class HugeGraphStore:
         # HugeGraph clear 必须以 query 参数携带 confirm_message（1.7.0 的确认串为
         # "I'm sure to delete all data"；若版本不同会返回 400 并提示期望值，自适应重试一次）
         def _clear(confirm: str):
-            return self._session.delete(
-                f"{self.base}/graphs/{self.graph}/clear",
-                params={"confirm_message": confirm},
-                headers=self._headers(),
-                timeout=self.cfg.timeout,
-            )
+            with self._lock:
+                return self._session.delete(
+                    f"{self.base}/graphs/{self.graph}/clear",
+                    params={"confirm_message": confirm},
+                    headers=self._headers(),
+                    timeout=self.cfg.timeout,
+                )
 
         resp = _clear(CLEAR_CONFIRM_MESSAGE)
         if resp.status_code == 400 and "Please take the message:" in resp.text:

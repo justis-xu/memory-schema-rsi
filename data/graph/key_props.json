@@ -1,12 +1,3 @@
 {
-  "Memory": "memory_id",
-  "Entity": "entity_id",
-  "Event": "event_id",
-  "Preference": "pref_id",
-  "Concept": "concept_id",
-  "V4Session": "session_key",
-  "V5Month": "month_key",
-  "V6Pair": "pair_key",
-  "V8Cluster": "cluster_key",
-  "V10Concept": "concept_key"
+  "Memory": "memory_id"
 }

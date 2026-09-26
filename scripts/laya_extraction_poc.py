@@ -67,8 +67,8 @@ LOCAL_ENDPOINTS = {
     "decider": "http://127.0.0.1:6008",
 }
 PUBLIC_ENDPOINTS = {
-    "laya": "https://u1172328-a3uc-8f103d7d.weste.seetacloud.com:8443",
-    "decider": "https://uu1172328-a3uc-8f103d7d.weste.seetacloud.com:8443",
+    "laya": "https://u1172328-qpd4-5f1abfb1.weste.seetacloud.com:8443",
+    "decider": "https://uu1172328-qpd4-5f1abfb1.weste.seetacloud.com:8443",
 }
 
 # ---- 三个 choice 问题（判据原文，不让服务输出原因） --------------------------
