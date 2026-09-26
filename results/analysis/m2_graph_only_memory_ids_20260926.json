@@ -1,0 +1,262 @@
+{
+  "scope": "Six IDs in archived Chinese graph candidate union but absent from archived vector retrieval union; current SQLite opened read-only",
+  "counts": {
+    "graph_only_ids": 6,
+    "current_vector_present": 5,
+    "current_vector_absent": 1,
+    "candidate_occurrences": 679,
+    "final_context_occurrences": 49
+  },
+  "ids": [
+    {
+      "id": "1e926c60-f79c-49fc-af79-3e693376e6a7",
+      "content": "用户去年（2022年）走过一条离家开车三小时的徒步路线，在山顶看到了湖光山色的绚丽日落，形容那个时刻色彩鲜艳、宁静得让人窒息，并表示很感激这样的时刻提醒自己珍惜身边的小事",
+      "archived_graph_candidate_occurrences": 74,
+      "archived_final_context_occurrences": 1,
+      "candidate_occurrences_by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 61,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 13
+      },
+      "selected_occurrences_by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 1
+      },
+      "current_vector_present": true,
+      "current_vector_metadata": {
+        "data": "用户去年（2022年）走过一条离家开车三小时的徒步路线，在山顶看到了湖光山色的绚丽日落，形容那个时刻色彩鲜艳、宁静得让人窒息，并表示很感激这样的时刻提醒自己珍惜身边的小事",
+        "session_date": "9:48 am on 8 July, 2023",
+        "session_id": "session_11",
+        "user_id": "zhfull:locomo:conv-44"
+      },
+      "current_vector_content_equals_archived_graph": true,
+      "current_graph_cache_presence": {
+        "structured_cache.json": true,
+        "topic_cache.json": true,
+        "memory_embeddings.json": true
+      },
+      "memory_history": [
+        {
+          "event": "ADD",
+          "created_at": "2026-09-25T03:32:24.430477+00:00",
+          "updated_at": null,
+          "is_deleted": 0
+        }
+      ]
+    },
+    {
+      "id": "240fc949-59b8-49fa-94fc-77806bf7dec5",
+      "content": "用户很幸运地在附近找到了一家有自己想要犬种的繁殖者，从而养上了狗",
+      "archived_graph_candidate_occurrences": 2,
+      "archived_final_context_occurrences": 0,
+      "candidate_occurrences_by_run": {
+        "zhfull_fused_locomo_20260925_161049.jsonl": 2
+      },
+      "selected_occurrences_by_run": {},
+      "current_vector_present": true,
+      "current_vector_metadata": {
+        "data": "用户很幸运地在附近找到了一家有自己想要犬种的繁殖者，从而养上了狗",
+        "session_date": "9:48 am on 8 July, 2023",
+        "session_id": "session_11",
+        "user_id": "zhfull:locomo:conv-44"
+      },
+      "current_vector_content_equals_archived_graph": true,
+      "current_graph_cache_presence": {
+        "structured_cache.json": true,
+        "topic_cache.json": true,
+        "memory_embeddings.json": true
+      },
+      "memory_history": [
+        {
+          "event": "ADD",
+          "created_at": "2026-09-25T03:32:24.430433+00:00",
+          "updated_at": null,
+          "is_deleted": 0
+        }
+      ]
+    },
+    {
+      "id": "7f50bc2e-fb48-4af7-8f97-91834f98037f",
+      "content": "2023年6月30日（周五），助理和女朋友去了一座翻修过的公园野餐，带了各种零食和饮料，玩得很开心，并表示亲近大自然总能带来快乐",
+      "archived_graph_candidate_occurrences": 112,
+      "archived_final_context_occurrences": 10,
+      "candidate_occurrences_by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 25,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 25,
+        "zhfull_fused_locomo_20260925_161049.jsonl": 17,
+        "zhfull_fused_locomo_20260925_172126.jsonl": 22,
+        "zhfull_fused_locomo_20260925_195248.jsonl": 23
+      },
+      "selected_occurrences_by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 2,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 2,
+        "zhfull_fused_locomo_20260925_161049.jsonl": 2,
+        "zhfull_fused_locomo_20260925_172126.jsonl": 2,
+        "zhfull_fused_locomo_20260925_195248.jsonl": 2
+      },
+      "current_vector_present": true,
+      "current_vector_metadata": {
+        "data": "2023年6月30日（周五），助理和女朋友去了一座翻修过的公园野餐，带了各种零食和饮料，玩得很开心，并表示亲近大自然总能带来快乐",
+        "session_date": "9:48 am on 8 July, 2023",
+        "session_id": "session_11",
+        "user_id": "zhfull:locomo:conv-44"
+      },
+      "current_vector_content_equals_archived_graph": true,
+      "current_graph_cache_presence": {
+        "structured_cache.json": true,
+        "topic_cache.json": true,
+        "memory_embeddings.json": true
+      },
+      "memory_history": [
+        {
+          "event": "ADD",
+          "created_at": "2026-09-25T03:32:24.430376+00:00",
+          "updated_at": null,
+          "is_deleted": 0
+        }
+      ]
+    },
+    {
+      "id": "7f77d80e-e192-4256-b208-c81439f1b443",
+      "content": "用户和助理计划在2023年8月天气更舒适时一起带用户的狗狗们去远足，助理推荐了一条能远眺海景的陡峭步道并分享了步道地图，双方约定要确保步道对狗狗安全，用户会提前研究那条步道",
+      "archived_graph_candidate_occurrences": 155,
+      "archived_final_context_occurrences": 5,
+      "candidate_occurrences_by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 69,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 31,
+        "zhfull_fused_locomo_20260925_161049.jsonl": 21,
+        "zhfull_fused_locomo_20260925_172126.jsonl": 17,
+        "zhfull_fused_locomo_20260925_195248.jsonl": 17
+      },
+      "selected_occurrences_by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 1,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 1,
+        "zhfull_fused_locomo_20260925_161049.jsonl": 1,
+        "zhfull_fused_locomo_20260925_172126.jsonl": 1,
+        "zhfull_fused_locomo_20260925_195248.jsonl": 1
+      },
+      "current_vector_present": true,
+      "current_vector_metadata": {
+        "data": "用户和助理计划在2023年8月天气更舒适时一起带用户的狗狗们去远足，助理推荐了一条能远眺海景的陡峭步道并分享了步道地图，双方约定要确保步道对狗狗安全，用户会提前研究那条步道",
+        "session_date": "9:48 am on 8 July, 2023",
+        "session_id": "session_11",
+        "user_id": "zhfull:locomo:conv-44"
+      },
+      "current_vector_content_equals_archived_graph": true,
+      "current_graph_cache_presence": {
+        "structured_cache.json": true,
+        "topic_cache.json": true,
+        "memory_embeddings.json": true
+      },
+      "memory_history": [
+        {
+          "event": "ADD",
+          "created_at": "2026-09-25T03:32:24.430448+00:00",
+          "updated_at": null,
+          "is_deleted": 0
+        }
+      ]
+    },
+    {
+      "id": "bae6d454-5c37-4d97-9258-5b385204bf5e",
+      "content": "Jolene said she needs to pay more attention to her stress levels and mental health, admitting she gets too absorbed in studying and forgets to prioritize self-care; exams and deadlines feel overwhelming and her to-do list never ends (March 2023)",
+      "archived_graph_candidate_occurrences": 264,
+      "archived_final_context_occurrences": 33,
+      "candidate_occurrences_by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 64,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 54,
+        "zhfull_fused_locomo_20260925_161049.jsonl": 45,
+        "zhfull_fused_locomo_20260925_172126.jsonl": 51,
+        "zhfull_fused_locomo_20260925_195248.jsonl": 50
+      },
+      "selected_occurrences_by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 7,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 7,
+        "zhfull_fused_locomo_20260925_161049.jsonl": 5,
+        "zhfull_fused_locomo_20260925_172126.jsonl": 7,
+        "zhfull_fused_locomo_20260925_195248.jsonl": 7
+      },
+      "current_vector_present": false,
+      "current_vector_metadata": {},
+      "current_vector_content_equals_archived_graph": null,
+      "current_graph_cache_presence": {
+        "structured_cache.json": true,
+        "topic_cache.json": true,
+        "memory_embeddings.json": true
+      },
+      "memory_history": [
+        {
+          "event": "ADD",
+          "created_at": "2026-09-25T03:41:10.675711+00:00",
+          "updated_at": null,
+          "is_deleted": 0
+        },
+        {
+          "event": "DELETE",
+          "created_at": "2026-09-25T03:41:10.675711+00:00",
+          "updated_at": "2026-09-26T00:20:23.545782+00:00",
+          "is_deleted": 1
+        }
+      ]
+    },
+    {
+      "id": "f451e74c-c6e2-46da-b22c-76d0bc0069c7",
+      "content": "2023年7月8日，用户的狗狗们已整装待发（戴着牵引绳坐在门口），为下一次户外冒险做好了准备，用户表示它们精力充沛，总能让自己面带微笑",
+      "archived_graph_candidate_occurrences": 72,
+      "archived_final_context_occurrences": 0,
+      "candidate_occurrences_by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 53,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 13,
+        "zhfull_fused_locomo_20260925_161049.jsonl": 2,
+        "zhfull_fused_locomo_20260925_172126.jsonl": 2,
+        "zhfull_fused_locomo_20260925_195248.jsonl": 2
+      },
+      "selected_occurrences_by_run": {},
+      "current_vector_present": true,
+      "current_vector_metadata": {
+        "data": "2023年7月8日，用户的狗狗们已整装待发（戴着牵引绳坐在门口），为下一次户外冒险做好了准备，用户表示它们精力充沛，总能让自己面带微笑",
+        "session_date": "9:48 am on 8 July, 2023",
+        "session_id": "session_11",
+        "user_id": "zhfull:locomo:conv-44"
+      },
+      "current_vector_content_equals_archived_graph": true,
+      "current_graph_cache_presence": {
+        "structured_cache.json": true,
+        "topic_cache.json": true,
+        "memory_embeddings.json": true
+      },
+      "memory_history": [
+        {
+          "event": "ADD",
+          "created_at": "2026-09-25T03:32:24.430463+00:00",
+          "updated_at": null,
+          "is_deleted": 0
+        }
+      ]
+    }
+  ],
+  "prior_graph_context_audit_unmatched_selected_instances_by_id": {
+    "7f50bc2e-fb48-4af7-8f97-91834f98037f": 2,
+    "bae6d454-5c37-4d97-9258-5b385204bf5e": 6
+  },
+  "deleted_id_source": {
+    "conversation": "conv-48",
+    "session_id": "session_8",
+    "session_date": "7:18 pm on 2 March, 2023",
+    "turns": [
+      {
+        "dia_id": "D8:14",
+        "speaker": "乔琳",
+        "text": "我需要更留意自己的压力水平，照顾好自己的心理健康。有时我太沉迷于学习，忘了优先照顾自己。"
+      },
+      {
+        "dia_id": "D8:16",
+        "speaker": "乔琳",
+        "text": "考试和截止日期让我感到不堪重负。看看我的待办事项清单！似乎永远做不完……我在尽力，但一直很有挑战性。"
+      }
+    ]
+  },
+  "limits": [
+    "Absence from archived vector retrieval is not absence from the historical vector store",
+    "Current vector-store state is later than the archived runs; history event times must be compared with run times",
+    "Source turns confirm the deleted memory's core facts but do not prove every wording nuance or answer usefulness"
+  ]
+}
