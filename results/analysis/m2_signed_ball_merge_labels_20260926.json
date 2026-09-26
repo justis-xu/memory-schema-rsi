@@ -1,0 +1,13 @@
+{
+  "scope": "Manual fact-level review of four ABBA answer calls for one Chinese signed-basketball case",
+  "raw_results": "results/analysis/m2_signed_ball_merge_poc_20260926.json",
+  "required_fact": "蒂姆和约翰都拥有签名篮球，因此共同的运动收藏品是签名篮球",
+  "calls": [
+    {"index": 1, "arm": "base", "required_fact_present": false, "note": "只指出蒂姆的签名篮球，把约翰描述成球衣和球鞋；还把鞋说成共同点。"},
+    {"index": 2, "arm": "merge", "required_fact_present": true, "note": "明确说两人都珍视签名篮球，但先把运动鞋列为共同收藏；该额外推断未作完整来源核验。"},
+    {"index": 3, "arm": "merge", "required_fact_present": true, "note": "明确列出两人各自的签名篮球，同时另提共同篮球鞋，后者不是本题金标要素。"},
+    {"index": 4, "arm": "base", "required_fact_present": false, "note": "只指出蒂姆的签名篮球，把约翰描述成球衣和球鞋。"}
+  ],
+  "counts": {"calls": 4, "base_required_fact_present": 0, "base_calls": 2, "merge_required_fact_present": 2, "merge_calls": 2, "prompt_tokens": 8786, "completion_tokens": 500},
+  "limits": ["One retrospectively selected question; no population effect size", "Two samples per arm; no judge calls", "The John candidate was selected after source-aware audit of split-query results, so end-to-end automatic selection was not tested", "Presence of the gold fact does not establish that extra details are all correct"]
+}

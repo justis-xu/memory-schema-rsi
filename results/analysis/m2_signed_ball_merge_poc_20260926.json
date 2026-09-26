@@ -1,0 +1,108 @@
+{
+  "scope": "One current Chinese two-person question; fixed 15-slot one-memory swap; ABBA, max four answer calls, no judge",
+  "source_retrieval": "results/analysis/m2_current_zh_retrieval_probe_20260926.json",
+  "source_person_split": "results/analysis/m2_signed_ball_paths_20260926.json",
+  "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+  "gold": "签名篮球",
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "order": [
+    "base",
+    "merge",
+    "merge",
+    "base"
+  ],
+  "removed": {
+    "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+    "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验"
+  },
+  "added": {
+    "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+    "content": "约翰（John）的队友们在2023年8月见面时送给他一个签名篮球，签名象征他们的友谊和感激之情；这个球提醒他为什么开始打篮球以及他的篮球之路，激励他保持坚强、全力以赴",
+    "session_date": "7:54 pm on 17 August, 2023"
+  },
+  "base_ids": [
+    "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+    "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+    "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+    "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+    "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+    "4e5abf64-a6e5-43fb-939e-a853809328cb",
+    "1acb6522-5397-4a62-8624-5f209f1bf34c",
+    "ffefd5b9-b385-4618-983c-9bd545d408a7",
+    "3d9696ac-a639-4862-980b-dc534b960d18",
+    "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+    "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+    "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+    "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+    "511649c4-ae44-44e0-b0ec-788d21dc4355",
+    "aae114a6-d224-48a4-ba5b-2fab1cc0e51a"
+  ],
+  "merge_ids": [
+    "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+    "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+    "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+    "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+    "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+    "4e5abf64-a6e5-43fb-939e-a853809328cb",
+    "1acb6522-5397-4a62-8624-5f209f1bf34c",
+    "ffefd5b9-b385-4618-983c-9bd545d408a7",
+    "3d9696ac-a639-4862-980b-dc534b960d18",
+    "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+    "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+    "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+    "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+    "511649c4-ae44-44e0-b0ec-788d21dc4355",
+    "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc"
+  ],
+  "prompt_sha256": {
+    "base": "823b409d5c3671e3b08345d7727cc64688c1afed86a36b0f5aa27f38f71101e3",
+    "merge": "5997249457dc022798e13154500fc7b16c9a21698b2854942abb59e380edcb86"
+  },
+  "vector_db_sha256_before": "75df0309d6488bd7fc9feb9eafbcef780708b6683e385af88660e84eeb1f6435",
+  "calls": [
+    {
+      "index": 1,
+      "arm": "base",
+      "answer": "篮球和运动鞋（球鞋）——蒂姆珍视一个由他最喜欢球员签名的篮球，约翰热爱篮球并拥有幸运篮球鞋和球鞋收藏；两人在运动鞋上也有共同兴趣（约翰对蒂姆推荐的运动鞋感兴趣）。",
+      "usage": {
+        "prompt_tokens": 2186,
+        "completion_tokens": 103
+      }
+    },
+    {
+      "index": 2,
+      "arm": "merge",
+      "answer": "蒂姆和约翰都收藏运动鞋——约翰有一批他喜欢展示和谈论的球鞋收藏，蒂姆也买了一双他热爱的记忆棉运动鞋。此外，两人都珍视签名篮球。",
+      "usage": {
+        "prompt_tokens": 2207,
+        "completion_tokens": 174
+      }
+    },
+    {
+      "index": 3,
+      "arm": "merge",
+      "answer": "蒂姆和约翰都收藏篮球相关的物品——尤其是签名篮球（约翰收到队友的签名篮球，蒂姆有他最喜欢的球员签名的篮球），并且两人都对篮球鞋有共同的兴趣和收藏。",
+      "usage": {
+        "prompt_tokens": 2207,
+        "completion_tokens": 173
+      }
+    },
+    {
+      "index": 4,
+      "arm": "base",
+      "answer": "篮球相关收藏品——蒂姆珍藏着最喜欢的球员签名的篮球，约翰则收藏篮球球衣（还有球鞋）。",
+      "usage": {
+        "prompt_tokens": 2186,
+        "completion_tokens": 50
+      }
+    }
+  ],
+  "limits": [
+    "The John memory was chosen with source-aware audit after non-oracle retrieval; automatic merge selection is not evaluated",
+    "One question and two samples per arm cannot estimate overall benefit",
+    "Extra person-split retrieval cost is not included in four answer calls"
+  ],
+  "vector_db_sha256_after": "75df0309d6488bd7fc9feb9eafbcef780708b6683e385af88660e84eeb1f6435",
+  "vector_db_unchanged": true
+}
