@@ -1,0 +1,860 @@
+{
+  "scope": "2026-09-25 中文融合图臂的 J 类时间题最终入选图记忆",
+  "method": "按最终 answer_context_ids 对应的 graph_context_ids，检查内容是否直接含四位年份、同 ID 原记忆日期是否可恢复；保留无年份候选供人工判断事实相关性。",
+  "limits": "无四位年份不代表需要会话日期；有四位年份也未必与当前问题相关或正确。人工语义核查不能由这些词面计数替代。",
+  "counts": {
+    "temporal_cases": 321,
+    "graph_selected_cases": 197,
+    "selected_graph_instances": 361,
+    "date_recoverable_instances": 360,
+    "content_has_explicit_four_digit_year": 279,
+    "content_without_four_digit_year": 82,
+    "cases_with_no_year_graph_memory": 48,
+    "nonexact_cases_with_no_year_graph_memory": 12,
+    "unique_no_year_graph_ids": 61
+  },
+  "cases_with_no_year_graph_memory": [
+    {
+      "case_id": "locomo_conv-30_qa10",
+      "question": "吉娜什么时候与一位本地艺术家合作设计了一些很酷的设计？",
+      "gold": "2023年2月",
+      "answer": "答案：吉娜在2023年2月8日前后与一位本地艺术家合作推出了独特的服装设计。",
+      "grade": "partial",
+      "no_year_selected_graph": [
+        {
+          "id": "6f9753ba-94d9-4392-b1cd-25f7b7219b58",
+          "content": "吉娜几年前纹了一个纹身，代表自由——跳舞时不担心别人怎么看的自由，图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'），提醒她追随热情、表达自我",
+          "recovered_session_date": "9:32 am on 8 February, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa16",
+      "question": "乔恩什么时候去集市为他的舞蹈工作室获得更多曝光？",
+      "gold": "2023年4月24日",
+      "answer": "2023年4月24日",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+          "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+          "recovered_session_date": "5:44 pm on 21 July, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa26",
+      "question": "乔恩什么时候获得导师指导来推进他的创业项目？",
+      "gold": "2023年6月15日",
+      "answer": "乔恩于2023年6月15日获得了一位商业大咖的导师指导。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+          "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+          "recovered_session_date": "5:44 pm on 21 July, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa33",
+      "question": "乔恩什么时候为他的店参加社交活动？",
+      "gold": "2023年6月20日",
+      "answer": "乔恩在2023年6月20日（他的舞蹈工作室开幕前夜）去参加社交活动，为促成事业上的机会；此外2023年7月他还参加了一次社交活动，见到了一些投资人并获得好建议。",
+      "grade": "partial",
+      "no_year_selected_graph": [
+        {
+          "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+          "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+          "recovered_session_date": "5:44 pm on 21 July, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa35",
+      "question": "乔恩什么时候开始学习营销和数据分析工具？",
+      "gold": "2023年七月",
+      "answer": "2023年7月9日",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+          "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+          "recovered_session_date": "5:44 pm on 21 July, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa38",
+      "question": "吉娜什么时候和一群朋友去上舞蹈课？",
+      "gold": "2023年7月21日",
+      "answer": "吉娜是小时候（年轻时期）和一群朋友一起上舞蹈课的——她在2023年4月9日分享的旧照显示一群年轻女性在芭蕾教室里跳舞，她回忆那时超喜欢待在练功房里。",
+      "grade": "wrong",
+      "no_year_selected_graph": [
+        {
+          "id": "6f9753ba-94d9-4392-b1cd-25f7b7219b58",
+          "content": "吉娜几年前纹了一个纹身，代表自由——跳舞时不担心别人怎么看的自由，图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'），提醒她追随热情、表达自我",
+          "recovered_session_date": "9:32 am on 8 February, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa0",
+      "question": "2023年5月3日玛丽亚和谁共进晚餐？",
+      "gold": "她的母亲",
+      "answer": "她的妈妈** —— 记忆显示玛丽亚在2023年5月4日的前一晚和妈妈一起做晚饭，做了沙拉、三明治和自制甜点，她最喜欢的是香蕉圣代。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "83007c11-8c4c-49b2-92c9-be8fd136c3c0",
+          "content": "Maria took written notes on local politics in her notebook, which helped John gain new ideas and plans for serving his community",
+          "recovered_session_date": "7:06 pm on 9 January, 2023"
+        },
+        {
+          "id": "8a9c45be-ade6-4ad0-b2f5-0e2c0a965b21",
+          "content": "At the charity event, Maria spoke with a man named David and was moved by his story of hardship; she later connected him with a nearby organization providing housing and assistance to homeless people",
+          "recovered_session_date": "2:33 pm on 5 February, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa53",
+      "question": "约翰是什么时候帮助翻修家乡社区中心的？",
+      "gold": "2022",
+      "answer": "2022年",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "83007c11-8c4c-49b2-92c9-be8fd136c3c0",
+          "content": "Maria took written notes on local politics in her notebook, which helped John gain new ideas and plans for serving his community",
+          "recovered_session_date": "7:06 pm on 9 January, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa91",
+      "question": "2023年3月约翰和同事参加了什么活动？",
+      "gold": "一场科技向善大会",
+      "answer": "2023年3月，John和同事们参加了一场大会（convention）。这些同事和他一样热衷于利用科技为社区做好事；现场充满活力的头脑风暴和积极进取的氛围激励他去产生更大的影响。\n\n答案：约翰和同事于2023年3月参加了一场大会（convention），与志同道合、热衷于用科技回馈社区的同事交流，深受鼓舞。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "3ab73473-080a-4899-b85d-ae2c327a48cf",
+          "content": "John and his family had a dinner gathering where they made pizzas together; he loved the process of choosing toppings and sharing food, saying meal times full of food, laughter, and conversation keep them close",
+          "recovered_session_date": "6:10 pm on 22 December, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa17",
+      "question": "乔安娜在2022年5月1日看了什么电影？",
+      "gold": "《指环王》",
+      "answer": "《指环王》三部曲（内特推荐的）",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "dd35ed5f-e76e-4b55-8018-2e0705aea57e",
+          "content": "乔安娜 (Joanna) 向内特推荐了《美丽心灵的永恒阳光》(Eternal Sunshine of the Spotless Mind)，一部关于记忆和感情关系的爱情剧情片",
+          "recovered_session_date": "7:31 pm on 21 January, 2022"
+        },
+        {
+          "id": "b9464336-c7df-4227-9c4e-eab329c03194",
+          "content": "内特 (Nate) 表示他可能会去看乔安娜推荐的《美丽心灵的永恒阳光》",
+          "recovered_session_date": "7:31 pm on 21 January, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa32",
+      "question": "乔安娜2022年7月去了哪里旅行？",
+      "gold": "伍德黑文",
+      "answer": "乔安娜2022年7月初去了中西部小镇伍德黑文（Woodhaven）自驾游，为下一部电影做研究，欣赏了美丽风景、历史建筑和镇图书馆的古籍藏书。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "9e6a053d-bc68-427b-b7ef-d45ac2f571f1",
+          "content": "乔安娜 (Joanna) 在伍德黑文发现了一本20世纪初的书籍，里面有故事和素描，记录了小镇及其居民的历史，伍德黑文的过往和变迁激发了她下一部剧本的灵感",
+          "recovered_session_date": "2:34 pm on 10 July, 2022"
+        },
+        {
+          "id": "5f9c2be5-8456-4633-94e5-53f93cedc4e2",
+          "content": "乔安娜 (Joanna) 表示徒步为她打开了一个全新的世界，让她感觉自己像变了个人；身处美丽的大自然中会给她写作灵感，让她有想写一整部电影或一部戏剧的冲动",
+          "recovered_session_date": "3:35 pm on 12 May, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa9",
+      "question": "乔安娜在2022年1月完成了什么重大成就？",
+      "gold": "完成了她的剧本并打印出来",
+      "answer": "乔安娜在2022年1月中旬完成了她的第一个完整电影剧本，并于1月21日（周五）把它打印了出来。该剧本融合了剧情和爱情元素，完成后她感到如释重负、既兴奋又有些焦虑。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "0fdf63a0-65d9-4d05-9d42-523d9b9aea73",
+          "content": "乔安娜 (Joanna) 分享了一张手写剧本笔记本的照片（带狗图案的记事本和笔），展示了她最近完成的第三部作品",
+          "recovered_session_date": "7:49 pm on 20 May, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa20",
+      "question": "去芝加哥之前约翰在哪个城市？",
+      "gold": "西雅图",
+      "answer": "** 西雅图（他于2023年8月早些时候在西雅图比赛，之后去了芝加哥）。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "e468ce67-79d4-43c6-aa60-6545b34d3119",
+          "content": "约翰正在和一个本地组织合作开展慈善工作，帮助弱势儿童参与体育和学习，希望利用自己的影响力为社区带来积极影响",
+          "recovered_session_date": "1:08 pm on 11 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa24",
+      "question": "2023年8月11日至8月15日期间约翰在哪里？",
+      "gold": "芝加哥",
+      "answer": "约翰在芝加哥旅行。他于2023年8月11日前后去了芝加哥，觉得那里充满活力、当地人非常友好，之后在8月15日旅行归来与队友重聚。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "720c6dd3-389b-43ce-8df1-59ec519f3f39",
+          "content": "约翰在芝加哥旅行时看过体育比赛，觉得体育场里所有人欢呼呐喊的氛围无与伦比，是非常特别的体验",
+          "recovered_session_date": "1:08 pm on 11 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa45",
+      "question": "蒂姆在11月的第二周去了哪个国家？",
+      "gold": "英国",
+      "answer": "英国",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "1847372a-3c20-4c79-abf2-8a971c927ba9",
+          "content": "约翰（John）提出等他的赛季结束后可能顺路去爱尔兰看蒂姆，并同意如果去的话会告知蒂姆",
+          "recovered_session_date": "5:24 pm on 7 January, 2024"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa10",
+      "question": "奥黛丽的狗狗正面强化训练课程是什么时候进行的？",
+      "gold": "2023年6月",
+      "answer": "2023年6月（她于2023年5月11日报名参加这个正向强化训练工作坊）",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "f1c4bb09-e620-4861-8237-bc994f3a1388",
+          "content": "奥黛丽在家中用玩具和游戏让狗狗们保持运动和开心，给它们安排拼图、训练、捉迷藏等活动进行智力刺激，狗狗们都很喜欢；她还常带狗狗在公园玩接飞盘和捡网球",
+          "recovered_session_date": "7:59 pm on 4 November, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa22",
+      "question": "2023年8月的第一个周末安德鲁去了哪里？",
+      "gold": "和女朋友去露营",
+      "answer": "参考2023年8月4日（星期五）的记忆，安德鲁和他的女朋友计划在那个周末（即2023年8月的第一个周末）去露营，以便几个月来第一次亲近大自然。\n\n回答：安德鲁在2023年8月的第一个周末（8月4日那个周末）和女朋友去露营了，因为好几个月没有亲近大自然了。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "c9f3b78c-be7b-421c-96ef-5d9ab52ad7e6",
+          "content": "安德鲁分享了一张徒步时拍摄的照片（山顶教堂上的日落/日出），并希望以后学习给托比做美容",
+          "recovered_session_date": "9:19 pm on 19 August, 2023"
+        },
+        {
+          "id": "2e0ce82e-b3b5-4a16-9742-6e9127ab8d2d",
+          "content": "安德鲁和女朋友找到一家超棒的咖啡馆，糕点非常好吃；他们吃了美味的可颂、玛芬和挞，并拍下了糕点展示柜的照片",
+          "recovered_session_date": "4:19 pm on 16 April, 2023"
+        },
+        {
+          "id": "9208c459-dbb9-4242-bcb3-11e4d46b0e8f",
+          "content": "安德鲁的小狗托比是德国牧羊犬，安德鲁说他聪明又忠诚，并计划带托比去当地小径短途徒步",
+          "recovered_session_date": "11:05 am on 4 August, 2023"
+        },
+        {
+          "id": "3276124e-86a6-4296-8551-a455260602a1",
+          "content": "安德鲁分享了他家附近一家狗狗日托中心的照片，那里有很大的室内空间供狗狗玩耍。奥黛丽表示近期想带狗狗们去那里看看",
+          "recovered_session_date": "1:51 pm on 26 June, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa45",
+      "question": "截至2023年12月，安德鲁会有几只宠物？",
+      "gold": "3只",
+      "answer": "3只（托比、巴迪、斯考特）",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "30203d0b-4197-42d2-865d-02cb4fff8348",
+          "content": "安德鲁计划带斯考特、托比和巴迪去附近一个不大的公园玩，作为斯考特的第一次户外冒险；斯考特目前还在适应户外环境，外出时会一直牵着绳",
+          "recovered_session_date": "9:02 am on 22 November, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa46",
+      "question": "截至2023年9月，安德鲁有几只宠物？",
+      "gold": "1只",
+      "answer": "1只宠物（小狗托比）。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "72027e82-5868-4108-a0db-af3232570bec",
+          "content": "安德鲁和巴迪喜欢一起散步和探索新的徒步小径，巴迪对大自然的一切都很兴奋；安德鲁计划很快带托比和巴迪两只狗一起去小径",
+          "recovered_session_date": "6:12 pm on 19 October, 2023"
+        },
+        {
+          "id": "9208c459-dbb9-4242-bcb3-11e4d46b0e8f",
+          "content": "安德鲁的小狗托比是德国牧羊犬，安德鲁说他聪明又忠诚，并计划带托比去当地小径短途徒步",
+          "recovered_session_date": "11:05 am on 4 August, 2023"
+        },
+        {
+          "id": "30203d0b-4197-42d2-865d-02cb4fff8348",
+          "content": "安德鲁计划带斯考特、托比和巴迪去附近一个不大的公园玩，作为斯考特的第一次户外冒险；斯考特目前还在适应户外环境，外出时会一直牵着绳",
+          "recovered_session_date": "9:02 am on 22 November, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa58",
+      "question": "奥黛丽在2023年10月24日晚餐吃了什么？",
+      "gold": "寿司",
+      "answer": "寿司（当天打算晚饭点寿司）",
+      "grade": "partial",
+      "no_year_selected_graph": [
+        {
+          "id": "26cdfc6b-6dec-4787-a234-481e6e43e47f",
+          "content": "奥黛丽的必备食材是大蒜，她喜欢它给菜肴增添的香味和味道。她最喜欢的用大蒜做的菜之一是烤鸡（含鸡肉、大蒜、柠檬、香草），菜谱源于她对地中海风味的喜爱，美味易做又健康，是她的治愈系美食。她也答应分享这个菜谱",
+          "recovered_session_date": "8:32 pm on 3 July, 2023"
+        },
+        {
+          "id": "09bcadc9-f37a-4da8-8d79-4841795f996e",
+          "content": "奥黛丽超爱寿司，建议寿司新手第一次先试加州卷或三文鱼卷（比较容易入口），也可以搭配不同的酱料蘸料会更好吃",
+          "recovered_session_date": "10:14 am on 24 October, 2023"
+        },
+        {
+          "id": "2c843d1c-29a0-4f24-ba1f-cc7f54cf7209",
+          "content": "奥黛丽说狗和大自然给她带来了太多的快乐与平静，大自然能让人以不同的方式思考、感到充满活力和内心安定，我们要珍惜大自然给予的一切",
+          "recovered_session_date": "5:23 pm on 13 June, 2023"
+        },
+        {
+          "id": "9adb54ee-cdbb-460a-90e8-77ad299f5cc8",
+          "content": "奥黛丽热爱做饭，喜欢尝试新菜谱、在厨房做实验——对她来说像一种逃避，减压效果很好还能让创意流淌。她喜欢放音乐、倒一杯葡萄酒，在厨房里随性发挥，觉得像自我关爱、很治愈",
+          "recovered_session_date": "8:32 pm on 3 July, 2023"
+        },
+        {
+          "id": "2e0ce82e-b3b5-4a16-9742-6e9127ab8d2d",
+          "content": "安德鲁和女朋友找到一家超棒的咖啡馆，糕点非常好吃；他们吃了美味的可颂、玛芬和挞，并拍下了糕点展示柜的照片",
+          "recovered_session_date": "4:19 pm on 16 April, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa7",
+      "question": "奥黛丽领养Pixie和她领养另外三只狗之间隔了几年？",
+      "gold": "三年",
+      "answer": "大约3年。奥黛丽的另外三只狗（Pepper、Precious、Panda）她已经养了三年（截至2023年3月，即约2020年领养），而Pixie是2023年4月初领养的，所以间隔约3年。",
+      "grade": "partial",
+      "no_year_selected_graph": [
+        {
+          "id": "986645e9-4556-4cee-a2c0-f036e3a48638",
+          "content": "奥黛丽的四只狗都有自己最爱放松的地方：Pepper喜欢窝在沙发上，Pixie总是蜷在自己的窝里，Precious有她的椅子，Panda喜欢在他的地毯上放松",
+          "recovered_session_date": "9:58 pm on 16 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa8",
+      "question": "2023年3月期间安德鲁有养宠物狗吗？",
+      "gold": "没有",
+      "answer": "没有。截至2023年3月27日，安德鲁没有养宠物，虽然他喜欢动物（尤其对鹰着迷）。他到2023年7月才领养小狗托比。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "72027e82-5868-4108-a0db-af3232570bec",
+          "content": "安德鲁和巴迪喜欢一起散步和探索新的徒步小径，巴迪对大自然的一切都很兴奋；安德鲁计划很快带托比和巴迪两只狗一起去小径",
+          "recovered_session_date": "6:12 pm on 19 October, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa1",
+      "question": "2022年3月16日詹姆斯在进行什么娱乐活动？",
+      "gold": "保龄球",
+      "answer": "詹姆斯在2022年3月16日去打保龄球（bowling），投出了两个全中（strike），他很喜欢保龄球。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "56cf941f-bc53-45c9-a7ea-d194a3e85bb7",
+          "content": "James created a game character in his Witcher 3-inspired virtual world project and shared a screenshot of it (a woman in armor kneeling on a rock); he felt a great sense of accomplishment despite the effort it took",
+          "recovered_session_date": "9:32 pm on 20 April, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa31",
+      "question": "詹姆斯计划在加拿大旅行多少天？",
+      "gold": "19天",
+      "answer": "根据记忆：詹姆斯于2022年7月11日晚上出发去多伦多，计划7月20日返回，期间还计划去温哥华。从7月11日到7月20日约为9天。\n\n答案：大约9天（2022年7月11日出发，7月20日返回）。",
+      "grade": "wrong",
+      "no_year_selected_graph": [
+        {
+          "id": "cb77f531-d177-479c-8652-c4dc9ffa66f7",
+          "content": "James may invite John to help with parts of his indie game using John's HTML knowledge, and John agreed to collaborate",
+          "recovered_session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+          "content": "James is working on an indie computer game based on a character he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+          "recovered_session_date": "3:47 pm on 17 March, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa48",
+      "question": "詹姆斯、萨曼莎和约翰是什么时候一起去看棒球比赛的？",
+      "gold": "2022年9月11日",
+      "answer": "ANSWER：2022年9月11日（星期日），詹姆斯带萨曼莎去观看棒球比赛，并邀请了约翰一同前往，以便让约翰认识萨曼莎。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "4c743502-69ce-47c4-8802-1b82c61307c2",
+          "content": "John does not live with his siblings and does not see them often, but whenever they get together they always plan a game night",
+          "recovered_session_date": "3:57 pm on 21 August, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa61",
+      "question": "2023年10月詹姆斯和萨曼莎之间的大事是什么？",
+      "gold": "他们决定住在一起，并在离麦基酒吧不远的地方租了一间公寓。",
+      "answer": "10月詹姆斯和萨曼莎之间的大事是他们决定搬到一起住（同居），并租下了一间靠近McGee's酒吧的公寓。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "cb77f531-d177-479c-8652-c4dc9ffa66f7",
+          "content": "James may invite John to help with parts of his indie game using John's HTML knowledge, and John agreed to collaborate",
+          "recovered_session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "id": "14512aeb-8d11-49af-887c-cb4234c30079",
+          "content": "James made sketches and handwritten notes based on his dream about a medieval castle labyrinth with puzzles and traps",
+          "recovered_session_date": "6:02 pm on 18 September, 2022"
+        },
+        {
+          "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+          "content": "James is working on an indie computer game based on a character he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+          "recovered_session_date": "3:47 pm on 17 March, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa62",
+      "question": "詹姆斯和萨曼莎在决定同居之前约会了多久？",
+      "gold": "将近三个月",
+      "answer": "ANSWER：大约两个月。詹姆斯于2022年9月3日在剧院向萨曼莎表白并确立恋爱关系，两人于2022年10月31日决定同居。",
+      "grade": "wrong",
+      "no_year_selected_graph": [
+        {
+          "id": "14512aeb-8d11-49af-887c-cb4234c30079",
+          "content": "James made sketches and handwritten notes based on his dream about a medieval castle labyrinth with puzzles and traps",
+          "recovered_session_date": "6:02 pm on 18 September, 2022"
+        },
+        {
+          "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+          "content": "James is working on an indie computer game based on a character he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+          "recovered_session_date": "3:47 pm on 17 March, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa66",
+      "question": "约翰是什么时候和一位游戏开发者合作一个项目的？",
+      "gold": "2022年11月5日至6日",
+      "answer": "回答：约翰在 2022 年 11 月初（周末）与一位游戏开发者合作开发了一款线上桌游。",
+      "grade": "partial",
+      "no_year_selected_graph": [
+        {
+          "id": "d72a0149-d619-4be0-8ac6-fbf863ebefdc",
+          "content": "James and his friend John discussed developing a mobile app together for dog walking and pet care, connecting pet owners with reliable dog walkers and providing pet care information",
+          "recovered_session_date": "3:47 pm on 17 March, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa22",
+      "question": "黛博拉是什么时候认识安娜的？",
+      "gold": "2023年1月31日",
+      "answer": "2023年1月31日（在公园练瑜伽时）",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "bdb7aee8-9b16-4987-8ffe-8f9000175799",
+          "content": "黛布教安娜做了一个改良瑜伽体式：坐在椅子边缘，双脚踩实地面，躯干向一侧扭转，手撑在膝盖上借力，保持几个呼吸后换边，能拉伸背部和肩膀、放松紧张的肌肉。",
+          "recovered_session_date": "9:48 am on 4 February, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa26",
+      "question": "乔琳在2023年1月读了哪本书？",
+      "gold": "尼尔·斯蒂芬森的《雪崩》",
+      "answer": "2023年1月下旬，乔琳一口气读完了尼尔·斯蒂芬森的《雪崩》，深受鼓舞。\n\nANSWER：《雪崩》（Snow Crash，尼尔·斯蒂芬森著）",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "6a8be76b-6f76-44d3-a53a-1edd9a8a4376",
+          "content": "乔琳向黛布推荐了Switch上的《塞尔达传说：旷野之息》（开放世界）和《集合啦！动物森友会》（治愈可爱），并提到《胡闹厨房2》是很好的联机合作游戏——她和伴侣经常用它打赌，乔琳赢过三个大披萨",
+          "recovered_session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "id": "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+          "content": "黛布通过工作坊和书籍开始接触正念，如今正念已成为她生活中很大的一部分；她向乔琳推荐了正念",
+          "recovered_session_date": "2:58 pm on 16 August, 2023"
+        },
+        {
+          "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+          "content": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+          "recovered_session_date": "9:26 am on 1 August, 2023"
+        },
+        {
+          "id": "49ffa49d-8dfe-486b-8fa9-9d822f82f79d",
+          "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+          "recovered_session_date": "7:39 pm on 8 September, 2023"
+        },
+        {
+          "id": "ff075bc8-c3d2-40ef-8784-ef9f8746c927",
+          "content": "乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战、完成艰难成就是增进感情、变得更亲密的好方式",
+          "recovered_session_date": "7:37 pm on 9 July, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa3",
+      "question": "乔琳的母亲是什么时候去世的？",
+      "gold": "2022年",
+      "answer": "2022年",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "9f23866e-9709-47e9-a1d2-dbd0427a5027",
+          "content": "黛布的母亲几年前去世了；她珍藏着一张她们两人拥抱的最后的合影，拍摄于她母亲坐轮椅时。",
+          "recovered_session_date": "4:06 pm on 23 January, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa4",
+      "question": "乔琳的妈妈是什么时候送她吊坠的？",
+      "gold": "2010年",
+      "answer": "2010年，乔琳的妈妈在巴黎送给她那条带鸟图案的心形吊坠项链。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "ba0c6023-c127-4465-80b5-0ed5c9d729ca",
+          "content": "黛布喜欢去她已故母亲老房子附近的水边缅怀母亲，在那里回忆她的一生并找到安宁。她带着母亲的一个护身符（心形项链），每次去那里都会握着它，这是她感受母亲的爱、与母亲保持亲近并获得安慰的方式。",
+          "recovered_session_date": "9:48 am on 4 February, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa65",
+      "question": "2023年8月的最后一周乔琳在哪个国家？",
+      "gold": "巴西",
+      "answer": "巴西",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "db10a1eb-cea3-46f6-bb8d-33d037b376eb",
+          "content": "乔琳和伴侣在里约热内卢旅行期间进行了多次远足，并参观了一座古老的寺庙，那里的楼梯令人惊艳",
+          "recovered_session_date": "11:46 am on 30 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa78",
+      "question": "乔琳和她伴侣2023年9月大部分时间在哪里度过？",
+      "gold": "普吉岛",
+      "answer": "乔琳和她的伴侣2023年9月大部分时间在泰国普吉岛度过——他们于9月上旬（约9月8日之前的周末开始）去那里参加了一个为期几周的冥想静修营，亲近大自然、进行反思，帮她从工程学业中抽身休息并找回内心平静。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "db10a1eb-cea3-46f6-bb8d-33d037b376eb",
+          "content": "乔琳和伴侣在里约热内卢旅行期间进行了多次远足，并参观了一座古老的寺庙，那里的楼梯令人惊艳",
+          "recovered_session_date": "11:46 am on 30 August, 2023"
+        },
+        {
+          "id": "9cfc7788-e908-464b-a92e-8c73cf4faa72",
+          "content": "乔琳和伴侣去了一个非常宁静的瑜伽静修营旅行，日出用绚丽色彩点亮天空，景色美极了；她说在那样背景下做瑜伽让她感到与自然和自我紧紧相连，无比平静和感恩",
+          "recovered_session_date": "10:17 am on 20 September, 2023"
+        },
+        {
+          "id": "58368718-13a7-4cfd-851a-81de5a100d1a",
+          "content": "乔琳在里约热内卢之行中了解了各种瑜伽流派及其渊源，这加深了她对瑜伽的热爱",
+          "recovered_session_date": "11:46 am on 30 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa22",
+      "question": "埃文是什么时候遇到他未来的妻子的？",
+      "gold": "2023年8月7日的前一周。",
+      "answer": "相关记忆：2023年8月7日左右，Evan去加拿大旅行时遇到一位加拿大女士——即他未来的妻子。\n\n答案：埃文在2023年8月初（8月7日前的那一周）去加拿大旅行时遇到了他未来的妻子。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "4dea4431-e9b7-4853-9ec1-2220b45e4f40",
+          "content": "Evan agreed to meet up with Sam to demonstrate basic exercises and help him get started working out; they agreed to support each other on their health journeys and Sam promised to keep Evan updated on his progress",
+          "recovered_session_date": "3:55 pm on 6 June, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa40",
+      "question": "埃文是什么时候开始上绘画课的？",
+      "gold": "2023年8月19日的几天前。",
+      "answer": "2023年8月19日之前的几天，埃文开始上绘画课。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "dbc78f1e-fe6b-4b63-b279-d6cba1c6e2db",
+          "content": "User took up watercolor painting a few years ago after a friend introduced him and gave him some tips, and immediately became passionate about it; he shared a watercolor painting of a cactus in the desert",
+          "recovered_session_date": "1:47 pm on 18 May, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa45",
+      "question": "埃文2023年7月在加拿大去了哪些地方？",
+      "gold": "班夫、落基山脉",
+      "answer": "2023年7月埃文在加拿大去了落基山脉（Canadian Rockies）和班夫国家公园（Banff National Park），在那里滑雪、自驾游览，还买了一块写有\"Bring it on Home\"的牌子作为家庭座右铭。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "a4612647-9388-48fa-94fe-834c4baeac68",
+          "content": "Evan described his Jasper trip as a real retreat — fresh air, peaceful surroundings, and a cozy cabin surrounded by mountains and forest",
+          "recovered_session_date": "7:11 pm on 24 May, 2023"
+        },
+        {
+          "id": "99183876-826d-4e39-a6f4-6592919dc1f1",
+          "content": "Evan recommended Lake Louise to Sam for hiking: beautiful scenery, many nearby trails, about a two-hour drive away, and worth every minute for the stunning views and peaceful atmosphere; they agreed to go on a hike together someday",
+          "recovered_session_date": "10:18 am on 27 August, 2023"
+        },
+        {
+          "id": "7c9cfdb1-aa06-40b7-b014-bd0ff73ed901",
+          "content": "Sam enjoys being in nature, finds it peaceful and refreshing, hasn't been on a road trip in a long time, and wants to hike more now that he is getting healthier; he planned a possible day trip to Lake Louise",
+          "recovered_session_date": "10:18 am on 27 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa52",
+      "question": "埃文和萨姆计划在2023年9月一起做什么活动？",
+      "gold": "绘画",
+      "answer": "他们计划在2023年9月16日（星期六）一起进行绘画活动——Evan先帮Sam挑选绘画用品，然后两人一起画画，Sam把绘画当作放松的爱好。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "99183876-826d-4e39-a6f4-6592919dc1f1",
+          "content": "Evan recommended Lake Louise to Sam for hiking: beautiful scenery, many nearby trails, about a two-hour drive away, and worth every minute for the stunning views and peaceful atmosphere; they agreed to go on a hike together someday",
+          "recovered_session_date": "10:18 am on 27 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa53",
+      "question": "埃文和萨姆决定什么时候一起画画？",
+      "gold": "2023年9月11日之后的星期六。",
+      "answer": "2023年9月16日（星期六）。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "c7e85494-6aa4-40e6-ab12-6914a1d4c41f",
+          "content": "Evan started painting years ago after a friend gifted him a painting that inspired him; he's currently learning watercolor, where the teacher emphasizes observing nature and painting what you see",
+          "recovered_session_date": "6:17 pm on 19 August, 2023"
+        },
+        {
+          "id": "40085b1b-9ce7-4f05-a0e1-20d4bb9c3018",
+          "content": "Evan paints whatever is on his mind or how he feels — good memories or places he wants to go — viewing art as a form of self-expression and a way to communicate without words",
+          "recovered_session_date": "8:57 pm on 6 October, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa59",
+      "question": "萨姆和他的朋友决定什么时候去玩皮划艇？",
+      "gold": "2023年10月14日",
+      "answer": "萨姆和他的伙伴决定在2023年10月中旬（约10月14日）去Lake Tahoe玩皮划艇。",
+      "grade": "partial",
+      "no_year_selected_graph": [
+        {
+          "id": "99183876-826d-4e39-a6f4-6592919dc1f1",
+          "content": "Evan recommended Lake Louise to Sam for hiking: beautiful scenery, many nearby trails, about a two-hour drive away, and worth every minute for the stunning views and peaceful atmosphere; they agreed to go on a hike together someday",
+          "recovered_session_date": "10:18 am on 27 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa67",
+      "question": "埃文和萨姆计划什么时候一起去海滩旅行？",
+      "gold": "2023年12月",
+      "answer": "埃文和萨姆计划在2023年12月一起去Evan最喜欢的宁静海边看日落。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "7c9cfdb1-aa06-40b7-b014-bd0ff73ed901",
+          "content": "Sam enjoys being in nature, finds it peaceful and refreshing, hasn't been on a road trip in a long time, and wants to hike more now that he is getting healthier; he planned a possible day trip to Lake Louise",
+          "recovered_session_date": "10:18 am on 27 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa2",
+      "question": "戴夫是什么时候现场观看史密斯飞船演出的？",
+      "gold": "2023年3月26日之前的周末",
+      "answer": "2023年3月，在波士顿音乐节上（3月26日前后谈及），戴夫终于现场看到了他最喜欢的乐队 Aerosmith。",
+      "grade": "partial",
+      "no_year_selected_graph": [
+        {
+          "id": "3176d3ae-b8a3-4bcb-836f-1c468df3e7b1",
+          "content": "戴夫 (Dave) 向卡尔文推荐了波士顿的音乐场所，包括 Paradise Rock、House of Blues 和芬威公园 (Fenway Park)，并表示在卡尔文来波士顿时会带他逛遍这座城市，还会坐第一排看他的演出",
+          "recovered_session_date": "4:15 pm on 20 April, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa27",
+      "question": "卡尔文2023年8月在哪个城市？",
+      "gold": "迈阿密",
+      "answer": "卡尔文2023年8月在日本（他当时住在日本，8月中在那里办了一场演出收尾；8月底则去了迈阿密拍摄视频）。",
+      "grade": "partial",
+      "no_year_selected_graph": [
+        {
+          "id": "9d03f15f-2c9b-4f6e-a9f7-0e308b5e2205",
+          "content": "戴夫和卡尔文约定，等卡尔文到波士顿时一起吃饭，戴夫会带他去看自己在城里最喜欢的地方，体验波士顿的音乐和美食",
+          "recovered_session_date": "4:15 pm on 20 April, 2023"
+        },
+        {
+          "id": "4002694b-7c44-4668-8b71-bea9575d7fe5",
+          "content": "卡尔文计划与弗兰克·奥申一起在波士顿演出，期待为家乡观众演奏并体验波士顿的音乐圈；戴夫认为波士顿音乐圈很棒，有很多有才华的音乐家和演出场所，并表示会去为卡尔文加油",
+          "recovered_session_date": "6:06 pm on 31 May, 2023"
+        },
+        {
+          "id": "f4ad4ffd-1fc4-4ab5-9624-1850fe48292e",
+          "content": "卡尔文梦想着环游世界巡演，为不同的人表演并建立联系，希望自己的音乐能触及全球观众并产生影响；他计划在完成弗兰克·奥申 (Frank Ocean) 巡演之后前往波士顿，期待体验那里超棒的音乐氛围",
+          "recovered_session_date": "4:15 pm on 20 April, 2023"
+        },
+        {
+          "id": "e637e45e-3d52-4207-823c-be62712b7726",
+          "content": "卡尔文展示了自己在法拉利上花了不少功夫改装的照片，并期待在波士顿时看更多戴夫的车",
+          "recovered_session_date": "4:15 pm on 20 April, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa31",
+      "question": "2023年8月的最后两周戴夫在哪里？",
+      "gold": "圣弗朗西斯科",
+      "answer": "2023年8月的最后两周，戴夫在圣弗朗西斯科参加汽车改装工作坊，学习汽车工程并亲手打造定制车，直到9月1日才从圣弗朗西斯科回来。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "ff0e4d9e-cdfe-4728-a858-e100c58c9100",
+          "content": "戴夫在工作坊中为经典肌肉车做了发动机更换和悬挂改装，并正在学习车身改装，该项目是一辆银色涂装的Corvette，他想在保留经典肌肉车风格的同时融入现代元素",
+          "recovered_session_date": "5:22 pm on 11 August, 2023"
+        },
+        {
+          "id": "ebc4b5bd-e5d0-4205-a314-bd39b118ea7b",
+          "content": "戴夫透露他一直在修一辆从废品场找到的福特野马，当时车况很差但他看到了潜力，经过大量修复工作后已完成，并分享了修复后的红色野马停在田野里的照片，觉得让旧车重获新生非常满足",
+          "recovered_session_date": "2:44 pm on 4 October, 2023"
+        },
+        {
+          "id": "24af0043-27e2-400c-b182-eae001d5b73c",
+          "content": "戴夫 (Dave) 最近参加了一个经典车展览活动，展出了许多经典车，他还和一些车主聊天并听了他们精彩的故事，觉得非常鼓舞",
+          "recovered_session_date": "11:53 am on 23 March, 2023"
+        },
+        {
+          "id": "487cd90f-413f-4a7e-a9bf-7d099d50faa6",
+          "content": "戴夫的梦想是从零开始造一辆定制车；目前他继续做修车项目并帮助客户，同时继续学习汽车工程知识",
+          "recovered_session_date": "1:16 pm on 3 May, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa43",
+      "question": "2023年10月3日卡尔文在哪个城市？",
+      "gold": "波士顿",
+      "answer": "波士顿",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "9d03f15f-2c9b-4f6e-a9f7-0e308b5e2205",
+          "content": "戴夫和卡尔文约定，等卡尔文到波士顿时一起吃饭，戴夫会带他去看自己在城里最喜欢的地方，体验波士顿的音乐和美食",
+          "recovered_session_date": "4:15 pm on 20 April, 2023"
+        },
+        {
+          "id": "4002694b-7c44-4668-8b71-bea9575d7fe5",
+          "content": "卡尔文计划与弗兰克·奥申一起在波士顿演出，期待为家乡观众演奏并体验波士顿的音乐圈；戴夫认为波士顿音乐圈很棒，有很多有才华的音乐家和演出场所，并表示会去为卡尔文加油",
+          "recovered_session_date": "6:06 pm on 31 May, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa48",
+      "question": "2023年10月的第一个周末戴夫在做什么？",
+      "gold": "参加车展",
+      "answer": "2023年10月的第一个周末（10月6日，周五），戴夫参加了一场车展，看到了许多酷炫的车辆并体验了改车，玩得很开心。",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "ff0e4d9e-cdfe-4728-a858-e100c58c9100",
+          "content": "戴夫在工作坊中为经典肌肉车做了发动机更换和悬挂改装，并正在学习车身改装，该项目是一辆银色涂装的Corvette，他想在保留经典肌肉车风格的同时融入现代元素",
+          "recovered_session_date": "5:22 pm on 11 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa57",
+      "question": "戴夫在2023年10月养成了什么爱好？",
+      "gold": "摄影",
+      "answer": "摄影",
+      "grade": "exact",
+      "no_year_selected_graph": [
+        {
+          "id": "d2cdc3a0-b402-45d1-8b1d-2877243104e6",
+          "content": "戴夫与朋友们约定定期在公园散步（包括波士顿一处有河、船和日落景观的公园），觉得这是共度时光并保持活跃的好方式",
+          "recovered_session_date": "7:56 pm on 7 July, 2023"
+        },
+        {
+          "id": "ff0e4d9e-cdfe-4728-a858-e100c58c9100",
+          "content": "戴夫在工作坊中为经典肌肉车做了发动机更换和悬挂改装，并正在学习车身改装，该项目是一辆银色涂装的Corvette，他想在保留经典肌肉车风格的同时融入现代元素",
+          "recovered_session_date": "5:22 pm on 11 August, 2023"
+        },
+        {
+          "id": "064f5d74-3520-4b43-9fe8-08ac2b0a81d2",
+          "content": "戴夫发现了一个宁静的去处——树下有条长椅、树上是粉色花朵（樱花），他觉得特别适合放松身心，并邀请卡尔文（Calvin）以后一起去那里",
+          "recovered_session_date": "10:54 am on 17 November, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa67",
+      "question": "2023年10月的最后一周卡尔文在哪里？",
+      "gold": "东京",
+      "answer": "2023年10月的最后一周，卡尔文大部分时间在波士顿——10月24日他和一位高中朋友一起参观了波士顿的景点（称赞了当地的建筑和历史）。据11月2日的记忆，10月下旬他还在日本的房子里为新专辑办了一场小型试听派对，因此这一周他往返于波士顿与日本之间。",
+      "grade": "partial",
+      "no_year_selected_graph": [
+        {
+          "id": "79c76c4c-8cff-4e78-bab8-dbebcbfda602",
+          "content": "卡尔文希望去日本的一个小镇看山景和雪峰，那里景色壮美，还没去过但已在待办清单上，计划在弗兰克·奥申的巡演结束后前往",
+          "recovered_session_date": "3:15 pm on 21 June, 2023"
+        }
+      ]
+    }
+  ]
+}
