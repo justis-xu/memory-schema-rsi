@@ -1,0 +1,302 @@
+{
+  "scope": "2026-09-25 中文无图旧归档检索并集的唯一向量记忆 ID；另看当前结构提取缓存（版本可能不同）",
+  "method": "词面查记忆正文任何位置的 User/Assistant/用户/助手/助理，并另记开头泛称；结构缓存查精确泛称实体和含泛称的关系。不进行语义归属判定。",
+  "memory_counts": {
+    "visible_unique_ids": 1780,
+    "generic_anywhere_ids": 19,
+    "generic_prefix_ids": 11
+  },
+  "memories_with_generic_reference": [
+    {
+      "conversation": "conv-26",
+      "speaker_a": "卡罗琳",
+      "speaker_b": "梅拉妮",
+      "memory_id": "4726ac6f-474b-4795-b1b5-e73d6016b428",
+      "session_id": "session_1",
+      "generic_at_start": true,
+      "content": "User（卡罗琳）于2023年5月7日参加了一个LGBTQ互助小组，听到鼓舞人心的跨性别者故事，感到开心和感激"
+    },
+    {
+      "conversation": "conv-41",
+      "speaker_a": "约翰",
+      "speaker_b": "玛丽亚",
+      "memory_id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+      "session_id": "session_23",
+      "generic_at_start": false,
+      "content": "Maria agreed to attend the flood-recovery community meeting and continue working with User to improve their neighborhood, calling User's helping spirit inspiring"
+    },
+    {
+      "conversation": "conv-41",
+      "speaker_a": "约翰",
+      "speaker_b": "玛丽亚",
+      "memory_id": "3c6c595b-74f0-4528-a22d-54565739b069",
+      "session_id": "session_1",
+      "generic_at_start": true,
+      "content": "User (John) returned from a fun family road trip on December 16, 2022"
+    },
+    {
+      "conversation": "conv-41",
+      "speaker_a": "约翰",
+      "speaker_b": "玛丽亚",
+      "memory_id": "19c7c84d-c96b-4efe-913c-c5b4d895e94b",
+      "session_id": "session_19",
+      "generic_at_start": false,
+      "content": "约翰在 2023 年 6 月中旬左右升职为助理经理，这是他等待已久的事情，他为此开心得不得了"
+    },
+    {
+      "conversation": "conv-41",
+      "speaker_a": "约翰",
+      "speaker_b": "玛丽亚",
+      "memory_id": "c10122e0-ec23-4065-81ad-4072971a5686",
+      "session_id": "session_23",
+      "generic_at_start": false,
+      "content": "In early July 2023, User was gathering people together to discuss the flood damage and possible solutions, and invited Maria to join the meeting, which she gladly accepted"
+    },
+    {
+      "conversation": "conv-41",
+      "speaker_a": "约翰",
+      "speaker_b": "玛丽亚",
+      "memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+      "session_id": "session_23",
+      "generic_at_start": true,
+      "content": "User's former neighborhood was hit by a severe flood the week before July 7, 2023, which destroyed many homes due to poor existing infrastructure; the disaster reinforced User's resolve to improve their community's infrastructure"
+    },
+    {
+      "conversation": "conv-41",
+      "speaker_a": "约翰",
+      "speaker_b": "玛丽亚",
+      "memory_id": "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+      "session_id": "session_23",
+      "generic_at_start": true,
+      "content": "User keeps a photo of his family — taken on a trip for his daughter Sara's birthday in fall 2022, showing them on train tracks in autumn — and looks at it during hard times as a reminder of why he works for community change"
+    },
+    {
+      "conversation": "conv-41",
+      "speaker_a": "约翰",
+      "speaker_b": "玛丽亚",
+      "memory_id": "fe0f098e-5c50-46d7-8f9a-6aa7194740bd",
+      "session_id": "session_23",
+      "generic_at_start": true,
+      "content": "User says Maria's support and friendship mean everything to him and motivate him to keep working for community change; he sometimes doubts he is making a difference but her encouragement helps him persevere"
+    },
+    {
+      "conversation": "conv-43",
+      "speaker_a": "蒂姆",
+      "speaker_b": "约翰",
+      "memory_id": "eae136c8-9f70-4410-b17c-48d24ca2a8aa",
+      "session_id": "session_24",
+      "generic_at_start": false,
+      "content": "蒂姆（User）的英国文学课在2023年12月过得艰难，他对一个系列作品做了分析，觉得应该还行"
+    },
+    {
+      "conversation": "conv-44",
+      "speaker_a": "奥黛丽",
+      "speaker_b": "安德鲁",
+      "memory_id": "edab5c7c-0b88-42cb-b480-54a88fd7ab4c",
+      "session_id": "session_20",
+      "generic_at_start": false,
+      "content": "安德鲁（assistant）和女朋友计划在2023年11月带小狗托比一起去海边玩，他为此感到非常期待"
+    },
+    {
+      "conversation": "conv-44",
+      "speaker_a": "奥黛丽",
+      "speaker_b": "安德鲁",
+      "memory_id": "8540b4cf-81fd-46f5-877c-54e98f0fe3df",
+      "session_id": "session_11",
+      "generic_at_start": false,
+      "content": "助理想养一只狗，但觉得找合适的住处和合适的狗都很难；目前已找到几个可以牵绳遛狗的公园，但仍希望找到能让狗自由奔跑的开阔场地，并表示找到后会告诉用户"
+    },
+    {
+      "conversation": "conv-47",
+      "speaker_a": "詹姆斯",
+      "speaker_b": "约翰",
+      "memory_id": "04fcff32-3726-4471-af72-73021fe72312",
+      "session_id": "session_5",
+      "generic_at_start": true,
+      "content": "User adopted a puppy named Ned the week of April 5, 2022 from a shelter in Stamford, and having the puppy has made life at home much happier. A photo also shows Ned alongside a cat."
+    },
+    {
+      "conversation": "conv-47",
+      "speaker_a": "詹姆斯",
+      "speaker_b": "约翰",
+      "memory_id": "255c0283-a75c-427f-a9e1-c94b6aad40f5",
+      "session_id": "session_1",
+      "generic_at_start": true,
+      "content": "User's name is James. He is deeply motivated by video games, which bring him endless joy and excitement, and they help him relax"
+    },
+    {
+      "conversation": "conv-48",
+      "speaker_a": "黛博拉",
+      "speaker_b": "乔琳",
+      "memory_id": "20ff87ea-4121-4de7-ab00-0312f3a130cb",
+      "session_id": "session_30",
+      "generic_at_start": false,
+      "content": "乔琳（助手/好友）分享了她和伴侣去年在一个音乐节上跳舞的合影，说音乐节是她表达自我、远离日常压力的方式；她刚和伴侣旅行回来"
+    },
+    {
+      "conversation": "conv-49",
+      "speaker_a": "埃文",
+      "speaker_b": "萨姆",
+      "memory_id": "ec3d24dd-1763-4e20-9ba3-015891ec81d6",
+      "session_id": "session_1",
+      "generic_at_start": true,
+      "content": "User (Evan) recently bought a new Toyota Prius; his old Prius broke down and he decided to repair it and sell it"
+    },
+    {
+      "conversation": "conv-49",
+      "speaker_a": "埃文",
+      "speaker_b": "萨姆",
+      "memory_id": "3a3d6b8a-18a3-4d70-8584-513666cfdebc",
+      "session_id": "session_2",
+      "generic_at_start": true,
+      "content": "User (Evan) took his family on a road trip to Jasper National Park over the weekend of May 20-21, 2023, driving the Icefields Parkway and enjoying glaciers and lakes; he shared a photo of a glacier"
+    },
+    {
+      "conversation": "conv-49",
+      "speaker_a": "埃文",
+      "speaker_b": "萨姆",
+      "memory_id": "8059cb81-90a0-480c-bca5-1109753860ea",
+      "session_id": "session_1",
+      "generic_at_start": true,
+      "content": "User went on a family road trip in his new Prius to the Rocky Mountains (Canadian Rockies) during the week before May 18, 2023, hiking trails and enjoying sunset lake and mountain scenery"
+    },
+    {
+      "conversation": "conv-49",
+      "speaker_a": "埃文",
+      "speaker_b": "萨姆",
+      "memory_id": "8520306b-5df8-46be-8afb-805b3c284a39",
+      "session_id": "session_1",
+      "generic_at_start": false,
+      "content": "Sam (the assistant-side conversation partner) loves hiking but hasn't gone in a long time; hiked with his dad at age ten, went a long distance, and considers it a special, cherished memory"
+    },
+    {
+      "conversation": "conv-49",
+      "speaker_a": "埃文",
+      "speaker_b": "萨姆",
+      "memory_id": "dbc78f1e-fe6b-4b63-b279-d6cba1c6e2db",
+      "session_id": "session_1",
+      "generic_at_start": true,
+      "content": "User took up watercolor painting a few years ago after a friend introduced him and gave him some tips, and immediately became passionate about it; he shared a watercolor painting of a cactus in the desert"
+    }
+  ],
+  "graph_cache_counts": {
+    "cache_memory_ids": 1705,
+    "cache_ids_in_archive_union": 1699,
+    "entity_mentions": 4325,
+    "relationship_mentions": 901,
+    "generic_entity_mentions": 8,
+    "relationships_with_generic_reference": 4
+  },
+  "conv41_entity_alias_mentions": {
+    "John": 118,
+    "约翰": 18,
+    "User": 5
+  },
+  "graph_cache_generic_items": [
+    {
+      "memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+      "kind": "entity",
+      "value": {
+        "name": "User",
+        "type": "person"
+      }
+    },
+    {
+      "memory_id": "c10122e0-ec23-4065-81ad-4072971a5686",
+      "kind": "entity",
+      "value": {
+        "name": "User",
+        "type": "person"
+      }
+    },
+    {
+      "memory_id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+      "kind": "entity",
+      "value": {
+        "name": "User",
+        "type": "person"
+      }
+    },
+    {
+      "memory_id": "fe0f098e-5c50-46d7-8f9a-6aa7194740bd",
+      "kind": "entity",
+      "value": {
+        "name": "User",
+        "type": "person"
+      }
+    },
+    {
+      "memory_id": "fe0f098e-5c50-46d7-8f9a-6aa7194740bd",
+      "kind": "relationship",
+      "value": {
+        "from_entity": "User",
+        "relation": "knows",
+        "to_entity": "Maria"
+      }
+    },
+    {
+      "memory_id": "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+      "kind": "entity",
+      "value": {
+        "name": "User",
+        "type": "person"
+      }
+    },
+    {
+      "memory_id": "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+      "kind": "relationship",
+      "value": {
+        "from_entity": "Sara",
+        "relation": "family_of",
+        "to_entity": "User"
+      }
+    },
+    {
+      "memory_id": "7f50bc2e-fb48-4af7-8f97-91834f98037f",
+      "kind": "entity",
+      "value": {
+        "name": "助理",
+        "type": "person"
+      }
+    },
+    {
+      "memory_id": "8540b4cf-81fd-46f5-877c-54e98f0fe3df",
+      "kind": "entity",
+      "value": {
+        "name": "助理",
+        "type": "person"
+      }
+    },
+    {
+      "memory_id": "240fc949-59b8-49fa-94fc-77806bf7dec5",
+      "kind": "entity",
+      "value": {
+        "name": "用户",
+        "type": "person"
+      }
+    },
+    {
+      "memory_id": "240fc949-59b8-49fa-94fc-77806bf7dec5",
+      "kind": "relationship",
+      "value": {
+        "from_entity": "用户",
+        "relation": "owns",
+        "to_entity": "狗"
+      }
+    },
+    {
+      "memory_id": "04fcff32-3726-4471-af72-73021fe72312",
+      "kind": "relationship",
+      "value": {
+        "from_entity": "user",
+        "relation": "owns",
+        "to_entity": "Ned"
+      }
+    }
+  ],
+  "limits": [
+    "旧归档检索并集不是完整历史 Mem0 快照；当前结构缓存不一定与旧归档版本完全一致。",
+    "泛称少不证明人物归属正确；命名记忆也可能把事实归错人。",
+    "User 在单对话中可能是 speaker_a 的可解释别名，不自动计为错误。"
+  ]
+}
