@@ -1,0 +1,225 @@
+{
+  "scope": "Four fixed Chinese LoCoMo cases with contrasting source-to-answer failure points",
+  "source_packet": "results/analysis/m2_fact_funnel_packet_20260926.json",
+  "source_dataset": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
+  "method": "Manual atom labels; source text, final-context memory IDs and archived answers copied and resolved by script",
+  "cases": [
+    {
+      "case_id": "locomo_conv-30_qa5",
+      "question": "乔恩认为理想的舞蹈工作室应该是什么样的？",
+      "gold": "在水边，有自然光和马利地胶",
+      "archived_answer": "一个俯瞰大海/水边的开放空间（2023年1月20日他在照片中分享了这个概念）。",
+      "archived_strict_grade": "partial",
+      "atoms": [
+        {
+          "claim": "临水",
+          "source_turns": [
+            {
+              "dia_id": "D1:20",
+              "session_id": "session_1",
+              "session_date": "4:04 pm on 20 January, 2023",
+              "speaker": "乔恩",
+              "text": "哇，那一定很棒！看看我心目中理想的临水舞蹈工作室吧。",
+              "query": "dance studio overlooking ocean"
+            }
+          ],
+          "final_context_memories": [
+            {
+              "id": "0d8e6624-802d-4167-b7d3-3746bd16c393",
+              "rank": 1,
+              "content": "乔恩理想中的舞蹈工作室是一个俯瞰大海（水边）的开放空间，他在一张照片中分享了这个概念。"
+            }
+          ],
+          "manual_diagnosis": "入槽且作答",
+          "manual_rationale": "源话、记忆和回答都保留临水"
+        },
+        {
+          "claim": "自然采光",
+          "source_turns": [
+            {
+              "dia_id": "D2:4",
+              "session_id": "session_2",
+              "session_date": "2:32 pm on 29 January, 2023",
+              "speaker": "乔恩",
+              "text": "嘿，吉娜！谢谢关心。我正在为舞蹈工作室寻找理想的场地，这一路真是不容易！我看了很多不同的地方，想象着空间会是什么样子。我甚至找到了一个自然采光很好的地方！哦，我昨天去了巴黎！真的太酷了。",
+              "query": "dance studio natural lighting spacious room large windows dance mirrors"
+            }
+          ],
+          "final_context_memories": [
+            {
+              "id": "9050d972-6347-4473-a97d-ccabe7f6a903",
+              "rank": 4,
+              "content": "截至2023年1月29日，乔恩正在为舞蹈工作室寻找理想场地，看了很多不同的地方；他找到一个市中心、交通方便且自然采光很好的候选场地，还需要检查面积和地板质量"
+            }
+          ],
+          "manual_diagnosis": "入槽但答案遗漏",
+          "manual_rationale": "第 4 条记忆保留自然采光，回答只写临水"
+        },
+        {
+          "claim": "马利地胶",
+          "source_turns": [
+            {
+              "dia_id": "D2:8",
+              "session_id": "session_2",
+              "session_date": "2:32 pm on 29 January, 2023",
+              "speaker": "乔恩",
+              "text": "是啊，好的地板很关键。我想要马利地胶，那是舞蹈工作室通常用的。它很棒，因为有一定摩擦力但又能让你自如移动，而且耐用又容易清洁。",
+              "query": null
+            }
+          ],
+          "final_context_memories": [
+            {
+              "id": "13c9777f-dbd6-41f1-8eec-15802adfb5f4",
+              "rank": 6,
+              "content": "乔恩的舞蹈工作室计划使用马利（Marley）地胶地板，因为它摩擦力和滑动的平衡恰到好处，且耐用易清洁，能保障他和学生安全跳舞"
+            }
+          ],
+          "manual_diagnosis": "入槽但答案遗漏",
+          "manual_rationale": "第 6 条记忆保留地胶，回答只写临水"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa58",
+      "question": "梅拉妮是什么时候在陶艺课上做了一个盘子的？",
+      "gold": "2023年8月24日",
+      "archived_answer": "2023年8月25日之前不久（2023年8月下旬）——梅拉妮在陶艺课上做了一个带花卉图案的紫色碗/盘子。",
+      "archived_strict_grade": "partial",
+      "atoms": [
+        {
+          "claim": "昨天做盘子，对应 2023-08-24",
+          "source_turns": [
+            {
+              "dia_id": "D14:4",
+              "session_id": "session_14",
+              "session_date": "1:33 pm on 25 August, 2023",
+              "speaker": "梅拉妮",
+              "text": "是啊，我昨天在陶艺课上做的。我很喜欢！陶艺既放松又有创意。你试过吗？",
+              "query": null
+            }
+          ],
+          "final_context_memories": [
+            {
+              "id": "5c43f1b2-8289-4513-9e28-914dedd5ae03",
+              "rank": 1,
+              "content": "梅拉妮最近在陶艺课上做了一个带花卉图案的紫色碗/盘子，她很喜欢，觉得陶艺既放松又有创意"
+            }
+          ],
+          "manual_diagnosis": "提取后时间精度丢失",
+          "manual_rationale": "源话是昨天，记忆变成最近；会话日只能在保留昨天时用于换算"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa41",
+      "question": "蒂姆写什么类型的小说？",
+      "gold": "带有情节转折的奇幻小说",
+      "archived_answer": "蒂姆写奇幻小说（fantasy），目前正在创作一部进展顺利的奇幻小说。",
+      "archived_strict_grade": "partial",
+      "atoms": [
+        {
+          "claim": "奇幻小说",
+          "source_turns": [
+            {
+              "dia_id": "D15:3",
+              "session_id": "session_15",
+              "session_date": "5:51 pm on 21 October, 2023",
+              "speaker": "蒂姆",
+              "text": "那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！",
+              "query": null
+            }
+          ],
+          "final_context_memories": [
+            {
+              "id": "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+              "rank": 1,
+              "content": "蒂姆正在写一部奇幻小说，进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作能创造一个全新的世界，带给他很多快乐"
+            }
+          ],
+          "manual_diagnosis": "入槽且作答",
+          "manual_rationale": "第 1 条记忆和答案都保留奇幻小说"
+        },
+        {
+          "claim": "情节转折",
+          "source_turns": [
+            {
+              "dia_id": "D16:1",
+              "session_id": "session_16",
+              "session_date": "11:41 am on 6 November, 2023",
+              "speaker": "蒂姆",
+              "text": "嘿约翰，好久不见！希望你一切都好。自上次聊天以来，发生了一些事。上周，我遇到了一个巨大的写作难题——卡在一个情节转折上，怎么也找不到出路。真是令人抓狂，但我一直坚持，最终思路又畅通了。",
+              "query": null
+            }
+          ],
+          "final_context_memories": [
+            {
+              "id": "983b9769-e399-435b-81f6-b1d94008c683",
+              "rank": 6,
+              "content": "蒂姆（Tim）在2023年10月底遇到一个巨大的写作难题——在奇幻小说的一个情节转折上卡住，最终坚持下来思路重新畅通；他认为挣扎过后的满足感正是写作的美妙之处"
+            }
+          ],
+          "manual_diagnosis": "入槽但答案遗漏",
+          "manual_rationale": "第 6 条记忆保留情节转折，回答未提"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa96",
+      "question": "蒂姆最喜欢弹哪部电影的主题曲？",
+      "gold": "《哈利·波特与魔法石》",
+      "archived_answer": "《星球大战》的主题曲。蒂姆最钟爱的电影系列是《星球大战》，百看不厌，而他学钢琴时最喜欢弹的就是自己非常喜欢的电影的主题曲，对应《星球大战》。\n\nANSWER：《星球大战》",
+      "archived_strict_grade": "wrong",
+      "atoms": [
+        {
+          "claim": "最爱弹的主题曲属于《哈利·波特与魔法石》",
+          "source_turns": [
+            {
+              "dia_id": "D8:14",
+              "session_id": "session_8",
+              "session_date": "4:29 pm on 21 August, 2023",
+              "speaker": "蒂姆",
+              "text": "谢谢！我喜欢在钢琴上弹各种曲子，但我最喜欢弹的是一首我非常喜欢的电影的主题曲。它让我想起很多美好的回忆。",
+              "query": null
+            },
+            {
+              "dia_id": "D8:15",
+              "session_id": "session_8",
+              "session_date": "4:29 pm on 21 August, 2023",
+              "speaker": "约翰",
+              "text": "哇，真酷！音乐真的能把回忆带回眼前、唤起情感，不是吗？就像带我们回到过去一样。能多跟我说说那部电影以及它带给你的回忆吗？",
+              "query": null
+            },
+            {
+              "dia_id": "D8:16",
+              "session_id": "session_8",
+              "session_date": "4:29 pm on 21 August, 2023",
+              "speaker": "蒂姆",
+              "text": "好啊，《哈利·波特与魔法石》对我来说很特别。它是这个系列的第一部电影，带给我很多美好的回忆。和家人一起看太棒了。真是太神奇了！",
+              "query": null
+            }
+          ],
+          "final_context_memories": [
+            {
+              "id": "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+              "rank": 3,
+              "content": "蒂姆开始学弹钢琴，虽然有个学习曲线，但看到自己进步很有成就感；他最喜欢弹的是一首他非常喜欢的电影的主题曲"
+            },
+            {
+              "id": "e5298e7a-052a-41d5-9c67-1da47589696c",
+              "rank": 7,
+              "content": "《哈利·波特与魔法石》对蒂姆来说很特别，是该系列的第一部电影，他常和家人一起拿着零食、盖上毯子舒舒服服地看，带给他很多美好回忆"
+            }
+          ],
+          "manual_diagnosis": "跨轮关系未显式保留，答案错接",
+          "manual_rationale": "问答链由 D8:15 的那部电影连接；两条记忆分别保留主题曲和电影，未显式连接，回答猜成星球大战"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Four mechanism cases are not a prevalence sample.",
+    "Gold evidence and manual source-turn links are diagnostic oracle data unavailable to the live system.",
+    "A memory's archived final-context rank does not prove the answerer used it.",
+    "The cross-turn Harry Potter reference is a discourse inference supported by the adjacent question, not an explicit single-turn equation."
+  ]
+}

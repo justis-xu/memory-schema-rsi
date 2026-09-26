@@ -74,4 +74,5 @@
 - 当前主要阶段文档还包括：`docs/m2_fact_level_funnel_zh.md`、`docs/m2_precision_judge_flips_zh.md`、`docs/m2_temporal_flip_sources_zh.md`、`docs/m2_relative_day_funnel_zh.md`、`docs/m2_speaker_surface_audit_zh.md`、`docs/m2_image_query_provenance_zh.md` 及对应小 POC 文档。它们是有边界的专项，不意味着“全部历史数据已穷尽”。
 - 总体仍需把历史数据清单、已分析覆盖和未覆盖范围核完整，并把多个专项收束成一份中文总复盘；不要用“没有发现更多问题”替代覆盖证明。优先依实际归档和代码证据，不重复已确立的结论；每段写清结论、置信度和下一步。
 - 跨专项综合判断已写入 `docs/m2_integrated_retrospective_zh.md`：把旧图 +17、2,042 入槽/2,084 挤出、同上下文翻分、事实级 15 题、Jev 扩拉、来源缺口、RSI 代理和 HF 覆盖合成逐题故障定位顺序及最小实验队列。它是决策索引而非新评测；当前纯中文库的无图基线、图/Jev 受控净收益、中文 LongMemEval 和真实无金标 RSI 仍未知。下一阶段优先把已核病例做逐事实来源侧车表，再挑源支持且具有鉴别力的中文病例做冻结条件 POC；不要在图独见八题或旧翻分上重复寻找同一结论。
+- 已完成四道中文题、七个答案要素的可复算来源侧车表：`docs/m2_fact_support_sidecar_zh.md`、`scripts/m2_build_fact_support_sidecar.py`、`results/analysis/m2_fact_support_sidecar_20260926.json`。`conv-30_qa5` 的自然采光/马利地胶和 `conv-43_qa41` 的情节转折已入旧最终上下文却未答出；`conv-26_qa58` 的“昨天”在提取时变“最近”；`conv-43_qa96` 的主题曲与电影靠 `D8:15` 追问连接，旧两条摘要没保留关系。`conv-43_qa41` 的问题只问类型而金标还要情节细节，须先核评分口径。此表是人工诊断 oracle，不是线上自动来源能力，也非总体比例；下一步挑一层做固定候选 POC，并逐项审反伤。
 - 用户最近询问“是不是已经分析完一轮”，准确答复是：主要专项的一轮分析基本做过，但全量历史数据总复盘与 POC 尚未完成。用户要求持续推进完整使命；阶段边界用于提交和汇报，不是停止条件，也不能把下一波收窄为单一任务。
