@@ -1,0 +1,936 @@
+{
+  "scope": "中文融合图时间题翻分与中文 LoCoMo 2022-2024 显式年份问句的源会话核查",
+  "limits": "年份不一致仅是候选筛选；回忆往事、未来计划和对抗题需人工区分。翻分案例是干预后选出的观察，不可按赢/输推因果。",
+  "year_screen": {
+    "counts": {
+      "J_cases": 1540,
+      "J_explicit_2022_2024_year": 191,
+      "J_explicit_year_with_parseable_evidence": 189,
+      "question_year_disjoint_from_evidence_session_year": 4
+    },
+    "candidates": [
+      {
+        "case_id": "locomo_conv-41_qa68",
+        "category": 4,
+        "question_zh": "玛丽亚在2023年12月开始上什么类型的健身课？",
+        "gold_zh": "空中瑜伽",
+        "question_en": "What type of workout class did Maria start doing in December 2023?",
+        "gold_en": "aerial yoga",
+        "question_years": [
+          "2023"
+        ],
+        "evidence_session_years": [
+          "2022"
+        ],
+        "evidence_ids": [
+          "D1:3"
+        ],
+        "source_zh": {
+          "D1:3": {
+            "session": "session_1",
+            "session_date_raw": "11:01 am on 17 December, 2022",
+            "session_date_iso": "2022-12-17T11:01:00",
+            "text": "我一直忙着在流浪者收容所做志愿者，还有保持健身。刚开始上空中瑜伽，很棒。你有没有试过其他不错的健身课程？"
+          }
+        },
+        "source_en": {
+          "D1:3": {
+            "session": "session_1",
+            "session_date_raw": "11:01 am on 17 December, 2022",
+            "session_date_iso": "2022-12-17T11:01:00",
+            "text": "Been busy volunteering at the homeless shelter and keeping fit. Just started doing aerial yoga, it's great. Have you tried any other cool workout classes?"
+          }
+        }
+      },
+      {
+        "case_id": "locomo_conv-41_qa69",
+        "category": 4,
+        "question_zh": "玛丽亚在2023年12月向流浪者收容所捐赠了什么？",
+        "gold_zh": "旧汽车",
+        "question_en": "What did Maria donate to a homeless shelter in December 2023?",
+        "gold_en": "old car",
+        "question_years": [
+          "2023"
+        ],
+        "evidence_session_years": [
+          "2022"
+        ],
+        "evidence_ids": [
+          "D2:1"
+        ],
+        "source_zh": {
+          "D2:1": {
+            "session": "session_2",
+            "session_date_raw": "6:10 pm on 22 December, 2022",
+            "session_date_iso": "2022-12-22T18:10:00",
+            "text": "嘿，约翰，我们好几天没聊了。这期间，我昨天把我的旧车捐给了我做志愿者的一个无家可归者收容所。活动进行得怎么样？我很想听听。"
+          }
+        },
+        "source_en": {
+          "D2:1": {
+            "session": "session_2",
+            "session_date_raw": "6:10 pm on 22 December, 2022",
+            "session_date_iso": "2022-12-22T18:10:00",
+            "text": "Hey John, been a few days since we chatted. In the meantime, I donated my old car to a homeless shelter I volunteer at yesterday. How's the campaign going? I'm keen to hearabout it."
+          }
+        }
+      },
+      {
+        "case_id": "locomo_conv-47_qa61",
+        "category": 2,
+        "question_zh": "2023年10月詹姆斯和萨曼莎之间的大事是什么？",
+        "gold_zh": "他们决定住在一起，并在离麦基酒吧不远的地方租了一间公寓。",
+        "question_en": "What was James' big moment with Samantha in October 2023?",
+        "gold_en": "They decided to live together and rented an apartment not far from McGee's bar.",
+        "question_years": [
+          "2023"
+        ],
+        "evidence_session_years": [
+          "2022"
+        ],
+        "evidence_ids": [
+          "D29:8",
+          "D29:10"
+        ],
+        "source_zh": {
+          "D29:8": {
+            "session": "session_29",
+            "session_date_raw": "12:37 am on 31 October, 2022",
+            "session_date_iso": "2022-10-31T00:37:00",
+            "text": "我确实有新消息，萨曼莎和我决定搬到一起住了！"
+          },
+          "D29:10": {
+            "session": "session_29",
+            "session_date_raw": "12:37 am on 31 October, 2022",
+            "session_date_iso": "2022-10-31T00:37:00",
+            "text": "当然，这是我们共同做出的深思熟虑的决定。我们租了一间离McGee's酒吧不远的公寓。"
+          }
+        },
+        "source_en": {
+          "D29:8": {
+            "session": "session_29",
+            "session_date_raw": "12:37 am on 31 October, 2022",
+            "session_date_iso": "2022-10-31T00:37:00",
+            "text": "I actually have something new, Samantha and I have decided to move in together!"
+          },
+          "D29:10": {
+            "session": "session_29",
+            "session_date_raw": "12:37 am on 31 October, 2022",
+            "session_date_iso": "2022-10-31T00:37:00",
+            "text": "Of course, this was a mutual and informed decision. We rented an apartment not far from McGee's bar."
+          }
+        }
+      },
+      {
+        "case_id": "locomo_conv-48_qa28",
+        "category": 3,
+        "question_zh": "2022年夏天乔琳在哪个国家？",
+        "gold_zh": "哥伦比亚",
+        "question_en": "In what country was Jolene during summer 2022?",
+        "gold_en": "Colombia",
+        "question_years": [
+          "2022"
+        ],
+        "evidence_session_years": [
+          "2023"
+        ],
+        "evidence_ids": [
+          "D4:33"
+        ],
+        "source_zh": {
+          "D4:33": {
+            "session": "session_4",
+            "session_date_raw": "9:48 am on 4 February, 2023",
+            "session_date_iso": "2023-02-04T09:48:00",
+            "text": "这是我去年夏天在波哥大度假时拍的照片。看着水面上的日落，美得让人心静。它确实让我感受到大自然抚慰人心的力量。"
+          }
+        },
+        "source_en": {
+          "D4:33": {
+            "session": "session_4",
+            "session_date_raw": "9:48 am on 4 February, 2023",
+            "session_date_iso": "2023-02-04T09:48:00",
+            "text": "Here's a picture I took on vacation last summer in Bogota. It was so beautiful and calming watching the sunset over the water. It definitely made me appreciate nature's calming power."
+          }
+        }
+      }
+    ]
+  },
+  "temporal_graph_flips": {
+    "counts": {
+      "paired_temporal": 321,
+      "graph_selected_temporal": 197,
+      "graph_only": 9,
+      "baseline_only": 8
+    },
+    "cases": [
+      {
+        "case_id": "locomo_conv-26_qa41",
+        "outcome": "graph_only",
+        "question": "卡罗琳是什么时候加入一个新的活动组织的？",
+        "gold": "2023年7月20日之前的那个星期二",
+        "baseline_answer": "卡罗琳于2023年7月中旬（约7月18日，一个周二）加入了新的LGBTQ活动组织\"Connected LGBTQ Activists\"。",
+        "graph_answer": "卡罗琳于2023年7月18日（周二）加入了新的LGBTQ活动组织\"Connected LGBTQ Activists\"。",
+        "baseline_judge": {
+          "grade": "partial",
+          "missing": [
+            "具体日期是大约/约（7月18日），而标准答案给出了确定的日期"
+          ],
+          "reason": "日期推算正确（2023年7月18日，星期二），但用“约”进行了模糊限定，而标准答案给出了确定的时间。"
+        },
+        "graph_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "July 18, 2023 is indeed the Tuesday before July 20, 2023, matching the gold date at greater specificity."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "784e5545-ce5d-4a7f-a937-ff6a172906b1",
+            "content": "卡罗琳于2023年6月23日（周五）参加了一个LGBTQ+心理咨询工作坊，了解了不同的治疗方法以及如何更好地为跨性别者服务，她深受启发，感动于专业人士为跨性别者营造安全空间的热情",
+            "recovered_session_date": "10:37 am on 27 June, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+            "content": "卡罗琳于2023年7月14日（上周五）参加了一次关于领养的委员会会议，觉得既鼓舞人心又令人感动——有很多人都想为有需要的孩子创造充满爱的家，这让她更加坚定了要领养的决心"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-26_qa8",
+        "outcome": "graph_only",
+        "question": "卡罗琳是什么时候在一所学校演讲的？",
+        "gold": "2023年6月9日之前的那一周",
+        "baseline_answer": "2023年6月初（对话前一周），卡罗琳在学校活动中分享了自己的跨性别历程。",
+        "graph_answer": "2023年6月初（她于2023年6月9日的对话前一周）在一所学校活动中分享了自己的跨性别历程。",
+        "baseline_judge": {
+          "grade": "partial",
+          "missing": [
+            "specific date anchor 'the week before June 9, 2023' — 'early June / one week before the conversation' is less precise"
+          ],
+          "reason": "Answer conveys roughly the right period but at lower precision than the gold's specific anchor of the week before June 9, 2023."
+        },
+        "graph_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "Answer states the week before 2023-06-09, matching the gold's date-anchored period exactly."
+        },
+        "same_vector_candidate_ids": false,
+        "selected_graph": [
+          {
+            "id": "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+            "content": "卡罗琳于2023年7月14日（上周五）参加了一次关于领养的委员会会议，觉得既鼓舞人心又令人感动——有很多人都想为有需要的孩子创造充满爱的家，这让她更加坚定了要领养的决心",
+            "recovered_session_date": "1:51 pm on 15 July, 2023"
+          },
+          {
+            "id": "784e5545-ce5d-4a7f-a937-ff6a172906b1",
+            "content": "卡罗琳于2023年6月23日（周五）参加了一个LGBTQ+心理咨询工作坊，了解了不同的治疗方法以及如何更好地为跨性别者服务，她深受启发，感动于专业人士为跨性别者营造安全空间的热情",
+            "recovered_session_date": "10:37 am on 27 June, 2023"
+          },
+          {
+            "id": "cfd8268a-c56a-4c4b-8cbc-627e4ad86bac",
+            "content": "卡罗琳于2023年7月中旬（上次聊天后的一个周二，约7月18日）加入了一个新的LGBTQ活动组织\"Connected LGBTQ Activists\"，认识了很多热衷于权益和社区支持的人，觉得发声和做出改变很有成就感",
+            "recovered_session_date": "8:56 pm on 20 July, 2023"
+          },
+          {
+            "id": "4726ac6f-474b-4795-b1b5-e73d6016b428",
+            "content": "User（卡罗琳）于2023年5月7日参加了一个LGBTQ互助小组，听到鼓舞人心的跨性别者故事，感到开心和感激",
+            "recovered_session_date": "1:56 pm on 8 May, 2023"
+          },
+          {
+            "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+            "content": "卡罗琳于2023年6月下旬（约6月26日那周）参加了一场LGBTQ+骄傲游行，感到开心并有强烈的归属感，感叹社群的成长壮大",
+            "recovered_session_date": "1:36 pm on 3 July, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "f69a31d2-1f1e-4529-bdd1-918f5eb3e806",
+            "content": "卡罗琳在2023年8月下旬家附近散步时看到一条为骄傲月铺设的彩虹人行道，觉得它色彩鲜艳、充满欢迎氛围，提醒她爱与接纳无处不在"
+          },
+          {
+            "id": "02056f25-5c34-4e71-bc61-281199c30645",
+            "content": "卡罗琳计划参加2023年7月的跨性别者大会，期待见到社群其他成员并了解更多倡导工作"
+          },
+          {
+            "id": "249bfbbf-0e40-40ba-833f-f6aaa0d439c7",
+            "content": "卡罗琳大约五年前（约2018年）开始弹木吉他，弹吉他帮助她抒发情绪、表达自己并沉浸于情感中，她觉得演奏和唱歌很治愈和振奋"
+          },
+          {
+            "id": "a7b5ce7b-651a-41a5-bb9d-9bc088830e8d",
+            "content": "卡罗琳于2023年8月下旬（8月23日当周）向领养机构提交了领养申请，朝成为妈妈迈出第一步。她感到兴奋又紧张，领养咨询/援助小组给了她很多帮助"
+          },
+          {
+            "id": "e7753964-a35f-44e0-b637-fdaf295446d7",
+            "content": "卡罗琳于2023年10月联系了她的导师咨询收养建议，表示自己已准备好当妈妈，收养孩子并为需要的孩子提供安全有爱的家一直是她的梦想"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-30_qa12",
+        "outcome": "graph_only",
+        "question": "乔恩什么时候开始去健身房？",
+        "gold": "2023年3月",
+        "baseline_answer": "乔恩于2023年3月初（约2023年3月9日那一周）开始去健身房锻炼。",
+        "graph_answer": "2023年3月初（约3月9日那周）",
+        "baseline_judge": {
+          "grade": "partial",
+          "missing": [
+            "包含“约/early”这样的模糊表述，而非确定的时间"
+          ],
+          "reason": "包含正确的2023年3月，但通过“约...那一周”进行了模糊表述，因此不够确切。"
+        },
+        "graph_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "The answer correctly states March 2023; the extra hedged day detail does not reduce precision below the gold's month-level granularity."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "c1085191-fd42-4fe5-9654-915052a791d9",
+            "content": "乔恩还用白板来保持正轨、将目标可视化并标记成功；他用不同颜色对成就进行编码，方便追踪进度并保持动力和专注（2023年6月）",
+            "recovered_session_date": "8:29 pm on 13 June, 2023"
+          },
+          {
+            "id": "370b3797-a00a-4c2c-ac19-05be3900e65a",
+            "content": "乔恩用笔记本和日历系统来保持条理和积极性：设定目标、记录成就，并找出需要改进的地方（2023年6月）",
+            "recovered_session_date": "8:29 pm on 13 June, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "0e612a29-79e8-4182-894e-6842be55d59a",
+            "content": "截至2023年6月13日，乔恩正以前所未有的劲头为他的舞蹈工作室做准备，并表示开设工作室是一段很棒的经历，希望它成为能给所有舞者支持和鼓励的地方"
+          },
+          {
+            "id": "1aa1c91b-6f66-45a3-a5e9-c53bc8e03dff",
+            "content": "乔恩的舞蹈工作室正式开幕之夜定于2023年6月20日，他为此努力把一切做到完美，分享了一张工作室门口年轻舞者排练的照片，并感慨这一路走来不容易但准备全力以赴"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-30_qa33",
+        "outcome": "baseline_only",
+        "question": "乔恩什么时候为他的店参加社交活动？",
+        "gold": "2023年6月20日",
+        "baseline_answer": "已识别的实例：\n1. 2023-06-20：开幕前一天，乔恩为业务机会参加了社交活动。\n2. 2023年7月：乔恩参加了另一次社交活动，会见了投资者并获得了很好的建议。\n\n由于问题是以关于他的店的过去式提出的，最接近的实例是开幕式前夜。\n\n**回答：** 乔恩在 **2023年6月20日** 为他的舞蹈工作室参加了社交活动——在工作室正式开幕前夜——以创造商业机会。（他后来在2023年7月参加了另一次社交活动，会见了投资者。）",
+        "graph_answer": "乔恩在2023年6月20日（他的舞蹈工作室开幕前夜）去参加社交活动，为促成事业上的机会；此外2023年7月他还参加了一次社交活动，见到了一些投资人并获得好建议。",
+        "baseline_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "答案准确给出了2023年6月20日，与标准答案一致，并附加了正确细节。"
+        },
+        "graph_judge": {
+          "grade": "partial",
+          "missing": [
+            "answer adds an additional July 2023 networking event as an alternative, so the single gold date is not given exclusively"
+          ],
+          "reason": "Correct date 2023年6月20日 is present but mixed with an extra alternative event, so it is not exact."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+            "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+            "recovered_session_date": "5:44 pm on 21 July, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+            "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-41_qa20",
+        "outcome": "baseline_only",
+        "question": "约翰是什么时候去太平洋西北部自驾游的？",
+        "gold": "2022",
+        "baseline_answer": "约翰是在2022年（去年）去太平洋西北部海岸线自驾游的，并参观了几个国家公园。",
+        "graph_answer": "约翰大约在2022年（去年）去太平洋西北部海岸线自驾游，游览了几个国家公园。",
+        "baseline_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "The answer states 2022, matching the gold year exactly; extra detail is correct."
+        },
+        "graph_judge": {
+          "grade": "partial",
+          "missing": [
+            "hedged precision: '大约' before 2022"
+          ],
+          "reason": "The answer gives the correct year 2022 but hedges it with '大约', so it is not exact."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "ee7923d2-c829-47a3-912e-66e80617d2c9",
+            "content": "玛丽亚小时候和家人去俄勒冈州进行过一次公路旅行；她分享了一张站在峡谷边缘的照片，拍摄于 2023 年 6 月",
+            "recovered_session_date": "2:47 pm on 12 June, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "33a972ad-9374-4a69-b588-89e155562368",
+            "content": "In early March 2023, John retook an aptitude test with good results and feels drawn to serving his country; his family and friends are supportive of his desire to volunteer, and he feels proud of the opportunity"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-41_qa91",
+        "outcome": "graph_only",
+        "question": "2023年3月约翰和同事参加了什么活动？",
+        "gold": "一场科技向善大会",
+        "baseline_answer": "约翰和同事参加了一个大会（convention），与志同道合的同事一起探讨如何用科技为社区做好事。",
+        "graph_answer": "2023年3月，John和同事们参加了一场大会（convention）。这些同事和他一样热衷于利用科技为社区做好事；现场充满活力的头脑风暴和积极进取的氛围激励他去产生更大的影响。\n\n答案：约翰和同事于2023年3月参加了一场大会（convention），与志同道合、热衷于用科技回馈社区的同事交流，深受鼓舞。",
+        "baseline_judge": {
+          "grade": "partial",
+          "missing": [
+            "具体活动名称：科技向善大会"
+          ],
+          "reason": "答案描述了大会内容（用科技做好事）但未明确给出活动名称'科技向善大会'。"
+        },
+        "graph_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "回答准确传达了2023年3月约翰与同事参加一场以利用科技做好事为主题的大会，与金标准'科技向善大会'内容一致。"
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "ec5790e4-4ae9-4e38-8373-d0c33f41ab1e",
+            "content": "John started a weekend yoga class with a coworker around early April 2023 — a beginner class focused on basics like poses and breathing. He had wanted to try yoga for a while, finds it improves his physical and mental well-being, relaxation, flexibility, and inner peace, and it has become part of his daily routine",
+            "recovered_session_date": "12:24 am on 7 April, 2023"
+          },
+          {
+            "id": "3ab73473-080a-4899-b85d-ae2c327a48cf",
+            "content": "John and his family had a dinner gathering where they made pizzas together; he loved the process of choosing toppings and sharing food, saying meal times full of food, laughter, and conversation keep them close",
+            "recovered_session_date": "6:10 pm on 22 December, 2022"
+          },
+          {
+            "id": "f2c124c3-466a-4b75-bb2e-cfe1cf9871c1",
+            "content": "Around late December 2022, John attended group events including distributing food and supplies at a homeless shelter and organizing a toy drive for children in need, which brought smiles and lifted community spirits",
+            "recovered_session_date": "8:30 pm on 1 January, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "0b3f10ea-9e75-4559-9c4f-18eb776fd2bc",
+            "content": "Maria (John's friend) became friends with a fellow volunteer in early January 2023; they both love helping others"
+          },
+          {
+            "id": "bb2851b4-bf3b-48bf-8a75-d6a9c80924da",
+            "content": "In a ~2-hour team effort around August 2023, John's fire brigade group ran a donation drive that collected canned food, toiletries, and clothing, giving John a strong sense of purpose and fulfillment"
+          },
+          {
+            "id": "624936d8-2a32-446e-bdee-5cf3e5045d21",
+            "content": "John organized a 5K charity run in his community the weekend of August 5-6, 2023, to help veterans and their families, raising funds; he shared photos of the event including a young girl holding a sign"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-42_qa21",
+        "outcome": "baseline_only",
+        "question": "2022年5月内特家的新成员是谁？",
+        "gold": "马克斯",
+        "baseline_answer": "狗狗马克斯 (Max)",
+        "graph_answer": "马克斯 (Max)——内特在2022年5月20日左右领养的一只狗",
+        "baseline_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "Answer identifies Max (马克斯), the new family member, matching the gold exactly."
+        },
+        "graph_judge": {
+          "grade": "partial",
+          "missing": [
+            "date hedge '左右' (around May 20, 2022) instead of definitive"
+          ],
+          "reason": "Correct answer Max, but the date is hedged with 'around/左右', which is not exact precision."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "28d37b19-e0b6-4591-9e42-8078f962745a",
+            "content": "乔安娜 (Joanna) 于2022年3月23日参加了一个写作工作的试镜，她觉得还算顺利，心情复杂——既兴奋又有点紧张，并表示会及时告知内特结果",
+            "recovered_session_date": "1:43 pm on 24 March, 2022"
+          },
+          {
+            "id": "47747bc1-2c93-4a82-a2ea-c8de436897e2",
+            "content": "内特 (Nate) 养了两只宠物乌龟，已养了3年（约2019年起），它们帮助他在紧张时保持平静；他认为乌龟个性鲜明，并推荐压力大时养这样的小宠物",
+            "recovered_session_date": "2:01 pm on 23 January, 2022"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "3d460910-60dc-48c8-b913-c809bd9d1c38",
+            "content": "内特 (Nate) 于2022年10月初（大约10月7日周五）参加了一个游戏展会，认识了一些电竞圈子外的新朋友，虽然有点应接不暇，但让他想起了游戏带来的美好时光"
+          },
+          {
+            "id": "255eecd4-aff2-4bdb-8ca6-9f8768758590",
+            "content": "内特在2022年10月9日左右的对话中提到，他于2022年10月上旬参加了一个游戏展会，认识了圈外的新朋友，交到了同样热爱游戏的朋友并约好一起玩游戏"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-43_qa24",
+        "outcome": "graph_only",
+        "question": "2023年8月11日至8月15日期间约翰在哪里？",
+        "gold": "芝加哥",
+        "baseline_answer": "约翰在8月11日前后去了芝加哥旅行，之后于8月15日旅行归来与队友重聚——所以8月11日至15日期间他在芝加哥旅行。",
+        "graph_answer": "约翰在芝加哥旅行。他于2023年8月11日前后去了芝加哥，觉得那里充满活力、当地人非常友好，之后在8月15日旅行归来与队友重聚。",
+        "baseline_judge": {
+          "grade": "partial",
+          "missing": [
+            "precise confirmation that John was in Chicago for the entire period Aug 11–15"
+          ],
+          "reason": "Answer gives the right location but hedges with '8月11日前后' rather than definitively stating the date-anchored period."
+        },
+        "graph_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "The location (芝加哥) during 2023年8月11日至15日 is stated directly; hedging applies only to a peripheral date detail, not the location gold."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "720c6dd3-389b-43ce-8df1-59ec519f3f39",
+            "content": "约翰在芝加哥旅行时看过体育比赛，觉得体育场里所有人欢呼呐喊的氛围无与伦比，是非常特别的体验",
+            "recovered_session_date": "1:08 pm on 11 August, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "58a3cd7e-d419-4309-8fb1-2982445f1dcc",
+            "content": "约翰于2023年9月下旬（对话日期2023年10月2日的'上周'）和女朋友举办了婚礼，他说这是美妙而感人的一天，从未感受过这么多的爱与幸福"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-44_qa0",
+        "outcome": "graph_only",
+        "question": "奥黛丽是在哪一年领养她的前三只狗的？",
+        "gold": "2020",
+        "baseline_answer": "2020年（记忆显示截至2023年3月她已养这三只狗三年，即约2020年领养佩珀、普雷舍斯和潘达）。",
+        "graph_answer": "2020年（截至2023年3月她已养了三年，即约2020年领养）",
+        "baseline_judge": {
+          "grade": "partial",
+          "missing": [
+            "确定年份（回答称“约2020年”，属含糊表述）"
+          ],
+          "reason": "答案给出2020年但用“约/即约”限定，属于对确切年份的含糊表述。"
+        },
+        "graph_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "The answer states 2020, matching the gold year exactly; the trailing reasoning is extra detail, not a hedge of the core answer."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "d97168ff-7123-45cc-8ef8-c0e83a2e9df2",
+            "content": "截至2023年5月初，安德鲁正在积极寻找想领养的狗狗——浏览网站、参观收容所、询问朋友，过程既有趣又烦人，并表示有进展会告诉奥黛丽",
+            "recovered_session_date": "10:47 am on 6 May, 2023"
+          },
+          {
+            "id": "50fc5445-084f-4945-8b9a-3ec8d8869404",
+            "content": "奥黛丽和她的狗狗们因为忙于照顾小狗Pixie，还没来得及去之前讨论的福克斯霍洛 (Foxhollow) 远足地点（截至2023年4月初）",
+            "recovered_session_date": "2:42 pm on 2 April, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "5e40b8ce-8063-4bcf-903e-c029d5d02c96",
+            "content": "奥黛丽 (Audrey) 有四只狗狗，照顾它们、确保它们开心健康占去了她大部分空闲时间"
+          },
+          {
+            "id": "e56cf9cc-b731-4eba-bae2-7b16bb2798fc",
+            "content": "2023年11月左右，奥黛丽加入了一个养狗人小组，每周与其他养狗人聚一次，向其他“狗爸妈”学习如何更好地照顾狗狗，也让狗狗们一起玩"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-44_qa58",
+        "outcome": "baseline_only",
+        "question": "奥黛丽在2023年10月24日晚餐吃了什么？",
+        "gold": "寿司",
+        "baseline_answer": "寿司。受安德鲁寿司经历的启发，奥黛丽在2023年10月24日当天打算晚饭点寿司吃。",
+        "graph_answer": "寿司（当天打算晚饭点寿司）",
+        "baseline_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "Answer states 寿司 with the correct date 2023年10月24日, matching the gold."
+        },
+        "graph_judge": {
+          "grade": "partial",
+          "missing": [
+            "definitive statement that sushi was actually eaten"
+          ],
+          "reason": "Answer gives sushi but hedges it as a plan ('打算点寿司') rather than a definitive fact."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "26cdfc6b-6dec-4787-a234-481e6e43e47f",
+            "content": "奥黛丽的必备食材是大蒜，她喜欢它给菜肴增添的香味和味道。她最喜欢的用大蒜做的菜之一是烤鸡（含鸡肉、大蒜、柠檬、香草），菜谱源于她对地中海风味的喜爱，美味易做又健康，是她的治愈系美食。她也答应分享这个菜谱",
+            "recovered_session_date": "8:32 pm on 3 July, 2023"
+          },
+          {
+            "id": "09bcadc9-f37a-4da8-8d79-4841795f996e",
+            "content": "奥黛丽超爱寿司，建议寿司新手第一次先试加州卷或三文鱼卷（比较容易入口），也可以搭配不同的酱料蘸料会更好吃",
+            "recovered_session_date": "10:14 am on 24 October, 2023"
+          },
+          {
+            "id": "2c843d1c-29a0-4f24-ba1f-cc7f54cf7209",
+            "content": "奥黛丽说狗和大自然给她带来了太多的快乐与平静，大自然能让人以不同的方式思考、感到充满活力和内心安定，我们要珍惜大自然给予的一切",
+            "recovered_session_date": "5:23 pm on 13 June, 2023"
+          },
+          {
+            "id": "cb1d5980-09cd-4c34-b9f0-207486cb82e8",
+            "content": "2023年10月下旬，安德鲁试了镇上一家新开的寿司店，觉得非常棒——这是他第一次吃寿司，以前从没吃过但总听人说好吃，尝过之后明白了为什么大家这么追捧",
+            "recovered_session_date": "10:14 am on 24 October, 2023"
+          },
+          {
+            "id": "9adb54ee-cdbb-460a-90e8-77ad299f5cc8",
+            "content": "奥黛丽热爱做饭，喜欢尝试新菜谱、在厨房做实验——对她来说像一种逃避，减压效果很好还能让创意流淌。她喜欢放音乐、倒一杯葡萄酒，在厨房里随性发挥，觉得像自我关爱、很治愈",
+            "recovered_session_date": "8:32 pm on 3 July, 2023"
+          },
+          {
+            "id": "2e0ce82e-b3b5-4a16-9742-6e9127ab8d2d",
+            "content": "安德鲁和女朋友找到一家超棒的咖啡馆，糕点非常好吃；他们吃了美味的可颂、玛芬和挞，并拍下了糕点展示柜的照片",
+            "recovered_session_date": "4:19 pm on 16 April, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "de562708-c152-47d1-8859-5a4bd5adf9bf",
+            "content": "奥黛丽有一个小花园，里面种着秘鲁百合和一片菜地。秘鲁百合颜色鲜艳、花瓣娇美且容易照料，只需浇水和充足阳光。2023年9月下旬花开得很好，菜地也在慢慢成型，她觉得很有成就感"
+          },
+          {
+            "id": "d91e64c9-f5be-4ec7-86d4-15a9cabf770c",
+            "content": "奥黛丽注意到她的狗狗们表现不正常，于2023年10月25日（上周三）带它们看了一位动物行为专家，希望借此更好地了解它们"
+          },
+          {
+            "id": "0372146d-58c8-418d-9c89-9ec56ab4f600",
+            "content": "奥黛丽每天都保证至少做一件自我关怀的事来犒劳自己，认为找到属于自己的时间很难但自我照顾很重要"
+          },
+          {
+            "id": "c1f1521d-436f-431b-81d9-9d1128f2b8c3",
+            "content": "截至2023年10月中旬，奥黛丽最近生活很忙，好久没带狗狗们出去散步了，计划带它们去远足，认为那会是很好的治愈方式"
+          },
+          {
+            "id": "e87450bf-1132-4cf8-ad6b-559185e3b816",
+            "content": "奥黛丽认为大自然是忙碌城市生活的避风港，在艰难的时刻她的宠物一直是她忠实的伙伴，让她无比快乐，对她来说它们就是全世界"
+          },
+          {
+            "id": "6dbfa8db-e767-4293-adb4-e4d87806213a",
+            "content": "2023年10月28日左右，奥黛丽发现狗狗们行为不正常，于上周三（约2023年10月25日）预约了一位动物行为专家，就诊顺利并获得了一些应对建议"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-44_qa6",
+        "outcome": "baseline_only",
+        "question": "奥黛丽是什么时候领养Pixie的？",
+        "gold": "2023年4月2日左右",
+        "baseline_answer": "2023年4月初（2023年4月2日左右），奥黛丽领养了名叫Pixie的白色小狗。",
+        "graph_answer": "2023年4月初",
+        "baseline_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "Gold is itself approximate ('大约2023年4月2日')，回答在相同的近似程度上进行了匹配。"
+        },
+        "graph_judge": {
+          "grade": "partial",
+          "missing": [
+            "specific day (4月2日)"
+          ],
+          "reason": "Gold specifies April 2, 2023 but answer only gives early April, less specific than gold."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "d97168ff-7123-45cc-8ef8-c0e83a2e9df2",
+            "content": "截至2023年5月初，安德鲁正在积极寻找想领养的狗狗——浏览网站、参观收容所、询问朋友，过程既有趣又烦人，并表示有进展会告诉奥黛丽",
+            "recovered_session_date": "10:47 am on 6 May, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "6c344bc1-b41a-4d27-a0d6-8718d8e4c32a",
+            "content": "奥黛丽的狗狗品种：Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血，都是混种狗"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-47_qa10",
+        "outcome": "graph_only",
+        "question": "詹姆斯是什么时候领养内德的？",
+        "gold": "2022年四月的第一周",
+        "baseline_answer": "ANSWER：詹姆斯在2022年4月5日那一周从斯坦福德（Stamford）的一家庇护所领养了内德（Ned）。",
+        "graph_answer": "Ned领养时间：2022年4月5日那一周，从Stamford的一家收容所领养。",
+        "baseline_judge": {
+          "grade": "partial",
+          "missing": [
+            "给出了具体日期2022年4月5日，未明确对应金标准的'第一周'粒度，且日期为推断"
+          ],
+          "reason": "答案落在2022年4月第一周内，但给出了未经证实的具体日期，粒度与金标准不一致且无法确认。"
+        },
+        "graph_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "2022年4月5日那一周即2022年四月的第一周，与gold的时期和粒度一致。"
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "a1e812c7-b1d3-484a-8a14-3f1e74615039",
+            "content": "Around April 21, 2022, James took his dogs on a hike, exploring trails with breathtaking scenery in the woods; he loves the sound of leaves crunching underfoot and finds nature walks help him clear his mind and relax",
+            "recovered_session_date": "2:36 pm on 29 April, 2022"
+          },
+          {
+            "id": "15b9ea7a-2b58-4953-8af3-0ed5732a1294",
+            "content": "On Thursday, April 21, 2022, James took his two dogs on a hike, exploring trails with beautiful scenery in the woods; he found it a fun adventure, and the dogs loved all the trails and breathtaking views",
+            "recovered_session_date": "11:04 am on 23 April, 2022"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "9c85a237-af9a-4223-a8ba-beb5eca4348a",
+            "content": "James completed his Unity strategy game around September 1, 2022, after investing significant time and effort, and feels very proud of it; John's support and encouragement helped him along the way"
+          },
+          {
+            "id": "bc556ea3-f7e5-4a02-a19e-8bf89820093e",
+            "content": "James's sister visited him with his dogs around July 21, 2022; they relaxed together at home and went to the seaside where they saw a beautiful sunset, which James photographed and shared"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-47_qa61",
+        "outcome": "graph_only",
+        "question": "2023年10月詹姆斯和萨曼莎之间的大事是什么？",
+        "gold": "他们决定住在一起，并在离麦基酒吧不远的地方租了一间公寓。",
+        "baseline_answer": "相关记忆：（2022年10月31日）詹姆斯和萨曼莎决定搬在一起住，这是一个双方共同深思熟虑的决定；他们在McGee's酒吧附近租了一套公寓。没有记忆涵盖2023年，所以最接近的“大事”是2022年10月的那次。\n\n回答：根据记忆记录，大事是詹姆斯和萨曼莎决定搬在一起住——他们共同做出了这个决定，并在2022年10月底（2022年10月31日）在McGee's酒吧（他们最喜欢去的地方）附近租了一套公寓。记忆中没有关于2023年10月的事件记录。",
+        "graph_answer": "10月詹姆斯和萨曼莎之间的大事是他们决定搬到一起住（同居），并租下了一间靠近McGee's酒吧的公寓。",
+        "baseline_judge": {
+          "grade": "partial",
+          "missing": [
+            "2023年10月时间锚定（回答声称事件在2022年10月31日，且无2023年记录）"
+          ],
+          "reason": "事件内容正确（同住并在McGee's酒吧附近租房），但日期锚定与金答案的2023年10月不符且以否定形式给出。"
+        },
+        "graph_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "Answer matches all gold elements: deciding to live together and renting an apartment near McGee's bar in October 2023."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "51e2dbdb-6f96-401c-b3bd-bc224aceb276",
+            "content": "Around April 6, 2022, while walking his dogs in the neighborhood, James saw a girl he had never seen before and felt love at first sight; he didn't approach her but remembered her appearance and modeled the game character in his project after her",
+            "recovered_session_date": "9:32 pm on 20 April, 2022"
+          },
+          {
+            "id": "cb77f531-d177-479c-8652-c4dc9ffa66f7",
+            "content": "James may invite John to help with parts of his indie game using John's HTML knowledge, and John agreed to collaborate",
+            "recovered_session_date": "3:47 pm on 17 March, 2022"
+          },
+          {
+            "id": "14512aeb-8d11-49af-887c-cb4234c30079",
+            "content": "James made sketches and handwritten notes based on his dream about a medieval castle labyrinth with puzzles and traps",
+            "recovered_session_date": "6:02 pm on 18 September, 2022"
+          },
+          {
+            "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+            "content": "James is working on an indie computer game based on a character he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+            "recovered_session_date": "3:47 pm on 17 March, 2022"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "e8ac27fc-5c3c-4105-9986-344dd2da2782",
+            "content": "Around October 19, 2022, James's mother and one of her army comrades visited him and they had a great time; the comrade is still serving in the military, though she moved to a rear-line position long ago"
+          },
+          {
+            "id": "bc556ea3-f7e5-4a02-a19e-8bf89820093e",
+            "content": "James's sister visited him with his dogs around July 21, 2022; they relaxed together at home and went to the seaside where they saw a beautiful sunset, which James photographed and shared"
+          },
+          {
+            "id": "010d3e9f-d330-40ea-8f39-9429e1e4988c",
+            "content": "James made his first game and released it to the gaming community around early October 2022; he found it very exciting and deeply rewarding to see players enjoying and interacting with the game world he created"
+          },
+          {
+            "id": "2dada0f8-f23f-4a8a-bd36-a3f2809b72e4",
+            "content": "约翰与合作开发者的线上桌游即将发布试玩版，约翰承诺发布时告诉詹姆斯，詹姆斯表示想第一时间试玩并给出反馈以支持他"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-49_qa22",
+        "outcome": "graph_only",
+        "question": "埃文是什么时候遇到他未来的妻子的？",
+        "gold": "2023年8月7日的前一周。",
+        "baseline_answer": "2023年8月初，在加拿大旅行时",
+        "graph_answer": "相关记忆：2023年8月7日左右，Evan去加拿大旅行时遇到一位加拿大女士——即他未来的妻子。\n\n答案：埃文在2023年8月初（8月7日前的那一周）去加拿大旅行时遇到了他未来的妻子。",
+        "baseline_judge": {
+          "grade": "partial",
+          "missing": [
+            "specific date granularity: week before August 7, 2023"
+          ],
+          "reason": "Only says early August 2023, less precise than gold's 'the week before August 7, 2023'."
+        },
+        "graph_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "答案明确给出了2023年8月7日之前的那一周，与黄金答案的日期和时间粒度一致。"
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "1aee4a15-7aae-47b0-8a14-14295a30bf5a",
+            "content": "埃文和伴侣计划2024年2月去加拿大度蜜月，打算滑雪、品尝当地美食（包括肉汁奶酪薯条poutine）、欣赏雪景",
+            "recovered_session_date": "1:32 pm on 6 January, 2024"
+          },
+          {
+            "id": "4dea4431-e9b7-4853-9ec1-2220b45e4f40",
+            "content": "Evan agreed to meet up with Sam to demonstrate basic exercises and help him get started working out; they agreed to support each other on their health journeys and Sam promised to keep Evan updated on his progress",
+            "recovered_session_date": "3:55 pm on 6 June, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "ee6a47c0-4823-4dff-b575-77d44b549218",
+            "content": "埃文（Evan）在一个休伦湖（Lake Huron）的小岛上长大，那里有湖泊和孤舟的宁静景色；他称之为自己的快乐之地和一小片世外桃源，每次在那里都感到格外平静安宁，那个地方塑造了他，在他心中占据特殊位置"
+          },
+          {
+            "id": "8ea42f81-6e0e-44b4-89fc-634782a11053",
+            "content": "Evan started taking painting classes a few days before August 19, 2023, and is really enjoying them; he joined to find like-minded people and improve his skills"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-49_qa75",
+        "outcome": "baseline_only",
+        "question": "埃文是什么时候向大家庭宣布结婚消息的？",
+        "gold": "2024年1月5日",
+        "baseline_answer": "埃文和伴侣于2024年1月5日把结婚的消息告诉了双方大家庭。",
+        "graph_answer": "埃文和伴侣于2024年1月5日把结婚的消息告诉了双方大家庭（于2024年1月6日分享此事）。",
+        "baseline_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "The answer states the exact date 2024年1月5日 matching the gold."
+        },
+        "graph_judge": {
+          "grade": "partial",
+          "missing": [
+            "唯一明确的日期"
+          ],
+          "reason": "答案含正确日期2024年1月5日，但附加的2024年1月6日造成日期含混。"
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "23351d71-3a2a-443a-8523-3970fe965dfc",
+            "content": "Evan traveled to Canada during the week before August 7, 2023 and met a wonderful Canadian woman, describing it as something out of a movie; being with her makes him feel energized and it was a welcome change amid his health struggles",
+            "recovered_session_date": "7:52 pm on 7 August, 2023"
+          },
+          {
+            "id": "1aee4a15-7aae-47b0-8a14-14295a30bf5a",
+            "content": "埃文和伴侣计划2024年2月去加拿大度蜜月，打算滑雪、品尝当地美食（包括肉汁奶酪薯条poutine）、欣赏雪景",
+            "recovered_session_date": "1:32 pm on 6 January, 2024"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "070a2200-d004-4c7f-84f0-374db0817cad",
+            "content": "Evan apologized to his partner for the drunken rose bush incident from January 9, 2024; she was not happy but understood it was an accident, and Evan promised to be more careful in the future"
+          },
+          {
+            "id": "a3622125-374c-420f-9998-6f4f87867eb6",
+            "content": "Evan和萨姆约好计划下个月（2023年12月）一起去Evan最喜欢的海边看日落"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-50_qa61",
+        "outcome": "baseline_only",
+        "question": "戴夫在福特野马上花费了多长时间？",
+        "gold": "将近两个月",
+        "baseline_answer": "大约两个月。戴夫于2023年8月开始修复他的老式福特野马（Ford Mustang），原计划在2023年9月底前全部修好，因此该项目耗时约2023年8月至9月底，共约两个月。",
+        "graph_answer": "约两个半月（2023年8月中旬至10月下旬）",
+        "baseline_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "答案显示“大约两个月”，这与黄金答案“将近两个月”的近似程度一致。"
+        },
+        "graph_judge": {
+          "grade": "wrong",
+          "missing": [
+            "将近两个月"
+          ],
+          "reason": "答案称约两个半月，与标准的“将近两个月”时长不符。"
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "6978e878-7947-4160-9ed2-6bef81570fc8",
+            "content": "戴夫于2023年9月1日（对话前一天）从圣弗朗西斯科回来，带回了关于汽车改装的心得和知识，并热衷于和卡尔文分享，称翻新改造旧车让他有成就感",
+            "recovered_session_date": "9:19 am on 2 September, 2023"
+          },
+          {
+            "id": "ca8093ac-1b9a-4ee9-b470-63a9285de2c3",
+            "content": "戴夫 (Dave) 在2023年5月1日左右开设了自己的汽车维修店，实现了开店的梦想，店内照片显示开业时有一群人站在车前；他修各种车，从日常保养到经典车整体修复，邀请卡尔文有空去店里看看",
+            "recovered_session_date": "6:24 pm on 1 May, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "50254de7-b62f-474a-b2e5-8dcfdef33b4e",
+            "content": "戴夫在2023年7月中旬刚和朋友们完成一次自驾游，欣赏乡村风景，在蜿蜒的路上开车让他重新找回对汽车的热爱，也是远离工作混乱的美好休息"
+          },
+          {
+            "id": "487cd90f-413f-4a7e-a9bf-7d099d50faa6",
+            "content": "戴夫的梦想是从零开始造一辆定制车；目前他继续做修车项目并帮助客户，同时继续学习汽车工程知识"
+          }
+        ]
+      },
+      {
+        "case_id": "locomo_conv-50_qa9",
+        "outcome": "baseline_only",
+        "question": "卡尔文的音乐设备和心爱的麦克风是什么时候出故障的？",
+        "gold": "2023年5月16日前一周",
+        "baseline_answer": "2023年5月9日左右（因住处被水淹）。",
+        "graph_answer": "2023年5月9日左右（当时住处被水淹，设备受损）。",
+        "baseline_judge": {
+          "grade": "exact",
+          "missing": [],
+          "reason": "Gold is itself approximate (a week before May 16, 2023), and 'around May 9, 2023' matches that period at the same approximation level."
+        },
+        "graph_judge": {
+          "grade": "partial",
+          "missing": [
+            "hedged date ('approximately') instead of the definitive 'the week before May 16, 2023'"
+          ],
+          "reason": "The date falls in the correct week but is expressed with a hedge rather than the definitive date-anchored gold answer."
+        },
+        "same_vector_candidate_ids": true,
+        "selected_graph": [
+          {
+            "id": "1686dfb9-d19f-4aff-bad8-816701a9c686",
+            "content": "卡尔文超级期待2023年5月在东京的演出，希望向全新观众展示音乐并扩大粉丝群，并答应演出后告诉戴夫情况",
+            "recovered_session_date": "11:50 am on 16 May, 2023"
+          }
+        ],
+        "baseline_context_displaced": [
+          {
+            "id": "37f131f1-6056-4ed6-a467-ad203508e438",
+            "content": "卡尔文在2023年8月2日晚和兄弟们一起登台演出，分享了一张乐队在舞台上灯光下表演的照片，称赞兄弟们的音乐玩得很棒"
+          }
+        ]
+      }
+    ]
+  }
+}
