@@ -1,0 +1,524 @@
+{
+  "scope": "中文 LoCoMo 原始 turn、实际适配器输出与 2026-09-25 八份评测归档；零模型调用",
+  "dataset": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
+  "counts": {
+    "sessions": 272,
+    "turns": 5882,
+    "turns_with_caption": 1226,
+    "turns_with_query": 888,
+    "turns_with_img_url": 910,
+    "turns_with_query_and_caption": 888
+  },
+  "query_caption_exact_sunrise_sunset_conflicts": [
+    {
+      "conversation_id": "conv-26",
+      "session_id": "session_1",
+      "dia_id": "D1:12",
+      "text": "你会成为一名很棒的心理咨询师！你的同理心和理解力会真正帮助到你服务的人。对了，看看这个。",
+      "query": "painting sunrise",
+      "blip_caption": "a photo of a painting of a sunset over a lake"
+    },
+    {
+      "conversation_id": "conv-43",
+      "session_id": "session_20",
+      "dia_id": "D20:41",
+      "text": "哇，太惊艳了！大自然真的很了不起——它让我们感到渺小却又彼此相连。",
+      "query": "rocky mountains mountain range sunrise",
+      "blip_caption": "a photo of a mountain range with a sunset in the background"
+    },
+    {
+      "conversation_id": "conv-44",
+      "session_id": "session_4",
+      "dia_id": "D4:6",
+      "text": "没错！大自然对我来说就是治愈。被绿色环绕或者站在山顶呼吸新鲜空气的感觉有多美妙，真是难以言表。那么宁静，又那么令人振奋。\n\n",
+      "query": "mountain peak sunrise",
+      "blip_caption": "a photo of a mountain range with a sunset in the background"
+    },
+    {
+      "conversation_id": "conv-44",
+      "session_id": "session_16",
+      "dia_id": "D16:1",
+      "text": "嘿，奥黛丽，希望你一切都好！我昨天决定放下工作，去了一家新开的咖啡馆看看。这是个不错的改变，让我想起大自然总是能给你带来宁静。这是我上次徒步时拍的照片——太宁静了！你这个月过得怎么样？",
+      "query": "beautiful sunrise hike trail",
+      "blip_caption": "a photo of a sunset over a mountain with a church on top"
+    },
+    {
+      "conversation_id": "conv-48",
+      "session_id": "session_30",
+      "dia_id": "D30:4",
+      "text": "谢谢！我们去了一个很棒的瑜伽静修营。那地方非常宁静，做瑜伽时的景色美极了——日出用绚丽的色彩点亮了整片天空。那景色太美了，让我们感到充满活力、心怀感激。",
+      "query": "yoga retreat south america serene retreat center mountains sunrise",
+      "blip_caption": "a photo of a sunset over a valley with a horse"
+    }
+  ],
+  "fixed_sample_seed": 20260926,
+  "fixed_sample_size": 30,
+  "fixed_sample": [
+    {
+      "conversation_id": "conv-26",
+      "session_id": "session_18",
+      "dia_id": "D18:15",
+      "text": "是啊，当然。有家人在身边帮助很大。这让艰难的日子变得容易一些。",
+      "query": "family hiking mountains",
+      "blip_caption": "a photography of a woman and a child walking on a trail"
+    },
+    {
+      "conversation_id": "conv-26",
+      "session_id": "session_13",
+      "dia_id": "D13:6",
+      "text": "奥利弗超搞笑！它有一次把骨头藏在我的拖鞋里！很可爱吧？几乎和我那次喂马吃胡萝卜一样傻。",
+      "query": "oscar carrot in mouth",
+      "blip_caption": "a photo of a person holding a carrot in front of a horse"
+    },
+    {
+      "conversation_id": "conv-26",
+      "session_id": "session_7",
+      "dia_id": "D7:11",
+      "text": "我很喜欢艾米·埃利斯·纳特写的《Becoming 妮可》。这是一个真实而鼓舞人心的故事，讲述一个跨性别女孩和她的家庭。它让我产生了共鸣，也给我自己的道路带来了很多希望。强烈推荐！",
+      "query": "becoming nicole book amy ellis nutt",
+      "blip_caption": "a photo of a dog sitting in a boat on the water",
+      "manual_note": "query 与对话均为《Becoming Nicole》，caption 却是船上的狗"
+    },
+    {
+      "conversation_id": "conv-47",
+      "session_id": "session_27",
+      "dia_id": "D27:2",
+      "text": "嘿，约翰，恭喜你！我最近也遇到了一件很酷的事。我制作了自己的第一款游戏，并发布给了游戏社区——真是太激动了！",
+      "query": "game interface players battling mythical creatures",
+      "blip_caption": "a photography of a game of thrones with a dragon and a dragon"
+    },
+    {
+      "conversation_id": "conv-42",
+      "session_id": "session_23",
+      "dia_id": "D23:5",
+      "text": "我还遇到了一些也玩我喜欢的那个桌游的人，所以我加入了他们。我们有很多共同点，很合得来。共同的爱好能把人联系起来，真是太好了！",
+      "query": "group of people playing game",
+      "blip_caption": "a photo of a group of people sitting around a table playing a board game"
+    },
+    {
+      "conversation_id": "conv-50",
+      "session_id": "session_28",
+      "dia_id": "D28:1",
+      "text": "嘿，戴夫！好久不见！最近发生了不少疯狂的事。上周我在我的日本房子里为我的新专辑办了一场小型派对。太棒了，家人和朋友给了我那么多爱！看看那张在豪宅里派对的照片，气氛太嗨了！",
+      "query": "japanese mansion listening party",
+      "blip_caption": "a photography of a group of people sitting in a room with a projector screen"
+    },
+    {
+      "conversation_id": "conv-44",
+      "session_id": "session_26",
+      "dia_id": "D26:27",
+      "text": "哦，太好了！等不及要去探索，和我们的毛孩子们一起玩了。应该是宁静的一天！这是我在网上找到的一张那个湖的照片。",
+      "query": "serene lake trees peaceful adventure",
+      "blip_caption": "a photo of a lake with a boat in it and a forest in the background"
+    },
+    {
+      "conversation_id": "conv-50",
+      "session_id": "session_25",
+      "dia_id": "D25:17",
+      "text": "谢谢，卡尔文！那是个有趣的项目。我去年翻新了一辆车，但卖给了一位收藏家。现在我在做新的东西，挺有挑战性的！看看这辆漂亮的车！",
+      "query": "restored chevy camaro",
+      "blip_caption": "a photo of a black car parked in a parking lot"
+    },
+    {
+      "conversation_id": "conv-42",
+      "session_id": "session_6",
+      "dia_id": "D6:8",
+      "text": "祝你在锦标赛中好运！连续这么多天高强度打游戏，听起来挺不容易的！这里是我寻找写作灵感的首选之地，它能帮我保持敏锐和动力。",
+      "query": "bookshelf writing books inspiration",
+      "blip_caption": "a photo of a book shelf filled with books and magazines"
+    },
+    {
+      "conversation_id": "conv-48",
+      "session_id": "session_10",
+      "dia_id": "D10:13",
+      "text": "艾森豪威尔矩阵把任务分成四个象限，按照紧急程度和重要性进行分类。它对整理和排定优先级非常有用。给你详细说明一下。",
+      "query": "eisenhower matrix",
+      "blip_caption": "a photo of a pair of scissors sitting on top of a piece of paper",
+      "manual_note": "query 与对话均为艾森豪威尔矩阵，caption 却是纸上的剪刀"
+    },
+    {
+      "conversation_id": "conv-26",
+      "session_id": "session_10",
+      "dia_id": "D10:16",
+      "text": "天空非常清澈、满天繁星，流星雨令人惊叹——感觉我们成为了某个宏大而令人敬畏的事物的一部分。",
+      "query": "night sky stars meteor shower",
+      "blip_caption": "a photo of a plane flying in the sky with a trail of smoke coming out of it",
+      "manual_note": "query 与对话均为流星雨，caption 却是飞机尾迹"
+    },
+    {
+      "conversation_id": "conv-41",
+      "session_id": "session_8",
+      "dia_id": "D8:6",
+      "text": "绝对是一段跌宕起伏的旅程！虽然有起有落，但爱和幸福远远胜过一切。",
+      "query": "parenting kids park playing",
+      "blip_caption": "a photography of two children playing on a playground equipment"
+    },
+    {
+      "conversation_id": "conv-43",
+      "session_id": "session_28",
+      "dia_id": "D28:5",
+      "text": "有啊！我特别期待去探索那里的自然风光——看起来太美了！",
+      "query": "cliffs moher sunset",
+      "blip_caption": "a photo of a cliff overlooking the ocean at sunset"
+    },
+    {
+      "conversation_id": "conv-44",
+      "session_id": "session_25",
+      "dia_id": "D25:3",
+      "text": "哎呀！你感觉好点了吗？祝你和你家狗狗们早日康复。我最近试了镇上一家新开的寿司店，很棒。你最近有什么想尝试的东西吗？",
+      "query": "sushi platter",
+      "blip_caption": "a photo of a plate of sushi and vegetables on a table"
+    },
+    {
+      "conversation_id": "conv-49",
+      "session_id": "session_21",
+      "dia_id": "D21:17",
+      "text": "哇，埃文，这太棒了！你真有才华和创造力。创作它一定让人特别有成就感！这是几天前我去看展览时给我启发的一幅画。",
+      "query": "framed artwork on wall painting talent creativity",
+      "blip_caption": "a photo of a woman holding flowers in front of her face"
+    },
+    {
+      "conversation_id": "conv-42",
+      "session_id": "session_28",
+      "dia_id": "D28:1",
+      "text": "嘿，乔安娜，这周太疯狂了！我的游戏锦标赛被推迟了，所以我去尝试了一些烹饪。看看这个自制的椰子冰淇淋！这次的糖屑把颜色弄得有点变了。",
+      "query": "coconut milk ice cream homemade red sprinkles",
+      "blip_caption": "a photo of a person scooping a scoop of ice cream into a pan"
+    },
+    {
+      "conversation_id": "conv-50",
+      "session_id": "session_28",
+      "dia_id": "D28:14",
+      "text": "谢谢，卡尔文！你喜欢我的博客对我意义重大。这次汽车改装花了不少功夫，但我觉得最后是值得的。",
+      "query": "customized car sleek headlights vibrant paint job",
+      "blip_caption": "a photography of a blue subarunt parked in a parking lot"
+    },
+    {
+      "conversation_id": "conv-42",
+      "session_id": "session_22",
+      "dia_id": "D22:19",
+      "text": "放心，它一定会是我珍藏的东西！说点别的，我刚为一个写作俱乐部的女士做完这个可爱的小书签！",
+      "query": "stack of books bookmark",
+      "blip_caption": "a photo of a bookmark with a plant on top of it"
+    },
+    {
+      "conversation_id": "conv-41",
+      "session_id": "session_13",
+      "dia_id": "D13:22",
+      "text": "是啊，约翰，这非常重要。照顾好自己能让我们在生活的艰难时刻保持坚强——去年我是吃了苦头才明白这一点的。",
+      "query": "sunrise beach",
+      "blip_caption": "a photo of a beach with footprints in the sand and a blue sky"
+    },
+    {
+      "conversation_id": "conv-48",
+      "session_id": "session_28",
+      "dia_id": "D28:24",
+      "text": "这是陪我作伴的小伙伴们。",
+      "query": "pet snake curled up branch",
+      "blip_caption": "a photo of a person holding a snake in a container"
+    },
+    {
+      "conversation_id": "conv-49",
+      "session_id": "session_13",
+      "dia_id": "D13:1",
+      "text": "嘿，萨姆，最近怎么样？我们好久没聊了。希望你一切都好。",
+      "query": "painting peaceful sunset",
+      "blip_caption": "a photography of a painting of a person on a cliff"
+    },
+    {
+      "conversation_id": "conv-44",
+      "session_id": "session_9",
+      "dia_id": "D9:21",
+      "text": "大自然有一种抚慰我们、帮我们充电的力量。这是很特别的东西。希望你很快能再次体验。我现在真的很想做这样的事。",
+      "query": "serene lake mountains",
+      "blip_caption": "a photo of a person's feet resting on a rock overlooking a lake"
+    },
+    {
+      "conversation_id": "conv-49",
+      "session_id": "session_1",
+      "dia_id": "D1:4",
+      "text": "我的旧普锐斯坏了，我决定把它修好然后卖掉。你问得好，我们去了落基山脉，看看这些照片。",
+      "query": "canadian rockies sunset scenery",
+      "blip_caption": "a photo of a lake with rocks and mountains in the background"
+    },
+    {
+      "conversation_id": "conv-26",
+      "session_id": "session_14",
+      "dia_id": "D14:11",
+      "text": "哇，梅尔，你太了不起了！做志愿者、做出改变——真暖心。你是我们所有人的榜样！",
+      "query": "volunteering pride event",
+      "blip_caption": "a photo of a crowd of people walking down a street with a rainbow flag"
+    },
+    {
+      "conversation_id": "conv-49",
+      "session_id": "session_5",
+      "dia_id": "D5:9",
+      "text": "谢谢你，萨姆！我的家人激励我保持健康。嗯，它对我的健康目标帮助很大。它能很好地追踪我的进展，并不断提醒我要坚持下去。",
+      "query": "fitness tracker wrist",
+      "blip_caption": "a photo of a person's wrist with a smart watch on it"
+    },
+    {
+      "conversation_id": "conv-43",
+      "session_id": "session_15",
+      "dia_id": "D15:18",
+      "text": "队友们对我的信任以及我提升技能的热情让我坚持下去，即使情况变得艰难。我不想让他们失望。",
+      "query": "team huddle game",
+      "blip_caption": "a photo of a group of women soccer players huddle together"
+    },
+    {
+      "conversation_id": "conv-49",
+      "session_id": "session_5",
+      "dia_id": "D5:1",
+      "text": "嘿，萨姆，最近怎么样？上周我去加拿大旅行，发生了一件不可思议的事——我遇到了一位很棒的加拿大女士，就像电影里的情节一样。她太不可思议了，和她在一起让我感觉充满活力。",
+      "query": "canadian woman scenic view canada",
+      "blip_caption": "a photography of a couple walking through the snow holding hands"
+    },
+    {
+      "conversation_id": "conv-47",
+      "session_id": "session_8",
+      "dia_id": "D8:30",
+      "text": "哇，真厉害！我特别喜欢这类游戏，它们真的很让我动脑。你觉得策略桌游怎么样？我两天前和朋友玩了一款，非常刺激！",
+      "query": "strategy board game",
+      "blip_caption": "a photo of a board game with a lot of cards on it"
+    },
+    {
+      "conversation_id": "conv-48",
+      "session_id": "session_4",
+      "dia_id": "D4:34",
+      "text": "听起来很棒，乔琳。大自然确实能抚慰人心。它能帮我们忘掉日常的纷乱，找到内心的平静。难怪你这么喜欢！我喜欢去我妈老房子附近的水边。在那里我会回忆她的一生，找到一些安宁。置身于大自然中很有帮助。",
+      "query": "sunrise lake peaceful",
+      "blip_caption": "a photo of a small island with a lone boat in the water"
+    },
+    {
+      "conversation_id": "conv-50",
+      "session_id": "session_25",
+      "dia_id": "D25:27",
+      "text": "对，没错，卡尔文！演唱会太棒了，它把人们聚集在一起，营造出一种超酷的氛围。你能感受到空气中的能量。看看我在演唱会拍下的这个难忘瞬间。",
+      "query": "concert stage vibrant lights crowd dancing",
+      "blip_caption": "a photo of a crowd of people standing around a stage"
+    }
+  ],
+  "fixed_sample_clear_conflicts_manual_lower_bound": 3,
+  "target": {
+    "case_id": "locomo_conv-50_qa65",
+    "question": "戴夫是什么时候拍下波士顿一座钟楼的照片的？",
+    "gold": "2023年9月",
+    "evidence": [
+      "D27:6"
+    ],
+    "session_date": "10:49 am on 29 October, 2023",
+    "source_turn": {
+      "speaker": "戴夫",
+      "img_url": [
+        "https://live.staticflickr.com/28/66275862_c39a8015c2_b.jpg"
+      ],
+      "blip_caption": "a photography of a clock tower in a city with buildings",
+      "query": "waterfall white mountains new hampshire",
+      "dia_id": "D27:6",
+      "re-download": true,
+      "text": "那是波士顿，卡尔！看看这张，我上个月拍的，拍到了一张超棒的照片——太惊艳了！"
+    },
+    "adapter_content": "那是波士顿，卡尔！看看这张，我上个月拍的，拍到了一张超棒的照片——太惊艳了！ [shared image: waterfall white mountains new hampshire | a photography of a clock tower in a city with buildings]",
+    "waterfall_mentions_in_session_text_or_caption": [],
+    "white_mountains_mentions_in_full_conversation": [
+      {
+        "session_id": "session_27",
+        "dia_id": "D27:6",
+        "field": "query",
+        "value": "waterfall white mountains new hampshire"
+      }
+    ],
+    "archive_rows": [
+      {
+        "archive": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+        "predicted_answer": "2023年10月29日（分享照片时，拍摄于当天日落时分）",
+        "target_memory_selected": true,
+        "target_memory": {
+          "id": "a98ed3ea-f911-4666-92ae-15f4904cc492",
+          "content": "戴夫分享了一张上个月（2023年9月）在新罕布什尔州白山拍摄的瀑布照片",
+          "score": 0.5737006584290372,
+          "metadata": {
+            "session_date": "10:49 am on 29 October, 2023",
+            "session_id": "session_27",
+            "case_id": "locomo_conv-50_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-50"
+          }
+        },
+        "clock_tower_memories_selected": [
+          {
+            "id": "44f44e2b-b759-4a02-9edf-eb8ecb36b3cb",
+            "content": "戴夫分享了一张波士顿天际线在日落时的照片，照片中有钟楼，他形容天空像着了火一样壮观"
+          }
+        ]
+      },
+      {
+        "archive": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+        "predicted_answer": "2023年10月29日（日落时分享的照片，照片中有钟楼，他形容天空像着了火一样壮观）。",
+        "target_memory_selected": true,
+        "target_memory": {
+          "id": "a98ed3ea-f911-4666-92ae-15f4904cc492",
+          "content": "戴夫分享了一张上个月（2023年9月）在新罕布什尔州白山拍摄的瀑布照片",
+          "score": 0.5730027608425126,
+          "metadata": {
+            "session_id": "session_27",
+            "case_id": "locomo_conv-50_qa0",
+            "benchmark": "locomo",
+            "session_date": "10:49 am on 29 October, 2023",
+            "user_id": "zhfull:locomo:conv-50"
+          }
+        },
+        "clock_tower_memories_selected": [
+          {
+            "id": "44f44e2b-b759-4a02-9edf-eb8ecb36b3cb",
+            "content": "戴夫分享了一张波士顿天际线在日落时的照片，照片中有钟楼，他形容天空像着了火一样壮观"
+          }
+        ]
+      },
+      {
+        "archive": "zhfull_fused_locomo_20260925_161049.jsonl",
+        "predicted_answer": "2023年10月29日",
+        "target_memory_selected": true,
+        "target_memory": {
+          "id": "a98ed3ea-f911-4666-92ae-15f4904cc492",
+          "content": "戴夫分享了一张上个月（2023年9月）在新罕布什尔州白山拍摄的瀑布照片",
+          "score": 0.5737006584290372,
+          "metadata": {
+            "case_id": "locomo_conv-50_qa0",
+            "session_date": "10:49 am on 29 October, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_27",
+            "user_id": "zhfull:locomo:conv-50"
+          }
+        },
+        "clock_tower_memories_selected": [
+          {
+            "id": "44f44e2b-b759-4a02-9edf-eb8ecb36b3cb",
+            "content": "戴夫分享了一张波士顿天际线在日落时的照片，照片中有钟楼，他形容天空像着了火一样壮观"
+          }
+        ]
+      },
+      {
+        "archive": "zhfull_fused_locomo_20260925_172126.jsonl",
+        "predicted_answer": "2023年10月29日",
+        "target_memory_selected": true,
+        "target_memory": {
+          "id": "a98ed3ea-f911-4666-92ae-15f4904cc492",
+          "content": "戴夫分享了一张上个月（2023年9月）在新罕布什尔州白山拍摄的瀑布照片",
+          "score": 0.5730027608425126,
+          "metadata": {
+            "session_date": "10:49 am on 29 October, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_27",
+            "case_id": "locomo_conv-50_qa0",
+            "user_id": "zhfull:locomo:conv-50"
+          }
+        },
+        "clock_tower_memories_selected": [
+          {
+            "id": "44f44e2b-b759-4a02-9edf-eb8ecb36b3cb",
+            "content": "戴夫分享了一张波士顿天际线在日落时的照片，照片中有钟楼，他形容天空像着了火一样壮观"
+          }
+        ]
+      },
+      {
+        "archive": "zhfull_fused_locomo_20260925_195248.jsonl",
+        "predicted_answer": "2023年10月29日（照片拍摄于该日分享时，日落时分）",
+        "target_memory_selected": true,
+        "target_memory": {
+          "id": "a98ed3ea-f911-4666-92ae-15f4904cc492",
+          "content": "戴夫分享了一张上个月（2023年9月）在新罕布什尔州白山拍摄的瀑布照片",
+          "score": 0.5730027608425126,
+          "metadata": {
+            "session_id": "session_27",
+            "session_date": "10:49 am on 29 October, 2023",
+            "case_id": "locomo_conv-50_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-50"
+          }
+        },
+        "clock_tower_memories_selected": [
+          {
+            "id": "44f44e2b-b759-4a02-9edf-eb8ecb36b3cb",
+            "content": "戴夫分享了一张波士顿天际线在日落时的照片，照片中有钟楼，他形容天空像着了火一样壮观"
+          }
+        ]
+      },
+      {
+        "archive": "zhfull_locomo_20260925_115806.jsonl",
+        "predicted_answer": "2023年10月29日（当天分享的照片，日落时分的波士顿天际线，照片中有钟楼）",
+        "target_memory_selected": true,
+        "target_memory": {
+          "id": "a98ed3ea-f911-4666-92ae-15f4904cc492",
+          "content": "戴夫分享了一张上个月（2023年9月）在新罕布什尔州白山拍摄的瀑布照片",
+          "score": 0.5730027608425126,
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-50_qa0",
+            "session_date": "10:49 am on 29 October, 2023",
+            "session_id": "session_27",
+            "user_id": "zhfull:locomo:conv-50"
+          }
+        },
+        "clock_tower_memories_selected": [
+          {
+            "id": "44f44e2b-b759-4a02-9edf-eb8ecb36b3cb",
+            "content": "戴夫分享了一张波士顿天际线在日落时的照片，照片中有钟楼，他形容天空像着了火一样壮观"
+          }
+        ]
+      },
+      {
+        "archive": "zhfull_locomo_20260925_151059.jsonl",
+        "predicted_answer": "2023年10月29日",
+        "target_memory_selected": true,
+        "target_memory": {
+          "id": "a98ed3ea-f911-4666-92ae-15f4904cc492",
+          "content": "戴夫分享了一张上个月（2023年9月）在新罕布什尔州白山拍摄的瀑布照片",
+          "score": 0.5730027608425126,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_27",
+            "session_date": "10:49 am on 29 October, 2023",
+            "case_id": "locomo_conv-50_qa0",
+            "user_id": "zhfull:locomo:conv-50"
+          }
+        },
+        "clock_tower_memories_selected": [
+          {
+            "id": "44f44e2b-b759-4a02-9edf-eb8ecb36b3cb",
+            "content": "戴夫分享了一张波士顿天际线在日落时的照片，照片中有钟楼，他形容天空像着了火一样壮观"
+          }
+        ]
+      },
+      {
+        "archive": "zhfull_locomo_20260925_164645.jsonl",
+        "predicted_answer": "2023年10月29日（日落时分拍摄的波士顿天际线照片，其中包含钟楼）。",
+        "target_memory_selected": true,
+        "target_memory": {
+          "id": "a98ed3ea-f911-4666-92ae-15f4904cc492",
+          "content": "戴夫分享了一张上个月（2023年9月）在新罕布什尔州白山拍摄的瀑布照片",
+          "score": 0.5737006584290372,
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "10:49 am on 29 October, 2023",
+            "session_id": "session_27",
+            "case_id": "locomo_conv-50_qa0",
+            "user_id": "zhfull:locomo:conv-50"
+          }
+        },
+        "clock_tower_memories_selected": [
+          {
+            "id": "44f44e2b-b759-4a02-9edf-eb8ecb36b3cb",
+            "content": "戴夫分享了一张波士顿天际线在日落时的照片，照片中有钟楼，他形容天空像着了火一样壮观"
+          }
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "query/caption 冲突不能直接确定哪一方正确；需要结合对话文字及原图。",
+    "固定样本的三条人工核查是下界，不代表 888 条的总体冲突率。",
+    "八份归档复用同一批记忆，不能当作八次独立提取。",
+    "此审计确认输入路径和一条归档污染事实，但不证明删除 query 能提升总体得分。"
+  ]
+}
