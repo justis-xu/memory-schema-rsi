@@ -1,0 +1,120 @@
+{
+  "scope": "conv-41 memories visible in the old Chinese no-graph archive and matching current structured extraction cache",
+  "counts": {
+    "visible_memory_ids": 210,
+    "cache_matched_ids": 208,
+    "user_entity_memories": 5,
+    "john_entity_memories": 118,
+    "john_zh_entity_memories": 18,
+    "user_to_john_additional_structural_neighbors_per_user_seed": 118,
+    "user_to_john_zh_additional_structural_neighbors_per_user_seed": 18,
+    "all_three_alias_union_memories": 141
+  },
+  "user_memories": [
+    {
+      "memory_id": "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+      "stored_session_id": "session_23",
+      "content": "User keeps a photo of his family — taken on a trip for his daughter Sara's birthday in fall 2022, showing them on train tracks in autumn — and looks at it during hard times as a reminder of why he works for community change",
+      "source_turns": [
+        {
+          "session_id": "session_22",
+          "dia_id": "D22:5",
+          "speaker": "约翰",
+          "text": "谢谢你。听到你的话真的很振奋人心。我有时会怀疑自己是否真的在带来改变，但知道有人理解我的工作意义重大，帮助我继续前进。这是我家人的照片。他们激励着我，提醒我为什么要做这些。"
+        },
+        {
+          "session_id": "session_22",
+          "dia_id": "D22:7",
+          "speaker": "约翰",
+          "text": "谢谢，玛丽亚！这张照片是去年我女儿萨拉生日时我们去旅行的照片——非常开心，留下了美好的回忆！家人激励着我不断为改变而努力。"
+        },
+        {
+          "session_id": "session_22",
+          "dia_id": "D22:9",
+          "speaker": "约翰",
+          "text": "是啊，当然！当日子艰难时，我就看看照片，提醒自己为什么要做现在做的事。我的家人是我的动力，他们让我坚持下去。你呢？是什么让你保持灵感？"
+        }
+      ],
+      "has_john_source_turn": true
+    },
+    {
+      "memory_id": "c10122e0-ec23-4065-81ad-4072971a5686",
+      "stored_session_id": "session_23",
+      "content": "In early July 2023, User was gathering people together to discuss the flood damage and possible solutions, and invited Maria to join the meeting, which she gladly accepted",
+      "source_turns": [
+        {
+          "session_id": "session_23",
+          "dia_id": "D23:3",
+          "speaker": "约翰",
+          "text": "非常感谢，玛丽亚。你的提议对我意义重大。我正在把大家召集起来讨论这件事，商量可能的解决方案。我真的很想听听你的想法。\n"
+        },
+        {
+          "session_id": "session_23",
+          "dia_id": "D23:4",
+          "speaker": "玛丽亚",
+          "text": "嘿，约翰，我很乐意参加会议，为让我们的社区变得更好出一份力。我们干吧！"
+        }
+      ],
+      "has_john_source_turn": true
+    },
+    {
+      "memory_id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+      "stored_session_id": "session_23",
+      "content": "Maria agreed to attend the flood-recovery community meeting and continue working with User to improve their neighborhood, calling User's helping spirit inspiring",
+      "source_turns": [
+        {
+          "session_id": "session_23",
+          "dia_id": "D23:5",
+          "speaker": "约翰",
+          "text": "干得好，玛丽亚！你的决心总是让我惊叹。让我们开始行动吧！"
+        },
+        {
+          "session_id": "session_23",
+          "dia_id": "D23:6",
+          "speaker": "玛丽亚",
+          "text": "一定，约翰！你帮助他人的精神令人鼓舞。有你这样志同道合的朋友真好。让我们携手合作，为我们的社区带来我们期望的改变。"
+        }
+      ],
+      "has_john_source_turn": true
+    },
+    {
+      "memory_id": "ee7c0f33-94df-4d44-b23b-929f607032e7",
+      "stored_session_id": "session_23",
+      "content": "User's former neighborhood was hit by a severe flood the week before July 7, 2023, which destroyed many homes due to poor existing infrastructure; the disaster reinforced User's resolve to improve their community's infrastructure",
+      "source_turns": [
+        {
+          "session_id": "session_23",
+          "dia_id": "D23:1",
+          "speaker": "约翰",
+          "text": "玛丽亚，自从我们上次聊天后，日子不太好过。我以前住的地方上周被一场严重的洪水袭击了。基础设施本来就不太好，所以很多房屋被毁坏了。这让我想起我们需要修整一下我们社区。"
+        }
+      ],
+      "has_john_source_turn": true
+    },
+    {
+      "memory_id": "fe0f098e-5c50-46d7-8f9a-6aa7194740bd",
+      "stored_session_id": "session_23",
+      "content": "User says Maria's support and friendship mean everything to him and motivate him to keep working for community change; he sometimes doubts he is making a difference but her encouragement helps him persevere",
+      "source_turns": [
+        {
+          "session_id": "session_22",
+          "dia_id": "D22:5",
+          "speaker": "约翰",
+          "text": "谢谢你。听到你的话真的很振奋人心。我有时会怀疑自己是否真的在带来改变，但知道有人理解我的工作意义重大，帮助我继续前进。这是我家人的照片。他们激励着我，提醒我为什么要做这些。"
+        },
+        {
+          "session_id": "session_23",
+          "dia_id": "D23:7",
+          "speaker": "约翰",
+          "text": "这对我意义重大，玛丽亚。你的支持和友谊是我的一切。我们一起真的能带来改变，还能激励其他人。让我们坚持下去！"
+        }
+      ],
+      "has_john_source_turn": true
+    }
+  ],
+  "limits": [
+    "Only graph-cache MENTIONS structure is simulated; no HugeGraph query, per-node limit, rerank, final context or answer replay",
+    "Archive retrieval union is not the complete memory store; cache and archive are close but not identical versions",
+    "Source-turn IDs are manually selected; an alias merge does not correct stale session metadata or unsupported details"
+  ]
+}

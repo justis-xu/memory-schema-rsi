@@ -63,6 +63,7 @@
 ### 其他未结项与边界
 
 - HF 数据覆盖已复核：`docs/m2_hf_dataset_coverage_zh.md`、`results/analysis/m2_hf_dataset_coverage_20260926.json`。LoCoMo 英中结构均为 1,986 QA/5,882 turn；中文 LongMemEval-S 为 470/500 题，且共同题中有 293 题合计少了 460 个背景场次。现有 LongMemEval 归档最多每文件 39 题，均为英文；当前配置也仍指向英文 LongMemEval。中文 LongMemEval 效果尚无历史结果，英中成绩不能直接混算。
+- `conv-41` 局部别名结构审计见 `docs/m2_conv41_alias_hub_zh.md`、`results/analysis/m2_conv41_alias_hub_20260926.json`。五条 `User` 缓存记忆均可回源到约翰参与的 turn；其中两条混有旧场事实却存为新场。可见缓存中 `User`/`John`/`约翰` 分别连 5/118/18 条互不重叠记忆。直接并到 `John` 的潜在邻接增加 118 条，但受单节点 15 条候选上限及重排限制，不能视为实际新增证据或答题收益；下一步应核受限候选进出与反伤。
 
 - EvoOntology 已完成针对性阅读和本地来源映射审计：`docs/m2_evoontology_evidence_mapping_zh.md`。可迁移的是有源证据映射、按失败层局部编辑、同条件配对接受门控；不能把 DDR-Bench 增益搬成中文图/Jev 预期收益。
 - 当前主要阶段文档还包括：`docs/m2_fact_level_funnel_zh.md`、`docs/m2_precision_judge_flips_zh.md`、`docs/m2_temporal_flip_sources_zh.md`、`docs/m2_relative_day_funnel_zh.md`、`docs/m2_speaker_surface_audit_zh.md`、`docs/m2_image_query_provenance_zh.md` 及对应小 POC 文档。它们是有边界的专项，不意味着“全部历史数据已穷尽”。
