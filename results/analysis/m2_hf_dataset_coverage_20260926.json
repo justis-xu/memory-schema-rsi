@@ -1,0 +1,207 @@
+{
+  "scope": "Local dataset structure and benchmark files; no semantic translation review or model calls",
+  "paths": {
+    "locomo_en": "/Users/xu/git/memory-schema-rsi/data/locomo/locomo10.json",
+    "locomo_zh": "/Users/xu/git/eval-datasets/locomo-zh/locomo10_zh.json",
+    "lme_en": "/Users/xu/git/eval-datasets/longmemeval-zh/longmemeval_s_cleaned.json",
+    "lme_zh": "/Users/xu/git/eval-datasets/longmemeval-zh/longmemeval_s_cleaned_zh.json"
+  },
+  "locomo": {
+    "english": {
+      "sessions": 272,
+      "turns": 5882,
+      "questions": 1986,
+      "category_2": 321,
+      "category_3": 96,
+      "category_1": 282,
+      "category_4": 841,
+      "category_5": 446,
+      "conversations": 10
+    },
+    "chinese": {
+      "sessions": 272,
+      "turns": 5882,
+      "questions": 1986,
+      "category_2": 321,
+      "category_3": 96,
+      "category_1": 282,
+      "category_4": 841,
+      "category_5": 446,
+      "conversations": 10
+    },
+    "sample_ids_equal": true,
+    "session_ids_dates_dia_ids_equal": true,
+    "qa_categories_evidence_answer_presence_equal": true
+  },
+  "longmemeval_s": {
+    "english": {
+      "sessions": 23867,
+      "messages": 246750,
+      "type_single-session-user": 70,
+      "answer_sessions_missing": 0,
+      "type_multi-session": 133,
+      "type_single-session-preference": 30,
+      "type_temporal-reasoning": 133,
+      "type_knowledge-update": 78,
+      "type_single-session-assistant": 56,
+      "questions": 500
+    },
+    "chinese": {
+      "sessions": 21966,
+      "messages": 226773,
+      "type_single-session-user": 66,
+      "answer_sessions_missing": 0,
+      "type_multi-session": 132,
+      "type_single-session-preference": 29,
+      "type_temporal-reasoning": 123,
+      "type_knowledge-update": 68,
+      "type_single-session-assistant": 52,
+      "questions": 470
+    },
+    "common_question_ids": 470,
+    "removed_question_ids": 30,
+    "added_question_ids": 0,
+    "removed_by_type": {
+      "knowledge-update": 10,
+      "single-session-assistant": 4,
+      "single-session-user": 4,
+      "temporal-reasoning": 10,
+      "multi-session": 1,
+      "single-session-preference": 1
+    },
+    "removed_haystack_sessions_within_common_questions": 460,
+    "common_questions_with_haystack_sessions_removed": 293,
+    "affected_questions_by_type": {
+      "temporal-reasoning": 72,
+      "single-session-preference": 24,
+      "single-session-user": 33,
+      "multi-session": 77,
+      "knowledge-update": 52,
+      "single-session-assistant": 35
+    },
+    "removed_haystack_sessions_by_type": {
+      "temporal-reasoning": 109,
+      "single-session-preference": 34,
+      "single-session-user": 51,
+      "multi-session": 114,
+      "knowledge-update": 91,
+      "single-session-assistant": 61
+    },
+    "added_haystack_sessions_within_common_questions": 0,
+    "shared_session_date_or_role_sequence_mismatches": 0,
+    "shared_question_type_date_or_answer_session_mismatches": 0,
+    "chinese_answer_source_sessions_missing": 0
+  },
+  "historical_longmemeval_runs": [
+    {
+      "path": "results/baseline_mem0only_20260922_215235.jsonl",
+      "rows": 4,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/baseline_mem0only_20260922_230914.jsonl",
+      "rows": 4,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_002105.jsonl",
+      "rows": 10,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_002324.jsonl",
+      "rows": 10,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_002723.jsonl",
+      "rows": 10,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_003609.jsonl",
+      "rows": 10,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_003853.jsonl",
+      "rows": 10,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_004521.jsonl",
+      "rows": 10,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_005425.jsonl",
+      "rows": 10,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/baseline_mem0only_20260923_072351.jsonl",
+      "rows": 10,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/eval_20260922_094617_graphoff.jsonl",
+      "rows": 3,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/eval_20260922_094633_graphon.jsonl",
+      "rows": 3,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/eval_20260922_094812_graphoff.jsonl",
+      "rows": 3,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/eval_20260922_094917_graphoff.jsonl",
+      "rows": 3,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/eval_20260922_094948_graphon.jsonl",
+      "rows": 3,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/eval_20260922_101800_graphoff.jsonl",
+      "rows": 3,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/eval_20260922_101846_graphon.jsonl",
+      "rows": 3,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/eval_20260926_132740_graphoff.jsonl",
+      "rows": 3,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/eval_20260926_132751_graphon.jsonl",
+      "rows": 3,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/full_lme_20260923_120251.jsonl",
+      "rows": 20,
+      "chinese_question_rows": 0
+    },
+    {
+      "path": "results/full_lme_20260924_013242.jsonl",
+      "rows": 39,
+      "chinese_question_rows": 0
+    }
+  ],
+  "config": {
+    "default_lme_points_to_english": true,
+    "locomo_zh_config_points_to_english_lme": true,
+    "locomo_zh_config_path_exists": true
+  }
+}

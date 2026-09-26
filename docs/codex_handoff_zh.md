@@ -62,6 +62,8 @@
 
 ### 其他未结项与边界
 
+- HF 数据覆盖已复核：`docs/m2_hf_dataset_coverage_zh.md`、`results/analysis/m2_hf_dataset_coverage_20260926.json`。LoCoMo 英中结构均为 1,986 QA/5,882 turn；中文 LongMemEval-S 为 470/500 题，且共同题中有 293 题合计少了 460 个背景场次。现有 LongMemEval 归档最多每文件 39 题，均为英文；当前配置也仍指向英文 LongMemEval。中文 LongMemEval 效果尚无历史结果，英中成绩不能直接混算。
+
 - EvoOntology 已完成针对性阅读和本地来源映射审计：`docs/m2_evoontology_evidence_mapping_zh.md`。可迁移的是有源证据映射、按失败层局部编辑、同条件配对接受门控；不能把 DDR-Bench 增益搬成中文图/Jev 预期收益。
 - 当前主要阶段文档还包括：`docs/m2_fact_level_funnel_zh.md`、`docs/m2_precision_judge_flips_zh.md`、`docs/m2_temporal_flip_sources_zh.md`、`docs/m2_relative_day_funnel_zh.md`、`docs/m2_speaker_surface_audit_zh.md`、`docs/m2_image_query_provenance_zh.md` 及对应小 POC 文档。它们是有边界的专项，不意味着“全部历史数据已穷尽”。
 - 总体仍需把历史数据清单、已分析覆盖和未覆盖范围核完整，并把多个专项收束成一份中文总复盘；不要用“没有发现更多问题”替代覆盖证明。优先依实际归档和代码证据，不重复已确立的结论；每段写清结论、置信度和下一步。
