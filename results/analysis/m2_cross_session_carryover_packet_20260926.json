@@ -1,0 +1,4460 @@
+{
+  "scope": "旧中文无图归档中，每个 conversation 的检索记忆 ID 并集；只比较不同 session 的记忆正文",
+  "selection": "去空白小写后，字符 3-gram Jaccard >= 0.37 且 SequenceMatcher ratio >= 0.55；另加一对已知词面漏检的家庭照 sentinel。",
+  "counts": {
+    "visible_unique_memories": 1780,
+    "cross_session_pairs_examined": 157956,
+    "lexical_candidate_pairs": 13,
+    "manual_photo_sentinel_pairs": 1,
+    "packet_pairs": 14,
+    "pair_case_co_selections": 140,
+    "unique_cases_with_pair_co_selected": 126
+  },
+  "pairs": [
+    {
+      "pair_id": "conv-41_051a88fcd77c",
+      "conversation": "conv-41",
+      "selection": "photo_sentinel",
+      "char_trigram_jaccard": 0.2905,
+      "sequence_ratio": 0.4807,
+      "left": {
+        "id": "a5f1a15b-1ec4-4f1d-b5be-1e4e79fef5e0",
+        "content": "John shared a family photo from a trip taken around fall 2022 for his daughter Sara's birthday; the family is posing on a train track in the fall, and they inspire him to keep working for change",
+        "score": 0.501420618669224,
+        "metadata": {
+          "case_id": "locomo_conv-41_qa0",
+          "benchmark": "locomo",
+          "session_id": "session_22",
+          "session_date": "6:59 pm on 5 July, 2023",
+          "user_id": "zhfull:locomo:conv-41"
+        }
+      },
+      "right": {
+        "id": "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+        "content": "User keeps a photo of his family — taken on a trip for his daughter Sara's birthday in fall 2022, showing them on train tracks in autumn — and looks at it during hard times as a reminder of why he works for community change",
+        "score": 0.40863814402486026,
+        "metadata": {
+          "session_date": "6:29 pm on 7 July, 2023",
+          "benchmark": "locomo",
+          "session_id": "session_23",
+          "case_id": "locomo_conv-41_qa0",
+          "user_id": "zhfull:locomo:conv-41"
+        }
+      },
+      "co_selected_case_ids": [],
+      "source_sessions": {
+        "session_23": {
+          "date": "6:29 pm on 7 July, 2023",
+          "turns": [
+            {
+              "speaker": "约翰",
+              "dia_id": "D23:1",
+              "text": "玛丽亚，自从我们上次聊天后，日子不太好过。我以前住的地方上周被一场严重的洪水袭击了。基础设施本来就不太好，所以很多房屋被毁坏了。这让我想起我们需要修整一下我们社区。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D23:2",
+              "text": "听到你们那里发生的事情我很难过，约翰。这对你和那里的每个人来说一定很艰难。有什么我能帮忙的吗？"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a party invitation on a table with a pen and paper",
+              "dia_id": "D23:3",
+              "text": "非常感谢，玛丽亚。你的提议对我意义重大。我正在把大家召集起来讨论这件事，商量可能的解决方案。我真的很想听听你的想法。\n"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D23:4",
+              "text": "嘿，约翰，我很乐意参加会议，为让我们的社区变得更好出一份力。我们干吧！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D23:5",
+              "text": "干得好，玛丽亚！你的决心总是让我惊叹。让我们开始行动吧！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D23:6",
+              "text": "一定，约翰！你帮助他人的精神令人鼓舞。有你这样志同道合的朋友真好。让我们携手合作，为我们的社区带来我们期望的改变。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D23:7",
+              "text": "这对我意义重大，玛丽亚。你的支持和友谊是我的一切。我们一起真的能带来改变，还能激励其他人。让我们坚持下去！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D23:8",
+              "text": "约翰，让我们继续合作，为我们的社区带来改变。我们的行动，无论多么微小，都能产生巨大的影响。让我们继续传递善意，播撒希望。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D23:9",
+              "text": "没错，小小的步伐也很重要！我们 together 真的能带来改变——开始吧！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D23:10",
+              "text": "对，让我们掀起正能量的涟漪！小小的善举和援手真的能改变生活。让我们继续改善我们的社区。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D23:11",
+              "text": "是啊，让我们努力帮助身边的人。我们能够带来改变！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D23:12",
+              "text": "是啊，约翰！改变从小事开始，只要努力，我们真的能成就伟大的事情。很高兴有你在。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D23:13",
+              "text": "谢谢，玛丽亚。你的支持意义重大，在社区工作中有你在身边真是太棒了。让我们继续前进，创造美好的事情！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D23:14",
+              "text": "当然！我们可以继续做很棒的事情，带来改变。好了，我要去和健身房的一些朋友吃晚饭了。回头聊！"
+            }
+          ]
+        },
+        "session_22": {
+          "date": "6:59 pm on 5 July, 2023",
+          "turns": [
+            {
+              "speaker": "约翰",
+              "dia_id": "D22:1",
+              "text": "自从上次聊天以来，我一直在思考教育和基础设施如何塑造社区。它们阻碍社区发展真是令人难过，但这也激励我尽己所能去改善现状。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:2",
+              "text": "我完全同意。它们在塑造社区方面起着至关重要的作用。看到它们缺失时的负面影响很不幸，但看到你为带来积极改变所展现的热情和主动性，实在令人振奋。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D22:3",
+              "text": "你的支持对我意义重大。感觉像是在打一场艰难的仗确实不好受，但知道有人看到这些工作的价值，让我备受鼓舞，继续前行。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:4",
+              "text": "约翰，你可以的！在应对困难事情时有个支持系统真好。我随时愿意倾听或尽我所能帮忙。你真的在带来改变，这是值得骄傲的事！"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/j4ms3skztjg11.jpg"
+              ],
+              "blip_caption": "a photo of a family posing on a train track in the fall",
+              "query": "family photo",
+              "dia_id": "D22:5",
+              "text": "谢谢你。听到你的话真的很振奋人心。我有时会怀疑自己是否真的在带来改变，但知道有人理解我的工作意义重大，帮助我继续前进。这是我家人的照片。他们激励着我，提醒我为什么要做这些。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:6",
+              "text": "这张照片太棒了！你的家人看起来开心极了——你们的旅行一定很精彩！他们显然一直激励和支持着你。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D22:7",
+              "text": "谢谢，玛丽亚！这张照片是去年我女儿萨拉生日时我们去旅行的照片——非常开心，留下了美好的回忆！家人激励着我不断为改变而努力。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:8",
+              "text": "是啊，回忆和动力确实能帮我们保持方向、继续前进。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D22:9",
+              "text": "是啊，当然！当日子艰难时，我就看看照片，提醒自己为什么要做现在做的事。我的家人是我的动力，他们让我坚持下去。你呢？是什么让你保持灵感？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:10",
+              "text": "与人交流、做志愿者、听音乐都能给我灵感。还有什么能让你保持灵感的吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D22:11",
+              "text": "当然是家人、锻炼，还有和朋友共度的时光。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:12",
+              "text": "太好了，约翰！确实，我们每个人都有自己特别的灵感来源，支撑着我们前行。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D22:13",
+              "text": "没错，玛丽亚！找到那些特别的源泉是保持动力、迎接挑战的关键。当我们弄清楚什么让自己感到兴奋和充满活力时，那种感觉真好。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:14",
+              "text": "是啊，约翰，这些小事能点燃我们的热情，激励我们。神奇的是，像散步或听歌这样简单的事情，就能彻底改变我们的心态。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://get.pxhere.com/photo/beach-landscape-sea-coast-water-sand-ocean-horizon-cloud-sky-sun-sunrise-sunset-shore-wave-dawn-dusk-evening-relax-paradise-tropical-peaceful-blue-colorful-body-of-water-clouds-afterglow-sunset-beach-gulf-of-mexico-wind-wave-515918.jpg"
+              ],
+              "blip_caption": "a photo of a sunset over the ocean with a sailboat in the distance",
+              "query": "sunset beach colorful ocean",
+              "dia_id": "D22:15",
+              "text": "是啊，玛丽亚。像这样的小事情会对我们的思维产生很大影响。哦，这是我上周散步时拍的一张照片。它总是提醒我要停下来休息，深呼吸，欣赏大自然。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:16",
+              "text": "这张照片太美了！色彩如此鲜艳——真正展现了大海的宁静。你散步时多久能看到一次那样的日落？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D22:17",
+              "text": "谢谢，玛丽亚！我至少每周能看到一次。在这个疯狂的世界里，这是断开连接、思考和寻找内心平静的好方法。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:18",
+              "text": "这是很好的习惯，约翰。在这个疯狂的世界里，抽时间抽离出来、寻找平静很重要。我最近经常在附近的公园里独自散步，这带来了很大的改变。很高兴你有这样的方式来提醒自己。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D22:19",
+              "text": "谢谢，玛丽亚。很感激。和你聊天很开心。我得走了。注意安全，回头再聊！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D22:20",
+              "text": "嘿，约翰，注意安全。回头再聊！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D22:21",
+              "text": "保重，玛丽亚。回头见！"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-44_0c8afd94ba05",
+      "conversation": "conv-44",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.7576,
+      "sequence_ratio": 0.95,
+      "left": {
+        "id": "99549aa7-4b96-4b21-828b-dd5725ddcb04",
+        "content": "奥黛丽喜欢用回收材料（瓶盖、纽扣、坏掉的首饰等）制作首饰，认为这是展现创造力和可持续发展的方式，每件作品都有特别的故事",
+        "score": 0.5919263930642658,
+        "metadata": {
+          "case_id": "locomo_conv-44_qa0",
+          "session_date": "9:41 pm on 6 October, 2023",
+          "benchmark": "locomo",
+          "session_id": "session_22",
+          "user_id": "zhfull:locomo:conv-44"
+        }
+      },
+      "right": {
+        "id": "987421f4-89ba-4a49-958d-4185ac1732d4",
+        "content": "奥黛丽喜欢用回收材料（瓶盖、纽扣、坏掉的首饰等）做首饰，认为这是展现创造力和可持续发展热爱的好方式，每件作品都有特别的故事",
+        "score": 0.5920788026024735,
+        "metadata": {
+          "case_id": "locomo_conv-44_qa0",
+          "session_date": "4:22 pm on 13 October, 2023",
+          "benchmark": "locomo",
+          "session_id": "session_23",
+          "user_id": "zhfull:locomo:conv-44"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-44_qa32",
+        "locomo_conv-44_qa36",
+        "locomo_conv-44_qa70",
+        "locomo_conv-44_qa103",
+        "locomo_conv-44_qa101",
+        "locomo_conv-44_qa102",
+        "locomo_conv-44_qa126",
+        "locomo_conv-44_qa147",
+        "locomo_conv-44_qa148"
+      ],
+      "source_sessions": {
+        "session_23": {
+          "date": "4:22 pm on 13 October, 2023",
+          "turns": [
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://i2.pickpik.com/photos/717/632/853/dog-goldendoodle-chess-play-preview.jpg"
+              ],
+              "blip_caption": "a photography of a dog sitting at a chess board with a chess set in front of him",
+              "query": "board games dog bonding",
+              "dia_id": "D23:1",
+              "re-download": true,
+              "text": "嘿，奥黛丽，我这周挺忙的。上周二，我女朋友、托比和我一起玩桌游，度过了非常棒的一晚。真的很开心。你最近怎么样？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://about.hawaiilife.com/wp-content/uploads/2023/11/IMG-1593-e1699235788417.jpg"
+              ],
+              "blip_caption": "a photo of a pan of cookies on a wooden table",
+              "query": "homemade dog treats tray",
+              "dia_id": "D23:2",
+              "text": "嘿！听起来你一直很忙！我最近做了一些好吃的，感谢邻居们对我家狗狗的友好。这是给周围带来快乐的好方式。周末有什么计划吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://embracesomeplace.com/wp-content/uploads/2022/01/DSC02393.jpg"
+              ],
+              "blip_caption": "a photo of a group of people sitting at a table in a room",
+              "query": "cozy cafe",
+              "dia_id": "D23:3",
+              "text": "周五晚上的桌游活动是个不错的放松。这个周末，我打算去一家温馨的咖啡馆看看，在那儿待着。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:4",
+              "text": "那家咖啡馆看起来真的很温馨！还有其他你想推荐的地方吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://be-lavie.com/wp-content/uploads/2019/06/IMG_9281-e1560067147565.jpg"
+              ],
+              "blip_caption": "a photo of a man sitting on a couch in a large open space",
+              "query": "rooftop bar cityscape view",
+              "dia_id": "D23:5",
+              "text": "这家新店前几天刚开张。视野和氛围都很棒。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:6",
+              "text": "哇，看起来很棒！我可以带我的狗狗们一起去吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:7",
+              "text": "嗯，不确定那里合不合适它们，不过附近有一个很棒的狗狗公园！也许我们可以把咖啡带过去。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://i.redd.it/yfeccwau4dya1.jpg"
+              ],
+              "blip_caption": "a photo of a dog wearing a sweater sitting in the grass",
+              "query": "dog park dogs playing",
+              "dia_id": "D23:8",
+              "text": "听起来不错！探索新地方对它们来说总是一场冒险。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:9",
+              "text": "哇，它们穿着毛衣好可爱！它们喜欢去狗狗公园吗？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://i.redd.it/6jbz5p9fxy051.jpg"
+              ],
+              "blip_caption": "a photo of two dogs playing with a frisbee in a field",
+              "query": "dog park dogs playing together",
+              "dia_id": "D23:10",
+              "text": "狗狗公园对它们来说就像天堂！它们喜欢和其他狗狗社交，还能得到很多锻炼。看它们跑来跑去、到处闻来闻去特别可爱。你的狗狗在狗狗公园有什么有趣的故事吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://live.staticflickr.com/7245/7209126530_152a8cd458_b.jpg"
+              ],
+              "blip_caption": "a photography of a dog playing with a frisbee in a field",
+              "query": "dog chasing tail park",
+              "dia_id": "D23:11",
+              "re-download": true,
+              "text": "有一次我的狗狗太兴奋了，追着一只松鼠跑。它绕着树跑来跑去，而松鼠就在树枝上看着。太搞笑了！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://d4yxl4pe8dqlj.cloudfront.net/images/dcc5fa88-74fb-4e04-a7f9-df5051a8b643/7babb05e-2478-445c-8ca9-4dc2113853ff_full_size.jpg"
+              ],
+              "blip_caption": "a photo of a dog wearing a shirt standing on a hardwood floor",
+              "query": "dog park dogs winter sweaters",
+              "dia_id": "D23:12",
+              "text": "哈哈，那一定很搞笑！你的狗狗是什么品种来着？它看起来很有趣！我的狗狗们喜欢在公园里跑来跑去。但它们讨厌的一件事就是雪。去年冬天我带它们去了一个下雪的公园，它们完全懵了！它们肯定更喜欢阳光明媚的日子在草地上玩。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:13",
+              "text": "我的狗狗托比是德国牧羊犬，喜欢可爱的毛衣！它非常好动。你的狗狗们在公园喜欢玩什么游戏？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:14",
+              "text": "我的狗狗们对捡球游戏和飞盘特别疯狂，它们还喜欢跑来跑去和结识其他狗狗。它们可以连续跑好几个小时！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:15",
+              "text": "听起来太有趣了！看到它们开心又活泼真好。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://live.staticflickr.com/3563/3808347692_7ddc680e46_b.jpg"
+              ],
+              "blip_caption": "a photography of a dog and a teddy bear sleeping on a couch",
+              "query": "dogs sitting together on couch",
+              "dia_id": "D23:16",
+              "re-download": true,
+              "text": "是啊，太棒了！看到它们开心我就满心欢喜。它们给我带来了那么多快乐。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:17",
+              "text": "是啊，它们真的能带来快乐，不是吗。太美好了。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://i.pinimg.com/originals/55/47/8f/55478f3a1f3c22e60a729cd3806d2830.jpg"
+              ],
+              "blip_caption": "a photo of a tattoo of a flower on a wrist",
+              "query": "tattoo arm four dogs",
+              "dia_id": "D23:18",
+              "text": "我觉得这话我说过很多次了，但我真的无法想象没有它们的生活——我的小家庭。它们总是让我微笑，给我满满的爱和陪伴。还记得我有一个四只狗狗的纹身吗？所以我去了纹身店，在那个纹身上又加了一些图案。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:19",
+              "text": "哇，太酷了！还打算继续加吗？还是已经完工了？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "blip_caption": "a photo of a woman with a tattoo of a dog and sunflowers",
+              "dia_id": "D23:20",
+              "text": "谢谢！我觉得现在够了。除非有一天我决定再养一只狗。也许到那时我会再纹一个。"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://c1.wallpaperflare.com/preview/640/472/990/away-path-forest-hiking.jpg"
+              ],
+              "blip_caption": "a photography of a path in the woods with a forest in the background",
+              "query": "hiking trail trees",
+              "dia_id": "D23:21",
+              "re-download": true,
+              "text": "看得出来它们真的是你爱的源泉。有这样的灵感来源真好。你知道还有什么能给我灵感吗？像这样的地方"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:22",
+              "text": "它们真的给我带来了快乐。感受到无条件的爱真是太棒了！你有机会去那样的森林吗？我敢说那对你来说是很棒的放松方式。"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://community.us.craghoppers.com/wp-content/uploads/2018/05/j3bmicznnmrnfe1uchho.jpg"
+              ],
+              "blip_caption": "a photo of a woman walking up a steep hill with a view of the ocean",
+              "query": "hiking trail beautiful view",
+              "dia_id": "D23:23",
+              "text": "是啊，住在城市里，我确实很想念大自然。只要有机会，我就会尽量去附近的公园或远足。这对我来说是一种非常平和快乐的体验。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:24",
+              "text": "是啊，你说得太对了，我们需要亲近大自然的时间。最近生活太疯狂了，我已经好久没带我的毛孩子们出去散步了。但和它们一起在大自然里的时光是那么惬意快乐！它们绝对是探索大自然的最佳伙伴。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:25",
+              "text": "完全同意！大自然和动物能带来如此平和与快乐。希望你和你的毛孩子们很快能去来一场有趣的冒险！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:26",
+              "text": "是啊，我需要带它们去远足，那会是很棒的治愈！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:27",
+              "text": "是啊！你带狗狗们远足过，那是增进感情和留下回忆的好方式。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:28",
+              "text": "是的，我还记得每次带我狗狗去远足的时光。美好的回忆。"
+            }
+          ]
+        },
+        "session_22": {
+          "date": "9:41 pm on 6 October, 2023",
+          "turns": [
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2014,w_3017,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/shutterstock_485806801_mv1xuv.jpg"
+              ],
+              "blip_caption": "a photo of two dogs running in a field with a ball in their mouth",
+              "query": "dogs playing park",
+              "dia_id": "D22:1",
+              "text": "嘿，安德鲁，我一直在想你前几天说的想念大自然的事。这让我想起我因为膝盖受伤不能遛狗的那段时间。挺难熬的，因为它们给我带来了很多快乐。这张照片是我重新开始遛狗后拍的。能重新出门的感觉真好！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:2",
+              "text": "你懂那种感受对吧？不能带它们出去散步真糟糕。当你终于能再带它们出门时，它们肯定乐坏了。很高兴你还留下了那张可爱的照片！狗狗就是这样棒，对吧？提醒我们停下脚步，享受生活。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:3",
+              "text": "是啊，它们简直等不及了！它们确实提醒我们要珍惜生活中的小确幸。它们看到的世界如此不同！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:4",
+              "text": "是啊，狗狗真的很懂如何发现生活中的简单快乐！珍惜小事非常重要。说到有趣的爱好，我记得你之前提到过那件首饰的事？我记得你说过你是用回收物品做的。听起来很酷——多跟我说说！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://boboglobal.com/cdn/shop/products/IMG_2161.jpg"
+              ],
+              "blip_caption": "a photo of a woman with a colorful necklace and earrings",
+              "query": "recycled bottle cap necklace colorful beads",
+              "dia_id": "D22:5",
+              "text": "哦对！我喜欢用回收材料做首饰。这是展现我对创造力和可持续发展的热爱的好方式。我会去寻找瓶盖、纽扣和坏掉的首饰之类的东西，然后把它们变成独一无二的作品。这是我最喜欢的项链之一照片。每件作品都有一个特别的故事，都有自己的魅力。而且，这也是减少浪费的一小步。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:6",
+              "text": "那条项链看起来太棒了！颜色很亮眼，设计也很酷。你让回收物品焕发新生，这真好。你做首饰是为了卖还是只是当爱好？另外，你会把利润捐给慈善事业吗？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:7",
+              "text": "谢谢！我一开始做首饰只是爱好，后来开始出售。我会把一部分利润捐给一个我非常关心的事业。这是把我的两个热爱结合起来的方式——做首饰和改变世界。顾客们不仅喜欢我的作品，还能支持一项事业，这太好了！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:8",
+              "text": "哇！你用热情去改变世界，真了不起。这段经历有没有改变你对其他爱好的看法？你有没有捐给特定的组织？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:9",
+              "text": "当然！任何爱好只要用对了地方都能产生影响——我捐给一家动物收容所。他们做得很棒，所以这是我出力的一种方式。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:10",
+              "text": "太棒了！即使你不能再去收容所做志愿者了，你依然如此致力于做出改变，真的很鼓舞人心。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:11",
+              "text": "是啊，即使不能亲临现场，我也在寻找行善的方式。生活就是要随机应变、乐于助人。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:12",
+              "text": "是啊，你说得对。生活就是无论发生什么都要随遇而安、做出改变。你的努力真的很了不起。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:13",
+              "text": "谢谢！感谢你的美言。即使在充满挑战的时期，也要保持坚强，继续做出改变。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-44_9b37baddbb91",
+      "conversation": "conv-44",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.5283,
+      "sequence_ratio": 0.8471,
+      "left": {
+        "id": "9e959d13-b2ca-4578-821b-7d3010788724",
+        "content": "奥黛丽考虑过再养几只狗，但决定四只已经够了，因为它们让她很忙，她想确保给每一只应有的关注",
+        "score": 0.5629942978140082,
+        "metadata": {
+          "session_id": "session_16",
+          "session_date": "9:19 pm on 19 August, 2023",
+          "case_id": "locomo_conv-44_qa0",
+          "benchmark": "locomo",
+          "user_id": "zhfull:locomo:conv-44"
+        }
+      },
+      "right": {
+        "id": "950664a8-b2aa-4d98-9cbf-94b3b56b433d",
+        "content": "奥黛丽想再养几只狗，但现在四只已经够了——它们让她很忙，她想确保给每一只应有的关注",
+        "score": 0.574887712103833,
+        "metadata": {
+          "session_date": "9:58 pm on 16 August, 2023",
+          "case_id": "locomo_conv-44_qa0",
+          "benchmark": "locomo",
+          "session_id": "session_15",
+          "user_id": "zhfull:locomo:conv-44"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-44_qa15",
+        "locomo_conv-44_qa125",
+        "locomo_conv-44_qa130"
+      ],
+      "source_sessions": {
+        "session_16": {
+          "date": "9:19 pm on 19 August, 2023",
+          "turns": [
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://res.cloudinary.com/dragonspell/images/w_480,h_480,c_scale,dpr_auto,fl_progressive:steep,f_auto/w_480,h_480,c_fill/v1571420634/www.travelportland.com/Vista-House-Columbia-River-Gorge-Photo-by-Travel-Oregon-aspect-ratio-1x1/Vista-House-Columbia-River-Gorge-Photo-by-Travel-Oregon-aspect-ratio-1x1.jpg"
+              ],
+              "blip_caption": "a photo of a sunset over a mountain with a church on top",
+              "query": "beautiful sunrise hike trail",
+              "dia_id": "D16:1",
+              "text": "嘿，奥黛丽，希望你一切都好！我昨天决定放下工作，去了一家新开的咖啡馆看看。这是个不错的改变，让我想起大自然总是能给你带来宁静。这是我上次徒步时拍的照片——太宁静了！你这个月过得怎么样？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D16:2",
+              "text": "嗨，安德鲁！咖啡馆听起来不错，徒步的照片也很棒！八月过得挺充实的——我学了一项新技能！能确保狗狗们被精心照顾、开开心心的，真的太棒了。我一直很喜欢照顾我的狗狗们，现在我亲自给它们做美容，让我和它们更亲近了。美容之后它们看起来太可爱了！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D16:3",
+              "text": "哇，太棒了！你把狗狗们照顾得真好。能给我看看它们美容后的照片吗？它们肯定可爱极了！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "http://canadiangroomingdistributor.com/cdn/shop/articles/PXL_20220614_014152490.PORTRAIT.jpg"
+              ],
+              "blip_caption": "a photo of a dog is standing on a table in a room",
+              "query": "dogs groomed fluffy",
+              "dia_id": "D16:4",
+              "text": "这是它们美容后的照片——看它们多么柔软蓬松！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D16:5",
+              "text": "哇，它们看起来又可爱又蓬松！你做得太好了。你是怎么做得这么好的？我一直想学给狗狗美容，但一直没时间。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D16:6",
+              "text": "我上了一个狗狗美容课程，学了很多技巧。想听听一些小贴士吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D16:7",
+              "text": "当然！我很想听听这些小贴士。这是我一直感兴趣的事。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D16:8",
+              "text": "美容时要缓慢轻柔，注意耳朵和爪子等敏感部位。而且记住，整个美容过程中要保持耐心和积极的心态。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D16:9",
+              "text": "很实用的小贴士！如果以后我要给托比美容，我会记住的。谢谢！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D16:10",
+              "text": "不客气，很高兴这些贴士对你有帮助。如果你以后尝试的话，告诉我，我可以提供更多建议。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D16:11",
+              "text": "谢谢！如果我决定尝试的话，我会告诉你的。多谢你的帮助。你周末有什么计划？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D16:12",
+              "text": "我要带狗狗们去公园散步——它们很喜欢，对我们来说也是很好的锻炼。你周末有什么安排吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D16:13",
+              "text": "这个周末我要去一个自然保护区，重新亲近大自然——好兴奋！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D16:14",
+              "text": "太好了！祝你与大自然亲密接触时玩得开心。别忘了拍些漂亮的照片！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D16:15",
+              "text": "没问题，我回来时会带一些超棒的照片给你看。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D16:16",
+              "text": "哈哈，谢谢！你的徒步照片总是很美。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D16:17",
+              "text": "是啊！我真的很想把那一刻记录下来，你懂的？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2014,w_3017,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/shutterstock_485806801_mv1xuv.jpg"
+              ],
+              "blip_caption": "a photo of two dogs running in a field with a ball in their mouth",
+              "query": "dogs playing park",
+              "dia_id": "D16:18",
+              "text": "难怪呢。现在我迫不及待想看照片了。保重，玩得开心！我的狗狗们也会等着你的！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D16:19",
+              "text": "谢谢！等我回来就迫不及待给你看。再见！"
+            }
+          ]
+        },
+        "session_15": {
+          "date": "9:58 pm on 16 August, 2023",
+          "turns": [
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://i.pinimg.com/originals/a3/1d/79/a31d794799464fd294587fe666da891d.jpg"
+              ],
+              "blip_caption": "a photo of a person with a tattoo on their hand",
+              "query": "tattoo four dogs arm",
+              "dia_id": "D15:1",
+              "text": "嘿，安德鲁，自从上次聊天后，我又在我的手臂上纹了我四只狗的纹身！它们对我来说真的很重要，所以我想无论走到哪里都能带着它们会很不错。你最近在忙什么呢？"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D15:2",
+              "text": "哇，太酷了！我最近和我女朋友去了一个农场买些新鲜蔬菜做晚饭，感觉特别好。你有没有想过再养几只毛孩子，还是四只已经够多了？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://upload.wikimedia.org/wikipedia/commons/2/21/Dogs_playing_at_dog_park.JPG"
+              ],
+              "blip_caption": "a photography of a group of people walking with dogs in a park",
+              "query": "four dogs playing park",
+              "dia_id": "D15:3",
+              "re-download": true,
+              "text": "听起来很棒！我想再养几只，但现在四只已经够了。它们让我很忙，而且我想确保给每一只应有的关注——四只狗已经很多了！我带它们全都去兽医那里做了检查，场面太混乱了，下次我要一只一只地带去。"
+            },
+            {
+              "speaker": "安德鲁",
+              "blip_caption": "a photo of a dog laying on a rug eating lettuce",
+              "dia_id": "D15:4",
+              "text": "哎呀，那次去兽医那里肯定乱成一团。是啊，它们肯定让你忙个不停！你分享的那张照片很温馨——它们有自己最喜欢放松的地方吗？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D15:5",
+              "text": "有，当然有。它们都有自己最爱待的地方。Pepper喜欢窝在沙发上，Pixie总是蜷在自己的窝里，Precious有她的椅子，而Panda喜欢在他的地毯上放松！它们都有自己舒适的小角落。"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://lucky-paws.co/cdn/shop/products/image_b74722d8-a1e0-4dcc-81a8-faa99fed31cb_1.jpg"
+              ],
+              "blip_caption": "a photo of a dog laying on a fluffy blanket on the floor",
+              "query": "cozy dog bed blanket",
+              "dia_id": "D15:6",
+              "text": "听起来太可爱了！宠物总会找到自己的小角落，这带来了很多快乐和安慰。这是托比在他最喜欢的地方。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://freerangestock.com/sample/87785/puppy-love.jpg"
+              ],
+              "blip_caption": "a photography of two dogs laying on a blanket on a couch",
+              "query": "pepper pixie dogs cuddling fluffy blanket",
+              "dia_id": "D15:7",
+              "re-download": true,
+              "text": "是啊，它们可太会享受了！这是它们依偎在我最喜欢的毯子上的照片。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D15:8",
+              "text": "哇，它们太可爱了！看起来好惬意。它们总是这样睡觉吗？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D15:9",
+              "text": "是的，它们总是这样睡。它们会依偎在一起，尤其是到午睡时间的时候。它们真的是最好的朋友。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D15:10",
+              "text": "哇，太棒了！有毛茸茸的朋友互相陪伴一定很好。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D15:11",
+              "text": "是啊，它们总是互相陪伴。看到它们在一起我就特别开心。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D15:12",
+              "text": "听起来真美好。难怪有它们在身边能给你带来这么多快乐！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D15:13",
+              "text": "是啊，它们就是我的全世界，我无法想象没有它们的生活。"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://i.redd.it/5kklgil5t9qb1.jpg"
+              ],
+              "blip_caption": "a photo of a man laying on a couch with a dog",
+              "query": "man hugging dog",
+              "dia_id": "D15:14",
+              "text": "完全理解，宠物带来这么多快乐，就像家人一样。我也无法想象没有它们的生活。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://i2.pickpik.com/photos/498/107/776/dog-girl-de-dogue-preview.jpg"
+              ],
+              "blip_caption": "a photography of a woman sitting in a field with two dogs",
+              "query": "person lying grass dogs",
+              "dia_id": "D15:15",
+              "re-download": true,
+              "text": "对，宠物就是家人。看到它们之间的感情真的很温馨。这是我躺在草地上和它们在一起的照片。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D15:16",
+              "text": "哇，这张照片拍得真好！看来你们在户外玩得非常开心。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D15:17",
+              "text": "是啊，那天特别棒——我们在外面玩得特别尽兴。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D15:18",
+              "text": "很高兴你和它们玩得开心。好好珍藏这些回忆吧！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D15:19",
+              "text": "谢谢！我会永远珍惜那些时刻。它们真的让生活变得明亮多了。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-44_b514edf1ce25",
+      "conversation": "conv-44",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.5529,
+      "sequence_ratio": 0.7914,
+      "left": {
+        "id": "92291bd1-360e-46d3-952b-8d6c66b1e988",
+        "content": "奥黛丽起初把做回收首饰当爱好，后来开始出售，并把一部分利润捐给她关心的一家动物收容所，把做首饰和改变世界两个热爱结合起来",
+        "score": 0.5621348532658285,
+        "metadata": {
+          "session_date": "4:22 pm on 13 October, 2023",
+          "case_id": "locomo_conv-44_qa0",
+          "session_id": "session_23",
+          "benchmark": "locomo",
+          "user_id": "zhfull:locomo:conv-44"
+        }
+      },
+      "right": {
+        "id": "e6c84260-6dcb-48dc-a397-f77717b75069",
+        "content": "奥黛丽最初把做首饰当爱好，后来开始出售，并把一部分利润捐给她关心的动物收容所，把做首饰和改变世界两个热爱结合起来；她已不能再去收容所做志愿者，但仍通过捐款出力",
+        "score": 0.5353349375625046,
+        "metadata": {
+          "case_id": "locomo_conv-44_qa0",
+          "session_id": "session_22",
+          "benchmark": "locomo",
+          "session_date": "9:41 pm on 6 October, 2023",
+          "user_id": "zhfull:locomo:conv-44"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-44_qa32",
+        "locomo_conv-44_qa69",
+        "locomo_conv-44_qa103",
+        "locomo_conv-44_qa101",
+        "locomo_conv-44_qa102",
+        "locomo_conv-44_qa106",
+        "locomo_conv-44_qa104",
+        "locomo_conv-44_qa139",
+        "locomo_conv-44_qa147",
+        "locomo_conv-44_qa148"
+      ],
+      "source_sessions": {
+        "session_23": {
+          "date": "4:22 pm on 13 October, 2023",
+          "turns": [
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://i2.pickpik.com/photos/717/632/853/dog-goldendoodle-chess-play-preview.jpg"
+              ],
+              "blip_caption": "a photography of a dog sitting at a chess board with a chess set in front of him",
+              "query": "board games dog bonding",
+              "dia_id": "D23:1",
+              "re-download": true,
+              "text": "嘿，奥黛丽，我这周挺忙的。上周二，我女朋友、托比和我一起玩桌游，度过了非常棒的一晚。真的很开心。你最近怎么样？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://about.hawaiilife.com/wp-content/uploads/2023/11/IMG-1593-e1699235788417.jpg"
+              ],
+              "blip_caption": "a photo of a pan of cookies on a wooden table",
+              "query": "homemade dog treats tray",
+              "dia_id": "D23:2",
+              "text": "嘿！听起来你一直很忙！我最近做了一些好吃的，感谢邻居们对我家狗狗的友好。这是给周围带来快乐的好方式。周末有什么计划吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://embracesomeplace.com/wp-content/uploads/2022/01/DSC02393.jpg"
+              ],
+              "blip_caption": "a photo of a group of people sitting at a table in a room",
+              "query": "cozy cafe",
+              "dia_id": "D23:3",
+              "text": "周五晚上的桌游活动是个不错的放松。这个周末，我打算去一家温馨的咖啡馆看看，在那儿待着。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:4",
+              "text": "那家咖啡馆看起来真的很温馨！还有其他你想推荐的地方吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://be-lavie.com/wp-content/uploads/2019/06/IMG_9281-e1560067147565.jpg"
+              ],
+              "blip_caption": "a photo of a man sitting on a couch in a large open space",
+              "query": "rooftop bar cityscape view",
+              "dia_id": "D23:5",
+              "text": "这家新店前几天刚开张。视野和氛围都很棒。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:6",
+              "text": "哇，看起来很棒！我可以带我的狗狗们一起去吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:7",
+              "text": "嗯，不确定那里合不合适它们，不过附近有一个很棒的狗狗公园！也许我们可以把咖啡带过去。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://i.redd.it/yfeccwau4dya1.jpg"
+              ],
+              "blip_caption": "a photo of a dog wearing a sweater sitting in the grass",
+              "query": "dog park dogs playing",
+              "dia_id": "D23:8",
+              "text": "听起来不错！探索新地方对它们来说总是一场冒险。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:9",
+              "text": "哇，它们穿着毛衣好可爱！它们喜欢去狗狗公园吗？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://i.redd.it/6jbz5p9fxy051.jpg"
+              ],
+              "blip_caption": "a photo of two dogs playing with a frisbee in a field",
+              "query": "dog park dogs playing together",
+              "dia_id": "D23:10",
+              "text": "狗狗公园对它们来说就像天堂！它们喜欢和其他狗狗社交，还能得到很多锻炼。看它们跑来跑去、到处闻来闻去特别可爱。你的狗狗在狗狗公园有什么有趣的故事吗？"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://live.staticflickr.com/7245/7209126530_152a8cd458_b.jpg"
+              ],
+              "blip_caption": "a photography of a dog playing with a frisbee in a field",
+              "query": "dog chasing tail park",
+              "dia_id": "D23:11",
+              "re-download": true,
+              "text": "有一次我的狗狗太兴奋了，追着一只松鼠跑。它绕着树跑来跑去，而松鼠就在树枝上看着。太搞笑了！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://d4yxl4pe8dqlj.cloudfront.net/images/dcc5fa88-74fb-4e04-a7f9-df5051a8b643/7babb05e-2478-445c-8ca9-4dc2113853ff_full_size.jpg"
+              ],
+              "blip_caption": "a photo of a dog wearing a shirt standing on a hardwood floor",
+              "query": "dog park dogs winter sweaters",
+              "dia_id": "D23:12",
+              "text": "哈哈，那一定很搞笑！你的狗狗是什么品种来着？它看起来很有趣！我的狗狗们喜欢在公园里跑来跑去。但它们讨厌的一件事就是雪。去年冬天我带它们去了一个下雪的公园，它们完全懵了！它们肯定更喜欢阳光明媚的日子在草地上玩。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:13",
+              "text": "我的狗狗托比是德国牧羊犬，喜欢可爱的毛衣！它非常好动。你的狗狗们在公园喜欢玩什么游戏？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:14",
+              "text": "我的狗狗们对捡球游戏和飞盘特别疯狂，它们还喜欢跑来跑去和结识其他狗狗。它们可以连续跑好几个小时！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:15",
+              "text": "听起来太有趣了！看到它们开心又活泼真好。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://live.staticflickr.com/3563/3808347692_7ddc680e46_b.jpg"
+              ],
+              "blip_caption": "a photography of a dog and a teddy bear sleeping on a couch",
+              "query": "dogs sitting together on couch",
+              "dia_id": "D23:16",
+              "re-download": true,
+              "text": "是啊，太棒了！看到它们开心我就满心欢喜。它们给我带来了那么多快乐。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:17",
+              "text": "是啊，它们真的能带来快乐，不是吗。太美好了。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://i.pinimg.com/originals/55/47/8f/55478f3a1f3c22e60a729cd3806d2830.jpg"
+              ],
+              "blip_caption": "a photo of a tattoo of a flower on a wrist",
+              "query": "tattoo arm four dogs",
+              "dia_id": "D23:18",
+              "text": "我觉得这话我说过很多次了，但我真的无法想象没有它们的生活——我的小家庭。它们总是让我微笑，给我满满的爱和陪伴。还记得我有一个四只狗狗的纹身吗？所以我去了纹身店，在那个纹身上又加了一些图案。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:19",
+              "text": "哇，太酷了！还打算继续加吗？还是已经完工了？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "blip_caption": "a photo of a woman with a tattoo of a dog and sunflowers",
+              "dia_id": "D23:20",
+              "text": "谢谢！我觉得现在够了。除非有一天我决定再养一只狗。也许到那时我会再纹一个。"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://c1.wallpaperflare.com/preview/640/472/990/away-path-forest-hiking.jpg"
+              ],
+              "blip_caption": "a photography of a path in the woods with a forest in the background",
+              "query": "hiking trail trees",
+              "dia_id": "D23:21",
+              "re-download": true,
+              "text": "看得出来它们真的是你爱的源泉。有这样的灵感来源真好。你知道还有什么能给我灵感吗？像这样的地方"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:22",
+              "text": "它们真的给我带来了快乐。感受到无条件的爱真是太棒了！你有机会去那样的森林吗？我敢说那对你来说是很棒的放松方式。"
+            },
+            {
+              "speaker": "安德鲁",
+              "img_url": [
+                "https://community.us.craghoppers.com/wp-content/uploads/2018/05/j3bmicznnmrnfe1uchho.jpg"
+              ],
+              "blip_caption": "a photo of a woman walking up a steep hill with a view of the ocean",
+              "query": "hiking trail beautiful view",
+              "dia_id": "D23:23",
+              "text": "是啊，住在城市里，我确实很想念大自然。只要有机会，我就会尽量去附近的公园或远足。这对我来说是一种非常平和快乐的体验。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:24",
+              "text": "是啊，你说得太对了，我们需要亲近大自然的时间。最近生活太疯狂了，我已经好久没带我的毛孩子们出去散步了。但和它们一起在大自然里的时光是那么惬意快乐！它们绝对是探索大自然的最佳伙伴。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:25",
+              "text": "完全同意！大自然和动物能带来如此平和与快乐。希望你和你的毛孩子们很快能去来一场有趣的冒险！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:26",
+              "text": "是啊，我需要带它们去远足，那会是很棒的治愈！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D23:27",
+              "text": "是啊！你带狗狗们远足过，那是增进感情和留下回忆的好方式。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D23:28",
+              "text": "是的，我还记得每次带我狗狗去远足的时光。美好的回忆。"
+            }
+          ]
+        },
+        "session_22": {
+          "date": "9:41 pm on 6 October, 2023",
+          "turns": [
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2014,w_3017,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/shutterstock_485806801_mv1xuv.jpg"
+              ],
+              "blip_caption": "a photo of two dogs running in a field with a ball in their mouth",
+              "query": "dogs playing park",
+              "dia_id": "D22:1",
+              "text": "嘿，安德鲁，我一直在想你前几天说的想念大自然的事。这让我想起我因为膝盖受伤不能遛狗的那段时间。挺难熬的，因为它们给我带来了很多快乐。这张照片是我重新开始遛狗后拍的。能重新出门的感觉真好！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:2",
+              "text": "你懂那种感受对吧？不能带它们出去散步真糟糕。当你终于能再带它们出门时，它们肯定乐坏了。很高兴你还留下了那张可爱的照片！狗狗就是这样棒，对吧？提醒我们停下脚步，享受生活。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:3",
+              "text": "是啊，它们简直等不及了！它们确实提醒我们要珍惜生活中的小确幸。它们看到的世界如此不同！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:4",
+              "text": "是啊，狗狗真的很懂如何发现生活中的简单快乐！珍惜小事非常重要。说到有趣的爱好，我记得你之前提到过那件首饰的事？我记得你说过你是用回收物品做的。听起来很酷——多跟我说说！"
+            },
+            {
+              "speaker": "奥黛丽",
+              "img_url": [
+                "https://boboglobal.com/cdn/shop/products/IMG_2161.jpg"
+              ],
+              "blip_caption": "a photo of a woman with a colorful necklace and earrings",
+              "query": "recycled bottle cap necklace colorful beads",
+              "dia_id": "D22:5",
+              "text": "哦对！我喜欢用回收材料做首饰。这是展现我对创造力和可持续发展的热爱的好方式。我会去寻找瓶盖、纽扣和坏掉的首饰之类的东西，然后把它们变成独一无二的作品。这是我最喜欢的项链之一照片。每件作品都有一个特别的故事，都有自己的魅力。而且，这也是减少浪费的一小步。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:6",
+              "text": "那条项链看起来太棒了！颜色很亮眼，设计也很酷。你让回收物品焕发新生，这真好。你做首饰是为了卖还是只是当爱好？另外，你会把利润捐给慈善事业吗？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:7",
+              "text": "谢谢！我一开始做首饰只是爱好，后来开始出售。我会把一部分利润捐给一个我非常关心的事业。这是把我的两个热爱结合起来的方式——做首饰和改变世界。顾客们不仅喜欢我的作品，还能支持一项事业，这太好了！"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:8",
+              "text": "哇！你用热情去改变世界，真了不起。这段经历有没有改变你对其他爱好的看法？你有没有捐给特定的组织？"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:9",
+              "text": "当然！任何爱好只要用对了地方都能产生影响——我捐给一家动物收容所。他们做得很棒，所以这是我出力的一种方式。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:10",
+              "text": "太棒了！即使你不能再去收容所做志愿者了，你依然如此致力于做出改变，真的很鼓舞人心。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:11",
+              "text": "是啊，即使不能亲临现场，我也在寻找行善的方式。生活就是要随机应变、乐于助人。"
+            },
+            {
+              "speaker": "安德鲁",
+              "dia_id": "D22:12",
+              "text": "是啊，你说得对。生活就是无论发生什么都要随遇而安、做出改变。你的努力真的很了不起。"
+            },
+            {
+              "speaker": "奥黛丽",
+              "dia_id": "D22:13",
+              "text": "谢谢！感谢你的美言。即使在充满挑战的时期，也要保持坚强，继续做出改变。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-43_de89be96dda6",
+      "conversation": "conv-43",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.5,
+      "sequence_ratio": 0.7742,
+      "left": {
+        "id": "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+        "content": "蒂姆正在写一部奇幻小说，进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作能创造一个全新的世界，带给他很多快乐",
+        "score": 0.5451691895540598,
+        "metadata": {
+          "session_id": "session_16",
+          "session_date": "11:41 am on 6 November, 2023",
+          "benchmark": "locomo",
+          "case_id": "locomo_conv-43_qa0",
+          "user_id": "zhfull:locomo:conv-43"
+        }
+      },
+      "right": {
+        "id": "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+        "content": "蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作带给他巨大快乐",
+        "score": 0.503790163663483,
+        "metadata": {
+          "session_date": "5:51 pm on 21 October, 2023",
+          "case_id": "locomo_conv-43_qa0",
+          "benchmark": "locomo",
+          "session_id": "session_15",
+          "user_id": "zhfull:locomo:conv-43"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-43_qa14",
+        "locomo_conv-43_qa41",
+        "locomo_conv-43_qa83",
+        "locomo_conv-43_qa123",
+        "locomo_conv-43_qa125",
+        "locomo_conv-43_qa130",
+        "locomo_conv-43_qa137",
+        "locomo_conv-43_qa139",
+        "locomo_conv-43_qa135",
+        "locomo_conv-43_qa162",
+        "locomo_conv-43_qa160",
+        "locomo_conv-43_qa184",
+        "locomo_conv-43_qa214",
+        "locomo_conv-43_qa241"
+      ],
+      "source_sessions": {
+        "session_16": {
+          "date": "11:41 am on 6 November, 2023",
+          "turns": [
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:1",
+              "text": "嘿约翰，好久不见！希望你一切都好。自上次聊天以来，发生了一些事。上周，我遇到了一个巨大的写作难题——卡在一个情节转折上，怎么也找不到出路。真是令人抓狂，但我一直坚持，最终思路又畅通了。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:2",
+              "text": "嘿蒂姆！很高兴收到你的消息。是啊，我明白那有多烦人！但你坚持下来了，真棒。我在球场上也一样。就是得想办法咬牙坚持，让事情保持运转。熬过去之后，就更有满足感，对吧？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:3",
+              "text": "是啊！过程很难，但一旦过去，那种感觉太棒了。这正是它美妙之处——先有挣扎，然后是满足。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:4",
+              "text": "没错！挣扎让它值得。就像体育里那样，胜利才显得格外甜美！挑战促使我们成长、变得更好。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:5",
+              "text": "克服挑战能磨炼意志，推动个人成长。重要的是旅程和学到的内容，而不只是赢。这对我是个很好的提醒。你提到的那个运动，有什么例子吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:6",
+              "text": "有啊，去年有一场篮球赛，我们在第四节大幅落后。我们不得不拼尽全力，不断追赶，最终翻盘，终场哨响起时太震撼了。那种感觉难以忘怀。"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/w41ygbk6p4ea1.jpg"
+              ],
+              "blip_caption": "a photo of a basketball in a case with a signed ball",
+              "query": "basketball signed by favorite basketball player",
+              "dia_id": "D16:7",
+              "text": "哇，那感觉一定难以置信！你真的展现了决心和毅力。那场比赛你有照片或纪念品吗？我很想看看！顺便说，我也有个特别的东西——这是我最珍视的宝贝，一个由我最喜欢的球员签名的篮球。它提醒着我所有的努力。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:8",
+              "text": "哇！你最喜欢的球员有什么鼓舞人心的地方？你和他们有什么特别的故事或时刻吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:9",
+              "text": "我就是爱看勒布朗打球。几年前有一场总决赛，他有一次史诗级的盖帽彻底改变了比赛，最后还赢了下来。看他那样拼尽全力真是太鼓舞人心了——永不放弃，你懂吧？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:10",
+              "text": "记得'16年总决赛第七场那次史诗级盖帽吗？他追防伊戈达拉，把球按在了篮板上。正是那种决心和拼劲让我热爱篮球。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:11",
+              "text": "对，就是那次！太精彩了。那样的时刻让我热爱体育，也敬佩球员们的决心和拼劲。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:12",
+              "text": "勒布朗那些展现决心和拼劲的时刻太不可思议了。这也是我喜欢打球、挑战自己的原因。你永远不知道那些特别的时刻什么时候会出现，但能参与其中总是很有趣。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:13",
+              "text": "那些特别的时刻让一切都很值得。能成为更宏大事物的一部分，感受到喜悦和成就感，真是太棒了。继续加油，在球场上创造更多那样的时刻吧！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:14",
+              "text": "说到特别的时刻，我和妻子刚出发去欧洲度假！虽然短暂但一定很美好。你去过，有什么推荐吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:15",
+              "text": "太好了！祝你们俩玩得开心。我推荐去参观一些城堡，它们真的太神奇了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:16",
+              "text": "谢谢！我们一定会去看看的。祝你追求的一切都顺利。保重！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:17",
+              "text": "谢谢！你也是，伙计。放轻松，继续努力。保重，保持联系！"
+            }
+          ]
+        },
+        "session_15": {
+          "date": "5:51 pm on 21 October, 2023",
+          "turns": [
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:1",
+              "text": "嘿，约翰！有段时间没和你聊了，不过想告诉你我读了一本关于英国城堡的超棒的书。太有意思了，让我大为震撼！我梦想有一天能去参观它们。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://creatingmewp.files.wordpress.com/2023/05/img_9047.jpg"
+              ],
+              "blip_caption": "a photo of a man sitting on a bench overlooking a cliff",
+              "query": "castle scotland",
+              "dia_id": "D15:2",
+              "text": "嘿，蒂姆！很高兴收到你的消息。了解不同的文化、观赏历史建筑让我着迷。参观城堡确实在我的愿望清单上。看看这一座，多美的景色啊！我特别期待探索世界、体验这些美丽的地方。说到这个，你的奇幻小说写得怎么样了？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:3",
+              "text": "那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:4",
+              "text": "太好了！很高兴你的写作进展顺利。看到一切逐渐成形一定很令人激动。继续加油！你的故事有什么特别的灵感来源吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:5",
+              "text": "谢谢！书籍、电影和现实生活经历都能激发我的创造力。比如，阅读关于英国城堡的内容给了我很多灵感。另外，某些作者对我来说就像灵感宝库。与自己喜爱的事物产生联结，让写作更有乐趣。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:6",
+              "text": "哇！听起来是很棒的组合。有没有哪位作家的作品特别能启发你？"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/4mff2zeq18381.jpg"
+              ],
+              "blip_caption": "a photo of a book with a page in it on a table",
+              "query": "harry potter sorcerer's stone well-read copy",
+              "dia_id": "D15:7",
+              "text": "J.K. 罗琳是一位非常鼓舞人心的作家。她的书细节丰富、叙事极具创意，非常引人入胜。她绝对能把读者带入另一个世界，让人产生强烈的感受。我总是在为自己的写作记下她风格方面的笔记。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:8",
+              "text": "真酷！你读她的作品多久了？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:9",
+              "text": "我已经读她的作品很长时间了。她的故事一直陪伴着我，至今仍激励着我。她的写作有一种特别的东西，真的能打动我。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:10",
+              "text": "哇，有些作家确实对我们有这么大的影响！他们成为我们生活的一部分，影响着我们的兴趣。你有最喜欢的 J.K. 罗琳的名言吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:11",
+              "text": "有！有一句 J.K. 罗琳的话我特别喜欢：\"点亮灯光——幸福就藏在最黑暗的时刻里。\"这就是我在艰难时期保持希望的方式。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.pinimg.com/originals/5e/f4/f9/5ef4f9bd2f094b2d0a4ddd4861b928a0.jpg"
+              ],
+              "blip_caption": "a photo of a white board with a drawing of arrows and words",
+              "query": "inspirational quote whiteboard",
+              "dia_id": "D15:12",
+              "text": "好棒的名言！它提醒我们要保持积极，即使在困难时期也要找到快乐。当事情变得艰难时，它就是一盏指路明灯。谢谢你和我分享！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:13",
+              "text": "干得漂亮，约翰！你在那块白板上写了什么？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:14",
+              "text": "我在白板上写了一些激励性的格言和策略，帮助我保持专注、完成艰苦的训练。它真的帮助我保持动力、不断进步。"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a woman holding a plaque in front of a wall",
+              "dia_id": "D15:15",
+              "text": "太棒了！视觉提醒和策略确实有助于保持动力。你有这些格言在艰苦训练时激励自己，真的很酷。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvbnMxODI2MC1pbWFnZS1rd3Z3bmQxZi5qcGc.jpg"
+              ],
+              "blip_caption": "a photography of a desk with a laptop and a lightbox that says make it happen",
+              "query": "plaque believe power within motivation",
+              "dia_id": "D15:16",
+              "re-download": true,
+              "text": "我放在桌上的这块牌匾时刻提醒我要相信自己。它帮助我相信自己的能力，面对任何障碍。像这样的实物提醒真的能帮我保持动力。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:17",
+              "text": "太棒了！在充满挑战的时期，是什么让你保持动力？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://www.americustimesrecorder.com/wp-content/uploads/sites/43/2023/04/team-huddle-rotated.jpg"
+              ],
+              "blip_caption": "a photo of a group of women soccer players huddle together",
+              "query": "team huddle game",
+              "dia_id": "D15:18",
+              "text": "队友们对我的信任以及我提升技能的热情让我坚持下去，即使情况变得艰难。我不想让他们失望。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:19",
+              "text": "真好！你觉得是什么让他们成为这么好的支持？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:20",
+              "text": "他们总是支持我，即使我犯了错误。他们的鼓励让我继续前进。"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a group of people hiking through a forest",
+              "dia_id": "D15:21",
+              "text": "这很关键，拥有强大的支持网络确实能帮助我们实现目标。在体育之外，你也有可以依靠的人吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:22",
+              "text": "有，我很幸运——我有一群超级支持我的人，无论如何都陪在我身边。"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.pinimg.com/originals/85/59/73/855973c53d20fad61ea048269f29fadb.jpg"
+              ],
+              "blip_caption": "a photo of a group of women sitting on the grass eating",
+              "query": "group friends beach picnic",
+              "dia_id": "D15:23",
+              "text": "太好了！有能鼓舞我们的人是必不可少的。我很感激有支持我的朋友和家人——这非常重要。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://images.pexels.com/photos/1655329/pexels-photo-1655329.jpeg?cs\\u003dsrgb\\u0026dl\\u003dpexels-lisa-fotios-1655329.jpg"
+              ],
+              "blip_caption": "a photo of a group of people standing around a kitchen table",
+              "query": "family dinner",
+              "dia_id": "D15:24",
+              "text": "有爱我们的人支持是非常重要的。我的家人总是在我身边。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:25",
+              "text": "哇，看看这张合影里的一群人！这些是你的家人朋友吗？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/1567/2018/02/09230004/IMG_8348-e1518217261806.jpg"
+              ],
+              "blip_caption": "a photo of a group of people standing on a basketball court",
+              "query": "group of basketball players cheering on sidelines",
+              "dia_id": "D15:26",
+              "text": "是的，当然！那是我的家人在聚会。和他们在一起带给我极大的快乐，也让我记住什么才是重要的。我的队友们就像我的第二个家庭。"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a group of kids playing a game of basketball",
+              "dia_id": "D15:27",
+              "text": "看起来很有趣！你们还一起做什么？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:28",
+              "text": "就是和朋友家人聚会时常做的事——看电影、出去吃饭。那你平时最喜欢做什么娱乐活动？"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://images.pexels.com/photos/11818038/pexels-photo-11818038.jpeg?cs\\u003dsrgb\\u0026dl\\u003dpexels-ana-ps-11818038.jpg"
+              ],
+              "blip_caption": "a photo of a fire in a fireplace with a dog standing next to it",
+              "query": "campfire group people",
+              "dia_id": "D15:29",
+              "text": "我喜欢和朋友家人一起自驾游，探索、徒步，或者玩桌游。空闲时间，我喜欢捧一本好书蜷缩着读，逃离现实、沉浸在不同的世界里。这就是我想说的。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/6383i30xl5w31.jpg"
+              ],
+              "blip_caption": "a photo of a slow cooker filled with a mixture of food",
+              "query": "cooking meal",
+              "dia_id": "D15:30",
+              "text": "对，我完全理解！捧着书窝着是我的放松时间。离开球场的时候，烹饪对我来说就是疗愈。这是发挥创造力、尝试不同口味的好方法，同时也能休息一下。这是一张我做饭的照片。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:31",
+              "text": "那道慢炖菜看起来真美味！烹饪是放松和发挥创造力的好方式。你有什么拿手食谱可以给我看看吗？"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a pan of chicken and vegetables cooking on a stove",
+              "dia_id": "D15:32",
+              "text": "当然有！我经常做这道好吃的蜂蜜蒜香鸡配烤蔬菜。这是我最喜欢的菜之一。我总是在尝试新食谱，如果你想要推荐就告诉我！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:33",
+              "text": "嗯，听起来太美味了，约翰！能把食谱给我吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:34",
+              "text": "没问题！我可以把它写下来寄给你。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:35",
+              "text": "迫不及待想试做了。谢谢分享食谱！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:36",
+              "text": "不客气。希望你做得开心！做好了告诉我结果哦。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:37",
+              "text": "一定！谢谢。和你聊天很开心。保重！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:38",
+              "text": "和你聊天很愉快。回头再聊！"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-43_269540f8e596",
+      "conversation": "conv-43",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.4384,
+      "sequence_ratio": 0.7706,
+      "left": {
+        "id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+        "content": "蒂姆（Tim）在2024年1月初加入了一群和他志趣相投的环球旅行者，认识他们、听他们讲旅行经历让他觉得很棒",
+        "score": 0.5616730456820078,
+        "metadata": {
+          "session_id": "session_27",
+          "case_id": "locomo_conv-43_qa0",
+          "session_date": "5:26 pm on 2 January, 2024",
+          "benchmark": "locomo",
+          "user_id": "zhfull:locomo:conv-43"
+        }
+      },
+      "right": {
+        "id": "6c6124a0-0532-43a5-b03b-659cf973fe32",
+        "content": "蒂姆早前（2024年1月2日的对话中）提到他加入了一群志趣相投的环球旅行者，认识他们、听他们讲旅行经历让他很开心",
+        "score": 0.5352525822406264,
+        "metadata": {
+          "benchmark": "locomo",
+          "session_date": "5:24 pm on 7 January, 2024",
+          "case_id": "locomo_conv-43_qa0",
+          "session_id": "session_28",
+          "user_id": "zhfull:locomo:conv-43"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-43_qa31",
+        "locomo_conv-43_qa39",
+        "locomo_conv-43_qa68",
+        "locomo_conv-43_qa75",
+        "locomo_conv-43_qa105",
+        "locomo_conv-43_qa114",
+        "locomo_conv-43_qa175",
+        "locomo_conv-43_qa181",
+        "locomo_conv-43_qa185",
+        "locomo_conv-43_qa189",
+        "locomo_conv-43_qa201",
+        "locomo_conv-43_qa207",
+        "locomo_conv-43_qa209",
+        "locomo_conv-43_qa240",
+        "locomo_conv-43_qa200"
+      ],
+      "source_sessions": {
+        "session_27": {
+          "date": "5:26 pm on 2 January, 2024",
+          "turns": [
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a man standing on a fence in front of a leaning tower",
+              "dia_id": "D27:1",
+              "text": "嗨约翰，最近怎么样？自从我们上次聊天后发生了一些有趣的事——我加入了一群和我志趣相投的环球旅行者。认识他们、听他们讲旅行经历真是太棒了。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:2",
+              "text": "嘿蒂姆！很高兴听说你的环球旅行团！能和其他旅行爱好者交流一定很棒。对了，你去过意大利吗？我上个月在那里玩得特别开心。"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a book with a tag on it",
+              "dia_id": "D27:3",
+              "text": "和志同道合的旅行爱好者聊天真的很棒。意大利绝对在我的旅行清单上。你上个月那次旅行怎么样？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:4",
+              "text": "意大利太棒了！从美食到历史和建筑，一切都令人惊叹。我还在那里买了这本很棒的书，它给了我不少烹饪灵感。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D27:5",
+              "text": "哇，旅行真美妙，对吧？我现在在学德语——挺难但很有趣。你会其他语言吗？"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a book with a red cover and white title",
+              "dia_id": "D27:6",
+              "text": "哇！你在学德语，真厉害。我自己会一点德语，还有西班牙语，这让旅行方便多了。你的语言学习进展如何？\n"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a book sitting on a table next to a wall",
+              "dia_id": "D27:7",
+              "text": "学德语挺难的，但很值得。我喜欢这门语言的结构，比高中时学法语容易多了。你当初为什么决定学西班牙语？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:8",
+              "text": "我一直想学西班牙语，刚开始学。它是一门非常有用的语言，能带来很多个人和职业上的机会！"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://thechinesebujo.files.wordpress.com/2017/03/img_2563.jpg"
+              ],
+              "blip_caption": "a photo of a cell phone sitting on a notebook with a smiley face app",
+              "query": "language learning app on phone",
+              "dia_id": "D27:9",
+              "text": "是啊，会另一门语言能带来很多机会。你有没有遇到什么学西班牙语的好资源？我一直在用一个应用。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:10",
+              "text": "有啊！我也一直在手机上用那个应用练习！它帮了我很多。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D27:11",
+              "text": "那个应用很棒。学另一门语言很难，但回报完全值得。"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a basketball ball on the ground with a basketball hoop in the background",
+              "dia_id": "D27:12",
+              "text": "这需要投入和练习，但能与不同文化交流太有意义了。德语要继续加油啊！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D27:13",
+              "text": "谢谢！感谢你的鼓励。我肯定会继续学德语。你还经常打篮球吗？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://c8.alamy.com/zooms/9/de5f1d4e73244a8f94b16a6b6d093748/ttnmea.jpg"
+              ],
+              "blip_caption": "a photo of a basketball ball on the ground with a basketball hoop in the background",
+              "query": "basketball court sunset",
+              "dia_id": "D27:14",
+              "text": "是的，篮球对我仍然很重要——我每天练习训练来保持状态和提高。无法想象没有篮球的生活，它是我的热爱。"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/oqnovgpaxdv51.jpg"
+              ],
+              "blip_caption": "a photo of a collection of harry potter books on a desk",
+              "query": "harry potter books stack",
+              "dia_id": "D27:15",
+              "text": "哇！我喜欢你这种全力以赴的样子。永远不要放弃你所热爱的东西。就我个人而言，我会一直热爱阅读。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:16",
+              "text": "谢谢！我不会放弃的。你是怎么喜欢上读书的？"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.pinimg.com/originals/96/80/20/968020204c99f3f30544384d39fe598b.jpg"
+              ],
+              "blip_caption": "a photo of a desk with a chair and a book shelf",
+              "query": "harry potter book collection desk",
+              "dia_id": "D27:17",
+              "text": "我喜欢沉浸到那个世界里。我收藏了很多书，它们能带我进入那个世界。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:18",
+              "text": "太棒了！我完全理解阅读对你为什么这么重要。玩游戏能帮助我们成长真是奇妙。谢谢你给我们看你的收藏！哪一本最能带你进入另一个世界？"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a collection of movies and dvds on a carpet",
+              "dia_id": "D27:19",
+              "text": "《哈利·波特》是我最喜欢的书。太让人沉浸其中了！"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/ur3tz0poja151.jpg"
+              ],
+              "blip_caption": "a photo of a collection of star wars movies on a table",
+              "query": "fantasy movies dvd collection carpet",
+              "dia_id": "D27:20",
+              "text": "酷！很高兴你喜欢那本书！你还有喜欢的奇幻电影吗？这些是我的。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D27:21",
+              "text": "当然是《星球大战》！它是我最喜欢的，百看不厌。你呢，有喜欢的奇幻电影吗？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/7vtqewbtg1181.jpg"
+              ],
+              "blip_caption": "a photo of a shelf with a lot of books on it",
+              "query": "lord of the rings dvd collection",
+              "dia_id": "D27:22",
+              "text": "我是《指环王》的超级粉丝！那些冒险、世界观和角色都太棒了。"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a bookcase filled with dvds and games",
+              "dia_id": "D27:23",
+              "text": "哇，我也是！这收藏太棒了！你看了很多遍吗？有喜欢的角色吗？"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a bookmark with a picture of a woman kissing a man",
+              "dia_id": "D27:24",
+              "text": "谢谢！我看了不少遍，很励志。我最喜欢的角色是阿拉贡，他在整个故事中成长了很多。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D27:25",
+              "text": "不错！为什么他是你的最爱？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:26",
+              "text": "他是一位伟大的领袖，总是把别人放在第一位——这就是他最终成为国王的原因。"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/mlffg3ze7gr71.jpg"
+              ],
+              "blip_caption": "a photo of a painting of a man with long hair",
+              "query": "aragorn poster lord of the rings",
+              "dia_id": "D27:27",
+              "text": "哇，阿拉贡的故事太励志了——从游侠到刚铎国王。他在旅程中的成长和救赎真的很了不起。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/monip6iq5xm51.jpg"
+              ],
+              "blip_caption": "a photo of a painting of a man smoking a cigarette",
+              "query": "aragorn painting lord of the rings",
+              "dia_id": "D27:28",
+              "text": "是啊。他的旅程真的很鼓舞人心。我房间里挂着一幅他的画，提醒我在所做的一切事情中保持真诚并成为领袖。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D27:29",
+              "text": "哇，太棒了！他身上是什么让你如此受鼓舞？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:30",
+              "text": "阿拉贡勇敢、无私、脚踏实地的品质激励了我。他从不放弃，始终坚持正义。"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/or3d42qfg4t91.jpg"
+              ],
+              "blip_caption": "a photo of a map of the world on a piece of paper",
+              "query": "map middle earth fantasy novels world-building intricate details fictional universe",
+              "dia_id": "D27:31",
+              "text": "是啊，他真的很励志。像《指环王》这样的奇幻小说妙就在于能让人沉浸到另一个世界，看到所有细微的细节。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:32",
+              "text": "对，我就是这么想的！喜欢这张地图，它真的能让你沉浸在另一个世界里。上面有什么？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D27:33",
+              "text": "这是《指环王》里中土世界的地图——能看到各种不同的国度 和地区，真的很酷。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:34",
+              "text": "哇，看起来太棒了！在奇幻故事里探索不同的土地和地区总是很有趣！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D27:35",
+              "text": "谢谢！奇幻故事让我足不出户就能探索其他文化和风景，真的很酷。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i0.wp.com/stlouispatina.com/wp-content/uploads/2022/10/Copyright-St.-Louis-Patina-2771.jpg"
+              ],
+              "blip_caption": "a photo of a person walking down a path in front of the eiffel tower",
+              "query": "eiffel tower",
+              "dia_id": "D27:36",
+              "text": "是啊！这就是我热爱旅行的原因——它是了解不同文化和地方的一种方式。"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a group of people climbing up a stone wall",
+              "dia_id": "D27:37",
+              "text": "我也喜欢旅行。那张照片真棒。你去过巴黎吗？埃菲尔铁塔太酷了！"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/b9cuf3yfd3s91.jpg"
+              ],
+              "blip_caption": "a photo of a view of a city from a bird's eye view",
+              "query": "eiffel tower view from top",
+              "dia_id": "D27:38",
+              "text": "谢谢！是的，我去过，非常喜欢！那地方太棒了，从上面看到的景色难以置信！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D27:39",
+              "text": "哇，约翰，看起来太美了！迫不及待想亲眼看看。旅行真让人大开眼界！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D27:40",
+              "text": "是啊，确实如此。旅行让你看到新事物，以不同的视角看待一切。又酷又有教育意义！回头聊！"
+            }
+          ]
+        },
+        "session_28": {
+          "date": "5:24 pm on 7 January, 2024",
+          "turns": [
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D28:1",
+              "text": "嘿，约翰，好久没聊了。周五我得到了一个好消息——我终于被我要申请的留学项目录取了！下个月我就要去爱尔兰待一个学期。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D28:2",
+              "text": "恭喜你，蒂姆！真是个好消息。那你打算住哪儿呢？"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://roadworksbooks.files.wordpress.com/2022/07/img_4242.jpg"
+              ],
+              "blip_caption": "a photo of a woman standing on the side of a street",
+              "query": "galway colorful street arts scene traditional irish music",
+              "dia_id": "D28:3",
+              "text": "谢谢！我会住在戈尔韦，那里以艺术和爱尔兰音乐著称。这地方氛围特别有活力。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D28:4",
+              "text": "太棒了，戈尔韦看起来很美！你在那儿有什么特别想去看看的吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://images.pexels.com/photos/8456767/pexels-photo-8456767.jpeg?cs\\u003dsrgb\\u0026dl\\u003dpexels-david-riand-8456767.jpg"
+              ],
+              "blip_caption": "a photo of a cliff overlooking the ocean at sunset",
+              "query": "cliffs moher sunset",
+              "dia_id": "D28:5",
+              "text": "有啊！我特别期待去探索那里的自然风光——看起来太美了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D28:6",
+              "text": "哇，景色真好！你还去了其他地方吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/t98kzzhuocp81.jpg"
+              ],
+              "blip_caption": "a photo of a person standing on a cliff overlooking the ocean",
+              "query": "cliffs moher ocean cliffs",
+              "dia_id": "D28:7",
+              "text": "我想去莫赫悬崖。那里有绝美的海景和壮观的悬崖。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D28:8",
+              "text": "哇，太棒了！等我的赛季结束后我也可以顺路去看看。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D28:9",
+              "text": "好啊，如果你过来的话告诉我！"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://outandaboutmummy.files.wordpress.com/2019/11/img_6609.jpg"
+              ],
+              "blip_caption": "a photo of a boy dribbling a basketball on a court",
+              "query": "charity basketball tournament children",
+              "dia_id": "D28:10",
+              "text": "好的，我会告诉你的。哦，上周我举办了一场慈善篮球赛。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D28:11",
+              "text": "哇！比赛办得怎么样？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D28:12",
+              "text": "比赛非常成功！很多人来了，大家都玩得很开心，而且我们还为慈善筹到了一些钱。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D28:13",
+              "text": "活动组织得很棒。这真的是在创造改变！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D28:14",
+              "text": "谢谢！篮球能把人们凝聚起来并产生积极的影响，真是太神奇了！"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a basketball ball and a book on a court",
+              "dia_id": "D28:15",
+              "text": "你真棒！继续加油！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D28:16",
+              "text": "谢谢你，蒂姆！看到体育能把人们团结在一起真是太好了。对了，你现在在读什么书？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D28:17",
+              "text": "我最近在读一本帕特里克·罗斯福斯写的奇幻小说《风之名》。真的很好看！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D28:18",
+              "text": "《风之名》听起来不错。我会把它加入我的书单。谢谢！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D28:19",
+              "text": "希望你读得开心！读完告诉我你的想法。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D28:20",
+              "text": "好的！谢谢你的推荐！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D28:21",
+              "text": "不客气。回头再聊！"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-26_444350391e64",
+      "conversation": "conv-26",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.4247,
+      "sequence_ratio": 0.7407,
+      "left": {
+        "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+        "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间",
+        "score": 0.5981787817376162,
+        "metadata": {
+          "benchmark": "locomo",
+          "case_id": "locomo_conv-26_qa0",
+          "session_id": "session_17",
+          "session_date": "10:31 am on 13 October, 2023",
+          "user_id": "zhfull:locomo:conv-26"
+        }
+      },
+      "right": {
+        "id": "137a6569-6e2e-4878-97d5-71289efc1f4a",
+        "content": "梅拉妮在2023年9月受了伤，不得不暂停陶艺——那是她用来自我表达和获得平静的方式，这让她很难受",
+        "score": 0.5870664457092301,
+        "metadata": {
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023",
+          "case_id": "locomo_conv-26_qa0",
+          "benchmark": "locomo",
+          "user_id": "zhfull:locomo:conv-26"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-26_qa1",
+        "locomo_conv-26_qa5",
+        "locomo_conv-26_qa20",
+        "locomo_conv-26_qa24",
+        "locomo_conv-26_qa26",
+        "locomo_conv-26_qa29",
+        "locomo_conv-26_qa37",
+        "locomo_conv-26_qa48",
+        "locomo_conv-26_qa60",
+        "locomo_conv-26_qa58",
+        "locomo_conv-26_qa68",
+        "locomo_conv-26_qa73",
+        "locomo_conv-26_qa80",
+        "locomo_conv-26_qa84",
+        "locomo_conv-26_qa101",
+        "locomo_conv-26_qa109",
+        "locomo_conv-26_qa110",
+        "locomo_conv-26_qa115",
+        "locomo_conv-26_qa122",
+        "locomo_conv-26_qa132",
+        "locomo_conv-26_qa135",
+        "locomo_conv-26_qa144",
+        "locomo_conv-26_qa146",
+        "locomo_conv-26_qa147",
+        "locomo_conv-26_qa164",
+        "locomo_conv-26_qa16"
+      ],
+      "source_sessions": {
+        "session_17": {
+          "date": "10:31 am on 13 October, 2023",
+          "turns": [
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:1",
+              "text": "嘿，梅尔，最近怎么样？好久不见！我刚联系了我的导师咨询收养的建议。我已经准备好当妈妈，分享我的爱与家庭了。这感觉很棒。你有什么新鲜事吗？有什么激动人心的事情发生吗？"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:2",
+              "text": "嘿，卡罗琳！很高兴收到你的消息！哇，这真是一段了不起的旅程。恭喜你！"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:3",
+              "text": "谢谢你，梅拉妮！我很兴奋能开启这个新篇章。收养孩子并为需要的孩子提供一个安全、有爱的家一直是我的梦想。你有收养方面的经验吗，或者认识经历过收养流程的人吗？"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:4",
+              "text": "有啊，我一个朋友去年收养了孩子。过程很长，但现在他们和新孩子过得超级幸福。这让我觉得也许我也应该这么做！"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:5",
+              "text": "你朋友的事真是太好了！过程可能很艰辛，但非常值得。这是扩大家庭、表达爱意的好方式。如果你真的去做了，告诉我——我很乐意尽我所能帮忙。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:6",
+              "text": "谢谢，卡罗琳！感谢你的帮助。有什么入门建议吗？"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:7",
+              "text": "有！先做好调查，找一家收养机构或律师。他们会帮助你完成流程并提供所有信息。准备好推荐信、财务信息和体检等文件。别忘了做好心理准备，因为等待的过程可能很煎熬。不过最终一切都是值得的。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:8",
+              "text": "谢谢你的建议，卡罗琳。做调查和调整心态确实有道理。我会照做的。顺便说一下，我最近遇到了一点挫折。上个月我受了伤，不得不暂停陶艺——那是我用来自我表达和获得平静的方式。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:9",
+              "text": "哦天哪，听到这个很难过，梅拉妮。希望你没大事。陶艺是很好的放松方式，暂停一定很不好受。需要帮忙吗？"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:10",
+              "text": "谢谢，卡罗琳。确实挺难受的，但我还好。我一直在读你之前推荐的那本书，还画画来打发时间。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:11",
+              "text": "很高兴你有创作的出口。有画作可以展示吗？我很想看看。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "img_url": [
+                "https://trendgallery.art/cdn/shop/files/IMG_2355.jpg"
+              ],
+              "blip_caption": "a photo of a painting of a sunset with a pink sky",
+              "query": "landscape painting vibrant purple sunset autumn",
+              "dia_id": "D17:12",
+              "text": "有啊，这是我上周画的一幅。灵感来自日落。这些颜色让我感到平静。你最近在艺术上有什么进展吗？"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:13",
+              "text": "哇，梅尔，这画太美了！我喜欢这些颜色和那份悠闲的日落氛围。是什么让你画了它？我最近在尝试抽象风格。那种感觉很自由，把感受直接画在画布上，不需要太多计划。就像是一种很酷的自我表达方式。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "img_url": [
+                "https://theartwerks.com/cdn/shop/products/image_4c8aee8a-5395-4037-a1d4-f6db3a3b0302.jpg"
+              ],
+              "blip_caption": "a photo of a painting on a wall with a blue background",
+              "query": "abstract painting vibrant colors",
+              "dia_id": "D17:14",
+              "text": "谢谢，卡罗琳！我画它是因为它能让我平静。我也画过一幅抽象画，你看看！我喜欢艺术让我们宣泄情感的方式。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:15",
+              "text": "哇，画得真好！那蓝色为整幅画增色不少。你想表达什么样的情感？"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:16",
+              "text": "我想用宁静的蓝色条纹来表现安详。蓝色能让我平静，所以我想让这幅画既有宁静的氛围，又有丰富的鲜艳色彩。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "blip_caption": "a photo of a poster on a wall in a classroom",
+              "dia_id": "D17:17",
+              "text": "嗯，确实很让人平静。艺术能表达情感真是太棒了。对了，上周五我去了一场诗歌朗诵会——非常震撼！你去过吗？"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:18",
+              "text": "没有，从没去过那种活动。是关于什么的？为什么那么特别？"
+            },
+            {
+              "speaker": "卡罗琳",
+              "img_url": [
+                "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1675780954.jpg"
+              ],
+              "blip_caption": "a photography of a sign that says trans lives matter",
+              "query": "transgender poetry reading trans pride flags",
+              "dia_id": "D17:19",
+              "re-download": true,
+              "text": "那是一场跨性别诗歌朗诵会，跨性别者通过诗歌分享他们的故事。它格外特别，因为那是一个可以安全自我表达的空间，听别人分享并庆祝自己的身份真的很振奋人心。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:20",
+              "text": "哇，听起来太棒了！活动是什么样的？那些海报很棒！"
+            },
+            {
+              "speaker": "卡罗琳",
+              "img_url": [
+                "https://i.redd.it/50qvgfuva33b1.jpg"
+              ],
+              "blip_caption": "a photo of a drawing of a woman in a dress",
+              "query": "transgender flag drawing",
+              "dia_id": "D17:21",
+              "text": "整个房间充满了能量和支持的氛围！那些海报太惊艳了，满是骄傲和力量！这激励我也创作了一些艺术作品。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:22",
+              "text": "太棒了，卡罗琳！是你画的吗？它对你意味着什么？"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:23",
+              "text": "谢谢，梅拉妮！对，是我画的。它代表自由和真实。它就像一个提醒，让我始终保持真实的自我，拥抱我的女性身份。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:24",
+              "text": "我很喜欢。展现真实的自我是最美好的事。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D17:25",
+              "text": "没错，梅拉妮！做自己感觉真好。这是一场不断学习和成长的冒险。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D17:26",
+              "text": "是啊，卡罗琳。人生就是学习和探索。很高兴我们能一起踏上这段旅程。"
+            }
+          ]
+        },
+        "session_18": {
+          "date": "6:55 pm on 20 October, 2023",
+          "turns": [
+            {
+              "speaker": "梅拉妮",
+              "img_url": [
+                "https://i.redd.it/dl8dki2hm3k81.jpg"
+              ],
+              "blip_caption": "a photo of a car dashboard with a white cloth and a steering wheel",
+              "query": "car accident damaged car airbags deployed roadtrip",
+              "dia_id": "D18:1",
+              "text": "嘿卡罗琳，上周末那次公路旅行太疯狂了！我儿子出事故的时候，我们都吓坏了。幸好他没事，真是不幸中的万幸。那真是一次可怕的经历，好在一切都过去了。自从我们上次聊天以来，你过得怎么样？"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:2",
+              "text": "哎呀，关于事故的事真抱歉！对你们来说一定很受创伤吧。谢天谢地你儿子没事。生活真像过山车啊。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D18:3",
+              "text": "是啊，我们的旅行开局就不顺。出事故的时候我真的吓坏了。还好我儿子没事，这也提醒我生命是宝贵的，要珍惜家人。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:4",
+              "text": "很高兴你儿子没事，梅拉妮。生活难以预料，但这样的时刻让我们意识到所爱之人有多重要。家人就是一切。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "img_url": [
+                "https://familyadventuresva.files.wordpress.com/2022/03/img_5030.jpg"
+              ],
+              "blip_caption": "a photo of two children standing on a rocky cliff overlooking a canyon",
+              "query": "grand canyon family photo",
+              "dia_id": "D18:5",
+              "text": "你说得对，卡罗琳。家人对我来说超级重要。尤其是在事故之后，我想了很多，知道自己多么需要他们。他们就是我的全世界，我很感激拥有他们。还好，他们在科罗拉多大峡谷玩得很开心！"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:6",
+              "text": "孩子们看起来真可爱，梅尔！我敢说他们带来很多欢乐。他们是怎么应对那场事故的？"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D18:7",
+              "text": "谢谢！他们很害怕，但我们安慰了他们，告诉他们哥哥会没事的。他们是坚强的孩子。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:8",
+              "text": "孩子们在困境中的适应力真是惊人。他们有一种了不起的恢复能力。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D18:9",
+              "text": "他们真的很棒。真希望我也能那么坚强。不过他们给了我坚持下去的力量。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:10",
+              "text": "我们所爱的人给我们力量去迎接任何挑战——这太奇妙了！"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D18:11",
+              "text": "是啊，卡罗琳，完全同意。他们是我最大的动力和支柱。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:12",
+              "text": "看到你对家人的爱真让人感动，梅拉妮。他们真的是你的依靠。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D18:13",
+              "text": "谢谢，卡罗琳。他们是真正的支撑。我非常感激他们。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:14",
+              "text": "很高兴有人可以依靠，梅拉妮。这能在艰难时刻帮上大忙。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "img_url": [
+                "https://live.staticflickr.com/8358/29211988243_82023c5524_b.jpg"
+              ],
+              "blip_caption": "a photography of a woman and a child walking on a trail",
+              "query": "family hiking mountains",
+              "dia_id": "D18:15",
+              "re-download": true,
+              "text": "是啊，当然。有家人在身边帮助很大。这让艰难的日子变得容易一些。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:16",
+              "text": "哇，好棒的照片！是最近拍的吗？看起来你们都玩得很开心！"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D18:17",
+              "text": "谢谢，卡罗琳！对，就是昨天拍的！孩子们很喜欢，这是公路旅行后放松的好方式。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:18",
+              "text": "很高兴你们开车之后能放松休息一下。大自然确实能让我们焕然一新，对吧？"
+            },
+            {
+              "speaker": "梅拉妮",
+              "blip_caption": "a photo of a sunset over a body of water",
+              "dia_id": "D18:19",
+              "text": "绝对是的！它真的能帮我 reset 充电。我喜欢和家人一起露营，因为大自然带来如此宁静安详的感觉。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:20",
+              "text": "哇，太棒了！你最喜欢和家人露营的哪一点？"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D18:21",
+              "text": "那是一个能活在当下、彼此相聚的机会。我们通过讲故事、篝火和大自然增进感情。伴着鸟鸣和清新空气的气味醒来是那么宁静——它总能净化我的心灵。"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:22",
+              "text": "真是宁静又让人心静，梅拉妮！我能想象在大自然中醒来的样子。你能和家人共度这样宁静而优质的时光，真是太好了。"
+            },
+            {
+              "speaker": "梅拉妮",
+              "dia_id": "D18:23",
+              "text": "谢谢，卡罗琳！这是很棒的时刻。大自然加高质量陪伴，无可匹敌！"
+            },
+            {
+              "speaker": "卡罗琳",
+              "dia_id": "D18:24",
+              "text": "是啊，完全同意！这些都是无价之宝。你真幸运！"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-43_c95588df7268",
+      "conversation": "conv-43",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.4583,
+      "sequence_ratio": 0.7207,
+      "left": {
+        "id": "bd5e05ac-8fff-4146-9701-0796790c5f10",
+        "content": "蒂姆的写作灵感来源包括书籍、电影和现实生活经历；阅读关于英国城堡的内容给了他很多灵感，他梦想有一天能去参观英国城堡",
+        "score": 0.49224150875992,
+        "metadata": {
+          "case_id": "locomo_conv-43_qa0",
+          "session_date": "11:41 am on 6 November, 2023",
+          "benchmark": "locomo",
+          "session_id": "session_16",
+          "user_id": "zhfull:locomo:conv-43"
+        }
+      },
+      "right": {
+        "id": "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+        "content": "蒂姆的写作灵感来自书籍、电影和现实生活经历，阅读关于英国城堡的内容给了他很多灵感，某些作者对他来说像灵感宝库",
+        "score": 0.4926158200431248,
+        "metadata": {
+          "session_id": "session_15",
+          "case_id": "locomo_conv-43_qa0",
+          "session_date": "5:51 pm on 21 October, 2023",
+          "benchmark": "locomo",
+          "user_id": "zhfull:locomo:conv-43"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-43_qa14",
+        "locomo_conv-43_qa18",
+        "locomo_conv-43_qa38",
+        "locomo_conv-43_qa83",
+        "locomo_conv-43_qa124",
+        "locomo_conv-43_qa139",
+        "locomo_conv-43_qa165",
+        "locomo_conv-43_qa208",
+        "locomo_conv-43_qa213",
+        "locomo_conv-43_qa212",
+        "locomo_conv-43_qa237"
+      ],
+      "source_sessions": {
+        "session_16": {
+          "date": "11:41 am on 6 November, 2023",
+          "turns": [
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:1",
+              "text": "嘿约翰，好久不见！希望你一切都好。自上次聊天以来，发生了一些事。上周，我遇到了一个巨大的写作难题——卡在一个情节转折上，怎么也找不到出路。真是令人抓狂，但我一直坚持，最终思路又畅通了。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:2",
+              "text": "嘿蒂姆！很高兴收到你的消息。是啊，我明白那有多烦人！但你坚持下来了，真棒。我在球场上也一样。就是得想办法咬牙坚持，让事情保持运转。熬过去之后，就更有满足感，对吧？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:3",
+              "text": "是啊！过程很难，但一旦过去，那种感觉太棒了。这正是它美妙之处——先有挣扎，然后是满足。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:4",
+              "text": "没错！挣扎让它值得。就像体育里那样，胜利才显得格外甜美！挑战促使我们成长、变得更好。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:5",
+              "text": "克服挑战能磨炼意志，推动个人成长。重要的是旅程和学到的内容，而不只是赢。这对我是个很好的提醒。你提到的那个运动，有什么例子吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:6",
+              "text": "有啊，去年有一场篮球赛，我们在第四节大幅落后。我们不得不拼尽全力，不断追赶，最终翻盘，终场哨响起时太震撼了。那种感觉难以忘怀。"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/w41ygbk6p4ea1.jpg"
+              ],
+              "blip_caption": "a photo of a basketball in a case with a signed ball",
+              "query": "basketball signed by favorite basketball player",
+              "dia_id": "D16:7",
+              "text": "哇，那感觉一定难以置信！你真的展现了决心和毅力。那场比赛你有照片或纪念品吗？我很想看看！顺便说，我也有个特别的东西——这是我最珍视的宝贝，一个由我最喜欢的球员签名的篮球。它提醒着我所有的努力。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:8",
+              "text": "哇！你最喜欢的球员有什么鼓舞人心的地方？你和他们有什么特别的故事或时刻吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:9",
+              "text": "我就是爱看勒布朗打球。几年前有一场总决赛，他有一次史诗级的盖帽彻底改变了比赛，最后还赢了下来。看他那样拼尽全力真是太鼓舞人心了——永不放弃，你懂吧？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:10",
+              "text": "记得'16年总决赛第七场那次史诗级盖帽吗？他追防伊戈达拉，把球按在了篮板上。正是那种决心和拼劲让我热爱篮球。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:11",
+              "text": "对，就是那次！太精彩了。那样的时刻让我热爱体育，也敬佩球员们的决心和拼劲。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:12",
+              "text": "勒布朗那些展现决心和拼劲的时刻太不可思议了。这也是我喜欢打球、挑战自己的原因。你永远不知道那些特别的时刻什么时候会出现，但能参与其中总是很有趣。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:13",
+              "text": "那些特别的时刻让一切都很值得。能成为更宏大事物的一部分，感受到喜悦和成就感，真是太棒了。继续加油，在球场上创造更多那样的时刻吧！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:14",
+              "text": "说到特别的时刻，我和妻子刚出发去欧洲度假！虽然短暂但一定很美好。你去过，有什么推荐吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:15",
+              "text": "太好了！祝你们俩玩得开心。我推荐去参观一些城堡，它们真的太神奇了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:16",
+              "text": "谢谢！我们一定会去看看的。祝你追求的一切都顺利。保重！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D16:17",
+              "text": "谢谢！你也是，伙计。放轻松，继续努力。保重，保持联系！"
+            }
+          ]
+        },
+        "session_15": {
+          "date": "5:51 pm on 21 October, 2023",
+          "turns": [
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:1",
+              "text": "嘿，约翰！有段时间没和你聊了，不过想告诉你我读了一本关于英国城堡的超棒的书。太有意思了，让我大为震撼！我梦想有一天能去参观它们。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://creatingmewp.files.wordpress.com/2023/05/img_9047.jpg"
+              ],
+              "blip_caption": "a photo of a man sitting on a bench overlooking a cliff",
+              "query": "castle scotland",
+              "dia_id": "D15:2",
+              "text": "嘿，蒂姆！很高兴收到你的消息。了解不同的文化、观赏历史建筑让我着迷。参观城堡确实在我的愿望清单上。看看这一座，多美的景色啊！我特别期待探索世界、体验这些美丽的地方。说到这个，你的奇幻小说写得怎么样了？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:3",
+              "text": "那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:4",
+              "text": "太好了！很高兴你的写作进展顺利。看到一切逐渐成形一定很令人激动。继续加油！你的故事有什么特别的灵感来源吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:5",
+              "text": "谢谢！书籍、电影和现实生活经历都能激发我的创造力。比如，阅读关于英国城堡的内容给了我很多灵感。另外，某些作者对我来说就像灵感宝库。与自己喜爱的事物产生联结，让写作更有乐趣。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:6",
+              "text": "哇！听起来是很棒的组合。有没有哪位作家的作品特别能启发你？"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/4mff2zeq18381.jpg"
+              ],
+              "blip_caption": "a photo of a book with a page in it on a table",
+              "query": "harry potter sorcerer's stone well-read copy",
+              "dia_id": "D15:7",
+              "text": "J.K. 罗琳是一位非常鼓舞人心的作家。她的书细节丰富、叙事极具创意，非常引人入胜。她绝对能把读者带入另一个世界，让人产生强烈的感受。我总是在为自己的写作记下她风格方面的笔记。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:8",
+              "text": "真酷！你读她的作品多久了？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:9",
+              "text": "我已经读她的作品很长时间了。她的故事一直陪伴着我，至今仍激励着我。她的写作有一种特别的东西，真的能打动我。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:10",
+              "text": "哇，有些作家确实对我们有这么大的影响！他们成为我们生活的一部分，影响着我们的兴趣。你有最喜欢的 J.K. 罗琳的名言吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:11",
+              "text": "有！有一句 J.K. 罗琳的话我特别喜欢：\"点亮灯光——幸福就藏在最黑暗的时刻里。\"这就是我在艰难时期保持希望的方式。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.pinimg.com/originals/5e/f4/f9/5ef4f9bd2f094b2d0a4ddd4861b928a0.jpg"
+              ],
+              "blip_caption": "a photo of a white board with a drawing of arrows and words",
+              "query": "inspirational quote whiteboard",
+              "dia_id": "D15:12",
+              "text": "好棒的名言！它提醒我们要保持积极，即使在困难时期也要找到快乐。当事情变得艰难时，它就是一盏指路明灯。谢谢你和我分享！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:13",
+              "text": "干得漂亮，约翰！你在那块白板上写了什么？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:14",
+              "text": "我在白板上写了一些激励性的格言和策略，帮助我保持专注、完成艰苦的训练。它真的帮助我保持动力、不断进步。"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a woman holding a plaque in front of a wall",
+              "dia_id": "D15:15",
+              "text": "太棒了！视觉提醒和策略确实有助于保持动力。你有这些格言在艰苦训练时激励自己，真的很酷。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvbnMxODI2MC1pbWFnZS1rd3Z3bmQxZi5qcGc.jpg"
+              ],
+              "blip_caption": "a photography of a desk with a laptop and a lightbox that says make it happen",
+              "query": "plaque believe power within motivation",
+              "dia_id": "D15:16",
+              "re-download": true,
+              "text": "我放在桌上的这块牌匾时刻提醒我要相信自己。它帮助我相信自己的能力，面对任何障碍。像这样的实物提醒真的能帮我保持动力。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:17",
+              "text": "太棒了！在充满挑战的时期，是什么让你保持动力？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://www.americustimesrecorder.com/wp-content/uploads/sites/43/2023/04/team-huddle-rotated.jpg"
+              ],
+              "blip_caption": "a photo of a group of women soccer players huddle together",
+              "query": "team huddle game",
+              "dia_id": "D15:18",
+              "text": "队友们对我的信任以及我提升技能的热情让我坚持下去，即使情况变得艰难。我不想让他们失望。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:19",
+              "text": "真好！你觉得是什么让他们成为这么好的支持？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:20",
+              "text": "他们总是支持我，即使我犯了错误。他们的鼓励让我继续前进。"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a group of people hiking through a forest",
+              "dia_id": "D15:21",
+              "text": "这很关键，拥有强大的支持网络确实能帮助我们实现目标。在体育之外，你也有可以依靠的人吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:22",
+              "text": "有，我很幸运——我有一群超级支持我的人，无论如何都陪在我身边。"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.pinimg.com/originals/85/59/73/855973c53d20fad61ea048269f29fadb.jpg"
+              ],
+              "blip_caption": "a photo of a group of women sitting on the grass eating",
+              "query": "group friends beach picnic",
+              "dia_id": "D15:23",
+              "text": "太好了！有能鼓舞我们的人是必不可少的。我很感激有支持我的朋友和家人——这非常重要。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://images.pexels.com/photos/1655329/pexels-photo-1655329.jpeg?cs\\u003dsrgb\\u0026dl\\u003dpexels-lisa-fotios-1655329.jpg"
+              ],
+              "blip_caption": "a photo of a group of people standing around a kitchen table",
+              "query": "family dinner",
+              "dia_id": "D15:24",
+              "text": "有爱我们的人支持是非常重要的。我的家人总是在我身边。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:25",
+              "text": "哇，看看这张合影里的一群人！这些是你的家人朋友吗？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/1567/2018/02/09230004/IMG_8348-e1518217261806.jpg"
+              ],
+              "blip_caption": "a photo of a group of people standing on a basketball court",
+              "query": "group of basketball players cheering on sidelines",
+              "dia_id": "D15:26",
+              "text": "是的，当然！那是我的家人在聚会。和他们在一起带给我极大的快乐，也让我记住什么才是重要的。我的队友们就像我的第二个家庭。"
+            },
+            {
+              "speaker": "蒂姆",
+              "blip_caption": "a photo of a group of kids playing a game of basketball",
+              "dia_id": "D15:27",
+              "text": "看起来很有趣！你们还一起做什么？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:28",
+              "text": "就是和朋友家人聚会时常做的事——看电影、出去吃饭。那你平时最喜欢做什么娱乐活动？"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://images.pexels.com/photos/11818038/pexels-photo-11818038.jpeg?cs\\u003dsrgb\\u0026dl\\u003dpexels-ana-ps-11818038.jpg"
+              ],
+              "blip_caption": "a photo of a fire in a fireplace with a dog standing next to it",
+              "query": "campfire group people",
+              "dia_id": "D15:29",
+              "text": "我喜欢和朋友家人一起自驾游，探索、徒步，或者玩桌游。空闲时间，我喜欢捧一本好书蜷缩着读，逃离现实、沉浸在不同的世界里。这就是我想说的。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/6383i30xl5w31.jpg"
+              ],
+              "blip_caption": "a photo of a slow cooker filled with a mixture of food",
+              "query": "cooking meal",
+              "dia_id": "D15:30",
+              "text": "对，我完全理解！捧着书窝着是我的放松时间。离开球场的时候，烹饪对我来说就是疗愈。这是发挥创造力、尝试不同口味的好方法，同时也能休息一下。这是一张我做饭的照片。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:31",
+              "text": "那道慢炖菜看起来真美味！烹饪是放松和发挥创造力的好方式。你有什么拿手食谱可以给我看看吗？"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a pan of chicken and vegetables cooking on a stove",
+              "dia_id": "D15:32",
+              "text": "当然有！我经常做这道好吃的蜂蜜蒜香鸡配烤蔬菜。这是我最喜欢的菜之一。我总是在尝试新食谱，如果你想要推荐就告诉我！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:33",
+              "text": "嗯，听起来太美味了，约翰！能把食谱给我吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:34",
+              "text": "没问题！我可以把它写下来寄给你。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:35",
+              "text": "迫不及待想试做了。谢谢分享食谱！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:36",
+              "text": "不客气。希望你做得开心！做好了告诉我结果哦。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D15:37",
+              "text": "一定！谢谢。和你聊天很开心。保重！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:38",
+              "text": "和你聊天很愉快。回头再聊！"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-43_d9a2fb3f97f7",
+      "conversation": "conv-43",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.3939,
+      "sequence_ratio": 0.6875,
+      "left": {
+        "id": "df795392-83c3-4203-892c-c51c003b7b9e",
+        "content": "蒂姆（Tim）从未参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种不同的魔法世界里",
+        "score": 0.5602993871151034,
+        "metadata": {
+          "case_id": "locomo_conv-43_qa0",
+          "session_date": "2:52 pm on 31 August, 2023",
+          "benchmark": "locomo",
+          "session_id": "session_10",
+          "user_id": "zhfull:locomo:conv-43"
+        }
+      },
+      "right": {
+        "id": "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+        "content": "蒂姆从来没有参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种魔法世界里，这也是他喜欢去新地方旅行的原因之一",
+        "score": 0.5309586996227099,
+        "metadata": {
+          "case_id": "locomo_conv-43_qa0",
+          "session_id": "session_9",
+          "benchmark": "locomo",
+          "session_date": "6:59 pm on 26 August, 2023",
+          "user_id": "zhfull:locomo:conv-43"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-43_qa3",
+        "locomo_conv-43_qa13",
+        "locomo_conv-43_qa41",
+        "locomo_conv-43_qa40",
+        "locomo_conv-43_qa70",
+        "locomo_conv-43_qa123",
+        "locomo_conv-43_qa179",
+        "locomo_conv-43_qa181",
+        "locomo_conv-43_qa190",
+        "locomo_conv-43_qa189",
+        "locomo_conv-43_qa199",
+        "locomo_conv-43_qa202",
+        "locomo_conv-43_qa204",
+        "locomo_conv-43_qa207",
+        "locomo_conv-43_qa217",
+        "locomo_conv-43_qa230",
+        "locomo_conv-43_qa236"
+      ],
+      "source_sessions": {
+        "session_10": {
+          "date": "2:52 pm on 31 August, 2023",
+          "turns": [
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D10:1",
+              "text": "嘿约翰，好几天没聊了！我想找的暑期工作被拒了，感觉不太好，但我会保持积极心态。你的纽约之行顺利吗？有没有遇到什么麻烦？你是怎么处理的？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D10:2",
+              "text": "嘿蒂姆！听到工作的事很遗憾，不过你的积极心态会帮你找到好机会的！我的旅行还行——一开始搞不清地铁怎么坐，后来有人帮我解释了一下就容易多了。你呢？最近有挑战什么新东西吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D10:3",
+              "text": "谢谢！感谢你的鼓励。昨天我挑战了一件新事——在课堂上做了一次演讲。虽然很紧张，但我做到了。虽然只是一小步，但感觉是一种进步。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/zr17msb27uy91.jpg"
+              ],
+              "blip_caption": "a photo of a bowl of soup with a spoon and a butternut on a cutting board",
+              "query": "beautifully plated chicken soup",
+              "dia_id": "D10:4",
+              "text": "真棒，蒂姆！鼓起勇气做演讲不容易，但干得漂亮！进步就是进步，继续保持。顺便说一句，我最近在尝试各种烹饪食谱。前几天做了一道很好喝的汤——味道真的很不错！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D10:5",
+              "text": "哇，看起来太棒了！你是怎么做的？有可以分享的食谱吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D10:6",
+              "text": "谢谢，我其实是现场即兴做的，所以没有食谱。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D10:7",
+              "text": "没关系！我可以自己找找。你能告诉我汤里用了什么香料吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D10:8",
+              "text": "我加了一些鼠尾草，味道很香。祝你做汤愉快！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D10:9",
+              "text": "谢谢！很期待试试。我喜欢尝试各种香料。对了，你去过环球影城吗？我打算下个月去那里玩。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D10:10",
+              "text": "酷！我还没去过，不过听说环球影城很棒。它绝对在我的愿望清单上。你之前去过吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D10:11",
+              "text": "没有，这是我第一次去。我对哈利·波特主题的东西超级兴奋。等不及了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D10:12",
+              "text": "酷！肯定会特别好玩，就像走进另一个世界一样。祝你玩得开心！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D10:13",
+              "text": "谢谢！我一定会玩得很开心的。到时候告诉你怎么样！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D10:14",
+              "text": "太好了！等不及听你讲了。一路平安！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D10:15",
+              "text": "谢谢！我会注意安全的。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D10:16",
+              "text": "拜拜！保重，我们尽快再聊！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D10:17",
+              "text": "保重！等不及和你叙旧了。回聊！"
+            }
+          ]
+        },
+        "session_9": {
+          "date": "6:59 pm on 26 August, 2023",
+          "turns": [
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/nziqtijj65i11.jpg"
+              ],
+              "blip_caption": "a photo of a stack of books on a table",
+              "query": "stack of textbooks and notes",
+              "dia_id": "D9:1",
+              "text": "嘿约翰，这周我真是忙得不可开交。作业和考试压得我喘不过气。不过我不会放弃的！我正试着在学习和阅读奇幻小说的爱好之间找到平衡。你最近怎么样？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.pinimg.com/originals/79/c5/6c/79c56ca8e8173619eb96c1058eb5bb67.jpg"
+              ],
+              "blip_caption": "a photo of a group of girls basketball players posing for a picture",
+              "query": "group friends basketball posing",
+              "dia_id": "D9:2",
+              "text": "嘿蒂姆！我知道考试和作业的压力，但你能行！我过得还不错，谢谢关心。上周我回了趟家，和家人还有老朋友们聚了聚。我们一起聊童年的往事，聊得特别开心——这让我想起了那些美好的旧时光！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D9:3",
+              "text": "谢谢你的照片！那个团队看起来真是棒。你们一起打了多久？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:4",
+              "text": "我们在高中当了四年的队友，所以一起打球的时间挺长的。你参加过运动队吗？"
+            },
+            {
+              "speaker": "蒂姆",
+              "img_url": [
+                "https://i.redd.it/bq2ogzcjuzz41.jpg"
+              ],
+              "blip_caption": "a photo of a book shelf with books and a clock",
+              "query": "harry potter books shelf",
+              "dia_id": "D9:5",
+              "text": "没有，从来没参加过运动队。我更喜欢阅读和奇幻小说。我喜欢沉浸在各种不同的魔法世界里。这也是我喜欢去新地方旅行的原因之一，去体验另一种魔力。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.pinimg.com/originals/90/49/55/904955fe77567cf689d7db0ce606717d.jpg"
+              ],
+              "blip_caption": "a photo of a cityscape with a view of a skyscraper",
+              "query": "new york city skyline",
+              "dia_id": "D9:6",
+              "text": "哇，蒂姆，你这藏书太棒了！有个能让人逃进不同世界的爱好真好。顺便说一句，我喜欢探索新城市——看看这张我在纽约市旅行时拍的照片！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D9:7",
+              "text": "哇！那天际线太美了——我一直想去纽约看看。那里怎么样？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:8",
+              "text": "谢谢！那里太棒了。走到哪里都有新鲜刺激的东西。探索这座城市、品尝各家餐厅的美食，感觉太赞了。一定要去一次！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D9:9",
+              "text": "把纽约加进我的旅行清单了，听起来会是一次很棒的冒险！听说那里有太多可以探索和尝试的东西。等不及要去看看了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:10",
+              "text": "相信我，纽约太棒了！那里有太多值得一看的东西——文化、美食——你不会后悔的。这将是一次你永远不会忘记的冒险！"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D9:11",
+              "text": "太好了！听起来是个充满无限潜力的好玩地方。等不及要亲自去体验了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:12",
+              "text": "太好了！等不及听你说什么时候出发。告诉我的话，我肯定能帮上忙。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D9:13",
+              "text": "好，我会告诉你的！谢谢你这么热心帮忙。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:14",
+              "text": "没问题！任何时候需要帮忙，尽管找我。"
+            },
+            {
+              "speaker": "蒂姆",
+              "dia_id": "D9:15",
+              "text": "谢谢！你的支持对我来说意义重大。再见！"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-41_63a98b958208",
+      "conversation": "conv-41",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.3846,
+      "sequence_ratio": 0.6772,
+      "left": {
+        "id": "4d198ea5-7344-4c2e-b229-5de92e591f47",
+        "content": "John's two main political focus areas are improving education and infrastructure in his community",
+        "score": 0.5179370238425783,
+        "metadata": {
+          "case_id": "locomo_conv-41_qa0",
+          "session_id": "session_1",
+          "benchmark": "locomo",
+          "session_date": "11:01 am on 17 December, 2022",
+          "user_id": "zhfull:locomo:conv-41"
+        }
+      },
+      "right": {
+        "id": "cf212f1d-4dc3-4942-9a4f-e03925a38853",
+        "content": "John is particularly interested in improving education and infrastructure, which he feels are important for his community",
+        "score": 0.5880468512068545,
+        "metadata": {
+          "session_date": "9:36 am on 2 April, 2023",
+          "session_id": "session_9",
+          "case_id": "locomo_conv-41_qa0",
+          "benchmark": "locomo",
+          "user_id": "zhfull:locomo:conv-41"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-41_qa17",
+        "locomo_conv-41_qa28",
+        "locomo_conv-41_qa65",
+        "locomo_conv-41_qa57",
+        "locomo_conv-41_qa83",
+        "locomo_conv-41_qa88",
+        "locomo_conv-41_qa90",
+        "locomo_conv-41_qa152",
+        "locomo_conv-41_qa162"
+      ],
+      "source_sessions": {
+        "session_1": {
+          "date": "11:01 am on 17 December, 2022",
+          "turns": [
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D1:1",
+              "text": "嘿，约翰！好久不见！最近怎么样？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D1:2",
+              "text": "嘿，玛丽亚！很高兴见到你。我昨天刚从一次家庭自驾游回来，很有意思！你有什么新鲜事吗？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D1:3",
+              "text": "我一直忙着在流浪者收容所做志愿者，还有保持健身。刚开始上空中瑜伽，很棒。你有没有试过其他不错的健身课程？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D1:4",
+              "text": "哇，玛丽亚，听起来很酷！我在练自由搏击，它让我精力充沛。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D1:5",
+              "text": "不错啊，约翰。自由搏击是保持身材和减压的绝佳方式。你有什么正在努力实现的目标吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D1:6",
+              "text": "有的，玛丽亚，我真的很希望进入地方政界。我喜欢帮助社区，把它变得更美好。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D1:7",
+              "text": "太好了，约翰！真棒！你有什么想重点解决的具体领域吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D1:8",
+              "text": "我热衷于改善我们社区的教育和基础设施。这是我的两大主要关注点。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D1:9",
+              "text": "哇，约翰！很高兴听到这些。你能告诉我是什么让你对这些议题产生兴趣的吗？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://www.greenbaypressgazette.com/gcdn/presto/2019/07/16/PGRB/fa8d60a1-0a21-421c-b36d-31f4bc2d2b6d-KEW_0720_LC_referendum_Peters_Concrete_pour.png"
+              ],
+              "blip_caption": "a photo of a group of men working on a building",
+              "query": "school building renovation",
+              "dia_id": "D1:10",
+              "text": "在我成长的过程中，我目睹了教育匮乏和基础设施破败对我们社区的影响。我不希望子孙后代也经历这些，所以我认为学校和基础设施应该得到充足的资金。这是一所学校去年获得拨款后的照片。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D1:11",
+              "text": "看起来不错！这笔额外的资金对学校建设有什么帮助？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D1:12",
+              "text": "它让学校得以进行必要的修缮和翻新，为学生们营造了更安全、更现代化的学习环境。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D1:13",
+              "text": "哇，约翰，这真的给学校和学生带来了改变！能参与其中一定很棒。你在政界的下一步打算是什么？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D1:14",
+              "text": "我打算和当地领导人和组织聊聊，为我的下一步行动争取支持和收集想法。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D1:15",
+              "text": "听起来不错，约翰。让我们从当地领导人和组织那里获得支持和好点子吧。记得随时告诉我你的竞选进展。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D1:16",
+              "text": "明白了！谢谢你，玛丽亚。我一定会告诉你的。"
+            }
+          ]
+        },
+        "session_9": {
+          "date": "9:36 am on 2 April, 2023",
+          "turns": [
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D9:1",
+              "text": "嘿约翰，好久不见！我最近在上一个诗歌课，帮助我把感受用文字表达出来。过程挺坎坷的，但感觉很好。你最近怎么样？"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://www.diplomaoutlet.com/wp-content/uploads/u9-1.jpg"
+              ],
+              "blip_caption": "a photo of a certificate of completion of a university degree",
+              "query": "diploma university",
+              "dia_id": "D9:2",
+              "text": "嘿玛丽亚！很高兴收到你的消息。听起来是探索内心感受的好方法。自从我们上次聊天后，我经历了一场不小的冒险！\n"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D9:3",
+              "text": "恭喜你完成学位，约翰！那一定是段了不起的经历。当你达成这么大的目标时是什么感觉？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:4",
+              "text": "谢谢，玛丽亚！这是一段漫长的旅程，但绝对值得。我上周毕业了！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D9:5",
+              "text": "肯定的！你对未来有什么打算？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:6",
+              "text": "谢谢！我在考虑进入政策制定领域，因为我的学位以及我对产生积极影响的热情。有很多可以做出改进的机会。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D9:7",
+              "text": "听起来很棒，约翰！凭着你的热情和奉献精神，这对你来说再合适不过了。有没有你特别感兴趣的具体领域？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:8",
+              "text": "谢谢，玛丽亚！改善教育和基础设施尤其让我感兴趣。这对我们的社区很重要。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D9:9",
+              "text": "是啊，我记得你提到过这些领域。参加社区会议和社区参与的经历如何塑造了你在这方面的看法？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:10",
+              "text": "参加社区会议并参与社区事务，让我更好地理解了我们的教育和基础设施系统所面临的挑战。这也让我看到了这些问题对我们邻居的影响，凸显了我们努力寻找解决方案的必要性。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D9:11",
+              "text": "干得好，约翰！你真的展现出了奉献和投入。获得第一手经验并努力寻找解决方案，太棒了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:12",
+              "text": "谢谢玛丽亚！把想法付诸行动并寻找解决方案对我很重要。虽然过程可能很艰难，但知道自己正在带来改变真是太有意义了！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D9:13",
+              "text": "同意，约翰！是啊，虽然可能很艰难，但真的很有成就感，也很值得。继续加油！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:14",
+              "text": "玛丽亚，非常感谢！你的支持真的让我备受鼓舞——我很感激有你站在我这边！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D9:15",
+              "text": "不客气，约翰。如果需要任何帮助就告诉我。我们合作得很默契！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D9:16",
+              "text": "谢谢，玛丽亚！一定会的。一起合作就太好了！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "img_url": [
+                "https://bloximages.newyork1.vip.townnews.com/yakimaherald.com/content/tncms/assets/v3/editorial/4/2d/42d9b634-18c9-11ed-8a1b-039214ad9eb3/62f3dc54b5a61.image.jpg"
+              ],
+              "blip_caption": "a photo of a man and woman shaking hands in front of a food tray",
+              "query": "volunteering at local homeless shelter",
+              "dia_id": "D9:17",
+              "text": "是的，约翰，让我们继续互相支持，寻找改善他人生活的方法。还记得我们去年一起做志愿者吗？那是一次非常充实的经历。"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a woman and a child walking in a park",
+              "dia_id": "D9:18",
+              "text": "是啊，我记得！看到我们的行动能产生如此大的影响真让人开心。让我们继续伸出援手，让事情变得更好！我们的行动真的很重要。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-41_e94a25c4f01c",
+      "conversation": "conv-41",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.4461,
+      "sequence_ratio": 0.6687,
+      "left": {
+        "id": "3e16e4e6-83cf-4aa2-8624-c82467940f00",
+        "content": "John and his family took a road trip last year (2022) exploring the Pacific Northwest coastline and visiting several national parks; he found the natural beauty breathtaking and it brought him peace and reflection",
+        "score": 0.5355671615781525,
+        "metadata": {
+          "session_id": "session_11",
+          "session_date": "6:13 pm on 10 April, 2023",
+          "case_id": "locomo_conv-41_qa0",
+          "benchmark": "locomo",
+          "user_id": "zhfull:locomo:conv-41"
+        }
+      },
+      "right": {
+        "id": "f7c86a35-4130-43b2-bbdc-93b3a78074e1",
+        "content": "Around 2022, John and Maria took a road trip exploring the Pacific Northwest coastline and several national parks, an experience he found breathtaking and inspiring",
+        "score": 0.5046374340865881,
+        "metadata": {
+          "session_id": "session_12",
+          "case_id": "locomo_conv-41_qa0",
+          "benchmark": "locomo",
+          "session_date": "7:34 pm on 18 April, 2023",
+          "user_id": "zhfull:locomo:conv-41"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-41_qa20",
+        "locomo_conv-41_qa21",
+        "locomo_conv-41_qa87",
+        "locomo_conv-41_qa145",
+        "locomo_conv-41_qa164"
+      ],
+      "source_sessions": {
+        "session_12": {
+          "date": "7:34 pm on 18 April, 2023",
+          "turns": [
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:1",
+              "text": "嘿，玛丽亚，希望你一切都好。上次我们聊天之后，我一直在写关于政治和政府的博客。这是一段非常有成就感的经历，我很在意能产生真正的影响。我们需要好得多的教育和基础设施，而且我切身体会到这些对社区的影响。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:2",
+              "text": "嘿，约翰，很高兴听到你对某件事充满热情！写博客真的能带来改变。我同意教育和基础设施是我们社区发展的关键。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:3",
+              "text": "谢谢你，玛丽亚！能和一个理解这些问题重要性的人聊天真是太好了。深入研究政治体系让我大开眼界，所以我一直在研究政策并写下我的想法和观点。希望能提高人们的意识，引发讨论，带来积极的改变。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:4",
+              "text": "哇，约翰！你的努力肯定会引发讨论并带来积极的改变。你最近在关注哪些政策？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:5",
+              "text": "最近是教育改革和基础设施发展。获得优质教育和更新的基础设施是一个社区繁荣成功的关键。我的目标是通过分享想法和采取行动来推动讨论、让人们参与进来。知道自己能帮忙改变人们的生活，真的让人充满力量。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:6",
+              "text": "哇，约翰！你的热情和奉献精神令人鼓舞。看到你带头行动、带来改变真是太棒了。继续保持这份出色的努力吧！"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://byronernest.files.wordpress.com/2022/11/img_5966-1.jpg"
+              ],
+              "blip_caption": "a photo of two men standing next to each other at a convention",
+              "query": "blog post education reform",
+              "dia_id": "D12:7",
+              "text": "谢谢你，玛丽亚！非常感谢你的支持和鼓励，这对我意义重大。到目前为止，我的博客文章收到了一些不错的反馈。这只是小小的一步，但每一步都算数。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:8",
+              "text": "看来你的文章真的起了作用。他们是谁？他们玩得真开心！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:9",
+              "text": "上个月我和同事们一起参加了一场大会。我们都热衷于用科技为社区做好事。能和志同道合的人交流并分享想法真是太棒了。看到人们为了共同的目标团结一致，非常鼓舞人心。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:10",
+              "text": "哇，那一定很棒！和有共同热情的人在一起真的很振奋人心。被那些志同道合的人围绕的感觉怎么样？"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a group of people sitting around a table",
+              "dia_id": "D12:11",
+              "text": "和那群和我一样对用科技推动改变充满热情的人交流真是太棒了！这让我觉得我们真的可以带来改变。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:12",
+              "text": "不会吧，约翰！那真是太酷了。最让人兴奋的是什么？"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a group of military men sitting around a table",
+              "dia_id": "D12:13",
+              "text": "最棒的是现场的氛围——特别有感染力！我们都有很好的想法，一起头脑风暴，并始终保持干劲。真的让人充满力量。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:14",
+              "text": "听起来太棒了！和这么多干劲十足的人待在一起，对你有什么影响？"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a table with a map of a city on it",
+              "dia_id": "D12:15",
+              "text": "身边这些充满干劲的人给了我新的能量和目标。这真的激励我去做出更大的改变。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:16",
+              "text": "酷，约翰！和这样的人在一起真的很鼓舞人心。近期有什么令人期待的事吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:17",
+              "text": "我计划去东海岸旅行。你呢？最近有什么有意思的事吗？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:18",
+              "text": "我还在收容所做志愿者。能帮上忙很有成就感。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:19",
+              "text": "哇，玛丽亚！你对帮助别人真是尽心尽力。最近进展怎么样？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:20",
+              "text": "既有收获也很艰难。帮助别人很有成就感，但不断增长的求助需求有时让人应接不暇。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:21",
+              "text": "有时确实很艰难，但每一次善举都很重要。你如此尽心尽力，令人敬佩，玛丽亚。坚持下去！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D12:22",
+              "text": "谢谢你，约翰。你的话对我意义重大。小小的善举也能产生很大的影响。我们每个人都能做点什么来带来改变。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:23",
+              "text": "你说得对，每一个小小的行动都能带来巨大的影响。让我们继续为这个世界尽自己的一份力吧！"
+            }
+          ]
+        },
+        "session_11": {
+          "date": "6:13 pm on 10 April, 2023",
+          "turns": [
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:1",
+              "text": "嘿，玛丽亚，好几天没聊了。这一周过得挺疯狂，上周五上班路上我的车抛锚了。正想办法修车，但挺不容易的，钱包也吃不消。不过我还是保持积极，在寻找解决办法。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D11:2",
+              "text": "哦，约翰，真倒霉。这肯定不好受，但你这么积极的态度让我很佩服。坚持下去——艰难的日子总会过去，而你足够坚强，一定能挺过去！"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg"
+              ],
+              "blip_caption": "a photography of a mountain with a sunset and flowers in the foreground",
+              "query": "road beautiful sunset",
+              "dia_id": "D11:3",
+              "re-download": true,
+              "text": "谢谢你，玛丽亚。你的鼓励对我意义重大。是啊，车子出问题和钱的问题让人头疼，但我会保持积极，想办法解决。这张照片让我想起我们去年的一次公路旅行；虽然路上有些颠簸，但依然充满美丽和希望。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D11:4",
+              "text": "哇，照片真棒！你们那次公路旅行去了哪里？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:5",
+              "text": "谢谢！我们探索了太平洋西北部的海岸线，还去了几个很酷的国家公园。大自然的美真是令人叹为观止！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D11:6",
+              "text": "哇，那一定很棒！能欣赏大自然、找到内心的平静真是太好了。你真幸运能有这样的体验。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:7",
+              "text": "是啊，太美妙了。那些壮丽的景色真的会让人深思。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D11:8",
+              "text": "大自然能帮我们理清思路，提醒我们即使在困难时期也有美好存在。珍惜那些平静的时刻吧。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:9",
+              "text": "是啊，玛丽亚。那种平静和美好太珍贵了，尤其是在艰难的时候。它们给了我们继续前行的力量和灵感。你最近有什么新鲜事吗？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D11:10",
+              "text": "我最近在我做志愿服务的流浪者收容所做了几次演讲。真的很有成就感，其他志愿者也给了我很多夸赞。这让我再次意识到与他人连接、帮助他人是多么重要。而且，我买了一条十字架项链，感觉离我的信仰更近了——这让我很开心。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:11",
+              "text": "太棒了，玛丽亚！你真的在改变世界。与他人连接、帮助他人能给你带来这么多快乐，真让人赞叹。继续保持！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D11:12",
+              "text": "谢谢你，约翰！能真正带来改变真是太好了。看到影响、听到感激的话让我充满喜悦。收容所里的人们对我来说已经像家人一样了。能认识他们我真的感到很幸运。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:13",
+              "text": "哇，玛丽亚，你做的事情真的太了不起了。你的善意不断扩散，建立起如此美好的关系！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "img_url": [
+                "https://portlandrescuemission.org/wp-content/uploads/2017/11/20160809_gc_0797-copy.jpg"
+              ],
+              "blip_caption": "a photo of a group of people standing around a table filled with food",
+              "query": "homeless shelter volunteers",
+              "dia_id": "D11:14",
+              "text": "谢谢你，约翰。建立关系、见证善意确实能带来改变。这是一张上周的照片。看到大家聚在一起，我心里暖暖的，充满了希望。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:15",
+              "text": "哇，大家能聚在一起真是太好了。你一定出了不少好点子！你在那里都做些什么？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D11:16",
+              "text": "我们为收容所的居民组织了一顿饭，我帮忙准备各种东西。看到大家围坐在一起吃饭、互相支持，感觉真的很棒。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:17",
+              "text": "哇，玛丽亚，太棒了！你让每个人都感到那么舒适，这一定特别有成就感。你真的在带来改变！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D11:18",
+              "text": "是啊，能帮助大家聚在一起，营造一种舒适感和社区氛围，真的很好。看到人们互相支持，是种特别的感受。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:19",
+              "text": "确实如此，玛丽亚。那真好。它给了我们希望，提醒我们并不孤单。谢谢你成为一股积极的力量。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D11:20",
+              "text": "不客气，约翰！能感受到这种社区归属感真好。谢谢你的美言，对我意义重大。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D11:21",
+              "text": "很高兴能帮上忙，玛丽亚。回头再聊。保重！"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-47_abc3c4fb4edf",
+      "conversation": "conv-47",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.4027,
+      "sequence_ratio": 0.6398,
+      "left": {
+        "id": "c2ba2b0e-d255-474e-b350-3938c6a66e91",
+        "content": "John (James's friend) took second place at a local competition on Friday, May 20, 2022; he didn't win the championship but received some prize money and a trophy, and felt excited that his hard work paid off",
+        "score": 0.538734536989364,
+        "metadata": {
+          "case_id": "locomo_conv-47_qa0",
+          "session_id": "session_12",
+          "session_date": "7:33 pm on 23 May, 2022",
+          "benchmark": "locomo",
+          "user_id": "zhfull:locomo:conv-47"
+        }
+      },
+      "right": {
+        "id": "dbfa0f57-3172-4392-ac82-b59843cacd05",
+        "content": "John took second place in a local competition on Friday, May 20, 2022, receiving a cash prize and a trophy; he was thrilled that his hard work paid off even without winning first place",
+        "score": 0.47878977475509893,
+        "metadata": {
+          "benchmark": "locomo",
+          "session_id": "session_13",
+          "case_id": "locomo_conv-47_qa0",
+          "session_date": "4:30 pm on 13 June, 2022",
+          "user_id": "zhfull:locomo:conv-47"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-47_qa20",
+        "locomo_conv-47_qa21",
+        "locomo_conv-47_qa90",
+        "locomo_conv-47_qa93"
+      ],
+      "source_sessions": {
+        "session_12": {
+          "date": "7:33 pm on 23 May, 2022",
+          "turns": [
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D12:1",
+              "text": "嘿约翰，上周末我和朋友们去游乐园玩得特别开心。这真是从虚拟世界中的一个绝佳休息。我玩了几个超棒的过山车，让我想起了小时候。一切都那么真实和刺激，感觉自己就像在电子游戏里一样！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:2",
+              "text": "嘿詹姆斯！听起来玩得很尽兴！我猜那些游乐设施一定让你想起了不少美好的回忆。除了过山车还有别的游乐项目吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D12:3",
+              "text": "当然有，我还玩了费里斯、电动车和碰碰车。你最近怎么样？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:4",
+              "text": "那真不错！上周五我参加了一场本地比赛，拿了第二名！那次经历太疯狂了，比赛的竞争氛围简直狂热。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D12:5",
+              "text": "哇，约翰，太棒了！恭喜你取得这样的成绩！我能想象你在比赛中那种兴奋的感觉。你有得到什么奖励或奖品吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:6",
+              "text": "我对自己的成绩特别激动。虽然没赢得冠军，但我还是因为第二名拿到了一些奖金。看到自己的努力有了回报，真的很棒。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D12:7",
+              "text": "好消息！你不必每次都赢，成长和进步才是最重要的。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://sc04.alicdn.com/kf/Hcdada85e5412478bb63e47746ffc7c53e.jpg"
+              ],
+              "blip_caption": "a photo of a graduation cap on a book with a rope",
+              "query": "tournament prize trophy logo",
+              "dia_id": "D12:8",
+              "text": "是啊，我还得到了这个奖杯！太让人满足了。它提醒我要始终全力以赴。你呢？最近有什么成功的故事吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D12:9",
+              "text": "恭喜你取得成绩，约翰！那奖杯看起来很棒。上个月，我达成了一个个人的里程碑。过程中确实有过艰难时刻，但它让我想起了所有的努力付出。我有很强的成就感，已经准备好迎接未来的机会了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:10",
+              "text": "恭喜达成里程碑。是什么里程碑？是什么让它有挑战性？你学到了什么？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D12:11",
+              "text": "我完成了一个已经做了几个月的大项目。它很有挑战性，因为我必须学习一门新语言并处理许多细节。我在解决问题、耐心和坚持方面学到了很多。现在我觉得更有信心去承担更大的项目了。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:12",
+              "text": "你学会了一门语言并处理了那么多细节，真了不起。干得好，你确实掌握了一些很棒的技能！记住，决心和信心能让任何项目取得成功。做得好！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D12:13",
+              "text": "谢谢，我很感激你的支持。我一定会记住的。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D12:14",
+              "text": "别客气，我随时愿意帮忙。继续加油，去实现那些目标吧！"
+            }
+          ]
+        },
+        "session_13": {
+          "date": "4:30 pm on 13 June, 2022",
+          "turns": [
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:1",
+              "text": "嘿，詹姆斯，好久没聊了！这段时间发生了不少事，让我跟你好好说说。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:2",
+              "text": "嘿，约翰！收到你的消息太开心了。是啊，发生了好多事，咱们好好叙叙旧吧！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:3",
+              "text": "我终于得到了梦寐以求的工作！经过无数次的面试和熬夜，我拿到了录用通知，激动得不行。迫不及待想开启我的新征程了！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:4",
+              "text": "哇，约翰！恭喜你拿到了梦想中的工作，我真为你感到高兴。你什么时候入职？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:5",
+              "text": "谢谢！！我下个月开始上班。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:6",
+              "text": "刚开始可能会不太顺利，但我相信你会做得很棒。需要帮助的话别不好意思开口。等不及想听你分享经历呢！对了，我最近开始学一门课程，把我对游戏和编程的热爱结合在了一起。既有趣又有挑战性，这绝对加深了我对这两者的热情。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:7",
+              "text": "酷！听起来太棒了。把你对游戏和编程的热爱结合起来，简直像做梦一样。多跟我说说！你有没有在做些有意思的项目？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:8",
+              "text": "有啊，我们目前正在开发足球模拟器的一个新部分。我负责收集球员数据库。这可不容易，但我做到了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:9",
+              "text": "真酷！你选这门课程是因为喜欢足球吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:10",
+              "text": "部分原因是这个。我喜欢足球，但当然，最重要的原因还是提升自己。不过如果还能和喜欢的东西挂钩，那就更棒了。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:11",
+              "text": "我完全同意！对了，你看利物浦对切尔西的那场比赛了吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:12",
+              "text": "当然看了，他们踢得很好！就像我常说的，没有比足球更好的运动，没有比利物浦更好的俱乐部！他们的比赛我一场都不错过！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:13",
+              "text": "看来你是这支球队的铁杆粉丝啊！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:14",
+              "text": "那当然！他们永远在我心中，是一支伟大的球队。我希望他们下个赛季能夺冠！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:15",
+              "text": "作为曼城球迷，我可不能同意你的看法。你走着瞧，我们两支球队会为冠军而战，而赢的会是我们！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:16",
+              "text": "我敢说你错了，约翰。曼城状态不佳，他们的转会政策糟糕透了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:17",
+              "text": "你也许是对的，但曼城的教练能应对的，你等着看吧！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:18",
+              "text": "我打赌最终排名我们会在你们前面！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D13:19",
+              "text": "这个赌我接了，詹姆斯！这会是一场精彩的大战！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D13:20",
+              "text": "没问题，约翰！"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-41_bc8ddff131b2",
+      "conversation": "conv-41",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.3851,
+      "sequence_ratio": 0.5968,
+      "left": {
+        "id": "ab2e2133-62f2-45a8-a8cf-753f115ca03d",
+        "content": "Maria was busy preparing for a fundraising event at the homeless shelter planned for the week of May 29-June 4, 2023, hoping to raise enough money to meet homeless people's basic needs",
+        "score": 0.5720754659335612,
+        "metadata": {
+          "benchmark": "locomo",
+          "session_date": "1:24 pm on 25 May, 2023",
+          "session_id": "session_16",
+          "case_id": "locomo_conv-41_qa0",
+          "user_id": "zhfull:locomo:conv-41"
+        }
+      },
+      "right": {
+        "id": "2199887b-43b9-48c8-94dc-e7d85f90a8c8",
+        "content": "Maria is organizing a ring toss game for a fundraising event at the homeless shelter planned for the end of May 2023",
+        "score": 0.5461990834703996,
+        "metadata": {
+          "benchmark": "locomo",
+          "session_date": "7:38 pm on 20 May, 2023",
+          "session_id": "session_15",
+          "case_id": "locomo_conv-41_qa0",
+          "user_id": "zhfull:locomo:conv-41"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-41_qa0",
+        "locomo_conv-41_qa29",
+        "locomo_conv-41_qa39",
+        "locomo_conv-41_qa55",
+        "locomo_conv-41_qa63",
+        "locomo_conv-41_qa101",
+        "locomo_conv-41_qa102",
+        "locomo_conv-41_qa107",
+        "locomo_conv-41_qa123",
+        "locomo_conv-41_qa147",
+        "locomo_conv-41_qa153",
+        "locomo_conv-41_qa186",
+        "locomo_conv-41_qa95"
+      ],
+      "source_sessions": {
+        "session_16": {
+          "date": "1:24 pm on 25 May, 2023",
+          "turns": [
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://pdx350.salsalabs.org/juneteamcampaignupdate/ca4594c6-1102-4939-b090-61f878580f48.jpg"
+              ],
+              "blip_caption": "a photo of a group of people and a dog standing in front of a waterfall",
+              "query": "petition support education and infrastructure volunteers team",
+              "dia_id": "D16:1",
+              "text": "嘿，玛丽亚，我最近忙着搞我发起的请愿活动——虽然挺棘手，但能和我的老朋友们重新联系并获得支持，感觉真不错。我有一张和同事们去徒步旅行时拍的照片，他们真的让我一直坚持下去！你最近在忙什么？你的慈善机构有什么新动态吗？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "blip_caption": "a photo of a red trash can with clothes in it",
+              "dia_id": "D16:2",
+              "text": "嘿，约翰！很高兴事情进展顺利——你和你的朋友们看起来是一支很棒的团队！我在收容所忙着为下周的筹款活动做准备。希望能筹到足够的钱来满足无家可归者的基本需求。"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a poster for a chili cook off event",
+              "dia_id": "D16:3",
+              "text": "哇，玛丽亚！为有需要的人筹款真的很重要。有什么办法让我能帮上你的筹款活动吗？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "img_url": [
+                "https://patch.com/img/cdn20/users/26387059/20221221/113941/bbd143cd-d2aa-4d9f-8547-6f333402e7aa___21113933647.jpg"
+              ],
+              "blip_caption": "a photo of a poster for a chili cook off event",
+              "query": "chili cook off poster event",
+              "dia_id": "D16:4",
+              "text": "谢谢，约翰！非常感谢你的帮助。我们需要为筹款活动上的辣椒烹饪大赛做宣传。这是海报！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:5",
+              "text": "哇，看起来太棒了！我一定会帮忙宣传的。还有什么我能帮忙的吗？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D16:6",
+              "text": "谢谢，约翰！非常感谢你的帮助。如果你认识有意愿为活动做志愿者的人，请告诉我。我们能做到的！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:7",
+              "text": "没问题，玛丽亚！我会四处问问，看有没有我认识的人想帮忙。我们会为这项事业找到一些很棒的人。让我们一起做出改变吧！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D16:8",
+              "text": "干得好，约翰！让我们帮助那些有需要的人。谢谢你的支持！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:9",
+              "text": "不客气，玛丽亚！和你这样充满热情的人一起合作真是太棒了！让我们有所作为吧。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D16:10",
+              "text": "是啊，和你这样充满热情的人一起工作真的很有动力。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/cuurrb4qyl961.jpg"
+              ],
+              "blip_caption": "a photo of a couple walking into the ocean at sunset",
+              "query": "kids holding hands sunset",
+              "dia_id": "D16:11",
+              "text": "是啊，玛丽亚！我们正在有所作为，而且会坚持下去！这是我在海滩上拍的一张我家人的照片。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D16:12",
+              "text": "哇，约翰，这张照片太美了！它真的让我生出希望，去珍惜那些细微的时刻。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:13",
+              "text": "谢谢，玛丽亚！正是这样的时刻也给了我希望。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D16:14",
+              "text": "是啊，约翰！这些时刻让我内心平静，让我学会珍惜生活。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:15",
+              "text": "很高兴这张照片能让你有这样的感受，玛丽亚。珍惜那些细微的时刻吧！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D16:16",
+              "text": "谢谢，约翰。我一定会珍惜的！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:17",
+              "text": "谢谢你让我能帮上忙，玛丽亚。正是这样的时刻让生活变得有意义。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D16:18",
+              "text": "是啊，约翰。这些提醒帮助我们保持动力去产生积极的影响。好了，回头再聊！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D16:19",
+              "text": "是啊，玛丽亚！我们在产生积极影响的道路上真的取得了进展。我相信我们！再见！"
+            }
+          ]
+        },
+        "session_15": {
+          "date": "7:38 pm on 20 May, 2023",
+          "turns": [
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:1",
+              "text": "嘿，玛丽亚，最近怎么样？我一直很忙，在做支持退伍军人的项目。想发起一个请愿活动，挺有成就感的，但也有些压力。你呢？"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D15:2",
+              "text": "嘿，约翰，我挺好的。听说事情不顺很难过。你是怎么决定接手那个项目的？"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a parking lot with a flag and flowers",
+              "dia_id": "D15:3",
+              "text": "嗨，玛丽亚，谢谢关心。我一直很关注退伍军人以及他们的权益。上周，我再次意识到他们为我们付出了那么多，所以想以某种方式表达我的感激。于是，我就做了一个支持他们的项目。这是我回馈的一种方式。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D15:4",
+              "text": "哇，约翰！真是善举。看到你做出改变真的很棒。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:5",
+              "text": "谢谢，玛丽亚。确实花了不少功夫，但我觉得值得。我只是想让他们知道，他们的付出是被人感激的。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D15:6",
+              "text": "哇，约翰，太棒了！你的项目对他们来说一定会很了不起！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:7",
+              "text": "是啊，我也希望如此。他们付出了那么多，值得我们的支持。我想帮助他们的生活变得更好。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D15:8",
+              "text": "太好了，约翰！你这样做真的很棒。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:9",
+              "text": "我真的很热衷于让退伍军人在我们的社区里得到支持和重视，所以让我们一起实现它吧！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D15:10",
+              "text": "算我一个，约翰！我愿意帮忙。让我们一起做出改变。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://cdn2.picryl.com/photo/2020/01/13/combat-veterans-associated-with-troops-first-foundation-06145f-1024.jpg"
+              ],
+              "blip_caption": "a photography of a man shaking hands with a soldier in uniform",
+              "query": "group of veterans smiling and shaking hands",
+              "dia_id": "D15:11",
+              "re-download": true,
+              "text": "太好了，玛丽亚！我就知道你会支持。有你的帮助，我们能产生真正的影响。非常感谢！这是上周五和一些对此非常兴奋的退伍军人的照片。他们的支持让我充满动力。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D15:12",
+              "text": "哇，约翰，看起来太棒了！你做了什么让他们这么开心？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:13",
+              "text": "谢谢，玛丽亚！我们举办了一个小型聚会，邀请一些退伍军人分享他们的故事，大家玩得很开心。看到他们建立联系、找到情谊真的很棒。那些笑容和新的友谊让这一切特别温暖人心。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D15:14",
+              "text": "哇，约翰，这真的很温暖人心！故事和联系确实能带来改变。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:15",
+              "text": "是啊，玛丽亚。这让我想起了那种社区感和团结感。这让我意识到帮助退伍军人有多重要。"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D15:16",
+              "text": "是啊，约翰！很高兴看到你的项目为他们带来改变。社区感和支持真的很重要。继续做你正在做的事吧；我会支持你的！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:17",
+              "text": "谢谢，玛丽亚！你的支持意义重大。让我们一起为退伍军人做出改变吧！"
+            },
+            {
+              "speaker": "玛丽亚",
+              "dia_id": "D15:18",
+              "text": "对，约翰！继续加油，我们一定会有所作为！我目前正在为无家可归者收容所本月底的筹款活动策划一场套圈比赛，迫不及待想看到它带来的影响。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D15:19",
+              "text": "哇，听起来很有趣！我等不及想多了解一下了。回头聊！"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "conv-47_12946f1346c5",
+      "conversation": "conv-47",
+      "selection": "lexical_threshold",
+      "char_trigram_jaccard": 0.3783,
+      "sequence_ratio": 0.5896,
+      "left": {
+        "id": "a1e812c7-b1d3-484a-8a14-3f1e74615039",
+        "content": "Around April 21, 2022, James took his dogs on a hike, exploring trails with breathtaking scenery in the woods; he loves the sound of leaves crunching underfoot and finds nature walks help him clear his mind and relax",
+        "score": 0.528430981462003,
+        "metadata": {
+          "session_id": "session_8",
+          "session_date": "2:36 pm on 29 April, 2022",
+          "benchmark": "locomo",
+          "case_id": "locomo_conv-47_qa0",
+          "user_id": "zhfull:locomo:conv-47"
+        }
+      },
+      "right": {
+        "id": "15b9ea7a-2b58-4953-8af3-0ed5732a1294",
+        "content": "On Thursday, April 21, 2022, James took his two dogs on a hike, exploring trails with beautiful scenery in the woods; he found it a fun adventure, and the dogs loved all the trails and breathtaking views",
+        "score": 0.5998838220527998,
+        "metadata": {
+          "session_date": "11:04 am on 23 April, 2022",
+          "case_id": "locomo_conv-47_qa0",
+          "session_id": "session_7",
+          "benchmark": "locomo",
+          "user_id": "zhfull:locomo:conv-47"
+        }
+      },
+      "co_selected_case_ids": [
+        "locomo_conv-47_qa12",
+        "locomo_conv-47_qa42",
+        "locomo_conv-47_qa63",
+        "locomo_conv-47_qa78"
+      ],
+      "source_sessions": {
+        "session_7": {
+          "date": "11:04 am on 23 April, 2022",
+          "turns": [
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:1",
+              "text": "嘿，詹姆斯！最近怎么样？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D7:2",
+              "text": "嘿，约翰！很高兴收到你的消息。是啊，最近忙疯了。上周四我带我的狗去远足了。真是场冒险！探索了一些不错的小径，享受了新鲜的空气。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:3",
+              "text": "哇，听起来真是场冒险！你那天有拍照片吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "img_url": [
+                "https://i0.wp.com/mikicc.org/wp-content/uploads/2020/11/20201024_1014341921784989571737117.jpg"
+              ],
+              "blip_caption": "a photo of a man walking two dogs on a path in the woods",
+              "query": "dogs trail woods breathtaking views",
+              "dia_id": "D7:4",
+              "text": "有，我有一张。太棒了！它们很喜欢——有那么多可以探索的小径，还有壮丽的风景。太好玩了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:5",
+              "text": "哇，你带它们去的地方看起来真不错！你为什么选那个地方？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D7:6",
+              "text": "我选那个地方是因为那里风景优美，小径也多。对它们来说，探索自然、尽情玩耍再合适不过了。况且，被郁郁葱葱的绿植和清新的空气包围，这种感觉无可替代。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:7",
+              "text": "同意！这是逃离日常琐事的好方式。真希望我也能多花点时间亲近大自然！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D7:8",
+              "text": "我喜欢脚下树叶沙沙作响的声音和那份宁静。它帮我理清思绪、放松心情。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:9",
+              "text": "我也需要放松一下，因为最近我的生活简直一团乱。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D7:10",
+              "text": "发生什么事了？有什么想聊聊的吗？我在这里陪着你。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:11",
+              "text": "谢谢，詹姆斯。是的，工作上超级忙。到处都是截止日期，要做的事情太多了。最近真是忙得不可开交。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D7:12",
+              "text": "是啊，工作确实不容易。有什么具体的事情让情况更糟吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:13",
+              "text": "唉，这个项目让我很头疼。这是个涉及编程的难题，我被卡住了。很让人沮丧，因为我讨厌停滞不前、毫无进展的状态。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D7:14",
+              "text": "是啊，项目进展不如预期时真的很让人沮丧。具体是什么让你遇到了麻烦？也许我能帮上点忙。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:15",
+              "text": "这个编程真的很难。我在做一个很复杂的东西，进展不顺利。我盯着它看了好久，感觉自己毫无进展。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D7:16",
+              "text": "明白了，项目有什么问题？需要我帮你一起想些办法吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:17",
+              "text": "好啊，那太好了。我正在尝试让这个新算法运行得更好，但我卡住了。你有什么想法吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D7:18",
+              "text": "虽然我不了解你的算法，但把它拆解成更小的步骤可能会有帮助。研究一下类似的算法，或者向其他程序员请教，都可能有好处。别怕寻求帮助，记住，任何问题都有解决办法。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D7:19",
+              "text": "对，把它拆分成小步骤再寻求帮助肯定有用。我会试试的。谢谢你的建议，詹姆斯。非常感谢。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D7:20",
+              "text": "不客气，约翰。很高兴能帮上忙。你一定行的。坚持下去，你会找到答案的。"
+            },
+            {
+              "speaker": "约翰",
+              "blip_caption": "a photo of a notebook with a quote written on it",
+              "dia_id": "D7:21",
+              "text": "你的话真的帮到我了。我不会放弃的。会继续努力的。干杯！\n"
+            }
+          ]
+        },
+        "session_8": {
+          "date": "2:36 pm on 29 April, 2022",
+          "turns": [
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:1",
+              "text": "嘿，约翰！最近怎么样？有什么好玩的事吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:2",
+              "text": "我最近在接一些自由职业的编程活儿来磨练我的编程技能。挺有挑战的，但我下定决心要提高。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:3",
+              "text": "接自由职业确实是提升技能和积累经验的好方法。你现在在做哪些项目？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:4",
+              "text": "我其实正在给一家本地小企业做一个网站。这是我课堂之外第一个正式项目。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:5",
+              "text": "恭喜你的第一个正式项目，约翰！把课堂上学到的东西运用起来一定很棒吧。进展怎么样？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:6",
+              "text": "谢谢，詹姆斯！我学到了很多，到目前为止是一段很有意思的旅程。进展比较慢，中间也遇到过一些小波折。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:7",
+              "text": "是啊，事情从来都不会一帆风顺。遇到波折很正常，但要利用它们来学习和成长。坚持下去，你一定能成功！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:8",
+              "text": "你说得对，谢谢你的鼓励。有时候挺难的，但我会继续坚持，把这件事做成。小波折阻挡不了我。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:9",
+              "text": "你遇到了哪些挑战？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:10",
+              "text": "搞清楚怎么在网站上实现支付功能挺难的。我需要一些帮助，所以用了一些资料来理解整个流程。花了不少时间，但我离解决方案越来越近了。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "img_url": [
+                "https://i.redd.it/2xbwn05lpc761.jpg"
+              ],
+              "blip_caption": "a photo of a person holding a book open to a picture of a male character",
+              "query": "witcher 3 artwork stunning",
+              "dia_id": "D8:11",
+              "text": "听起来挺有挑战的，但你正在取得进展。加油！对了，三天前我给自己买了一本冒险书，里面有奇幻小说和很酷的插图。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:12",
+              "text": "哇，那些插图太棒了！让我回想起读奇幻小说的日子。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:13",
+              "text": "是啊，我很喜欢这个类型。有什么推荐吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:14",
+              "text": "好呀！听说过《风之名》吗？它是另一部很棒的小说，文笔非常出色。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "blip_caption": "a photo of a book set of three books on a wooden table",
+              "dia_id": "D8:15",
+              "text": "没听说过，但听起来很有意思。我一定会去看看的。谢谢你的推荐，约翰！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:16",
+              "text": "随时乐意帮忙。我相信你会喜欢这套三部曲的！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "img_url": [
+                "https://i.redd.it/qjblw3fb7hnb1.jpg"
+              ],
+              "blip_caption": "a photo of a dog laying on a bed with a computer in the background",
+              "query": "gaming setup dogs furry gaming buddies",
+              "dia_id": "D8:17",
+              "text": "看，我正在玩游戏，我忠实的毛茸茸伙伴黛西走过来趴在我旁边。太可爱了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:18",
+              "text": "噢，这真是太可爱了！你的毛茸茸伙伴看起来好舒服。你玩游戏的时候你的狗经常这样来找你吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "blip_caption": "a photo of a person holding a blue controller in their hand",
+              "dia_id": "D8:19",
+              "text": "是啊，它们喜欢看我打游戏，还经常抱着我。真是抱抱的好伙伴！你最近在玩什么游戏？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:20",
+              "text": "有它们真好！我最近在玩《刺客信条：英灵殿》（AC Valhalla），很酷。你在玩什么新游戏吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "img_url": [
+                "https://i.redd.it/c15urew02q041.jpg"
+              ],
+              "blip_caption": "a photo of a map of the world on a tv screen",
+              "query": "civilization vi strategy game",
+              "dia_id": "D8:21",
+              "text": "谢谢，约翰！《英灵殿》（Valhalla）很棒。我在尝试一些类似的策略游戏。虽然不一样，但非常酷！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:22",
+              "text": "是《文明6》吗？听说评价很好。怎么样？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "img_url": [
+                "https://i.redd.it/nbyl9ym1dpj41.jpg"
+              ],
+              "blip_caption": "a photo of a computer screen showing a game of war",
+              "query": "turn-based strategy game screenshot",
+              "dia_id": "D8:23",
+              "text": "这是一款高品质的回合制策略游戏，你要管理资源、率领军队、征服领土——既有挑战又很酷！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:24",
+              "text": "听起来很好玩！这游戏是什么样的？需要很多策略吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:25",
+              "text": "当然，约翰！它非常考验策略。关键是规划、管理资源，并做出好的决策来击败对手。每一步都很重要！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:26",
+              "text": "听起来很紧张但很酷。我喜欢考验我策略思维的游戏。它对你的解决问题的能力有帮助吗？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:27",
+              "text": "是的，这是锻炼解决问题和思考能力的好方法。而且，看到自己的计划按预期进行并赢得胜利，实在太爽了！"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:28",
+              "text": "没错！当计划成功并获胜时真的很有满足感。你玩这个游戏多久了？"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:29",
+              "text": "已经玩了一个月了——它真的很考验我的策略能力。"
+            },
+            {
+              "speaker": "约翰",
+              "img_url": [
+                "https://i.redd.it/m0vu1etdlol91.jpg"
+              ],
+              "blip_caption": "a photo of a board game with a lot of cards on it",
+              "query": "strategy board game",
+              "dia_id": "D8:30",
+              "text": "哇，真厉害！我特别喜欢这类游戏，它们真的很让我动脑。你觉得策略桌游怎么样？我两天前和朋友玩了一款，非常刺激！"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:31",
+              "text": "听起来不错！和朋友聚会时玩桌游总是很尽兴。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:32",
+              "text": "是啊！桌游很适合大家一起玩乐。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:33",
+              "text": "还有其他适合和别人一起玩的游戏吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:34",
+              "text": "有，我们玩过一款游戏，但我忘了它的名字。也许你知道这款游戏。有各种颜色的带数字的卡片。你只能在对手的牌上放相同颜色或相同数字的牌。有时要交换牌，有时需要从牌堆多抽几张，或者跳过一个回合。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:35",
+              "text": "我想不起有这样的游戏。你还有其他有趣的游戏吗？"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:36",
+              "text": "当然有！我最近还在和朋友玩另一款游戏。这是一个找出谁是内鬼的游戏，超级好玩。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:37",
+              "text": "听起来很酷！我听说过那个游戏，一直想试试。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:38",
+              "text": "去吧，詹姆斯！我建议你凑一大群人一起玩，会有趣得多。"
+            },
+            {
+              "speaker": "詹姆斯",
+              "dia_id": "D8:39",
+              "text": "一定，听起来很有趣。"
+            },
+            {
+              "speaker": "约翰",
+              "dia_id": "D8:40",
+              "text": "真的很棒！"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "limits": [
+    "高相似度只生成候选；跨会话再次提及同一事实是正常情况，必须读两场原始 turn。",
+    "词面阈值漏掉跨语言或大幅改写的重复；检索并集也不是完整历史库。",
+    "记忆 metadata 的 session_id 是写入场次，不是已验证的事实来源场次。"
+  ]
+}
