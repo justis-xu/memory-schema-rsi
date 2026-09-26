@@ -1,0 +1,76 @@
+{
+  "scope": "2026-09-25 中文无图与融合图全量原始归档中可见的记忆元数据；零模型调用",
+  "turn_id_keys_checked": [
+    "dia_id",
+    "dia_ids",
+    "source_turn_id",
+    "source_turn_ids",
+    "turn_id",
+    "turn_ids"
+  ],
+  "arms": {
+    "baseline": {
+      "path": "results_zh/zhfull_locomo_20260925_164645.jsonl",
+      "counts": {
+        "question_rows": 1979,
+        "vector_appearances": 29685,
+        "vector_appearances_with_session_id": 29685,
+        "vector_appearances_with_session_date": 29685,
+        "vector_appearances_with_turn_id": 0,
+        "selected_vector_appearances": 29685
+      },
+      "vector_metadata_keys": {
+        "session_id": 29685,
+        "benchmark": 29685,
+        "case_id": 29685,
+        "session_date": 29685,
+        "user_id": 29685
+      },
+      "unique_vector": {
+        "distinct_ids": 1780,
+        "with_session_id": 1780,
+        "with_session_date": 1780,
+        "with_turn_id": 0
+      },
+      "unique_graph_candidate_ids": 0,
+      "unique_selected_graph_ids": 0,
+      "unique_selected_vector_ids": 1780,
+      "graph_metadata_keys": {}
+    },
+    "fused_graph": {
+      "path": "results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+      "counts": {
+        "question_rows": 1980,
+        "vector_appearances": 29700,
+        "vector_appearances_with_session_id": 29700,
+        "vector_appearances_with_session_date": 29700,
+        "vector_appearances_with_turn_id": 0,
+        "graph_candidate_appearances": 59378,
+        "selected_vector_appearances": 26932,
+        "selected_graph_appearances": 2768
+      },
+      "vector_metadata_keys": {
+        "case_id": 29700,
+        "session_id": 29700,
+        "benchmark": 29700,
+        "session_date": 29700,
+        "user_id": 29700
+      },
+      "unique_vector": {
+        "distinct_ids": 1780,
+        "with_session_id": 1780,
+        "with_session_date": 1780,
+        "with_turn_id": 0
+      },
+      "unique_graph_candidate_ids": 1476,
+      "unique_selected_graph_ids": 735,
+      "unique_selected_vector_ids": 1780,
+      "graph_metadata_keys": {}
+    }
+  },
+  "limits": [
+    "只能断言归档检索记录和最终上下文缺精确 turn ID；不证明底层其他系统绝无来源信息。",
+    "一条记忆可能由同会话多个 turn 合成，单一 dia_id 字段未必足够，应保存来源 turn 列表及支持关系。",
+    "graph 候选与 vector 同 ID 可从 vector 补部分会话元数据，但无法凭 session_id 还原精确来源 turn。"
+  ]
+}

@@ -2,6 +2,8 @@
 
 > 2026-09-26；复算脚本 `scripts/m2_audit_image_query_provenance.py`，逐条证据见 `results/analysis/m2_image_query_provenance_20260926.json`。只读中文原始数据与八份 2026-09-25 评测归档，零模型调用。
 
+后续的[两次提取调用 POC](m2_image_query_ablation_poc_zh.md)已补上本篇当时缺少的单病例干预证据；本篇仍保留归档审计时的证据边界。
+
 ## 输入路径与覆盖量
 
 中文 LoCoMo 有 **5,882 个 turn、272 场会话**。其中 **1,226** 个 turn 带 `blip_caption`，**910** 个带 `img_url`，**888** 个带 `query`；这 888 个也全部带 caption。`src/schema_rsi/benchmarks/locomo.py` 的 `_turn_text` 把二者以 `[shared image: query | blip_caption]` 拼在中文对话正文后。`src/schema_rsi/evaluation/pipeline.py` 在 ingest 时只取拼好的 `content` 构造 messages 并传给 `backend.add_memory`，没有给模型标明 `query` 是搜索词、caption 是图片描述，也没有传 `image_urls`。因此，中文轨道的 888 个 `query` 以英文文本进入提取输入；是否最终成为记忆，仍取决于提取过程。
