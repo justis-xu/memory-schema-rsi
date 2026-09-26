@@ -73,4 +73,5 @@
 - EvoOntology 已完成针对性阅读和本地来源映射审计：`docs/m2_evoontology_evidence_mapping_zh.md`。可迁移的是有源证据映射、按失败层局部编辑、同条件配对接受门控；不能把 DDR-Bench 增益搬成中文图/Jev 预期收益。
 - 当前主要阶段文档还包括：`docs/m2_fact_level_funnel_zh.md`、`docs/m2_precision_judge_flips_zh.md`、`docs/m2_temporal_flip_sources_zh.md`、`docs/m2_relative_day_funnel_zh.md`、`docs/m2_speaker_surface_audit_zh.md`、`docs/m2_image_query_provenance_zh.md` 及对应小 POC 文档。它们是有边界的专项，不意味着“全部历史数据已穷尽”。
 - 总体仍需把历史数据清单、已分析覆盖和未覆盖范围核完整，并把多个专项收束成一份中文总复盘；不要用“没有发现更多问题”替代覆盖证明。优先依实际归档和代码证据，不重复已确立的结论；每段写清结论、置信度和下一步。
+- 跨专项综合判断已写入 `docs/m2_integrated_retrospective_zh.md`：把旧图 +17、2,042 入槽/2,084 挤出、同上下文翻分、事实级 15 题、Jev 扩拉、来源缺口、RSI 代理和 HF 覆盖合成逐题故障定位顺序及最小实验队列。它是决策索引而非新评测；当前纯中文库的无图基线、图/Jev 受控净收益、中文 LongMemEval 和真实无金标 RSI 仍未知。下一阶段优先把已核病例做逐事实来源侧车表，再挑源支持且具有鉴别力的中文病例做冻结条件 POC；不要在图独见八题或旧翻分上重复寻找同一结论。
 - 用户最近询问“是不是已经分析完一轮”，准确答复是：主要专项的一轮分析基本做过，但全量历史数据总复盘与 POC 尚未完成。用户要求持续推进完整使命；阶段边界用于提交和汇报，不是停止条件，也不能把下一波收窄为单一任务。
