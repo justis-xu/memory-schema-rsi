@@ -66,6 +66,7 @@
 - `conv-41` 局部别名结构审计见 `docs/m2_conv41_alias_hub_zh.md`、`results/analysis/m2_conv41_alias_hub_20260926.json`。五条 `User` 缓存记忆均可回源到约翰参与的 turn；其中两条混有旧场事实却存为新场。可见缓存中 `User`/`John`/`约翰` 分别连 5/118/18 条互不重叠记忆。直接并到 `John` 的潜在邻接增加 118 条，但受单节点 15 条候选上限及重排限制，不能视为实际新增证据或答题收益；下一步应核受限候选进出与反伤。
 - 历史中文融合图臂的实际别名曝光已核：`docs/m2_conv41_alias_exposure_zh.md`。`conv-41` 的 192 题里，`via=entity:User` 的图候选 11 次/8 题，最终仅 1 次选入；五条 `User` 记忆本身仍通过向量等路径在最终上下文出现 30 次/20 题。`John` 路径已有 1,495 次候选入场但只有 15 个不同 ID，提示宽人物 hub 受限额截断。现无证据把别名分裂列为该对话失分主因；别名合并应先做冻结候选对照。
 - 历史 JSONL 覆盖矩阵见 `docs/m2_historical_run_coverage_zh.md`、`results/analysis/m2_historical_run_inventory_20260926.json`。135 个 JSONL 中 46 个评测文件；八份中文 LoCoMo 主运行交集 1,941/1,986 题，45 个至少缺一臂（其中 36 个 adversarial），并集为全题。运行器打印异常但不结构化保存失败题原因，预重排候选／Jev 首判上下文也未完整归档。接下来需清点非 JSONL 产物与版本依赖，再据此收束总复盘。
+- 非 JSONL 与可见记忆版本审计见 `docs/m2_artifact_version_coverage_zh.md`、`results/analysis/m2_artifact_version_inventory_20260926.json`。指定目录有 196 个非 JSONL 文件；八份中文主运行的向量检索并集恰为同一组 1,780 个 ID，正文和 session 元数据逐项一致。图候选并集 1,674 个 ID，1,668 个与该向量并集同 ID 同内容，6 个只见于图候选。可见记忆一致增强配对证据，但没有证明未召回库、图结构或模型条件全同；当前缓存不能冒充历史冻结快照。
 
 - EvoOntology 已完成针对性阅读和本地来源映射审计：`docs/m2_evoontology_evidence_mapping_zh.md`。可迁移的是有源证据映射、按失败层局部编辑、同条件配对接受门控；不能把 DDR-Bench 增益搬成中文图/Jev 预期收益。
 - 当前主要阶段文档还包括：`docs/m2_fact_level_funnel_zh.md`、`docs/m2_precision_judge_flips_zh.md`、`docs/m2_temporal_flip_sources_zh.md`、`docs/m2_relative_day_funnel_zh.md`、`docs/m2_speaker_surface_audit_zh.md`、`docs/m2_image_query_provenance_zh.md` 及对应小 POC 文档。它们是有边界的专项，不意味着“全部历史数据已穷尽”。

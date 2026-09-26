@@ -1,0 +1,2502 @@
+{
+  "scope": "Non-JSONL files under specified run/result/cache roots; eight Chinese main runs' observed memory unions",
+  "artifact_counts": {
+    "files": 196,
+    "by_suffix": {
+      ".json": 141,
+      ".bin": 16,
+      ".sqlite3": 3,
+      ".db": 3,
+      ".pickle": 1,
+      ".md": 10,
+      ".log": 22
+    }
+  },
+  "artifacts": [
+    {
+      "path": "data/extraction/atomic_cache.json",
+      "bytes": 377255,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 272,
+      "top_level_keys_sample": [
+        "full:locomo:conv-26:session_1",
+        "full:locomo:conv-26:session_10",
+        "full:locomo:conv-26:session_11",
+        "full:locomo:conv-26:session_12",
+        "full:locomo:conv-26:session_13",
+        "full:locomo:conv-26:session_14",
+        "full:locomo:conv-26:session_15",
+        "full:locomo:conv-26:session_16",
+        "full:locomo:conv-26:session_17",
+        "full:locomo:conv-26:session_18",
+        "full:locomo:conv-26:session_19",
+        "full:locomo:conv-26:session_2"
+      ]
+    },
+    {
+      "path": "data/graph/concept_cache.json",
+      "bytes": 119145,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1035,
+      "top_level_keys_sample": [
+        "19:full:locomo:conv-26:abstract art",
+        "19:full:locomo:conv-26:abstract blue painting",
+        "19:full:locomo:conv-26:acoustic guitar",
+        "19:full:locomo:conv-26:adoption",
+        "19:full:locomo:conv-26:adoption agencies",
+        "19:full:locomo:conv-26:adoption agency",
+        "19:full:locomo:conv-26:adoption council meeting",
+        "19:full:locomo:conv-26:advocacy event",
+        "19:full:locomo:conv-26:annual summer camping trip",
+        "19:full:locomo:conv-26:art",
+        "19:full:locomo:conv-26:bach",
+        "19:full:locomo:conv-26:biking"
+      ]
+    },
+    {
+      "path": "data/graph/entities_cache.json",
+      "bytes": 379548,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1829,
+      "top_level_keys_sample": [
+        "00039bb9-0432-4bd0-a81c-6f1f5cded8a3",
+        "00305af9-0c71-4842-b90e-5307043a8ec3",
+        "004fb1b7-aa98-4761-8892-4bd1ac38f240",
+        "005b04fa-0b26-4f7f-aa7d-790e12d14d31",
+        "005d0659-47a3-40ee-92d4-be56b2369b4e",
+        "00970b97-196c-42fa-854d-e123cc4b7658",
+        "01219c2f-c834-4894-9854-ab70c0202007",
+        "01225263-5911-4c8b-b604-bbf264645fb4",
+        "015e2fb8-373c-4c0a-aaf3-350937c5c30a",
+        "01a2996a-f863-4144-920a-ad32a10dff02",
+        "01e19b4c-1846-45be-bb46-fbd3b159dc87",
+        "01f7ce3f-6e1d-40ee-9d19-a5ca8e665424"
+      ]
+    },
+    {
+      "path": "data/graph/key_props.json",
+      "bytes": 27,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "Memory"
+      ]
+    },
+    {
+      "path": "data/graph/memory_embeddings.json",
+      "bytes": 17641848,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1829,
+      "top_level_keys_sample": [
+        "00039bb9-0432-4bd0-a81c-6f1f5cded8a3",
+        "00305af9-0c71-4842-b90e-5307043a8ec3",
+        "004fb1b7-aa98-4761-8892-4bd1ac38f240",
+        "005b04fa-0b26-4f7f-aa7d-790e12d14d31",
+        "005d0659-47a3-40ee-92d4-be56b2369b4e",
+        "00970b97-196c-42fa-854d-e123cc4b7658",
+        "01219c2f-c834-4894-9854-ab70c0202007",
+        "01225263-5911-4c8b-b604-bbf264645fb4",
+        "015e2fb8-373c-4c0a-aaf3-350937c5c30a",
+        "01a2996a-f863-4144-920a-ad32a10dff02",
+        "01e19b4c-1846-45be-bb46-fbd3b159dc87",
+        "01f7ce3f-6e1d-40ee-9d19-a5ca8e665424"
+      ]
+    },
+    {
+      "path": "data/graph/structured_cache.json",
+      "bytes": 807902,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1747,
+      "top_level_keys_sample": [
+        "00039bb9-0432-4bd0-a81c-6f1f5cded8a3",
+        "00305af9-0c71-4842-b90e-5307043a8ec3",
+        "004fb1b7-aa98-4761-8892-4bd1ac38f240",
+        "005b04fa-0b26-4f7f-aa7d-790e12d14d31",
+        "005d0659-47a3-40ee-92d4-be56b2369b4e",
+        "00970b97-196c-42fa-854d-e123cc4b7658",
+        "01219c2f-c834-4894-9854-ab70c0202007",
+        "01225263-5911-4c8b-b604-bbf264645fb4",
+        "015e2fb8-373c-4c0a-aaf3-350937c5c30a",
+        "01a2996a-f863-4144-920a-ad32a10dff02",
+        "01e19b4c-1846-45be-bb46-fbd3b159dc87",
+        "01f7ce3f-6e1d-40ee-9d19-a5ca8e665424"
+      ]
+    },
+    {
+      "path": "data/graph/topic_cache.json",
+      "bytes": 131681,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1803,
+      "top_level_keys_sample": [
+        "00039bb9-0432-4bd0-a81c-6f1f5cded8a3",
+        "00305af9-0c71-4842-b90e-5307043a8ec3",
+        "004fb1b7-aa98-4761-8892-4bd1ac38f240",
+        "005b04fa-0b26-4f7f-aa7d-790e12d14d31",
+        "005d0659-47a3-40ee-92d4-be56b2369b4e",
+        "00970b97-196c-42fa-854d-e123cc4b7658",
+        "01219c2f-c834-4894-9854-ab70c0202007",
+        "01225263-5911-4c8b-b604-bbf264645fb4",
+        "015e2fb8-373c-4c0a-aaf3-350937c5c30a",
+        "01a2996a-f863-4144-920a-ad32a10dff02",
+        "01e19b4c-1846-45be-bb46-fbd3b159dc87",
+        "01f7ce3f-6e1d-40ee-9d19-a5ca8e665424"
+      ]
+    },
+    {
+      "path": "data/graph/variants/s1.json",
+      "bytes": 67,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "preexisting"
+      ]
+    },
+    {
+      "path": "data/graph/variants/s2.json",
+      "bytes": 83,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "preexisting"
+      ]
+    },
+    {
+      "path": "data/graph/variants/v10concept.json",
+      "bytes": 68,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "built"
+      ]
+    },
+    {
+      "path": "data/graph/variants/v4session.json",
+      "bytes": 63,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "built"
+      ]
+    },
+    {
+      "path": "data/graph/variants/v5month.json",
+      "bytes": 61,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "built"
+      ]
+    },
+    {
+      "path": "data/graph/variants/v6pair.json",
+      "bytes": 62,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "built"
+      ]
+    },
+    {
+      "path": "data/graph/variants/v8cluster.json",
+      "bytes": 63,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "built"
+      ]
+    },
+    {
+      "path": "data/graph_zh/memory_embeddings.json",
+      "bytes": 17226361,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1786,
+      "top_level_keys_sample": [
+        "00349207-bcb5-4534-aadc-9e06aa1d3203",
+        "0042b4d6-65d3-4c71-8ec7-6c3d6b15dcbe",
+        "006a2c21-85e0-4a23-a8b8-0a42642db147",
+        "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+        "01037f17-c73c-4d43-9cc6-0c5cddf7ec9f",
+        "0105f9a5-7725-4e06-92e0-ad1295263460",
+        "010d3e9f-d330-40ea-8f39-9429e1e4988c",
+        "013031a8-0707-4b46-835c-0115a0a72765",
+        "01377aac-a776-4f74-b50a-5915a074ca14",
+        "013ccb67-2b98-45fe-a32e-c5d22f8ad8c3",
+        "013eb6ab-1f23-4947-b9c7-0bd23b36e5ce",
+        "0143091d-b1be-41b7-928c-6b5be7e2c58f"
+      ]
+    },
+    {
+      "path": "data/graph_zh/structured_cache.json",
+      "bytes": 796185,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1705,
+      "top_level_keys_sample": [
+        "00349207-bcb5-4534-aadc-9e06aa1d3203",
+        "0042b4d6-65d3-4c71-8ec7-6c3d6b15dcbe",
+        "006a2c21-85e0-4a23-a8b8-0a42642db147",
+        "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+        "01037f17-c73c-4d43-9cc6-0c5cddf7ec9f",
+        "0105f9a5-7725-4e06-92e0-ad1295263460",
+        "010d3e9f-d330-40ea-8f39-9429e1e4988c",
+        "013031a8-0707-4b46-835c-0115a0a72765",
+        "01377aac-a776-4f74-b50a-5915a074ca14",
+        "013ccb67-2b98-45fe-a32e-c5d22f8ad8c3",
+        "013eb6ab-1f23-4947-b9c7-0bd23b36e5ce",
+        "0143091d-b1be-41b7-928c-6b5be7e2c58f"
+      ]
+    },
+    {
+      "path": "data/graph_zh/topic_cache.json",
+      "bytes": 130387,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1769,
+      "top_level_keys_sample": [
+        "00349207-bcb5-4534-aadc-9e06aa1d3203",
+        "0042b4d6-65d3-4c71-8ec7-6c3d6b15dcbe",
+        "006a2c21-85e0-4a23-a8b8-0a42642db147",
+        "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+        "01037f17-c73c-4d43-9cc6-0c5cddf7ec9f",
+        "0105f9a5-7725-4e06-92e0-ad1295263460",
+        "010d3e9f-d330-40ea-8f39-9429e1e4988c",
+        "013031a8-0707-4b46-835c-0115a0a72765",
+        "01377aac-a776-4f74-b50a-5915a074ca14",
+        "013eb6ab-1f23-4947-b9c7-0bd23b36e5ce",
+        "0143091d-b1be-41b7-928c-6b5be7e2c58f",
+        "016ef7e3-e571-4929-b73d-5feff7276029"
+      ]
+    },
+    {
+      "path": "data/search/dev_ids.json",
+      "bytes": 14305,
+      "suffix": ".json",
+      "top_level_type": "list",
+      "top_level_items": 616,
+      "top_level_keys_sample": null
+    },
+    {
+      "path": "data/search/flash_strict_cache.json",
+      "bytes": 5253975,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 23254,
+      "top_level_keys_sample": [
+        "0008bdba7552702136d6749364a77b53bab67c62",
+        "000b21af94b12eb236ec37bb5f3ef72ffb0595f4",
+        "001142ff7600fb3cd721cdbed9f8d99424a7634b",
+        "0012d9f14f1f318eb1c4fc37f78b32421c438109",
+        "00160e22e533940ad4b3b6a6e6fb2194a1f15bab",
+        "001b6efe816d7a33e78faf37925104788312d501",
+        "00209064d5df52d40265f797632945a6b76b68dc",
+        "00212ba7314d56c00000c6be0889e2f4d48c8ccf",
+        "002483a12d60f5c247575ae4138eb40a0c4eb7a6",
+        "0025a01fe3b069af5c57f1e9ef8a902f0434d93b",
+        "0029b34e766e18dfcf1089c05dc13c2a13641239",
+        "002a4d347668a9bf3035f94b99a389c9a897623e"
+      ]
+    },
+    {
+      "path": "data/search/laya_route_cache.json",
+      "bytes": 171954,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 617,
+      "top_level_keys_sample": [
+        "003524fe660f94eb",
+        "005ceb12bdf5244c",
+        "00c76cdb2bf5ea77",
+        "02b6b588945aba2e",
+        "02f12e779310c60a",
+        "030fd782185d7d2c",
+        "031bcf88f371b821",
+        "0321d64d3a8237ec",
+        "037fffc57fb92bd1",
+        "0399450423575f90",
+        "03cddac0e038ec13",
+        "040c0af61c0db3af"
+      ]
+    },
+    {
+      "path": "data/search/ref_fused_dev.json",
+      "bytes": 20199,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 616,
+      "top_level_keys_sample": [
+        "locomo_conv-26_qa0",
+        "locomo_conv-26_qa10",
+        "locomo_conv-26_qa102",
+        "locomo_conv-26_qa103",
+        "locomo_conv-26_qa104",
+        "locomo_conv-26_qa106",
+        "locomo_conv-26_qa107",
+        "locomo_conv-26_qa109",
+        "locomo_conv-26_qa11",
+        "locomo_conv-26_qa110",
+        "locomo_conv-26_qa112",
+        "locomo_conv-26_qa113"
+      ]
+    },
+    {
+      "path": "data/search/split.json",
+      "bytes": 171,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 2,
+      "top_level_keys_sample": [
+        "dev_convs",
+        "test_convs"
+      ]
+    },
+    {
+      "path": "data/vector_store/chroma/5e435003-da39-4c64-9110-64a9c5f8272f/data_level0.bin",
+      "bytes": 423600,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store/chroma/5e435003-da39-4c64-9110-64a9c5f8272f/header.bin",
+      "bytes": 100,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store/chroma/5e435003-da39-4c64-9110-64a9c5f8272f/length.bin",
+      "bytes": 400,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store/chroma/5e435003-da39-4c64-9110-64a9c5f8272f/link_lists.bin",
+      "bytes": 0,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store/chroma/cbdf6ec1-45cf-4b28-b7e3-e15b1a9b8151/data_level0.bin",
+      "bytes": 423600,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store/chroma/cbdf6ec1-45cf-4b28-b7e3-e15b1a9b8151/header.bin",
+      "bytes": 100,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store/chroma/cbdf6ec1-45cf-4b28-b7e3-e15b1a9b8151/length.bin",
+      "bytes": 400,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store/chroma/cbdf6ec1-45cf-4b28-b7e3-e15b1a9b8151/link_lists.bin",
+      "bytes": 0,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store/chroma/chroma.sqlite3",
+      "bytes": 1540096,
+      "suffix": ".sqlite3"
+    },
+    {
+      "path": "data/vector_store/mem0_history.db",
+      "bytes": 163840,
+      "suffix": ".db"
+    },
+    {
+      "path": "data/vector_store_zh/chroma/1c77fa73-bebf-468e-94bc-c8e278198130/data_level0.bin",
+      "bytes": 11144916,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store_zh/chroma/1c77fa73-bebf-468e-94bc-c8e278198130/header.bin",
+      "bytes": 100,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store_zh/chroma/1c77fa73-bebf-468e-94bc-c8e278198130/index_metadata.pickle",
+      "bytes": 115776,
+      "suffix": ".pickle"
+    },
+    {
+      "path": "data/vector_store_zh/chroma/1c77fa73-bebf-468e-94bc-c8e278198130/length.bin",
+      "bytes": 10524,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store_zh/chroma/1c77fa73-bebf-468e-94bc-c8e278198130/link_lists.bin",
+      "bytes": 23444,
+      "suffix": ".bin"
+    },
+    {
+      "path": "data/vector_store_zh/chroma/chroma.sqlite3",
+      "bytes": 9424896,
+      "suffix": ".sqlite3"
+    },
+    {
+      "path": "data/vector_store_zh/mem0_history_zh.db",
+      "bytes": 1794048,
+      "suffix": ".db"
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_mined_success_paths.json",
+      "bytes": 630463,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "by_conversation",
+        "limits",
+        "method",
+        "retrieval",
+        "rows",
+        "support_mining"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_mined_success_paths_weighted.json",
+      "bytes": 776835,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "by_conversation",
+        "limits",
+        "method",
+        "retrieval",
+        "rows",
+        "support_mining"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_offline_diagnostic.json",
+      "bytes": 818436,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "limits",
+        "method",
+        "per_conversation",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_offline_diagnostic_budgeted.json",
+      "bytes": 818557,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "limits",
+        "method",
+        "per_conversation",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_success_evidence_final.json",
+      "bytes": 4844836,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 13,
+      "top_level_keys_sample": [
+        "all_policy_train_validation",
+        "attempts",
+        "frozen_test",
+        "limit",
+        "local_path_query_ms",
+        "method",
+        "promoted",
+        "rows",
+        "selected_policy",
+        "selected_train_policy",
+        "splits",
+        "train"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_success_evidence_idf_corrected.json",
+      "bytes": 4843363,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 13,
+      "top_level_keys_sample": [
+        "all_policy_train_validation",
+        "attempts",
+        "frozen_test",
+        "limit",
+        "local_path_query_ms",
+        "method",
+        "promoted",
+        "rows",
+        "selected_policy",
+        "selected_train_policy",
+        "splits",
+        "train"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_success_evidence_postings.json",
+      "bytes": 3880874,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 12,
+      "top_level_keys_sample": [
+        "all_policy_train_validation",
+        "attempts",
+        "frozen_test",
+        "limit",
+        "method",
+        "promoted",
+        "rows",
+        "selected_policy",
+        "selected_train_policy",
+        "splits",
+        "train",
+        "validation"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_success_evidence_refined.json",
+      "bytes": 3880871,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 12,
+      "top_level_keys_sample": [
+        "all_policy_train_validation",
+        "attempts",
+        "frozen_test",
+        "limit",
+        "method",
+        "promoted",
+        "rows",
+        "selected_policy",
+        "selected_train_policy",
+        "splits",
+        "train",
+        "validation"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_success_evidence_runtime_graph.json",
+      "bytes": 3880874,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 12,
+      "top_level_keys_sample": [
+        "all_policy_train_validation",
+        "attempts",
+        "frozen_test",
+        "limit",
+        "method",
+        "promoted",
+        "rows",
+        "selected_policy",
+        "selected_train_policy",
+        "splits",
+        "train",
+        "validation"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_success_evidence_upper_bound.json",
+      "bytes": 3879903,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 10,
+      "top_level_keys_sample": [
+        "all_policy_train_validation",
+        "frozen_test",
+        "limit",
+        "method",
+        "promoted",
+        "rows",
+        "selected_train_policy",
+        "splits",
+        "train",
+        "validation"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_success_evidence_user_scoped.json",
+      "bytes": 4843364,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 13,
+      "top_level_keys_sample": [
+        "all_policy_train_validation",
+        "attempts",
+        "frozen_test",
+        "limit",
+        "local_path_query_ms",
+        "method",
+        "promoted",
+        "rows",
+        "selected_policy",
+        "selected_train_policy",
+        "splits",
+        "train"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_turn_graph.json",
+      "bytes": 503950,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 8,
+      "top_level_keys_sample": [
+        "builds",
+        "by_category",
+        "by_conversation",
+        "limits",
+        "local_query_ms",
+        "method",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_turn_graph_recurrence.json",
+      "bytes": 503960,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 9,
+      "top_level_keys_sample": [
+        "builds",
+        "by_category",
+        "by_conversation",
+        "limits",
+        "local_query_ms",
+        "method",
+        "policy",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_turn_graph_recurrence_event.json",
+      "bytes": 503958,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 9,
+      "top_level_keys_sample": [
+        "builds",
+        "by_category",
+        "by_conversation",
+        "limits",
+        "local_query_ms",
+        "method",
+        "policy",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/all_locomo_turn_graph_source_preserving.json",
+      "bytes": 503848,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 8,
+      "top_level_keys_sample": [
+        "builds",
+        "by_category",
+        "by_conversation",
+        "limits",
+        "local_query_ms",
+        "method",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-26_full_frozen.json",
+      "bytes": 3185493,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-30_full_frozen.json",
+      "bytes": 2623223,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-41_full_frozen.json",
+      "bytes": 4663836,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-42_full_frozen.json",
+      "bytes": 4397939,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-43_full_frozen.json",
+      "bytes": 4715924,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-44_full_frozen.json",
+      "bytes": 4144611,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-47_full_frozen.json",
+      "bytes": 4605021,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-48_full_frozen.json",
+      "bytes": 5048152,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-49_full_frozen.json",
+      "bytes": 3668174,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv-50_full_frozen.json",
+      "bytes": 4385503,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_frozen.json",
+      "bytes": 3188625,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "baseline_malformed_lines",
+        "baseline_path",
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_graph_ingest_01/chroma/7ad23b2a-61ff-469c-b39d-cd9563cc86e8/data_level0.bin",
+      "bytes": 423600,
+      "suffix": ".bin"
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_graph_ingest_01/chroma/7ad23b2a-61ff-469c-b39d-cd9563cc86e8/header.bin",
+      "bytes": 100,
+      "suffix": ".bin"
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_graph_ingest_01/chroma/7ad23b2a-61ff-469c-b39d-cd9563cc86e8/length.bin",
+      "bytes": 400,
+      "suffix": ".bin"
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_graph_ingest_01/chroma/7ad23b2a-61ff-469c-b39d-cd9563cc86e8/link_lists.bin",
+      "bytes": 0,
+      "suffix": ".bin"
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_graph_ingest_01/chroma/chroma.sqlite3",
+      "bytes": 1159168,
+      "suffix": ".sqlite3"
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_graph_ingest_01/history.db",
+      "bytes": 86016,
+      "suffix": ".db"
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_graph_ingest_01/summary.json",
+      "bytes": 820,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "durable_memories",
+        "errors",
+        "graph",
+        "output",
+        "source_links",
+        "source_nodes"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_replay_v1.json",
+      "bytes": 430690,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "conv",
+        "graph",
+        "ingest",
+        "limitations",
+        "policy",
+        "retrieval",
+        "snapshot_sha256"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_success_traces_loo.json",
+      "bytes": 246775,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "method",
+        "note",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv26_verified_episode_probe.json",
+      "bytes": 342,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 2,
+      "top_level_keys_sample": [
+        "episodes",
+        "schema_version"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv42_qa53_turn_graph_answer.json",
+      "bytes": 2472,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 8,
+      "top_level_keys_sample": [
+        "arms",
+        "baseline_answer",
+        "gold",
+        "gold_evidence",
+        "graph_added",
+        "id",
+        "method",
+        "question"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/conv43_qa49_turn_graph_answer.json",
+      "bytes": 2699,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 8,
+      "top_level_keys_sample": [
+        "arms",
+        "baseline_answer",
+        "gold",
+        "gold_evidence",
+        "graph_added",
+        "id",
+        "method",
+        "question"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/118b2229.json",
+      "bytes": 6149466,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/1e043500.json",
+      "bytes": 6421161,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/3b6f954b.json",
+      "bytes": 6292904,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/51a45a95.json",
+      "bytes": 6627794,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/58bf7951.json",
+      "bytes": 6415150,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/58ef2f1c.json",
+      "bytes": 6632104,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/5d3d2817.json",
+      "bytes": 6816795,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/66f24dbb.json",
+      "bytes": 6086778,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/6ade9755.json",
+      "bytes": 6784379,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/6f9b354f.json",
+      "bytes": 5948111,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/726462e0.json",
+      "bytes": 6694950,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/7527f7e2.json",
+      "bytes": 6539277,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/94f70d80.json",
+      "bytes": 6722418,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/ad7109d1.json",
+      "bytes": 6377055,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/af8d2e46.json",
+      "bytes": 6730806,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/c5e8278d.json",
+      "bytes": 6383060,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/c960da58.json",
+      "bytes": 6506718,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/dccbc061.json",
+      "bytes": 6792089,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/e47becba.json",
+      "bytes": 7210649,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_frozen/f8c5f88b.json",
+      "bytes": 6387874,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "conv",
+        "memories",
+        "sessions",
+        "user_id"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/lme20_offline_diagnostic.json",
+      "bytes": 10315,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "limits",
+        "method",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000107786191Z/active_schema.json",
+      "bytes": 332,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "channels",
+        "context_k",
+        "graph_slots",
+        "hop_discount",
+        "max_hops",
+        "max_visits",
+        "seed_k"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000107786191Z/input.json",
+      "bytes": 396,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "candidate_edge_count",
+        "case_count",
+        "context_k",
+        "dataset_sha256",
+        "limits",
+        "node_count",
+        "started_at"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000107786191Z/report.json",
+      "bytes": 2311,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 11,
+      "top_level_keys_sample": [
+        "accepted_changes",
+        "completed_at",
+        "dataset_sha256",
+        "schema",
+        "schema_id",
+        "scope",
+        "status",
+        "test",
+        "test_cases",
+        "train",
+        "validation"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000107786191Z/wiki/patterns.json",
+      "bytes": 128,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "cumulative_patterns",
+        "examples",
+        "missing_channels",
+        "round_patterns"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000649010998Z/active_schema.json",
+      "bytes": 332,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "channels",
+        "context_k",
+        "graph_slots",
+        "hop_discount",
+        "max_hops",
+        "max_visits",
+        "seed_k"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000649010998Z/input.json",
+      "bytes": 396,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "candidate_edge_count",
+        "case_count",
+        "context_k",
+        "dataset_sha256",
+        "limits",
+        "node_count",
+        "started_at"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000649010998Z/report.json",
+      "bytes": 2313,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 11,
+      "top_level_keys_sample": [
+        "accepted_changes",
+        "completed_at",
+        "dataset_sha256",
+        "schema",
+        "schema_id",
+        "scope",
+        "status",
+        "test",
+        "test_cases",
+        "train",
+        "validation"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/run-20260923T000649010998Z/wiki/patterns.json",
+      "bytes": 180,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cumulative_missing_channels",
+        "cumulative_patterns",
+        "examples",
+        "missing_channels",
+        "round_patterns"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/turn_graph_replace_0.25.json",
+      "bytes": 503946,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 9,
+      "top_level_keys_sample": [
+        "builds",
+        "by_category",
+        "by_conversation",
+        "limits",
+        "local_query_ms",
+        "method",
+        "policy",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/turn_graph_replace_0.35.json",
+      "bytes": 503937,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 9,
+      "top_level_keys_sample": [
+        "builds",
+        "by_category",
+        "by_conversation",
+        "limits",
+        "local_query_ms",
+        "method",
+        "policy",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/turn_graph_replace_0.45.json",
+      "bytes": 503897,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 9,
+      "top_level_keys_sample": [
+        "builds",
+        "by_category",
+        "by_conversation",
+        "limits",
+        "local_query_ms",
+        "method",
+        "policy",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "experiments/schema_rsi/runs/turn_graph_replace_0.55.json",
+      "bytes": 503898,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 9,
+      "top_level_keys_sample": [
+        "builds",
+        "by_category",
+        "by_conversation",
+        "limits",
+        "local_query_ms",
+        "method",
+        "policy",
+        "rows",
+        "summary"
+      ]
+    },
+    {
+      "path": "results/analysis/adversarial_gate_poc_20260926.json",
+      "bytes": 6445,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "limits",
+        "max_cases",
+        "model",
+        "results",
+        "selection"
+      ]
+    },
+    {
+      "path": "results/analysis/adversarial_gate_poc_cache.json",
+      "bytes": 1935,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 8,
+      "top_level_keys_sample": [
+        "0aa59c6549efba7503fbbbfd9050b69b45653b0a",
+        "13815081b25eb10129cc507e953d123ab4d62c92",
+        "4872f5d32a209ff6733d0459e02461d9ec6ccb3e",
+        "4f9b518485ab07874491a335c9d879e9979b1bd6",
+        "725d2b6e560ff1ef11e6f7f1e0306a24855ecf1a",
+        "dc43aaec7351d242b5a082e13bf2936dd8a345c1",
+        "de3d6e97efd1def31cc7d84ce62a2eb1864a2ded",
+        "f0a4b84f0be0cfd95a7bc188b78a1ff40260d45f"
+      ]
+    },
+    {
+      "path": "results/analysis/adversarial_gate_poc_report_zh.md",
+      "bytes": 3561,
+      "suffix": ".md"
+    },
+    {
+      "path": "results/analysis/evidence_session_audit_20260926.json",
+      "bytes": 284129,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 8,
+      "top_level_keys_sample": [
+        "by_category",
+        "by_conversation",
+        "cases",
+        "id_check",
+        "rows",
+        "scope",
+        "stages",
+        "warning"
+      ]
+    },
+    {
+      "path": "results/analysis/failure_funnel_cases_zh.md",
+      "bytes": 10860,
+      "suffix": ".md"
+    },
+    {
+      "path": "results/analysis/gold_evidence_id_audit_20260926.json",
+      "bytes": 3366,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "anomalies",
+        "counts",
+        "rsi_frozen_snapshots",
+        "scope",
+        "warning"
+      ]
+    },
+    {
+      "path": "results/analysis/gold_evidence_quality_zh.md",
+      "bytes": 2885,
+      "suffix": ".md"
+    },
+    {
+      "path": "results/analysis/graph_context_attribution_zh.md",
+      "bytes": 4623,
+      "suffix": ".md"
+    },
+    {
+      "path": "results/analysis/graph_context_audit_20260926.json",
+      "bytes": 1019514,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "by_category",
+        "by_stratum",
+        "cases",
+        "counts",
+        "graph_selected_count_distribution",
+        "scope",
+        "warning"
+      ]
+    },
+    {
+      "path": "results/analysis/history_audit_20260926.json",
+      "bytes": 310370,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "chinese_evidence_difficulty",
+        "chinese_sources",
+        "limits",
+        "method",
+        "pairs",
+        "rounds"
+      ]
+    },
+    {
+      "path": "results/analysis/jev_expansion_audit_20260926.json",
+      "bytes": 1356386,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "arms",
+        "limits",
+        "method"
+      ]
+    },
+    {
+      "path": "results/analysis/jev_score_audit_20260926.json",
+      "bytes": 7526,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "arms",
+        "limits",
+        "method"
+      ]
+    },
+    {
+      "path": "results/analysis/jev_visibility_poc_20260926.json",
+      "bytes": 4064,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "cases",
+        "max_calls",
+        "purpose"
+      ]
+    },
+    {
+      "path": "results/analysis/last_summer_alignment_20260926.json",
+      "bytes": 11369,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "matched_turns",
+        "method",
+        "rows",
+        "translated_as_previous_year_summer",
+        "warning"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_carryover_exposure_20260926.json",
+      "bytes": 132005,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "arm_counts",
+        "cases_with_any_exposure",
+        "common_J_cases",
+        "limits",
+        "scope",
+        "stale_pairs",
+        "vs_no_graph_transitions"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_carryover_fact_inventory_20260926.json",
+      "bytes": 40760,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "counts",
+        "limits",
+        "pairs",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_carryover_merge_prototype_20260926.json",
+      "bytes": 8375,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "checks",
+        "merges",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_conv41_alias_exposure_20260926.json",
+      "bytes": 10002,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases_with_user_entity_candidate",
+        "counts",
+        "limits",
+        "run",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_conv41_alias_hub_20260926.json",
+      "bytes": 6157,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "counts",
+        "limits",
+        "scope",
+        "user_memories"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_cross_session_carryover_labels_20260926.json",
+      "bytes": 5843,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "分类计数",
+        "说明",
+        "逐对"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_cross_session_carryover_packet_20260926.json",
+      "bytes": 218468,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "counts",
+        "limits",
+        "pairs",
+        "scope",
+        "selection"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_date_poc_eligibility_20260926.json",
+      "bytes": 47658,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases_with_no_year_graph_memory",
+        "counts",
+        "limits",
+        "method",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_fact_funnel_labels_20260926.json",
+      "bytes": 7048,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "分类计数",
+        "说明",
+        "逐题"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_fact_funnel_packet_20260926.json",
+      "bytes": 237612,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 9,
+      "top_level_keys_sample": [
+        "candidate_strata",
+        "cases",
+        "grades",
+        "limits",
+        "raw_archive",
+        "scope",
+        "selected_case_ids",
+        "selection",
+        "source_dataset"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_hf_dataset_coverage_20260926.json",
+      "bytes": 5843,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "config",
+        "historical_longmemeval_runs",
+        "locomo",
+        "longmemeval_s",
+        "paths",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_historical_run_inventory_20260926.json",
+      "bytes": 128495,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 7,
+      "top_level_keys_sample": [
+        "all_jsonl_manifest",
+        "chinese_locomo_case_coverage",
+        "chinese_locomo_runs",
+        "counts",
+        "limits",
+        "longmemeval_runs",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_image_query_ablation_poc_20260926.json",
+      "bytes": 6232,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 14,
+      "top_level_keys_sample": [
+        "ablated_d27_6_input",
+        "arms",
+        "case_id",
+        "dataset",
+        "max_calls",
+        "method_limits",
+        "model",
+        "objective",
+        "only_changed_message_index",
+        "original_d27_6_input",
+        "request_sha256",
+        "results"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_image_query_provenance_20260926.json",
+      "bytes": 25302,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 10,
+      "top_level_keys_sample": [
+        "counts",
+        "dataset",
+        "fixed_sample",
+        "fixed_sample_clear_conflicts_manual_lower_bound",
+        "fixed_sample_seed",
+        "fixed_sample_size",
+        "limits",
+        "query_caption_exact_sunrise_sunset_conflicts",
+        "scope",
+        "target"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_jev_expansion_20260926.json",
+      "bytes": 44400,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "arms",
+        "limits",
+        "method",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_precision_flip_20260926.json",
+      "bytes": 17086,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "arms",
+        "limits",
+        "method",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_prompt_order_20260926.json",
+      "bytes": 28707,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "arms",
+        "limits",
+        "method",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_relative_day_extraction_poc_20260926.json",
+      "bytes": 7343,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 13,
+      "top_level_keys_sample": [
+        "arms",
+        "case_id",
+        "limits",
+        "max_calls",
+        "model",
+        "objective",
+        "observation_dates",
+        "request_sha256",
+        "results",
+        "source_dia_ids",
+        "source_messages",
+        "source_session_date"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_relative_day_funnel_20260926.json",
+      "bytes": 52920,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 8,
+      "top_level_keys_sample": [
+        "cases",
+        "counts",
+        "grades",
+        "limits",
+        "method",
+        "raw_archive",
+        "scope",
+        "source_dataset"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_relative_day_gate_poc_20260926.json",
+      "bytes": 56217,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "cases",
+        "counts",
+        "gate",
+        "limits",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_relative_day_labels_20260926.json",
+      "bytes": 5976,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "分类计数",
+        "说明",
+        "逐题"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_source_mapping_gap_20260926.json",
+      "bytes": 3639,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "arms",
+        "limits",
+        "scope",
+        "source_dataset",
+        "turn_id_keys_checked"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_speaker_surface_20260926.json",
+      "bytes": 11363,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 8,
+      "top_level_keys_sample": [
+        "conv41_entity_alias_mentions",
+        "graph_cache_counts",
+        "graph_cache_generic_items",
+        "limits",
+        "memories_with_generic_reference",
+        "memory_counts",
+        "method",
+        "scope"
+      ]
+    },
+    {
+      "path": "results/analysis/m2_temporal_flip_sources_20260926.json",
+      "bytes": 52112,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "limits",
+        "scope",
+        "temporal_graph_flips",
+        "year_screen"
+      ]
+    },
+    {
+      "path": "results/analysis/temporal_gold_audit_zh.md",
+      "bytes": 6110,
+      "suffix": ".md"
+    },
+    {
+      "path": "results/analysis/zh_gold_date_audit_20260926.json",
+      "bytes": 828,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "mismatches",
+        "paired_explicit_months",
+        "paired_explicit_years",
+        "paired_qa",
+        "scope",
+        "warning"
+      ]
+    },
+    {
+      "path": "results/attribution_split_A.json",
+      "bytes": 191083,
+      "suffix": ".json",
+      "top_level_type": "list",
+      "top_level_items": 610,
+      "top_level_keys_sample": null
+    },
+    {
+      "path": "results/build_v10.log",
+      "bytes": 686,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/eval_full_fused.log",
+      "bytes": 18348,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/extract_atomic.log",
+      "bytes": 517,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/extraction_miss_A.checked.json",
+      "bytes": 20134,
+      "suffix": ".json",
+      "top_level_type": "list",
+      "top_level_items": 38,
+      "top_level_keys_sample": null
+    },
+    {
+      "path": "results/extraction_miss_A.json",
+      "bytes": 19261,
+      "suffix": ".json",
+      "top_level_type": "list",
+      "top_level_items": 38,
+      "top_level_keys_sample": null
+    },
+    {
+      "path": "results/extraction_nie_A.json",
+      "bytes": 115193,
+      "suffix": ".json",
+      "top_level_type": "list",
+      "top_level_items": 331,
+      "top_level_keys_sample": null
+    },
+    {
+      "path": "results/finalA.log",
+      "bytes": 6477,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/finalB.log",
+      "bytes": 6271,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/finalC.log",
+      "bytes": 6461,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/finalD.log",
+      "bytes": 8844,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/final_arms.log",
+      "bytes": 15,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/final_cd.log",
+      "bytes": 8,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/final_regrade.log",
+      "bytes": 5717,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/final_regrade2.log",
+      "bytes": 5804,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/laya_poc/conv42_poc.json",
+      "bytes": 21340,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 5,
+      "top_level_keys_sample": [
+        "conv",
+        "endpoints_used",
+        "metrics",
+        "payoff",
+        "sessions"
+      ]
+    },
+    {
+      "path": "results/laya_poc/poc_report.md",
+      "bytes": 15524,
+      "suffix": ".md"
+    },
+    {
+      "path": "results/laya_poc_zh/audit.json",
+      "bytes": 12723,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "sessions"
+      ]
+    },
+    {
+      "path": "results/laya_poc_zh/conv42_poc_smoke.json",
+      "bytes": 3441,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "conv",
+        "endpoints_used",
+        "metrics",
+        "payoff",
+        "sessions",
+        "track"
+      ]
+    },
+    {
+      "path": "results/laya_poc_zh/conv42_poc_smoke2.json",
+      "bytes": 2649,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "conv",
+        "endpoints_used",
+        "metrics",
+        "payoff",
+        "sessions",
+        "track"
+      ]
+    },
+    {
+      "path": "results/laya_poc_zh/conv42_poc_smoke_nf.json",
+      "bytes": 3368,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "conv",
+        "endpoints_used",
+        "metrics",
+        "payoff",
+        "sessions",
+        "track"
+      ]
+    },
+    {
+      "path": "results/laya_poc_zh/conv42_zh_poc.json",
+      "bytes": 49930,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 6,
+      "top_level_keys_sample": [
+        "conv",
+        "endpoints_used",
+        "metrics",
+        "payoff",
+        "sessions",
+        "track"
+      ]
+    },
+    {
+      "path": "results/laya_poc_zh/poc_report_zh.md",
+      "bytes": 17031,
+      "suffix": ".md"
+    },
+    {
+      "path": "results/precision_summary_20260924_051001.json",
+      "bytes": 5420,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "base",
+        "graph",
+        "s1"
+      ]
+    },
+    {
+      "path": "results/precision_summary_20260924_051022.json",
+      "bytes": 6923,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "base",
+        "graph",
+        "paired",
+        "s1"
+      ]
+    },
+    {
+      "path": "results/precision_summary_20260924_061925.json",
+      "bytes": 2123,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "fused"
+      ]
+    },
+    {
+      "path": "results/precision_summary_20260925_023601.json",
+      "bytes": 5306,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "A",
+        "B",
+        "paired"
+      ]
+    },
+    {
+      "path": "results/precision_summary_20260925_095806.json",
+      "bytes": 5315,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "C",
+        "D",
+        "paired"
+      ]
+    },
+    {
+      "path": "results/precision_summary_20260925_123107.json",
+      "bytes": 1874,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 1,
+      "top_level_keys_sample": [
+        "zhfull"
+      ]
+    },
+    {
+      "path": "results/precision_summary_20260925_175715.json",
+      "bytes": 4763,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 3,
+      "top_level_keys_sample": [
+        "base",
+        "graph",
+        "paired"
+      ]
+    },
+    {
+      "path": "results/precision_summary_20260925_212001.json",
+      "bytes": 6753,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 4,
+      "top_level_keys_sample": [
+        "fused",
+        "jevdec",
+        "jevlaya",
+        "paired"
+      ]
+    },
+    {
+      "path": "results/regrade_fused.log",
+      "bytes": 10343,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/regrade_precision.log",
+      "bytes": 27272,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/reingest_nf53.json",
+      "bytes": 142,
+      "suffix": ".json",
+      "top_level_type": "dict",
+      "top_level_items": 2,
+      "top_level_keys_sample": [
+        "conv-42",
+        "conv-43"
+      ]
+    },
+    {
+      "path": "results/search_calib.log",
+      "bytes": 4348,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/search_recalib.log",
+      "bytes": 4396,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/search_wave1.log",
+      "bytes": 9071,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/search_wave1b.log",
+      "bytes": 26158,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/search_wave2.log",
+      "bytes": 23122,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/search_wave3.log",
+      "bytes": 473014,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/search_wave5.log",
+      "bytes": 32516,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/search_wave6.log",
+      "bytes": 19522,
+      "suffix": ".log"
+    },
+    {
+      "path": "results/search_wave7.log",
+      "bytes": 21965,
+      "suffix": ".log"
+    },
+    {
+      "path": "results_zh/baseline_report_zh.md",
+      "bytes": 11426,
+      "suffix": ".md"
+    },
+    {
+      "path": "results_zh/graph_arm_report_zh.md",
+      "bytes": 10486,
+      "suffix": ".md"
+    },
+    {
+      "path": "results_zh/jev_stop_report_zh.md",
+      "bytes": 13512,
+      "suffix": ".md"
+    }
+  ],
+  "visible_retrieved_memories": {
+    "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl": {
+      "ids": 1780,
+      "signature_sha256": "3e91c6c9ec945171f4dd60134f1b327d85ef2b26c4ddd732508c83623d6911ed",
+      "intra_run_id_content_conflicts": 0
+    },
+    "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": {
+      "ids": 1780,
+      "signature_sha256": "3e91c6c9ec945171f4dd60134f1b327d85ef2b26c4ddd732508c83623d6911ed",
+      "intra_run_id_content_conflicts": 0
+    },
+    "results_zh/zhfull_fused_locomo_20260925_161049.jsonl": {
+      "ids": 1780,
+      "signature_sha256": "3e91c6c9ec945171f4dd60134f1b327d85ef2b26c4ddd732508c83623d6911ed",
+      "intra_run_id_content_conflicts": 0
+    },
+    "results_zh/zhfull_fused_locomo_20260925_172126.jsonl": {
+      "ids": 1780,
+      "signature_sha256": "3e91c6c9ec945171f4dd60134f1b327d85ef2b26c4ddd732508c83623d6911ed",
+      "intra_run_id_content_conflicts": 0
+    },
+    "results_zh/zhfull_fused_locomo_20260925_195248.jsonl": {
+      "ids": 1780,
+      "signature_sha256": "3e91c6c9ec945171f4dd60134f1b327d85ef2b26c4ddd732508c83623d6911ed",
+      "intra_run_id_content_conflicts": 0
+    },
+    "results_zh/zhfull_locomo_20260925_115806.jsonl": {
+      "ids": 1780,
+      "signature_sha256": "3e91c6c9ec945171f4dd60134f1b327d85ef2b26c4ddd732508c83623d6911ed",
+      "intra_run_id_content_conflicts": 0
+    },
+    "results_zh/zhfull_locomo_20260925_151059.jsonl": {
+      "ids": 1780,
+      "signature_sha256": "3e91c6c9ec945171f4dd60134f1b327d85ef2b26c4ddd732508c83623d6911ed",
+      "intra_run_id_content_conflicts": 0
+    },
+    "results_zh/zhfull_locomo_20260925_164645.jsonl": {
+      "ids": 1780,
+      "signature_sha256": "3e91c6c9ec945171f4dd60134f1b327d85ef2b26c4ddd732508c83623d6911ed",
+      "intra_run_id_content_conflicts": 0
+    }
+  },
+  "visible_retrieved_memory_maps_identical_across_eight_runs": true,
+  "graph_candidate_memories": {
+    "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl": {
+      "ids": 1634,
+      "signature_sha256": "05b3fbe650239596b94086686326d797ccd31894ee1278064d4930fbd9d729ca"
+    },
+    "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": {
+      "ids": 1596,
+      "signature_sha256": "b72bcba9be2ad949e26a8c06fba128ce74f9451b4c8ef43ba11c043a1b2eb189"
+    },
+    "results_zh/zhfull_fused_locomo_20260925_161049.jsonl": {
+      "ids": 1443,
+      "signature_sha256": "a2ca7b95471f90d4da2acdae63748efce9728c9b5c1c9d819b29bc3104c91f62"
+    },
+    "results_zh/zhfull_fused_locomo_20260925_172126.jsonl": {
+      "ids": 1476,
+      "signature_sha256": "9a65f1477085de71a40aade3796b68bfdf7cfcb0380aae97097502c44ebfa3e0"
+    },
+    "results_zh/zhfull_fused_locomo_20260925_195248.jsonl": {
+      "ids": 1476,
+      "signature_sha256": "9a65f1477085de71a40aade3796b68bfdf7cfcb0380aae97097502c44ebfa3e0"
+    },
+    "results_zh/zhfull_locomo_20260925_115806.jsonl": {
+      "ids": 0,
+      "signature_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "results_zh/zhfull_locomo_20260925_151059.jsonl": {
+      "ids": 0,
+      "signature_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "results_zh/zhfull_locomo_20260925_164645.jsonl": {
+      "ids": 0,
+      "signature_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "cross_surface": {
+    "retrieved_union_ids": 1780,
+    "graph_union_ids": 1674,
+    "id_overlap": 1668,
+    "graph_only_ids": 6,
+    "content_conflicts_on_overlap": 0,
+    "graph_content_conflicts_across_runs": 0
+  },
+  "limits": [
+    "Observed retrieval union is not a full memory-store snapshot",
+    "Artifacts can be reused or mutated after runs; filesystem mtime does not establish historical run provenance",
+    "Top-level JSON shape and file size do not validate scientific results"
+  ]
+}
