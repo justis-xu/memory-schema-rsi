@@ -1,0 +1,962 @@
+{
+  "scope": "2026-09-25 中文同夜融合图/Jev 归档，严格重判 J 类共同题",
+  "method": "以无 Jev 臂同题向量+图候选 ID 并集近似未记录的 Jev 首判池；按最终 answer_context_ids 核对是否选入池外 ID。",
+  "limits": "两臂为独立运行。未扩拉题也会有少量池外 ID；池外 ID 不是新事实，扩拉后无池外入选也不等于没有取回候选。分组是干预后观测，翻分不可作因果效应。",
+  "arms": {
+    "decider": {
+      "groups": {
+        "expanded_new_id": {
+          "cases": 314,
+          "same": 281,
+          "new_selected_ids": 447,
+          "new_selected_graph_ids": 429,
+          "new_selected_vector_ids": 18,
+          "same_vector_candidates": 269,
+          "same_full_context": 0,
+          "same_context_jev_only": 0,
+          "same_context_control_only": 0,
+          "new_graph_candidates": 5916,
+          "old_graph_candidates_lost": 1201,
+          "control_context_ids_displaced": 451,
+          "second_below_0_4": 285,
+          "control_only": 22,
+          "jev_only": 11
+        },
+        "expanded_old_pool": {
+          "cases": 418,
+          "same": 371,
+          "new_selected_ids": 0,
+          "new_selected_graph_ids": 0,
+          "new_selected_vector_ids": 0,
+          "same_vector_candidates": 409,
+          "same_full_context": 384,
+          "same_context_jev_only": 20,
+          "same_context_control_only": 22,
+          "new_graph_candidates": 7584,
+          "old_graph_candidates_lost": 1311,
+          "control_context_ids_displaced": 35,
+          "second_below_0_4": 416,
+          "control_only": 26,
+          "jev_only": 21
+        },
+        "not_expanded": {
+          "cases": 807,
+          "same": 713,
+          "new_selected_ids": 21,
+          "new_selected_graph_ids": 4,
+          "new_selected_vector_ids": 17,
+          "same_vector_candidates": 758,
+          "same_full_context": 765,
+          "same_context_jev_only": 49,
+          "same_context_control_only": 38,
+          "new_graph_candidates": 58,
+          "old_graph_candidates_lost": 58,
+          "control_context_ids_displaced": 44,
+          "second_below_0_4": 0,
+          "control_only": 40,
+          "jev_only": 54
+        }
+      },
+      "by_category": {
+        "multi-hop": {
+          "expanded_new_id": {
+            "cases": 49,
+            "same": 43,
+            "new_selected_ids": 72,
+            "new_selected_graph_ids": 70,
+            "new_selected_vector_ids": 2,
+            "same_vector_candidates": 41,
+            "same_full_context": 0,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 0,
+            "new_graph_candidates": 898,
+            "old_graph_candidates_lost": 163,
+            "control_context_ids_displaced": 73,
+            "second_below_0_4": 39,
+            "control_only": 3,
+            "jev_only": 3
+          },
+          "expanded_old_pool": {
+            "cases": 62,
+            "same": 56,
+            "new_selected_ids": 0,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 61,
+            "same_full_context": 57,
+            "same_context_jev_only": 4,
+            "same_context_control_only": 1,
+            "new_graph_candidates": 1130,
+            "old_graph_candidates_lost": 200,
+            "control_context_ids_displaced": 5,
+            "second_below_0_4": 61,
+            "jev_only": 4,
+            "control_only": 2
+          },
+          "not_expanded": {
+            "cases": 171,
+            "same": 142,
+            "new_selected_ids": 6,
+            "new_selected_graph_ids": 2,
+            "new_selected_vector_ids": 4,
+            "same_vector_candidates": 163,
+            "same_full_context": 163,
+            "same_context_jev_only": 15,
+            "same_context_control_only": 10,
+            "new_graph_candidates": 11,
+            "old_graph_candidates_lost": 11,
+            "control_context_ids_displaced": 8,
+            "second_below_0_4": 0,
+            "jev_only": 18,
+            "control_only": 11
+          }
+        },
+        "open-domain": {
+          "expanded_new_id": {
+            "cases": 30,
+            "control_only": 2,
+            "new_selected_ids": 42,
+            "new_selected_graph_ids": 40,
+            "new_selected_vector_ids": 2,
+            "same_vector_candidates": 27,
+            "same_full_context": 0,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 0,
+            "new_graph_candidates": 563,
+            "old_graph_candidates_lost": 113,
+            "control_context_ids_displaced": 42,
+            "second_below_0_4": 29,
+            "same": 26,
+            "jev_only": 2
+          },
+          "expanded_old_pool": {
+            "cases": 38,
+            "control_only": 3,
+            "new_selected_ids": 0,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 38,
+            "same_full_context": 37,
+            "same_context_jev_only": 3,
+            "same_context_control_only": 3,
+            "new_graph_candidates": 699,
+            "old_graph_candidates_lost": 129,
+            "control_context_ids_displaced": 1,
+            "second_below_0_4": 38,
+            "same": 32,
+            "jev_only": 3
+          },
+          "not_expanded": {
+            "cases": 28,
+            "control_only": 2,
+            "new_selected_ids": 0,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 26,
+            "same_full_context": 27,
+            "same_context_jev_only": 2,
+            "same_context_control_only": 2,
+            "new_graph_candidates": 1,
+            "old_graph_candidates_lost": 1,
+            "control_context_ids_displaced": 1,
+            "second_below_0_4": 0,
+            "same": 24,
+            "jev_only": 2
+          }
+        },
+        "single-hop": {
+          "expanded_new_id": {
+            "cases": 173,
+            "same": 156,
+            "new_selected_ids": 251,
+            "new_selected_graph_ids": 240,
+            "new_selected_vector_ids": 11,
+            "same_vector_candidates": 148,
+            "same_full_context": 0,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 0,
+            "new_graph_candidates": 3295,
+            "old_graph_candidates_lost": 695,
+            "control_context_ids_displaced": 254,
+            "second_below_0_4": 158,
+            "control_only": 12,
+            "jev_only": 5
+          },
+          "expanded_old_pool": {
+            "cases": 218,
+            "same": 191,
+            "new_selected_ids": 0,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 213,
+            "same_full_context": 198,
+            "same_context_jev_only": 9,
+            "same_context_control_only": 15,
+            "new_graph_candidates": 3999,
+            "old_graph_candidates_lost": 726,
+            "control_context_ids_displaced": 22,
+            "second_below_0_4": 218,
+            "control_only": 17,
+            "jev_only": 10
+          },
+          "not_expanded": {
+            "cases": 449,
+            "same": 399,
+            "new_selected_ids": 11,
+            "new_selected_graph_ids": 2,
+            "new_selected_vector_ids": 9,
+            "same_vector_candidates": 420,
+            "same_full_context": 426,
+            "same_context_jev_only": 28,
+            "same_context_control_only": 19,
+            "new_graph_candidates": 40,
+            "old_graph_candidates_lost": 40,
+            "control_context_ids_displaced": 25,
+            "second_below_0_4": 0,
+            "control_only": 20,
+            "jev_only": 30
+          }
+        },
+        "temporal": {
+          "expanded_new_id": {
+            "cases": 62,
+            "same": 56,
+            "new_selected_ids": 82,
+            "new_selected_graph_ids": 79,
+            "new_selected_vector_ids": 3,
+            "same_vector_candidates": 53,
+            "same_full_context": 0,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 0,
+            "new_graph_candidates": 1160,
+            "old_graph_candidates_lost": 230,
+            "control_context_ids_displaced": 82,
+            "second_below_0_4": 59,
+            "control_only": 5,
+            "jev_only": 1
+          },
+          "expanded_old_pool": {
+            "cases": 100,
+            "same": 92,
+            "new_selected_ids": 0,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 97,
+            "same_full_context": 92,
+            "same_context_jev_only": 4,
+            "same_context_control_only": 3,
+            "new_graph_candidates": 1756,
+            "old_graph_candidates_lost": 256,
+            "control_context_ids_displaced": 7,
+            "second_below_0_4": 99,
+            "control_only": 4,
+            "jev_only": 4
+          },
+          "not_expanded": {
+            "cases": 159,
+            "same": 148,
+            "new_selected_ids": 4,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 4,
+            "same_vector_candidates": 149,
+            "same_full_context": 149,
+            "same_context_jev_only": 4,
+            "same_context_control_only": 7,
+            "new_graph_candidates": 6,
+            "old_graph_candidates_lost": 6,
+            "control_context_ids_displaced": 10,
+            "second_below_0_4": 0,
+            "control_only": 7,
+            "jev_only": 4
+          }
+        }
+      },
+      "new_id_jev_only_cases": [
+        {
+          "case_id": "locomo_conv-42_qa118",
+          "category": "single-hop",
+          "question": "乔安娜2022年5月最近做的蛋糕用了什么样的糖霜？",
+          "gold": "椰子奶油",
+          "control_answer": "椰奶糖霜",
+          "jev_answer": "椰奶糖霜（配草莓夹心的无乳制品香草蛋糕）。",
+          "control_judge": {
+            "grade": "wrong",
+            "missing": [
+              "椰子奶油"
+            ],
+            "reason": "椰奶糖霜 (coconut milk frosting) 是与“椰子奶油糖霜” (coconut cream) 不同的配料。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "椰奶糖霜 matches the gold 椰子奶油 (coconut cream); extra detail is correct context."
+          },
+          "first": 0.36,
+          "second": 0.34,
+          "new_selected": [
+            {
+              "id": "5c3ac5a4-63df-43e1-b6e1-4a9c2612c9fe",
+              "source": "graph",
+              "content": "As of August 2022, Nate (Joanna's friend) started teaching others to make dairy-free desserts, sharing his love for dairy-free sweets, which he finds fun and rewarding"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-42_qa172",
+          "category": "single-hop",
+          "question": "内特如何看待乔安娜从挫折中恢复的能力？",
+          "gold": "尊重乔安娜能够从挫折中恢复过来",
+          "control_answer": "内特非常钦佩乔安娜从挫折中恢复的能力。他看到乔安娜在创作剧本期间经历了艰难的日子（她于2022年5月前完成了剧本创作），但她依然坚持下来并认为那些快乐的时刻让旅程变得值得。乔安娜也表示只要有内特的支持就不会放弃自己的目标。内特认为乔安娜展现出了坚韧不拔的精神，她的毅力和积极心态（比如从大自然徒步中汲取力量、每天看励志名言激励自己）让他深受鼓舞——他甚至在2022年10月为她制作了一块写有励志名言的白板，希望把鼓励传递给她，帮她继续保持这种不轻言放弃的态度。",
+          "jev_answer": "内特非常欣赏乔安娜从挫折中恢复的能力和坚持目标的精神。他受到乔安娜坚韧态度的启发，于2022年10月6日专门为她制作了一块写有励志名言的白板，希望她在需要鼓励时可以看看——他表示这份做法受到自己电竞事业经历的启发，想把鼓励传递下去。他认为只要有人支持，乔安娜就不会放弃自己的目标（乔安娜也确实珍藏了这块白板并表示只要内特支持她就不会放弃）。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "尊重 (respect) — the answer states 钦佩/深受鼓舞 instead of the gold's precise term 尊重"
+            ],
+            "reason": "The answer conveys admiration but the gold's precise sentiment is '尊重' (respect), which is not stated."
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Gold only requires Nate's respect for Joanna's ability to recover from setbacks; the answer conveys this (appreciation/admiration) with correct extra detail."
+          },
+          "first": 0.35,
+          "second": 0.57,
+          "new_selected": [
+            {
+              "id": "dbee2181-4b09-4eb7-8c3d-9bc9cc1e6db9",
+              "source": "graph",
+              "content": "乔安娜 (Joanna) 表示写作、创意项目和支持她的朋友们帮助她度过了艰难时期；能有理解并欣赏她作品、可以一起讨论并获得反馈的朋友是无价的"
+            },
+            {
+              "id": "4da98a18-6630-4e5e-8c5f-105adae2d424",
+              "source": "graph",
+              "content": "乔安娜 (Joanna) 第一次演话剧时紧张得忘了台词，这段经历让她明白了准备充分和保持当下状态的重要性；表演是她的第一份热情，但现在她在写作方面真正大放异彩，不过她不排除将来重回表演的可能"
+            },
+            {
+              "id": "709d1d3a-d740-422f-a504-e7d44e17c583",
+              "source": "graph",
+              "content": "乔安娜 (Joanna) 于2022年4月下旬加入了一个写作小组，组员们鼓舞人心、真正理解她的写作，她感到有干劲、有支持感，终于有了归属感"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-47_qa16",
+          "category": "open-domain",
+          "question": "约翰和詹姆斯谈论的那款有不同颜色卡牌的游戏是什么？",
+          "gold": "UNO",
+          "control_answer": "未指明具体名称——约翰描述了一款他忘记名字的卡牌游戏（多种颜色的数字卡，只能打出与对方颜色或数字匹配的卡，并有换牌、多摸牌或跳过回合等机制）。根据描述，这似乎是 UNO。",
+          "jev_answer": "描述——带有数字和颜色的牌，只能打出颜色或数字匹配的牌，还有跳过、摸牌和换牌功能——与 UNO 相符。约翰描述了玩法，但想不起这个名字了。\n\n答案：UNO（约翰描述了玩法——带有数字的彩色牌，你必须匹配颜色或数字，以及摸牌、跳过和换牌功能——但想不起这个名字了）",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "definitive identification of UNO"
+            ],
+            "reason": "Answer reaches UNO but hedges ('似乎是') rather than stating it definitively as the gold does."
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案明确给出UNO，与gold完全一致。"
+          },
+          "first": 0.1,
+          "second": 0.16,
+          "new_selected": [
+            {
+              "id": "6913e449-91e6-4922-8c84-570b2d64b0e8",
+              "source": "graph",
+              "content": "As of April 2022, James regularly plays Apex Legends with his team; it is his favorite game, with great graphics and a super-fast pace that makes it stand out among games"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-47_qa27",
+          "category": "multi-hop",
+          "question": "詹姆斯参加了什么课程？",
+          "gold": "游戏设计课程、烹饪课",
+          "control_answer": "詹姆斯参加了一个结合游戏和编程的课程（2022年6月起，项目中负责开发足球模拟器的球员数据库），以及2022年9月报名的烹饪班（每节课10美元）。",
+          "jev_answer": "詹姆斯参加了两门课程：一是2022年6月左右开始的结合游戏与编程的课程（项目中负责构建足球模拟器的球员数据库），二是2022年9月初报名的烹饪课（每节课仅10美元，尽管他原本不喜欢做饭）。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "游戏设计课程（回答为'结合游戏和编程的课程'，表述不精确）"
+            ],
+            "reason": "烹饪课正确，但游戏设计课程被模糊表述为'结合游戏和编程的课程'，不够精确。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Both gold elements are present: the game design/programming course and the cooking class, with correct supporting detail."
+          },
+          "first": 0.19,
+          "second": 0.19,
+          "new_selected": [
+            {
+              "id": "ae7a03ab-0918-46e6-9ee3-bd936ce79f28",
+              "source": "graph",
+              "content": "On Thursday, April 14, 2022, James did a programming project with a gaming friend, combining coding and gaming to create a virtual world inspired by 'The Witcher 3'; he found seeing their ideas become real very fulfilling"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-47_qa98",
+          "category": "single-hop",
+          "question": "据詹姆斯说，马克斯擅长什么？",
+          "gold": "在空中接住飞盘",
+          "control_answer": "接飞盘——马克斯空中接飞盘从不出手失误，詹姆斯还说他擅长游泳，并且能站在滑板上保持平衡。",
+          "jev_answer": "马克斯擅长在空中接飞盘（从不失手），也很擅长游泳；詹姆斯还教会了他站在滑板上保持平衡。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "空中 (catching the frisbee in the air)"
+            ],
+            "reason": "Says 'catching frisbees' but omits the specific detail 'in the air' from the gold answer."
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案包含准确事实“在空中接飞盘”，与金标准一致；额外细节为正确的补充。"
+          },
+          "first": 0.09,
+          "second": 0.12,
+          "new_selected": [
+            {
+              "id": "70214c1c-0e19-4597-bc35-5ae7da47622a",
+              "source": "graph",
+              "content": "James shares game tips, strategies, and stories with other players on the new platform, and considers gaming his common language and refuge during tough times — like therapy that helps him relax and escape when overwhelmed"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-49_qa111",
+          "category": "single-hop",
+          "question": "在膝伤期间，埃文一直在做什么运动来保持活动？",
+          "gold": "游泳",
+          "control_answer": "在膝伤期间，埃文一直做低强度运动来保持活动：游泳、物理治疗和简单的力量强化练习，此外还有散步（包括早晨散步和去海滩散步）。",
+          "jev_answer": "在膝伤期间，埃文一直在游泳（低冲击运动）来保持活动，同时进行物理治疗和简单的力量强化练习，此外还散步，并通过画水彩画来消磨恢复时间。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "未能单独明确指出游泳这一确切答案"
+            ],
+            "reason": "答案将游泳与物理治疗、力量练习、散步等多种活动混在一起列出，而非精确指明游泳这一事实。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "The answer states Evan was swimming, matching the gold fact exactly; extra details are additional correct context."
+          },
+          "first": 0.21,
+          "second": 0.21,
+          "new_selected": [
+            {
+              "id": "af7f85f9-2f5d-4dbd-ad55-290799b7ac26",
+              "source": "graph",
+              "content": "埃文正在考虑尝试瑜伽作为一种温和有效的减压和提升柔韧性的方式，萨姆表示瑜伽对柔韧性和压力水平有奇效，鼓励他试试"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-49_qa46",
+          "category": "open-domain",
+          "question": "埃文和萨姆如何利用创意活动来应对生活中的挑战？",
+          "gold": "埃文和萨姆把绘画和写作等创意活动当作自我表达和缓解压力的疗愈工具。",
+          "control_answer": "埃文用水彩绘画和兜风来缓解压力、寻找平静，并计划尝试瑜伽；萨姆则通过写日记和创意写作梳理情绪，并在埃文帮助下开始学习绘画作为放松和减压的爱好，两人还计划一起画画并互相扶持。",
+          "jev_answer": "埃文和萨姆各自利用创意活动来应对压力和挑战：埃文通过绘画（尤其是水彩画，如日落湖景和山脉风景画）来放松和缓解压力，绘画与开车兜风帮助他应对压力；萨姆则通过写日记和创意写作来表达自己、梳理思绪和情绪，他认为这有治愈作用。此外，萨姆还决定尝试绘画作为保持动力和减压的新爱好，埃文也主动提出帮他入门绘画。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "明确将创意活动定位为'自我表达'的疗愈工具"
+            ],
+            "reason": "答案涵盖了绘画与写作的减压疗愈作用，但未明确提及'自我表达'这一关键要素，且混入兜风、瑜伽等非创意活动细节。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer covers painting and writing as self-expression and therapeutic stress-relief tools, matching the gold with additional correct detail."
+          },
+          "first": 0.38,
+          "second": 0.3,
+          "new_selected": [
+            {
+              "id": "b2b800b6-4525-4beb-9cf8-467fb99e067e",
+              "source": "graph",
+              "content": "Evan bought a bonsai tree because it symbolizes strength and resilience; caring for it motivates him to persist through difficult times"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-49_qa49",
+          "category": "multi-hop",
+          "question": "埃文家里谁受伤了？",
+          "gold": "埃文的儿子和埃文本人",
+          "control_answer": "埃文的儿子受伤了（先是脚踝踢足球受伤，后从自行车上摔下需用拐杖）。",
+          "jev_answer": "埃文的儿子受过伤——2023年8月12日在踢足球时扭伤脚踝，2023年12月12日左右从自行车上摔下受伤较重需要拄拐杖。此外埃文自己也曾在打篮球时伤到膝盖（2023年8月底/9月底）。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "埃文本人也受伤了"
+            ],
+            "reason": "答案只提到儿子受伤，遗漏了金答案中的另一个要素——埃文本人也受伤了。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案正确指出了埃文的儿子和埃文本人受伤，包含了金标准中的所有要素并附有额外细节。"
+          },
+          "first": 0.33,
+          "second": 0.27,
+          "new_selected": [
+            {
+              "id": "d43164c4-8a95-40da-a24b-6edd735ca274",
+              "source": "graph",
+              "content": "Around August 2023, Sam told Evan that things have been difficult for him recently and were affecting his health, and he found it hard to stay positive but appreciated Evan's support"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-49_qa72",
+          "category": "multi-hop",
+          "question": "萨姆在2023年12月时隔很久重新开始了什么活动？",
+          "gold": "徒步",
+          "control_answer": "在 2023 年 12 月，萨姆重新开始了**徒步/爬山**：在大约 12 月 29 日（周五），他时隔很久带朋友们去爬山（登顶），并分享了照片，表示自己越来越享受健康的生活方式。此外，12 月下旬他也开始喜欢上晨跑。\n\n回答：时隔很久重新开始了徒步爬山活动（带朋友登山并登顶）。",
+          "jev_answer": "萨姆时隔很久重新开始了徒步活动——2023年12月29日左右他带朋友们进行了一次徒步旅行并登上山顶，并分享照片表示越来越享受健康的生活方式。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "徒步"
+            ],
+            "reason": "The answer enumerates alternatives (徒步/爬山) rather than committing to the single gold answer 徒步."
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案正确且具体地指出是徒步，额外细节正确。"
+          },
+          "first": 0.39,
+          "second": 0.41,
+          "new_selected": [
+            {
+              "id": "8ca2863f-004b-458b-81b7-4a5ed150b28a",
+              "source": "graph",
+              "content": "Sam说以前很喜欢徒步，但很久没有机会去了；Evan提议两人应尽快计划一次徒步"
+            },
+            {
+              "id": "8cbb471a-3700-4cc3-a0e4-e7b988ce8a38",
+              "source": "graph",
+              "content": "Sam started a new diet and exercise plan on Monday, August 21, 2023, and by August 27 reported the results were very noticeable and he felt great"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-49_qa95",
+          "category": "single-hop",
+          "question": "智能手表对埃文有什么帮助？",
+          "gold": "追踪进度并时刻提醒他坚持下去",
+          "control_answer": "智能手表（健身追踪器）通过追踪埃文的健身进度并提供激励性的视觉提醒，帮助他实现健康目标。",
+          "jev_answer": "智能手表/健身追踪器帮助埃文追踪健身进度，并通过可视化的提醒来激励他坚持健康目标（他于2023年8月7日提到，并强烈推荐给萨姆）。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "时刻提醒他坚持下去（生成的答案只提到“激励性的视觉提醒”，未明确提醒的目的是让他坚持下去）"
+            ],
+            "reason": "追踪进度正确，但提醒的作用被表述为“激励性视觉提醒”而非“时刻提醒他坚持下去”，精确度不足。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "回答包含了两个要点：追踪进度和提醒/激励他坚持下去。"
+          },
+          "first": 0.19,
+          "second": 0.19,
+          "new_selected": [
+            {
+              "id": "1505ef2e-6d5d-46a1-96c9-4972a336dc63",
+              "source": "graph",
+              "content": "Evan has been on his health journey for two years as of August 2023, with ups and downs, but keeps trying; his family is what motivates him to stay healthy"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-50_qa50",
+          "category": "temporal",
+          "question": "卡尔文是什么时候买下他的第二辆Ferrari的？",
+          "gold": "2023年10月的第一周",
+          "control_answer": "卡尔文于2023年10月初（约10月8日前一周，即10月初）买下了他的第二辆法拉利——一辆黑色法拉利，他称之为“轮子上的杰作”，并分享了车停在建筑前的照片。他的第一辆红色法拉利488 GTB则是2023年3月25日买的。",
+          "jev_answer": "卡尔文在2023年10月初买下了他的第二辆法拉利（一辆黑色法拉利）。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "第一周 (specific week precision)"
+            ],
+            "reason": "答案给出'2023年10月初'并带'约'字，比金标准'第一周'更模糊且含糊其辞。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "\"2023年10月初\" matches the gold \"2023年10月的第一周\" at the same granularity, and extra detail (color) is correct."
+          },
+          "first": 0.18,
+          "second": 0.21,
+          "new_selected": [
+            {
+              "id": "13e381dc-283d-423e-922a-aeb21203924b",
+              "source": "graph",
+              "content": "卡尔文在2023年8月21日与朋友们录制了一期播客，讨论飞速发展的说唱行业，并表示播客上传后会告诉戴夫"
+            }
+          ]
+        }
+      ]
+    },
+    "laya": {
+      "groups": {
+        "expanded_new_id": {
+          "cases": 76,
+          "same": 71,
+          "new_selected_ids": 116,
+          "new_selected_graph_ids": 112,
+          "new_selected_vector_ids": 4,
+          "same_vector_candidates": 67,
+          "same_full_context": 0,
+          "same_context_jev_only": 0,
+          "same_context_control_only": 0,
+          "new_graph_candidates": 1392,
+          "old_graph_candidates_lost": 252,
+          "control_context_ids_displaced": 117,
+          "second_below_0_4": 47,
+          "jev_only": 3,
+          "control_only": 2
+        },
+        "expanded_old_pool": {
+          "cases": 90,
+          "same": 79,
+          "new_selected_ids": 0,
+          "new_selected_graph_ids": 0,
+          "new_selected_vector_ids": 0,
+          "same_vector_candidates": 89,
+          "same_full_context": 78,
+          "same_context_jev_only": 2,
+          "same_context_control_only": 7,
+          "new_graph_candidates": 1649,
+          "old_graph_candidates_lost": 299,
+          "control_context_ids_displaced": 12,
+          "second_below_0_4": 83,
+          "control_only": 8,
+          "jev_only": 3
+        },
+        "not_expanded": {
+          "cases": 1371,
+          "same": 1196,
+          "new_selected_ids": 49,
+          "new_selected_graph_ids": 4,
+          "new_selected_vector_ids": 45,
+          "same_vector_candidates": 1267,
+          "same_full_context": 1271,
+          "same_context_jev_only": 79,
+          "same_context_control_only": 81,
+          "new_graph_candidates": 105,
+          "old_graph_candidates_lost": 105,
+          "control_context_ids_displaced": 108,
+          "second_below_0_4": 0,
+          "control_only": 88,
+          "jev_only": 87
+        }
+      },
+      "by_category": {
+        "multi-hop": {
+          "expanded_new_id": {
+            "cases": 11,
+            "same": 8,
+            "new_selected_ids": 16,
+            "new_selected_graph_ids": 16,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 11,
+            "same_full_context": 0,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 0,
+            "new_graph_candidates": 200,
+            "old_graph_candidates_lost": 35,
+            "control_context_ids_displaced": 16,
+            "second_below_0_4": 7,
+            "jev_only": 3
+          },
+          "expanded_old_pool": {
+            "cases": 19,
+            "same": 16,
+            "new_selected_ids": 0,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 19,
+            "same_full_context": 17,
+            "same_context_jev_only": 1,
+            "same_context_control_only": 1,
+            "new_graph_candidates": 337,
+            "old_graph_candidates_lost": 52,
+            "control_context_ids_displaced": 2,
+            "second_below_0_4": 19,
+            "jev_only": 2,
+            "control_only": 1
+          },
+          "not_expanded": {
+            "cases": 252,
+            "same": 204,
+            "new_selected_ids": 8,
+            "new_selected_graph_ids": 2,
+            "new_selected_vector_ids": 6,
+            "same_vector_candidates": 230,
+            "same_full_context": 232,
+            "same_context_jev_only": 25,
+            "same_context_control_only": 19,
+            "new_graph_candidates": 22,
+            "old_graph_candidates_lost": 22,
+            "control_context_ids_displaced": 17,
+            "second_below_0_4": 0,
+            "control_only": 20,
+            "jev_only": 28
+          }
+        },
+        "open-domain": {
+          "expanded_new_id": {
+            "cases": 16,
+            "same": 16,
+            "new_selected_ids": 33,
+            "new_selected_graph_ids": 32,
+            "new_selected_vector_ids": 1,
+            "same_vector_candidates": 13,
+            "same_full_context": 0,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 0,
+            "new_graph_candidates": 293,
+            "old_graph_candidates_lost": 53,
+            "control_context_ids_displaced": 33,
+            "second_below_0_4": 14
+          },
+          "expanded_old_pool": {
+            "cases": 8,
+            "same": 8,
+            "new_selected_ids": 0,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 8,
+            "same_full_context": 8,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 0,
+            "new_graph_candidates": 146,
+            "old_graph_candidates_lost": 26,
+            "control_context_ids_displaced": 0,
+            "second_below_0_4": 8
+          },
+          "not_expanded": {
+            "cases": 72,
+            "same": 64,
+            "new_selected_ids": 3,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 3,
+            "same_vector_candidates": 64,
+            "same_full_context": 65,
+            "same_context_jev_only": 4,
+            "same_context_control_only": 4,
+            "new_graph_candidates": 5,
+            "old_graph_candidates_lost": 5,
+            "control_context_ids_displaced": 6,
+            "second_below_0_4": 0,
+            "jev_only": 4,
+            "control_only": 4
+          }
+        },
+        "single-hop": {
+          "expanded_new_id": {
+            "cases": 33,
+            "same": 32,
+            "new_selected_ids": 45,
+            "new_selected_graph_ids": 42,
+            "new_selected_vector_ids": 3,
+            "same_vector_candidates": 28,
+            "same_full_context": 0,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 0,
+            "new_graph_candidates": 609,
+            "old_graph_candidates_lost": 114,
+            "control_context_ids_displaced": 46,
+            "second_below_0_4": 17,
+            "control_only": 1
+          },
+          "expanded_old_pool": {
+            "cases": 39,
+            "same": 34,
+            "new_selected_ids": 0,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 38,
+            "same_full_context": 33,
+            "same_context_jev_only": 1,
+            "same_context_control_only": 4,
+            "new_graph_candidates": 735,
+            "old_graph_candidates_lost": 150,
+            "control_context_ids_displaced": 6,
+            "second_below_0_4": 34,
+            "control_only": 4,
+            "jev_only": 1
+          },
+          "not_expanded": {
+            "cases": 766,
+            "same": 679,
+            "new_selected_ids": 31,
+            "new_selected_graph_ids": 2,
+            "new_selected_vector_ids": 29,
+            "same_vector_candidates": 709,
+            "same_full_context": 708,
+            "same_context_jev_only": 37,
+            "same_context_control_only": 39,
+            "new_graph_candidates": 72,
+            "old_graph_candidates_lost": 72,
+            "control_context_ids_displaced": 71,
+            "second_below_0_4": 0,
+            "control_only": 45,
+            "jev_only": 42
+          }
+        },
+        "temporal": {
+          "expanded_new_id": {
+            "cases": 16,
+            "same": 15,
+            "new_selected_ids": 22,
+            "new_selected_graph_ids": 22,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 15,
+            "same_full_context": 0,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 0,
+            "new_graph_candidates": 290,
+            "old_graph_candidates_lost": 50,
+            "control_context_ids_displaced": 22,
+            "second_below_0_4": 9,
+            "control_only": 1
+          },
+          "expanded_old_pool": {
+            "cases": 24,
+            "same": 21,
+            "new_selected_ids": 0,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 0,
+            "same_vector_candidates": 24,
+            "same_full_context": 20,
+            "same_context_jev_only": 0,
+            "same_context_control_only": 2,
+            "new_graph_candidates": 431,
+            "old_graph_candidates_lost": 71,
+            "control_context_ids_displaced": 4,
+            "second_below_0_4": 22,
+            "control_only": 3
+          },
+          "not_expanded": {
+            "cases": 281,
+            "same": 249,
+            "new_selected_ids": 7,
+            "new_selected_graph_ids": 0,
+            "new_selected_vector_ids": 7,
+            "same_vector_candidates": 264,
+            "same_full_context": 266,
+            "same_context_jev_only": 13,
+            "same_context_control_only": 19,
+            "new_graph_candidates": 6,
+            "old_graph_candidates_lost": 6,
+            "control_context_ids_displaced": 14,
+            "second_below_0_4": 0,
+            "control_only": 19,
+            "jev_only": 13
+          }
+        }
+      },
+      "new_id_jev_only_cases": [
+        {
+          "case_id": "locomo_conv-41_qa25",
+          "category": "multi-hop",
+          "question": "玛丽亚去过哪些欧洲国家？",
+          "gold": "西班牙、英格兰",
+          "control_answer": "玛丽亚去过西班牙和英国（伦敦）。",
+          "jev_answer": "西班牙和英格兰（英国）",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "英格兰（回答用“英国”代替，精度不足）"
+            ],
+            "reason": "西班牙正确，但用“英国/伦敦”代替金标准的具体“英格兰”，精度低于金标准。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "两个要素（西班牙、英格兰）均已列出且正确；“英国”这一澄清属于额外细节，而非错误元素。"
+          },
+          "first": 0.15,
+          "second": 0.42,
+          "new_selected": [
+            {
+              "id": "322c25f3-d1dd-47f5-9e4e-dd8ddad7809a",
+              "source": "graph",
+              "content": "John and Maria volunteered together at a local homeless shelter last year (2022), and both found it a very fulfilling experience that showed them how much impact their actions can have"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-44_qa49",
+          "category": "multi-hop",
+          "question": "奥黛丽把她的宠物视为什么？",
+          "gold": "家人",
+          "control_answer": "奥黛丽把她的宠物视为她的全世界/一切——是她的小家庭，给她无条件的爱、陪伴和快乐的忠实伙伴。",
+          "jev_answer": "奥黛丽把她的狗狗们视为她的全世界和一切，是她的“小家庭”，是给她无条件的爱与陪伴的忠实伙伴。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "答案应为'家人'，但生成答案混入了'全世界/一切'等其他说法"
+            ],
+            "reason": "答案包含'小家庭'但与'全世界/一切'等替代说法混在一起，不够精确。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "The answer states Audrey views her pets as her '小家庭' (little family), matching the gold '家人' with additional correct detail."
+          },
+          "first": 0.16,
+          "second": 0.06,
+          "new_selected": [
+            {
+              "id": "9dda1968-7e82-4e59-8f5d-fd2ae1ceb074",
+              "source": "graph",
+              "content": "马克斯是奥黛丽童年时的狗，精力充沛、喜欢玩捡球游戏，她与它有很多美好回忆"
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-49_qa1",
+          "category": "multi-hop",
+          "question": "埃文有哪些东西坏过？",
+          "gold": "他的旧普锐斯和新普锐斯。",
+          "control_answer": "埃文坏过的东西包括：\n1. **他的旧丰田普锐斯** — 抛锚了，他决定修理后卖掉（2023年5月）\n2. **他的新丰田普锐斯** — 2023年12月初也抛锚了\n3. **他的膝盖** — 2023年8月25日扭伤（身体部位受伤）\n4. **他儿子的自行车事故** — 儿子从自行车上摔下受伤（需用拐杖，但这是儿子受伤而非物品）",
+          "jev_answer": "根据回忆，埃文（Evan）有这些东西坏过：\n\n1. **他的旧丰田普锐斯（Toyota Prius）**——旧车抛锚后，他决定修理并卖掉它（2023年5月），后来买了新车。\n2. **他新买的丰田普锐斯**——2023年12月初刚买的新车也抛锚了，让他很沮丧。\n3. **他的膝盖**——2023年8月25日（周五）扭伤了膝盖，疼痛且影响健身，10月还在恢复中。\n4. **他儿子的脚踝**——2023年8月12日（周六）儿子踢足球时伤了脚踝（儿子受伤而非埃文的物品，但也属于\"受伤/坏掉\"事件）。\n5. **他儿子的自行车事故**——2023年12月12日左右儿子从自行车上摔下，伤势较重，需用拐杖。\n\n另外，多年前埃文本人也有过健康问题，但后来坚持改善了。\n\n**答案（ANSWER）**：埃文坏过的东西包括：旧丰田普锐斯（抛锚后修理卖掉）、新买的丰田普锐斯（2023年12月初抛锚），以及他自己的膝盖（2023年8月25日扭伤）。若包括家人，还有儿子的脚踝（2023年8月足球事故）和儿子自行车摔伤（2023年12月，需用拐杖）。",
+          "control_judge": {
+            "grade": "partial",
+            "missing": [
+              "包含金答案外的额外元素（膝盖受伤、儿子自行车事故），稀释了精确答案"
+            ],
+            "reason": "两个金答案元素（旧普锐斯和新普锐斯）均正确出现，但混入了不在金答案中的额外错误元素。"
+          },
+          "jev_judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案中既包含旧普锐斯也包含新普锐斯，且细节正确；额外的细节（膝盖受伤、儿子受伤）不缺黄金标准中的任何必要元素。"
+          },
+          "first": 0.18,
+          "second": 0.47,
+          "new_selected": [
+            {
+              "id": "3317c7ba-c5f9-432c-86a2-e0886be74c22",
+              "source": "graph",
+              "content": "Evan's son injured his ankle during a soccer accident on Saturday, August 12, 2023; Evan has been caring for him and taking him to the doctor, and found it very hard as a father to watch his son get hurt"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
