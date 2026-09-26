@@ -1,0 +1,175 @@
+{
+  "objective": "区分当前 Mem0 Observation Date 冲突与无依据日期模糊词的提取影响",
+  "case_id": "locomo_conv-30_qa19",
+  "source_dia_ids": [
+    "D11:13",
+    "D11:14",
+    "D11:15"
+  ],
+  "source_session_date": "3:14 pm on 11 May, 2023",
+  "source_messages": [
+    {
+      "role": "system",
+      "content": "Conversation date: 2023-05-11T15:14:00. Use this date to resolve relative time expressions like 'yesterday', 'next month', 'in three weeks'."
+    },
+    {
+      "role": "user",
+      "content": "谢谢！你的帮助对我意义重大。我会随时向你汇报舞蹈工作室的进展。"
+    },
+    {
+      "role": "assistant",
+      "content": "谢谢！非常感谢你让我随时了解这个很棒的项目。迫不及待想听到更多消息，看着它变成现实！对了，我昨天参加了一个设计实习的面试！感觉太棒了。"
+    },
+    {
+      "role": "user",
+      "content": "哇，吉娜，我为此感到兴奋！冒险确实吓人，但我相信追逐梦想最终会有回报。面试进行得怎么样？"
+    }
+  ],
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_calls": 3,
+  "arms": [
+    "default_observation_date",
+    "source_observation_date",
+    "source_date_no_hedge"
+  ],
+  "observation_dates": {
+    "default_observation_date": "2026-09-26",
+    "source_observation_date": "2023-05-11",
+    "source_date_no_hedge": "2023-05-11"
+  },
+  "request_sha256": {
+    "default_observation_date": "5fe291a269d4ea804c485ba3458c5cba8fe9273a53001aa5eda6d0bd4c9a8d9b",
+    "source_observation_date": "68d9a1aa1a50a1e25068b2f61204489e5dcdd7c498a3eeb249672ef6e8ed8bee",
+    "source_date_no_hedge": "74e3a734d3b8594278583de8e963beaa09d0c7fb4cda20ad2044e2782afa5a43"
+  },
+  "limits": [
+    "只取 D11:13–15，existing memories 和 last k messages 置空；不是旧全量 ingest 的重放。",
+    "当前 2026-09-26 中文配置不同于 2026-09-25 旧库提取配置。",
+    "每臂一次生成；差异可能含模型波动，不能据此估计总体效果。",
+    "只比较提取文本，不写库、不做 embedding、检索、答题或裁判。"
+  ],
+  "results": {
+    "default_observation_date": {
+      "status": "ok",
+      "raw_response": "{\"memory\":[{\"id\":\"0\",\"text\":\"用户正在筹备一个舞蹈工作室项目，并表示会随时汇报进展，认为追逐梦想（冒险）最终会有回报\",\"attributed_to\":\"user\"},{\"id\":\"1\",\"text\":\"吉娜（对话中的助手方人物）在2023年5月10日参加了一个设计实习的面试，自我感觉很好\",\"attributed_to\":\"assistant\"}]}",
+      "memories": [
+        {
+          "id": "0",
+          "text": "用户正在筹备一个舞蹈工作室项目，并表示会随时汇报进展，认为追逐梦想（冒险）最终会有回报",
+          "attributed_to": "user"
+        },
+        {
+          "id": "1",
+          "text": "吉娜（对话中的助手方人物）在2023年5月10日参加了一个设计实习的面试，自我感觉很好",
+          "attributed_to": "assistant"
+        }
+      ],
+      "usage": {
+        "completion_tokens": 94,
+        "prompt_tokens": 8423,
+        "total_tokens": 8517,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        }
+      },
+      "duration_seconds": 2.27,
+      "finished_at_utc": "2026-09-26T08:24:29.458503+00:00"
+    },
+    "source_observation_date": {
+      "status": "ok",
+      "raw_response": "{\"memory\":[{\"id\":\"0\",\"text\":\"用户正在筹备一个舞蹈工作室项目，并表示会随时向对方汇报进展（2023年5月11日前后）\",\"attributed_to\":\"user\"},{\"id\":\"1\",\"text\":\"吉娜（对话中的助手方）在2023年5月10日参加了一个设计实习的面试，感觉很好\",\"attributed_to\":\"assistant\"},{\"id\":\"2\",\"text\":\"用户认同冒险虽然吓人，但相信追逐梦想最终会有回报\",\"attributed_to\":\"user\"}]}",
+      "memories": [
+        {
+          "id": "0",
+          "text": "用户正在筹备一个舞蹈工作室项目，并表示会随时向对方汇报进展（2023年5月11日前后）",
+          "attributed_to": "user"
+        },
+        {
+          "id": "1",
+          "text": "吉娜（对话中的助手方）在2023年5月10日参加了一个设计实习的面试，感觉很好",
+          "attributed_to": "assistant"
+        },
+        {
+          "id": "2",
+          "text": "用户认同冒险虽然吓人，但相信追逐梦想最终会有回报",
+          "attributed_to": "user"
+        }
+      ],
+      "usage": {
+        "completion_tokens": 127,
+        "prompt_tokens": 8423,
+        "total_tokens": 8550,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 0,
+          "image_tokens": null,
+          "text_tokens": null
+        }
+      },
+      "duration_seconds": 2.85,
+      "finished_at_utc": "2026-09-26T08:24:32.312732+00:00"
+    },
+    "source_date_no_hedge": {
+      "status": "ok",
+      "raw_response": "{\"memory\":[{\"id\":\"0\",\"text\":\"用户正在筹备一个舞蹈工作室项目，并表示会随时汇报进展\",\"attributed_to\":\"user\"},{\"id\":\"1\",\"text\":\"吉娜（Gina）于2023年5月10日（前一天）参加了一个设计实习的面试，感觉太棒了\",\"attributed_to\":\"assistant\"},{\"id\":\"2\",\"text\":\"用户认为追逐梦想最终会有回报，并支持吉娜的冒险\",\"attributed_to\":\"user\"}]}",
+      "memories": [
+        {
+          "id": "0",
+          "text": "用户正在筹备一个舞蹈工作室项目，并表示会随时汇报进展",
+          "attributed_to": "user"
+        },
+        {
+          "id": "1",
+          "text": "吉娜（Gina）于2023年5月10日（前一天）参加了一个设计实习的面试，感觉太棒了",
+          "attributed_to": "assistant"
+        },
+        {
+          "id": "2",
+          "text": "用户认为追逐梦想最终会有回报，并支持吉娜的冒险",
+          "attributed_to": "user"
+        }
+      ],
+      "usage": {
+        "completion_tokens": 154,
+        "prompt_tokens": 8490,
+        "total_tokens": 8644,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 28,
+          "rejected_prediction_tokens": null,
+          "text_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cache_write_tokens": null,
+          "cached_tokens": 7872,
+          "image_tokens": null,
+          "text_tokens": null
+        }
+      },
+      "duration_seconds": 3.71,
+      "finished_at_utc": "2026-09-26T08:24:36.020394+00:00"
+    }
+  }
+}
