@@ -1,0 +1,903 @@
+{
+  "scope": "Fixed 12 carryover pairs; manual fact decomposition; source quotes resolved from frozen packet",
+  "counts": {
+    "pairs": 12,
+    "facts": 38,
+    "supported": 36,
+    "unsupported": 2,
+    "supported_only_in_later_memory_from_older_source": 6,
+    "supported_only_in_older_memory": 5
+  },
+  "pairs": [
+    {
+      "pair_id": "conv-41_051a88fcd77c",
+      "older_memory": {
+        "id": "a5f1a15b-1ec4-4f1d-b5be-1e4e79fef5e0",
+        "session_id": "session_22",
+        "content": "John shared a family photo from a trip taken around fall 2022 for his daughter Sara's birthday; the family is posing on a train track in the fall, and they inspire him to keep working for change"
+      },
+      "later_memory": {
+        "id": "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+        "session_id": "session_23",
+        "content": "User keeps a photo of his family — taken on a trip for his daughter Sara's birthday in fall 2022, showing them on train tracks in autumn — and looks at it during hard times as a reminder of why he works for community change"
+      },
+      "later_session_turn_count": 14,
+      "facts": [
+        {
+          "fact_id": "conv-41_051a88fcd77c:1",
+          "claim_zh": "约翰分享家人照片，家人激励他为改变而努力",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:5",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "谢谢你。听到你的话真的很振奋人心。我有时会怀疑自己是否真的在带来改变，但知道有人理解我的工作意义重大，帮助我继续前进。这是我家人的照片。他们激励着我，提醒我为什么要做这些。"
+            },
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:7",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "谢谢，玛丽亚！这张照片是去年我女儿萨拉生日时我们去旅行的照片——非常开心，留下了美好的回忆！家人激励着我不断为改变而努力。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-41_051a88fcd77c:2",
+          "claim_zh": "照片来自女儿萨拉生日时的旅行",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:7",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "谢谢，玛丽亚！这张照片是去年我女儿萨拉生日时我们去旅行的照片——非常开心，留下了美好的回忆！家人激励着我不断为改变而努力。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-41_051a88fcd77c:3",
+          "claim_zh": "照片显示家人在秋天铁轨上合影",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "caption",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:5",
+              "speaker": "约翰",
+              "channel": "caption",
+              "quote": "a photo of a family posing on a train track in the fall"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-41_051a88fcd77c:4",
+          "claim_zh": "困难时约翰会看照片提醒自己为何努力",
+          "in_older_memory": false,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:9",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "是啊，当然！当日子艰难时，我就看看照片，提醒自己为什么要做现在做的事。我的家人是我的动力，他们让我坚持下去。你呢？是什么让你保持灵感？"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-44_0c8afd94ba05",
+      "older_memory": {
+        "id": "99549aa7-4b96-4b21-828b-dd5725ddcb04",
+        "session_id": "session_22",
+        "content": "奥黛丽喜欢用回收材料（瓶盖、纽扣、坏掉的首饰等）制作首饰，认为这是展现创造力和可持续发展的方式，每件作品都有特别的故事"
+      },
+      "later_memory": {
+        "id": "987421f4-89ba-4a49-958d-4185ac1732d4",
+        "session_id": "session_23",
+        "content": "奥黛丽喜欢用回收材料（瓶盖、纽扣、坏掉的首饰等）做首饰，认为这是展现创造力和可持续发展热爱的好方式，每件作品都有特别的故事"
+      },
+      "later_session_turn_count": 28,
+      "facts": [
+        {
+          "fact_id": "conv-44_0c8afd94ba05:1",
+          "claim_zh": "奥黛丽用瓶盖、纽扣、坏首饰等回收材料制作首饰",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:5",
+              "speaker": "奥黛丽",
+              "channel": "text",
+              "quote": "哦对！我喜欢用回收材料做首饰。这是展现我对创造力和可持续发展的热爱的好方式。我会去寻找瓶盖、纽扣和坏掉的首饰之类的东西，然后把它们变成独一无二的作品。这是我最喜欢的项链之一照片。每件作品都有一个特别的故事，都有自己的魅力。而且，这也是减少浪费的一小步。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-44_0c8afd94ba05:2",
+          "claim_zh": "她认为这体现创造力、可持续发展，每件作品有故事",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:5",
+              "speaker": "奥黛丽",
+              "channel": "text",
+              "quote": "哦对！我喜欢用回收材料做首饰。这是展现我对创造力和可持续发展的热爱的好方式。我会去寻找瓶盖、纽扣和坏掉的首饰之类的东西，然后把它们变成独一无二的作品。这是我最喜欢的项链之一照片。每件作品都有一个特别的故事，都有自己的魅力。而且，这也是减少浪费的一小步。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-44_9b37baddbb91",
+      "older_memory": {
+        "id": "950664a8-b2aa-4d98-9cbf-94b3b56b433d",
+        "session_id": "session_15",
+        "content": "奥黛丽想再养几只狗，但现在四只已经够了——它们让她很忙，她想确保给每一只应有的关注"
+      },
+      "later_memory": {
+        "id": "9e959d13-b2ca-4578-821b-7d3010788724",
+        "session_id": "session_16",
+        "content": "奥黛丽考虑过再养几只狗，但决定四只已经够了，因为它们让她很忙，她想确保给每一只应有的关注"
+      },
+      "later_session_turn_count": 19,
+      "facts": [
+        {
+          "fact_id": "conv-44_9b37baddbb91:1",
+          "claim_zh": "奥黛丽想过再养狗，但认为当前四只已够",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:3",
+              "speaker": "奥黛丽",
+              "channel": "text",
+              "quote": "听起来很棒！我想再养几只，但现在四只已经够了。它们让我很忙，而且我想确保给每一只应有的关注——四只狗已经很多了！我带它们全都去兽医那里做了检查，场面太混乱了，下次我要一只一只地带去。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-44_9b37baddbb91:2",
+          "claim_zh": "四只狗让她很忙，她要照顾好每一只",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:3",
+              "speaker": "奥黛丽",
+              "channel": "text",
+              "quote": "听起来很棒！我想再养几只，但现在四只已经够了。它们让我很忙，而且我想确保给每一只应有的关注——四只狗已经很多了！我带它们全都去兽医那里做了检查，场面太混乱了，下次我要一只一只地带去。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-44_b514edf1ce25",
+      "older_memory": {
+        "id": "e6c84260-6dcb-48dc-a397-f77717b75069",
+        "session_id": "session_22",
+        "content": "奥黛丽最初把做首饰当爱好，后来开始出售，并把一部分利润捐给她关心的动物收容所，把做首饰和改变世界两个热爱结合起来；她已不能再去收容所做志愿者，但仍通过捐款出力"
+      },
+      "later_memory": {
+        "id": "92291bd1-360e-46d3-952b-8d6c66b1e988",
+        "session_id": "session_23",
+        "content": "奥黛丽起初把做回收首饰当爱好，后来开始出售，并把一部分利润捐给她关心的一家动物收容所，把做首饰和改变世界两个热爱结合起来"
+      },
+      "later_session_turn_count": 28,
+      "facts": [
+        {
+          "fact_id": "conv-44_b514edf1ce25:1",
+          "claim_zh": "奥黛丽做首饰先是爱好，后来开始出售",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:7",
+              "speaker": "奥黛丽",
+              "channel": "text",
+              "quote": "谢谢！我一开始做首饰只是爱好，后来开始出售。我会把一部分利润捐给一个我非常关心的事业。这是把我的两个热爱结合起来的方式——做首饰和改变世界。顾客们不仅喜欢我的作品，还能支持一项事业，这太好了！"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-44_b514edf1ce25:2",
+          "claim_zh": "她把部分利润捐给动物收容所",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:7",
+              "speaker": "奥黛丽",
+              "channel": "text",
+              "quote": "谢谢！我一开始做首饰只是爱好，后来开始出售。我会把一部分利润捐给一个我非常关心的事业。这是把我的两个热爱结合起来的方式——做首饰和改变世界。顾客们不仅喜欢我的作品，还能支持一项事业，这太好了！"
+            },
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:9",
+              "speaker": "奥黛丽",
+              "channel": "text",
+              "quote": "当然！任何爱好只要用对了地方都能产生影响——我捐给一家动物收容所。他们做得很棒，所以这是我出力的一种方式。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-44_b514edf1ce25:3",
+          "claim_zh": "她不能亲临收容所现场，但仍寻找行善方式",
+          "in_older_memory": true,
+          "in_later_memory": false,
+          "support": "self_confirmed_after_other",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:10",
+              "speaker": "安德鲁",
+              "channel": "text",
+              "quote": "太棒了！即使你不能再去收容所做志愿者了，你依然如此致力于做出改变，真的很鼓舞人心。"
+            },
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:11",
+              "speaker": "奥黛丽",
+              "channel": "text",
+              "quote": "是啊，即使不能亲临现场，我也在寻找行善的方式。生活就是要随机应变、乐于助人。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-44_b514edf1ce25:4",
+          "claim_zh": "首饰制作使用回收材料",
+          "in_older_memory": false,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:5",
+              "speaker": "奥黛丽",
+              "channel": "text",
+              "quote": "哦对！我喜欢用回收材料做首饰。这是展现我对创造力和可持续发展的热爱的好方式。我会去寻找瓶盖、纽扣和坏掉的首饰之类的东西，然后把它们变成独一无二的作品。这是我最喜欢的项链之一照片。每件作品都有一个特别的故事，都有自己的魅力。而且，这也是减少浪费的一小步。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-43_de89be96dda6",
+      "older_memory": {
+        "id": "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+        "session_id": "session_15",
+        "content": "蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作带给他巨大快乐"
+      },
+      "later_memory": {
+        "id": "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+        "session_id": "session_16",
+        "content": "蒂姆正在写一部奇幻小说，进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作能创造一个全新的世界，带给他很多快乐"
+      },
+      "later_session_turn_count": 17,
+      "facts": [
+        {
+          "fact_id": "conv-43_de89be96dda6:1",
+          "claim_zh": "蒂姆正在写奇幻小说，写作进展顺利",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:3",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-43_de89be96dda6:2",
+          "claim_zh": "他对此有些紧张但很兴奋，觉得努力得到回报",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:3",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-43_de89be96dda6:3",
+          "claim_zh": "写作给他快乐，并让他创造全新世界",
+          "in_older_memory": false,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:3",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-43_269540f8e596",
+      "older_memory": {
+        "id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+        "session_id": "session_27",
+        "content": "蒂姆（Tim）在2024年1月初加入了一群和他志趣相投的环球旅行者，认识他们、听他们讲旅行经历让他觉得很棒"
+      },
+      "later_memory": {
+        "id": "6c6124a0-0532-43a5-b03b-659cf973fe32",
+        "session_id": "session_28",
+        "content": "蒂姆早前（2024年1月2日的对话中）提到他加入了一群志趣相投的环球旅行者，认识他们、听他们讲旅行经历让他很开心"
+      },
+      "later_session_turn_count": 21,
+      "facts": [
+        {
+          "fact_id": "conv-43_269540f8e596:1",
+          "claim_zh": "蒂姆加入志趣相投的环球旅行者群体",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_27",
+              "dia_id": "D27:1",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "嗨约翰，最近怎么样？自从我们上次聊天后发生了一些有趣的事——我加入了一群和我志趣相投的环球旅行者。认识他们、听他们讲旅行经历真是太棒了。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-43_269540f8e596:2",
+          "claim_zh": "认识他们、听旅行经历使他高兴",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_27",
+              "dia_id": "D27:1",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "嗨约翰，最近怎么样？自从我们上次聊天后发生了一些有趣的事——我加入了一群和我志趣相投的环球旅行者。认识他们、听他们讲旅行经历真是太棒了。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-26_444350391e64",
+      "older_memory": {
+        "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+        "session_id": "session_17",
+        "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间"
+      },
+      "later_memory": {
+        "id": "137a6569-6e2e-4878-97d5-71289efc1f4a",
+        "session_id": "session_18",
+        "content": "梅拉妮在2023年9月受了伤，不得不暂停陶艺——那是她用来自我表达和获得平静的方式，这让她很难受"
+      },
+      "later_session_turn_count": 24,
+      "facts": [
+        {
+          "fact_id": "conv-26_444350391e64:1",
+          "claim_zh": "梅拉妮上月受伤，暂停用来自我表达和获得平静的陶艺",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_17",
+              "dia_id": "D17:8",
+              "speaker": "梅拉妮",
+              "channel": "text",
+              "quote": "谢谢你的建议，卡罗琳。做调查和调整心态确实有道理。我会照做的。顺便说一下，我最近遇到了一点挫折。上个月我受了伤，不得不暂停陶艺——那是我用来自我表达和获得平静的方式。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-26_444350391e64:2",
+          "claim_zh": "暂停陶艺让梅拉妮难受，但她说自己还好",
+          "in_older_memory": false,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_17",
+              "dia_id": "D17:10",
+              "speaker": "梅拉妮",
+              "channel": "text",
+              "quote": "谢谢，卡罗琳。确实挺难受的，但我还好。我一直在读你之前推荐的那本书，还画画来打发时间。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-26_444350391e64:3",
+          "claim_zh": "她当时通过读书和画画打发时间",
+          "in_older_memory": true,
+          "in_later_memory": false,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_17",
+              "dia_id": "D17:10",
+              "speaker": "梅拉妮",
+              "channel": "text",
+              "quote": "谢谢，卡罗琳。确实挺难受的，但我还好。我一直在读你之前推荐的那本书，还画画来打发时间。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-43_c95588df7268",
+      "older_memory": {
+        "id": "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+        "session_id": "session_15",
+        "content": "蒂姆的写作灵感来自书籍、电影和现实生活经历，阅读关于英国城堡的内容给了他很多灵感，某些作者对他来说像灵感宝库"
+      },
+      "later_memory": {
+        "id": "bd5e05ac-8fff-4146-9701-0796790c5f10",
+        "session_id": "session_16",
+        "content": "蒂姆的写作灵感来源包括书籍、电影和现实生活经历；阅读关于英国城堡的内容给了他很多灵感，他梦想有一天能去参观英国城堡"
+      },
+      "later_session_turn_count": 17,
+      "facts": [
+        {
+          "fact_id": "conv-43_c95588df7268:1",
+          "claim_zh": "蒂姆的写作灵感来自书、电影和现实经历",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:5",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "谢谢！书籍、电影和现实生活经历都能激发我的创造力。比如，阅读关于英国城堡的内容给了我很多灵感。另外，某些作者对我来说就像灵感宝库。与自己喜爱的事物产生联结，让写作更有乐趣。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-43_c95588df7268:2",
+          "claim_zh": "阅读英国城堡给了他写作灵感",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:5",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "谢谢！书籍、电影和现实生活经历都能激发我的创造力。比如，阅读关于英国城堡的内容给了我很多灵感。另外，某些作者对我来说就像灵感宝库。与自己喜爱的事物产生联结，让写作更有乐趣。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-43_c95588df7268:3",
+          "claim_zh": "某些作者也是他的灵感来源",
+          "in_older_memory": true,
+          "in_later_memory": false,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:5",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "谢谢！书籍、电影和现实生活经历都能激发我的创造力。比如，阅读关于英国城堡的内容给了我很多灵感。另外，某些作者对我来说就像灵感宝库。与自己喜爱的事物产生联结，让写作更有乐趣。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-43_c95588df7268:4",
+          "claim_zh": "蒂姆梦想参观英国城堡",
+          "in_older_memory": false,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:1",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "嘿，约翰！有段时间没和你聊了，不过想告诉你我读了一本关于英国城堡的超棒的书。太有意思了，让我大为震撼！我梦想有一天能去参观它们。"
+            },
+            {
+              "session_id": "session_15",
+              "dia_id": "D15:3",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-43_d9a2fb3f97f7",
+      "older_memory": {
+        "id": "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+        "session_id": "session_9",
+        "content": "蒂姆从来没有参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种魔法世界里，这也是他喜欢去新地方旅行的原因之一"
+      },
+      "later_memory": {
+        "id": "df795392-83c3-4203-892c-c51c003b7b9e",
+        "session_id": "session_10",
+        "content": "蒂姆（Tim）从未参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种不同的魔法世界里"
+      },
+      "later_session_turn_count": 17,
+      "facts": [
+        {
+          "fact_id": "conv-43_d9a2fb3f97f7:1",
+          "claim_zh": "蒂姆从未参加过运动队",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_9",
+              "dia_id": "D9:5",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "没有，从来没参加过运动队。我更喜欢阅读和奇幻小说。我喜欢沉浸在各种不同的魔法世界里。这也是我喜欢去新地方旅行的原因之一，去体验另一种魔力。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-43_d9a2fb3f97f7:2",
+          "claim_zh": "他更喜欢阅读奇幻小说并沉浸于魔法世界",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_9",
+              "dia_id": "D9:5",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "没有，从来没参加过运动队。我更喜欢阅读和奇幻小说。我喜欢沉浸在各种不同的魔法世界里。这也是我喜欢去新地方旅行的原因之一，去体验另一种魔力。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-43_d9a2fb3f97f7:3",
+          "claim_zh": "这种探索不同世界的喜好也是他喜欢旅行的原因之一",
+          "in_older_memory": true,
+          "in_later_memory": false,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_9",
+              "dia_id": "D9:5",
+              "speaker": "蒂姆",
+              "channel": "text",
+              "quote": "没有，从来没参加过运动队。我更喜欢阅读和奇幻小说。我喜欢沉浸在各种不同的魔法世界里。这也是我喜欢去新地方旅行的原因之一，去体验另一种魔力。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-41_e94a25c4f01c",
+      "older_memory": {
+        "id": "3e16e4e6-83cf-4aa2-8624-c82467940f00",
+        "session_id": "session_11",
+        "content": "John and his family took a road trip last year (2022) exploring the Pacific Northwest coastline and visiting several national parks; he found the natural beauty breathtaking and it brought him peace and reflection"
+      },
+      "later_memory": {
+        "id": "f7c86a35-4130-43b2-bbdc-93b3a78074e1",
+        "session_id": "session_12",
+        "content": "Around 2022, John and Maria took a road trip exploring the Pacific Northwest coastline and several national parks, an experience he found breathtaking and inspiring"
+      },
+      "later_session_turn_count": 23,
+      "facts": [
+        {
+          "fact_id": "conv-41_e94a25c4f01c:1",
+          "claim_zh": "约翰上一年参加过一次公路旅行",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_11",
+              "dia_id": "D11:3",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "谢谢你，玛丽亚。你的鼓励对我意义重大。是啊，车子出问题和钱的问题让人头疼，但我会保持积极，想办法解决。这张照片让我想起我们去年的一次公路旅行；虽然路上有些颠簸，但依然充满美丽和希望。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-41_e94a25c4f01c:2",
+          "claim_zh": "旅途探索太平洋西北部海岸线和多个国家公园",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_11",
+              "dia_id": "D11:5",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "谢谢！我们探索了太平洋西北部的海岸线，还去了几个很酷的国家公园。大自然的美真是令人叹为观止！"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-41_e94a25c4f01c:3",
+          "claim_zh": "自然景色令他赞叹、深思，带来平静和灵感",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_11",
+              "dia_id": "D11:5",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "谢谢！我们探索了太平洋西北部的海岸线，还去了几个很酷的国家公园。大自然的美真是令人叹为观止！"
+            },
+            {
+              "session_id": "session_11",
+              "dia_id": "D11:7",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "是啊，太美妙了。那些壮丽的景色真的会让人深思。"
+            },
+            {
+              "session_id": "session_11",
+              "dia_id": "D11:9",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "是啊，玛丽亚。那种平静和美好太珍贵了，尤其是在艰难的时候。它们给了我们继续前行的力量和灵感。你最近有什么新鲜事吗？"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-41_e94a25c4f01c:4",
+          "claim_zh": "同行者是约翰的家人",
+          "in_older_memory": true,
+          "in_later_memory": false,
+          "support": "unsupported",
+          "source_turns": [],
+          "decision": "retract"
+        },
+        {
+          "fact_id": "conv-41_e94a25c4f01c:5",
+          "claim_zh": "同行者是玛丽亚",
+          "in_older_memory": false,
+          "in_later_memory": true,
+          "support": "unsupported",
+          "source_turns": [],
+          "decision": "retract"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-47_abc3c4fb4edf",
+      "older_memory": {
+        "id": "c2ba2b0e-d255-474e-b350-3938c6a66e91",
+        "session_id": "session_12",
+        "content": "John (James's friend) took second place at a local competition on Friday, May 20, 2022; he didn't win the championship but received some prize money and a trophy, and felt excited that his hard work paid off"
+      },
+      "later_memory": {
+        "id": "dbfa0f57-3172-4392-ac82-b59843cacd05",
+        "session_id": "session_13",
+        "content": "John took second place in a local competition on Friday, May 20, 2022, receiving a cash prize and a trophy; he was thrilled that his hard work paid off even without winning first place"
+      },
+      "later_session_turn_count": 20,
+      "facts": [
+        {
+          "fact_id": "conv-47_abc3c4fb4edf:1",
+          "claim_zh": "约翰在本地比赛得了第二名",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_12",
+              "dia_id": "D12:4",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "那真不错！上周五我参加了一场本地比赛，拿了第二名！那次经历太疯狂了，比赛的竞争氛围简直狂热。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-47_abc3c4fb4edf:2",
+          "claim_zh": "虽未夺冠，他获得奖金和奖杯",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_12",
+              "dia_id": "D12:6",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "我对自己的成绩特别激动。虽然没赢得冠军，但我还是因为第二名拿到了一些奖金。看到自己的努力有了回报，真的很棒。"
+            },
+            {
+              "session_id": "session_12",
+              "dia_id": "D12:8",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "是啊，我还得到了这个奖杯！太让人满足了。它提醒我要始终全力以赴。你呢？最近有什么成功的故事吗？"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-47_abc3c4fb4edf:3",
+          "claim_zh": "他为努力得到回报感到激动",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_12",
+              "dia_id": "D12:6",
+              "speaker": "约翰",
+              "channel": "text",
+              "quote": "我对自己的成绩特别激动。虽然没赢得冠军，但我还是因为第二名拿到了一些奖金。看到自己的努力有了回报，真的很棒。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    },
+    {
+      "pair_id": "conv-47_12946f1346c5",
+      "older_memory": {
+        "id": "15b9ea7a-2b58-4953-8af3-0ed5732a1294",
+        "session_id": "session_7",
+        "content": "On Thursday, April 21, 2022, James took his two dogs on a hike, exploring trails with beautiful scenery in the woods; he found it a fun adventure, and the dogs loved all the trails and breathtaking views"
+      },
+      "later_memory": {
+        "id": "a1e812c7-b1d3-484a-8a14-3f1e74615039",
+        "session_id": "session_8",
+        "content": "Around April 21, 2022, James took his dogs on a hike, exploring trails with breathtaking scenery in the woods; he loves the sound of leaves crunching underfoot and finds nature walks help him clear his mind and relax"
+      },
+      "later_session_turn_count": 40,
+      "facts": [
+        {
+          "fact_id": "conv-47_12946f1346c5:1",
+          "claim_zh": "詹姆斯带狗远足并探索林中小径",
+          "in_older_memory": true,
+          "in_later_memory": true,
+          "support": "direct_self_and_caption",
+          "source_turns": [
+            {
+              "session_id": "session_7",
+              "dia_id": "D7:2",
+              "speaker": "詹姆斯",
+              "channel": "text",
+              "quote": "嘿，约翰！很高兴收到你的消息。是啊，最近忙疯了。上周四我带我的狗去远足了。真是场冒险！探索了一些不错的小径，享受了新鲜的空气。"
+            },
+            {
+              "session_id": "session_7",
+              "dia_id": "D7:4",
+              "speaker": "詹姆斯",
+              "channel": "caption",
+              "quote": "a photo of a man walking two dogs on a path in the woods"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-47_12946f1346c5:2",
+          "claim_zh": "两只狗喜欢小径和风景，詹姆斯觉得好玩",
+          "in_older_memory": true,
+          "in_later_memory": false,
+          "support": "direct_self_and_caption",
+          "source_turns": [
+            {
+              "session_id": "session_7",
+              "dia_id": "D7:4",
+              "speaker": "詹姆斯",
+              "channel": "text",
+              "quote": "有，我有一张。太棒了！它们很喜欢——有那么多可以探索的小径，还有壮丽的风景。太好玩了！"
+            },
+            {
+              "session_id": "session_7",
+              "dia_id": "D7:4",
+              "speaker": "詹姆斯",
+              "channel": "caption",
+              "quote": "a photo of a man walking two dogs on a path in the woods"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        },
+        {
+          "fact_id": "conv-47_12946f1346c5:3",
+          "claim_zh": "他喜欢脚下树叶声，散步使他理清思绪、放松",
+          "in_older_memory": false,
+          "in_later_memory": true,
+          "support": "direct_self",
+          "source_turns": [
+            {
+              "session_id": "session_7",
+              "dia_id": "D7:8",
+              "speaker": "詹姆斯",
+              "channel": "text",
+              "quote": "我喜欢脚下树叶沙沙作响的声音和那份宁静。它帮我理清思绪、放松心情。"
+            }
+          ],
+          "decision": "retain_with_original_source"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "事实划分和新旧文本覆盖由人工标注，不是自动蕴含判断",
+    "源会话包含图片说明而非原图复核",
+    "不能从记忆文本与源话反推历史 LLM 生成原因或上线效果"
+  ]
+}

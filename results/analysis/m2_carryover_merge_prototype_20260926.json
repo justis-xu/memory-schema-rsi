@@ -1,0 +1,258 @@
+{
+  "scope": "Offline acceptance prototype from manually annotated 12-pair fact inventory; no vector DB write or model call",
+  "checks": {
+    "all_supported_facts_retained": true,
+    "all_unsupported_facts_retracted": true,
+    "all_sources_stay_in_older_session": true,
+    "one_canonical_memory_id_per_pair": true
+  },
+  "merges": [
+    {
+      "canonical_memory_id": "a5f1a15b-1ec4-4f1d-b5be-1e4e79fef5e0",
+      "alias_memory_id_to_retire": "3a4760bc-5e23-43a0-8e00-499b54e0232c",
+      "origin_session_id": "session_22",
+      "accepted_fact_ids": [
+        "conv-41_051a88fcd77c:1",
+        "conv-41_051a88fcd77c:2",
+        "conv-41_051a88fcd77c:3",
+        "conv-41_051a88fcd77c:4"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D22:5",
+        "D22:7",
+        "D22:9"
+      ],
+      "accepted_claims_zh": [
+        "约翰分享家人照片，家人激励他为改变而努力",
+        "照片来自女儿萨拉生日时的旅行",
+        "照片显示家人在秋天铁轨上合影",
+        "困难时约翰会看照片提醒自己为何努力"
+      ]
+    },
+    {
+      "canonical_memory_id": "99549aa7-4b96-4b21-828b-dd5725ddcb04",
+      "alias_memory_id_to_retire": "987421f4-89ba-4a49-958d-4185ac1732d4",
+      "origin_session_id": "session_22",
+      "accepted_fact_ids": [
+        "conv-44_0c8afd94ba05:1",
+        "conv-44_0c8afd94ba05:2"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D22:5"
+      ],
+      "accepted_claims_zh": [
+        "奥黛丽用瓶盖、纽扣、坏首饰等回收材料制作首饰",
+        "她认为这体现创造力、可持续发展，每件作品有故事"
+      ]
+    },
+    {
+      "canonical_memory_id": "950664a8-b2aa-4d98-9cbf-94b3b56b433d",
+      "alias_memory_id_to_retire": "9e959d13-b2ca-4578-821b-7d3010788724",
+      "origin_session_id": "session_15",
+      "accepted_fact_ids": [
+        "conv-44_9b37baddbb91:1",
+        "conv-44_9b37baddbb91:2"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D15:3"
+      ],
+      "accepted_claims_zh": [
+        "奥黛丽想过再养狗，但认为当前四只已够",
+        "四只狗让她很忙，她要照顾好每一只"
+      ]
+    },
+    {
+      "canonical_memory_id": "e6c84260-6dcb-48dc-a397-f77717b75069",
+      "alias_memory_id_to_retire": "92291bd1-360e-46d3-952b-8d6c66b1e988",
+      "origin_session_id": "session_22",
+      "accepted_fact_ids": [
+        "conv-44_b514edf1ce25:1",
+        "conv-44_b514edf1ce25:2",
+        "conv-44_b514edf1ce25:3",
+        "conv-44_b514edf1ce25:4"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D22:10",
+        "D22:11",
+        "D22:5",
+        "D22:7",
+        "D22:9"
+      ],
+      "accepted_claims_zh": [
+        "奥黛丽做首饰先是爱好，后来开始出售",
+        "她把部分利润捐给动物收容所",
+        "她不能亲临收容所现场，但仍寻找行善方式",
+        "首饰制作使用回收材料"
+      ]
+    },
+    {
+      "canonical_memory_id": "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+      "alias_memory_id_to_retire": "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+      "origin_session_id": "session_15",
+      "accepted_fact_ids": [
+        "conv-43_de89be96dda6:1",
+        "conv-43_de89be96dda6:2",
+        "conv-43_de89be96dda6:3"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D15:3"
+      ],
+      "accepted_claims_zh": [
+        "蒂姆正在写奇幻小说，写作进展顺利",
+        "他对此有些紧张但很兴奋，觉得努力得到回报",
+        "写作给他快乐，并让他创造全新世界"
+      ]
+    },
+    {
+      "canonical_memory_id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+      "alias_memory_id_to_retire": "6c6124a0-0532-43a5-b03b-659cf973fe32",
+      "origin_session_id": "session_27",
+      "accepted_fact_ids": [
+        "conv-43_269540f8e596:1",
+        "conv-43_269540f8e596:2"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D27:1"
+      ],
+      "accepted_claims_zh": [
+        "蒂姆加入志趣相投的环球旅行者群体",
+        "认识他们、听旅行经历使他高兴"
+      ]
+    },
+    {
+      "canonical_memory_id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+      "alias_memory_id_to_retire": "137a6569-6e2e-4878-97d5-71289efc1f4a",
+      "origin_session_id": "session_17",
+      "accepted_fact_ids": [
+        "conv-26_444350391e64:1",
+        "conv-26_444350391e64:2",
+        "conv-26_444350391e64:3"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D17:10",
+        "D17:8"
+      ],
+      "accepted_claims_zh": [
+        "梅拉妮上月受伤，暂停用来自我表达和获得平静的陶艺",
+        "暂停陶艺让梅拉妮难受，但她说自己还好",
+        "她当时通过读书和画画打发时间"
+      ]
+    },
+    {
+      "canonical_memory_id": "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+      "alias_memory_id_to_retire": "bd5e05ac-8fff-4146-9701-0796790c5f10",
+      "origin_session_id": "session_15",
+      "accepted_fact_ids": [
+        "conv-43_c95588df7268:1",
+        "conv-43_c95588df7268:2",
+        "conv-43_c95588df7268:3",
+        "conv-43_c95588df7268:4"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D15:1",
+        "D15:3",
+        "D15:5"
+      ],
+      "accepted_claims_zh": [
+        "蒂姆的写作灵感来自书、电影和现实经历",
+        "阅读英国城堡给了他写作灵感",
+        "某些作者也是他的灵感来源",
+        "蒂姆梦想参观英国城堡"
+      ]
+    },
+    {
+      "canonical_memory_id": "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+      "alias_memory_id_to_retire": "df795392-83c3-4203-892c-c51c003b7b9e",
+      "origin_session_id": "session_9",
+      "accepted_fact_ids": [
+        "conv-43_d9a2fb3f97f7:1",
+        "conv-43_d9a2fb3f97f7:2",
+        "conv-43_d9a2fb3f97f7:3"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D9:5"
+      ],
+      "accepted_claims_zh": [
+        "蒂姆从未参加过运动队",
+        "他更喜欢阅读奇幻小说并沉浸于魔法世界",
+        "这种探索不同世界的喜好也是他喜欢旅行的原因之一"
+      ]
+    },
+    {
+      "canonical_memory_id": "3e16e4e6-83cf-4aa2-8624-c82467940f00",
+      "alias_memory_id_to_retire": "f7c86a35-4130-43b2-bbdc-93b3a78074e1",
+      "origin_session_id": "session_11",
+      "accepted_fact_ids": [
+        "conv-41_e94a25c4f01c:1",
+        "conv-41_e94a25c4f01c:2",
+        "conv-41_e94a25c4f01c:3"
+      ],
+      "retracted_fact_ids": [
+        "conv-41_e94a25c4f01c:4",
+        "conv-41_e94a25c4f01c:5"
+      ],
+      "source_turn_ids": [
+        "D11:3",
+        "D11:5",
+        "D11:7",
+        "D11:9"
+      ],
+      "accepted_claims_zh": [
+        "约翰上一年参加过一次公路旅行",
+        "旅途探索太平洋西北部海岸线和多个国家公园",
+        "自然景色令他赞叹、深思，带来平静和灵感"
+      ]
+    },
+    {
+      "canonical_memory_id": "c2ba2b0e-d255-474e-b350-3938c6a66e91",
+      "alias_memory_id_to_retire": "dbfa0f57-3172-4392-ac82-b59843cacd05",
+      "origin_session_id": "session_12",
+      "accepted_fact_ids": [
+        "conv-47_abc3c4fb4edf:1",
+        "conv-47_abc3c4fb4edf:2",
+        "conv-47_abc3c4fb4edf:3"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D12:4",
+        "D12:6",
+        "D12:8"
+      ],
+      "accepted_claims_zh": [
+        "约翰在本地比赛得了第二名",
+        "虽未夺冠，他获得奖金和奖杯",
+        "他为努力得到回报感到激动"
+      ]
+    },
+    {
+      "canonical_memory_id": "15b9ea7a-2b58-4953-8af3-0ed5732a1294",
+      "alias_memory_id_to_retire": "a1e812c7-b1d3-484a-8a14-3f1e74615039",
+      "origin_session_id": "session_7",
+      "accepted_fact_ids": [
+        "conv-47_12946f1346c5:1",
+        "conv-47_12946f1346c5:2",
+        "conv-47_12946f1346c5:3"
+      ],
+      "retracted_fact_ids": [],
+      "source_turn_ids": [
+        "D7:2",
+        "D7:4",
+        "D7:8"
+      ],
+      "accepted_claims_zh": [
+        "詹姆斯带狗远足并探索林中小径",
+        "两只狗喜欢小径和风景，詹姆斯觉得好玩",
+        "他喜欢脚下树叶声，散步使他理清思绪、放松"
+      ]
+    }
+  ]
+}
