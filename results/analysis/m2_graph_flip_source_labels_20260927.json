@@ -1,0 +1,101 @@
+{
+  "scope": "Manual bilingual source and answer-fact labels for nine fixed hash-selected Chinese graph-context cases; not a prevalence estimate",
+  "packet": "results/analysis/m2_graph_flip_source_sample_20260927.json",
+  "labels": [
+    {
+      "case_id": "locomo_conv-41_qa65",
+      "source_status": "gold_supported",
+      "base_answer_facts": "correct_required_focus",
+      "graph_answer_facts": "correct_required_focus",
+      "new_graph_fact_needed": false,
+      "direct_evidence_lost": false,
+      "assessment": "Scorer false partial: base says 教育和基础设施, exactly the two main focuses asked; top two base memories already say improving both. Graph adds no missing required fact.",
+      "confidence": "high"
+    },
+    {
+      "case_id": "locomo_conv-43_qa166",
+      "source_status": "gold_wrong_person",
+      "base_answer_facts": "does_not_match_gold_but_john_lotr_fan_in_context",
+      "graph_answer_facts": "matches_gold_but_john_favorite_book_series_unproved",
+      "new_graph_fact_needed": false,
+      "direct_evidence_lost": false,
+      "assessment": "Both languages attach Tim's D27:19 'Harry Potter is my favorite book' to a question about John. Graph adds John at Harry Potter trivia, not John declaring a favorite book series. Matching gold is not a source-faithful graph gain.",
+      "confidence": "high"
+    },
+    {
+      "case_id": "locomo_conv-47_qa61",
+      "source_status": "question_year_contradicts_source",
+      "base_answer_facts": "event_correct_and_year_caveat_source_faithful",
+      "graph_answer_facts": "event_correct_but_drops_year_caveat",
+      "new_graph_fact_needed": false,
+      "direct_evidence_lost": false,
+      "assessment": "English and Chinese question say October 2023, but cited D29:8/10 occur October 31, 2022. Base rightly flags this, while graph answer omits the caveat and is scored exact. New graph memories concern unrelated earlier events and game projects.",
+      "confidence": "high"
+    },
+    {
+      "case_id": "locomo_conv-42_qa62",
+      "source_status": "gold_two_letters_supported_by_cited_turns",
+      "base_answer_facts": "count_two_but_second_letter_misattributed_as_rejection",
+      "graph_answer_facts": "count_one_and_misses_blog_reader_letter",
+      "new_graph_fact_needed": false,
+      "direct_evidence_lost": false,
+      "assessment": "D14:1 is a rejection letter; D18:5 is a supportive blog-reader letter. Neither final context includes the blog-reader letter. Base gets count two by treating a later production rejection as a second letter; graph says one formal letter and confuses childhood notes. Graph answer is worse on the count, but no observed direct evidence was displaced by a graph candidate.",
+      "confidence": "high_for_source_and_context; medium_for_mechanism"
+    },
+    {
+      "case_id": "locomo_conv-30_qa69",
+      "source_status": "gold_supported",
+      "base_answer_facts": "correct_clear_mind_synonym",
+      "graph_answer_facts": "correct_clear_mind_synonym",
+      "new_graph_fact_needed": false,
+      "direct_evidence_lost": false,
+      "assessment": "Both answers say 放松心情, a faithful rendering of D15:1 clear my mind; both arms retain the two direct Rome memories at ranks 1 and 2. Graph partial judge rejects the same synonym accepted in base exact, so the strict flip is a scoring inconsistency.",
+      "confidence": "high"
+    },
+    {
+      "case_id": "locomo_conv-43_qa129",
+      "source_status": "gold_supported",
+      "base_answer_facts": "writes_and_explicitly_mails",
+      "graph_answer_facts": "writes_and_sends_without_postal_specificity",
+      "new_graph_fact_needed": false,
+      "direct_evidence_lost": false,
+      "assessment": "D15:34 explicitly says write and mail. Both contexts share rank-1 memory saying only write the recipe to Tim, so neither preserves the mail verb. Base answer adds mail; graph says 发给, which does not establish postal mail. Added graph memory is an unrelated New York trip, and the lost memory is unrelated nature; causal attribution to graph is unsupported.",
+      "confidence": "high_for_source_and_context; medium_for_answer_specificity"
+    },
+    {
+      "case_id": "locomo_conv-43_qa64",
+      "source_status": "gold_supported_by_relative_month_and_session_date",
+      "base_answer_facts": "correct_month",
+      "graph_answer_facts": "correct_month",
+      "new_graph_fact_needed": false,
+      "direct_evidence_lost": false,
+      "assessment": "Both answers give December 2023. New graph memories discuss an October team trip and June endorsements; neither is needed for the Italy date.",
+      "confidence": "high"
+    },
+    {
+      "case_id": "locomo_conv-30_qa67",
+      "source_status": "gold_supported",
+      "base_answer_facts": "correct_goal_progress_improvement",
+      "graph_answer_facts": "correct_goal_progress_improvement",
+      "new_graph_fact_needed": false,
+      "direct_evidence_lost": false,
+      "assessment": "Both answers retain the goal/progress/improvement elements. Added graph memory concerns social-media marketing; displaced memory concerns mentoring dancers.",
+      "confidence": "high"
+    },
+    {
+      "case_id": "locomo_conv-42_qa190",
+      "source_status": "gold_supported",
+      "base_answer_facts": "correct_gaming_content",
+      "graph_answer_facts": "correct_gaming_content",
+      "new_graph_fact_needed": false,
+      "direct_evidence_lost": false,
+      "assessment": "Both answers identify YouTube gaming content. New graph memories concern coconut ice cream and a gaming party; neither supplies the asked content fact.",
+      "confidence": "high"
+    }
+  ],
+  "limits": [
+    "The nine cases were selected by outcome stratum and hash, not sampled proportionally from all questions.",
+    "Manual labels use cited bilingual turns and archived contexts; incomplete QA evidence can leave additional source facts unexamined.",
+    "Separate historical runs cannot isolate a single graph candidate's causal answer effect."
+  ]
+}

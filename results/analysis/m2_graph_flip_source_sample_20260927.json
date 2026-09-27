@@ -1,0 +1,2542 @@
+{
+  "scope": "Three hash-first Chinese non-adversarial cases from each graph-only exact, base-only exact, and unchanged exact-status stratum; graph ID selected and final context IDs changed; no new model calls",
+  "selection_seed": "m2-graph-source-sample-v1:",
+  "previously_audited_exclusions": [
+    "locomo_conv-30_qa80",
+    "locomo_conv-41_qa86",
+    "locomo_conv-43_qa25",
+    "locomo_conv-47_qa96",
+    "locomo_conv-48_qa39"
+  ],
+  "eligible_stratum_counts": {
+    "same_exact_status": 921,
+    "base_only_exact": 45,
+    "graph_only_exact": 57
+  },
+  "input_paths": {
+    "base_run": "/Users/xu/git/memory-schema-rsi/results_zh/zhfull_locomo_20260925_164645.jsonl",
+    "graph_run": "/Users/xu/git/memory-schema-rsi/results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+    "base_grade": "/Users/xu/git/memory-schema-rsi/results/precision_regrade_base.jsonl",
+    "graph_grade": "/Users/xu/git/memory-schema-rsi/results/precision_regrade_graph.jsonl",
+    "english_data": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10.json",
+    "chinese_data": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json"
+  },
+  "input_sha256": {
+    "base_run": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59",
+    "graph_run": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "base_grade": "0a4bef376de18c4ef1242c893ab27f2cfa7133445885265fbcb05521acf9bb0b",
+    "graph_grade": "9fa3a5f25d3fdf21dd173e60a3d1db55177e362cb4f4b9ad145eb37107284d05",
+    "english_data": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese_data": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d"
+  },
+  "cases": [
+    {
+      "stratum": "graph_only_exact",
+      "selection_sha256": "050261f213a4e8644b757e2bb9d88af69fb89b139f45924e9d9bff0ab28788a9",
+      "case_id": "locomo_conv-41_qa65",
+      "qa": {
+        "english": {
+          "question": "What is John's main focus in local politics?",
+          "answer": "Improving education and infrastructure",
+          "evidence": [
+            {
+              "session_id": "session_1",
+              "session_date": "11:01 am on 17 December, 2022",
+              "dia_id": "D1:8",
+              "speaker": "John",
+              "text": "I'm passionate about improving education and infrastructure in our community. Those are my main focuses.",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        },
+        "chinese": {
+          "question": "约翰在地方政治中的主要关注点是什么？",
+          "answer": "改善教育和基础设施",
+          "evidence": [
+            {
+              "session_id": "session_1",
+              "session_date": "11:01 am on 17 December, 2022",
+              "dia_id": "D1:8",
+              "speaker": "约翰",
+              "text": "我热衷于改善我们社区的教育和基础设施。这是我的两大主要关注点。",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        }
+      },
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "改善 (the gold specifies improving education and infrastructure, not just the topics themselves)"
+        ],
+        "reason": "The answer names the topics but omits '改善', giving less precision than the gold."
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "答案包含了两个核心要素（教育和基础设施），并补充了正确的细节。"
+      },
+      "base_answer": "教育和基础设施",
+      "graph_answer": "约翰在地方政治中的主要关注点是**改善教育和基础设施**。他认为教育和基础设施是社区繁荣与成功的关键，这源于他成长过程中目睹的社区教育匮乏和基础设施老化问题，他希望学校能获得充足资金，让后代不再经历同样的困境。他还希望改善他的老区域West County以及现在的社区。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "4d198ea5-7344-4c2e-b229-5de92e591f47",
+          "content": "John's two main political focus areas are improving education and infrastructure in his community",
+          "route": "vector",
+          "session_date": "11:01 am on 17 December, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "cf212f1d-4dc3-4942-9a4f-e03925a38853",
+          "content": "John is particularly interested in improving education and infrastructure, which he feels are important for his community",
+          "route": "vector",
+          "session_date": "9:36 am on 2 April, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "13f651aa-2c90-4bbf-9b0b-a8462e2b59dd",
+          "content": "John is motivated to improve his community through education and infrastructure work; he finds it an uphill battle at times and sometimes doubts he is making a difference, but encouragement helps him keep going",
+          "route": "vector",
+          "session_date": "6:59 pm on 5 July, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "7a8ecc4d-d968-4aab-bd2d-f83c56a52435",
+          "content": "John aspires to enter local politics because he loves helping his community and making it better",
+          "route": "vector",
+          "session_date": "11:01 am on 17 December, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "1a154e56-16a3-4917-9a68-b2d96b611a92",
+          "content": "John's passion for education and infrastructure stems from witnessing, while growing up, how lack of education and deteriorating infrastructure affected his community; he believes schools and infrastructure should be well funded so future generations don't experience the same",
+          "route": "vector",
+          "session_date": "11:01 am on 17 December, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "7b889930-9788-4fea-aeb9-690f17a81813",
+          "content": "John also wants to improve his old area, West County, alongside his current neighborhood",
+          "route": "vector",
+          "session_date": "5:04 pm on 6 May, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "bc2fab91-bd82-418b-b3ef-eccbe4a3e265",
+          "content": "John's blog focuses on education reform and infrastructure development, which he sees as key to a community's prosperity and success",
+          "route": "vector",
+          "session_date": "7:34 pm on 18 April, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "c15f9880-1c1f-437e-a75b-5fadc2b41d9b",
+          "content": "As of early January 2023, John has been researching local politics and talking with community leaders to understand his community's needs, which he finds rewarding and feels optimistic about",
+          "route": "vector",
+          "session_date": "7:06 pm on 9 January, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "78e4d54f-c6a5-4acf-b68e-85f37185b908",
+          "content": "John believes education is essential to a successful society and that children lacking proper conditions breaks his heart; he feels his own children have a lot while other children have nothing and they deserve better — motivating him to take action for school funding",
+          "route": "vector",
+          "session_date": "1:17 pm on 28 January, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "594f7a36-9fba-432d-a78c-90dba7481183",
+          "content": "John's experience attending community meetings and engaging in community affairs gave him a better understanding of the challenges facing education and infrastructure systems and how these issues affect his neighbors, highlighting the need for solutions",
+          "route": "vector",
+          "session_date": "9:36 am on 2 April, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "37c25012-63e6-4801-9b95-3e3e3607f4d3",
+          "content": "John wants to run for public office out of a strong desire to serve his country and community, seeing it as his chance to make an impact",
+          "route": "vector",
+          "session_date": "2:33 pm on 5 February, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "3319ceeb-e026-491e-9156-c2bea4d5dd28",
+          "content": "As of December 2022, John has been networking and connecting with people to gather input and support for his local political ambitions",
+          "route": "vector",
+          "session_date": "6:10 pm on 22 December, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "7a53fe1a-2705-48f0-9799-4d269a341321",
+          "content": "John announced he will run for public office again, saying that after his previous campaign he saw the possibility of impacting his community through politics and finds working for positive change rewarding",
+          "route": "vector",
+          "session_date": "8:55 pm on 25 February, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "83007c11-8c4c-49b2-92c9-be8fd136c3c0",
+          "content": "Maria took written notes on local politics in her notebook, which helped John gain new ideas and plans for serving his community",
+          "route": "vector",
+          "session_date": "7:06 pm on 9 January, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "54e8ef78-5299-4261-891e-381eac034e2d",
+          "content": "约翰正在探索加入当地组织或志愿项目的选择，计划列出一份符合自己信念的组织清单，然后联系他们了解更多信息",
+          "route": "vector",
+          "session_date": "12:10 am on 11 August, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "4d198ea5-7344-4c2e-b229-5de92e591f47",
+          "content": "John's two main political focus areas are improving education and infrastructure in his community",
+          "route": "vector",
+          "session_date": "11:01 am on 17 December, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "cf212f1d-4dc3-4942-9a4f-e03925a38853",
+          "content": "John is particularly interested in improving education and infrastructure, which he feels are important for his community",
+          "route": "vector",
+          "session_date": "9:36 am on 2 April, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "13f651aa-2c90-4bbf-9b0b-a8462e2b59dd",
+          "content": "John is motivated to improve his community through education and infrastructure work; he finds it an uphill battle at times and sometimes doubts he is making a difference, but encouragement helps him keep going",
+          "route": "vector",
+          "session_date": "6:59 pm on 5 July, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "7a8ecc4d-d968-4aab-bd2d-f83c56a52435",
+          "content": "John aspires to enter local politics because he loves helping his community and making it better",
+          "route": "vector",
+          "session_date": "11:01 am on 17 December, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "1a154e56-16a3-4917-9a68-b2d96b611a92",
+          "content": "John's passion for education and infrastructure stems from witnessing, while growing up, how lack of education and deteriorating infrastructure affected his community; he believes schools and infrastructure should be well funded so future generations don't experience the same",
+          "route": "vector",
+          "session_date": "11:01 am on 17 December, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "991b9336-192e-4ac7-a238-6543dc547468",
+          "content": "Around December 2022, a conversation with a person who shared inspiring stories reignited John's passion for improving education in his area; he believes investing in the next generation and giving them the right tools is the foundation of progress and opportunity",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 7,
+          "id": "7b889930-9788-4fea-aeb9-690f17a81813",
+          "content": "John also wants to improve his old area, West County, alongside his current neighborhood",
+          "route": "vector",
+          "session_date": "5:04 pm on 6 May, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "bc2fab91-bd82-418b-b3ef-eccbe4a3e265",
+          "content": "John's blog focuses on education reform and infrastructure development, which he sees as key to a community's prosperity and success",
+          "route": "vector",
+          "session_date": "7:34 pm on 18 April, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "c15f9880-1c1f-437e-a75b-5fadc2b41d9b",
+          "content": "As of early January 2023, John has been researching local politics and talking with community leaders to understand his community's needs, which he finds rewarding and feels optimistic about",
+          "route": "vector",
+          "session_date": "7:06 pm on 9 January, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "78e4d54f-c6a5-4acf-b68e-85f37185b908",
+          "content": "John believes education is essential to a successful society and that children lacking proper conditions breaks his heart; he feels his own children have a lot while other children have nothing and they deserve better — motivating him to take action for school funding",
+          "route": "vector",
+          "session_date": "1:17 pm on 28 January, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "594f7a36-9fba-432d-a78c-90dba7481183",
+          "content": "John's experience attending community meetings and engaging in community affairs gave him a better understanding of the challenges facing education and infrastructure systems and how these issues affect his neighbors, highlighting the need for solutions",
+          "route": "vector",
+          "session_date": "9:36 am on 2 April, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "37c25012-63e6-4801-9b95-3e3e3607f4d3",
+          "content": "John wants to run for public office out of a strong desire to serve his country and community, seeing it as his chance to make an impact",
+          "route": "vector",
+          "session_date": "2:33 pm on 5 February, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "3319ceeb-e026-491e-9156-c2bea4d5dd28",
+          "content": "As of December 2022, John has been networking and connecting with people to gather input and support for his local political ambitions",
+          "route": "vector",
+          "session_date": "6:10 pm on 22 December, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "0ba93f85-65e0-4209-98b0-59e678b148dd",
+          "content": "John has a community meeting scheduled for the week of January 16, 2023, to discuss education and infrastructure upgrades; he plans to speak up for his community",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "7a53fe1a-2705-48f0-9799-4d269a341321",
+          "content": "John announced he will run for public office again, saying that after his previous campaign he saw the possibility of impacting his community through politics and finds working for positive change rewarding",
+          "route": "vector",
+          "session_date": "8:55 pm on 25 February, 2023"
+        }
+      ],
+      "gained_ids": [
+        "991b9336-192e-4ac7-a238-6543dc547468",
+        "0ba93f85-65e0-4209-98b0-59e678b148dd"
+      ],
+      "lost_ids": [
+        "83007c11-8c4c-49b2-92c9-be8fd136c3c0",
+        "54e8ef78-5299-4261-891e-381eac034e2d"
+      ]
+    },
+    {
+      "stratum": "graph_only_exact",
+      "selection_sha256": "06edbd36e4af11e36de04a22d3ad2ee448624b1cbce100a0f29aa4caa2db50d7",
+      "case_id": "locomo_conv-43_qa166",
+      "qa": {
+        "english": {
+          "question": "What is John's favorite book series?",
+          "answer": "Harry Potter",
+          "evidence": [
+            {
+              "session_id": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "dia_id": "D27:19",
+              "speaker": "Tim",
+              "text": "Harry Potter is my favorite book. It's so immersive!",
+              "query": null,
+              "blip_caption": "a photo of a collection of movies and dvds on a carpet"
+            }
+          ]
+        },
+        "chinese": {
+          "question": "约翰最喜欢的系列图书是什么？",
+          "answer": "哈利·波特",
+          "evidence": [
+            {
+              "session_id": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "dia_id": "D27:19",
+              "speaker": "蒂姆",
+              "text": "《哈利·波特》是我最喜欢的书。太让人沉浸其中了！",
+              "query": null,
+              "blip_caption": "a photo of a collection of movies and dvds on a carpet"
+            }
+          ]
+        }
+      },
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "The answer explicitly and correctly states that John's favorite book series is Harry Potter (《哈利·波特》), matching the gold answer exactly."
+      },
+      "base_answer": "《指环王》系列——约翰是它的超级粉丝，反复观看/阅读多遍，觉得非常励志。",
+      "graph_answer": "约翰对《哈利·波特》表现出强烈的喜爱：他收藏了整套《哈利·波特》电影的DVD，并参加了《哈利·波特》知识竞赛，还分享了一本《哈利·波特》的签名版书籍。尽管蒂姆曾推荐过《风之名》（约翰已将其加入书单）并 recently 读完了一部奇幻系列，但唯一被确认属于约翰的心头好系列是《哈利·波特》。\n\n回答：《哈利·波特》系列。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "70de4022-1d90-417a-b7a4-d0de9c241579",
+          "content": "约翰是《指环王》的超级粉丝，看了不少遍并觉得很励志；他最喜欢的角色是阿拉贡，欣赏他作为伟大领袖总是把别人放在第一位，以及从游侠到刚铎国王的成长和救赎",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 2,
+          "id": "ad3b6bbb-6177-40ab-9deb-efb97073797b",
+          "content": "约翰刚读完一套非常棒的奇幻系列小说，情节跌宕起伏、反转很多，他很欣赏作者创造故事情节和人物的能力，喜欢沉浸在那样的奇幻世界里",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+          "content": "约翰把《风之名》加到了自己的书单里，表示喜欢人物鲜明、世界观设定精彩的奇幻作品",
+          "route": "vector",
+          "session_date": "1:08 pm on 11 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "a5ba7aaf-1266-4ba9-9981-8c94c584f34b",
+          "content": "约翰（John）于2023年12月初在读弗兰克·赫伯特的《沙丘》，很喜欢并推荐给蒂姆，称其为关于宗教和人类对生态控制的精彩故事；约翰还表示还没读过《权力的游戏》但打算去看看",
+          "route": "vector",
+          "session_date": "7:42 pm on 8 December, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "route": "vector",
+          "session_date": "4:29 pm on 21 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+          "content": "蒂姆于2023年9月推荐约翰在旅行时读帕特里克·罗斯福斯的奇幻小说（《风之名》/ The Name of the Wind），称它会带人进入不同的世界；约翰表示迫不及待想读",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+          "content": "约翰喜欢阅读关于个人发展和心态的非虚构类书籍，认为它们帮助他更好地了解自己",
+          "route": "vector",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+          "route": "vector",
+          "session_date": "9:52 am on 1 December, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "688f8e28-1f86-4b91-a412-93971a6d9aca",
+          "content": "约翰最近重读完《牧羊少年奇幻之旅》（The Alchemist），认为非常鼓舞人心，让他重新思考追逐梦想和寻找属于自己的宝藏，读完感到充满动力和希望",
+          "route": "vector",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+          "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "a7cb56be-cc70-47d7-8b39-f6b4d5705b7b",
+          "content": "蒂姆收藏了很多书，喜欢沉浸在书中世界里，这是他热爱阅读的原因；《哈利·波特》是他最喜欢的书，觉得非常让人沉浸其中",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 13,
+          "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+          "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 14,
+          "id": "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+          "content": "约翰（John）职业生涯最喜欢的一场比赛是第四节还落后10分时他投进了压哨绝杀球赢得比赛，他称这是令人热血沸腾的经历，这样的时刻让他热爱篮球",
+          "route": "vector",
+          "session_date": "8:28 pm on 11 December, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+          "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+          "route": "vector",
+          "session_date": "9:52 am on 1 December, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "70de4022-1d90-417a-b7a4-d0de9c241579",
+          "content": "约翰是《指环王》的超级粉丝，看了不少遍并觉得很励志；他最喜欢的角色是阿拉贡，欣赏他作为伟大领袖总是把别人放在第一位，以及从游侠到刚铎国王的成长和救赎",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 2,
+          "id": "ad3b6bbb-6177-40ab-9deb-efb97073797b",
+          "content": "约翰刚读完一套非常棒的奇幻系列小说，情节跌宕起伏、反转很多，他很欣赏作者创造故事情节和人物的能力，喜欢沉浸在那样的奇幻世界里",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+          "content": "约翰把《风之名》加到了自己的书单里，表示喜欢人物鲜明、世界观设定精彩的奇幻作品",
+          "route": "vector",
+          "session_date": "1:08 pm on 11 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "a5ba7aaf-1266-4ba9-9981-8c94c584f34b",
+          "content": "约翰（John）于2023年12月初在读弗兰克·赫伯特的《沙丘》，很喜欢并推荐给蒂姆，称其为关于宗教和人类对生态控制的精彩故事；约翰还表示还没读过《权力的游戏》但打算去看看",
+          "route": "vector",
+          "session_date": "7:42 pm on 8 December, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "route": "vector",
+          "session_date": "4:29 pm on 21 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+          "content": "蒂姆于2023年9月推荐约翰在旅行时读帕特里克·罗斯福斯的奇幻小说（《风之名》/ The Name of the Wind），称它会带人进入不同的世界；约翰表示迫不及待想读",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+          "content": "约翰（John）和安东尼参加过一个慈善活动，在那里遇到了激烈的《哈利·波特》知识竞赛，他们表现不错但奖品被一位超级书迷赢得；约翰分享了一张签名的哈利·波特书籍照片",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 9,
+          "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+          "content": "约翰喜欢阅读关于个人发展和心态的非虚构类书籍，认为它们帮助他更好地了解自己",
+          "route": "vector",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+          "route": "vector",
+          "session_date": "9:52 am on 1 December, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+          "content": "蒂姆推荐约翰读《风之名》（The Name of the Wind，帕特里克·罗斯福斯著），称其主角是伟大的魔法师兼音乐家，世界观构建和人物塑造都非常出色，值得一读",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "688f8e28-1f86-4b91-a412-93971a6d9aca",
+          "content": "约翰最近重读完《牧羊少年奇幻之旅》（The Alchemist），认为非常鼓舞人心，让他重新思考追逐梦想和寻找属于自己的宝藏，读完感到充满动力和希望",
+          "route": "vector",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+          "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "301911d3-603e-4a1d-a9bf-49aca44b0e5a",
+          "content": "蒂姆（Tim）于2023年8月上旬正在读帕特里克·罗斯福斯（Patrick Rothfuss）写的一本让他着迷的奇幻小说，书把他带到另一个世界，他称赞作者构建世界和角色的能力，并推荐约翰去读",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "a7cb56be-cc70-47d7-8b39-f6b4d5705b7b",
+          "content": "蒂姆收藏了很多书，喜欢沉浸在书中世界里，这是他热爱阅读的原因；《哈利·波特》是他最喜欢的书，觉得非常让人沉浸其中",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        }
+      ],
+      "gained_ids": [
+        "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+        "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+        "301911d3-603e-4a1d-a9bf-49aca44b0e5a"
+      ],
+      "lost_ids": [
+        "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+        "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+        "f8697c06-d00f-4818-bb75-a17465dbfc87"
+      ]
+    },
+    {
+      "stratum": "graph_only_exact",
+      "selection_sha256": "0952c7f5aba85751a5ac54cb9678125194e2c9003a85c9de8c927ae3868b91a5",
+      "case_id": "locomo_conv-47_qa61",
+      "qa": {
+        "english": {
+          "question": "What was James' big moment with Samantha in October 2023?",
+          "answer": "They decided to live together and rented an apartment not far from McGee's bar.",
+          "evidence": [
+            {
+              "session_id": "session_29",
+              "session_date": "12:37 am on 31 October, 2022",
+              "dia_id": "D29:8",
+              "speaker": "James",
+              "text": "I actually have something new, Samantha and I have decided to move in together!",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "session_id": "session_29",
+              "session_date": "12:37 am on 31 October, 2022",
+              "dia_id": "D29:10",
+              "speaker": "James",
+              "text": "Of course, this was a mutual and informed decision. We rented an apartment not far from McGee's bar.",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        },
+        "chinese": {
+          "question": "2023年10月詹姆斯和萨曼莎之间的大事是什么？",
+          "answer": "他们决定住在一起，并在离麦基酒吧不远的地方租了一间公寓。",
+          "evidence": [
+            {
+              "session_id": "session_29",
+              "session_date": "12:37 am on 31 October, 2022",
+              "dia_id": "D29:8",
+              "speaker": "詹姆斯",
+              "text": "我确实有新消息，萨曼莎和我决定搬到一起住了！",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "session_id": "session_29",
+              "session_date": "12:37 am on 31 October, 2022",
+              "dia_id": "D29:10",
+              "speaker": "詹姆斯",
+              "text": "当然，这是我们共同做出的深思熟虑的决定。我们租了一间离McGee's酒吧不远的公寓。",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        }
+      },
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "2023年10月时间锚定（回答声称事件在2022年10月31日，且无2023年记录）"
+        ],
+        "reason": "事件内容正确（同住并在McGee's酒吧附近租房），但日期锚定与金答案的2023年10月不符且以否定形式给出。"
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "Answer matches all gold elements: deciding to live together and renting an apartment near McGee's bar in October 2023."
+      },
+      "base_answer": "相关记忆：（2022年10月31日）詹姆斯和萨曼莎决定搬在一起住，这是一个双方共同深思熟虑的决定；他们在McGee's酒吧附近租了一套公寓。没有记忆涵盖2023年，所以最接近的“大事”是2022年10月的那次。\n\n回答：根据记忆记录，大事是詹姆斯和萨曼莎决定搬在一起住——他们共同做出了这个决定，并在2022年10月底（2022年10月31日）在McGee's酒吧（他们最喜欢去的地方）附近租了一套公寓。记忆中没有关于2023年10月的事件记录。",
+      "graph_answer": "10月詹姆斯和萨曼莎之间的大事是他们决定搬到一起住（同居），并租下了一间靠近McGee's酒吧的公寓。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "5f7bad13-2451-4a4a-ad82-6785ac777590",
+          "content": "James and Samantha decided to move in together, a deliberate mutual decision",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "d1cf4de1-038c-4ad4-a38f-048390b5991e",
+          "content": "On September 3, 2022, while at a theater (Samantha loves drama/theater), James asked Samantha to be his girlfriend and she said yes; he is very happy with her despite the ups and downs of their short relationship",
+          "route": "vector",
+          "session_date": "9:23 pm on 4 September, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "cc6afa9a-0e05-4216-842e-c33bc52e481c",
+          "content": "At the beach on August 9, 2022, James met a beautiful girl named Samantha who gave him her phone number; he planned to call her the next day (around August 11, 2022) to ask her out on a date",
+          "route": "vector",
+          "session_date": "9:16 am on 10 August, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "bf92dbc2-7da1-4206-aa27-323a65d59a27",
+          "content": "James and Samantha also visited McGee's bar, where he discovered she likes lager beer; they found they have a lot in common",
+          "route": "vector",
+          "session_date": "9:23 pm on 4 September, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "a78f1ef2-ce90-469f-9ef7-4e0171d88ef5",
+          "content": "James is taking Samantha to a baseball game on Sunday, September 11, 2022, and invited his friend John to join so he could meet Samantha; John agreed to come",
+          "route": "vector",
+          "session_date": "9:23 pm on 4 September, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "8ed1c32d-aab3-46ab-8f69-6313704b5ba6",
+          "content": "James and Samantha rented an apartment near McGee's bar; proximity to the bar, where they love spending time, was one of their criteria for choosing the apartment",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "aee99d85-c0c2-4b4d-82b7-03e34e5865f3",
+          "content": "James offered to support John's new esports career, saying he can reach out anytime for financial help or advice",
+          "route": "vector",
+          "session_date": "1:45 pm on 6 August, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "da989ae8-ab7a-423d-9ef2-5b3db9cf6083",
+          "content": "James shared a photo of a man and two dogs running in a field",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "e72ed138-1557-43ba-bd84-1ac80a239b31",
+          "content": "Around October 18, 2022, James's apartment had a power outage while he was playing a game, and he lost some progress because he forgot to save; he has since learned to save his game frequently",
+          "route": "vector",
+          "session_date": "7:36 pm on 21 October, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "d6d4ad60-73c3-4fb2-b0a8-eefc3b94463c",
+          "content": "On April 20, 2022, James and John agreed to travel somewhere together next year (2023), and James said he would start looking for countries they could visit",
+          "route": "vector",
+          "session_date": "9:32 pm on 20 April, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "6c8703c5-2f99-4fd1-963b-13a234a12777",
+          "content": "詹姆斯和家人于2022年11月初开始公路旅行，拜访了朋友乔什和马克，玩得非常开心，并一起玩电子游戏",
+          "route": "vector",
+          "session_date": "8:57 pm on 7 November, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "e8ac27fc-5c3c-4105-9986-344dd2da2782",
+          "content": "Around October 19, 2022, James's mother and one of her army comrades visited him and they had a great time; the comrade is still serving in the military, though she moved to a rear-line position long ago",
+          "route": "vector",
+          "session_date": "7:36 pm on 21 October, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "bc556ea3-f7e5-4a02-a19e-8bf89820093e",
+          "content": "James's sister visited him with his dogs around July 21, 2022; they relaxed together at home and went to the seaside where they saw a beautiful sunset, which James photographed and shared",
+          "route": "vector",
+          "session_date": "9:49 am on 22 July, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "010d3e9f-d330-40ea-8f39-9429e1e4988c",
+          "content": "James made his first game and released it to the gaming community around early October 2022; he found it very exciting and deeply rewarding to see players enjoying and interacting with the game world he created",
+          "route": "vector",
+          "session_date": "2:14 pm on 13 October, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "2dada0f8-f23f-4a8a-bd36-a3f2809b72e4",
+          "content": "约翰与合作开发者的线上桌游即将发布试玩版，约翰承诺发布时告诉詹姆斯，詹姆斯表示想第一时间试玩并给出反馈以支持他",
+          "route": "vector",
+          "session_date": "8:57 pm on 7 November, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "5f7bad13-2451-4a4a-ad82-6785ac777590",
+          "content": "James and Samantha decided to move in together, a deliberate mutual decision",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "d1cf4de1-038c-4ad4-a38f-048390b5991e",
+          "content": "On September 3, 2022, while at a theater (Samantha loves drama/theater), James asked Samantha to be his girlfriend and she said yes; he is very happy with her despite the ups and downs of their short relationship",
+          "route": "vector",
+          "session_date": "9:23 pm on 4 September, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "cc6afa9a-0e05-4216-842e-c33bc52e481c",
+          "content": "At the beach on August 9, 2022, James met a beautiful girl named Samantha who gave him her phone number; he planned to call her the next day (around August 11, 2022) to ask her out on a date",
+          "route": "vector",
+          "session_date": "9:16 am on 10 August, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "bf92dbc2-7da1-4206-aa27-323a65d59a27",
+          "content": "James and Samantha also visited McGee's bar, where he discovered she likes lager beer; they found they have a lot in common",
+          "route": "vector",
+          "session_date": "9:23 pm on 4 September, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "a78f1ef2-ce90-469f-9ef7-4e0171d88ef5",
+          "content": "James is taking Samantha to a baseball game on Sunday, September 11, 2022, and invited his friend John to join so he could meet Samantha; John agreed to come",
+          "route": "vector",
+          "session_date": "9:23 pm on 4 September, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "8ed1c32d-aab3-46ab-8f69-6313704b5ba6",
+          "content": "James and Samantha rented an apartment near McGee's bar; proximity to the bar, where they love spending time, was one of their criteria for choosing the apartment",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "51e2dbdb-6f96-401c-b3bd-bc224aceb276",
+          "content": "Around April 6, 2022, while walking his dogs in the neighborhood, James saw a girl he had never seen before and felt love at first sight; he didn't approach her but remembered her appearance and modeled the game character in his project after her",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 8,
+          "id": "aee99d85-c0c2-4b4d-82b7-03e34e5865f3",
+          "content": "James offered to support John's new esports career, saying he can reach out anytime for financial help or advice",
+          "route": "vector",
+          "session_date": "1:45 pm on 6 August, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "da989ae8-ab7a-423d-9ef2-5b3db9cf6083",
+          "content": "James shared a photo of a man and two dogs running in a field",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "cb77f531-d177-479c-8652-c4dc9ffa66f7",
+          "content": "James may invite John to help with parts of his indie game using John's HTML knowledge, and John agreed to collaborate",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "14512aeb-8d11-49af-887c-cb4234c30079",
+          "content": "James made sketches and handwritten notes based on his dream about a medieval castle labyrinth with puzzles and traps",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "e72ed138-1557-43ba-bd84-1ac80a239b31",
+          "content": "Around October 18, 2022, James's apartment had a power outage while he was playing a game, and he lost some progress because he forgot to save; he has since learned to save his game frequently",
+          "route": "vector",
+          "session_date": "7:36 pm on 21 October, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "d6d4ad60-73c3-4fb2-b0a8-eefc3b94463c",
+          "content": "On April 20, 2022, James and John agreed to travel somewhere together next year (2023), and James said he would start looking for countries they could visit",
+          "route": "vector",
+          "session_date": "9:32 pm on 20 April, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+          "content": "James is working on an indie computer game based on a character he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "6c8703c5-2f99-4fd1-963b-13a234a12777",
+          "content": "詹姆斯和家人于2022年11月初开始公路旅行，拜访了朋友乔什和马克，玩得非常开心，并一起玩电子游戏",
+          "route": "vector",
+          "session_date": "8:57 pm on 7 November, 2022"
+        }
+      ],
+      "gained_ids": [
+        "51e2dbdb-6f96-401c-b3bd-bc224aceb276",
+        "cb77f531-d177-479c-8652-c4dc9ffa66f7",
+        "14512aeb-8d11-49af-887c-cb4234c30079",
+        "b5c3830c-0fe3-4b92-90f1-626a6d1b1875"
+      ],
+      "lost_ids": [
+        "e8ac27fc-5c3c-4105-9986-344dd2da2782",
+        "bc556ea3-f7e5-4a02-a19e-8bf89820093e",
+        "010d3e9f-d330-40ea-8f39-9429e1e4988c",
+        "2dada0f8-f23f-4a8a-bd36-a3f2809b72e4"
+      ]
+    },
+    {
+      "stratum": "base_only_exact",
+      "selection_sha256": "0260c5596bafae581dccb660520089def8314a3d88c403a6b5f3555d0662fbd3",
+      "case_id": "locomo_conv-42_qa62",
+      "qa": {
+        "english": {
+          "question": "How many letters has Joanna recieved?",
+          "answer": "Two",
+          "evidence": [
+            {
+              "session_id": "session_14",
+              "session_date": "5:44 pm on 3 June, 2022",
+              "dia_id": "D14:1",
+              "speaker": "Joanna",
+              "text": "Nate, after finishing my screenplay I got a rejection letter from a major company. It really bummed me out.",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "session_id": "session_18",
+              "session_date": "6:12 pm on 14 August, 2022",
+              "dia_id": "D18:5",
+              "speaker": "Joanna",
+              "text": "Yep. Last week, someone wrote me a letter after reading an online blog post I made about a hard moment in my life. Their words touched me; they said my story had brought them comfort. It was awesome to realize my words had that kind of power. It reminded me why I love writing.",
+              "query": "handwritten letter impact writing",
+              "blip_caption": "a photo of a note written to a person on a piece of paper"
+            }
+          ]
+        },
+        "chinese": {
+          "question": "乔安娜收到过多少封信？",
+          "answer": "两封",
+          "evidence": [
+            {
+              "session_id": "session_14",
+              "session_date": "5:44 pm on 3 June, 2022",
+              "dia_id": "D14:1",
+              "speaker": "乔安娜",
+              "text": "内特，我完成剧本后收到了一家大公司的拒信。这真的让我很沮丧。",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "session_id": "session_18",
+              "session_date": "6:12 pm on 14 August, 2022",
+              "dia_id": "D18:5",
+              "speaker": "乔安娜",
+              "text": "有。上周，有人读了我写的一篇关于我人生艰难时刻的博客文章后，给我写了一封信。他们的话感动了我；他们说我的故事给他们带来了安慰。意识到我的文字有这样的力量，感觉太棒了。这让我想起我为什么热爱写作。",
+              "query": "handwritten letter impact writing",
+              "blip_caption": "a photo of a note written to a person on a piece of paper"
+            }
+          ]
+        }
+      },
+      "base_grade": "exact",
+      "graph_grade": "wrong",
+      "base_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "Answer states two letters, matching gold, with correct additional detail."
+      },
+      "graph_judge": {
+        "grade": "wrong",
+        "missing": [
+          "两封"
+        ],
+        "reason": "Answer contradicts gold count (两封) by counting only one rejection letter and misinterpreting brother's notes, never stating 两封."
+      },
+      "base_answer": "乔安娜收到过2封（拒绝）信：一封是2022年6月初一家大公司对她剧本的拒信，另一封是2022年10月一家制作公司对她与电影比赛相关投稿的拒绝信。",
+      "graph_answer": "乔安娜收到过两处信件：一是2022年6月初一家大公司的拒信（1封），二是她哥哥小时候常写给她的可爱便条（多张）。若只算正式信件，则为1封拒信。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "33fca98b-9ec5-42f7-b018-351bb62869c9",
+          "content": "乔安娜 (Joanna) 完成剧本后收到了一家大公司的拒信（约2022年6月初），她感到非常沮丧；拒信是没有具体反馈的通用回复，她不知道为什么没成功，但表示不会让这件事打倒自己",
+          "route": "vector",
+          "session_date": "5:44 pm on 3 June, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "43752673-1fb8-4916-b41a-cb66bd2b68db",
+          "content": "乔安娜 (Joanna) 完成了下一个电影剧本的开头，并采用了一封她哥哥小时候写给她的可爱便条作为开头；哥哥小时候常给她写这些便条，勾起了她甜甜的童年回忆（2022年11月上旬）",
+          "route": "vector",
+          "session_date": "8:10 pm on 7 November, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "b8284451-e220-49b1-a595-b2e6aef140b9",
+          "content": "乔安娜 (Joanna) 在2022年10月底提交了几份剧本，希望尽快收到回复，并预料可能会有几份被拒绝，但她保证不会放弃写作",
+          "route": "vector",
+          "session_date": "8:10 pm on 7 November, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "dbee2181-4b09-4eb7-8c3d-9bc9cc1e6db9",
+          "content": "乔安娜 (Joanna) 表示写作、创意项目和支持她的朋友们帮助她度过了艰难时期；能有理解并欣赏她作品、可以一起讨论并获得反馈的朋友是无价的",
+          "route": "vector",
+          "session_date": "7:49 pm on 20 May, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "92fc290a-06eb-4a11-a695-25555d9b0b34",
+          "content": "乔安娜 (Joanna) 于2022年8月中旬（约8月15日那周）把自己的书分享给写作小组，起初很紧张但得到了很好的反馈，她感到努力正在得到回报",
+          "route": "vector",
+          "session_date": "10:57 am on 22 August, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "6d46cdf7-033f-4263-9f8f-26b0061ba5b0",
+          "content": "乔安娜 (Joanna) 的房间软木板上贴满励志名言、图片和照片，还有一张家人的照片，作为每天激励自己、激发创意和想起家人爱与鼓励的灵感角落",
+          "route": "vector",
+          "session_date": "2:12 pm on 5 June, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "1579bdac-f904-432d-bfb3-28ee999a59fd",
+          "content": "乔安娜 (Joanna) 于2022年6月24日左右将她最近写的一个剧本提交给了一个电影比赛，期待看到其他人的评价",
+          "route": "vector",
+          "session_date": "10:55 am on 24 June, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "709d1d3a-d740-422f-a504-e7d44e17c583",
+          "content": "乔安娜 (Joanna) 于2022年4月下旬加入了一个写作小组，组员们鼓舞人心、真正理解她的写作，她感到有干劲、有支持感，终于有了归属感",
+          "route": "vector",
+          "session_date": "7:44 pm on 21 April, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "59191e78-3b96-4b30-8eb9-c6792dc6e99d",
+          "content": "乔安娜 (Joanna) 于2022年7月开始写一本书，包含探讨失去、救赎和宽恕主题的对白，她从未尝试过出版书籍，这可能成为她的第一次",
+          "route": "vector",
+          "session_date": "2:34 pm on 10 July, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "09555d87-bebc-4da7-9673-b32916106688",
+          "content": "乔安娜 (Joanna) 表示写作和和朋友玩是让她快乐的事，写作帮助她创造充满精彩人物的奇幻世界、表达情感，是她无法想象没有的热情所在",
+          "route": "vector",
+          "session_date": "2:01 pm on 23 January, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "8a91c230-ad37-4f71-9cf1-ac7adc377366",
+          "content": "乔安娜 (Joanna) 于2022年10月初为写作俱乐部的一位女士手工制作了一个书本造型的书签作为礼物；她特别喜欢做手工",
+          "route": "vector",
+          "session_date": "11:15 am on 6 October, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "c2042cb6-8cc0-460f-a480-649e35a8eb3c",
+          "content": "乔安娜 (Joanna) 在2022年2月初继续为自己的第一个电影剧本投递电影节的事感到情绪起伏（如释重负、兴奋、担忧），希望有制片人或导演喜欢它并让它登上大银幕，她为此付出了很大努力",
+          "route": "vector",
+          "session_date": "9:27 am on 7 February, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "c01be0a4-d602-4b5d-9b81-334e3e1fcf90",
+          "content": "在乔安娜电影拍摄期间，有一位演员走过来告诉她她非常喜欢这个剧本，这让乔安娜激动得起了一身鸡皮疙瘩，大大提升了她的信心",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "bef8d665-dcb2-4f84-b8e5-e7465a120044",
+          "content": "乔安娜 (Joanna) 有一个摆满书籍和杂志的书架，是她寻找写作灵感的首选之地，能帮她保持敏锐和动力",
+          "route": "vector",
+          "session_date": "1:43 pm on 24 March, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "86716e19-88fc-433c-85f0-1d31ba086bc1",
+          "content": "截至2022年10月21日前后，乔安娜的写作/剧本作品又被一家制作公司拒绝（与之前投稿的电影比赛相关），她感到受挫但决心不放弃，会继续努力前行",
+          "route": "vector",
+          "session_date": "2:01 pm on 21 October, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "33fca98b-9ec5-42f7-b018-351bb62869c9",
+          "content": "乔安娜 (Joanna) 完成剧本后收到了一家大公司的拒信（约2022年6月初），她感到非常沮丧；拒信是没有具体反馈的通用回复，她不知道为什么没成功，但表示不会让这件事打倒自己",
+          "route": "vector",
+          "session_date": "5:44 pm on 3 June, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "43752673-1fb8-4916-b41a-cb66bd2b68db",
+          "content": "乔安娜 (Joanna) 完成了下一个电影剧本的开头，并采用了一封她哥哥小时候写给她的可爱便条作为开头；哥哥小时候常给她写这些便条，勾起了她甜甜的童年回忆（2022年11月上旬）",
+          "route": "vector",
+          "session_date": "8:10 pm on 7 November, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "b8284451-e220-49b1-a595-b2e6aef140b9",
+          "content": "乔安娜 (Joanna) 在2022年10月底提交了几份剧本，希望尽快收到回复，并预料可能会有几份被拒绝，但她保证不会放弃写作",
+          "route": "vector",
+          "session_date": "8:10 pm on 7 November, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "262ba618-5c54-41fe-9f87-a2784f2c4cbc",
+          "content": "内特 (Nate) 于2022年3月18日分享了宠物乌龟在草地和池塘晒太阳的可爱照片，并表示会继续给乔安娜发乌龟照片，让她不用靠近也能看着它们长大",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 5,
+          "id": "dbee2181-4b09-4eb7-8c3d-9bc9cc1e6db9",
+          "content": "乔安娜 (Joanna) 表示写作、创意项目和支持她的朋友们帮助她度过了艰难时期；能有理解并欣赏她作品、可以一起讨论并获得反馈的朋友是无价的",
+          "route": "vector",
+          "session_date": "7:49 pm on 20 May, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "92fc290a-06eb-4a11-a695-25555d9b0b34",
+          "content": "乔安娜 (Joanna) 于2022年8月中旬（约8月15日那周）把自己的书分享给写作小组，起初很紧张但得到了很好的反馈，她感到努力正在得到回报",
+          "route": "vector",
+          "session_date": "10:57 am on 22 August, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "6d46cdf7-033f-4263-9f8f-26b0061ba5b0",
+          "content": "乔安娜 (Joanna) 的房间软木板上贴满励志名言、图片和照片，还有一张家人的照片，作为每天激励自己、激发创意和想起家人爱与鼓励的灵感角落",
+          "route": "vector",
+          "session_date": "2:12 pm on 5 June, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "1579bdac-f904-432d-bfb3-28ee999a59fd",
+          "content": "乔安娜 (Joanna) 于2022年6月24日左右将她最近写的一个剧本提交给了一个电影比赛，期待看到其他人的评价",
+          "route": "vector",
+          "session_date": "10:55 am on 24 June, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "709d1d3a-d740-422f-a504-e7d44e17c583",
+          "content": "乔安娜 (Joanna) 于2022年4月下旬加入了一个写作小组，组员们鼓舞人心、真正理解她的写作，她感到有干劲、有支持感，终于有了归属感",
+          "route": "vector",
+          "session_date": "7:44 pm on 21 April, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "70910177-19ce-4d8b-ae41-36c832177166",
+          "content": "内特 (Nate) 向乔安娜推荐了一套奇幻小说系列（冒险、魔法和出色的角色），称其为必读之作；乔安娜表示这套书已在她的书单上很久了，打算去读并之后告诉内特感想",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "59191e78-3b96-4b30-8eb9-c6792dc6e99d",
+          "content": "乔安娜 (Joanna) 于2022年7月开始写一本书，包含探讨失去、救赎和宽恕主题的对白，她从未尝试过出版书籍，这可能成为她的第一次",
+          "route": "vector",
+          "session_date": "2:34 pm on 10 July, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "09555d87-bebc-4da7-9673-b32916106688",
+          "content": "乔安娜 (Joanna) 表示写作和和朋友玩是让她快乐的事，写作帮助她创造充满精彩人物的奇幻世界、表达情感，是她无法想象没有的热情所在",
+          "route": "vector",
+          "session_date": "2:01 pm on 23 January, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "2b426e64-2a42-469b-8b41-44fff895acfc",
+          "content": "乔安娜 (Joanna) 在2022年2月下旬等待第一个剧本电影节消息期间开始写新剧本，讲述一个三十岁女人在经历失去后踏上自我发现之旅和公路旅行以治愈成长的故事，这是她自己的故事，灵感来自她的个人经历和自我发现之旅",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "8a91c230-ad37-4f71-9cf1-ac7adc377366",
+          "content": "乔安娜 (Joanna) 于2022年10月初为写作俱乐部的一位女士手工制作了一个书本造型的书签作为礼物；她特别喜欢做手工",
+          "route": "vector",
+          "session_date": "11:15 am on 6 October, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "c2042cb6-8cc0-460f-a480-649e35a8eb3c",
+          "content": "乔安娜 (Joanna) 在2022年2月初继续为自己的第一个电影剧本投递电影节的事感到情绪起伏（如释重负、兴奋、担忧），希望有制片人或导演喜欢它并让它登上大银幕，她为此付出了很大努力",
+          "route": "vector",
+          "session_date": "9:27 am on 7 February, 2022"
+        }
+      ],
+      "gained_ids": [
+        "262ba618-5c54-41fe-9f87-a2784f2c4cbc",
+        "70910177-19ce-4d8b-ae41-36c832177166",
+        "2b426e64-2a42-469b-8b41-44fff895acfc"
+      ],
+      "lost_ids": [
+        "c01be0a4-d602-4b5d-9b81-334e3e1fcf90",
+        "bef8d665-dcb2-4f84-b8e5-e7465a120044",
+        "86716e19-88fc-433c-85f0-1d31ba086bc1"
+      ]
+    },
+    {
+      "stratum": "base_only_exact",
+      "selection_sha256": "08097b18d91662173b8a68a9a28536becaef7697ebff45aa9c5c7eba770feb23",
+      "case_id": "locomo_conv-30_qa69",
+      "qa": {
+        "english": {
+          "question": "What did Jon take a trip to Rome for?",
+          "answer": "To clear his mind",
+          "evidence": [
+            {
+              "session_id": "session_15",
+              "session_date": "10:04 am on 19 June, 2023",
+              "dia_id": "D15:1",
+              "speaker": "Jon",
+              "text": "Hey Gina, hope you're doing great! Still working on my biz. Took a short trip last week to Rome to clear my mind a little.",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        },
+        "chinese": {
+          "question": "乔恩去罗马旅行是为了什么？",
+          "answer": "为了放空心情",
+          "evidence": [
+            {
+              "session_id": "session_15",
+              "session_date": "10:04 am on 19 June, 2023",
+              "dia_id": "D15:1",
+              "speaker": "乔恩",
+              "text": "嘿，吉娜，希望你一切都好！我还在忙我的生意。上周去罗马短途旅行了一下，想放松放松心情。",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        }
+      },
+      "base_grade": "exact",
+      "graph_grade": "partial",
+      "base_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "答案陈述了旅行是为了放松/放空心情，与黄金答案一致，并有额外的正确细节。"
+      },
+      "graph_judge": {
+        "grade": "partial",
+        "missing": [
+          "放空心情（答案说成“放松心情”，且加入了金答案中没有的准备开业细节）"
+        ],
+        "reason": "答案把“放空心情”表述为“放松心情”并附加了金答案之外的目的，属于不够精确。"
+      },
+      "base_answer": "乔恩去罗马是为了在舞蹈工作室开幕前（2023年6月20日开幕）短途旅行放松心情，为工作室开业做准备。",
+      "graph_answer": "为了放松心情，为舞蹈工作室开业做准备。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "1c2323ba-6f0e-4386-aad5-b21632d23c02",
+          "content": "乔恩于2023年6月中旬（开幕前一周，约6月12-16日）去罗马短途旅行放松心情，为舞蹈工作室开业做准备，截至2023年6月19日仍在忙生意和筹备舞蹈工作室",
+          "route": "vector",
+          "session_date": "10:04 am on 19 June, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "f9d8116f-9572-4849-a089-c365ad2cd881",
+          "content": "2023年6月20日左右，乔恩的舞蹈工作室正式开幕前夜，他在开幕前还专程去罗马短途旅行放松心情，开幕之夜定为2023年6月20日",
+          "route": "vector",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "7eeab192-83c1-4d04-a833-bc014270d4d3",
+          "content": "乔恩认为冒险是成功的关键，正是敢于冒险让他离开了朝九晚五的银行员稳定工作，目标是把舞蹈热情变成事业，并坦言这条路不好走但决心成功",
+          "route": "vector",
+          "session_date": "9:32 am on 8 February, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "f51ec223-a73f-4b8a-8184-fe7bdf0c66b8",
+          "content": "乔恩（Jon）于2023年1月28日去了巴黎，觉得很酷；吉娜说一直没机会去巴黎，只去过一次罗马",
+          "route": "vector",
+          "session_date": "2:32 pm on 29 January, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+          "content": "截至2023年2月1日，乔恩仍在寻找场地开设他的舞蹈工作室，虽然过程有些坎坷，但他决心把这件事做成，继续追寻对舞蹈的热情",
+          "route": "vector",
+          "session_date": "12:48 am on 1 February, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "route": "vector",
+          "session_date": "10:43 am on 4 February, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "eb772e3b-1522-4f68-a8ae-1f9fbb11ac0a",
+          "content": "2023年6月21日，乔恩前一天（6月20日）选择去参加社交活动来促成一些事业上的机会，虽然很难但会保持坚定和专注",
+          "route": "vector",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+          "content": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想",
+          "route": "vector",
+          "session_date": "9:38 pm on 16 June, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "c4a339d5-2833-4d97-bf80-8d414c99e18d",
+          "content": "2023年7月，乔恩参加了一次社交活动，见到了一些投资人并获得好建议，现场氛围鼓舞人心；他也在做人际拓展并带来了不少好机会",
+          "route": "vector",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+          "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+          "route": "vector",
+          "session_date": "1:25 pm on 9 July, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "b5e16073-b382-47f6-a293-b194661eaca7",
+          "content": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+          "content": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好",
+          "route": "vector",
+          "session_date": "10:33 am on 9 April, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "a231b871-ee0c-4175-abd4-214872c6bcda",
+          "content": "乔恩表示以前特别害怕别人怎么看自己，但后来明白了自己的快乐才是最重要的；对他来说跳舞是表达自我、寻找快乐的方式，虽然不容易但也是最美好的事",
+          "route": "vector",
+          "session_date": "10:33 am on 9 April, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "61a10e72-a082-4c59-a073-0624d935909a",
+          "content": "截至2023年2月4日，乔恩仍在为舞蹈工作室寻找合适的场地，过程很麻烦但他下定决心找到合适的地方，相信找到后一切都会水到渠成",
+          "route": "vector",
+          "session_date": "10:43 am on 4 February, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "1c2323ba-6f0e-4386-aad5-b21632d23c02",
+          "content": "乔恩于2023年6月中旬（开幕前一周，约6月12-16日）去罗马短途旅行放松心情，为舞蹈工作室开业做准备，截至2023年6月19日仍在忙生意和筹备舞蹈工作室",
+          "route": "vector",
+          "session_date": "10:04 am on 19 June, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "f9d8116f-9572-4849-a089-c365ad2cd881",
+          "content": "2023年6月20日左右，乔恩的舞蹈工作室正式开幕前夜，他在开幕前还专程去罗马短途旅行放松心情，开幕之夜定为2023年6月20日",
+          "route": "vector",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "7eeab192-83c1-4d04-a833-bc014270d4d3",
+          "content": "乔恩认为冒险是成功的关键，正是敢于冒险让他离开了朝九晚五的银行员稳定工作，目标是把舞蹈热情变成事业，并坦言这条路不好走但决心成功",
+          "route": "vector",
+          "session_date": "9:32 am on 8 February, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "9050d972-6347-4473-a97d-ccabe7f6a903",
+          "content": "截至2023年1月29日，乔恩正在为舞蹈工作室寻找理想场地，看了很多不同的地方；他找到一个市中心、交通方便且自然采光很好的候选场地，还需要检查面积和地板质量",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 5,
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "f51ec223-a73f-4b8a-8184-fe7bdf0c66b8",
+          "content": "乔恩（Jon）于2023年1月28日去了巴黎，觉得很酷；吉娜说一直没机会去巴黎，只去过一次罗马",
+          "route": "vector",
+          "session_date": "2:32 pm on 29 January, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+          "content": "截至2023年2月1日，乔恩仍在寻找场地开设他的舞蹈工作室，虽然过程有些坎坷，但他决心把这件事做成，继续追寻对舞蹈的热情",
+          "route": "vector",
+          "session_date": "12:48 am on 1 February, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "route": "vector",
+          "session_date": "10:43 am on 4 February, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "eb772e3b-1522-4f68-a8ae-1f9fbb11ac0a",
+          "content": "2023年6月21日，乔恩前一天（6月20日）选择去参加社交活动来促成一些事业上的机会，虽然很难但会保持坚定和专注",
+          "route": "vector",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+          "content": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想",
+          "route": "vector",
+          "session_date": "9:38 pm on 16 June, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "c4a339d5-2833-4d97-bf80-8d414c99e18d",
+          "content": "2023年7月，乔恩参加了一次社交活动，见到了一些投资人并获得好建议，现场氛围鼓舞人心；他也在做人际拓展并带来了不少好机会",
+          "route": "vector",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+          "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+          "route": "vector",
+          "session_date": "1:25 pm on 9 July, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "e9d432bd-f67f-4a8b-850d-4b3b9bc76b2f",
+          "content": "乔恩（Jon）于2023年5月下旬开始阅读《精益创业》（The Lean Startup），希望为他的舞蹈工作室生意带来启发；该书让他开始思考如何打造专注且高效的企业，并计划根据客户反馈进行调整和改进",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "b5e16073-b382-47f6-a293-b194661eaca7",
+          "content": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+          "content": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好",
+          "route": "vector",
+          "session_date": "10:33 am on 9 April, 2023"
+        }
+      ],
+      "gained_ids": [
+        "9050d972-6347-4473-a97d-ccabe7f6a903",
+        "e9d432bd-f67f-4a8b-850d-4b3b9bc76b2f"
+      ],
+      "lost_ids": [
+        "a231b871-ee0c-4175-abd4-214872c6bcda",
+        "61a10e72-a082-4c59-a073-0624d935909a"
+      ]
+    },
+    {
+      "stratum": "base_only_exact",
+      "selection_sha256": "169044a4d0bbd3d19fce94c800318e7e10c4d5c71d9e15e8c1dd6a715e79a101",
+      "case_id": "locomo_conv-43_qa129",
+      "qa": {
+        "english": {
+          "question": "How will John share the honey garlic chicken recipe with the other person?",
+          "answer": "write it down and mail it",
+          "evidence": [
+            {
+              "session_id": "session_15",
+              "session_date": "5:51 pm on 21 October, 2023",
+              "dia_id": "D15:34",
+              "speaker": "John",
+              "text": "Sure thing! I can write it down for you and mail it to you.",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        },
+        "chinese": {
+          "question": "约翰打算如何把蜂蜜蒜香鸡的食谱分享给对方？",
+          "answer": "写下来然后寄过去",
+          "evidence": [
+            {
+              "session_id": "session_15",
+              "session_date": "5:51 pm on 21 October, 2023",
+              "dia_id": "D15:34",
+              "speaker": "约翰",
+              "text": "没问题！我可以把它写下来寄给你。",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        }
+      },
+      "base_grade": "exact",
+      "graph_grade": "partial",
+      "base_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "回答明确包含'写下并寄给'，与gold'写下来然后寄过去'一致。"
+      },
+      "graph_judge": {
+        "grade": "partial",
+        "missing": [],
+        "reason": "{\"grade\": \"partial\", \"missing\": [\"寄（邮寄）—— “发”不如“寄”具体\"], \"reason\": \"答案涵盖写下并发送，但用“发”而非更精确的“寄（邮寄）”。}"
+      },
+      "base_answer": "相关记忆：约翰最喜欢的菜之一是蜂蜜蒜香鸡配烤蔬菜，并答应把食谱写给蒂姆。\n\n回答：约翰答应把蜂蜜蒜香鸡的食谱写给（写下并寄给）蒂姆。",
+      "graph_answer": "约翰答应把食谱写下来（写成书面食谱）发给蒂姆。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "e9fed4c1-5852-4827-a574-1951e48e4233",
+          "content": "烹饪对约翰来说是一种疗愈，是离开球场后发挥创造力、尝试不同口味的放松方式；他最喜欢的菜之一是蜂蜜蒜香鸡配烤蔬菜，并答应把食谱写给蒂姆",
+          "route": "vector",
+          "session_date": "5:51 pm on 21 October, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "1847372a-3c20-4c79-abf2-8a971c927ba9",
+          "content": "约翰（John）提出等他的赛季结束后可能顺路去爱尔兰看蒂姆，并同意如果去的话会告知蒂姆",
+          "route": "vector",
+          "session_date": "5:24 pm on 7 January, 2024"
+        },
+        {
+          "rank": 3,
+          "id": "ea782de7-e976-4e36-9c88-ed2033285477",
+          "content": "约翰（John）认为激励队友的关键是：关心队友、庆祝他们的成就、提供建设性反馈、提醒他们更大的目标，并营造积极氛围、赛前打气，核心是互相支持和鼓励",
+          "route": "vector",
+          "session_date": "5:34 pm on 6 December, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "074401d8-fa72-451a-8ea9-3b4874fdf883",
+          "content": "约翰有一群无论如何都支持他的朋友，家人也总在他身边，与家人聚会带给他极大的快乐",
+          "route": "vector",
+          "session_date": "5:51 pm on 21 October, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "9d633dbb-fa93-4a30-a91d-818e75792d23",
+          "content": "约翰在意大利旅行时买了一本书，这本书给了他不少烹饪灵感",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 6,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "content": "约翰喜欢和别人聊他的球鞋收藏，并分享了一张球鞋摆成圆形的照片",
+          "route": "vector",
+          "session_date": "7:48 pm on 21 May, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+          "content": "约翰在白板上写激励性格言和策略来帮助自己在艰苦训练中保持专注和动力，桌上还放着一块提醒自己相信能力的牌匾，实物提醒帮助他保持动力",
+          "route": "vector",
+          "session_date": "5:51 pm on 21 October, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "c035e289-5b71-4f39-9a4b-ad883547445b",
+          "content": "约翰的家人也经常聚在一起；他分享了一棵挂满彩灯和装饰品的圣诞树照片（2022年圣诞）",
+          "route": "vector",
+          "session_date": "4:29 pm on 21 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+          "content": "约翰（John）和安东尼参加过一个慈善活动，在那里遇到了激烈的《哈利·波特》知识竞赛，他们表现不错但奖品被一位超级书迷赢得；约翰分享了一张签名的哈利·波特书籍照片",
+          "route": "vector",
+          "session_date": "4:17 pm on 2 August, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+          "content": "约翰（John）经常在日出时进行晨练投篮，并分享了一张日落时分篮球架的照片，他说这张照片提醒他这段旅程可以很精彩",
+          "route": "vector",
+          "session_date": "3:37 pm on 16 December, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "895e6428-d669-4a07-95df-6e90ad3ead00",
+          "content": "约翰（John）于2023年12月26日当周开始举办研讨会，帮助人们解决体育和市场营销方面的问题，参加者热情积极，研讨会进展非常顺利，他很高兴能分享自己的知识",
+          "route": "vector",
+          "session_date": "3:35 pm on 26 December, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "cd8c7b44-179c-4994-ad8c-e0218a58aab5",
+          "content": "约翰（John）认为身边充满激情的队友形成紧密纽带，大家互相激励做到最好，就像拥有第二个家庭",
+          "route": "vector",
+          "session_date": "4:21 pm on 16 July, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "10d61023-a36a-4523-af05-d739f121408f",
+          "content": "约翰希望利用自己的篮球平台带来积极改变并激励他人，甚至可能成立一个基金会做慈善，希望留下有意义的遗产",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "137b900b-84a9-4965-9f46-f0b67d388dcf",
+          "content": "约翰的首要篮球目标是赢得总冠军，同时也想在球场之外有所作为，通过慈善或激励他人回馈",
+          "route": "vector",
+          "session_date": "1:08 pm on 11 August, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "5de5b01a-0864-4d82-8501-26d203c40192",
+          "content": "约翰分享了他家乡附近一片阳光穿过树木的森林照片，说那里非常宁静，两人一致认为大自然能净化心灵、让人平静",
+          "route": "vector",
+          "session_date": "9:52 am on 1 December, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "e9fed4c1-5852-4827-a574-1951e48e4233",
+          "content": "烹饪对约翰来说是一种疗愈，是离开球场后发挥创造力、尝试不同口味的放松方式；他最喜欢的菜之一是蜂蜜蒜香鸡配烤蔬菜，并答应把食谱写给蒂姆",
+          "route": "vector",
+          "session_date": "5:51 pm on 21 October, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "1847372a-3c20-4c79-abf2-8a971c927ba9",
+          "content": "约翰（John）提出等他的赛季结束后可能顺路去爱尔兰看蒂姆，并同意如果去的话会告知蒂姆",
+          "route": "vector",
+          "session_date": "5:24 pm on 7 January, 2024"
+        },
+        {
+          "rank": 3,
+          "id": "ea782de7-e976-4e36-9c88-ed2033285477",
+          "content": "约翰（John）认为激励队友的关键是：关心队友、庆祝他们的成就、提供建设性反馈、提醒他们更大的目标，并营造积极氛围、赛前打气，核心是互相支持和鼓励",
+          "route": "vector",
+          "session_date": "5:34 pm on 6 December, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "074401d8-fa72-451a-8ea9-3b4874fdf883",
+          "content": "约翰有一群无论如何都支持他的朋友，家人也总在他身边，与家人聚会带给他极大的快乐",
+          "route": "vector",
+          "session_date": "5:51 pm on 21 October, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "9d633dbb-fa93-4a30-a91d-818e75792d23",
+          "content": "约翰在意大利旅行时买了一本书，这本书给了他不少烹饪灵感",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 6,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "content": "约翰喜欢和别人聊他的球鞋收藏，并分享了一张球鞋摆成圆形的照片",
+          "route": "vector",
+          "session_date": "7:48 pm on 21 May, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+          "content": "约翰在白板上写激励性格言和策略来帮助自己在艰苦训练中保持专注和动力，桌上还放着一块提醒自己相信能力的牌匾，实物提醒帮助他保持动力",
+          "route": "vector",
+          "session_date": "5:51 pm on 21 October, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "c035e289-5b71-4f39-9a4b-ad883547445b",
+          "content": "约翰的家人也经常聚在一起；他分享了一棵挂满彩灯和装饰品的圣诞树照片（2022年圣诞）",
+          "route": "vector",
+          "session_date": "4:29 pm on 21 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "eda0952c-ee7c-4be4-b342-5e8e52038810",
+          "content": "约翰喜欢探索新城市，曾去纽约市旅行，觉得那里走到哪里都有新鲜刺激的东西，特别喜欢探索城市和品尝各家餐厅的美食，并强烈推荐蒂姆去",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 10,
+          "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+          "content": "约翰（John）和安东尼参加过一个慈善活动，在那里遇到了激烈的《哈利·波特》知识竞赛，他们表现不错但奖品被一位超级书迷赢得；约翰分享了一张签名的哈利·波特书籍照片",
+          "route": "vector",
+          "session_date": "4:17 pm on 2 August, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+          "content": "约翰（John）经常在日出时进行晨练投篮，并分享了一张日落时分篮球架的照片，他说这张照片提醒他这段旅程可以很精彩",
+          "route": "vector",
+          "session_date": "3:37 pm on 16 December, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "895e6428-d669-4a07-95df-6e90ad3ead00",
+          "content": "约翰（John）于2023年12月26日当周开始举办研讨会，帮助人们解决体育和市场营销方面的问题，参加者热情积极，研讨会进展非常顺利，他很高兴能分享自己的知识",
+          "route": "vector",
+          "session_date": "3:35 pm on 26 December, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "cd8c7b44-179c-4994-ad8c-e0218a58aab5",
+          "content": "约翰（John）认为身边充满激情的队友形成紧密纽带，大家互相激励做到最好，就像拥有第二个家庭",
+          "route": "vector",
+          "session_date": "4:21 pm on 16 July, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "10d61023-a36a-4523-af05-d739f121408f",
+          "content": "约翰希望利用自己的篮球平台带来积极改变并激励他人，甚至可能成立一个基金会做慈善，希望留下有意义的遗产",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "137b900b-84a9-4965-9f46-f0b67d388dcf",
+          "content": "约翰的首要篮球目标是赢得总冠军，同时也想在球场之外有所作为，通过慈善或激励他人回馈",
+          "route": "vector",
+          "session_date": "1:08 pm on 11 August, 2023"
+        }
+      ],
+      "gained_ids": [
+        "eda0952c-ee7c-4be4-b342-5e8e52038810"
+      ],
+      "lost_ids": [
+        "5de5b01a-0864-4d82-8501-26d203c40192"
+      ]
+    },
+    {
+      "stratum": "same_exact_status",
+      "selection_sha256": "001408b95380a7ff9a12841d01f910123f19d3ad52bbecf946eb8103986f08f2",
+      "case_id": "locomo_conv-43_qa64",
+      "qa": {
+        "english": {
+          "question": "Which month was John in Italy?",
+          "answer": "December, 2023",
+          "evidence": [
+            {
+              "session_id": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "dia_id": "D27:2",
+              "speaker": "John",
+              "text": "Hey Tim! Cool to hear about your globetrotting group! Must be great connecting with other traveling buffs. By the way, have you been to Italy? I had a blast there last month.",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        },
+        "chinese": {
+          "question": "约翰是哪个月在意大利的？",
+          "answer": "2023年12月",
+          "evidence": [
+            {
+              "session_id": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "dia_id": "D27:2",
+              "speaker": "约翰",
+              "text": "嘿蒂姆！很高兴听说你的环球旅行团！能和其他旅行爱好者交流一定很棒。对了，你去过意大利吗？我上个月在那里玩得特别开心。",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        }
+      },
+      "base_grade": "exact",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "Answer matches the gold month and year exactly."
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "Answer states December 2023, matching the gold month at the same granularity; extra details are correct additions."
+      },
+      "base_answer": "2023年12月。",
+      "graph_answer": "2023年12月（约翰于2023年12月去意大利旅行，觉得那里的美食、历史和建筑都令人惊叹，并买了一本烹饪灵感书）。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "e08da5a1-8638-4041-87b5-2156790895b1",
+          "content": "约翰（John）于2023年12月去意大利旅行，玩得非常开心，觉得那里的美食、历史和建筑都令人惊叹",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 2,
+          "id": "9c107db7-9c00-44ba-8d9f-392f176bc458",
+          "content": "约翰会一点德语，并刚开始学西班牙语，认为西班牙语很有用、能带来很多个人和职业机会；他还提到意大利之行（上个月，约2023年11-12月）令人惊叹，美食、历史和建筑都很棒，并在那里买了一本给他烹饪灵感的书",
+          "route": "vector",
+          "session_date": "5:24 pm on 7 January, 2024"
+        },
+        {
+          "rank": 3,
+          "id": "08e2ae89-965a-4668-a290-dd160b20d60e",
+          "content": "约翰和妻子于2023年11月初出发去欧洲短期度假，约翰向蒂姆询问推荐；蒂姆推荐他们去参观欧洲的城堡",
+          "route": "vector",
+          "session_date": "11:41 am on 6 November, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "56971514-cd9d-4ae0-94bb-3518062e867e",
+          "content": "约翰（John）和妻子于2023年11月初在欧洲沿海岸线自驾游，沿途风景壮观，他们玩得很开心、增进了感情并留下了美好回忆，约翰形容这是平常生活中一个美好的改变",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "58a3cd7e-d419-4309-8fb1-2982445f1dcc",
+          "content": "约翰于2023年9月下旬（对话日期2023年10月2日的'上周'）和女朋友举办了婚礼，他说这是美妙而感人的一天，从未感受过这么多的爱与幸福",
+          "route": "vector",
+          "session_date": "3:00 pm on 2 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "da72faaf-c28a-4e08-9624-460f88971420",
+          "content": "约翰（John）旅行归来后于2023年8月15日与队友们重聚，队友们很想念他，气氛热烈，他感到非常温暖，为能成为团队一员感到幸运",
+          "route": "vector",
+          "session_date": "7:54 pm on 17 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "60a9e230-be64-4d2f-8a42-81943bd7c05a",
+          "content": "约翰于2023年8月中旬回了趟家，与家人和老朋友们聚会，一起开心地聊童年的往事，怀念美好的旧时光",
+          "route": "vector",
+          "session_date": "6:59 pm on 26 August, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "1bb299a3-5fd4-420d-9472-975600a158fe",
+          "content": "约翰（John）在2023年12月中旬仍在从不久前的伤病中恢复，因伤错过了一些比赛、没能帮到队伍，他每天都做物理治疗康复练习并尽力保持活动",
+          "route": "vector",
+          "session_date": "3:37 pm on 16 December, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "94ed36ca-69d9-432b-93f9-2ea02ad53d71",
+          "content": "约翰（John）于2023年12月中旬为户外装备代言拍摄宣传照，在一片美丽的森林中进行，摄影师拍出了超棒的照片；他分享了在田野中跳跃的照片",
+          "route": "vector",
+          "session_date": "10:04 am on 19 December, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "1edf4fdb-bb14-48f4-a471-273d18237d64",
+          "content": "约翰的球队赛季揭幕战在2023年5月底（对话日期的一周后），他的目标是提高投篮命中率，一直在为此刻苦训练",
+          "route": "vector",
+          "session_date": "7:48 pm on 21 May, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "8894f1be-fd7e-4ea4-92eb-05c31504e0fe",
+          "content": "约翰于2023年9月中旬和几位新队友去了一家本地餐厅聚餐，大家因对篮球的热爱建立了联系，约翰觉得他们是很好的朋友，一起玩得很开心",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "946c68de-6095-4d1d-beaf-86c859b9d41e",
+          "content": "约翰（John）于2023年11月中旬脚踝受伤缠着绷带，医生说伤得不太严重，但他因无法上场比赛而沮丧，仍保持乐观",
+          "route": "vector",
+          "session_date": "3:59 pm on 16 November, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "1e57dad3-62d8-48e6-b509-ffdda3c61894",
+          "content": "约翰（John）和妻子为庆祝康复进展，在2023年12月中旬与亲朋好友办了一次小型聚会，大家玩得特别开心，约翰感谢朋友蒂姆的支持和鼓励，并表示会继续努力、保持积极心态",
+          "route": "vector",
+          "session_date": "3:37 pm on 16 December, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+          "content": "约翰在2023年6月中旬刚打完一场篮球比赛并分享了比赛现场照片，他表示能在场上做热爱的事情感觉真好，每次上场都全力以赴",
+          "route": "vector",
+          "session_date": "5:08 pm on 15 June, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "c82ea25c-6562-4e66-95b6-714dad968f47",
+          "content": "约翰于2023年8月11日前后去了芝加哥旅行，觉得那里充满活力、当地人非常友好，喜欢体验不同文化和结识新朋友",
+          "route": "vector",
+          "session_date": "1:08 pm on 11 August, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "e08da5a1-8638-4041-87b5-2156790895b1",
+          "content": "约翰（John）于2023年12月去意大利旅行，玩得非常开心，觉得那里的美食、历史和建筑都令人惊叹",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 2,
+          "id": "9c107db7-9c00-44ba-8d9f-392f176bc458",
+          "content": "约翰会一点德语，并刚开始学西班牙语，认为西班牙语很有用、能带来很多个人和职业机会；他还提到意大利之行（上个月，约2023年11-12月）令人惊叹，美食、历史和建筑都很棒，并在那里买了一本给他烹饪灵感的书",
+          "route": "vector",
+          "session_date": "5:24 pm on 7 January, 2024"
+        },
+        {
+          "rank": 3,
+          "id": "08e2ae89-965a-4668-a290-dd160b20d60e",
+          "content": "约翰和妻子于2023年11月初出发去欧洲短期度假，约翰向蒂姆询问推荐；蒂姆推荐他们去参观欧洲的城堡",
+          "route": "vector",
+          "session_date": "11:41 am on 6 November, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "56971514-cd9d-4ae0-94bb-3518062e867e",
+          "content": "约翰（John）和妻子于2023年11月初在欧洲沿海岸线自驾游，沿途风景壮观，他们玩得很开心、增进了感情并留下了美好回忆，约翰形容这是平常生活中一个美好的改变",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "58a3cd7e-d419-4309-8fb1-2982445f1dcc",
+          "content": "约翰于2023年9月下旬（对话日期2023年10月2日的'上周'）和女朋友举办了婚礼，他说这是美妙而感人的一天，从未感受过这么多的爱与幸福",
+          "route": "vector",
+          "session_date": "3:00 pm on 2 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "da72faaf-c28a-4e08-9624-460f88971420",
+          "content": "约翰（John）旅行归来后于2023年8月15日与队友们重聚，队友们很想念他，气氛热烈，他感到非常温暖，为能成为团队一员感到幸运",
+          "route": "vector",
+          "session_date": "7:54 pm on 17 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "60a9e230-be64-4d2f-8a42-81943bd7c05a",
+          "content": "约翰于2023年8月中旬回了趟家，与家人和老朋友们聚会，一起开心地聊童年的往事，怀念美好的旧时光",
+          "route": "vector",
+          "session_date": "6:59 pm on 26 August, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+          "content": "约翰和新队友计划在2023年10月进行一次团队旅行，探索一座新城市，目的地尚未确定；蒂姆建议去苏格兰爱丁堡，称其为哈利·波特诞生地，有魔法氛围和出色的历史建筑",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 9,
+          "id": "1bb299a3-5fd4-420d-9472-975600a158fe",
+          "content": "约翰（John）在2023年12月中旬仍在从不久前的伤病中恢复，因伤错过了一些比赛、没能帮到队伍，他每天都做物理治疗康复练习并尽力保持活动",
+          "route": "vector",
+          "session_date": "3:37 pm on 16 December, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "94ed36ca-69d9-432b-93f9-2ea02ad53d71",
+          "content": "约翰（John）于2023年12月中旬为户外装备代言拍摄宣传照，在一片美丽的森林中进行，摄影师拍出了超棒的照片；他分享了在田野中跳跃的照片",
+          "route": "vector",
+          "session_date": "10:04 am on 19 December, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "1edf4fdb-bb14-48f4-a471-273d18237d64",
+          "content": "约翰的球队赛季揭幕战在2023年5月底（对话日期的一周后），他的目标是提高投篮命中率，一直在为此刻苦训练",
+          "route": "vector",
+          "session_date": "7:48 pm on 21 May, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "8894f1be-fd7e-4ea4-92eb-05c31504e0fe",
+          "content": "约翰于2023年9月中旬和几位新队友去了一家本地餐厅聚餐，大家因对篮球的热爱建立了联系，约翰觉得他们是很好的朋友，一起玩得很开心",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "946c68de-6095-4d1d-beaf-86c859b9d41e",
+          "content": "约翰（John）于2023年11月中旬脚踝受伤缠着绷带，医生说伤得不太严重，但他因无法上场比赛而沮丧，仍保持乐观",
+          "route": "vector",
+          "session_date": "3:59 pm on 16 November, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "1e57dad3-62d8-48e6-b509-ffdda3c61894",
+          "content": "约翰（John）和妻子为庆祝康复进展，在2023年12月中旬与亲朋好友办了一次小型聚会，大家玩得特别开心，约翰感谢朋友蒂姆的支持和鼓励，并表示会继续努力、保持积极心态",
+          "route": "vector",
+          "session_date": "3:37 pm on 16 December, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "050d6d54-3907-4ebf-aee5-59f15d8cbf0d",
+          "content": "约翰（John）于2023年6月开始探索代言机会，目前正在考虑耐克（Nike）和安德玛（Under Armour）等运动品牌，也愿意探索符合他价值观和兴趣的其他品牌，他感到兴奋且有成就感",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "gained_ids": [
+        "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+        "050d6d54-3907-4ebf-aee5-59f15d8cbf0d"
+      ],
+      "lost_ids": [
+        "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+        "c82ea25c-6562-4e66-95b6-714dad968f47"
+      ]
+    },
+    {
+      "stratum": "same_exact_status",
+      "selection_sha256": "0087f99ec16763f7c8bc624c8128774915a506c7498d1adca31a859298bc7def",
+      "case_id": "locomo_conv-30_qa67",
+      "qa": {
+        "english": {
+          "question": "How does Jon use the clipboard with a notepad attached to it?",
+          "answer": "To set goals, track achievements, and find areas for improvement",
+          "evidence": [
+            {
+              "session_id": "session_13",
+              "session_date": "8:29 pm on 13 June, 2023",
+              "dia_id": "D13:11",
+              "speaker": "Jon",
+              "text": "I'm using it to stay organized and motivated. It sets goals, tracks my achievements and helps me find areas to improve.",
+              "query": null,
+              "blip_caption": "a photo of a notebook with a calendar on it"
+            }
+          ]
+        },
+        "chinese": {
+          "question": "乔恩如何使用带记事本的写字板？",
+          "answer": "用于设定目标、追踪成就并找出需要改进的地方",
+          "evidence": [
+            {
+              "session_id": "session_13",
+              "session_date": "8:29 pm on 13 June, 2023",
+              "dia_id": "D13:11",
+              "speaker": "乔恩",
+              "text": "我用它来保持条理和积极性。它会设定目标、记录我的成就，并帮助我找到需要改进的地方。",
+              "query": null,
+              "blip_caption": "a photo of a notebook with a calendar on it"
+            }
+          ]
+        }
+      },
+      "base_grade": "exact",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "回答明确包含了所有要素——设定目标、追踪/记录成就并找出需要改进的地方，并附带了正确的补充细节。"
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "回答明确包含设定目标、记录/追踪成就并找出需要改进的地方，与金答案完全一致，额外细节正确。"
+      },
+      "base_answer": "乔恩结合白板（写字板）和笔记本来保持条理和动力：白板上他记录生意好点子、想法、日期和里程碑，将目标可视化并用不同颜色标记编码成就以追踪进度；笔记本和日历则用来设定目标、记录成就、找出需要改进的地方，同时保持积极性和条理。",
+      "graph_answer": "相关记忆：2023年5月27日白板记忆；2023年6月13日白板颜色编码记忆；2023年6月13日笔记本/日历记忆；2023年6月21日写下计划/目标记忆。\n\n**回答：** 乔恩用白板（写字板）记录舞蹈工作室生意的好点子、想法、日期和里程碑，帮助他直观地看到进展并保持有条不紊；他还用不同颜色对成就进行编码，方便追踪进度、保持动力和专注。配合笔记本和日历系统，他设定目标、记录成就，并找出需要改进的地方；后来（2023年6月21日）他还把所有的计划和目标写在纸上，认为这样能帮助他保持动力、专注于该做的事情。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "e792d3ed-61b3-4e90-81c4-98b1febc9d11",
+          "content": "乔恩使用一块白板记录舞蹈工作室生意的好点子、想法、日期和里程碑，帮助他直观地看到进展并保持有条不紊（2023年5月下旬）",
+          "route": "vector",
+          "session_date": "7:18 pm on 27 May, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "c1085191-fd42-4fe5-9654-915052a791d9",
+          "content": "乔恩还用白板来保持正轨、将目标可视化并标记成功；他用不同颜色对成就进行编码，方便追踪进度并保持动力和专注（2023年6月）",
+          "route": "vector",
+          "session_date": "8:29 pm on 13 June, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "370b3797-a00a-4c2c-ac19-05be3900e65a",
+          "content": "乔恩用笔记本和日历系统来保持条理和积极性：设定目标、记录成就，并找出需要改进的地方（2023年6月）",
+          "route": "vector",
+          "session_date": "8:29 pm on 13 June, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "2bf90403-4875-4381-a465-d400520cf9e2",
+          "content": "2023年6月21日，乔恩把所有的计划和目标写下来，认为看到目标写在纸上能帮助他保持动力、专注于该做的事情",
+          "route": "vector",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+          "content": "吉娜鼓励乔恩在创业遇到困难时坚持下去、继续努力、不要放弃，并肯定他把计划和目标写下来是掌握进步图景的关键做法",
+          "route": "vector",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "058faec8-92ee-4612-88b6-c57e735f035a",
+          "content": "吉娜告诉乔恩保持自信和动力的方法：提醒自己已取得的成功和进步、想着大目标和做这件事的初衷（因为热爱）、依靠支持自己的人、跳舞解压",
+          "route": "vector",
+          "session_date": "11:24 am on 25 April, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+          "content": "截至2023年7月21日，乔恩正在完善商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室",
+          "route": "vector",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "a231b871-ee0c-4175-abd4-214872c6bcda",
+          "content": "乔恩表示以前特别害怕别人怎么看自己，但后来明白了自己的快乐才是最重要的；对他来说跳舞是表达自我、寻找快乐的方式，虽然不容易但也是最美好的事",
+          "route": "vector",
+          "session_date": "10:33 am on 9 April, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "4e10a3bf-0433-4886-a2e4-2fe4bf2c913e",
+          "content": "乔恩于2023年7月9日开始学习各种营销和数据分析工具来推动舞蹈工作室事业发展，虽不容易但乐于接受挑战并坚信会成功",
+          "route": "vector",
+          "session_date": "1:25 pm on 9 July, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "6728b9b7-05fb-43df-9a44-5099a49b8f17",
+          "content": "截至2023年5月下旬，乔恩正在完成舞蹈工作室的商业计划书并寻找投资人；找投资人的过程挺艰难，但他保持乐观，表示学到了很多，对项目的热情和对成功的信念推动着他前进",
+          "route": "vector",
+          "session_date": "7:18 pm on 27 May, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "e9d432bd-f67f-4a8b-850d-4b3b9bc76b2f",
+          "content": "乔恩（Jon）于2023年5月下旬开始阅读《精益创业》（The Lean Startup），希望为他的舞蹈工作室生意带来启发；该书让他开始思考如何打造专注且高效的企业，并计划根据客户反馈进行调整和改进",
+          "route": "vector",
+          "session_date": "7:18 pm on 27 May, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "9745b5d0-a567-4502-a32f-9b2b5e8613be",
+          "content": "吉娜做了一个视频演示，教大家如何搭配她的时尚单品，并答应稍后把视频发给乔恩（2023年6月）",
+          "route": "vector",
+          "session_date": "8:29 pm on 13 June, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+          "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+          "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+          "route": "vector",
+          "session_date": "1:25 pm on 9 July, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "e792d3ed-61b3-4e90-81c4-98b1febc9d11",
+          "content": "乔恩使用一块白板记录舞蹈工作室生意的好点子、想法、日期和里程碑，帮助他直观地看到进展并保持有条不紊（2023年5月下旬）",
+          "route": "vector",
+          "session_date": "7:18 pm on 27 May, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "c1085191-fd42-4fe5-9654-915052a791d9",
+          "content": "乔恩还用白板来保持正轨、将目标可视化并标记成功；他用不同颜色对成就进行编码，方便追踪进度并保持动力和专注（2023年6月）",
+          "route": "vector",
+          "session_date": "8:29 pm on 13 June, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "370b3797-a00a-4c2c-ac19-05be3900e65a",
+          "content": "乔恩用笔记本和日历系统来保持条理和积极性：设定目标、记录成就，并找出需要改进的地方（2023年6月）",
+          "route": "vector",
+          "session_date": "8:29 pm on 13 June, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "2bf90403-4875-4381-a465-d400520cf9e2",
+          "content": "2023年6月21日，乔恩把所有的计划和目标写下来，认为看到目标写在纸上能帮助他保持动力、专注于该做的事情",
+          "route": "vector",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+          "content": "吉娜鼓励乔恩在创业遇到困难时坚持下去、继续努力、不要放弃，并肯定他把计划和目标写下来是掌握进步图景的关键做法",
+          "route": "vector",
+          "session_date": "2:15 pm on 21 June, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "058faec8-92ee-4612-88b6-c57e735f035a",
+          "content": "吉娜告诉乔恩保持自信和动力的方法：提醒自己已取得的成功和进步、想着大目标和做这件事的初衷（因为热爱）、依靠支持自己的人、跳舞解压",
+          "route": "vector",
+          "session_date": "11:24 am on 25 April, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+          "content": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 8,
+          "id": "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+          "content": "截至2023年7月21日，乔恩正在完善商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室",
+          "route": "vector",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "a231b871-ee0c-4175-abd4-214872c6bcda",
+          "content": "乔恩表示以前特别害怕别人怎么看自己，但后来明白了自己的快乐才是最重要的；对他来说跳舞是表达自我、寻找快乐的方式，虽然不容易但也是最美好的事",
+          "route": "vector",
+          "session_date": "10:33 am on 9 April, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "4e10a3bf-0433-4886-a2e4-2fe4bf2c913e",
+          "content": "乔恩于2023年7月9日开始学习各种营销和数据分析工具来推动舞蹈工作室事业发展，虽不容易但乐于接受挑战并坚信会成功",
+          "route": "vector",
+          "session_date": "1:25 pm on 9 July, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "6728b9b7-05fb-43df-9a44-5099a49b8f17",
+          "content": "截至2023年5月下旬，乔恩正在完成舞蹈工作室的商业计划书并寻找投资人；找投资人的过程挺艰难，但他保持乐观，表示学到了很多，对项目的热情和对成功的信念推动着他前进",
+          "route": "vector",
+          "session_date": "7:18 pm on 27 May, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "e9d432bd-f67f-4a8b-850d-4b3b9bc76b2f",
+          "content": "乔恩（Jon）于2023年5月下旬开始阅读《精益创业》（The Lean Startup），希望为他的舞蹈工作室生意带来启发；该书让他开始思考如何打造专注且高效的企业，并计划根据客户反馈进行调整和改进",
+          "route": "vector",
+          "session_date": "7:18 pm on 27 May, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "9745b5d0-a567-4502-a32f-9b2b5e8613be",
+          "content": "吉娜做了一个视频演示，教大家如何搭配她的时尚单品，并答应稍后把视频发给乔恩（2023年6月）",
+          "route": "vector",
+          "session_date": "8:29 pm on 13 June, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+          "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        }
+      ],
+      "gained_ids": [
+        "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43"
+      ],
+      "lost_ids": [
+        "fd3c2739-7969-4d5a-a590-b7ce9809e178"
+      ]
+    },
+    {
+      "stratum": "same_exact_status",
+      "selection_sha256": "00939215854c8b9ae6d621eef8e28c430148b7c4d9fd83a84507576993aa2efb",
+      "case_id": "locomo_conv-42_qa190",
+      "qa": {
+        "english": {
+          "question": "What new content is Nate creating for YouTube?",
+          "answer": "Gaming videos",
+          "evidence": [
+            {
+              "session_id": "session_28",
+              "session_date": "5:54 pm on 9 November, 2022",
+              "dia_id": "D28:13",
+              "speaker": "Nate",
+              "text": "Yeah actually - creating gaming content for YouTube. It's a cool way to entertain folks and satisfy my video game cravings at the same time when there aren't any tourneys going on.",
+              "query": "microphone headphones desk",
+              "blip_caption": "a photo of a desk with a computer, headphones, and a microphone"
+            }
+          ]
+        },
+        "chinese": {
+          "question": "内特在为YouTube创作什么新内容？",
+          "answer": "游戏视频",
+          "evidence": [
+            {
+              "session_id": "session_28",
+              "session_date": "5:54 pm on 9 November, 2022",
+              "dia_id": "D28:13",
+              "speaker": "内特",
+              "text": "还真有——为YouTube制作游戏内容。这是个很酷的方式，在没有锦标赛的时候，既能娱乐大家，又能满足我对电子游戏的热爱。",
+              "query": "microphone headphones desk",
+              "blip_caption": "a photo of a desk with a computer, headphones, and a microphone"
+            }
+          ]
+        }
+      },
+      "base_grade": "exact",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "The answer states Nate is creating YouTube gaming content, matching the gold '游戏视频' with correct extra detail."
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "答案正确说明内特在YouTube创作游戏内容，且包含额外正确细节，与金的“游戏视频”精度一致。"
+      },
+      "base_answer": "内特在2022年11月开始制作YouTube游戏内容——分享他对游戏的热爱、交流游戏体验，灵感来自他喜爱的游戏视频（乔安娜还建议他发布前先研究其他创作者的视频）。",
+      "graph_answer": "内特在2022年11月开始制作YouTube游戏内容，灵感来自他对游戏视频的喜爱，希望在没有锦标赛时分享对游戏的热爱，并与游戏爱好者交流。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "e6939225-a05d-4bf8-9737-aa854a56d4be",
+          "content": "内特 (Nate) 于2022年11月开始制作YouTube游戏内容，灵感来自他对游戏视频的喜爱，希望在没有锦标赛时分享对游戏的热爱并与游戏爱好者交流",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "4582471e-1fba-48a9-9dac-40d786bde176",
+          "content": "内特 (Nate) 于2022年9月初的一个星期一在自己的烹饪节目上教观众做纯素冰淇淋，虽然有点紧张但非常开心，还在节目中学到了几个新食谱",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "8837211c-167e-48d9-a112-1c131acc1fdd",
+          "content": "内特 (Nate) 在2022年11月上旬尝试了烹饪，制作了自制椰子冰淇淋（加了糖屑，颜色有点变化），当时他的游戏锦标赛被推迟",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "a2580252-9d1c-4a26-b604-0998489ba1b9",
+          "content": "内特分享了他的游戏房照片（电脑和游戏椅），并表示游戏一直是他的重心，练了很多还赢了几场比赛",
+          "route": "vector",
+          "session_date": "11:54 am on 2 May, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+          "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+          "route": "vector",
+          "session_date": "9:27 am on 7 February, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+          "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+          "route": "vector",
+          "session_date": "6:44 pm on 17 April, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "bdcadb45-8bd8-4dbe-a911-c1587f187bdd",
+          "content": "内特 (Nate) 说自己身处大自然等酷地方时只会陷入沉思，想想人生或新菜谱",
+          "route": "vector",
+          "session_date": "3:35 pm on 12 May, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "fd655e9b-b45b-4cc2-a5f5-3db349a9d6c1",
+          "content": "内特 (Nate) 答应把椰奶冰淇淋食谱分享给乔安娜，乔安娜表示很想试着做，并答应做好后告诉他",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "32f855e4-11ff-40d9-9d51-8bb13476a5a2",
+          "content": "截至2022年3月下旬，内特 (Nate) 最近又开始参加电子游戏锦标赛，觉得气氛非常紧张、肾上腺素飙升",
+          "route": "vector",
+          "session_date": "1:43 pm on 24 March, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+          "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "eda3f637-f21c-4190-bec7-5706b1904004",
+          "content": "内特 (Nate) 的游戏锦标赛在2022年11月初被推迟，他利用空闲时间自制了椰奶冰淇淋，但这次糖屑把颜色弄变了",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "72ec1845-a9b1-43fe-8cbc-65f9331ebe7c",
+          "content": "内特 (Nate) 的宠物乌龟们（他的小伙伴，让他打游戏回家后感觉平静安宁）在2022年8月有了新鱼缸，游泳空间更大了，乌龟们非常喜欢",
+          "route": "vector",
+          "session_date": "10:57 am on 22 August, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "7f45b692-6141-46c3-81f6-b0974093dcd0",
+          "content": "乔安娜 (Joanna) 建议内特在发布YouTube视频前先研究其他创作者的视频，以了解观众喜好",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "eb4eda0b-be7f-4707-b8ed-353bf850b830",
+          "content": "内特 (Nate) 喜欢奇幻和科幻电影，认为它们是很好的escape、能激发想象力，他还喜欢玩电子游戏作为表达创造力和热情的方式",
+          "route": "vector",
+          "session_date": "7:44 pm on 21 April, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "ce20b06b-a9c2-4ca4-887a-a27f19eea43f",
+          "content": "内特 (Nate) 于2022年11月初一直在帮朋友们在国际锦标赛上刷新高分纪录，他觉得能用自己的游戏技能带来改变感觉很好",
+          "route": "vector",
+          "session_date": "3:56 pm on 4 November, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "e6939225-a05d-4bf8-9737-aa854a56d4be",
+          "content": "内特 (Nate) 于2022年11月开始制作YouTube游戏内容，灵感来自他对游戏视频的喜爱，希望在没有锦标赛时分享对游戏的热爱并与游戏爱好者交流",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "4582471e-1fba-48a9-9dac-40d786bde176",
+          "content": "内特 (Nate) 于2022年9月初的一个星期一在自己的烹饪节目上教观众做纯素冰淇淋，虽然有点紧张但非常开心，还在节目中学到了几个新食谱",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "8837211c-167e-48d9-a112-1c131acc1fdd",
+          "content": "内特 (Nate) 在2022年11月上旬尝试了烹饪，制作了自制椰子冰淇淋（加了糖屑，颜色有点变化），当时他的游戏锦标赛被推迟",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "a2580252-9d1c-4a26-b604-0998489ba1b9",
+          "content": "内特分享了他的游戏房照片（电脑和游戏椅），并表示游戏一直是他的重心，练了很多还赢了几场比赛",
+          "route": "vector",
+          "session_date": "11:54 am on 2 May, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+          "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+          "route": "vector",
+          "session_date": "9:27 am on 7 February, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+          "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+          "route": "vector",
+          "session_date": "6:44 pm on 17 April, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "bdcadb45-8bd8-4dbe-a911-c1587f187bdd",
+          "content": "内特 (Nate) 说自己身处大自然等酷地方时只会陷入沉思，想想人生或新菜谱",
+          "route": "vector",
+          "session_date": "3:35 pm on 12 May, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "fd655e9b-b45b-4cc2-a5f5-3db349a9d6c1",
+          "content": "内特 (Nate) 答应把椰奶冰淇淋食谱分享给乔安娜，乔安娜表示很想试着做，并答应做好后告诉他",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+          "content": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 10,
+          "id": "32f855e4-11ff-40d9-9d51-8bb13476a5a2",
+          "content": "截至2022年3月下旬，内特 (Nate) 最近又开始参加电子游戏锦标赛，觉得气氛非常紧张、肾上腺素飙升",
+          "route": "vector",
+          "session_date": "1:43 pm on 24 March, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "4624cccb-b798-46c2-8861-35cf5b936bc3",
+          "content": "内特 (Nate) 于2022年4月17日分享了椰奶冰淇淋配方：用椰奶、香草精、糖和一小撮盐制作，在冰箱冷藏后放入冰淇淋机冷冻到可挖球的程度；这是无乳制品配方，因为乔安娜乳糖不耐受正需要",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+          "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "eda3f637-f21c-4190-bec7-5706b1904004",
+          "content": "内特 (Nate) 的游戏锦标赛在2022年11月初被推迟，他利用空闲时间自制了椰奶冰淇淋，但这次糖屑把颜色弄变了",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "e55949e7-02ca-4eb5-8bae-747383721a4d",
+          "content": "内特 (Nate) 计划在2022年6月中旬（约6月17-19日的周末）组织一场游戏派对，将邀请锦标赛上新认识的朋友以及其他锦标赛的老朋友和队友，还准备给大家定制的手柄装饰作为感谢",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "72ec1845-a9b1-43fe-8cbc-65f9331ebe7c",
+          "content": "内特 (Nate) 的宠物乌龟们（他的小伙伴，让他打游戏回家后感觉平静安宁）在2022年8月有了新鱼缸，游泳空间更大了，乌龟们非常喜欢",
+          "route": "vector",
+          "session_date": "10:57 am on 22 August, 2022"
+        }
+      ],
+      "gained_ids": [
+        "b5170d4e-047e-4dac-814b-12293e2302aa",
+        "4624cccb-b798-46c2-8861-35cf5b936bc3",
+        "e55949e7-02ca-4eb5-8bae-747383721a4d"
+      ],
+      "lost_ids": [
+        "7f45b692-6141-46c3-81f6-b0974093dcd0",
+        "eb4eda0b-be7f-4707-b8ed-353bf850b830",
+        "ce20b06b-a9c2-4ca4-887a-a27f19eea43f"
+      ]
+    }
+  ],
+  "limits": [
+    "Stratified sample is not an estimate of full graph effect.",
+    "Historical arms are separate runs; answer and judge variation remains.",
+    "QA evidence may be incomplete or incorrect and requires bilingual/manual audit."
+  ]
+}
