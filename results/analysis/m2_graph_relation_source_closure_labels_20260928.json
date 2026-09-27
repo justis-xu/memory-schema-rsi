@@ -1,0 +1,129 @@
+{
+  "scope": "Manual labels for four post-screen targeted cases, no population estimate",
+  "packet_sha256": "6b9abfc1571ab5655f40560aceb4859e7bc9a7c60c94449577da5b504f5197e7",
+  "labels": [
+    {
+      "case_id": "locomo_conv-43_qa166",
+      "type": "gold_evidence_subject_mismatch",
+      "source_subject": "Tim / 蒂姆",
+      "question_subject": "John / 约翰",
+      "source_supports_target_gold": false,
+      "gained_graph_supplies_necessary_relation": false,
+      "source_turns": [
+        "D27:18",
+        "D27:19",
+        "D27:20",
+        "D27:22"
+      ],
+      "note_zh": "英中D27:19的speaker都是蒂姆；同指针QA66也问蒂姆的星球大战阅读偏好。约翰是哈利波特粉丝有D22:2/D26:27来源，但粉丝、DVD、知识竞赛不能升级为最喜欢的系列图书。无图以指环王电影喜好回答图书也越界，不把无图宣告正确。图得exact是命中不闭合金标，不能算有源补缺。",
+      "identical_id_prefix_length": 7,
+      "confidence": "high for source turns and ranked context; medium for mechanism interpretation",
+      "causal_graph_benefit_established": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa172",
+      "type": "question_answer_relation_split_in_memory",
+      "source_subject": "Jolene / 乔琳",
+      "source_supports_target_gold": true,
+      "gained_graph_supplies_necessary_relation": false,
+      "source_turns": [
+        "D24:8",
+        "D24:9",
+        "D24:10"
+      ],
+      "base_fact_ranks": [
+        4,
+        5
+      ],
+      "note_zh": "原话D24:9明确问与妈妈最爱玩什么，D24:10回答Monster Hunter: World；两臂第4条有最爱游戏，第5条有母亲一起玩，却都没有显式保存二者关系。图只新增蛇/游戏经历，未补该关系。图答可由分散材料猜对，而无图拒答；原始问答支持其关系，但不能以此归功于新增图事实。Wii来自D24:8图片caption，本文不验证产品兼容性。",
+      "identical_id_prefix_length": 12,
+      "confidence": "high for source turns and ranked context; medium for mechanism interpretation",
+      "causal_graph_benefit_established": false
+    },
+    {
+      "case_id": "locomo_conv-47_qa104",
+      "type": "plan_vs_actual_answer_selection",
+      "source_subject": "James / 詹姆斯",
+      "source_supports_target_gold": true,
+      "gained_graph_supplies_necessary_relation": false,
+      "source_turns": [
+        "D16:9",
+        "D16:10",
+        "D16:11"
+      ],
+      "base_fact_ranks": [
+        1,
+        5
+      ],
+      "note_zh": "D16:9计划去多伦多、D16:11还计划温哥华。两臂第1条完整写温哥华计划，第2条是较后努克旅行；前10条相同。无图回答已去的努克，图选择计划中的温哥华且附加努克。新增三条游戏记忆未补旅行关系，状态选择应由答题层核。",
+      "identical_id_prefix_length": 10,
+      "confidence": "high for source turns and ranked context; medium for mechanism interpretation",
+      "causal_graph_benefit_established": false
+    },
+    {
+      "case_id": "locomo_conv-50_qa99",
+      "type": "already_present_location_readout",
+      "source_subject": "Calvin / 卡尔文",
+      "source_supports_target_gold": true,
+      "gained_graph_supplies_necessary_relation": false,
+      "source_turns": [
+        "D15:3",
+        "D15:4"
+      ],
+      "base_fact_ranks": [
+        1
+      ],
+      "note_zh": "源D15:4明确东京音乐节，且两臂第1条相同且完整。无图只答音乐节漏东京，图读出东京。图新增合作/工作室/波士顿材料没有补东京；图答还添卡尔文注意到弗兰克演出，指定源话没有该方向细节。日期冲突和谁注意到谁不应混入核心判定。",
+      "identical_id_prefix_length": 7,
+      "confidence": "high for source turns and ranked context; medium for mechanism interpretation",
+      "causal_graph_benefit_established": false
+    }
+  ],
+  "source_relation_contract_examples": [
+    {
+      "subject": "蒂姆",
+      "predicate": "最喜欢的书",
+      "object": "哈利·波特",
+      "source_turn_ids": [
+        "D27:19"
+      ],
+      "forbidden_upgrade": "不能换成约翰或最喜欢的系列图书"
+    },
+    {
+      "subject": "乔琳",
+      "predicate": "最喜欢与母亲一起玩的游戏之一",
+      "object": "Monster Hunter: World",
+      "source_turn_ids": [
+        "D24:9",
+        "D24:10"
+      ],
+      "reason": "提问轮限定了回答的关系，不能只保留回答轮的泛偏好"
+    },
+    {
+      "subject": "詹姆斯",
+      "predicate": "计划在多伦多旅行之外访问",
+      "object": "温哥华",
+      "status": "planned",
+      "source_turn_ids": [
+        "D16:9",
+        "D16:10",
+        "D16:11"
+      ],
+      "forbidden_upgrade": "不改成已到访或用努克实际行程替代"
+    },
+    {
+      "subject": "卡尔文",
+      "predicate": "认识Frank Ocean的地点/场合",
+      "object": "东京的音乐节",
+      "source_turn_ids": [
+        "D15:3",
+        "D15:4"
+      ],
+      "forbidden_upgrade": "不从同名其他演出补会面日期或注意方向"
+    }
+  ],
+  "limits": [
+    "Contract examples are human-authored source annotations, not automatically extracted results.",
+    "No writes to Memory/Graph, no new answers, no current-version gain established."
+  ]
+}

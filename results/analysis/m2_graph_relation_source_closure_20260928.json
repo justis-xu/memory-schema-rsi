@@ -1,0 +1,1955 @@
+{
+  "scope": "Four cases chosen after screening unaudited positives for identity, relation, plan and location changes; not a representative sample; zero new model calls",
+  "case_ids": [
+    "locomo_conv-43_qa166",
+    "locomo_conv-48_qa172",
+    "locomo_conv-47_qa104",
+    "locomo_conv-50_qa99"
+  ],
+  "input_sha256": {
+    "base": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59",
+    "graph": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "base_grade": "0a4bef376de18c4ef1242c893ab27f2cfa7133445885265fbcb05521acf9bb0b",
+    "graph_grade": "9fa3a5f25d3fdf21dd173e60a3d1db55177e362cb4f4b9ad145eb37107284d05",
+    "english_data": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese_data": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d"
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-43_qa166",
+      "source": {
+        "english": {
+          "question": "What is John's favorite book series?",
+          "answer": "Harry Potter",
+          "evidence": [
+            {
+              "dia_id": "D27:19",
+              "session": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "window": [
+                {
+                  "dia_id": "D27:16",
+                  "speaker": "John",
+                  "text": "Thanks! I won't give up on it. What got you into books?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:17",
+                  "speaker": "Tim",
+                  "text": "I love escaping to that world. I have a collection of books that take me there.",
+                  "query": "harry potter book collection desk",
+                  "blip_caption": "a photo of a desk with a chair and a book shelf"
+                },
+                {
+                  "dia_id": "D27:18",
+                  "speaker": "John",
+                  "text": "That's awesome! I totally understand why reading means so much to you. It's amazing how much playing a game can help us grow. Thanks for showing us your collection! Which one do you like best that takes you to another world?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:19",
+                  "speaker": "Tim",
+                  "text": "Harry Potter is my favorite book. It's so immersive!",
+                  "query": null,
+                  "blip_caption": "a photo of a collection of movies and dvds on a carpet"
+                },
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "John",
+                  "text": "Cool! Glad you're enjoying that book! Do you have any favorite fantasy movies as well? These are mine.",
+                  "query": "fantasy movies dvd collection carpet",
+                  "blip_caption": "a photo of a collection of star wars movies on a table"
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "Tim",
+                  "text": "Definitely Star Wars! It's my favorite and never gets old. What about you, do you have any favorite fantasy films?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "John",
+                  "text": "I'm a huge fan of Lord of the Rings! The adventure, the world, and the characters are awesome.",
+                  "query": "lord of the rings dvd collection",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "约翰最喜欢的系列图书是什么？",
+          "answer": "哈利·波特",
+          "evidence": [
+            {
+              "dia_id": "D27:19",
+              "session": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "window": [
+                {
+                  "dia_id": "D27:16",
+                  "speaker": "约翰",
+                  "text": "谢谢！我不会放弃的。你是怎么喜欢上读书的？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:17",
+                  "speaker": "蒂姆",
+                  "text": "我喜欢沉浸到那个世界里。我收藏了很多书，它们能带我进入那个世界。",
+                  "query": "harry potter book collection desk",
+                  "blip_caption": "a photo of a desk with a chair and a book shelf"
+                },
+                {
+                  "dia_id": "D27:18",
+                  "speaker": "约翰",
+                  "text": "太棒了！我完全理解阅读对你为什么这么重要。玩游戏能帮助我们成长真是奇妙。谢谢你给我们看你的收藏！哪一本最能带你进入另一个世界？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:19",
+                  "speaker": "蒂姆",
+                  "text": "《哈利·波特》是我最喜欢的书。太让人沉浸其中了！",
+                  "query": null,
+                  "blip_caption": "a photo of a collection of movies and dvds on a carpet"
+                },
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "约翰",
+                  "text": "酷！很高兴你喜欢那本书！你还有喜欢的奇幻电影吗？这些是我的。",
+                  "query": "fantasy movies dvd collection carpet",
+                  "blip_caption": "a photo of a collection of star wars movies on a table"
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "蒂姆",
+                  "text": "当然是《星球大战》！它是我最喜欢的，百看不厌。你呢，有喜欢的奇幻电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "约翰",
+                  "text": "我是《指环王》的超级粉丝！那些冒险、世界观和角色都太棒了。",
+                  "query": "lord of the rings dvd collection",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_answer": "《指环王》系列——约翰是它的超级粉丝，反复观看/阅读多遍，觉得非常励志。",
+      "graph_answer": "约翰对《哈利·波特》表现出强烈的喜爱：他收藏了整套《哈利·波特》电影的DVD，并参加了《哈利·波特》知识竞赛，还分享了一本《哈利·波特》的签名版书籍。尽管蒂姆曾推荐过《风之名》（约翰已将其加入书单）并 recently 读完了一部奇幻系列，但唯一被确认属于约翰的心头好系列是《哈利·波特》。\n\n回答：《哈利·波特》系列。",
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "The answer explicitly and correctly states that John's favorite book series is Harry Potter (《哈利·波特》), matching the gold answer exactly."
+      },
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "70de4022-1d90-417a-b7a4-d0de9c241579",
+          "content": "约翰是《指环王》的超级粉丝，看了不少遍并觉得很励志；他最喜欢的角色是阿拉贡，欣赏他作为伟大领袖总是把别人放在第一位，以及从游侠到刚铎国王的成长和救赎",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 2,
+          "id": "ad3b6bbb-6177-40ab-9deb-efb97073797b",
+          "content": "约翰刚读完一套非常棒的奇幻系列小说，情节跌宕起伏、反转很多，他很欣赏作者创造故事情节和人物的能力，喜欢沉浸在那样的奇幻世界里",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+          "content": "约翰把《风之名》加到了自己的书单里，表示喜欢人物鲜明、世界观设定精彩的奇幻作品",
+          "route": "vector",
+          "session_date": "1:08 pm on 11 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "a5ba7aaf-1266-4ba9-9981-8c94c584f34b",
+          "content": "约翰（John）于2023年12月初在读弗兰克·赫伯特的《沙丘》，很喜欢并推荐给蒂姆，称其为关于宗教和人类对生态控制的精彩故事；约翰还表示还没读过《权力的游戏》但打算去看看",
+          "route": "vector",
+          "session_date": "7:42 pm on 8 December, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "route": "vector",
+          "session_date": "4:29 pm on 21 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+          "content": "蒂姆于2023年9月推荐约翰在旅行时读帕特里克·罗斯福斯的奇幻小说（《风之名》/ The Name of the Wind），称它会带人进入不同的世界；约翰表示迫不及待想读",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+          "content": "约翰喜欢阅读关于个人发展和心态的非虚构类书籍，认为它们帮助他更好地了解自己",
+          "route": "vector",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+          "route": "vector",
+          "session_date": "9:52 am on 1 December, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "688f8e28-1f86-4b91-a412-93971a6d9aca",
+          "content": "约翰最近重读完《牧羊少年奇幻之旅》（The Alchemist），认为非常鼓舞人心，让他重新思考追逐梦想和寻找属于自己的宝藏，读完感到充满动力和希望",
+          "route": "vector",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+          "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "a7cb56be-cc70-47d7-8b39-f6b4d5705b7b",
+          "content": "蒂姆收藏了很多书，喜欢沉浸在书中世界里，这是他热爱阅读的原因；《哈利·波特》是他最喜欢的书，觉得非常让人沉浸其中",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 13,
+          "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+          "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 14,
+          "id": "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+          "content": "约翰（John）职业生涯最喜欢的一场比赛是第四节还落后10分时他投进了压哨绝杀球赢得比赛，他称这是令人热血沸腾的经历，这样的时刻让他热爱篮球",
+          "route": "vector",
+          "session_date": "8:28 pm on 11 December, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+          "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+          "route": "vector",
+          "session_date": "9:52 am on 1 December, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "70de4022-1d90-417a-b7a4-d0de9c241579",
+          "content": "约翰是《指环王》的超级粉丝，看了不少遍并觉得很励志；他最喜欢的角色是阿拉贡，欣赏他作为伟大领袖总是把别人放在第一位，以及从游侠到刚铎国王的成长和救赎",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 2,
+          "id": "ad3b6bbb-6177-40ab-9deb-efb97073797b",
+          "content": "约翰刚读完一套非常棒的奇幻系列小说，情节跌宕起伏、反转很多，他很欣赏作者创造故事情节和人物的能力，喜欢沉浸在那样的奇幻世界里",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+          "content": "约翰把《风之名》加到了自己的书单里，表示喜欢人物鲜明、世界观设定精彩的奇幻作品",
+          "route": "vector",
+          "session_date": "1:08 pm on 11 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "a5ba7aaf-1266-4ba9-9981-8c94c584f34b",
+          "content": "约翰（John）于2023年12月初在读弗兰克·赫伯特的《沙丘》，很喜欢并推荐给蒂姆，称其为关于宗教和人类对生态控制的精彩故事；约翰还表示还没读过《权力的游戏》但打算去看看",
+          "route": "vector",
+          "session_date": "7:42 pm on 8 December, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+          "route": "vector",
+          "session_date": "4:29 pm on 21 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+          "content": "蒂姆于2023年9月推荐约翰在旅行时读帕特里克·罗斯福斯的奇幻小说（《风之名》/ The Name of the Wind），称它会带人进入不同的世界；约翰表示迫不及待想读",
+          "route": "vector",
+          "session_date": "8:17 pm on 21 September, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+          "content": "约翰（John）和安东尼参加过一个慈善活动，在那里遇到了激烈的《哈利·波特》知识竞赛，他们表现不错但奖品被一位超级书迷赢得；约翰分享了一张签名的哈利·波特书籍照片",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 9,
+          "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+          "content": "约翰喜欢阅读关于个人发展和心态的非虚构类书籍，认为它们帮助他更好地了解自己",
+          "route": "vector",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+          "route": "vector",
+          "session_date": "9:52 am on 1 December, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+          "content": "蒂姆推荐约翰读《风之名》（The Name of the Wind，帕特里克·罗斯福斯著），称其主角是伟大的魔法师兼音乐家，世界观构建和人物塑造都非常出色，值得一读",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "688f8e28-1f86-4b91-a412-93971a6d9aca",
+          "content": "约翰最近重读完《牧羊少年奇幻之旅》（The Alchemist），认为非常鼓舞人心，让他重新思考追逐梦想和寻找属于自己的宝藏，读完感到充满动力和希望",
+          "route": "vector",
+          "session_date": "10:22 am on 21 November, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+          "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+          "route": "vector",
+          "session_date": "3:36 pm on 11 November, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "301911d3-603e-4a1d-a9bf-49aca44b0e5a",
+          "content": "蒂姆（Tim）于2023年8月上旬正在读帕特里克·罗斯福斯（Patrick Rothfuss）写的一本让他着迷的奇幻小说，书把他带到另一个世界，他称赞作者构建世界和角色的能力，并推荐约翰去读",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "a7cb56be-cc70-47d7-8b39-f6b4d5705b7b",
+          "content": "蒂姆收藏了很多书，喜欢沉浸在书中世界里，这是他热爱阅读的原因；《哈利·波特》是他最喜欢的书，觉得非常让人沉浸其中",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 8,
+          "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+          "content": "约翰（John）和安东尼参加过一个慈善活动，在那里遇到了激烈的《哈利·波特》知识竞赛，他们表现不错但奖品被一位超级书迷赢得；约翰分享了一张签名的哈利·波特书籍照片",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+          "content": "蒂姆推荐约翰读《风之名》（The Name of the Wind，帕特里克·罗斯福斯著），称其主角是伟大的魔法师兼音乐家，世界观构建和人物塑造都非常出色，值得一读",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "301911d3-603e-4a1d-a9bf-49aca44b0e5a",
+          "content": "蒂姆（Tim）于2023年8月上旬正在读帕特里克·罗斯福斯（Patrick Rothfuss）写的一本让他着迷的奇幻小说，书把他带到另一个世界，他称赞作者构建世界和角色的能力，并推荐约翰去读",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 13,
+          "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+          "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+          "route": "vector",
+          "session_date": "5:26 pm on 2 January, 2024"
+        },
+        {
+          "rank": 14,
+          "id": "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+          "content": "约翰（John）职业生涯最喜欢的一场比赛是第四节还落后10分时他投进了压哨绝杀球赢得比赛，他称这是令人热血沸腾的经历，这样的时刻让他热爱篮球",
+          "route": "vector",
+          "session_date": "8:28 pm on 11 December, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+          "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+          "route": "vector",
+          "session_date": "9:52 am on 1 December, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa172",
+      "source": {
+        "english": {
+          "question": "What was one of Jolene's favorite games to play with her mom on the nintendo wii game system?",
+          "answer": "Monster Hunter: World",
+          "evidence": [
+            {
+              "dia_id": "D24:10",
+              "session": "session_24",
+              "session_date": "2:14 pm on 3 September, 2023",
+              "window": [
+                {
+                  "dia_id": "D24:7",
+                  "speaker": "Deborah",
+                  "text": "Cool that they shared that with you. Did you learn on your own or did they teach you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:8",
+                  "speaker": "Jolene",
+                  "text": "I taught myself, but my dad was always supportive and my mom would play games with me. ",
+                  "query": "video game screenshot playing with mom",
+                  "blip_caption": "a photo of a nintendo wii game system with a game on the screen"
+                },
+                {
+                  "dia_id": "D24:9",
+                  "speaker": "Deborah",
+                  "text": "That's awesome! Sounds like you had a lot of support from your parents. What was your favorite game to play with mom?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:10",
+                  "speaker": "Jolene",
+                  "text": "One of my favorites was \"Monster Hunter: World\". The immersive story and open-world gaming are amazing!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:11",
+                  "speaker": "Deborah",
+                  "text": " It can be so freeing when you get immersed in a game like that. ",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:12",
+                  "speaker": "Jolene",
+                  "text": "Yeah! It's my way to de-stress and take a break from life.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:13",
+                  "speaker": "Deborah",
+                  "text": "What's up this month? Anything fun happening for you?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "乔琳和她妈妈在任天堂Wii上最喜欢玩的游戏之一是什么？",
+          "answer": "《怪物猎人：世界》",
+          "evidence": [
+            {
+              "dia_id": "D24:10",
+              "session": "session_24",
+              "session_date": "2:14 pm on 3 September, 2023",
+              "window": [
+                {
+                  "dia_id": "D24:7",
+                  "speaker": "黛博拉",
+                  "text": "他们能和你一起分享这个真好。你是自学的还是他们教的？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:8",
+                  "speaker": "乔琳",
+                  "text": "我是自学的，不过我爸一直很支持我，我妈还会和我一起玩游戏。",
+                  "query": "video game screenshot playing with mom",
+                  "blip_caption": "a photo of a nintendo wii game system with a game on the screen"
+                },
+                {
+                  "dia_id": "D24:9",
+                  "speaker": "黛博拉",
+                  "text": "太棒了！听起来你从父母那里得到了很多支持。你最喜欢和妈妈玩什么游戏？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:10",
+                  "speaker": "乔琳",
+                  "text": "我最喜欢的之一是《Monster 亨特: World》。那身临其境的剧情和开放世界玩法太棒了！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:11",
+                  "speaker": "黛博拉",
+                  "text": "沉浸在这样的游戏里会让人感觉非常自由。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:12",
+                  "speaker": "乔琳",
+                  "text": "是啊！这是我减压和暂时逃离生活的方式。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D24:13",
+                  "speaker": "黛博拉",
+                  "text": "这个月怎么样？有什么好玩的事发生吗？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_answer": "记忆中提到乔琳的妈妈会和她一起在任天堂游戏机上玩游戏（这是乔琳10岁时得到的第一台游戏机，开启了她对电子游戏的热爱），但具体的游戏名称没有在记忆中记录，无法给出具体的游戏标题。",
+      "graph_answer": "回顾相关记忆：乔琳10岁时父母给她买了第一台游戏机（任天堂），她是自学的，妈妈还会和她一起玩游戏；她最喜欢的游戏之一是《Monster Hunter: World》（喜欢其身临其境的剧情和开放世界玩法）。\n\nANSWER：《Monster Hunter: World》——乔琳最喜欢的游戏之一，她喜欢其身临其境的剧情和开放世界玩法；她的妈妈也是从小就和她一起玩游戏的伙伴。",
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "答案正确说明了《Monster Hunter: World》（《怪物猎人：世界》）是乔琳最喜欢的游戏之一，且包含其妈妈陪她一起玩的额外正确细节。"
+      },
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "ff075bc8-c3d2-40ef-8784-ef9f8746c927",
+          "content": "乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战、完成艰难成就是增进感情、变得更亲密的好方式",
+          "route": "vector",
+          "session_date": "7:37 pm on 9 July, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+          "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+          "route": "vector",
+          "session_date": "9:49 am on 27 January, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "6a8be76b-6f76-44d3-a53a-1edd9a8a4376",
+          "content": "乔琳向黛布推荐了Switch上的《塞尔达传说：旷野之息》（开放世界）和《集合啦！动物森友会》（治愈可爱），并提到《胡闹厨房2》是很好的联机合作游戏——她和伴侣经常用它打赌，乔琳赢过三个大披萨",
+          "route": "vector",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "5d99645a-5f96-43d1-817d-3fc0cb242004",
+          "content": "乔琳最喜欢的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，这是她减压和暂时逃离生活的方式",
+          "route": "vector",
+          "session_date": "2:14 pm on 3 September, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "e2d9ea9f-c50b-46ab-9328-1473ed807385",
+          "content": "乔琳10岁时父母给她买了她人生中的第一台游戏机（任天堂），这开启了她对电子游戏的热爱；她是自学的，爸爸一直很支持她，妈妈还会和她一起玩游戏",
+          "route": "vector",
+          "session_date": "2:14 pm on 3 September, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "1dded0cd-6d53-4b62-a523-037ca7cc879e",
+          "content": "乔琳忙碌一天后喜欢和伴侣一起打电子游戏放松，这让两人关系更亲密",
+          "route": "vector",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "02d62eb2-f8e8-43a4-b0e3-a3efd49bca31",
+          "content": "黛布在2023年9月中旬玩过一个关于猫的卡牌游戏（不记得名字）：从牌堆里一张张抽牌，用它们攻击对手；她想和乔琳一起玩这个游戏",
+          "route": "vector",
+          "session_date": "2:18 pm on 12 September, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+          "content": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+          "route": "vector",
+          "session_date": "9:26 am on 1 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "d6af7376-6e56-4a73-942e-244aee4f3a2d",
+          "content": "乔琳的伴侣从事创作事业，两人都通过追求各自的热爱来纪念逝去的亲人",
+          "route": "vector",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+          "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+          "route": "vector",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "37cee793-e92d-47ca-9475-be1552e86263",
+          "content": "乔琳和伴侣在2023年8月17日左右得到一台游戏主机（Xbox），上周（约2023年8月中旬）他们为它购入了新游戏《战地1》",
+          "route": "vector",
+          "session_date": "9:11 am on 21 August, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "44f38f7e-5dcd-40fe-8f5d-c56fe5e57a88",
+          "content": "乔琳养了一条蛇作宠物，她说这条蛇喜欢看她放松的样子，是个很好的陪伴，总能带来平静的感觉",
+          "route": "vector",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+          "content": "乔琳养蛇作为宠物，觉得和蛇在一起的时光很宝贵，教会她放慢脚步、与自己保持协调",
+          "route": "vector",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "8ab53eac-c1ec-463a-a154-6dba076ba6ec",
+          "content": "黛布以前玩过一些电子游戏但很久没玩了，认为游戏是忙碌一天后放松的好方式；她和丈夫以前常一起玩游戏、轮流玩，更喜欢一起玩侦探游戏，觉得游戏能增进感情",
+          "route": "vector",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "fe5251d9-03bf-4740-8af8-46101dfea37c",
+          "content": "乔琳想把她妈妈的价值观——帮助他人——融入她的工程项目中，热衷于提出新想法、提高效率、让世界变得更美好",
+          "route": "vector",
+          "session_date": "5:33 pm on 26 August, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "ff075bc8-c3d2-40ef-8784-ef9f8746c927",
+          "content": "乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战、完成艰难成就是增进感情、变得更亲密的好方式",
+          "route": "vector",
+          "session_date": "7:37 pm on 9 July, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+          "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+          "route": "vector",
+          "session_date": "9:49 am on 27 January, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "6a8be76b-6f76-44d3-a53a-1edd9a8a4376",
+          "content": "乔琳向黛布推荐了Switch上的《塞尔达传说：旷野之息》（开放世界）和《集合啦！动物森友会》（治愈可爱），并提到《胡闹厨房2》是很好的联机合作游戏——她和伴侣经常用它打赌，乔琳赢过三个大披萨",
+          "route": "vector",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "5d99645a-5f96-43d1-817d-3fc0cb242004",
+          "content": "乔琳最喜欢的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，这是她减压和暂时逃离生活的方式",
+          "route": "vector",
+          "session_date": "2:14 pm on 3 September, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "e2d9ea9f-c50b-46ab-9328-1473ed807385",
+          "content": "乔琳10岁时父母给她买了她人生中的第一台游戏机（任天堂），这开启了她对电子游戏的热爱；她是自学的，爸爸一直很支持她，妈妈还会和她一起玩游戏",
+          "route": "vector",
+          "session_date": "2:14 pm on 3 September, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "1dded0cd-6d53-4b62-a523-037ca7cc879e",
+          "content": "乔琳忙碌一天后喜欢和伴侣一起打电子游戏放松，这让两人关系更亲密",
+          "route": "vector",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "02d62eb2-f8e8-43a4-b0e3-a3efd49bca31",
+          "content": "黛布在2023年9月中旬玩过一个关于猫的卡牌游戏（不记得名字）：从牌堆里一张张抽牌，用它们攻击对手；她想和乔琳一起玩这个游戏",
+          "route": "vector",
+          "session_date": "2:18 pm on 12 September, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+          "content": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+          "route": "vector",
+          "session_date": "9:26 am on 1 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "d6af7376-6e56-4a73-942e-244aee4f3a2d",
+          "content": "乔琳的伴侣从事创作事业，两人都通过追求各自的热爱来纪念逝去的亲人",
+          "route": "vector",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+          "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+          "route": "vector",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "37cee793-e92d-47ca-9475-be1552e86263",
+          "content": "乔琳和伴侣在2023年8月17日左右得到一台游戏主机（Xbox），上周（约2023年8月中旬）他们为它购入了新游戏《战地1》",
+          "route": "vector",
+          "session_date": "9:11 am on 21 August, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "44f38f7e-5dcd-40fe-8f5d-c56fe5e57a88",
+          "content": "乔琳养了一条蛇作宠物，她说这条蛇喜欢看她放松的样子，是个很好的陪伴，总能带来平静的感觉",
+          "route": "vector",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "09dece5d-19a9-46cd-b5ee-6a9c3d0ffe70",
+          "content": "乔琳有一条叫苏茜的宠物蛇，还说她一年前（约2022年初）在巴黎买了她的第二条蛇塞拉菲姆；有一次塞拉菲姆在乔琳打游戏时悄悄溜出笼子蜷在她身边，令她觉得非常有趣；宠物蛇能让乔琳平静并开心",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+          "content": "乔琳养蛇作为宠物，觉得和蛇在一起的时光很宝贵，教会她放慢脚步、与自己保持协调",
+          "route": "vector",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "8ab53eac-c1ec-463a-a154-6dba076ba6ec",
+          "content": "黛布以前玩过一些电子游戏但很久没玩了，认为游戏是忙碌一天后放松的好方式；她和丈夫以前常一起玩游戏、轮流玩，更喜欢一起玩侦探游戏，觉得游戏能增进感情",
+          "route": "vector",
+          "session_date": "12:52 am on 19 August, 2023"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 13,
+          "id": "09dece5d-19a9-46cd-b5ee-6a9c3d0ffe70",
+          "content": "乔琳有一条叫苏茜的宠物蛇，还说她一年前（约2022年初）在巴黎买了她的第二条蛇塞拉菲姆；有一次塞拉菲姆在乔琳打游戏时悄悄溜出笼子蜷在她身边，令她觉得非常有趣；宠物蛇能让乔琳平静并开心",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 15,
+          "id": "fe5251d9-03bf-4740-8af8-46101dfea37c",
+          "content": "乔琳想把她妈妈的价值观——帮助他人——融入她的工程项目中，热衷于提出新想法、提高效率、让世界变得更美好",
+          "route": "vector",
+          "session_date": "5:33 pm on 26 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa104",
+      "source": {
+        "english": {
+          "question": "Where did James plan to visit after Toronto?",
+          "answer": "Vancouver",
+          "evidence": [
+            {
+              "dia_id": "D16:11",
+              "session": "session_16",
+              "session_date": "5:13 pm on 9 July, 2022",
+              "window": [
+                {
+                  "dia_id": "D16:8",
+                  "speaker": "John",
+                  "text": "I like to relax by reading. I love entering the imaginative worlds of authors - it's a fun escape from reality. ",
+                  "query": "bookshelf novels fantasy books",
+                  "blip_caption": "a photo of a book shelf filled with books and a guitar"
+                },
+                {
+                  "dia_id": "D16:9",
+                  "speaker": "James",
+                  "text": "I also love to read, especially while snuggled under the covers on a cold winter day. But now it’s summer and I want something more exciting! By the way, I bought air tickets to Toronto, and I’m leaving the day after tomorrow evening.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:10",
+                  "speaker": "John",
+                  "text": "Cool, this is already the fourth country you will visit! Will you only be in Toronto, or will you be visiting somewhere else?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:11",
+                  "speaker": "James",
+                  "text": "I also plan to visit Vancouver. Maybe, I'll go somewhere else.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:12",
+                  "speaker": "John",
+                  "text": "When are you coming back?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:13",
+                  "speaker": "James",
+                  "text": "I plan to return on July 20, I’ll definitely bring you some kind of souvenir!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:14",
+                  "speaker": "John",
+                  "text": "Thanks James! I will be waiting for you from your journey! Bon Voyage!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "多伦多之后詹姆斯计划去哪里？",
+          "answer": "温哥华",
+          "evidence": [
+            {
+              "dia_id": "D16:11",
+              "session": "session_16",
+              "session_date": "5:13 pm on 9 July, 2022",
+              "window": [
+                {
+                  "dia_id": "D16:8",
+                  "speaker": "约翰",
+                  "text": "我喜欢靠阅读放松。我喜欢进入作者们构建的想象世界——这是一种有趣的逃离现实的方式。",
+                  "query": "bookshelf novels fantasy books",
+                  "blip_caption": "a photo of a book shelf filled with books and a guitar"
+                },
+                {
+                  "dia_id": "D16:9",
+                  "speaker": "詹姆斯",
+                  "text": "我也喜欢阅读，尤其是在寒冷的冬日里裹在被窝里看书。不过现在已是夏天，我想要更刺激一点的东西！对了，我买了去多伦多的机票，后天晚上出发。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:10",
+                  "speaker": "约翰",
+                  "text": "真棒，这已经是你将要到访的第四个国家了！你只待在多伦多，还是会去其他地方？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:11",
+                  "speaker": "詹姆斯",
+                  "text": "我还计划去温哥华。也许还会去别的地方。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:12",
+                  "speaker": "约翰",
+                  "text": "你什么时候回来？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:13",
+                  "speaker": "詹姆斯",
+                  "text": "我打算7月20日回来，到时候一定给你带个纪念品！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D16:14",
+                  "speaker": "约翰",
+                  "text": "谢谢你，詹姆斯！我等着你旅行归来！一路顺风！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_answer": "在2022年7月11日飞往多伦多（他的第四个国家）后，詹姆斯继续他的旅行，于2022年7月22日左右访问了格陵兰岛的努克（Nuuk），他在那里度过了很多时间，并为John和Jill购买了纪念品。\n\n答案：格陵兰岛的努克（Nuuk）。",
+      "graph_answer": "多伦多之行（7月11日出发）之后，詹姆斯去了加拿大（包括温哥华），之后还在他的旅途中访问了格陵兰岛的努克。\n\n**回答：** 多伦多之后，詹姆斯计划去温哥华旅行，随后在7月下旬前往格陵兰岛的努克。",
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "Answer explicitly states James plans to go to Vancouver after Toronto, matching the gold; extra details are additional but correct."
+      },
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "2e435dba-9b0b-4774-995a-785d1aeb51ac",
+          "content": "James plans to visit Vancouver during his July 2022 Canada trip, possibly other places too, and intends to return on July 20, 2022, bringing John a souvenir",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "32eb5d57-e69d-4289-91d3-6acb42ff0999",
+          "content": "During his trip, James visited Nuuk, Greenland, spending considerable time there and adding a new country to his checklist; he bought souvenirs for John and John's wife Jill",
+          "route": "vector",
+          "session_date": "9:49 am on 22 July, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "59798128-68fc-45d7-ab72-65fa0eb00275",
+          "content": "James plans to check out 'The Name of the Wind' trilogy after John's recommendation, and enjoys the fantasy genre",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "d6d4ad60-73c3-4fb2-b0a8-eefc3b94463c",
+          "content": "On April 20, 2022, James and John agreed to travel somewhere together next year (2023), and James said he would start looking for countries they could visit",
+          "route": "vector",
+          "session_date": "9:32 pm on 20 April, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "0bcc1f65-e202-4860-b7bc-25f572759739",
+          "content": "James bought flight tickets to Toronto, departing in the evening of July 11, 2022 — his fourth country to visit",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "131ba502-d160-47e8-93ca-61a6005bfbd7",
+          "content": "As of April 2022, James is eager to try new game genres, particularly RPGs and MOBAs like Skyrim and League of Legends, and agreed to report back to John after trying them",
+          "route": "vector",
+          "session_date": "2:13 pm on 4 April, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "6c8703c5-2f99-4fd1-963b-13a234a12777",
+          "content": "詹姆斯和家人于2022年11月初开始公路旅行，拜访了朋友乔什和马克，玩得非常开心，并一起玩电子游戏",
+          "route": "vector",
+          "session_date": "8:57 pm on 7 November, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "605b13ac-4e20-4015-ae91-36a28fdb1ff8",
+          "content": "James plans to make more games of different genres and try new ideas, and is excited about where his game development journey will take him",
+          "route": "vector",
+          "session_date": "2:14 pm on 13 October, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "de60b81d-4e69-418e-8d47-e71985b0cd6c",
+          "content": "Around November 4, 2022, James started a road trip with his family and his dogs, enjoying exploring new places and being close to nature with his pets",
+          "route": "vector",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "cc6afa9a-0e05-4216-842e-c33bc52e481c",
+          "content": "At the beach on August 9, 2022, James met a beautiful girl named Samantha who gave him her phone number; he planned to call her the next day (around August 11, 2022) to ask her out on a date",
+          "route": "vector",
+          "session_date": "9:16 am on 10 August, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "499c7145-be4b-439d-ac16-22b377fde367",
+          "content": "As of March 27, 2022, James has begun exploring different game genres such as RPGs and strategy games and is very excited about it",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "c7189fa7-1dcd-4ef1-b282-e229fe66bbb3",
+          "content": "As of July 2022, James has developed an interest in extreme sports as a way to step away from his hobbies and find balance",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "cd203b30-90d2-4452-8daf-a397ebb33dc4",
+          "content": "John plans to organize more charity gaming events in the future, as combining his gaming interests with community service and friendly competition felt fulfilling; he invited James to join next time.",
+          "route": "vector",
+          "session_date": "12:45 am on 8 May, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "0105f9a5-7725-4e06-92e0-ad1295263460",
+          "content": "James has heard of the impostor-finding social deduction game and has always wanted to try it; he agreed to play it with a big group",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "0d97c49c-f230-465f-8004-a3e44889de34",
+          "content": "Around mid-September 2022, James started doing game streaming; details were still sparse but he hoped it would go well",
+          "route": "vector",
+          "session_date": "6:02 pm on 18 September, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "2e435dba-9b0b-4774-995a-785d1aeb51ac",
+          "content": "James plans to visit Vancouver during his July 2022 Canada trip, possibly other places too, and intends to return on July 20, 2022, bringing John a souvenir",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "32eb5d57-e69d-4289-91d3-6acb42ff0999",
+          "content": "During his trip, James visited Nuuk, Greenland, spending considerable time there and adding a new country to his checklist; he bought souvenirs for John and John's wife Jill",
+          "route": "vector",
+          "session_date": "9:49 am on 22 July, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "59798128-68fc-45d7-ab72-65fa0eb00275",
+          "content": "James plans to check out 'The Name of the Wind' trilogy after John's recommendation, and enjoys the fantasy genre",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "d6d4ad60-73c3-4fb2-b0a8-eefc3b94463c",
+          "content": "On April 20, 2022, James and John agreed to travel somewhere together next year (2023), and James said he would start looking for countries they could visit",
+          "route": "vector",
+          "session_date": "9:32 pm on 20 April, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "0bcc1f65-e202-4860-b7bc-25f572759739",
+          "content": "James bought flight tickets to Toronto, departing in the evening of July 11, 2022 — his fourth country to visit",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "131ba502-d160-47e8-93ca-61a6005bfbd7",
+          "content": "As of April 2022, James is eager to try new game genres, particularly RPGs and MOBAs like Skyrim and League of Legends, and agreed to report back to John after trying them",
+          "route": "vector",
+          "session_date": "2:13 pm on 4 April, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "6c8703c5-2f99-4fd1-963b-13a234a12777",
+          "content": "詹姆斯和家人于2022年11月初开始公路旅行，拜访了朋友乔什和马克，玩得非常开心，并一起玩电子游戏",
+          "route": "vector",
+          "session_date": "8:57 pm on 7 November, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "605b13ac-4e20-4015-ae91-36a28fdb1ff8",
+          "content": "James plans to make more games of different genres and try new ideas, and is excited about where his game development journey will take him",
+          "route": "vector",
+          "session_date": "2:14 pm on 13 October, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "de60b81d-4e69-418e-8d47-e71985b0cd6c",
+          "content": "Around November 4, 2022, James started a road trip with his family and his dogs, enjoying exploring new places and being close to nature with his pets",
+          "route": "vector",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "cc6afa9a-0e05-4216-842e-c33bc52e481c",
+          "content": "At the beach on August 9, 2022, James met a beautiful girl named Samantha who gave him her phone number; he planned to call her the next day (around August 11, 2022) to ask her out on a date",
+          "route": "vector",
+          "session_date": "9:16 am on 10 August, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "16858959-c2f4-455c-8181-017d1aa55cad",
+          "content": "James has been trying different game genres and as of August 2022 wants to create a complex strategy game like 'Civilization'; he loves deep, complex games and hopes to one day build his own great strategy game",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "99b9ac37-de5a-42d7-8715-fd6e93f173b0",
+          "content": "James decided to try the sports game genre, starting with FIFA 23, and planned to practice it so he and John could play together; John said it's easy to learn, needing just a controller and a sense of rhythm",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+          "content": "James is working on an indie computer game based on a character he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "499c7145-be4b-439d-ac16-22b377fde367",
+          "content": "As of March 27, 2022, James has begun exploring different game genres such as RPGs and strategy games and is very excited about it",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "c7189fa7-1dcd-4ef1-b282-e229fe66bbb3",
+          "content": "As of July 2022, James has developed an interest in extreme sports as a way to step away from his hobbies and find balance",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 11,
+          "id": "16858959-c2f4-455c-8181-017d1aa55cad",
+          "content": "James has been trying different game genres and as of August 2022 wants to create a complex strategy game like 'Civilization'; he loves deep, complex games and hopes to one day build his own great strategy game",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "99b9ac37-de5a-42d7-8715-fd6e93f173b0",
+          "content": "James decided to try the sports game genre, starting with FIFA 23, and planned to practice it so he and John could play together; John said it's easy to learn, needing just a controller and a sense of rhythm",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+          "content": "James is working on an indie computer game based on a character he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 13,
+          "id": "cd203b30-90d2-4452-8daf-a397ebb33dc4",
+          "content": "John plans to organize more charity gaming events in the future, as combining his gaming interests with community service and friendly competition felt fulfilling; he invited James to join next time.",
+          "route": "vector",
+          "session_date": "12:45 am on 8 May, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "0105f9a5-7725-4e06-92e0-ad1295263460",
+          "content": "James has heard of the impostor-finding social deduction game and has always wanted to try it; he agreed to play it with a big group",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "0d97c49c-f230-465f-8004-a3e44889de34",
+          "content": "Around mid-September 2022, James started doing game streaming; details were still sparse but he hoped it would go well",
+          "route": "vector",
+          "session_date": "6:02 pm on 18 September, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa99",
+      "source": {
+        "english": {
+          "question": "How did Calvin meet Frank Ocean?",
+          "answer": "At a music festival in Tokyo",
+          "evidence": [
+            {
+              "dia_id": "D15:4",
+              "session": "session_15",
+              "session_date": "11:06 am on 22 August, 2023",
+              "window": [
+                {
+                  "dia_id": "D15:1",
+                  "speaker": "Dave",
+                  "text": "Hey Calvin! Haven't talked in a while! Last Friday I had a card-night with my friends, it was so much fun. We laughed and had a great time! Take a look at the photo!",
+                  "query": null,
+                  "blip_caption": "a photography of a group of men sitting at a table with playing cards"
+                },
+                {
+                  "dia_id": "D15:2",
+                  "speaker": "Calvin",
+                  "text": "Hey Dave! Great to hear from you, card night sounds like a blast! Always love having fun with friends. Guess what? I scored a deal to continue collaboration with Frank Ocean! This is a dream come true for me, I've been working hard and it's finally paying off. No words can describe how happy I am.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D15:3",
+                  "speaker": "Dave",
+                  "text": "Wow Calvin, congrats! Super excited for you. How did this chance come up?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D15:4",
+                  "speaker": "Calvin",
+                  "text": "Thanks, Dave! I had the opportunity to meet Frank Ocean at a music festival in Tokyo and we clicked. We've been speaking and sharing ideas we arranged a meeting and recorded a song in the studio at my mansion - it's been great!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D15:5",
+                  "speaker": "Dave",
+                  "text": "Wow, Tokyo sounds like an incredible experience!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D15:6",
+                  "speaker": "Calvin",
+                  "text": "It was an incredible experience, Dave! The city was buzzing with energy and the festival crowd was so lively - it was like fuel for my soul. Look at this photo, that's amazing!",
+                  "query": "city festival crowd energy vibe",
+                  "blip_caption": "a photo of a crowd of people sitting on the grass at night"
+                },
+                {
+                  "dia_id": "D15:7",
+                  "speaker": "Dave",
+                  "text": "Wow, that sounds incredible! What was it like playing at the festival? Must have been an amazing experience.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "卡尔文是怎么认识Frank Ocean的？",
+          "answer": "在东京的一个音乐节上",
+          "evidence": [
+            {
+              "dia_id": "D15:4",
+              "session": "session_15",
+              "session_date": "11:06 am on 22 August, 2023",
+              "window": [
+                {
+                  "dia_id": "D15:1",
+                  "speaker": "戴夫",
+                  "text": "嘿，卡尔文！好久没聊了！上周五我和朋友们举办了一个纸牌之夜，特别开心。我们笑个不停，玩得很尽兴！看看这张照片！",
+                  "query": null,
+                  "blip_caption": "a photography of a group of men sitting at a table with playing cards"
+                },
+                {
+                  "dia_id": "D15:2",
+                  "speaker": "卡尔文",
+                  "text": "嘿，戴夫！很高兴收到你的消息，纸牌之夜听起来太棒了！我一直很喜欢和朋友们一起玩乐。你猜怎么着？我拿到了一个和Frank Ocean继续合作的机会！这对我来说是梦想成真，我一直努力工作，终于有了回报。我高兴得无以言表。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D15:3",
+                  "speaker": "戴夫",
+                  "text": "哇，卡尔文，恭喜你！真为你感到兴奋。这个机会是怎么来的？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D15:4",
+                  "speaker": "卡尔文",
+                  "text": "谢谢，戴夫！我在东京的一个音乐节上有机会见到了Frank Ocean，我们一见如故。我们一直在交流、分享想法，后来约了见面，还在我豪宅的录音室里录了一首歌——一切都很棒！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D15:5",
+                  "speaker": "戴夫",
+                  "text": "哇，东京听起来是一次不可思议的经历！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D15:6",
+                  "speaker": "卡尔文",
+                  "text": "那真是一次难忘的经历，戴夫！整座城市充满了活力，音乐节的人群特别热闹——简直是我灵魂的燃料。看看这张照片，太棒了！",
+                  "query": "city festival crowd energy vibe",
+                  "blip_caption": "a photo of a crowd of people sitting on the grass at night"
+                },
+                {
+                  "dia_id": "D15:7",
+                  "speaker": "戴夫",
+                  "text": "哇，听起来太不可思议了！在音乐节上演出是什么感觉？肯定是一次很棒的经历吧。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_answer": "卡尔文在一个音乐节上认识了Frank Ocean（弗兰克主动提出想合作），两人一见如故，随后在录音室合录了一首歌，并于2023年10月开始一起巡演。",
+      "graph_answer": "卡尔文是在一个音乐节上认识Frank Ocean的——他在东京的音乐节上注意到弗兰克的演出，两人一见如故，弗兰克主动提出想合作，之后不断交流并一起录了歌（据部分回忆这是2022年8月开始的，也有记忆指是2023年8月在东京）。",
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "东京（具体地点）"
+        ],
+        "reason": "答案提到音乐节但缺少金标准中的具体地点'东京'。"
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "The answer directly states they met at a music festival in Tokyo, matching the gold; the hedged dates are extra detail not in the gold."
+      },
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "77cc1765-289a-424d-888e-1149308fb670",
+          "content": "卡尔文在东京的一个音乐节上认识了Frank Ocean，两人一见如故，之后不断交流分享想法，并在卡尔文豪宅的录音室里一起录了一首歌",
+          "route": "vector",
+          "session_date": "11:06 am on 22 August, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "fc7672ca-2dee-43c5-8e20-17718f36c96c",
+          "content": "卡尔文与弗兰克·奥申的合作始于2022年8月，两人在一个音乐节上认识，弗兰克提出想合作，两人一见如故，在舞台上化学反应不可思议",
+          "route": "vector",
+          "session_date": "10:11 am on 19 October, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "a309cc09-fc47-4c51-9f63-e771701aaae7",
+          "content": "卡尔文与波士顿艺术家们的会面是由他们的共同朋友促成的，因为共同朋友认为他们非常合适",
+          "route": "vector",
+          "session_date": "2:44 pm on 4 October, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "6fbdd9a4-23a2-4293-8788-db28edb053df",
+          "content": "卡尔文在为自己的工作室里一位有音乐潜力的年轻艺术家制作节拍，认为与新人合作能为音乐行业带来新想法",
+          "route": "vector",
+          "session_date": "9:15 pm on 13 November, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "4f6cbf5e-4253-437f-9fd9-2ff8ded3ecb9",
+          "content": "卡尔文于2023年10月3日在波士顿会见了几位艺术家讨论合作，经历鼓舞人心；会面是由他们的共同朋友促成的，卡尔文非常期待与他们合作创作新音乐并向戴夫展示最终成果",
+          "route": "vector",
+          "session_date": "3:13 pm on 8 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "4673a2ed-f5a7-49ff-a84d-2d0e4caa8e46",
+          "content": "卡尔文于2023年11月16日（前一天）在波士顿参加了一场盛大的晚会，结识了一些有趣的人，并与一位很酷的艺术家聊得特别投机，两人在音乐和艺术上非常投缘，聊了各自最喜欢的艺术家和音乐如何连接人心，卡尔文感觉充满创作激情",
+          "route": "vector",
+          "session_date": "10:54 am on 17 November, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "8abc86a4-6633-4a47-9132-df4f61fe978d",
+          "content": "卡尔文分享了一张2023年10月与一位他敬佩的艺术家（弗兰克·奥申）同台现场演出的照片，称这是梦想成真，演出让他意识到音乐就是他的热情和使命",
+          "route": "vector",
+          "session_date": "8:25 pm on 25 October, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "a5e00eda-44e7-4d7a-8bdc-321fe916cfde",
+          "content": "卡尔文于2023年5月下旬（5月31日前一周）与弗兰克·奥申 (Frank Ocean) 一起在东京巡演，观众非常热情，他表演时感到充满活力，形容那是最极致的享受",
+          "route": "vector",
+          "session_date": "6:06 pm on 31 May, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "054f00c4-bb5f-43e2-a863-2671e5b0de81",
+          "content": "卡尔文拿到了与Frank Ocean继续合作的机会，这是他努力工作的回报，形容为梦想成真",
+          "route": "vector",
+          "session_date": "11:06 am on 22 August, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "4002694b-7c44-4668-8b71-bea9575d7fe5",
+          "content": "卡尔文计划与弗兰克·奥申一起在波士顿演出，期待为家乡观众演奏并体验波士顿的音乐圈；戴夫认为波士顿音乐圈很棒，有很多有才华的音乐家和演出场所，并表示会去为卡尔文加油",
+          "route": "vector",
+          "session_date": "6:06 pm on 31 May, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "7ef35ea3-d242-4c8e-b16f-5f177cc6fbc6",
+          "content": "卡尔文于2023年10月开始与弗兰克·奥申 (Frank Ocean) 一起巡演，形容观众热情极高，在舞台上与观众产生强烈连接感，并表示与弗兰克同台演出是梦想成真",
+          "route": "vector",
+          "session_date": "10:11 am on 19 October, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "b13cf450-05fe-43ee-8675-6587a35465de",
+          "content": "卡尔文提到 The Fireworks 乐队最近与弗兰克·欧申合作演出，并表示热爱自己的工作是因为能与观众建立联结",
+          "route": "vector",
+          "session_date": "9:39 am on 15 October, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "f4ad4ffd-1fc4-4ab5-9624-1850fe48292e",
+          "content": "卡尔文梦想着环游世界巡演，为不同的人表演并建立联系，希望自己的音乐能触及全球观众并产生影响；他计划在完成弗兰克·奥申 (Frank Ocean) 巡演之后前往波士顿，期待体验那里超棒的音乐氛围",
+          "route": "vector",
+          "session_date": "4:15 pm on 20 April, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "5ab8d0dd-af71-48df-8d91-477ef9c5141d",
+          "content": "卡尔文高中时常与老朋友们即兴说唱、聊出名的梦想，其中一位发小一直是他非常好的朋友，总在支持和鼓励他，其正能量对他影响很大",
+          "route": "vector",
+          "session_date": "9:15 pm on 13 November, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "951e770a-640f-48e1-ad3e-4da67caae1fb",
+          "content": "卡尔文邀请了高中时期的老朋友来看他在波士顿的演出（2023年11月左右），并感慨自己一路走来的成长以及在音乐行业中人际关系的重要性",
+          "route": "vector",
+          "session_date": "9:15 pm on 13 November, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "77cc1765-289a-424d-888e-1149308fb670",
+          "content": "卡尔文在东京的一个音乐节上认识了Frank Ocean，两人一见如故，之后不断交流分享想法，并在卡尔文豪宅的录音室里一起录了一首歌",
+          "route": "vector",
+          "session_date": "11:06 am on 22 August, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "fc7672ca-2dee-43c5-8e20-17718f36c96c",
+          "content": "卡尔文与弗兰克·奥申的合作始于2022年8月，两人在一个音乐节上认识，弗兰克提出想合作，两人一见如故，在舞台上化学反应不可思议",
+          "route": "vector",
+          "session_date": "10:11 am on 19 October, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "a309cc09-fc47-4c51-9f63-e771701aaae7",
+          "content": "卡尔文与波士顿艺术家们的会面是由他们的共同朋友促成的，因为共同朋友认为他们非常合适",
+          "route": "vector",
+          "session_date": "2:44 pm on 4 October, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "6fbdd9a4-23a2-4293-8788-db28edb053df",
+          "content": "卡尔文在为自己的工作室里一位有音乐潜力的年轻艺术家制作节拍，认为与新人合作能为音乐行业带来新想法",
+          "route": "vector",
+          "session_date": "9:15 pm on 13 November, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "4f6cbf5e-4253-437f-9fd9-2ff8ded3ecb9",
+          "content": "卡尔文于2023年10月3日在波士顿会见了几位艺术家讨论合作，经历鼓舞人心；会面是由他们的共同朋友促成的，卡尔文非常期待与他们合作创作新音乐并向戴夫展示最终成果",
+          "route": "vector",
+          "session_date": "3:13 pm on 8 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "4673a2ed-f5a7-49ff-a84d-2d0e4caa8e46",
+          "content": "卡尔文于2023年11月16日（前一天）在波士顿参加了一场盛大的晚会，结识了一些有趣的人，并与一位很酷的艺术家聊得特别投机，两人在音乐和艺术上非常投缘，聊了各自最喜欢的艺术家和音乐如何连接人心，卡尔文感觉充满创作激情",
+          "route": "vector",
+          "session_date": "10:54 am on 17 November, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "8abc86a4-6633-4a47-9132-df4f61fe978d",
+          "content": "卡尔文分享了一张2023年10月与一位他敬佩的艺术家（弗兰克·奥申）同台现场演出的照片，称这是梦想成真，演出让他意识到音乐就是他的热情和使命",
+          "route": "vector",
+          "session_date": "8:25 pm on 25 October, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "86160d44-1b70-4a18-a6ee-3d54ae755147",
+          "content": "有人在音乐节上注意到了卡尔文的演出并促成新的合作；他的巡演即将结束，接下来将前往波士顿，并计划与戴夫在那里见面",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 9,
+          "id": "a5e00eda-44e7-4d7a-8bdc-321fe916cfde",
+          "content": "卡尔文于2023年5月下旬（5月31日前一周）与弗兰克·奥申 (Frank Ocean) 一起在东京巡演，观众非常热情，他表演时感到充满活力，形容那是最极致的享受",
+          "route": "vector",
+          "session_date": "6:06 pm on 31 May, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "054f00c4-bb5f-43e2-a863-2671e5b0de81",
+          "content": "卡尔文拿到了与Frank Ocean继续合作的机会，这是他努力工作的回报，形容为梦想成真",
+          "route": "vector",
+          "session_date": "11:06 am on 22 August, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "4002694b-7c44-4668-8b71-bea9575d7fe5",
+          "content": "卡尔文计划与弗兰克·奥申一起在波士顿演出，期待为家乡观众演奏并体验波士顿的音乐圈；戴夫认为波士顿音乐圈很棒，有很多有才华的音乐家和演出场所，并表示会去为卡尔文加油",
+          "route": "vector",
+          "session_date": "6:06 pm on 31 May, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "7ef35ea3-d242-4c8e-b16f-5f177cc6fbc6",
+          "content": "卡尔文于2023年10月开始与弗兰克·奥申 (Frank Ocean) 一起巡演，形容观众热情极高，在舞台上与观众产生强烈连接感，并表示与弗兰克同台演出是梦想成真",
+          "route": "vector",
+          "session_date": "10:11 am on 19 October, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "5b8ea248-ad7f-43e9-b814-68044488cbac",
+          "content": "戴夫邀请卡尔文使用他配有高品质音响系统的音乐工作室，并表示如果卡尔文在音乐方面需要帮忙可以随时找他；卡尔文因目前音乐工作繁忙，记在心上但暂未接受",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "3176d3ae-b8a3-4bcb-836f-1c468df3e7b1",
+          "content": "戴夫 (Dave) 向卡尔文推荐了波士顿的音乐场所，包括 Paradise Rock、House of Blues 和芬威公园 (Fenway Park)，并表示在卡尔文来波士顿时会带他逛遍这座城市，还会坐第一排看他的演出",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "b13cf450-05fe-43ee-8675-6587a35465de",
+          "content": "卡尔文提到 The Fireworks 乐队最近与弗兰克·欧申合作演出，并表示热爱自己的工作是因为能与观众建立联结",
+          "route": "vector",
+          "session_date": "9:39 am on 15 October, 2023"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 8,
+          "id": "86160d44-1b70-4a18-a6ee-3d54ae755147",
+          "content": "有人在音乐节上注意到了卡尔文的演出并促成新的合作；他的巡演即将结束，接下来将前往波士顿，并计划与戴夫在那里见面",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "5b8ea248-ad7f-43e9-b814-68044488cbac",
+          "content": "戴夫邀请卡尔文使用他配有高品质音响系统的音乐工作室，并表示如果卡尔文在音乐方面需要帮忙可以随时找他；卡尔文因目前音乐工作繁忙，记在心上但暂未接受",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "3176d3ae-b8a3-4bcb-836f-1c468df3e7b1",
+          "content": "戴夫 (Dave) 向卡尔文推荐了波士顿的音乐场所，包括 Paradise Rock、House of Blues 和芬威公园 (Fenway Park)，并表示在卡尔文来波士顿时会带他逛遍这座城市，还会坐第一排看他的演出",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 13,
+          "id": "f4ad4ffd-1fc4-4ab5-9624-1850fe48292e",
+          "content": "卡尔文梦想着环游世界巡演，为不同的人表演并建立联系，希望自己的音乐能触及全球观众并产生影响；他计划在完成弗兰克·奥申 (Frank Ocean) 巡演之后前往波士顿，期待体验那里超棒的音乐氛围",
+          "route": "vector",
+          "session_date": "4:15 pm on 20 April, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "5ab8d0dd-af71-48df-8d91-477ef9c5141d",
+          "content": "卡尔文高中时常与老朋友们即兴说唱、聊出名的梦想，其中一位发小一直是他非常好的朋友，总在支持和鼓励他，其正能量对他影响很大",
+          "route": "vector",
+          "session_date": "9:15 pm on 13 November, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "951e770a-640f-48e1-ad3e-4da67caae1fb",
+          "content": "卡尔文邀请了高中时期的老朋友来看他在波士顿的演出（2023年11月左右），并感慨自己一路走来的成长以及在音乐行业中人际关系的重要性",
+          "route": "vector",
+          "session_date": "9:15 pm on 13 November, 2023"
+        }
+      ]
+    }
+  ],
+  "conv43_potter_keyword_screen": {
+    "english": [
+      {
+        "session": "session_1",
+        "date": "7:48 pm on 21 May, 2023",
+        "speaker": "Tim",
+        "dia_id": "D1:2",
+        "text": "Hey John! Great to meet you. Been discussing collaborations for a Harry Potter fan project I am working on - super excited! Anything interesting happening for you?"
+      },
+      {
+        "session": "session_1",
+        "date": "7:48 pm on 21 May, 2023",
+        "speaker": "Tim",
+        "img_url": [
+          "https://i.redd.it/l30ofyg973ja1.jpg"
+        ],
+        "blip_caption": "a photo of a table with a bunch of books on it",
+        "query": "harry potter books fan project collaboration wizarding world",
+        "dia_id": "D1:14",
+        "text": "It's been going well! Last week I talked to my friend who is a fan of Harry Potter and we're figuring out ideas, so it's been great to get lost in that magical world!"
+      },
+      {
+        "session": "session_1",
+        "date": "7:48 pm on 21 May, 2023",
+        "speaker": "Tim",
+        "dia_id": "D1:16",
+        "text": "Thanks! We'll be discussing various aspects of the Harry Potter universe, like characters, spells, and magical creatures. It's great to see fans coming together for this."
+      },
+      {
+        "session": "session_1",
+        "date": "7:48 pm on 21 May, 2023",
+        "speaker": "Tim",
+        "dia_id": "D1:18",
+        "text": "I went to a place in London a few years ago - it was like walking into a Harry Potter movie! I also went on a tour which was amazing. Have you been to any of the real Potter places? I'd love to explore them someday!"
+      },
+      {
+        "session": "session_2",
+        "date": "5:08 pm on 15 June, 2023",
+        "speaker": "Tim",
+        "dia_id": "D2:9",
+        "text": "Thanks! That picture is from MinaLima. They created all the props for the Harry Potter films, and I love their work. It's like having a piece of the wizarding world at home!"
+      },
+      {
+        "session": "session_3",
+        "date": "4:21 pm on 16 July, 2023",
+        "speaker": "Tim",
+        "img_url": [
+          "https://live.staticflickr.com/2174/2061292757_73e8ef5397_b.jpg"
+        ],
+        "blip_caption": "a photography of a table with a bunch of books on it",
+        "query": "harry potter books california discussion favorite books and characters magical experience",
+        "dia_id": "D3:2",
+        "re-download": true,
+        "text": "Congrats on your achievement! I'm so proud of you. Last week, I had a nice chat with a Harry Potter fan in California. It was magical!"
+      },
+      {
+        "session": "session_4",
+        "date": "4:17 pm on 2 August, 2023",
+        "speaker": "Tim",
+        "dia_id": "D4:7",
+        "text": "For sure! Harry Potter and Game of Thrones are amazing - I'm totally hooked! I could chat about them forever!"
+      },
+      {
+        "session": "session_4",
+        "date": "4:17 pm on 2 August, 2023",
+        "speaker": "John",
+        "img_url": [
+          "https://pictures.abebooks.com/inventory/31262885157_3.jpg"
+        ],
+        "blip_caption": "a photo of a book with a picture of a person holding a bookmark",
+        "query": "harry potter signed book",
+        "dia_id": "D4:8",
+        "text": "Oh yeah, I remember you telling me about Harry Potter! I've got a funny story. Anthony and I went to this charity thing and ended up in this intense Harry Potter trivia contest. We did alright, but there was this one super-nerd there that took home this as a prize.\n"
+      },
+      {
+        "session": "session_5",
+        "date": "10:29 am on 9 August, 2023",
+        "speaker": "Tim",
+        "dia_id": "D5:1",
+        "text": "Hey John! Long time no see! Been super busy lately. Guess what? Just skyped with that Harry Potter fan I met in CA and had a great time. We talked characters and maybe collab-ing - so cool to talk to someone who gets it. You? Anything new going on?"
+      },
+      {
+        "session": "session_8",
+        "date": "4:29 pm on 21 August, 2023",
+        "speaker": "Tim",
+        "dia_id": "D8:16",
+        "text": "Yeah, \"Harry Potter and the Philosopher's Stone\" is special to me. It was the first movie from the series and brings back some great memories. Watching it with my family was amazing. It was so magical!"
+      },
+      {
+        "session": "session_8",
+        "date": "4:29 pm on 21 August, 2023",
+        "speaker": "Tim",
+        "blip_caption": "a photo of a christmas tree with a harry potter theme",
+        "dia_id": "D8:32",
+        "text": "I decorated this tree myself, going all out with a Harry Potter theme! It was a blast!"
+      },
+      {
+        "session": "session_10",
+        "date": "2:52 pm on 31 August, 2023",
+        "speaker": "Tim",
+        "dia_id": "D10:11",
+        "text": "Nope, but it's my first time going. I'm super stoked for the Harry Potter stuff. Can't wait!"
+      },
+      {
+        "session": "session_11",
+        "date": "8:17 pm on 21 September, 2023",
+        "speaker": "Tim",
+        "img_url": [
+          "https://www.thebearandthefox.com/wp-content/uploads/2018/02/IMG_3494.jpg"
+        ],
+        "blip_caption": "a photo of a city with a clock tower and a sun setting",
+        "query": "edinburgh scotland castle sunset",
+        "dia_id": "D11:10",
+        "text": "Edinburgh, Scotland would be great for a magical vibe. It's the birthplace of Harry Potter and has awesome history and architecture. Plus, it's a beautiful city. What do you think?"
+      },
+      {
+        "session": "session_13",
+        "date": "1:50 pm on 13 October, 2023",
+        "speaker": "Tim",
+        "dia_id": "D13:1",
+        "text": "Hey John! It's been ages since we last talked. Guess what? Last week I went to a Harry Potter conference in the UK - it was incredible! There were so many people who shared the same love of HP as me, it was like a magical family. I felt so inspired and like I got a new lease of life. I love how my passion for fantasy stuff brings me closer to people from all over the world, it's pretty cool."
+      },
+      {
+        "session": "session_19",
+        "date": "10:22 am on 21 November, 2023",
+        "speaker": "John",
+        "dia_id": "D19:14",
+        "text": "Fantasy books always fuel my creativity, both in and outside of my hobbies. Are Harry Potter and GoT still your favorites?"
+      },
+      {
+        "session": "session_22",
+        "date": "7:42 pm on 8 December, 2023",
+        "speaker": "Tim",
+        "dia_id": "D22:1",
+        "text": "Hey John! Long time no see! I just got back from the coolest Harry Potter party. Met lots of awesome people who were into the same stuff as me, had so much fun!"
+      },
+      {
+        "session": "session_22",
+        "date": "7:42 pm on 8 December, 2023",
+        "speaker": "John",
+        "dia_id": "D22:2",
+        "text": "Hey Tim! Sounds awesome! So glad you had a blast at the Harry Potter party. Last August I told you about my fun time at a charity event with Harry Potter trivia. Love being with people who are as passionate about Harry Potter as us! Did you dress up as any character?"
+      },
+      {
+        "session": "session_26",
+        "date": "3:35 pm on 26 December, 2023",
+        "speaker": "John",
+        "dia_id": "D26:15",
+        "text": "By the way, who was that main actress in Harry Potter? I've heard about her a lot lately."
+      },
+      {
+        "session": "session_26",
+        "date": "3:35 pm on 26 December, 2023",
+        "speaker": "John",
+        "dia_id": "D26:27",
+        "text": "That's awesome! Have you seen all the Harry Potter movies? I'm a fan too!"
+      },
+      {
+        "session": "session_27",
+        "date": "5:26 pm on 2 January, 2024",
+        "speaker": "Tim",
+        "blip_caption": "a photo of a collection of movies and dvds on a carpet",
+        "dia_id": "D27:19",
+        "text": "Harry Potter is my favorite book. It's so immersive!"
+      }
+    ],
+    "chinese": [
+      {
+        "session": "session_1",
+        "date": "7:48 pm on 21 May, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D1:2",
+        "text": "嘿，约翰！很高兴认识你。我正在讨论一个我正在做的哈利·波特粉丝项目的合作——超级兴奋！你这边有什么有趣的事吗？"
+      },
+      {
+        "session": "session_1",
+        "date": "7:48 pm on 21 May, 2023",
+        "speaker": "蒂姆",
+        "img_url": [
+          "https://i.redd.it/l30ofyg973ja1.jpg"
+        ],
+        "blip_caption": "a photo of a table with a bunch of books on it",
+        "query": "harry potter books fan project collaboration wizarding world",
+        "dia_id": "D1:14",
+        "text": "进展很顺利！上周我和一个哈利·波特粉丝朋友聊了聊，我们在构思一些点子，所以能沉浸在那个魔法世界里真的很棒！"
+      },
+      {
+        "session": "session_1",
+        "date": "7:48 pm on 21 May, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D1:16",
+        "text": "谢谢！我们会讨论哈利·波特世界的方方面面，比如角色、咒语和魔法生物。看到粉丝们为此聚在一起真的很开心。"
+      },
+      {
+        "session": "session_1",
+        "date": "7:48 pm on 21 May, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D1:18",
+        "text": "几年前我去过伦敦的一个地方——就像走进哈利·波特电影一样！我还参加了一次游览，非常棒。你去过什么真正的波特相关地点吗？我真希望有一天能去探索一下！"
+      },
+      {
+        "session": "session_2",
+        "date": "5:08 pm on 15 June, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D2:9",
+        "text": "谢谢！那张图片来自MinaLima。他们为哈利·波特电影制作了所有道具，我很喜欢他们的作品。就像在家里拥有魔法世界的一角！"
+      },
+      {
+        "session": "session_2",
+        "date": "5:08 pm on 15 June, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D2:13",
+        "text": "当然，这些纪念物真的很管用。而且以后我肯定会去更多哈利·波特主题的地方。感觉自己就像走进了书里！"
+      },
+      {
+        "session": "session_3",
+        "date": "4:21 pm on 16 July, 2023",
+        "speaker": "蒂姆",
+        "img_url": [
+          "https://live.staticflickr.com/2174/2061292757_73e8ef5397_b.jpg"
+        ],
+        "blip_caption": "a photography of a table with a bunch of books on it",
+        "query": "harry potter books california discussion favorite books and characters magical experience",
+        "dia_id": "D3:2",
+        "re-download": true,
+        "text": "祝贺你取得这样的成绩！我真为你骄傲。上周，我在加利福尼亚州和一位《哈利·波特》粉丝聊得很开心，简直太神奇了！"
+      },
+      {
+        "session": "session_4",
+        "date": "4:17 pm on 2 August, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D4:7",
+        "text": "当然！《哈利·波特》和《权力的游戏》太精彩了——我完全入迷了！我可以永远聊下去！"
+      },
+      {
+        "session": "session_4",
+        "date": "4:17 pm on 2 August, 2023",
+        "speaker": "约翰",
+        "img_url": [
+          "https://pictures.abebooks.com/inventory/31262885157_3.jpg"
+        ],
+        "blip_caption": "a photo of a book with a picture of a person holding a bookmark",
+        "query": "harry potter signed book",
+        "dia_id": "D4:8",
+        "text": "哦对，我记得你跟我说过《哈利·波特》！我有个好玩的故事。我和安东尼去参加一个慈善活动，结果碰上了一场激烈的《哈利·波特》知识竞赛。我们表现得还不错，但有个超级书迷把奖品带回家了。\n"
+      },
+      {
+        "session": "session_5",
+        "date": "10:29 am on 9 August, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D5:1",
+        "text": "嘿，约翰！好久不见！最近超级忙。猜怎么着？我刚和在加州认识的那个哈利·波特粉丝视频通话了，聊得很开心。我们聊了角色，还可能一起合作——和一个懂你的人聊天真是太酷了。你呢？有什么新鲜事吗？"
+      },
+      {
+        "session": "session_8",
+        "date": "4:29 pm on 21 August, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D8:16",
+        "text": "好啊，《哈利·波特与魔法石》对我来说很特别。它是这个系列的第一部电影，带给我很多美好的回忆。和家人一起看太棒了。真是太神奇了！"
+      },
+      {
+        "session": "session_8",
+        "date": "4:29 pm on 21 August, 2023",
+        "speaker": "蒂姆",
+        "blip_caption": "a photo of a christmas tree with a harry potter theme",
+        "dia_id": "D8:32",
+        "text": "这棵树是我自己装饰的，用了哈利·波特主题，全力以赴！那真是太好玩了！"
+      },
+      {
+        "session": "session_10",
+        "date": "2:52 pm on 31 August, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D10:11",
+        "text": "没有，这是我第一次去。我对哈利·波特主题的东西超级兴奋。等不及了！"
+      },
+      {
+        "session": "session_13",
+        "date": "1:50 pm on 13 October, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D13:1",
+        "text": "嘿，约翰！好久没聊了。猜猜怎么着？上周我去英国参加了一场哈利·波特大会——太棒了！那里有那么多和我一样热爱哈利·波特的人，就像一个神奇的大家庭。我深受鼓舞，感觉焕发了新的活力。我喜欢这种对奇幻事物的热情让我和世界各地的人拉近距离的感觉，真的很酷。"
+      },
+      {
+        "session": "session_19",
+        "date": "10:22 am on 21 November, 2023",
+        "speaker": "约翰",
+        "dia_id": "D19:14",
+        "text": "奇幻书籍总能激发我的创造力，无论在爱好内外。《哈利·波特》和《权力的游戏》还是你的最爱吗？"
+      },
+      {
+        "session": "session_22",
+        "date": "7:42 pm on 8 December, 2023",
+        "speaker": "蒂姆",
+        "dia_id": "D22:1",
+        "text": "嘿，约翰！好久不见！我刚从一个超酷的哈利·波特主题派对回来。遇到了很多和我兴趣相投的超棒的人，玩得太开心了！"
+      },
+      {
+        "session": "session_22",
+        "date": "7:42 pm on 8 December, 2023",
+        "speaker": "约翰",
+        "dia_id": "D22:2",
+        "text": "嘿，蒂姆！听起来太棒了！很高兴你在哈利·波特派对上玩得尽兴。去年八月我跟你说过的，我参加了一个哈利·波特知识问答的慈善活动，玩得很开心。和跟我们一样热爱哈利·波特的人在一起真好！你有没有打扮成什么角色？"
+      },
+      {
+        "session": "session_27",
+        "date": "5:26 pm on 2 January, 2024",
+        "speaker": "蒂姆",
+        "blip_caption": "a photo of a collection of movies and dvds on a carpet",
+        "dia_id": "D27:19",
+        "text": "《哈利·波特》是我最喜欢的书。太让人沉浸其中了！"
+      }
+    ]
+  },
+  "conv43_qa_sharing_D27_19": {
+    "english": [
+      {
+        "qa_index": 66,
+        "question": "What is a Star Wars book that Tim might enjoy?",
+        "answer": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
+        "evidence": [
+          "D27:19",
+          "D27:21"
+        ],
+        "category": 3
+      },
+      {
+        "qa_index": 166,
+        "question": "What is John's favorite book series?",
+        "answer": "Harry Potter",
+        "evidence": [
+          "D27:19"
+        ],
+        "category": 4
+      }
+    ],
+    "chinese": [
+      {
+        "qa_index": 66,
+        "question": "蒂姆可能会喜欢哪本《星球大战》的书？",
+        "answer": "朱迪·布伦德尔和大卫·法兰德的《星球大战：绝地武士学徒》。这是一套评价很高、沉浸感强的系列，与他自己最喜欢的电影相关。",
+        "evidence": [
+          "D27:19",
+          "D27:21"
+        ],
+        "category": 3
+      },
+      {
+        "qa_index": 166,
+        "question": "约翰最喜欢的系列图书是什么？",
+        "answer": "哈利·波特",
+        "evidence": [
+          "D27:19"
+        ],
+        "category": 4
+      }
+    ]
+  },
+  "limits": [
+    "Independent runs cannot isolate graph causality.",
+    "Keyword screen is not a complete semantic proof of absence.",
+    "Historical memories may not match the current Chinese library."
+  ]
+}
