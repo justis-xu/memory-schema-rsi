@@ -1,0 +1,86 @@
+{
+  "scope": "Manual bilingual source/fact/route interpretation of eight targeted cases from the graph-only-exact stratum; not prevalence or causal labels",
+  "packet": "results/analysis/m2_graph_positive_mechanisms_20260927.json",
+  "labels": [
+    {
+      "case_id": "locomo_conv-49_qa85",
+      "mechanism": "plausible_graph_specific_relation_bridge",
+      "source_status": "D1:14 says Evan started painting years ago; D1:15-17 establish watercolor painting in both languages",
+      "base_context_status": "painting years ago at rank 1 and watercolor at other ranks, but the combined historical watercolor relation is not explicit in one base memory",
+      "gained_graph_status": "rank 13 User memory from session_1 explicitly says watercolor painting a few years ago; rank 3 says years ago painting and current watercolor",
+      "answer_change": "base painting; graph watercolor painting",
+      "inference_limit": "User alias and session_1 source context support Evan, but multiple graph entries and separate generations prevent single-candidate attribution",
+      "confidence": "medium_high"
+    },
+    {
+      "case_id": "locomo_conv-42_qa198",
+      "mechanism": "answer_fact_arrives_on_vector_route_inside_fused_context",
+      "source_status": "D29:10 directly says colorful coconut-milk ice-cream bowls; English and Chinese align",
+      "base_context_status": "coconut ice cream and colored sprinkles appear, but no explicit colorful bowls memory",
+      "gained_graph_status": "rank 11 exact-detail memory is marked vector, while selected graph rank 12 only praises Joanna's dessert ability",
+      "answer_change": "base coconut ice cream with changed sprinkles; graph adds colorful bowls",
+      "inference_limit": "Graph-enabled fused pool may have changed vector admission, but archived runs do not show same-run rerank counterfactual",
+      "confidence": "high_for_route_and_fact; medium_for_cause"
+    },
+    {
+      "case_id": "locomo_conv-41_qa6",
+      "mechanism": "answer_integration_of_already_present_places",
+      "source_status": "evidence plus neighbor context support shelter, gym, church",
+      "base_context_status": "all three places appear in base final 15; base answer names only shelter",
+      "gained_graph_status": "added graph memory describes a woman Maria met at shelter, not a missing gym or church fact",
+      "answer_change": "graph answer lists all three",
+      "inference_limit": "Answer integration improved between runs, not evidence of graph delivering a required missing place",
+      "confidence": "high"
+    },
+    {
+      "case_id": "locomo_conv-47_qa72",
+      "mechanism": "answer_person_reading_change_with_direct_fact_already_at_rank_1",
+      "source_status": "D3:2/3 say both James and John play drums; John explicitly says he also plays drums",
+      "base_context_status": "rank 1 explicitly says John has played drums for a month; base answer wrongly attributes learning drums only to James",
+      "gained_graph_status": "added graph memory says John played drums as a child, not the missing March 2022 learning relation",
+      "answer_change": "graph answer says drums",
+      "inference_limit": "Cannot tell whether extra John cue corrected attention or generation varied; no unique required fact added",
+      "confidence": "high_for_fact; medium_for_cause"
+    },
+    {
+      "case_id": "locomo_conv-49_qa72",
+      "mechanism": "answer_choice_change_with_direct_fact_already_at_rank_2",
+      "source_status": "D20:6 says Sam had not hiked in a long time; D22:1 says he recently took friends hiking",
+      "base_context_status": "rank 2 explicitly says December 29 Sam took friends hiking; base answer instead chooses morning jogging",
+      "gained_graph_status": "added graph memory says Sam liked hiking years ago but had not gone for a long time; it does not uniquely provide the December return event",
+      "answer_change": "graph answer chooses hiking",
+      "inference_limit": "May be an attention cue but not a new necessary fact; separate generations confound attribution",
+      "confidence": "high_for_fact; medium_for_cause"
+    },
+    {
+      "case_id": "locomo_conv-50_qa124",
+      "mechanism": "judge_scope_inconsistency",
+      "source_status": "D23:11 says Dave enjoys repairing broken things",
+      "base_context_status": "rank 6 explicitly has repairing things; base answer says car repair/restoration, the activity in context",
+      "gained_graph_status": "several graph memories reiterate repairing cars and satisfaction but do not introduce a missing necessary activity",
+      "answer_change": "both answers describe repairing/restoring cars",
+      "inference_limit": "base partial judge rejects specific car repair as too narrow; graph exact judge accepts the same specificity, so exact flip cannot be treated as fact gain",
+      "confidence": "high"
+    },
+    {
+      "case_id": "locomo_conv-42_qa118",
+      "mechanism": "source_translation_drift_and_judge_contradiction",
+      "source_status": "English D10:11 says coconut cream frosting; Chinese D10:11 says 椰奶糖霜; Chinese gold 椰子奶油 tracks English answer rather than Chinese wording",
+      "base_context_status": "rank 1 contains 椰奶糖霜; base answer repeats it",
+      "gained_graph_status": "graph candidate mentions coconut milk dessert but not a new cake-frosting fact; graph answer also says 椰奶糖霜",
+      "answer_change": "both answers give 椰奶糖霜, judged wrong and exact respectively",
+      "inference_limit": "Coconut cream and coconut milk may differ materially, but for Chinese source fidelity both answers match source; strict-score flip is judge inconsistency",
+      "confidence": "high"
+    },
+    {
+      "case_id": "locomo_conv-47_qa6",
+      "mechanism": "graph_adds_location_clue_but_residence_is_inferred",
+      "source_status": "D5:1 says James adopted Ned from a shelter in Stamford; it does not explicitly say he lives in Connecticut",
+      "base_context_status": "no Stamford adoption clue in final 15; base answer says no Connecticut evidence",
+      "gained_graph_status": "graph route adds a User/Ned adoption memory from Stamford; question gold is probabilistic likely yes",
+      "answer_change": "graph answer infers likely Connecticut residence",
+      "inference_limit": "Requires geographic knowledge that Stamford is in Connecticut and a further proximity assumption; not a directly sourced residence fact",
+      "confidence": "high_for_source; medium_for_inference"
+    }
+  ]
+}

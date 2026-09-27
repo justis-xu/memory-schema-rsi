@@ -1,0 +1,3647 @@
+{
+  "scope": "Targeted eight-case mechanism review after screening 57 eligible Chinese graph-only exact flips; not random or prevalence sample; no new model calls",
+  "eligible_rule": "Non-adversarial, exclude earlier five mechanism cases, base non-exact, graph exact, graph candidate final, final ID sets differ",
+  "eligible_case_ids": [
+    "locomo_conv-26_qa120",
+    "locomo_conv-26_qa135",
+    "locomo_conv-26_qa22",
+    "locomo_conv-26_qa41",
+    "locomo_conv-26_qa71",
+    "locomo_conv-26_qa8",
+    "locomo_conv-26_qa81",
+    "locomo_conv-30_qa12",
+    "locomo_conv-41_qa138",
+    "locomo_conv-41_qa21",
+    "locomo_conv-41_qa28",
+    "locomo_conv-41_qa40",
+    "locomo_conv-41_qa41",
+    "locomo_conv-41_qa6",
+    "locomo_conv-41_qa65",
+    "locomo_conv-41_qa80",
+    "locomo_conv-41_qa84",
+    "locomo_conv-41_qa91",
+    "locomo_conv-42_qa118",
+    "locomo_conv-42_qa125",
+    "locomo_conv-42_qa126",
+    "locomo_conv-42_qa198",
+    "locomo_conv-42_qa60",
+    "locomo_conv-42_qa96",
+    "locomo_conv-43_qa125",
+    "locomo_conv-43_qa134",
+    "locomo_conv-43_qa140",
+    "locomo_conv-43_qa166",
+    "locomo_conv-43_qa24",
+    "locomo_conv-43_qa85",
+    "locomo_conv-44_qa0",
+    "locomo_conv-44_qa109",
+    "locomo_conv-44_qa41",
+    "locomo_conv-47_qa10",
+    "locomo_conv-47_qa102",
+    "locomo_conv-47_qa104",
+    "locomo_conv-47_qa16",
+    "locomo_conv-47_qa25",
+    "locomo_conv-47_qa6",
+    "locomo_conv-47_qa61",
+    "locomo_conv-47_qa72",
+    "locomo_conv-48_qa151",
+    "locomo_conv-48_qa172",
+    "locomo_conv-48_qa190",
+    "locomo_conv-48_qa36",
+    "locomo_conv-48_qa59",
+    "locomo_conv-48_qa83",
+    "locomo_conv-49_qa11",
+    "locomo_conv-49_qa139",
+    "locomo_conv-49_qa22",
+    "locomo_conv-49_qa32",
+    "locomo_conv-49_qa72",
+    "locomo_conv-49_qa85",
+    "locomo_conv-50_qa112",
+    "locomo_conv-50_qa124",
+    "locomo_conv-50_qa142",
+    "locomo_conv-50_qa99"
+  ],
+  "eligible_counts": {
+    "cases": 57,
+    "graph_gained": 128,
+    "vector_gained": 2,
+    "cases_with_vector_gain": 2
+  },
+  "selected_case_ids": [
+    "locomo_conv-49_qa85",
+    "locomo_conv-42_qa198",
+    "locomo_conv-41_qa6",
+    "locomo_conv-47_qa72",
+    "locomo_conv-49_qa72",
+    "locomo_conv-50_qa124",
+    "locomo_conv-42_qa118",
+    "locomo_conv-47_qa6"
+  ],
+  "input_paths": {
+    "base": "/Users/xu/git/memory-schema-rsi/results_zh/zhfull_locomo_20260925_164645.jsonl",
+    "graph": "/Users/xu/git/memory-schema-rsi/results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+    "base_grade": "/Users/xu/git/memory-schema-rsi/results/precision_regrade_base.jsonl",
+    "graph_grade": "/Users/xu/git/memory-schema-rsi/results/precision_regrade_graph.jsonl",
+    "english_data": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10.json",
+    "chinese_data": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json"
+  },
+  "input_sha256": {
+    "base": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59",
+    "graph": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "base_grade": "0a4bef376de18c4ef1242c893ab27f2cfa7133445885265fbcb05521acf9bb0b",
+    "graph_grade": "9fa3a5f25d3fdf21dd173e60a3d1db55177e362cb4f4b9ad145eb37107284d05",
+    "english_data": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese_data": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d"
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-49_qa85",
+      "source": {
+        "english": {
+          "question": "What did Evan start doing a few years back as a stress-buster?",
+          "answer": "watercolor painting",
+          "evidence": [
+            {
+              "dia_id": "D1:14",
+              "session": "session_1",
+              "session_date": "1:47 pm on 18 May, 2023",
+              "window": [
+                {
+                  "dia_id": "D1:11",
+                  "speaker": "Sam",
+                  "text": "Nothing so far, but I was thinking about trying painting. Do you have any hobbies you love?",
+                  "query": "paint set canvas hobbies",
+                  "blip_caption": "a photo of a person holding a paint set in a store"
+                },
+                {
+                  "dia_id": "D1:12",
+                  "speaker": "Evan",
+                  "text": "Cool idea, Sam! I love it. Have you tried it before?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:13",
+                  "speaker": "Sam",
+                  "text": "Not yet, but I'm keen to give it a go. It looks like a nice way to chill and get creative.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:14",
+                  "speaker": "Evan",
+                  "text": "Yep, it's a great stress-buster. I started doing this a few years back.",
+                  "query": "watercolor painting sunset",
+                  "blip_caption": "a photo of a painting of a cactus in the desert"
+                },
+                {
+                  "dia_id": "D1:15",
+                  "speaker": "Sam",
+                  "text": "Wow, that's impressive! How did you get into watercolor painting?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:16",
+                  "speaker": "Evan",
+                  "text": "My friend got me into it and gave me some advice, and I was hooked right away!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:17",
+                  "speaker": "Sam",
+                  "text": "Wow! I hope I can find something I'm as passionate about as you are with watercolor painting.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "埃文几年前开始做什么来减压？",
+          "answer": "水彩画",
+          "evidence": [
+            {
+              "dia_id": "D1:14",
+              "session": "session_1",
+              "session_date": "1:47 pm on 18 May, 2023",
+              "window": [
+                {
+                  "dia_id": "D1:11",
+                  "speaker": "萨姆",
+                  "text": "目前还没有，不过我在考虑试试画画。你有什么特别喜欢的爱好吗？",
+                  "query": "paint set canvas hobbies",
+                  "blip_caption": "a photo of a person holding a paint set in a store"
+                },
+                {
+                  "dia_id": "D1:12",
+                  "speaker": "埃文",
+                  "text": "好主意，萨姆！我很喜欢。你以前试过吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:13",
+                  "speaker": "萨姆",
+                  "text": "还没试过，但我很想尝试一下。看起来是个放松又发挥创造力的好方式。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:14",
+                  "speaker": "埃文",
+                  "text": "是啊，它是很好的减压方式。我几年前开始画的。",
+                  "query": "watercolor painting sunset",
+                  "blip_caption": "a photo of a painting of a cactus in the desert"
+                },
+                {
+                  "dia_id": "D1:15",
+                  "speaker": "萨姆",
+                  "text": "哇，真厉害！你是怎么开始画水彩画的？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:16",
+                  "speaker": "埃文",
+                  "text": "我朋友带我入门的，还给了我一些建议，我一下子就迷上了！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:17",
+                  "speaker": "萨姆",
+                  "text": "哇！希望我也能找到像你对水彩画这样让我充满热情的东西。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "水彩画（更具体的形式，即 watercolor）"
+        ],
+        "reason": "回答给出较宽泛的“绘画”，缺少黄金答案的具体形式“水彩画”。"
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "The answer states Evan started watercolor painting (水彩画) a few years ago to relieve stress, matching the gold precisely."
+      },
+      "base_answer": "绘画（painting）——Evan在2023年5月提到他画了好几年，绘画帮助他找到平静、缓解压力。",
+      "graph_answer": "埃文（Evan）几年前开始画画（水彩画）来减压。一位朋友送了他一幅画，激发了他开始绘画，他画了几年的画，认为绘画能帮助他找到平静、缓解压力、识别和处理情绪。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "f07268f7-ebe0-4c11-83ae-bc6cf753175a",
+          "content": "Evan has been painting for several years, and it helps him find calm; he told Sam painting is great for stress relief though it won't help with weight loss, and also recommended exercise",
+          "route": "vector",
+          "session_date": "7:11 pm on 24 May, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "7b763964-63ad-431c-bdd6-b6682503b2e8",
+          "content": "Evan has been passing time during his knee recovery by painting watercolors, which he finds relaxing and a way to immerse himself in color",
+          "route": "vector",
+          "session_date": "8:57 pm on 6 October, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "0792cd2a-23a2-4817-adcf-fecac44cee3d",
+          "content": "Evan started weight training a year ago (around fall 2022); it was hard at first but he has made progress, and he offered to help Sam try weightlifting, sharing a gym photo of himself doing squats",
+          "route": "vector",
+          "session_date": "3:09 pm on 8 October, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "006a2c21-85e0-4a23-a8b8-0a42642db147",
+          "content": "Evan shared a watercolor painting of a vibrant sunset over a lake and a colorful landscape painting of a mountain range with a horse; he said painting and going for drives help him cope with stress and find comfort",
+          "route": "vector",
+          "session_date": "9:28 am on 11 September, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "f58e5519-0f07-40a1-8865-eefd7a1f53e6",
+          "content": "Evan shared a painting of a peaceful sunset depicting a person on a cliff around October 14, 2023, saying painting helps him relax",
+          "route": "vector",
+          "session_date": "4:07 pm on 14 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "af7f85f9-2f5d-4dbd-ad55-290799b7ac26",
+          "content": "埃文正在考虑尝试瑜伽作为一种温和有效的减压和提升柔韧性的方式，萨姆表示瑜伽对柔韧性和压力水平有奇效，鼓励他试试",
+          "route": "vector",
+          "session_date": "8:16 pm on 5 December, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "6af405ae-0daa-43b8-9e05-a172072c1c2f",
+          "content": "Evan enjoys working out and finds that exercise clears the mind; he shared a photo of himself holding a dumbbell and encouraged Sam to exercise together toward their goals",
+          "route": "vector",
+          "session_date": "3:55 pm on 6 June, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "79fbccb3-9096-4129-b5f9-99229b61cdc6",
+          "content": "Evan最喜欢的一项轻度运动是去海滩看日落，他形容这既能锻炼身体，又能让人感到平静",
+          "route": "vector",
+          "session_date": "12:17 am on 10 January, 2024"
+        },
+        {
+          "rank": 9,
+          "id": "4a73d479-bcfc-4d6d-970e-eec1db920667",
+          "content": "About two years ago (around fall 2021), Evan went through a similar health transformation: he changed his diet, started walking regularly, and shared a gym bag selfie photo showing lots of fruits and vegetables",
+          "route": "vector",
+          "session_date": "2:56 pm on 25 October, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "807e98ce-b6c8-4bc5-8bba-7b6419613b95",
+          "content": "埃文（Evan）画了一幅抽象画（白色背景配蓝色、橙色和黑色笔触），以表达复杂的情绪——悲伤、愤怒，同时又怀有希望——并表示艺术能帮助他无需言语就能识别和处理情绪，这幅画给了他巨大的快乐。",
+          "route": "vector",
+          "session_date": "4:25 pm on 26 December, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "8ea42f81-6e0e-44b4-89fc-634782a11053",
+          "content": "Evan started taking painting classes a few days before August 19, 2023, and is really enjoying them; he joined to find like-minded people and improve his skills",
+          "route": "vector",
+          "session_date": "6:17 pm on 19 August, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "37dfe81b-5235-4b18-960e-6118572ceecc",
+          "content": "Sam decided to try painting as a hobby to stay motivated and relieve stress, and agreed to update Evan on his progress",
+          "route": "vector",
+          "session_date": "7:11 pm on 24 May, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "40085b1b-9ce7-4f05-a0e1-20d4bb9c3018",
+          "content": "Evan paints whatever is on his mind or how he feels — good memories or places he wants to go — viewing art as a form of self-expression and a way to communicate without words",
+          "route": "vector",
+          "session_date": "8:57 pm on 6 October, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "b2b800b6-4525-4beb-9cf8-467fb99e067e",
+          "content": "Evan bought a bonsai tree because it symbolizes strength and resilience; caring for it motivates him to persist through difficult times",
+          "route": "vector",
+          "session_date": "7:52 pm on 7 August, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "c1e914bc-1004-47c1-9a3f-07c7fa1bc4b2",
+          "content": "Evan建议低强度运动如游泳、瑜伽和散步，并分享了他从附近一家餐厅获得沙拉灵感制作的沙拉（含鸡肉、牛油果、番茄、玉米和奶酪）",
+          "route": "vector",
+          "session_date": "12:17 am on 10 January, 2024"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "f07268f7-ebe0-4c11-83ae-bc6cf753175a",
+          "content": "Evan has been painting for several years, and it helps him find calm; he told Sam painting is great for stress relief though it won't help with weight loss, and also recommended exercise",
+          "route": "vector",
+          "session_date": "7:11 pm on 24 May, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "7b763964-63ad-431c-bdd6-b6682503b2e8",
+          "content": "Evan has been passing time during his knee recovery by painting watercolors, which he finds relaxing and a way to immerse himself in color",
+          "route": "vector",
+          "session_date": "8:57 pm on 6 October, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "c7e85494-6aa4-40e6-ab12-6914a1d4c41f",
+          "content": "Evan started painting years ago after a friend gifted him a painting that inspired him; he's currently learning watercolor, where the teacher emphasizes observing nature and painting what you see",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 4,
+          "id": "0792cd2a-23a2-4817-adcf-fecac44cee3d",
+          "content": "Evan started weight training a year ago (around fall 2022); it was hard at first but he has made progress, and he offered to help Sam try weightlifting, sharing a gym photo of himself doing squats",
+          "route": "vector",
+          "session_date": "3:09 pm on 8 October, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "006a2c21-85e0-4a23-a8b8-0a42642db147",
+          "content": "Evan shared a watercolor painting of a vibrant sunset over a lake and a colorful landscape painting of a mountain range with a horse; he said painting and going for drives help him cope with stress and find comfort",
+          "route": "vector",
+          "session_date": "9:28 am on 11 September, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "f58e5519-0f07-40a1-8865-eefd7a1f53e6",
+          "content": "Evan shared a painting of a peaceful sunset depicting a person on a cliff around October 14, 2023, saying painting helps him relax",
+          "route": "vector",
+          "session_date": "4:07 pm on 14 October, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "af7f85f9-2f5d-4dbd-ad55-290799b7ac26",
+          "content": "埃文正在考虑尝试瑜伽作为一种温和有效的减压和提升柔韧性的方式，萨姆表示瑜伽对柔韧性和压力水平有奇效，鼓励他试试",
+          "route": "vector",
+          "session_date": "8:16 pm on 5 December, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "6af405ae-0daa-43b8-9e05-a172072c1c2f",
+          "content": "Evan enjoys working out and finds that exercise clears the mind; he shared a photo of himself holding a dumbbell and encouraged Sam to exercise together toward their goals",
+          "route": "vector",
+          "session_date": "3:55 pm on 6 June, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "79fbccb3-9096-4129-b5f9-99229b61cdc6",
+          "content": "Evan最喜欢的一项轻度运动是去海滩看日落，他形容这既能锻炼身体，又能让人感到平静",
+          "route": "vector",
+          "session_date": "12:17 am on 10 January, 2024"
+        },
+        {
+          "rank": 10,
+          "id": "4a73d479-bcfc-4d6d-970e-eec1db920667",
+          "content": "About two years ago (around fall 2021), Evan went through a similar health transformation: he changed his diet, started walking regularly, and shared a gym bag selfie photo showing lots of fruits and vegetables",
+          "route": "vector",
+          "session_date": "2:56 pm on 25 October, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "807e98ce-b6c8-4bc5-8bba-7b6419613b95",
+          "content": "埃文（Evan）画了一幅抽象画（白色背景配蓝色、橙色和黑色笔触），以表达复杂的情绪——悲伤、愤怒，同时又怀有希望——并表示艺术能帮助他无需言语就能识别和处理情绪，这幅画给了他巨大的快乐。",
+          "route": "vector",
+          "session_date": "4:25 pm on 26 December, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "8ea42f81-6e0e-44b4-89fc-634782a11053",
+          "content": "Evan started taking painting classes a few days before August 19, 2023, and is really enjoying them; he joined to find like-minded people and improve his skills",
+          "route": "vector",
+          "session_date": "6:17 pm on 19 August, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "dbc78f1e-fe6b-4b63-b279-d6cba1c6e2db",
+          "content": "User took up watercolor painting a few years ago after a friend introduced him and gave him some tips, and immediately became passionate about it; he shared a watercolor painting of a cactus in the desert",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "37dfe81b-5235-4b18-960e-6118572ceecc",
+          "content": "Sam decided to try painting as a hobby to stay motivated and relieve stress, and agreed to update Evan on his progress",
+          "route": "vector",
+          "session_date": "7:11 pm on 24 May, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "40085b1b-9ce7-4f05-a0e1-20d4bb9c3018",
+          "content": "Evan paints whatever is on his mind or how he feels — good memories or places he wants to go — viewing art as a form of self-expression and a way to communicate without words",
+          "route": "vector",
+          "session_date": "8:57 pm on 6 October, 2023"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 3,
+          "id": "c7e85494-6aa4-40e6-ab12-6914a1d4c41f",
+          "content": "Evan started painting years ago after a friend gifted him a painting that inspired him; he's currently learning watercolor, where the teacher emphasizes observing nature and painting what you see",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "dbc78f1e-fe6b-4b63-b279-d6cba1c6e2db",
+          "content": "User took up watercolor painting a few years ago after a friend introduced him and gave him some tips, and immediately became passionate about it; he shared a watercolor painting of a cactus in the desert",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 14,
+          "id": "b2b800b6-4525-4beb-9cf8-467fb99e067e",
+          "content": "Evan bought a bonsai tree because it symbolizes strength and resilience; caring for it motivates him to persist through difficult times",
+          "route": "vector",
+          "session_date": "7:52 pm on 7 August, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "c1e914bc-1004-47c1-9a3f-07c7fa1bc4b2",
+          "content": "Evan建议低强度运动如游泳、瑜伽和散步，并分享了他从附近一家餐厅获得沙拉灵感制作的沙拉（含鸡肉、牛油果、番茄、玉米和奶酪）",
+          "route": "vector",
+          "session_date": "12:17 am on 10 January, 2024"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa198",
+      "source": {
+        "english": {
+          "question": "What did Nate share a photo of as a part of his experimentation in November 2022?",
+          "answer": "colorful bowls of coconut milk ice cream",
+          "evidence": [
+            {
+              "dia_id": "D29:10",
+              "session": "session_29",
+              "session_date": "12:06 am on 11 November, 2022",
+              "window": [
+                {
+                  "dia_id": "D29:7",
+                  "speaker": "Joanna",
+                  "text": "Woah, that's awesome, Nate! You must really enjoy having them around - they're so cool! What do you love most about having them?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D29:8",
+                  "speaker": "Nate",
+                  "text": "Your completely right! I really love having them around. They're so cool and they make me feel calm. Plus, they don't require much looking after, which is great. I love seeing them soaking in the sun like this.",
+                  "query": "pet turtles basking rock",
+                  "blip_caption": "a photo of a turtle sitting on a log in a pond"
+                },
+                {
+                  "dia_id": "D29:9",
+                  "speaker": "Joanna",
+                  "text": "That's awesome, Nate! They look so serene and happy. It's great to have something like that.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D29:10",
+                  "speaker": "Nate",
+                  "text": "Yeah, turtles are like zen masters! They always remind me to slow down and appreciate the small things in life. I'm loving experimenting with flavors right now. Here are some colorful bowls of coconut milk ice cream that I made.",
+                  "query": "homemade coconut milk ice cream colorful bowls",
+                  "blip_caption": "a photography of a bowl of ice cream with a spoon in it"
+                },
+                {
+                  "dia_id": "D29:11",
+                  "speaker": "Joanna",
+                  "text": "Hey Nate, that looks really yummy! The colors and mix-ins give it a nice kick.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D29:12",
+                  "speaker": "Nate",
+                  "text": "Nice! I'm glad you like it too. This recipe really jazzes it up. Wanna give it a try?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D29:13",
+                  "speaker": "Joanna",
+                  "text": "Definitely, Nate! That ice cream looks mouthwatering. Thanks so much for offering!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "2022年11月，内特在实验过程中分享了一张什么的照片？",
+          "answer": "几碗五颜六色的椰奶冰淇淋",
+          "evidence": [
+            {
+              "dia_id": "D29:10",
+              "session": "session_29",
+              "session_date": "12:06 am on 11 November, 2022",
+              "window": [
+                {
+                  "dia_id": "D29:7",
+                  "speaker": "乔安娜",
+                  "text": "哇，那太棒了，内特！你一定很喜欢有它们陪伴——它们太酷了！你最喜欢养它们的哪一点？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D29:8",
+                  "speaker": "内特",
+                  "text": "你说得完全对！我真的很喜欢有它们在身边。它们很酷，让我感到平静。而且，它们不需要太多照料，这一点很好。我喜欢看它们这样晒太阳。",
+                  "query": "pet turtles basking rock",
+                  "blip_caption": "a photo of a turtle sitting on a log in a pond"
+                },
+                {
+                  "dia_id": "D29:9",
+                  "speaker": "乔安娜",
+                  "text": "太棒了，内特！它们看起来那么安详、快乐。拥有这样的陪伴真好。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D29:10",
+                  "speaker": "内特",
+                  "text": "是啊，乌龟就像禅宗大师！它们总是提醒我放慢脚步，欣赏生活中的小事。我现在正热衷于尝试各种口味。这是我做的一些色彩缤纷的椰奶冰淇淋碗。",
+                  "query": "homemade coconut milk ice cream colorful bowls",
+                  "blip_caption": "a photography of a bowl of ice cream with a spoon in it"
+                },
+                {
+                  "dia_id": "D29:11",
+                  "speaker": "乔安娜",
+                  "text": "嘿，内特，看起来真好吃！那些颜色和配料让它很有特色。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D29:12",
+                  "speaker": "内特",
+                  "text": "太好了！很高兴你也喜欢。这个食谱确实让它更有味道。想尝尝吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D29:13",
+                  "speaker": "乔安娜",
+                  "text": "当然想，内特！那冰淇淋看起来让人垂涎欲滴。非常感谢你的提议！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "几碗五颜六色（多彩外观）这一关键细节未明确对应"
+        ],
+        "reason": "回答给出椰奶冰淇淋但表述为'无乳糖'且未明确'五颜六色/几碗'，精确度低于金标准。"
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "答案符合“几碗五颜六色的椰奶冰淇淋”，并附带了正确的额外细节。"
+      },
+      "base_answer": "ANSWER：2022年11月，内特在实验过程中分享了自制的无乳糖椰奶冰淇淋的照片（加了糖屑，颜色因糖屑而有些变化）。",
+      "graph_answer": "**回答：** 2022年11月，内特在实验（尝试各种口味）过程中分享了一张**色彩缤纷的椰奶冰淇淋碗**的照片，他把它分享给乔安娜并邀请她品尝，乔安娜接受了。这张照片里的冰淇淋是自制的椰子冰淇淋（加了糖屑，颜色有点变化——糖屑把颜色弄变了）。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "31a51f32-0ad6-42e0-b546-2f2a851ee15f",
+          "content": "内特 (Nate) 分享了一张紫蓝色带星空图案设计的游戏手柄照片",
+          "route": "vector",
+          "session_date": "5:44 pm on 3 June, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "a2580252-9d1c-4a26-b604-0998489ba1b9",
+          "content": "内特分享了他的游戏房照片（电脑和游戏椅），并表示游戏一直是他的重心，练了很多还赢了几场比赛",
+          "route": "vector",
+          "session_date": "11:54 am on 2 May, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "0a3ac62e-9f6f-4d3c-af2a-cb1c3c788d50",
+          "content": "内特 (Nate) 于2022年11月10日带他的宠物乌龟去坦帕 (Tampa) 的海滩，并表示乌龟在生活忙碌中给他带来平静",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "ed734737-8ef1-45cf-b98e-fb54da511ba5",
+          "content": "内特 (Nate) 于2022年4月17日再次分享了宠物乌龟的照片（乌龟和碗里的草莓一起玩耍），并表示有时会把乌龟带到厨房看他做食物；乔安娜特别喜欢他的乌龟",
+          "route": "vector",
+          "session_date": "6:44 pm on 17 April, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+          "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+          "route": "vector",
+          "session_date": "6:44 pm on 17 April, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "5af07039-422b-4853-b894-c5e98414d3bd",
+          "content": "内特 (Nate) 于2022年11月3日用椰奶制作了无乳糖冰淇淋，并邀请乔安娜第二天（2022年11月5日）来品尝；乔安娜答应了并计划带上自己的食谱一起分享甜点",
+          "route": "vector",
+          "session_date": "3:56 pm on 4 November, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "262ba618-5c54-41fe-9f87-a2784f2c4cbc",
+          "content": "内特 (Nate) 于2022年3月18日分享了宠物乌龟在草地和池塘晒太阳的可爱照片，并表示会继续给乔安娜发乌龟照片，让她不用靠近也能看着它们长大",
+          "route": "vector",
+          "session_date": "6:59 pm on 18 March, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "8837211c-167e-48d9-a112-1c131acc1fdd",
+          "content": "内特 (Nate) 在2022年11月上旬尝试了烹饪，制作了自制椰子冰淇淋（加了糖屑，颜色有点变化），当时他的游戏锦标赛被推迟",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "d25cdce4-74e3-49c0-a2cf-0ba27e51313d",
+          "content": "内特 (Nate) 的两只乌龟吃蔬菜、水果和昆虫的混合食物，饮食多样化；他最喜欢看它们吃水果，因为它们会特别兴奋，他还喜欢抱着它们",
+          "route": "vector",
+          "session_date": "8:16 pm on 25 October, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "e6939225-a05d-4bf8-9737-aa854a56d4be",
+          "content": "内特 (Nate) 于2022年11月开始制作YouTube游戏内容，灵感来自他对游戏视频的喜爱，希望在没有锦标赛时分享对游戏的热爱并与游戏爱好者交流",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "eda3f637-f21c-4190-bec7-5706b1904004",
+          "content": "内特 (Nate) 的游戏锦标赛在2022年11月初被推迟，他利用空闲时间自制了椰奶冰淇淋，但这次糖屑把颜色弄变了",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "523694f5-78fc-4920-9288-eade841864a0",
+          "content": "乔安娜 (Joanna) 从2022年11月上旬开始把自己最喜欢的一些回忆写进笔记本；内特受她启发，也决定开始记录他和乔安娜以及他家动物们的美好回忆",
+          "route": "vector",
+          "session_date": "8:10 pm on 7 November, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "32349687-a866-4f48-b9c8-2f08a9a82c91",
+          "content": "内特 (Nate) 于2022年11月初买了第三只宠物乌龟，因为看到就忍不住，且缸够大可以养三只；他对这个决定非常满意",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "84de078e-2b8a-478c-8eb9-17b96bb6c806",
+          "content": "乔安娜 (Joanna) 对乌龟过敏，计划在2022年11月10日去内特家看他（保持距离），两人约定看她的一部电影或去公园，内特会在她到来前给乌龟洗澡",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "ce20b06b-a9c2-4ca4-887a-a27f19eea43f",
+          "content": "内特 (Nate) 于2022年11月初一直在帮朋友们在国际锦标赛上刷新高分纪录，他觉得能用自己的游戏技能带来改变感觉很好",
+          "route": "vector",
+          "session_date": "3:56 pm on 4 November, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "31a51f32-0ad6-42e0-b546-2f2a851ee15f",
+          "content": "内特 (Nate) 分享了一张紫蓝色带星空图案设计的游戏手柄照片",
+          "route": "vector",
+          "session_date": "5:44 pm on 3 June, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "a2580252-9d1c-4a26-b604-0998489ba1b9",
+          "content": "内特分享了他的游戏房照片（电脑和游戏椅），并表示游戏一直是他的重心，练了很多还赢了几场比赛",
+          "route": "vector",
+          "session_date": "11:54 am on 2 May, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "0a3ac62e-9f6f-4d3c-af2a-cb1c3c788d50",
+          "content": "内特 (Nate) 于2022年11月10日带他的宠物乌龟去坦帕 (Tampa) 的海滩，并表示乌龟在生活忙碌中给他带来平静",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "ed734737-8ef1-45cf-b98e-fb54da511ba5",
+          "content": "内特 (Nate) 于2022年4月17日再次分享了宠物乌龟的照片（乌龟和碗里的草莓一起玩耍），并表示有时会把乌龟带到厨房看他做食物；乔安娜特别喜欢他的乌龟",
+          "route": "vector",
+          "session_date": "6:44 pm on 17 April, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+          "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+          "route": "vector",
+          "session_date": "6:44 pm on 17 April, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "5af07039-422b-4853-b894-c5e98414d3bd",
+          "content": "内特 (Nate) 于2022年11月3日用椰奶制作了无乳糖冰淇淋，并邀请乔安娜第二天（2022年11月5日）来品尝；乔安娜答应了并计划带上自己的食谱一起分享甜点",
+          "route": "vector",
+          "session_date": "3:56 pm on 4 November, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "262ba618-5c54-41fe-9f87-a2784f2c4cbc",
+          "content": "内特 (Nate) 于2022年3月18日分享了宠物乌龟在草地和池塘晒太阳的可爱照片，并表示会继续给乔安娜发乌龟照片，让她不用靠近也能看着它们长大",
+          "route": "vector",
+          "session_date": "6:59 pm on 18 March, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "8837211c-167e-48d9-a112-1c131acc1fdd",
+          "content": "内特 (Nate) 在2022年11月上旬尝试了烹饪，制作了自制椰子冰淇淋（加了糖屑，颜色有点变化），当时他的游戏锦标赛被推迟",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "e6939225-a05d-4bf8-9737-aa854a56d4be",
+          "content": "内特 (Nate) 于2022年11月开始制作YouTube游戏内容，灵感来自他对游戏视频的喜爱，希望在没有锦标赛时分享对游戏的热爱并与游戏爱好者交流",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "eda3f637-f21c-4190-bec7-5706b1904004",
+          "content": "内特 (Nate) 的游戏锦标赛在2022年11月初被推迟，他利用空闲时间自制了椰奶冰淇淋，但这次糖屑把颜色弄变了",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+          "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "f19471e0-6ae0-423b-9f4f-8fa423bff553",
+          "content": "内特称赞乔安娜做无乳制品甜点非常有天赋，说她的蛋糕看起来很棒",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "523694f5-78fc-4920-9288-eade841864a0",
+          "content": "乔安娜 (Joanna) 从2022年11月上旬开始把自己最喜欢的一些回忆写进笔记本；内特受她启发，也决定开始记录他和乔安娜以及他家动物们的美好回忆",
+          "route": "vector",
+          "session_date": "8:10 pm on 7 November, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "32349687-a866-4f48-b9c8-2f08a9a82c91",
+          "content": "内特 (Nate) 于2022年11月初买了第三只宠物乌龟，因为看到就忍不住，且缸够大可以养三只；他对这个决定非常满意",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "84de078e-2b8a-478c-8eb9-17b96bb6c806",
+          "content": "乔安娜 (Joanna) 对乌龟过敏，计划在2022年11月10日去内特家看他（保持距离），两人约定看她的一部电影或去公园，内特会在她到来前给乌龟洗澡",
+          "route": "vector",
+          "session_date": "5:54 pm on 9 November, 2022"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 11,
+          "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+          "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+          "route": "vector",
+          "session_date": "12:06 am on 11 November, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "f19471e0-6ae0-423b-9f4f-8fa423bff553",
+          "content": "内特称赞乔安娜做无乳制品甜点非常有天赋，说她的蛋糕看起来很棒",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 9,
+          "id": "d25cdce4-74e3-49c0-a2cf-0ba27e51313d",
+          "content": "内特 (Nate) 的两只乌龟吃蔬菜、水果和昆虫的混合食物，饮食多样化；他最喜欢看它们吃水果，因为它们会特别兴奋，他还喜欢抱着它们",
+          "route": "vector",
+          "session_date": "8:16 pm on 25 October, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "ce20b06b-a9c2-4ca4-887a-a27f19eea43f",
+          "content": "内特 (Nate) 于2022年11月初一直在帮朋友们在国际锦标赛上刷新高分纪录，他觉得能用自己的游戏技能带来改变感觉很好",
+          "route": "vector",
+          "session_date": "3:56 pm on 4 November, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa6",
+      "source": {
+        "english": {
+          "question": "Where has Maria made friends?",
+          "answer": "homeless shelter, gym, church",
+          "evidence": [
+            {
+              "dia_id": "D4:1",
+              "session": "session_4",
+              "session_date": "7:06 pm on 9 January, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:1",
+                  "speaker": "Maria",
+                  "text": "Hey John, great news - I'm now friends with one of my fellow volunteers! We both love helping others. How have you been since we last chatted?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:2",
+                  "speaker": "John",
+                  "text": "Hey Maria, I've been busy with work and family, but last week I had an unexpected incident on my way home. It reminded me how life can throw unexpected troubles our way.",
+                  "query": "shattered windshield",
+                  "blip_caption": "a photo of a car with a broken windshield and a broken windshield"
+                },
+                {
+                  "dia_id": "D4:3",
+                  "speaker": "Maria",
+                  "text": "Oh John, that sounds tough. I'm glad you're alright. Life does throw us some surprises, doesn't it?\n\n",
+                  "query": null,
+                  "blip_caption": "a photo of a tattoo with a quote on it"
+                },
+                {
+                  "dia_id": "D4:4",
+                  "speaker": "John",
+                  "text": "Thanks, Maria. This is a reminder to stay strong during tough times.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D2:1",
+              "session": "session_2",
+              "session_date": "6:10 pm on 22 December, 2022",
+              "window": [
+                {
+                  "dia_id": "D2:1",
+                  "speaker": "Maria",
+                  "text": "Hey John, been a few days since we chatted. In the meantime, I donated my old car to a homeless shelter I volunteer at yesterday. How's the campaign going? I'm keen to hearabout it.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D2:2",
+                  "speaker": "John",
+                  "text": "Hi Maria! It's been an interesting ride so far. I've been networking with some people to get their input.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D2:3",
+                  "speaker": "Maria",
+                  "text": "That's awesome, John! Networking is great for gaining new perspectives and insights. Have you had any interesting conversations or revelations so far?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D2:4",
+                  "speaker": "John",
+                  "text": "I just talked to someone who shared some amazing stories. It really fired up my passion to make education better in our area.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D19:1",
+              "session": "session_19",
+              "session_date": "7:20 pm on 16 June, 2023",
+              "window": [
+                {
+                  "dia_id": "D19:1",
+                  "speaker": "Maria",
+                  "text": "Hey John, been good since we talked? I got some great news to share - I joined a gym last week! It's been super positive - I'm sticking to my workout routine and the people are awesome. The atmosphere is so welcoming.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:2",
+                  "speaker": "John",
+                  "text": "Congrats, Maria! Sounds like it's been a great experience. Having a positive environment and supportive people can really help with motivation, right? So, do you have any fitness goals in mind?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:3",
+                  "speaker": "Maria",
+                  "text": "Thanks, John! Yeah, it's been awesome. I want to get stronger and improve my endurance, and I'm trying kundalini yoga. What about you? Do you have any goals or activities you want to try?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:4",
+                  "speaker": "John",
+                  "text": "Nice one, Maria! Staying in shape is important to me too. I'm trying out different workout regimes lately. Rock climbing sounds like a fun way to push my limits, have you ever given it a go?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D14:10",
+              "session": "session_14",
+              "session_date": "5:04 pm on 6 May, 2023",
+              "window": [
+                {
+                  "dia_id": "D14:7",
+                  "speaker": "John",
+                  "text": "Thanks, Maria. Got it. It's easy to get lost and forget that. Appreciate your support. How's that going for you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:8",
+                  "speaker": "Maria",
+                  "text": "Hey John, I've been doing great lately. I've been involved in some charity work and it's been really rewarding. I feel connected and it's really fulfilling.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:9",
+                  "speaker": "John",
+                  "text": "Wow, Maria! Glad you found something that brings you so much joy. What kind of work have you been doing?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:10",
+                  "speaker": "Maria",
+                  "text": "Just yesterday I joined a nearby church. I wanted to feel closer to a community and my faith. So far it's been really great!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:11",
+                  "speaker": "John",
+                  "text": "That's great, Maria! Joining a church can be really encouraging. I'm thrilled for you. How's everything been going?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:12",
+                  "speaker": "Maria",
+                  "text": "Life's been a bit rough lately but I'm doing alright. I'm taking the time to reflect and find some balance. How about you? What's been going on since we last talked?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:13",
+                  "speaker": "John",
+                  "text": "I had a similar experience. Last week, there was a power cut in our area, and it made me realize the importance of upgrading our infrastructure for stable services for everyone. Look how dark it was!",
+                  "query": "power outage dark street infrastructure community",
+                  "blip_caption": "a photo of a dark street at night with a fence and a street light"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "玛丽亚在哪里交到了朋友？",
+          "answer": "流浪者收容所、健身房、教会",
+          "evidence": [
+            {
+              "dia_id": "D4:1",
+              "session": "session_4",
+              "session_date": "7:06 pm on 9 January, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:1",
+                  "speaker": "玛丽亚",
+                  "text": "嘿，约翰，好消息——我现在和一位一起做志愿者的伙伴成为朋友了！我们都热爱帮助他人。自从我们上次聊天后，你过得怎么样？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:2",
+                  "speaker": "约翰",
+                  "text": "嘿，玛丽亚，我一直忙着工作和家庭，不过上周在回家的路上遇到了一件意外的事。这让我想起生活总会给我们抛来意想不到的麻烦。",
+                  "query": "shattered windshield",
+                  "blip_caption": "a photo of a car with a broken windshield and a broken windshield"
+                },
+                {
+                  "dia_id": "D4:3",
+                  "speaker": "玛丽亚",
+                  "text": "哦，约翰，听起来挺艰难的。很高兴你没事。生活确实会给我们一些惊喜，不是吗？",
+                  "query": null,
+                  "blip_caption": "a photo of a tattoo with a quote on it"
+                },
+                {
+                  "dia_id": "D4:4",
+                  "speaker": "约翰",
+                  "text": "谢谢，玛丽亚。这提醒我在困难时期要保持坚强。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D2:1",
+              "session": "session_2",
+              "session_date": "6:10 pm on 22 December, 2022",
+              "window": [
+                {
+                  "dia_id": "D2:1",
+                  "speaker": "玛丽亚",
+                  "text": "嘿，约翰，我们好几天没聊了。这期间，我昨天把我的旧车捐给了我做志愿者的一个无家可归者收容所。活动进行得怎么样？我很想听听。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D2:2",
+                  "speaker": "约翰",
+                  "text": "嗨，玛丽亚！到目前为止挺有意思的。我一直在和一些人建立联系，听取他们的意见。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D2:3",
+                  "speaker": "玛丽亚",
+                  "text": "太棒了，约翰！拓展人脉对获得新的视角和见解很有帮助。到目前为止你有过什么有趣的对话或感悟吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D2:4",
+                  "speaker": "约翰",
+                  "text": "我刚和一个人聊过，他分享了一些精彩的故事。这真的点燃了我改善我们地区教育的热情。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D19:1",
+              "session": "session_19",
+              "session_date": "7:20 pm on 16 June, 2023",
+              "window": [
+                {
+                  "dia_id": "D19:1",
+                  "speaker": "玛丽亚",
+                  "text": "嘿，约翰，自从我们上次聊过之后一切都好吗？我有个好消息要分享——我上周加入了健身房！体验一直超级棒——我坚持着锻炼计划，那里的人也很赞。氛围特别友好。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:2",
+                  "speaker": "约翰",
+                  "text": "恭喜你，玛丽亚！听起来这是一段很棒的经历。积极的环境和支持你的人确实能帮助保持动力，对吧？那么，你有什么健身目标吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:3",
+                  "speaker": "玛丽亚",
+                  "text": "谢谢，约翰！是啊，一直都很棒。我想变得更强壮、提高耐力，还在尝试昆达里尼瑜伽。你呢？你有什么目标或者想尝试的活动吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:4",
+                  "speaker": "约翰",
+                  "text": "不错啊，玛丽亚！保持身材对我也很重要。我最近在尝试不同的锻炼方式。攀岩听起来是个挑战极限的有趣方式，你试过吗？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D14:10",
+              "session": "session_14",
+              "session_date": "5:04 pm on 6 May, 2023",
+              "window": [
+                {
+                  "dia_id": "D14:7",
+                  "speaker": "约翰",
+                  "text": "谢谢，玛丽亚。明白了。人很容易迷失并忘记这一点。感谢你的支持。你那边进展如何？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:8",
+                  "speaker": "玛丽亚",
+                  "text": "嘿，约翰，我最近过得很好。我参与了一些慈善工作，真的很有意义。我感觉与人相连，非常充实。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:9",
+                  "speaker": "约翰",
+                  "text": "哇，玛丽亚！很高兴你找到了能带来这么多快乐的事情。你一直在做什么样的工作？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:10",
+                  "speaker": "玛丽亚",
+                  "text": "就在昨天，我加入了附近的一个教会。我想更贴近一个社区和我的信仰。到目前为止感觉真的很棒！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:11",
+                  "speaker": "约翰",
+                  "text": "那太好了，玛丽亚！加入教会真的很鼓舞人心。我为你感到高兴。一切都还顺利吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:12",
+                  "speaker": "玛丽亚",
+                  "text": "最近生活有点艰难，但我还好。我正在花时间反思并寻找一些平衡。你呢？自从我们上次交谈以来有什么新鲜事？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D14:13",
+                  "speaker": "约翰",
+                  "text": "我有类似的经历。上周，我们那个地区停电了，这让我意识到升级基础设施、为每个人提供稳定服务的重要性。看看当时有多黑！",
+                  "query": "power outage dark street infrastructure community",
+                  "blip_caption": "a photo of a dark street at night with a fence and a street light"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "健身房",
+          "教会"
+        ],
+        "reason": "Only mentions the homeless shelter, missing two of three gold locations."
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "三个地点均已呈现且正确（无家者收容所即流浪者收容所的等义表达）；额外的正确细节是允许的。"
+      },
+      "base_answer": "Maria在志愿者工作中交到了朋友（2023年1月初在流浪者收容所认识了一位同样热爱助人的志愿者朋友）。",
+      "graph_answer": "玛丽亚在健身房、教会和无家者收容所（在那里与一位同样热爱帮助他人的志愿者成为朋友）都交到了朋友，她还喜欢在家招待朋友举行游戏之夜。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "3b2ad82b-a1d7-4d9d-8412-4ce5daca2e89",
+          "content": "玛丽亚在 2023 年 6 月初的一个周末与一些教会朋友去露营，在篝火旁玩得很开心，这让她暂时从烦恼中解脱了出来",
+          "route": "vector",
+          "session_date": "2:47 pm on 12 June, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "07d0128b-c5eb-4a7f-a5d6-2b9d160fbd01",
+          "content": "玛丽亚在2023年7月中旬的前一个周末和教会朋友去野餐，在树下放松、玩游戏（如你演我猜和寻宝游戏）、吃美食，大家笑得很开心",
+          "route": "vector",
+          "session_date": "3:34 pm on 17 July, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "067fda4d-bc39-4334-9b44-a2fc6c150d30",
+          "content": "玛丽亚在 2023 年 7 月中旬左右的一个周末与教会朋友去远足，登顶时看到叹为观止的景色，感到清爽、振奋和真正的平静",
+          "route": "vector",
+          "session_date": "6:21 pm on 22 July, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "a67fadc9-48ea-4630-a1bd-ff4cf7429e70",
+          "content": "Maria（约翰的朋友）在 2023 年 6 月 9 日左右的一周加入了健身房，坚持锻炼计划，喜欢那里的友好氛围，目标是变得更强壮、提高耐力，还在尝试昆达里尼瑜伽",
+          "route": "vector",
+          "session_date": "7:20 pm on 16 June, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "f929ddaf-3ab3-44ba-848d-6b87acafb922",
+          "content": "Maria said the people at the homeless shelter have become like family to her and she feels lucky to know them",
+          "route": "vector",
+          "session_date": "6:13 pm on 10 April, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "0b3f10ea-9e75-4559-9c4f-18eb776fd2bc",
+          "content": "Maria (John's friend) became friends with a fellow volunteer in early January 2023; they both love helping others",
+          "route": "vector",
+          "session_date": "7:06 pm on 9 January, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "e6859690-b9d3-417a-a294-01f0f7d52bdc",
+          "content": "Maria最难忘的收容所回忆之一是遇到一个已难过了好几个月的人，当Maria和孩子们玩耍时，那个人突然笑了——这一刻让她感到振奋，她不会忘记",
+          "route": "vector",
+          "session_date": "12:21 am on 27 June, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "64e27188-0cbd-4f72-abed-67357525628e",
+          "content": "Maria has built strong relationships and made an impact at the homeless shelter through listening and showing compassion, saying the key is building trust and genuine connections",
+          "route": "vector",
+          "session_date": "6:03 pm on 6 March, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "1775d563-55e9-4278-9a34-719b7961c302",
+          "content": "At the end of the July 7, 2023 conversation, Maria mentioned she was heading out to dinner with friends from the gym",
+          "route": "vector",
+          "session_date": "6:29 pm on 7 July, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "f08c164b-d89b-4afd-963d-211374a0d2b3",
+          "content": "Maria did community work with her church friends on August 4, 2023 and found it very meaningful, reminding her how important kindness and compassion are",
+          "route": "vector",
+          "session_date": "5:19 pm on 5 August, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "ddcdec76-28a5-418f-9d20-1b420d019d41",
+          "content": "Around May 5, 2023, Maria joined a nearby church, wanting to feel closer to a community and her faith, and it has felt great so far",
+          "route": "vector",
+          "session_date": "5:04 pm on 6 May, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "3f9c9e83-152c-441b-ac76-1cdae21b3659",
+          "content": "Maria enjoys spending time with friends watching movies, hiking, and hosting game nights at her home; quality time matters most to her",
+          "route": "vector",
+          "session_date": "6:10 pm on 22 December, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "c1021616-42ae-4b64-86e2-0f25b99ee2cc",
+          "content": "Maria (John's friend) recently started volunteering once a month at a local dog shelter, in addition to her work at the homeless shelter",
+          "route": "vector",
+          "session_date": "11:51 am on 3 June, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "9c58594c-dac3-4f96-96a5-2b291ee908db",
+          "content": "Maria's most memorable volunteering moment was comforting a sad 8-year-old girl sitting alone at the shelter who had no other family; Maria sat with her, listened, and they ended up laughing and having a good time together",
+          "route": "vector",
+          "session_date": "1:17 pm on 28 January, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "7103bd3f-ed3c-4b75-9822-897587f1fdbd",
+          "content": "Maria大约在2022年年中开始在她做志愿者的流浪者收容所工作，起因是她看到一个家庭在街头苦苦挣扎，于是主动联系收容所询问是否需要志愿者，从那以后这段经历对她一直很有意义",
+          "route": "vector",
+          "session_date": "6:20 pm on 3 August, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "f0bbb806-5f63-4f4a-92fa-e5e4491c9f09",
+          "content": "While volunteering at a homeless shelter around February 24, 2023, Maria met a remarkable woman named Jean who had been through divorce, job loss, and homelessness, yet remained optimistic and resilient, teaching Maria about gratitude and connection",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 2,
+          "id": "3b2ad82b-a1d7-4d9d-8412-4ce5daca2e89",
+          "content": "玛丽亚在 2023 年 6 月初的一个周末与一些教会朋友去露营，在篝火旁玩得很开心，这让她暂时从烦恼中解脱了出来",
+          "route": "vector",
+          "session_date": "2:47 pm on 12 June, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "07d0128b-c5eb-4a7f-a5d6-2b9d160fbd01",
+          "content": "玛丽亚在2023年7月中旬的前一个周末和教会朋友去野餐，在树下放松、玩游戏（如你演我猜和寻宝游戏）、吃美食，大家笑得很开心",
+          "route": "vector",
+          "session_date": "3:34 pm on 17 July, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "067fda4d-bc39-4334-9b44-a2fc6c150d30",
+          "content": "玛丽亚在 2023 年 7 月中旬左右的一个周末与教会朋友去远足，登顶时看到叹为观止的景色，感到清爽、振奋和真正的平静",
+          "route": "vector",
+          "session_date": "6:21 pm on 22 July, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "a67fadc9-48ea-4630-a1bd-ff4cf7429e70",
+          "content": "Maria（约翰的朋友）在 2023 年 6 月 9 日左右的一周加入了健身房，坚持锻炼计划，喜欢那里的友好氛围，目标是变得更强壮、提高耐力，还在尝试昆达里尼瑜伽",
+          "route": "vector",
+          "session_date": "7:20 pm on 16 June, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "f929ddaf-3ab3-44ba-848d-6b87acafb922",
+          "content": "Maria said the people at the homeless shelter have become like family to her and she feels lucky to know them",
+          "route": "vector",
+          "session_date": "6:13 pm on 10 April, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "0b3f10ea-9e75-4559-9c4f-18eb776fd2bc",
+          "content": "Maria (John's friend) became friends with a fellow volunteer in early January 2023; they both love helping others",
+          "route": "vector",
+          "session_date": "7:06 pm on 9 January, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "e6859690-b9d3-417a-a294-01f0f7d52bdc",
+          "content": "Maria最难忘的收容所回忆之一是遇到一个已难过了好几个月的人，当Maria和孩子们玩耍时，那个人突然笑了——这一刻让她感到振奋，她不会忘记",
+          "route": "vector",
+          "session_date": "12:21 am on 27 June, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "64e27188-0cbd-4f72-abed-67357525628e",
+          "content": "Maria has built strong relationships and made an impact at the homeless shelter through listening and showing compassion, saying the key is building trust and genuine connections",
+          "route": "vector",
+          "session_date": "6:03 pm on 6 March, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "1775d563-55e9-4278-9a34-719b7961c302",
+          "content": "At the end of the July 7, 2023 conversation, Maria mentioned she was heading out to dinner with friends from the gym",
+          "route": "vector",
+          "session_date": "6:29 pm on 7 July, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "f08c164b-d89b-4afd-963d-211374a0d2b3",
+          "content": "Maria did community work with her church friends on August 4, 2023 and found it very meaningful, reminding her how important kindness and compassion are",
+          "route": "vector",
+          "session_date": "5:19 pm on 5 August, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "ddcdec76-28a5-418f-9d20-1b420d019d41",
+          "content": "Around May 5, 2023, Maria joined a nearby church, wanting to feel closer to a community and her faith, and it has felt great so far",
+          "route": "vector",
+          "session_date": "5:04 pm on 6 May, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "3f9c9e83-152c-441b-ac76-1cdae21b3659",
+          "content": "Maria enjoys spending time with friends watching movies, hiking, and hosting game nights at her home; quality time matters most to her",
+          "route": "vector",
+          "session_date": "6:10 pm on 22 December, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "c1021616-42ae-4b64-86e2-0f25b99ee2cc",
+          "content": "Maria (John's friend) recently started volunteering once a month at a local dog shelter, in addition to her work at the homeless shelter",
+          "route": "vector",
+          "session_date": "11:51 am on 3 June, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "9c58594c-dac3-4f96-96a5-2b291ee908db",
+          "content": "Maria's most memorable volunteering moment was comforting a sad 8-year-old girl sitting alone at the shelter who had no other family; Maria sat with her, listened, and they ended up laughing and having a good time together",
+          "route": "vector",
+          "session_date": "1:17 pm on 28 January, 2023"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 1,
+          "id": "f0bbb806-5f63-4f4a-92fa-e5e4491c9f09",
+          "content": "While volunteering at a homeless shelter around February 24, 2023, Maria met a remarkable woman named Jean who had been through divorce, job loss, and homelessness, yet remained optimistic and resilient, teaching Maria about gratitude and connection",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 15,
+          "id": "7103bd3f-ed3c-4b75-9822-897587f1fdbd",
+          "content": "Maria大约在2022年年中开始在她做志愿者的流浪者收容所工作，起因是她看到一个家庭在街头苦苦挣扎，于是主动联系收容所询问是否需要志愿者，从那以后这段经历对她一直很有意义",
+          "route": "vector",
+          "session_date": "6:20 pm on 3 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa72",
+      "source": {
+        "english": {
+          "question": "What instrument is John learning to play as of 27 March, 2022?",
+          "answer": "Drums",
+          "evidence": [
+            {
+              "dia_id": "D3:2",
+              "session": "session_3",
+              "session_date": "12:40 am on 27 March, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:1",
+                  "speaker": "John",
+                  "text": "Hey James, long time no see! I had a big win in my game last week - finally advanced to the next level! It was a huge confidence booster and felt like I'd really achieved something.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:2",
+                  "speaker": "James",
+                  "text": "Hey John, congrats on your win! Games can really boost confidence, huh? I'm challenging myself too - I'm learning this instrument, which has been quite the journey.\n",
+                  "query": "drum set drumming progress",
+                  "blip_caption": "a photography of a drum kit with a white drum and a black drum"
+                },
+                {
+                  "dia_id": "D3:3",
+                  "speaker": "John",
+                  "text": "Thanks, James! I play drums too! Here's a pic of my set.",
+                  "query": "drum set progress",
+                  "blip_caption": "a photo of a drum kit sitting on top of a table"
+                },
+                {
+                  "dia_id": "D3:4",
+                  "speaker": "James",
+                  "text": "Wow, looking good! How long have you been playing?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:5",
+                  "speaker": "John",
+                  "text": "I've been playing for a month now, it's been tough but fun. How about you, how's it going?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D3:3",
+              "session": "session_3",
+              "session_date": "12:40 am on 27 March, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:1",
+                  "speaker": "John",
+                  "text": "Hey James, long time no see! I had a big win in my game last week - finally advanced to the next level! It was a huge confidence booster and felt like I'd really achieved something.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:2",
+                  "speaker": "James",
+                  "text": "Hey John, congrats on your win! Games can really boost confidence, huh? I'm challenging myself too - I'm learning this instrument, which has been quite the journey.\n",
+                  "query": "drum set drumming progress",
+                  "blip_caption": "a photography of a drum kit with a white drum and a black drum"
+                },
+                {
+                  "dia_id": "D3:3",
+                  "speaker": "John",
+                  "text": "Thanks, James! I play drums too! Here's a pic of my set.",
+                  "query": "drum set progress",
+                  "blip_caption": "a photo of a drum kit sitting on top of a table"
+                },
+                {
+                  "dia_id": "D3:4",
+                  "speaker": "James",
+                  "text": "Wow, looking good! How long have you been playing?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:5",
+                  "speaker": "John",
+                  "text": "I've been playing for a month now, it's been tough but fun. How about you, how's it going?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:6",
+                  "speaker": "James",
+                  "text": "This is going great! I started a few days ago, so I'm still picking it up. Been at it daily and seeing improvements. It's tough but rewarding at the same time!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "截至2022年3月27日，约翰在学习演奏什么乐器？",
+          "answer": "架子鼓",
+          "evidence": [
+            {
+              "dia_id": "D3:2",
+              "session": "session_3",
+              "session_date": "12:40 am on 27 March, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:1",
+                  "speaker": "约翰",
+                  "text": "嘿，詹姆斯，好久不见！上周我在游戏里赢了一把大的——终于升到下一关了！这大大提升了我的自信心，感觉我真的取得了些成就。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:2",
+                  "speaker": "詹姆斯",
+                  "text": "嘿，约翰，恭喜你赢了！游戏确实能提升自信，对吧？我也在挑战自己——我在学一门乐器，这可是一段不小的旅程。\n",
+                  "query": "drum set drumming progress",
+                  "blip_caption": "a photography of a drum kit with a white drum and a black drum"
+                },
+                {
+                  "dia_id": "D3:3",
+                  "speaker": "约翰",
+                  "text": "谢谢，詹姆斯！我也打架子鼓！这是我鼓组的照片。",
+                  "query": "drum set progress",
+                  "blip_caption": "a photo of a drum kit sitting on top of a table"
+                },
+                {
+                  "dia_id": "D3:4",
+                  "speaker": "詹姆斯",
+                  "text": "哇，看起来不错！你打多久了？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:5",
+                  "speaker": "约翰",
+                  "text": "我打了一个月了，虽然挺难但很有趣。你呢，进展如何？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D3:3",
+              "session": "session_3",
+              "session_date": "12:40 am on 27 March, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:1",
+                  "speaker": "约翰",
+                  "text": "嘿，詹姆斯，好久不见！上周我在游戏里赢了一把大的——终于升到下一关了！这大大提升了我的自信心，感觉我真的取得了些成就。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:2",
+                  "speaker": "詹姆斯",
+                  "text": "嘿，约翰，恭喜你赢了！游戏确实能提升自信，对吧？我也在挑战自己——我在学一门乐器，这可是一段不小的旅程。\n",
+                  "query": "drum set drumming progress",
+                  "blip_caption": "a photography of a drum kit with a white drum and a black drum"
+                },
+                {
+                  "dia_id": "D3:3",
+                  "speaker": "约翰",
+                  "text": "谢谢，詹姆斯！我也打架子鼓！这是我鼓组的照片。",
+                  "query": "drum set progress",
+                  "blip_caption": "a photo of a drum kit sitting on top of a table"
+                },
+                {
+                  "dia_id": "D3:4",
+                  "speaker": "詹姆斯",
+                  "text": "哇，看起来不错！你打多久了？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:5",
+                  "speaker": "约翰",
+                  "text": "我打了一个月了，虽然挺难但很有趣。你呢，进展如何？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:6",
+                  "speaker": "詹姆斯",
+                  "text": "进展很顺利！我几天前才开始，还在学习当中。我每天都在练，能看到进步。虽然很难，但同时也很有成就感！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "Answer states 架子鼓, exactly matching the gold."
+      },
+      "base_answer": "约翰没有在学习任何乐器——学习架子鼓的是James。截至2022年3月27日，约翰的新爱好是金属探测（海滩寻宝），并正在编程课上重新学习编程。",
+      "graph_answer": "ANSWER：架子鼓（drums）。截至2022年3月27日，John已学习打鼓约一个月，他觉得有挑战但很有趣。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "b6df40c6-e5a2-49ec-836c-b353c9b01598",
+          "content": "John has been playing the drums for about a month as of late March 2022; he finds it challenging but fun",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "49d27692-0cb3-48da-b7ce-bc3a7cf6991d",
+          "content": "James started learning a musical instrument — the drums — a few days before March 27, 2022; he practices every day, finds it difficult but rewarding, and can already see progress",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "59951a56-e5ca-4d80-8c63-d98e6f4773f6",
+          "content": "John recently took up metal detecting as a new hobby around March 2022, walking beaches with a metal detector; he has mostly found bottle caps but also some coins and once even a gold ring",
+          "route": "vector",
+          "session_date": "9:26 pm on 20 March, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "73feda98-03f2-4bc4-affc-c617ce4a38ad",
+          "content": "As of late April 2022, John has been playing Assassin's Creed Valhalla (刺客信条：英灵殿)",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "ad4e85cd-d24a-4b39-861e-641e89656603",
+          "content": "As of April 2022, John is building a website for a local small business — his first real project outside his programming class",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "e49a8297-c45f-4ff1-9b50-16fa82c237a5",
+          "content": "Around early September 2022, John's parents started learning programming with John teaching them; he finds it a learning experience that brings them closer, and his father wrote his first own program (shown in a photo)",
+          "route": "vector",
+          "session_date": "9:23 pm on 4 September, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "b6ef2063-6cc7-4a45-b60c-7958e9aaa945",
+          "content": "As of early November 2022, John is hooked on FIFA 23, a soccer game he enjoys playing online against players from around the world",
+          "route": "vector",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "918bbeed-6374-4495-99bd-83ef345d8548",
+          "content": "John attended a gaming convention between his conversations with James in March 2022, where he tried many games, met developers, and competed in a CS:GO tournament; watching skilled players inspired him to improve his own gaming skills",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "34f95bcb-2dd4-45c6-ba82-d75459643199",
+          "content": "Around March 20, 2022, John won a big game match and finally leveled up to the next stage, which greatly boosted his confidence and sense of achievement",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "40d0987f-711e-4e35-8d4b-0f5ceaa4bdc1",
+          "content": "James's friend John enrolled in a programming class around March 2022 to relearn coding, having written some HTML and CSS a few years ago",
+          "route": "vector",
+          "session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "f9ba4628-b6cb-4516-9aca-57ac71b1f74f",
+          "content": "John's younger siblings took programming courses, and since around August 2022 John has been helping them learn programming; he loves seeing them enjoy it",
+          "route": "vector",
+          "session_date": "9:18 pm on 26 August, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "dc53d157-71b4-4b98-8629-a35df4961e3b",
+          "content": "Two days before April 29, 2022 (around April 27), John played a strategy board game with friends and found it very exciting; he enjoys strategy board games",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "a6d19b64-39a8-4fd4-880a-a28cc681f52e",
+          "content": "As of August 2022, John and his younger siblings are working together on a programming project: a simple text adventure game that helps the siblings practice coding skills while having fun; John is very proud of them",
+          "route": "vector",
+          "session_date": "9:18 pm on 26 August, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "dbfa0f57-3172-4392-ac82-b59843cacd05",
+          "content": "John took second place in a local competition on Friday, May 20, 2022, receiving a cash prize and a trophy; he was thrilled that his hard work paid off even without winning first place",
+          "route": "vector",
+          "session_date": "4:30 pm on 13 June, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "f817a362-b136-4cf1-b210-4ac0df0705f7",
+          "content": "As of September 1, 2022, John's younger siblings, under his programming tutelage, have begun writing their own programs — simple basic games and stories — learning quickly and having fun; John is very proud of them",
+          "route": "vector",
+          "session_date": "6:53 pm on 1 September, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "b6df40c6-e5a2-49ec-836c-b353c9b01598",
+          "content": "John has been playing the drums for about a month as of late March 2022; he finds it challenging but fun",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "49d27692-0cb3-48da-b7ce-bc3a7cf6991d",
+          "content": "James started learning a musical instrument — the drums — a few days before March 27, 2022; he practices every day, finds it difficult but rewarding, and can already see progress",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "a492bdcf-0859-43df-a411-b8868727fa68",
+          "content": "John likes electronic and rock music, and played drums as a child; he used to jam informally with friends, thoroughly enjoyed it, but has no recordings or videos of those sessions",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 4,
+          "id": "59951a56-e5ca-4d80-8c63-d98e6f4773f6",
+          "content": "John recently took up metal detecting as a new hobby around March 2022, walking beaches with a metal detector; he has mostly found bottle caps but also some coins and once even a gold ring",
+          "route": "vector",
+          "session_date": "9:26 pm on 20 March, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "73feda98-03f2-4bc4-affc-c617ce4a38ad",
+          "content": "As of late April 2022, John has been playing Assassin's Creed Valhalla (刺客信条：英灵殿)",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "ad4e85cd-d24a-4b39-861e-641e89656603",
+          "content": "As of April 2022, John is building a website for a local small business — his first real project outside his programming class",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "e49a8297-c45f-4ff1-9b50-16fa82c237a5",
+          "content": "Around early September 2022, John's parents started learning programming with John teaching them; he finds it a learning experience that brings them closer, and his father wrote his first own program (shown in a photo)",
+          "route": "vector",
+          "session_date": "9:23 pm on 4 September, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "b6ef2063-6cc7-4a45-b60c-7958e9aaa945",
+          "content": "As of early November 2022, John is hooked on FIFA 23, a soccer game he enjoys playing online against players from around the world",
+          "route": "vector",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "918bbeed-6374-4495-99bd-83ef345d8548",
+          "content": "John attended a gaming convention between his conversations with James in March 2022, where he tried many games, met developers, and competed in a CS:GO tournament; watching skilled players inspired him to improve his own gaming skills",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "d8d3d2a2-f41d-4e7d-a65a-ecd0d39e2ed7",
+          "content": "John (the friend) recently started playing chess to improve his strategic skills, mainly plays online, and joined a chess club to practice with others; he was drawn to chess because he loves strategy games and believes it improves decision-making",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "34f95bcb-2dd4-45c6-ba82-d75459643199",
+          "content": "Around March 20, 2022, John won a big game match and finally leveled up to the next stage, which greatly boosted his confidence and sense of achievement",
+          "route": "vector",
+          "session_date": "12:40 am on 27 March, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "40d0987f-711e-4e35-8d4b-0f5ceaa4bdc1",
+          "content": "James's friend John enrolled in a programming class around March 2022 to relearn coding, having written some HTML and CSS a few years ago",
+          "route": "vector",
+          "session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "f9ba4628-b6cb-4516-9aca-57ac71b1f74f",
+          "content": "John's younger siblings took programming courses, and since around August 2022 John has been helping them learn programming; he loves seeing them enjoy it",
+          "route": "vector",
+          "session_date": "9:18 pm on 26 August, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "dc53d157-71b4-4b98-8629-a35df4961e3b",
+          "content": "Two days before April 29, 2022 (around April 27), John played a strategy board game with friends and found it very exciting; he enjoys strategy board games",
+          "route": "vector",
+          "session_date": "2:36 pm on 29 April, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "a6d19b64-39a8-4fd4-880a-a28cc681f52e",
+          "content": "As of August 2022, John and his younger siblings are working together on a programming project: a simple text adventure game that helps the siblings practice coding skills while having fun; John is very proud of them",
+          "route": "vector",
+          "session_date": "9:18 pm on 26 August, 2022"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 3,
+          "id": "a492bdcf-0859-43df-a411-b8868727fa68",
+          "content": "John likes electronic and rock music, and played drums as a child; he used to jam informally with friends, thoroughly enjoyed it, but has no recordings or videos of those sessions",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 10,
+          "id": "d8d3d2a2-f41d-4e7d-a65a-ecd0d39e2ed7",
+          "content": "John (the friend) recently started playing chess to improve his strategic skills, mainly plays online, and joined a chess club to practice with others; he was drawn to chess because he loves strategy games and believes it improves decision-making",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 14,
+          "id": "dbfa0f57-3172-4392-ac82-b59843cacd05",
+          "content": "John took second place in a local competition on Friday, May 20, 2022, receiving a cash prize and a trophy; he was thrilled that his hard work paid off even without winning first place",
+          "route": "vector",
+          "session_date": "4:30 pm on 13 June, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "f817a362-b136-4cf1-b210-4ac0df0705f7",
+          "content": "As of September 1, 2022, John's younger siblings, under his programming tutelage, have begun writing their own programs — simple basic games and stories — learning quickly and having fun; John is very proud of them",
+          "route": "vector",
+          "session_date": "6:53 pm on 1 September, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa72",
+      "source": {
+        "english": {
+          "question": "Which activity did Sam resume in December 2023 after a long time?",
+          "answer": "hiking",
+          "evidence": [
+            {
+              "dia_id": "D20:6",
+              "session": "session_20",
+              "session_date": "6:48 pm on 17 December, 2023",
+              "window": [
+                {
+                  "dia_id": "D20:3",
+                  "speaker": "Evan",
+                  "text": "It's not easy for us right now, my son had an accident last Tuesday, he fell off his bike and it was rough. But he's doing better now. How are you dealing with all this?",
+                  "query": "son on crutches",
+                  "blip_caption": "a photo of a young boy with crutches and a backpack"
+                },
+                {
+                  "dia_id": "D20:4",
+                  "speaker": "Sam",
+                  "text": "Darn, sorry to hear that. Hope he's feeling better. Same here, it's been tough lately. After we talked, I started thinking about ways to cope with it, but it's been challenging.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D20:5",
+                  "speaker": "Evan",
+                  "text": "Life can be hard sometimes. Do you have any hobbies or activities that make you happy?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D20:6",
+                  "speaker": "Sam",
+                  "text": "I used to love hiking, but it's been a while since I had the chance to do it.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D20:7",
+                  "speaker": "Evan",
+                  "text": "I remember you mentioning that! Hiking is indeed a great way to center oneself and be one with nature. We should definitely plan a hike soon!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D20:8",
+                  "speaker": "Sam",
+                  "text": "Yeah, I'm struggling with my weight and it's affecting my confidence. I feel like I can't overcome all the challenges with my weight, I keep lacking motivation.",
+                  "query": null,
+                  "blip_caption": "a photo of a beach with a few people walking on it"
+                },
+                {
+                  "dia_id": "D20:9",
+                  "speaker": "Evan",
+                  "text": "Yeah, I understand it can be challenging. But remember, it's important to believe in yourself and take it one day at a time, Sam. Your worth is not defined by your weight.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D22:1",
+              "session": "session_22",
+              "session_date": "11:00 am on 31 December, 2023",
+              "window": [
+                {
+                  "dia_id": "D22:1",
+                  "speaker": "Sam",
+                  "text": "Hey Evan! I’m really getting into this healthier lifestyle—just took my friends on an epic hiking trip last Friday!",
+                  "query": "hiking trip mountain top",
+                  "blip_caption": "a photography of a man standing on a rock looking out over a valley"
+                },
+                {
+                  "dia_id": "D22:2",
+                  "speaker": "Evan",
+                  "text": "Hey Sam! That’s fantastic—nothing like a good hike to feel alive. We took the Prius for a long drive to the mountains last weekend. It was perfect until we got into a little scrape on the way back.",
+                  "query": "scenic lookout drive peaceful relaxing",
+                  "blip_caption": "a photo of a small stream running through a lush green forest"
+                },
+                {
+                  "dia_id": "D22:3",
+                  "speaker": "Sam",
+                  "text": "Oh no, were you guys okay after the accident?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:4",
+                  "speaker": "Evan",
+                  "text": "Yeah, we were fine, thanks. Just a minor accident, but it put a bit of a damper on telling my work friends about getting married. They’ve been a great support, though.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "萨姆在2023年12月时隔很久重新开始了什么活动？",
+          "answer": "徒步",
+          "evidence": [
+            {
+              "dia_id": "D20:6",
+              "session": "session_20",
+              "session_date": "6:48 pm on 17 December, 2023",
+              "window": [
+                {
+                  "dia_id": "D20:3",
+                  "speaker": "埃文",
+                  "text": "我们现在日子不太好过，我儿子上周二出了事故，他从自行车上摔下来了，挺严重的。不过他现在好多了。你是怎么应对这一切的？",
+                  "query": "son on crutches",
+                  "blip_caption": "a photo of a young boy with crutches and a backpack"
+                },
+                {
+                  "dia_id": "D20:4",
+                  "speaker": "萨姆",
+                  "text": "唉，听到这个很难过。希望他能快点好起来。我也一样，最近挺艰难的。上次我们聊完之后，我开始想一些应对的办法，但一直很有挑战。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D20:5",
+                  "speaker": "埃文",
+                  "text": "生活有时候就是很难。你有什么爱好或活动能让你开心吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D20:6",
+                  "speaker": "萨姆",
+                  "text": "我以前很喜欢徒步，但已经很久没机会去了。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D20:7",
+                  "speaker": "埃文",
+                  "text": "我记得你提过这个！徒步确实是让自己静心、亲近自然的好方式。我们真该尽快计划一次徒步！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D20:8",
+                  "speaker": "萨姆",
+                  "text": "是啊，我在为体重发愁，这影响了我的自信。我觉得自己无法克服体重带来的所有挑战，总是缺乏动力。",
+                  "query": null,
+                  "blip_caption": "a photo of a beach with a few people walking on it"
+                },
+                {
+                  "dia_id": "D20:9",
+                  "speaker": "埃文",
+                  "text": "嗯，我明白这确实不容易。但记住，萨姆，相信自己、一天一天来很重要。你的价值不是由体重定义的。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D22:1",
+              "session": "session_22",
+              "session_date": "11:00 am on 31 December, 2023",
+              "window": [
+                {
+                  "dia_id": "D22:1",
+                  "speaker": "萨姆",
+                  "text": "嘿，埃文！我真的越来越享受健康的生活方式了——上周五刚带朋友们去了一次超棒的徒步旅行！",
+                  "query": "hiking trip mountain top",
+                  "blip_caption": "a photography of a man standing on a rock looking out over a valley"
+                },
+                {
+                  "dia_id": "D22:2",
+                  "speaker": "埃文",
+                  "text": "嘿，萨姆！太棒了——没有什么比一次好的徒步更能让人感觉充满活力了。上周末我们开着普锐斯去山里兜了一圈长途。一切都很好，直到回程路上出了点小刮擦。",
+                  "query": "scenic lookout drive peaceful relaxing",
+                  "blip_caption": "a photo of a small stream running through a lush green forest"
+                },
+                {
+                  "dia_id": "D22:3",
+                  "speaker": "萨姆",
+                  "text": "哦不，你们出事故后没事吧？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:4",
+                  "speaker": "埃文",
+                  "text": "没事，我们都好好的，谢谢。只是个小事故，不过多少影响了向同事们宣布我结婚的消息。不过他们一直都很支持我。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "答案包含金标准核心要素“徒步”，额外细节正确且不影响精确度。"
+      },
+      "base_answer": "晨跑（2023年12月26日前后，萨姆重新开始了晨跑，并发现这是理清思绪的好办法）",
+      "graph_answer": "徒步（远足）——在2023年12月29日左右，时隔很久重新去徒步，带朋友们登上山顶并分享了照片。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "ca46bde2-31b3-48cd-ab29-73c52743271a",
+          "content": "萨姆（Sam）于2023年12月4日参加了慧俪轻体（Weight Watchers）聚会并学到了一些实用技巧，聚会上分享了受欢迎的思慕雪碗（水果酸奶碗）",
+          "route": "vector",
+          "session_date": "8:16 pm on 5 December, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "23dc5de6-062d-4fa8-b977-fe755d382b79",
+          "content": "On Friday around December 29, 2023, Sam took his friends on a hiking trip to a mountain top and shared a photo, saying he is increasingly enjoying a healthy lifestyle",
+          "route": "vector",
+          "session_date": "11:00 am on 31 December, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "c5d6b229-3c45-43cc-bcb5-5b2688969da0",
+          "content": "Sam had recurring problems with self-checkout at the store again around December 31, 2023, calling it a routine frustration; he joked that if Evan wants to experience it he should bring him along",
+          "route": "vector",
+          "session_date": "11:00 am on 31 December, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "a41140c4-0b25-410f-a9fd-8194385af22e",
+          "content": "萨姆（Sam）开始喜欢上晨跑，并发现这是理清思绪的好办法；他还在努力对爱情抱有与埃文相同的乐观态度。",
+          "route": "vector",
+          "session_date": "4:25 pm on 26 December, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "08ccb013-a18b-4699-ad4e-9b42fd250ac5",
+          "content": "Sam committed to starting regular gym workouts beginning July 28, 2023, saying the sooner he starts the sooner he'll see rewards",
+          "route": "vector",
+          "session_date": "10:52 am on 27 July, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "b67198ac-ce6b-4fd4-9c8e-51e529281276",
+          "content": "Around August 19, 2023, Sam started a diet and committed to living a healthier lifestyle; he finds it difficult but is staying determined",
+          "route": "vector",
+          "session_date": "6:17 pm on 19 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "f5461992-ae36-4980-99e1-f58fd4e25c80",
+          "content": "Sam had never tried kayaking but decided to try it around October 14, 2023, viewing it as a fun way to exercise and enjoy nature; he was considering different outdoor activities",
+          "route": "vector",
+          "session_date": "4:07 pm on 14 October, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "37c4338c-5b24-4c2d-acb5-dcb02da1c2d5",
+          "content": "Sam started taking a cooking class around August 2023 to learn to make healthier meals; he made a tasty grilled salmon with roasted vegetables marinated in several seasonings",
+          "route": "vector",
+          "session_date": "4:20 pm on 15 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "a21a6c80-4b2c-457a-89ce-b0fcb0435c6f",
+          "content": "萨姆（Sam）在2023年11月上旬被选为慧俪轻体（Weight Watchers）小组教练，这是他追求更健康道路上的重要一步，他为此感到非常自豪，并希望当教练能帮助自己保持动力、也帮助他人坚持下去",
+          "route": "vector",
+          "session_date": "9:13 pm on 9 November, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "c6109bcc-194e-47ba-9805-12a41403c9f1",
+          "content": "Sam已经很长时间没有看医生了，但计划预约一次，以咨询均衡饮食计划和低强度运动建议（截至2024年1月）",
+          "route": "vector",
+          "session_date": "12:17 am on 10 January, 2024"
+        },
+        {
+          "rank": 11,
+          "id": "73bc605b-7363-4d15-95b0-7f1650ea554a",
+          "content": "Evan and Sam agreed to meet up again later so Sam can share how he enjoys his new hobby (painting)",
+          "route": "vector",
+          "session_date": "1:47 pm on 18 May, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "96372866-4f74-4fe8-9755-55120190d46c",
+          "content": "Evan and Sam agreed to have a painting activity together on Saturday, September 16, 2023, after Evan helps Sam pick out art supplies; Sam is excited to try painting as a relaxing hobby",
+          "route": "vector",
+          "session_date": "9:28 am on 11 September, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "b4b94427-ddc3-43c7-896e-f055a153a015",
+          "content": "埃文（Evan）提议帮助萨姆（Sam）开始学习绘画，而萨姆似乎对此很受鼓舞。",
+          "route": "vector",
+          "session_date": "4:25 pm on 26 December, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "9226dcb2-a023-40ad-86a1-c9b3262a49d8",
+          "content": "埃文（Evan）和萨姆（Sam）约定养成每天欣赏生活中美好小事的习惯，并承诺继续互相扶持",
+          "route": "vector",
+          "session_date": "7:30 pm on 21 November, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "7b205fe9-a9ff-478a-9a54-4bd3553684fa",
+          "content": "埃文（Evan）和萨姆（Sam）商定一起计划一次徒步旅行；萨姆对此感到非常兴奋，称亲近大自然正是他所需要的，并将其视为一次有趣的挑战和欣赏自然之美的机会",
+          "route": "vector",
+          "session_date": "1:50 pm on 17 October, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "ca46bde2-31b3-48cd-ab29-73c52743271a",
+          "content": "萨姆（Sam）于2023年12月4日参加了慧俪轻体（Weight Watchers）聚会并学到了一些实用技巧，聚会上分享了受欢迎的思慕雪碗（水果酸奶碗）",
+          "route": "vector",
+          "session_date": "8:16 pm on 5 December, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "23dc5de6-062d-4fa8-b977-fe755d382b79",
+          "content": "On Friday around December 29, 2023, Sam took his friends on a hiking trip to a mountain top and shared a photo, saying he is increasingly enjoying a healthy lifestyle",
+          "route": "vector",
+          "session_date": "11:00 am on 31 December, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "c5d6b229-3c45-43cc-bcb5-5b2688969da0",
+          "content": "Sam had recurring problems with self-checkout at the store again around December 31, 2023, calling it a routine frustration; he joked that if Evan wants to experience it he should bring him along",
+          "route": "vector",
+          "session_date": "11:00 am on 31 December, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "a41140c4-0b25-410f-a9fd-8194385af22e",
+          "content": "萨姆（Sam）开始喜欢上晨跑，并发现这是理清思绪的好办法；他还在努力对爱情抱有与埃文相同的乐观态度。",
+          "route": "vector",
+          "session_date": "4:25 pm on 26 December, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "08ccb013-a18b-4699-ad4e-9b42fd250ac5",
+          "content": "Sam committed to starting regular gym workouts beginning July 28, 2023, saying the sooner he starts the sooner he'll see rewards",
+          "route": "vector",
+          "session_date": "10:52 am on 27 July, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "b67198ac-ce6b-4fd4-9c8e-51e529281276",
+          "content": "Around August 19, 2023, Sam started a diet and committed to living a healthier lifestyle; he finds it difficult but is staying determined",
+          "route": "vector",
+          "session_date": "6:17 pm on 19 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "f5461992-ae36-4980-99e1-f58fd4e25c80",
+          "content": "Sam had never tried kayaking but decided to try it around October 14, 2023, viewing it as a fun way to exercise and enjoy nature; he was considering different outdoor activities",
+          "route": "vector",
+          "session_date": "4:07 pm on 14 October, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "b8fc79ba-90b9-4cd6-8d7b-f3ba8b34e5ae",
+          "content": "Sam started a new diet and exercise plan on Monday, August 21, 2023, and reported it was going very well; he shared a before-and-after photo of his healthy eating (a bowl of beef and vegetables) hoping to inspire others to make better choices",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 9,
+          "id": "37c4338c-5b24-4c2d-acb5-dcb02da1c2d5",
+          "content": "Sam started taking a cooking class around August 2023 to learn to make healthier meals; he made a tasty grilled salmon with roasted vegetables marinated in several seasonings",
+          "route": "vector",
+          "session_date": "4:20 pm on 15 August, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "a21a6c80-4b2c-457a-89ce-b0fcb0435c6f",
+          "content": "萨姆（Sam）在2023年11月上旬被选为慧俪轻体（Weight Watchers）小组教练，这是他追求更健康道路上的重要一步，他为此感到非常自豪，并希望当教练能帮助自己保持动力、也帮助他人坚持下去",
+          "route": "vector",
+          "session_date": "9:13 pm on 9 November, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "c6109bcc-194e-47ba-9805-12a41403c9f1",
+          "content": "Sam已经很长时间没有看医生了，但计划预约一次，以咨询均衡饮食计划和低强度运动建议（截至2024年1月）",
+          "route": "vector",
+          "session_date": "12:17 am on 10 January, 2024"
+        },
+        {
+          "rank": 12,
+          "id": "8520306b-5df8-46be-8afb-805b3c284a39",
+          "content": "Sam (the assistant-side conversation partner) loves hiking but hasn't gone in a long time; hiked with his dad at age ten, went a long distance, and considers it a special, cherished memory",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "7c9cfdb1-aa06-40b7-b014-bd0ff73ed901",
+          "content": "Sam enjoys being in nature, finds it peaceful and refreshing, hasn't been on a road trip in a long time, and wants to hike more now that he is getting healthier; he planned a possible day trip to Lake Louise",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "73bc605b-7363-4d15-95b0-7f1650ea554a",
+          "content": "Evan and Sam agreed to meet up again later so Sam can share how he enjoys his new hobby (painting)",
+          "route": "vector",
+          "session_date": "1:47 pm on 18 May, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "37dfe81b-5235-4b18-960e-6118572ceecc",
+          "content": "Sam decided to try painting as a hobby to stay motivated and relieve stress, and agreed to update Evan on his progress",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "gained": [
+        {
+          "rank": 8,
+          "id": "b8fc79ba-90b9-4cd6-8d7b-f3ba8b34e5ae",
+          "content": "Sam started a new diet and exercise plan on Monday, August 21, 2023, and reported it was going very well; he shared a before-and-after photo of his healthy eating (a bowl of beef and vegetables) hoping to inspire others to make better choices",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "8520306b-5df8-46be-8afb-805b3c284a39",
+          "content": "Sam (the assistant-side conversation partner) loves hiking but hasn't gone in a long time; hiked with his dad at age ten, went a long distance, and considers it a special, cherished memory",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "7c9cfdb1-aa06-40b7-b014-bd0ff73ed901",
+          "content": "Sam enjoys being in nature, finds it peaceful and refreshing, hasn't been on a road trip in a long time, and wants to hike more now that he is getting healthier; he planned a possible day trip to Lake Louise",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "37dfe81b-5235-4b18-960e-6118572ceecc",
+          "content": "Sam decided to try painting as a hobby to stay motivated and relieve stress, and agreed to update Evan on his progress",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 12,
+          "id": "96372866-4f74-4fe8-9755-55120190d46c",
+          "content": "Evan and Sam agreed to have a painting activity together on Saturday, September 16, 2023, after Evan helps Sam pick out art supplies; Sam is excited to try painting as a relaxing hobby",
+          "route": "vector",
+          "session_date": "9:28 am on 11 September, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "b4b94427-ddc3-43c7-896e-f055a153a015",
+          "content": "埃文（Evan）提议帮助萨姆（Sam）开始学习绘画，而萨姆似乎对此很受鼓舞。",
+          "route": "vector",
+          "session_date": "4:25 pm on 26 December, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "9226dcb2-a023-40ad-86a1-c9b3262a49d8",
+          "content": "埃文（Evan）和萨姆（Sam）约定养成每天欣赏生活中美好小事的习惯，并承诺继续互相扶持",
+          "route": "vector",
+          "session_date": "7:30 pm on 21 November, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "7b205fe9-a9ff-478a-9a54-4bd3553684fa",
+          "content": "埃文（Evan）和萨姆（Sam）商定一起计划一次徒步旅行；萨姆对此感到非常兴奋，称亲近大自然正是他所需要的，并将其视为一次有趣的挑战和欣赏自然之美的机会",
+          "route": "vector",
+          "session_date": "1:50 pm on 17 October, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa124",
+      "source": {
+        "english": {
+          "question": "What activity does Dave find fulfilling, similar to Calvin's passion for music festivals?",
+          "answer": "fixing things",
+          "evidence": [
+            {
+              "dia_id": "D23:11",
+              "session": "session_23",
+              "session_date": "9:39 am on 15 October, 2023",
+              "window": [
+                {
+                  "dia_id": "D23:8",
+                  "speaker": "Calvin",
+                  "text": "Wow, that looks awesome! The crowd looks really excited and the stage is incredible. Who was the headliner?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:9",
+                  "speaker": "Dave",
+                  "text": "The Fireworks headlined the festival.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:10",
+                  "speaker": "Calvin",
+                  "text": "Wow, I heard great things about The Fireworks! Performing with Frank Ocean recently has been really cool. Seeing them perform live must've been awesome - I bet the energy was electric! That's why I love my job so much - connecting with the crowd.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:11",
+                  "speaker": "Dave",
+                  "text": "Yeah, Calvin! The crowd had such a buzz. Music brings people together in such an amazing way, and it's just like when I'm fixing up things. I love the feeling of taking something broken and making it whole again. That's why I keep doing what I do.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:12",
+                  "speaker": "Calvin",
+                  "text": "Yeah, Dave! Music and repairing things are so fulfilling and satisfying. Seeing something go from broken to whole is incredible. You're making a difference too - it's amazing. Keep it up, friend.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:13",
+                  "speaker": "Dave",
+                  "text": "Thanks, buddy. Your support really helps. It's great to have a friend who believes in me. I'll keep pushing.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:14",
+                  "speaker": "Calvin",
+                  "text": "I believe in you, Dave. Keep pushing and never forget how awesome you are.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "戴夫觉得什么活动很有成就感，就像卡尔文对音乐节的热情一样？",
+          "answer": "修理东西",
+          "evidence": [
+            {
+              "dia_id": "D23:11",
+              "session": "session_23",
+              "session_date": "9:39 am on 15 October, 2023",
+              "window": [
+                {
+                  "dia_id": "D23:8",
+                  "speaker": "卡尔文",
+                  "text": "哇，看起来太赞了！人群看起来非常兴奋，舞台也超棒。压轴的是谁？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:9",
+                  "speaker": "戴夫",
+                  "text": "压轴的是 The Fireworks 乐队。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:10",
+                  "speaker": "卡尔文",
+                  "text": "哇，我听说过很多关于 The Fireworks 的好评！他们最近和弗兰克·欧申合作演出真的很酷。能看他们的现场演出一定很棒——我敢说现场气氛肯定嗨爆了！这就是我这么热爱我的工作的原因——与观众建立联结。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:11",
+                  "speaker": "戴夫",
+                  "text": "是啊，卡尔文！现场的气氛特别热烈。音乐用一种神奇的方式把人们凝聚在一起，就像我修东西时一样。我喜欢把坏掉的东西修好的那种感觉。这就是我一直坚持做这行的原因。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:12",
+                  "speaker": "卡尔文",
+                  "text": "是啊，戴夫！音乐和修理东西都让人充实又满足。看着东西从破损变回完好，真是不可思议。你也在创造改变——这很了不起。继续加油，朋友。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:13",
+                  "speaker": "戴夫",
+                  "text": "谢谢你，兄弟。你的支持真的很有帮助。有一个相信我的朋友真好。我会继续努力的。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D23:14",
+                  "speaker": "卡尔文",
+                  "text": "我相信你，戴夫。继续加油，永远别忘了你有多棒。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "回答限定为修车/翻新汽车，而非金标准中更宽泛的“修理东西”"
+        ],
+        "reason": "答案只给出修车/翻新汽车这一具体活动，未涵盖金标准要求的广义活动“修理东西”。"
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "修复旧车是“修理东西”的具体体现，包含金答案且无错误信息。"
+      },
+      "base_answer": "修复/翻新旧车（汽车修复）。戴夫说翻新汽车给他成就感，修车像一种治疗，以修车为生是他的目标。",
+      "graph_answer": "修复/翻新旧车（修车）",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "6978e878-7947-4160-9ed2-6bef81570fc8",
+          "content": "戴夫于2023年9月1日（对话前一天）从圣弗朗西斯科回来，带回了关于汽车改装的心得和知识，并热衷于和卡尔文分享，称翻新改造旧车让他有成就感",
+          "route": "vector",
+          "session_date": "9:19 am on 2 September, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "94e120e7-c330-46a4-bc09-bb0bad95dd2f",
+          "content": "戴夫表示他喜欢把破旧的东西变成美好的东西，正是这些小小的成功让他感到自豪和满足",
+          "route": "vector",
+          "session_date": "2:44 pm on 4 October, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "e771797b-0e46-48e5-86b6-284a218a6249",
+          "content": "戴夫表示以自己热爱的事情（修车）为生是他从小到大的目标，修复工作虽然辛苦但带来极大的成就感",
+          "route": "vector",
+          "session_date": "3:13 pm on 8 October, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "6ac1203b-be22-4fce-8a30-9fcc3a31d96a",
+          "content": "戴夫从小就和他爸爸一起修车，翻新汽车给他成就感，修车对他来说像一种治疗",
+          "route": "vector",
+          "session_date": "1:12 pm on 3 August, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "24af0043-27e2-400c-b182-eae001d5b73c",
+          "content": "戴夫 (Dave) 最近参加了一个经典车展览活动，展出了许多经典车，他还和一些车主聊天并听了他们精彩的故事，觉得非常鼓舞",
+          "route": "vector",
+          "session_date": "11:53 am on 23 March, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "310fe5af-e8e6-4c7c-840c-749fd2de776f",
+          "content": "戴夫认为音乐用神奇的方式把人们凝聚在一起，就像他修理东西时一样，修复坏掉的东西是他坚持从事这行的原因",
+          "route": "vector",
+          "session_date": "9:39 am on 15 October, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "0d4f84ce-21dd-4009-92ea-572d1c3c7b15",
+          "content": "戴夫小时候和爸爸曾花一个夏天一起翻新一辆旧车，过程辛苦但最终成果让他非常满足，他分享了一张儿时和爸爸在车旁的旧照片",
+          "route": "vector",
+          "session_date": "1:12 pm on 3 August, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "b6c85038-5d37-49eb-8d8e-72feef961bb2",
+          "content": "戴夫和卡尔文约定互相激励，在各自热爱的汽车修复和音乐道路上继续努力拼搏",
+          "route": "vector",
+          "session_date": "6:24 pm on 1 May, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "1d1b3ace-47c8-419b-8cb9-19b70136c16b",
+          "content": "卡尔文称赞戴夫修车是一门艺术，看到人们因为戴夫而开心很美好，认为戴夫有才华并深受鼓舞",
+          "route": "vector",
+          "session_date": "12:13 am on 15 September, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "74c4d1b5-fd03-4f1b-aaed-cd6413c77f97",
+          "content": "戴夫最近开始迷上摄影，去了很多地方拍了一些很好的照片，认为摄影是捕捉和欣赏大自然之美的创意出口",
+          "route": "vector",
+          "session_date": "10:49 am on 29 October, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "d136cb1d-6fb8-482b-92c1-e3f05bf987c4",
+          "content": "戴夫在2023年10月中旬参加了一个音乐节并感到充满活力，压轴演出的是 The Fireworks 乐队，他分享了主舞台和人群的照片，称赞气氛热烈",
+          "route": "vector",
+          "session_date": "9:39 am on 15 October, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "d4457eed-04e1-4cdf-a5d7-0eac186737e6",
+          "content": "戴夫在波士顿音乐节上最喜欢的乐队是Aerosmith，他终于现场看到了他们，圆了看到最喜欢乐队现场演出的梦想，觉得是非常美妙的体验，但没有机会在演出后与他们见面",
+          "route": "vector",
+          "session_date": "4:45 pm on 26 March, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "870f93cd-c220-45f2-96af-8e606dd747b6",
+          "content": "戴夫和卡尔文约定一起玩音乐、来一场即兴演奏，把音乐开到最大，创造美好的回忆，双方都非常期待（2023年9月22日）",
+          "route": "vector",
+          "session_date": "8:57 pm on 22 September, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "4002694b-7c44-4668-8b71-bea9575d7fe5",
+          "content": "卡尔文计划与弗兰克·奥申一起在波士顿演出，期待为家乡观众演奏并体验波士顿的音乐圈；戴夫认为波士顿音乐圈很棒，有很多有才华的音乐家和演出场所，并表示会去为卡尔文加油",
+          "route": "vector",
+          "session_date": "6:06 pm on 31 May, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "ab0bfb0e-af65-4f57-a11e-cb4af500e3d9",
+          "content": "戴夫的汽车修复项目进展顺利，截至2023年10月29日刚完成修复，效果很棒；他邀请卡尔文来家里看看",
+          "route": "vector",
+          "session_date": "10:49 am on 29 October, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "1eff687f-7cf6-4d1e-b41c-5e37b1979c27",
+          "content": "戴夫表示修好东西、看着它变好给了他成就感和目标感，修好别人的车并看到车主如释重负让他感到自豪，觉得自己在做出改变",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 2,
+          "id": "9a6f7938-25be-4568-a324-0142a256bd62",
+          "content": "戴夫正在修复一辆古董车，截至2023年9月15日已完成并展示了与成品车的合影，看到车重获新生很有成就感，人们看到成品时的反应让所有辛苦都值得",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 3,
+          "id": "6978e878-7947-4160-9ed2-6bef81570fc8",
+          "content": "戴夫于2023年9月1日（对话前一天）从圣弗朗西斯科回来，带回了关于汽车改装的心得和知识，并热衷于和卡尔文分享，称翻新改造旧车让他有成就感",
+          "route": "vector",
+          "session_date": "9:19 am on 2 September, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "94e120e7-c330-46a4-bc09-bb0bad95dd2f",
+          "content": "戴夫表示他喜欢把破旧的东西变成美好的东西，正是这些小小的成功让他感到自豪和满足",
+          "route": "vector",
+          "session_date": "2:44 pm on 4 October, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "e771797b-0e46-48e5-86b6-284a218a6249",
+          "content": "戴夫表示以自己热爱的事情（修车）为生是他从小到大的目标，修复工作虽然辛苦但带来极大的成就感",
+          "route": "vector",
+          "session_date": "3:13 pm on 8 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "6ac1203b-be22-4fce-8a30-9fcc3a31d96a",
+          "content": "戴夫从小就和他爸爸一起修车，翻新汽车给他成就感，修车对他来说像一种治疗",
+          "route": "vector",
+          "session_date": "1:12 pm on 3 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "317a9071-d642-42ed-9a36-cbb0bea1a419",
+          "content": "戴夫的梦想是修复经典汽车，开维修店是朝着这个目标迈出的一步；他在去年（约2022年）修复过一辆经典红色野马 (Mustang) 的发动机，激动得不得了，觉得让一辆车重获新生的感觉无可比拟",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 8,
+          "id": "24af0043-27e2-400c-b182-eae001d5b73c",
+          "content": "戴夫 (Dave) 最近参加了一个经典车展览活动，展出了许多经典车，他还和一些车主聊天并听了他们精彩的故事，觉得非常鼓舞",
+          "route": "vector",
+          "session_date": "11:53 am on 23 March, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "68c181dc-6f2c-4ebe-815b-2db92390fcb4",
+          "content": "戴夫在2023年5月下旬修好了邻居一辆发动机出问题的车，并表示帮邻居修车对他来说不难，修理东西是他的热情所在，能给他成就感和目标感",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 10,
+          "id": "310fe5af-e8e6-4c7c-840c-749fd2de776f",
+          "content": "戴夫认为音乐用神奇的方式把人们凝聚在一起，就像他修理东西时一样，修复坏掉的东西是他坚持从事这行的原因",
+          "route": "vector",
+          "session_date": "9:39 am on 15 October, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "c8a0abdc-8cab-48a9-a413-2b14286121a9",
+          "content": "戴夫在2023年8月被选中参加一个汽车改装工作坊，学习汽车工程并亲手打造定制车，称这是梦想成真",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "6bd76270-3430-41d2-9494-a117ad7b307f",
+          "content": "戴夫 (Dave) 于2023年8月参加了圣弗朗西斯科的一个汽车工作坊，深入了解汽车修复世界和不同技术，觉得人们的热情和奉献精神非常鼓舞人心",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "0d4f84ce-21dd-4009-92ea-572d1c3c7b15",
+          "content": "戴夫小时候和爸爸曾花一个夏天一起翻新一辆旧车，过程辛苦但最终成果让他非常满足，他分享了一张儿时和爸爸在车旁的旧照片",
+          "route": "vector",
+          "session_date": "1:12 pm on 3 August, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "b6c85038-5d37-49eb-8d8e-72feef961bb2",
+          "content": "戴夫和卡尔文约定互相激励，在各自热爱的汽车修复和音乐道路上继续努力拼搏",
+          "route": "vector",
+          "session_date": "6:24 pm on 1 May, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "2aa11224-e886-4dae-af9d-7043a0fd1a66",
+          "content": "戴夫 (Dave) 于2023年8月正在修复一辆老式福特野马 (Ford Mustang)，希望2023年9月底前全部修好，称看着它从破烂变成美车的蜕变是值得的",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "gained": [
+        {
+          "rank": 1,
+          "id": "1eff687f-7cf6-4d1e-b41c-5e37b1979c27",
+          "content": "戴夫表示修好东西、看着它变好给了他成就感和目标感，修好别人的车并看到车主如释重负让他感到自豪，觉得自己在做出改变",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 2,
+          "id": "9a6f7938-25be-4568-a324-0142a256bd62",
+          "content": "戴夫正在修复一辆古董车，截至2023年9月15日已完成并展示了与成品车的合影，看到车重获新生很有成就感，人们看到成品时的反应让所有辛苦都值得",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 7,
+          "id": "317a9071-d642-42ed-9a36-cbb0bea1a419",
+          "content": "戴夫的梦想是修复经典汽车，开维修店是朝着这个目标迈出的一步；他在去年（约2022年）修复过一辆经典红色野马 (Mustang) 的发动机，激动得不得了，觉得让一辆车重获新生的感觉无可比拟",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 9,
+          "id": "68c181dc-6f2c-4ebe-815b-2db92390fcb4",
+          "content": "戴夫在2023年5月下旬修好了邻居一辆发动机出问题的车，并表示帮邻居修车对他来说不难，修理东西是他的热情所在，能给他成就感和目标感",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "c8a0abdc-8cab-48a9-a413-2b14286121a9",
+          "content": "戴夫在2023年8月被选中参加一个汽车改装工作坊，学习汽车工程并亲手打造定制车，称这是梦想成真",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "6bd76270-3430-41d2-9494-a117ad7b307f",
+          "content": "戴夫 (Dave) 于2023年8月参加了圣弗朗西斯科的一个汽车工作坊，深入了解汽车修复世界和不同技术，觉得人们的热情和奉献精神非常鼓舞人心",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "2aa11224-e886-4dae-af9d-7043a0fd1a66",
+          "content": "戴夫 (Dave) 于2023年8月正在修复一辆老式福特野马 (Ford Mustang)，希望2023年9月底前全部修好，称看着它从破烂变成美车的蜕变是值得的",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 9,
+          "id": "1d1b3ace-47c8-419b-8cb9-19b70136c16b",
+          "content": "卡尔文称赞戴夫修车是一门艺术，看到人们因为戴夫而开心很美好，认为戴夫有才华并深受鼓舞",
+          "route": "vector",
+          "session_date": "12:13 am on 15 September, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "74c4d1b5-fd03-4f1b-aaed-cd6413c77f97",
+          "content": "戴夫最近开始迷上摄影，去了很多地方拍了一些很好的照片，认为摄影是捕捉和欣赏大自然之美的创意出口",
+          "route": "vector",
+          "session_date": "10:49 am on 29 October, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "d136cb1d-6fb8-482b-92c1-e3f05bf987c4",
+          "content": "戴夫在2023年10月中旬参加了一个音乐节并感到充满活力，压轴演出的是 The Fireworks 乐队，他分享了主舞台和人群的照片，称赞气氛热烈",
+          "route": "vector",
+          "session_date": "9:39 am on 15 October, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "d4457eed-04e1-4cdf-a5d7-0eac186737e6",
+          "content": "戴夫在波士顿音乐节上最喜欢的乐队是Aerosmith，他终于现场看到了他们，圆了看到最喜欢乐队现场演出的梦想，觉得是非常美妙的体验，但没有机会在演出后与他们见面",
+          "route": "vector",
+          "session_date": "4:45 pm on 26 March, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "870f93cd-c220-45f2-96af-8e606dd747b6",
+          "content": "戴夫和卡尔文约定一起玩音乐、来一场即兴演奏，把音乐开到最大，创造美好的回忆，双方都非常期待（2023年9月22日）",
+          "route": "vector",
+          "session_date": "8:57 pm on 22 September, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "4002694b-7c44-4668-8b71-bea9575d7fe5",
+          "content": "卡尔文计划与弗兰克·奥申一起在波士顿演出，期待为家乡观众演奏并体验波士顿的音乐圈；戴夫认为波士顿音乐圈很棒，有很多有才华的音乐家和演出场所，并表示会去为卡尔文加油",
+          "route": "vector",
+          "session_date": "6:06 pm on 31 May, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "ab0bfb0e-af65-4f57-a11e-cb4af500e3d9",
+          "content": "戴夫的汽车修复项目进展顺利，截至2023年10月29日刚完成修复，效果很棒；他邀请卡尔文来家里看看",
+          "route": "vector",
+          "session_date": "10:49 am on 29 October, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa118",
+      "source": {
+        "english": {
+          "question": "What kind of frosting did Joanna use on the cake she made recently in May 2022?",
+          "answer": "coconut cream",
+          "evidence": [
+            {
+              "dia_id": "D10:11",
+              "session": "session_10",
+              "session_date": "11:54 am on 2 May, 2022",
+              "window": [
+                {
+                  "dia_id": "D10:8",
+                  "speaker": "Nate",
+                  "text": "It was super awesome! So much adrenaline went into that last match, and the other finalist even shook my hand! Enough about me though, how about you? What have you been up to?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:9",
+                  "speaker": "Joanna",
+                  "text": "Not much is new other than the screenplay. Been working on some projects and testing out dairy-free dessert recipes for friends and fam. Here's a pic of a cake I made recently!",
+                  "query": "dairy-free cake decorated",
+                  "blip_caption": "a photo of a cake with white frosting on a wooden table"
+                },
+                {
+                  "dia_id": "D10:10",
+                  "speaker": "Nate",
+                  "text": "That looks really good! I love the way the frosting turned out!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:11",
+                  "speaker": "Joanna",
+                  "text": "Thanks! It's dairy-free vanilla with strawberry filling and coconut cream frosting. I gotta say, I really like your coconut reccomendation you gave a while back!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:12",
+                  "speaker": "Nate",
+                  "text": "Wow, Joanna, that looks amazing! I bet it tastes great - you're so talented at making dairy-free desserts!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:13",
+                  "speaker": "Joanna",
+                  "text": "Thanks Nate! I really appreciate it. I love experimenting in the kitchen, coming up with something tasty. Cooking and baking are my creative outlets. Especially when I'm snackin' dairy-free, trying to make the desserts just as delicious - it's a rewarding challenge! Seeing the smiles on everyone's faces when they try it - it's a total win!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:14",
+                  "speaker": "Nate",
+                  "text": "That's great, Joanna! It must be so rewarding to see everyone enjoying your creations. Keep up the good work!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "乔安娜2022年5月最近做的蛋糕用了什么样的糖霜？",
+          "answer": "椰子奶油",
+          "evidence": [
+            {
+              "dia_id": "D10:11",
+              "session": "session_10",
+              "session_date": "11:54 am on 2 May, 2022",
+              "window": [
+                {
+                  "dia_id": "D10:8",
+                  "speaker": "内特",
+                  "text": "超级爽！最后一场比赛肾上腺素飙升，另一位决赛选手还和我握了手！不过别光说我了，你呢？最近在忙什么？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:9",
+                  "speaker": "乔安娜",
+                  "text": "除了剧本之外没什么新鲜事。一直在做一些项目，还在为朋友和家人试验无乳制品甜点食谱。这是我最近做的一个蛋糕的照片！",
+                  "query": "dairy-free cake decorated",
+                  "blip_caption": "a photo of a cake with white frosting on a wooden table"
+                },
+                {
+                  "dia_id": "D10:10",
+                  "speaker": "内特",
+                  "text": "看起来真不错！我喜欢糖霜的效果！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:11",
+                  "speaker": "乔安娜",
+                  "text": "谢谢！这是无乳制品的香草蛋糕，配草莓夹心和椰奶糖霜。我得说，我真的很喜欢你之前推荐的椰子！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:12",
+                  "speaker": "内特",
+                  "text": "哇，乔安娜，看起来太棒了！我敢说味道一定很好——你做无乳制品甜点真是太有天赋了！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:13",
+                  "speaker": "乔安娜",
+                  "text": "谢谢内特！我非常感激。我喜欢在厨房里做实验，琢磨出好吃的东西。烹饪和烘焙是我的创意出口。尤其是在吃无乳制品零食的时候，努力让甜点同样美味——这是个有回报的挑战！看到大家品尝时的笑脸——完全是双赢！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:14",
+                  "speaker": "内特",
+                  "text": "太棒了，乔安娜！看到大家喜欢你的作品一定很有成就感。继续加油！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "wrong",
+        "missing": [
+          "Coconut cream"
+        ],
+        "reason": "The gold is coconut cream (椰子奶油); 椰奶糖霜 (coconut milk frosting) is a different specific value."
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "椰奶糖霜与金答案'椰子奶油'指同一事实，附加细节正确。"
+      },
+      "base_answer": "2022年5月2日，乔安娜分享了她做的无乳制品香草蛋糕，配草莓夹心和**椰奶糖霜**。\n\n答案：椰奶糖霜",
+      "graph_answer": "椰奶糖霜（还配有草莓夹心）。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "8fb577d8-f8c0-40c3-a92b-486f7414bbeb",
+          "content": "乔安娜除了剧本项目之外，还在为朋友和家人试验无乳制品甜点食谱，并于2022年5月2日分享了她做的无乳制品香草蛋糕，配草莓夹心和椰奶糖霜",
+          "route": "vector",
+          "session_date": "11:54 am on 2 May, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "7751b262-6b5e-4120-928f-9be1495d9dd1",
+          "content": "乔安娜 (Joanna) 于2022年9月初改进了一个旧食谱，做了无乳制品巧克力蛋糕，配草莓和粉色糖霜",
+          "route": "vector",
+          "session_date": "6:03 pm on 5 September, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "103d338d-cc1d-4eeb-8463-685f60fe980a",
+          "content": "乔安娜 (Joanna) 于2022年9月初做了无乳制品巧克力椰子纸杯蛋糕，配覆盆子糖霜",
+          "route": "vector",
+          "session_date": "6:03 pm on 5 September, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "51a2740b-2142-4b53-b5c9-a0613b062aa5",
+          "content": "乔安娜 (Joanna) 喜欢做无乳制品巧克力覆盆子蛋糕，用杏仁粉、椰子油、巧克力和覆盆子制作，非常湿润、甜度适中，是她过生日和特殊日子时的最爱",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+          "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+          "route": "vector",
+          "session_date": "6:44 pm on 17 April, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "9e497904-46a2-4a9e-9cd2-b33fed4cdf9b",
+          "content": "内特表示一直想尝尝乔安娜做的巧克力覆盆子蛋糕，乔安娜答应拜访时带给他",
+          "route": "vector",
+          "session_date": "3:56 pm on 4 November, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "df7e505d-0e14-4db3-8f37-1832d291fd02",
+          "content": "乔安娜 (Joanna) 于2022年10月5日试做了她最新的无乳制品食谱——巧克力覆盆子挞（配覆盆子点缀），很受家人欢迎；她喜欢混搭口味并总在尝试新东西",
+          "route": "vector",
+          "session_date": "11:15 am on 6 October, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "2d143585-5296-4136-8885-95e68e0364c8",
+          "content": "乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月14日分享了照片",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "9f92cc35-7682-477d-9fed-1cfc2a771fd1",
+          "content": "乔安娜 (Joanna) 于2022年9月9日（上个星期五）用杏仁奶做了一道非常美味的无乳制品甜点；无乳制品对她是必须的，尤其是甜点",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "1c7d2a51-238a-4f00-8132-f62e746cca67",
+          "content": "乔安娜 (Joanna) 做了美味的覆盆子奇亚籽布丁芭菲甜点来庆祝写作获得好评，她觉得非常好吃",
+          "route": "vector",
+          "session_date": "10:57 am on 22 August, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "373d789a-583a-41e2-8a73-7220b8198e8e",
+          "content": "乔安娜 (Joanna) 在2022年2月考虑尝试无乳制品甜点口味，并开玩笑说想去内特家拜访尝他的无乳制品蛋糕",
+          "route": "vector",
+          "session_date": "9:27 am on 7 February, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "0fbc6e48-b544-41af-8218-ac50ae1f2af2",
+          "content": "乔安娜 (Joanna) 于2022年9月在持续调整无乳制品甜点食谱，尝试巧克力、覆盆子和椰子等口味，目标是让甜点更好吃、更容易上手；这让她找到慰藉并发挥创意",
+          "route": "vector",
+          "session_date": "6:03 pm on 5 September, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "8ebbf56c-9d00-432f-996e-fbb2c12039f1",
+          "content": "乔安娜 (Joanna) 在2022年5月20日完成了她的第三个剧本，这个题材对她非常个人化，主题关于失去、身份认同和联结，她构思了很久才鼓起勇气写出来，过程很难但感到非常自豪",
+          "route": "vector",
+          "session_date": "7:49 pm on 20 May, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "fbe06f92-8a9a-412d-a765-54f6c3ef09a3",
+          "content": "乔安娜 (Joanna) 于2022年5月中旬在一个叫Whispering Falls的美丽宁静的地方徒步拍照，那里有瀑布和葱郁的绿色景观，流水的声音让她感到非常放松和平静",
+          "route": "vector",
+          "session_date": "3:35 pm on 12 May, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "1579bdac-f904-432d-bfb3-28ee999a59fd",
+          "content": "乔安娜 (Joanna) 于2022年6月24日左右将她最近写的一个剧本提交给了一个电影比赛，期待看到其他人的评价",
+          "route": "vector",
+          "session_date": "10:55 am on 24 June, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "8fb577d8-f8c0-40c3-a92b-486f7414bbeb",
+          "content": "乔安娜除了剧本项目之外，还在为朋友和家人试验无乳制品甜点食谱，并于2022年5月2日分享了她做的无乳制品香草蛋糕，配草莓夹心和椰奶糖霜",
+          "route": "vector",
+          "session_date": "11:54 am on 2 May, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "7751b262-6b5e-4120-928f-9be1495d9dd1",
+          "content": "乔安娜 (Joanna) 于2022年9月初改进了一个旧食谱，做了无乳制品巧克力蛋糕，配草莓和粉色糖霜",
+          "route": "vector",
+          "session_date": "6:03 pm on 5 September, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "103d338d-cc1d-4eeb-8463-685f60fe980a",
+          "content": "乔安娜 (Joanna) 于2022年9月初做了无乳制品巧克力椰子纸杯蛋糕，配覆盆子糖霜",
+          "route": "vector",
+          "session_date": "6:03 pm on 5 September, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "51a2740b-2142-4b53-b5c9-a0613b062aa5",
+          "content": "乔安娜 (Joanna) 喜欢做无乳制品巧克力覆盆子蛋糕，用杏仁粉、椰子油、巧克力和覆盆子制作，非常湿润、甜度适中，是她过生日和特殊日子时的最爱",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+          "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+          "route": "vector",
+          "session_date": "6:44 pm on 17 April, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "9e497904-46a2-4a9e-9cd2-b33fed4cdf9b",
+          "content": "内特表示一直想尝尝乔安娜做的巧克力覆盆子蛋糕，乔安娜答应拜访时带给他",
+          "route": "vector",
+          "session_date": "3:56 pm on 4 November, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "df7e505d-0e14-4db3-8f37-1832d291fd02",
+          "content": "乔安娜 (Joanna) 于2022年10月5日试做了她最新的无乳制品食谱——巧克力覆盆子挞（配覆盆子点缀），很受家人欢迎；她喜欢混搭口味并总在尝试新东西",
+          "route": "vector",
+          "session_date": "11:15 am on 6 October, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "2d143585-5296-4136-8885-95e68e0364c8",
+          "content": "乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月14日分享了照片",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "9f92cc35-7682-477d-9fed-1cfc2a771fd1",
+          "content": "乔安娜 (Joanna) 于2022年9月9日（上个星期五）用杏仁奶做了一道非常美味的无乳制品甜点；无乳制品对她是必须的，尤其是甜点",
+          "route": "vector",
+          "session_date": "1:43 pm on 14 September, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "42f50b8f-d7c8-4f80-ae59-6aa6424f5571",
+          "content": "乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "1c7d2a51-238a-4f00-8132-f62e746cca67",
+          "content": "乔安娜 (Joanna) 做了美味的覆盆子奇亚籽布丁芭菲甜点来庆祝写作获得好评，她觉得非常好吃",
+          "route": "vector",
+          "session_date": "10:57 am on 22 August, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "373d789a-583a-41e2-8a73-7220b8198e8e",
+          "content": "乔安娜 (Joanna) 在2022年2月考虑尝试无乳制品甜点口味，并开玩笑说想去内特家拜访尝他的无乳制品蛋糕",
+          "route": "vector",
+          "session_date": "9:27 am on 7 February, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+          "content": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 14,
+          "id": "0fbc6e48-b544-41af-8218-ac50ae1f2af2",
+          "content": "乔安娜 (Joanna) 于2022年9月在持续调整无乳制品甜点食谱，尝试巧克力、覆盆子和椰子等口味，目标是让甜点更好吃、更容易上手；这让她找到慰藉并发挥创意",
+          "route": "vector",
+          "session_date": "6:03 pm on 5 September, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "f19471e0-6ae0-423b-9f4f-8fa423bff553",
+          "content": "内特称赞乔安娜做无乳制品甜点非常有天赋，说她的蛋糕看起来很棒",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "gained": [
+        {
+          "rank": 10,
+          "id": "42f50b8f-d7c8-4f80-ae59-6aa6424f5571",
+          "content": "乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+          "content": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "f19471e0-6ae0-423b-9f4f-8fa423bff553",
+          "content": "内特称赞乔安娜做无乳制品甜点非常有天赋，说她的蛋糕看起来很棒",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 13,
+          "id": "8ebbf56c-9d00-432f-996e-fbb2c12039f1",
+          "content": "乔安娜 (Joanna) 在2022年5月20日完成了她的第三个剧本，这个题材对她非常个人化，主题关于失去、身份认同和联结，她构思了很久才鼓起勇气写出来，过程很难但感到非常自豪",
+          "route": "vector",
+          "session_date": "7:49 pm on 20 May, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "fbe06f92-8a9a-412d-a765-54f6c3ef09a3",
+          "content": "乔安娜 (Joanna) 于2022年5月中旬在一个叫Whispering Falls的美丽宁静的地方徒步拍照，那里有瀑布和葱郁的绿色景观，流水的声音让她感到非常放松和平静",
+          "route": "vector",
+          "session_date": "3:35 pm on 12 May, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "1579bdac-f904-432d-bfb3-28ee999a59fd",
+          "content": "乔安娜 (Joanna) 于2022年6月24日左右将她最近写的一个剧本提交给了一个电影比赛，期待看到其他人的评价",
+          "route": "vector",
+          "session_date": "10:55 am on 24 June, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa6",
+      "source": {
+        "english": {
+          "question": "Does James live in Connecticut?",
+          "answer": "Likely yes",
+          "evidence": [
+            {
+              "dia_id": "D5:1",
+              "session": "session_5",
+              "session_date": "9:52 am on 12 April, 2022",
+              "window": [
+                {
+                  "dia_id": "D5:1",
+                  "speaker": "James",
+                  "text": "Hey John! Long time no chat - I adopted a pup from a shelter in Stamford last week and my days have been so much happier with him in the fam. I named it Ned. Any progress on your gaming goals?",
+                  "query": "puppy dog bed",
+                  "blip_caption": "a photo of a dog and a cat sitting on a dog bed"
+                },
+                {
+                  "dia_id": "D5:2",
+                  "speaker": "John",
+                  "text": "Hey James! Congrats on getting a pup! They really do make days brighter. I haven't made much progress with gaming lately, life's been busy with work and stuff but it's always nice to remember how happy gaming makes me. It's a good way to forget the stresses of life.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D5:3",
+                  "speaker": "James",
+                  "text": "Thanks, John! Gaming really does help forget about the stresses of life. It's like heading into another world! Have you played any interesting games lately?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D5:4",
+                  "speaker": "John",
+                  "text": "I'm playing this new RPG that has a really cool story and world. It's kinda like getting transported to a futuristic dystopia.",
+                  "query": "cyberpunk 2077 cityscape",
+                  "blip_caption": "a photo of a city at night with a view of the city"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "詹姆斯住在康涅狄格州吗？",
+          "answer": "很可能是",
+          "evidence": [
+            {
+              "dia_id": "D5:1",
+              "session": "session_5",
+              "session_date": "9:52 am on 12 April, 2022",
+              "window": [
+                {
+                  "dia_id": "D5:1",
+                  "speaker": "詹姆斯",
+                  "text": "嘿，约翰！好久没聊了——我上周从斯坦福德的一家收容所领养了一只小狗，有了它，家里的日子开心多了。我给它取名叫内德。你的游戏目标有什么进展吗？",
+                  "query": "puppy dog bed",
+                  "blip_caption": "a photo of a dog and a cat sitting on a dog bed"
+                },
+                {
+                  "dia_id": "D5:2",
+                  "speaker": "约翰",
+                  "text": "嘿，詹姆斯！恭喜你领养了小狗！它们真的能让日子变得更明亮。我最近在游戏方面没什么进展，工作和生活都很忙，不过一想起游戏带给我的快乐还是很美好。这是忘却生活压力的好方式。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D5:3",
+                  "speaker": "詹姆斯",
+                  "text": "谢谢，约翰！玩游戏确实能让人忘掉生活的压力，就像进入了另一个世界！你最近玩过什么有趣的游戏吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D5:4",
+                  "speaker": "约翰",
+                  "text": "我在玩一款新的角色扮演游戏，剧情和世界观都很棒。有点像被传送到了一个未来主义的反乌托邦世界。",
+                  "query": "cyberpunk 2077 cityscape",
+                  "blip_caption": "a photo of a city at night with a view of the city"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "Same hedged conclusion ('很可能') as gold, with correct supporting detail about adopting Ned from Stamford, CT."
+      },
+      "base_answer": "根据记忆内容，没有任何信息表明詹姆斯住在康涅狄格州。已知的相关信息包括：他和萨曼莎于2022年10月底合租了一套麦吉酒吧附近的公寓，2022年7月他买了去多伦多的机票（他的第四个旅行国家），并于2022年11月初开始与家人和狗狗一起公路旅行——但所有记忆中都没有提及康涅狄格州。\n\n回答：没有证据表明詹姆斯住在康涅狄格州——他的记忆中完全没有提到康涅狄格州。",
+      "graph_answer": "是的，很可能住在康涅狄格州——他在2022年4月从康涅狄格州斯坦福德（Stamford）的一家收容所领养了小狗Ned。",
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "8ed1c32d-aab3-46ab-8f69-6313704b5ba6",
+          "content": "James and Samantha rented an apartment near McGee's bar; proximity to the bar, where they love spending time, was one of their criteria for choosing the apartment",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "5f7bad13-2451-4a4a-ad82-6785ac777590",
+          "content": "James and Samantha decided to move in together, a deliberate mutual decision",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 3,
+          "id": "6c8703c5-2f99-4fd1-963b-13a234a12777",
+          "content": "詹姆斯和家人于2022年11月初开始公路旅行，拜访了朋友乔什和马克，玩得非常开心，并一起玩电子游戏",
+          "route": "vector",
+          "session_date": "8:57 pm on 7 November, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "de60b81d-4e69-418e-8d47-e71985b0cd6c",
+          "content": "Around November 4, 2022, James started a road trip with his family and his dogs, enjoying exploring new places and being close to nature with his pets",
+          "route": "vector",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "9ba3298c-3bcd-4ad9-8c1f-948f58ee5221",
+          "content": "On August 9, 2022, James took his three dogs to the beach, where they had fun and bonded with other dog owners",
+          "route": "vector",
+          "session_date": "9:16 am on 10 August, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "da989ae8-ab7a-423d-9ef2-5b3db9cf6083",
+          "content": "James shared a photo of a man and two dogs running in a field",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 7,
+          "id": "8bab386e-f51e-4515-98d0-1b763c13db5b",
+          "content": "James has two dogs named Max and Daisy",
+          "route": "vector",
+          "session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "bc556ea3-f7e5-4a02-a19e-8bf89820093e",
+          "content": "James's sister visited him with his dogs around July 21, 2022; they relaxed together at home and went to the seaside where they saw a beautiful sunset, which James photographed and shared",
+          "route": "vector",
+          "session_date": "9:49 am on 22 July, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "e8ac27fc-5c3c-4105-9986-344dd2da2782",
+          "content": "Around October 19, 2022, James's mother and one of her army comrades visited him and they had a great time; the comrade is still serving in the military, though she moved to a rear-line position long ago",
+          "route": "vector",
+          "session_date": "7:36 pm on 21 October, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "24f39806-a4fb-47d9-9b03-37af385bfc60",
+          "content": "James's sources of happiness are his pets, computer games, traveling, and pizza",
+          "route": "vector",
+          "session_date": "7:01 pm on 4 May, 2022"
+        },
+        {
+          "rank": 11,
+          "id": "f22db71c-3886-414e-b949-99d8fc236bde",
+          "content": "James enjoys reading, especially wrapped in a blanket on cold winter days, though in summer he prefers more thrilling activities",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+          "content": "James is working on an indie computer game based on a character he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+          "route": "vector",
+          "session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "01e60572-927f-4e58-8f13-2bf3611f2394",
+          "content": "James keeps all his goals in a notebook and checks each one off when completed, which he finds deeply satisfying",
+          "route": "vector",
+          "session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "605b13ac-4e20-4015-ae91-36a28fdb1ff8",
+          "content": "James plans to make more games of different genres and try new ideas, and is excited about where his game development journey will take him",
+          "route": "vector",
+          "session_date": "2:14 pm on 13 October, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "0bcc1f65-e202-4860-b7bc-25f572759739",
+          "content": "James bought flight tickets to Toronto, departing in the evening of July 11, 2022 — his fourth country to visit",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "8ed1c32d-aab3-46ab-8f69-6313704b5ba6",
+          "content": "James and Samantha rented an apartment near McGee's bar; proximity to the bar, where they love spending time, was one of their criteria for choosing the apartment",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 2,
+          "id": "cae012ff-4504-4323-95f9-a4db2aaae5e5",
+          "content": "詹姆斯和家人在2022年11月公路旅行途中参观了一个动物庇护所，看到许多可爱的救助犬，他恨不得全带回家但想起家里已有三只狗，认为超过三只狗就太多了",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 3,
+          "id": "5f7bad13-2451-4a4a-ad82-6785ac777590",
+          "content": "James and Samantha decided to move in together, a deliberate mutual decision",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 4,
+          "id": "6c8703c5-2f99-4fd1-963b-13a234a12777",
+          "content": "詹姆斯和家人于2022年11月初开始公路旅行，拜访了朋友乔什和马克，玩得非常开心，并一起玩电子游戏",
+          "route": "vector",
+          "session_date": "8:57 pm on 7 November, 2022"
+        },
+        {
+          "rank": 5,
+          "id": "de60b81d-4e69-418e-8d47-e71985b0cd6c",
+          "content": "Around November 4, 2022, James started a road trip with his family and his dogs, enjoying exploring new places and being close to nature with his pets",
+          "route": "vector",
+          "session_date": "5:20 pm on 5 November, 2022"
+        },
+        {
+          "rank": 6,
+          "id": "04fcff32-3726-4471-af72-73021fe72312",
+          "content": "User adopted a puppy named Ned the week of April 5, 2022 from a shelter in Stamford, and having the puppy has made life at home much happier. A photo also shows Ned alongside a cat.",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 7,
+          "id": "9ba3298c-3bcd-4ad9-8c1f-948f58ee5221",
+          "content": "On August 9, 2022, James took his three dogs to the beach, where they had fun and bonded with other dog owners",
+          "route": "vector",
+          "session_date": "9:16 am on 10 August, 2022"
+        },
+        {
+          "rank": 8,
+          "id": "da989ae8-ab7a-423d-9ef2-5b3db9cf6083",
+          "content": "James shared a photo of a man and two dogs running in a field",
+          "route": "vector",
+          "session_date": "12:37 am on 31 October, 2022"
+        },
+        {
+          "rank": 9,
+          "id": "8bab386e-f51e-4515-98d0-1b763c13db5b",
+          "content": "James has two dogs named Max and Daisy",
+          "route": "vector",
+          "session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "rank": 10,
+          "id": "a1e812c7-b1d3-484a-8a14-3f1e74615039",
+          "content": "Around April 21, 2022, James took his dogs on a hike, exploring trails with breathtaking scenery in the woods; he loves the sound of leaves crunching underfoot and finds nature walks help him clear his mind and relax",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "bc556ea3-f7e5-4a02-a19e-8bf89820093e",
+          "content": "James's sister visited him with his dogs around July 21, 2022; they relaxed together at home and went to the seaside where they saw a beautiful sunset, which James photographed and shared",
+          "route": "vector",
+          "session_date": "9:49 am on 22 July, 2022"
+        },
+        {
+          "rank": 12,
+          "id": "e8ac27fc-5c3c-4105-9986-344dd2da2782",
+          "content": "Around October 19, 2022, James's mother and one of her army comrades visited him and they had a great time; the comrade is still serving in the military, though she moved to a rear-line position long ago",
+          "route": "vector",
+          "session_date": "7:36 pm on 21 October, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "24f39806-a4fb-47d9-9b03-37af385bfc60",
+          "content": "James's sources of happiness are his pets, computer games, traveling, and pizza",
+          "route": "vector",
+          "session_date": "7:01 pm on 4 May, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "f22db71c-3886-414e-b949-99d8fc236bde",
+          "content": "James enjoys reading, especially wrapped in a blanket on cold winter days, though in summer he prefers more thrilling activities",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "e72ed138-1557-43ba-bd84-1ac80a239b31",
+          "content": "Around October 18, 2022, James's apartment had a power outage while he was playing a game, and he lost some progress because he forgot to save; he has since learned to save his game frequently",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "gained": [
+        {
+          "rank": 2,
+          "id": "cae012ff-4504-4323-95f9-a4db2aaae5e5",
+          "content": "詹姆斯和家人在2022年11月公路旅行途中参观了一个动物庇护所，看到许多可爱的救助犬，他恨不得全带回家但想起家里已有三只狗，认为超过三只狗就太多了",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 6,
+          "id": "04fcff32-3726-4471-af72-73021fe72312",
+          "content": "User adopted a puppy named Ned the week of April 5, 2022 from a shelter in Stamford, and having the puppy has made life at home much happier. A photo also shows Ned alongside a cat.",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 10,
+          "id": "a1e812c7-b1d3-484a-8a14-3f1e74615039",
+          "content": "Around April 21, 2022, James took his dogs on a hike, exploring trails with breathtaking scenery in the woods; he loves the sound of leaves crunching underfoot and finds nature walks help him clear his mind and relax",
+          "route": "graph",
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "e72ed138-1557-43ba-bd84-1ac80a239b31",
+          "content": "Around October 18, 2022, James's apartment had a power outage while he was playing a game, and he lost some progress because he forgot to save; he has since learned to save his game frequently",
+          "route": "graph",
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 12,
+          "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+          "content": "James is working on an indie computer game based on a character he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+          "route": "vector",
+          "session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "rank": 13,
+          "id": "01e60572-927f-4e58-8f13-2bf3611f2394",
+          "content": "James keeps all his goals in a notebook and checks each one off when completed, which he finds deeply satisfying",
+          "route": "vector",
+          "session_date": "3:47 pm on 17 March, 2022"
+        },
+        {
+          "rank": 14,
+          "id": "605b13ac-4e20-4015-ae91-36a28fdb1ff8",
+          "content": "James plans to make more games of different genres and try new ideas, and is excited about where his game development journey will take him",
+          "route": "vector",
+          "session_date": "2:14 pm on 13 October, 2022"
+        },
+        {
+          "rank": 15,
+          "id": "0bcc1f65-e202-4860-b7bc-25f572759739",
+          "content": "James bought flight tickets to Toronto, departing in the evening of July 11, 2022 — his fourth country to visit",
+          "route": "vector",
+          "session_date": "5:13 pm on 9 July, 2022"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Targeted selection enriches mechanisms and cannot estimate frequencies among the 57.",
+    "Separate historical runs confound candidate effects with generation and judge variation.",
+    "QA evidence may omit neighboring turns; each packet includes a three-turn source window."
+  ]
+}
