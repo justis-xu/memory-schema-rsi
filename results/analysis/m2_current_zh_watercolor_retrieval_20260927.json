@@ -1,0 +1,550 @@
+{
+  "scope": "Current pure-Chinese one-question vector top45 and rerank top15; no Graph, answer, or judge",
+  "case_id": "locomo_conv-49_qa85",
+  "question": "埃文几年前开始做什么来减压？",
+  "dataset_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "user_id": "zhfull:locomo:conv-49",
+  "target_memory_id": "e3762a39-169b-45be-9aa6-c8053f882d16",
+  "vector_k": 45,
+  "final_k": 15,
+  "max_embedding_calls": 1,
+  "max_logical_rerank_calls": 1,
+  "max_rerank_http_attempts": 2,
+  "embedding_model": "qwen3.7-text-embedding-flash",
+  "rerank_model": "qwen3.7-text-rerank",
+  "logical_store_before": {
+    "embedding_count": 1995,
+    "id_content_user_session_sha256": "6cb9cbfce210981cb4ee8ac8ae0ca9f0afb5dad4ade1668ba068ec067650a0f9"
+  },
+  "calls": {
+    "embedding": 1,
+    "logical_rerank": 1
+  },
+  "limits": [
+    "Current memory IDs and corpus differ from historical mixed-language archives.",
+    "Candidate rank is not answer quality or proof of Graph necessity.",
+    "Chroma may change SQLite bytes despite unchanged logical ID/content/user/session fingerprint."
+  ],
+  "vector_top45": [
+    {
+      "rank": 1,
+      "id": "1aa5f524-d096-4d76-891f-1ab041a61460",
+      "content": "Evan压力大时会用画画或开车兜风来减压和寻求慰藉，觉得这些方法很有帮助",
+      "session_id": "session_10",
+      "session_date": "9:28 am on 11 September, 2023",
+      "distance": 0.5541061162948608
+    },
+    {
+      "rank": 2,
+      "id": "e95705c0-365d-448e-8130-06d855506bf2",
+      "content": "Evan膝盖受伤期间通过画水彩画消磨时间，认为这是放松心情、沉浸在色彩中的悠闲方式",
+      "session_id": "session_11",
+      "session_date": "8:57 pm on 6 October, 2023",
+      "distance": 0.6984258890151978
+    },
+    {
+      "rank": 3,
+      "id": "3c3b3251-40cd-4642-a537-2f2b7fe87aff",
+      "content": "Evan一直在考虑尝试瑜伽，认为这是一种温和又有效的减压和提升柔韧性的方式，并在Sam的建议下决定去试试",
+      "session_id": "session_18",
+      "session_date": "8:16 pm on 5 December, 2023",
+      "distance": 0.7115825414657593
+    },
+    {
+      "rank": 4,
+      "id": "26098c4e-286e-406f-997d-34a2a10081d4",
+      "content": "Evan的沙拉灵感来自附近一家餐厅；他建议低强度运动可以选择游泳、瑜伽和散步，并分享了自己做瑜伽帮助缓解压力、保持柔韧性的经验",
+      "session_id": "session_24",
+      "session_date": "12:17 am on 10 January, 2024",
+      "distance": 0.7485941052436829
+    },
+    {
+      "rank": 5,
+      "id": "6c5d4240-74f4-4a00-b5ac-dc6764cfee21",
+      "content": "Evan最喜欢的活动之一是去海边散步看日落，既能锻炼身体又让人平静",
+      "session_id": "session_24",
+      "session_date": "12:17 am on 10 January, 2024",
+      "distance": 0.8308605551719666
+    },
+    {
+      "rank": 6,
+      "id": "59111ed5-fe0d-417d-a51a-576944ebc145",
+      "content": "Evan正在读一本书，越读越精彩，让他爱不释手",
+      "session_id": "session_10",
+      "session_date": "9:28 am on 11 September, 2023",
+      "distance": 0.8354278802871704
+    },
+    {
+      "rank": 7,
+      "id": "534efeb0-6263-4051-8b97-dbf9505af682",
+      "content": "Evan在2023年10月14日左右画完了一幅日落画，表示画画能帮他放松",
+      "session_id": "session_13",
+      "session_date": "4:07 pm on 14 October, 2023",
+      "distance": 0.8355551958084106
+    },
+    {
+      "rank": 8,
+      "id": "3d433abb-6b09-4bef-9d55-4ca5f6c92def",
+      "content": "Evan经常丢三落四，每周都会丢东西，曾为找钥匙花了半个小时一无所获",
+      "session_id": "session_6",
+      "session_date": "4:09 pm on 13 August, 2023",
+      "distance": 0.8390889167785645
+    },
+    {
+      "rank": 9,
+      "id": "6f672df0-22f2-464f-8089-a7633f62a736",
+      "content": "Evan提到的一本书越读越精彩，让他爱不释手",
+      "session_id": "session_9",
+      "session_date": "10:18 am on 27 August, 2023",
+      "distance": 0.8410986065864563
+    },
+    {
+      "rank": 10,
+      "id": "a7e3efc8-c853-4db1-a8ac-e72c826bc19d",
+      "content": "Evan渴望有趣的徒步冒险，这是激励他保持健康的动力之一",
+      "session_id": "session_5",
+      "session_date": "7:52 pm on 7 August, 2023",
+      "distance": 0.8432537317276001
+    },
+    {
+      "rank": 11,
+      "id": "9abfe1a4-5317-417a-8c46-fc28662c3d73",
+      "content": "Evan靠健身和开车兜风来保持体型和健康",
+      "session_id": "session_17",
+      "session_date": "7:30 pm on 21 November, 2023",
+      "distance": 0.8449480533599854
+    },
+    {
+      "rank": 12,
+      "id": "54b80e27-f398-44c0-bb0f-9f9182f2c199",
+      "content": "Evan决定把新车出故障当作机会，尝试其他保持活跃和旅行的方式",
+      "session_id": "session_18",
+      "session_date": "8:16 pm on 5 December, 2023",
+      "distance": 0.8476119637489319
+    },
+    {
+      "rank": 13,
+      "id": "d34fb872-3efd-4243-b5e1-04499a8a8ec4",
+      "content": "Evan在2023年10月左右被公司裁员失业，目前正找新工作，过程不容易但他保持乐观、充满希望，并在那段时间经历了一些个人困难",
+      "session_id": "session_16",
+      "session_date": "9:13 pm on 9 November, 2023",
+      "distance": 0.8503763675689697
+    },
+    {
+      "rank": 14,
+      "id": "fabd98b3-1cb0-454e-8517-d4f80c991bb1",
+      "content": "Evan在绘画课上学习水彩，老师强调观察自然、画你所见；他觉得绘画能帮他找到内心的平静、表达自我，是从日常压力中放松的方式",
+      "session_id": "session_8",
+      "session_date": "6:17 pm on 19 August, 2023",
+      "distance": 0.8528792262077332
+    },
+    {
+      "rank": 15,
+      "id": "df7ba9e5-605c-450e-880e-5da7aa381af4",
+      "content": "Evan买了一棵盆栽（bonsai tree），因为它象征着力量和韧性，照顾它激励他在艰难时期坚持下去",
+      "session_id": "session_5",
+      "session_date": "7:52 pm on 7 August, 2023",
+      "distance": 0.8558038473129272
+    },
+    {
+      "rank": 16,
+      "id": "9136f7af-1321-4913-be3a-f01ce2281b27",
+      "content": "Sam决定尝试画画来减压并保持动力，会在之后告诉Evan结果；Evan建议画画之外还要锻炼，因为画画对减肥没有直接帮助",
+      "session_id": "session_2",
+      "session_date": "7:11 pm on 24 May, 2023",
+      "distance": 0.8581737279891968
+    },
+    {
+      "rank": 17,
+      "id": "9c4cbf2d-fcb4-4363-af06-2b236069051c",
+      "content": "Evan在饮食上做了改变：少吃甜食零食，多吃蔬菜和水果，这对他的健康产生了很大影响",
+      "session_id": "session_4",
+      "session_date": "10:52 am on 27 July, 2023",
+      "distance": 0.8604172468185425
+    },
+    {
+      "rank": 18,
+      "id": "2f27810e-ba40-421d-bc53-7fb147bc395c",
+      "content": "Evan有孩子，孩子们在后院荡秋千玩耍，给他带来了很多快乐",
+      "session_id": "session_5",
+      "session_date": "7:52 pm on 7 August, 2023",
+      "distance": 0.8707517385482788
+    },
+    {
+      "rank": 19,
+      "id": "1c2abe8c-c1ef-449a-84d3-86e7b1713704",
+      "content": "Evan最近又遇到一个迷路的游客，感慨帮助游客好像快成为自己生活中的常态",
+      "session_id": "session_14",
+      "session_date": "1:50 pm on 17 October, 2023",
+      "distance": 0.8777744770050049
+    },
+    {
+      "rank": 20,
+      "id": "fbd1a812-636d-4c5e-9acf-582b05b6a8e8",
+      "content": "Evan开始画画的契机是朋友送了他一幅画，这幅画给了他很大启发",
+      "session_id": "session_8",
+      "session_date": "6:17 pm on 19 August, 2023",
+      "distance": 0.8780398368835449
+    },
+    {
+      "rank": 21,
+      "id": "97539298-a2c6-467a-a9eb-387a41896489",
+      "content": "Sam表示瑜伽对自己的柔韧性和压力水平有奇效，推荐Evan尝试，并表示愿意在瑜伽技巧等方面提供帮助",
+      "session_id": "session_18",
+      "session_date": "8:16 pm on 5 December, 2023",
+      "distance": 0.8800888061523438
+    },
+    {
+      "rank": 22,
+      "id": "a9792e12-234f-4d18-98a1-4e85dcbb8bbe",
+      "content": "Evan认为爱带来巨大的幸福和满足感，并说这幅画帮助他认识和梳理自己的情绪，给了他巨大的喜悦",
+      "session_id": "session_21",
+      "session_date": "4:25 pm on 26 December, 2023",
+      "distance": 0.8844636678695679
+    },
+    {
+      "rank": 23,
+      "id": "e3762a39-169b-45be-9aa6-c8053f882d16",
+      "content": "User几年前开始画水彩画，是朋友带他入门并给了建议，他一下子就迷上了，视画画为很好的减压方式",
+      "session_id": "session_1",
+      "session_date": "1:47 pm on 18 May, 2023",
+      "distance": 0.8858147859573364
+    },
+    {
+      "rank": 24,
+      "id": "c2025ebe-c35b-4a54-a79e-97ba2d3f9113",
+      "content": "Evan的健康之路已经坚持两年（截至2023年8月），有过起起落落但一直在尽力；家人是激励他保持健康的动力",
+      "session_id": "session_5",
+      "session_date": "7:52 pm on 7 August, 2023",
+      "distance": 0.888240396976471
+    },
+    {
+      "rank": 25,
+      "id": "1438fa52-5fe9-4483-9cd0-f29f5f559fda",
+      "content": "Evan去年春天（2023年）情绪有点低落时，看到公园里盛开的鲜艳粉色花朵照片让他露出了笑容；他喜欢在小事中寻找快乐和小确幸，尤其在艰难时期",
+      "session_id": "session_25",
+      "session_date": "9:37 pm on 11 January, 2024",
+      "distance": 0.8889956474304199
+    },
+    {
+      "rank": 26,
+      "id": "bf08fbfa-0c8f-4ee9-b343-8a04450532ad",
+      "content": "Evan几年前也曾在健康问题上挣扎过，但他坚持了下来，拥有一张健身房会员卡，强调饮食和生活方式的改变同样重要",
+      "session_id": "session_4",
+      "session_date": "10:52 am on 27 July, 2023",
+      "distance": 0.8949919939041138
+    },
+    {
+      "rank": 27,
+      "id": "648917d3-a2d2-48ea-a4d3-65c74d00189d",
+      "content": "Evan表示愿意帮萨姆入门绘画",
+      "session_id": "session_21",
+      "session_date": "4:25 pm on 26 December, 2023",
+      "distance": 0.8953887224197388
+    },
+    {
+      "rank": 28,
+      "id": "72ba509d-4f39-4127-9562-71ed4bd1cb75",
+      "content": "Evan已安排膝盖物理治疗（截至2023年9月还在预约中），在此之前打算通过游泳保持活跃，低调一些",
+      "session_id": "session_10",
+      "session_date": "9:28 am on 11 September, 2023",
+      "distance": 0.8983720541000366
+    },
+    {
+      "rank": 29,
+      "id": "5cc9fb2c-0773-4d1e-9a97-6adbdd4094f7",
+      "content": "Evan在2023年8月25日（上周五）扭伤了膝盖，非常疼，因此难以坚持平时的健身计划，感到很沮丧，因为保持活跃对他非常重要",
+      "session_id": "session_10",
+      "session_date": "9:28 am on 11 September, 2023",
+      "distance": 0.9002740383148193
+    },
+    {
+      "rank": 30,
+      "id": "41072a29-e3e3-427c-a179-ec27210c5165",
+      "content": "Sam从未尝试过皮划艇，但在Evan的建议下决定尝试，认为这是既锻炼身体又亲近自然的好方式",
+      "session_id": "session_13",
+      "session_date": "4:07 pm on 14 October, 2023",
+      "distance": 0.901644229888916
+    },
+    {
+      "rank": 31,
+      "id": "3c9a6fd2-645b-474f-a376-86a2fcaa63cc",
+      "content": "萨姆偶尔会画素描，但还没创作出满意的作品，预感不久后会有可炫耀的成果，并受到埃文绘画热情的鼓舞",
+      "session_id": "session_21",
+      "session_date": "4:25 pm on 26 December, 2023",
+      "distance": 0.9019290208816528
+    },
+    {
+      "rank": 32,
+      "id": "1b012e94-4c6f-4353-b922-fd3eb0d83f11",
+      "content": "Evan在2023年8月25日（周五）扭伤了膝盖，很疼，难以坚持平时的健身计划，让他感到沮丧，因为保持活跃对他非常重要",
+      "session_id": "session_9",
+      "session_date": "10:18 am on 27 August, 2023",
+      "distance": 0.9113184213638306
+    },
+    {
+      "rank": 33,
+      "id": "836d607d-4e2f-45ed-9a1d-6b021c3071da",
+      "content": "Evan鼓励Sam相信自己、一天一天来，通过尝试新事物（哪怕小事）走出舒适区，Sam表示会听取建议",
+      "session_id": "session_20",
+      "session_date": "6:48 pm on 17 December, 2023",
+      "distance": 0.913266122341156
+    },
+    {
+      "rank": 34,
+      "id": "0b7d529c-1996-4f52-915f-69d9b577981e",
+      "content": "Evan的膝盖物理治疗已在计划中，希望尽快约到；在此之前他计划通过游泳来保持活跃",
+      "session_id": "session_9",
+      "session_date": "10:18 am on 27 August, 2023",
+      "distance": 0.9133241176605225
+    },
+    {
+      "rank": 35,
+      "id": "f1f94b90-e62b-4990-8086-04f48a66803d",
+      "content": "Evan通常画心里想的东西或感受，可以是美好回忆或想去的地方，把绘画视为不用语言表达自己和情感的艺术方式",
+      "session_id": "session_11",
+      "session_date": "8:57 pm on 6 October, 2023",
+      "distance": 0.918219804763794
+    },
+    {
+      "rank": 36,
+      "id": "3ab29cea-9ad9-4bc3-ae83-e441dc692f5e",
+      "content": "Evan分享自己的健康经验：找到一项真正喜欢的健身活动作为首选，让运动变得有趣，并在饮食上做小的明智选择，累积起来效果很大；他喜欢健康强壮的感觉",
+      "session_id": "session_2",
+      "session_date": "7:11 pm on 24 May, 2023",
+      "distance": 0.918479323387146
+    },
+    {
+      "rank": 37,
+      "id": "4fbff51e-579d-483e-8ed8-e178c32bee39",
+      "content": "Evan的伴侣怀孕了，Evan非常激动，提到家里已经很久没有小宝宝了（2023年12月分享）",
+      "session_id": "session_19",
+      "session_date": "1:45 pm on 9 December, 2023",
+      "distance": 0.927291989326477
+    },
+    {
+      "rank": 38,
+      "id": "be5b6b4c-cf8b-4964-bda7-6f934e2ae1b9",
+      "content": "Evan创作了一幅鲜艳色彩的抽象画（有飞鸟图案），带着喜悦和自由的感觉，以随性笔触和大胆色彩体现俏皮奔放的心情",
+      "session_id": "session_21",
+      "session_date": "4:25 pm on 26 December, 2023",
+      "distance": 0.9345934391021729
+    },
+    {
+      "rank": 39,
+      "id": "e825d4b5-43f6-4683-b18f-791d423fb227",
+      "content": "Evan是一位父亲，觉得看着孩子受伤（儿子踢足球伤脚踝）作为父亲真的很煎熬",
+      "session_id": "session_7",
+      "session_date": "4:20 pm on 15 August, 2023",
+      "distance": 0.935499906539917
+    },
+    {
+      "rank": 40,
+      "id": "68dc0f51-3c2c-4355-a806-7d1d6346869d",
+      "content": "Evan喜欢的冬季活动包括滑雪、单板滑雪和滑冰",
+      "session_id": "session_8",
+      "session_date": "6:17 pm on 19 August, 2023",
+      "distance": 0.9355660676956177
+    },
+    {
+      "rank": 41,
+      "id": "6544e6ef-2184-479c-bc1c-cf7377f932ac",
+      "content": "Sam以前很喜欢徒步但很久没机会去了，Evan和Sam约好尽快计划一次徒步，认为徒步是静心、亲近自然的好方式",
+      "session_id": "session_20",
+      "session_date": "6:48 pm on 17 December, 2023",
+      "distance": 0.9376963376998901
+    },
+    {
+      "rank": 42,
+      "id": "f8a587d1-3976-4529-9ec0-056c37e18d39",
+      "content": "Evan几天前（约2023年8月中旬）开始上绘画课，非常享受；他报班是为了找到志同道合的人、展示自己的能力，并认为技艺总可以提升",
+      "session_id": "session_8",
+      "session_date": "6:17 pm on 19 August, 2023",
+      "distance": 0.9380576610565186
+    },
+    {
+      "rank": 43,
+      "id": "f4d9313b-b4ee-412a-8abe-449b555ce5d3",
+      "content": "Evan创作了多幅画作，包括一幅色彩鲜艳的日落湖泊水彩画和一幅画着山脉与骏马的彩色风景画",
+      "session_id": "session_10",
+      "session_date": "9:28 am on 11 September, 2023",
+      "distance": 0.9427575469017029
+    },
+    {
+      "rank": 44,
+      "id": "fe181ca6-dbb4-4742-abd4-d46792520c79",
+      "content": "Evan开始了新的饮食计划：每天只吃两块姜味饼干（ginger snaps），即使家庭聚会也坚持执行",
+      "session_id": "session_23",
+      "session_date": "1:32 pm on 6 January, 2024",
+      "distance": 0.9448784589767456
+    },
+    {
+      "rank": 45,
+      "id": "a383c342-a0c9-4cd5-af44-edbffefeddc2",
+      "content": "Evan在2023年12月底向同事们宣布了结婚的消息，尽管当时刚出了小车祸，同事们一直都很支持他",
+      "session_id": "session_22",
+      "session_date": "11:00 am on 31 December, 2023",
+      "distance": 0.9548900723457336
+    }
+  ],
+  "target_vector_rank": 23,
+  "rerank_top15": [
+    {
+      "rank": 1,
+      "id": "e95705c0-365d-448e-8130-06d855506bf2",
+      "content": "Evan膝盖受伤期间通过画水彩画消磨时间，认为这是放松心情、沉浸在色彩中的悠闲方式",
+      "session_id": "session_11",
+      "session_date": "8:57 pm on 6 October, 2023",
+      "distance": 0.6984258890151978,
+      "vector_rank": 2,
+      "rerank_score": 0.9372652812963054
+    },
+    {
+      "rank": 2,
+      "id": "1aa5f524-d096-4d76-891f-1ab041a61460",
+      "content": "Evan压力大时会用画画或开车兜风来减压和寻求慰藉，觉得这些方法很有帮助",
+      "session_id": "session_10",
+      "session_date": "9:28 am on 11 September, 2023",
+      "distance": 0.5541061162948608,
+      "vector_rank": 1,
+      "rerank_score": 0.9354084880812598
+    },
+    {
+      "rank": 3,
+      "id": "e3762a39-169b-45be-9aa6-c8053f882d16",
+      "content": "User几年前开始画水彩画，是朋友带他入门并给了建议，他一下子就迷上了，视画画为很好的减压方式",
+      "session_id": "session_1",
+      "session_date": "1:47 pm on 18 May, 2023",
+      "distance": 0.8858147859573364,
+      "vector_rank": 23,
+      "rerank_score": 0.9319241936588843
+    },
+    {
+      "rank": 4,
+      "id": "3c3b3251-40cd-4642-a537-2f2b7fe87aff",
+      "content": "Evan一直在考虑尝试瑜伽，认为这是一种温和又有效的减压和提升柔韧性的方式，并在Sam的建议下决定去试试",
+      "session_id": "session_18",
+      "session_date": "8:16 pm on 5 December, 2023",
+      "distance": 0.7115825414657593,
+      "vector_rank": 3,
+      "rerank_score": 0.926626883594263
+    },
+    {
+      "rank": 5,
+      "id": "fabd98b3-1cb0-454e-8517-d4f80c991bb1",
+      "content": "Evan在绘画课上学习水彩，老师强调观察自然、画你所见；他觉得绘画能帮他找到内心的平静、表达自我，是从日常压力中放松的方式",
+      "session_id": "session_8",
+      "session_date": "6:17 pm on 19 August, 2023",
+      "distance": 0.8528792262077332,
+      "vector_rank": 14,
+      "rerank_score": 0.9255543976981808
+    },
+    {
+      "rank": 6,
+      "id": "df7ba9e5-605c-450e-880e-5da7aa381af4",
+      "content": "Evan买了一棵盆栽（bonsai tree），因为它象征着力量和韧性，照顾它激励他在艰难时期坚持下去",
+      "session_id": "session_5",
+      "session_date": "7:52 pm on 7 August, 2023",
+      "distance": 0.8558038473129272,
+      "vector_rank": 15,
+      "rerank_score": 0.8937176348498397
+    },
+    {
+      "rank": 7,
+      "id": "fe181ca6-dbb4-4742-abd4-d46792520c79",
+      "content": "Evan开始了新的饮食计划：每天只吃两块姜味饼干（ginger snaps），即使家庭聚会也坚持执行",
+      "session_id": "session_23",
+      "session_date": "1:32 pm on 6 January, 2024",
+      "distance": 0.9448784589767456,
+      "vector_rank": 44,
+      "rerank_score": 0.8864612104395557
+    },
+    {
+      "rank": 8,
+      "id": "26098c4e-286e-406f-997d-34a2a10081d4",
+      "content": "Evan的沙拉灵感来自附近一家餐厅；他建议低强度运动可以选择游泳、瑜伽和散步，并分享了自己做瑜伽帮助缓解压力、保持柔韧性的经验",
+      "session_id": "session_24",
+      "session_date": "12:17 am on 10 January, 2024",
+      "distance": 0.7485941052436829,
+      "vector_rank": 4,
+      "rerank_score": 0.8733151450583074
+    },
+    {
+      "rank": 9,
+      "id": "534efeb0-6263-4051-8b97-dbf9505af682",
+      "content": "Evan在2023年10月14日左右画完了一幅日落画，表示画画能帮他放松",
+      "session_id": "session_13",
+      "session_date": "4:07 pm on 14 October, 2023",
+      "distance": 0.8355551958084106,
+      "vector_rank": 7,
+      "rerank_score": 0.8672496631162054
+    },
+    {
+      "rank": 10,
+      "id": "f1f94b90-e62b-4990-8086-04f48a66803d",
+      "content": "Evan通常画心里想的东西或感受，可以是美好回忆或想去的地方，把绘画视为不用语言表达自己和情感的艺术方式",
+      "session_id": "session_11",
+      "session_date": "8:57 pm on 6 October, 2023",
+      "distance": 0.918219804763794,
+      "vector_rank": 35,
+      "rerank_score": 0.8660063238807876
+    },
+    {
+      "rank": 11,
+      "id": "6c5d4240-74f4-4a00-b5ac-dc6764cfee21",
+      "content": "Evan最喜欢的活动之一是去海边散步看日落，既能锻炼身体又让人平静",
+      "session_id": "session_24",
+      "session_date": "12:17 am on 10 January, 2024",
+      "distance": 0.8308605551719666,
+      "vector_rank": 5,
+      "rerank_score": 0.8655842041479305
+    },
+    {
+      "rank": 12,
+      "id": "f8a587d1-3976-4529-9ec0-056c37e18d39",
+      "content": "Evan几天前（约2023年8月中旬）开始上绘画课，非常享受；他报班是为了找到志同道合的人、展示自己的能力，并认为技艺总可以提升",
+      "session_id": "session_8",
+      "session_date": "6:17 pm on 19 August, 2023",
+      "distance": 0.9380576610565186,
+      "vector_rank": 42,
+      "rerank_score": 0.8486592208710783
+    },
+    {
+      "rank": 13,
+      "id": "9136f7af-1321-4913-be3a-f01ce2281b27",
+      "content": "Sam决定尝试画画来减压并保持动力，会在之后告诉Evan结果；Evan建议画画之外还要锻炼，因为画画对减肥没有直接帮助",
+      "session_id": "session_2",
+      "session_date": "7:11 pm on 24 May, 2023",
+      "distance": 0.8581737279891968,
+      "vector_rank": 16,
+      "rerank_score": 0.8400834615853132
+    },
+    {
+      "rank": 14,
+      "id": "1438fa52-5fe9-4483-9cd0-f29f5f559fda",
+      "content": "Evan去年春天（2023年）情绪有点低落时，看到公园里盛开的鲜艳粉色花朵照片让他露出了笑容；他喜欢在小事中寻找快乐和小确幸，尤其在艰难时期",
+      "session_id": "session_25",
+      "session_date": "9:37 pm on 11 January, 2024",
+      "distance": 0.8889956474304199,
+      "vector_rank": 25,
+      "rerank_score": 0.8302303522751917
+    },
+    {
+      "rank": 15,
+      "id": "97539298-a2c6-467a-a9eb-387a41896489",
+      "content": "Sam表示瑜伽对自己的柔韧性和压力水平有奇效，推荐Evan尝试，并表示愿意在瑜伽技巧等方面提供帮助",
+      "session_id": "session_18",
+      "session_date": "8:16 pm on 5 December, 2023",
+      "distance": 0.8800888061523438,
+      "vector_rank": 21,
+      "rerank_score": 0.8187839179804035
+    }
+  ],
+  "rerank_endpoint_style": "dashscope native text-rerank",
+  "target_final_rank": 3,
+  "logical_store_after": {
+    "embedding_count": 1995,
+    "id_content_user_session_sha256": "6cb9cbfce210981cb4ee8ac8ae0ca9f0afb5dad4ade1668ba068ec067650a0f9"
+  },
+  "logical_store_unchanged": true
+}
