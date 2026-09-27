@@ -1,0 +1,114 @@
+{
+  "scope": "20 preselected Chinese LoCoMo cases; manual source-to-retrieval audit, no answer calls",
+  "source": "results/analysis/m2_current_zh_stratified_retrieval_20260927.json",
+  "label_definitions": {
+    "direct": "Question's requested fact is directly supported by a source turn or its session date",
+    "partial_gold": "Some requested items are source-supported, but the provided answer overstates the source",
+    "premise_weak": "The answer contains a fact, but the question adds an unsupported causal or shared-experience premise",
+    "inference": "The requested answer is an inference or outside knowledge, rather than an explicit dialogue fact",
+    "adversarial": "Category 5; adversarial_answer is a lure, not the expected answer",
+    "context_rank": "One-based position in reranked top 15; null if a source-grounded answer is not available there"
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-49_qa64", "label": "premise_weak", "context_rank": 3,
+      "source_turns": ["D12:1", "D14:1"],
+      "finding": "D12:1 says weight was a health risk; D14:1 diagnoses gastritis after severe stomach pain. Neither says weight caused gastritis. The final context contains both facts."
+    },
+    {
+      "case_id": "locomo_conv-48_qa20", "label": "partial_gold", "context_rank": 1,
+      "source_turns": ["D2:26", "D2:30", "D15:10", "D19:10", "D20:1"],
+      "finding": "Detroit, It Takes Two, and Overcooked 2 are supported as played together (ranks 2, 1, 3). Walking Dead is only planned at D2:30; Battlefield 1 was acquired at D20:1 with no explicit shared play. Both are in the supplied five-item answer and in top 15 at ranks 2 and 14, creating a plan-to-event answer risk."
+    },
+    {
+      "case_id": "locomo_conv-43_qa2", "label": "direct", "context_rank": 1,
+      "source_turns": ["D1:15", "D8:17", "D12:18", "D27:20"],
+      "finding": "Sneakers and jerseys are explicit. D27:20 describes John's Star Wars film collection in the image caption. The supplied evidence list omits D8:17, where John separately says he collects the entire Harry Potter film series and shows one DVD cover. Rank 2 is therefore supported for the film-series collection, though saying every item is a DVD is more specific than the text and single caption establish."
+    },
+    {
+      "case_id": "locomo_conv-44_qa15", "label": "premise_weak", "context_rank": 4,
+      "source_turns": ["D7:8", "D10:5"],
+      "finding": "Andrew describes difficulty finding pet-friendly housing. Audrey says she understands the frustration and later offers help; these turns do not establish that she personally had the same housing problem. Rank 4 supplies Andrew's difficulty, not the shared-experience premise."
+    },
+    {
+      "case_id": "locomo_conv-42_qa20", "label": "direct", "context_rank": 1,
+      "source_turns": ["D12:3"],
+      "finding": "Nate's new dog Max is introduced in the May 2022 session. Rank 1 states adoption around May 20, 2022; month is supported, exact day is unnecessary."
+    },
+    {
+      "case_id": "locomo_conv-48_qa2", "label": "direct", "context_rank": 1,
+      "source_turns": ["D1:5"],
+      "finding": "Deborah says her mother died a few years ago; rank 1 retains this wording."
+    },
+    {
+      "case_id": "locomo_conv-41_qa59", "label": "direct", "context_rank": 1,
+      "source_turns": ["D30:6"],
+      "finding": "John says he camped with Max last summer; the 2023 session date resolves this to summer 2022. Ranks 1-2 contain it."
+    },
+    {
+      "case_id": "locomo_conv-50_qa26", "label": "direct", "context_rank": 1,
+      "source_turns": ["D15:12"],
+      "finding": "Calvin says he recorded a podcast yesterday; the session date resolves this to August 21, 2023. Rank 1 contains it."
+    },
+    {
+      "case_id": "locomo_conv-50_qa13", "label": "inference", "context_rank": 1,
+      "source_turns": ["D7:11"],
+      "finding": "Calvin says he loves live performances and connecting with audiences. No direct statement about accepting a Hollywood Bowl show; willingness is a plausible inference. Rank 1 supports the preference only."
+    },
+    {
+      "case_id": "locomo_conv-48_qa36", "label": "inference", "context_rank": 4,
+      "source_turns": ["D22:6", "D24:14", "D26:6"],
+      "finding": "Joline is a student and studies for exams, but no age or <=30 bound is stated. Rank 4 has study/internship evidence; the supplied age bound is speculative."
+    },
+    {
+      "case_id": "locomo_conv-43_qa32", "label": "inference", "context_rank": 4,
+      "source_turns": ["D10:9"],
+      "finding": "Tim plans Universal Studios next month, resolved to September 2023. California/Florida comes from outside geographic knowledge and the destination is unspecified. Rank 4 retains the plan; the states are not a missing memory fact."
+    },
+    {
+      "case_id": "locomo_conv-44_qa53", "label": "inference", "context_rank": 1,
+      "source_turns": ["D2:18", "D3:1", "D5:7", "D8:27"],
+      "finding": "Andrew loves nature and animals; park ranger is one possible career but is never stated. Ranks 1-5 contain nature and animal preferences."
+    },
+    {
+      "case_id": "locomo_conv-26_qa111", "label": "direct", "context_rank": 1,
+      "source_turns": ["D8:5", "D8:6"],
+      "finding": "D8:5 is Caroline's question, not evidence for the answer. Melanie says they paint together in D8:6; the supplied evidence list omits this necessary response. Rank 1 contains painting."
+    },
+    {
+      "case_id": "locomo_conv-48_qa107", "label": "direct", "context_rank": 1,
+      "source_turns": ["D4:36"],
+      "finding": "Deborah says she brings her mother's amulet each visit; rank 1 contains it."
+    },
+    {
+      "case_id": "locomo_conv-42_qa126", "label": "direct", "context_rank": 1,
+      "source_turns": ["D14:24"],
+      "finding": "Nate prepared customized controller decorations; rank 1 contains it."
+    },
+    {
+      "case_id": "locomo_conv-49_qa141", "label": "direct", "context_rank": 1,
+      "source_turns": ["D21:10"],
+      "finding": "Evan says to keep trying new things; rank 1 contains this idea, though it summarizes a related turn rather than reproducing D21:10."
+    },
+    {
+      "case_id": "locomo_conv-48_qa233", "label": "adversarial", "context_rank": null,
+      "source_turns": ["D28:6", "D28:7"],
+      "finding": "Deborah, not Joline, reminisces and reviews photos with her mother's friends. The bait answer transfers Deborah's act to Joline. Top 15 is mostly Joline's unrelated life."
+    },
+    {
+      "case_id": "locomo_conv-42_qa215", "label": "adversarial", "context_rank": null,
+      "source_turns": ["D9:10"],
+      "finding": "Nate says fantasy and science fiction films provide escape and spark imagination, not that they numb his mind. Ranks 1 and 8 offer nearby but insufficient facts; a safe answer must reject the added premise."
+    },
+    {
+      "case_id": "locomo_conv-30_qa85", "label": "adversarial", "context_rank": null,
+      "source_turns": ["D1:27", "D1:28"],
+      "finding": "Jon says he is glad to participate. Gina says she looks forward to watching the group; her own participation attitude is not established. Top 15 contains Gina's dance interests and other events, which can tempt an unsupported positive answer."
+    },
+    {
+      "case_id": "locomo_conv-26_qa157", "label": "adversarial", "context_rank": null,
+      "source_turns": ["D4:2", "D4:3"],
+      "finding": "The necklace belongs to Caroline; Melanie asks about its significance. Rank 1 correctly records Caroline's necklace, but copying its symbolism into an answer about Melanie would be a speaker swap."
+    }
+  ]
+}

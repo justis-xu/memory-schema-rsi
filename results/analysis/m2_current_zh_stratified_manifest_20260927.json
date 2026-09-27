@@ -1,0 +1,183 @@
+{
+  "selection_rule": "Four smallest SHA256(seed|case_id|question) per category, with distinct conversations; exclude prior 5+8 probe cases; no gold/evidence read",
+  "seed": "current-zh-stratified-20260927-v1",
+  "per_category": 4,
+  "selection_count": 20,
+  "excluded_case_ids": [
+    "locomo_conv-26_qa55",
+    "locomo_conv-30_qa18",
+    "locomo_conv-30_qa27",
+    "locomo_conv-30_qa80",
+    "locomo_conv-41_qa3",
+    "locomo_conv-41_qa86",
+    "locomo_conv-42_qa42",
+    "locomo_conv-42_qa56",
+    "locomo_conv-42_qa71",
+    "locomo_conv-43_qa25",
+    "locomo_conv-47_qa3",
+    "locomo_conv-47_qa96",
+    "locomo_conv-48_qa39"
+  ],
+  "cases": [
+    {
+      "case_id": "locomo_conv-49_qa64",
+      "conversation_id": "conv-49",
+      "qa_index": 64,
+      "category": 1,
+      "question": "萨姆因为体重不得不面对什么疾病？",
+      "selection_hash": "0138c301d27ff6ef16c4a7c85ee1b6f3877ac8076b31c3fca07780da9cdd036d"
+    },
+    {
+      "case_id": "locomo_conv-48_qa20",
+      "conversation_id": "conv-48",
+      "qa_index": 20,
+      "category": 1,
+      "question": "乔琳和她伴侣一起玩过哪些游戏？",
+      "selection_hash": "01c621293663ea283ac296668aeb09607ec306664e877834547c548d8c325cc7"
+    },
+    {
+      "case_id": "locomo_conv-43_qa2",
+      "conversation_id": "conv-43",
+      "qa_index": 2,
+      "category": 1,
+      "question": "约翰收集什么物品？",
+      "selection_hash": "0428588f3b9817c6ac11a0a1d56950ffc1857e2f4ec58b9e515cf8513f169f77"
+    },
+    {
+      "case_id": "locomo_conv-44_qa15",
+      "conversation_id": "conv-44",
+      "qa_index": 15,
+      "category": 1,
+      "question": "关于养狗，奥黛丽和安德鲁共同的烦恼是什么？",
+      "selection_hash": "069a31c31580f9bd0894fcac7b1f6a867d1e07723b080fbf699f4affc28d289d"
+    },
+    {
+      "case_id": "locomo_conv-42_qa20",
+      "conversation_id": "conv-42",
+      "qa_index": 20,
+      "category": 2,
+      "question": "内特是什么时候领养马克斯的？",
+      "selection_hash": "014714ea50e8368d93397b653336100979314b2c4c205b2138fa4f99f053c086"
+    },
+    {
+      "case_id": "locomo_conv-48_qa2",
+      "conversation_id": "conv-48",
+      "qa_index": 2,
+      "category": 2,
+      "question": "黛博拉的母亲是什么时候去世的？",
+      "selection_hash": "045577f33040ef67836b2b9221547ce84e29f3bdaa6f76b6d4513c216c02f45e"
+    },
+    {
+      "case_id": "locomo_conv-41_qa59",
+      "conversation_id": "conv-41",
+      "qa_index": 59,
+      "category": 2,
+      "question": "约翰是什么时候带马克斯去露营的？",
+      "selection_hash": "04fb3d58f3209de25319ae21eeb40c87a4662886cc61bcf09f92d54c17f6d168"
+    },
+    {
+      "case_id": "locomo_conv-50_qa26",
+      "conversation_id": "conv-50",
+      "qa_index": 26,
+      "category": 2,
+      "question": "卡尔文是什么时候和朋友录播客的？",
+      "selection_hash": "05195fd915b7bd924366eac4bd1a928747c47e02d94de850bc6fcdeddb2595ee"
+    },
+    {
+      "case_id": "locomo_conv-50_qa13",
+      "conversation_id": "conv-50",
+      "qa_index": 13,
+      "category": 3,
+      "question": "卡尔文愿意在好莱坞露天剧场演出吗？",
+      "selection_hash": "00a690ef08bd26d5bac2460fafb7903369e9e7261be5f09dc42aec7e21d71131"
+    },
+    {
+      "case_id": "locomo_conv-48_qa36",
+      "conversation_id": "conv-48",
+      "qa_index": 36,
+      "category": 3,
+      "question": "乔琳多大了？",
+      "selection_hash": "02331892e3bd78bfa2a87a01997eae5a83ed5d768ee8dfcca683cb6ba1575244"
+    },
+    {
+      "case_id": "locomo_conv-43_qa32",
+      "conversation_id": "conv-43",
+      "qa_index": 32,
+      "category": 3,
+      "question": "根据参观环球影城的计划，蒂姆2023年9月可能在哪些美国州？",
+      "selection_hash": "032570b43761b094c74b891a37a2f85a24d73eadfe65e2a494d6bfb1507dc2c4"
+    },
+    {
+      "case_id": "locomo_conv-44_qa53",
+      "conversation_id": "conv-44",
+      "qa_index": 53,
+      "category": 3,
+      "question": "凭借对动物和自然的热爱，安德鲁可能从事什么职业？",
+      "selection_hash": "0520413a479ffed9f2146481bc4a341d34ab52448520b2747608b6c18f647e6e"
+    },
+    {
+      "case_id": "locomo_conv-26_qa111",
+      "conversation_id": "conv-26",
+      "qa_index": 111,
+      "category": 4,
+      "question": "除了陶艺，梅尔和孩子们还一起做什么创意项目？",
+      "selection_hash": "007a4279676fc5f2dfc442030fd8a868ff6e790645937ce3b26eda5c05bd7bbd"
+    },
+    {
+      "case_id": "locomo_conv-48_qa107",
+      "conversation_id": "conv-48",
+      "qa_index": 107,
+      "category": 4,
+      "question": "黛博拉每次来怀念她母亲时会随身带什么？",
+      "selection_hash": "00b4d4e3c9c5150d7af49d5d200e8f866ea12ea7484700fc5571341cbe346cff"
+    },
+    {
+      "case_id": "locomo_conv-42_qa126",
+      "conversation_id": "conv-42",
+      "qa_index": 126,
+      "category": 4,
+      "question": "内特为游戏聚会上的每个人准备了什么特别的物品？",
+      "selection_hash": "0145eb4f842a5a5f75132ffaf94558e808ee6a366958a0b94a4211aab2fa0d90"
+    },
+    {
+      "case_id": "locomo_conv-49_qa141",
+      "conversation_id": "conv-49",
+      "qa_index": 141,
+      "category": 4,
+      "question": "埃文建议萨姆继续做什么来找到属于他自己的爱？",
+      "selection_hash": "015b8e2a715d8602410f186da4221654d303882eab45d6cd1f6926093222522c"
+    },
+    {
+      "case_id": "locomo_conv-48_qa233",
+      "conversation_id": "conv-48",
+      "qa_index": 233,
+      "category": 5,
+      "question": "乔琳和妈妈的老朋友们做了什么？",
+      "selection_hash": "01d0564a4778d4930018a9392abadddde9134d8fa7d756917c0f8a57e6202908"
+    },
+    {
+      "case_id": "locomo_conv-42_qa215",
+      "conversation_id": "conv-42",
+      "qa_index": 215,
+      "category": 5,
+      "question": "什么活动能帮助内特逃避现实、让头脑麻木？",
+      "selection_hash": "01fd00ca9c03c6677d7c65fcf0cc2299abc56ab3f8cd9b6b6f1de77b152198dc"
+    },
+    {
+      "case_id": "locomo_conv-30_qa85",
+      "conversation_id": "conv-30",
+      "qa_index": 85,
+      "category": 5,
+      "question": "吉娜对参加舞蹈节的态度是什么？",
+      "selection_hash": "0234985e1bd94fb15afbeca01a410eaec98cdc60006319d427c0ba69f23f206c"
+    },
+    {
+      "case_id": "locomo_conv-26_qa157",
+      "conversation_id": "conv-26",
+      "qa_index": 157,
+      "category": 5,
+      "question": "梅拉妮的项链象征着什么？",
+      "selection_hash": "0310a6beb2e9cb556e470eb1ae27bfc07f9ead1bbdadcaf4b1501584a9138ce7"
+    }
+  ]
+}
