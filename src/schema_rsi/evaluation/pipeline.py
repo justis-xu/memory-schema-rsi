@@ -53,6 +53,19 @@ def _jev_graph_pool_snapshot(memories: list[dict]) -> list[dict]:
     ]
 
 
+def _graph_memory_record(candidate: dict) -> MemoryRecord:
+    """Keep source session metadata when a graph candidate enters answer context."""
+    return MemoryRecord(
+        id=candidate["id"], content=candidate["content"],
+        metadata={
+            "user_id": candidate["user_id"],
+            "session_id": candidate.get("session_id"),
+            "session_date": candidate.get("session_date"),
+            "via": candidate.get("via"),
+        },
+    )
+
+
 class EvaluationPipeline:
     def __init__(
         self,
@@ -228,10 +241,7 @@ class EvaluationPipeline:
             pool_records = list(retrieved)
             for g in graph_memories:
                 if g.get("id") and g.get("content"):
-                    pool_records.append(
-                        MemoryRecord(id=g["id"], content=g["content"],
-                                     metadata={"via": g.get("via"), "user_id": g["user_id"]})
-                    )
+                    pool_records.append(_graph_memory_record(g))
             reranked = self.retriever.rerank_pool(case.question, pool_records, top_n=context_budget)
             if reranked is not None:
                 answer_memories = reranked
@@ -249,10 +259,7 @@ class EvaluationPipeline:
                     if (g.get("user_id") == user_id and g.get("id")
                             and g["id"] not in seen_ids and g.get("content")):
                         seen_ids.add(g["id"])
-                        additions.append(
-                            MemoryRecord(id=g["id"], content=g["content"],
-                                         metadata={"via": g.get("via"), "user_id": g["user_id"]})
-                        )
+                        additions.append(_graph_memory_record(g))
                         graph_context_ids.append(g["id"])
                         if len(additions) >= graph_slots:
                             break
@@ -433,8 +440,7 @@ class EvaluationPipeline:
         )
         graph_memories = [g for g in candidates if g.get("user_id") == user_id]
         pool_records = list(retrieved) + [
-            MemoryRecord(id=g["id"], content=g["content"],
-                         metadata={"via": g.get("via"), "user_id": g["user_id"]})
+            _graph_memory_record(g)
             for g in graph_memories if g.get("id") and g.get("content")
         ]
         reranked = self.retriever.rerank_pool(case.question, pool_records, top_n=context_budget)

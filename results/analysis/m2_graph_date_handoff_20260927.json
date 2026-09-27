@@ -1,0 +1,18 @@
+{
+  "scope": "Two current conv-43 memories through production S1 builder, fused graph retriever, graph candidate conversion and official formatter in an isolated local store; no service/model calls",
+  "current_db_sha256_before": "57152cd4b7632b940c373218e1bfc05175ce9f85ff23c2c73dfb03517a652cd9",
+  "current_db_sha256_after": "57152cd4b7632b940c373218e1bfc05175ce9f85ff23c2c73dfb03517a652cd9",
+  "tim_id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+  "john_id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+  "john_source_session_id": "session_7",
+  "john_source_session_date": "7:54 pm on 17 August, 2023",
+  "john_graph_candidate_session_id": "session_7",
+  "john_graph_candidate_session_date": "7:54 pm on 17 August, 2023",
+  "john_answer_record_session_date": "7:54 pm on 17 August, 2023",
+  "formatted_date_prefix": "(Thursday, August 17, 2023)",
+  "date_unknown_in_formatted_prompt": false,
+  "limits": [
+    "Only a two-memory, source-checked path; this does not test real HugeGraph edge order, fused reranking or answer accuracy.",
+    "Graph vertices without a source session_date remain undated; this change does not infer a date from memory content."
+  ]
+}

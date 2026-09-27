@@ -98,7 +98,17 @@ def format_memories_official(records) -> str:
         return "(No relevant memories found)"
 
     def sort_key(r):
-        return str(r.metadata.get("session_date") or r.metadata.get("created_at") or "")
+        from schema_rsi.benchmarks.base import parse_session_date
+
+        raw = r.metadata.get("session_date") or r.metadata.get("created_at")
+        iso = parse_session_date(raw)
+        if iso is None and raw:
+            try:
+                iso = _datetime.fromisoformat(str(raw).replace("Z", "+00:00")).isoformat()
+            except ValueError:
+                pass
+        # Parseable dates first; records without a date keep their input order at the end.
+        return (iso is None, iso or "")
 
     lines = ["The following memories are presented in chronological order (oldest to newest).", ""]
     for r in sorted(records[:ANSWERER_MEMORY_LIMIT], key=sort_key):

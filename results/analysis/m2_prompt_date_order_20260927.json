@@ -1,0 +1,325 @@
+{
+  "scope": "Archived no-graph answer contexts and frozen current Chinese retrieval cohort; compares raw-string date order with parsed chronological order, no model calls",
+  "files": {
+    "zh_locomo": {
+      "path": "results_zh/zhfull_locomo_20260925_164645.jsonl",
+      "sha256": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59",
+      "audit": {
+        "cases_read": 1979,
+        "contexts_reconstructable": 1979,
+        "contexts_not_reconstructable": [],
+        "eligible_two_distinct_dates": 1979,
+        "wrong_chronological_order": 1979,
+        "comparable_date_pairs": 197274,
+        "inverted_date_pairs": 102256,
+        "unparseable_or_missing_memory_dates": 0,
+        "by_category": {
+          "adversarial": {
+            "eligible": 439,
+            "wrong_order": 439
+          },
+          "multi-hop": {
+            "eligible": 282,
+            "wrong_order": 282
+          },
+          "open-domain": {
+            "eligible": 96,
+            "wrong_order": 96
+          },
+          "single-hop": {
+            "eligible": 841,
+            "wrong_order": 841
+          },
+          "temporal": {
+            "eligible": 321,
+            "wrong_order": 321
+          }
+        },
+        "examples": [
+          {
+            "case_id": "locomo_conv-41_qa32",
+            "category": "multi-hop",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 10,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 89,
+            "comparable_date_pairs": 100
+          },
+          {
+            "case_id": "locomo_conv-48_qa189",
+            "category": "single-hop",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 12,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 89,
+            "comparable_date_pairs": 102
+          },
+          {
+            "case_id": "locomo_conv-48_qa90",
+            "category": "single-hop",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 11,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 87,
+            "comparable_date_pairs": 101
+          },
+          {
+            "case_id": "locomo_conv-48_qa37",
+            "category": "temporal",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 12,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 86,
+            "comparable_date_pairs": 102
+          },
+          {
+            "case_id": "locomo_conv-48_qa25",
+            "category": "single-hop",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 11,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 85,
+            "comparable_date_pairs": 101
+          }
+        ]
+      }
+    },
+    "en_locomo": {
+      "path": "results/full_locomo_finalC_ctrl_20260925_090746.jsonl",
+      "sha256": "5eafdd97a3741cd2cb4d69b020a8f46779cd2bd424eeb9b69a2e0aec8c04805e",
+      "audit": {
+        "cases_read": 1986,
+        "contexts_reconstructable": 1986,
+        "contexts_not_reconstructable": [],
+        "eligible_two_distinct_dates": 1986,
+        "wrong_chronological_order": 1986,
+        "comparable_date_pairs": 197978,
+        "inverted_date_pairs": 104636,
+        "unparseable_or_missing_memory_dates": 0,
+        "by_category": {
+          "adversarial": {
+            "eligible": 446,
+            "wrong_order": 446
+          },
+          "multi-hop": {
+            "eligible": 282,
+            "wrong_order": 282
+          },
+          "open-domain": {
+            "eligible": 96,
+            "wrong_order": 96
+          },
+          "single-hop": {
+            "eligible": 841,
+            "wrong_order": 841
+          },
+          "temporal": {
+            "eligible": 321,
+            "wrong_order": 321
+          }
+        },
+        "examples": [
+          {
+            "case_id": "locomo_conv-48_qa209",
+            "category": "adversarial",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 9,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 93,
+            "comparable_date_pairs": 95
+          },
+          {
+            "case_id": "locomo_conv-48_qa130",
+            "category": "single-hop",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 7,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 91,
+            "comparable_date_pairs": 93
+          },
+          {
+            "case_id": "locomo_conv-48_qa70",
+            "category": "open-domain",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 9,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 87,
+            "comparable_date_pairs": 97
+          },
+          {
+            "case_id": "locomo_conv-48_qa109",
+            "category": "single-hop",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 9,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 87,
+            "comparable_date_pairs": 97
+          },
+          {
+            "case_id": "locomo_conv-26_qa21",
+            "category": "temporal",
+            "memory_count": 15,
+            "dated_count": 15,
+            "unparseable_or_missing_count": 0,
+            "distinct_dates": 9,
+            "chronological_order_wrong": true,
+            "inverted_date_pairs": 85,
+            "comparable_date_pairs": 97
+          }
+        ]
+      }
+    },
+    "en_lme_small": {
+      "path": "results/full_lme_20260924_013242.jsonl",
+      "sha256": "c313a4c30c76eab02cd87d9bfb04ebc6cb72ea7a96deb9aa1fa965729be116c1",
+      "audit": {
+        "cases_read": 39,
+        "contexts_reconstructable": 39,
+        "contexts_not_reconstructable": [],
+        "eligible_two_distinct_dates": 39,
+        "wrong_chronological_order": 0,
+        "comparable_date_pairs": 3508,
+        "inverted_date_pairs": 0,
+        "unparseable_or_missing_memory_dates": 0,
+        "by_category": {
+          "knowledge-update": {
+            "eligible": 7,
+            "wrong_order": 0
+          },
+          "multi-session": {
+            "eligible": 7,
+            "wrong_order": 0
+          },
+          "single-session-assistant": {
+            "eligible": 6,
+            "wrong_order": 0
+          },
+          "single-session-preference": {
+            "eligible": 7,
+            "wrong_order": 0
+          },
+          "single-session-user": {
+            "eligible": 6,
+            "wrong_order": 0
+          },
+          "temporal-reasoning": {
+            "eligible": 6,
+            "wrong_order": 0
+          }
+        },
+        "examples": []
+      }
+    }
+  },
+  "current_zh_20": {
+    "path": "results/analysis/m2_current_zh_stratified_retrieval_20260927.json",
+    "sha256": "35326da5323ba8ff8a4f93fac2f03718800083fe5b47cc4909c537f9eb4282bb",
+    "audit": {
+      "cases_read": 20,
+      "contexts_reconstructable": 20,
+      "contexts_not_reconstructable": [],
+      "eligible_two_distinct_dates": 20,
+      "wrong_chronological_order": 20,
+      "comparable_date_pairs": 2005,
+      "inverted_date_pairs": 1043,
+      "unparseable_or_missing_memory_dates": 0,
+      "by_category": {
+        "1": {
+          "eligible": 4,
+          "wrong_order": 4
+        },
+        "2": {
+          "eligible": 4,
+          "wrong_order": 4
+        },
+        "3": {
+          "eligible": 4,
+          "wrong_order": 4
+        },
+        "4": {
+          "eligible": 4,
+          "wrong_order": 4
+        },
+        "5": {
+          "eligible": 4,
+          "wrong_order": 4
+        }
+      },
+      "examples": [
+        {
+          "case_id": "locomo_conv-48_qa107",
+          "category": 4,
+          "memory_count": 15,
+          "dated_count": 15,
+          "unparseable_or_missing_count": 0,
+          "distinct_dates": 9,
+          "chronological_order_wrong": true,
+          "inverted_date_pairs": 74,
+          "comparable_date_pairs": 97
+        },
+        {
+          "case_id": "locomo_conv-48_qa233",
+          "category": 5,
+          "memory_count": 15,
+          "dated_count": 15,
+          "unparseable_or_missing_count": 0,
+          "distinct_dates": 12,
+          "chronological_order_wrong": true,
+          "inverted_date_pairs": 71,
+          "comparable_date_pairs": 102
+        },
+        {
+          "case_id": "locomo_conv-48_qa20",
+          "category": 1,
+          "memory_count": 15,
+          "dated_count": 15,
+          "unparseable_or_missing_count": 0,
+          "distinct_dates": 9,
+          "chronological_order_wrong": true,
+          "inverted_date_pairs": 69,
+          "comparable_date_pairs": 96
+        },
+        {
+          "case_id": "locomo_conv-50_qa26",
+          "category": 2,
+          "memory_count": 15,
+          "dated_count": 15,
+          "unparseable_or_missing_count": 0,
+          "distinct_dates": 11,
+          "chronological_order_wrong": true,
+          "inverted_date_pairs": 63,
+          "comparable_date_pairs": 100
+        },
+        {
+          "case_id": "locomo_conv-48_qa2",
+          "category": 2,
+          "memory_count": 15,
+          "dated_count": 15,
+          "unparseable_or_missing_count": 0,
+          "distinct_dates": 9,
+          "chronological_order_wrong": true,
+          "inverted_date_pairs": 61,
+          "comparable_date_pairs": 95
+        }
+      ]
+    }
+  }
+}

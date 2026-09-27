@@ -74,7 +74,8 @@ def test_build_concepts_scoped_and_edges():
 def test_retrieve_fused_aggregates_and_support():
     store = FakeGraphStore()
     for mid in ("m1", "m2", "m3", "m9"):
-        store.upsert_vertex("Memory", mid, {"memory_id": mid, "user_id": "u1", "content": f"c{mid}"})
+        store.upsert_vertex("Memory", mid, {"memory_id": mid, "user_id": "u1", "content": f"c{mid}",
+                                            "session_id": "D8", "session_date": "2023-08-16"})
     store.upsert_vertex("Entity", "9:u1:doordash", {"entity_id": "9:u1:doordash", "name": "DoorDash"})
     store.upsert_vertex("Concept", "2:u1:career", {"concept_id": "2:u1:career", "name": "career"})
     store.upsert_edge("MENTIONS", "Memory", "m1", "Entity", "9:u1:doordash")
@@ -97,6 +98,8 @@ def test_retrieve_fused_aggregates_and_support():
     assert by_id["m2"]["support"] == 2  # entity + concept 两个节点拉回
     assert by_id["m3"]["support"] == 1
     assert sorted(by_id["m2"]["via"]) == ["concept:career", "entity:DoorDash"]
+    assert by_id["m2"]["session_id"] == "D8"
+    assert by_id["m2"]["session_date"] == "2023-08-16"
     # support 高者排前
     assert out[0]["id"] == "m2"
 

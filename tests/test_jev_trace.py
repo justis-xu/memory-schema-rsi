@@ -38,6 +38,7 @@ class FakeGraphRetriever:
         self.calls += 1
         mid = f"g{self.calls}"
         return [{"id": mid, "content": f"图证据{self.calls}", "user_id": "u",
+                 "session_id": "D8", "session_date": "2023-08-16",
                  "via": [f"entity:{mid}"], "support": 1}]
 
 
@@ -76,6 +77,9 @@ def test_jev_expansion_trace_and_final_graph_ids():
     assert [r["id"] for r in trace["first_context"]] == ["v1", "g1"]
     assert [r["id"] for r in trace["second_context"]] == ["v1", "g2"]
     assert trace["first_context"][0]["session_date"] == "2023-01-01"
+    assert trace["first_context"][1]["session_date"] == "2023-08-16"
+    assert trace["second_context"][1]["session_id"] == "D8"
+    assert trace["second_context"][1]["session_date"] == "2023-08-16"
     assert [r["id"] for r in trace["first_graph_pool"]] == ["g1"]
     assert [r["id"] for r in trace["second_graph_pool"]] == ["g2"]
     assert trace["first_decision_state"] == LayaClient.evidence_state(case.question, decision.digests[0])
@@ -92,3 +96,34 @@ def test_evidence_state_preserves_legacy_truncation():
     digest = "证据" * 800
     legacy_state = f"Question: {question}\n\nContext:\n{digest[:950]}"[:1000]
     assert LayaClient.evidence_state(question, digest) == legacy_state
+
+
+def test_bypass_graph_candidate_keeps_source_date_for_answerer():
+    class CaptureAnswerer:
+        memories = None
+
+        def answer(self, question, memories, **kwargs):
+            self.memories = memories
+            return "图证据", {}
+
+    class BypassGraphRetriever:
+        def retrieve(self, *args, **kwargs):
+            return [{"id": "g1", "content": "图证据", "user_id": "u",
+                     "session_id": "D8", "session_date": "2023-08-16",
+                     "via": "entity:date"}]
+
+    settings = copy.deepcopy(get_settings())
+    settings.evaluation = {"graph_enabled": True, "graph_mode": "bypass",
+                           "graph_seed_k": 1, "graph_slots": 1, "max_context_memories": 2}
+    answerer = CaptureAnswerer()
+    pipeline = EvaluationPipeline(backend=object(), settings=settings,
+                                  graph_store=object(), answerer=answerer)
+    pipeline.retriever = FakeRetriever()
+    pipeline.graph_retriever = BypassGraphRetriever()
+    case = BenchmarkCase("case", "locomo", [], "何时？", "图证据")
+
+    result = pipeline.evaluate_case(case, graph_enabled=True, user_id="u")
+
+    assert result.metadata["answer_context_ids"] == ["v1", "g1"]
+    assert answerer.memories[1].metadata["session_id"] == "D8"
+    assert answerer.memories[1].metadata["session_date"] == "2023-08-16"

@@ -245,6 +245,8 @@ class GraphRetriever:
                                 "id": mid,
                                 "content": m["properties"].get("content", ""),
                                 "user_id": m["properties"].get("user_id"),
+                                "session_id": m["properties"].get("session_id"),
+                                "session_date": m["properties"].get("session_date"),
                                 "via": [],
                                 "support": 0,
                                 "anchor_memory_id": rec.id,
@@ -295,6 +297,8 @@ class GraphRetriever:
                         "id": n.get("properties", {}).get("memory_id", nid),
                         "content": n.get("properties", {}).get("content", ""),
                         "user_id": n.get("properties", {}).get("user_id"),
+                        "session_id": n.get("properties", {}).get("session_id"),
+                        "session_date": n.get("properties", {}).get("session_date"),
                         "via": n.get("via_edge"),
                         "anchor_memory_id": rec.id,
                     }
@@ -332,6 +336,8 @@ class GraphRetriever:
                             "id": mid,
                             "content": m["properties"].get("content", ""),
                             "user_id": m["properties"].get("user_id"),
+                            "session_id": m["properties"].get("session_id"),
+                            "session_date": m["properties"].get("session_date"),
                             "via": f"entity:{ent['properties'].get('name')}",
                             "anchor_memory_id": rec.id,
                         }
@@ -352,6 +358,8 @@ class GraphRetriever:
                 seen.add(mid)
                 out.append({"id": mid, "content": content,
                             "user_id": properties.get("user_id"),
+                            "session_id": properties.get("session_id"),
+                            "session_date": properties.get("session_date"),
                             "via": via, "anchor_memory_id": anchor.id})
                 return len(out) >= max_total
             return False
