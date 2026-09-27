@@ -1,0 +1,432 @@
+{
+  "scope": "All English/Chinese LoCoMo QA evidence entries checked against actual dia_id, with only syntax-safe normalization; no model calls or dataset edits",
+  "dataset_paths": {
+    "english": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10.json",
+    "chinese": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json"
+  },
+  "dataset_sha256": {
+    "english": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d"
+  },
+  "counts": {
+    "qa": 1986,
+    "raw_entries": 2815,
+    "valid": 2806,
+    "resolved_ids": 2821,
+    "joined_valid_ids": 4,
+    "unresolved": 3,
+    "extra_colon": 1,
+    "leading_zero": 1
+  },
+  "affected_qa": 9,
+  "cases": [
+    {
+      "case_id": "locomo_conv-26_qa37",
+      "conversation": "conv-26",
+      "qa_index": 37,
+      "category": 1,
+      "raw_evidence": [
+        "D8:6; D9:17"
+      ],
+      "observations": [
+        {
+          "raw": "D8:6; D9:17",
+          "status": "joined_valid_ids",
+          "resolved_ids": [
+            "D8:6",
+            "D9:17"
+          ]
+        }
+      ],
+      "english": {
+        "question": "What did Melanie paint recently?",
+        "answer": "sunset"
+      },
+      "chinese": {
+        "question": "梅拉妮最近画了什么？",
+        "answer": "日落"
+      },
+      "resolved_source_turns": [
+        {
+          "dia_id": "D8:6",
+          "session": "session_8",
+          "session_date": "1:51 pm on 15 July, 2023",
+          "speaker": "梅拉妮",
+          "text": "最近我们喜欢一起画画，尤其是以大自然为灵感的画。这是上周末我们的最新作品。",
+          "image_query": "painting vibrant flowers sunset sky",
+          "blip_caption": "a photo of a painting of a sunset with a palm tree"
+        },
+        {
+          "dia_id": "D9:17",
+          "session": "session_9",
+          "session_date": "2:31 pm on 17 July, 2023",
+          "speaker": "梅拉妮",
+          "text": "哇，卡罗琳！它真的传达出了团结与力量——太美了！我和孩子们刚完成了一幅画，就像上次我们画的那样。",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa58",
+      "conversation": "conv-42",
+      "qa_index": 58,
+      "category": 1,
+      "raw_evidence": [
+        "D2:14",
+        "D9:12",
+        "D9:14",
+        "D10:11",
+        "D19:17",
+        "D27:23",
+        "D10:19"
+      ],
+      "observations": [
+        {
+          "raw": "D10:19",
+          "status": "unresolved",
+          "resolved_ids": []
+        }
+      ],
+      "english": {
+        "question": "What things has Nate reccomended to Joanna?",
+        "answer": "A pet,\"The Lord of the Rings\" movies,a dragon book series,coconut flavoring,\"Project Hail Mary\" book,Xenoblade Chronicles, dairy-free margarine, coconut oil"
+      },
+      "chinese": {
+        "question": "内特向乔安娜推荐过哪些东西？",
+        "answer": "一只宠物、《指环王》电影、一套龙主题系列书、椰子调味料、《拯救太阳计划》这本书、异度神剑、无乳制品人造黄油、椰子油"
+      },
+      "resolved_source_turns": []
+    },
+    {
+      "case_id": "locomo_conv-42_qa88",
+      "conversation": "conv-42",
+      "qa_index": 88,
+      "category": 4,
+      "raw_evidence": [
+        "D1:18",
+        "D",
+        "D1:20"
+      ],
+      "observations": [
+        {
+          "raw": "D",
+          "status": "unresolved",
+          "resolved_ids": []
+        }
+      ],
+      "english": {
+        "question": "What is one of Joanna's favorite movies?",
+        "answer": "\"Eternal Sunshineof the Spotless Mind\""
+      },
+      "chinese": {
+        "question": "乔安娜最喜欢的电影之一是什么？",
+        "answer": "《美丽心灵的永恒阳光》"
+      },
+      "resolved_source_turns": []
+    },
+    {
+      "case_id": "locomo_conv-43_qa18",
+      "conversation": "conv-43",
+      "qa_index": 18,
+      "category": 1,
+      "raw_evidence": [
+        "D1:14",
+        "D2:7",
+        "D4:7",
+        "D5:15",
+        "D:11:26",
+        "D20:21",
+        "D26:36"
+      ],
+      "observations": [
+        {
+          "raw": "D:11:26",
+          "status": "extra_colon",
+          "resolved_ids": [
+            "D11:26"
+          ]
+        }
+      ],
+      "english": {
+        "question": "What authors has Tim read books from?",
+        "answer": "J.K. Rowling, R.R. Martin, Patrick Rothfuss, Paulo Coelho, and J. R. R. Tolkien."
+      },
+      "chinese": {
+        "question": "蒂姆读过哪些作者的书？",
+        "answer": "J.K.罗琳、R.R.马丁、帕特里克·罗斯福斯、保罗·科埃略和J. R. R.托尔金。"
+      },
+      "resolved_source_turns": [
+        {
+          "dia_id": "D11:26",
+          "session": "session_11",
+          "session_date": "8:17 pm on 21 September, 2023",
+          "speaker": "蒂姆",
+          "text": "很棒的书架！我看到你书架上有《牧羊少年奇幻之旅》（The Alchemist），那是我最喜欢的书之一。你喜欢它吗？",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa38",
+      "conversation": "conv-47",
+      "qa_index": 38,
+      "category": 1,
+      "raw_evidence": [
+        "D4:36",
+        "D18:1",
+        "D18:7"
+      ],
+      "observations": [
+        {
+          "raw": "D4:36",
+          "status": "unresolved",
+          "resolved_ids": []
+        }
+      ],
+      "english": {
+        "question": "What happened to John's job situation in 2022?",
+        "answer": "quit his IT Job, secured his dream job, aspires to become an eSports competition organizer"
+      },
+      "chinese": {
+        "question": "2022年约翰的工作状况发生了什么？",
+        "answer": "辞掉了IT工作，获得了梦想中的工作，立志成为电子竞技赛事组织者"
+      },
+      "resolved_source_turns": []
+    },
+    {
+      "case_id": "locomo_conv-49_qa31",
+      "conversation": "conv-49",
+      "qa_index": 31,
+      "category": 3,
+      "raw_evidence": [
+        "D9:1 D4:4 D4:6"
+      ],
+      "observations": [
+        {
+          "raw": "D9:1 D4:4 D4:6",
+          "status": "joined_valid_ids",
+          "resolved_ids": [
+            "D9:1",
+            "D4:4",
+            "D4:6"
+          ]
+        }
+      ],
+      "english": {
+        "question": "How might Evan and Sam's experiences with health and lifestyle changes influence their approach to stress and challenges?",
+        "answer": "Their experiences likely lead them to view challenges as opportunities for growth and change. They both have embraced healthier lifestyles, indicating a proactive approach to managing stress and challenges."
+      },
+      "chinese": {
+        "question": "埃文和萨姆在健康和生活方式改变方面的经历会如何影响他们应对压力和挑战的方式？",
+        "answer": "他们的经历很可能让他们把挑战视为成长和改变的机会。他们都拥抱了更健康的生活方式，这表明他们在应对压力和挑战时采取了积极主动的方式。"
+      },
+      "resolved_source_turns": [
+        {
+          "dia_id": "D9:1",
+          "session": "session_9",
+          "session_date": "10:18 am on 27 August, 2023",
+          "speaker": "萨姆",
+          "text": "嘿，埃文！激动人心的消息：我上星期一开始了新的饮食和锻炼计划，效果非常明显。我感觉好极了！你呢，最近有什么改变吗？",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D4:4",
+          "session": "session_4",
+          "session_date": "10:52 am on 27 July, 2023",
+          "speaker": "埃文",
+          "text": "太好了，萨姆！几年前我也曾在健康问题上挣扎过，但我坚持了下来。这是我承诺的证明——我的健身房会员卡。这不仅仅是锻炼，饮食和生活方式的改变也很重要。",
+          "image_query": "gym membership card",
+          "blip_caption": "a photo of a set of five cards with the words let it shine"
+        },
+        {
+          "dia_id": "D4:6",
+          "session": "session_4",
+          "session_date": "10:52 am on 27 July, 2023",
+          "speaker": "埃文",
+          "text": "我在饮食上做了一些改变，比如少吃甜食零食，多吃蔬菜和水果，这对我的健康产生了很大的影响。你考虑过做些什么改变吗？",
+          "image_query": "colorful fruits and vegetables",
+          "blip_caption": "a photo of a table full of fresh produce and vegetables"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa38",
+      "conversation": "conv-49",
+      "qa_index": 38,
+      "category": 3,
+      "raw_evidence": [
+        "D22:1 D22:2 D9:10 D9:11"
+      ],
+      "observations": [
+        {
+          "raw": "D22:1 D22:2 D9:10 D9:11",
+          "status": "joined_valid_ids",
+          "resolved_ids": [
+            "D22:1",
+            "D22:2",
+            "D9:10",
+            "D9:11"
+          ]
+        }
+      ],
+      "english": {
+        "question": "What role does nature and the outdoors play in Evan and Sam's mental well-being?",
+        "answer": "Nature and outdoor activities seem to be significant stress relievers and sources of joy for both Evan and Sam. These activities likely contribute positively to their mental well-being."
+      },
+      "chinese": {
+        "question": "大自然和户外活动在埃文和萨姆的心理健康中扮演什么角色？",
+        "answer": "大自然和户外活动似乎是他们两人重要的减压方式和快乐来源。这些活动很可能对他们的心理健康有积极贡献。"
+      },
+      "resolved_source_turns": [
+        {
+          "dia_id": "D22:1",
+          "session": "session_22",
+          "session_date": "11:00 am on 31 December, 2023",
+          "speaker": "萨姆",
+          "text": "嘿，埃文！我真的越来越享受健康的生活方式了——上周五刚带朋友们去了一次超棒的徒步旅行！",
+          "image_query": "hiking trip mountain top",
+          "blip_caption": "a photography of a man standing on a rock looking out over a valley"
+        },
+        {
+          "dia_id": "D22:2",
+          "session": "session_22",
+          "session_date": "11:00 am on 31 December, 2023",
+          "speaker": "埃文",
+          "text": "嘿，萨姆！太棒了——没有什么比一次好的徒步更能让人感觉充满活力了。上周末我们开着普锐斯去山里兜了一圈长途。一切都很好，直到回程路上出了点小刮擦。",
+          "image_query": "scenic lookout drive peaceful relaxing",
+          "blip_caption": "a photo of a small stream running through a lush green forest"
+        },
+        {
+          "dia_id": "D9:10",
+          "session": "session_9",
+          "session_date": "10:18 am on 27 August, 2023",
+          "speaker": "埃文",
+          "text": "谢谢！我去了落基山脉，真是让人神清气爽！景色壮丽，我感到无比放松。你喜欢自驾游和探索大自然吗？",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D9:11",
+          "session": "session_9",
+          "session_date": "10:18 am on 27 August, 2023",
+          "speaker": "萨姆",
+          "text": "我已经很久没去自驾游了，但我很喜欢置身于大自然中。它是那么宁静、令人焕然一新。我很想多去徒步，但有时会有些困难。不过，我正在努力变得更健康，所以也许很快就能来一次自驾游和徒步了。",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa46",
+      "conversation": "conv-49",
+      "qa_index": 46,
+      "category": 3,
+      "raw_evidence": [
+        "D21:18 D21:22 D11:15 D11:19"
+      ],
+      "observations": [
+        {
+          "raw": "D21:18 D21:22 D11:15 D11:19",
+          "status": "joined_valid_ids",
+          "resolved_ids": [
+            "D21:18",
+            "D21:22",
+            "D11:15",
+            "D11:19"
+          ]
+        }
+      ],
+      "english": {
+        "question": "How do Evan and Sam use creative outlets to cope with life's challenges?",
+        "answer": "Evan and Sam use creative activities, like painting and writing, as therapeutic tools to express themselves and cope with stress."
+      },
+      "chinese": {
+        "question": "埃文和萨姆如何利用创意活动来应对生活中的挑战？",
+        "answer": "埃文和萨姆把绘画和写作等创意活动当作自我表达和缓解压力的疗愈工具。"
+      },
+      "resolved_source_turns": [
+        {
+          "dia_id": "D21:18",
+          "session": "session_21",
+          "session_date": "4:25 pm on 26 December, 2023",
+          "speaker": "埃文",
+          "text": "\n谢谢你，萨姆！感谢你的夸奖。这幅画有一种鼓舞人心的气质；你真的很懂艺术！你呢？你画画多久了？",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D21:22",
+          "session": "session_21",
+          "session_date": "4:25 pm on 26 December, 2023",
+          "speaker": "埃文",
+          "text": "好主意，我想等我找到钥匙就马上去装一个！",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D11:15",
+          "session": "session_11",
+          "session_date": "8:57 pm on 6 October, 2023",
+          "speaker": "萨姆",
+          "text": "画画很酷。我还在学画画，但我喜欢通过写作来表达自己。这很治愈，能帮我理清情绪。不过，最近我对新手机有点恼火。它的导航应用老是出故障，让出行变得有点麻烦。",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D11:19",
+          "session": "session_11",
+          "session_date": "8:57 pm on 6 October, 2023",
+          "speaker": "萨姆",
+          "text": "谢谢，埃文！它真的帮我理清思绪、表达感受。就像和自己对话一样。",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa69",
+      "conversation": "conv-50",
+      "qa_index": 69,
+      "category": 2,
+      "raw_evidence": [
+        "D30:05"
+      ],
+      "observations": [
+        {
+          "raw": "D30:05",
+          "status": "leading_zero",
+          "resolved_ids": [
+            "D30:5"
+          ]
+        }
+      ],
+      "english": {
+        "question": "When did Dave buy a vintage camera?",
+        "answer": "November 2023"
+      },
+      "chinese": {
+        "question": "戴夫是什么时候买了一台复古相机的？",
+        "answer": "2023年11月"
+      },
+      "resolved_source_turns": [
+        {
+          "dia_id": "D30:5",
+          "session": "session_30",
+          "session_date": "10:54 am on 17 November, 2023",
+          "speaker": "戴夫",
+          "text": "太棒了，卡尔文！音乐确实能把人聚在一起，激发创造力。很高兴听到你度过了这么鼓舞人心的谈话！快看我这个月新买的复古相机，拍出来的照片超赞！",
+          "image_query": "vintage camera",
+          "blip_caption": "a photo of a camera sitting on a table next to a plant"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Syntax-safe normalization is an audit suggestion, not a mutation of benchmark files.",
+    "Unresolved evidence entries require source review and must not be guessed from nearby IDs.",
+    "Valid dia_id syntax and existence do not establish that the turn supports every answer fact."
+  ]
+}
