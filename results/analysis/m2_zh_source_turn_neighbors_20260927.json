@@ -1,0 +1,542 @@
+{
+  "scope": "Fixed 20 previously source-audited Chinese QA; reuse frozen CJK bigram lexical seed rankings and same 15 source-turn slots; no model calls",
+  "policy": "For each ranked lexical seed, append the seed then its previous and next turn from the same session, deduplicate, stop at 15; no gold/source labels used in selection",
+  "baseline": {
+    "cases_with_any_audited_id": 6,
+    "audited_id_exposures": 6
+  },
+  "expanded": {
+    "cases_with_any_audited_id": 7,
+    "audited_id_exposures": 10
+  },
+  "cases_with_displaced_seeds": 1,
+  "total_source_slots_baseline": 24,
+  "total_source_slots_expanded": 63,
+  "rows": [
+    {
+      "case_id": "locomo_conv-49_qa64",
+      "label": "premise_weak",
+      "baseline_ids": [
+        "D2:7"
+      ],
+      "expanded_ids": [
+        "D2:7",
+        "D2:6",
+        "D2:8"
+      ],
+      "expanded_reasons": {
+        "D2:7": "lexical_seed",
+        "D2:6": "previous_turn",
+        "D2:8": "next_turn"
+      },
+      "audited_ids": [
+        "D12:1",
+        "D14:1"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-48_qa20",
+      "label": "partial_gold",
+      "baseline_ids": [
+        "D2:26",
+        "D12:6",
+        "D3:11"
+      ],
+      "expanded_ids": [
+        "D2:26",
+        "D2:25",
+        "D2:27",
+        "D12:6",
+        "D12:5",
+        "D12:7",
+        "D3:11",
+        "D3:10",
+        "D3:12"
+      ],
+      "expanded_reasons": {
+        "D2:26": "lexical_seed",
+        "D2:25": "previous_turn",
+        "D2:27": "next_turn",
+        "D12:6": "lexical_seed",
+        "D12:5": "previous_turn",
+        "D12:7": "next_turn",
+        "D3:11": "lexical_seed",
+        "D3:10": "previous_turn",
+        "D3:12": "next_turn"
+      },
+      "audited_ids": [
+        "D15:10",
+        "D19:10",
+        "D20:1",
+        "D2:26",
+        "D2:30"
+      ],
+      "baseline_audited": [
+        "D2:26"
+      ],
+      "expanded_audited": [
+        "D2:26"
+      ],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-43_qa2",
+      "label": "direct",
+      "baseline_ids": [],
+      "expanded_ids": [],
+      "expanded_reasons": {},
+      "audited_ids": [
+        "D12:18",
+        "D1:15",
+        "D27:20",
+        "D8:17"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-44_qa15",
+      "label": "premise_weak",
+      "baseline_ids": [],
+      "expanded_ids": [],
+      "expanded_reasons": {},
+      "audited_ids": [
+        "D10:5",
+        "D7:8"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-42_qa20",
+      "label": "direct",
+      "baseline_ids": [],
+      "expanded_ids": [],
+      "expanded_reasons": {},
+      "audited_ids": [
+        "D12:3"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-48_qa2",
+      "label": "direct",
+      "baseline_ids": [],
+      "expanded_ids": [],
+      "expanded_reasons": {},
+      "audited_ids": [
+        "D1:5"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-41_qa59",
+      "label": "direct",
+      "baseline_ids": [
+        "D18:1",
+        "D30:6"
+      ],
+      "expanded_ids": [
+        "D18:1",
+        "D18:2",
+        "D30:6",
+        "D30:5",
+        "D30:7"
+      ],
+      "expanded_reasons": {
+        "D18:1": "lexical_seed",
+        "D18:2": "next_turn",
+        "D30:6": "lexical_seed",
+        "D30:5": "previous_turn",
+        "D30:7": "next_turn"
+      },
+      "audited_ids": [
+        "D30:6"
+      ],
+      "baseline_audited": [
+        "D30:6"
+      ],
+      "expanded_audited": [
+        "D30:6"
+      ],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-50_qa26",
+      "label": "direct",
+      "baseline_ids": [
+        "D28:4"
+      ],
+      "expanded_ids": [
+        "D28:4",
+        "D28:3",
+        "D28:5"
+      ],
+      "expanded_reasons": {
+        "D28:4": "lexical_seed",
+        "D28:3": "previous_turn",
+        "D28:5": "next_turn"
+      },
+      "audited_ids": [
+        "D15:12"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-50_qa13",
+      "label": "inference",
+      "baseline_ids": [
+        "D7:10"
+      ],
+      "expanded_ids": [
+        "D7:10",
+        "D7:9",
+        "D7:11"
+      ],
+      "expanded_reasons": {
+        "D7:10": "lexical_seed",
+        "D7:9": "previous_turn",
+        "D7:11": "next_turn"
+      },
+      "audited_ids": [
+        "D7:11"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [
+        "D7:11"
+      ],
+      "added_audited": [
+        "D7:11"
+      ],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-48_qa36",
+      "label": "inference",
+      "baseline_ids": [
+        "D22:28"
+      ],
+      "expanded_ids": [
+        "D22:28",
+        "D22:27",
+        "D22:29"
+      ],
+      "expanded_reasons": {
+        "D22:28": "lexical_seed",
+        "D22:27": "previous_turn",
+        "D22:29": "next_turn"
+      },
+      "audited_ids": [
+        "D22:6",
+        "D24:14",
+        "D26:6"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-43_qa32",
+      "label": "inference",
+      "baseline_ids": [],
+      "expanded_ids": [],
+      "expanded_reasons": {},
+      "audited_ids": [
+        "D10:9"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-44_qa53",
+      "label": "inference",
+      "baseline_ids": [],
+      "expanded_ids": [],
+      "expanded_reasons": {},
+      "audited_ids": [
+        "D2:18",
+        "D3:1",
+        "D5:7",
+        "D8:27"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-26_qa111",
+      "label": "direct",
+      "baseline_ids": [
+        "D8:5",
+        "D8:33"
+      ],
+      "expanded_ids": [
+        "D8:5",
+        "D8:4",
+        "D8:6",
+        "D8:33",
+        "D8:32",
+        "D8:34"
+      ],
+      "expanded_reasons": {
+        "D8:5": "lexical_seed",
+        "D8:4": "previous_turn",
+        "D8:6": "next_turn",
+        "D8:33": "lexical_seed",
+        "D8:32": "previous_turn",
+        "D8:34": "next_turn"
+      },
+      "audited_ids": [
+        "D8:5",
+        "D8:6"
+      ],
+      "baseline_audited": [
+        "D8:5"
+      ],
+      "expanded_audited": [
+        "D8:5",
+        "D8:6"
+      ],
+      "added_audited": [
+        "D8:6"
+      ],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-48_qa107",
+      "label": "direct",
+      "baseline_ids": [],
+      "expanded_ids": [],
+      "expanded_reasons": {},
+      "audited_ids": [
+        "D4:36"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-42_qa126",
+      "label": "direct",
+      "baseline_ids": [],
+      "expanded_ids": [],
+      "expanded_reasons": {},
+      "audited_ids": [
+        "D14:24"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-49_qa141",
+      "label": "direct",
+      "baseline_ids": [
+        "D21:10"
+      ],
+      "expanded_ids": [
+        "D21:10",
+        "D21:9",
+        "D21:11"
+      ],
+      "expanded_reasons": {
+        "D21:10": "lexical_seed",
+        "D21:9": "previous_turn",
+        "D21:11": "next_turn"
+      },
+      "audited_ids": [
+        "D21:10"
+      ],
+      "baseline_audited": [
+        "D21:10"
+      ],
+      "expanded_audited": [
+        "D21:10"
+      ],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-48_qa233",
+      "label": "adversarial",
+      "baseline_ids": [
+        "D28:6",
+        "D28:1",
+        "D28:3",
+        "D29:6"
+      ],
+      "expanded_ids": [
+        "D28:6",
+        "D28:5",
+        "D28:7",
+        "D28:1",
+        "D28:2",
+        "D28:3",
+        "D28:4",
+        "D29:6",
+        "D29:5",
+        "D29:7"
+      ],
+      "expanded_reasons": {
+        "D28:6": "lexical_seed",
+        "D28:5": "previous_turn",
+        "D28:7": "next_turn",
+        "D28:1": "lexical_seed",
+        "D28:2": "next_turn",
+        "D28:3": "lexical_seed",
+        "D28:4": "next_turn",
+        "D29:6": "lexical_seed",
+        "D29:5": "previous_turn",
+        "D29:7": "next_turn"
+      },
+      "audited_ids": [
+        "D28:6",
+        "D28:7"
+      ],
+      "baseline_audited": [
+        "D28:6"
+      ],
+      "expanded_audited": [
+        "D28:6",
+        "D28:7"
+      ],
+      "added_audited": [
+        "D28:7"
+      ],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-42_qa215",
+      "label": "adversarial",
+      "baseline_ids": [],
+      "expanded_ids": [],
+      "expanded_reasons": {},
+      "audited_ids": [
+        "D9:10"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-30_qa85",
+      "label": "adversarial",
+      "baseline_ids": [
+        "D2:4"
+      ],
+      "expanded_ids": [
+        "D2:4",
+        "D2:3",
+        "D2:5"
+      ],
+      "expanded_reasons": {
+        "D2:4": "lexical_seed",
+        "D2:3": "previous_turn",
+        "D2:5": "next_turn"
+      },
+      "audited_ids": [
+        "D1:27",
+        "D1:28"
+      ],
+      "baseline_audited": [],
+      "expanded_audited": [],
+      "added_audited": [],
+      "displaced_seeds": []
+    },
+    {
+      "case_id": "locomo_conv-26_qa157",
+      "label": "adversarial",
+      "baseline_ids": [
+        "D8:11",
+        "D13:1",
+        "D15:25",
+        "D19:9",
+        "D4:3",
+        "D5:5",
+        "D6:5"
+      ],
+      "expanded_ids": [
+        "D8:11",
+        "D8:10",
+        "D8:12",
+        "D13:1",
+        "D13:2",
+        "D15:25",
+        "D15:24",
+        "D15:26",
+        "D19:9",
+        "D19:8",
+        "D19:10",
+        "D4:3",
+        "D4:2",
+        "D4:4",
+        "D5:5"
+      ],
+      "expanded_reasons": {
+        "D8:11": "lexical_seed",
+        "D8:10": "previous_turn",
+        "D8:12": "next_turn",
+        "D13:1": "lexical_seed",
+        "D13:2": "next_turn",
+        "D15:25": "lexical_seed",
+        "D15:24": "previous_turn",
+        "D15:26": "next_turn",
+        "D19:9": "lexical_seed",
+        "D19:8": "previous_turn",
+        "D19:10": "next_turn",
+        "D4:3": "lexical_seed",
+        "D4:2": "previous_turn",
+        "D4:4": "next_turn",
+        "D5:5": "lexical_seed"
+      },
+      "audited_ids": [
+        "D4:2",
+        "D4:3"
+      ],
+      "baseline_audited": [
+        "D4:3"
+      ],
+      "expanded_audited": [
+        "D4:2",
+        "D4:3"
+      ],
+      "added_audited": [
+        "D4:2"
+      ],
+      "displaced_seeds": [
+        "D6:5"
+      ]
+    }
+  ],
+  "limits": [
+    "Audited turn IDs are incomplete diagnostic references, not a full support gold",
+    "An adjacent turn may expose a wrong-person fact or adversarial answer",
+    "This is source-turn slot exposure, not Mem0 retrieval, Graph/Jev benefit or QA accuracy"
+  ]
+}
