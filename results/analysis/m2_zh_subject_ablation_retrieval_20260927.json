@@ -1,0 +1,1039 @@
+{
+  "scope": "One fixed current Chinese conversation, three query variants; vector top45 then rerank top15; no answerer or judge",
+  "questions": [
+    {
+      "arm": "original",
+      "query": "乔琳和妈妈的老朋友们做了什么？"
+    },
+    {
+      "arm": "subject_masked",
+      "query": "妈妈的老朋友们做了什么？"
+    },
+    {
+      "arm": "correct_subject_oracle",
+      "query": "黛博拉和妈妈的老朋友们做了什么？"
+    }
+  ],
+  "user_id": "zhfull:locomo:conv-48",
+  "target_id": "53330642-0df8-47e7-9a80-7730d6b95834",
+  "distractor_id": "d2e2e49f-f93f-4dd4-a604-2b8e5e0397f3",
+  "max_embedding_calls": 3,
+  "max_logical_rerank_calls": 3,
+  "max_rerank_http_attempts": 6,
+  "calls_completed": 1,
+  "embedding_model": "qwen3.7-text-embedding-flash",
+  "rerank_model": "qwen3.7-text-rerank",
+  "chroma_sqlite_sha256_before": "57152cd4b7632b940c373218e1bfc05175ce9f85ff23c2c73dfb03517a652cd9",
+  "results": [
+    {
+      "arm": "original",
+      "query": "乔琳和妈妈的老朋友们做了什么？",
+      "error_type": "RerankError"
+    }
+  ],
+  "limits": [
+    "Current memory IDs differ from the 2026-09-25 archive, so this does not reconstruct that historical counterfactual.",
+    "The corrected-person query is an oracle upper bound and must not be used as a deployable rewrite.",
+    "The name-masked query can surface another person; its hits are evidence to check, not an answer to the original question.",
+    "Only main Chroma collection is present; no atomic pool or Graph is queried."
+  ],
+  "stopped_early": true,
+  "chroma_sqlite_sha256_after": "89337041a7bf22cea1f4cc81ded70cbdd9f5ceb612ceb5b7186944601baf6b33",
+  "completed": false,
+  "vector_salvage": [
+    {
+      "arm": "original",
+      "query": "乔琳和妈妈的老朋友们做了什么？",
+      "vector_top45": [
+        {
+          "rank": 1,
+          "id": "0e60bab4-2102-438d-a10c-57db822e7f95",
+          "content": "乔琳热衷于提出新想法、提高效率、用工程才能做好事，并牢记妈妈强调的帮助他人的价值",
+          "distance": 0.653221845626831,
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "26bfebdc-bdde-411b-850b-dd3c81ea0c7b",
+          "content": "乔琳在艰难时期靠宠物蛇苏茜的陪伴获得安慰，电子游戏也是她的消遣方式",
+          "distance": 0.7267624139785767,
+          "session_id": "session_16",
+          "session_date": "9:26 am on 1 August, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "5f285239-4232-4c94-9f17-b07ab54dcf0c",
+          "content": "乔琳的妈妈已经去世，她教会乔琳坚持不懈；乔琳伴侣的爸爸也已去世，示范了坚定决心；乔琳学工程，伴侣从事创作事业，他们通过追求各自的热爱来纪念他们",
+          "distance": 0.7283338308334351,
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "91261b1f-9237-4413-b824-dca5729d6819",
+          "content": "乔琳通常在自己房间里放松、安心休息，那是她忙碌一天后宁静休憩、放松充电的小天地",
+          "distance": 0.7355470657348633,
+          "session_id": "session_28",
+          "session_date": "3:09 pm on 15 September, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "d2e2e49f-f93f-4dd4-a604-2b8e5e0397f3",
+          "content": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒，玩得很开心，感到很放松（附有朋友举杯和食物、红酒的照片）",
+          "distance": 0.7356866598129272,
+          "session_id": "session_6",
+          "session_date": "4:12 pm on 22 February, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "2290dda6-70d6-447c-9d28-a6f66921c986",
+          "content": "乔琳忙碌一天后会和伴侣一起打电子游戏放松，这让两人更亲密",
+          "distance": 0.7362428903579712,
+          "session_id": "session_12",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "9f858349-324d-4fa9-9982-74b52b21edea",
+          "content": "乔琳（黛布的朋友）的目标是在自己的领域取得成功并产生积极影响，为此一直在学习、参加研讨会和拓展人脉",
+          "distance": 0.7511557340621948,
+          "session_id": "session_21",
+          "session_date": "9:34 am on 24 August, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "f9f35e3b-c552-4389-a4f0-9f3f1d59d0f0",
+          "content": "乔琳和伴侣是在大学的一门工程课上认识的，先成为朋友，友谊后来发展成恋爱关系，两人还喜欢一起做工程项目",
+          "distance": 0.7623246908187866,
+          "session_id": "session_7",
+          "session_date": "4:50 pm on 25 February, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "676c57a2-84eb-4d45-bf00-ac4fc0d95838",
+          "content": "乔琳（assistant）最近专注于学业和与伴侣的感情，两人计划去海边小旅行作为放松方式",
+          "distance": 0.7640509009361267,
+          "session_id": "session_24",
+          "session_date": "2:14 pm on 3 September, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "c67ca95e-435c-4cb6-a57b-79ca48ce8cd6",
+          "content": "乔琳的母亲于2022年（对话前一年）去世；乔琳分享了一张母亲房子里自己房间的照片（有长椅和窗户），那里有很多回忆",
+          "distance": 0.771476149559021,
+          "session_id": "session_1",
+          "session_date": "4:06 pm on 23 January, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "c696bbf7-f023-4a28-845c-18da1670bf96",
+          "content": "乔琳计划和她的伴侣去露营，亲近大自然并练习瑜伽（2023年9月8日左右提及）",
+          "distance": 0.7748432159423828,
+          "session_id": "session_26",
+          "session_date": "7:39 pm on 8 September, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "2af936f8-5031-44c5-866b-cd803546bcf7",
+          "content": "乔琳和伴侣经常用《胡闹厨房2》打赌，她赢过三个大披萨",
+          "distance": 0.7755898237228394,
+          "session_id": "session_19",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "faa4ba27-2ce9-4637-bf28-9b61ca9ed742",
+          "content": "乔琳在2023年8月底养了一株新植物，作为照顾好自己、拥抱新的开始的提醒",
+          "distance": 0.7766859531402588,
+          "session_id": "session_23",
+          "session_date": "11:46 am on 30 August, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "3d4a0b28-db4e-4abf-b959-39f07551c510",
+          "content": "乔琳没有考虑重新练瑜伽，她和伴侣计划一起玩主机游戏",
+          "distance": 0.7773081660270691,
+          "session_id": "session_3",
+          "session_date": "7:03 pm on 1 February, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "3485659d-5f7e-438c-9816-da8f3fbd5ae5",
+          "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力和柔软黄油饼干",
+          "distance": 0.7821503281593323,
+          "session_id": "session_29",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 16,
+          "id": "6d51b862-cffd-4d1e-8e5e-5fad8dea0ce3",
+          "content": "乔琳两年前（约2021年）感到孤独想要个伴，领养了苏茜",
+          "distance": 0.7901490926742554,
+          "session_id": "session_16",
+          "session_date": "9:26 am on 1 August, 2023"
+        },
+        {
+          "rank": 17,
+          "id": "77ff8eb4-0540-418f-91d9-7deb41c86806",
+          "content": "乔琳的伴侣已故的父亲示范了坚定决心；乔琳的妈妈教她坚持不懈、永不放弃；这些价值观指引着乔琳和伴侣追求各自的热爱（乔琳学工程，伴侣从事创作事业）",
+          "distance": 0.7922781705856323,
+          "session_id": "session_23",
+          "session_date": "11:46 am on 30 August, 2023"
+        },
+        {
+          "rank": 18,
+          "id": "692450fb-3c5e-4413-ad11-f964b18683d6",
+          "content": "乔琳有一位伴侣（男朋友），两人经常一起打游戏，乔琳觉得和他们玩游戏非常有趣",
+          "distance": 0.8053764700889587,
+          "session_id": "session_2",
+          "session_date": "9:49 am on 27 January, 2023"
+        },
+        {
+          "rank": 19,
+          "id": "80573166-380b-4a16-8cf3-518b5882b991",
+          "content": "乔琳的伴侣有时会和她一起做瑜伽，这让他们的关系更亲密（2023年2月对话中提到，附有两人牵手戴戒指的照片）",
+          "distance": 0.8091092109680176,
+          "session_id": "session_7",
+          "session_date": "4:50 pm on 25 February, 2023"
+        },
+        {
+          "rank": 20,
+          "id": "003eb6f9-3b40-4bc5-91df-0872e1195cc4",
+          "content": "乔琳养蛇，觉得和蛇在一起的宝贵时光教会她放慢脚步、与自己保持协调",
+          "distance": 0.8110478520393372,
+          "session_id": "session_12",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 21,
+          "id": "061ba09a-c301-4b82-a624-cfec400acbaf",
+          "content": "乔琳的大项目很难，但她一直在坚持推进，并感谢黛布的支持",
+          "distance": 0.8127837181091309,
+          "session_id": "session_25",
+          "session_date": "8:31 pm on 6 September, 2023"
+        },
+        {
+          "rank": 22,
+          "id": "a9b79b72-487a-44bd-a4bd-dae5e130723f",
+          "content": "乔琳和伴侣在里约热内卢参观了一座古老寺庙，走了令人惊艳的楼梯，还参加了很多远足活动",
+          "distance": 0.8135653734207153,
+          "session_id": "session_23",
+          "session_date": "11:46 am on 30 August, 2023"
+        },
+        {
+          "rank": 23,
+          "id": "9504398e-7248-412e-9448-07bbbba1c2f4",
+          "content": "乔琳的笔记本里有一句激励她的话，提醒她抛弃消极、专注于成长和保持积极",
+          "distance": 0.8174687623977661,
+          "session_id": "session_23",
+          "session_date": "11:46 am on 30 August, 2023"
+        },
+        {
+          "rank": 24,
+          "id": "924e8d98-5fb8-4c7d-a242-6ee5e2fd18a6",
+          "content": "乔琳在2023年6月底感到压力很大，一直在努力逼自己取得成功，但决心克服一切障碍、实现目标",
+          "distance": 0.832172155380249,
+          "session_id": "session_14",
+          "session_date": "9:17 am on 26 June, 2023"
+        },
+        {
+          "rank": 25,
+          "id": "fd9ebde3-baca-4c32-9742-242af2c49f84",
+          "content": "乔琳在2023年6月底的工程项目取得重大突破，感到非常激动和有成就感",
+          "distance": 0.8385610580444336,
+          "session_id": "session_14",
+          "session_date": "9:17 am on 26 June, 2023"
+        },
+        {
+          "rank": 26,
+          "id": "f1455645-db16-42df-a737-cb52619de275",
+          "content": "乔琳最喜欢和妈妈一起玩的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，视游戏为减压和暂时逃离生活的方式",
+          "distance": 0.8426015377044678,
+          "session_id": "session_24",
+          "session_date": "2:14 pm on 3 September, 2023"
+        },
+        {
+          "rank": 27,
+          "id": "faf9856c-31b7-4602-b248-56c6d01ae313",
+          "content": "乔琳在2023年9月中旬刚和伴侣旅行归来，去了一个瑜伽静修营，那里非常宁静，日出时绚丽的景色让她们感到充满活力和感激",
+          "distance": 0.8487969040870667,
+          "session_id": "session_30",
+          "session_date": "10:17 am on 20 September, 2023"
+        },
+        {
+          "rank": 28,
+          "id": "1b2166fd-fea1-4bcc-9b95-d46c80105157",
+          "content": "用户名叫黛布，她有一个朋友乔琳，两人于2023年1月23日的对话中初次认识",
+          "distance": 0.8527830243110657,
+          "session_id": "session_1",
+          "session_date": "4:06 pm on 23 January, 2023"
+        },
+        {
+          "rank": 29,
+          "id": "10f42cfe-40eb-44ce-9fb6-056455436fcd",
+          "content": "乔琳在2023年7月正努力把锻炼安排进学习计划里，觉得挺难但也很有趣",
+          "distance": 0.8555837869644165,
+          "session_id": "session_15",
+          "session_date": "7:37 pm on 9 July, 2023"
+        },
+        {
+          "rank": 30,
+          "id": "6710a382-2d9a-4e69-a6bb-f9d41207ee9f",
+          "content": "乔琳有一个被树木环绕的湖泊隐秘宝地，在那里感到特别平和安宁；她喜欢散步感受自然并拍摄风景照片，两人约定改天一起去那里",
+          "distance": 0.8580806255340576,
+          "session_id": "session_15",
+          "session_date": "7:37 pm on 9 July, 2023"
+        },
+        {
+          "rank": 31,
+          "id": "fe0a357e-1d62-4346-a1a6-1561575e8682",
+          "content": "乔琳和伴侣在2023年8月25日（上周五）聊了所爱的人如何影响他们以及他们价值观的意义，那次对话很动情但让他们更亲近",
+          "distance": 0.8591064214706421,
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 32,
+          "id": "01f94896-0fd1-4aa7-b07e-d779154a8f2f",
+          "content": "黛布鼓励乔琳在追求目标的同时享受旅程、给自己留时间寻找乐趣，并表示会一直支持她",
+          "distance": 0.8595420122146606,
+          "session_id": "session_21",
+          "session_date": "9:34 am on 24 August, 2023"
+        },
+        {
+          "rank": 33,
+          "id": "8e77c162-17d0-40f8-a6b2-08f5e3c7b106",
+          "content": "乔琳的最新子弹笔记排版上写有她最喜欢的一句励志名言，这张照片对她来说像小提醒，激励她坚持目标、永不放弃",
+          "distance": 0.8610810041427612,
+          "session_id": "session_18",
+          "session_date": "2:58 pm on 16 August, 2023"
+        },
+        {
+          "rank": 34,
+          "id": "2a23496f-f30b-4dae-9ff3-2c6056833ca2",
+          "content": "乔琳养蛇是因为对爬行动物很着迷，觉得蛇是完美宠物；照顾蛇让她平静，也是亲近自然的方式",
+          "distance": 0.8626798391342163,
+          "session_id": "session_15",
+          "session_date": "7:37 pm on 9 July, 2023"
+        },
+        {
+          "rank": 35,
+          "id": "92eff024-cc55-49e9-930b-ca19f4cdad8a",
+          "content": "乔琳与她的伴侣一起在主机上玩游戏，两人对游戏都很着迷；上周（2023年1月中旬）他们一起玩了《底特律》；乔琳从孩子时期就自己学会了玩游戏；他们计划在2023年1月28日（下周六）玩《Walking Dead》",
+          "distance": 0.8660730123519897,
+          "session_id": "session_2",
+          "session_date": "9:49 am on 27 January, 2023"
+        },
+        {
+          "rank": 36,
+          "id": "c817412e-d486-4400-a06f-7508f21e11c7",
+          "content": "乔琳的浴室很有美感，她曾在浴室里读过一本关于自我发现的书，感觉非常有共鸣",
+          "distance": 0.8661651611328125,
+          "session_id": "session_29",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 37,
+          "id": "091c0495-31ec-4890-a148-72d189386a6e",
+          "content": "乔琳感谢黛博拉的专辑推荐，答应去听《Sleep》",
+          "distance": 0.8696900606155396,
+          "session_id": "session_11",
+          "session_date": "4:03 pm on 28 March, 2023"
+        },
+        {
+          "rank": 38,
+          "id": "6cf2f756-9157-4819-ae9a-c9ad731ce439",
+          "content": "乔琳在2023年8月表示正把自我照顾放在优先位置，练习瑜伽和冥想来保持平衡和踏实",
+          "distance": 0.8753652572631836,
+          "session_id": "session_16",
+          "session_date": "9:26 am on 1 August, 2023"
+        },
+        {
+          "rank": 39,
+          "id": "41460471-9d98-417a-873d-0824b3f76a00",
+          "content": "截至2023年8月，乔琳的工程学学习进展顺利，她强调平衡生活对自己来说是关键",
+          "distance": 0.8777444362640381,
+          "session_id": "session_19",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 40,
+          "id": "6320aa07-c8f3-4dd9-92c2-baa9298da133",
+          "content": "乔琳在静修期间的工程项目上做出了成果，想出了一些很棒的解决方案，对此非常兴奋",
+          "distance": 0.8819773197174072,
+          "session_id": "session_5",
+          "session_date": "9:03 pm on 9 February, 2023"
+        },
+        {
+          "rank": 41,
+          "id": "f3b2b7a0-d8c8-4c35-acc1-bc48716952fa",
+          "content": "乔琳的职业目标是通过创造可持续的解决方案继续从事工程工作，为有需要的社区带来积极影响，用她的工作为让世界变得更美好贡献一份力量。",
+          "distance": 0.8828940987586975,
+          "session_id": "session_4",
+          "session_date": "9:48 am on 4 February, 2023"
+        },
+        {
+          "rank": 42,
+          "id": "61057b91-dc3f-4b4e-82a9-01b05ad00f39",
+          "content": "乔琳认为绿色科技可以给欠发达地区带来改变，想深入研究该领域，看看自己能做什么贡献",
+          "distance": 0.8831503391265869,
+          "session_id": "session_5",
+          "session_date": "9:03 pm on 9 February, 2023"
+        },
+        {
+          "rank": 43,
+          "id": "8ab94b8a-3551-4a66-a377-9432046d44ea",
+          "content": "乔琳曾和伴侣徒步旅行时偶然发现一处瀑布绿洲，那段宁静的经历让她烦恼全消、心旷神怡；她计划在2023年10月（下个月）再走进大自然亲近自然",
+          "distance": 0.8843433856964111,
+          "session_id": "session_30",
+          "session_date": "10:17 am on 20 September, 2023"
+        },
+        {
+          "rank": 44,
+          "id": "44aaaa6e-4865-4554-9605-eb90db9bc8ca",
+          "content": "乔琳的宠物蛇叫苏茜（不是塞拉菲姆），到2023年9月中旬她已养了苏茜两年，苏茜是个很好的伙伴",
+          "distance": 0.8846961259841919,
+          "session_id": "session_28",
+          "session_date": "3:09 pm on 15 September, 2023"
+        },
+        {
+          "rank": 45,
+          "id": "99699b6f-3b2b-4cc5-8479-8476fc9fb5de",
+          "content": "乔琳是一名电气工程相关从业者，在2023年1月中旬（对话前一周）完成了一个电气工程项目，花费了很多功夫",
+          "distance": 0.8876305818557739,
+          "session_id": "session_1",
+          "session_date": "4:06 pm on 23 January, 2023"
+        }
+      ],
+      "tracked_vector_ranks": {
+        "target": null,
+        "distractor": 5
+      }
+    },
+    {
+      "arm": "subject_masked",
+      "query": "妈妈的老朋友们做了什么？",
+      "vector_top45": [
+        {
+          "rank": 1,
+          "id": "53330642-0df8-47e7-9a80-7730d6b95834",
+          "content": "黛布自2023年9月中旬以来与已故母亲的老朋友们重新取得联系，一起回忆往事、翻看母亲的照片，听到了许多以前从未听过的关于母亲的故事，既开心又难过，感到心情复杂但总体上很受安慰",
+          "distance": 0.8539862632751465,
+          "session_id": "session_28",
+          "session_date": "3:09 pm on 15 September, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "af5f1fb4-ae6a-420c-9983-c607f3ed1dc8",
+          "content": "旅行是黛布已故母亲的一大热情",
+          "distance": 1.0341721773147583,
+          "session_id": "session_2",
+          "session_date": "9:49 am on 27 January, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "12a3fa42-51bd-4022-b74f-df638b0a240b",
+          "content": "黛布的瑜伽伙伴们就像她的第二个家庭，大家互相支撑；她前几天找到了一张自己刚开始练瑜伽时的老照片",
+          "distance": 1.0393428802490234,
+          "session_id": "session_24",
+          "session_date": "2:14 pm on 3 September, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "0e60bab4-2102-438d-a10c-57db822e7f95",
+          "content": "乔琳热衷于提出新想法、提高效率、用工程才能做好事，并牢记妈妈强调的帮助他人的价值",
+          "distance": 1.0572013854980469,
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "8511340e-a302-4aca-bfab-e066c0d825a1",
+          "content": "黛布的母亲几年前去世了；2023年1月中旬黛布去了母亲的老房子，那里充满回忆，她还分享了与母亲最后一张合影（照片中两人坐在轮椅上拥抱）",
+          "distance": 1.0859649181365967,
+          "session_id": "session_1",
+          "session_date": "4:06 pm on 23 January, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "154889c4-351d-45e9-83f2-cca180538deb",
+          "content": "黛布的妈妈非常热爱烹饪，总会为家人做出充满爱和温暖的饭菜，她拿手菜的香味会弥漫整个屋子，把一家人聚在一起",
+          "distance": 1.0899064540863037,
+          "session_id": "session_29",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "b41c9621-4262-4188-92cc-b29a3f962a63",
+          "content": "黛布于2023年9月10日（星期日）去了妈妈的老房子，坐在长椅上，感觉是一次令人欣慰的经历，仿佛能感觉到妈妈的存在的指引和爱",
+          "distance": 1.096015453338623,
+          "session_id": "session_29",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "5f285239-4232-4c94-9f17-b07ab54dcf0c",
+          "content": "乔琳的妈妈已经去世，她教会乔琳坚持不懈；乔琳伴侣的爸爸也已去世，示范了坚定决心；乔琳学工程，伴侣从事创作事业，他们通过追求各自的热爱来纪念他们",
+          "distance": 1.1054649353027344,
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "70d6ac22-5782-4704-8d72-3d314f935697",
+          "content": "黛布小时候妈妈总会为她烤菠萝生日蛋糕，这让她觉得自己特别受宠爱",
+          "distance": 1.1088974475860596,
+          "session_id": "session_29",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "d2d5a3b3-a429-4c57-a4d5-1a51b941fe8b",
+          "content": "黛布的母亲生前每天晚上都会坐在老房子窗边的位置，带着一本书和微笑阅读，阅读是她的爱好之一，那是她在家里最喜欢的地方之一",
+          "distance": 1.1097190380096436,
+          "session_id": "session_2",
+          "session_date": "9:49 am on 27 January, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "a31022c2-ceda-4560-aa0f-a473ce43dd0c",
+          "content": "黛布有时会去已故母亲的老房子做瑜伽，坐在窗边的位置让她感到平静，能感觉到母亲的存在并感到安慰",
+          "distance": 1.1178879737854004,
+          "session_id": "session_2",
+          "session_date": "9:49 am on 27 January, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "c84272ce-9d9b-4869-b454-ed8a8adcfc45",
+          "content": "黛布的妈妈是她最大的粉丝和动力来源，经常陪她一起去上瑜伽课",
+          "distance": 1.1191112995147705,
+          "session_id": "session_24",
+          "session_date": "2:14 pm on 3 September, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "c6ff20f6-ece4-490a-92ea-55d0e89b97ac",
+          "content": "黛布在2023年4月9日和朋友去看了艺术展，觉得展品很酷、很有启发，让她想起了已故的母亲",
+          "distance": 1.1256928443908691,
+          "session_id": "session_12",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "669b69d5-9cfe-4e6f-be9c-3c322a261cdc",
+          "content": "黛布的妈妈已经去世，她的妈妈对她影响深远，黛布认为铭记所爱的人很重要",
+          "distance": 1.1288912296295166,
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "c67ca95e-435c-4cb6-a57b-79ca48ce8cd6",
+          "content": "乔琳的母亲于2022年（对话前一年）去世；乔琳分享了一张母亲房子里自己房间的照片（有长椅和窗户），那里有很多回忆",
+          "distance": 1.1373045444488525,
+          "session_id": "session_1",
+          "session_date": "4:06 pm on 23 January, 2023"
+        },
+        {
+          "rank": 16,
+          "id": "6e995e85-93e8-4b10-9b04-6709f50d9439",
+          "content": "黛布喜欢去她已故母亲老房子附近的水边缅怀母亲，回忆她的一生并找到安宁。每次去她都会带着母亲的心形项链护身符，握着它让她感到安慰，是她感受母亲的爱、与她保持亲近的方式。",
+          "distance": 1.1481947898864746,
+          "session_id": "session_4",
+          "session_date": "9:48 am on 4 February, 2023"
+        },
+        {
+          "rank": 17,
+          "id": "24dc381e-ecbd-4cb0-af0e-ccebdc253a5e",
+          "content": "黛布在社区里开了一个瑜伽班，在周五为邻居们办课；教瑜伽让她感到幸福，帮她交到了很多好朋友并建立社区联系（2023年3月中旬）",
+          "distance": 1.1720876693725586,
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023"
+        },
+        {
+          "rank": 18,
+          "id": "c966b90e-498e-449c-b094-e6acf0c41f8a",
+          "content": "黛布于2023年9月16日（对话前一天）和邻居为社区办了一个免费园艺课，各个年龄段的人都来参加了，她觉得很美好，认为园艺能把大家凝聚在一起，分享对植物的热爱让她很开心",
+          "distance": 1.1743266582489014,
+          "session_id": "session_29",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 19,
+          "id": "4b7a62e1-8410-4be3-bdaa-caddc69440e7",
+          "content": "黛布在2023年8月（上个月）去了她已故母亲的房子，那里是她心中特殊的地方，象征着母亲的坚强意志和她与母亲之间的爱；她丈夫在那栋房子前拍了照片",
+          "distance": 1.1768579483032227,
+          "session_id": "session_23",
+          "session_date": "11:46 am on 30 August, 2023"
+        },
+        {
+          "rank": 20,
+          "id": "4834918a-3c66-4922-814b-3fec4225023d",
+          "content": "黛布有一条让她想起母亲的吊坠首饰",
+          "distance": 1.1782454252243042,
+          "session_id": "session_1",
+          "session_date": "4:06 pm on 23 January, 2023"
+        },
+        {
+          "rank": 21,
+          "id": "40f5e14c-ce1a-475b-9cfe-207e14a00bd0",
+          "content": "黛布的母亲生前喜欢每天早上坐在老房子窗边的特别长椅上看风景；黛布有时会去坐那张长椅，感觉与母亲依然相连",
+          "distance": 1.1803698539733887,
+          "session_id": "session_1",
+          "session_date": "4:06 pm on 23 January, 2023"
+        },
+        {
+          "rank": 22,
+          "id": "77ff8eb4-0540-418f-91d9-7deb41c86806",
+          "content": "乔琳的伴侣已故的父亲示范了坚定决心；乔琳的妈妈教她坚持不懈、永不放弃；这些价值观指引着乔琳和伴侣追求各自的热爱（乔琳学工程，伴侣从事创作事业）",
+          "distance": 1.1819615364074707,
+          "session_id": "session_23",
+          "session_date": "11:46 am on 30 August, 2023"
+        },
+        {
+          "rank": 23,
+          "id": "31448b2b-f86e-41d1-82a9-2b9675630a86",
+          "content": "黛布的妈妈特别喜欢花，花总能让她特别开心；她懂得放慢节奏、发现花中的美并从中找到快乐，教会了黛布欣赏生活中简单的事物",
+          "distance": 1.1881965398788452,
+          "session_id": "session_20",
+          "session_date": "9:11 am on 21 August, 2023"
+        },
+        {
+          "rank": 24,
+          "id": "f4d6b1ab-213a-4312-8187-46270d949392",
+          "content": "黛布在2023年3月22日左右分享了一张社区瑜伽课的合影，照片中是一群微笑的女性",
+          "distance": 1.1886348724365234,
+          "session_id": "session_10",
+          "session_date": "5:35 pm on 22 March, 2023"
+        },
+        {
+          "rank": 25,
+          "id": "e0698ba4-4f2a-4249-a4d8-3559741e574f",
+          "content": "黛布的邻居安娜也戴着一个纪念她母亲的吊坠，这一共同点让黛布和安娜更加亲近。",
+          "distance": 1.198404312133789,
+          "session_id": "session_4",
+          "session_date": "9:48 am on 4 February, 2023"
+        },
+        {
+          "rank": 26,
+          "id": "8435ff2e-ae70-413f-a19d-f7c0d22b3604",
+          "content": "一位已故的朋友曾写给黛布一句话：'放下那些不再对你有益的东西。'她很想念这位朋友",
+          "distance": 1.1999578475952148,
+          "session_id": "session_23",
+          "session_date": "11:46 am on 30 August, 2023"
+        },
+        {
+          "rank": 27,
+          "id": "77081ed6-6c37-47db-9eb6-1ccdfa635366",
+          "content": "黛布相信自我照顾的重要性，信奉'空杯子倒不出水来'的理念——照顾好自己才有精力帮助别人，并鼓励乔琳也把自己放在首位",
+          "distance": 1.2082059383392334,
+          "session_id": "session_7",
+          "session_date": "4:50 pm on 25 February, 2023"
+        },
+        {
+          "rank": 28,
+          "id": "54fb1599-1b26-4026-8cc0-95c20d835e39",
+          "content": "黛布于2023年3月在社区里开办了一个瑜伽班，周五为邻居们上了一节课，邻居们对此很感兴趣并乐在其中，她感到特别开心",
+          "distance": 1.209716558456421,
+          "session_id": "session_9",
+          "session_date": "11:22 am on 13 March, 2023"
+        },
+        {
+          "rank": 29,
+          "id": "a9b79b72-487a-44bd-a4bd-dae5e130723f",
+          "content": "乔琳和伴侣在里约热内卢参观了一座古老寺庙，走了令人惊艳的楼梯，还参加了很多远足活动",
+          "distance": 1.2115341424942017,
+          "session_id": "session_23",
+          "session_date": "11:46 am on 30 August, 2023"
+        },
+        {
+          "rank": 30,
+          "id": "fc4dc9af-dc94-4f17-857e-3d03095a769f",
+          "content": "那条长椅承载着黛布和妈妈的许多特别回忆——她们常在那里聊梦想和生活，还曾一起默默看过一次美丽动人的日落；每次回去她都感到平静，并对和妈妈共度的时光心怀感激",
+          "distance": 1.217479944229126,
+          "session_id": "session_19",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 31,
+          "id": "59936fa8-f053-4f13-b832-c9618601a1a5",
+          "content": "黛布的音乐节经历让她想起妈妈唱摇篮曲哄她入睡时温柔的声音，她很珍惜这些回忆",
+          "distance": 1.2189750671386719,
+          "session_id": "session_30",
+          "session_date": "10:17 am on 20 September, 2023"
+        },
+        {
+          "rank": 32,
+          "id": "9f858349-324d-4fa9-9982-74b52b21edea",
+          "content": "乔琳（黛布的朋友）的目标是在自己的领域取得成功并产生积极影响，为此一直在学习、参加研讨会和拓展人脉",
+          "distance": 1.2198500633239746,
+          "session_id": "session_21",
+          "session_date": "9:34 am on 24 August, 2023"
+        },
+        {
+          "rank": 33,
+          "id": "d2e2e49f-f93f-4dd4-a604-2b8e5e0397f3",
+          "content": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒，玩得很开心，感到很放松（附有朋友举杯和食物、红酒的照片）",
+          "distance": 1.2200369834899902,
+          "session_id": "session_6",
+          "session_date": "4:12 pm on 22 February, 2023"
+        },
+        {
+          "rank": 34,
+          "id": "7629bb61-f99b-4f4b-8bda-467536d0dada",
+          "content": "父亲去世后，黛布和家人一起翻看了家庭相册，照片在困难时期给她带来平静；她分享了父母1993年婚礼的照片",
+          "distance": 1.2221362590789795,
+          "session_id": "session_2",
+          "session_date": "9:49 am on 27 January, 2023"
+        },
+        {
+          "rank": 35,
+          "id": "307e49e6-eb69-494a-98db-8c271bb81d8b",
+          "content": "黛布的母亲生前对艺术很感兴趣，相信艺术能传递强烈情感、以独特方式把人联系在一起；黛布看艺术展时感觉仿佛仍和母亲一起体验，虽然难受但也令人欣慰",
+          "distance": 1.2262630462646484,
+          "session_id": "session_12",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 36,
+          "id": "a133f6b0-1ee5-4eb1-bea2-9d8463186595",
+          "content": "黛布在2023年8月下旬参加了妈妈住处附近的一个瑜伽静修营，亲近大自然并真正认识了自己，认为这是改变人生的经历",
+          "distance": 1.227433681488037,
+          "session_id": "session_22",
+          "session_date": "5:33 pm on 26 August, 2023"
+        },
+        {
+          "rank": 37,
+          "id": "cf864665-7c01-4fdf-ac2f-d2aabb86aaee",
+          "content": "黛布分享了一张两个孩子在房间里站在瑜伽垫上的照片",
+          "distance": 1.2295401096343994,
+          "session_id": "session_27",
+          "session_date": "2:18 pm on 12 September, 2023"
+        },
+        {
+          "rank": 38,
+          "id": "2af936f8-5031-44c5-866b-cd803546bcf7",
+          "content": "乔琳和伴侣经常用《胡闹厨房2》打赌，她赢过三个大披萨",
+          "distance": 1.2316296100616455,
+          "session_id": "session_19",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 39,
+          "id": "2290dda6-70d6-447c-9d28-a6f66921c986",
+          "content": "乔琳忙碌一天后会和伴侣一起打电子游戏放松，这让两人更亲密",
+          "distance": 1.2344586849212646,
+          "session_id": "session_12",
+          "session_date": "4:30 pm on 9 April, 2023"
+        },
+        {
+          "rank": 40,
+          "id": "b60fa0bf-0f37-4a2f-92c9-80c42b772cca",
+          "content": "黛布以前玩过一些电子游戏但已经很久没玩，她认为游戏是忙碌一天后放松的好方式；她以前常和丈夫一起轮流玩游戏，最喜欢一起玩侦探游戏",
+          "distance": 1.237191915512085,
+          "session_id": "session_19",
+          "session_date": "12:52 am on 19 August, 2023"
+        },
+        {
+          "rank": 41,
+          "id": "3485659d-5f7e-438c-9816-da8f3fbd5ae5",
+          "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力和柔软黄油饼干",
+          "distance": 1.2442405223846436,
+          "session_id": "session_29",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "rank": 42,
+          "id": "290e64f6-c1f0-4371-a3c9-469e556fbbfb",
+          "content": "黛布有一束朋友在她人生低谷时送的花束（插在花瓶中），它给了她希望和勇气，每次看到都让她心中充满温暖和感激。",
+          "distance": 1.246264934539795,
+          "session_id": "session_4",
+          "session_date": "9:48 am on 4 February, 2023"
+        },
+        {
+          "rank": 43,
+          "id": "26bfebdc-bdde-411b-850b-dd3c81ea0c7b",
+          "content": "乔琳在艰难时期靠宠物蛇苏茜的陪伴获得安慰，电子游戏也是她的消遣方式",
+          "distance": 1.2473258972167969,
+          "session_id": "session_16",
+          "session_date": "9:26 am on 1 August, 2023"
+        },
+        {
+          "rank": 44,
+          "id": "6f9c8fdb-b590-4b4a-93eb-34a383deb94e",
+          "content": "黛布的妈妈对艺术很感兴趣，相信艺术能传递强烈情感并以独特方式把人联系在一起；妈妈已经去世，黛布每次去艺术展都感觉像仍和妈妈在一起体验，这虽难受但也令人欣慰，让她在艺术中找到慰藉、内心平静",
+          "distance": 1.2473828792572021,
+          "session_id": "session_13",
+          "session_date": "3:56 pm on 6 June, 2023"
+        },
+        {
+          "rank": 45,
+          "id": "fd1bc6c3-ac92-4690-9f21-cc2cd1a2c48c",
+          "content": "黛布（用户）在2023年8月上旬日落时分在当地一家养老院带领老年人做了一场冥想瑜伽，她认为大自然对寻找内心平静很有帮助",
+          "distance": 1.2499175071716309,
+          "session_id": "session_18",
+          "session_date": "2:58 pm on 16 August, 2023"
+        }
+      ],
+      "tracked_vector_ranks": {
+        "target": 1,
+        "distractor": 33
+      }
+    }
+  ],
+  "embedding_calls_total": 3,
+  "vector_salvage_completed": true,
+  "chroma_sqlite_sha256_after_salvage": "019e9abc2158825ce9ab7aea865ccaef0fffe5dde6a4871fa074ff3c03b78fd8",
+  "initial_rerank_input_issue": "Chroma documents are null for this Mem0 collection; content is in embedding_metadata.data. The first rerank request received null documents, so its RerankError does not diagnose service availability.",
+  "rerank_salvage": [
+    {
+      "arm": "original",
+      "query": "乔琳和妈妈的老朋友们做了什么？",
+      "rerank_top15": [
+        {
+          "rank": 1,
+          "id": "5f285239-4232-4c94-9f17-b07ab54dcf0c",
+          "content": "乔琳的妈妈已经去世，她教会乔琳坚持不懈；乔琳伴侣的爸爸也已去世，示范了坚定决心；乔琳学工程，伴侣从事创作事业，他们通过追求各自的热爱来纪念他们",
+          "score": 0.74437248760049,
+          "vector_rank": 3
+        },
+        {
+          "rank": 2,
+          "id": "d2e2e49f-f93f-4dd4-a604-2b8e5e0397f3",
+          "content": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒，玩得很开心，感到很放松（附有朋友举杯和食物、红酒的照片）",
+          "score": 0.7381085546119238,
+          "vector_rank": 5
+        },
+        {
+          "rank": 3,
+          "id": "3485659d-5f7e-438c-9816-da8f3fbd5ae5",
+          "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力和柔软黄油饼干",
+          "score": 0.7194389197044487,
+          "vector_rank": 15
+        },
+        {
+          "rank": 4,
+          "id": "0e60bab4-2102-438d-a10c-57db822e7f95",
+          "content": "乔琳热衷于提出新想法、提高效率、用工程才能做好事，并牢记妈妈强调的帮助他人的价值",
+          "score": 0.6823313967082374,
+          "vector_rank": 1
+        },
+        {
+          "rank": 5,
+          "id": "a9b79b72-487a-44bd-a4bd-dae5e130723f",
+          "content": "乔琳和伴侣在里约热内卢参观了一座古老寺庙，走了令人惊艳的楼梯，还参加了很多远足活动",
+          "score": 0.6644132387000976,
+          "vector_rank": 22
+        },
+        {
+          "rank": 6,
+          "id": "9f858349-324d-4fa9-9982-74b52b21edea",
+          "content": "乔琳（黛布的朋友）的目标是在自己的领域取得成功并产生积极影响，为此一直在学习、参加研讨会和拓展人脉",
+          "score": 0.6514423506230641,
+          "vector_rank": 7
+        },
+        {
+          "rank": 7,
+          "id": "92eff024-cc55-49e9-930b-ca19f4cdad8a",
+          "content": "乔琳与她的伴侣一起在主机上玩游戏，两人对游戏都很着迷；上周（2023年1月中旬）他们一起玩了《底特律》；乔琳从孩子时期就自己学会了玩游戏；他们计划在2023年1月28日（下周六）玩《Walking Dead》",
+          "score": 0.6141285887246466,
+          "vector_rank": 35
+        },
+        {
+          "rank": 8,
+          "id": "2af936f8-5031-44c5-866b-cd803546bcf7",
+          "content": "乔琳和伴侣经常用《胡闹厨房2》打赌，她赢过三个大披萨",
+          "score": 0.6067309986978391,
+          "vector_rank": 12
+        },
+        {
+          "rank": 9,
+          "id": "f1455645-db16-42df-a737-cb52619de275",
+          "content": "乔琳最喜欢和妈妈一起玩的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，视游戏为减压和暂时逃离生活的方式",
+          "score": 0.5997195552639613,
+          "vector_rank": 26
+        },
+        {
+          "rank": 10,
+          "id": "01f94896-0fd1-4aa7-b07e-d779154a8f2f",
+          "content": "黛布鼓励乔琳在追求目标的同时享受旅程、给自己留时间寻找乐趣，并表示会一直支持她",
+          "score": 0.5946768688210626,
+          "vector_rank": 32
+        },
+        {
+          "rank": 11,
+          "id": "26bfebdc-bdde-411b-850b-dd3c81ea0c7b",
+          "content": "乔琳在艰难时期靠宠物蛇苏茜的陪伴获得安慰，电子游戏也是她的消遣方式",
+          "score": 0.579368852910427,
+          "vector_rank": 2
+        },
+        {
+          "rank": 12,
+          "id": "f9f35e3b-c552-4389-a4f0-9f3f1d59d0f0",
+          "content": "乔琳和伴侣是在大学的一门工程课上认识的，先成为朋友，友谊后来发展成恋爱关系，两人还喜欢一起做工程项目",
+          "score": 0.5791180804810722,
+          "vector_rank": 8
+        },
+        {
+          "rank": 13,
+          "id": "77ff8eb4-0540-418f-91d9-7deb41c86806",
+          "content": "乔琳的伴侣已故的父亲示范了坚定决心；乔琳的妈妈教她坚持不懈、永不放弃；这些价值观指引着乔琳和伴侣追求各自的热爱（乔琳学工程，伴侣从事创作事业）",
+          "score": 0.5780166635018226,
+          "vector_rank": 17
+        },
+        {
+          "rank": 14,
+          "id": "091c0495-31ec-4890-a148-72d189386a6e",
+          "content": "乔琳感谢黛博拉的专辑推荐，答应去听《Sleep》",
+          "score": 0.5717378123428548,
+          "vector_rank": 37
+        },
+        {
+          "rank": 15,
+          "id": "3d4a0b28-db4e-4abf-b959-39f07551c510",
+          "content": "乔琳没有考虑重新练瑜伽，她和伴侣计划一起玩主机游戏",
+          "score": 0.562026751336823,
+          "vector_rank": 14
+        }
+      ],
+      "tracked_rerank_ranks": {
+        "target": null,
+        "distractor": 2
+      },
+      "rerank_endpoint_style": "dashscope native text-rerank"
+    },
+    {
+      "arm": "subject_masked",
+      "query": "妈妈的老朋友们做了什么？",
+      "rerank_top15": [
+        {
+          "rank": 1,
+          "id": "53330642-0df8-47e7-9a80-7730d6b95834",
+          "content": "黛布自2023年9月中旬以来与已故母亲的老朋友们重新取得联系，一起回忆往事、翻看母亲的照片，听到了许多以前从未听过的关于母亲的故事，既开心又难过，感到心情复杂但总体上很受安慰",
+          "score": 0.9588578484160752,
+          "vector_rank": 1
+        },
+        {
+          "rank": 2,
+          "id": "c6ff20f6-ece4-490a-92ea-55d0e89b97ac",
+          "content": "黛布在2023年4月9日和朋友去看了艺术展，觉得展品很酷、很有启发，让她想起了已故的母亲",
+          "score": 0.6869719414741995,
+          "vector_rank": 13
+        },
+        {
+          "rank": 3,
+          "id": "d2e2e49f-f93f-4dd4-a604-2b8e5e0397f3",
+          "content": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒，玩得很开心，感到很放松（附有朋友举杯和食物、红酒的照片）",
+          "score": 0.6428901332108343,
+          "vector_rank": 33
+        },
+        {
+          "rank": 4,
+          "id": "290e64f6-c1f0-4371-a3c9-469e556fbbfb",
+          "content": "黛布有一束朋友在她人生低谷时送的花束（插在花瓶中），它给了她希望和勇气，每次看到都让她心中充满温暖和感激。",
+          "score": 0.6318454477220135,
+          "vector_rank": 42
+        },
+        {
+          "rank": 5,
+          "id": "9f858349-324d-4fa9-9982-74b52b21edea",
+          "content": "乔琳（黛布的朋友）的目标是在自己的领域取得成功并产生积极影响，为此一直在学习、参加研讨会和拓展人脉",
+          "score": 0.6240156754134417,
+          "vector_rank": 32
+        },
+        {
+          "rank": 6,
+          "id": "a31022c2-ceda-4560-aa0f-a473ce43dd0c",
+          "content": "黛布有时会去已故母亲的老房子做瑜伽，坐在窗边的位置让她感到平静，能感觉到母亲的存在并感到安慰",
+          "score": 0.6216183799991071,
+          "vector_rank": 11
+        },
+        {
+          "rank": 7,
+          "id": "24dc381e-ecbd-4cb0-af0e-ccebdc253a5e",
+          "content": "黛布在社区里开了一个瑜伽班，在周五为邻居们办课；教瑜伽让她感到幸福，帮她交到了很多好朋友并建立社区联系（2023年3月中旬）",
+          "score": 0.6177047943968462,
+          "vector_rank": 17
+        },
+        {
+          "rank": 8,
+          "id": "fc4dc9af-dc94-4f17-857e-3d03095a769f",
+          "content": "那条长椅承载着黛布和妈妈的许多特别回忆——她们常在那里聊梦想和生活，还曾一起默默看过一次美丽动人的日落；每次回去她都感到平静，并对和妈妈共度的时光心怀感激",
+          "score": 0.6047038406813163,
+          "vector_rank": 30
+        },
+        {
+          "rank": 9,
+          "id": "c966b90e-498e-449c-b094-e6acf0c41f8a",
+          "content": "黛布于2023年9月16日（对话前一天）和邻居为社区办了一个免费园艺课，各个年龄段的人都来参加了，她觉得很美好，认为园艺能把大家凝聚在一起，分享对植物的热爱让她很开心",
+          "score": 0.5843804208992935,
+          "vector_rank": 18
+        },
+        {
+          "rank": 10,
+          "id": "12a3fa42-51bd-4022-b74f-df638b0a240b",
+          "content": "黛布的瑜伽伙伴们就像她的第二个家庭，大家互相支撑；她前几天找到了一张自己刚开始练瑜伽时的老照片",
+          "score": 0.5781610333045135,
+          "vector_rank": 3
+        },
+        {
+          "rank": 11,
+          "id": "c84272ce-9d9b-4869-b454-ed8a8adcfc45",
+          "content": "黛布的妈妈是她最大的粉丝和动力来源，经常陪她一起去上瑜伽课",
+          "score": 0.5624085579025542,
+          "vector_rank": 12
+        },
+        {
+          "rank": 12,
+          "id": "a133f6b0-1ee5-4eb1-bea2-9d8463186595",
+          "content": "黛布在2023年8月下旬参加了妈妈住处附近的一个瑜伽静修营，亲近大自然并真正认识了自己，认为这是改变人生的经历",
+          "score": 0.5617421205043956,
+          "vector_rank": 36
+        },
+        {
+          "rank": 13,
+          "id": "8511340e-a302-4aca-bfab-e066c0d825a1",
+          "content": "黛布的母亲几年前去世了；2023年1月中旬黛布去了母亲的老房子，那里充满回忆，她还分享了与母亲最后一张合影（照片中两人坐在轮椅上拥抱）",
+          "score": 0.5493846132482267,
+          "vector_rank": 5
+        },
+        {
+          "rank": 14,
+          "id": "a9b79b72-487a-44bd-a4bd-dae5e130723f",
+          "content": "乔琳和伴侣在里约热内卢参观了一座古老寺庙，走了令人惊艳的楼梯，还参加了很多远足活动",
+          "score": 0.5480501496383515,
+          "vector_rank": 29
+        },
+        {
+          "rank": 15,
+          "id": "fd1bc6c3-ac92-4690-9f21-cc2cd1a2c48c",
+          "content": "黛布（用户）在2023年8月上旬日落时分在当地一家养老院带领老年人做了一场冥想瑜伽，她认为大自然对寻找内心平静很有帮助",
+          "score": 0.5354396180367869,
+          "vector_rank": 45
+        }
+      ],
+      "tracked_rerank_ranks": {
+        "target": 1,
+        "distractor": 3
+      },
+      "rerank_endpoint_style": "dashscope native text-rerank"
+    }
+  ],
+  "logical_rerank_calls_total": 3,
+  "rerank_salvage_completed": true,
+  "post_run_storage_check": {
+    "sqlite_quick_check": "ok",
+    "conv48_user_metadata_rows": 224,
+    "tracked_contents": {
+      "target": {
+        "id": "53330642-0df8-47e7-9a80-7730d6b95834",
+        "content": "黛布自2023年9月中旬以来与已故母亲的老朋友们重新取得联系，一起回忆往事、翻看母亲的照片，听到了许多以前从未听过的关于母亲的故事，既开心又难过，感到心情复杂但总体上很受安慰"
+      },
+      "distractor": {
+        "id": "d2e2e49f-f93f-4dd4-a604-2b8e5e0397f3",
+        "content": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒，玩得很开心，感到很放松（附有朋友举杯和食物、红酒的照片）"
+      }
+    }
+  }
+}
