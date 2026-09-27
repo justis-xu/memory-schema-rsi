@@ -1,0 +1,201 @@
+{
+  "scope": "Eight previously question-text-selected Chinese two-person cases; current Chroma memory and cached graph extraction only; zero model or graph calls",
+  "inputs_sha256": {
+    "retrieval": "eb57da0c43edb09179d5fa40df9afdcd61824210b7ded3e5abc7aca0cd6d20e2",
+    "structured": "95265ac274243c67f3199bf048c98b3d5916a5e097b51c223c1146cfaede549d",
+    "topic": "f845ab40a07374eb6b0a9caff35e4dbb82b798e340cf7f48b534a5c49c0371f4",
+    "embedding": "bae1c42acba31b67a56b43d996e207237b8c0a122dcba3d78a1277a05520d2e4"
+  },
+  "current_id_content_user_session_sha256": "61e015ce36e4f137db6c0466d835d4d0cee714a17d9fcdf4e24156c7f25cdbd9",
+  "selection_note": "Six required-fact memory exemplars in the three cached cases were manually selected after inspecting archived answers; they are diagnostics, not an unbiased sample or retrieval input.",
+  "cases": [
+    {
+      "case_id": "locomo_conv-26_qa55",
+      "question": "卡罗琳和梅拉妮都画过什么主题？",
+      "user_id": "zhfull:locomo:conv-26",
+      "current_memory_count": 138,
+      "structured_cached_count": 137,
+      "topic_cached_count": 137,
+      "embedding_cached_count": 138,
+      "original_top15_structured_cached_count": 14,
+      "fact_pair": [
+        {
+          "id": "2b624cc0-657d-4c6a-9837-269ce8550ca4",
+          "memory_content": "卡罗琳于2023年8月完成了一幅日落海滩画作，灵感来自她上周（2023年8月中旬）去海边看太阳沉入地平线的经历，那些绚丽的色彩既震撼又让人平静",
+          "original_top15_rank": null,
+          "structured_cached": true,
+          "entity_names": [
+            "卡罗琳",
+            "日落海滩画作",
+            "海边看日落"
+          ],
+          "event_names": [
+            "完成了日落海滩画作",
+            "去海边看日落"
+          ]
+        },
+        {
+          "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+          "memory_content": "梅拉妮于2023年10月初（对话前一周）画了一幅日落画，灵感来自日落，鲜艳的颜色让她感到平静",
+          "original_top15_rank": 14,
+          "structured_cached": true,
+          "entity_names": [
+            "梅拉妮",
+            "日落画"
+          ],
+          "event_names": [
+            "画了一幅日落画"
+          ]
+        }
+      ],
+      "fact_pair_exact_shared_entity_names": []
+    },
+    {
+      "case_id": "locomo_conv-30_qa18",
+      "question": "乔恩和吉娜都是出于自己热爱的事情创业的吗？",
+      "user_id": "zhfull:locomo:conv-30",
+      "current_memory_count": 102,
+      "structured_cached_count": 80,
+      "topic_cached_count": 101,
+      "embedding_cached_count": 102,
+      "original_top15_structured_cached_count": 11,
+      "fact_pair": [
+        {
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "memory_content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+          "original_top15_rank": 1,
+          "structured_cached": true,
+          "entity_names": [
+            "Jon",
+            "dance",
+            "dance studio"
+          ],
+          "event_names": []
+        },
+        {
+          "id": "5931c7af-9d38-4bfa-a6f0-4d8e8179c4b3",
+          "memory_content": "吉娜的网上服装店于2023年3月16日左右正式开张，这是她梦想已久的事；开店动机是她热衷时尚潮流和淘独特单品，并希望把对舞蹈和时尚的热爱结合起来",
+          "original_top15_rank": 2,
+          "structured_cached": true,
+          "entity_names": [
+            "Gina",
+            "online clothing store",
+            "fashion",
+            "dance"
+          ],
+          "event_names": [
+            "launched online clothing store"
+          ]
+        }
+      ],
+      "fact_pair_exact_shared_entity_names": [
+        "dance"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa27",
+      "question": "乔恩和吉娜都参加过舞蹈比赛吗？",
+      "user_id": "zhfull:locomo:conv-30",
+      "current_memory_count": 102,
+      "structured_cached_count": 80,
+      "topic_cached_count": 101,
+      "embedding_cached_count": 102,
+      "original_top15_structured_cached_count": 11,
+      "fact_pair": [
+        {
+          "id": "9fbb9b83-a653-40e9-882e-d0afacce9e98",
+          "memory_content": "去年（2022年），乔恩的舞蹈团队在当地舞蹈比赛中获得第一名；一张他在舞台上穿西装表演的照片记录了这一时刻。",
+          "original_top15_rank": 2,
+          "structured_cached": true,
+          "entity_names": [
+            "Jon",
+            "Jon's dance team"
+          ],
+          "event_names": [
+            "Jon's dance team won first place in local dance competition"
+          ]
+        },
+        {
+          "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+          "memory_content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。",
+          "original_top15_rank": 4,
+          "structured_cached": true,
+          "entity_names": [
+            "Gina",
+            "dance"
+          ],
+          "event_names": [
+            "dance team won first place at regional dance competition"
+          ]
+        }
+      ],
+      "fact_pair_exact_shared_entity_names": []
+    },
+    {
+      "case_id": "locomo_conv-41_qa3",
+      "question": "约翰和玛丽亚都做过什么类型的志愿服务？",
+      "user_id": "zhfull:locomo:conv-41",
+      "current_memory_count": 209,
+      "structured_cached_count": 0,
+      "topic_cached_count": 0,
+      "embedding_cached_count": 0,
+      "original_top15_structured_cached_count": 0,
+      "fact_pair": [],
+      "fact_pair_exact_shared_entity_names": null
+    },
+    {
+      "case_id": "locomo_conv-42_qa42",
+      "question": "乔安娜和内特都看过哪些电影？",
+      "user_id": "zhfull:locomo:conv-42",
+      "current_memory_count": 195,
+      "structured_cached_count": 0,
+      "topic_cached_count": 0,
+      "embedding_cached_count": 0,
+      "original_top15_structured_cached_count": 0,
+      "fact_pair": [],
+      "fact_pair_exact_shared_entity_names": null
+    },
+    {
+      "case_id": "locomo_conv-42_qa56",
+      "question": "内特和乔安娜都喜欢什么动物？",
+      "user_id": "zhfull:locomo:conv-42",
+      "current_memory_count": 195,
+      "structured_cached_count": 0,
+      "topic_cached_count": 0,
+      "embedding_cached_count": 0,
+      "original_top15_structured_cached_count": 0,
+      "fact_pair": [],
+      "fact_pair_exact_shared_entity_names": null
+    },
+    {
+      "case_id": "locomo_conv-42_qa71",
+      "question": "乔安娜和内特都欣赏什么的美？",
+      "user_id": "zhfull:locomo:conv-42",
+      "current_memory_count": 195,
+      "structured_cached_count": 0,
+      "topic_cached_count": 0,
+      "embedding_cached_count": 0,
+      "original_top15_structured_cached_count": 0,
+      "fact_pair": [],
+      "fact_pair_exact_shared_entity_names": null
+    },
+    {
+      "case_id": "locomo_conv-47_qa3",
+      "question": "詹姆斯和约翰都养宠物吗？",
+      "user_id": "zhfull:locomo:conv-47",
+      "current_memory_count": 197,
+      "structured_cached_count": 0,
+      "topic_cached_count": 0,
+      "embedding_cached_count": 0,
+      "original_top15_structured_cached_count": 0,
+      "fact_pair": [],
+      "fact_pair_exact_shared_entity_names": null
+    }
+  ],
+  "limits": [
+    "Cache coverage alone does not prove a traversable or source-faithful graph.",
+    "The two exemplar memory IDs per cached case do not exhaust possible graph paths.",
+    "Original rerank ranks are from a frozen run, while memory/cache state is read now.",
+    "No HugeGraph edge order, candidate cap, rerank-after-graph or answer effect is tested."
+  ]
+}
