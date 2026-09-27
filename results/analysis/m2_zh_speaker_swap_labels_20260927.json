@@ -1,0 +1,78 @@
+{
+  "scope": "Manual source and answer-form labels for five post hoc mechanism cases from the exact-name-swap cohort; not cohort accuracy labels",
+  "label_definitions": {
+    "explicit_correction": "Answer explicitly says the requested person is not the owner or actor and names the source-supported person.",
+    "implicit_true_owner": "Answer names the source-supported owner or actor but does not clearly reject the question premise.",
+    "bare_transferred_fact": "Answer gives the original person's value without correcting who owns or did it.",
+    "wrong_event_substitution": "Answer uses a different event for the requested person as though it answered the question.",
+    "abstain_or_caveated": "Answer states missing support or gives a caveated alternative rather than a clean fact.",
+    "internally_inconsistent": "Answer both attributes the fact to the requested wrong person and identifies the true person."
+  },
+  "cases": [
+    {
+      "pair": "conv-26_qa91/qa157",
+      "source_owner": "卡罗琳",
+      "requested_adversarial_owner": "梅拉妮",
+      "source_turns": ["D4:2", "D4:3"],
+      "answer_form_by_arm": {
+        "no_graph": "bare_transferred_fact",
+        "fused_no_jev": "bare_transferred_fact",
+        "jev_decider": "explicit_correction",
+        "jev_laya": "implicit_true_owner"
+      }
+    },
+    {
+      "pair": "conv-26_qa128/qa182",
+      "source_owner": "卡罗琳",
+      "requested_adversarial_owner": "梅拉妮",
+      "source_turns": ["D14:23"],
+      "answer_form_by_arm": {
+        "no_graph": "abstain_or_caveated",
+        "fused_no_jev": "wrong_event_substitution",
+        "jev_decider": "abstain_or_caveated",
+        "jev_laya": "wrong_event_substitution"
+      }
+    },
+    {
+      "pair": "conv-48_qa147/qa216",
+      "source_owner": "乔琳",
+      "requested_adversarial_owner": "黛博拉",
+      "source_turns": ["D17:6"],
+      "answer_form_by_arm": {
+        "no_graph": "bare_transferred_fact",
+        "fused_no_jev": "implicit_true_owner",
+        "jev_decider": "bare_transferred_fact",
+        "jev_laya": "internally_inconsistent"
+      }
+    },
+    {
+      "pair": "conv-48_qa163/qa226",
+      "source_owner": "黛博拉",
+      "requested_adversarial_owner": "乔琳",
+      "source_turns": ["D22:25"],
+      "answer_form_by_arm": {
+        "no_graph": "explicit_correction",
+        "fused_no_jev": "explicit_correction",
+        "jev_decider": "explicit_correction",
+        "jev_laya": "explicit_correction"
+      }
+    },
+    {
+      "pair": "conv-48_qa180/qa233",
+      "source_owner": "黛博拉",
+      "requested_adversarial_owner": "乔琳",
+      "source_turns": ["D28:6", "D28:7"],
+      "answer_form_by_arm": {
+        "no_graph": "wrong_event_substitution",
+        "fused_no_jev": "wrong_event_substitution",
+        "jev_decider": "wrong_event_substitution",
+        "jev_laya": "wrong_event_substitution"
+      }
+    }
+  ],
+  "limits": [
+    "Post hoc cases were selected to show distinct mechanisms and are not a random sample of the 76 pairs.",
+    "Labels describe source relation and answer wording, not official category-5 grading or model accuracy.",
+    "Evidence IDs may point to a question or answer turn; adjacent turns were inspected where required."
+  ]
+}
