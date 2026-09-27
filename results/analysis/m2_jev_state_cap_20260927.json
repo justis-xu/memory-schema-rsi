@@ -1,0 +1,76 @@
+{
+  "scope": "Read-only exact Jev state-length reconstruction for scored non-expanded Chinese historical cases; no model calls",
+  "arms": {
+    "decider": {
+      "path": "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+      "scored_unexpanded": 889,
+      "mapped": 889,
+      "unmapped": 0,
+      "digest_over_950": 0,
+      "state_over_1000_before_cap": 0,
+      "any_memory_text_cut_by_outer_caps": 0,
+      "max_digest_chars": 942,
+      "max_state_chars_before_cap": 996,
+      "total_context_memories": 13335,
+      "archive_rows": 1980,
+      "first_examples": [
+        {
+          "case_id": "locomo_conv-26_qa4",
+          "context_memories": 15,
+          "digest_chars": 880,
+          "state_chars": 911
+        },
+        {
+          "case_id": "locomo_conv-26_qa2",
+          "context_memories": 15,
+          "digest_chars": 806,
+          "state_chars": 844
+        },
+        {
+          "case_id": "locomo_conv-26_qa7",
+          "context_memories": 15,
+          "digest_chars": 853,
+          "state_chars": 886
+        }
+      ]
+    },
+    "laya": {
+      "path": "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+      "scored_unexpanded": 1731,
+      "mapped": 1731,
+      "unmapped": 0,
+      "digest_over_950": 0,
+      "state_over_1000_before_cap": 0,
+      "any_memory_text_cut_by_outer_caps": 0,
+      "max_digest_chars": 942,
+      "max_state_chars_before_cap": 1000,
+      "total_context_memories": 25965,
+      "archive_rows": 1979,
+      "first_examples": [
+        {
+          "case_id": "locomo_conv-26_qa0",
+          "context_memories": 15,
+          "digest_chars": 937,
+          "state_chars": 978
+        },
+        {
+          "case_id": "locomo_conv-26_qa1",
+          "context_memories": 15,
+          "digest_chars": 878,
+          "state_chars": 915
+        },
+        {
+          "case_id": "locomo_conv-26_qa3",
+          "context_memories": 15,
+          "digest_chars": 797,
+          "state_chars": 827
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Expanded cases lack first ordered context, so their first states cannot be reconstructed",
+    "This audits the 950/1000 character outer caps, not the already known 60-character per-memory loss",
+    "No inference about Jev decision accuracy follows from input length alone"
+  ]
+}

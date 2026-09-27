@@ -1,0 +1,43 @@
+{
+  "scope": "Current Chinese frozen 15-memory context, Jev decision only; two tail cases and two prefix controls",
+  "source": "results/analysis/m2_current_zh_stratified_retrieval_20260927.json",
+  "source_sha256": "35326da5323ba8ff8a4f93fac2f03718800083fe5b47cc4909c537f9eb4282bb",
+  "max_decision_calls": 16,
+  "decision_calls": 1,
+  "order_per_case": [
+    "prefix60",
+    "top1_full",
+    "top1_full",
+    "prefix60"
+  ],
+  "service_identity": "current configured Laya endpoint; checkpoint not archived",
+  "cases": [
+    {
+      "case_id": "locomo_conv-42_qa20",
+      "kind": "tail_fact",
+      "question": "内特是什么时候领养马克斯的？",
+      "top1_id": "274f54d5-061a-4209-9500-a076ebc8c71b",
+      "top1_prefix60": "内特（ assistant/named speaker）最近领养了一只名叫马克斯（Max）的狗，精力特别充沛，给他的生活",
+      "top1_full": "内特（ assistant/named speaker）最近领养了一只名叫马克斯（Max）的狗，精力特别充沛，给他的生活带来了很多快乐，还让他其他宠物也活跃起来（2022年5月20日前后）",
+      "inputs": {
+        "top1_full": {
+          "state_sha256": "ad90b60c2faec1c4ec704050bba56f62ec61ec6674ac0f836e01f34d5f42547b",
+          "state_chars": 909
+        },
+        "prefix60": {
+          "state_sha256": "a52bf41c7672f89b5dcd21c3f341880011f2b3ec271a4dc196cb6fcca7e8e6d5",
+          "state_chars": 875
+        }
+      },
+      "runs": [
+        {
+          "variant": "prefix60",
+          "http_status": 404,
+          "seconds": 0.11,
+          "error_type": "non_200"
+        }
+      ]
+    }
+  ],
+  "stopped_early": true
+}
