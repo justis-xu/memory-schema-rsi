@@ -1,0 +1,1108 @@
+{
+  "scope": "Exact aligned dia_id speaker labels across all English/Chinese LoCoMo turns; archived vector metadata exposure only; no model calls",
+  "dataset_paths": {
+    "english": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10.json",
+    "chinese": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json"
+  },
+  "dataset_sha256": {
+    "english": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d"
+  },
+  "conversations": 10,
+  "turns": 5882,
+  "mismatch_count": 3,
+  "affected_sessions": [
+    [
+      "conv-26",
+      "session_8"
+    ],
+    [
+      "conv-30",
+      "session_4"
+    ]
+  ],
+  "per_conversation": {
+    "conv-26": {
+      "turns": 419,
+      "speaker_mapping": {
+        "Caroline": "卡罗琳",
+        "Melanie": "梅拉妮"
+      },
+      "aligned_name_pair_counts": {
+        "Caroline": {
+          "卡罗琳": 210,
+          "梅拉妮": 1
+        },
+        "Melanie": {
+          "梅拉妮": 208
+        }
+      }
+    },
+    "conv-30": {
+      "turns": 369,
+      "speaker_mapping": {
+        "Gina": "吉娜",
+        "Jon": "乔恩"
+      },
+      "aligned_name_pair_counts": {
+        "Gina": {
+          "吉娜": 183,
+          "乔恩": 1
+        },
+        "Jon": {
+          "乔恩": 184,
+          "吉娜": 1
+        }
+      }
+    },
+    "conv-41": {
+      "turns": 663,
+      "speaker_mapping": {
+        "Maria": "玛丽亚",
+        "John": "约翰"
+      },
+      "aligned_name_pair_counts": {
+        "Maria": {
+          "玛丽亚": 328
+        },
+        "John": {
+          "约翰": 335
+        }
+      }
+    },
+    "conv-42": {
+      "turns": 629,
+      "speaker_mapping": {
+        "Nate": "内特",
+        "Joanna": "乔安娜"
+      },
+      "aligned_name_pair_counts": {
+        "Nate": {
+          "内特": 316
+        },
+        "Joanna": {
+          "乔安娜": 313
+        }
+      }
+    },
+    "conv-43": {
+      "turns": 680,
+      "speaker_mapping": {
+        "John": "约翰",
+        "Tim": "蒂姆"
+      },
+      "aligned_name_pair_counts": {
+        "John": {
+          "约翰": 336
+        },
+        "Tim": {
+          "蒂姆": 344
+        }
+      }
+    },
+    "conv-44": {
+      "turns": 675,
+      "speaker_mapping": {
+        "Audrey": "奥黛丽",
+        "Andrew": "安德鲁"
+      },
+      "aligned_name_pair_counts": {
+        "Audrey": {
+          "奥黛丽": 338
+        },
+        "Andrew": {
+          "安德鲁": 337
+        }
+      }
+    },
+    "conv-47": {
+      "turns": 689,
+      "speaker_mapping": {
+        "John": "约翰",
+        "James": "詹姆斯"
+      },
+      "aligned_name_pair_counts": {
+        "John": {
+          "约翰": 346
+        },
+        "James": {
+          "詹姆斯": 343
+        }
+      }
+    },
+    "conv-48": {
+      "turns": 681,
+      "speaker_mapping": {
+        "Deborah": "黛博拉",
+        "Jolene": "乔琳"
+      },
+      "aligned_name_pair_counts": {
+        "Deborah": {
+          "黛博拉": 341
+        },
+        "Jolene": {
+          "乔琳": 340
+        }
+      }
+    },
+    "conv-49": {
+      "turns": 509,
+      "speaker_mapping": {
+        "Sam": "萨姆",
+        "Evan": "埃文"
+      },
+      "aligned_name_pair_counts": {
+        "Sam": {
+          "萨姆": 253
+        },
+        "Evan": {
+          "埃文": 256
+        }
+      }
+    },
+    "conv-50": {
+      "turns": 568,
+      "speaker_mapping": {
+        "Calvin": "卡尔文",
+        "Dave": "戴夫"
+      },
+      "aligned_name_pair_counts": {
+        "Calvin": {
+          "卡尔文": 285
+        },
+        "Dave": {
+          "戴夫": 283
+        }
+      }
+    }
+  },
+  "mismatches": [
+    {
+      "conversation": "conv-26",
+      "session": "session_8",
+      "dia_id": "D8:39",
+      "english_speaker": "Caroline",
+      "expected_chinese_speaker": "卡罗琳",
+      "actual_chinese_speaker": "梅拉妮",
+      "english_text": "No worries, Mel! Your friendship means so much to me. Enjoy your day!",
+      "chinese_text": "不客气，梅尔！你的友谊对我意义重大。祝你今天愉快！"
+    },
+    {
+      "conversation": "conv-30",
+      "session": "session_4",
+      "dia_id": "D4:3",
+      "english_speaker": "Jon",
+      "expected_chinese_speaker": "乔恩",
+      "actual_chinese_speaker": "吉娜",
+      "english_text": "Hey Gina! I'm putting in a lot of work on my business even with the obstacles. I'm gonna make it happen!",
+      "chinese_text": "嘿，吉娜！虽然有不少阻碍，我还是在生意上投入了很多精力。我一定会成功的！"
+    },
+    {
+      "conversation": "conv-30",
+      "session": "session_4",
+      "dia_id": "D4:4",
+      "english_speaker": "Gina",
+      "expected_chinese_speaker": "吉娜",
+      "actual_chinese_speaker": "乔恩",
+      "english_text": "Wow! You've got drive! Keep it up and you'll definitely make a splash.",
+      "chinese_text": "哇！你真有干劲！坚持下去，你肯定会一鸣惊人的。"
+    }
+  ],
+  "qa_with_mismatched_turn_in_evidence": [],
+  "historical_vector_exposure": {
+    "no_graph": {
+      "archive_path": "results_zh/zhfull_locomo_20260925_115806.jsonl",
+      "archive_sha256": "93064eba9874433683793124caf3078509e9253ee396a3d89d8baefb256217b4",
+      "unique_retrieved_memories_from_affected_sessions": [
+        {
+          "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "55feb3da-4b18-4405-a8f1-9cb9825cc3fa",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮一家在2023年7月中旬又去森林露营了一次，在篝火旁烤棉花糖；他们还喜欢在山里徒步和探索森林，她认为这是亲近大自然、增进感情的方式",
+          "metadata": {
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳在2023年6月底至7月初（几周前）参加了一场骄傲游行，身边都是接纳和赞美她的人，她感到无比自豪、被接受和快乐，称这是她最珍贵的回忆之一",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳于2023年7月14日（上周五）参加了一次关于领养的委员会会议，觉得既鼓舞人心又令人感动——有很多人都想为有需要的孩子创造充满爱的家，这让她更加坚定了要领养的决心",
+          "metadata": {
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "7f5e4bd6-9c47-4afc-8f16-0980d82343de",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮的花卉是她们婚礼布置的重要部分，总是让她想起婚礼那一天；她回忆婚礼充满爱与欢乐，所爱的所有人都在场庆祝，而和伴侣结婚并承诺永远在一起是最棒的部分",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "e023cdac-38fa-4426-992c-7f83ed4c8a88",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳表示骄傲游行经历中最好的是意识到自己可以无所畏惧地做自己，并有勇气进行转变；能够真实地表达自我、加上大家的支持，让她感到自由，她为自己在漫长旅程中取得的进步感到骄傲",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "d5c8f69e-ec99-4bd1-b63a-fcdf9d689016",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "蓝色是卡罗琳最喜欢的颜色，让她感到放松",
+          "metadata": {
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "444a158f-f7e8-4dc2-aa22-cead845f1cb8",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮正在进行搬家，家人在这个过程中帮了很多忙，给了她满满的爱和支持",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "54470ad5-91a6-41e3-911f-369bedc20ebf",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "乔恩在创业过程中遇到不少挫折，有时会感到难受，但他坚信坚持努力就能实现梦想；吉娜全力支持他，鼓励他把挫折当作东山再起的机会",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "10:43 am on 4 February, 2023",
+            "session_id": "session_4",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "7b8dac20-dc89-4524-9631-6fe952c9ca40",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，乔恩在筹备生意的同时还在排练新的舞蹈动作，为即将到来的演出刻苦排练；他分享了一张穿灰色裙子的女舞者做技巧动作的照片，舞蹈带给他很多快乐和成就感",
+          "metadata": {
+            "session_id": "session_4",
+            "session_date": "10:43 am on 4 February, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "metadata": {
+            "session_date": "10:43 am on 4 February, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_4",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "39faf063-89ec-473e-979d-1d18a55d342c",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，吉娜的服装店生意很好，她形容这段开店旅程很疯狂，但仍进展顺利",
+          "metadata": {
+            "session_date": "10:43 am on 4 February, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_4",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "61a10e72-a082-4c59-a073-0624d935909a",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，乔恩仍在为舞蹈工作室寻找合适的场地，过程很麻烦但他下定决心找到合适的地方，相信找到后一切都会水到渠成",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "10:43 am on 4 February, 2023",
+            "session_id": "session_4",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ],
+      "final_selection_counts_by_memory_id": {
+        "459ffafa-6850-49f2-b4f7-66e64e542482": 34,
+        "55feb3da-4b18-4405-a8f1-9cb9825cc3fa": 24,
+        "59d2b19f-d95d-4da8-9764-eef2117f6cb0": 33,
+        "0650bfba-73ec-4a90-821f-d9c38ef67ce7": 27,
+        "15e15a90-e502-47ab-b1c6-2c82a49ce7ce": 38,
+        "a8199f58-f750-44c9-8f2d-e1599cbd8fd3": 22,
+        "7f5e4bd6-9c47-4afc-8f16-0980d82343de": 27,
+        "e023cdac-38fa-4426-992c-7f83ed4c8a88": 22,
+        "d5c8f69e-ec99-4bd1-b63a-fcdf9d689016": 11,
+        "444a158f-f7e8-4dc2-aa22-cead845f1cb8": 11,
+        "54470ad5-91a6-41e3-911f-369bedc20ebf": 8,
+        "7b8dac20-dc89-4524-9631-6fe952c9ca40": 13,
+        "18251b9f-f071-458a-a610-c6684ac95a45": 16,
+        "39faf063-89ec-473e-979d-1d18a55d342c": 5,
+        "61a10e72-a082-4c59-a073-0624d935909a": 12
+      },
+      "cases_with_affected_session_memory_in_final_by_session": {
+        "conv-26/session_8": 157,
+        "conv-30/session_4": 42
+      }
+    },
+    "fused_no_jev": {
+      "archive_path": "results_zh/zhfull_fused_locomo_20260925_161049.jsonl",
+      "archive_sha256": "1834c9fdc69c7697d290d24ab1f0d7a9f5c2a5857892695a75e0628b87dd22ab",
+      "unique_retrieved_memories_from_affected_sessions": [
+        {
+          "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳在2023年6月底至7月初（几周前）参加了一场骄傲游行，身边都是接纳和赞美她的人，她感到无比自豪、被接受和快乐，称这是她最珍贵的回忆之一",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "55feb3da-4b18-4405-a8f1-9cb9825cc3fa",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮一家在2023年7月中旬又去森林露营了一次，在篝火旁烤棉花糖；他们还喜欢在山里徒步和探索森林，她认为这是亲近大自然、增进感情的方式",
+          "metadata": {
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳于2023年7月14日（上周五）参加了一次关于领养的委员会会议，觉得既鼓舞人心又令人感动——有很多人都想为有需要的孩子创造充满爱的家，这让她更加坚定了要领养的决心",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "7f5e4bd6-9c47-4afc-8f16-0980d82343de",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮的花卉是她们婚礼布置的重要部分，总是让她想起婚礼那一天；她回忆婚礼充满爱与欢乐，所爱的所有人都在场庆祝，而和伴侣结婚并承诺永远在一起是最棒的部分",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "e023cdac-38fa-4426-992c-7f83ed4c8a88",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳表示骄傲游行经历中最好的是意识到自己可以无所畏惧地做自己，并有勇气进行转变；能够真实地表达自我、加上大家的支持，让她感到自由，她为自己在漫长旅程中取得的进步感到骄傲",
+          "metadata": {
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "d5c8f69e-ec99-4bd1-b63a-fcdf9d689016",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "蓝色是卡罗琳最喜欢的颜色，让她感到放松",
+          "metadata": {
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "444a158f-f7e8-4dc2-aa22-cead845f1cb8",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮正在进行搬家，家人在这个过程中帮了很多忙，给了她满满的爱和支持",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "54470ad5-91a6-41e3-911f-369bedc20ebf",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "乔恩在创业过程中遇到不少挫折，有时会感到难受，但他坚信坚持努力就能实现梦想；吉娜全力支持他，鼓励他把挫折当作东山再起的机会",
+          "metadata": {
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_date": "10:43 am on 4 February, 2023",
+            "session_id": "session_4",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "7b8dac20-dc89-4524-9631-6fe952c9ca40",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，乔恩在筹备生意的同时还在排练新的舞蹈动作，为即将到来的演出刻苦排练；他分享了一张穿灰色裙子的女舞者做技巧动作的照片，舞蹈带给他很多快乐和成就感",
+          "metadata": {
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_date": "10:43 am on 4 February, 2023",
+            "session_id": "session_4",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "metadata": {
+            "session_id": "session_4",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "10:43 am on 4 February, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "39faf063-89ec-473e-979d-1d18a55d342c",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，吉娜的服装店生意很好，她形容这段开店旅程很疯狂，但仍进展顺利",
+          "metadata": {
+            "session_id": "session_4",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "10:43 am on 4 February, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "61a10e72-a082-4c59-a073-0624d935909a",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，乔恩仍在为舞蹈工作室寻找合适的场地，过程很麻烦但他下定决心找到合适的地方，相信找到后一切都会水到渠成",
+          "metadata": {
+            "session_id": "session_4",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "10:43 am on 4 February, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ],
+      "final_selection_counts_by_memory_id": {
+        "459ffafa-6850-49f2-b4f7-66e64e542482": 31,
+        "59d2b19f-d95d-4da8-9764-eef2117f6cb0": 31,
+        "0650bfba-73ec-4a90-821f-d9c38ef67ce7": 26,
+        "55feb3da-4b18-4405-a8f1-9cb9825cc3fa": 22,
+        "a8199f58-f750-44c9-8f2d-e1599cbd8fd3": 21,
+        "15e15a90-e502-47ab-b1c6-2c82a49ce7ce": 34,
+        "7f5e4bd6-9c47-4afc-8f16-0980d82343de": 27,
+        "e023cdac-38fa-4426-992c-7f83ed4c8a88": 20,
+        "d5c8f69e-ec99-4bd1-b63a-fcdf9d689016": 11,
+        "444a158f-f7e8-4dc2-aa22-cead845f1cb8": 11,
+        "54470ad5-91a6-41e3-911f-369bedc20ebf": 7,
+        "7b8dac20-dc89-4524-9631-6fe952c9ca40": 10,
+        "18251b9f-f071-458a-a610-c6684ac95a45": 15,
+        "39faf063-89ec-473e-979d-1d18a55d342c": 5,
+        "61a10e72-a082-4c59-a073-0624d935909a": 10
+      },
+      "cases_with_affected_session_memory_in_final_by_session": {
+        "conv-26/session_8": 153,
+        "conv-30/session_4": 39
+      }
+    },
+    "jev_decider": {
+      "archive_path": "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+      "archive_sha256": "9b7b37187181dd4ce7e161cd0ab93daad2d9dadde02da2020084c3dc210e4935",
+      "unique_retrieved_memories_from_affected_sessions": [
+        {
+          "id": "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳在2023年6月底至7月初（几周前）参加了一场骄傲游行，身边都是接纳和赞美她的人，她感到无比自豪、被接受和快乐，称这是她最珍贵的回忆之一",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "55feb3da-4b18-4405-a8f1-9cb9825cc3fa",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮一家在2023年7月中旬又去森林露营了一次，在篝火旁烤棉花糖；他们还喜欢在山里徒步和探索森林，她认为这是亲近大自然、增进感情的方式",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳于2023年7月14日（上周五）参加了一次关于领养的委员会会议，觉得既鼓舞人心又令人感动——有很多人都想为有需要的孩子创造充满爱的家，这让她更加坚定了要领养的决心",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "7f5e4bd6-9c47-4afc-8f16-0980d82343de",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮的花卉是她们婚礼布置的重要部分，总是让她想起婚礼那一天；她回忆婚礼充满爱与欢乐，所爱的所有人都在场庆祝，而和伴侣结婚并承诺永远在一起是最棒的部分",
+          "metadata": {
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "e023cdac-38fa-4426-992c-7f83ed4c8a88",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳表示骄傲游行经历中最好的是意识到自己可以无所畏惧地做自己，并有勇气进行转变；能够真实地表达自我、加上大家的支持，让她感到自由，她为自己在漫长旅程中取得的进步感到骄傲",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "d5c8f69e-ec99-4bd1-b63a-fcdf9d689016",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "蓝色是卡罗琳最喜欢的颜色，让她感到放松",
+          "metadata": {
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "444a158f-f7e8-4dc2-aa22-cead845f1cb8",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮正在进行搬家，家人在这个过程中帮了很多忙，给了她满满的爱和支持",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "54470ad5-91a6-41e3-911f-369bedc20ebf",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "乔恩在创业过程中遇到不少挫折，有时会感到难受，但他坚信坚持努力就能实现梦想；吉娜全力支持他，鼓励他把挫折当作东山再起的机会",
+          "metadata": {
+            "session_date": "10:43 am on 4 February, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_4",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "7b8dac20-dc89-4524-9631-6fe952c9ca40",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，乔恩在筹备生意的同时还在排练新的舞蹈动作，为即将到来的演出刻苦排练；他分享了一张穿灰色裙子的女舞者做技巧动作的照片，舞蹈带给他很多快乐和成就感",
+          "metadata": {
+            "session_id": "session_4",
+            "benchmark": "locomo",
+            "session_date": "10:43 am on 4 February, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "metadata": {
+            "session_date": "10:43 am on 4 February, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_4",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "39faf063-89ec-473e-979d-1d18a55d342c",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，吉娜的服装店生意很好，她形容这段开店旅程很疯狂，但仍进展顺利",
+          "metadata": {
+            "session_id": "session_4",
+            "case_id": "locomo_conv-30_qa0",
+            "benchmark": "locomo",
+            "session_date": "10:43 am on 4 February, 2023",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "61a10e72-a082-4c59-a073-0624d935909a",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，乔恩仍在为舞蹈工作室寻找合适的场地，过程很麻烦但他下定决心找到合适的地方，相信找到后一切都会水到渠成",
+          "metadata": {
+            "session_id": "session_4",
+            "benchmark": "locomo",
+            "session_date": "10:43 am on 4 February, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ],
+      "final_selection_counts_by_memory_id": {
+        "0650bfba-73ec-4a90-821f-d9c38ef67ce7": 26,
+        "55feb3da-4b18-4405-a8f1-9cb9825cc3fa": 23,
+        "59d2b19f-d95d-4da8-9764-eef2117f6cb0": 31,
+        "459ffafa-6850-49f2-b4f7-66e64e542482": 31,
+        "15e15a90-e502-47ab-b1c6-2c82a49ce7ce": 33,
+        "a8199f58-f750-44c9-8f2d-e1599cbd8fd3": 20,
+        "7f5e4bd6-9c47-4afc-8f16-0980d82343de": 26,
+        "e023cdac-38fa-4426-992c-7f83ed4c8a88": 20,
+        "d5c8f69e-ec99-4bd1-b63a-fcdf9d689016": 10,
+        "444a158f-f7e8-4dc2-aa22-cead845f1cb8": 11,
+        "54470ad5-91a6-41e3-911f-369bedc20ebf": 8,
+        "7b8dac20-dc89-4524-9631-6fe952c9ca40": 10,
+        "18251b9f-f071-458a-a610-c6684ac95a45": 15,
+        "39faf063-89ec-473e-979d-1d18a55d342c": 5,
+        "61a10e72-a082-4c59-a073-0624d935909a": 9
+      },
+      "cases_with_affected_session_memory_in_final_by_session": {
+        "conv-26/session_8": 152,
+        "conv-30/session_4": 40
+      }
+    },
+    "jev_laya": {
+      "archive_path": "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+      "archive_sha256": "c47f83182b18d0d5187c28b59a14deda00d0b059c73fe5ea05ae807d8adeaf2d",
+      "unique_retrieved_memories_from_affected_sessions": [
+        {
+          "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "55feb3da-4b18-4405-a8f1-9cb9825cc3fa",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮一家在2023年7月中旬又去森林露营了一次，在篝火旁烤棉花糖；他们还喜欢在山里徒步和探索森林，她认为这是亲近大自然、增进感情的方式",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子",
+          "metadata": {
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_id": "session_8",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳在2023年6月底至7月初（几周前）参加了一场骄傲游行，身边都是接纳和赞美她的人，她感到无比自豪、被接受和快乐，称这是她最珍贵的回忆之一",
+          "metadata": {
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳于2023年7月14日（上周五）参加了一次关于领养的委员会会议，觉得既鼓舞人心又令人感动——有很多人都想为有需要的孩子创造充满爱的家，这让她更加坚定了要领养的决心",
+          "metadata": {
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "7f5e4bd6-9c47-4afc-8f16-0980d82343de",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮的花卉是她们婚礼布置的重要部分，总是让她想起婚礼那一天；她回忆婚礼充满爱与欢乐，所爱的所有人都在场庆祝，而和伴侣结婚并承诺永远在一起是最棒的部分",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "e023cdac-38fa-4426-992c-7f83ed4c8a88",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "卡罗琳表示骄傲游行经历中最好的是意识到自己可以无所畏惧地做自己，并有勇气进行转变；能够真实地表达自我、加上大家的支持，让她感到自由，她为自己在漫长旅程中取得的进步感到骄傲",
+          "metadata": {
+            "case_id": "locomo_conv-26_qa0",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "d5c8f69e-ec99-4bd1-b63a-fcdf9d689016",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "蓝色是卡罗琳最喜欢的颜色，让她感到放松",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "444a158f-f7e8-4dc2-aa22-cead845f1cb8",
+          "conversation": "conv-26",
+          "session": "session_8",
+          "content": "梅拉妮正在进行搬家，家人在这个过程中帮了很多忙，给了她满满的爱和支持",
+          "metadata": {
+            "session_date": "1:51 pm on 15 July, 2023",
+            "session_id": "session_8",
+            "case_id": "locomo_conv-26_qa0",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-26"
+          }
+        },
+        {
+          "id": "54470ad5-91a6-41e3-911f-369bedc20ebf",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "乔恩在创业过程中遇到不少挫折，有时会感到难受，但他坚信坚持努力就能实现梦想；吉娜全力支持他，鼓励他把挫折当作东山再起的机会",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_date": "10:43 am on 4 February, 2023",
+            "session_id": "session_4",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "7b8dac20-dc89-4524-9631-6fe952c9ca40",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，乔恩在筹备生意的同时还在排练新的舞蹈动作，为即将到来的演出刻苦排练；他分享了一张穿灰色裙子的女舞者做技巧动作的照片，舞蹈带给他很多快乐和成就感",
+          "metadata": {
+            "session_date": "10:43 am on 4 February, 2023",
+            "benchmark": "locomo",
+            "case_id": "locomo_conv-30_qa0",
+            "session_id": "session_4",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "metadata": {
+            "benchmark": "locomo",
+            "session_id": "session_4",
+            "session_date": "10:43 am on 4 February, 2023",
+            "case_id": "locomo_conv-30_qa0",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "39faf063-89ec-473e-979d-1d18a55d342c",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，吉娜的服装店生意很好，她形容这段开店旅程很疯狂，但仍进展顺利",
+          "metadata": {
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "10:43 am on 4 February, 2023",
+            "session_id": "session_4",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        },
+        {
+          "id": "61a10e72-a082-4c59-a073-0624d935909a",
+          "conversation": "conv-30",
+          "session": "session_4",
+          "content": "截至2023年2月4日，乔恩仍在为舞蹈工作室寻找合适的场地，过程很麻烦但他下定决心找到合适的地方，相信找到后一切都会水到渠成",
+          "metadata": {
+            "session_id": "session_4",
+            "case_id": "locomo_conv-30_qa0",
+            "session_date": "10:43 am on 4 February, 2023",
+            "benchmark": "locomo",
+            "user_id": "zhfull:locomo:conv-30"
+          }
+        }
+      ],
+      "final_selection_counts_by_memory_id": {
+        "459ffafa-6850-49f2-b4f7-66e64e542482": 31,
+        "55feb3da-4b18-4405-a8f1-9cb9825cc3fa": 22,
+        "59d2b19f-d95d-4da8-9764-eef2117f6cb0": 32,
+        "0650bfba-73ec-4a90-821f-d9c38ef67ce7": 26,
+        "a8199f58-f750-44c9-8f2d-e1599cbd8fd3": 21,
+        "15e15a90-e502-47ab-b1c6-2c82a49ce7ce": 31,
+        "7f5e4bd6-9c47-4afc-8f16-0980d82343de": 24,
+        "e023cdac-38fa-4426-992c-7f83ed4c8a88": 19,
+        "d5c8f69e-ec99-4bd1-b63a-fcdf9d689016": 11,
+        "444a158f-f7e8-4dc2-aa22-cead845f1cb8": 11,
+        "54470ad5-91a6-41e3-911f-369bedc20ebf": 8,
+        "7b8dac20-dc89-4524-9631-6fe952c9ca40": 10,
+        "18251b9f-f071-458a-a610-c6684ac95a45": 15,
+        "39faf063-89ec-473e-979d-1d18a55d342c": 5,
+        "61a10e72-a082-4c59-a073-0624d935909a": 10
+      },
+      "cases_with_affected_session_memory_in_final_by_session": {
+        "conv-26/session_8": 150,
+        "conv-30/session_4": 40
+      }
+    }
+  },
+  "limits": [
+    "Majority speaker mapping checks speaker labels, not semantic translation quality.",
+    "Session-level metadata cannot attribute an extracted memory fact to a particular turn.",
+    "Graph memories lack session metadata and are excluded from exposure counts.",
+    "Final-selection counts are retrieval exposures, not answer or score impact."
+  ]
+}
