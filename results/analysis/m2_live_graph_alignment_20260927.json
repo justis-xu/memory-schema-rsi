@@ -1,0 +1,211 @@
+{
+  "scope": "Five previously fixed Chinese cases, first three current reranked vector IDs each, plus one known signed-ball ID; live graph read-only",
+  "source_retrieval": "results/analysis/m2_current_zh_retrieval_probe_20260926.json",
+  "graph_response": {
+    "graphs": {
+      "graphs": [
+        "hugegraph"
+      ]
+    },
+    "versions": {
+      "versions": {
+        "version": "v1",
+        "core": "1.7.0",
+        "gremlin": "3.5.1",
+        "api": "0.71.0.0"
+      }
+    }
+  },
+  "loaded_graph_key_props": {
+    "Memory": "memory_id"
+  },
+  "one_live_memory_sample": {
+    "memory_id": "301d9e80-dadf-4bdc-bc6f-55d820770cdc",
+    "user_id": "locomo:locomo_conv-26_qa0",
+    "content": "User (Caroline) attended an LGBTQ support group on May 7, 2023, and found the transgender stories inspiring; she felt happy and thankful for the support"
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-47_qa96",
+      "id": "6956a2b8-082c-4373-aa77-2c925378ddf3",
+      "vector_content": "约翰是曼城球迷，认为曼城会和利物浦为冠军而战并最终获胜，他相信曼城的教练能应对球队的困境",
+      "vector_user_id": "zhfull:locomo:conv-47",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-47_qa96",
+      "id": "597ee1c5-9271-43db-ab82-dd158e08a930",
+      "vector_content": "詹姆斯认为曼城状态不佳、转会政策糟糕，并于2022年6月与约翰打赌：英超最终排名利物浦会在曼城前面",
+      "vector_user_id": "zhfull:locomo:conv-47",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-47_qa96",
+      "id": "95c0a845-1a18-42b7-8fd5-23a3291215db",
+      "vector_content": "詹姆斯是利物浦足球俱乐部的铁杆球迷，认为没有比足球更好的运动、没有比利物浦更好的俱乐部，利物浦的比赛他一场都不错过，并希望球队下个赛季能夺冠",
+      "vector_user_id": "zhfull:locomo:conv-47",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-48_qa39",
+      "id": "c24f04ca-38ea-4eaf-b63c-80a00a66b2cf",
+      "vector_content": "黛布建议乔琳把任务拆成小块、设定目标，用计划表或日程工具保持条理并留出属于自己的时间，并提出可以帮忙制定学习计划",
+      "vector_user_id": "zhfull:locomo:conv-48",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-48_qa39",
+      "id": "40508905-b7bc-40b3-a98b-e16abdfeef53",
+      "vector_content": "黛布向乔琳介绍了艾森豪威尔矩阵，用四个象限按紧急程度和重要性给任务分类，以帮助乔琳整理安排、保持专注并减轻压力，乔琳表示愿意尝试",
+      "vector_user_id": "zhfull:locomo:conv-48",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-48_qa39",
+      "id": "d8593ef3-971a-46ec-a822-e8745c92ecb4",
+      "vector_content": "乔琳从2023年8月开始使用子弹笔记（bullet journal）做时间管理，认为它对追踪任务和保持条理很有帮助，划掉完成任务时感觉特别满足",
+      "vector_user_id": "zhfull:locomo:conv-48",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+      "vector_content": "约翰喜欢收集篮球球衣，分享了他的球衣收藏照片",
+      "vector_user_id": "zhfull:locomo:conv-43",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+      "vector_content": "约翰喜欢和别人聊他的球鞋收藏，并分享了一张球鞋摆成圆形的照片",
+      "vector_user_id": "zhfull:locomo:conv-43",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+      "vector_content": "约翰有一双幸运篮球鞋，从打球之初就陪伴着他，见证了他的成功、失败和友谊，象征坚韧、决心和对篮球的热爱，提醒他取得的成就和走过的路",
+      "vector_user_id": "zhfull:locomo:conv-43",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-41_qa86",
+      "id": "2266b983-264c-4562-8f72-f1d2aa25d49b",
+      "vector_content": "约翰于2023年2月初开始帮忙为社区食物募集活动出力，帮助失业的人，起因是看到失业对邻居的影响；反响和志愿者人数都超出了预期",
+      "vector_user_id": "zhfull:locomo:conv-41",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-41_qa86",
+      "id": "1512066b-5bbe-455f-ab5f-bfd41aa8ed67",
+      "vector_content": "2022年（去年），约翰帮忙翻修了老家一个破旧的社区中心，花了不少功夫，看到它对社区产生的积极影响和大家的齐心协力，觉得一切都值得",
+      "vector_user_id": "zhfull:locomo:conv-41",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-41_qa86",
+      "id": "bdb28053-0602-4711-8601-fef445b5874f",
+      "vector_content": "约翰的服务小组去了一个无家可归者收容所分发食物和物资，并组织了一次为有需要的孩子的玩具募捐活动，社区齐心协力传递快乐",
+      "vector_user_id": "zhfull:locomo:conv-41",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-30_qa80",
+      "id": "3f548823-9546-4a8a-8a3d-299b16b943b6",
+      "vector_content": "截至2023年6月16日，乔恩一直在为舞蹈工作室做推广，并采纳吉娜的建议开始在社交媒体上发布自己的舞蹈视频，已经引起了一点轰动",
+      "vector_user_id": "zhfull:locomo:conv-30",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-30_qa80",
+      "id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+      "vector_content": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）",
+      "vector_user_id": "zhfull:locomo:conv-30",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-30_qa80",
+      "id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+      "vector_content": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想",
+      "vector_user_id": "zhfull:locomo:conv-30",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+      "vector_content": null,
+      "vector_user_id": "zhfull:locomo:conv-43",
+      "live_vertex_found": false,
+      "live_content_matches_vector": null,
+      "live_user_matches_vector": null,
+      "live_content": null,
+      "live_user_id": null
+    }
+  ],
+  "limits": [
+    "Sixteen deterministic IDs are a spot audit, not a full graph inventory",
+    "A running server and matching graph name do not prove matching memory version",
+    "No graph rebuild or model calls"
+  ],
+  "found_count": 0
+}
