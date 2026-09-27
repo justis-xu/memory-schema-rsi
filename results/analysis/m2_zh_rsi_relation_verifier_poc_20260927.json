@@ -1,0 +1,293 @@
+{
+  "scope": "Three previously source-audited Chinese cases; RSI experimental verifier; answer turn alone vs question+answer source pair; no answerer or judge calls",
+  "dataset_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "order_each_case": [
+    "answer_only",
+    "pair",
+    "pair",
+    "answer_only"
+  ],
+  "max_verifier_calls": 12,
+  "verifier_calls": 12,
+  "cases": [
+    {
+      "case_id": "locomo_conv-26_qa111",
+      "question": "除了陶艺，梅尔和孩子们还一起做什么创意项目？",
+      "proposed_answer": "梅尔和孩子们一起画画。",
+      "expected_source_relation_supported": true,
+      "question_turn_id": "D8:5",
+      "answer_turn_id": "D8:6",
+      "contexts": {
+        "answer_only": [
+          {
+            "id": "T:conv-26|D8:6",
+            "content": "Source conversation on 1:51 pm on 15 July, 2023: 梅拉妮：最近我们喜欢一起画画，尤其是以大自然为灵感的画。这是上周末我们的最新作品。"
+          }
+        ],
+        "pair": [
+          {
+            "id": "T:conv-26|D8:5",
+            "content": "Source conversation on 1:51 pm on 15 July, 2023: 卡罗琳：哇，真可爱！那个杯子好萌。看到孩子们通过艺术展现自己的个性真是太棒了。除了陶艺之外，你还和他们一起做哪些创意项目？"
+          },
+          {
+            "id": "T:conv-26|D8:6",
+            "content": "Source conversation on 1:51 pm on 15 July, 2023: 梅拉妮：最近我们喜欢一起画画，尤其是以大自然为灵感的画。这是上周末我们的最新作品。"
+          }
+        ]
+      },
+      "calls": [
+        {
+          "arm": "answer_only",
+          "status": "supported",
+          "reason": "Memory 1 records that they enjoy painting together, especially nature-inspired paintings, which directly supports the answer that 梅尔 and the children paint together besides pottery.",
+          "search_query": "",
+          "support_ids": [
+            "T:conv-26|D8:6"
+          ],
+          "raw_response": "{\"status\":\"supported\",\"reason\":\"Memory 1 records that they enjoy painting together, especially nature-inspired paintings, which directly supports the answer that 梅尔 and the children paint together besides pottery.\",\"search_query\":\"\",\"support_indices\":[1]}",
+          "usage": {
+            "prompt_tokens": 258,
+            "completion_tokens": 126
+          },
+          "prompt_sha256": "d501140b2099d40951d805b9d3d59740142341b2024f3dcd794ac9a3d017c817",
+          "prompt_chars": 1046
+        },
+        {
+          "arm": "pair",
+          "status": "supported",
+          "reason": "Memory 1 asks the exact question and Memory 2 answers that Melanie likes to paint with the kids.",
+          "search_query": "",
+          "support_ids": [
+            "T:conv-26|D8:5",
+            "T:conv-26|D8:6"
+          ],
+          "raw_response": "{\"status\": \"supported\", \"reason\": \"Memory 1 asks the exact question and Memory 2 answers that Melanie likes to paint with the kids.\", \"search_query\": \"\", \"support_indices\": [1, 2]}",
+          "usage": {
+            "prompt_tokens": 316,
+            "completion_tokens": 48
+          },
+          "prompt_sha256": "ef2667a411b7419fdd0b88149aadfe591b6aec18a570a8bce11e0776afed78ea",
+          "prompt_chars": 1161
+        },
+        {
+          "arm": "pair",
+          "status": "supported",
+          "reason": "记忆[2]中梅拉妮明确回答，除了陶艺之外，最近喜欢和孩子们一起画画，尤其是以大自然为灵感的画，直接支持答案。",
+          "search_query": "",
+          "support_ids": [
+            "T:conv-26|D8:6"
+          ],
+          "raw_response": "{\"status\": \"supported\", \"reason\": \"记忆[2]中梅拉妮明确回答，除了陶艺之外，最近喜欢和孩子们一起画画，尤其是以大自然为灵感的画，直接支持答案。\", \"search_query\": \"\", \"support_indices\": [2]}",
+          "usage": {
+            "prompt_tokens": 316,
+            "completion_tokens": 90
+          },
+          "prompt_sha256": "ef2667a411b7419fdd0b88149aadfe591b6aec18a570a8bce11e0776afed78ea",
+          "prompt_chars": 1161
+        },
+        {
+          "arm": "answer_only",
+          "status": "supported",
+          "reason": "记忆[1]明确提到梅拉妮（梅尔）和孩子们最近喜欢一起画画，尤其是以大自然为灵感的画，直接支持答案。",
+          "search_query": "",
+          "support_ids": [
+            "T:conv-26|D8:6"
+          ],
+          "raw_response": "{\"status\": \"supported\", \"reason\": \"记忆[1]明确提到梅拉妮（梅尔）和孩子们最近喜欢一起画画，尤其是以大自然为灵感的画，直接支持答案。\", \"search_query\": \"\", \"support_indices\": [1]}",
+          "usage": {
+            "prompt_tokens": 258,
+            "completion_tokens": 95
+          },
+          "prompt_sha256": "d501140b2099d40951d805b9d3d59740142341b2024f3dcd794ac9a3d017c817",
+          "prompt_chars": 1046
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa233",
+      "question": "乔琳和妈妈的老朋友们做了什么？",
+      "proposed_answer": "乔琳和妈妈的老朋友们一起回忆往事、翻看照片。",
+      "expected_source_relation_supported": false,
+      "question_turn_id": "D28:6",
+      "answer_turn_id": "D28:7",
+      "contexts": {
+        "answer_only": [
+          {
+            "id": "T:conv-48|D28:7",
+            "content": "Source conversation on 3:09 pm on 15 September, 2023: 黛博拉：我们一起回忆往事，翻看她的照片。真的很温馨。"
+          }
+        ],
+        "pair": [
+          {
+            "id": "T:conv-48|D28:6",
+            "content": "Source conversation on 3:09 pm on 15 September, 2023: 乔琳：看起来玩得很开心！那天你和你妈妈的朋友们做了什么？"
+          },
+          {
+            "id": "T:conv-48|D28:7",
+            "content": "Source conversation on 3:09 pm on 15 September, 2023: 黛博拉：我们一起回忆往事，翻看她的照片。真的很温馨。"
+          }
+        ]
+      },
+      "calls": [
+        {
+          "arm": "answer_only",
+          "status": "missing",
+          "reason": "记忆[1]描述的是黛博拉回忆往事、翻看照片，而问题是关于乔琳，记忆中未提及乔琳和妈妈的老朋友们的活动。",
+          "search_query": "乔琳 妈妈的老朋友 做了什么",
+          "support_ids": [],
+          "raw_response": "{\"status\": \"missing\", \"reason\": \"记忆[1]描述的是黛博拉回忆往事、翻看照片，而问题是关于乔琳，记忆中未提及乔琳和妈妈的老朋友们的活动。\", \"search_query\": \"乔琳 妈妈的老朋友 做了什么\", \"support_indices\": []}",
+          "usage": {
+            "prompt_tokens": 252,
+            "completion_tokens": 91
+          },
+          "prompt_sha256": "cda3bdb5556fa8fa75cc381f252e81777145b5a89da317af649cc7899554f492",
+          "prompt_chars": 1040
+        },
+        {
+          "arm": "pair",
+          "status": "supported",
+          "reason": "记忆[1]提出该问题，记忆[2]直接回答黛博拉与妈妈的朋友们一起回忆往事、翻看照片，完全支持答案。",
+          "search_query": "",
+          "support_ids": [
+            "T:conv-48|D28:6",
+            "T:conv-48|D28:7"
+          ],
+          "raw_response": "{\"status\": \"supported\", \"reason\": \"记忆[1]提出该问题，记忆[2]直接回答黛博拉与妈妈的朋友们一起回忆往事、翻看照片，完全支持答案。\", \"search_query\": \"\", \"support_indices\": [1, 2]}",
+          "usage": {
+            "prompt_tokens": 288,
+            "completion_tokens": 71
+          },
+          "prompt_sha256": "0e83e8fca9503467644a5d0933bf685924d08abd05deac4f83ebed1c66269968",
+          "prompt_chars": 1127
+        },
+        {
+          "arm": "pair",
+          "status": "supported",
+          "reason": "记忆[1]提出问题，记忆[2]直接回答：她们一起回忆往事、翻看照片，与答案一致。",
+          "search_query": "",
+          "support_ids": [
+            "T:conv-48|D28:6",
+            "T:conv-48|D28:7"
+          ],
+          "raw_response": "{\"status\": \"supported\", \"reason\": \"记忆[1]提出问题，记忆[2]直接回答：她们一起回忆往事、翻看照片，与答案一致。\", \"search_query\": \"\", \"support_indices\": [1, 2]}",
+          "usage": {
+            "prompt_tokens": 288,
+            "completion_tokens": 55
+          },
+          "prompt_sha256": "0e83e8fca9503467644a5d0933bf685924d08abd05deac4f83ebed1c66269968",
+          "prompt_chars": 1127
+        },
+        {
+          "arm": "answer_only",
+          "status": "missing",
+          "reason": "记忆[1]只提到黛博拉在回忆往事、翻看照片，没有提到乔琳与妈妈的老朋友们做了什么，无法支持该答案。",
+          "search_query": "乔琳 妈妈的老朋友们 一起 做了什么",
+          "support_ids": [],
+          "raw_response": "{\"status\": \"missing\", \"reason\": \"记忆[1]只提到黛博拉在回忆往事、翻看照片，没有提到乔琳与妈妈的老朋友们做了什么，无法支持该答案。\", \"search_query\": \"乔琳 妈妈的老朋友们 一起 做了什么\", \"support_indices\": []}",
+          "usage": {
+            "prompt_tokens": 252,
+            "completion_tokens": 103
+          },
+          "prompt_sha256": "cda3bdb5556fa8fa75cc381f252e81777145b5a89da317af649cc7899554f492",
+          "prompt_chars": 1040
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa157",
+      "question": "梅拉妮的项链象征着什么？",
+      "proposed_answer": "梅拉妮的项链象征爱、信念和力量。",
+      "expected_source_relation_supported": false,
+      "question_turn_id": "D4:2",
+      "answer_turn_id": "D4:3",
+      "contexts": {
+        "answer_only": [
+          {
+            "id": "T:conv-26|D4:3",
+            "content": "Source conversation on 10:37 am on 27 June, 2023: 卡罗琳：谢谢,梅拉妮!这条项链对我特别重要——是我奶奶送我的礼物,她在我祖国的家乡瑞典。我小时候她送给我,它代表着爱、信念和力量。它就像在提醒我我的根,以及我从家人那里得到的所有爱和支持。"
+          }
+        ],
+        "pair": [
+          {
+            "id": "T:conv-26|D4:2",
+            "content": "Source conversation on 10:37 am on 27 June, 2023: 梅拉妮：嘿,卡罗琳!很高兴收到你的消息!我喜欢这条项链,它有什么特别的意义吗?"
+          },
+          {
+            "id": "T:conv-26|D4:3",
+            "content": "Source conversation on 10:37 am on 27 June, 2023: 卡罗琳：谢谢,梅拉妮!这条项链对我特别重要——是我奶奶送我的礼物,她在我祖国的家乡瑞典。我小时候她送给我,它代表着爱、信念和力量。它就像在提醒我我的根,以及我从家人那里得到的所有爱和支持。"
+          }
+        ]
+      },
+      "calls": [
+        {
+          "arm": "answer_only",
+          "status": "supported",
+          "reason": "Memory 1 explicitly states the necklace represents 爱、信念和力量.",
+          "search_query": "",
+          "support_ids": [
+            "T:conv-26|D4:3"
+          ],
+          "raw_response": "{\"status\": \"supported\", \"reason\": \"Memory 1 explicitly states the necklace represents 爱、信念和力量.\", \"search_query\": \"\", \"support_indices\": [1]}",
+          "usage": {
+            "prompt_tokens": 291,
+            "completion_tokens": 38
+          },
+          "prompt_sha256": "26148e9ab93f5bff3569cb57342b5b9e78db088536d11f29a2cebb1d1ba3a51a",
+          "prompt_chars": 1095
+        },
+        {
+          "arm": "pair",
+          "status": "contradicted",
+          "reason": "记忆中项链是卡罗琳的（奶奶送的礼物），象征爱、信念和力量，而非梅拉妮的项链；梅拉妮只是询问者。",
+          "search_query": "梅拉妮的项链象征意义",
+          "support_ids": [],
+          "raw_response": "{\"status\": \"contradicted\", \"reason\": \"记忆中项链是卡罗琳的（奶奶送的礼物），象征爱、信念和力量，而非梅拉妮的项链；梅拉妮只是询问者。\", \"search_query\": \"梅拉妮的项链象征意义\", \"support_indices\": []}",
+          "usage": {
+            "prompt_tokens": 336,
+            "completion_tokens": 86
+          },
+          "prompt_sha256": "a6348351d8ddd49ad544738112810795cc3c65433148ae7105c2bbf18bb080a6",
+          "prompt_chars": 1189
+        },
+        {
+          "arm": "pair",
+          "status": "contradicted",
+          "reason": "记忆显示这条象征爱、信念和力量的项链属于卡罗琳（奶奶送的礼物），而非梅拉妮。梅拉妮只是询问者，其项链的象征意义在记忆中未提及。",
+          "search_query": "梅拉妮的项链的意义",
+          "support_ids": [],
+          "raw_response": "{\"status\":\"contradicted\",\"reason\":\"记忆显示这条象征爱、信念和力量的项链属于卡罗琳（奶奶送的礼物），而非梅拉妮。梅拉妮只是询问者，其项链的象征意义在记忆中未提及。\",\"search_query\":\"梅拉妮的项链的意义\",\"support_indices\":[]}",
+          "usage": {
+            "prompt_tokens": 336,
+            "completion_tokens": 114
+          },
+          "prompt_sha256": "a6348351d8ddd49ad544738112810795cc3c65433148ae7105c2bbf18bb080a6",
+          "prompt_chars": 1189
+        },
+        {
+          "arm": "answer_only",
+          "status": "supported",
+          "reason": "Memory 1 states the necklace 代表爱、信念和力量 (love, faith, and strength), which directly supports the answer.",
+          "search_query": "",
+          "support_ids": [
+            "T:conv-26|D4:3"
+          ],
+          "raw_response": "{\"status\": \"supported\", \"reason\": \"Memory 1 states the necklace 代表爱、信念和力量 (love, faith, and strength), which directly supports the answer.\", \"search_query\": \"\", \"support_indices\": [1]}",
+          "usage": {
+            "prompt_tokens": 291,
+            "completion_tokens": 50
+          },
+          "prompt_sha256": "26148e9ab93f5bff3569cb57342b5b9e78db088536d11f29a2cebb1d1ba3a51a",
+          "prompt_chars": 1095
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "These cases were chosen after manual source inspection and cannot estimate verifier accuracy.",
+    "Explicit speaker labels in source records are a favorable condition, not proof the production SourceGraph will surface the same records.",
+    "Two repeated verifier outputs per arm show local variability only; there is no answerer or downstream RSI acceptance run.",
+    "The expected relation labels are post hoc source judgments and are not sent to the verifier."
+  ],
+  "model": "glm-5.3-flash",
+  "completed": true
+}
