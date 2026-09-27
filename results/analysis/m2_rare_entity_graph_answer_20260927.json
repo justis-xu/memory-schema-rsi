@@ -1,0 +1,110 @@
+{
+  "scope": "One frozen current Chinese two-person question; automatic cached graph rare-bridge candidates + current unified rerank, ABBA four answer calls max, no judge",
+  "case_id": "locomo_conv-43_qa25",
+  "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+  "source_rerank": "results/analysis/m2_rare_entity_fused_rerank_20260927.json",
+  "rerank_sha256": "cf4e517f07c83228df84983af5a52583ed6dfa45b400da10ccae4d06942bc3de",
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "order": [
+    "baseline",
+    "rare_first",
+    "rare_first",
+    "baseline"
+  ],
+  "max_answer_calls": 4,
+  "answer_calls": 4,
+  "reference_date": "2024-01-12T13:41:00",
+  "context_ids": {
+    "baseline": [
+      "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+      "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+      "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+      "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+      "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+      "4e5abf64-a6e5-43fb-939e-a853809328cb",
+      "1acb6522-5397-4a62-8624-5f209f1bf34c",
+      "ffefd5b9-b385-4618-983c-9bd545d408a7",
+      "3d9696ac-a639-4862-980b-dc534b960d18",
+      "e849e488-2d13-4fc3-910e-7c86318cd897",
+      "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+      "e289c248-c3b1-4913-a40b-a537003da975",
+      "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+      "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+      "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a"
+    ],
+    "rare_first": [
+      "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+      "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+      "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+      "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+      "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+      "4e5abf64-a6e5-43fb-939e-a853809328cb",
+      "1acb6522-5397-4a62-8624-5f209f1bf34c",
+      "ffefd5b9-b385-4618-983c-9bd545d408a7",
+      "3d9696ac-a639-4862-980b-dc534b960d18",
+      "e849e488-2d13-4fc3-910e-7c86318cd897",
+      "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+      "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+      "e289c248-c3b1-4913-a40b-a537003da975",
+      "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+      "cba697a1-39a4-4012-b03b-6a4dec990dc7"
+    ]
+  },
+  "entered": [
+    "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc"
+  ],
+  "exited": [
+    "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a"
+  ],
+  "prompt_sha256": {
+    "baseline": "e51e2f6bd7be33bc494b39685181eba1f371564ee046e9545be61e520cd0e1cd",
+    "rare_first": "a20636e79b9480fc3084aaca5adf9db44282b8cd4ce33919845cf1b054264a04"
+  },
+  "vector_db_sha256_before": "57152cd4b7632b940c373218e1bfc05175ce9f85ff23c2c73dfb03517a652cd9",
+  "calls": [
+    {
+      "index": 1,
+      "arm": "baseline",
+      "answer": "蒂姆最珍视的是他最喜欢的球员签名的篮球；约翰收藏球鞋和篮球球衣。两人都收集篮球相关的运动物品。\n\n答案：他们都收藏与篮球相关的物品——蒂姆有一颗由他最喜欢的球员签名的篮球（装在展示盒中），约翰则收藏篮球球鞋和篮球球衣。",
+      "usage": {
+        "prompt_tokens": 2230,
+        "completion_tokens": 92
+      }
+    },
+    {
+      "index": 2,
+      "arm": "rare_first",
+      "answer": "签名篮球（有球员签名的篮球收藏品）。",
+      "usage": {
+        "prompt_tokens": 2260,
+        "completion_tokens": 47
+      }
+    },
+    {
+      "index": 3,
+      "arm": "rare_first",
+      "answer": "签名篮球",
+      "usage": {
+        "prompt_tokens": 2260,
+        "completion_tokens": 43
+      }
+    },
+    {
+      "index": 4,
+      "arm": "baseline",
+      "answer": "蒂姆和约翰都拥有与篮球相关的收藏品——约翰收藏篮球球衣（以及幸运篮球鞋等球鞋），蒂姆则珍藏着由他最喜欢的球员签名的篮球。",
+      "usage": {
+        "prompt_tokens": 2230,
+        "completion_tokens": 147
+      }
+    }
+  ],
+  "limits": [
+    "One current Chinese case and two repetitions per arm cannot estimate Graph overall benefit",
+    "Both context membership and ordering follow current rerank; effects are not separately identified",
+    "In-process graph cache path and rerank do not verify real HugeGraph edge order"
+  ],
+  "vector_db_sha256_after": "57152cd4b7632b940c373218e1bfc05175ce9f85ff23c2c73dfb03517a652cd9",
+  "vector_db_unchanged": true
+}

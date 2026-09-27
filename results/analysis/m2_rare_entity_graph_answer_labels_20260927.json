@@ -1,0 +1,14 @@
+{
+  "scope": "Manual source-grounded answer-element labels for the four frozen Chinese answer calls; mechanism sample, not overall accuracy",
+  "case_id": "locomo_conv-43_qa25",
+  "required_fact": "Tim and John each possess a signed basketball; the answer must identify signed basketball as their shared sports collectible",
+  "source_boundary": "John's signed basketball comes from D7:7-9 including image caption and follow-up; Tim's signed basketball is separately source supported. Image-derived content is not equivalent to Chinese text alone.",
+  "calls": [
+    {"index": 1, "arm": "baseline", "required_fact_present": false, "note": "Mentions Tim's signed basketball but substitutes John's jerseys and shoes for John's signed basketball."},
+    {"index": 2, "arm": "rare_first", "required_fact_present": true, "note": "Answers signed basketball as the shared collectible; no unsupported shared-shoes claim."},
+    {"index": 3, "arm": "rare_first", "required_fact_present": true, "note": "Answers signed basketball as the shared collectible; no unsupported shared-shoes claim."},
+    {"index": 4, "arm": "baseline", "required_fact_present": false, "note": "Mentions Tim's signed basketball but substitutes John's jerseys and shoes for John's signed basketball."}
+  ],
+  "counts": {"baseline_required_fact": "0/2", "rare_first_required_fact": "2/2"},
+  "limits": ["Only one question was answered", "Manual labels concern the required shared fact rather than a new judge exact score", "Membership and order both follow current rerank and are not separately identified"]
+}

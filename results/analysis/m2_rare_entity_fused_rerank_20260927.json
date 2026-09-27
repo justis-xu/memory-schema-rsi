@@ -1,0 +1,1847 @@
+{
+  "scope": "Frozen current Chinese 15 vector + 30 graph candidates reranked to 15; three cases, two graph orderings, two candidate policies; no answer/judge calls",
+  "inputs": {
+    "graph": "results/analysis/m2_rare_entity_graph_priority_20260927.json",
+    "old_retrieval": "results/analysis/m2_current_zh_retrieval_probe_20260926.json",
+    "recent_retrieval": "results/analysis/m2_current_zh_stratified_retrieval_20260927.json"
+  },
+  "input_sha256": {
+    "m2_rare_entity_graph_priority_20260927.json": "c3ab5f242b21284b03d204475e1861bee6948b77d6ebbcf3dae92a002d0605b3",
+    "m2_current_zh_retrieval_probe_20260926.json": "998d3321856430888ca5efeb98f20723f340f81175f349e3d893c52d0fe50091",
+    "m2_current_zh_stratified_retrieval_20260927.json": "35326da5323ba8ff8a4f93fac2f03718800083fe5b47cc4909c537f9eb4282bb"
+  },
+  "max_logical_rerank_calls": 12,
+  "logical_rerank_calls": 12,
+  "stopped_early": false,
+  "runs": [
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+      "order": "reversed",
+      "policy": "baseline",
+      "vector_ids": [
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+        "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+        "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+        "4e5abf64-a6e5-43fb-939e-a853809328cb",
+        "1acb6522-5397-4a62-8624-5f209f1bf34c",
+        "ffefd5b9-b385-4618-983c-9bd545d408a7",
+        "3d9696ac-a639-4862-980b-dc534b960d18",
+        "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+        "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+        "511649c4-ae44-44e0-b0ec-788d21dc4355",
+        "aae114a6-d224-48a4-ba5b-2fab1cc0e51a"
+      ],
+      "graph_ids": [
+        "da72faaf-c28a-4e08-9624-460f88971420",
+        "ffea61b7-4d7e-4f4a-96ef-5df131abe7d2",
+        "f91b641a-6c6e-412b-b3b7-0c14e35ec0da",
+        "ea782de7-e976-4e36-9c88-ed2033285477",
+        "e293f456-be11-4be7-9c92-81173a51ce03",
+        "e289c248-c3b1-4913-a40b-a537003da975",
+        "dce0c9c1-7851-4772-8401-e58140ae2a0a",
+        "cac74226-d275-465a-b177-a0b9e1351242",
+        "f3929709-4c0f-4279-99ff-944dc0ee5c6e",
+        "e849e488-2d13-4fc3-910e-7c86318cd897",
+        "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+        "990bf11a-acc2-40e7-98ab-9fa03420e048",
+        "f8640852-e2d2-4020-99f2-ad0d2a17a20f",
+        "f7e9b7d3-1db4-49ef-9923-e29427806919",
+        "e4c00305-17fa-4d2a-9eec-17318d50e30d",
+        "cd8c7b44-179c-4994-ad8c-e0218a58aab5",
+        "ccfca299-512a-4234-b8b1-34b16d58ecb0",
+        "cabfb855-081d-4423-9aed-13cf4a5eecad",
+        "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+        "e468ce67-79d4-43c6-aa60-6545b34d3119",
+        "c5e9ab15-5049-4588-abfd-4339319330e9",
+        "e08da5a1-8638-4041-87b5-2156790895b1",
+        "dc32e124-0a2a-4e09-961c-3b7730a9e739",
+        "c633c40a-bc46-4b1d-9386-63baf3287af7",
+        "bd972e77-4065-42eb-88b3-9f873971bdc0",
+        "b784b7cf-0c8d-4a31-a4ea-4e79a176299d",
+        "b2ba489b-9e17-4fed-a43d-9cefb701c278",
+        "a9a0b21b-6d23-46d3-a793-3992f09f1bab",
+        "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+        "70b6785b-0b50-4dc3-8544-172d63d2dba9"
+      ],
+      "documents_sha256": "fa3ddba00589d4aa84e55d4319177e518897eaa3d1223392d84ee21cef814338",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source": "vector",
+          "score": 0.7736261417243457
+        },
+        {
+          "rank": 2,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source": "vector",
+          "score": 0.7214817430599932
+        },
+        {
+          "rank": 3,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source": "vector",
+          "score": 0.7199673839750398
+        },
+        {
+          "rank": 4,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "source": "vector",
+          "score": 0.6974798522311307
+        },
+        {
+          "rank": 5,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "source": "vector",
+          "score": 0.6813084417236526
+        },
+        {
+          "rank": 6,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "source": "vector",
+          "score": 0.6387690415808978
+        },
+        {
+          "rank": 7,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "source": "vector",
+          "score": 0.5769563049629883
+        },
+        {
+          "rank": 8,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source": "vector",
+          "score": 0.5693196864635233
+        },
+        {
+          "rank": 9,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "source": "vector",
+          "score": 0.561560243243415
+        },
+        {
+          "rank": 10,
+          "id": "e849e488-2d13-4fc3-910e-7c86318cd897",
+          "source": "graph",
+          "score": 0.5273358130033508
+        },
+        {
+          "rank": 11,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "source": "vector",
+          "score": 0.45897456101681816
+        },
+        {
+          "rank": 12,
+          "id": "e289c248-c3b1-4913-a40b-a537003da975",
+          "source": "graph",
+          "score": 0.4522342692893543
+        },
+        {
+          "rank": 13,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source": "vector",
+          "score": 0.44050776865298963
+        },
+        {
+          "rank": 14,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "source": "vector",
+          "score": 0.43185359413936275
+        },
+        {
+          "rank": 15,
+          "id": "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+          "source": "vector",
+          "score": 0.4316687150335452
+        }
+      ],
+      "john_in_top15": false,
+      "vector_retained": 13
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+      "order": "reversed",
+      "policy": "rare_first",
+      "vector_ids": [
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+        "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+        "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+        "4e5abf64-a6e5-43fb-939e-a853809328cb",
+        "1acb6522-5397-4a62-8624-5f209f1bf34c",
+        "ffefd5b9-b385-4618-983c-9bd545d408a7",
+        "3d9696ac-a639-4862-980b-dc534b960d18",
+        "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+        "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+        "511649c4-ae44-44e0-b0ec-788d21dc4355",
+        "aae114a6-d224-48a4-ba5b-2fab1cc0e51a"
+      ],
+      "graph_ids": [
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "da72faaf-c28a-4e08-9624-460f88971420",
+        "ffea61b7-4d7e-4f4a-96ef-5df131abe7d2",
+        "f91b641a-6c6e-412b-b3b7-0c14e35ec0da",
+        "ea782de7-e976-4e36-9c88-ed2033285477",
+        "e293f456-be11-4be7-9c92-81173a51ce03",
+        "e289c248-c3b1-4913-a40b-a537003da975",
+        "dce0c9c1-7851-4772-8401-e58140ae2a0a",
+        "cac74226-d275-465a-b177-a0b9e1351242",
+        "f3929709-4c0f-4279-99ff-944dc0ee5c6e",
+        "e849e488-2d13-4fc3-910e-7c86318cd897",
+        "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+        "990bf11a-acc2-40e7-98ab-9fa03420e048",
+        "f8640852-e2d2-4020-99f2-ad0d2a17a20f",
+        "f7e9b7d3-1db4-49ef-9923-e29427806919",
+        "e4c00305-17fa-4d2a-9eec-17318d50e30d",
+        "cd8c7b44-179c-4994-ad8c-e0218a58aab5",
+        "ccfca299-512a-4234-b8b1-34b16d58ecb0",
+        "cabfb855-081d-4423-9aed-13cf4a5eecad",
+        "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+        "e468ce67-79d4-43c6-aa60-6545b34d3119",
+        "c5e9ab15-5049-4588-abfd-4339319330e9",
+        "e08da5a1-8638-4041-87b5-2156790895b1",
+        "dc32e124-0a2a-4e09-961c-3b7730a9e739",
+        "c633c40a-bc46-4b1d-9386-63baf3287af7",
+        "bd972e77-4065-42eb-88b3-9f873971bdc0",
+        "b784b7cf-0c8d-4a31-a4ea-4e79a176299d",
+        "b2ba489b-9e17-4fed-a43d-9cefb701c278",
+        "a9a0b21b-6d23-46d3-a793-3992f09f1bab",
+        "8827b1f0-5b69-408d-b948-0920cd1e4c9c"
+      ],
+      "documents_sha256": "f8efe8590878d080fce263b0768931efb91d1f4d3fa60659b1aff9b48d22147a",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source": "vector",
+          "score": 0.7736261417243457
+        },
+        {
+          "rank": 2,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source": "vector",
+          "score": 0.7214817430599932
+        },
+        {
+          "rank": 3,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source": "vector",
+          "score": 0.7199673839750398
+        },
+        {
+          "rank": 4,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "source": "vector",
+          "score": 0.6974798522311307
+        },
+        {
+          "rank": 5,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "source": "vector",
+          "score": 0.6813084417236526
+        },
+        {
+          "rank": 6,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "source": "vector",
+          "score": 0.6387690415808978
+        },
+        {
+          "rank": 7,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "source": "vector",
+          "score": 0.5769563049629883
+        },
+        {
+          "rank": 8,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source": "vector",
+          "score": 0.5693196864635233
+        },
+        {
+          "rank": 9,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "source": "vector",
+          "score": 0.561560243243415
+        },
+        {
+          "rank": 10,
+          "id": "e849e488-2d13-4fc3-910e-7c86318cd897",
+          "source": "graph",
+          "score": 0.5273358130033508
+        },
+        {
+          "rank": 11,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "source": "graph",
+          "score": 0.524445012646867
+        },
+        {
+          "rank": 12,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "source": "vector",
+          "score": 0.45897456101681816
+        },
+        {
+          "rank": 13,
+          "id": "e289c248-c3b1-4913-a40b-a537003da975",
+          "source": "graph",
+          "score": 0.4522342692893543
+        },
+        {
+          "rank": 14,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source": "vector",
+          "score": 0.44050776865298963
+        },
+        {
+          "rank": 15,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "source": "vector",
+          "score": 0.43185359413936275
+        }
+      ],
+      "john_in_top15": true,
+      "vector_retained": 12
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+      "order": "sorted",
+      "policy": "baseline",
+      "vector_ids": [
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+        "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+        "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+        "4e5abf64-a6e5-43fb-939e-a853809328cb",
+        "1acb6522-5397-4a62-8624-5f209f1bf34c",
+        "ffefd5b9-b385-4618-983c-9bd545d408a7",
+        "3d9696ac-a639-4862-980b-dc534b960d18",
+        "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+        "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+        "511649c4-ae44-44e0-b0ec-788d21dc4355",
+        "aae114a6-d224-48a4-ba5b-2fab1cc0e51a"
+      ],
+      "graph_ids": [
+        "0203a396-023b-4604-816d-e13a497c55a3",
+        "04291dc1-5a0b-4fa6-ad37-f152d087398d",
+        "0a3693bd-6407-4584-9b63-a4fda5a49d81",
+        "0f8de77b-2e05-45a9-a0a4-34d624bf8b5b",
+        "15ea510a-b175-42d4-bcce-3d9b08669fad",
+        "1847372a-3c20-4c79-abf2-8a971c927ba9",
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+        "57e83652-686d-45cb-952d-cf66e718e739",
+        "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+        "050d6d54-3907-4ebf-aee5-59f15d8cbf0d",
+        "08e2ae89-965a-4668-a290-dd160b20d60e",
+        "1124c537-329b-4f5c-bd20-33919a08f41c",
+        "1bb299a3-5fd4-420d-9472-975600a158fe",
+        "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+        "03a3796a-febb-47c4-964d-0d7cb75ecdf1",
+        "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+        "137b900b-84a9-4965-9f46-f0b67d388dcf",
+        "1a240463-b254-4e3c-b654-849617378f9b",
+        "1ddb628b-dce0-44ba-a333-c780ec3f98d5",
+        "1edf4fdb-bb14-48f4-a471-273d18237d64",
+        "2f4781dd-4fff-4ca0-ab23-3e9a6debe06a",
+        "074401d8-fa72-451a-8ea9-3b4874fdf883",
+        "468b7a3e-ce92-4bbe-89dc-c8ddbc04ce67",
+        "60a9e230-be64-4d2f-8a42-81943bd7c05a",
+        "688f8e28-1f86-4b91-a412-93971a6d9aca",
+        "990bf11a-acc2-40e7-98ab-9fa03420e048",
+        "03425545-f53f-4f81-997b-e60165215fc4",
+        "c5e9ab15-5049-4588-abfd-4339319330e9",
+        "1e57dad3-62d8-48e6-b509-ffdda3c61894"
+      ],
+      "documents_sha256": "f9c1d24a9a210a1ae2caefc96baa6d3aa4bd1464999c959cdfc5d9d3b0847c68",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source": "vector",
+          "score": 0.7736261417243457
+        },
+        {
+          "rank": 2,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source": "vector",
+          "score": 0.7214817430599932
+        },
+        {
+          "rank": 3,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source": "vector",
+          "score": 0.7199673839750398
+        },
+        {
+          "rank": 4,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "source": "vector",
+          "score": 0.6974798522311307
+        },
+        {
+          "rank": 5,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "source": "vector",
+          "score": 0.6813084417236526
+        },
+        {
+          "rank": 6,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "source": "vector",
+          "score": 0.6387690415808978
+        },
+        {
+          "rank": 7,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "source": "vector",
+          "score": 0.5769563049629883
+        },
+        {
+          "rank": 8,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source": "vector",
+          "score": 0.5693196864635233
+        },
+        {
+          "rank": 9,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "source": "vector",
+          "score": 0.561560243243415
+        },
+        {
+          "rank": 10,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "source": "graph",
+          "score": 0.524445012646867
+        },
+        {
+          "rank": 11,
+          "id": "15ea510a-b175-42d4-bcce-3d9b08669fad",
+          "source": "graph",
+          "score": 0.512418048420157
+        },
+        {
+          "rank": 12,
+          "id": "1a240463-b254-4e3c-b654-849617378f9b",
+          "source": "graph",
+          "score": 0.4819892964454871
+        },
+        {
+          "rank": 13,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "source": "vector",
+          "score": 0.45897456101681816
+        },
+        {
+          "rank": 14,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source": "vector",
+          "score": 0.44050776865298963
+        },
+        {
+          "rank": 15,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "source": "vector",
+          "score": 0.43185359413936275
+        }
+      ],
+      "john_in_top15": true,
+      "vector_retained": 12
+    },
+    {
+      "case_id": "locomo_conv-43_qa25",
+      "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+      "order": "sorted",
+      "policy": "rare_first",
+      "vector_ids": [
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+        "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+        "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+        "4e5abf64-a6e5-43fb-939e-a853809328cb",
+        "1acb6522-5397-4a62-8624-5f209f1bf34c",
+        "ffefd5b9-b385-4618-983c-9bd545d408a7",
+        "3d9696ac-a639-4862-980b-dc534b960d18",
+        "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+        "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+        "511649c4-ae44-44e0-b0ec-788d21dc4355",
+        "aae114a6-d224-48a4-ba5b-2fab1cc0e51a"
+      ],
+      "graph_ids": [
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "0203a396-023b-4604-816d-e13a497c55a3",
+        "04291dc1-5a0b-4fa6-ad37-f152d087398d",
+        "0a3693bd-6407-4584-9b63-a4fda5a49d81",
+        "0f8de77b-2e05-45a9-a0a4-34d624bf8b5b",
+        "15ea510a-b175-42d4-bcce-3d9b08669fad",
+        "1847372a-3c20-4c79-abf2-8a971c927ba9",
+        "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+        "57e83652-686d-45cb-952d-cf66e718e739",
+        "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+        "050d6d54-3907-4ebf-aee5-59f15d8cbf0d",
+        "08e2ae89-965a-4668-a290-dd160b20d60e",
+        "1124c537-329b-4f5c-bd20-33919a08f41c",
+        "1bb299a3-5fd4-420d-9472-975600a158fe",
+        "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+        "03a3796a-febb-47c4-964d-0d7cb75ecdf1",
+        "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+        "137b900b-84a9-4965-9f46-f0b67d388dcf",
+        "1a240463-b254-4e3c-b654-849617378f9b",
+        "1ddb628b-dce0-44ba-a333-c780ec3f98d5",
+        "1edf4fdb-bb14-48f4-a471-273d18237d64",
+        "2f4781dd-4fff-4ca0-ab23-3e9a6debe06a",
+        "074401d8-fa72-451a-8ea9-3b4874fdf883",
+        "468b7a3e-ce92-4bbe-89dc-c8ddbc04ce67",
+        "60a9e230-be64-4d2f-8a42-81943bd7c05a",
+        "688f8e28-1f86-4b91-a412-93971a6d9aca",
+        "990bf11a-acc2-40e7-98ab-9fa03420e048",
+        "03425545-f53f-4f81-997b-e60165215fc4",
+        "c5e9ab15-5049-4588-abfd-4339319330e9",
+        "1e57dad3-62d8-48e6-b509-ffdda3c61894"
+      ],
+      "documents_sha256": "0fdfe9a96ed384027306606aa7d43a4774b51b536ae1e9649765efda0c3e49a0",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source": "vector",
+          "score": 0.7736261417243457
+        },
+        {
+          "rank": 2,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source": "vector",
+          "score": 0.7214817430599932
+        },
+        {
+          "rank": 3,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source": "vector",
+          "score": 0.7199673839750398
+        },
+        {
+          "rank": 4,
+          "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+          "source": "vector",
+          "score": 0.6974798522311307
+        },
+        {
+          "rank": 5,
+          "id": "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+          "source": "vector",
+          "score": 0.6813084417236526
+        },
+        {
+          "rank": 6,
+          "id": "4e5abf64-a6e5-43fb-939e-a853809328cb",
+          "source": "vector",
+          "score": 0.6387690415808978
+        },
+        {
+          "rank": 7,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "source": "vector",
+          "score": 0.5769563049629883
+        },
+        {
+          "rank": 8,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source": "vector",
+          "score": 0.5693196864635233
+        },
+        {
+          "rank": 9,
+          "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+          "source": "vector",
+          "score": 0.561560243243415
+        },
+        {
+          "rank": 10,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "source": "graph",
+          "score": 0.524445012646867
+        },
+        {
+          "rank": 11,
+          "id": "15ea510a-b175-42d4-bcce-3d9b08669fad",
+          "source": "graph",
+          "score": 0.512418048420157
+        },
+        {
+          "rank": 12,
+          "id": "1a240463-b254-4e3c-b654-849617378f9b",
+          "source": "graph",
+          "score": 0.4819892964454871
+        },
+        {
+          "rank": 13,
+          "id": "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+          "source": "vector",
+          "score": 0.45897456101681816
+        },
+        {
+          "rank": 14,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source": "vector",
+          "score": 0.44050776865298963
+        },
+        {
+          "rank": 15,
+          "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+          "source": "vector",
+          "score": 0.43185359413936275
+        }
+      ],
+      "john_in_top15": true,
+      "vector_retained": 12
+    },
+    {
+      "case_id": "locomo_conv-43_qa2",
+      "question": "约翰收集什么物品？",
+      "order": "reversed",
+      "policy": "baseline",
+      "vector_ids": [
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+        "ffefd5b9-b385-4618-983c-9bd545d408a7",
+        "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+        "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+        "a396df78-5f2a-46ec-8730-f2115cfa1f2c",
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+        "9d633dbb-fa93-4a30-a91d-818e75792d23",
+        "d15eddbe-8dc8-4119-9aa9-7627de174614",
+        "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+        "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "c035e289-5b71-4f39-9a4b-ad883547445b",
+        "34f8a829-bfae-4d8c-97e5-d6b36780d97e"
+      ],
+      "graph_ids": [
+        "e293f456-be11-4be7-9c92-81173a51ce03",
+        "f3929709-4c0f-4279-99ff-944dc0ee5c6e",
+        "e849e488-2d13-4fc3-910e-7c86318cd897",
+        "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+        "ffea61b7-4d7e-4f4a-96ef-5df131abe7d2",
+        "f91b641a-6c6e-412b-b3b7-0c14e35ec0da",
+        "f7e9b7d3-1db4-49ef-9923-e29427806919",
+        "ea782de7-e976-4e36-9c88-ed2033285477",
+        "e4c00305-17fa-4d2a-9eec-17318d50e30d",
+        "e289c248-c3b1-4913-a40b-a537003da975",
+        "dce0c9c1-7851-4772-8401-e58140ae2a0a",
+        "cd8c7b44-179c-4994-ad8c-e0218a58aab5",
+        "ccfca299-512a-4234-b8b1-34b16d58ecb0",
+        "dc32e124-0a2a-4e09-961c-3b7730a9e739",
+        "cac74226-d275-465a-b177-a0b9e1351242",
+        "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+        "bd972e77-4065-42eb-88b3-9f873971bdc0",
+        "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+        "e468ce67-79d4-43c6-aa60-6545b34d3119",
+        "da72faaf-c28a-4e08-9624-460f88971420",
+        "eb23bfe9-cd70-4fed-a36e-dffd624aa7f1",
+        "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+        "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+        "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+        "f1cbcea3-bdd1-42e9-a37d-c10e5e2b956a",
+        "9594a3de-85ea-430c-961a-dbbb5e03b625",
+        "94ed36ca-69d9-432b-93f9-2ea02ad53d71",
+        "f8640852-e2d2-4020-99f2-ad0d2a17a20f",
+        "e08da5a1-8638-4041-87b5-2156790895b1",
+        "cabfb855-081d-4423-9aed-13cf4a5eecad"
+      ],
+      "documents_sha256": "fc2dfe94e6730cc9e0733291366c18955af961dcfdf5ecc4e6784627e83c3cae",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source": "vector",
+          "score": 0.9347051846412407
+        },
+        {
+          "rank": 2,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source": "vector",
+          "score": 0.9249823719857111
+        },
+        {
+          "rank": 3,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source": "vector",
+          "score": 0.8626991637013111
+        },
+        {
+          "rank": 4,
+          "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+          "source": "vector",
+          "score": 0.6661696371534106
+        },
+        {
+          "rank": 5,
+          "id": "a396df78-5f2a-46ec-8730-f2115cfa1f2c",
+          "source": "vector",
+          "score": 0.6246175741796067
+        },
+        {
+          "rank": 6,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "source": "vector",
+          "score": 0.6147019425257385
+        },
+        {
+          "rank": 7,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source": "vector",
+          "score": 0.6119287531658186
+        },
+        {
+          "rank": 8,
+          "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+          "source": "vector",
+          "score": 0.6101107632410012
+        },
+        {
+          "rank": 9,
+          "id": "9d633dbb-fa93-4a30-a91d-818e75792d23",
+          "source": "vector",
+          "score": 0.5689821630757286
+        },
+        {
+          "rank": 10,
+          "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+          "source": "vector",
+          "score": 0.5495345726430105
+        },
+        {
+          "rank": 11,
+          "id": "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+          "source": "vector",
+          "score": 0.5389568509098207
+        },
+        {
+          "rank": 12,
+          "id": "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+          "source": "vector",
+          "score": 0.5134872771344544
+        },
+        {
+          "rank": 13,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source": "vector",
+          "score": 0.5039912388683379
+        },
+        {
+          "rank": 14,
+          "id": "e849e488-2d13-4fc3-910e-7c86318cd897",
+          "source": "graph",
+          "score": 0.5025002306949351
+        },
+        {
+          "rank": 15,
+          "id": "c035e289-5b71-4f39-9a4b-ad883547445b",
+          "source": "vector",
+          "score": 0.4614097576415083
+        }
+      ],
+      "john_in_top15": true,
+      "vector_retained": 14
+    },
+    {
+      "case_id": "locomo_conv-43_qa2",
+      "question": "约翰收集什么物品？",
+      "order": "reversed",
+      "policy": "rare_first",
+      "vector_ids": [
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+        "ffefd5b9-b385-4618-983c-9bd545d408a7",
+        "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+        "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+        "a396df78-5f2a-46ec-8730-f2115cfa1f2c",
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+        "9d633dbb-fa93-4a30-a91d-818e75792d23",
+        "d15eddbe-8dc8-4119-9aa9-7627de174614",
+        "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+        "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "c035e289-5b71-4f39-9a4b-ad883547445b",
+        "34f8a829-bfae-4d8c-97e5-d6b36780d97e"
+      ],
+      "graph_ids": [
+        "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+        "e293f456-be11-4be7-9c92-81173a51ce03",
+        "f3929709-4c0f-4279-99ff-944dc0ee5c6e",
+        "e849e488-2d13-4fc3-910e-7c86318cd897",
+        "ffea61b7-4d7e-4f4a-96ef-5df131abe7d2",
+        "f91b641a-6c6e-412b-b3b7-0c14e35ec0da",
+        "f7e9b7d3-1db4-49ef-9923-e29427806919",
+        "ea782de7-e976-4e36-9c88-ed2033285477",
+        "e4c00305-17fa-4d2a-9eec-17318d50e30d",
+        "e289c248-c3b1-4913-a40b-a537003da975",
+        "dce0c9c1-7851-4772-8401-e58140ae2a0a",
+        "cd8c7b44-179c-4994-ad8c-e0218a58aab5",
+        "ccfca299-512a-4234-b8b1-34b16d58ecb0",
+        "dc32e124-0a2a-4e09-961c-3b7730a9e739",
+        "cac74226-d275-465a-b177-a0b9e1351242",
+        "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+        "bd972e77-4065-42eb-88b3-9f873971bdc0",
+        "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+        "e468ce67-79d4-43c6-aa60-6545b34d3119",
+        "da72faaf-c28a-4e08-9624-460f88971420",
+        "eb23bfe9-cd70-4fed-a36e-dffd624aa7f1",
+        "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+        "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+        "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+        "f1cbcea3-bdd1-42e9-a37d-c10e5e2b956a",
+        "9594a3de-85ea-430c-961a-dbbb5e03b625",
+        "94ed36ca-69d9-432b-93f9-2ea02ad53d71",
+        "f8640852-e2d2-4020-99f2-ad0d2a17a20f",
+        "e08da5a1-8638-4041-87b5-2156790895b1",
+        "cabfb855-081d-4423-9aed-13cf4a5eecad"
+      ],
+      "documents_sha256": "2ae7047d5eb4dd6ddb5c3f78cb22a2f4a41af1e98bafe7c0602ce33f51a68eb0",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source": "vector",
+          "score": 0.9347051846412407
+        },
+        {
+          "rank": 2,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source": "vector",
+          "score": 0.9249823719857111
+        },
+        {
+          "rank": 3,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source": "vector",
+          "score": 0.8626991637013111
+        },
+        {
+          "rank": 4,
+          "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+          "source": "vector",
+          "score": 0.6661696371534106
+        },
+        {
+          "rank": 5,
+          "id": "a396df78-5f2a-46ec-8730-f2115cfa1f2c",
+          "source": "vector",
+          "score": 0.6246175741796067
+        },
+        {
+          "rank": 6,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "source": "vector",
+          "score": 0.6147019425257385
+        },
+        {
+          "rank": 7,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source": "vector",
+          "score": 0.6119287531658186
+        },
+        {
+          "rank": 8,
+          "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+          "source": "vector",
+          "score": 0.6101107632410012
+        },
+        {
+          "rank": 9,
+          "id": "9d633dbb-fa93-4a30-a91d-818e75792d23",
+          "source": "vector",
+          "score": 0.5689821630757286
+        },
+        {
+          "rank": 10,
+          "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+          "source": "vector",
+          "score": 0.5495345726430105
+        },
+        {
+          "rank": 11,
+          "id": "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+          "source": "vector",
+          "score": 0.5389568509098207
+        },
+        {
+          "rank": 12,
+          "id": "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+          "source": "vector",
+          "score": 0.5134872771344544
+        },
+        {
+          "rank": 13,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source": "vector",
+          "score": 0.5039912388683379
+        },
+        {
+          "rank": 14,
+          "id": "e849e488-2d13-4fc3-910e-7c86318cd897",
+          "source": "graph",
+          "score": 0.5025002306949351
+        },
+        {
+          "rank": 15,
+          "id": "c035e289-5b71-4f39-9a4b-ad883547445b",
+          "source": "vector",
+          "score": 0.4614097576415083
+        }
+      ],
+      "john_in_top15": true,
+      "vector_retained": 14
+    },
+    {
+      "case_id": "locomo_conv-43_qa2",
+      "question": "约翰收集什么物品？",
+      "order": "sorted",
+      "policy": "baseline",
+      "vector_ids": [
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+        "ffefd5b9-b385-4618-983c-9bd545d408a7",
+        "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+        "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+        "a396df78-5f2a-46ec-8730-f2115cfa1f2c",
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+        "9d633dbb-fa93-4a30-a91d-818e75792d23",
+        "d15eddbe-8dc8-4119-9aa9-7627de174614",
+        "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+        "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "c035e289-5b71-4f39-9a4b-ad883547445b",
+        "34f8a829-bfae-4d8c-97e5-d6b36780d97e"
+      ],
+      "graph_ids": [
+        "04291dc1-5a0b-4fa6-ad37-f152d087398d",
+        "0203a396-023b-4604-816d-e13a497c55a3",
+        "050d6d54-3907-4ebf-aee5-59f15d8cbf0d",
+        "0a3693bd-6407-4584-9b63-a4fda5a49d81",
+        "1124c537-329b-4f5c-bd20-33919a08f41c",
+        "2f4781dd-4fff-4ca0-ab23-3e9a6debe06a",
+        "03425545-f53f-4f81-997b-e60165215fc4",
+        "0f8de77b-2e05-45a9-a0a4-34d624bf8b5b",
+        "15ea510a-b175-42d4-bcce-3d9b08669fad",
+        "1acb6522-5397-4a62-8624-5f209f1bf34c",
+        "1bb299a3-5fd4-420d-9472-975600a158fe",
+        "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+        "301911d3-603e-4a1d-a9bf-49aca44b0e5a",
+        "3d9696ac-a639-4862-980b-dc534b960d18",
+        "137b900b-84a9-4965-9f46-f0b67d388dcf",
+        "1ddb628b-dce0-44ba-a333-c780ec3f98d5",
+        "0d01722b-8551-4dd4-a380-08270eb4fa9a",
+        "5dccb4ae-6baf-4a99-aad1-33280a571494",
+        "468b7a3e-ce92-4bbe-89dc-c8ddbc04ce67",
+        "688f8e28-1f86-4b91-a412-93971a6d9aca",
+        "7f4a8161-c36b-4535-8387-be8c382fb11c",
+        "94ed36ca-69d9-432b-93f9-2ea02ad53d71",
+        "9594a3de-85ea-430c-961a-dbbb5e03b625",
+        "08e2ae89-965a-4668-a290-dd160b20d60e",
+        "0a0e16d0-dfaf-4e5a-9039-9c541e64eb56",
+        "0d2c2eb7-a7d3-4e12-ac0d-dcd0f31294ea",
+        "10d61023-a36a-4523-af05-d739f121408f",
+        "1847372a-3c20-4c79-abf2-8a971c927ba9",
+        "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+        "03a3796a-febb-47c4-964d-0d7cb75ecdf1"
+      ],
+      "documents_sha256": "5b36bcc37e01e30d5921e311306451df6ad12bd567a346244bcaba8e4d0ee6fb",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source": "vector",
+          "score": 0.9347051846412407
+        },
+        {
+          "rank": 2,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source": "vector",
+          "score": 0.9249823719857111
+        },
+        {
+          "rank": 3,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source": "vector",
+          "score": 0.8626991637013111
+        },
+        {
+          "rank": 4,
+          "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+          "source": "vector",
+          "score": 0.6661696371534106
+        },
+        {
+          "rank": 5,
+          "id": "a396df78-5f2a-46ec-8730-f2115cfa1f2c",
+          "source": "vector",
+          "score": 0.6246175741796067
+        },
+        {
+          "rank": 6,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "source": "vector",
+          "score": 0.6147019425257385
+        },
+        {
+          "rank": 7,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source": "vector",
+          "score": 0.6119287531658186
+        },
+        {
+          "rank": 8,
+          "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+          "source": "vector",
+          "score": 0.6101107632410012
+        },
+        {
+          "rank": 9,
+          "id": "9d633dbb-fa93-4a30-a91d-818e75792d23",
+          "source": "vector",
+          "score": 0.5689821630757286
+        },
+        {
+          "rank": 10,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "source": "graph",
+          "score": 0.567016666501019
+        },
+        {
+          "rank": 11,
+          "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+          "source": "vector",
+          "score": 0.5495345726430105
+        },
+        {
+          "rank": 12,
+          "id": "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+          "source": "vector",
+          "score": 0.5389568509098207
+        },
+        {
+          "rank": 13,
+          "id": "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+          "source": "vector",
+          "score": 0.5134872771344544
+        },
+        {
+          "rank": 14,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source": "vector",
+          "score": 0.5039912388683379
+        },
+        {
+          "rank": 15,
+          "id": "c035e289-5b71-4f39-9a4b-ad883547445b",
+          "source": "vector",
+          "score": 0.4614097576415083
+        }
+      ],
+      "john_in_top15": true,
+      "vector_retained": 14
+    },
+    {
+      "case_id": "locomo_conv-43_qa2",
+      "question": "约翰收集什么物品？",
+      "order": "sorted",
+      "policy": "rare_first",
+      "vector_ids": [
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+        "ffefd5b9-b385-4618-983c-9bd545d408a7",
+        "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+        "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+        "a396df78-5f2a-46ec-8730-f2115cfa1f2c",
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+        "9d633dbb-fa93-4a30-a91d-818e75792d23",
+        "d15eddbe-8dc8-4119-9aa9-7627de174614",
+        "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+        "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "c035e289-5b71-4f39-9a4b-ad883547445b",
+        "34f8a829-bfae-4d8c-97e5-d6b36780d97e"
+      ],
+      "graph_ids": [
+        "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+        "04291dc1-5a0b-4fa6-ad37-f152d087398d",
+        "0203a396-023b-4604-816d-e13a497c55a3",
+        "050d6d54-3907-4ebf-aee5-59f15d8cbf0d",
+        "0a3693bd-6407-4584-9b63-a4fda5a49d81",
+        "1124c537-329b-4f5c-bd20-33919a08f41c",
+        "2f4781dd-4fff-4ca0-ab23-3e9a6debe06a",
+        "03425545-f53f-4f81-997b-e60165215fc4",
+        "0f8de77b-2e05-45a9-a0a4-34d624bf8b5b",
+        "15ea510a-b175-42d4-bcce-3d9b08669fad",
+        "1acb6522-5397-4a62-8624-5f209f1bf34c",
+        "1bb299a3-5fd4-420d-9472-975600a158fe",
+        "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+        "301911d3-603e-4a1d-a9bf-49aca44b0e5a",
+        "3d9696ac-a639-4862-980b-dc534b960d18",
+        "137b900b-84a9-4965-9f46-f0b67d388dcf",
+        "1ddb628b-dce0-44ba-a333-c780ec3f98d5",
+        "0d01722b-8551-4dd4-a380-08270eb4fa9a",
+        "5dccb4ae-6baf-4a99-aad1-33280a571494",
+        "468b7a3e-ce92-4bbe-89dc-c8ddbc04ce67",
+        "688f8e28-1f86-4b91-a412-93971a6d9aca",
+        "7f4a8161-c36b-4535-8387-be8c382fb11c",
+        "94ed36ca-69d9-432b-93f9-2ea02ad53d71",
+        "9594a3de-85ea-430c-961a-dbbb5e03b625",
+        "08e2ae89-965a-4668-a290-dd160b20d60e",
+        "0a0e16d0-dfaf-4e5a-9039-9c541e64eb56",
+        "0d2c2eb7-a7d3-4e12-ac0d-dcd0f31294ea",
+        "10d61023-a36a-4523-af05-d739f121408f",
+        "1847372a-3c20-4c79-abf2-8a971c927ba9",
+        "00e9d949-4f9b-4b1d-8248-96852ed3a6bb"
+      ],
+      "documents_sha256": "295c6741438c4395ac172ab425f26845e65564a77a1cc9236f067080fca3163a",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+          "source": "vector",
+          "score": 0.9347051846412407
+        },
+        {
+          "rank": 2,
+          "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+          "source": "vector",
+          "score": 0.9249823719857111
+        },
+        {
+          "rank": 3,
+          "id": "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+          "source": "vector",
+          "score": 0.8626991637013111
+        },
+        {
+          "rank": 4,
+          "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+          "source": "vector",
+          "score": 0.6661696371534106
+        },
+        {
+          "rank": 5,
+          "id": "a396df78-5f2a-46ec-8730-f2115cfa1f2c",
+          "source": "vector",
+          "score": 0.6246175741796067
+        },
+        {
+          "rank": 6,
+          "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+          "source": "vector",
+          "score": 0.6147019425257385
+        },
+        {
+          "rank": 7,
+          "id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+          "source": "vector",
+          "score": 0.6119287531658186
+        },
+        {
+          "rank": 8,
+          "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+          "source": "vector",
+          "score": 0.6101107632410012
+        },
+        {
+          "rank": 9,
+          "id": "9d633dbb-fa93-4a30-a91d-818e75792d23",
+          "source": "vector",
+          "score": 0.5689821630757286
+        },
+        {
+          "rank": 10,
+          "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+          "source": "graph",
+          "score": 0.567016666501019
+        },
+        {
+          "rank": 11,
+          "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+          "source": "vector",
+          "score": 0.5495345726430105
+        },
+        {
+          "rank": 12,
+          "id": "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+          "source": "vector",
+          "score": 0.5389568509098207
+        },
+        {
+          "rank": 13,
+          "id": "4f36801f-0ca2-4c12-82cb-84e22c74c2b9",
+          "source": "vector",
+          "score": 0.5134872771344544
+        },
+        {
+          "rank": 14,
+          "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+          "source": "vector",
+          "score": 0.5039912388683379
+        },
+        {
+          "rank": 15,
+          "id": "c035e289-5b71-4f39-9a4b-ad883547445b",
+          "source": "vector",
+          "score": 0.4614097576415083
+        }
+      ],
+      "john_in_top15": true,
+      "vector_retained": 14
+    },
+    {
+      "case_id": "locomo_conv-43_qa32",
+      "question": "根据参观环球影城的计划，蒂姆2023年9月可能在哪些美国州？",
+      "order": "reversed",
+      "policy": "baseline",
+      "vector_ids": [
+        "9abb3a00-e77d-4bd3-aa2f-8eeeed1ff3cb",
+        "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+        "cac74226-d275-465a-b177-a0b9e1351242",
+        "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+        "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+        "4c83db57-0cb0-4098-853e-983d1ad879db",
+        "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+        "8432ae70-9aad-4815-ba60-7a521afd96ad",
+        "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+        "762b835e-b590-466a-873c-e6bdcdc4a54c",
+        "f08ee55a-26e1-407e-b11b-edb57f29a4ed",
+        "eda0952c-ee7c-4be4-b342-5e8e52038810",
+        "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+        "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+        "decf0285-cbd0-4097-8e56-570e10d384a9"
+      ],
+      "graph_ids": [
+        "ffea61b7-4d7e-4f4a-96ef-5df131abe7d2",
+        "dc32e124-0a2a-4e09-961c-3b7730a9e739",
+        "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+        "f358ed03-4b9c-4275-a94b-5c49f0044eff",
+        "d1dff64e-eb1c-49ea-b74d-8569c5773e43",
+        "da72faaf-c28a-4e08-9624-460f88971420",
+        "f8697c06-d00f-4818-bb75-a17465dbfc87",
+        "f1cbcea3-bdd1-42e9-a37d-c10e5e2b956a",
+        "eb23bfe9-cd70-4fed-a36e-dffd624aa7f1",
+        "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+        "d1e2eb4d-e34a-4c4f-949b-10cd43022797",
+        "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+        "c5dcfd75-6bb5-47a9-823e-1dd2de5cf92a",
+        "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+        "a3139982-20ae-4490-9d98-d2c9b45bcd68",
+        "92cbbc81-e98c-4835-baef-193be35bf90b",
+        "e7e19383-c5cc-4b37-8c64-bf279541d682",
+        "c851b7c2-2649-49e4-850f-d450ce3a0b8d",
+        "c82ea25c-6562-4e66-95b6-714dad968f47",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+        "c72876b5-08d3-4390-82e4-7c9c644b1be7",
+        "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+        "ea782de7-e976-4e36-9c88-ed2033285477",
+        "e289c248-c3b1-4913-a40b-a537003da975",
+        "dce0c9c1-7851-4772-8401-e58140ae2a0a",
+        "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+        "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+        "bd972e77-4065-42eb-88b3-9f873971bdc0",
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      ],
+      "documents_sha256": "4dc1c50518576dd83b527eef242427a3320e3b01bc8955aef590a9a473254fd2",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "9abb3a00-e77d-4bd3-aa2f-8eeeed1ff3cb",
+          "source": "vector",
+          "score": 0.7346096966255985
+        },
+        {
+          "rank": 2,
+          "id": "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+          "source": "vector",
+          "score": 0.6662936697466896
+        },
+        {
+          "rank": 3,
+          "id": "cac74226-d275-465a-b177-a0b9e1351242",
+          "source": "vector",
+          "score": 0.5601563058912713
+        },
+        {
+          "rank": 4,
+          "id": "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+          "source": "vector",
+          "score": 0.5473977533421671
+        },
+        {
+          "rank": 5,
+          "id": "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+          "source": "vector",
+          "score": 0.4418493414490894
+        },
+        {
+          "rank": 6,
+          "id": "4c83db57-0cb0-4098-853e-983d1ad879db",
+          "source": "vector",
+          "score": 0.41479248784099004
+        },
+        {
+          "rank": 7,
+          "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+          "source": "vector",
+          "score": 0.39271962853459236
+        },
+        {
+          "rank": 8,
+          "id": "8432ae70-9aad-4815-ba60-7a521afd96ad",
+          "source": "vector",
+          "score": 0.34704908499718706
+        },
+        {
+          "rank": 9,
+          "id": "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+          "source": "vector",
+          "score": 0.32216010491407915
+        },
+        {
+          "rank": 10,
+          "id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+          "source": "vector",
+          "score": 0.32142651652641263
+        },
+        {
+          "rank": 11,
+          "id": "f08ee55a-26e1-407e-b11b-edb57f29a4ed",
+          "source": "vector",
+          "score": 0.3174358926257924
+        },
+        {
+          "rank": 12,
+          "id": "eda0952c-ee7c-4be4-b342-5e8e52038810",
+          "source": "vector",
+          "score": 0.31507322422801126
+        },
+        {
+          "rank": 13,
+          "id": "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+          "source": "vector",
+          "score": 0.29345952827984556
+        },
+        {
+          "rank": 14,
+          "id": "c851b7c2-2649-49e4-850f-d450ce3a0b8d",
+          "source": "graph",
+          "score": 0.2928956448252782
+        },
+        {
+          "rank": 15,
+          "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+          "source": "vector",
+          "score": 0.28842859296858125
+        }
+      ],
+      "john_in_top15": false,
+      "vector_retained": 14
+    },
+    {
+      "case_id": "locomo_conv-43_qa32",
+      "question": "根据参观环球影城的计划，蒂姆2023年9月可能在哪些美国州？",
+      "order": "reversed",
+      "policy": "rare_first",
+      "vector_ids": [
+        "9abb3a00-e77d-4bd3-aa2f-8eeeed1ff3cb",
+        "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+        "cac74226-d275-465a-b177-a0b9e1351242",
+        "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+        "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+        "4c83db57-0cb0-4098-853e-983d1ad879db",
+        "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+        "8432ae70-9aad-4815-ba60-7a521afd96ad",
+        "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+        "762b835e-b590-466a-873c-e6bdcdc4a54c",
+        "f08ee55a-26e1-407e-b11b-edb57f29a4ed",
+        "eda0952c-ee7c-4be4-b342-5e8e52038810",
+        "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+        "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+        "decf0285-cbd0-4097-8e56-570e10d384a9"
+      ],
+      "graph_ids": [
+        "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+        "92cbbc81-e98c-4835-baef-193be35bf90b",
+        "ffea61b7-4d7e-4f4a-96ef-5df131abe7d2",
+        "dc32e124-0a2a-4e09-961c-3b7730a9e739",
+        "f358ed03-4b9c-4275-a94b-5c49f0044eff",
+        "d1dff64e-eb1c-49ea-b74d-8569c5773e43",
+        "da72faaf-c28a-4e08-9624-460f88971420",
+        "f8697c06-d00f-4818-bb75-a17465dbfc87",
+        "f1cbcea3-bdd1-42e9-a37d-c10e5e2b956a",
+        "eb23bfe9-cd70-4fed-a36e-dffd624aa7f1",
+        "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+        "d1e2eb4d-e34a-4c4f-949b-10cd43022797",
+        "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+        "c5dcfd75-6bb5-47a9-823e-1dd2de5cf92a",
+        "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+        "a3139982-20ae-4490-9d98-d2c9b45bcd68",
+        "e7e19383-c5cc-4b37-8c64-bf279541d682",
+        "c851b7c2-2649-49e4-850f-d450ce3a0b8d",
+        "c82ea25c-6562-4e66-95b6-714dad968f47",
+        "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+        "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+        "c72876b5-08d3-4390-82e4-7c9c644b1be7",
+        "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+        "ea782de7-e976-4e36-9c88-ed2033285477",
+        "e289c248-c3b1-4913-a40b-a537003da975",
+        "dce0c9c1-7851-4772-8401-e58140ae2a0a",
+        "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+        "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+        "bd972e77-4065-42eb-88b3-9f873971bdc0",
+        "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      ],
+      "documents_sha256": "d763c6356d25e939ec972693c613f68898512c2ee909e05db478a26bc1f7177e",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "9abb3a00-e77d-4bd3-aa2f-8eeeed1ff3cb",
+          "source": "vector",
+          "score": 0.7346096966255985
+        },
+        {
+          "rank": 2,
+          "id": "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+          "source": "vector",
+          "score": 0.6662936697466896
+        },
+        {
+          "rank": 3,
+          "id": "cac74226-d275-465a-b177-a0b9e1351242",
+          "source": "vector",
+          "score": 0.5601563058912713
+        },
+        {
+          "rank": 4,
+          "id": "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+          "source": "vector",
+          "score": 0.5473977533421671
+        },
+        {
+          "rank": 5,
+          "id": "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+          "source": "vector",
+          "score": 0.4418493414490894
+        },
+        {
+          "rank": 6,
+          "id": "4c83db57-0cb0-4098-853e-983d1ad879db",
+          "source": "vector",
+          "score": 0.41479248784099004
+        },
+        {
+          "rank": 7,
+          "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+          "source": "vector",
+          "score": 0.39271962853459236
+        },
+        {
+          "rank": 8,
+          "id": "8432ae70-9aad-4815-ba60-7a521afd96ad",
+          "source": "vector",
+          "score": 0.34704908499718706
+        },
+        {
+          "rank": 9,
+          "id": "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+          "source": "vector",
+          "score": 0.32216010491407915
+        },
+        {
+          "rank": 10,
+          "id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+          "source": "vector",
+          "score": 0.32142651652641263
+        },
+        {
+          "rank": 11,
+          "id": "f08ee55a-26e1-407e-b11b-edb57f29a4ed",
+          "source": "vector",
+          "score": 0.3174358926257924
+        },
+        {
+          "rank": 12,
+          "id": "eda0952c-ee7c-4be4-b342-5e8e52038810",
+          "source": "vector",
+          "score": 0.31507322422801126
+        },
+        {
+          "rank": 13,
+          "id": "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+          "source": "vector",
+          "score": 0.29345952827984556
+        },
+        {
+          "rank": 14,
+          "id": "c851b7c2-2649-49e4-850f-d450ce3a0b8d",
+          "source": "graph",
+          "score": 0.2928956448252782
+        },
+        {
+          "rank": 15,
+          "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+          "source": "vector",
+          "score": 0.28842859296858125
+        }
+      ],
+      "john_in_top15": false,
+      "vector_retained": 14
+    },
+    {
+      "case_id": "locomo_conv-43_qa32",
+      "question": "根据参观环球影城的计划，蒂姆2023年9月可能在哪些美国州？",
+      "order": "sorted",
+      "policy": "baseline",
+      "vector_ids": [
+        "9abb3a00-e77d-4bd3-aa2f-8eeeed1ff3cb",
+        "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+        "cac74226-d275-465a-b177-a0b9e1351242",
+        "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+        "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+        "4c83db57-0cb0-4098-853e-983d1ad879db",
+        "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+        "8432ae70-9aad-4815-ba60-7a521afd96ad",
+        "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+        "762b835e-b590-466a-873c-e6bdcdc4a54c",
+        "f08ee55a-26e1-407e-b11b-edb57f29a4ed",
+        "eda0952c-ee7c-4be4-b342-5e8e52038810",
+        "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+        "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+        "decf0285-cbd0-4097-8e56-570e10d384a9"
+      ],
+      "graph_ids": [
+        "1847372a-3c20-4c79-abf2-8a971c927ba9",
+        "163fd59b-9f10-4c31-9356-bbe0343ed0d1",
+        "03a3796a-febb-47c4-964d-0d7cb75ecdf1",
+        "6c6124a0-0532-43a5-b03b-659cf973fe32",
+        "3d9696ac-a639-4862-980b-dc534b960d18",
+        "1acb6522-5397-4a62-8624-5f209f1bf34c",
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+        "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+        "03befcfb-3747-4512-8fba-2dd20c0f5321",
+        "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+        "1fcc8e01-75ed-4a66-a67d-77c1024a746b",
+        "29beb6e9-1124-4323-98c8-86f158bab695",
+        "29c3c1cb-c4eb-4be1-b37c-5e5f597ec02e",
+        "42d43d4e-bf46-4b9d-9363-fe71e986161b",
+        "92cbbc81-e98c-4835-baef-193be35bf90b",
+        "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+        "00349207-bcb5-4534-aadc-9e06aa1d3203",
+        "08e2ae89-965a-4668-a290-dd160b20d60e",
+        "0fddf2fc-4c52-47c4-be25-1fdc92e4abdb",
+        "3a97d245-26c9-4941-8f4a-7c62765cd967",
+        "137b900b-84a9-4965-9f46-f0b67d388dcf",
+        "1e57dad3-62d8-48e6-b509-ffdda3c61894",
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "31d881b7-59ee-4aa9-a2a7-3e103a828ad1",
+        "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+        "688f8e28-1f86-4b91-a412-93971a6d9aca",
+        "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+        "03425545-f53f-4f81-997b-e60165215fc4",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "0d01722b-8551-4dd4-a380-08270eb4fa9a"
+      ],
+      "documents_sha256": "e49fb9f4349af72507dae6058cd43ce295b0c1227c9479105cd13ec57ffce093",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "9abb3a00-e77d-4bd3-aa2f-8eeeed1ff3cb",
+          "source": "vector",
+          "score": 0.7346096966255985
+        },
+        {
+          "rank": 2,
+          "id": "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+          "source": "vector",
+          "score": 0.6662936697466896
+        },
+        {
+          "rank": 3,
+          "id": "cac74226-d275-465a-b177-a0b9e1351242",
+          "source": "vector",
+          "score": 0.5601563058912713
+        },
+        {
+          "rank": 4,
+          "id": "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+          "source": "vector",
+          "score": 0.5473977533421671
+        },
+        {
+          "rank": 5,
+          "id": "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+          "source": "vector",
+          "score": 0.4418493414490894
+        },
+        {
+          "rank": 6,
+          "id": "4c83db57-0cb0-4098-853e-983d1ad879db",
+          "source": "vector",
+          "score": 0.41479248784099004
+        },
+        {
+          "rank": 7,
+          "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+          "source": "vector",
+          "score": 0.39271962853459236
+        },
+        {
+          "rank": 8,
+          "id": "8432ae70-9aad-4815-ba60-7a521afd96ad",
+          "source": "vector",
+          "score": 0.34704908499718706
+        },
+        {
+          "rank": 9,
+          "id": "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+          "source": "vector",
+          "score": 0.32216010491407915
+        },
+        {
+          "rank": 10,
+          "id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+          "source": "vector",
+          "score": 0.32142651652641263
+        },
+        {
+          "rank": 11,
+          "id": "f08ee55a-26e1-407e-b11b-edb57f29a4ed",
+          "source": "vector",
+          "score": 0.3174358926257924
+        },
+        {
+          "rank": 12,
+          "id": "eda0952c-ee7c-4be4-b342-5e8e52038810",
+          "source": "vector",
+          "score": 0.31507322422801126
+        },
+        {
+          "rank": 13,
+          "id": "1847372a-3c20-4c79-abf2-8a971c927ba9",
+          "source": "graph",
+          "score": 0.312932556791782
+        },
+        {
+          "rank": 14,
+          "id": "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+          "source": "vector",
+          "score": 0.29345952827984556
+        },
+        {
+          "rank": 15,
+          "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+          "source": "vector",
+          "score": 0.28842859296858125
+        }
+      ],
+      "john_in_top15": false,
+      "vector_retained": 14
+    },
+    {
+      "case_id": "locomo_conv-43_qa32",
+      "question": "根据参观环球影城的计划，蒂姆2023年9月可能在哪些美国州？",
+      "order": "sorted",
+      "policy": "rare_first",
+      "vector_ids": [
+        "9abb3a00-e77d-4bd3-aa2f-8eeeed1ff3cb",
+        "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+        "cac74226-d275-465a-b177-a0b9e1351242",
+        "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+        "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+        "4c83db57-0cb0-4098-853e-983d1ad879db",
+        "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+        "8432ae70-9aad-4815-ba60-7a521afd96ad",
+        "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+        "762b835e-b590-466a-873c-e6bdcdc4a54c",
+        "f08ee55a-26e1-407e-b11b-edb57f29a4ed",
+        "eda0952c-ee7c-4be4-b342-5e8e52038810",
+        "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+        "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+        "decf0285-cbd0-4097-8e56-570e10d384a9"
+      ],
+      "graph_ids": [
+        "92cbbc81-e98c-4835-baef-193be35bf90b",
+        "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+        "1847372a-3c20-4c79-abf2-8a971c927ba9",
+        "163fd59b-9f10-4c31-9356-bbe0343ed0d1",
+        "03a3796a-febb-47c4-964d-0d7cb75ecdf1",
+        "6c6124a0-0532-43a5-b03b-659cf973fe32",
+        "3d9696ac-a639-4862-980b-dc534b960d18",
+        "1acb6522-5397-4a62-8624-5f209f1bf34c",
+        "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+        "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+        "03befcfb-3747-4512-8fba-2dd20c0f5321",
+        "03d8a800-0e26-4a46-ac3e-463c01d4fb9c",
+        "1fcc8e01-75ed-4a66-a67d-77c1024a746b",
+        "29beb6e9-1124-4323-98c8-86f158bab695",
+        "29c3c1cb-c4eb-4be1-b37c-5e5f597ec02e",
+        "42d43d4e-bf46-4b9d-9363-fe71e986161b",
+        "00349207-bcb5-4534-aadc-9e06aa1d3203",
+        "08e2ae89-965a-4668-a290-dd160b20d60e",
+        "0fddf2fc-4c52-47c4-be25-1fdc92e4abdb",
+        "3a97d245-26c9-4941-8f4a-7c62765cd967",
+        "137b900b-84a9-4965-9f46-f0b67d388dcf",
+        "1e57dad3-62d8-48e6-b509-ffdda3c61894",
+        "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "31d881b7-59ee-4aa9-a2a7-3e103a828ad1",
+        "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+        "688f8e28-1f86-4b91-a412-93971a6d9aca",
+        "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+        "03425545-f53f-4f81-997b-e60165215fc4",
+        "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+        "0d01722b-8551-4dd4-a380-08270eb4fa9a"
+      ],
+      "documents_sha256": "10ffef2bb4937756d6272e434b679d3fb6c00918ef0d1f7fb53d49234499f619",
+      "input_count": 45,
+      "endpoint_style": "dashscope native text-rerank",
+      "top15": [
+        {
+          "rank": 1,
+          "id": "9abb3a00-e77d-4bd3-aa2f-8eeeed1ff3cb",
+          "source": "vector",
+          "score": 0.7346096966255985
+        },
+        {
+          "rank": 2,
+          "id": "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+          "source": "vector",
+          "score": 0.6662936697466896
+        },
+        {
+          "rank": 3,
+          "id": "cac74226-d275-465a-b177-a0b9e1351242",
+          "source": "vector",
+          "score": 0.5601563058912713
+        },
+        {
+          "rank": 4,
+          "id": "41d4b709-7801-479a-bbd0-c1a9d06d57ce",
+          "source": "vector",
+          "score": 0.5473977533421671
+        },
+        {
+          "rank": 5,
+          "id": "bb3e4e44-d003-4f5e-868e-53ea0ed5f3a5",
+          "source": "vector",
+          "score": 0.4418493414490894
+        },
+        {
+          "rank": 6,
+          "id": "4c83db57-0cb0-4098-853e-983d1ad879db",
+          "source": "vector",
+          "score": 0.41479248784099004
+        },
+        {
+          "rank": 7,
+          "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+          "source": "vector",
+          "score": 0.39271962853459236
+        },
+        {
+          "rank": 8,
+          "id": "8432ae70-9aad-4815-ba60-7a521afd96ad",
+          "source": "vector",
+          "score": 0.34704908499718706
+        },
+        {
+          "rank": 9,
+          "id": "d3a79915-0f69-4ded-b392-3c5ad36f8eed",
+          "source": "vector",
+          "score": 0.32216010491407915
+        },
+        {
+          "rank": 10,
+          "id": "762b835e-b590-466a-873c-e6bdcdc4a54c",
+          "source": "vector",
+          "score": 0.32142651652641263
+        },
+        {
+          "rank": 11,
+          "id": "f08ee55a-26e1-407e-b11b-edb57f29a4ed",
+          "source": "vector",
+          "score": 0.3174358926257924
+        },
+        {
+          "rank": 12,
+          "id": "eda0952c-ee7c-4be4-b342-5e8e52038810",
+          "source": "vector",
+          "score": 0.31507322422801126
+        },
+        {
+          "rank": 13,
+          "id": "1847372a-3c20-4c79-abf2-8a971c927ba9",
+          "source": "graph",
+          "score": 0.312932556791782
+        },
+        {
+          "rank": 14,
+          "id": "6719cb5f-eeff-4b60-acdd-aa7fa29a134f",
+          "source": "vector",
+          "score": 0.29345952827984556
+        },
+        {
+          "rank": 15,
+          "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+          "source": "vector",
+          "score": 0.28842859296858125
+        }
+      ],
+      "john_in_top15": false,
+      "vector_retained": 14
+    }
+  ],
+  "limits": [
+    "Current reranker may differ from the historical one; service version is not archived",
+    "Candidate order and membership may both change; this is not an order-only causal test",
+    "Final context ID exposure is not answer correctness"
+  ]
+}
