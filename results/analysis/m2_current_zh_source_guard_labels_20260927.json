@@ -1,0 +1,66 @@
+{
+  "source": "results/analysis/m2_current_zh_source_guard_poc_20260927.json",
+  "method": "Manual per-response comparison with the Chinese source turns, with labels fixed after generation; no model judge",
+  "cases": [
+    {
+      "case_id": "locomo_conv-48_qa20",
+      "source_criterion": "D2:26, D15:10, D19:10 support three jointly played games; D2:30 is a plan for Walking Dead; D20:1 only says Battlefield 1 was acquired. A full-conversation text search found no later explicit play event for either game.",
+      "calls": [
+        {"arm": "official", "tags": ["three_supported_games", "planned_game_in_played_list", "acquired_game_in_played_list", "mothers_game_in_partner_list"]},
+        {"arm": "guard", "tags": ["three_supported_games", "planned_game_separated", "acquired_game_in_played_list"]},
+        {"arm": "guard", "tags": ["three_supported_games", "planned_game_separated", "acquired_game_in_played_list"]},
+        {"arm": "official", "tags": ["three_supported_games", "planned_game_in_played_list", "acquired_game_in_played_list"]}
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa233",
+      "source_criterion": "D28:7 describes Deborah, not Joline, with her mother's old friends; retrieved Joline dinner does not identify those friends as her mother's.",
+      "calls": [
+        {"arm": "official", "tags": ["relation_rejected"]},
+        {"arm": "guard", "tags": ["relation_rejected", "unrelated_dinner_mentioned_with_boundary"]},
+        {"arm": "guard", "tags": ["relation_rejected", "unrelated_dinner_mentioned_with_boundary"]},
+        {"arm": "official", "tags": ["fabricated_mothers_friends_dinner"]}
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa215",
+      "source_criterion": "D9:10 says films offer escape and spark imagination; no source says an activity numbs Nate's mind. Nearby game/film escape evidence does not prove the added numbing premise.",
+      "calls": [
+        {"arm": "official", "tags": ["nearby_escape_answer", "numbing_premise_not_rejected"]},
+        {"arm": "guard", "tags": ["nearby_escape_answer", "numbing_premise_not_rejected"]},
+        {"arm": "guard", "tags": ["nearby_escape_answer", "numbing_premise_not_rejected"]},
+        {"arm": "official", "tags": ["explicit_unsupported_numbing_claim"]}
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa85",
+      "source_criterion": "D1:27 supports Gina looking forward to watching performers; D1:28 says Jon is glad to participate. Other retrieved events concern a studio opening or different dance competition, not Gina participating in the named festival. Positive attitude toward watching makes this item semantically ambiguous.",
+      "calls": [
+        {"arm": "official", "tags": ["other_events_substituted", "festival_participation_not_established"]},
+        {"arm": "guard", "tags": ["other_events_substituted", "festival_participation_not_established"]},
+        {"arm": "guard", "tags": ["other_events_substituted", "festival_participation_not_established"]},
+        {"arm": "official", "tags": ["other_events_substituted", "festival_participation_not_established"]}
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa157",
+      "source_criterion": "D4:2-3 establish Caroline owns the necklace and explains its symbolism; no turn attributes a necklace to Melanie.",
+      "calls": [
+        {"arm": "official", "tags": ["owner_corrected", "wrong_person_symbolism_given_first"]},
+        {"arm": "guard", "tags": ["owner_corrected", "wrong_person_symbolism_still_supplied"]},
+        {"arm": "guard", "tags": ["owner_corrected", "wrong_person_symbolism_still_supplied"]},
+        {"arm": "official", "tags": ["owner_corrected", "melanie_unavailable_stated", "wrong_person_symbolism_still_supplied"]}
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa111",
+      "source_criterion": "Melanie says she paints with her children at D8:6. D8:5 in the official evidence list contains only the question.",
+      "calls": [
+        {"arm": "official", "tags": ["core_painting_correct"]},
+        {"arm": "guard", "tags": ["core_painting_correct", "extra_pottery_detail"]},
+        {"arm": "guard", "tags": ["core_painting_correct"]},
+        {"arm": "official", "tags": ["core_painting_correct", "extra_pottery_detail"]}
+      ]
+    }
+  ]
+}

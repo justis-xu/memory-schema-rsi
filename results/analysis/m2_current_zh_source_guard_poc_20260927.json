@@ -1,0 +1,417 @@
+{
+  "scope": "Six source-audited Chinese cases; frozen current no-graph top 15; official vs source-boundary addendum; ABBA; no judge",
+  "source_retrieval": "results/analysis/m2_current_zh_stratified_retrieval_20260927.json",
+  "case_ids": [
+    "locomo_conv-48_qa20",
+    "locomo_conv-48_qa233",
+    "locomo_conv-42_qa215",
+    "locomo_conv-30_qa85",
+    "locomo_conv-26_qa157",
+    "locomo_conv-26_qa111"
+  ],
+  "order_each_case": [
+    "official",
+    "guard",
+    "guard",
+    "official"
+  ],
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_answer_calls": 24,
+  "guard_addendum": "\n\n## SOURCE BOUNDARY (overrides any instruction above that would force an unsupported answer)\nBefore answering, verify that the memories support the exact person, action, time, and whether it happened, was only planned, or was only acquired. Do not transfer an action or possession from one speaker to another. Do not turn a plan into a completed event or a nearby fact into proof of an unstated premise. If the requested fact or premise is not supported, say briefly that it cannot be determined from the memories; you may name the supported fact separately when useful. When the exact requested fact is supported, answer it directly and specifically. Do not refuse merely because the memories are imperfect.\n",
+  "logical_store_before": {
+    "embedding_count": 1995,
+    "logical_sha256": "6cb9cbfce210981cb4ee8ac8ae0ca9f0afb5dad4ade1668ba068ec067650a0f9"
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-48_qa20",
+      "question": "乔琳和她伴侣一起玩过哪些游戏？",
+      "reference_date": "2023-09-20T10:17:00",
+      "context_ids": [
+        "119255f0-2577-4920-9ae8-494e660934bc",
+        "92eff024-cc55-49e9-930b-ca19f4cdad8a",
+        "2af936f8-5031-44c5-866b-cd803546bcf7",
+        "71b40f82-60fa-4073-9529-99421dfd21b7",
+        "a9792ba8-0216-46d9-8afd-495b4ac2a6a1",
+        "f1455645-db16-42df-a737-cb52619de275",
+        "2290dda6-70d6-447c-9d28-a6f66921c986",
+        "3d4a0b28-db4e-4abf-b959-39f07551c510",
+        "b60fa0bf-0f37-4a2f-92c9-80c42b772cca",
+        "01c44d62-4379-4f70-a840-3255c803d026",
+        "9966d6fe-734a-4507-8dea-d7d1f5102f66",
+        "80573166-380b-4a16-8cf3-518b5882b991",
+        "692450fb-3c5e-4413-ad11-f964b18683d6",
+        "46b463f0-f4a2-44c3-b320-2b64f58d21b6",
+        "f9f35e3b-c552-4389-a4f0-9f3f1d59d0f0"
+      ],
+      "context_sha256": "856e983f72081ba9c5a010dafc2850a192691f54f361f333dc50b36b08707014",
+      "prompt_sha256": {
+        "official": "a79144fdf98ab7a88fd5508654cd062a7beab9528d7cec056b38354dc573722c",
+        "guard": "ae3b1aeebf8ae66f93f23c2c7f3736b898fcff338e6d4ad8b9386e8e35eebdd2"
+      },
+      "calls": [
+        {
+          "arm": "official",
+          "answer": "乔琳和伴侣一起玩过的游戏包括：《底特律》（2023年1月）、《Walking Dead》（2023年1月28日计划一起玩）、《It Takes Two》（团队策略游戏）、《胡闹厨房2》（常用它打赌，她赢过三个大披萨）、《Monster Hunter: World》（与妈妈玩的游戏之一）以及《战地1》（2023年8月中旬获得）。",
+          "answer_latency_s": 3.904,
+          "usage": {
+            "prompt_tokens": 2241,
+            "completion_tokens": 118
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "乔琳和伴侣一起玩过的游戏包括：\n- 《胡闹厨房2》（常用来打赌，她赢过三个大披萨）\n- 《It Takes Two》（有趣且有竞技性的团队策略游戏）\n- 《底特律》（2023年1月中旬一起玩）\n- 《战地1》（2023年8月中旬获得的新主机游戏）\n\n另外，他们还计划一起玩《Walking Dead》（计划于2023年1月28日）。",
+          "usage": {
+            "prompt_tokens": 2377,
+            "completion_tokens": 168
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "乔琳和伴侣一起玩过《胡闹厨房2》、《It Takes Two》、《底特律》、《战地1》，并计划玩《Walking Dead》。",
+          "usage": {
+            "prompt_tokens": 2377,
+            "completion_tokens": 170
+          }
+        },
+        {
+          "arm": "official",
+          "answer": "乔琳和伴侣一起玩过的游戏包括：《胡闹厨房2》（还用它打赌，她赢过三个大披萨）、《It Takes Two》（有竞技性的团队策略游戏）、《底特律》（2023年1月中旬玩过）、《Walking Dead》（计划于2023年1月28日玩）、《战地1》（2023年8月中旬得到的新游戏），以及主机游戏（2023年2月计划一起玩）。",
+          "answer_latency_s": 7.266,
+          "usage": {
+            "prompt_tokens": 2241,
+            "completion_tokens": 132
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa233",
+      "question": "乔琳和妈妈的老朋友们做了什么？",
+      "reference_date": "2023-09-20T10:17:00",
+      "context_ids": [
+        "5f285239-4232-4c94-9f17-b07ab54dcf0c",
+        "d2e2e49f-f93f-4dd4-a604-2b8e5e0397f3",
+        "3485659d-5f7e-438c-9816-da8f3fbd5ae5",
+        "0e60bab4-2102-438d-a10c-57db822e7f95",
+        "a9b79b72-487a-44bd-a4bd-dae5e130723f",
+        "9f858349-324d-4fa9-9982-74b52b21edea",
+        "92eff024-cc55-49e9-930b-ca19f4cdad8a",
+        "2af936f8-5031-44c5-866b-cd803546bcf7",
+        "f1455645-db16-42df-a737-cb52619de275",
+        "01f94896-0fd1-4aa7-b07e-d779154a8f2f",
+        "26bfebdc-bdde-411b-850b-dd3c81ea0c7b",
+        "f9f35e3b-c552-4389-a4f0-9f3f1d59d0f0",
+        "77ff8eb4-0540-418f-91d9-7deb41c86806",
+        "091c0495-31ec-4890-a148-72d189386a6e",
+        "3d4a0b28-db4e-4abf-b959-39f07551c510"
+      ],
+      "context_sha256": "bb2abda3f4cde7195b5db4ca41c0934e7090c3a69b94afd82a374a767c1187e0",
+      "prompt_sha256": {
+        "official": "a8d25df7c411153940b6dd66a843746cfafa0b11be87225e5012728b8a5d6314",
+        "guard": "a094d17b74ed0d5066c4c0cfcd60a4690efc423b696f8c7b777bacf55f21dd12"
+      },
+      "calls": [
+        {
+          "arm": "official",
+          "answer": "没有任何记录表明乔琳和她妈妈的老朋友们有过具体的活动",
+          "answer_latency_s": 6.326,
+          "usage": {
+            "prompt_tokens": 2191,
+            "completion_tokens": 93
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "记忆中只显示乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒，玩得开心放松；但这些朋友是否是“妈妈的老朋友”无法从记忆中确定。",
+          "usage": {
+            "prompt_tokens": 2327,
+            "completion_tokens": 169
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "根据记忆，无法确定乔琳和妈妈的老朋友们做了什么——记忆中没有关于妈妈老朋友的内容（她的妈妈已经去世）。相关记录只有2023年2月21日晚乔琳和朋友一起吃晚饭、喝酒玩得开心，但没有证据表明这位朋友是她妈妈的老朋友。",
+          "usage": {
+            "prompt_tokens": 2327,
+            "completion_tokens": 101
+          }
+        },
+        {
+          "arm": "official",
+          "answer": "2023年2月21日晚，乔琳和妈妈的老朋友们一起吃晚饭、喝了点小酒（红酒），大家玩得很开心，乔琳感到很放松（当晚还有朋友举杯和食物、红酒的照片）。",
+          "answer_latency_s": 4.549,
+          "usage": {
+            "prompt_tokens": 2191,
+            "completion_tokens": 98
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa215",
+      "question": "什么活动能帮助内特逃避现实、让头脑麻木？",
+      "reference_date": "2022-11-11T00:06:00",
+      "context_ids": [
+        "736c5c35-ef45-4d30-a6fe-4f8b83bfd2cb",
+        "8d680172-d3e9-4d3b-82fb-d0c92c1bb325",
+        "cb5a5c8a-9486-4cb9-a9ca-e920fb022004",
+        "f1a3924e-d4ca-4bbe-ac4e-84feb45290a8",
+        "5b004baf-cda9-4f27-bdec-7f15fc3f2079",
+        "e622338a-4a40-447d-b8bc-d75880c7f0b4",
+        "52aa57b7-2c68-426d-95fe-a4993e53ac8e",
+        "45facb9f-d1fa-4428-acfd-b7415225c425",
+        "c106b443-224f-49fb-9a76-254f94495215",
+        "75b8da4b-af0c-42fc-86b6-76405e6f13a7",
+        "42d133a1-31c8-4730-a113-d1e8af8dffe0",
+        "56217cd3-ace8-4857-b1cd-b79ef752e9f8",
+        "acedf2b2-3308-4457-80c1-1cb42f5e262e",
+        "5ba9c146-dec1-40ab-b6bf-de51041292bc",
+        "5c6bf6e2-a660-4186-a5a0-1f8209dd3232"
+      ],
+      "context_sha256": "f8560465ef7df32d9ccde1ca95d74ce26899440ad4c40407f6614e604427ef46",
+      "prompt_sha256": {
+        "official": "558a51a7f6cf31a1b50ff405d5648b55465f91835f0b8c6dbfd7945da7cf5353",
+        "guard": "a71556398e6a17895f7a7460cf32b928cdea43dca5e748b62aae79aa9654db53"
+      },
+      "calls": [
+        {
+          "arm": "official",
+          "answer": "玩电子游戏（《Cyberpunk 2077》等）——内特说玩游戏是他逃避生活烦恼、让头脑放松的方式；陪伴宠物乌龟也能让他心情平静。",
+          "answer_latency_s": 3.654,
+          "usage": {
+            "prompt_tokens": 2235,
+            "completion_tokens": 97
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "玩电子游戏（玩电子游戏是他逃避生活烦恼的方式）。",
+          "usage": {
+            "prompt_tokens": 2371,
+            "completion_tokens": 15
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "玩电子游戏——内特说玩游戏是他逃避生活烦恼的方式，帮他放松、让头脑抽离现实（看电影也是他的主要爱好和放松方式之一）。",
+          "usage": {
+            "prompt_tokens": 2371,
+            "completion_tokens": 66
+          }
+        },
+        {
+          "arm": "official",
+          "answer": "Playing video games — 内特表示玩游戏（以及看电影）是他逃避生活烦恼、让头脑麻木的方式。",
+          "answer_latency_s": 1.293,
+          "usage": {
+            "prompt_tokens": 2235,
+            "completion_tokens": 24
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa85",
+      "question": "吉娜对参加舞蹈节的态度是什么？",
+      "reference_date": "2023-07-23T18:46:00",
+      "context_ids": [
+        "387c7cd4-3660-4823-8016-dcd7a2bd918b",
+        "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+        "452d3742-8f43-4046-ad52-c7f6deffe2a6",
+        "cd69ce5e-058f-426b-a996-297947e10da5",
+        "c86b7955-d016-46ef-9c37-ad71029001ea",
+        "30a35c5d-0644-4dcd-a7ab-91b4049f9f53",
+        "b3d94f83-867f-4e20-b66c-619a118088fb",
+        "0e4e7516-a78f-4885-b138-39489ea9ea11",
+        "7063f8d7-4ba9-408d-acbb-1771d448e885",
+        "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+        "761df2c0-23e4-439c-ba6b-b0947f72b8b9",
+        "6bbd05be-7725-41a1-9c18-227a0a962c5e",
+        "058faec8-92ee-4612-88b6-c57e735f035a",
+        "5931c7af-9d38-4bfa-a6f0-4d8e8179c4b3",
+        "72c1939a-c0be-463d-bb94-481e0779fa2a"
+      ],
+      "context_sha256": "04464445e8c195f1076c7554682eed875f787dad8d8f68a42746d3cc8842afda",
+      "prompt_sha256": {
+        "official": "782572b2aa0a8eef3264f68342d34cab2f7f18a6cc9ae34650ca25f5de878967",
+        "guard": "3f3a1d6d58159130c7b30e85facb3711c35d4da4f08b345a7193b3fbfec55b07"
+      },
+      "calls": [
+        {
+          "arm": "official",
+          "answer": "吉娜的态度非常积极热情——她一直大力支持乔恩的舞蹈事业，答应出席乔恩舞蹈工作室的活动/舞蹈比赛（2023年5月的比赛和6月19日确认出席盛大开幕式），表示一直为乔恩感到骄傲并会一直支持他，还愿意提供帮助（如制作内容和运营社交媒体），期待一起狂欢、共同创造美好回忆。",
+          "answer_latency_s": 3.625,
+          "usage": {
+            "prompt_tokens": 2301,
+            "completion_tokens": 82
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "吉娜持积极支持、热情参与的态度：她确认出席乔恩舞蹈工作室的盛大开幕式（2023年6月19日），并答应到场观看他2023年5月计划举办的舞蹈比赛，表示一直为乔恩骄傲并将一直支持他。",
+          "usage": {
+            "prompt_tokens": 2437,
+            "completion_tokens": 85
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "吉娜的态度是积极支持、热情响应。她答应乔恩一定会到场观看2023年5月的舞蹈比赛，并在2023年6月19日确认会出席乔恩舞蹈工作室的盛大开幕式，表示愿意一起狂欢、共同创造美好回忆，还说一直为乔恩感到骄傲并会一直支持他。",
+          "usage": {
+            "prompt_tokens": 2437,
+            "completion_tokens": 114
+          }
+        },
+        {
+          "arm": "official",
+          "answer": "吉娜对参加舞蹈活动的态度是积极支持和热切期待的。她答应了参加乔恩计划于2023年5月举办的舞蹈比赛，并于2023年6月19日确认会出席乔恩舞蹈工作室的盛大开幕式，两人相约一起狂欢、共同创造美好回忆。她表示一直为乔恩感到骄傲，会一直支持他，并愿意帮忙制作内容、运营社交媒体来推广他的舞蹈工作室。",
+          "answer_latency_s": 3.913,
+          "usage": {
+            "prompt_tokens": 2301,
+            "completion_tokens": 123
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa157",
+      "question": "梅拉妮的项链象征着什么？",
+      "reference_date": "2024-01-04T00:19:00",
+      "context_ids": [
+        "19eafa36-b494-45c9-ac45-4f288aa0fa30",
+        "7f5e4bd6-9c47-4afc-8f16-0980d82343de",
+        "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+        "3f8d7567-dcac-4cc4-8af5-2e0245684373",
+        "2fe2215c-e092-4528-8aaf-af0adba4d8e9",
+        "1f34bd89-e1f8-4c2d-a3be-71861454360c",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e",
+        "86251053-f0d3-4dde-9f5c-312dea4e9aee",
+        "fd375711-a43c-472d-8c37-61c944efe67d",
+        "846921c3-b6db-4879-9f05-4499084b5510",
+        "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+        "fcea2e55-c8c1-47ad-a406-91a4aecead16",
+        "6c2db0d3-6944-4461-96d9-1b0d5c65282e",
+        "b38fcc7d-f091-4eb5-80a6-32b007c6ff74"
+      ],
+      "context_sha256": "1776136aaebeff0795a954582411af022df6a42f9ec953e35e45fa099de431df",
+      "prompt_sha256": {
+        "official": "31c6e7047bcffe9615ba46ab21ba758393fa06ac49a48406290519aaa720be5c",
+        "guard": "471ff42881b2f9195bef2a423bec93e330b6d7c350ffb648799898777af8fdc6"
+      },
+      "calls": [
+        {
+          "arm": "official",
+          "answer": "项链象征着爱、信念和力量，提醒她不忘自己的根以及家人的爱和支持（注：这条项链属于卡罗琳，是奶奶送的礼物）。",
+          "answer_latency_s": 4.442,
+          "usage": {
+            "prompt_tokens": 2225,
+            "completion_tokens": 155
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "记忆中的项链属于卡罗琳而非梅拉妮；它（十字架与心形吊坠，奶奶送的礼物）象征着爱、信念和力量，提醒她不忘自己的根以及家人的爱和支持。",
+          "usage": {
+            "prompt_tokens": 2361,
+            "completion_tokens": 106
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "这条项链（十字架与心形吊坠）是卡罗琳小时候在瑞典祖国的家乡时奶奶送给她的礼物，象征着爱、信念和力量，提醒她不忘自己的根以及家人的爱和支持。（注意：项链属于卡罗琳，而非梅拉妮。）",
+          "usage": {
+            "prompt_tokens": 2361,
+            "completion_tokens": 62
+          }
+        },
+        {
+          "arm": "official",
+          "answer": "相关记忆：（2023年6月27日）那条项链——十字架与心形吊坠，是她小时候在瑞典，她的祖母送给她的——属于卡罗琳，而不是梅拉妮。没有记忆描述梅拉妮拥有一条项链。\n\n回答：记忆中没有记录梅拉妮拥有项链；那条象征性的项链（十字架与心形吊坠，是她在瑞典的祖母送的，象征着爱、信念和力量，以及对她的根和家人的爱的提醒）属于卡罗琳。",
+          "answer_latency_s": 12.196,
+          "usage": {
+            "prompt_tokens": 2225,
+            "completion_tokens": 115
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa111",
+      "question": "除了陶艺，梅尔和孩子们还一起做什么创意项目？",
+      "reference_date": "2024-01-04T00:19:00",
+      "context_ids": [
+        "459ffafa-6850-49f2-b4f7-66e64e542482",
+        "97f3a4fc-ea2e-4e8d-9f49-402d63a83d9d",
+        "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+        "268b0881-a634-43ca-b230-c5466617353a",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "5c43f1b2-8289-4513-9e28-914dedd5ae03",
+        "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+        "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+        "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "e537f6f0-14f3-4d99-bfbf-308ad0903300"
+      ],
+      "context_sha256": "9d204795dff21ada81f129f923671415a8feb1720990f9c53c6c83631aa86c40",
+      "prompt_sha256": {
+        "official": "442f57fabc5c0a14061cbf640d68fe6028ed82ed95a6e83adb28ae504c4b7ab7",
+        "guard": "db8988009b13d39b354b1d1aa7ebe0e5235325a254abbb07ad2ad05fc9ecadc1"
+      },
+      "calls": [
+        {
+          "arm": "official",
+          "answer": "梅拉妮和孩子们还一起画画，尤其是以大自然为灵感的创作——比如2023年7月初一起画的落日与棕榈树画作，此后又完成了更多画作。",
+          "answer_latency_s": 2.528,
+          "usage": {
+            "prompt_tokens": 2334,
+            "completion_tokens": 45
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "答案：除了陶艺，梅拉妮和孩子们还一起**画画**。他们偏爱以大自然为灵感的创作，比如2023年7月初一起画了一幅色彩大胆的落日与棕榈树画作，到7月17日他们又完成了一幅画，延续了共同创作大自然题材画作的习惯。梅拉妮认为一起创作是很好的感情联络方式。此外，一家人还一起参加过陶艺工作坊，各自做了自己的陶罐。",
+          "usage": {
+            "prompt_tokens": 2470,
+            "completion_tokens": 112
+          }
+        },
+        {
+          "arm": "guard",
+          "answer": "除了陶艺，梅拉妮和孩子们还一起**画画**——尤其偏爱以大自然为灵感的创作。例如2023年7月初他们一起画了一幅色彩大胆的落日与棕榈树画作，7月17日前后又完成了一幅新画，她认为一起创作是很好的感情联络方式。",
+          "usage": {
+            "prompt_tokens": 2470,
+            "completion_tokens": 87
+          }
+        },
+        {
+          "arm": "official",
+          "answer": "一起画画（尤其是以大自然为灵感的创作，如落日与棕榈树画作）；此外他们还参加过陶艺工作坊各自做陶罐。",
+          "answer_latency_s": 1.979,
+          "usage": {
+            "prompt_tokens": 2334,
+            "completion_tokens": 40
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Purposefully chosen source-audited cases, not an accuracy estimate",
+    "Prompt addendum is a candidate mechanism, not a deployed change",
+    "No judge calls; source-level manual labels follow separately"
+  ],
+  "logical_store_after": {
+    "embedding_count": 1995,
+    "logical_sha256": "6cb9cbfce210981cb4ee8ac8ae0ca9f0afb5dad4ade1668ba068ec067650a0f9"
+  },
+  "logical_store_unchanged": true,
+  "completed": true
+}
