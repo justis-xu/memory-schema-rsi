@@ -1,0 +1,1662 @@
+{
+  "scope": "All non-adversarial Chinese QA matching fixed preference substrings and exactly one literal conversation speaker; not all preferences or all dataset QA",
+  "rule": {
+    "terms": [
+      "最喜欢",
+      "最爱",
+      "喜欢什么",
+      "喜欢哪些"
+    ],
+    "flag": "All evidence IDs valid and every evidence speaker differs from the single literal target"
+  },
+  "counts": {
+    "non_adversarial_lexical_preference_questions": 51,
+    "unique_literal_target_questions": 46,
+    "rows_with_missing_evidence": 1,
+    "excluded_non_unique_literal_target": 5,
+    "all_valid_evidence_other_speaker": 2
+  },
+  "screened": [
+    {
+      "case_id": "locomo_conv-26_qa19",
+      "qa_index": 19,
+      "question": "梅拉妮的孩子们喜欢什么？",
+      "gold": "恐龙、大自然",
+      "target": "梅拉妮",
+      "evidence": [
+        {
+          "dia_id": "D6:6",
+          "speaker": "梅拉妮",
+          "text": "他们是冲着恐龙展览去的！他们喜欢了解动物，那些骨头太酷了。这让我想起自己为什么喜欢当妈妈。"
+        },
+        {
+          "dia_id": "D4:8",
+          "speaker": "梅拉妮",
+          "text": "那是一段超棒的时光,卡罗琳!我们探索了大自然,在篝火旁烤棉花糖,还去徒步了。山顶的景色美极了!两个小的孩子都热爱大自然。一家人一起拥有这些时刻太特别了——我永远不会忘记!"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-26_qa103",
+      "qa_index": 103,
+      "question": "梅拉妮童年最喜欢的书是什么？",
+      "gold": "《夏洛的网》",
+      "target": "梅拉妮",
+      "evidence": [
+        {
+          "dia_id": "D6:10",
+          "speaker": "梅拉妮",
+          "text": "我小时候最爱读《夏洛的网》。看到友谊和同情心能带来改变，真的太打动人了。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-30_qa39",
+      "qa_index": 39,
+      "question": "吉娜最喜欢的舞蹈风格是什么？",
+      "gold": "现代舞",
+      "target": "吉娜",
+      "evidence": [
+        {
+          "dia_id": "D1:9",
+          "speaker": "吉娜",
+          "text": "对，我也是！现代舞非常有表现力又优雅——真的很打动我。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-30_qa40",
+      "qa_index": 40,
+      "question": "乔恩最喜欢的舞蹈风格是什么？",
+      "gold": "现代舞",
+      "target": "乔恩",
+      "evidence": [
+        {
+          "dia_id": "D1:8",
+          "speaker": "乔恩",
+          "text": "太好了，吉娜！我喜欢所有舞蹈，但现代舞是我的最爱。它太有表现力、太有力量了！你最喜欢什么？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-30_qa41",
+      "qa_index": 41,
+      "question": "吉娜最喜欢的舞蹈回忆是什么？",
+      "gold": "在地区舞蹈比赛中获得第一名",
+      "target": "吉娜",
+      "evidence": [
+        {
+          "dia_id": "D1:17",
+          "speaker": "吉娜",
+          "text": "我以前参加过一些舞蹈比赛和演出——我最喜欢的回忆是十五岁时我的团队在地区赛中赢得第一名。那种成就感太棒了！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa75",
+      "qa_index": 75,
+      "question": "内特最喜欢的甜点是什么？",
+      "gold": "椰奶冰淇淋、无乳制品浆果巧克力蛋糕、巧克力和混合浆果冰淇淋、无乳制品巧克力慕斯",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D3:4",
+          "speaker": "内特",
+          "text": "谢谢，乔安娜。我这边没什么大变化，不过我刚刚发现自己可以做椰奶冰淇淋，就试了一下。味道其实挺不错的，我为自己感到骄傲。"
+        },
+        {
+          "dia_id": "D3:10",
+          "speaker": "内特",
+          "text": "我喜欢椰奶，不过也喜欢巧克力和混合莓果口味。"
+        },
+        {
+          "dia_id": "D21:10",
+          "speaker": "内特",
+          "text": "你可能已经看出来，椰奶冰淇淋是我的最爱之一，但我也喜欢无乳制品巧克力慕斯。它超级绵密，味道和真的一样。到目前为止你最喜欢的无乳制品甜食是什么？"
+        },
+        {
+          "dia_id": "D3:12",
+          "speaker": "内特",
+          "text": "嗯，我前几天还做了一个无乳制品巧克力蛋糕，上面加了莓果，你可能会喜欢！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa88",
+      "qa_index": 88,
+      "question": "乔安娜最喜欢的电影之一是什么？",
+      "gold": "《美丽心灵的永恒阳光》",
+      "target": "乔安娜",
+      "evidence": [
+        {
+          "dia_id": "D1:18",
+          "speaker": "乔安娜",
+          "text": "是的，那部电影很棒。我大约三年前第一次看的。我甚至专门买了实体光盘！"
+        },
+        {
+          "dia_id": "D1:20",
+          "speaker": "乔安娜",
+          "text": "看了几遍。它是我最喜欢的电影之一！我非常喜欢它的创意和演技。"
+        }
+      ],
+      "missing_evidence_ids": [
+        "D"
+      ],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa90",
+      "qa_index": 90,
+      "question": "内特最喜欢的电影三部曲是什么？",
+      "gold": "指环王",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D9:12",
+          "speaker": "内特",
+          "text": "有，当然有！那部三部曲是我的最爱之一。它的世界观构建、战斗和叙事总是让我叹为观止！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa91",
+      "qa_index": 91,
+      "question": "内特最喜欢的书系列是关于什么的？",
+      "gold": "龙",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D9:14",
+          "speaker": "内特",
+          "text": "我喜欢这套系列。它有冒险、魔法和出色的角色——必读之作！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa95",
+      "qa_index": 95,
+      "question": "内特最喜欢的电子游戏是什么？",
+      "gold": "异度神剑",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D27:22",
+          "speaker": "乔安娜",
+          "text": "有道理！一切都靠练习，不是吗？那你最喜欢的游戏是什么？"
+        },
+        {
+          "dia_id": "D27:23",
+          "speaker": "内特",
+          "text": "对！我最近在玩一款超棒的奇幻角色扮演游戏，叫\"Xenoblade Chronicles\"（异度神剑），特别好玩！如果你没玩过，我强烈推荐。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa96",
+      "qa_index": 96,
+      "question": "内特最喜欢看什么类型的电影？",
+      "gold": "动作和科幻",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D1:13",
+          "speaker": "内特",
+          "text": "我喜欢动作片和科幻片，特效太酷了！你呢，你最喜欢什么类型？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa102",
+      "qa_index": 102,
+      "question": "内特喜欢哪些无乳制品甜点的口味？",
+      "gold": "巧克力和混合莓果",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D3:10",
+          "speaker": "内特",
+          "text": "我喜欢椰奶，不过也喜欢巧克力和混合莓果口味。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa113",
+      "qa_index": 113,
+      "question": "内特最喜欢的电影类型是什么？",
+      "gold": "奇幻和科幻",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D9:10",
+          "speaker": "内特",
+          "text": "我喜欢奇幻和科幻电影，它们是很好的 escape，能激发我的想象力。玩电子游戏是表达我的创造力和热情的好方式。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa114",
+      "qa_index": 114,
+      "question": "内特喜欢什么类型的书？",
+      "gold": "冒险和魔法",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D9:14",
+          "speaker": "内特",
+          "text": "我喜欢这套系列。它有冒险、魔法和出色的角色——必读之作！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa115",
+      "qa_index": 115,
+      "question": "乔安娜喜欢什么类型的电影？",
+      "gold": "剧情片和情感驱动的电影",
+      "target": "乔安娜",
+      "evidence": [
+        {
+          "dia_id": "D9:9",
+          "speaker": "乔安娜",
+          "text": "谢谢你，内特！我会继续写作，但如果表演在召唤我，我也许会试一试。我特别喜欢剧情片和情感驱动的电影。你呢？是什么激发了你的热情？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa155",
+      "qa_index": 155,
+      "question": "内特主持的烹饪节目中他最喜欢的菜是什么？",
+      "gold": "椰奶冰淇淋",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D21:6",
+          "speaker": "内特",
+          "text": "椰奶冰淇淋排在我清单的首位。它非常顺滑绵密，带有热带椰香。而且它不含乳制品，适合乳糖不耐或想要纯素选择的人。这是我做的冰淇淋的照片。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa156",
+      "qa_index": 156,
+      "question": "除了椰奶冰淇淋，内特还喜欢什么无乳制品甜点？",
+      "gold": "无乳制品巧克力慕斯",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D21:10",
+          "speaker": "内特",
+          "text": "你可能已经看出来，椰奶冰淇淋是我的最爱之一，但我也喜欢无乳制品巧克力慕斯。它超级绵密，味道和真的一样。到目前为止你最喜欢的无乳制品甜食是什么？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa197",
+      "qa_index": 197,
+      "question": "内特最喜欢养乌龟的哪一点？",
+      "gold": "乌龟让他感到平静，而且不需要太多照料",
+      "target": "内特",
+      "evidence": [
+        {
+          "dia_id": "D29:8",
+          "speaker": "内特",
+          "text": "你说得完全对！我真的很喜欢有它们在身边。它们很酷，让我感到平静。而且，它们不需要太多照料，这一点很好。我喜欢看它们这样晒太阳。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-43_qa11",
+      "qa_index": 11,
+      "question": "除了篮球，约翰还喜欢什么运动？",
+      "gold": "冲浪",
+      "target": "约翰",
+      "evidence": [
+        {
+          "dia_id": "D1:7",
+          "speaker": "约翰",
+          "text": "我是球队的得分后卫，我们的赛季揭幕战就在下周——太兴奋了！"
+        },
+        {
+          "dia_id": "D2:14",
+          "speaker": "约翰",
+          "text": "听起来太棒了！能沉浸在那个世界里真是酷。真高兴你找到了能给你带来这么多快乐的东西。继续深入享受吧！这是最近一场比赛的照片。"
+        },
+        {
+          "dia_id": "D3:1",
+          "speaker": "约翰",
+          "text": "嘿，蒂姆！很高兴又见到你。这一个月发生了太多事——赛场内外都是。上周我得了40分，是我有史以来的最高分，感觉所有的努力都得到了回报。"
+        },
+        {
+          "dia_id": "D3:25",
+          "speaker": "约翰",
+          "text": "我和朋友们度过了一个超棒的夏天，冲浪踏浪。那种感觉太不真实了！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-43_qa35",
+      "qa_index": 35,
+      "question": "约翰喜欢哪些户外活动？",
+      "gold": "徒步、冲浪",
+      "target": "约翰",
+      "evidence": [
+        {
+          "dia_id": "D3:27",
+          "speaker": "约翰",
+          "text": "我五年前开始冲浪，一直很棒。我喜欢那种与大自然连接的感觉。"
+        },
+        {
+          "dia_id": "D12:6",
+          "speaker": "约翰",
+          "text": "是啊！多么美好的一天！大家能和我们一起庆祝真是太美好了。我从未感受过这么多的爱与幸福。一些徒步俱乐部的朋友也来了，尽管我才刚加入！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-43_qa65",
+      "qa_index": 65,
+      "question": "蒂姆喜欢哪些奇幻电影？",
+      "gold": "《指环王》、《哈利·波特》和《星球大战》。",
+      "target": "蒂姆",
+      "evidence": [
+        {
+          "dia_id": "D8:16",
+          "speaker": "蒂姆",
+          "text": "好啊，《哈利·波特与魔法石》对我来说很特别。它是这个系列的第一部电影，带给我很多美好的回忆。和家人一起看太棒了。真是太神奇了！"
+        },
+        {
+          "dia_id": "D8:18",
+          "speaker": "蒂姆",
+          "text": "那真的是梦想成真！和家人一起看那部电影太棒了，我们都会拿着零食、盖上毯子舒舒服服地看，完全沉浸其中。多么特别的回忆啊！"
+        },
+        {
+          "dia_id": "D26:28",
+          "speaker": "蒂姆",
+          "text": "是的，看过！看这些电影并与原著进行比较感觉很棒。看着故事鲜活起来真是太神奇了。你全都看过吗？"
+        },
+        {
+          "dia_id": "D26:32",
+          "speaker": "蒂姆",
+          "text": "我是这个类型的超级粉丝！史诗般的冒险和魔法世界是我的最爱。这是我最喜欢的《指环王》的图片！"
+        },
+        {
+          "dia_id": "D27:21",
+          "speaker": "蒂姆",
+          "text": "当然是《星球大战》！它是我最喜欢的，百看不厌。你呢，有喜欢的奇幻电影吗？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-43_qa70",
+      "qa_index": 70,
+      "question": "蒂姆在爱尔兰期间会喜欢哪些与《星球大战》相关的地点？",
+      "gold": "斯凯利格迈克尔岛、马林角、卢普角、凯恩·西比尔角和布劳头，因为它们是《星球大战》的取景地。",
+      "target": "蒂姆",
+      "evidence": [
+        {
+          "dia_id": "D1:18",
+          "speaker": "蒂姆",
+          "text": "几年前我去过伦敦的一个地方——就像走进哈利·波特电影一样！我还参加了一次游览，非常棒。你去过什么真正的波特相关地点吗？我真希望有一天能去探索一下！"
+        },
+        {
+          "dia_id": "D27:21",
+          "speaker": "蒂姆",
+          "text": "当然是《星球大战》！它是我最喜欢的，百看不厌。你呢，有喜欢的奇幻电影吗？"
+        },
+        {
+          "dia_id": "D28:1",
+          "speaker": "蒂姆",
+          "text": "嘿，约翰，好久没聊了。周五我得到了一个好消息——我终于被我要申请的留学项目录取了！下个月我就要去爱尔兰待一个学期。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-43_qa96",
+      "qa_index": 96,
+      "question": "蒂姆最喜欢弹哪部电影的主题曲？",
+      "gold": "《哈利·波特与魔法石》",
+      "target": "蒂姆",
+      "evidence": [
+        {
+          "dia_id": "D8:14",
+          "speaker": "蒂姆",
+          "text": "谢谢！我喜欢在钢琴上弹各种曲子，但我最喜欢弹的是一首我非常喜欢的电影的主题曲。它让我想起很多美好的回忆。"
+        },
+        {
+          "dia_id": "D8:16",
+          "speaker": "蒂姆",
+          "text": "好啊，《哈利·波特与魔法石》对我来说很特别。它是这个系列的第一部电影，带给我很多美好的回忆。和家人一起看太棒了。真是太神奇了！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-43_qa99",
+      "qa_index": 99,
+      "question": "蒂姆提到感恩节他们喜欢什么传统？",
+      "gold": "准备大餐并谈论他们感恩的事情",
+      "target": "蒂姆",
+      "evidence": [
+        {
+          "dia_id": "D8:22",
+          "speaker": "蒂姆",
+          "text": "感恩节对我们来说总是很特别。我们喜欢一起准备大餐，聊聊各自感恩的事情。另外，之后一起看电影——最棒了！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-43_qa134",
+      "qa_index": 134,
+      "question": "正如2023年11月11日所提到的，蒂姆最喜欢的奇幻电视剧之一是什么？",
+      "gold": "\"那部\"",
+      "target": "蒂姆",
+      "evidence": [
+        {
+          "dia_id": "D17:10",
+          "speaker": "蒂姆",
+          "text": "太棒了！我也一样。沉浸在一个精彩的奇幻王国里、看看会发生什么，这种感觉非常特别。就像一种逃离。《That》是我最喜欢的奇幻剧之一。你看过吗？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-43_qa166",
+      "qa_index": 166,
+      "question": "约翰最喜欢的系列图书是什么？",
+      "gold": "哈利·波特",
+      "target": "约翰",
+      "evidence": [
+        {
+          "dia_id": "D27:19",
+          "speaker": "蒂姆",
+          "text": "《哈利·波特》是我最喜欢的书。太让人沉浸其中了！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": true
+    },
+    {
+      "case_id": "locomo_conv-43_qa167",
+      "qa_index": 167,
+      "question": "据约翰所说，他在《指环王》中最喜欢的角色是谁？",
+      "gold": "阿拉贡",
+      "target": "约翰",
+      "evidence": [
+        {
+          "dia_id": "D27:24",
+          "speaker": "约翰",
+          "text": "谢谢！我看了不少遍，很励志。我最喜欢的角色是阿拉贡，他在整个故事中成长了很多。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-44_qa20",
+      "qa_index": 20,
+      "question": "奥黛丽最喜欢吃哪种肉？",
+      "gold": "鸡肉",
+      "target": "奥黛丽",
+      "evidence": [
+        {
+          "dia_id": "D10:13",
+          "speaker": "奥黛丽",
+          "text": "我爱做饭！我最喜欢的菜谱是鸡肉锅派。特别温馨美味，尤其是冷天的时候。如果你愿意，我可以把菜谱分享给你。"
+        },
+        {
+          "dia_id": "D10:23",
+          "speaker": "奥黛丽",
+          "text": "当然！烤鸡是我的最爱之一——我待会儿把菜谱发给你。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-47_qa86",
+      "qa_index": 86,
+      "question": "詹姆斯最喜欢的披萨是哪种？",
+      "gold": "意式辣香肠披萨",
+      "target": "詹姆斯",
+      "evidence": [
+        {
+          "dia_id": "D9:18",
+          "speaker": "詹姆斯",
+          "text": "当然是意式辣香肠披萨！辣香肠和奶酪的绝妙组合。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-47_qa87",
+      "qa_index": 87,
+      "question": "约翰最喜欢的披萨是哪种？",
+      "gold": "夏威夷披萨",
+      "target": "约翰",
+      "evidence": [
+        {
+          "dia_id": "D9:19",
+          "speaker": "约翰",
+          "text": "不错，但我最爱的是夏威夷披萨。这种甜咸结合让我着迷！你还喜欢别的什么披萨？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-47_qa121",
+      "qa_index": 121,
+      "question": "詹姆斯和萨曼莎在麦基酒吧发现他们都喜欢什么？",
+      "gold": "拉格啤酒",
+      "target": "詹姆斯",
+      "evidence": [
+        {
+          "dia_id": "D23:3",
+          "speaker": "詹姆斯",
+          "text": "太棒了，约翰！看照片里他玩得很开心。萨曼莎和我还去了McGee's酒吧。原来她很喜欢拉格啤酒。我们俩有这么多共同点！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-47_qa129",
+      "qa_index": 129,
+      "question": "约翰喜欢什么类型的音乐？",
+      "gold": "电子乐和摇滚乐",
+      "target": "约翰",
+      "evidence": [
+        {
+          "dia_id": "D24:13",
+          "speaker": "约翰",
+          "text": "酷！我喜欢电子乐和摇滚乐。我小时候打过鼓，但好久没打了。你会演奏乐器吗？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa25",
+      "qa_index": 25,
+      "question": "乔琳最喜欢的书有哪些？",
+      "gold": "《人类简史》、尼尔·斯蒂芬森的《雪崩》",
+      "target": "乔琳",
+      "evidence": [
+        {
+          "dia_id": "D4:21",
+          "speaker": "乔琳",
+          "text": "谢谢黛博拉！我最近迷上了一本叫《人类简史》的书——它对人类历史以及科技如何影响我们做了非常引人入胜的探讨。它给了我很多思考！"
+        },
+        {
+          "dia_id": "D4:23",
+          "speaker": "乔琳",
+          "text": "两周前，我一口气读完了尼尔·斯蒂芬森的《雪崩》！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa90",
+      "qa_index": 90,
+      "question": "乔琳最喜欢的书有哪些？",
+      "gold": "《人类简史》、尼尔·斯蒂芬森的《雪崩》",
+      "target": "乔琳",
+      "evidence": [
+        {
+          "dia_id": "D4:21",
+          "speaker": "乔琳",
+          "text": "谢谢黛博拉！我最近迷上了一本叫《人类简史》的书——它对人类历史以及科技如何影响我们做了非常引人入胜的探讨。它给了我很多思考！"
+        },
+        {
+          "dia_id": "D4:23",
+          "speaker": "乔琳",
+          "text": "两周前，我一口气读完了尼尔·斯蒂芬森的《雪崩》！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa106",
+      "qa_index": 106,
+      "question": "乔琳在2023年2月4日提到的她最喜欢的书是什么？",
+      "gold": "《人类简史》",
+      "target": "乔琳",
+      "evidence": [
+        {
+          "dia_id": "D4:21",
+          "speaker": "乔琳",
+          "text": "谢谢黛博拉！我最近迷上了一本叫《人类简史》的书——它对人类历史以及科技如何影响我们做了非常引人入胜的探讨。它给了我很多思考！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa118",
+      "qa_index": 118,
+      "question": "乔琳最喜欢的菜之一是什么？",
+      "gold": "千层面",
+      "target": "乔琳",
+      "evidence": [
+        {
+          "dia_id": "D8:2",
+          "speaker": "乔琳",
+          "text": "我最喜欢的菜之一是千层面！安慰食物能很好地提振精神。我的学习和考试事情很多。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa140",
+      "qa_index": 140,
+      "question": "乔琳和伴侣最喜欢的游戏是什么？",
+      "gold": "《双人成行》",
+      "target": "乔琳",
+      "evidence": [
+        {
+          "dia_id": "D15:10",
+          "speaker": "乔琳",
+          "text": "有，我们喜欢一起玩《It takes two》！这是个有趣的团队策略游戏，还挺有竞技性。而且这是增进感情的好方式。你有什么喜欢和别人一起做的活动吗？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa156",
+      "qa_index": 156,
+      "question": "乔琳最喜欢用哪个瑜伽体式来休息和放松？",
+      "gold": "摊尸式（尸体式）",
+      "target": "乔琳",
+      "evidence": [
+        {
+          "dia_id": "D20:19",
+          "speaker": "乔琳",
+          "text": "我最喜欢摊尸式，也叫尸体式。它非常令人平静，能帮我彻底放下、完全放松。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa172",
+      "qa_index": 172,
+      "question": "乔琳和她妈妈在任天堂Wii上最喜欢玩的游戏之一是什么？",
+      "gold": "《怪物猎人：世界》",
+      "target": "乔琳",
+      "evidence": [
+        {
+          "dia_id": "D24:10",
+          "speaker": "乔琳",
+          "text": "我最喜欢的之一是《Monster 亨特: World》。那身临其境的剧情和开放世界玩法太棒了！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-49_qa14",
+      "qa_index": 14,
+      "question": "埃文最喜欢的食物是什么？",
+      "gold": "姜味饼干",
+      "target": "埃文",
+      "evidence": [
+        {
+          "dia_id": "D3:3",
+          "speaker": "埃文",
+          "text": "这沙拉看起来真好吃！我最近对健康特别小心。我尽量少吃加工食品和含糖零食，虽然我很喜欢姜味脆饼。你最近饮食上有做什么改变吗？"
+        },
+        {
+          "dia_id": "D5:5",
+          "speaker": "埃文",
+          "text": "姜味脆饼绝对是我的最爱！应对健康问题很艰难，但这让我更加珍惜美好的时刻。即使在困难时期，它们也能带来很多快乐。"
+        },
+        {
+          "dia_id": "D23:15",
+          "speaker": "埃文",
+          "text": "谢谢，萨姆！今晚我们要家庭聚会，吃自制千层面。超级期待！对了，我开始新的饮食计划了——每天只吃两块姜味饼干。你今晚吃什么？"
+        },
+        {
+          "dia_id": "D22:12",
+          "speaker": "埃文",
+          "text": "正是！它们营养丰富，而且制作非常简单。你还得试试这些饼干，太好吃了！我会把食谱发给你。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-49_qa108",
+      "qa_index": 108,
+      "question": "埃文最喜欢画什么类型的风景？",
+      "gold": "海上的日落",
+      "target": "埃文",
+      "evidence": [
+        {
+          "dia_id": "D8:20",
+          "speaker": "埃文",
+          "text": "我喜欢画风景。大自然的美让我着迷，给我带来宁静。这是我最近的一幅作品。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-50_qa6",
+      "qa_index": 6,
+      "question": "戴夫最喜欢哪类车？",
+      "gold": "经典老爷车",
+      "target": "戴夫",
+      "evidence": [
+        {
+          "dia_id": "D4:5",
+          "speaker": "戴夫",
+          "text": "谢谢！感谢你的支持。我的梦想是开一家店，这也是朝着修复经典汽车这个另一个梦想迈出的一步。我喜欢经典车的设计和工艺。"
+        },
+        {
+          "dia_id": "D1:2",
+          "speaker": "戴夫",
+          "text": "嘿，卡尔文！我也很高兴见到你！自从我们上次聊过之后一切都很好。我最近参加了一个很棒的活动，简直像是车迷的天堂！他们展出了好多经典车，我看得目瞪口呆。我甚至有机会和一些车主聊天，听他们讲那些精彩的故事，特别令人鼓舞。你呢？最近生活里有什么激动人心的事吗？"
+        },
+        {
+          "dia_id": "D3:12",
+          "speaker": "戴夫",
+          "text": "上周末我去了一个车展。经典车太有魅力了，人们修复它们所投入的心血令人惊叹。这就是我如此痴迷汽车工程的原因。等你来波士顿时我迫不及待要给你看看！哦，差点忘了发照片，看看这辆漂亮的车！"
+        },
+        {
+          "dia_id": "D4:7",
+          "speaker": "戴夫",
+          "text": "我对经典车着迷，它们有一种独特的魅力。去年我修复了一辆车，激动得不得了——让一辆车重获新生的感觉无可比拟！看看这辆修复车的发动机。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-50_qa46",
+      "qa_index": 46,
+      "question": "戴夫最喜欢的活动是什么？",
+      "gold": "翻新汽车",
+      "target": "戴夫",
+      "evidence": [
+        {
+          "dia_id": "D21:4",
+          "speaker": "戴夫",
+          "text": "哇，卡尔文，那辆车看起来真棒！修车真的能帮我放松，看着它们重获新生很有疗愈感。我一直在修那辆我在废品场找到的福特野马——它当时状况很糟，但我知道它有潜力。"
+        },
+        {
+          "dia_id": "D22:7",
+          "speaker": "戴夫",
+          "text": "谢谢，卡尔文。这是我从小到大的目标，能做自己热爱的事情真的太棒了。修复这样的东西可能很辛苦，但它带来的成就感非常美妙。没错，我热爱这件事。"
+        },
+        {
+          "dia_id": "D19:7",
+          "speaker": "戴夫",
+          "text": "谢谢，卡尔文！一直很顺利。我正在修复这辆漂亮的古董车——这是最终成果的照片，快看看！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-50_qa72",
+      "qa_index": 72,
+      "question": "在2023年4月的音乐节上，戴夫最喜欢的乐队是哪支？",
+      "gold": "Aerosmith",
+      "target": "戴夫",
+      "evidence": [
+        {
+          "dia_id": "D2:10",
+          "speaker": "戴夫",
+          "text": "哇，好的乐队实在太多了！如果非要选一个最喜欢的，那肯定是Aerosmith。他们的演出太精彩了。我给你看一张他们演出时我拍的照片。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    },
+    {
+      "case_id": "locomo_conv-50_qa111",
+      "qa_index": 111,
+      "question": "戴夫提到他最喜欢的迪士尼电影是哪一部？",
+      "gold": "《料理鼠王》",
+      "target": "戴夫",
+      "evidence": [
+        {
+          "dia_id": "D19:6",
+          "speaker": "卡尔文",
+          "text": "谢谢！《料理鼠王》是我的最爱之一！它讲的就是无论别人说什么，都要追求自己热爱的事情。上次我们聊天时，你提到过你的汽车爱好——现在怎么样了？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": true
+    },
+    {
+      "case_id": "locomo_conv-50_qa113",
+      "qa_index": 113,
+      "question": "卡尔文在夏日兜风时喜欢什么？",
+      "gold": "感受风吹过头发的滋味",
+      "target": "卡尔文",
+      "evidence": [
+        {
+          "dia_id": "D20:4",
+          "speaker": "卡尔文",
+          "text": "是啊，戴夫，某个夏日我开车兜风的感觉太棒了。风吹过头发，那种自由的感觉——令人难忘。我曾思考人生的种种奥秘，花时间真正感激自己所选择的道路，以及那些塑造了我人生轨迹的决定。还有，我的日本之行太棒了——文化、人，一切都太酷了。我已经盼着再去了，那次经历让所有的努力都值得。"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": false
+    }
+  ],
+  "candidates": [
+    {
+      "case_id": "locomo_conv-43_qa166",
+      "qa_index": 166,
+      "question": "约翰最喜欢的系列图书是什么？",
+      "gold": "哈利·波特",
+      "target": "约翰",
+      "evidence": [
+        {
+          "dia_id": "D27:19",
+          "speaker": "蒂姆",
+          "text": "《哈利·波特》是我最喜欢的书。太让人沉浸其中了！"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": true,
+      "source": {
+        "english": {
+          "question": "What is John's favorite book series?",
+          "answer": "Harry Potter",
+          "evidence": [
+            {
+              "dia_id": "D27:19",
+              "session": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "window": [
+                {
+                  "dia_id": "D27:16",
+                  "speaker": "John",
+                  "text": "Thanks! I won't give up on it. What got you into books?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:17",
+                  "speaker": "Tim",
+                  "text": "I love escaping to that world. I have a collection of books that take me there.",
+                  "query": "harry potter book collection desk",
+                  "blip_caption": "a photo of a desk with a chair and a book shelf"
+                },
+                {
+                  "dia_id": "D27:18",
+                  "speaker": "John",
+                  "text": "That's awesome! I totally understand why reading means so much to you. It's amazing how much playing a game can help us grow. Thanks for showing us your collection! Which one do you like best that takes you to another world?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:19",
+                  "speaker": "Tim",
+                  "text": "Harry Potter is my favorite book. It's so immersive!",
+                  "query": null,
+                  "blip_caption": "a photo of a collection of movies and dvds on a carpet"
+                },
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "John",
+                  "text": "Cool! Glad you're enjoying that book! Do you have any favorite fantasy movies as well? These are mine.",
+                  "query": "fantasy movies dvd collection carpet",
+                  "blip_caption": "a photo of a collection of star wars movies on a table"
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "Tim",
+                  "text": "Definitely Star Wars! It's my favorite and never gets old. What about you, do you have any favorite fantasy films?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "John",
+                  "text": "I'm a huge fan of Lord of the Rings! The adventure, the world, and the characters are awesome.",
+                  "query": "lord of the rings dvd collection",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "约翰最喜欢的系列图书是什么？",
+          "answer": "哈利·波特",
+          "evidence": [
+            {
+              "dia_id": "D27:19",
+              "session": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "window": [
+                {
+                  "dia_id": "D27:16",
+                  "speaker": "约翰",
+                  "text": "谢谢！我不会放弃的。你是怎么喜欢上读书的？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:17",
+                  "speaker": "蒂姆",
+                  "text": "我喜欢沉浸到那个世界里。我收藏了很多书，它们能带我进入那个世界。",
+                  "query": "harry potter book collection desk",
+                  "blip_caption": "a photo of a desk with a chair and a book shelf"
+                },
+                {
+                  "dia_id": "D27:18",
+                  "speaker": "约翰",
+                  "text": "太棒了！我完全理解阅读对你为什么这么重要。玩游戏能帮助我们成长真是奇妙。谢谢你给我们看你的收藏！哪一本最能带你进入另一个世界？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:19",
+                  "speaker": "蒂姆",
+                  "text": "《哈利·波特》是我最喜欢的书。太让人沉浸其中了！",
+                  "query": null,
+                  "blip_caption": "a photo of a collection of movies and dvds on a carpet"
+                },
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "约翰",
+                  "text": "酷！很高兴你喜欢那本书！你还有喜欢的奇幻电影吗？这些是我的。",
+                  "query": "fantasy movies dvd collection carpet",
+                  "blip_caption": "a photo of a collection of star wars movies on a table"
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "蒂姆",
+                  "text": "当然是《星球大战》！它是我最喜欢的，百看不厌。你呢，有喜欢的奇幻电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "约翰",
+                  "text": "我是《指环王》的超级粉丝！那些冒险、世界观和角色都太棒了。",
+                  "query": "lord of the rings dvd collection",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "《指环王》系列——约翰是它的超级粉丝，反复观看/阅读多遍，觉得非常励志。",
+          "grade": "wrong",
+          "judge": null,
+          "context": [
+            {
+              "rank": 1,
+              "id": "70de4022-1d90-417a-b7a4-d0de9c241579",
+              "content": "约翰是《指环王》的超级粉丝，看了不少遍并觉得很励志；他最喜欢的角色是阿拉贡，欣赏他作为伟大领袖总是把别人放在第一位，以及从游侠到刚铎国王的成长和救赎",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 2,
+              "id": "ad3b6bbb-6177-40ab-9deb-efb97073797b",
+              "content": "约翰刚读完一套非常棒的奇幻系列小说，情节跌宕起伏、反转很多，他很欣赏作者创造故事情节和人物的能力，喜欢沉浸在那样的奇幻世界里",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+              "content": "约翰把《风之名》加到了自己的书单里，表示喜欢人物鲜明、世界观设定精彩的奇幻作品",
+              "route": "vector",
+              "session_date": "1:08 pm on 11 August, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "a5ba7aaf-1266-4ba9-9981-8c94c584f34b",
+              "content": "约翰（John）于2023年12月初在读弗兰克·赫伯特的《沙丘》，很喜欢并推荐给蒂姆，称其为关于宗教和人类对生态控制的精彩故事；约翰还表示还没读过《权力的游戏》但打算去看看",
+              "route": "vector",
+              "session_date": "7:42 pm on 8 December, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+              "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+              "route": "vector",
+              "session_date": "8:17 pm on 21 September, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+              "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+              "route": "vector",
+              "session_date": "4:29 pm on 21 August, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+              "content": "蒂姆于2023年9月推荐约翰在旅行时读帕特里克·罗斯福斯的奇幻小说（《风之名》/ The Name of the Wind），称它会带人进入不同的世界；约翰表示迫不及待想读",
+              "route": "vector",
+              "session_date": "8:17 pm on 21 September, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+              "content": "约翰喜欢阅读关于个人发展和心态的非虚构类书籍，认为它们帮助他更好地了解自己",
+              "route": "vector",
+              "session_date": "10:22 am on 21 November, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+              "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+              "route": "vector",
+              "session_date": "9:52 am on 1 December, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "688f8e28-1f86-4b91-a412-93971a6d9aca",
+              "content": "约翰最近重读完《牧羊少年奇幻之旅》（The Alchemist），认为非常鼓舞人心，让他重新思考追逐梦想和寻找属于自己的宝藏，读完感到充满动力和希望",
+              "route": "vector",
+              "session_date": "10:22 am on 21 November, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+              "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "a7cb56be-cc70-47d7-8b39-f6b4d5705b7b",
+              "content": "蒂姆收藏了很多书，喜欢沉浸在书中世界里，这是他热爱阅读的原因；《哈利·波特》是他最喜欢的书，觉得非常让人沉浸其中",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 13,
+              "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+              "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 14,
+              "id": "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+              "content": "约翰（John）职业生涯最喜欢的一场比赛是第四节还落后10分时他投进了压哨绝杀球赢得比赛，他称这是令人热血沸腾的经历，这样的时刻让他热爱篮球",
+              "route": "vector",
+              "session_date": "8:28 pm on 11 December, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+              "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+              "route": "vector",
+              "session_date": "9:52 am on 1 December, 2023"
+            }
+          ]
+        },
+        "graph": {
+          "answer": "约翰对《哈利·波特》表现出强烈的喜爱：他收藏了整套《哈利·波特》电影的DVD，并参加了《哈利·波特》知识竞赛，还分享了一本《哈利·波特》的签名版书籍。尽管蒂姆曾推荐过《风之名》（约翰已将其加入书单）并 recently 读完了一部奇幻系列，但唯一被确认属于约翰的心头好系列是《哈利·波特》。\n\n回答：《哈利·波特》系列。",
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "The answer explicitly and correctly states that John's favorite book series is Harry Potter (《哈利·波特》), matching the gold answer exactly."
+          },
+          "context": [
+            {
+              "rank": 1,
+              "id": "70de4022-1d90-417a-b7a4-d0de9c241579",
+              "content": "约翰是《指环王》的超级粉丝，看了不少遍并觉得很励志；他最喜欢的角色是阿拉贡，欣赏他作为伟大领袖总是把别人放在第一位，以及从游侠到刚铎国王的成长和救赎",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 2,
+              "id": "ad3b6bbb-6177-40ab-9deb-efb97073797b",
+              "content": "约翰刚读完一套非常棒的奇幻系列小说，情节跌宕起伏、反转很多，他很欣赏作者创造故事情节和人物的能力，喜欢沉浸在那样的奇幻世界里",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "e93dc2ae-b5f3-4527-95e2-a6aec36681f1",
+              "content": "约翰把《风之名》加到了自己的书单里，表示喜欢人物鲜明、世界观设定精彩的奇幻作品",
+              "route": "vector",
+              "session_date": "1:08 pm on 11 August, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "a5ba7aaf-1266-4ba9-9981-8c94c584f34b",
+              "content": "约翰（John）于2023年12月初在读弗兰克·赫伯特的《沙丘》，很喜欢并推荐给蒂姆，称其为关于宗教和人类对生态控制的精彩故事；约翰还表示还没读过《权力的游戏》但打算去看看",
+              "route": "vector",
+              "session_date": "7:42 pm on 8 December, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+              "content": "约翰的书架上有《牧羊少年奇幻之旅》（The Alchemist），他读过并非常喜欢，认为这本书让他思考人生和追逐梦想的重要性；该书也是蒂姆最喜欢的书之一",
+              "route": "vector",
+              "session_date": "8:17 pm on 21 September, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "ffefd5b9-b385-4618-983c-9bd545d408a7",
+              "content": "约翰收藏了整个《哈利·波特》电影系列的DVD",
+              "route": "vector",
+              "session_date": "4:29 pm on 21 August, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "b888e181-1894-4f9b-a3cb-80a03bf6d617",
+              "content": "蒂姆于2023年9月推荐约翰在旅行时读帕特里克·罗斯福斯的奇幻小说（《风之名》/ The Name of the Wind），称它会带人进入不同的世界；约翰表示迫不及待想读",
+              "route": "vector",
+              "session_date": "8:17 pm on 21 September, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "6e7e9595-7dab-4b83-8fb3-a25cc81bf17f",
+              "content": "约翰（John）和安东尼参加过一个慈善活动，在那里遇到了激烈的《哈利·波特》知识竞赛，他们表现不错但奖品被一位超级书迷赢得；约翰分享了一张签名的哈利·波特书籍照片",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 9,
+              "id": "d15eddbe-8dc8-4119-9aa9-7627de174614",
+              "content": "约翰喜欢阅读关于个人发展和心态的非虚构类书籍，认为它们帮助他更好地了解自己",
+              "route": "vector",
+              "session_date": "10:22 am on 21 November, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+              "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+              "route": "vector",
+              "session_date": "9:52 am on 1 December, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "cbf6e7a6-ab9d-47de-a147-9e0ad5987b57",
+              "content": "蒂姆推荐约翰读《风之名》（The Name of the Wind，帕特里克·罗斯福斯著），称其主角是伟大的魔法师兼音乐家，世界观构建和人物塑造都非常出色，值得一读",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 12,
+              "id": "688f8e28-1f86-4b91-a412-93971a6d9aca",
+              "content": "约翰最近重读完《牧羊少年奇幻之旅》（The Alchemist），认为非常鼓舞人心，让他重新思考追逐梦想和寻找属于自己的宝藏，读完感到充满动力和希望",
+              "route": "vector",
+              "session_date": "10:22 am on 21 November, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+              "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "301911d3-603e-4a1d-a9bf-49aca44b0e5a",
+              "content": "蒂姆（Tim）于2023年8月上旬正在读帕特里克·罗斯福斯（Patrick Rothfuss）写的一本让他着迷的奇幻小说，书把他带到另一个世界，他称赞作者构建世界和角色的能力，并推荐约翰去读",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 15,
+              "id": "a7cb56be-cc70-47d7-8b39-f6b4d5705b7b",
+              "content": "蒂姆收藏了很多书，喜欢沉浸在书中世界里，这是他热爱阅读的原因；《哈利·波特》是他最喜欢的书，觉得非常让人沉浸其中",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-50_qa111",
+      "qa_index": 111,
+      "question": "戴夫提到他最喜欢的迪士尼电影是哪一部？",
+      "gold": "《料理鼠王》",
+      "target": "戴夫",
+      "evidence": [
+        {
+          "dia_id": "D19:6",
+          "speaker": "卡尔文",
+          "text": "谢谢！《料理鼠王》是我的最爱之一！它讲的就是无论别人说什么，都要追求自己热爱的事情。上次我们聊天时，你提到过你的汽车爱好——现在怎么样了？"
+        }
+      ],
+      "missing_evidence_ids": [],
+      "all_valid_evidence_other_speaker": true,
+      "source": {
+        "english": {
+          "question": "Which Disney movie did Dave mention as one of his favorites?",
+          "answer": "Ratatouille",
+          "evidence": [
+            {
+              "dia_id": "D19:6",
+              "session": "session_19",
+              "session_date": "12:13 am on 15 September, 2023",
+              "window": [
+                {
+                  "dia_id": "D19:3",
+                  "speaker": "Dave",
+                  "text": "Hey Calvin! I wish we had recorded the jam, but we were way too into it and totally forgot.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:4",
+                  "speaker": "Calvin",
+                  "text": "Aww, bummer! I would've loved to hear that music. Oh well, some of the best memories can't be captured on video or audio. It's like those special moments that stay in our hearts and minds. Take a look at this cool Disney poster!",
+                  "query": "magical moment photo",
+                  "blip_caption": "a photo of a poster for a disney movie with a chef"
+                },
+                {
+                  "dia_id": "D19:5",
+                  "speaker": "Dave",
+                  "text": "Wow, that's a gorgeous poster! It reminds me of one of my favorite Disney movies. I love the lesson it teaches about following your dreams no matter what others say. Have you seen it yet?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:6",
+                  "speaker": "Calvin",
+                  "text": "Thanks! Ratatouille is one of my favorites! It's all about going after what you love, no matter what anyone says. Last time we talked, you mentioned your car hobby - how's that going?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:7",
+                  "speaker": "Dave",
+                  "text": "Thanks, Calvin! It's been awesome. Been restoring this vintage beauty - here is the final result pic, take a look!",
+                  "query": null,
+                  "blip_caption": "a photography of a man standing next to a classic car"
+                },
+                {
+                  "dia_id": "D19:8",
+                  "speaker": "Calvin",
+                  "text": "Nice work, Dave! That looks amazing. Is it satisfying to see your hard work pay off?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:9",
+                  "speaker": "Dave",
+                  "text": "Thanks, Calvin! It's so satisfying to see this brought back to life, especially with people's reactions when they see the finished product - makes all the hard work worth it.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "戴夫提到他最喜欢的迪士尼电影是哪一部？",
+          "answer": "《料理鼠王》",
+          "evidence": [
+            {
+              "dia_id": "D19:6",
+              "session": "session_19",
+              "session_date": "12:13 am on 15 September, 2023",
+              "window": [
+                {
+                  "dia_id": "D19:3",
+                  "speaker": "戴夫",
+                  "text": "嘿卡尔文！真希望我们录了那次即兴演奏，但我们太投入了，完全忘了这回事。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:4",
+                  "speaker": "卡尔文",
+                  "text": "唉，真遗憾！我本来很想听听那些音乐的。不过话说回来，最美好的回忆往往无法用视频或音频记录下来。就像那些留在我们心里和脑海中的特殊时刻。快看这张超酷的迪士尼海报！",
+                  "query": "magical moment photo",
+                  "blip_caption": "a photo of a poster for a disney movie with a chef"
+                },
+                {
+                  "dia_id": "D19:5",
+                  "speaker": "戴夫",
+                  "text": "哇，这张海报太漂亮了！它让我想起我最喜欢的迪士尼电影之一。我喜欢它传达的道理：不管别人怎么说，都要追逐自己的梦想。你看过这部电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:6",
+                  "speaker": "卡尔文",
+                  "text": "谢谢！《料理鼠王》是我的最爱之一！它讲的就是无论别人说什么，都要追求自己热爱的事情。上次我们聊天时，你提到过你的汽车爱好——现在怎么样了？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:7",
+                  "speaker": "戴夫",
+                  "text": "谢谢，卡尔文！一直很顺利。我正在修复这辆漂亮的古董车——这是最终成果的照片，快看看！",
+                  "query": null,
+                  "blip_caption": "a photography of a man standing next to a classic car"
+                },
+                {
+                  "dia_id": "D19:8",
+                  "speaker": "卡尔文",
+                  "text": "干得好，戴夫！看起来太棒了。看到自己的努力得到回报，是不是很有成就感？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:9",
+                  "speaker": "戴夫",
+                  "text": "谢谢，卡尔文！看到它重获新生真是太有成就感了，尤其是人们看到成品时的反应——让所有的辛苦都值了。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "《料理鼠王》（Ratatouille）——卡尔文分享该海报称是最爱之一，戴夫表示他也喜欢这部影片，认同其中追逐梦想的道理。",
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案准确指出了《料理鼠王》并附带正确的补充细节。"
+          },
+          "context": [
+            {
+              "rank": 1,
+              "id": "d3935d02-83bd-4c53-9e39-1f74ad918c65",
+              "content": "戴夫表示他也喜欢《料理鼠王》，认为影片传达了不管别人怎么说都要追逐自己梦想的道理",
+              "route": "vector",
+              "session_date": "12:13 am on 15 September, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "64600c31-ccb5-4584-b08a-0d67d6f27878",
+              "content": "卡尔文分享了一张迪士尼电影《料理鼠王》的海报，称这是他的最爱之一，喜欢它传达的'无论别人说什么都要追求自己热爱的事情'的道理",
+              "route": "vector",
+              "session_date": "12:13 am on 15 September, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "94e120e7-c330-46a4-bc09-bb0bad95dd2f",
+              "content": "戴夫表示他喜欢把破旧的东西变成美好的东西，正是这些小小的成功让他感到自豪和满足",
+              "route": "vector",
+              "session_date": "2:44 pm on 4 October, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "d4457eed-04e1-4cdf-a5d7-0eac186737e6",
+              "content": "戴夫在波士顿音乐节上最喜欢的乐队是Aerosmith，他终于现场看到了他们，圆了看到最喜欢乐队现场演出的梦想，觉得是非常美妙的体验，但没有机会在演出后与他们见面",
+              "route": "vector",
+              "session_date": "4:45 pm on 26 March, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "e771797b-0e46-48e5-86b6-284a218a6249",
+              "content": "戴夫表示以自己热爱的事情（修车）为生是他从小到大的目标，修复工作虽然辛苦但带来极大的成就感",
+              "route": "vector",
+              "session_date": "3:13 pm on 8 October, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "69c4801a-18ba-4c11-8b48-3373d2798e81",
+              "content": "戴夫在没灵感时通常会沉浸在自己喜欢的事情里，比如看演唱会或听最喜欢的专辑，这通常能激发他的灵感",
+              "route": "vector",
+              "session_date": "1:16 pm on 3 May, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "588ee760-4a3c-4248-994e-cfa4eb167977",
+              "content": "Dave finds working on cars a form of self-expression and a peaceful oasis, saying that fixing a car feels like reconnecting with himself",
+              "route": "vector",
+              "session_date": "2:17 pm on 23 October, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "310fe5af-e8e6-4c7c-840c-749fd2de776f",
+              "content": "戴夫认为音乐用神奇的方式把人们凝聚在一起，就像他修理东西时一样，修复坏掉的东西是他坚持从事这行的原因",
+              "route": "vector",
+              "session_date": "9:39 am on 15 October, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "cf0edf7e-ff96-4dc7-84fe-189ce1b5e737",
+              "content": "戴夫喜欢拍摄大自然的美——日落、海滩、海浪；他在2023年11月初拍了一张日落时分海浪拍打岩石的照片，并上周在附近公园拍了一张有岩石和瀑布的宁静池塘照片",
+              "route": "vector",
+              "session_date": "10:54 am on 17 November, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "3176d3ae-b8a3-4bcb-836f-1c468df3e7b1",
+              "content": "戴夫 (Dave) 向卡尔文推荐了波士顿的音乐场所，包括 Paradise Rock、House of Blues 和芬威公园 (Fenway Park)，并表示在卡尔文来波士顿时会带他逛遍这座城市，还会坐第一排看他的演出",
+              "route": "vector",
+              "session_date": "4:15 pm on 20 April, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "547aa265-93e0-4553-ba2e-9a2d2f32c9c7",
+              "content": "戴夫表示很高兴能给人们带来快乐并会继续做下去，聊天结束时有很多工作要做",
+              "route": "vector",
+              "session_date": "12:13 am on 15 September, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "9d03f15f-2c9b-4f6e-a9f7-0e308b5e2205",
+              "content": "戴夫和卡尔文约定，等卡尔文到波士顿时一起吃饭，戴夫会带他去看自己在城里最喜欢的地方，体验波士顿的音乐和美食",
+              "route": "vector",
+              "session_date": "4:15 pm on 20 April, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "caa999cc-2351-46a0-b7f7-e37353e2f74e",
+              "content": "戴夫表示希望能去波士顿看卡尔文的一场演出，并约卡尔文有空时聚一聚",
+              "route": "vector",
+              "session_date": "10:54 am on 17 November, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "6ac1203b-be22-4fce-8a30-9fcc3a31d96a",
+              "content": "戴夫从小就和他爸爸一起修车，翻新汽车给他成就感，修车对他来说像一种治疗",
+              "route": "vector",
+              "session_date": "1:12 pm on 3 August, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "b6c85038-5d37-49eb-8d8e-72feef961bb2",
+              "content": "戴夫和卡尔文约定互相激励，在各自热爱的汽车修复和音乐道路上继续努力拼搏",
+              "route": "vector",
+              "session_date": "6:24 pm on 1 May, 2023"
+            }
+          ]
+        },
+        "graph": {
+          "answer": "戴夫说他也喜欢《料理鼠王》(Ratatouille)——当卡尔文分享它是最爱的迪士尼电影之一时，戴夫表示同意，并表示欣赏其中“无论别人怎么说都要追逐自己梦想”的寓意。\n\n答案：《料理鼠王》(Ratatouille)",
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer states the exact film title 《料理鼠王》(Ratatouille), matching the gold."
+          },
+          "context": [
+            {
+              "rank": 1,
+              "id": "d3935d02-83bd-4c53-9e39-1f74ad918c65",
+              "content": "戴夫表示他也喜欢《料理鼠王》，认为影片传达了不管别人怎么说都要追逐自己梦想的道理",
+              "route": "vector",
+              "session_date": "12:13 am on 15 September, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "64600c31-ccb5-4584-b08a-0d67d6f27878",
+              "content": "卡尔文分享了一张迪士尼电影《料理鼠王》的海报，称这是他的最爱之一，喜欢它传达的'无论别人说什么都要追求自己热爱的事情'的道理",
+              "route": "vector",
+              "session_date": "12:13 am on 15 September, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "94e120e7-c330-46a4-bc09-bb0bad95dd2f",
+              "content": "戴夫表示他喜欢把破旧的东西变成美好的东西，正是这些小小的成功让他感到自豪和满足",
+              "route": "vector",
+              "session_date": "2:44 pm on 4 October, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "d4457eed-04e1-4cdf-a5d7-0eac186737e6",
+              "content": "戴夫在波士顿音乐节上最喜欢的乐队是Aerosmith，他终于现场看到了他们，圆了看到最喜欢乐队现场演出的梦想，觉得是非常美妙的体验，但没有机会在演出后与他们见面",
+              "route": "vector",
+              "session_date": "4:45 pm on 26 March, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "e771797b-0e46-48e5-86b6-284a218a6249",
+              "content": "戴夫表示以自己热爱的事情（修车）为生是他从小到大的目标，修复工作虽然辛苦但带来极大的成就感",
+              "route": "vector",
+              "session_date": "3:13 pm on 8 October, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "69c4801a-18ba-4c11-8b48-3373d2798e81",
+              "content": "戴夫在没灵感时通常会沉浸在自己喜欢的事情里，比如看演唱会或听最喜欢的专辑，这通常能激发他的灵感",
+              "route": "vector",
+              "session_date": "1:16 pm on 3 May, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "588ee760-4a3c-4248-994e-cfa4eb167977",
+              "content": "Dave finds working on cars a form of self-expression and a peaceful oasis, saying that fixing a car feels like reconnecting with himself",
+              "route": "vector",
+              "session_date": "2:17 pm on 23 October, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "310fe5af-e8e6-4c7c-840c-749fd2de776f",
+              "content": "戴夫认为音乐用神奇的方式把人们凝聚在一起，就像他修理东西时一样，修复坏掉的东西是他坚持从事这行的原因",
+              "route": "vector",
+              "session_date": "9:39 am on 15 October, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "cf0edf7e-ff96-4dc7-84fe-189ce1b5e737",
+              "content": "戴夫喜欢拍摄大自然的美——日落、海滩、海浪；他在2023年11月初拍了一张日落时分海浪拍打岩石的照片，并上周在附近公园拍了一张有岩石和瀑布的宁静池塘照片",
+              "route": "vector",
+              "session_date": "10:54 am on 17 November, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "1eff687f-7cf6-4d1e-b41c-5e37b1979c27",
+              "content": "戴夫表示修好东西、看着它变好给了他成就感和目标感，修好别人的车并看到车主如释重负让他感到自豪，觉得自己在做出改变",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 11,
+              "id": "3176d3ae-b8a3-4bcb-836f-1c468df3e7b1",
+              "content": "戴夫 (Dave) 向卡尔文推荐了波士顿的音乐场所，包括 Paradise Rock、House of Blues 和芬威公园 (Fenway Park)，并表示在卡尔文来波士顿时会带他逛遍这座城市，还会坐第一排看他的演出",
+              "route": "vector",
+              "session_date": "4:15 pm on 20 April, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "547aa265-93e0-4553-ba2e-9a2d2f32c9c7",
+              "content": "戴夫表示很高兴能给人们带来快乐并会继续做下去，聊天结束时有很多工作要做",
+              "route": "vector",
+              "session_date": "12:13 am on 15 September, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "9d03f15f-2c9b-4f6e-a9f7-0e308b5e2205",
+              "content": "戴夫和卡尔文约定，等卡尔文到波士顿时一起吃饭，戴夫会带他去看自己在城里最喜欢的地方，体验波士顿的音乐和美食",
+              "route": "vector",
+              "session_date": "4:15 pm on 20 April, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "caa999cc-2351-46a0-b7f7-e37353e2f74e",
+              "content": "戴夫表示希望能去波士顿看卡尔文的一场演出，并约卡尔文有空时聚一聚",
+              "route": "vector",
+              "session_date": "10:54 am on 17 November, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "2aa11224-e886-4dae-af9d-7043a0fd1a66",
+              "content": "戴夫 (Dave) 于2023年8月正在修复一辆老式福特野马 (Ford Mustang)，希望2023年9月底前全部修好，称看着它从破烂变成美车的蜕变是值得的",
+              "route": "graph",
+              "session_date": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "input_sha256": {
+    "base": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59",
+    "graph": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "base_grade": "0a4bef376de18c4ef1242c893ab27f2cfa7133445885265fbcb05521acf9bb0b",
+    "graph_grade": "9fa3a5f25d3fdf21dd173e60a3d1db55177e362cb4f4b9ad145eb37107284d05",
+    "english_data": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese_data": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d"
+  },
+  "limits": [
+    "Speaker mismatch is a diagnostic flag, never a gold-error verdict.",
+    "Questions with aliases, implicit subjects, or other preference wording are excluded.",
+    "Unflagged questions may still have wrong relations, incomplete gold, or source problems."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "scope": "Manual adjudication of both all-other-speaker flags in the fixed literal Chinese preference screen",
+  "packet_sha256": "6631e506a543f80485a3908035c1ee352846e425c7b50a57b031b3633c54bf8e",
+  "labels": [
+    {
+      "case_id": "locomo_conv-43_qa166",
+      "flag_verdict": "designated_evidence_subject_mismatch",
+      "support_status": "target_favorite_relation_not_supported_by_designated_source_or_neighbor_window",
+      "source_turn_ids": [
+        "D27:18",
+        "D27:19",
+        "D27:20"
+      ],
+      "source_subject": "蒂姆",
+      "target_subject": "约翰",
+      "reason_zh": "D27:18约翰问蒂姆最喜欢哪本书，D27:19蒂姆自述哈利波特最爱，D27:20约翰回应并转问电影；没有将蒂姆的最爱转述为约翰。电影DVD/粉丝/竞赛也不证明约翰最爱图书系列。不能自动将无图指环王判正确。",
+      "confidence": "high for source attribution; no claim of full-corpus semantic absence"
+    },
+    {
+      "case_id": "locomo_conv-50_qa111",
+      "flag_verdict": "contextually_supported_cross_speaker_completion",
+      "support_status": "supported_by_neighbor_dialogue_with_reference_resolution",
+      "source_turn_ids": [
+        "D19:4",
+        "D19:5",
+        "D19:6"
+      ],
+      "source_subject": "戴夫与卡尔文",
+      "target_subject": "戴夫",
+      "reason_zh": "D19:4卡尔文展示迪士尼海报，D19:5戴夫说海报让他想起最爱的迪士尼电影之一及追梦寓意，D19:6卡尔文补出料理鼠王片名并复述相同寓意。片名关联依邻轮和指代，不是戴夫直接说片名，但有上下文支持；只看D19:6会误记为错人。两臂第1/2条均保留两人偏好，两臂exact。",
+      "confidence": "medium-high for contextual reference; not literal same-speaker title assertion"
+    }
+  ],
+  "policy_examples": {
+    "reject_automatic_rule": "speaker != question subject => gold wrong",
+    "required_review_fields": [
+      "question subject",
+      "source fact subject",
+      "predicate and preference strength",
+      "reference resolution across adjacent turns",
+      "book/movie/game relation type",
+      "direct versus contextual support",
+      "missing evidence IDs"
+    ],
+    "historical_scores": "retain old scores; quarantine source-mismatch case from clean mechanism gain set; do not overwrite gold"
+  },
+  "limits": [
+    "Only 46 literal-target questions screened; flags are not error-rate estimates.",
+    "44 unflagged rows were not semantically adjudicated in this phase.",
+    "Manual contextual support is not an implemented automatic source validator."
+  ]
+}
