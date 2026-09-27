@@ -1,0 +1,50 @@
+{
+  "scope": "Manual review of title hits and game-related current Memory, with version separation; one targeted case",
+  "packet_sha256": "915ed7d6f64d0415c2c4bf669f042a5b41c1dd0745f207c62ec26f8158cfbf48",
+  "case_id": "locomo_conv-42_qa95",
+  "source_relation": {
+    "subject": "内特",
+    "relation": "在被问最爱游戏时介绍的游戏",
+    "object": "异度神剑",
+    "source_turn_ids": [
+      "D27:22",
+      "D27:23"
+    ],
+    "support_type": "question-qualified response, weaker than explicit comparative favorite assertion",
+    "do_not_upgrade": "不自动写成永远唯一最爱、最常玩或职业主打"
+  },
+  "manual_findings": {
+    "current_main_user_memory_count": 195,
+    "current_session27_memory_count": 12,
+    "current_main_user_title_memory_id": "c6aaa7b8-b700-423c-99f6-9f47c6a11ad7",
+    "other_user_title_memory_id": "136d85ad-94a7-4bca-bfca-542bdd2c9250",
+    "other_user_id": "nf53:locomo:conv-42",
+    "historical_target_id": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+    "historical_current_shared_ids": 0,
+    "title_memories_preserve_question_qualifier": false,
+    "english_atomic_title_item_preserves_question_qualifier": false,
+    "raw_session27_extraction_request_response_available": false
+  },
+  "conclusion_zh": "可见旧/当前/另一namespace的标题记忆与英文atomic条目只记录正在玩或推荐，没有保留最爱提问语境；说明扩大召回不能直接找回这份可见语境关系。但原回答没有逐字说最爱，保留提问上下文也不授权升级为唯一最爱。历史193与当前195记忆ID零交集，不能把当前状态当旧同版反事实。",
+  "confidence": "high for source wording, title records and version IDs; medium for semantic support strength; exact extraction cause unknown",
+  "acceptance_contract": {
+    "required": [
+      "主体是内特",
+      "记录被问最爱游戏时介绍异度神剑的语境",
+      "同时保留近期在玩/觉得好玩/推荐",
+      "source_turn_ids覆盖D27:22和D27:23",
+      "将问答支持与直接最爱排名区分"
+    ],
+    "reject": [
+      "由职业比赛或常玩CSGO推唯一最爱",
+      "把朋友推荐改成本人推荐朋友",
+      "仅保存问句作为已经成立的事实",
+      "把不同用户空间的ID合并作一次对照"
+    ]
+  },
+  "limits": [
+    "Lexical title scan is not proof of all semantic aliases absent.",
+    "No automated extraction or repair was performed.",
+    "No retrieval or answer gain assessed."
+  ]
+}
