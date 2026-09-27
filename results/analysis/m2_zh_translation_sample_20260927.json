@@ -1,0 +1,974 @@
+{
+  "scope": "Frozen 20 Chinese LoCoMo QA and aligned English original evidence, plus full-dataset image text field counts; no model calls",
+  "dataset_sha256": {
+    "english": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d"
+  },
+  "selection_manifest": "results/analysis/m2_current_zh_stratified_manifest_20260927.json",
+  "field_counts": {
+    "turns": 5882,
+    "chinese_turns_with_caption": 1226,
+    "caption_identical_to_english": 1226,
+    "chinese_turns_with_query": 888,
+    "query_identical_to_english": 888,
+    "chinese_turns_with_image_url": 910,
+    "chinese_text_with_ascii_word_len_ge_3": 117
+  },
+  "selected_cases": [
+    {
+      "case_id": "locomo_conv-49_qa64",
+      "category": 1,
+      "english": {
+        "question": "Which ailment does Sam have to face due to his weight?",
+        "answer": "gastritis",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "萨姆因为体重不得不面对什么疾病？",
+        "answer": "胃炎",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D2:6",
+          "english": {
+            "speaker": "Sam",
+            "text": "Thanks, Evan. Appreciate the offer, but had a check-up with my doctor a few days ago and, yikes, the weight wasn't great. It was pretty eye-opening.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "萨姆",
+            "text": "谢谢，埃文。谢谢你的好意，不过几天前我去医生那里做了个体检，哎呀，体重状况不太好。还挺让人警醒的。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D7:2",
+          "english": {
+            "speaker": "Sam",
+            "text": "Hey Evan, sorry to hear about what happened. I can imagine how hard it must have been for you. Things haven't been easy for me either. Had a tough week and a doc's appointment, so it was kinda like a wake-up call to take better care of myself. On a bright side, I'm taking a cooking class to learn how to make healthier meals.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "萨姆",
+            "text": "嘿埃文，听到这事我很难过。我能想象这对你来说有多不容易。我这段时间也不轻松。这周过得很艰难，还去看了医生，这算是给我敲了个警钟，要更好地照顾自己。好的一面是，我正在上烹饪课，学习做更健康的饭菜。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D12:1",
+          "english": {
+            "speaker": "Sam",
+            "text": "Hey Evan, hope you're doing okay. I wanted to chat about something that's been bothering me lately... I went for a check-up Monday and my doc said my weight's a serious health risk - if I don't make changes soon, it can get worse. I know I made jokes about it, but it's really hitting me. Been having a hard time.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "萨姆",
+            "text": "嘿，埃文，希望你还好。我想聊聊最近一直困扰我的一件事……星期一我去做了个体检，医生说我的体重已经构成严重的健康风险——如果我不尽快做出改变，情况会恶化。我知道我之前还拿这事开玩笑，但现在真的感受到压力了。这段时间挺难熬的。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D14:1",
+          "english": {
+            "speaker": "Sam",
+            "text": "Hey Evan! I've been missing our chats. I had quite the health scare last weekend - ended up in the ER with a severe stomachache. Turns out, it was gastritis, which was pretty alarming. It was a wake-up call for me to start prioritizing my health, like adopting a more nutritious diet and getting regular exercise. On top of that, my phone's been giving me a hard time, adding to the stress.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "萨姆",
+            "text": "嘿，埃文！我一直很想念我们聊天。上周末我的健康出了点大状况——因为剧烈的胃痛去了急诊室。结果发现是胃炎，还挺吓人的。这对我来说是个警钟，得开始重视健康了，比如吃得更营养、规律锻炼。另外，我的手机也一直给我添麻烦，压力更大了。",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa20",
+      "category": 1,
+      "english": {
+        "question": "Which games have Jolene and her partner played together?",
+        "answer": "Detroit, Walking Dead, Battlefield 1, It Takes Two, Overcooked 2",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "乔琳和她伴侣一起玩过哪些游戏？",
+        "answer": "《底特律》、《行尸走肉》、《战地1》、《双人成行》、《胡闹厨房2》",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D2:26",
+          "english": {
+            "speaker": "Jolene",
+            "text": "They are very unusual pets! Here's me and my partner gaming last week - it's so fun. We played the game \"Detroit\" on the console. We are both crazy about this activity!",
+            "caption": "a photo of a person laying in bed with a dog watching tv",
+            "query": "gaming with partner"
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "它们是非常特别的宠物！这是上周我和我的伴侣一起玩游戏的合照——太好玩了。我们在主机上玩了游戏《底特律》。我们都对这项活动着迷！",
+            "caption": "a photo of a person laying in bed with a dog watching tv",
+            "query": "gaming with partner"
+          }
+        },
+        {
+          "turn_id": "D2:30",
+          "english": {
+            "speaker": "Jolene",
+            "text": "We are planning to play \"Walking Dead\" next Saturday.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "我们计划下周六玩《Walking Dead》。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D20:1",
+          "english": {
+            "speaker": "Jolene",
+            "text": " Long time no talk! We were given a new game for the console last week, it is Battlefield 1. What's been up with you?",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "好久没聊了！上周我们得到了一个主机的新游戏，是《战地1》。你最近怎么样？",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D15:10",
+          "english": {
+            "speaker": "Jolene",
+            "text": "Yeah, we love playing \"It takes two\" together! It's a fun team-strategy game and it's competitive. Plus, it's a great way for us to bond. Do you have any activities you like doing with people?",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "有，我们喜欢一起玩《It takes two》！这是个有趣的团队策略游戏，还挺有竞技性。而且这是增进感情的好方式。你有什么喜欢和别人一起做的活动吗？",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D19:10",
+          "english": {
+            "speaker": "Jolene",
+            "text": "Oh, I forgot to mention Overcooked 2 - this is a good co-op game if you're into hilarious and chaotic cooking. My partner and I often play for bets! I once won three large pizzas!",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "哦，我忘了提《胡闹厨房2》——如果你喜欢搞笑又混乱的烹饪，这是一款很棒的联机合作游戏。我和伴侣经常用它来打赌！我赢过三个大披萨！",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa2",
+      "category": 1,
+      "english": {
+        "question": "What items does John collect?",
+        "answer": "sneakers, fantasy movie DVDs, jerseys",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "约翰收集什么物品？",
+        "answer": "运动鞋、奇幻电影DVD、球衣",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D1:15",
+          "english": {
+            "speaker": "John",
+            "text": "That's great! Loving it when people are passionate about their work. What kind of collaborations are you involved in for the fan project? I love talking to people about my sneaker collection.",
+            "caption": "a photo of a circle of shoes on the floor in a room",
+            "query": null
+          },
+          "chinese": {
+            "speaker": "约翰",
+            "text": "太好了！我喜欢看到人们对自己的工作充满热情。你的粉丝项目都涉及哪些合作？我很喜欢和别人聊我的球鞋收藏。",
+            "caption": "a photo of a circle of shoes on the floor in a room",
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D12:18",
+          "english": {
+            "speaker": "John",
+            "text": "That's great Tim! Books and movies make us escape to different places. I like to collect jerseys.",
+            "caption": "a photo of a bunch of basketball jerseys laying on a bed",
+            "query": "basketball jerseys collection"
+          },
+          "chinese": {
+            "speaker": "约翰",
+            "text": "太好了，蒂姆！书籍和电影能让我们逃到不同的地方。我喜欢收集球衣。",
+            "caption": "a photo of a bunch of basketball jerseys laying on a bed",
+            "query": "basketball jerseys collection"
+          }
+        },
+        {
+          "turn_id": "D27:20",
+          "english": {
+            "speaker": "John",
+            "text": "Cool! Glad you're enjoying that book! Do you have any favorite fantasy movies as well? These are mine.",
+            "caption": "a photo of a collection of star wars movies on a table",
+            "query": "fantasy movies dvd collection carpet"
+          },
+          "chinese": {
+            "speaker": "约翰",
+            "text": "酷！很高兴你喜欢那本书！你还有喜欢的奇幻电影吗？这些是我的。",
+            "caption": "a photo of a collection of star wars movies on a table",
+            "query": "fantasy movies dvd collection carpet"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa15",
+      "category": 1,
+      "english": {
+        "question": "What is a shared frustration regarding dog ownership for Audrey and Andrew?",
+        "answer": "Not being able to find pet friendly spots.",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "关于养狗，奥黛丽和安德鲁共同的烦恼是什么？",
+        "answer": "找不到允许宠物的地方。",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D7:8",
+          "english": {
+            "speaker": "Andrew",
+            "text": "I'm still on the hunt, but it's tough finding a pet-friendly spot in the city. Been checking out some places, but no luck so far. A bit discouraged but I'm determined to find the right place and dog.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "安德鲁",
+            "text": "我还在找，但在城市里找个允许养宠物的地方真难。看了不少地方，但到现在都没结果。有点泄气，但我下定决心要找到合适的地方和狗。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D10:5",
+          "english": {
+            "speaker": "Audrey",
+            "text": "Seeing them do well is super rewarding! They give me so much love and happiness. I get how frustrating it can be not to find pet-friendly spots. Nature is so calming and restorative with them around. See how happy they are when they're out.",
+            "caption": "a photo of two dogs running in a field with a ball in their mouth",
+            "query": "dogs playing park"
+          },
+          "chinese": {
+            "speaker": "奥黛丽",
+            "text": "看到它们表现好真的特别有成就感！它们给我满满的爱和幸福。我懂找不到允许宠物的地方有多让人沮丧。有它们在身边，大自然特别让人平静、治愈。看看它们出去时有多开心。",
+            "caption": "a photo of two dogs running in a field with a ball in their mouth",
+            "query": "dogs playing park"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa20",
+      "category": 2,
+      "english": {
+        "question": "When did Nate adopt Max?",
+        "answer": "May 2022",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "内特是什么时候领养马克斯的？",
+        "answer": "2022年5月",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D12:3",
+          "english": {
+            "speaker": "Nate",
+            "text": "Way to go! I just got a new addition to the family, this is Max!",
+            "caption": "a photo of a dog laying on a couch in a living room",
+            "query": "cute dog max"
+          },
+          "chinese": {
+            "speaker": "内特",
+            "text": "太棒了！我家里刚添了个新成员，这是马克斯！",
+            "caption": "a photo of a dog laying on a couch in a living room",
+            "query": "cute dog max"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa2",
+      "category": 2,
+      "english": {
+        "question": "When did Deborah`s mother pass away?",
+        "answer": "a few years before 2023",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "黛博拉的母亲是什么时候去世的？",
+        "answer": "2023年前的几年",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D1:5",
+          "english": {
+            "speaker": "Deborah",
+            "text": "It was full of memories, she passed away a few years ago. This is our last photo together.",
+            "caption": "a photo of a woman in a wheelchair hugging a woman in a wheelchair",
+            "query": "mother old home emotions memories"
+          },
+          "chinese": {
+            "speaker": "黛博拉",
+            "text": "那里充满了回忆，她几年前去世了。这是我们最后一张合影。",
+            "caption": "a photo of a woman in a wheelchair hugging a woman in a wheelchair",
+            "query": "mother old home emotions memories"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa59",
+      "category": 2,
+      "english": {
+        "question": "When did John go on a camping trip with Max?",
+        "answer": "The summer of 2022",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "约翰是什么时候带马克斯去露营的？",
+        "answer": "2022年夏天",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D30:6",
+          "english": {
+            "speaker": "John",
+            "text": "Thanks, Maria! Max and I had a blast on our camping trip last summer. We hiked, swam, and made great memories. It was a really peaceful and awesome experience.",
+            "caption": "a photo of a dog and a person sitting by a campfire",
+            "query": "camping trip max campfire hiking swimming"
+          },
+          "chinese": {
+            "speaker": "约翰",
+            "text": "谢谢，玛丽亚！去年夏天我和马克斯去露营玩得特别开心。我们一起远足、游泳，留下了很多美好回忆。那是一次非常宁静、棒极了的经历。",
+            "caption": "a photo of a dog and a person sitting by a campfire",
+            "query": "camping trip max campfire hiking swimming"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa26",
+      "category": 2,
+      "english": {
+        "question": "When did Calvin record a podcast with his friends?",
+        "answer": "21 August, 2023",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "卡尔文是什么时候和朋友录播客的？",
+        "answer": "2023年8月21日",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D15:12",
+          "english": {
+            "speaker": "Calvin",
+            "text": "Of course, Dave can't wait to catch up! I almost forgot, yesterday my friends and I recorded a podcast where we discuss the rapidly evolving rap industry!",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "卡尔文",
+            "text": "当然，戴夫，等不及要和你好好聊聊了！我差点忘了，昨天我和朋友们录了一期播客，讨论飞速发展的说唱行业！",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa13",
+      "category": 3,
+      "english": {
+        "question": "Would Calvin enjoy performing at the Hollywood Bowl?",
+        "answer": "Yes; because he enjoys the rush of performing onstage to large crowds",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "卡尔文愿意在好莱坞露天剧场演出吗？",
+        "answer": "愿意；因为他享受在大批观众面前登台演出的兴奋感",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D7:11",
+          "english": {
+            "speaker": "Calvin",
+            "text": "Performing live always fuels my soul! I love the rush and connection with the crowd, the feeling's indescribable—it's an absolute high!",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "卡尔文",
+            "text": "现场演出总能点燃我的灵魂！我喜欢那种兴奋感和与观众的连接，那种感觉难以形容——简直就是极致的享受！",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa36",
+      "category": 3,
+      "english": {
+        "question": "How old is Jolene?",
+        "answer": "likely no more than 30; since she's in school",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "乔琳多大了？",
+        "answer": "很可能不超过30岁；因为她还在上学",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D8:2",
+          "english": {
+            "speaker": "Jolene",
+            "text": "One of my favorite dishes is lasagna! Comfort food can be a great pick-me-up. I've got a lot going on with my studies and exams.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "我最喜欢的菜之一是千层面！安慰食物能很好地提振精神。我的学习和考试事情很多。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D13:5",
+          "english": {
+            "speaker": "Jolene",
+            "text": " I'm interning at a well-known engineering firm. It's been a great opportunity to test my skills and gain real-world experience. These are my new colleagues!",
+            "caption": "a photo of a group of construction workers posing for a picture",
+            "query": "engineering firm internship"
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "我在一家知名的工程公司实习。这是检验我技能和积累实际经验的绝佳机会。这些是我的新同事们！",
+            "caption": "a photo of a group of construction workers posing for a picture",
+            "query": "engineering firm internship"
+          }
+        },
+        {
+          "turn_id": "D21:6",
+          "english": {
+            "speaker": "Jolene",
+            "text": "My goal is to be successful in my field and make a positive impact. I've been studying, attending workshops, and networking to make it happen. Recently, I had the opportunity to present at a virtual conference and received positive feedback.  It was a great experience and confirmed that I'm on the right track.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "我的目标是在我的领域取得成功，并产生积极的影响。我一直在学习、参加研讨会和拓展人脉来实现这个目标。最近，我有机会在一个线上会议上做演讲，并得到了积极的反馈。那是一次很棒的经历，也证实了我正走在正确的道路上。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D21:8",
+          "english": {
+            "speaker": "Jolene",
+            "text": "I was thrilled to receive such positive feedback! It felt so rewarding to know that my efforts were appreciated. Right now, I'm focusing on studying and gaining more experience. I'm even thinking about more internships to further enhance my skills. Exciting times! Hopefully, there will be more updates to share with you soon.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "收到这么积极的反馈我太激动了！知道自己的努力得到认可，感觉特别值得。现在，我正专注于学习并积累更多经验。我甚至还在考虑多做几段实习来进一步提升我的技能。令人兴奋的时刻！希望很快能有更多进展和你分享。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D22:6",
+          "english": {
+            "speaker": "Jolene",
+            "text": "Yeah, Deborah! We've been figuring out how to add these values into our projects. As an engineering student, I want to use my talents to do good and help solve important problems. I'm keen on coming up with new ideas and making things more efficient to make the world a better place. Going further, my mom stressed the value of helping others and that's something I want to keep in mind for my engineering projects.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "是的，黛博拉！我们一直在琢磨如何把这些价值观融入我们的项目。作为一名工程专业的学生，我想用我的才能做好事，帮助解决重要问题。我热衷于提出新想法、提高效率，让世界变得更美好。更进一步说，我妈妈强调过帮助他人的价值，这是我在工程项目中想牢记的。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D22:14",
+          "english": {
+            "speaker": "Jolene",
+            "text": "It helps with challenges, giving balance and strength. Any tips for staying relaxed while studying?",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "瑜伽有助于应对挑战，带来平衡和力量。有什么在学习时保持放松的技巧吗？",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D24:2",
+          "english": {
+            "speaker": "Jolene",
+            "text": "Hey Deb, great to hear from you! I've been focusing on studying and my relationship with my partner. We're taking little trips to the beach, it's a great way to relax. How about you, anything new going on?",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "嘿，黛布，很高兴收到你的消息！我最近一直在专注学习和和伴侣的感情。我们会去海边小旅行，这是放松的好方式。你呢，有什么新鲜事吗？",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D24:14",
+          "english": {
+            "speaker": "Jolene",
+            "text": "Got a lot of finals coming up this month, so I've been studying real hard. It's been quite stressful, but it'll be worth it in the end. Thinking about taking a trip somewhere to relax and recharge afterward.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "这个月有很多期末考试，所以我一直在努力学习。压力挺大的，但最后会是值得的。我在考虑考完之后去某处旅行放松一下，充充电。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D25:5",
+          "english": {
+            "speaker": "Jolene",
+            "text": "Yeah, same! It helps me stay balanced during my studies.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "对，我也一样！它帮助我在学习期间保持平衡。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D26:6",
+          "english": {
+            "speaker": "Jolene",
+            "text": "Having a routine helps me stay on top of everything I need to do. I have a schedule for classes, studying, and personal time. Self-care activities like yoga and meditation help me stay balanced and relax.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔琳",
+            "text": "有一个固定的作息能帮我掌控所有需要做的事情。我为上课、学习和个人时间都安排了日程。像瑜伽和冥想这样的自我关怀活动帮助我保持平衡和放松。",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa32",
+      "category": 3,
+      "english": {
+        "question": "Which US states might Tim be in during September 2023 based on his plans of visiting Universal Studios?",
+        "answer": "California or Florida",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "根据参观环球影城的计划，蒂姆2023年9月可能在哪些美国州？",
+        "answer": "加利福尼亚州或佛罗里达",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D10:9",
+          "english": {
+            "speaker": "Tim",
+            "text": "Thanks! Excited to try this. Love experimenting with spices. By the way, have you been to Universal Studios? Planning a trip there next month.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "蒂姆",
+            "text": "谢谢！很期待试试。我喜欢尝试各种香料。对了，你去过环球影城吗？我打算下个月去那里玩。",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa53",
+      "category": 3,
+      "english": {
+        "question": "What is a career that Andrew could potentially pursue with his love for animals and nature?",
+        "answer": "Park ranger or a similar position working for the National Park Services.",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "凭借对动物和自然的热爱，安德鲁可能从事什么职业？",
+        "answer": "公园管理员或国家公园管理局的类似职位。",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D2:18",
+          "english": {
+            "speaker": "Andrew",
+            "text": "That pic is so cute! It would be fun to hang out with a dog, cuddling away. Got me thinking of my old hiking pics and how much I miss exploring nature trails with my family's dog. Ah, the peaceful moments out in nature!",
+            "caption": "a photo of a man walking a dog on a trail",
+            "query": "dog hiking trail"
+          },
+          "chinese": {
+            "speaker": "安德鲁",
+            "text": "这张照片太可爱了！和狗狗一起依偎着玩肯定很有意思。这让我想起了我以前远足的照片，好怀念和我家狗狗一起探索自然小径的日子。啊，大自然中那些宁静的时光！",
+            "caption": "a photo of a man walking a dog on a trail",
+            "query": "dog hiking trail"
+          }
+        },
+        {
+          "turn_id": "D3:1",
+          "english": {
+            "speaker": "Andrew",
+            "text": "Hey Audrey! What's up? Missed chatting with ya! Check it out, my girl & I tried out that new cafe scene in the city last weekend! Super fun but kinda sad not being out in nature - that's when I feel like I'm really thriving. Oh man, I miss the peacefulness of being out on a hike.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "安德鲁",
+            "text": "嘿，奥黛丽！最近怎么样？很想和你聊天！你看，上个周末我和我女朋友去尝试了城里那家新开的咖啡馆！超级好玩，但没能到大自然里去还是有点遗憾——只有在那种时候我才觉得自己真正充满活力。唉，真怀念远足时那份宁静。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D5:7",
+          "english": {
+            "speaker": "Andrew",
+            "text": "I'm looking for a place near a park or woods, so I can stay close to nature and give the dog a large open space to run around",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "安德鲁",
+            "text": "我想找个靠近公园或树林的地方，这样既能亲近自然，也能给狗一片开阔的场地奔跑。",
+            "caption": null,
+            "query": null
+          }
+        },
+        {
+          "turn_id": "D8:27",
+          "english": {
+            "speaker": "Andrew",
+            "text": "Agreed! It's great for refreshing the mind and giving a different outlook. Whenever I'm in need of a reset, I turn to nature.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "安德鲁",
+            "text": "同意！大自然很适合放松心情、带来不同的视角。每当我需要重新调整状态时，我就会投向大自然的怀抱。",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa111",
+      "category": 4,
+      "english": {
+        "question": "What creative project do Mel and her kids do together besides pottery?",
+        "answer": "painting",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "除了陶艺，梅尔和孩子们还一起做什么创意项目？",
+        "answer": "绘画",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D8:5",
+          "english": {
+            "speaker": "Caroline",
+            "text": "Aww, that's so sweet! That cup is so cute. It's awesome to see how kids show their personalities through art. What other creative projects do you do with them, besides pottery?",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "卡罗琳",
+            "text": "哇，真可爱！那个杯子好萌。看到孩子们通过艺术展现自己的个性真是太棒了。除了陶艺之外，你还和他们一起做哪些创意项目？",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa107",
+      "category": 4,
+      "english": {
+        "question": "What does Deborah bring with her whenever she comes to reflect on her mom?",
+        "answer": "amulet",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "黛博拉每次来怀念她母亲时会随身带什么？",
+        "answer": "护身符",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D4:36",
+          "english": {
+            "speaker": "Deborah",
+            "text": "Do you remember this amulet from her? Whenever I come here, I bring it with me. It's how I feel her love and stay close to her. Holding it brings me comfort.",
+            "caption": "a photo of a woman wearing a white shirt and a gold chain necklace",
+            "query": "heart-shaped necklace"
+          },
+          "chinese": {
+            "speaker": "黛博拉",
+            "text": "你还记得她的这个护身符吗？每次来这里，我都会带着它。这是我能感受到她的爱、与她保持亲近的方式。握着它会让我感到安慰。",
+            "caption": "a photo of a woman wearing a white shirt and a gold chain necklace",
+            "query": "heart-shaped necklace"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa126",
+      "category": 4,
+      "english": {
+        "question": "What special items did Nate get for everyone at his gaming party?",
+        "answer": "Custom controller decorations",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "内特为游戏聚会上的每个人准备了什么特别的物品？",
+        "answer": "定制的游戏手柄装饰",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D14:24",
+          "english": {
+            "speaker": "Nate",
+            "text": "Thanks Joanna! I'm sure it'll be a blast. I'm even getting everyone custom controller decorations just for coming!",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "内特",
+            "text": "谢谢你，乔安娜！我相信一定会很尽兴。我甚至准备给大家定制的手柄装饰，就为了感谢他们的到来！",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa141",
+      "category": 4,
+      "english": {
+        "question": "What did Evan suggest Sam should keep doing to find his own version of love?",
+        "answer": "Keep trying new things",
+        "adversarial_answer": null
+      },
+      "chinese": {
+        "question": "埃文建议萨姆继续做什么来找到属于他自己的爱？",
+        "answer": "继续尝试新事物",
+        "adversarial_answer": null
+      },
+      "evidence": [
+        {
+          "turn_id": "D21:10",
+          "english": {
+            "speaker": "Evan",
+            "text": "Yeah, I get it. Life's all about finding what works for you. Like your morning runs, they're a step towards something good, right? Keep trying new things, Sam, and you might find your own version of love in the most unexpected places. Embrace the journey — it’s full of surprises!",
+            "caption": "a photo of a painting with a white background and a blue, orange, and black painting",
+            "query": "canvas painting colorful abstract strokes"
+          },
+          "chinese": {
+            "speaker": "埃文",
+            "text": "是的，我懂。生活就是找到适合自己的方式。就像你的晨跑，那是朝着好的方向迈出的一步，对吧？继续尝试新事物吧，萨姆，说不定你会在最意想不到的地方找到属于你自己的爱。拥抱这段旅程吧——它充满了惊喜！",
+            "caption": "a photo of a painting with a white background and a blue, orange, and black painting",
+            "query": "canvas painting colorful abstract strokes"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa233",
+      "category": 5,
+      "english": {
+        "question": "What did Jolene do with their mom's old friends?",
+        "answer": null,
+        "adversarial_answer": "reminisced and looked through photos"
+      },
+      "chinese": {
+        "question": "乔琳和妈妈的老朋友们做了什么？",
+        "answer": null,
+        "adversarial_answer": "一起回忆往事、翻看照片"
+      },
+      "evidence": [
+        {
+          "turn_id": "D28:7",
+          "english": {
+            "speaker": "Deborah",
+            "text": "We reminisced and looked through her photos. It was really sweet.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "黛博拉",
+            "text": "我们一起回忆往事，翻看她的照片。真的很温馨。",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa215",
+      "category": 5,
+      "english": {
+        "question": "Which activity helps Nate escape and numbs his mind?",
+        "answer": null,
+        "adversarial_answer": "watching fantasy and sci-fi movies"
+      },
+      "chinese": {
+        "question": "什么活动能帮助内特逃避现实、让头脑麻木？",
+        "answer": null,
+        "adversarial_answer": "看奇幻片和科幻电影"
+      },
+      "evidence": [
+        {
+          "turn_id": "D9:10",
+          "english": {
+            "speaker": "Nate",
+            "text": "I love fantasy and sci-fi movies, they're a great escape and get my imagination going. Playing video games is a great way to express my creativity and passion.",
+            "caption": "a photography of a black xbox controller sitting on top of a wooden table",
+            "query": "video game controller"
+          },
+          "chinese": {
+            "speaker": "内特",
+            "text": "我喜欢奇幻和科幻电影，它们是很好的 escape，能激发我的想象力。玩电子游戏是表达我的创造力和热情的好方式。",
+            "caption": "a photography of a black xbox controller sitting on top of a wooden table",
+            "query": "video game controller"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa85",
+      "category": 5,
+      "english": {
+        "question": "What is Gina's attitude towards participating in the dance festival?",
+        "answer": null,
+        "adversarial_answer": "Glad"
+      },
+      "chinese": {
+        "question": "吉娜对参加舞蹈节的态度是什么？",
+        "answer": null,
+        "adversarial_answer": "高兴"
+      },
+      "evidence": [
+        {
+          "turn_id": "D1:28",
+          "english": {
+            "speaker": "Jon",
+            "text": "Yeah, awesome! Glad to be part of it.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "乔恩",
+            "text": "是啊，太棒了！很高兴能参与其中。",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa157",
+      "category": 5,
+      "english": {
+        "question": "What does Melanie's necklace symbolize?",
+        "answer": null,
+        "adversarial_answer": "love, faith, and strength"
+      },
+      "chinese": {
+        "question": "梅拉妮的项链象征着什么？",
+        "answer": null,
+        "adversarial_answer": "爱、信念和力量"
+      },
+      "evidence": [
+        {
+          "turn_id": "D4:3",
+          "english": {
+            "speaker": "Caroline",
+            "text": "Thanks, Melanie! This necklace is super special to me - a gift from my grandma in my home country, Sweden. She gave it to me when I was young, and it stands for love, faith and strength. It's like a reminder of my roots and all the love and support I get from my family.",
+            "caption": null,
+            "query": null
+          },
+          "chinese": {
+            "speaker": "卡罗琳",
+            "text": "谢谢,梅拉妮!这条项链对我特别重要——是我奶奶送我的礼物,她在我祖国的家乡瑞典。我小时候她送给我,它代表着爱、信念和力量。它就像在提醒我我的根,以及我从家人那里得到的所有爱和支持。",
+            "caption": null,
+            "query": null
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Aligned packet is not a semantic translation judge",
+    "Image caption and query counts concern dataset fields, not whether a model used them",
+    "The selected 20 cases are equal by category, not a random estimate of full translation quality"
+  ]
+}
