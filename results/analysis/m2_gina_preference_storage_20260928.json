@@ -1,0 +1,2194 @@
+{
+  "scope": "Current Chinese conv30 complete logical Memory snapshot, associated ADD history, local English atomic cache and historical visible candidates; zero model calls",
+  "case_id": "locomo_conv-30_qa39",
+  "source": {
+    "english": {
+      "question": "What is Gina's favorite style of dance?",
+      "answer": "Contemporary",
+      "evidence": [
+        {
+          "dia_id": "D1:9",
+          "session": "session_1",
+          "session_date": "4:04 pm on 20 January, 2023",
+          "window": [
+            {
+              "dia_id": "D1:6",
+              "speaker": "Jon",
+              "text": "I've been into dancing since I was a kid and it's been my passion and escape. I wanna start a dance studio so I can teach others the joy that dancing brings me.",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:7",
+              "speaker": "Gina",
+              "text": "Wow Jon, same here! Dance is pretty much my go-to for stress relief. Got any fave styles?",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:8",
+              "speaker": "Jon",
+              "text": "Cool, Gina! I love all dances, but contemporary is my top pick. It's so expressive and powerful! What's your fave?",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:9",
+              "speaker": "Gina",
+              "text": "Yeah, me too! Contemporary dance is so expressive and graceful - it really speaks to me.",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:10",
+              "speaker": "Jon",
+              "text": "Wow, great idea! Let's go to a dance class, it'll be so much fun!",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:11",
+              "speaker": "Gina",
+              "text": "Yeah! Let's explore some new dance moves. We should plan a dance session soon!",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:12",
+              "speaker": "Jon",
+              "text": "Yeah definitely! Wanna see my moves next Fri? Can't wait!",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        }
+      ]
+    },
+    "chinese": {
+      "question": "吉娜最喜欢的舞蹈风格是什么？",
+      "answer": "现代舞",
+      "evidence": [
+        {
+          "dia_id": "D1:9",
+          "session": "session_1",
+          "session_date": "4:04 pm on 20 January, 2023",
+          "window": [
+            {
+              "dia_id": "D1:6",
+              "speaker": "乔恩",
+              "text": "我从小就喜欢跳舞，它一直是我的热情所在和心灵的慰藉。我想开一家舞蹈工作室，这样就可以教别人体验舞蹈带给我的快乐。",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:7",
+              "speaker": "吉娜",
+              "text": "哇，乔恩，我也是！舞蹈几乎是我减压的首选。你有喜欢的舞种吗？",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:8",
+              "speaker": "乔恩",
+              "text": "太好了，吉娜！我喜欢所有舞蹈，但现代舞是我的最爱。它太有表现力、太有力量了！你最喜欢什么？",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:9",
+              "speaker": "吉娜",
+              "text": "对，我也是！现代舞非常有表现力又优雅——真的很打动我。",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:10",
+              "speaker": "乔恩",
+              "text": "哇，好主意！我们去上舞蹈课吧，一定会很有趣！",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:11",
+              "speaker": "吉娜",
+              "text": "好啊！我们来探索一些新的舞步。我们应该尽快计划一次舞蹈活动！",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D1:12",
+              "speaker": "乔恩",
+              "text": "当然可以！想在下周五看看我的舞技吗？等不及了！",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "current_memories": [
+    {
+      "id": "058faec8-92ee-4612-88b6-c57e735f035a",
+      "content": "吉娜告诉乔恩保持自信和动力的方法：提醒自己已取得的成功和进步、想着大目标和做这件事的初衷（因为热爱）、依靠支持自己的人、跳舞解压",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_10",
+      "session_date": "11:24 am on 25 April, 2023"
+    },
+    {
+      "id": "0a6a14af-0836-4821-b30c-ff35c50e71b1",
+      "content": "截至2023年6月16日，吉娜的网上服装店经营得很不错，她正在努力扩大客户群，并表示当自己的老板、做自己喜欢的事感觉很棒",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_14",
+      "session_date": "9:38 pm on 16 June, 2023"
+    },
+    {
+      "id": "0d8e6624-802d-4167-b7d3-3746bd16c393",
+      "content": "乔恩理想中的舞蹈工作室是一个俯瞰大海（水边）的开放空间，他在一张照片中分享了这个概念。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+      "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_2",
+      "session_date": "2:32 pm on 29 January, 2023"
+    },
+    {
+      "id": "0e612a29-79e8-4182-894e-6842be55d59a",
+      "content": "截至2023年6月13日，乔恩正以前所未有的劲头为他的舞蹈工作室做准备，并表示开设工作室是一段很棒的经历，希望它成为能给所有舞者支持和鼓励的地方",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_13",
+      "session_date": "8:29 pm on 13 June, 2023"
+    },
+    {
+      "id": "0e642f24-4428-4881-824d-b05c43d73fbf",
+      "content": "乔恩的舞蹈工作室除了舞蹈课和工作坊之外，还提供一对一的指导和训练，帮助舞者们充分发挥潜力",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_13",
+      "session_date": "8:29 pm on 13 June, 2023"
+    },
+    {
+      "id": "0f90ad04-1d7a-497f-9883-e34bd484b2af",
+      "content": "吉娜（Gina）于2023年5月下旬被一家国际公司的时尚部门录取为兼职时尚实习生，她既兴奋又有点紧张，表示这是个大变化，进入时尚行业让她既兴奋又害怕，但她会保持乐观、尽量多学习",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_12",
+      "session_date": "7:18 pm on 27 May, 2023"
+    },
+    {
+      "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+      "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "13c9777f-dbd6-41f1-8eec-15802adfb5f4",
+      "content": "乔恩的舞蹈工作室计划使用马利（Marley）地胶地板，因为它摩擦力和滑动的平衡恰到好处，且耐用易清洁，能保障他和学生安全跳舞",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_2",
+      "session_date": "2:32 pm on 29 January, 2023"
+    },
+    {
+      "id": "17e447b9-a729-40ab-83a6-4fd586d65fa0",
+      "content": "截至2023年4月9日，乔恩表示跳舞让他无比快乐，如今能与学生分享这份快乐，看到学生们不断进步让他特别高兴；他分享了一张女子在舞蹈工作室跳钢管舞的照片",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_9",
+      "session_date": "10:33 am on 9 April, 2023"
+    },
+    {
+      "id": "18251b9f-f071-458a-a610-c6684ac95a45",
+      "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_4",
+      "session_date": "10:43 am on 4 February, 2023"
+    },
+    {
+      "id": "198933a8-1c27-4c06-ac74-8c03c01e3c79",
+      "content": "截至2023年2月8日，乔恩已经开办了自己的舞蹈工作室并亲自经营，他很享受打造一个帮助各种年龄和水平的舞者表达自我的空间的自由，每天为跳舞和看到学生进步而兴奋",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_5",
+      "session_date": "9:32 am on 8 February, 2023"
+    },
+    {
+      "id": "1aa1c91b-6f66-45a3-a5e9-c53bc8e03dff",
+      "content": "乔恩的舞蹈工作室正式开幕之夜定于2023年6月20日，他为此努力把一切做到完美，分享了一张工作室门口年轻舞者排练的照片，并感慨这一路走来不容易但准备全力以赴",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_15",
+      "session_date": "10:04 am on 19 June, 2023"
+    },
+    {
+      "id": "1c2323ba-6f0e-4386-aad5-b21632d23c02",
+      "content": "乔恩于2023年6月中旬（开幕前一周，约6月12-16日）去罗马短途旅行放松心情，为舞蹈工作室开业做准备，截至2023年6月19日仍在忙生意和筹备舞蹈工作室",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_15",
+      "session_date": "10:04 am on 19 June, 2023"
+    },
+    {
+      "id": "1d8e3583-621a-4e2b-900d-447a556e313e",
+      "content": "吉娜分享的照片显示一件带有'June Bunty'标牌的裙子，暗示这可能是她的服装品牌或店铺名称（2023年4月3日）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_8",
+      "session_date": "1:26 pm on 3 April, 2023"
+    },
+    {
+      "id": "20444ab5-c7f7-4859-a841-a18f9dae322c",
+      "content": "乔恩表示兼顾跳舞和经营舞蹈工作室两种热爱虽有难度但回报丰厚，两者互相给予能量——舞步让他充满干劲去实现事业目标，事业成功又激励他继续追梦",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_5",
+      "session_date": "9:32 am on 8 February, 2023"
+    },
+    {
+      "id": "20fc0980-03ad-41f3-a33a-6db73a040e49",
+      "content": "截至2023年4月3日，乔恩正在扩展舞蹈工作室的社交媒体影响力，并为当地学校和社区中心提供工作坊和课程；他表示努力已有回报，看到进步，舞者们非常兴奋",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_8",
+      "session_date": "1:26 pm on 3 April, 2023"
+    },
+    {
+      "id": "2499991e-8493-49b8-8244-1cc0ce181904",
+      "content": "吉娜经营服装店时为采购流行单品遇到过难关，通过大量调研和人脉拓展克服；她的建议是向所在领域的人寻求帮助和人脉，人脉拓展对她是救命稻草",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_18",
+      "session_date": "5:44 pm on 21 July, 2023"
+    },
+    {
+      "id": "25be9ad4-ffa0-4bc4-a219-7041966a2ee5",
+      "content": "截至2023年7月21日，吉娜为自己的服装店建了一个方便顾客下单的新网站，过程不易但她很享受",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_18",
+      "session_date": "5:44 pm on 21 July, 2023"
+    },
+    {
+      "id": "2bf90403-4875-4381-a465-d400520cf9e2",
+      "content": "2023年6月21日，乔恩把所有的计划和目标写下来，认为看到目标写在纸上能帮助他保持动力、专注于该做的事情",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_16",
+      "session_date": "2:15 pm on 21 June, 2023"
+    },
+    {
+      "id": "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+      "content": "截至2023年2月1日，乔恩仍在寻找场地开设他的舞蹈工作室，虽然过程有些坎坷，但他决心把这件事做成，继续追寻对舞蹈的热情",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_3",
+      "session_date": "12:48 am on 1 February, 2023"
+    },
+    {
+      "id": "2de70226-54ab-432a-af42-c43c1ca3a176",
+      "content": "吉娜给乔恩的创业建议：保持热情、专注和坚韧，相信自己坚持下去，同时保持开放心态、不断学习和进步（2023年6月16日）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_14",
+      "session_date": "9:38 pm on 16 June, 2023"
+    },
+    {
+      "id": "30a35c5d-0644-4dcd-a7ab-91b4049f9f53",
+      "content": "截至2023年4月3日，吉娜表示跳舞是她缓解压力的方式，时尚激发她的创造力；她对舞蹈和时尚都充满热情，将两者结合，并计划在店里添加受舞蹈启发的单品",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_8",
+      "session_date": "1:26 pm on 3 April, 2023"
+    },
+    {
+      "id": "370b3797-a00a-4c2c-ac19-05be3900e65a",
+      "content": "乔恩用笔记本和日历系统来保持条理和积极性：设定目标、记录成就，并找出需要改进的地方（2023年6月）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_13",
+      "session_date": "8:29 pm on 13 June, 2023"
+    },
+    {
+      "id": "387c7cd4-3660-4823-8016-dcd7a2bd918b",
+      "content": "吉娜于2023年6月19日确认会出席乔恩舞蹈工作室的盛大开幕式，两人相约一起狂欢、共同创造美好回忆，吉娜表示一直为乔恩感到骄傲并会一直支持他",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_15",
+      "session_date": "10:04 am on 19 June, 2023"
+    },
+    {
+      "id": "39faf063-89ec-473e-979d-1d18a55d342c",
+      "content": "截至2023年2月4日，吉娜的服装店生意很好，她形容这段开店旅程很疯狂，但仍进展顺利",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_4",
+      "session_date": "10:43 am on 4 February, 2023"
+    },
+    {
+      "id": "3f548823-9546-4a8a-8a3d-299b16b943b6",
+      "content": "截至2023年6月16日，乔恩一直在为舞蹈工作室做推广，并采纳吉娜的建议开始在社交媒体上发布自己的舞蹈视频，已经引起了一点轰动",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_14",
+      "session_date": "9:38 pm on 16 June, 2023"
+    },
+    {
+      "id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+      "content": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_9",
+      "session_date": "10:33 am on 9 April, 2023"
+    },
+    {
+      "id": "452d3742-8f43-4046-ad52-c7f6deffe2a6",
+      "content": "吉娜靠跳舞减压，称舞蹈就像她本身、无法想象没有它的生活，就像空气一样",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_11",
+      "session_date": "3:14 pm on 11 May, 2023"
+    },
+    {
+      "id": "4762791a-a099-4dd1-9971-dc9e1f4a11fb",
+      "content": "乔恩的舞蹈团队正在完成一支编舞，将于2023年2月（下个月）在附近的节日上表演，他们将穿着白色裙子在舞台上表演。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "47d025c5-f534-45d5-9cf4-52fa2f3d3a97",
+      "content": "2023年3月23日，乔恩向吉娜建议经营生意的窍门：品牌形象是关键、要让品牌脱颖而出、和顾客建立关系让他们知道你在乎、保持积极心态激励他人，因为能量会感染别人",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_7",
+      "session_date": "7:28 pm on 23 March, 2023"
+    },
+    {
+      "id": "4e10a3bf-0433-4886-a2e4-2fe4bf2c913e",
+      "content": "乔恩于2023年7月9日开始学习各种营销和数据分析工具来推动舞蹈工作室事业发展，虽不容易但乐于接受挑战并坚信会成功",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_17",
+      "session_date": "1:25 pm on 9 July, 2023"
+    },
+    {
+      "id": "4e116f5e-1d28-4a05-b142-030194997554",
+      "content": "截至2023年4月25日，乔恩感到有点缺乏自信，对自己没有信心时经营生意很难，向吉娜请教保持自信和动力的诀窍",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_10",
+      "session_date": "11:24 am on 25 April, 2023"
+    },
+    {
+      "id": "5218751e-7120-4f63-9489-197a24a11fb8",
+      "content": "截至2023年3月23日，吉娜一直在为她的服装店努力打造强大的品牌形象和建立顾客关系，并认为保持积极心态是关键",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_7",
+      "session_date": "7:28 pm on 23 March, 2023"
+    },
+    {
+      "id": "54470ad5-91a6-41e3-911f-369bedc20ebf",
+      "content": "乔恩在创业过程中遇到不少挫折，有时会感到难受，但他坚信坚持努力就能实现梦想；吉娜全力支持他，鼓励他把挫折当作东山再起的机会",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_4",
+      "session_date": "10:43 am on 4 February, 2023"
+    },
+    {
+      "id": "54e104ab-f693-45bf-a6ca-48b57ef28a86",
+      "content": "截至2023年5月11日，乔恩最近一直在练习舞蹈动作，这帮助他保持专注和动力；他答应给吉娜发自己跳舞的视频",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_11",
+      "session_date": "3:14 pm on 11 May, 2023"
+    },
+    {
+      "id": "5639ced7-a143-4f4c-a465-877fc9ccccc4",
+      "content": "截至2023年2月8日，吉娜经营着一家网店，并与一位本地艺术家合作推出了独特的服装设计；她的灵感来自一本时尚杂志，她发现市面上缺少类似的设计，希望走在潮流前面给顾客与众不同的东西",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_5",
+      "session_date": "9:32 am on 8 February, 2023"
+    },
+    {
+      "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+      "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "5931c7af-9d38-4bfa-a6f0-4d8e8179c4b3",
+      "content": "吉娜的网上服装店于2023年3月16日左右正式开张，这是她梦想已久的事；开店动机是她热衷时尚潮流和淘独特单品，并希望把对舞蹈和时尚的热爱结合起来",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_6",
+      "session_date": "2:35 pm on 16 March, 2023"
+    },
+    {
+      "id": "597ba4d2-aae1-403e-b2f1-81bab35f546b",
+      "content": "2023年4月25日，吉娜告诉乔恩她不久前开了一家卖衣服的网店，失去工作后想掌控自己的命运，这条路艰难但非常有收获",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_10",
+      "session_date": "11:24 am on 25 April, 2023"
+    },
+    {
+      "id": "59c4a905-0755-48b6-b9cf-200fe3da8f2f",
+      "content": "吉娜（Gina）也在2023年1月那个月失去了她在 Door Dash 的工作。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "59f5daa4-9313-4a5a-916b-e50b013fdcc8",
+      "content": "乔恩和吉娜约定在创业路上继续互相激励、互相扶持",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_10",
+      "session_date": "11:24 am on 25 April, 2023"
+    },
+    {
+      "id": "5bead6cd-1f98-401d-acd1-965086a2804d",
+      "content": "乔恩表示吉娜的成功和毅力激励着他继续创业前行，两人面对相似的创业挑战，像舞伴一样互相支持、庆祝每一个成就，约好一起走向成功（2023年3月16日）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_6",
+      "session_date": "2:35 pm on 16 March, 2023"
+    },
+    {
+      "id": "5c80ee41-68d4-4f3c-852a-a028b0351853",
+      "content": "乔恩表示吉娜发的\"永不放弃\"标语提醒他无论事情多么艰难都不要放弃，他对吉娜的支持深表感谢，感到很有信心并决心继续前进",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_16",
+      "session_date": "2:15 pm on 21 June, 2023"
+    },
+    {
+      "id": "60d624fa-cc39-4e4e-9055-94bb88bf8cb2",
+      "content": "截至2023年5月11日，乔恩仍在经营舞蹈工作室，情况正在好转；他表示失去工作给了他开始梦想事业的动力，现在正踏入未知领域并希望有好结果",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_11",
+      "session_date": "3:14 pm on 11 May, 2023"
+    },
+    {
+      "id": "61a10e72-a082-4c59-a073-0624d935909a",
+      "content": "截至2023年2月4日，乔恩仍在为舞蹈工作室寻找合适的场地，过程很麻烦但他下定决心找到合适的地方，相信找到后一切都会水到渠成",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_4",
+      "session_date": "10:43 am on 4 February, 2023"
+    },
+    {
+      "id": "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+      "content": "吉娜鼓励乔恩在创业遇到困难时坚持下去、继续努力、不要放弃，并肯定他把计划和目标写下来是掌握进步图景的关键做法",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_16",
+      "session_date": "2:15 pm on 21 June, 2023"
+    },
+    {
+      "id": "67260ddc-f5f5-4900-8fe9-3c721232687a",
+      "content": "截至2023年4月3日，吉娜在她的网上服装店推出了新的优惠和促销活动以吸引新顾客，顾客反响很好，销量在增加；她目前的主要目标是扩大顾客群，把店打造成时尚爱好者的首选目的地",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_8",
+      "session_date": "1:26 pm on 3 April, 2023"
+    },
+    {
+      "id": "6728b9b7-05fb-43df-9a44-5099a49b8f17",
+      "content": "截至2023年5月下旬，乔恩正在完成舞蹈工作室的商业计划书并寻找投资人；找投资人的过程挺艰难，但他保持乐观，表示学到了很多，对项目的热情和对成功的信念推动着他前进",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_12",
+      "session_date": "7:18 pm on 27 May, 2023"
+    },
+    {
+      "id": "6a72c49b-078c-40d9-8378-be182b653376",
+      "content": "截至2023年3月23日，乔恩表示经营舞蹈工作室的动力来自看到学生取得成功，帮助他们学习并实现目标让他感到非常棒；他分享了一张舞蹈课后一群女性跳舞的照片",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_7",
+      "session_date": "7:28 pm on 23 March, 2023"
+    },
+    {
+      "id": "6bbd05be-7725-41a1-9c18-227a0a962c5e",
+      "content": "乔恩表示无论如何都不会放弃，吉娜的鼓励激励着他继续前进，知道她在背后支持让他更有动力坚持，也不会让她失望（2023年6月16日）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_14",
+      "session_date": "9:38 pm on 16 June, 2023"
+    },
+    {
+      "id": "6f9753ba-94d9-4392-b1cd-25f7b7219b58",
+      "content": "吉娜几年前纹了一个纹身，代表自由——跳舞时不担心别人怎么看的自由，图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'），提醒她追随热情、表达自我",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_5",
+      "session_date": "9:32 am on 8 February, 2023"
+    },
+    {
+      "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+      "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+      "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_18",
+      "session_date": "5:44 pm on 21 July, 2023"
+    },
+    {
+      "id": "761df2c0-23e4-439c-ba6b-b0947f72b8b9",
+      "content": "乔恩感谢吉娜的不离不弃和一直以来的支持，并表示不会放弃，会继续努力奋斗让舞蹈工作室的梦想成真（2023年6月13日）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_13",
+      "session_date": "8:29 pm on 13 June, 2023"
+    },
+    {
+      "id": "79f267de-2235-4325-af8e-6c8c4763897e",
+      "content": "截至2023年3月16日，乔恩仍在经营舞蹈工作室，他表示虽然失去工作很难受、创业不断遇到新挑战，但现在正活在梦想中，坚信最终都是值得的，一定会成功",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_6",
+      "session_date": "2:35 pm on 16 March, 2023"
+    },
+    {
+      "id": "7b8dac20-dc89-4524-9631-6fe952c9ca40",
+      "content": "截至2023年2月4日，乔恩在筹备生意的同时还在排练新的舞蹈动作，为即将到来的演出刻苦排练；他分享了一张穿灰色裙子的女舞者做技巧动作的照片，舞蹈带给他很多快乐和成就感",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_4",
+      "session_date": "10:43 am on 4 February, 2023"
+    },
+    {
+      "id": "7eeab192-83c1-4d04-a833-bc014270d4d3",
+      "content": "乔恩认为冒险是成功的关键，正是敢于冒险让他离开了朝九晚五的银行员稳定工作，目标是把舞蹈热情变成事业，并坦言这条路不好走但决心成功",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_5",
+      "session_date": "9:32 am on 8 February, 2023"
+    },
+    {
+      "id": "82ba5980-2797-46c7-83e3-9252fa87937d",
+      "content": "吉娜为服装店找到了一个新位置（一家有玻璃入口和招牌的购物中心），并在2023年2月1日分享了店铺设计预览图：温馨又有吸引力，配有既好看又舒适的家具和增添华丽感的吊灯，希望为顾客营造舒适的购物体验，让他们愿意再来",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_3",
+      "session_date": "12:48 am on 1 February, 2023"
+    },
+    {
+      "id": "8492ec99-94bc-4afd-be62-b427b264b531",
+      "content": "截至2023年7月9日，乔恩全职投入舞蹈工作室创业，舞蹈练习既有趣又累人，他会保持坚定走出自己的路",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_17",
+      "session_date": "1:25 pm on 9 July, 2023"
+    },
+    {
+      "id": "89c97aa2-acbd-4005-ae72-426fe7a87094",
+      "content": "乔恩自失业后日子一直不好过，但他相信把时间投入到舞蹈工作室事业上最终会有回报",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_16",
+      "session_date": "2:15 pm on 21 June, 2023"
+    },
+    {
+      "id": "8ab6d4a1-69aa-44a0-a5fe-0194899c41c3",
+      "content": "2023年6月21日，吉娜为她的服装网店进了一些新的独特商品，并推出了一个限量版连帽衫系列（迷彩印花）来展示自己的风格和创意，设计灵感来自脱颖而出、面对挑战所需的韧性",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_16",
+      "session_date": "2:15 pm on 21 June, 2023"
+    },
+    {
+      "id": "8c8b33db-3e72-4091-8587-4322d94252dd",
+      "content": "吉娜在2023年5月10日左右参加了一个设计实习的面试，面试进行得非常顺利，她感觉很好",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_11",
+      "session_date": "3:14 pm on 11 May, 2023"
+    },
+    {
+      "id": "9050d972-6347-4473-a97d-ccabe7f6a903",
+      "content": "截至2023年1月29日，乔恩正在为舞蹈工作室寻找理想场地，看了很多不同的地方；他找到一个市中心、交通方便且自然采光很好的候选场地，还需要检查面积和地板质量",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_2",
+      "session_date": "2:32 pm on 29 January, 2023"
+    },
+    {
+      "id": "970a43bf-b03f-4c61-888c-90d41afcf9cb",
+      "content": "乔恩于2023年5月下旬表示他会坚持创业、永不放弃，并感谢吉娜的支持，称没有什么能打倒他",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_12",
+      "session_date": "7:18 pm on 27 May, 2023"
+    },
+    {
+      "id": "9745b5d0-a567-4502-a32f-9b2b5e8613be",
+      "content": "吉娜做了一个视频演示，教大家如何搭配她的时尚单品，并答应稍后把视频发给乔恩（2023年6月）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_13",
+      "session_date": "8:29 pm on 13 June, 2023"
+    },
+    {
+      "id": "9fbb9b83-a653-40e9-882e-d0afacce9e98",
+      "content": "去年（2022年），乔恩的舞蹈团队在当地舞蹈比赛中获得第一名；一张他在舞台上穿西装表演的照片记录了这一时刻。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "a1661dce-4783-4f5e-a33d-8ce0a34e0f72",
+      "content": "截至2023年4月3日，乔恩关闭了他的银行账户，以支持他的舞蹈工作室生意的发展；这是一个艰难的决定，但他保持乐观、向前看",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_8",
+      "session_date": "1:26 pm on 3 April, 2023"
+    },
+    {
+      "id": "a231b871-ee0c-4175-abd4-214872c6bcda",
+      "content": "乔恩表示以前特别害怕别人怎么看自己，但后来明白了自己的快乐才是最重要的；对他来说跳舞是表达自我、寻找快乐的方式，虽然不容易但也是最美好的事",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_9",
+      "session_date": "10:33 am on 9 April, 2023"
+    },
+    {
+      "id": "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+      "content": "乔恩计划在2023年5月举办一场舞蹈比赛，他的舞蹈工作室和其他一些学校将带来最棒的舞步，呈现充满表演和评审的夜晚，旨在展示本地人才并为工作室带来更多关注；他邀请吉娜到场，吉娜已答应去看演出",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_8",
+      "session_date": "1:26 pm on 3 April, 2023"
+    },
+    {
+      "id": "b3d94f83-867f-4e20-b66c-619a118088fb",
+      "content": "吉娜拥有一座舞蹈比赛奖杯（带玻璃球顶），她用它提醒自己付出的努力、坚持和舞蹈带来的快乐；她还回忆自己以前超喜欢待在练功房里，分享了一张一群年轻女性在芭蕾教室的旧照",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_9",
+      "session_date": "10:33 am on 9 April, 2023"
+    },
+    {
+      "id": "b5e16073-b382-47f6-a293-b194661eaca7",
+      "content": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "b9048dcd-504b-48e4-aef2-65b2c9223b81",
+      "content": "截至2023年7月21日，乔恩的舞蹈工作室情况不太稳定，他找了份临时工作补贴开支，同时继续寻找投资人，保持乐观并决心把生意做成",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_18",
+      "session_date": "5:44 pm on 21 July, 2023"
+    },
+    {
+      "id": "bf5fd57d-3dc5-4e92-a709-65c2a1b91883",
+      "content": "2023年2月1日前后，吉娜给一些批发商发了邮件，其中一个当天回复并答应了合作，使她能够扩大服装店规模、更贴近顾客",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_3",
+      "session_date": "12:48 am on 1 February, 2023"
+    },
+    {
+      "id": "c1085191-fd42-4fe5-9654-915052a791d9",
+      "content": "乔恩还用白板来保持正轨、将目标可视化并标记成功；他用不同颜色对成就进行编码，方便追踪进度并保持动力和专注（2023年6月）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_13",
+      "session_date": "8:29 pm on 13 June, 2023"
+    },
+    {
+      "id": "c4a339d5-2833-4d97-bf80-8d414c99e18d",
+      "content": "2023年7月，乔恩参加了一次社交活动，见到了一些投资人并获得好建议，现场氛围鼓舞人心；他也在做人际拓展并带来了不少好机会",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_18",
+      "session_date": "5:44 pm on 21 July, 2023"
+    },
+    {
+      "id": "c535d200-a553-484c-bd86-2340481e0d30",
+      "content": "截至2023年4月3日，吉娜计划在未来几个月与时尚博主和网红合作，并投放更多广告，以扩大网上服装店的知名度和触达更多人",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_8",
+      "session_date": "1:26 pm on 3 April, 2023"
+    },
+    {
+      "id": "c5b159bb-44b7-4d2b-adc2-795308e303a1",
+      "content": "吉娜（Gina）为她的服装店发起了一个广告活动（约2023年1月下旬），希望把生意做大；她表示开店、承担风险既让人害怕又很有成就感，并分享了一张店里服装陈列的照片",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_2",
+      "session_date": "2:32 pm on 29 January, 2023"
+    },
+    {
+      "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+      "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "c6cedb30-527e-4379-9e59-d8294a48410c",
+      "content": "截至2023年3月16日，吉娜（Gina）自失去 Door Dash 工作后日子过得有些艰难，情绪低落",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_6",
+      "session_date": "2:35 pm on 16 March, 2023"
+    },
+    {
+      "id": "c86b7955-d016-46ef-9c37-ad71029001ea",
+      "content": "吉娜于2023年6月16日分享了自己跳舞比赛时的一张照片，称那段路很艰难但很值得；乔恩看到后深受触动，想起自己对表演的热爱",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_14",
+      "session_date": "9:38 pm on 16 June, 2023"
+    },
+    {
+      "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+      "content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "d1783fa5-201e-45db-a159-fb3895407cb7",
+      "content": "截至2023年3月23日，吉娜的网上服装店生意像坐过山车但有收获，生意不错；她一直紧跟时尚潮流为顾客提供最好的款式，虽然工作量大但很享受经营（2023年3月23日）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_7",
+      "session_date": "7:28 pm on 23 March, 2023"
+    },
+    {
+      "id": "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+      "content": "截至2023年7月21日，乔恩正在完善商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_18",
+      "session_date": "5:44 pm on 21 July, 2023"
+    },
+    {
+      "id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+      "content": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_14",
+      "session_date": "9:38 pm on 16 June, 2023"
+    },
+    {
+      "id": "ddb9944f-3c28-4a2b-aae3-3e1a27530692",
+      "content": "乔恩表示吉娜的支持对他意义重大，她的鼓励和陪伴帮助他在创业路上保持动力和相信自己，他承诺不会放弃并继续前行（2023年3月23日）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_7",
+      "session_date": "7:28 pm on 23 March, 2023"
+    },
+    {
+      "id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+      "content": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_14",
+      "session_date": "9:38 pm on 16 June, 2023"
+    },
+    {
+      "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+      "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "e1935b84-df3f-4f21-b721-e24cff7c5501",
+      "content": "吉娜于2023年7月初被时尚编辑们注意到，感到兴奋但压力也大，她经营的服装店事业正在持续上升",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_17",
+      "session_date": "1:25 pm on 9 July, 2023"
+    },
+    {
+      "id": "e289c576-813d-4230-b8b3-7d3720971358",
+      "content": "截至2023年4月9日，乔恩正把对舞蹈的热爱变成一门生意，在舞蹈工作室投入了大量时间，他的学生们已经表现出色，他甚至还在向学生们学习；他分享了一张舞者在红色背景舞台上排练的照片",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_9",
+      "session_date": "10:33 am on 9 April, 2023"
+    },
+    {
+      "id": "e3049c9c-1066-48e4-a2ad-836d0408e25c",
+      "content": "乔恩小时候很喜欢和朋友们一起上舞蹈课，那些回忆非常珍贵；很开心现在能通过自己的舞蹈工作室继续享受跳舞",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_9",
+      "session_date": "10:33 am on 9 April, 2023"
+    },
+    {
+      "id": "e6f27662-b069-4f8c-b48c-beed429c5961",
+      "content": "乔恩在2023年2月上旬参加了此前提到的艺术节并登台表演，获得很多人的称赞，这重新唤起了他对跳舞的热爱和快乐",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_5",
+      "session_date": "9:32 am on 8 February, 2023"
+    },
+    {
+      "id": "e792d3ed-61b3-4e90-81c4-98b1febc9d11",
+      "content": "乔恩使用一块白板记录舞蹈工作室生意的好点子、想法、日期和里程碑，帮助他直观地看到进展并保持有条不紊（2023年5月下旬）",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_12",
+      "session_date": "7:18 pm on 27 May, 2023"
+    },
+    {
+      "id": "e9d432bd-f67f-4a8b-850d-4b3b9bc76b2f",
+      "content": "乔恩（Jon）于2023年5月下旬开始阅读《精益创业》（The Lean Startup），希望为他的舞蹈工作室生意带来启发；该书让他开始思考如何打造专注且高效的企业，并计划根据客户反馈进行调整和改进",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_12",
+      "session_date": "7:18 pm on 27 May, 2023"
+    },
+    {
+      "id": "ea1e393d-ceb8-4f90-b443-6e4957840bbc",
+      "content": "截至2023年2月8日，吉娜的服装店生意不断发展，她找到了一件很酷的新时尚单品，迫不及待想分享给顾客",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_5",
+      "session_date": "9:32 am on 8 February, 2023"
+    },
+    {
+      "id": "eb772e3b-1522-4f68-a8ae-1f9fbb11ac0a",
+      "content": "2023年6月21日，乔恩前一天（6月20日）选择去参加社交活动来促成一些事业上的机会，虽然很难但会保持坚定和专注",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_16",
+      "session_date": "2:15 pm on 21 June, 2023"
+    },
+    {
+      "id": "ec4d6a48-15a1-47b7-b4fa-88663c1b8b09",
+      "content": "2023年4月24日，乔恩带舞蹈工作室参加了集市展示，既紧张又很棒，获得了一些潜在客户线索；他意识到这行并不轻松，要有自信才能把生意做成功",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_10",
+      "session_date": "11:24 am on 25 April, 2023"
+    },
+    {
+      "id": "f06f9146-ce1c-4433-b527-c2027bcdb4da",
+      "content": "乔恩（Jon）于2023年3月初（约3月9日那周）开始去健身房锻炼，为的是在创业路上保持身体状态，他表示需要平衡好一切但进展还不错",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_6",
+      "session_date": "2:35 pm on 16 March, 2023"
+    },
+    {
+      "id": "f51ec223-a73f-4b8a-8184-fe7bdf0c66b8",
+      "content": "乔恩（Jon）于2023年1月28日去了巴黎，觉得很酷；吉娜说一直没机会去巴黎，只去过一次罗马",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_2",
+      "session_date": "2:32 pm on 29 January, 2023"
+    },
+    {
+      "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+      "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_18",
+      "session_date": "5:44 pm on 21 July, 2023"
+    },
+    {
+      "id": "f9d8116f-9572-4849-a089-c365ad2cd881",
+      "content": "2023年6月20日左右，乔恩的舞蹈工作室正式开幕前夜，他在开幕前还专程去罗马短途旅行放松心情，开幕之夜定为2023年6月20日",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_16",
+      "session_date": "2:15 pm on 21 June, 2023"
+    },
+    {
+      "id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+      "content": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_17",
+      "session_date": "1:25 pm on 9 July, 2023"
+    }
+  ],
+  "current_session1_memories": [
+    {
+      "id": "0d8e6624-802d-4167-b7d3-3746bd16c393",
+      "content": "乔恩理想中的舞蹈工作室是一个俯瞰大海（水边）的开放空间，他在一张照片中分享了这个概念。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+      "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "4762791a-a099-4dd1-9971-dc9e1f4a11fb",
+      "content": "乔恩的舞蹈团队正在完成一支编舞，将于2023年2月（下个月）在附近的节日上表演，他们将穿着白色裙子在舞台上表演。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+      "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "59c4a905-0755-48b6-b9cf-200fe3da8f2f",
+      "content": "吉娜（Gina）也在2023年1月那个月失去了她在 Door Dash 的工作。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+      "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "9fbb9b83-a653-40e9-882e-d0afacce9e98",
+      "content": "去年（2022年），乔恩的舞蹈团队在当地舞蹈比赛中获得第一名；一张他在舞台上穿西装表演的照片记录了这一时刻。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "b5e16073-b382-47f6-a293-b194661eaca7",
+      "content": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+      "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+      "content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    },
+    {
+      "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+      "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+      "user_id": "zhfull:locomo:conv-30",
+      "session_id": "session_1",
+      "session_date": "4:04 pm on 20 January, 2023"
+    }
+  ],
+  "associated_current_id_history": [
+    {
+      "memory_id": "b5e16073-b382-47f6-a293-b194661eaca7",
+      "old_memory": null,
+      "new_memory": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840212+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "59c4a905-0755-48b6-b9cf-200fe3da8f2f",
+      "old_memory": null,
+      "new_memory": "吉娜（Gina）也在2023年1月那个月失去了她在 Door Dash 的工作。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840239+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+      "old_memory": null,
+      "new_memory": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840250+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+      "old_memory": null,
+      "new_memory": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840260+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "cd69ce5e-058f-426b-a996-297947e10da5",
+      "old_memory": null,
+      "new_memory": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840269+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+      "old_memory": null,
+      "new_memory": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840278+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+      "old_memory": null,
+      "new_memory": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840287+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "9fbb9b83-a653-40e9-882e-d0afacce9e98",
+      "old_memory": null,
+      "new_memory": "去年（2022年），乔恩的舞蹈团队在当地舞蹈比赛中获得第一名；一张他在舞台上穿西装表演的照片记录了这一时刻。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840295+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "0d8e6624-802d-4167-b7d3-3746bd16c393",
+      "old_memory": null,
+      "new_memory": "乔恩理想中的舞蹈工作室是一个俯瞰大海（水边）的开放空间，他在一张照片中分享了这个概念。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840303+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "c6782327-971c-4a45-9fa3-a39718941a99",
+      "old_memory": null,
+      "new_memory": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840312+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "4762791a-a099-4dd1-9971-dc9e1f4a11fb",
+      "old_memory": null,
+      "new_memory": "乔恩的舞蹈团队正在完成一支编舞，将于2023年2月（下个月）在附近的节日上表演，他们将穿着白色裙子在舞台上表演。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840320+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "c5b159bb-44b7-4d2b-adc2-795308e303a1",
+      "old_memory": null,
+      "new_memory": "吉娜（Gina）为她的服装店发起了一个广告活动（约2023年1月下旬），希望把生意做大；她表示开店、承担风险既让人害怕又很有成就感，并分享了一张店里服装陈列的照片",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:08.389374+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "f51ec223-a73f-4b8a-8184-fe7bdf0c66b8",
+      "old_memory": null,
+      "new_memory": "乔恩（Jon）于2023年1月28日去了巴黎，觉得很酷；吉娜说一直没机会去巴黎，只去过一次罗马",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:08.389444+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "9050d972-6347-4473-a97d-ccabe7f6a903",
+      "old_memory": null,
+      "new_memory": "截至2023年1月29日，乔恩正在为舞蹈工作室寻找理想场地，看了很多不同的地方；他找到一个市中心、交通方便且自然采光很好的候选场地，还需要检查面积和地板质量",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:08.389459+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "13c9777f-dbd6-41f1-8eec-15802adfb5f4",
+      "old_memory": null,
+      "new_memory": "乔恩的舞蹈工作室计划使用马利（Marley）地胶地板，因为它摩擦力和滑动的平衡恰到好处，且耐用易清洁，能保障他和学生安全跳舞",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:08.389471+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+      "old_memory": null,
+      "new_memory": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:08.389482+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+      "old_memory": null,
+      "new_memory": "截至2023年2月1日，乔恩仍在寻找场地开设他的舞蹈工作室，虽然过程有些坎坷，但他决心把这件事做成，继续追寻对舞蹈的热情",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:14.700583+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "bf5fd57d-3dc5-4e92-a709-65c2a1b91883",
+      "old_memory": null,
+      "new_memory": "2023年2月1日前后，吉娜给一些批发商发了邮件，其中一个当天回复并答应了合作，使她能够扩大服装店规模、更贴近顾客",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:14.700626+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "82ba5980-2797-46c7-83e3-9252fa87937d",
+      "old_memory": null,
+      "new_memory": "吉娜为服装店找到了一个新位置（一家有玻璃入口和招牌的购物中心），并在2023年2月1日分享了店铺设计预览图：温馨又有吸引力，配有既好看又舒适的家具和增添华丽感的吊灯，希望为顾客营造舒适的购物体验，让他们愿意再来",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:14.700645+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "39faf063-89ec-473e-979d-1d18a55d342c",
+      "old_memory": null,
+      "new_memory": "截至2023年2月4日，吉娜的服装店生意很好，她形容这段开店旅程很疯狂，但仍进展顺利",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:23.900632+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "61a10e72-a082-4c59-a073-0624d935909a",
+      "old_memory": null,
+      "new_memory": "截至2023年2月4日，乔恩仍在为舞蹈工作室寻找合适的场地，过程很麻烦但他下定决心找到合适的地方，相信找到后一切都会水到渠成",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:23.900666+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "7b8dac20-dc89-4524-9631-6fe952c9ca40",
+      "old_memory": null,
+      "new_memory": "截至2023年2月4日，乔恩在筹备生意的同时还在排练新的舞蹈动作，为即将到来的演出刻苦排练；他分享了一张穿灰色裙子的女舞者做技巧动作的照片，舞蹈带给他很多快乐和成就感",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:23.900682+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "18251b9f-f071-458a-a610-c6684ac95a45",
+      "old_memory": null,
+      "new_memory": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:23.900693+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "54470ad5-91a6-41e3-911f-369bedc20ebf",
+      "old_memory": null,
+      "new_memory": "乔恩在创业过程中遇到不少挫折，有时会感到难受，但他坚信坚持努力就能实现梦想；吉娜全力支持他，鼓励他把挫折当作东山再起的机会",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:23.900704+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "198933a8-1c27-4c06-ac74-8c03c01e3c79",
+      "old_memory": null,
+      "new_memory": "截至2023年2月8日，乔恩已经开办了自己的舞蹈工作室并亲自经营，他很享受打造一个帮助各种年龄和水平的舞者表达自我的空间的自由，每天为跳舞和看到学生进步而兴奋",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:35.134489+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "e6f27662-b069-4f8c-b48c-beed429c5961",
+      "old_memory": null,
+      "new_memory": "乔恩在2023年2月上旬参加了此前提到的艺术节并登台表演，获得很多人的称赞，这重新唤起了他对跳舞的热爱和快乐",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:35.134516+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "ea1e393d-ceb8-4f90-b443-6e4957840bbc",
+      "old_memory": null,
+      "new_memory": "截至2023年2月8日，吉娜的服装店生意不断发展，她找到了一件很酷的新时尚单品，迫不及待想分享给顾客",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:35.134527+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "5639ced7-a143-4f4c-a465-877fc9ccccc4",
+      "old_memory": null,
+      "new_memory": "截至2023年2月8日，吉娜经营着一家网店，并与一位本地艺术家合作推出了独特的服装设计；她的灵感来自一本时尚杂志，她发现市面上缺少类似的设计，希望走在潮流前面给顾客与众不同的东西",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:35.134537+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "6f9753ba-94d9-4392-b1cd-25f7b7219b58",
+      "old_memory": null,
+      "new_memory": "吉娜几年前纹了一个纹身，代表自由——跳舞时不担心别人怎么看的自由，图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'），提醒她追随热情、表达自我",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:35.134546+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "20444ab5-c7f7-4859-a841-a18f9dae322c",
+      "old_memory": null,
+      "new_memory": "乔恩表示兼顾跳舞和经营舞蹈工作室两种热爱虽有难度但回报丰厚，两者互相给予能量——舞步让他充满干劲去实现事业目标，事业成功又激励他继续追梦",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:35.134556+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "7eeab192-83c1-4d04-a833-bc014270d4d3",
+      "old_memory": null,
+      "new_memory": "乔恩认为冒险是成功的关键，正是敢于冒险让他离开了朝九晚五的银行员稳定工作，目标是把舞蹈热情变成事业，并坦言这条路不好走但决心成功",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:35.134565+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "f06f9146-ce1c-4433-b527-c2027bcdb4da",
+      "old_memory": null,
+      "new_memory": "乔恩（Jon）于2023年3月初（约3月9日那周）开始去健身房锻炼，为的是在创业路上保持身体状态，他表示需要平衡好一切但进展还不错",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:43.334933+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "c6cedb30-527e-4379-9e59-d8294a48410c",
+      "old_memory": null,
+      "new_memory": "截至2023年3月16日，吉娜（Gina）自失去 Door Dash 工作后日子过得有些艰难，情绪低落",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:43.334973+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "5931c7af-9d38-4bfa-a6f0-4d8e8179c4b3",
+      "old_memory": null,
+      "new_memory": "吉娜的网上服装店于2023年3月16日左右正式开张，这是她梦想已久的事；开店动机是她热衷时尚潮流和淘独特单品，并希望把对舞蹈和时尚的热爱结合起来",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:43.334989+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "79f267de-2235-4325-af8e-6c8c4763897e",
+      "old_memory": null,
+      "new_memory": "截至2023年3月16日，乔恩仍在经营舞蹈工作室，他表示虽然失去工作很难受、创业不断遇到新挑战，但现在正活在梦想中，坚信最终都是值得的，一定会成功",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:43.335035+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "5bead6cd-1f98-401d-acd1-965086a2804d",
+      "old_memory": null,
+      "new_memory": "乔恩表示吉娜的成功和毅力激励着他继续创业前行，两人面对相似的创业挑战，像舞伴一样互相支持、庆祝每一个成就，约好一起走向成功（2023年3月16日）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:43.335090+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "d1783fa5-201e-45db-a159-fb3895407cb7",
+      "old_memory": null,
+      "new_memory": "截至2023年3月23日，吉娜的网上服装店生意像坐过山车但有收获，生意不错；她一直紧跟时尚潮流为顾客提供最好的款式，虽然工作量大但很享受经营（2023年3月23日）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:51.912437+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "47d025c5-f534-45d5-9cf4-52fa2f3d3a97",
+      "old_memory": null,
+      "new_memory": "2023年3月23日，乔恩向吉娜建议经营生意的窍门：品牌形象是关键、要让品牌脱颖而出、和顾客建立关系让他们知道你在乎、保持积极心态激励他人，因为能量会感染别人",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:51.912466+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "6a72c49b-078c-40d9-8378-be182b653376",
+      "old_memory": null,
+      "new_memory": "截至2023年3月23日，乔恩表示经营舞蹈工作室的动力来自看到学生取得成功，帮助他们学习并实现目标让他感到非常棒；他分享了一张舞蹈课后一群女性跳舞的照片",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:51.912482+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "5218751e-7120-4f63-9489-197a24a11fb8",
+      "old_memory": null,
+      "new_memory": "截至2023年3月23日，吉娜一直在为她的服装店努力打造强大的品牌形象和建立顾客关系，并认为保持积极心态是关键",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:51.912495+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "ddb9944f-3c28-4a2b-aae3-3e1a27530692",
+      "old_memory": null,
+      "new_memory": "乔恩表示吉娜的支持对他意义重大，她的鼓励和陪伴帮助他在创业路上保持动力和相信自己，他承诺不会放弃并继续前行（2023年3月23日）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:12:51.912507+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "a1661dce-4783-4f5e-a33d-8ce0a34e0f72",
+      "old_memory": null,
+      "new_memory": "截至2023年4月3日，乔恩关闭了他的银行账户，以支持他的舞蹈工作室生意的发展；这是一个艰难的决定，但他保持乐观、向前看",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:01.868651+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "67260ddc-f5f5-4900-8fe9-3c721232687a",
+      "old_memory": null,
+      "new_memory": "截至2023年4月3日，吉娜在她的网上服装店推出了新的优惠和促销活动以吸引新顾客，顾客反响很好，销量在增加；她目前的主要目标是扩大顾客群，把店打造成时尚爱好者的首选目的地",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:01.868699+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "c535d200-a553-484c-bd86-2340481e0d30",
+      "old_memory": null,
+      "new_memory": "截至2023年4月3日，吉娜计划在未来几个月与时尚博主和网红合作，并投放更多广告，以扩大网上服装店的知名度和触达更多人",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:01.868717+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "30a35c5d-0644-4dcd-a7ab-91b4049f9f53",
+      "old_memory": null,
+      "new_memory": "截至2023年4月3日，吉娜表示跳舞是她缓解压力的方式，时尚激发她的创造力；她对舞蹈和时尚都充满热情，将两者结合，并计划在店里添加受舞蹈启发的单品",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:01.868731+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "20fc0980-03ad-41f3-a33a-6db73a040e49",
+      "old_memory": null,
+      "new_memory": "截至2023年4月3日，乔恩正在扩展舞蹈工作室的社交媒体影响力，并为当地学校和社区中心提供工作坊和课程；他表示努力已有回报，看到进步，舞者们非常兴奋",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:01.868745+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+      "old_memory": null,
+      "new_memory": "乔恩计划在2023年5月举办一场舞蹈比赛，他的舞蹈工作室和其他一些学校将带来最棒的舞步，呈现充满表演和评审的夜晚，旨在展示本地人才并为工作室带来更多关注；他邀请吉娜到场，吉娜已答应去看演出",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:01.868758+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "1d8e3583-621a-4e2b-900d-447a556e313e",
+      "old_memory": null,
+      "new_memory": "吉娜分享的照片显示一件带有'June Bunty'标牌的裙子，暗示这可能是她的服装品牌或店铺名称（2023年4月3日）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:01.868777+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "e289c576-813d-4230-b8b3-7d3720971358",
+      "old_memory": null,
+      "new_memory": "截至2023年4月9日，乔恩正把对舞蹈的热爱变成一门生意，在舞蹈工作室投入了大量时间，他的学生们已经表现出色，他甚至还在向学生们学习；他分享了一张舞者在红色背景舞台上排练的照片",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:11.968949+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+      "old_memory": null,
+      "new_memory": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:11.968981+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "17e447b9-a729-40ab-83a6-4fd586d65fa0",
+      "old_memory": null,
+      "new_memory": "截至2023年4月9日，乔恩表示跳舞让他无比快乐，如今能与学生分享这份快乐，看到学生们不断进步让他特别高兴；他分享了一张女子在舞蹈工作室跳钢管舞的照片",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:11.968997+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "a231b871-ee0c-4175-abd4-214872c6bcda",
+      "old_memory": null,
+      "new_memory": "乔恩表示以前特别害怕别人怎么看自己，但后来明白了自己的快乐才是最重要的；对他来说跳舞是表达自我、寻找快乐的方式，虽然不容易但也是最美好的事",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:11.969010+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "e3049c9c-1066-48e4-a2ad-836d0408e25c",
+      "old_memory": null,
+      "new_memory": "乔恩小时候很喜欢和朋友们一起上舞蹈课，那些回忆非常珍贵；很开心现在能通过自己的舞蹈工作室继续享受跳舞",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:11.969022+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "b3d94f83-867f-4e20-b66c-619a118088fb",
+      "old_memory": null,
+      "new_memory": "吉娜拥有一座舞蹈比赛奖杯（带玻璃球顶），她用它提醒自己付出的努力、坚持和舞蹈带来的快乐；她还回忆自己以前超喜欢待在练功房里，分享了一张一群年轻女性在芭蕾教室的旧照",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:11.969033+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "ec4d6a48-15a1-47b7-b4fa-88663c1b8b09",
+      "old_memory": null,
+      "new_memory": "2023年4月24日，乔恩带舞蹈工作室参加了集市展示，既紧张又很棒，获得了一些潜在客户线索；他意识到这行并不轻松，要有自信才能把生意做成功",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:21.920958+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "4e116f5e-1d28-4a05-b142-030194997554",
+      "old_memory": null,
+      "new_memory": "截至2023年4月25日，乔恩感到有点缺乏自信，对自己没有信心时经营生意很难，向吉娜请教保持自信和动力的诀窍",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:21.921005+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "058faec8-92ee-4612-88b6-c57e735f035a",
+      "old_memory": null,
+      "new_memory": "吉娜告诉乔恩保持自信和动力的方法：提醒自己已取得的成功和进步、想着大目标和做这件事的初衷（因为热爱）、依靠支持自己的人、跳舞解压",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:21.921021+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "597ba4d2-aae1-403e-b2f1-81bab35f546b",
+      "old_memory": null,
+      "new_memory": "2023年4月25日，吉娜告诉乔恩她不久前开了一家卖衣服的网店，失去工作后想掌控自己的命运，这条路艰难但非常有收获",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:21.921033+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "59f5daa4-9313-4a5a-916b-e50b013fdcc8",
+      "old_memory": null,
+      "new_memory": "乔恩和吉娜约定在创业路上继续互相激励、互相扶持",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:21.921045+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "60d624fa-cc39-4e4e-9055-94bb88bf8cb2",
+      "old_memory": null,
+      "new_memory": "截至2023年5月11日，乔恩仍在经营舞蹈工作室，情况正在好转；他表示失去工作给了他开始梦想事业的动力，现在正踏入未知领域并希望有好结果",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:26.748672+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "54e104ab-f693-45bf-a6ca-48b57ef28a86",
+      "old_memory": null,
+      "new_memory": "截至2023年5月11日，乔恩最近一直在练习舞蹈动作，这帮助他保持专注和动力；他答应给吉娜发自己跳舞的视频",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:26.748698+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "8c8b33db-3e72-4091-8587-4322d94252dd",
+      "old_memory": null,
+      "new_memory": "吉娜在2023年5月10日左右参加了一个设计实习的面试，面试进行得非常顺利，她感觉很好",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:26.748712+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "452d3742-8f43-4046-ad52-c7f6deffe2a6",
+      "old_memory": null,
+      "new_memory": "吉娜靠跳舞减压，称舞蹈就像她本身、无法想象没有它的生活，就像空气一样",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:26.748723+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "0f90ad04-1d7a-497f-9883-e34bd484b2af",
+      "old_memory": null,
+      "new_memory": "吉娜（Gina）于2023年5月下旬被一家国际公司的时尚部门录取为兼职时尚实习生，她既兴奋又有点紧张，表示这是个大变化，进入时尚行业让她既兴奋又害怕，但她会保持乐观、尽量多学习",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:33.143602+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "e9d432bd-f67f-4a8b-850d-4b3b9bc76b2f",
+      "old_memory": null,
+      "new_memory": "乔恩（Jon）于2023年5月下旬开始阅读《精益创业》（The Lean Startup），希望为他的舞蹈工作室生意带来启发；该书让他开始思考如何打造专注且高效的企业，并计划根据客户反馈进行调整和改进",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:33.143647+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "e792d3ed-61b3-4e90-81c4-98b1febc9d11",
+      "old_memory": null,
+      "new_memory": "乔恩使用一块白板记录舞蹈工作室生意的好点子、想法、日期和里程碑，帮助他直观地看到进展并保持有条不紊（2023年5月下旬）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:33.143661+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "6728b9b7-05fb-43df-9a44-5099a49b8f17",
+      "old_memory": null,
+      "new_memory": "截至2023年5月下旬，乔恩正在完成舞蹈工作室的商业计划书并寻找投资人；找投资人的过程挺艰难，但他保持乐观，表示学到了很多，对项目的热情和对成功的信念推动着他前进",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:33.143673+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "970a43bf-b03f-4c61-888c-90d41afcf9cb",
+      "old_memory": null,
+      "new_memory": "乔恩于2023年5月下旬表示他会坚持创业、永不放弃，并感谢吉娜的支持，称没有什么能打倒他",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:33.143685+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "0e612a29-79e8-4182-894e-6842be55d59a",
+      "old_memory": null,
+      "new_memory": "截至2023年6月13日，乔恩正以前所未有的劲头为他的舞蹈工作室做准备，并表示开设工作室是一段很棒的经历，希望它成为能给所有舞者支持和鼓励的地方",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:40.957650+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "0e642f24-4428-4881-824d-b05c43d73fbf",
+      "old_memory": null,
+      "new_memory": "乔恩的舞蹈工作室除了舞蹈课和工作坊之外，还提供一对一的指导和训练，帮助舞者们充分发挥潜力",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:40.957676+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "9745b5d0-a567-4502-a32f-9b2b5e8613be",
+      "old_memory": null,
+      "new_memory": "吉娜做了一个视频演示，教大家如何搭配她的时尚单品，并答应稍后把视频发给乔恩（2023年6月）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:40.957689+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "370b3797-a00a-4c2c-ac19-05be3900e65a",
+      "old_memory": null,
+      "new_memory": "乔恩用笔记本和日历系统来保持条理和积极性：设定目标、记录成就，并找出需要改进的地方（2023年6月）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:40.957699+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "c1085191-fd42-4fe5-9654-915052a791d9",
+      "old_memory": null,
+      "new_memory": "乔恩还用白板来保持正轨、将目标可视化并标记成功；他用不同颜色对成就进行编码，方便追踪进度并保持动力和专注（2023年6月）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:40.957710+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "761df2c0-23e4-439c-ba6b-b0947f72b8b9",
+      "old_memory": null,
+      "new_memory": "乔恩感谢吉娜的不离不弃和一直以来的支持，并表示不会放弃，会继续努力奋斗让舞蹈工作室的梦想成真（2023年6月13日）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:40.957720+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+      "old_memory": null,
+      "new_memory": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:50.465079+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "3f548823-9546-4a8a-8a3d-299b16b943b6",
+      "old_memory": null,
+      "new_memory": "截至2023年6月16日，乔恩一直在为舞蹈工作室做推广，并采纳吉娜的建议开始在社交媒体上发布自己的舞蹈视频，已经引起了一点轰动",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:50.465113+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+      "old_memory": null,
+      "new_memory": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:50.465124+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "0a6a14af-0836-4821-b30c-ff35c50e71b1",
+      "old_memory": null,
+      "new_memory": "截至2023年6月16日，吉娜的网上服装店经营得很不错，她正在努力扩大客户群，并表示当自己的老板、做自己喜欢的事感觉很棒",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:50.465134+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "2de70226-54ab-432a-af42-c43c1ca3a176",
+      "old_memory": null,
+      "new_memory": "吉娜给乔恩的创业建议：保持热情、专注和坚韧，相信自己坚持下去，同时保持开放心态、不断学习和进步（2023年6月16日）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:50.465143+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "c86b7955-d016-46ef-9c37-ad71029001ea",
+      "old_memory": null,
+      "new_memory": "吉娜于2023年6月16日分享了自己跳舞比赛时的一张照片，称那段路很艰难但很值得；乔恩看到后深受触动，想起自己对表演的热爱",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:50.465152+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "6bbd05be-7725-41a1-9c18-227a0a962c5e",
+      "old_memory": null,
+      "new_memory": "乔恩表示无论如何都不会放弃，吉娜的鼓励激励着他继续前进，知道她在背后支持让他更有动力坚持，也不会让她失望（2023年6月16日）",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:13:50.465164+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "1c2323ba-6f0e-4386-aad5-b21632d23c02",
+      "old_memory": null,
+      "new_memory": "乔恩于2023年6月中旬（开幕前一周，约6月12-16日）去罗马短途旅行放松心情，为舞蹈工作室开业做准备，截至2023年6月19日仍在忙生意和筹备舞蹈工作室",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:14:56.918842+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "1aa1c91b-6f66-45a3-a5e9-c53bc8e03dff",
+      "old_memory": null,
+      "new_memory": "乔恩的舞蹈工作室正式开幕之夜定于2023年6月20日，他为此努力把一切做到完美，分享了一张工作室门口年轻舞者排练的照片，并感慨这一路走来不容易但准备全力以赴",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:14:56.918885+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "387c7cd4-3660-4823-8016-dcd7a2bd918b",
+      "old_memory": null,
+      "new_memory": "吉娜于2023年6月19日确认会出席乔恩舞蹈工作室的盛大开幕式，两人相约一起狂欢、共同创造美好回忆，吉娜表示一直为乔恩感到骄傲并会一直支持他",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:14:56.918901+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "f9d8116f-9572-4849-a089-c365ad2cd881",
+      "old_memory": null,
+      "new_memory": "2023年6月20日左右，乔恩的舞蹈工作室正式开幕前夜，他在开幕前还专程去罗马短途旅行放松心情，开幕之夜定为2023年6月20日",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:05.314709+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "8ab6d4a1-69aa-44a0-a5fe-0194899c41c3",
+      "old_memory": null,
+      "new_memory": "2023年6月21日，吉娜为她的服装网店进了一些新的独特商品，并推出了一个限量版连帽衫系列（迷彩印花）来展示自己的风格和创意，设计灵感来自脱颖而出、面对挑战所需的韧性",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:05.314749+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "eb772e3b-1522-4f68-a8ae-1f9fbb11ac0a",
+      "old_memory": null,
+      "new_memory": "2023年6月21日，乔恩前一天（6月20日）选择去参加社交活动来促成一些事业上的机会，虽然很难但会保持坚定和专注",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:05.314789+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "89c97aa2-acbd-4005-ae72-426fe7a87094",
+      "old_memory": null,
+      "new_memory": "乔恩自失业后日子一直不好过，但他相信把时间投入到舞蹈工作室事业上最终会有回报",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:05.314801+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "2bf90403-4875-4381-a465-d400520cf9e2",
+      "old_memory": null,
+      "new_memory": "2023年6月21日，乔恩把所有的计划和目标写下来，认为看到目标写在纸上能帮助他保持动力、专注于该做的事情",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:05.314813+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "5c80ee41-68d4-4f3c-852a-a028b0351853",
+      "old_memory": null,
+      "new_memory": "乔恩表示吉娜发的\"永不放弃\"标语提醒他无论事情多么艰难都不要放弃，他对吉娜的支持深表感谢，感到很有信心并决心继续前进",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:05.314826+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "6294d77d-107d-4bfa-8188-6f4efcf06ad7",
+      "old_memory": null,
+      "new_memory": "吉娜鼓励乔恩在创业遇到困难时坚持下去、继续努力、不要放弃，并肯定他把计划和目标写下来是掌握进步图景的关键做法",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:05.314836+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "e1935b84-df3f-4f21-b721-e24cff7c5501",
+      "old_memory": null,
+      "new_memory": "吉娜于2023年7月初被时尚编辑们注意到，感到兴奋但压力也大，她经营的服装店事业正在持续上升",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:12.193957+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "8492ec99-94bc-4afd-be62-b427b264b531",
+      "old_memory": null,
+      "new_memory": "截至2023年7月9日，乔恩全职投入舞蹈工作室创业，舞蹈练习既有趣又累人，他会保持坚定走出自己的路",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:12.193987+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "4e10a3bf-0433-4886-a2e4-2fe4bf2c913e",
+      "old_memory": null,
+      "new_memory": "乔恩于2023年7月9日开始学习各种营销和数据分析工具来推动舞蹈工作室事业发展，虽不容易但乐于接受挑战并坚信会成功",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:12.194001+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "fd3c2739-7969-4d5a-a590-b7ce9809e178",
+      "old_memory": null,
+      "new_memory": "乔恩期待在舞蹈工作室中指导和培养那些心怀梦想的舞者，并相信舞蹈能把人们凝聚在一起、创造美好时刻",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:12.194014+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "b9048dcd-504b-48e4-aef2-65b2c9223b81",
+      "old_memory": null,
+      "new_memory": "截至2023年7月21日，乔恩的舞蹈工作室情况不太稳定，他找了份临时工作补贴开支，同时继续寻找投资人，保持乐观并决心把生意做成",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:20.863563+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "25be9ad4-ffa0-4bc4-a219-7041966a2ee5",
+      "old_memory": null,
+      "new_memory": "截至2023年7月21日，吉娜为自己的服装店建了一个方便顾客下单的新网站，过程不易但她很享受",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:20.863594+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "2499991e-8493-49b8-8244-1cc0ce181904",
+      "old_memory": null,
+      "new_memory": "吉娜经营服装店时为采购流行单品遇到过难关，通过大量调研和人脉拓展克服；她的建议是向所在领域的人寻求帮助和人脉，人脉拓展对她是救命稻草",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:20.863603+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "c4a339d5-2833-4d97-bf80-8d414c99e18d",
+      "old_memory": null,
+      "new_memory": "2023年7月，乔恩参加了一次社交活动，见到了一些投资人并获得好建议，现场氛围鼓舞人心；他也在做人际拓展并带来了不少好机会",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:20.863609+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "d4810a3f-ef1f-4778-bd1a-49b2200f7cc8",
+      "old_memory": null,
+      "new_memory": "截至2023年7月21日，乔恩正在完善商业计划、调整给投资人的推介，并搭建一个线上平台来展示舞蹈工作室",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:20.863615+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+      "old_memory": null,
+      "new_memory": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:20.863622+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    },
+    {
+      "memory_id": "f597103f-48ad-476e-956c-4a5e5a250207",
+      "old_memory": null,
+      "new_memory": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:15:20.863628+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    }
+  ],
+  "global_history_gina_dance_or_favorite_lexical_hits": [
+    {
+      "memory_id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+      "old_memory": null,
+      "new_memory": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+      "event": "ADD",
+      "created_at": "2026-09-25T03:11:59.840278+00:00",
+      "updated_at": null,
+      "is_deleted": 0
+    }
+  ],
+  "messages_retained_for_user": [
+    {
+      "role": "system",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 140,
+      "system_content": "Conversation date: 2023-07-23T18:46:00. Use this date to resolve relative time expressions like 'yesterday', 'next month', 'in three weeks'."
+    },
+    {
+      "role": "user",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 48,
+      "system_content": null
+    },
+    {
+      "role": "assistant",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 153,
+      "system_content": null
+    },
+    {
+      "role": "user",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 23,
+      "system_content": null
+    },
+    {
+      "role": "assistant",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 8,
+      "system_content": null
+    },
+    {
+      "role": "user",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 17,
+      "system_content": null
+    },
+    {
+      "role": "assistant",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 165,
+      "system_content": null
+    },
+    {
+      "role": "user",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 40,
+      "system_content": null
+    },
+    {
+      "role": "assistant",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 21,
+      "system_content": null
+    },
+    {
+      "role": "user",
+      "created_at": "2026-09-25T03:15:30.565543+00:00",
+      "content_length": 36,
+      "system_content": null
+    }
+  ],
+  "english_atomic_session1": [
+    "Jon lost his job as a banker on 19 January 2023.",
+    "Jon plans to start his own business as of 4:04 pm on 20 January, 2023.",
+    "Jon is starting a dance studio as of 4:04 pm on 20 January, 2023.",
+    "Gina lost her job at DoorDash in January 2023.",
+    "Jon has been into dancing since he was a kid.",
+    "Jon's favorite dance style is contemporary as of 4:04 pm on 20 January, 2023.",
+    "Gina's favorite dance style is contemporary as of 4:04 pm on 20 January, 2023.",
+    "Jon and Gina plan to go to a dance class together next Friday (as of 4:04 pm on 20 January, 2023).",
+    "Jon's dance crew won first place in a local competition last year (2022).",
+    "Gina used to compete in dance competitions and shows.",
+    "Gina's team won first place at a regional competition when she was fifteen.",
+    "Gina's winning team performed a contemporary piece called 'Finding Freedom'.",
+    "Jon's ideal dance studio overlooks the water.",
+    "Jon rehearsed with a small group of dancers after work while he was a banker.",
+    "Jon's dance group does all kinds of dances from contemporary to hip-hop.",
+    "Jon's dance group will perform at a nearby festival next month (February 2023).",
+    "Jon's dance group has been finishing choreography for the festival performance.",
+    "Gina uses dance for stress relief as of 4:04 pm on 20 January, 2023."
+  ],
+  "historical_current_comparison": {
+    "historical_visible_ids": 102,
+    "current_ids": 102,
+    "shared_ids": 102,
+    "shared_content_mismatch_ids": [],
+    "current_only_ids": [],
+    "historical_only_ids": []
+  },
+  "historical_runs": {
+    "base": {
+      "answer": "现代舞（现代/当代舞）。吉娜的团队表演了名为 \"Finding Freedom\" 的现代舞，她15岁时最喜欢的回忆是团队在地区舞蹈比赛中获得第一名，她也常通过跳舞减压——现代舞是与之最契合的她最喜爱的风格。（注：乔恩的最爱也是现代舞，因其表现力和力量感。）",
+      "context": [
+        {
+          "rank": 1,
+          "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+          "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "b3d94f83-867f-4e20-b66c-619a118088fb",
+          "content": "吉娜拥有一座舞蹈比赛奖杯（带玻璃球顶），她用它提醒自己付出的努力、坚持和舞蹈带来的快乐；她还回忆自己以前超喜欢待在练功房里，分享了一张一群年轻女性在芭蕾教室的旧照",
+          "route": "vector",
+          "session_date": "10:33 am on 9 April, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+          "content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+          "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "30a35c5d-0644-4dcd-a7ab-91b4049f9f53",
+          "content": "截至2023年4月3日，吉娜表示跳舞是她缓解压力的方式，时尚激发她的创造力；她对舞蹈和时尚都充满热情，将两者结合，并计划在店里添加受舞蹈启发的单品",
+          "route": "vector",
+          "session_date": "1:26 pm on 3 April, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "452d3742-8f43-4046-ad52-c7f6deffe2a6",
+          "content": "吉娜靠跳舞减压，称舞蹈就像她本身、无法想象没有它的生活，就像空气一样",
+          "route": "vector",
+          "session_date": "3:14 pm on 11 May, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "6f9753ba-94d9-4392-b1cd-25f7b7219b58",
+          "content": "吉娜几年前纹了一个纹身，代表自由——跳舞时不担心别人怎么看的自由，图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'），提醒她追随热情、表达自我",
+          "route": "vector",
+          "session_date": "9:32 am on 8 February, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+          "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+          "route": "vector",
+          "session_date": "2:32 pm on 29 January, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+          "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+          "route": "vector",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+          "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+          "route": "vector",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "54e104ab-f693-45bf-a6ca-48b57ef28a86",
+          "content": "截至2023年5月11日，乔恩最近一直在练习舞蹈动作，这帮助他保持专注和动力；他答应给吉娜发自己跳舞的视频",
+          "route": "vector",
+          "session_date": "3:14 pm on 11 May, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+          "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "387c7cd4-3660-4823-8016-dcd7a2bd918b",
+          "content": "吉娜于2023年6月19日确认会出席乔恩舞蹈工作室的盛大开幕式，两人相约一起狂欢、共同创造美好回忆，吉娜表示一直为乔恩感到骄傲并会一直支持他",
+          "route": "vector",
+          "session_date": "10:04 am on 19 June, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+          "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+          "content": "乔恩计划在2023年5月举办一场舞蹈比赛，他的舞蹈工作室和其他一些学校将带来最棒的舞步，呈现充满表演和评审的夜晚，旨在展示本地人才并为工作室带来更多关注；他邀请吉娜到场，吉娜已答应去看演出",
+          "route": "vector",
+          "session_date": "1:26 pm on 3 April, 2023"
+        }
+      ]
+    },
+    "graph": {
+      "answer": "吉娜最喜欢的舞蹈风格最可能是现代舞（contemporary）——她的团队表演了名为《Finding Freedom》的现代舞，她15岁时最美好的回忆正是团队凭借这支现代舞获得地区比赛第一名。（注：记忆中明确说“最喜欢现代舞”的是乔恩，而非吉娜。）",
+      "context": [
+        {
+          "rank": 1,
+          "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+          "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "b3d94f83-867f-4e20-b66c-619a118088fb",
+          "content": "吉娜拥有一座舞蹈比赛奖杯（带玻璃球顶），她用它提醒自己付出的努力、坚持和舞蹈带来的快乐；她还回忆自己以前超喜欢待在练功房里，分享了一张一群年轻女性在芭蕾教室的旧照",
+          "route": "vector",
+          "session_date": "10:33 am on 9 April, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+          "content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+          "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "30a35c5d-0644-4dcd-a7ab-91b4049f9f53",
+          "content": "截至2023年4月3日，吉娜表示跳舞是她缓解压力的方式，时尚激发她的创造力；她对舞蹈和时尚都充满热情，将两者结合，并计划在店里添加受舞蹈启发的单品",
+          "route": "vector",
+          "session_date": "1:26 pm on 3 April, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "452d3742-8f43-4046-ad52-c7f6deffe2a6",
+          "content": "吉娜靠跳舞减压，称舞蹈就像她本身、无法想象没有它的生活，就像空气一样",
+          "route": "vector",
+          "session_date": "3:14 pm on 11 May, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "6f9753ba-94d9-4392-b1cd-25f7b7219b58",
+          "content": "吉娜几年前纹了一个纹身，代表自由——跳舞时不担心别人怎么看的自由，图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'），提醒她追随热情、表达自我",
+          "route": "vector",
+          "session_date": "9:32 am on 8 February, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+          "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+          "route": "vector",
+          "session_date": "2:32 pm on 29 January, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+          "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+          "route": "vector",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+          "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+          "route": "vector",
+          "session_date": "5:44 pm on 21 July, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "54e104ab-f693-45bf-a6ca-48b57ef28a86",
+          "content": "截至2023年5月11日，乔恩最近一直在练习舞蹈动作，这帮助他保持专注和动力；他答应给吉娜发自己跳舞的视频",
+          "route": "vector",
+          "session_date": "3:14 pm on 11 May, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+          "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "387c7cd4-3660-4823-8016-dcd7a2bd918b",
+          "content": "吉娜于2023年6月19日确认会出席乔恩舞蹈工作室的盛大开幕式，两人相约一起狂欢、共同创造美好回忆，吉娜表示一直为乔恩感到骄傲并会一直支持他",
+          "route": "vector",
+          "session_date": "10:04 am on 19 June, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+          "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+          "route": "vector",
+          "session_date": "4:04 pm on 20 January, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+          "content": "乔恩计划在2023年5月举办一场舞蹈比赛，他的舞蹈工作室和其他一些学校将带来最棒的舞步，呈现充满表演和评审的夜晚，旨在展示本地人才并为工作室带来更多关注；他邀请吉娜到场，吉娜已答应去看演出",
+          "route": "vector",
+          "session_date": "1:26 pm on 3 April, 2023"
+        }
+      ]
+    }
+  },
+  "logical_store_before": {
+    "embedding_count": 1995,
+    "id_content_user_session_sha256": "6cb9cbfce210981cb4ee8ac8ae0ca9f0afb5dad4ade1668ba068ec067650a0f9"
+  },
+  "logical_store_after": {
+    "embedding_count": 1995,
+    "id_content_user_session_sha256": "6cb9cbfce210981cb4ee8ac8ae0ca9f0afb5dad4ade1668ba068ec067650a0f9"
+  },
+  "logical_store_unchanged": true,
+  "input_sha256": {
+    "base": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59",
+    "graph": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "base_grade": "0a4bef376de18c4ef1242c893ab27f2cfa7133445885265fbcb05521acf9bb0b",
+    "graph_grade": "9fa3a5f25d3fdf21dd173e60a3d1db55177e362cb4f4b9ad145eb37107284d05",
+    "english_data": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese_data": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "atomic": "f6bf039bfeb1fb422c915c65f04576f6b729e533446c494052a137f402d3aa6b",
+    "history": "1ff74b302cadaebcdec0850587bb4821e2024e3cabbfffaba8c1c51ef1eb61cd",
+    "storage_code": "5f5ecdadd2b260fd14f36a0f338336eb760275465dd1056a99a47e1ef07702bd"
+  },
+  "limits": [
+    "ADD history is not raw extraction request/response.",
+    "Messages retain recent input only, not session1 transcript.",
+    "English atomic cache differs in pipeline/language/version; no Chinese automatic capability claim.",
+    "Historical candidate union is not proof of the entire historical database."
+  ]
+}

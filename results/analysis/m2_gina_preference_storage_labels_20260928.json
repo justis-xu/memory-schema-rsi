@@ -1,0 +1,33 @@
+{
+  "scope": "Manual semantic audit of current 102 conv30 memories and local provenance for one relation; no causal intervention",
+  "packet_sha256": "b08d99e0f4d92835d8560e72aa5de4fec4db60eed8b607541d669bad8cd5aa20",
+  "case_id": "locomo_conv-30_qa39",
+  "source_relation": {
+    "subject": "吉娜",
+    "predicate": "最爱的舞蹈风格",
+    "object": "现代舞",
+    "source_turn_ids": [
+      "D1:8",
+      "D1:9"
+    ],
+    "support_type": "agreement to prior favorite statement and reciprocal question"
+  },
+  "manual_findings": {
+    "explicit_target_relation_found_in_current_conv30_memories": false,
+    "current_conversation_memory_count_reviewed": 102,
+    "session1_memory_count_reviewed": 11,
+    "current_jon_favorite_memory_id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+    "related_gina_performance_memory_id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+    "associated_history_events_all_ADD": true,
+    "historical_visible_id_content_matches_current": true,
+    "english_atomic_cached_target_relation_present": true,
+    "raw_initial_chinese_extraction_request_response_available": false
+  },
+  "conclusion_zh": "当前可见完整conv30中文Memory没有显式吉娜/最爱/现代舞关系，历史可见102ID正文与之完全相同；不能只归为top15召回不足。对应ADD记录也未提供该关系。英文atomic缓存能表达关系，但版本/语言/管线不同，不能证明中文提取改造收益。原始提取响应和完整首场输入缺失，不能精确分辨模型遗漏、输入组织或保存筛选。",
+  "confidence": "high for visible IDs/content/history and source; medium for explicit-relation absence from manual semantics; precise extraction cause unknown",
+  "limits": [
+    "Absence is scoped to this complete current user Memory snapshot, not all stores or all historical deleted records.",
+    "History lexical scan may miss aliases or paraphrases.",
+    "No automatic repair, database insertion, retrieval call, answer call or judge call."
+  ]
+}
