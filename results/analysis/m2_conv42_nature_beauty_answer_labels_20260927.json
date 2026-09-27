@@ -1,0 +1,15 @@
+{
+  "method": "Manual source-aware labeling of the fixed six-call comparison plus the explicitly post hoc two-call deletion control. core_hit means the answer explicitly says nature/natural beauty; it is not a full factuality judgment.",
+  "source_answer_file": "results/analysis/m2_conv42_nature_beauty_answer_poc_20260927.json",
+  "drop_control_file": "results/analysis/m2_conv42_nature_beauty_drop_control_20260927.json",
+  "gold": "大自然",
+  "six_call_core_hits_by_order": [false, true, true, true, true, false],
+  "six_call_arms_by_order": ["base", "existing", "source", "source", "existing", "base"],
+  "drop_only_core_hits_by_order": [false, false],
+  "observations": [
+    "Existing-memory arm says nature in both calls, but its Nate memory says nature brings inspiration rather than directly preserving D28:23's appreciation of beauty; a matching answer is not proof that the prompt contains both source relations.",
+    "Source-turn arm names both speakers and their nature-beauty relation in one of two calls; the other call gives only the correct short answer.",
+    "Base and drop-only arms focus on self-care or Little Women instead. No call adds another nature-like common answer on top of the gold answer.",
+    "Manual labels are one-case observations; removal, insertion, prompt length, and generation variability are not fully isolated."
+  ]
+}

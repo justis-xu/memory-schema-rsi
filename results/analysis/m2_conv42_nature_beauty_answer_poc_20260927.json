@@ -1,0 +1,214 @@
+{
+  "scope": "One source-audited Chinese question; original top13 fixed and last two slots controlled; source arm is an oracle upper bound, no judge",
+  "case_id": "locomo_conv-42_qa71",
+  "question": "乔安娜和内特都欣赏什么的美？",
+  "gold": "大自然",
+  "source_dia_ids": [
+    "D11:9",
+    "D28:23"
+  ],
+  "max_answer_calls": 6,
+  "order": [
+    "base",
+    "existing",
+    "source",
+    "source",
+    "existing",
+    "base"
+  ],
+  "answer_calls": 6,
+  "reference_date": "2022-11-11T00:06:00",
+  "current_memory_signature": "61e015ce36e4f137db6c0466d835d4d0cee714a17d9fcdf4e24156c7f25cdbd9",
+  "context_ids": {
+    "base": [
+      "61b45d59-7128-46bb-9989-dbfa4dae5fd8",
+      "203dded2-ee87-484e-95f6-4c5f21347b46",
+      "513275ab-39bf-4f81-8a7e-f1a0b54b875a",
+      "051a0dbd-3acc-48fb-9645-c0a7d3367113",
+      "8265692e-2cf4-4d48-9b16-02ef6939828f",
+      "c0e191a2-7348-4c8c-8150-3cf5a8e975d5",
+      "7c592f60-2579-41c0-90a7-ebe82e779526",
+      "9c1e2d54-e381-4c0c-a997-54dd6a522968",
+      "ef0d18c0-eaf3-4aaa-9f10-699fb8323351",
+      "6e921e42-7eaa-4940-bf0f-a54619f0b040",
+      "41151682-0511-4b51-bf48-4ad7811fdca3",
+      "cda9adff-8113-4344-9063-c9f19bff9978",
+      "b61b4b59-6637-45d8-be43-4862cc91255d",
+      "27525398-5556-41d2-a9ce-3c90e988cad1",
+      "4ff08f9d-62b0-473f-9bd5-928554a020ee"
+    ],
+    "existing": [
+      "61b45d59-7128-46bb-9989-dbfa4dae5fd8",
+      "203dded2-ee87-484e-95f6-4c5f21347b46",
+      "513275ab-39bf-4f81-8a7e-f1a0b54b875a",
+      "051a0dbd-3acc-48fb-9645-c0a7d3367113",
+      "8265692e-2cf4-4d48-9b16-02ef6939828f",
+      "c0e191a2-7348-4c8c-8150-3cf5a8e975d5",
+      "7c592f60-2579-41c0-90a7-ebe82e779526",
+      "9c1e2d54-e381-4c0c-a997-54dd6a522968",
+      "ef0d18c0-eaf3-4aaa-9f10-699fb8323351",
+      "6e921e42-7eaa-4940-bf0f-a54619f0b040",
+      "41151682-0511-4b51-bf48-4ad7811fdca3",
+      "cda9adff-8113-4344-9063-c9f19bff9978",
+      "b61b4b59-6637-45d8-be43-4862cc91255d",
+      "e196eb2e-997b-4b67-9d7b-76409fa4f1e3",
+      "56217cd3-ace8-4857-b1cd-b79ef752e9f8"
+    ],
+    "source": [
+      "61b45d59-7128-46bb-9989-dbfa4dae5fd8",
+      "203dded2-ee87-484e-95f6-4c5f21347b46",
+      "513275ab-39bf-4f81-8a7e-f1a0b54b875a",
+      "051a0dbd-3acc-48fb-9645-c0a7d3367113",
+      "8265692e-2cf4-4d48-9b16-02ef6939828f",
+      "c0e191a2-7348-4c8c-8150-3cf5a8e975d5",
+      "7c592f60-2579-41c0-90a7-ebe82e779526",
+      "9c1e2d54-e381-4c0c-a997-54dd6a522968",
+      "ef0d18c0-eaf3-4aaa-9f10-699fb8323351",
+      "6e921e42-7eaa-4940-bf0f-a54619f0b040",
+      "41151682-0511-4b51-bf48-4ad7811fdca3",
+      "cda9adff-8113-4344-9063-c9f19bff9978",
+      "b61b4b59-6637-45d8-be43-4862cc91255d",
+      "source-turn:D11:9",
+      "source-turn:D28:23"
+    ]
+  },
+  "context_last_two": {
+    "base": [
+      {
+        "id": "27525398-5556-41d2-a9ce-3c90e988cad1",
+        "content": "内特送给乔安娜一个毛绒小狗玩具，用来提醒她那些美好平静的感觉；乔安娜表示会全心全意珍惜这个小家伙",
+        "metadata": {
+          "user_id": "zhfull:locomo:conv-42",
+          "session_id": "session_13",
+          "session_date": "3:00 pm on 25 May, 2022"
+        }
+      },
+      {
+        "id": "4ff08f9d-62b0-473f-9bd5-928554a020ee",
+        "content": "内特受乔安娜启发，决定开始记录回忆，包括自家动物们特别喜欢的东西，以及他和乔安娜之间最美好的回忆",
+        "metadata": {
+          "user_id": "zhfull:locomo:conv-42",
+          "session_id": "session_27",
+          "session_date": "8:10 pm on 7 November, 2022"
+        }
+      }
+    ],
+    "existing": [
+      {
+        "id": "e196eb2e-997b-4b67-9d7b-76409fa4f1e3",
+        "content": "乔安娜分享了一张去年夏天（2021年夏）在韦恩堡附近徒步时拍的向日葵日落照片，她说日落和周围美景令人难以置信，是大自然之美的绝佳提醒",
+        "metadata": {
+          "user_id": "zhfull:locomo:conv-42",
+          "session_id": "session_28",
+          "session_date": "5:54 pm on 9 November, 2022"
+        }
+      },
+      {
+        "id": "56217cd3-ace8-4857-b1cd-b79ef752e9f8",
+        "content": "内特认为大自然能给人灵感，对他来说陪伴宠物和做爱好是暂时的放松方式",
+        "metadata": {
+          "user_id": "zhfull:locomo:conv-42",
+          "session_id": "session_8",
+          "session_date": "6:44 pm on 17 April, 2022"
+        }
+      }
+    ],
+    "source": [
+      {
+        "id": "source-turn:D11:9",
+        "content": "乔安娜：那真的很棒，内特。那个地方的声音和大自然的美让我感到非常平静安宁。其他一切都淡去了，唯一重要的就是当下。",
+        "metadata": {
+          "user_id": "zhfull:locomo:conv-42",
+          "session_id": "session_11",
+          "session_date": "3:35 pm on 12 May, 2022"
+        }
+      },
+      {
+        "id": "source-turn:D28:23",
+        "content": "内特：听起来太棒了！大自然确实总能提醒我们去欣赏身边的美，这样的时刻真的会留在心中。这些小家伙也让我感受到生活中的小确幸。你猜怎么着？我给它们找了个新朋友！",
+        "metadata": {
+          "user_id": "zhfull:locomo:conv-42",
+          "session_id": "session_28",
+          "session_date": "5:54 pm on 9 November, 2022"
+        }
+      }
+    ]
+  },
+  "prompt_sha256": {
+    "base": "30866030c0dda0567eab2b017b0ecd4eb55503a6ce23fa97db2a422ded08555e",
+    "existing": "7acb6524a04315053b3e3c4dfafc4606ac85bd5e484ee5998788b0dbbee79b14",
+    "source": "a8d8d45506ffdc94ae38bab3d9b62d2cfc346e9494c643bcb05322b6b0f0587d"
+  },
+  "prior_base_prompt_sha256": "beeb662b45b964937b8ffb5ac13883c09e6e9697c48e28f1ba7cc944dd1bcca7",
+  "current_base_prompt_matches_prior": false,
+  "prompt_chars": {
+    "base": 8243,
+    "existing": 8248,
+    "source": 8283
+  },
+  "calls": [
+    {
+      "index": 1,
+      "arm": "base",
+      "answer": "** 乔安娜和内特都认同休息和照顾好自己对灵感、心理健康和创造力的重要性，也就是说，他们都欣赏**休息与自我关怀之美**，关键在于找到平衡。",
+      "usage": {
+        "prompt_tokens": 2157,
+        "completion_tokens": 83
+      }
+    },
+    {
+      "index": 2,
+      "arm": "existing",
+      "answer": "大自然的美",
+      "usage": {
+        "prompt_tokens": 2162,
+        "completion_tokens": 32
+      }
+    },
+    {
+      "index": 3,
+      "arm": "source",
+      "answer": "大自然的美。乔安娜提到某个地方的声音和大自然之美让她平静安宁，内特也认同大自然总能提醒人们去欣赏身边的美。",
+      "usage": {
+        "prompt_tokens": 2179,
+        "completion_tokens": 35
+      }
+    },
+    {
+      "index": 4,
+      "arm": "source",
+      "answer": "大自然的美。",
+      "usage": {
+        "prompt_tokens": 2179,
+        "completion_tokens": 9
+      }
+    },
+    {
+      "index": 5,
+      "arm": "existing",
+      "answer": "大自然之美。内特认为大自然能给人带来灵感，乔安娜也曾分享她2021年夏在韦恩堡附近徒步时拍的向日葵日落照片，称那是大自然之美的绝佳提醒——两人都欣赏大自然的美。",
+      "usage": {
+        "prompt_tokens": 2162,
+        "completion_tokens": 89
+      }
+    },
+    {
+      "index": 6,
+      "arm": "base",
+      "answer": "他们都欣赏《小妇人》所展现的姐妹情、爱和追逐梦想之美。",
+      "usage": {
+        "prompt_tokens": 2157,
+        "completion_tokens": 180
+      }
+    }
+  ],
+  "limits": [
+    "Source arm inserts gold-evidence turns manually; it is an oracle upper bound, not an automatic memory extraction method.",
+    "Base vs other arms changes two contents at fixed slots; removal of old distractors is not separately identified.",
+    "Existing vs source changes two records, including exact relation wording; attribution to a single turn is not identified.",
+    "One question and two repeats per arm cannot estimate general answer benefit or noise distribution."
+  ],
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "completed": true
+}

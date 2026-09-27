@@ -1,0 +1,55 @@
+{
+  "scope": "Post hoc deletion-only diagnostic after the six-call source/existing POC; one Chinese question, two answer calls, no judge",
+  "case_id": "locomo_conv-42_qa71",
+  "question": "乔安娜和内特都欣赏什么的美？",
+  "arm": "base_first13_only",
+  "context_ids": [
+    "61b45d59-7128-46bb-9989-dbfa4dae5fd8",
+    "203dded2-ee87-484e-95f6-4c5f21347b46",
+    "513275ab-39bf-4f81-8a7e-f1a0b54b875a",
+    "051a0dbd-3acc-48fb-9645-c0a7d3367113",
+    "8265692e-2cf4-4d48-9b16-02ef6939828f",
+    "c0e191a2-7348-4c8c-8150-3cf5a8e975d5",
+    "7c592f60-2579-41c0-90a7-ebe82e779526",
+    "9c1e2d54-e381-4c0c-a997-54dd6a522968",
+    "ef0d18c0-eaf3-4aaa-9f10-699fb8323351",
+    "6e921e42-7eaa-4940-bf0f-a54619f0b040",
+    "41151682-0511-4b51-bf48-4ad7811fdca3",
+    "cda9adff-8113-4344-9063-c9f19bff9978",
+    "b61b4b59-6637-45d8-be43-4862cc91255d"
+  ],
+  "removed_ids": [
+    "27525398-5556-41d2-a9ce-3c90e988cad1",
+    "4ff08f9d-62b0-473f-9bd5-928554a020ee"
+  ],
+  "prompt_sha256": "2bc63d3caa0a9ba5bb98248256c40a7360d3b3c01fb1e48f2552bb847bd45a27",
+  "prompt_chars": 8091,
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_answer_calls": 2,
+  "answer_calls": 2,
+  "calls": [
+    {
+      "index": 1,
+      "answer": "** 乔安娜和内特都欣赏《小妇人》（Little Women）中姐妹情、爱和追逐梦想的美——两人都看过这部电影并认为它非常棒，称赞其把这些主题展现得特别好。",
+      "usage": {
+        "prompt_tokens": 2076,
+        "completion_tokens": 94
+      }
+    },
+    {
+      "index": 2,
+      "answer": "乔安娜和内特都欣赏《小妇人》（姐妹情、爱和追逐梦想主题）的美，以及休息与自我照顾对灵感和创造力的重要性。",
+      "usage": {
+        "prompt_tokens": 2076,
+        "completion_tokens": 146
+      }
+    }
+  ],
+  "limits": [
+    "Adaptive check performed after viewing the three-arm answers.",
+    "Thirteen slots differ in length from all 15-slot arms.",
+    "Two repeats do not characterize generation noise or broad effect."
+  ],
+  "completed": true
+}
