@@ -1,0 +1,1299 @@
+{
+  "scope": "Three previously source-audited Chinese cases, two archived Jev services; read-only; no new model calls",
+  "dataset_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "archives": {
+    "decider": {
+      "path": "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+      "sha256": "9b7b37187181dd4ce7e161cd0ab93daad2d9dadde02da2020084c3dc210e4935"
+    },
+    "laya": {
+      "path": "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+      "sha256": "c47f83182b18d0d5187c28b59a14deda00d0b059c73fe5ea05ae807d8adeaf2d"
+    }
+  },
+  "cases": {
+    "locomo_conv-26_qa111": {
+      "question": "除了陶艺，梅尔和孩子们还一起做什么创意项目？",
+      "category": 4,
+      "source_turns": {
+        "D8:5": {
+          "session_id": "session_8",
+          "session_date": "1:51 pm on 15 July, 2023",
+          "speaker": "卡罗琳",
+          "text": "哇，真可爱！那个杯子好萌。看到孩子们通过艺术展现自己的个性真是太棒了。除了陶艺之外，你还和他们一起做哪些创意项目？"
+        },
+        "D8:6": {
+          "session_id": "session_8",
+          "session_date": "1:51 pm on 15 July, 2023",
+          "speaker": "梅拉妮",
+          "text": "最近我们喜欢一起画画，尤其是以大自然为灵感的画。这是上周末我们的最新作品。"
+        }
+      },
+      "arms": {
+        "decider": {
+          "jev": {
+            "first": 0.32,
+            "second": 0.33,
+            "expanded": true
+          },
+          "predicted_answer": "一起画画——尤其是以大自然为灵感的创作，比如落日与棕榈树画作、色彩大胆的日落画等。",
+          "final_context": [
+            {
+              "slot": 1,
+              "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+              "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+              "graph_candidate": false
+            },
+            {
+              "slot": 2,
+              "id": "97f3a4fc-ea2e-4e8d-9f49-402d63a83d9d",
+              "content": "截至2023年7月17日，梅拉妮和孩子们刚又完成了一幅画，延续了他们之前一起创作大自然灵感画作的习惯",
+              "graph_candidate": false
+            },
+            {
+              "slot": 3,
+              "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+              "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子",
+              "graph_candidate": false
+            },
+            {
+              "slot": 4,
+              "id": "afb6c064-969a-497d-932d-ec1fde376700",
+              "content": "梅拉妮一家在科罗拉多大峡谷玩得很开心，她于2023年10月21日买了彩绘木制家庭人偶，让她想起家人之间的爱",
+              "graph_candidate": false
+            },
+            {
+              "slot": 5,
+              "id": "55feb3da-4b18-4405-a8f1-9cb9825cc3fa",
+              "content": "梅拉妮一家在2023年7月中旬又去森林露营了一次，在篝火旁烤棉花糖；他们还喜欢在山里徒步和探索森林，她认为这是亲近大自然、增进感情的方式",
+              "graph_candidate": true
+            },
+            {
+              "slot": 6,
+              "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+              "content": "梅拉妮于2023年10月初（对话前一周）画了一幅日落画，灵感来自日落，鲜艳的颜色让她感到平静",
+              "graph_candidate": false
+            },
+            {
+              "slot": 7,
+              "id": "268b0881-a634-43ca-b230-c5466617353a",
+              "content": "梅拉妮最喜欢画风景和静物，热爱大自然，计划画几幅以秋天景色为灵感的作品",
+              "graph_candidate": false
+            },
+            {
+              "slot": 8,
+              "id": "de3a1918-0ba7-4586-853f-5badfd2f1922",
+              "content": "梅拉妮在2023年9月初的几周前带孩子们去露营，探索森林、徒步，还在篝火边烤棉花糖、讲故事，大家玩得很尽兴，并分享了一张秋天黄叶小路的照片",
+              "graph_candidate": false
+            },
+            {
+              "slot": 9,
+              "id": "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+              "content": "梅拉妮一家的夏日传统是家庭露营之旅，他们烤棉花糖、围篝火讲故事，这是他们夏天的重头戏",
+              "graph_candidate": false
+            },
+            {
+              "slot": 10,
+              "id": "5c43f1b2-8289-4513-9e28-914dedd5ae03",
+              "content": "梅拉妮最近在陶艺课上做了一个带花卉图案的紫色碗/盘子，她很喜欢，觉得陶艺既放松又有创意",
+              "graph_candidate": false
+            },
+            {
+              "slot": 11,
+              "id": "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+              "content": "梅拉妮在陶艺课上做了一个黑白花朵图案的碗，花了不少功夫并为此感到自豪；她说陶艺不只是爱好，而是帮助她表达情感、带来快乐的重要部分",
+              "graph_candidate": false
+            },
+            {
+              "slot": 12,
+              "id": "64393dc0-b146-4e40-a411-7bf1d540c910",
+              "content": "梅拉妮于2023年7月5日带孩子们去博物馆看恐龙展览，孩子们喜欢了解动物、觉得骨头很酷，这让她想起自己为什么喜欢当妈妈",
+              "graph_candidate": true
+            },
+            {
+              "slot": 13,
+              "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间",
+              "graph_candidate": false
+            },
+            {
+              "slot": 14,
+              "id": "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+              "content": "梅拉妮做艺术已有七年，找到了自己真正的灵感来源：绘画和陶艺；她于2023年9月分享了自己制作的带复杂花纹和紫色釉面的陶艺碗作品照片",
+              "graph_candidate": false
+            },
+            {
+              "slot": 15,
+              "id": "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+              "content": "梅拉妮于2023年6月中旬（对话前一周）带家人去山里露营，一起探索大自然、在篝火旁烤棉花糖并徒步，山顶景色很美，她两个年幼的孩子都热爱大自然，她认为这次家庭共处时光非常难忘",
+              "graph_candidate": false
+            }
+          ]
+        },
+        "laya": {
+          "jev": {
+            "first": 0.91,
+            "expanded": false
+          },
+          "predicted_answer": "一起画画（尤其是大自然主题的画作，如落日与棕榈树），以及参观博物馆（恐龙展览）等创意/艺术体验活动。",
+          "final_context": [
+            {
+              "slot": 1,
+              "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+              "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+              "graph_candidate": false
+            },
+            {
+              "slot": 2,
+              "id": "97f3a4fc-ea2e-4e8d-9f49-402d63a83d9d",
+              "content": "截至2023年7月17日，梅拉妮和孩子们刚又完成了一幅画，延续了他们之前一起创作大自然灵感画作的习惯",
+              "graph_candidate": false
+            },
+            {
+              "slot": 3,
+              "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+              "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子",
+              "graph_candidate": false
+            },
+            {
+              "slot": 4,
+              "id": "afb6c064-969a-497d-932d-ec1fde376700",
+              "content": "梅拉妮一家在科罗拉多大峡谷玩得很开心，她于2023年10月21日买了彩绘木制家庭人偶，让她想起家人之间的爱",
+              "graph_candidate": false
+            },
+            {
+              "slot": 5,
+              "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+              "content": "梅拉妮于2023年10月初（对话前一周）画了一幅日落画，灵感来自日落，鲜艳的颜色让她感到平静",
+              "graph_candidate": false
+            },
+            {
+              "slot": 6,
+              "id": "268b0881-a634-43ca-b230-c5466617353a",
+              "content": "梅拉妮最喜欢画风景和静物，热爱大自然，计划画几幅以秋天景色为灵感的作品",
+              "graph_candidate": false
+            },
+            {
+              "slot": 7,
+              "id": "de3a1918-0ba7-4586-853f-5badfd2f1922",
+              "content": "梅拉妮在2023年9月初的几周前带孩子们去露营，探索森林、徒步，还在篝火边烤棉花糖、讲故事，大家玩得很尽兴，并分享了一张秋天黄叶小路的照片",
+              "graph_candidate": false
+            },
+            {
+              "slot": 8,
+              "id": "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+              "content": "梅拉妮一家的夏日传统是家庭露营之旅，他们烤棉花糖、围篝火讲故事，这是他们夏天的重头戏",
+              "graph_candidate": false
+            },
+            {
+              "slot": 9,
+              "id": "5c43f1b2-8289-4513-9e28-914dedd5ae03",
+              "content": "梅拉妮最近在陶艺课上做了一个带花卉图案的紫色碗/盘子，她很喜欢，觉得陶艺既放松又有创意",
+              "graph_candidate": false
+            },
+            {
+              "slot": 10,
+              "id": "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+              "content": "梅拉妮在陶艺课上做了一个黑白花朵图案的碗，花了不少功夫并为此感到自豪；她说陶艺不只是爱好，而是帮助她表达情感、带来快乐的重要部分",
+              "graph_candidate": false
+            },
+            {
+              "slot": 11,
+              "id": "64393dc0-b146-4e40-a411-7bf1d540c910",
+              "content": "梅拉妮于2023年7月5日带孩子们去博物馆看恐龙展览，孩子们喜欢了解动物、觉得骨头很酷，这让她想起自己为什么喜欢当妈妈",
+              "graph_candidate": true
+            },
+            {
+              "slot": 12,
+              "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间",
+              "graph_candidate": false
+            },
+            {
+              "slot": 13,
+              "id": "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+              "content": "梅拉妮做艺术已有七年，找到了自己真正的灵感来源：绘画和陶艺；她于2023年9月分享了自己制作的带复杂花纹和紫色釉面的陶艺碗作品照片",
+              "graph_candidate": false
+            },
+            {
+              "slot": 14,
+              "id": "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+              "content": "梅拉妮于2023年6月中旬（对话前一周）带家人去山里露营，一起探索大自然、在篝火旁烤棉花糖并徒步，山顶景色很美，她两个年幼的孩子都热爱大自然，她认为这次家庭共处时光非常难忘",
+              "graph_candidate": false
+            },
+            {
+              "slot": 15,
+              "id": "0319c2f7-bfaa-4705-be23-453c21e142a3",
+              "content": "Melanie（对话伙伴）于2023年8月13日晚带女儿们庆祝生日，观看了一场户外演唱会，孩子们玩得开心；梅拉妮还曾在之前带孩子去海滩玩飞盘、放风筝",
+              "graph_candidate": false
+            }
+          ]
+        }
+      }
+    },
+    "locomo_conv-26_qa157": {
+      "question": "梅拉妮的项链象征着什么？",
+      "category": 5,
+      "source_turns": {
+        "D4:2": {
+          "session_id": "session_4",
+          "session_date": "10:37 am on 27 June, 2023",
+          "speaker": "梅拉妮",
+          "text": "嘿,卡罗琳!很高兴收到你的消息!我喜欢这条项链,它有什么特别的意义吗?"
+        },
+        "D4:3": {
+          "session_id": "session_4",
+          "session_date": "10:37 am on 27 June, 2023",
+          "speaker": "卡罗琳",
+          "text": "谢谢,梅拉妮!这条项链对我特别重要——是我奶奶送我的礼物,她在我祖国的家乡瑞典。我小时候她送给我,它代表着爱、信念和力量。它就像在提醒我我的根,以及我从家人那里得到的所有爱和支持。"
+        }
+      },
+      "arms": {
+        "decider": {
+          "jev": {
+            "first": 0.17,
+            "second": 0.17,
+            "expanded": true
+          },
+          "predicted_answer": "记忆中关于项链的记录属于卡罗琳而非梅拉妮。那条项链（十字架与心形吊坠）是她小时候在瑞典家乡时奶奶送的礼物，象征着爱、信念和力量，提醒她不忘自己的根以及家人的爱和支持。",
+          "final_context": [
+            {
+              "slot": 1,
+              "id": "19eafa36-b494-45c9-ac45-4f288aa0fa30",
+              "content": "卡罗琳珍藏着一条项链（十字架与心形吊坠），是她小时候在瑞典祖国的家乡时奶奶送给她的礼物，代表着爱、信念和力量，提醒她不忘自己的根以及家人的爱和支持",
+              "graph_candidate": false
+            },
+            {
+              "slot": 2,
+              "id": "7f5e4bd6-9c47-4afc-8f16-0980d82343de",
+              "content": "梅拉妮的花卉是她们婚礼布置的重要部分，总是让她想起婚礼那一天；她回忆婚礼充满爱与欢乐，所爱的所有人都在场庆祝，而和伴侣结婚并承诺永远在一起是最棒的部分",
+              "graph_candidate": false
+            },
+            {
+              "slot": 3,
+              "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+              "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静",
+              "graph_candidate": false
+            },
+            {
+              "slot": 4,
+              "id": "3f8d7567-dcac-4cc4-8af5-2e0245684373",
+              "content": "梅拉妮意识到自我关怀的重要性，认为照顾好自己才能更好地照顾家人，把自我关怀视为一段旅程",
+              "graph_candidate": false
+            },
+            {
+              "slot": 5,
+              "id": "2fe2215c-e092-4528-8aaf-af0adba4d8e9",
+              "content": "梅拉妮也画过一幅抽象画，用宁静的蓝色条纹表现安详，蓝色能让她平静，她想呈现宁静氛围与鲜艳色彩的结合",
+              "graph_candidate": false
+            },
+            {
+              "slot": 6,
+              "id": "1f34bd89-e1f8-4c2d-a3be-71861454360c",
+              "content": "梅拉妮会吹单簧管，从小就开始学习，这是她表达自己和放松的方式",
+              "graph_candidate": false
+            },
+            {
+              "slot": 7,
+              "id": "afb6c064-969a-497d-932d-ec1fde376700",
+              "content": "梅拉妮一家在科罗拉多大峡谷玩得很开心，她于2023年10月21日买了彩绘木制家庭人偶，让她想起家人之间的爱",
+              "graph_candidate": false
+            },
+            {
+              "slot": 8,
+              "id": "cf4e3728-fa86-49b8-bbe4-54810130882e",
+              "content": "梅拉妮永远难忘去年（2022年）露营时全家一起看英仙座流星雨的经历——清澈繁星的天空下全家许愿，让她感到与宇宙融为一体、渺小而充满敬畏",
+              "graph_candidate": false
+            },
+            {
+              "slot": 9,
+              "id": "86251053-f0d3-4dde-9f5c-312dea4e9aee",
+              "content": "梅拉妮说她与艺术有很深的联结，绘画帮助她表达情感、发挥创造力，艺术既是她的庇护所也是安慰的源泉，这段学习经历给她带来快乐和满足感",
+              "graph_candidate": false
+            },
+            {
+              "slot": 10,
+              "id": "fd375711-a43c-472d-8c37-61c944efe67d",
+              "content": "梅拉妮小时候最爱读的书是《夏洛的网》，友谊和同情心能带来改变这一点深深打动了她",
+              "graph_candidate": false
+            },
+            {
+              "slot": 11,
+              "id": "846921c3-b6db-4879-9f05-4499084b5510",
+              "content": "卡罗琳对梅拉妮车祸中儿子平安无事表示庆幸和宽慰，认为家人就是一切",
+              "graph_candidate": false
+            },
+            {
+              "slot": 12,
+              "id": "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+              "content": "梅拉妮在陶艺课上做了一个黑白花朵图案的碗，花了不少功夫并为此感到自豪；她说陶艺不只是爱好，而是帮助她表达情感、带来快乐的重要部分",
+              "graph_candidate": false
+            },
+            {
+              "slot": 13,
+              "id": "fcea2e55-c8c1-47ad-a406-91a4aecead16",
+              "content": "梅拉妮永远不会忘记她小女儿迈出人生第一步的那天，看着女儿摇摇晃晃的最初几步让她体会到生命的短暂和分享这些时刻的幸运",
+              "graph_candidate": false
+            },
+            {
+              "slot": 14,
+              "id": "6c2db0d3-6944-4461-96d9-1b0d5c65282e",
+              "content": "梅拉妮于2023年7月2日报了一个陶艺课，觉得陶艺像治疗一样，帮助她表达自己、发挥创造力并带来平静",
+              "graph_candidate": false
+            },
+            {
+              "slot": 15,
+              "id": "b38fcc7d-f091-4eb5-80a6-32b007c6ff74",
+              "content": "梅拉妮（梅尔）于2023年5月20日（对话前一周六）参加了一场心理健康公益跑，认为活动很有意义并发人深省，促使她认真思考如何照顾心理健康",
+              "graph_candidate": false
+            }
+          ]
+        },
+        "laya": {
+          "jev": {
+            "first": 0.93,
+            "expanded": false
+          },
+          "predicted_answer": "项链象征着爱、信念和力量，提醒卡罗琳不忘自己的根以及家人的爱和支持。",
+          "final_context": [
+            {
+              "slot": 1,
+              "id": "19eafa36-b494-45c9-ac45-4f288aa0fa30",
+              "content": "卡罗琳珍藏着一条项链（十字架与心形吊坠），是她小时候在瑞典祖国的家乡时奶奶送给她的礼物，代表着爱、信念和力量，提醒她不忘自己的根以及家人的爱和支持",
+              "graph_candidate": false
+            },
+            {
+              "slot": 2,
+              "id": "7f5e4bd6-9c47-4afc-8f16-0980d82343de",
+              "content": "梅拉妮的花卉是她们婚礼布置的重要部分，总是让她想起婚礼那一天；她回忆婚礼充满爱与欢乐，所爱的所有人都在场庆祝，而和伴侣结婚并承诺永远在一起是最棒的部分",
+              "graph_candidate": false
+            },
+            {
+              "slot": 3,
+              "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+              "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静",
+              "graph_candidate": false
+            },
+            {
+              "slot": 4,
+              "id": "3f8d7567-dcac-4cc4-8af5-2e0245684373",
+              "content": "梅拉妮意识到自我关怀的重要性，认为照顾好自己才能更好地照顾家人，把自我关怀视为一段旅程",
+              "graph_candidate": false
+            },
+            {
+              "slot": 5,
+              "id": "2fe2215c-e092-4528-8aaf-af0adba4d8e9",
+              "content": "梅拉妮也画过一幅抽象画，用宁静的蓝色条纹表现安详，蓝色能让她平静，她想呈现宁静氛围与鲜艳色彩的结合",
+              "graph_candidate": false
+            },
+            {
+              "slot": 6,
+              "id": "1f34bd89-e1f8-4c2d-a3be-71861454360c",
+              "content": "梅拉妮会吹单簧管，从小就开始学习，这是她表达自己和放松的方式",
+              "graph_candidate": false
+            },
+            {
+              "slot": 7,
+              "id": "afb6c064-969a-497d-932d-ec1fde376700",
+              "content": "梅拉妮一家在科罗拉多大峡谷玩得很开心，她于2023年10月21日买了彩绘木制家庭人偶，让她想起家人之间的爱",
+              "graph_candidate": false
+            },
+            {
+              "slot": 8,
+              "id": "cf4e3728-fa86-49b8-bbe4-54810130882e",
+              "content": "梅拉妮永远难忘去年（2022年）露营时全家一起看英仙座流星雨的经历——清澈繁星的天空下全家许愿，让她感到与宇宙融为一体、渺小而充满敬畏",
+              "graph_candidate": false
+            },
+            {
+              "slot": 9,
+              "id": "86251053-f0d3-4dde-9f5c-312dea4e9aee",
+              "content": "梅拉妮说她与艺术有很深的联结，绘画帮助她表达情感、发挥创造力，艺术既是她的庇护所也是安慰的源泉，这段学习经历给她带来快乐和满足感",
+              "graph_candidate": false
+            },
+            {
+              "slot": 10,
+              "id": "fd375711-a43c-472d-8c37-61c944efe67d",
+              "content": "梅拉妮小时候最爱读的书是《夏洛的网》，友谊和同情心能带来改变这一点深深打动了她",
+              "graph_candidate": false
+            },
+            {
+              "slot": 11,
+              "id": "846921c3-b6db-4879-9f05-4499084b5510",
+              "content": "卡罗琳对梅拉妮车祸中儿子平安无事表示庆幸和宽慰，认为家人就是一切",
+              "graph_candidate": false
+            },
+            {
+              "slot": 12,
+              "id": "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+              "content": "梅拉妮在陶艺课上做了一个黑白花朵图案的碗，花了不少功夫并为此感到自豪；她说陶艺不只是爱好，而是帮助她表达情感、带来快乐的重要部分",
+              "graph_candidate": false
+            },
+            {
+              "slot": 13,
+              "id": "fcea2e55-c8c1-47ad-a406-91a4aecead16",
+              "content": "梅拉妮永远不会忘记她小女儿迈出人生第一步的那天，看着女儿摇摇晃晃的最初几步让她体会到生命的短暂和分享这些时刻的幸运",
+              "graph_candidate": false
+            },
+            {
+              "slot": 14,
+              "id": "6c2db0d3-6944-4461-96d9-1b0d5c65282e",
+              "content": "梅拉妮于2023年7月2日报了一个陶艺课，觉得陶艺像治疗一样，帮助她表达自己、发挥创造力并带来平静",
+              "graph_candidate": false
+            },
+            {
+              "slot": 15,
+              "id": "b38fcc7d-f091-4eb5-80a6-32b007c6ff74",
+              "content": "梅拉妮（梅尔）于2023年5月20日（对话前一周六）参加了一场心理健康公益跑，认为活动很有意义并发人深省，促使她认真思考如何照顾心理健康",
+              "graph_candidate": false
+            }
+          ]
+        }
+      }
+    },
+    "locomo_conv-48_qa233": {
+      "question": "乔琳和妈妈的老朋友们做了什么？",
+      "category": 5,
+      "source_turns": {
+        "D28:6": {
+          "session_id": "session_28",
+          "session_date": "3:09 pm on 15 September, 2023",
+          "speaker": "乔琳",
+          "text": "看起来玩得很开心！那天你和你妈妈的朋友们做了什么？"
+        },
+        "D28:7": {
+          "session_id": "session_28",
+          "session_date": "3:09 pm on 15 September, 2023",
+          "speaker": "黛博拉",
+          "text": "我们一起回忆往事，翻看她的照片。真的很温馨。"
+        }
+      },
+      "arms": {
+        "decider": {
+          "jev": {
+            "first": 0.24,
+            "second": 0.22,
+            "expanded": true
+          },
+          "predicted_answer": "乔琳和老朋友们一起吃了晚饭并喝酒放松，大家举杯共饮，享用美食和红酒，度过了愉快的夜晚（2023年2月21日晚）。",
+          "final_context": [
+            {
+              "slot": 1,
+              "id": "30adf307-75c4-4816-8cb9-0cecd0c60ea3",
+              "content": "乔琳于2023年2月21日晚与朋友一起吃晚饭并喝酒放松，玩得很开心（有朋友举杯、食物和红酒的照片）",
+              "graph_candidate": false
+            },
+            {
+              "slot": 2,
+              "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+              "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+              "graph_candidate": false
+            },
+            {
+              "slot": 3,
+              "id": "99a358ca-af75-4db7-872b-292eed3fa036",
+              "content": "乔琳养了一株新植物（盆栽），把它当作照顾好自己、拥抱新开始的提醒",
+              "graph_candidate": false
+            },
+            {
+              "slot": 4,
+              "id": "d6af7376-6e56-4a73-942e-244aee4f3a2d",
+              "content": "乔琳的伴侣从事创作事业，两人都通过追求各自的热爱来纪念逝去的亲人",
+              "graph_candidate": false
+            },
+            {
+              "slot": 5,
+              "id": "081b64f8-cfd5-46a5-ac9f-eea6094daf8a",
+              "content": "乔琳（黛布的朋友）在2023年5月完成了那个棘手的太阳能工程项目，做出了一个带太阳能板的太阳能动力车，她为自己在遇到诸多问题时仍坚持完成而感到自豪，认为这是一个重要里程碑",
+              "graph_candidate": true
+            },
+            {
+              "slot": 6,
+              "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+              "content": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+              "graph_candidate": false
+            },
+            {
+              "slot": 7,
+              "id": "7229078f-abfa-4b72-b365-5b4a05a7e1df",
+              "content": "黛布向乔琳保证随时提供支持，两人约定尽快聚一聚解决乔琳的学业压力",
+              "graph_candidate": true
+            },
+            {
+              "slot": 8,
+              "id": "9f60d026-6b03-43be-af41-4d7a6cbd45d2",
+              "content": "乔琳和伴侣于2023年9月15日（上周五）去上了一节潜水课，玩得很开心；她希望有一天能成为认证潜水员，还找到了一个两人可以一起探索的潜水点",
+              "graph_candidate": true
+            },
+            {
+              "slot": 9,
+              "id": "db10a1eb-cea3-46f6-bb8d-33d037b376eb",
+              "content": "乔琳和伴侣在里约热内卢旅行期间进行了多次远足，并参观了一座古老的寺庙，那里的楼梯令人惊艳",
+              "graph_candidate": false
+            },
+            {
+              "slot": 10,
+              "id": "7ce9e4c1-c5a3-4a53-8fcc-f5ef8cfcc8f0",
+              "content": "乔琳（工程师）在2023年1月底（对话于2023年2月4日前一周）完成了一个重要里程碑：她通过大量规划和研究，为一个有需要的农村社区设计并建造了一台可持续的水净化器。看到它运转并为社区提供干净的水让她感到无比满足，觉得自己做了一件有意义的好事。",
+              "graph_candidate": true
+            },
+            {
+              "slot": 11,
+              "id": "3b8871be-fc08-46a6-8a2b-cbbdf209866d",
+              "content": "乔琳会去附近一个宁静的地方冥想（那里有一个长着睡莲的池塘和树木），冥想帮助她理清思绪、缓解压力，感觉像一次重启",
+              "graph_candidate": false
+            },
+            {
+              "slot": 12,
+              "id": "69663adb-8c91-4e02-aaea-03d538dc0323",
+              "content": "乔琳最近迷上了瑜伽和冥想，认为它们帮助她恢复精力、缓解紧张、带来内心平静；她已与伴侣分享了对瑜伽的热爱，并计划一起去参加冥想静修营",
+              "graph_candidate": true
+            },
+            {
+              "slot": 13,
+              "id": "e5cab5cf-54d1-43ee-b174-68eed8981549",
+              "content": "黛布和丈夫一起翻看家庭相册，照片在困难时期给她带来平静；她分享了一张父母1993年婚礼的照片",
+              "graph_candidate": true
+            },
+            {
+              "slot": 14,
+              "id": "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+              "content": "乔琳断断续续练习瑜伽和冥想约三年，认为它们对缓解压力、保持内心平静有非常积极的影响，是她度过困难时刻的重要支持",
+              "graph_candidate": false
+            },
+            {
+              "slot": 15,
+              "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+              "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+              "graph_candidate": true
+            }
+          ]
+        },
+        "laya": {
+          "jev": {
+            "first": 0.41,
+            "expanded": false
+          },
+          "predicted_answer": "乔琳和朋友们在2023年2月21日晚一起吃晚饭并喝酒放松，度过了愉快的时光（朋友们举杯共饮）。",
+          "final_context": [
+            {
+              "slot": 1,
+              "id": "30adf307-75c4-4816-8cb9-0cecd0c60ea3",
+              "content": "乔琳于2023年2月21日晚与朋友一起吃晚饭并喝酒放松，玩得很开心（有朋友举杯、食物和红酒的照片）",
+              "graph_candidate": false
+            },
+            {
+              "slot": 2,
+              "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+              "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+              "graph_candidate": false
+            },
+            {
+              "slot": 3,
+              "id": "99a358ca-af75-4db7-872b-292eed3fa036",
+              "content": "乔琳养了一株新植物（盆栽），把它当作照顾好自己、拥抱新开始的提醒",
+              "graph_candidate": false
+            },
+            {
+              "slot": 4,
+              "id": "d6af7376-6e56-4a73-942e-244aee4f3a2d",
+              "content": "乔琳的伴侣从事创作事业，两人都通过追求各自的热爱来纪念逝去的亲人",
+              "graph_candidate": false
+            },
+            {
+              "slot": 5,
+              "id": "49ffa49d-8dfe-486b-8fa9-9d822f82f79d",
+              "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+              "graph_candidate": false
+            },
+            {
+              "slot": 6,
+              "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+              "content": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+              "graph_candidate": false
+            },
+            {
+              "slot": 7,
+              "id": "db10a1eb-cea3-46f6-bb8d-33d037b376eb",
+              "content": "乔琳和伴侣在里约热内卢旅行期间进行了多次远足，并参观了一座古老的寺庙，那里的楼梯令人惊艳",
+              "graph_candidate": false
+            },
+            {
+              "slot": 8,
+              "id": "7ce9e4c1-c5a3-4a53-8fcc-f5ef8cfcc8f0",
+              "content": "乔琳（工程师）在2023年1月底（对话于2023年2月4日前一周）完成了一个重要里程碑：她通过大量规划和研究，为一个有需要的农村社区设计并建造了一台可持续的水净化器。看到它运转并为社区提供干净的水让她感到无比满足，觉得自己做了一件有意义的好事。",
+              "graph_candidate": true
+            },
+            {
+              "slot": 9,
+              "id": "3b8871be-fc08-46a6-8a2b-cbbdf209866d",
+              "content": "乔琳会去附近一个宁静的地方冥想（那里有一个长着睡莲的池塘和树木），冥想帮助她理清思绪、缓解压力，感觉像一次重启",
+              "graph_candidate": false
+            },
+            {
+              "slot": 10,
+              "id": "e5cab5cf-54d1-43ee-b174-68eed8981549",
+              "content": "黛布和丈夫一起翻看家庭相册，照片在困难时期给她带来平静；她分享了一张父母1993年婚礼的照片",
+              "graph_candidate": true
+            },
+            {
+              "slot": 11,
+              "id": "d2294f78-a9e3-43d2-ab3d-167bd85162f3",
+              "content": "乔琳断断续续练习瑜伽和冥想约三年，认为它们对缓解压力、保持内心平静有非常积极的影响，是她度过困难时刻的重要支持",
+              "graph_candidate": false
+            },
+            {
+              "slot": 12,
+              "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+              "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+              "graph_candidate": true
+            },
+            {
+              "slot": 13,
+              "id": "76132e9c-5c99-49b2-b011-cd39c956d239",
+              "content": "乔琳和她的伴侣计划去露营，亲近大自然并练习瑜伽（约2023年9月）",
+              "graph_candidate": false
+            },
+            {
+              "slot": 14,
+              "id": "a64171a9-0f3b-4c67-b845-4bb17f0f1073",
+              "content": "乔琳在2023年8月18日左右（对话前的那个周五）与伴侣进行了一次动情的谈话，聊逝去的亲人如何影响他们及他们的价值观，这次谈话让他们更亲近；她妈妈教会她永不放弃，伴侣的爸爸示范了坚定决心",
+              "graph_candidate": false
+            },
+            {
+              "slot": 15,
+              "id": "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+              "content": "乔琳养蛇作为宠物，觉得和蛇在一起的时光很宝贵，教会她放慢脚步、与自己保持协调",
+              "graph_candidate": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "qa233_memory_version_trace": {
+    "decider": {
+      "historical_source_memory_id": "663e599c-0540-4a4c-9054-05001d54f70f",
+      "archived_candidate_hits": [
+        {
+          "case_id": "locomo_conv-48_qa1",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa2",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa9",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa12",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa8",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa22",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa31",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa43",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa44",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa71",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa152",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa153",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa154",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa180",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa184",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa186",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa185",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa189",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa190",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa193",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa212",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa220",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa222",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa231",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa232",
+          "vector": true,
+          "graph": false,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa237",
+          "vector": true,
+          "graph": false,
+          "selected": false
+        }
+      ]
+    },
+    "laya": {
+      "historical_source_memory_id": "663e599c-0540-4a4c-9054-05001d54f70f",
+      "archived_candidate_hits": [
+        {
+          "case_id": "locomo_conv-48_qa1",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa2",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa9",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa12",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa8",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa22",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa31",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa43",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa44",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa71",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa152",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa153",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa154",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa180",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa184",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa185",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa190",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa186",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa189",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa193",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa212",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa220",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa222",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa232",
+          "vector": true,
+          "graph": false,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa231",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa237",
+          "vector": true,
+          "graph": false,
+          "selected": false
+        }
+      ]
+    },
+    "no_graph": {
+      "archive": "results_zh/zhfull_locomo_20260925_115806.jsonl",
+      "sha256": "93064eba9874433683793124caf3078509e9253ee396a3d89d8baefb256217b4",
+      "historical_source_memory_id": "663e599c-0540-4a4c-9054-05001d54f70f",
+      "archived_candidate_hits": [
+        {
+          "case_id": "locomo_conv-48_qa1",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa2",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa9",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa12",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa8",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa31",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa43",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa44",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa22",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa71",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa154",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa153",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa180",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa184",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa189",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa212",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa222",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa232",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa231",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa237",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        }
+      ]
+    },
+    "fused_no_jev": {
+      "archive": "results_zh/zhfull_fused_locomo_20260925_161049.jsonl",
+      "sha256": "1834c9fdc69c7697d290d24ab1f0d7a9f5c2a5857892695a75e0628b87dd22ab",
+      "historical_source_memory_id": "663e599c-0540-4a4c-9054-05001d54f70f",
+      "archived_candidate_hits": [
+        {
+          "case_id": "locomo_conv-48_qa1",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa8",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa2",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa9",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa12",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa22",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa31",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa43",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa44",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa71",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa153",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa152",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa154",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa180",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa184",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa185",
+          "vector": false,
+          "graph": true,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa189",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa212",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa222",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa232",
+          "vector": true,
+          "graph": false,
+          "selected": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa231",
+          "vector": true,
+          "graph": false,
+          "selected": true
+        },
+        {
+          "case_id": "locomo_conv-48_qa237",
+          "vector": true,
+          "graph": false,
+          "selected": false
+        }
+      ]
+    },
+    "historical_memory": {
+      "id": "663e599c-0540-4a4c-9054-05001d54f70f",
+      "history": [
+        {
+          "event": "ADD",
+          "created_at": "2026-09-25T03:45:23.727911+00:00",
+          "updated_at": null,
+          "is_deleted": 0
+        },
+        {
+          "event": "DELETE",
+          "created_at": "2026-09-25T03:45:23.727911+00:00",
+          "updated_at": "2026-09-26T00:20:24.057229+00:00",
+          "is_deleted": 1
+        }
+      ],
+      "content": "黛布在2023年9月中旬与已故妈妈的老朋友们重新取得了联系，听到关于妈妈的从未听过的事，心情既开心又难过，但整体感到安慰和感激；她们一起回忆往事并翻看照片"
+    },
+    "current_memory": {
+      "id": "53330642-0df8-47e7-9a80-7730d6b95834",
+      "history": [
+        {
+          "event": "ADD",
+          "created_at": "2026-09-26T00:42:35.295764+00:00",
+          "updated_at": null,
+          "is_deleted": 0
+        }
+      ],
+      "content": "黛布自2023年9月中旬以来与已故母亲的老朋友们重新取得联系，一起回忆往事、翻看母亲的照片，听到了许多以前从未听过的关于母亲的故事，既开心又难过，感到心情复杂但总体上很受安慰"
+    }
+  },
+  "limits": [
+    "Cases were selected from a prior RSI attribution probe, not sampled for Jev accuracy.",
+    "Expanded first-stage ordered contexts are absent from historical logs and are not reconstructed.",
+    "The original service request bodies and unrounded probabilities are absent from these archives.",
+    "Historical arms are separate runs, not a within-run causal comparison."
+  ]
+}
