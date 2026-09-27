@@ -1,0 +1,4625 @@
+{
+  "scope": "Fixed hash ten of 43 complete, unflagged literal-target Chinese preference questions; independent historical runs; zero new model calls",
+  "selection": {
+    "seed": "m2_preference_relation_sample_20260928|",
+    "eligible_ids": [
+      "locomo_conv-26_qa103",
+      "locomo_conv-26_qa19",
+      "locomo_conv-30_qa39",
+      "locomo_conv-30_qa40",
+      "locomo_conv-30_qa41",
+      "locomo_conv-42_qa102",
+      "locomo_conv-42_qa113",
+      "locomo_conv-42_qa114",
+      "locomo_conv-42_qa115",
+      "locomo_conv-42_qa155",
+      "locomo_conv-42_qa156",
+      "locomo_conv-42_qa197",
+      "locomo_conv-42_qa75",
+      "locomo_conv-42_qa90",
+      "locomo_conv-42_qa91",
+      "locomo_conv-42_qa95",
+      "locomo_conv-42_qa96",
+      "locomo_conv-43_qa11",
+      "locomo_conv-43_qa134",
+      "locomo_conv-43_qa167",
+      "locomo_conv-43_qa35",
+      "locomo_conv-43_qa65",
+      "locomo_conv-43_qa70",
+      "locomo_conv-43_qa96",
+      "locomo_conv-43_qa99",
+      "locomo_conv-44_qa20",
+      "locomo_conv-47_qa121",
+      "locomo_conv-47_qa129",
+      "locomo_conv-47_qa86",
+      "locomo_conv-47_qa87",
+      "locomo_conv-48_qa106",
+      "locomo_conv-48_qa118",
+      "locomo_conv-48_qa140",
+      "locomo_conv-48_qa156",
+      "locomo_conv-48_qa172",
+      "locomo_conv-48_qa25",
+      "locomo_conv-48_qa90",
+      "locomo_conv-49_qa108",
+      "locomo_conv-49_qa14",
+      "locomo_conv-50_qa113",
+      "locomo_conv-50_qa46",
+      "locomo_conv-50_qa6",
+      "locomo_conv-50_qa72"
+    ],
+    "selected_ids": [
+      "locomo_conv-48_qa25",
+      "locomo_conv-26_qa103",
+      "locomo_conv-48_qa106",
+      "locomo_conv-30_qa39",
+      "locomo_conv-47_qa87",
+      "locomo_conv-48_qa90",
+      "locomo_conv-42_qa156",
+      "locomo_conv-42_qa95",
+      "locomo_conv-42_qa75",
+      "locomo_conv-50_qa46"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-48_qa25",
+      "source": {
+        "english": {
+          "question": "What are Jolene's favorite books?",
+          "answer": "Sapiens, Avalanche by Neal Stephenson",
+          "evidence": [
+            {
+              "dia_id": "D4:21",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:18",
+                  "speaker": "Deborah",
+                  "text": "Sure! To do this modified pose, sit on the edge of a chair with your feet planted. Twist your torso to one side and use your hand on your knee for support. You'll feel a stretch in your back and shoulders as you hold it for a few breaths, then switch sides. It's great for relaxing tense muscles.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:19",
+                  "speaker": "Jolene",
+                  "text": "Sounds really hard! Here's my bookshelf!",
+                  "query": "bookshelf engineering books projects",
+                  "blip_caption": "a photo of a book shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "Deborah",
+                  "text": "That's quite a collection! Have you had a favorite book lately? I'd love to hear your thoughts.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "Jolene",
+                  "text": "Thanks Deborah! I'm really into this book called \"Sapiens\" - it's a fascinating look at human history and how technology has affected us. It's giving me a lot to think about!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "Deborah",
+                  "text": "Great, this is interesting! Have you come across any recent ones that really struck you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "Jolene",
+                  "text": "Two weeks ago I read \"Avalanche\" by Neal Stephenson in one sitting! ",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "Deborah",
+                  "text": "That sounds cool, Jolene. Stories can be so powerful - they can teach us, motivate us, and bring us together. ",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D4:23",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "Deborah",
+                  "text": "That's quite a collection! Have you had a favorite book lately? I'd love to hear your thoughts.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "Jolene",
+                  "text": "Thanks Deborah! I'm really into this book called \"Sapiens\" - it's a fascinating look at human history and how technology has affected us. It's giving me a lot to think about!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "Deborah",
+                  "text": "Great, this is interesting! Have you come across any recent ones that really struck you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "Jolene",
+                  "text": "Two weeks ago I read \"Avalanche\" by Neal Stephenson in one sitting! ",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "Deborah",
+                  "text": "That sounds cool, Jolene. Stories can be so powerful - they can teach us, motivate us, and bring us together. ",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:25",
+                  "speaker": "Jolene",
+                  "text": "I also read a recent story about someone who became successful despite facing numerous challenges. It really showed me that anything is possible if you believe and work hard.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:26",
+                  "speaker": "Deborah",
+                  "text": "That's a really powerful message. It reminds me of someone special and their grace and strength when they faced hardships. Check out this creation!",
+                  "query": "mother bouquet flowers wedding",
+                  "blip_caption": "a photo of a bouquet of flowers in a vase on a table"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "乔琳最喜欢的书有哪些？",
+          "answer": "《人类简史》、尼尔·斯蒂芬森的《雪崩》",
+          "evidence": [
+            {
+              "dia_id": "D4:21",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:18",
+                  "speaker": "黛博拉",
+                  "text": "当然！做这个改良体式时，坐在椅子边缘，双脚踩实地面。躯干向一侧扭转，用手撑在膝盖上借力。保持几个呼吸，你会感到背部和肩膀得到拉伸，然后换边。它对放松紧张的肌肉非常有效。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:19",
+                  "speaker": "乔琳",
+                  "text": "听起来好难啊！这是我的书架！",
+                  "query": "bookshelf engineering books projects",
+                  "blip_caption": "a photo of a book shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "黛博拉",
+                  "text": "收藏真不少！最近有特别喜欢的书吗？我很想听听你的想法。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "乔琳",
+                  "text": "谢谢黛博拉！我最近迷上了一本叫《人类简史》的书——它对人类历史以及科技如何影响我们做了非常引人入胜的探讨。它给了我很多思考！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "黛博拉",
+                  "text": "很好，真有意思！最近有没有读到什么让你印象深刻的作品？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "乔琳",
+                  "text": "两周前，我一口气读完了尼尔·斯蒂芬森的《雪崩》！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "黛博拉",
+                  "text": "听起来很酷，乔琳。故事可以非常有力——它们能教导我们、激励我们，把我们凝聚在一起。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D4:23",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "黛博拉",
+                  "text": "收藏真不少！最近有特别喜欢的书吗？我很想听听你的想法。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "乔琳",
+                  "text": "谢谢黛博拉！我最近迷上了一本叫《人类简史》的书——它对人类历史以及科技如何影响我们做了非常引人入胜的探讨。它给了我很多思考！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "黛博拉",
+                  "text": "很好，真有意思！最近有没有读到什么让你印象深刻的作品？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "乔琳",
+                  "text": "两周前，我一口气读完了尼尔·斯蒂芬森的《雪崩》！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "黛博拉",
+                  "text": "听起来很酷，乔琳。故事可以非常有力——它们能教导我们、激励我们，把我们凝聚在一起。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:25",
+                  "speaker": "乔琳",
+                  "text": "我还读了一个最近的故事，讲的是一个人尽管面临重重挑战仍然取得了成功。它真的让我明白，只要相信并努力，一切皆有可能。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:26",
+                  "speaker": "黛博拉",
+                  "text": "这真是一个很有力量的信息。它让我想起一位特别的人，以及她在面对苦难时展现的优雅与坚强。看看这个作品！",
+                  "query": "mother bouquet flowers wedding",
+                  "blip_caption": "a photo of a bouquet of flowers in a vase on a table"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "乔琳喜欢的书包括：尼尔·斯蒂芬森的《雪崩》（2023年1月下旬一口气读完）、《人类简史》（2023年初迷上，喜欢其对人类历史及科技影响的探讨）、一本关于自我发现的书（曾在浴室里读，很有共鸣），以及一个关于人克服重重挑战取得成功的故事（深受鼓舞）。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "2527b4b0-45dc-4796-8e32-a175af3323f4",
+              "content": "乔琳最近迷上了《人类简史》一书，喜欢它对人类历史及科技如何影响人类的探讨；她还于2023年1月下旬（对话前两周）一口气读完了尼尔·斯蒂芬森的《雪崩》，并读了一个关于人克服重重挑战取得成功的故事，深受鼓舞。",
+              "route": "vector",
+              "session_date": "9:48 am on 4 February, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "14b5b648-5b05-4d2f-8088-fe32669b6c8a",
+              "content": "乔琳曾在浴室里读过一本关于自我发现的书，非常有共鸣，她觉得自己的浴室很有美感",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "d6d8d2fb-8cef-4f3c-86bc-f4825e0cbcf9",
+              "content": "乔琳表示自己一直很喜欢动物，认为宠物能给生活带来快乐和明亮，希望听到关于塞拉菲姆的故事",
+              "route": "vector",
+              "session_date": "9:17 am on 26 June, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "5d99645a-5f96-43d1-817d-3fc0cb242004",
+              "content": "乔琳最喜欢的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，这是她减压和暂时逃离生活的方式",
+              "route": "vector",
+              "session_date": "2:14 pm on 3 September, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+              "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "49ffa49d-8dfe-486b-8fa9-9d822f82f79d",
+              "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "a0a619e4-00fc-4aad-bfa7-094ca35f5078",
+              "content": "乔琳见面 Café 前需要整理书柜里的工程教科书，之后才有空赴约",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "1cd55e29-e74a-48c9-9244-f55e60461658",
+              "content": "乔琳对绿色科技很感兴趣，认为它可以为欠发达地区带来改变，她想深入研究并看看自己能做什么贡献。",
+              "route": "vector",
+              "session_date": "9:03 pm on 9 February, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+              "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+              "route": "vector",
+              "session_date": "9:49 am on 27 January, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "db0fb2fd-4721-4e3a-936e-b034db9aec5e",
+              "content": "乔琳在2023年2月9日的对话中分享了她的计划本草图照片——一本工程笔记本，其中有带笔记的一页，记录了她的志愿STEM项目想法。",
+              "route": "vector",
+              "session_date": "9:03 pm on 9 February, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "a8d73db4-587e-46cc-9ccf-94fa8efcfd34",
+              "content": "乔琳设计了带有星系和电路元素的笔记本，灵感来自她对太空和发动机的热爱，并于2023年8月与黛布分享了这些作品",
+              "route": "vector",
+              "session_date": "8:50 pm on 12 August, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "ff075bc8-c3d2-40ef-8784-ef9f8746c927",
+              "content": "乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战、完成艰难成就是增进感情、变得更亲密的好方式",
+              "route": "vector",
+              "session_date": "7:37 pm on 9 July, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "aa223067-097e-4734-a05c-bcde9d9683c3",
+              "content": "乔琳在2023年8月开始尝试时间管理方法——子弹笔记（bullet journal），用它追踪任务和保持条理，划掉清单任务时感到特别满足，并分享了一张带有她最喜欢的名言的排版截图",
+              "route": "vector",
+              "session_date": "2:58 pm on 16 August, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "51bade2c-7847-4345-836d-37004ae279c4",
+              "content": "乔琳认为在各种事物中看到艺术与设计，让她对工程问题有了独特的视角",
+              "route": "vector",
+              "session_date": "8:50 pm on 12 August, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "32e84125-9bb8-4c33-8996-2decc6f2d42f",
+              "content": "乔琳养蛇作为宠物，觉得和蛇在一起的时光很宝贵，教会她放慢脚步、与自己保持协调",
+              "route": "vector",
+              "session_date": "4:30 pm on 9 April, 2023"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer includes both gold items (《人类简史》 and 尼尔·斯蒂芬森的《雪崩》) precisely; additional vague titles are extra detail but do not contradict the gold."
+          }
+        },
+        "graph": {
+          "answer": "乔琳明确提到的最喜欢的书包括：\n- 《人类简史》（Sapiens）—— 她最近迷上，喜欢它对人类历史及科技如何影响人类的探讨（2023年2月）\n- 尼尔·斯蒂芬森的《雪崩》（Snow Crash）—— 她2023年1月下旬一口气读完\n- 一本关于自我发现的书 —— 她在浴室里读，非常有共鸣（2023年9月）\n\n此外，作为工程师她还拥有工程教科书，并读过一本关于人克服挑战取得成功的故事并深受鼓舞（书名未提及）。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "2527b4b0-45dc-4796-8e32-a175af3323f4",
+              "content": "乔琳最近迷上了《人类简史》一书，喜欢它对人类历史及科技如何影响人类的探讨；她还于2023年1月下旬（对话前两周）一口气读完了尼尔·斯蒂芬森的《雪崩》，并读了一个关于人克服重重挑战取得成功的故事，深受鼓舞。",
+              "route": "vector",
+              "session_date": "9:48 am on 4 February, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "14b5b648-5b05-4d2f-8088-fe32669b6c8a",
+              "content": "乔琳曾在浴室里读过一本关于自我发现的书，非常有共鸣，她觉得自己的浴室很有美感",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "d6d8d2fb-8cef-4f3c-86bc-f4825e0cbcf9",
+              "content": "乔琳表示自己一直很喜欢动物，认为宠物能给生活带来快乐和明亮，希望听到关于塞拉菲姆的故事",
+              "route": "vector",
+              "session_date": "9:17 am on 26 June, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "5d99645a-5f96-43d1-817d-3fc0cb242004",
+              "content": "乔琳最喜欢的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，这是她减压和暂时逃离生活的方式",
+              "route": "vector",
+              "session_date": "2:14 pm on 3 September, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+              "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "49ffa49d-8dfe-486b-8fa9-9d822f82f79d",
+              "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+              "content": "黛布通过工作坊和书籍开始接触正念，如今正念已成为她生活中很大的一部分；她向乔琳推荐了正念",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 8,
+              "id": "a0a619e4-00fc-4aad-bfa7-094ca35f5078",
+              "content": "乔琳见面 Café 前需要整理书柜里的工程教科书，之后才有空赴约",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "1cd55e29-e74a-48c9-9244-f55e60461658",
+              "content": "乔琳对绿色科技很感兴趣，认为它可以为欠发达地区带来改变，她想深入研究并看看自己能做什么贡献。",
+              "route": "vector",
+              "session_date": "9:03 pm on 9 February, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+              "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+              "route": "vector",
+              "session_date": "9:49 am on 27 January, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+              "content": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+              "route": "vector",
+              "session_date": "9:26 am on 1 August, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "db0fb2fd-4721-4e3a-936e-b034db9aec5e",
+              "content": "乔琳在2023年2月9日的对话中分享了她的计划本草图照片——一本工程笔记本，其中有带笔记的一页，记录了她的志愿STEM项目想法。",
+              "route": "vector",
+              "session_date": "9:03 pm on 9 February, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "a8d73db4-587e-46cc-9ccf-94fa8efcfd34",
+              "content": "乔琳设计了带有星系和电路元素的笔记本，灵感来自她对太空和发动机的热爱，并于2023年8月与黛布分享了这些作品",
+              "route": "vector",
+              "session_date": "8:50 pm on 12 August, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "ff075bc8-c3d2-40ef-8784-ef9f8746c927",
+              "content": "乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战、完成艰难成就是增进感情、变得更亲密的好方式",
+              "route": "vector",
+              "session_date": "7:37 pm on 9 July, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "aa223067-097e-4734-a05c-bcde9d9683c3",
+              "content": "乔琳在2023年8月开始尝试时间管理方法——子弹笔记（bullet journal），用它追踪任务和保持条理，划掉清单任务时感到特别满足，并分享了一张带有她最喜欢的名言的排版截图",
+              "route": "vector",
+              "session_date": "2:58 pm on 16 August, 2023"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "回答中包含了《人类简史》和尼尔·斯蒂芬森的《雪崩》，并附有正确的补充细节。"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa103",
+      "source": {
+        "english": {
+          "question": "What was Melanie's favorite book from her childhood?",
+          "answer": "\"Charlotte's Web\"",
+          "evidence": [
+            {
+              "dia_id": "D6:10",
+              "session": "session_6",
+              "session_date": "8:18 pm on 6 July, 2023",
+              "window": [
+                {
+                  "dia_id": "D6:7",
+                  "speaker": "Caroline",
+                  "text": "Being a mom is awesome. I'm creating a library for when I have kids. I'm really looking forward to reading to them and opening up their minds.",
+                  "query": "bookshelf childrens books library",
+                  "blip_caption": "a photo of a bookcase filled with books and toys"
+                },
+                {
+                  "dia_id": "D6:8",
+                  "speaker": "Melanie",
+                  "text": "Sounds great! What kind of books you got in your library?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:9",
+                  "speaker": "Caroline",
+                  "text": "I've got lots of kids' books- classics, stories from different cultures, educational books, all of that. What's a favorite book you remember from your childhood?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:10",
+                  "speaker": "Melanie",
+                  "text": "I loved reading \"Charlotte's Web\" as a kid. It was so cool seeing how friendship and compassion can make a difference.",
+                  "query": "charlotte's web book",
+                  "blip_caption": "a photo of a book cover with a picture of a girl and a cat"
+                },
+                {
+                  "dia_id": "D6:11",
+                  "speaker": "Caroline",
+                  "text": "Wow, that's great! It sure shows how important friendship and compassion are. It's made me appreciate how lucky I am to have my friends and family helping with my transition. They make all the difference. We even had a picnic last week!",
+                  "query": "group friends picnic",
+                  "blip_caption": "a photo of a group of women sitting on a blanket in a park"
+                },
+                {
+                  "dia_id": "D6:12",
+                  "speaker": "Melanie",
+                  "text": "That's a gorgeous photo, Caroline! Wow, the love around you is awesome. How have your friends and fam been helping you out with your transition?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:13",
+                  "speaker": "Caroline",
+                  "text": "Thanks, Melanie! This support network has been amazing. They've been there for me every step of the way giving me love, guidance, and acceptance. I couldn't have done it without them.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "梅拉妮童年最喜欢的书是什么？",
+          "answer": "《夏洛的网》",
+          "evidence": [
+            {
+              "dia_id": "D6:10",
+              "session": "session_6",
+              "session_date": "8:18 pm on 6 July, 2023",
+              "window": [
+                {
+                  "dia_id": "D6:7",
+                  "speaker": "卡罗琳",
+                  "text": "当妈妈真了不起。我正在为将来有了孩子建一个小图书馆。我非常期待给他们读书、开阔他们的眼界。",
+                  "query": "bookshelf childrens books library",
+                  "blip_caption": "a photo of a bookcase filled with books and toys"
+                },
+                {
+                  "dia_id": "D6:8",
+                  "speaker": "梅拉妮",
+                  "text": "听起来真好！你的图书馆里都放了什么书？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:9",
+                  "speaker": "卡罗琳",
+                  "text": "我有很多童书——经典作品、来自不同文化的故事、教育类书籍，应有尽有。你童年时记得最喜欢的一本书是什么？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:10",
+                  "speaker": "梅拉妮",
+                  "text": "我小时候最爱读《夏洛的网》。看到友谊和同情心能带来改变，真的太打动人了。",
+                  "query": "charlotte's web book",
+                  "blip_caption": "a photo of a book cover with a picture of a girl and a cat"
+                },
+                {
+                  "dia_id": "D6:11",
+                  "speaker": "卡罗琳",
+                  "text": "哇，太好了！这本书确实说明了友谊和同情心有多重要。它让我更加感激能有朋友和家人在我的转变过程中帮助我。他们的意义重大。我们上周还去野餐了呢！",
+                  "query": "group friends picnic",
+                  "blip_caption": "a photo of a group of women sitting on a blanket in a park"
+                },
+                {
+                  "dia_id": "D6:12",
+                  "speaker": "梅拉妮",
+                  "text": "这张照片太美了，卡罗琳！哇，你身边满满都是爱，真好。你的朋友和家人是怎么帮助你完成转变的？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:13",
+                  "speaker": "卡罗琳",
+                  "text": "谢谢，梅拉妮！这个支持网络太棒了。他们在我走过的每一步都陪伴着我，给予我爱、指引和接纳。没有他们我做不到。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "梅拉妮童年最喜欢的书是《夏洛的网》（Charlotte's Web），友谊和同情心能带来改变的主题深深打动了她。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "fd375711-a43c-472d-8c37-61c944efe67d",
+              "content": "梅拉妮小时候最爱读的书是《夏洛的网》，友谊和同情心能带来改变这一点深深打动了她",
+              "route": "vector",
+              "session_date": "8:18 pm on 6 July, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "268b0881-a634-43ca-b230-c5466617353a",
+              "content": "梅拉妮最喜欢画风景和静物，热爱大自然，计划画几幅以秋天景色为灵感的作品",
+              "route": "vector",
+              "session_date": "1:33 pm on 25 August, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "1e149940-ab2d-4a38-a50c-20a4c99a4d1e",
+              "content": "梅拉妮既喜欢巴赫和莫扎特等古典音乐，也喜欢埃德·希兰（Ed Sheeran）的《Perfect》等现代音乐",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "64e65e18-3b0e-4e64-9145-97b5608c65cd",
+              "content": "梅拉妮喜欢画动物，觉得画动物让人平静又特别，最近画了一幅画在木板墙上的马，称赞马很优雅",
+              "route": "vector",
+              "session_date": "3:31 pm on 23 August, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "64393dc0-b146-4e40-a411-7bf1d540c910",
+              "content": "梅拉妮于2023年7月5日带孩子们去博物馆看恐龙展览，孩子们喜欢了解动物、觉得骨头很酷，这让她想起自己为什么喜欢当妈妈",
+              "route": "vector",
+              "session_date": "8:18 pm on 6 July, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "1f34bd89-e1f8-4c2d-a3be-71861454360c",
+              "content": "梅拉妮会吹单簧管，从小就开始学习，这是她表达自己和放松的方式",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "b6264989-18d4-47ac-885d-80841ab97f92",
+              "content": "梅拉妮每天为自己留出专属时间，包括跑步、阅读和拉小提琴，这让她焕然一新并能在家人面前保持专注",
+              "route": "vector",
+              "session_date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "e537f6f0-14f3-4d99-bfbf-308ad0903300",
+              "content": "梅拉妮非常喜欢和家人一起露营，认为大自然带来宁静安详的感觉，帮她reset充电；露营是通过讲故事、篝火和大自然与家人增进感情、活在当下的机会，伴着鸟鸣和清新空气醒来总能净化她的心灵",
+              "route": "vector",
+              "session_date": "6:55 pm on 20 October, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "86251053-f0d3-4dde-9f5c-312dea4e9aee",
+              "content": "梅拉妮说她与艺术有很深的联结，绘画帮助她表达情感、发挥创造力，艺术既是她的庇护所也是安慰的源泉，这段学习经历给她带来快乐和满足感",
+              "route": "vector",
+              "session_date": "1:50 pm on 17 August, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+              "content": "梅拉妮一家的夏日传统是家庭露营之旅，他们烤棉花糖、围篝火讲故事，这是他们夏天的重头戏",
+              "route": "vector",
+              "session_date": "8:56 pm on 20 July, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "f987e328-5a74-4df0-85ce-694fb5688e63",
+              "content": "梅拉妮曾观看乐队\"Summer Sounds\"的现场演出，他们演奏流行歌曲让观众跳舞唱歌，梅拉妮很喜欢现场音乐，认为音乐能把人们凝聚在一起",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+              "content": "梅拉妮在陶艺课上做了一个黑白花朵图案的碗，花了不少功夫并为此感到自豪；她说陶艺不只是爱好，而是帮助她表达情感、带来快乐的重要部分",
+              "route": "vector",
+              "session_date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间",
+              "route": "vector",
+              "session_date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+              "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+              "route": "vector",
+              "session_date": "1:51 pm on 15 July, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "5c43f1b2-8289-4513-9e28-914dedd5ae03",
+              "content": "梅拉妮最近在陶艺课上做了一个带花卉图案的紫色碗/盘子，她很喜欢，觉得陶艺既放松又有创意",
+              "route": "vector",
+              "session_date": "1:33 pm on 25 August, 2023"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer states the exact book title 《夏洛的网》 matching gold, with extra correct detail."
+          }
+        },
+        "graph": {
+          "answer": "梅拉妮童年最喜欢的书是《夏洛的网》——友谊和同情心能带来改变这一点深深打动了她。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "fd375711-a43c-472d-8c37-61c944efe67d",
+              "content": "梅拉妮小时候最爱读的书是《夏洛的网》，友谊和同情心能带来改变这一点深深打动了她",
+              "route": "vector",
+              "session_date": "8:18 pm on 6 July, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "268b0881-a634-43ca-b230-c5466617353a",
+              "content": "梅拉妮最喜欢画风景和静物，热爱大自然，计划画几幅以秋天景色为灵感的作品",
+              "route": "vector",
+              "session_date": "1:33 pm on 25 August, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "1e149940-ab2d-4a38-a50c-20a4c99a4d1e",
+              "content": "梅拉妮既喜欢巴赫和莫扎特等古典音乐，也喜欢埃德·希兰（Ed Sheeran）的《Perfect》等现代音乐",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "64e65e18-3b0e-4e64-9145-97b5608c65cd",
+              "content": "梅拉妮喜欢画动物，觉得画动物让人平静又特别，最近画了一幅画在木板墙上的马，称赞马很优雅",
+              "route": "vector",
+              "session_date": "3:31 pm on 23 August, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "64393dc0-b146-4e40-a411-7bf1d540c910",
+              "content": "梅拉妮于2023年7月5日带孩子们去博物馆看恐龙展览，孩子们喜欢了解动物、觉得骨头很酷，这让她想起自己为什么喜欢当妈妈",
+              "route": "vector",
+              "session_date": "8:18 pm on 6 July, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "1f34bd89-e1f8-4c2d-a3be-71861454360c",
+              "content": "梅拉妮会吹单簧管，从小就开始学习，这是她表达自己和放松的方式",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "b6264989-18d4-47ac-885d-80841ab97f92",
+              "content": "梅拉妮每天为自己留出专属时间，包括跑步、阅读和拉小提琴，这让她焕然一新并能在家人面前保持专注",
+              "route": "vector",
+              "session_date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "e537f6f0-14f3-4d99-bfbf-308ad0903300",
+              "content": "梅拉妮非常喜欢和家人一起露营，认为大自然带来宁静安详的感觉，帮她reset充电；露营是通过讲故事、篝火和大自然与家人增进感情、活在当下的机会，伴着鸟鸣和清新空气醒来总能净化她的心灵",
+              "route": "vector",
+              "session_date": "6:55 pm on 20 October, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "86251053-f0d3-4dde-9f5c-312dea4e9aee",
+              "content": "梅拉妮说她与艺术有很深的联结，绘画帮助她表达情感、发挥创造力，艺术既是她的庇护所也是安慰的源泉，这段学习经历给她带来快乐和满足感",
+              "route": "vector",
+              "session_date": "1:50 pm on 17 August, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+              "content": "梅拉妮一家的夏日传统是家庭露营之旅，他们烤棉花糖、围篝火讲故事，这是他们夏天的重头戏",
+              "route": "vector",
+              "session_date": "8:56 pm on 20 July, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "1839c8fe-775a-439a-b0c3-e71a04354957",
+              "content": "卡罗琳最喜欢的引路书是艾米·埃利斯·纳特写的《Becoming 妮可》，一个关于跨性别女孩和她的家庭的真实故事；这本书让她产生共鸣、带来希望，教会了她自我接纳、寻求支持，以及艰难时刻不会永远持续——她强烈推荐这本书",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 12,
+              "id": "f987e328-5a74-4df0-85ce-694fb5688e63",
+              "content": "梅拉妮曾观看乐队\"Summer Sounds\"的现场演出，他们演奏流行歌曲让观众跳舞唱歌，梅拉妮很喜欢现场音乐，认为音乐能把人们凝聚在一起",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "54e82aef-e72a-4a84-8fde-af589a7b0b3e",
+              "content": "梅拉妮在陶艺课上做了一个黑白花朵图案的碗，花了不少功夫并为此感到自豪；她说陶艺不只是爱好，而是帮助她表达情感、带来快乐的重要部分",
+              "route": "vector",
+              "session_date": "1:36 pm on 3 July, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间",
+              "route": "vector",
+              "session_date": "10:31 am on 13 October, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+              "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+              "route": "vector",
+              "session_date": "1:51 pm on 15 July, 2023"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案完全匹配《夏洛的网》，并带有正确的额外细节。"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-48_qa106",
+      "source": {
+        "english": {
+          "question": "What is Jolene's favorite book which she mentioned on 4 February, 2023?",
+          "answer": "\"Sapiens\"",
+          "evidence": [
+            {
+              "dia_id": "D4:21",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:18",
+                  "speaker": "Deborah",
+                  "text": "Sure! To do this modified pose, sit on the edge of a chair with your feet planted. Twist your torso to one side and use your hand on your knee for support. You'll feel a stretch in your back and shoulders as you hold it for a few breaths, then switch sides. It's great for relaxing tense muscles.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:19",
+                  "speaker": "Jolene",
+                  "text": "Sounds really hard! Here's my bookshelf!",
+                  "query": "bookshelf engineering books projects",
+                  "blip_caption": "a photo of a book shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "Deborah",
+                  "text": "That's quite a collection! Have you had a favorite book lately? I'd love to hear your thoughts.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "Jolene",
+                  "text": "Thanks Deborah! I'm really into this book called \"Sapiens\" - it's a fascinating look at human history and how technology has affected us. It's giving me a lot to think about!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "Deborah",
+                  "text": "Great, this is interesting! Have you come across any recent ones that really struck you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "Jolene",
+                  "text": "Two weeks ago I read \"Avalanche\" by Neal Stephenson in one sitting! ",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "Deborah",
+                  "text": "That sounds cool, Jolene. Stories can be so powerful - they can teach us, motivate us, and bring us together. ",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "乔琳在2023年2月4日提到的她最喜欢的书是什么？",
+          "answer": "《人类简史》",
+          "evidence": [
+            {
+              "dia_id": "D4:21",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:18",
+                  "speaker": "黛博拉",
+                  "text": "当然！做这个改良体式时，坐在椅子边缘，双脚踩实地面。躯干向一侧扭转，用手撑在膝盖上借力。保持几个呼吸，你会感到背部和肩膀得到拉伸，然后换边。它对放松紧张的肌肉非常有效。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:19",
+                  "speaker": "乔琳",
+                  "text": "听起来好难啊！这是我的书架！",
+                  "query": "bookshelf engineering books projects",
+                  "blip_caption": "a photo of a book shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "黛博拉",
+                  "text": "收藏真不少！最近有特别喜欢的书吗？我很想听听你的想法。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "乔琳",
+                  "text": "谢谢黛博拉！我最近迷上了一本叫《人类简史》的书——它对人类历史以及科技如何影响我们做了非常引人入胜的探讨。它给了我很多思考！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "黛博拉",
+                  "text": "很好，真有意思！最近有没有读到什么让你印象深刻的作品？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "乔琳",
+                  "text": "两周前，我一口气读完了尼尔·斯蒂芬森的《雪崩》！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "黛博拉",
+                  "text": "听起来很酷，乔琳。故事可以非常有力——它们能教导我们、激励我们，把我们凝聚在一起。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "乔琳在2023年2月4日提到她最近迷上了《人类简史》（Sapiens），这是她当时最喜欢的书，她喜欢它对人类历史及科技如何影响人类的探讨。（她还提到读完《雪崩》和一个励志故事，但《人类简史》是她表示“迷上”的那本。）",
+          "context": [
+            {
+              "rank": 1,
+              "id": "2527b4b0-45dc-4796-8e32-a175af3323f4",
+              "content": "乔琳最近迷上了《人类简史》一书，喜欢它对人类历史及科技如何影响人类的探讨；她还于2023年1月下旬（对话前两周）一口气读完了尼尔·斯蒂芬森的《雪崩》，并读了一个关于人克服重重挑战取得成功的故事，深受鼓舞。",
+              "route": "vector",
+              "session_date": "9:48 am on 4 February, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "14b5b648-5b05-4d2f-8088-fe32669b6c8a",
+              "content": "乔琳曾在浴室里读过一本关于自我发现的书，非常有共鸣，她觉得自己的浴室很有美感",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+              "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+              "route": "vector",
+              "session_date": "9:49 am on 27 January, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+              "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "8dfe427e-ce9e-4d66-a3b2-a3acfc5cba71",
+              "content": "乔琳在2023年2月4日的对话中提到自己最近情绪像坐过山车一样，但仍在努力应对。",
+              "route": "vector",
+              "session_date": "9:48 am on 4 February, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "a0a619e4-00fc-4aad-bfa7-094ca35f5078",
+              "content": "乔琳见面 Café 前需要整理书柜里的工程教科书，之后才有空赴约",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "39e2c5e3-f925-48a8-b572-7c3b48b4a16e",
+              "content": "乔琳的工程学教授给她布置了一个大型机器人项目（2023年2月1日前后）；她起初既兴奋又紧张，但现在很享受，觉得像解谜题一样设计机器人的结构和编程，看到机器人一步步成型让她很有满足感",
+              "route": "vector",
+              "session_date": "7:03 pm on 1 February, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "49ffa49d-8dfe-486b-8fa9-9d822f82f79d",
+              "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "7ce9e4c1-c5a3-4a53-8fcc-f5ef8cfcc8f0",
+              "content": "乔琳（工程师）在2023年1月底（对话于2023年2月4日前一周）完成了一个重要里程碑：她通过大量规划和研究，为一个有需要的农村社区设计并建造了一台可持续的水净化器。看到它运转并为社区提供干净的水让她感到无比满足，觉得自己做了一件有意义的好事。",
+              "route": "vector",
+              "session_date": "9:48 am on 4 February, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "aa223067-097e-4734-a05c-bcde9d9683c3",
+              "content": "乔琳在2023年8月开始尝试时间管理方法——子弹笔记（bullet journal），用它追踪任务和保持条理，划掉清单任务时感到特别满足，并分享了一张带有她最喜欢的名言的排版截图",
+              "route": "vector",
+              "session_date": "2:58 pm on 16 August, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "db0fb2fd-4721-4e3a-936e-b034db9aec5e",
+              "content": "乔琳在2023年2月9日的对话中分享了她的计划本草图照片——一本工程笔记本，其中有带笔记的一页，记录了她的志愿STEM项目想法。",
+              "route": "vector",
+              "session_date": "9:03 pm on 9 February, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "51bade2c-7847-4345-836d-37004ae279c4",
+              "content": "乔琳认为在各种事物中看到艺术与设计，让她对工程问题有了独特的视角",
+              "route": "vector",
+              "session_date": "8:50 pm on 12 August, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "a8d73db4-587e-46cc-9ccf-94fa8efcfd34",
+              "content": "乔琳设计了带有星系和电路元素的笔记本，灵感来自她对太空和发动机的热爱，并于2023年8月与黛布分享了这些作品",
+              "route": "vector",
+              "session_date": "8:50 pm on 12 August, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "22ce4213-87fa-4dfc-a10d-39126a79dd9e",
+              "content": "Jolene在2023年3月22日表示想学冲浪，已经在收集信息、看视频，还买了一本冲浪入门指南，只差找到合适的时间和地点去上课；黛布鼓励她追逐梦想，她表示备受鼓舞",
+              "route": "vector",
+              "session_date": "5:35 pm on 22 March, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "3de49e0c-f4f8-4661-905b-7f8f232a9c49",
+              "content": "乔琳笔记本里写有一句激励她的话，提醒她抛弃消极的东西、专注于成长和保持积极",
+              "route": "vector",
+              "session_date": "11:46 am on 30 August, 2023"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer states the exact book title 《人类简史》 matching the gold."
+          }
+        },
+        "graph": {
+          "answer": "** 乔琳在2023年2月4日的对话中提到她最近最喜欢的书是《人类简史》（Sapiens），她喜欢书中对人类历史及科技如何影响人类的探讨。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "2527b4b0-45dc-4796-8e32-a175af3323f4",
+              "content": "乔琳最近迷上了《人类简史》一书，喜欢它对人类历史及科技如何影响人类的探讨；她还于2023年1月下旬（对话前两周）一口气读完了尼尔·斯蒂芬森的《雪崩》，并读了一个关于人克服重重挑战取得成功的故事，深受鼓舞。",
+              "route": "vector",
+              "session_date": "9:48 am on 4 February, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "14b5b648-5b05-4d2f-8088-fe32669b6c8a",
+              "content": "乔琳曾在浴室里读过一本关于自我发现的书，非常有共鸣，她觉得自己的浴室很有美感",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "6a8be76b-6f76-44d3-a53a-1edd9a8a4376",
+              "content": "乔琳向黛布推荐了Switch上的《塞尔达传说：旷野之息》（开放世界）和《集合啦！动物森友会》（治愈可爱），并提到《胡闹厨房2》是很好的联机合作游戏——她和伴侣经常用它打赌，乔琳赢过三个大披萨",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 4,
+              "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+              "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+              "route": "vector",
+              "session_date": "9:49 am on 27 January, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+              "content": "黛布通过工作坊和书籍开始接触正念，如今正念已成为她生活中很大的一部分；她向乔琳推荐了正念",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 6,
+              "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+              "content": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 7,
+              "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+              "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "8dfe427e-ce9e-4d66-a3b2-a3acfc5cba71",
+              "content": "乔琳在2023年2月4日的对话中提到自己最近情绪像坐过山车一样，但仍在努力应对。",
+              "route": "vector",
+              "session_date": "9:48 am on 4 February, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "a0a619e4-00fc-4aad-bfa7-094ca35f5078",
+              "content": "乔琳见面 Café 前需要整理书柜里的工程教科书，之后才有空赴约",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "39e2c5e3-f925-48a8-b572-7c3b48b4a16e",
+              "content": "乔琳的工程学教授给她布置了一个大型机器人项目（2023年2月1日前后）；她起初既兴奋又紧张，但现在很享受，觉得像解谜题一样设计机器人的结构和编程，看到机器人一步步成型让她很有满足感",
+              "route": "vector",
+              "session_date": "7:03 pm on 1 February, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "49ffa49d-8dfe-486b-8fa9-9d822f82f79d",
+              "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "ff075bc8-c3d2-40ef-8784-ef9f8746c927",
+              "content": "乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战、完成艰难成就是增进感情、变得更亲密的好方式",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 13,
+              "id": "d6e621fb-b097-46c4-9a26-e2b54b2439eb",
+              "content": "乔琳在2023年2月初想出了一个志愿项目计划：让工程师给贫困儿童教STEM课程，考虑与当地学校或中心合作开展工作坊，并邀请工程师做客座演讲者让孩子们了解职业选择。计划尚未完成，她希望先确定计划再联系学校，截至2023年2月9日还没有联系任何学校或中心。",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 14,
+              "id": "1cd55e29-e74a-48c9-9244-f55e60461658",
+              "content": "乔琳对绿色科技很感兴趣，认为它可以为欠发达地区带来改变，她想深入研究并看看自己能做什么贡献。",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 15,
+              "id": "1dded0cd-6d53-4b62-a523-037ca7cc879e",
+              "content": "乔琳忙碌一天后喜欢和伴侣一起打电子游戏放松，这让两人关系更亲密",
+              "route": "graph",
+              "session_date": null
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "The answer states the book title 《人类简史》 exactly matching the gold."
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-30_qa39",
+      "source": {
+        "english": {
+          "question": "What is Gina's favorite style of dance?",
+          "answer": "Contemporary",
+          "evidence": [
+            {
+              "dia_id": "D1:9",
+              "session": "session_1",
+              "session_date": "4:04 pm on 20 January, 2023",
+              "window": [
+                {
+                  "dia_id": "D1:6",
+                  "speaker": "Jon",
+                  "text": "I've been into dancing since I was a kid and it's been my passion and escape. I wanna start a dance studio so I can teach others the joy that dancing brings me.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:7",
+                  "speaker": "Gina",
+                  "text": "Wow Jon, same here! Dance is pretty much my go-to for stress relief. Got any fave styles?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:8",
+                  "speaker": "Jon",
+                  "text": "Cool, Gina! I love all dances, but contemporary is my top pick. It's so expressive and powerful! What's your fave?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:9",
+                  "speaker": "Gina",
+                  "text": "Yeah, me too! Contemporary dance is so expressive and graceful - it really speaks to me.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:10",
+                  "speaker": "Jon",
+                  "text": "Wow, great idea! Let's go to a dance class, it'll be so much fun!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:11",
+                  "speaker": "Gina",
+                  "text": "Yeah! Let's explore some new dance moves. We should plan a dance session soon!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:12",
+                  "speaker": "Jon",
+                  "text": "Yeah definitely! Wanna see my moves next Fri? Can't wait!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "吉娜最喜欢的舞蹈风格是什么？",
+          "answer": "现代舞",
+          "evidence": [
+            {
+              "dia_id": "D1:9",
+              "session": "session_1",
+              "session_date": "4:04 pm on 20 January, 2023",
+              "window": [
+                {
+                  "dia_id": "D1:6",
+                  "speaker": "乔恩",
+                  "text": "我从小就喜欢跳舞，它一直是我的热情所在和心灵的慰藉。我想开一家舞蹈工作室，这样就可以教别人体验舞蹈带给我的快乐。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:7",
+                  "speaker": "吉娜",
+                  "text": "哇，乔恩，我也是！舞蹈几乎是我减压的首选。你有喜欢的舞种吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:8",
+                  "speaker": "乔恩",
+                  "text": "太好了，吉娜！我喜欢所有舞蹈，但现代舞是我的最爱。它太有表现力、太有力量了！你最喜欢什么？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:9",
+                  "speaker": "吉娜",
+                  "text": "对，我也是！现代舞非常有表现力又优雅——真的很打动我。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:10",
+                  "speaker": "乔恩",
+                  "text": "哇，好主意！我们去上舞蹈课吧，一定会很有趣！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:11",
+                  "speaker": "吉娜",
+                  "text": "好啊！我们来探索一些新的舞步。我们应该尽快计划一次舞蹈活动！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D1:12",
+                  "speaker": "乔恩",
+                  "text": "当然可以！想在下周五看看我的舞技吗？等不及了！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "现代舞（现代/当代舞）。吉娜的团队表演了名为 \"Finding Freedom\" 的现代舞，她15岁时最喜欢的回忆是团队在地区舞蹈比赛中获得第一名，她也常通过跳舞减压——现代舞是与之最契合的她最喜爱的风格。（注：乔恩的最爱也是现代舞，因其表现力和力量感。）",
+          "context": [
+            {
+              "rank": 1,
+              "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+              "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "b3d94f83-867f-4e20-b66c-619a118088fb",
+              "content": "吉娜拥有一座舞蹈比赛奖杯（带玻璃球顶），她用它提醒自己付出的努力、坚持和舞蹈带来的快乐；她还回忆自己以前超喜欢待在练功房里，分享了一张一群年轻女性在芭蕾教室的旧照",
+              "route": "vector",
+              "session_date": "10:33 am on 9 April, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+              "content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+              "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "30a35c5d-0644-4dcd-a7ab-91b4049f9f53",
+              "content": "截至2023年4月3日，吉娜表示跳舞是她缓解压力的方式，时尚激发她的创造力；她对舞蹈和时尚都充满热情，将两者结合，并计划在店里添加受舞蹈启发的单品",
+              "route": "vector",
+              "session_date": "1:26 pm on 3 April, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "452d3742-8f43-4046-ad52-c7f6deffe2a6",
+              "content": "吉娜靠跳舞减压，称舞蹈就像她本身、无法想象没有它的生活，就像空气一样",
+              "route": "vector",
+              "session_date": "3:14 pm on 11 May, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "6f9753ba-94d9-4392-b1cd-25f7b7219b58",
+              "content": "吉娜几年前纹了一个纹身，代表自由——跳舞时不担心别人怎么看的自由，图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'），提醒她追随热情、表达自我",
+              "route": "vector",
+              "session_date": "9:32 am on 8 February, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+              "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+              "route": "vector",
+              "session_date": "2:32 pm on 29 January, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+              "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+              "route": "vector",
+              "session_date": "5:44 pm on 21 July, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+              "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+              "route": "vector",
+              "session_date": "5:44 pm on 21 July, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "54e104ab-f693-45bf-a6ca-48b57ef28a86",
+              "content": "截至2023年5月11日，乔恩最近一直在练习舞蹈动作，这帮助他保持专注和动力；他答应给吉娜发自己跳舞的视频",
+              "route": "vector",
+              "session_date": "3:14 pm on 11 May, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+              "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "387c7cd4-3660-4823-8016-dcd7a2bd918b",
+              "content": "吉娜于2023年6月19日确认会出席乔恩舞蹈工作室的盛大开幕式，两人相约一起狂欢、共同创造美好回忆，吉娜表示一直为乔恩感到骄傲并会一直支持他",
+              "route": "vector",
+              "session_date": "10:04 am on 19 June, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+              "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+              "content": "乔恩计划在2023年5月举办一场舞蹈比赛，他的舞蹈工作室和其他一些学校将带来最棒的舞步，呈现充满表演和评审的夜晚，旨在展示本地人才并为工作室带来更多关注；他邀请吉娜到场，吉娜已答应去看演出",
+              "route": "vector",
+              "session_date": "1:26 pm on 3 April, 2023"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案以「现代舞」开头，与标准答案完全一致；补充的正确细节并不降低精度。"
+          }
+        },
+        "graph": {
+          "answer": "吉娜最喜欢的舞蹈风格最可能是现代舞（contemporary）——她的团队表演了名为《Finding Freedom》的现代舞，她15岁时最美好的回忆正是团队凭借这支现代舞获得地区比赛第一名。（注：记忆中明确说“最喜欢现代舞”的是乔恩，而非吉娜。）",
+          "context": [
+            {
+              "rank": 1,
+              "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+              "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "b3d94f83-867f-4e20-b66c-619a118088fb",
+              "content": "吉娜拥有一座舞蹈比赛奖杯（带玻璃球顶），她用它提醒自己付出的努力、坚持和舞蹈带来的快乐；她还回忆自己以前超喜欢待在练功房里，分享了一张一群年轻女性在芭蕾教室的旧照",
+              "route": "vector",
+              "session_date": "10:33 am on 9 April, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+              "content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+              "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "30a35c5d-0644-4dcd-a7ab-91b4049f9f53",
+              "content": "截至2023年4月3日，吉娜表示跳舞是她缓解压力的方式，时尚激发她的创造力；她对舞蹈和时尚都充满热情，将两者结合，并计划在店里添加受舞蹈启发的单品",
+              "route": "vector",
+              "session_date": "1:26 pm on 3 April, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "452d3742-8f43-4046-ad52-c7f6deffe2a6",
+              "content": "吉娜靠跳舞减压，称舞蹈就像她本身、无法想象没有它的生活，就像空气一样",
+              "route": "vector",
+              "session_date": "3:14 pm on 11 May, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "6f9753ba-94d9-4392-b1cd-25f7b7219b58",
+              "content": "吉娜几年前纹了一个纹身，代表自由——跳舞时不担心别人怎么看的自由，图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'），提醒她追随热情、表达自我",
+              "route": "vector",
+              "session_date": "9:32 am on 8 February, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "0e4e7516-a78f-4885-b138-39489ea9ea11",
+              "content": "乔恩觉得寻找场地和筹备舞蹈工作室的过程既兴奋又紧张，但他下定决心要做成，认为一切值得；吉娜鼓励他坚持并适当休息、用舞蹈减压",
+              "route": "vector",
+              "session_date": "2:32 pm on 29 January, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "f597103f-48ad-476e-956c-4a5e5a250207",
+              "content": "乔恩和吉娜约定合作制作内容和运营社交媒体，一起推广乔恩的舞蹈工作室",
+              "route": "vector",
+              "session_date": "5:44 pm on 21 July, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "72c1939a-c0be-463d-bb94-481e0779fa2a",
+              "content": "吉娜建议乔恩用Instagram和TikTok触达年轻人群，发布舞蹈片段、与本地网红和舞蹈社群合作来营销舞蹈工作室，并表示愿意帮忙制作内容和运营社交媒体账号，乔恩接受了这个帮助",
+              "route": "vector",
+              "session_date": "5:44 pm on 21 July, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "54e104ab-f693-45bf-a6ca-48b57ef28a86",
+              "content": "截至2023年5月11日，乔恩最近一直在练习舞蹈动作，这帮助他保持专注和动力；他答应给吉娜发自己跳舞的视频",
+              "route": "vector",
+              "session_date": "3:14 pm on 11 May, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+              "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "387c7cd4-3660-4823-8016-dcd7a2bd918b",
+              "content": "吉娜于2023年6月19日确认会出席乔恩舞蹈工作室的盛大开幕式，两人相约一起狂欢、共同创造美好回忆，吉娜表示一直为乔恩感到骄傲并会一直支持他",
+              "route": "vector",
+              "session_date": "10:04 am on 19 June, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+              "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。",
+              "route": "vector",
+              "session_date": "4:04 pm on 20 January, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+              "content": "乔恩计划在2023年5月举办一场舞蹈比赛，他的舞蹈工作室和其他一些学校将带来最棒的舞步，呈现充满表演和评审的夜晚，旨在展示本地人才并为工作室带来更多关注；他邀请吉娜到场，吉娜已答应去看演出",
+              "route": "vector",
+              "session_date": "1:26 pm on 3 April, 2023"
+            }
+          ],
+          "grade": "partial",
+          "judge": {
+            "grade": "partial",
+            "missing": [
+              "答案带有模糊性（'最可能'），并暗示该事实可能实际上属于乔恩而非吉娜"
+            ],
+            "reason": "正确数值（现代舞）已出现，但通过 '最可能'进行了模糊处理，并附注该事实可能属于乔恩，因此并非确切事实。"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa87",
+      "source": {
+        "english": {
+          "question": "What type of pizza is John's favorite?",
+          "answer": "Hawaiian",
+          "evidence": [
+            {
+              "dia_id": "D9:19",
+              "session": "session_9",
+              "session_date": "7:01 pm on 4 May, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:16",
+                  "speaker": "James",
+                  "text": "My pets, computer games, travel and pizza are all that bring me happiness in life.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:17",
+                  "speaker": "John",
+                  "text": "Pizza? Cool, I love pizza too! Which one do you love the most?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:18",
+                  "speaker": "James",
+                  "text": "Pepperoni of course! An amazing combination of spicy salami and cheese.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:19",
+                  "speaker": "John",
+                  "text": "Cool, but my favorite thing is Hawaiian pizza. This combination of sweet and salty delights me! What other pizza do you like?",
+                  "query": "the witcher 3 game case",
+                  "blip_caption": "a photography of a pizza with pineapples and ham on a wooden board"
+                },
+                {
+                  "dia_id": "D9:20",
+                  "speaker": "James",
+                  "text": "I like also cheese pizza and prosciutto.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:21",
+                  "speaker": "John",
+                  "text": "Haven't tried prosciutto yet, but I've heard it`s great!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:22",
+                  "speaker": "James",
+                  "text": "Give it a shot! It`s really great. No regrets, I promise.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "约翰最喜欢的披萨是哪种？",
+          "answer": "夏威夷披萨",
+          "evidence": [
+            {
+              "dia_id": "D9:19",
+              "session": "session_9",
+              "session_date": "7:01 pm on 4 May, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:16",
+                  "speaker": "詹姆斯",
+                  "text": "我的宠物、电脑游戏、旅行和披萨，就是我生活中所有能给我带来幸福的东西。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:17",
+                  "speaker": "约翰",
+                  "text": "披萨？酷，我也爱披萨！你最喜欢哪种？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:18",
+                  "speaker": "詹姆斯",
+                  "text": "当然是意式辣香肠披萨！辣香肠和奶酪的绝妙组合。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:19",
+                  "speaker": "约翰",
+                  "text": "不错，但我最爱的是夏威夷披萨。这种甜咸结合让我着迷！你还喜欢别的什么披萨？",
+                  "query": "the witcher 3 game case",
+                  "blip_caption": "a photography of a pizza with pineapples and ham on a wooden board"
+                },
+                {
+                  "dia_id": "D9:20",
+                  "speaker": "詹姆斯",
+                  "text": "我还喜欢芝士披萨和火腿披萨。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:21",
+                  "speaker": "约翰",
+                  "text": "帕尔玛火腿我还没试过，但听说很棒！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:22",
+                  "speaker": "詹姆斯",
+                  "text": "试试看吧！真的很棒。保证不会后悔。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "夏威夷披萨（Hawaiian pizza）——约翰喜欢菠萝和火腿的甜咸搭配。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "cad53005-80cf-4c67-816c-60e2a3c46310",
+              "content": "John's favorite pizza is Hawaiian pizza — he loves the sweet and savory combination of pineapple and ham",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "9d167811-1f8f-4300-ac6c-8f0e10273adc",
+              "content": "John said he would try parma ham pizza after James recommended it and assured him he wouldn't regret it (early May 2022)",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "455deff6-b9f4-46c2-9aa4-ffd7cec1e993",
+              "content": "James's favorite pizza is pepperoni (意式辣香肠) pizza for the combination of pepperoni and cheese; he also likes cheese pizza and ham pizza",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "24f39806-a4fb-47d9-9b03-37af385bfc60",
+              "content": "James's sources of happiness are his pets, computer games, traveling, and pizza",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "b6ef2063-6cc7-4a45-b60c-7958e9aaa945",
+              "content": "As of early November 2022, John is hooked on FIFA 23, a soccer game he enjoys playing online against players from around the world",
+              "route": "vector",
+              "session_date": "5:20 pm on 5 November, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "06873c43-c6bb-43d6-8acf-59f88f5af88a",
+              "content": "As of around August 2022, John became hooked on The Witcher 3, an RPG whose story and characters he loves; he is fully immersed, working to make the right choices to shape the world, and is addicted to playing it",
+              "route": "vector",
+              "session_date": "9:16 am on 10 August, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "a492bdcf-0859-43df-a411-b8868727fa68",
+              "content": "John likes electronic and rock music, and played drums as a child; he used to jam informally with friends, thoroughly enjoyed it, but has no recordings or videos of those sessions",
+              "route": "vector",
+              "session_date": "6:02 pm on 18 September, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "dc53d157-71b4-4b98-8629-a35df4961e3b",
+              "content": "Two days before April 29, 2022 (around April 27), John played a strategy board game with friends and found it very exciting; he enjoys strategy board games",
+              "route": "vector",
+              "session_date": "2:36 pm on 29 April, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "8abe5052-d3cb-47b0-b62b-4bd6e6b3f0cb",
+              "content": "John relaxes by reading, enjoying escaping into the imaginative worlds built by authors",
+              "route": "vector",
+              "session_date": "5:13 pm on 9 July, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "392728f1-a40b-48aa-9d96-ebb0b1f57651",
+              "content": "John wants to get a pet dog someday but doesn't feel ready yet; James offered to help him find the most suitable pet when he is interested",
+              "route": "vector",
+              "session_date": "9:26 pm on 20 March, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "dea37277-588c-4d0a-a9ca-bcc2efb8c941",
+              "content": "John and James have been friends since childhood; at age 10 they were passionate about skateboarding and often went to the skate park with a group of friends, sometimes skipping the end of classes to skate",
+              "route": "vector",
+              "session_date": "9:49 am on 22 July, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "89ca3e66-4144-42f0-a6de-134b9a3c57a9",
+              "content": "John feels grateful for the bond with his siblings, whose support means everything to him during difficult times",
+              "route": "vector",
+              "session_date": "9:49 am on 22 July, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "c062efd7-102c-4014-821f-ed6d2f23d417",
+              "content": "John was motivated to build the charity tool because the foundation's passion for helping children inspired him, and programming let him challenge himself and expand his skills",
+              "route": "vector",
+              "session_date": "5:00 pm on 11 May, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "2f826b80-edc4-4ef3-98ef-fe50712f920f",
+              "content": "John follows the principle that only well-rested people work well, so relaxing and traveling with friends gives him motivation to keep working",
+              "route": "vector",
+              "session_date": "9:32 pm on 20 April, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "d8d3d2a2-f41d-4e7d-a65a-ecd0d39e2ed7",
+              "content": "John (the friend) recently started playing chess to improve his strategic skills, mainly plays online, and joined a chess club to practice with others; he was drawn to chess because he loves strategy games and believes it improves decision-making",
+              "route": "vector",
+              "session_date": "9:49 am on 22 July, 2022"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer states the exact pizza name '夏威夷披萨' matching gold, with only additional correct detail."
+          }
+        },
+        "graph": {
+          "answer": "约翰最喜欢的是夏威夷披萨——他喜欢菠萝和火腿的甜咸组合。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "cad53005-80cf-4c67-816c-60e2a3c46310",
+              "content": "John's favorite pizza is Hawaiian pizza — he loves the sweet and savory combination of pineapple and ham",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "9d167811-1f8f-4300-ac6c-8f0e10273adc",
+              "content": "John said he would try parma ham pizza after James recommended it and assured him he wouldn't regret it (early May 2022)",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "455deff6-b9f4-46c2-9aa4-ffd7cec1e993",
+              "content": "James's favorite pizza is pepperoni (意式辣香肠) pizza for the combination of pepperoni and cheese; he also likes cheese pizza and ham pizza",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "24f39806-a4fb-47d9-9b03-37af385bfc60",
+              "content": "James's sources of happiness are his pets, computer games, traveling, and pizza",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "b6ef2063-6cc7-4a45-b60c-7958e9aaa945",
+              "content": "As of early November 2022, John is hooked on FIFA 23, a soccer game he enjoys playing online against players from around the world",
+              "route": "vector",
+              "session_date": "5:20 pm on 5 November, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "06873c43-c6bb-43d6-8acf-59f88f5af88a",
+              "content": "As of around August 2022, John became hooked on The Witcher 3, an RPG whose story and characters he loves; he is fully immersed, working to make the right choices to shape the world, and is addicted to playing it",
+              "route": "vector",
+              "session_date": "9:16 am on 10 August, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "a492bdcf-0859-43df-a411-b8868727fa68",
+              "content": "John likes electronic and rock music, and played drums as a child; he used to jam informally with friends, thoroughly enjoyed it, but has no recordings or videos of those sessions",
+              "route": "vector",
+              "session_date": "6:02 pm on 18 September, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "dc53d157-71b4-4b98-8629-a35df4961e3b",
+              "content": "Two days before April 29, 2022 (around April 27), John played a strategy board game with friends and found it very exciting; he enjoys strategy board games",
+              "route": "vector",
+              "session_date": "2:36 pm on 29 April, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "8abe5052-d3cb-47b0-b62b-4bd6e6b3f0cb",
+              "content": "John relaxes by reading, enjoying escaping into the imaginative worlds built by authors",
+              "route": "vector",
+              "session_date": "5:13 pm on 9 July, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "392728f1-a40b-48aa-9d96-ebb0b1f57651",
+              "content": "John wants to get a pet dog someday but doesn't feel ready yet; James offered to help him find the most suitable pet when he is interested",
+              "route": "vector",
+              "session_date": "9:26 pm on 20 March, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "dea37277-588c-4d0a-a9ca-bcc2efb8c941",
+              "content": "John and James have been friends since childhood; at age 10 they were passionate about skateboarding and often went to the skate park with a group of friends, sometimes skipping the end of classes to skate",
+              "route": "vector",
+              "session_date": "9:49 am on 22 July, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "89ca3e66-4144-42f0-a6de-134b9a3c57a9",
+              "content": "John feels grateful for the bond with his siblings, whose support means everything to him during difficult times",
+              "route": "vector",
+              "session_date": "9:49 am on 22 July, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "918bbeed-6374-4495-99bd-83ef345d8548",
+              "content": "John attended a gaming convention between his conversations with James in March 2022, where he tried many games, met developers, and competed in a CS:GO tournament; watching skilled players inspired him to improve his own gaming skills",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 14,
+              "id": "c062efd7-102c-4014-821f-ed6d2f23d417",
+              "content": "John was motivated to build the charity tool because the foundation's passion for helping children inspired him, and programming let him challenge himself and expand his skills",
+              "route": "vector",
+              "session_date": "5:00 pm on 11 May, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "2f826b80-edc4-4ef3-98ef-fe50712f920f",
+              "content": "John follows the principle that only well-rested people work well, so relaxing and traveling with friends gives him motivation to keep working",
+              "route": "vector",
+              "session_date": "9:32 pm on 20 April, 2022"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案精确表述为夏威夷披萨，并带有正确的额外细节。"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-48_qa90",
+      "source": {
+        "english": {
+          "question": "What are Jolene's favorite books?",
+          "answer": "Sapiens, Avalanche by Neal Stephenson",
+          "evidence": [
+            {
+              "dia_id": "D4:21",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:18",
+                  "speaker": "Deborah",
+                  "text": "Sure! To do this modified pose, sit on the edge of a chair with your feet planted. Twist your torso to one side and use your hand on your knee for support. You'll feel a stretch in your back and shoulders as you hold it for a few breaths, then switch sides. It's great for relaxing tense muscles.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:19",
+                  "speaker": "Jolene",
+                  "text": "Sounds really hard! Here's my bookshelf!",
+                  "query": "bookshelf engineering books projects",
+                  "blip_caption": "a photo of a book shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "Deborah",
+                  "text": "That's quite a collection! Have you had a favorite book lately? I'd love to hear your thoughts.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "Jolene",
+                  "text": "Thanks Deborah! I'm really into this book called \"Sapiens\" - it's a fascinating look at human history and how technology has affected us. It's giving me a lot to think about!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "Deborah",
+                  "text": "Great, this is interesting! Have you come across any recent ones that really struck you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "Jolene",
+                  "text": "Two weeks ago I read \"Avalanche\" by Neal Stephenson in one sitting! ",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "Deborah",
+                  "text": "That sounds cool, Jolene. Stories can be so powerful - they can teach us, motivate us, and bring us together. ",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D4:23",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "Deborah",
+                  "text": "That's quite a collection! Have you had a favorite book lately? I'd love to hear your thoughts.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "Jolene",
+                  "text": "Thanks Deborah! I'm really into this book called \"Sapiens\" - it's a fascinating look at human history and how technology has affected us. It's giving me a lot to think about!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "Deborah",
+                  "text": "Great, this is interesting! Have you come across any recent ones that really struck you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "Jolene",
+                  "text": "Two weeks ago I read \"Avalanche\" by Neal Stephenson in one sitting! ",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "Deborah",
+                  "text": "That sounds cool, Jolene. Stories can be so powerful - they can teach us, motivate us, and bring us together. ",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:25",
+                  "speaker": "Jolene",
+                  "text": "I also read a recent story about someone who became successful despite facing numerous challenges. It really showed me that anything is possible if you believe and work hard.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:26",
+                  "speaker": "Deborah",
+                  "text": "That's a really powerful message. It reminds me of someone special and their grace and strength when they faced hardships. Check out this creation!",
+                  "query": "mother bouquet flowers wedding",
+                  "blip_caption": "a photo of a bouquet of flowers in a vase on a table"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "乔琳最喜欢的书有哪些？",
+          "answer": "《人类简史》、尼尔·斯蒂芬森的《雪崩》",
+          "evidence": [
+            {
+              "dia_id": "D4:21",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:18",
+                  "speaker": "黛博拉",
+                  "text": "当然！做这个改良体式时，坐在椅子边缘，双脚踩实地面。躯干向一侧扭转，用手撑在膝盖上借力。保持几个呼吸，你会感到背部和肩膀得到拉伸，然后换边。它对放松紧张的肌肉非常有效。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:19",
+                  "speaker": "乔琳",
+                  "text": "听起来好难啊！这是我的书架！",
+                  "query": "bookshelf engineering books projects",
+                  "blip_caption": "a photo of a book shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "黛博拉",
+                  "text": "收藏真不少！最近有特别喜欢的书吗？我很想听听你的想法。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "乔琳",
+                  "text": "谢谢黛博拉！我最近迷上了一本叫《人类简史》的书——它对人类历史以及科技如何影响我们做了非常引人入胜的探讨。它给了我很多思考！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "黛博拉",
+                  "text": "很好，真有意思！最近有没有读到什么让你印象深刻的作品？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "乔琳",
+                  "text": "两周前，我一口气读完了尼尔·斯蒂芬森的《雪崩》！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "黛博拉",
+                  "text": "听起来很酷，乔琳。故事可以非常有力——它们能教导我们、激励我们，把我们凝聚在一起。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D4:23",
+              "session": "session_4",
+              "session_date": "9:48 am on 4 February, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:20",
+                  "speaker": "黛博拉",
+                  "text": "收藏真不少！最近有特别喜欢的书吗？我很想听听你的想法。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:21",
+                  "speaker": "乔琳",
+                  "text": "谢谢黛博拉！我最近迷上了一本叫《人类简史》的书——它对人类历史以及科技如何影响我们做了非常引人入胜的探讨。它给了我很多思考！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:22",
+                  "speaker": "黛博拉",
+                  "text": "很好，真有意思！最近有没有读到什么让你印象深刻的作品？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:23",
+                  "speaker": "乔琳",
+                  "text": "两周前，我一口气读完了尼尔·斯蒂芬森的《雪崩》！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:24",
+                  "speaker": "黛博拉",
+                  "text": "听起来很酷，乔琳。故事可以非常有力——它们能教导我们、激励我们，把我们凝聚在一起。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:25",
+                  "speaker": "乔琳",
+                  "text": "我还读了一个最近的故事，讲的是一个人尽管面临重重挑战仍然取得了成功。它真的让我明白，只要相信并努力，一切皆有可能。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:26",
+                  "speaker": "黛博拉",
+                  "text": "这真是一个很有力量的信息。它让我想起一位特别的人，以及她在面对苦难时展现的优雅与坚强。看看这个作品！",
+                  "query": "mother bouquet flowers wedding",
+                  "blip_caption": "a photo of a bouquet of flowers in a vase on a table"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "乔琳最喜欢的书包括：\n- 《人类简史》——她最近迷上，喜欢其对人类历史及科技影响的探讨\n- 尼尔·斯蒂芬森的《雪崩》——2023年1月下旬一口气读完\n- 一本关于自我发现的书——在浴室里读过且非常有共鸣",
+          "context": [
+            {
+              "rank": 1,
+              "id": "2527b4b0-45dc-4796-8e32-a175af3323f4",
+              "content": "乔琳最近迷上了《人类简史》一书，喜欢它对人类历史及科技如何影响人类的探讨；她还于2023年1月下旬（对话前两周）一口气读完了尼尔·斯蒂芬森的《雪崩》，并读了一个关于人克服重重挑战取得成功的故事，深受鼓舞。",
+              "route": "vector",
+              "session_date": "9:48 am on 4 February, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "14b5b648-5b05-4d2f-8088-fe32669b6c8a",
+              "content": "乔琳曾在浴室里读过一本关于自我发现的书，非常有共鸣，她觉得自己的浴室很有美感",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "d6d8d2fb-8cef-4f3c-86bc-f4825e0cbcf9",
+              "content": "乔琳表示自己一直很喜欢动物，认为宠物能给生活带来快乐和明亮，希望听到关于塞拉菲姆的故事",
+              "route": "vector",
+              "session_date": "9:17 am on 26 June, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "5d99645a-5f96-43d1-817d-3fc0cb242004",
+              "content": "乔琳最喜欢的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，这是她减压和暂时逃离生活的方式",
+              "route": "vector",
+              "session_date": "2:14 pm on 3 September, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+              "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "49ffa49d-8dfe-486b-8fa9-9d822f82f79d",
+              "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "a0a619e4-00fc-4aad-bfa7-094ca35f5078",
+              "content": "乔琳见面 Café 前需要整理书柜里的工程教科书，之后才有空赴约",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "1cd55e29-e74a-48c9-9244-f55e60461658",
+              "content": "乔琳对绿色科技很感兴趣，认为它可以为欠发达地区带来改变，她想深入研究并看看自己能做什么贡献。",
+              "route": "vector",
+              "session_date": "9:03 pm on 9 February, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+              "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+              "route": "vector",
+              "session_date": "9:49 am on 27 January, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+              "content": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+              "route": "vector",
+              "session_date": "9:26 am on 1 August, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "db0fb2fd-4721-4e3a-936e-b034db9aec5e",
+              "content": "乔琳在2023年2月9日的对话中分享了她的计划本草图照片——一本工程笔记本，其中有带笔记的一页，记录了她的志愿STEM项目想法。",
+              "route": "vector",
+              "session_date": "9:03 pm on 9 February, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "a8d73db4-587e-46cc-9ccf-94fa8efcfd34",
+              "content": "乔琳设计了带有星系和电路元素的笔记本，灵感来自她对太空和发动机的热爱，并于2023年8月与黛布分享了这些作品",
+              "route": "vector",
+              "session_date": "8:50 pm on 12 August, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "ff075bc8-c3d2-40ef-8784-ef9f8746c927",
+              "content": "乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战、完成艰难成就是增进感情、变得更亲密的好方式",
+              "route": "vector",
+              "session_date": "7:37 pm on 9 July, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "aa223067-097e-4734-a05c-bcde9d9683c3",
+              "content": "乔琳在2023年8月开始尝试时间管理方法——子弹笔记（bullet journal），用它追踪任务和保持条理，划掉清单任务时感到特别满足，并分享了一张带有她最喜欢的名言的排版截图",
+              "route": "vector",
+              "session_date": "2:58 pm on 16 August, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "51bade2c-7847-4345-836d-37004ae279c4",
+              "content": "乔琳认为在各种事物中看到艺术与设计，让她对工程问题有了独特的视角",
+              "route": "vector",
+              "session_date": "8:50 pm on 12 August, 2023"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案同时准确包含了《人类简史》和尼尔·斯蒂芬森的《雪崩》这两个书籍条目。"
+          }
+        },
+        "graph": {
+          "answer": "乔琳最喜欢的书包括《人类简史》（她喜欢它对人类历史及科技如何影响人类的探讨）、尼尔·斯蒂芬森的《雪崩》（2023年1月下旬一口气读完）、一本关于自我发现的书（在浴室里读，非常有共鸣），以及一个关于人克服重重挑战取得成功、令她深受鼓舞的故事书。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "2527b4b0-45dc-4796-8e32-a175af3323f4",
+              "content": "乔琳最近迷上了《人类简史》一书，喜欢它对人类历史及科技如何影响人类的探讨；她还于2023年1月下旬（对话前两周）一口气读完了尼尔·斯蒂芬森的《雪崩》，并读了一个关于人克服重重挑战取得成功的故事，深受鼓舞。",
+              "route": "vector",
+              "session_date": "9:48 am on 4 February, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "14b5b648-5b05-4d2f-8088-fe32669b6c8a",
+              "content": "乔琳曾在浴室里读过一本关于自我发现的书，非常有共鸣，她觉得自己的浴室很有美感",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "d6d8d2fb-8cef-4f3c-86bc-f4825e0cbcf9",
+              "content": "乔琳表示自己一直很喜欢动物，认为宠物能给生活带来快乐和明亮，希望听到关于塞拉菲姆的故事",
+              "route": "vector",
+              "session_date": "9:17 am on 26 June, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "5d99645a-5f96-43d1-817d-3fc0cb242004",
+              "content": "乔琳最喜欢的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，这是她减压和暂时逃离生活的方式",
+              "route": "vector",
+              "session_date": "2:14 pm on 3 September, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "e7990eb8-4779-4f4b-9f82-0e87b3ca3ea6",
+              "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力豆加柔软黄油饼干",
+              "route": "vector",
+              "session_date": "1:24 pm on 17 September, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "49ffa49d-8dfe-486b-8fa9-9d822f82f79d",
+              "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+              "content": "黛布通过工作坊和书籍开始接触正念，如今正念已成为她生活中很大的一部分；她向乔琳推荐了正念",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 8,
+              "id": "a0a619e4-00fc-4aad-bfa7-094ca35f5078",
+              "content": "乔琳见面 Café 前需要整理书柜里的工程教科书，之后才有空赴约",
+              "route": "vector",
+              "session_date": "7:39 pm on 8 September, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "1cd55e29-e74a-48c9-9244-f55e60461658",
+              "content": "乔琳对绿色科技很感兴趣，认为它可以为欠发达地区带来改变，她想深入研究并看看自己能做什么贡献。",
+              "route": "vector",
+              "session_date": "9:03 pm on 9 February, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+              "content": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+              "route": "vector",
+              "session_date": "9:49 am on 27 January, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+              "content": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+              "route": "vector",
+              "session_date": "9:26 am on 1 August, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "db0fb2fd-4721-4e3a-936e-b034db9aec5e",
+              "content": "乔琳在2023年2月9日的对话中分享了她的计划本草图照片——一本工程笔记本，其中有带笔记的一页，记录了她的志愿STEM项目想法。",
+              "route": "vector",
+              "session_date": "9:03 pm on 9 February, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "a8d73db4-587e-46cc-9ccf-94fa8efcfd34",
+              "content": "乔琳设计了带有星系和电路元素的笔记本，灵感来自她对太空和发动机的热爱，并于2023年8月与黛布分享了这些作品",
+              "route": "vector",
+              "session_date": "8:50 pm on 12 August, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "ff075bc8-c3d2-40ef-8784-ef9f8746c927",
+              "content": "乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战、完成艰难成就是增进感情、变得更亲密的好方式",
+              "route": "vector",
+              "session_date": "7:37 pm on 9 July, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "aa223067-097e-4734-a05c-bcde9d9683c3",
+              "content": "乔琳在2023年8月开始尝试时间管理方法——子弹笔记（bullet journal），用它追踪任务和保持条理，划掉清单任务时感到特别满足，并分享了一张带有她最喜欢的名言的排版截图",
+              "route": "vector",
+              "session_date": "2:58 pm on 16 August, 2023"
+            }
+          ],
+          "grade": "partial",
+          "judge": {
+            "grade": "partial",
+            "missing": [
+              "答案包含了超出金标准列表的模糊附加书籍（自我发现的书、成功故事书），稀释了精确性"
+            ],
+            "reason": "两个金标准书名均已包含，但答案混入了不在金标准中的模糊额外项，不属于精确匹配。"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa156",
+      "source": {
+        "english": {
+          "question": "What is one of Nate's favorite dairy-free treats besides coconut milk ice cream?",
+          "answer": "dairy-free chocolate mousse",
+          "evidence": [
+            {
+              "dia_id": "D21:10",
+              "session": "session_21",
+              "session_date": "1:43 pm on 14 September, 2022",
+              "window": [
+                {
+                  "dia_id": "D21:7",
+                  "speaker": "Joanna",
+                  "text": "Wow, that looks amazing, Nate! I love the color and texture. It's great that you're making these options. Could you share the recipe? I'd love to try making it sometime!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:8",
+                  "speaker": "Nate",
+                  "text": "Yeah sure! Would love to share it. Let's spread the joy of dairy-free options! Let me know when you make it!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:9",
+                  "speaker": "Joanna",
+                  "text": "Cool, Nate! Gonna give it a go. Dairy-free is a must for me, especially for desserts. Last Friday, I made a deeeelish dessert with almond milk - it was good! Got any favs when it comes to dairy-free desserts?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:10",
+                  "speaker": "Nate",
+                  "text": "Coconut milk ice cream is one of my favorites as you might be able to tell, but I also love a dairy-free chocolate mousse. It's super creamy and tastes like the real thing. What's been your favorite dairy-free sweet treat so far?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:11",
+                  "speaker": "Joanna",
+                  "text": "Hey Nate, my favorite dairy-free treat is this amazing chocolate raspberry tart. It has an almond flour crust, chocolate ganache, and fresh raspberries - it's delicious!",
+                  "query": "chocolate raspberry tart almond flour crust ganache fresh raspberries",
+                  "blip_caption": "a photo of a chocolate tart with raspberries on top"
+                },
+                {
+                  "dia_id": "D21:12",
+                  "speaker": "Nate",
+                  "text": "That looks amazing, Joanna! I need to try baking that. What other treats do you like making?",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of chocolate cake with raspberries on a plate"
+                },
+                {
+                  "dia_id": "D21:13",
+                  "speaker": "Joanna",
+                  "text": "Hey Nate, I love making this dairy-free chocolate cake with raspberries. It's so moist and delicious - perfect sweetness level.",
+                  "query": "dairy-free chocolate cake raspberries",
+                  "blip_caption": "a photo of a piece of chocolate cake with raspberries on a plate"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "除了椰奶冰淇淋，内特还喜欢什么无乳制品甜点？",
+          "answer": "无乳制品巧克力慕斯",
+          "evidence": [
+            {
+              "dia_id": "D21:10",
+              "session": "session_21",
+              "session_date": "1:43 pm on 14 September, 2022",
+              "window": [
+                {
+                  "dia_id": "D21:7",
+                  "speaker": "乔安娜",
+                  "text": "哇，看起来太棒了，内特！我喜欢它的颜色和质地。你做这些选择真好。你能分享一下食谱吗？我以后很想试着做做看！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:8",
+                  "speaker": "内特",
+                  "text": "当然可以！很乐意分享。让我们传播无乳制品选择的快乐！做好之后告诉我！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:9",
+                  "speaker": "乔安娜",
+                  "text": "好的，内特！我要试试看。无乳制品对我来说是必须的，尤其是甜点。上个星期五，我用杏仁奶做了一道超——级美味的甜点——很好吃！说到无乳制品甜点，你有什么最爱吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:10",
+                  "speaker": "内特",
+                  "text": "你可能已经看出来，椰奶冰淇淋是我的最爱之一，但我也喜欢无乳制品巧克力慕斯。它超级绵密，味道和真的一样。到目前为止你最喜欢的无乳制品甜食是什么？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:11",
+                  "speaker": "乔安娜",
+                  "text": "嘿内特，我最爱的无乳制品甜食是这个超棒的巧克力覆盆子挞。它有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子——太好吃了！",
+                  "query": "chocolate raspberry tart almond flour crust ganache fresh raspberries",
+                  "blip_caption": "a photo of a chocolate tart with raspberries on top"
+                },
+                {
+                  "dia_id": "D21:12",
+                  "speaker": "内特",
+                  "text": "看起来太棒了，乔安娜！我得试着烤一下。你还喜欢做其他什么甜点？",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of chocolate cake with raspberries on a plate"
+                },
+                {
+                  "dia_id": "D21:13",
+                  "speaker": "乔安娜",
+                  "text": "嘿内特，我喜欢做这个无乳制品巧克力覆盆子蛋糕。它非常湿润美味——甜度刚刚好。",
+                  "query": "dairy-free chocolate cake raspberries",
+                  "blip_caption": "a photo of a piece of chocolate cake with raspberries on a plate"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "无乳制品巧克力慕斯（他形容超级绵密、味道和真的一样）。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "8af51773-4f22-440d-90df-a8b4f6a4bbd0",
+              "content": "内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "103dc4a0-4711-4508-b231-9e28f34c3a39",
+              "content": "内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳制品冰淇淋食谱（2022年2月下旬）",
+              "route": "vector",
+              "session_date": "6:59 pm on 18 March, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "06e2ef9c-7f13-4f58-8777-dfbfc2027d17",
+              "content": "乔安娜 (Joanna) 分享了另一个喜欢的无乳制品食谱：用蓝莓、椰奶和无麸质挞皮做的甜点，绵密美味；内特表示一定要试试",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "6206b745-4bd1-491c-a0aa-a9728c5e5979",
+              "content": "乔安娜 (Joanna) 一直在做各种适合所有人饮食的无乳制品甜点——饼干、派、蛋糕等，并计划很快与内特分享更多食谱",
+              "route": "vector",
+              "session_date": "6:03 pm on 5 September, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "9e497904-46a2-4a9e-9cd2-b33fed4cdf9b",
+              "content": "内特表示一直想尝尝乔安娜做的巧克力覆盆子蛋糕，乔安娜答应拜访时带给他",
+              "route": "vector",
+              "session_date": "3:56 pm on 4 November, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "content": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的满足感",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "f19471e0-6ae0-423b-9f4f-8fa423bff553",
+              "content": "内特称赞乔安娜做无乳制品甜点非常有天赋，说她的蛋糕看起来很棒",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+              "content": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "51a2740b-2142-4b53-b5c9-a0613b062aa5",
+              "content": "乔安娜 (Joanna) 喜欢做无乳制品巧克力覆盆子蛋糕，用杏仁粉、椰子油、巧克力和覆盆子制作，非常湿润、甜度适中，是她过生日和特殊日子时的最爱",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "2d143585-5296-4136-8885-95e68e0364c8",
+              "content": "乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月14日分享了照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "7942fb25-bf57-4769-8d78-53d2f61048b8",
+              "content": "内特 (Nate) 于2022年6月17日（上周五）做了纯素（无乳制品）椰奶冰淇淋，分给了纯素饮食小组的一些人，反馈很棒；他答应在2022年6月25日把食谱发给乔安娜",
+              "route": "vector",
+              "session_date": "10:55 am on 24 June, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "4624cccb-b798-46c2-8861-35cf5b936bc3",
+              "content": "内特 (Nate) 于2022年4月17日分享了椰奶冰淇淋配方：用椰奶、香草精、糖和一小撮盐制作，在冰箱冷藏后放入冰淇淋机冷冻到可挖球的程度；这是无乳制品配方，因为乔安娜乳糖不耐受正需要",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+              "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案正确说明了不含乳制品的巧克力慕斯，并附有正确的额外细节。"
+          }
+        },
+        "graph": {
+          "answer": "无乳制品巧克力慕斯（他形容慕斯超级绵密、味道和真的一样）。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "8af51773-4f22-440d-90df-a8b4f6a4bbd0",
+              "content": "内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "103dc4a0-4711-4508-b231-9e28f34c3a39",
+              "content": "内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳制品冰淇淋食谱（2022年2月下旬）",
+              "route": "vector",
+              "session_date": "6:59 pm on 18 March, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "06e2ef9c-7f13-4f58-8777-dfbfc2027d17",
+              "content": "乔安娜 (Joanna) 分享了另一个喜欢的无乳制品食谱：用蓝莓、椰奶和无麸质挞皮做的甜点，绵密美味；内特表示一定要试试",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "6206b745-4bd1-491c-a0aa-a9728c5e5979",
+              "content": "乔安娜 (Joanna) 一直在做各种适合所有人饮食的无乳制品甜点——饼干、派、蛋糕等，并计划很快与内特分享更多食谱",
+              "route": "vector",
+              "session_date": "6:03 pm on 5 September, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "9e497904-46a2-4a9e-9cd2-b33fed4cdf9b",
+              "content": "内特表示一直想尝尝乔安娜做的巧克力覆盆子蛋糕，乔安娜答应拜访时带给他",
+              "route": "vector",
+              "session_date": "3:56 pm on 4 November, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "content": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的满足感",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "f19471e0-6ae0-423b-9f4f-8fa423bff553",
+              "content": "内特称赞乔安娜做无乳制品甜点非常有天赋，说她的蛋糕看起来很棒",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+              "content": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "51a2740b-2142-4b53-b5c9-a0613b062aa5",
+              "content": "乔安娜 (Joanna) 喜欢做无乳制品巧克力覆盆子蛋糕，用杏仁粉、椰子油、巧克力和覆盆子制作，非常湿润、甜度适中，是她过生日和特殊日子时的最爱",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "2d143585-5296-4136-8885-95e68e0364c8",
+              "content": "乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月14日分享了照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "7942fb25-bf57-4769-8d78-53d2f61048b8",
+              "content": "内特 (Nate) 于2022年6月17日（上周五）做了纯素（无乳制品）椰奶冰淇淋，分给了纯素饮食小组的一些人，反馈很棒；他答应在2022年6月25日把食谱发给乔安娜",
+              "route": "vector",
+              "session_date": "10:55 am on 24 June, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "4624cccb-b798-46c2-8861-35cf5b936bc3",
+              "content": "内特 (Nate) 于2022年4月17日分享了椰奶冰淇淋配方：用椰奶、香草精、糖和一小撮盐制作，在冰箱冷藏后放入冰淇淋机冷冻到可挖球的程度；这是无乳制品配方，因为乔安娜乳糖不耐受正需要",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+              "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "答案完全匹配了黄金答案——无乳制品巧克力慕斯——并带有正确的额外细节。"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa95",
+      "source": {
+        "english": {
+          "question": "What is Nate's favorite video game?",
+          "answer": "Xenoblade Chronicles",
+          "evidence": [
+            {
+              "dia_id": "D27:22",
+              "session": "session_27",
+              "session_date": "8:10 pm on 7 November, 2022",
+              "window": [
+                {
+                  "dia_id": "D27:19",
+                  "speaker": "Nate",
+                  "text": "Yeah, I love it. It's like my own little haven to escape into the virtual world.",
+                  "query": null,
+                  "blip_caption": "a photo of a desk with two monitors and a laptop"
+                },
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "Joanna",
+                  "text": "Wow, that sounds great to have your own gaming setup at home. It must be really awesome!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "Nate",
+                  "text": "It really is! But it's also really important to have something like this for my career, otherwise I would never be able to beat my competition.",
+                  "query": "gaming headset controller",
+                  "blip_caption": "a photo of a pair of headphones and a video game controller"
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "Joanna",
+                  "text": "That makes sense! It's all about practice isn't it? So what's your favorite game?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:23",
+                  "speaker": "Nate",
+                  "text": "Yep! I'm currently playing this awesome fantasy RPG called \"Xeonoblade Chronicles\" and it's been a blast! I highly reccomend it if you've never played it before. ",
+                  "query": "eternal kingdom game cover art",
+                  "blip_caption": "a photo of two nintendo game covers with a picture of a group of people"
+                },
+                {
+                  "dia_id": "D27:24",
+                  "speaker": "Joanna",
+                  "text": "What made you start playing it? That's a japanese game series right?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:25",
+                  "speaker": "Nate",
+                  "text": "Yes it is! I'm a big fan of Nintendo games, and I've actually been wanting to play this one for a while because my friends have played it and reccomended it!",
+                  "query": null,
+                  "blip_caption": "a photo of a woman in a costume holding a glass"
+                }
+              ]
+            },
+            {
+              "dia_id": "D27:23",
+              "session": "session_27",
+              "session_date": "8:10 pm on 7 November, 2022",
+              "window": [
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "Joanna",
+                  "text": "Wow, that sounds great to have your own gaming setup at home. It must be really awesome!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "Nate",
+                  "text": "It really is! But it's also really important to have something like this for my career, otherwise I would never be able to beat my competition.",
+                  "query": "gaming headset controller",
+                  "blip_caption": "a photo of a pair of headphones and a video game controller"
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "Joanna",
+                  "text": "That makes sense! It's all about practice isn't it? So what's your favorite game?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:23",
+                  "speaker": "Nate",
+                  "text": "Yep! I'm currently playing this awesome fantasy RPG called \"Xeonoblade Chronicles\" and it's been a blast! I highly reccomend it if you've never played it before. ",
+                  "query": "eternal kingdom game cover art",
+                  "blip_caption": "a photo of two nintendo game covers with a picture of a group of people"
+                },
+                {
+                  "dia_id": "D27:24",
+                  "speaker": "Joanna",
+                  "text": "What made you start playing it? That's a japanese game series right?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:25",
+                  "speaker": "Nate",
+                  "text": "Yes it is! I'm a big fan of Nintendo games, and I've actually been wanting to play this one for a while because my friends have played it and reccomended it!",
+                  "query": null,
+                  "blip_caption": "a photo of a woman in a costume holding a glass"
+                },
+                {
+                  "dia_id": "D27:26",
+                  "speaker": "Joanna",
+                  "text": "Nice! It's really cool when a reccomendation from a friend fits your taste so well isn't it?",
+                  "query": null,
+                  "blip_caption": "a photo of a captain america costume on display in a museum"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "内特最喜欢的电子游戏是什么？",
+          "answer": "异度神剑",
+          "evidence": [
+            {
+              "dia_id": "D27:22",
+              "session": "session_27",
+              "session_date": "8:10 pm on 7 November, 2022",
+              "window": [
+                {
+                  "dia_id": "D27:19",
+                  "speaker": "内特",
+                  "text": "是啊，我很喜欢。它就像我专属的小天地，可以让我逃进虚拟世界。",
+                  "query": null,
+                  "blip_caption": "a photo of a desk with two monitors and a laptop"
+                },
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "乔安娜",
+                  "text": "哇，家里有自己的游戏设备听起来太棒了。肯定特别爽！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "内特",
+                  "text": "确实！但对我的职业来说，有这样的设备也非常重要，否则我根本不可能战胜对手。",
+                  "query": "gaming headset controller",
+                  "blip_caption": "a photo of a pair of headphones and a video game controller"
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "乔安娜",
+                  "text": "有道理！一切都靠练习，不是吗？那你最喜欢的游戏是什么？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:23",
+                  "speaker": "内特",
+                  "text": "对！我最近在玩一款超棒的奇幻角色扮演游戏，叫\"Xenoblade Chronicles\"（异度神剑），特别好玩！如果你没玩过，我强烈推荐。",
+                  "query": "eternal kingdom game cover art",
+                  "blip_caption": "a photo of two nintendo game covers with a picture of a group of people"
+                },
+                {
+                  "dia_id": "D27:24",
+                  "speaker": "乔安娜",
+                  "text": "你为什么会开始玩它？那是个日本游戏系列吧？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:25",
+                  "speaker": "内特",
+                  "text": "是的！我是任天堂游戏的忠实粉丝，其实我想玩这款游戏已经有一段时间了，因为我的朋友们玩过并向我推荐了它！",
+                  "query": null,
+                  "blip_caption": "a photo of a woman in a costume holding a glass"
+                }
+              ]
+            },
+            {
+              "dia_id": "D27:23",
+              "session": "session_27",
+              "session_date": "8:10 pm on 7 November, 2022",
+              "window": [
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "乔安娜",
+                  "text": "哇，家里有自己的游戏设备听起来太棒了。肯定特别爽！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "内特",
+                  "text": "确实！但对我的职业来说，有这样的设备也非常重要，否则我根本不可能战胜对手。",
+                  "query": "gaming headset controller",
+                  "blip_caption": "a photo of a pair of headphones and a video game controller"
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "乔安娜",
+                  "text": "有道理！一切都靠练习，不是吗？那你最喜欢的游戏是什么？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:23",
+                  "speaker": "内特",
+                  "text": "对！我最近在玩一款超棒的奇幻角色扮演游戏，叫\"Xenoblade Chronicles\"（异度神剑），特别好玩！如果你没玩过，我强烈推荐。",
+                  "query": "eternal kingdom game cover art",
+                  "blip_caption": "a photo of two nintendo game covers with a picture of a group of people"
+                },
+                {
+                  "dia_id": "D27:24",
+                  "speaker": "乔安娜",
+                  "text": "你为什么会开始玩它？那是个日本游戏系列吧？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:25",
+                  "speaker": "内特",
+                  "text": "是的！我是任天堂游戏的忠实粉丝，其实我想玩这款游戏已经有一段时间了，因为我的朋友们玩过并向我推荐了它！",
+                  "query": null,
+                  "blip_caption": "a photo of a woman in a costume holding a glass"
+                },
+                {
+                  "dia_id": "D27:26",
+                  "speaker": "乔安娜",
+                  "text": "不错！朋友的推荐正好合你的口味，这种感觉真的很棒，对吧？",
+                  "query": null,
+                  "blip_caption": "a photo of a captain america costume on display in a museum"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "内特最喜欢的电子游戏是《Cyberpunk 2077》——他一直在玩，非常喜欢它的未来主义背景和玩法。此外他也热爱任天堂的《Xenoblade Chronicles》（异度神剑），并强烈推荐这款奇幻角色扮演游戏。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+              "content": "内特 (Nate) 最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他玩这款游戏是因为朋友们推荐，且他是任天堂游戏的忠实粉丝（2022年11月上旬）",
+              "route": "vector",
+              "session_date": "8:10 pm on 7 November, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "1bc4d60b-c739-4d9e-863e-b745a93b92f7",
+              "content": "内特 (Nate) 最近看了《盗梦空间》，觉得其中的反转和梦境情节让他大开眼界；他还在一直玩《Cyberpunk 2077》，很喜欢它的未来主义背景和玩法",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "f2f1cf9c-2423-4903-8cbb-7d0d646dca5e",
+              "content": "内特 (Nate) 在展会上玩了卡坦岛 (Catan)，他非常喜欢这款策略游戏，认为它既可以竞技也可以休闲；他觉得游戏是自己逃避生活烦恼的方式，一般不会拼得你死我活",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "84cbaa5a-52b9-4fcb-be73-3eb488043e22",
+              "content": "内特 (Nate) 在2022年1月中旬左右赢得了他第一场电子游戏比赛，游戏是团队射击游戏 Counter-Strike: Global Offensive，他和队友玩得非常开心",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "ca638e19-3640-4f6e-8059-d96a0f36b5b4",
+              "content": "内特 (Nate) 的最爱之一是《指环王》(Lord of the Rings) 三部曲，他称赞其世界观构建、战斗和叙事令人叹为观止",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "c3a74235-a1ab-4a06-befd-61eb78c1e380",
+              "content": "内特 (Nate) 截至2022年10月21日因电子游戏锦标赛的进展感到压力很大，对手都很强，他的宠物乌龟Mario和Luigi总能让他开心起来",
+              "route": "vector",
+              "session_date": "2:01 pm on 21 October, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "0a72d8a7-dcb3-4c86-9b14-4ea2733266a4",
+              "content": "内特 (Nate) 的主要爱好是玩电子游戏和看电影，他喜欢动作片和科幻片，因为喜欢酷炫的特效，也喜欢看经典电影",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "eb4eda0b-be7f-4707-b8ed-353bf850b830",
+              "content": "内特 (Nate) 喜欢奇幻和科幻电影，认为它们是很好的escape、能激发想象力，他还喜欢玩电子游戏作为表达创造力和热情的方式",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "9a68d51f-03ab-49d9-ae50-cd2780dd78cd",
+              "content": "内特在游戏展会上遇到了也玩他喜欢的桌游的人并加入了他们，一起玩了卡坦岛 (Catan) 策略游戏；他觉得游戏既可以竞技也可以休闲，虽然竞争但玩得很开心",
+              "route": "vector",
+              "session_date": "2:01 pm on 21 October, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "6ca75444-6345-4f43-8045-8a25f8ee6c2a",
+              "content": "内特 (Nate) 于2022年7月8日（周五）赢得了他的第四场电子游戏锦标赛冠军，这次是线上比赛，他为自己能靠热爱的事情赚钱而自豪",
+              "route": "vector",
+              "session_date": "2:34 pm on 10 July, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "3162b567-f8e4-4928-8ea3-6e48d21ecd79",
+              "content": "内特 (Nate) 于2022年8月21日赢得了一场国际电子游戏锦标赛，他为所有努力得到回报、能够靠热爱的事情谋生感到非常兴奋和自豪",
+              "route": "vector",
+              "session_date": "10:57 am on 22 August, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "196287c7-7a3c-4989-9b2b-2c7642b8abf6",
+              "content": "内特 (Nate) 最喜欢的超级英雄是钢铁侠，喜欢他的科技感和讽刺的幽默，他房间里摆着钢铁侠手办作为提醒自己继续为目标努力的物品",
+              "route": "vector",
+              "session_date": "2:12 pm on 5 June, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "b9464336-c7df-4227-9c4e-eab329c03194",
+              "content": "内特 (Nate) 表示他可能会去看乔安娜推荐的《美丽心灵的永恒阳光》",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "7a131bd2-64a7-49d7-ac0b-a10968e303f2",
+              "content": "内特在《街头霸王》锦标赛决赛中肾上腺素飙升，另一位决赛选手还和他握了手，他觉得赢得比赛超级爽",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "e6939225-a05d-4bf8-9737-aa854a56d4be",
+              "content": "内特 (Nate) 于2022年11月开始制作YouTube游戏内容，灵感来自他对游戏视频的喜爱，希望在没有锦标赛时分享对游戏的热爱并与游戏爱好者交流",
+              "route": "vector",
+              "session_date": "5:54 pm on 9 November, 2022"
+            }
+          ],
+          "grade": "partial",
+          "judge": {
+            "grade": "partial",
+            "missing": [
+              "确定的陈述：他最喜欢的游戏是《异度神剑》(Xenoblade Chronicles)"
+            ],
+            "reason": "正确答案与错误的替代选项（Cyberpunk 2077 作为最爱）混在了一起，而没有明确指出《异度神剑》是他最喜欢的游戏。"
+          }
+        },
+        "graph": {
+          "answer": "扫描记忆：内特赢得过CS:GO和《街头霸王》比赛；他喜欢CS:GO、Cyberpunk 2077、Xenoblade Chronicles、卡坦岛。没有一条记忆直接说“最喜欢”，但最具体的信息是他通常玩CS:GO（他的主打游戏，也是他第一场胜利的游戏），最近非常沉迷Cyberpunk 2077和Xenoblade Chronicles。\n\n回答：内特没有明确说出单一的最爱，但他的主打游戏是《反恐精英：全球攻势》(CS:GO)，他通常玩这款游戏；最近他特别喜欢《赛博朋克2077》（喜欢其未来主义背景和玩法）和《异度神剑》(Xenoblade Chronicles)，他是任天堂游戏的忠实粉丝。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+              "content": "内特 (Nate) 最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他玩这款游戏是因为朋友们推荐，且他是任天堂游戏的忠实粉丝（2022年11月上旬）",
+              "route": "vector",
+              "session_date": "8:10 pm on 7 November, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "1bc4d60b-c739-4d9e-863e-b745a93b92f7",
+              "content": "内特 (Nate) 最近看了《盗梦空间》，觉得其中的反转和梦境情节让他大开眼界；他还在一直玩《Cyberpunk 2077》，很喜欢它的未来主义背景和玩法",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "cf44063c-cfaa-48ef-b7e3-d4ee6a15bbfa",
+              "content": "内特于2022年4月下旬（新对话前一周）赢下了他的第二个锦标赛，这次是本地《街头霸王》比赛；他通常玩CS:GO，但经常和朋友们玩《街头霸王》，发现自己很擅长",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 4,
+              "id": "f2f1cf9c-2423-4903-8cbb-7d0d646dca5e",
+              "content": "内特 (Nate) 在展会上玩了卡坦岛 (Catan)，他非常喜欢这款策略游戏，认为它既可以竞技也可以休闲；他觉得游戏是自己逃避生活烦恼的方式，一般不会拼得你死我活",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "84cbaa5a-52b9-4fcb-be73-3eb488043e22",
+              "content": "内特 (Nate) 在2022年1月中旬左右赢得了他第一场电子游戏比赛，游戏是团队射击游戏 Counter-Strike: Global Offensive，他和队友玩得非常开心",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "ca638e19-3640-4f6e-8059-d96a0f36b5b4",
+              "content": "内特 (Nate) 的最爱之一是《指环王》(Lord of the Rings) 三部曲，他称赞其世界观构建、战斗和叙事令人叹为观止",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "c3a74235-a1ab-4a06-befd-61eb78c1e380",
+              "content": "内特 (Nate) 截至2022年10月21日因电子游戏锦标赛的进展感到压力很大，对手都很强，他的宠物乌龟Mario和Luigi总能让他开心起来",
+              "route": "vector",
+              "session_date": "2:01 pm on 21 October, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "0a72d8a7-dcb3-4c86-9b14-4ea2733266a4",
+              "content": "内特 (Nate) 的主要爱好是玩电子游戏和看电影，他喜欢动作片和科幻片，因为喜欢酷炫的特效，也喜欢看经典电影",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "eb4eda0b-be7f-4707-b8ed-353bf850b830",
+              "content": "内特 (Nate) 喜欢奇幻和科幻电影，认为它们是很好的escape、能激发想象力，他还喜欢玩电子游戏作为表达创造力和热情的方式",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "9a68d51f-03ab-49d9-ae50-cd2780dd78cd",
+              "content": "内特在游戏展会上遇到了也玩他喜欢的桌游的人并加入了他们，一起玩了卡坦岛 (Catan) 策略游戏；他觉得游戏既可以竞技也可以休闲，虽然竞争但玩得很开心",
+              "route": "vector",
+              "session_date": "2:01 pm on 21 October, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "6ca75444-6345-4f43-8045-8a25f8ee6c2a",
+              "content": "内特 (Nate) 于2022年7月8日（周五）赢得了他的第四场电子游戏锦标赛冠军，这次是线上比赛，他为自己能靠热爱的事情赚钱而自豪",
+              "route": "vector",
+              "session_date": "2:34 pm on 10 July, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "3162b567-f8e4-4928-8ea3-6e48d21ecd79",
+              "content": "内特 (Nate) 于2022年8月21日赢得了一场国际电子游戏锦标赛，他为所有努力得到回报、能够靠热爱的事情谋生感到非常兴奋和自豪",
+              "route": "vector",
+              "session_date": "10:57 am on 22 August, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "196287c7-7a3c-4989-9b2b-2c7642b8abf6",
+              "content": "内特 (Nate) 最喜欢的超级英雄是钢铁侠，喜欢他的科技感和讽刺的幽默，他房间里摆着钢铁侠手办作为提醒自己继续为目标努力的物品",
+              "route": "vector",
+              "session_date": "2:12 pm on 5 June, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "b9464336-c7df-4227-9c4e-eab329c03194",
+              "content": "内特 (Nate) 表示他可能会去看乔安娜推荐的《美丽心灵的永恒阳光》",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "7a131bd2-64a7-49d7-ac0b-a10968e303f2",
+              "content": "内特在《街头霸王》锦标赛决赛中肾上腺素飙升，另一位决赛选手还和他握了手，他觉得赢得比赛超级爽",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            }
+          ],
+          "grade": "partial",
+          "judge": {
+            "grade": "partial",
+            "missing": [
+              "未明确指出《异度神剑》是最爱，而是列出多个候选并含糊表示没有单一最爱"
+            ],
+            "reason": "答案包含正确的游戏《异度神剑》，但以列举多种可能并加以对冲的方式呈现，未给出确定的最爱。"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa75",
+      "source": {
+        "english": {
+          "question": "What are Nate's favorite desserts?",
+          "answer": "coconut milk icecream, dairy-free chocolate cake with berries, chocolate and mixed-berry icecream, dairy-free chocolate mousse",
+          "evidence": [
+            {
+              "dia_id": "D3:4",
+              "session": "session_3",
+              "session_date": "9:27 am on 7 February, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:1",
+                  "speaker": "Joanna",
+                  "text": "Hey Nate, long time no see! The screenplay I sent in to the film festival has been on my mind all day everyday. I keep bouncing between crazy emotions like relief, excitement and worry! Fingers crossed a producer or director falls in love with it and it ends up on the big screen - that would be awesome!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:2",
+                  "speaker": "Nate",
+                  "text": "Hey Joanna! It is a big deal! I'm sure its been a wild ride. Sending some positive vibes and hoping someone likes it enough to get it on the big screen - that would be awesome!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:3",
+                  "speaker": "Joanna",
+                  "text": "Thanks Nate, your support really means a lot. I put a lot of effort into it and I'm crossing my fingers. What about you? Anything new and exciting happening in your life?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:4",
+                  "speaker": "Nate",
+                  "text": "Thanks, Joanna. Not much has changed for me, but I just discovered that I can make coconut milk icecream and gave it a try. It was actually pretty good, so I'm proud of myself.",
+                  "query": "homemade coconut milk ice cream",
+                  "blip_caption": "a photo of a bowl of ice cream with a spoon in it"
+                },
+                {
+                  "dia_id": "D3:5",
+                  "speaker": "Joanna",
+                  "text": "Looks delish! Glad you tried something new and it went well. What did you think of it?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:6",
+                  "speaker": "Nate",
+                  "text": "Super good! It was rich and creamy - might be my new favorite snack!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:7",
+                  "speaker": "Joanna",
+                  "text": "Great! I love when you try something new and it actually works out. Will you give it another go?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D3:10",
+              "session": "session_3",
+              "session_date": "9:27 am on 7 February, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:7",
+                  "speaker": "Joanna",
+                  "text": "Great! I love when you try something new and it actually works out. Will you give it another go?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:8",
+                  "speaker": "Nate",
+                  "text": "Yep, it could be fun! I'm looking forward to trying out different flavors and toppings.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:9",
+                  "speaker": "Joanna",
+                  "text": "Yum! Sounds great. Got any favorite flavors for dairy-free desserts?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:10",
+                  "speaker": "Nate",
+                  "text": "I love coconut milk, but I also enjoy chocolate and mixed berry flavors.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:11",
+                  "speaker": "Joanna",
+                  "text": "Wow, those sound great! Who can say no to chocolate and berries? I'm tempted to try dairy-free flavors now!",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of cake with berries on a plate"
+                },
+                {
+                  "dia_id": "D3:12",
+                  "speaker": "Nate",
+                  "text": "Well I also made a dairy-free chocolate cake with berries on it the other day, maybe you would like that!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:13",
+                  "speaker": "Joanna",
+                  "text": "Wow! That sounds yummy! You're so talented. Thanks for sharing your amazing creations! I should really try making one or just pay you a visit and try one for myself!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D21:10",
+              "session": "session_21",
+              "session_date": "1:43 pm on 14 September, 2022",
+              "window": [
+                {
+                  "dia_id": "D21:7",
+                  "speaker": "Joanna",
+                  "text": "Wow, that looks amazing, Nate! I love the color and texture. It's great that you're making these options. Could you share the recipe? I'd love to try making it sometime!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:8",
+                  "speaker": "Nate",
+                  "text": "Yeah sure! Would love to share it. Let's spread the joy of dairy-free options! Let me know when you make it!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:9",
+                  "speaker": "Joanna",
+                  "text": "Cool, Nate! Gonna give it a go. Dairy-free is a must for me, especially for desserts. Last Friday, I made a deeeelish dessert with almond milk - it was good! Got any favs when it comes to dairy-free desserts?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:10",
+                  "speaker": "Nate",
+                  "text": "Coconut milk ice cream is one of my favorites as you might be able to tell, but I also love a dairy-free chocolate mousse. It's super creamy and tastes like the real thing. What's been your favorite dairy-free sweet treat so far?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:11",
+                  "speaker": "Joanna",
+                  "text": "Hey Nate, my favorite dairy-free treat is this amazing chocolate raspberry tart. It has an almond flour crust, chocolate ganache, and fresh raspberries - it's delicious!",
+                  "query": "chocolate raspberry tart almond flour crust ganache fresh raspberries",
+                  "blip_caption": "a photo of a chocolate tart with raspberries on top"
+                },
+                {
+                  "dia_id": "D21:12",
+                  "speaker": "Nate",
+                  "text": "That looks amazing, Joanna! I need to try baking that. What other treats do you like making?",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of chocolate cake with raspberries on a plate"
+                },
+                {
+                  "dia_id": "D21:13",
+                  "speaker": "Joanna",
+                  "text": "Hey Nate, I love making this dairy-free chocolate cake with raspberries. It's so moist and delicious - perfect sweetness level.",
+                  "query": "dairy-free chocolate cake raspberries",
+                  "blip_caption": "a photo of a piece of chocolate cake with raspberries on a plate"
+                }
+              ]
+            },
+            {
+              "dia_id": "D3:12",
+              "session": "session_3",
+              "session_date": "9:27 am on 7 February, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:9",
+                  "speaker": "Joanna",
+                  "text": "Yum! Sounds great. Got any favorite flavors for dairy-free desserts?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:10",
+                  "speaker": "Nate",
+                  "text": "I love coconut milk, but I also enjoy chocolate and mixed berry flavors.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:11",
+                  "speaker": "Joanna",
+                  "text": "Wow, those sound great! Who can say no to chocolate and berries? I'm tempted to try dairy-free flavors now!",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of cake with berries on a plate"
+                },
+                {
+                  "dia_id": "D3:12",
+                  "speaker": "Nate",
+                  "text": "Well I also made a dairy-free chocolate cake with berries on it the other day, maybe you would like that!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:13",
+                  "speaker": "Joanna",
+                  "text": "Wow! That sounds yummy! You're so talented. Thanks for sharing your amazing creations! I should really try making one or just pay you a visit and try one for myself!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:14",
+                  "speaker": "Nate",
+                  "text": "I couldn't agree more! It's always fun experimenting in the kitchen.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:15",
+                  "speaker": "Joanna",
+                  "text": "I can tell! Your cooking skills are awesome. Seen any good movies lately?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "内特最喜欢的甜点是什么？",
+          "answer": "椰奶冰淇淋、无乳制品浆果巧克力蛋糕、巧克力和混合浆果冰淇淋、无乳制品巧克力慕斯",
+          "evidence": [
+            {
+              "dia_id": "D3:4",
+              "session": "session_3",
+              "session_date": "9:27 am on 7 February, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:1",
+                  "speaker": "乔安娜",
+                  "text": "嘿，内特，好久不见！我寄给电影节的剧本这几天整天都在我脑子里转。我一直在各种情绪之间起伏，比如如释重负、兴奋和担忧！祈祷有制片人或导演能喜欢上它，让它最终登上大银幕——那就太棒了！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:2",
+                  "speaker": "内特",
+                  "text": "嘿，乔安娜！这可是件大事！我相信这一路一定很刺激。给你送上正能量，希望有人足够喜欢它，让它登上大银幕——那就太棒了！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:3",
+                  "speaker": "乔安娜",
+                  "text": "谢谢内特，你的支持对我意义重大。我在这上面下了很大功夫，我现在双手合十祈祷。你呢？生活中有什么新鲜又令人兴奋的事吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:4",
+                  "speaker": "内特",
+                  "text": "谢谢，乔安娜。我这边没什么大变化，不过我刚刚发现自己可以做椰奶冰淇淋，就试了一下。味道其实挺不错的，我为自己感到骄傲。",
+                  "query": "homemade coconut milk ice cream",
+                  "blip_caption": "a photo of a bowl of ice cream with a spoon in it"
+                },
+                {
+                  "dia_id": "D3:5",
+                  "speaker": "乔安娜",
+                  "text": "看起来好好吃！很高兴你尝试了新东西而且成功了。你觉得怎么样？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:6",
+                  "speaker": "内特",
+                  "text": "超好吃！又香浓又顺滑——可能会成为我的新最爱零食！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:7",
+                  "speaker": "乔安娜",
+                  "text": "太好了！我就喜欢你尝试新东西还真能成功的感觉。你会再做一次吗？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D3:10",
+              "session": "session_3",
+              "session_date": "9:27 am on 7 February, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:7",
+                  "speaker": "乔安娜",
+                  "text": "太好了！我就喜欢你尝试新东西还真能成功的感觉。你会再做一次吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:8",
+                  "speaker": "内特",
+                  "text": "会啊，应该挺好玩！我很期待尝试不同的口味和配料。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:9",
+                  "speaker": "乔安娜",
+                  "text": "真馋人！听起来很棒。有没有什么特别喜欢的无乳制品甜点口味？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:10",
+                  "speaker": "内特",
+                  "text": "我喜欢椰奶，不过也喜欢巧克力和混合莓果口味。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:11",
+                  "speaker": "乔安娜",
+                  "text": "哇，听起来都不错！谁能拒绝巧克力和莓果呢？我现在都想试试无乳制品口味了！",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of cake with berries on a plate"
+                },
+                {
+                  "dia_id": "D3:12",
+                  "speaker": "内特",
+                  "text": "嗯，我前几天还做了一个无乳制品巧克力蛋糕，上面加了莓果，你可能会喜欢！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:13",
+                  "speaker": "乔安娜",
+                  "text": "哇！听起来太好吃了！你太有才了。谢谢你分享你的精彩作品！我真该自己试着做一个，或者干脆去你家拜访，亲自尝一个！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D21:10",
+              "session": "session_21",
+              "session_date": "1:43 pm on 14 September, 2022",
+              "window": [
+                {
+                  "dia_id": "D21:7",
+                  "speaker": "乔安娜",
+                  "text": "哇，看起来太棒了，内特！我喜欢它的颜色和质地。你做这些选择真好。你能分享一下食谱吗？我以后很想试着做做看！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:8",
+                  "speaker": "内特",
+                  "text": "当然可以！很乐意分享。让我们传播无乳制品选择的快乐！做好之后告诉我！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:9",
+                  "speaker": "乔安娜",
+                  "text": "好的，内特！我要试试看。无乳制品对我来说是必须的，尤其是甜点。上个星期五，我用杏仁奶做了一道超——级美味的甜点——很好吃！说到无乳制品甜点，你有什么最爱吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:10",
+                  "speaker": "内特",
+                  "text": "你可能已经看出来，椰奶冰淇淋是我的最爱之一，但我也喜欢无乳制品巧克力慕斯。它超级绵密，味道和真的一样。到目前为止你最喜欢的无乳制品甜食是什么？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:11",
+                  "speaker": "乔安娜",
+                  "text": "嘿内特，我最爱的无乳制品甜食是这个超棒的巧克力覆盆子挞。它有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子——太好吃了！",
+                  "query": "chocolate raspberry tart almond flour crust ganache fresh raspberries",
+                  "blip_caption": "a photo of a chocolate tart with raspberries on top"
+                },
+                {
+                  "dia_id": "D21:12",
+                  "speaker": "内特",
+                  "text": "看起来太棒了，乔安娜！我得试着烤一下。你还喜欢做其他什么甜点？",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of chocolate cake with raspberries on a plate"
+                },
+                {
+                  "dia_id": "D21:13",
+                  "speaker": "乔安娜",
+                  "text": "嘿内特，我喜欢做这个无乳制品巧克力覆盆子蛋糕。它非常湿润美味——甜度刚刚好。",
+                  "query": "dairy-free chocolate cake raspberries",
+                  "blip_caption": "a photo of a piece of chocolate cake with raspberries on a plate"
+                }
+              ]
+            },
+            {
+              "dia_id": "D3:12",
+              "session": "session_3",
+              "session_date": "9:27 am on 7 February, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:9",
+                  "speaker": "乔安娜",
+                  "text": "真馋人！听起来很棒。有没有什么特别喜欢的无乳制品甜点口味？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:10",
+                  "speaker": "内特",
+                  "text": "我喜欢椰奶，不过也喜欢巧克力和混合莓果口味。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:11",
+                  "speaker": "乔安娜",
+                  "text": "哇，听起来都不错！谁能拒绝巧克力和莓果呢？我现在都想试试无乳制品口味了！",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of cake with berries on a plate"
+                },
+                {
+                  "dia_id": "D3:12",
+                  "speaker": "内特",
+                  "text": "嗯，我前几天还做了一个无乳制品巧克力蛋糕，上面加了莓果，你可能会喜欢！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:13",
+                  "speaker": "乔安娜",
+                  "text": "哇！听起来太好吃了！你太有才了。谢谢你分享你的精彩作品！我真该自己试着做一个，或者干脆去你家拜访，亲自尝一个！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:14",
+                  "speaker": "内特",
+                  "text": "完全同意！在厨房里做实验总是很有趣。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:15",
+                  "speaker": "乔安娜",
+                  "text": "看得出来！你的厨艺真棒。最近看过什么好电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "椰奶冰淇淋（无乳制品椰奶冰淇淋）——他还喜欢无乳制品巧克力慕斯。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "6d342639-84b6-4d79-a8ba-2b515b5cf1ad",
+              "content": "内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成品照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "content": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的满足感",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "9e497904-46a2-4a9e-9cd2-b33fed4cdf9b",
+              "content": "内特表示一直想尝尝乔安娜做的巧克力覆盆子蛋糕，乔安娜答应拜访时带给他",
+              "route": "vector",
+              "session_date": "3:56 pm on 4 November, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+              "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "8af51773-4f22-440d-90df-a8b4f6a4bbd0",
+              "content": "内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "8837211c-167e-48d9-a112-1c131acc1fdd",
+              "content": "内特 (Nate) 在2022年11月上旬尝试了烹饪，制作了自制椰子冰淇淋（加了糖屑，颜色有点变化），当时他的游戏锦标赛被推迟",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+              "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "fd655e9b-b45b-4cc2-a5f5-3db349a9d6c1",
+              "content": "内特 (Nate) 答应把椰奶冰淇淋食谱分享给乔安娜，乔安娜表示很想试着做，并答应做好后告诉他",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "f19471e0-6ae0-423b-9f4f-8fa423bff553",
+              "content": "内特称赞乔安娜做无乳制品甜点非常有天赋，说她的蛋糕看起来很棒",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "42f50b8f-d7c8-4f80-ae59-6aa6424f5571",
+              "content": "乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "eda3f637-f21c-4190-bec7-5706b1904004",
+              "content": "内特 (Nate) 的游戏锦标赛在2022年11月初被推迟，他利用空闲时间自制了椰奶冰淇淋，但这次糖屑把颜色弄变了",
+              "route": "vector",
+              "session_date": "5:54 pm on 9 November, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "4582471e-1fba-48a9-9dac-40d786bde176",
+              "content": "内特 (Nate) 于2022年9月初的一个星期一在自己的烹饪节目上教观众做纯素冰淇淋，虽然有点紧张但非常开心，还在节目中学到了几个新食谱",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "813e1d8a-bb4e-4b34-bddf-b6aea7cde430",
+              "content": "乔安娜 (Joanna) 非常喜欢内特 (Nate) 做的甜点，称赞他的厨艺很棒，并表示试吃后会随时向他汇报反馈",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            }
+          ],
+          "grade": "partial",
+          "judge": {
+            "grade": "partial",
+            "missing": [
+              "无乳制品浆果巧克力蛋糕",
+              "巧克力和混合浆果冰淇淋"
+            ],
+            "reason": "Contains two correct elements but omits two of the four gold desserts."
+          }
+        },
+        "graph": {
+          "answer": "椰奶冰淇淋（无乳制品）——他形容它顺滑绵密、带有热带椰香，是他最喜欢的甜点（他还特别喜欢无乳制品巧克力慕斯）。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "6d342639-84b6-4d79-a8ba-2b515b5cf1ad",
+              "content": "内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成品照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "content": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的满足感",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "9e497904-46a2-4a9e-9cd2-b33fed4cdf9b",
+              "content": "内特表示一直想尝尝乔安娜做的巧克力覆盆子蛋糕，乔安娜答应拜访时带给他",
+              "route": "vector",
+              "session_date": "3:56 pm on 4 November, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "103dc4a0-4711-4508-b231-9e28f34c3a39",
+              "content": "内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳制品冰淇淋食谱（2022年2月下旬）",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 7,
+              "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+              "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "8af51773-4f22-440d-90df-a8b4f6a4bbd0",
+              "content": "内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "3bddf0e3-d1c4-426f-bfcf-db3635432f13",
+              "content": "Around August 2022, Nate developed a new coconut milk ice cream recipe that is creamy, rich, and dairy-free, and sent Joanna the recipe at her request; Joanna loves his coconut milk ice cream",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 10,
+              "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+              "content": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 11,
+              "id": "8837211c-167e-48d9-a112-1c131acc1fdd",
+              "content": "内特 (Nate) 在2022年11月上旬尝试了烹饪，制作了自制椰子冰淇淋（加了糖屑，颜色有点变化），当时他的游戏锦标赛被推迟",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "7942fb25-bf57-4769-8d78-53d2f61048b8",
+              "content": "内特 (Nate) 于2022年6月17日（上周五）做了纯素（无乳制品）椰奶冰淇淋，分给了纯素饮食小组的一些人，反馈很棒；他答应在2022年6月25日把食谱发给乔安娜",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 13,
+              "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+              "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "fd655e9b-b45b-4cc2-a5f5-3db349a9d6c1",
+              "content": "内特 (Nate) 答应把椰奶冰淇淋食谱分享给乔安娜，乔安娜表示很想试着做，并答应做好后告诉他",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "f19471e0-6ae0-423b-9f4f-8fa423bff553",
+              "content": "内特称赞乔安娜做无乳制品甜点非常有天赋，说她的蛋糕看起来很棒",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            }
+          ],
+          "grade": "partial",
+          "judge": {
+            "grade": "partial",
+            "missing": [
+              "无乳制品浆果巧克力蛋糕",
+              "巧克力和混合浆果冰淇淋"
+            ],
+            "reason": "回答涵盖了 4 个金标元素中的 2 个（椰奶冰淇淋、无乳制品巧克力慕斯），缺少其他两个甜点。"
+          }
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-50_qa46",
+      "source": {
+        "english": {
+          "question": "What is Dave's favorite activity?",
+          "answer": "Restoring cars",
+          "evidence": [
+            {
+              "dia_id": "D21:4",
+              "session": "session_21",
+              "session_date": "2:44 pm on 4 October, 2023",
+              "window": [
+                {
+                  "dia_id": "D21:1",
+                  "speaker": "Calvin",
+                  "text": "Hey Dave! Yesterday I met with some incredible artists in Boston and we talked about working together. It was such an inspiring and exciting experience - they all have individual styles and I'm stoked to collaborate with them on new music.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:2",
+                  "speaker": "Dave",
+                  "text": "Awesome, Calvin! Connecting with all those talented artists must have been an inspiring experience. Can't wait to hear what you come up with in your collaboration. Let me know how it goes! Also, how did you arrange that meeting?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:3",
+                  "speaker": "Calvin",
+                  "text": "Hey Dave, it was awesome talking to those artists! Our mutual friend knew we'd be a great fit. Can't wait to show you the final result. Also, check out this project - I love working on it to chill out. How about you? Got any hobbies to help you relax?",
+                  "query": "sleek vintage car restoration",
+                  "blip_caption": "a photo of a shiny orange car with a hood open"
+                },
+                {
+                  "dia_id": "D21:4",
+                  "speaker": "Dave",
+                  "text": "Wow, Calvin, that car looks great! Working on cars really helps me relax, it's therapeutic to see them come back to life. I've been working on that Ford Mustang I found in a junkyard - it was in bad shape, but I knew it had potential.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:5",
+                  "speaker": "Calvin",
+                  "text": "Wow, Dave! It's awesome that you can bring things back to life. Do you have any pictures of it looking amazing? I'd love to see how it turned out!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:6",
+                  "speaker": "Dave",
+                  "text": "Hey Calvin, check out this photo! I put in a lot of work restoring it, but the result is awesome. It's so satisfying to bring an old car back to life.",
+                  "query": "classic muscle car fully restored shining sunlight",
+                  "blip_caption": "a photography of a red car parked in a field with other cars"
+                },
+                {
+                  "dia_id": "D21:7",
+                  "speaker": "Calvin",
+                  "text": "We've been greatly privileged to have been granted this opportunity. It's so satisfying to bring it back to life! ",
+                  "query": null,
+                  "blip_caption": "a photo of a person's hand with dirty hands next to a car"
+                }
+              ]
+            },
+            {
+              "dia_id": "D22:7",
+              "session": "session_22",
+              "session_date": "3:13 pm on 8 October, 2023",
+              "window": [
+                {
+                  "dia_id": "D22:4",
+                  "speaker": "Calvin",
+                  "text": "Wow, Dave! You really turned it into a masterpiece. Impressive!",
+                  "query": null,
+                  "blip_caption": "a photo of a car driving down a street with a traffic light"
+                },
+                {
+                  "dia_id": "D22:5",
+                  "speaker": "Dave",
+                  "text": "Thanks Calvin! I've spent a lot of time and effort on it. It's not just a hobby, it's a passion. It's like therapy, a way to get away from everyday stress. When I was little I'd spend hours in my dad's garage, tinkering with engines - it was like my own sanctuary. Now I'm lucky enough to do this as a job, to take something broken and make it into something awesome.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:6",
+                  "speaker": "Calvin",
+                  "text": "Wow, Dave, that's amazing. Bringing broken things back to life is so satisfying. Working on cars can be a real escape from reality, and I understand that feeling. Doing what you love for a living, that's the ultimate goal, right? Keep going with it, it's really inspiring.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:7",
+                  "speaker": "Dave",
+                  "text": "Thanks, Calvin. It's been my goal since I was a kid and it's awesome to be able to do something I love. Restoring things like this can be tough but the feeling of accomplishment it gives is great. Absolutely, I'm loving it.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:8",
+                  "speaker": "Calvin",
+                  "text": "Go for it, Dave! Chasing your dreams is what life's about. It's awesome to see how far you've come. Keep working hard and living your best life.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:9",
+                  "speaker": "Dave",
+                  "text": "Thanks, Calvin! Means a lot. I'm going to keep chasing my dreams and working hard. Conversations like this remind me why I love what I do.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:10",
+                  "speaker": "Calvin",
+                  "text": "Glad I can remind you, Dave. Keep up the good work and stay focused. You got this!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D19:7",
+              "session": "session_19",
+              "session_date": "12:13 am on 15 September, 2023",
+              "window": [
+                {
+                  "dia_id": "D19:4",
+                  "speaker": "Calvin",
+                  "text": "Aww, bummer! I would've loved to hear that music. Oh well, some of the best memories can't be captured on video or audio. It's like those special moments that stay in our hearts and minds. Take a look at this cool Disney poster!",
+                  "query": "magical moment photo",
+                  "blip_caption": "a photo of a poster for a disney movie with a chef"
+                },
+                {
+                  "dia_id": "D19:5",
+                  "speaker": "Dave",
+                  "text": "Wow, that's a gorgeous poster! It reminds me of one of my favorite Disney movies. I love the lesson it teaches about following your dreams no matter what others say. Have you seen it yet?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:6",
+                  "speaker": "Calvin",
+                  "text": "Thanks! Ratatouille is one of my favorites! It's all about going after what you love, no matter what anyone says. Last time we talked, you mentioned your car hobby - how's that going?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:7",
+                  "speaker": "Dave",
+                  "text": "Thanks, Calvin! It's been awesome. Been restoring this vintage beauty - here is the final result pic, take a look!",
+                  "query": null,
+                  "blip_caption": "a photography of a man standing next to a classic car"
+                },
+                {
+                  "dia_id": "D19:8",
+                  "speaker": "Calvin",
+                  "text": "Nice work, Dave! That looks amazing. Is it satisfying to see your hard work pay off?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:9",
+                  "speaker": "Dave",
+                  "text": "Thanks, Calvin! It's so satisfying to see this brought back to life, especially with people's reactions when they see the finished product - makes all the hard work worth it.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:10",
+                  "speaker": "Calvin",
+                  "text": "Dave, it's awesome seeing people happy thanks to you! Fixing cars is such an art. You're inspiring - keep up the good work!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "戴夫最喜欢的活动是什么？",
+          "answer": "翻新汽车",
+          "evidence": [
+            {
+              "dia_id": "D21:4",
+              "session": "session_21",
+              "session_date": "2:44 pm on 4 October, 2023",
+              "window": [
+                {
+                  "dia_id": "D21:1",
+                  "speaker": "卡尔文",
+                  "text": "嘿，戴夫！昨天我在波士顿见到了一些非常了不起的艺术家，我们谈了合作的事。这真是一次鼓舞人心、令人兴奋的经历——他们每个人都有自己独特的风格，我非常期待与他们合作创作新音乐。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:2",
+                  "speaker": "戴夫",
+                  "text": "太棒了，卡尔文！能和这么多有才华的艺术家建立联系，一定是一次很受启发的经历。迫不及待想听听你们合作出来的成果。到时候告诉我进展如何！对了，你是怎么安排这次会面的？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:3",
+                  "speaker": "卡尔文",
+                  "text": "嘿，戴夫，和那些艺术家聊天真是太棒了！我们的共同朋友知道我们非常合适。迫不及待想给你看最终成果。另外，看看这个项目——我很喜欢做它来放松。你呢？有什么帮助你放松的爱好吗？",
+                  "query": "sleek vintage car restoration",
+                  "blip_caption": "a photo of a shiny orange car with a hood open"
+                },
+                {
+                  "dia_id": "D21:4",
+                  "speaker": "戴夫",
+                  "text": "哇，卡尔文，那辆车看起来真棒！修车真的能帮我放松，看着它们重获新生很有疗愈感。我一直在修那辆我在废品场找到的福特野马——它当时状况很糟，但我知道它有潜力。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:5",
+                  "speaker": "卡尔文",
+                  "text": "哇，戴夫！你能让东西重获新生，真是太厉害了。你有没有它变得很帅的照片？我很想看看它最后的样子！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:6",
+                  "speaker": "戴夫",
+                  "text": "嘿，卡尔文，看看这张照片！我花了很多功夫修复它，但结果太棒了。让一辆旧车重获新生真是让人满足。",
+                  "query": "classic muscle car fully restored shining sunlight",
+                  "blip_caption": "a photography of a red car parked in a field with other cars"
+                },
+                {
+                  "dia_id": "D21:7",
+                  "speaker": "卡尔文",
+                  "text": "我们非常幸运能获得这样的机会。让它重获新生真是令人满足！",
+                  "query": null,
+                  "blip_caption": "a photo of a person's hand with dirty hands next to a car"
+                }
+              ]
+            },
+            {
+              "dia_id": "D22:7",
+              "session": "session_22",
+              "session_date": "3:13 pm on 8 October, 2023",
+              "window": [
+                {
+                  "dia_id": "D22:4",
+                  "speaker": "卡尔文",
+                  "text": "哇，戴夫！你真的把它打造成了一件杰作。令人印象深刻！",
+                  "query": null,
+                  "blip_caption": "a photo of a car driving down a street with a traffic light"
+                },
+                {
+                  "dia_id": "D22:5",
+                  "speaker": "戴夫",
+                  "text": "谢谢你，卡尔文！我在这上面花了大量时间和心血。这不仅仅是一个爱好，更是一种热情。这就像一种疗法，是逃离日常压力的方式。小时候我常常在我爸爸的车库里待上好几个小时，摆弄发动机——那就像我自己的庇护所。现在我很幸运能把这件事当作职业，把坏掉的东西变成很棒的东西。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:6",
+                  "speaker": "卡尔文",
+                  "text": "哇，戴夫，真是太了不起了。让坏掉的东西重获新生是非常有满足感的事。修车确实可以成为一种逃离现实的方式，我懂那种感觉。以自己热爱的事情为生，那才是终极目标，对吧？继续坚持下去，真的很鼓舞人心。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:7",
+                  "speaker": "戴夫",
+                  "text": "谢谢，卡尔文。这是我从小到大的目标，能做自己热爱的事情真的太棒了。修复这样的东西可能很辛苦，但它带来的成就感非常美妙。没错，我热爱这件事。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:8",
+                  "speaker": "卡尔文",
+                  "text": "加油，戴夫！追逐梦想才是生活的意义。看到你走到今天这一步真棒。继续努力，活出最精彩的自己。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:9",
+                  "speaker": "戴夫",
+                  "text": "谢谢，卡尔文！这对我意义重大。我会继续追逐梦想、努力奋斗。这样的对话让我想起我为什么热爱自己的工作。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D22:10",
+                  "speaker": "卡尔文",
+                  "text": "很高兴能提醒你，戴夫。继续保持，保持专注。你可以的！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D19:7",
+              "session": "session_19",
+              "session_date": "12:13 am on 15 September, 2023",
+              "window": [
+                {
+                  "dia_id": "D19:4",
+                  "speaker": "卡尔文",
+                  "text": "唉，真遗憾！我本来很想听听那些音乐的。不过话说回来，最美好的回忆往往无法用视频或音频记录下来。就像那些留在我们心里和脑海中的特殊时刻。快看这张超酷的迪士尼海报！",
+                  "query": "magical moment photo",
+                  "blip_caption": "a photo of a poster for a disney movie with a chef"
+                },
+                {
+                  "dia_id": "D19:5",
+                  "speaker": "戴夫",
+                  "text": "哇，这张海报太漂亮了！它让我想起我最喜欢的迪士尼电影之一。我喜欢它传达的道理：不管别人怎么说，都要追逐自己的梦想。你看过这部电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:6",
+                  "speaker": "卡尔文",
+                  "text": "谢谢！《料理鼠王》是我的最爱之一！它讲的就是无论别人说什么，都要追求自己热爱的事情。上次我们聊天时，你提到过你的汽车爱好——现在怎么样了？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:7",
+                  "speaker": "戴夫",
+                  "text": "谢谢，卡尔文！一直很顺利。我正在修复这辆漂亮的古董车——这是最终成果的照片，快看看！",
+                  "query": null,
+                  "blip_caption": "a photography of a man standing next to a classic car"
+                },
+                {
+                  "dia_id": "D19:8",
+                  "speaker": "卡尔文",
+                  "text": "干得好，戴夫！看起来太棒了。看到自己的努力得到回报，是不是很有成就感？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:9",
+                  "speaker": "戴夫",
+                  "text": "谢谢，卡尔文！看到它重获新生真是太有成就感了，尤其是人们看到成品时的反应——让所有的辛苦都值了。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D19:10",
+                  "speaker": "卡尔文",
+                  "text": "戴夫，看到人们因为你而开心真是太好了！修车简直是一门艺术。你真让人受鼓舞——继续加油！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "修车/翻新汽车（修复旧车）——这是戴夫从小和他爸爸一起在车库里培养的热情，给他带来成就感、目标感，甚至像一种疗法和自我表达的方式。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "94e120e7-c330-46a4-bc09-bb0bad95dd2f",
+              "content": "戴夫表示他喜欢把破旧的东西变成美好的东西，正是这些小小的成功让他感到自豪和满足",
+              "route": "vector",
+              "session_date": "2:44 pm on 4 October, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "cf0edf7e-ff96-4dc7-84fe-189ce1b5e737",
+              "content": "戴夫喜欢拍摄大自然的美——日落、海滩、海浪；他在2023年11月初拍了一张日落时分海浪拍打岩石的照片，并上周在附近公园拍了一张有岩石和瀑布的宁静池塘照片",
+              "route": "vector",
+              "session_date": "10:54 am on 17 November, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "74c4d1b5-fd03-4f1b-aaed-cd6413c77f97",
+              "content": "戴夫最近开始迷上摄影，去了很多地方拍了一些很好的照片，认为摄影是捕捉和欣赏大自然之美的创意出口",
+              "route": "vector",
+              "session_date": "10:49 am on 29 October, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "588ee760-4a3c-4248-994e-cfa4eb167977",
+              "content": "Dave finds working on cars a form of self-expression and a peaceful oasis, saying that fixing a car feels like reconnecting with himself",
+              "route": "vector",
+              "session_date": "2:17 pm on 23 October, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "e771797b-0e46-48e5-86b6-284a218a6249",
+              "content": "戴夫表示以自己热爱的事情（修车）为生是他从小到大的目标，修复工作虽然辛苦但带来极大的成就感",
+              "route": "vector",
+              "session_date": "3:13 pm on 8 October, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "6ac1203b-be22-4fce-8a30-9fcc3a31d96a",
+              "content": "戴夫从小就和他爸爸一起修车，翻新汽车给他成就感，修车对他来说像一种治疗",
+              "route": "vector",
+              "session_date": "1:12 pm on 3 August, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "7e3ad157-47e3-43f0-901d-d5c272079047",
+              "content": "戴夫10岁时爸爸带他去了人生中第一次车展，从那时起就对汽车着迷，现在是一名汽车工程师，修车一直是他的爱好",
+              "route": "vector",
+              "session_date": "8:25 pm on 25 October, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "69c4801a-18ba-4c11-8b48-3373d2798e81",
+              "content": "戴夫在没灵感时通常会沉浸在自己喜欢的事情里，比如看演唱会或听最喜欢的专辑，这通常能激发他的灵感",
+              "route": "vector",
+              "session_date": "1:16 pm on 3 May, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "1eff687f-7cf6-4d1e-b41c-5e37b1979c27",
+              "content": "戴夫表示修好东西、看着它变好给了他成就感和目标感，修好别人的车并看到车主如释重负让他感到自豪，觉得自己在做出改变",
+              "route": "vector",
+              "session_date": "9:19 am on 2 September, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "24af0043-27e2-400c-b182-eae001d5b73c",
+              "content": "戴夫 (Dave) 最近参加了一个经典车展览活动，展出了许多经典车，他还和一些车主聊天并听了他们精彩的故事，觉得非常鼓舞",
+              "route": "vector",
+              "session_date": "11:53 am on 23 March, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "68c181dc-6f2c-4ebe-815b-2db92390fcb4",
+              "content": "戴夫在2023年5月下旬修好了邻居一辆发动机出问题的车，并表示帮邻居修车对他来说不难，修理东西是他的热情所在，能给他成就感和目标感",
+              "route": "vector",
+              "session_date": "6:06 pm on 31 May, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "e5cd5d88-0ee7-44da-a09b-0797e22d7bf6",
+              "content": "戴夫小时候常在爸爸的车库里待上几个小时摆弄发动机，那是他的庇护所；修车对他来说像一种疗法，是逃离日常压力的方式，现在他幸运地能以此为职业",
+              "route": "vector",
+              "session_date": "3:13 pm on 8 October, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "ed3b98f7-4f26-4414-a087-633134c80852",
+              "content": "戴夫（Dave）最近开始玩摄影，主要拍摄住处附近的风景，感觉棒极了；他在2023年11月新买了一台复古相机，认为它能帮他把特别的瞬间拍得非常清晰",
+              "route": "vector",
+              "session_date": "10:54 am on 17 November, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "d2cdc3a0-b402-45d1-8b1d-2877243104e6",
+              "content": "戴夫与朋友们约定定期在公园散步（包括波士顿一处有河、船和日落景观的公园），觉得这是共度时光并保持活跃的好方式",
+              "route": "vector",
+              "session_date": "7:56 pm on 7 July, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "487cd90f-413f-4a7e-a9bf-7d099d50faa6",
+              "content": "戴夫的梦想是从零开始造一辆定制车；目前他继续做修车项目并帮助客户，同时继续学习汽车工程知识",
+              "route": "vector",
+              "session_date": "1:16 pm on 3 May, 2023"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "Answer states 翻新汽车, matching the gold exactly, with correct supporting detail."
+          }
+        },
+        "graph": {
+          "answer": "修车（汽车修复/翻新）——这是他从小和爸爸一起在车库里培养的爱好，现在以此为职业，修车对他来说像一种疗法，带给他极大的成就感和目标感。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "94e120e7-c330-46a4-bc09-bb0bad95dd2f",
+              "content": "戴夫表示他喜欢把破旧的东西变成美好的东西，正是这些小小的成功让他感到自豪和满足",
+              "route": "vector",
+              "session_date": "2:44 pm on 4 October, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "cf0edf7e-ff96-4dc7-84fe-189ce1b5e737",
+              "content": "戴夫喜欢拍摄大自然的美——日落、海滩、海浪；他在2023年11月初拍了一张日落时分海浪拍打岩石的照片，并上周在附近公园拍了一张有岩石和瀑布的宁静池塘照片",
+              "route": "vector",
+              "session_date": "10:54 am on 17 November, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "74c4d1b5-fd03-4f1b-aaed-cd6413c77f97",
+              "content": "戴夫最近开始迷上摄影，去了很多地方拍了一些很好的照片，认为摄影是捕捉和欣赏大自然之美的创意出口",
+              "route": "vector",
+              "session_date": "10:49 am on 29 October, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "588ee760-4a3c-4248-994e-cfa4eb167977",
+              "content": "Dave finds working on cars a form of self-expression and a peaceful oasis, saying that fixing a car feels like reconnecting with himself",
+              "route": "vector",
+              "session_date": "2:17 pm on 23 October, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "e771797b-0e46-48e5-86b6-284a218a6249",
+              "content": "戴夫表示以自己热爱的事情（修车）为生是他从小到大的目标，修复工作虽然辛苦但带来极大的成就感",
+              "route": "vector",
+              "session_date": "3:13 pm on 8 October, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "6ac1203b-be22-4fce-8a30-9fcc3a31d96a",
+              "content": "戴夫从小就和他爸爸一起修车，翻新汽车给他成就感，修车对他来说像一种治疗",
+              "route": "vector",
+              "session_date": "1:12 pm on 3 August, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "7e3ad157-47e3-43f0-901d-d5c272079047",
+              "content": "戴夫10岁时爸爸带他去了人生中第一次车展，从那时起就对汽车着迷，现在是一名汽车工程师，修车一直是他的爱好",
+              "route": "vector",
+              "session_date": "8:25 pm on 25 October, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "69c4801a-18ba-4c11-8b48-3373d2798e81",
+              "content": "戴夫在没灵感时通常会沉浸在自己喜欢的事情里，比如看演唱会或听最喜欢的专辑，这通常能激发他的灵感",
+              "route": "vector",
+              "session_date": "1:16 pm on 3 May, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "1eff687f-7cf6-4d1e-b41c-5e37b1979c27",
+              "content": "戴夫表示修好东西、看着它变好给了他成就感和目标感，修好别人的车并看到车主如释重负让他感到自豪，觉得自己在做出改变",
+              "route": "vector",
+              "session_date": "9:19 am on 2 September, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "24af0043-27e2-400c-b182-eae001d5b73c",
+              "content": "戴夫 (Dave) 最近参加了一个经典车展览活动，展出了许多经典车，他还和一些车主聊天并听了他们精彩的故事，觉得非常鼓舞",
+              "route": "vector",
+              "session_date": "11:53 am on 23 March, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "68c181dc-6f2c-4ebe-815b-2db92390fcb4",
+              "content": "戴夫在2023年5月下旬修好了邻居一辆发动机出问题的车，并表示帮邻居修车对他来说不难，修理东西是他的热情所在，能给他成就感和目标感",
+              "route": "vector",
+              "session_date": "6:06 pm on 31 May, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "e5cd5d88-0ee7-44da-a09b-0797e22d7bf6",
+              "content": "戴夫小时候常在爸爸的车库里待上几个小时摆弄发动机，那是他的庇护所；修车对他来说像一种疗法，是逃离日常压力的方式，现在他幸运地能以此为职业",
+              "route": "vector",
+              "session_date": "3:13 pm on 8 October, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "ed3b98f7-4f26-4414-a087-633134c80852",
+              "content": "戴夫（Dave）最近开始玩摄影，主要拍摄住处附近的风景，感觉棒极了；他在2023年11月新买了一台复古相机，认为它能帮他把特别的瞬间拍得非常清晰",
+              "route": "vector",
+              "session_date": "10:54 am on 17 November, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "d2cdc3a0-b402-45d1-8b1d-2877243104e6",
+              "content": "戴夫与朋友们约定定期在公园散步（包括波士顿一处有河、船和日落景观的公园），觉得这是共度时光并保持活跃的好方式",
+              "route": "vector",
+              "session_date": "7:56 pm on 7 July, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "487cd90f-413f-4a7e-a9bf-7d099d50faa6",
+              "content": "戴夫的梦想是从零开始造一辆定制车；目前他继续做修车项目并帮助客户，同时继续学习汽车工程知识",
+              "route": "vector",
+              "session_date": "1:16 pm on 3 May, 2023"
+            }
+          ],
+          "grade": "exact",
+          "judge": {
+            "grade": "exact",
+            "missing": [],
+            "reason": "回答中明确提到了汽车翻新（修车/汽车修复/翻新），与金标准答案相符，并提供了正确的补充细节。"
+          }
+        }
+      }
+    }
+  ],
+  "exact_question_gold_evidence_duplicates_in_sample": [
+    [
+      "locomo_conv-48_qa25",
+      "locomo_conv-48_qa90"
+    ]
+  ],
+  "input_sha256": {
+    "base": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59",
+    "graph": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "base_grade": "0a4bef376de18c4ef1242c893ab27f2cfa7133445885265fbcb05521acf9bb0b",
+    "graph_grade": "9fa3a5f25d3fdf21dd173e60a3d1db55177e362cb4f4b9ad145eb37107284d05",
+    "english_data": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese_data": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "screen": "6631e506a543f80485a3908035c1ee352846e425c7b50a57b031b3633c54bf8e"
+  },
+  "limits": [
+    "Sample is not an overall error or effect estimate.",
+    "Same question/source appears twice and is not independent evidence.",
+    "Current database and source-grounded automatic extraction were not tested."
+  ]
+}

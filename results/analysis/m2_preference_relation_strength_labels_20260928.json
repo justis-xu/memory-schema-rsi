@@ -1,0 +1,146 @@
+{
+  "scope": "Manual source-strength labels for fixed 10 QA, including one exact duplicate pair; no overall error rate",
+  "packet_sha256": "bea2ab899847321cb8fe3a33d1cad3f6012ea7771370dd5ae6b4502b1c30c651",
+  "labels": [
+    {
+      "case_id": "locomo_conv-48_qa25",
+      "source_relation_type": "mixed_preference_strength",
+      "support_status": "gold contains stronger favorite claim for second item than designated source states",
+      "note_zh": "D4:20–21支持近期最爱人类简史；D4:22–23换问最近有印象的书、一口气读完Avalanche，不能同强度断言最爱。其他励志/自我发现书也不直接最爱。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": false,
+      "new_graph_necessary_relation_established": false
+    },
+    {
+      "case_id": "locomo_conv-26_qa103",
+      "source_relation_type": "neighbor_question_scopes_answer",
+      "support_status": "contextually supported",
+      "note_zh": "D6:9问童年最爱，D6:10说小时候爱读夏洛的网；问答合起来支持。两臂第1条已存最爱关系。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": false,
+      "new_graph_necessary_relation_established": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa106",
+      "source_relation_type": "neighbor_question_scopes_answer",
+      "support_status": "contextually supported recent favorite",
+      "note_zh": "D4:20问最近最爱，D4:21说迷上人类简史。问答支持近期偏好，保留近期而不升级永久唯一最爱。两臂第1条有近期迷上。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": false,
+      "new_graph_necessary_relation_established": false
+    },
+    {
+      "case_id": "locomo_conv-30_qa39",
+      "source_relation_type": "agreement_requires_antecedent",
+      "support_status": "contextually supported; target relation not explicit in final contexts",
+      "note_zh": "D1:8乔恩说最爱现代舞并反问；D1:9吉娜我也是承接，支持吉娜最爱。两臂15槽完全相同，仅第4条记录乔恩最爱；吉娜的现代舞表演/奖杯不是显式最爱关系。不能证明全库缺失。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": true,
+      "new_graph_necessary_relation_established": false
+    },
+    {
+      "case_id": "locomo_conv-47_qa87",
+      "source_relation_type": "direct_favorite_statement",
+      "support_status": "directly supported core",
+      "note_zh": "D9:19约翰直接说夏威夷披萨最爱。两臂第1条已有；记忆和答案另补菠萝火腿，指定源只写甜咸，附加配料不是此源直接证据。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": false,
+      "new_graph_necessary_relation_established": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa90",
+      "source_relation_type": "mixed_preference_strength",
+      "support_status": "same source-strength issue as qa25; duplicate",
+      "note_zh": "与qa25题面/gold/evidence完全相同，不当独立支持病例。人类简史有最爱提问语境；第二本是一口气读完。此轮不重做已审裁判额外项统计。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": false,
+      "new_graph_necessary_relation_established": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa156",
+      "source_relation_type": "neighbor_question_scopes_answer",
+      "support_status": "supported core",
+      "note_zh": "英文D21:9问favorite无乳甜点，D21:10喜爱慕斯；中文提问更泛喜欢。两版支持喜爱，英文问答也支持最爱之一。中文本题问还喜欢，慕斯闭合，两臂第1条已有。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": true,
+      "new_graph_necessary_relation_established": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa95",
+      "source_relation_type": "neighbor_question_scopes_answer",
+      "support_status": "contextually supported; target relation not explicit in first memory",
+      "note_zh": "D27:22最爱游戏提问限定D27:23近期玩异度神剑并推荐。两臂第1条只保留近期玩/推荐，缺问答限定；无图答赛博朋克、图推主打CSGO，均需区分常玩/职业游戏/最爱。不能从最终槽反推抽取器或全库错误。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": false,
+      "new_graph_necessary_relation_established": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa75",
+      "source_relation_type": "mixed_preference_strength",
+      "support_status": "gold list mixes favorite, flavor enjoyment and preparation",
+      "note_zh": "椰奶冰淇淋有D3:6近似最爱及D21:10最爱之一；慕斯有喜爱/最爱提问语境。D3:10只是喜爱巧克力与混合莓果口味，gold具体化为冰淇淋；D3:12只是做过莓果巧克力蛋糕，不直接支持最爱。两臂都答冰淇淋和慕斯却partial。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": false,
+      "new_graph_necessary_relation_established": false
+    },
+    {
+      "case_id": "locomo_conv-50_qa46",
+      "source_relation_type": "passion_without_comparative_rank",
+      "support_status": "plausible favorite inference; no explicit ranking in designated source",
+      "note_zh": "戴夫D21:4/D22:5–7说修车放松、热爱且是儿时目标；支持爱好/热情，未直接比较所有活动最爱。两臂修车答案合理但属于概括性推断，不当逐字排名事实。",
+      "confidence": "medium-high for local source interpretation; causal effects unknown",
+      "contexts_same_ids_order": true,
+      "new_graph_necessary_relation_established": false
+    }
+  ],
+  "contract_examples": [
+    {
+      "subject": "吉娜",
+      "relation": "最爱的舞蹈风格",
+      "object": "现代舞",
+      "support": "adjacent agreement",
+      "source_turn_ids": [
+        "D1:8",
+        "D1:9"
+      ],
+      "forbidden_shortcut": "表演过某风格或他人的最爱不能单独作吉娜最爱的证据"
+    },
+    {
+      "subject": "内特",
+      "relation": "最爱的游戏（该问答语境）",
+      "object": "异度神剑",
+      "support": "question-qualified reply",
+      "source_turn_ids": [
+        "D27:22",
+        "D27:23"
+      ],
+      "forbidden_shortcut": "通常玩的职业游戏不能直接覆盖本问答偏好"
+    },
+    {
+      "subject": "内特",
+      "relation": "做过的甜点",
+      "object": "无乳制品莓果巧克力蛋糕",
+      "support": "explicit preparation",
+      "source_turn_ids": [
+        "D3:12"
+      ],
+      "forbidden_shortcut": "不自动升级为最爱的甜点"
+    },
+    {
+      "subject": "乔琳",
+      "relation": "一口气读完的书",
+      "object": "Avalanche（中文数据写雪崩）",
+      "support": "explicit reading event",
+      "source_turn_ids": [
+        "D4:22",
+        "D4:23"
+      ],
+      "forbidden_shortcut": "不在没有最爱限定时自动升级为最爱"
+    }
+  ],
+  "limits": [
+    "Human examples are not automatic extraction output.",
+    "Final-context relation absence does not prove storage or extraction absence.",
+    "No database edits, new answer evaluation, or causal gain claims."
+  ]
+}
