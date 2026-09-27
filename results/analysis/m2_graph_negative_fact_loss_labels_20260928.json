@@ -1,0 +1,221 @@
+{
+  "scope": "manual source/context judgments for fixed 12/45 historical base-only exact flips; not causal or population estimates",
+  "packet_sha256": "2e95ad638536ca2e9a4b21e051528700b8e9e4ab6ef43a16ebb42549f9da2b7e",
+  "counts": {
+    "sample_size": 12,
+    "graph_answer_contains_gold_core": 9,
+    "confirmed_exclusive_necessary_fact_displaced": 0,
+    "causal_graph_harm_established": 0
+  },
+  "labels": [
+    {
+      "case_id": "locomo_conv-49_qa56",
+      "interpretation": "judge_scope_inconsistency",
+      "graph_answer_contains_gold_core": true,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 14,
+      "identical_id_prefix_length": 12,
+      "note_zh": "两臂均说新手机导航故障；图裁判另外要求整体手机故障，无图裁判接受同一核心。挤出梦境，与所问故障无关。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa135",
+      "interpretation": "judge_extra_detail_inconsistency",
+      "graph_answer_contains_gold_core": true,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 14,
+      "identical_id_prefix_length": 13,
+      "note_zh": "两臂均有安心、开心、平静；图裁判拒绝额外感受，无图接受。挤出蛇丢失经历，安心直证仍在。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-50_qa9",
+      "interpretation": "judge_approximation_inconsistency",
+      "graph_answer_contains_gold_core": true,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 14,
+      "identical_id_prefix_length": 14,
+      "note_zh": "两臂同答5月9日左右；无图接受近似，图以近似措辞降分。挤出8月演出，无所问日期。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-47_qa33",
+      "interpretation": "answer_qualification",
+      "graph_answer_contains_gold_core": true,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 14,
+      "identical_id_prefix_length": 1,
+      "note_zh": "图答明确总结共同学习但加没有正式同班限定；不是必要事实消失。QA指向D17:13的小学照片提问，并不单独证明共学；其他编程/棋类互助来源须与同班学习区分。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-26_qa102",
+      "interpretation": "judge_extra_detail_inconsistency",
+      "graph_answer_contains_gold_core": true,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 13,
+      "identical_id_prefix_length": 9,
+      "note_zh": "两臂同含儿童藏书三类及Becoming妮可；裁判对额外书名容忍不同，不能把读过一本书等同书房藏书。挤出艺术/钢琴。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-30_qa33",
+      "interpretation": "answer_focus_and_judge_scope",
+      "graph_answer_contains_gold_core": true,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 14,
+      "identical_id_prefix_length": 8,
+      "note_zh": "两臂均写6月20日及7月社交活动；无图另明确收束到开幕前夜，图并列陈述。判分区别涉及回答聚焦，新增营销记忆未移走目标日期。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-41_qa150",
+      "interpretation": "judge_extra_detail_inconsistency",
+      "graph_answer_contains_gold_core": true,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 14,
+      "identical_id_prefix_length": 12,
+      "note_zh": "两臂均覆盖五项金标家庭活动且均有额外活动；图裁判拒绝额外活动而无图接受。挤出计划中的游戏，未移走五项直证。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa48",
+      "interpretation": "source_requires_external_geography",
+      "graph_answer_contains_gold_core": false,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 12,
+      "identical_id_prefix_length": 6,
+      "note_zh": "gold阿拉斯加不在D13:15英中正文/图像query/caption；有实习期间在mount Talkeetna瑜伽线索。该线索两臂保留，排名7→9。挤出泛实习经历不含州名。图答未按此线索推州名，且只提8月计划漏读其他实习材料；不能记为已证图挤出州名。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-50_qa61",
+      "interpretation": "answer_time_anchor_ambiguity",
+      "graph_answer_contains_gold_core": false,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 13,
+      "identical_id_prefix_length": 13,
+      "note_zh": "两臂前13条ID/顺序相同，包括8月修车、9月22日发动机故障、10月4日成果、10月29日汽车项目完成。无图按9月底计划估两月，图可能用10月底结束估2.5月，后者只是推断。10月29日未指名野马，10月4日已展示野马成果。不能把无图时间推理视作已验证正确，未发现必要时间证据被挤出。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-48_qa90",
+      "interpretation": "answer_extra_items",
+      "graph_answer_contains_gold_core": true,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 14,
+      "identical_id_prefix_length": 6,
+      "note_zh": "两臂均含两个金标书名及模糊自我发现书；图又增加励志故事书。额外项不等于最喜欢的书；图新增黛布正念记忆，挤出工程艺术观点，没有移走两个必要书名。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-42_qa138",
+      "interpretation": "judge_descriptor_inconsistency",
+      "graph_answer_contains_gold_core": true,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 10,
+      "identical_id_prefix_length": 5,
+      "note_zh": "两臂均说古籍藏书；图裁判要求一批/很酷修饰词而无图接受省略。挤出写作等材料，非古籍直证。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    },
+    {
+      "case_id": "locomo_conv-43_qa152",
+      "interpretation": "answer_core_omission",
+      "graph_answer_contains_gold_core": false,
+      "confirmed_exclusive_necessary_fact_displaced": false,
+      "shared_id_count": 12,
+      "identical_id_prefix_length": 4,
+      "note_zh": "图答漏篮球但保留日期、对手和助攻新高，两臂前4条相同；图挤出3条篮球背景却也新增3条篮球背景，不能证明篮球事实从上下文消失。D23:3不直接写运动种类，篮球来自人物上下文推断。",
+      "confidence": "medium",
+      "causal_graph_harm_established": false
+    }
+  ],
+  "supplemental_conv50_source": {
+    "english": [
+      {
+        "session": "session_26",
+        "date": "8:25 pm on 25 October, 2023",
+        "turns": [
+          {
+            "speaker": "Dave",
+            "img_url": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWn9kFWCXVzFTta3A7aeTMjMfYmkueJcWaxg&usqp=CAU"
+            ],
+            "blip_caption": "a photography of a group of people washing a car in a garage",
+            "query": "car mechanic working under hood",
+            "dia_id": "D26:4",
+            "re-download": true,
+            "text": "Glad you enjoyed Boston! It's got some great architecture and history. Working on this takes me out of my head and calms me down. Here's a pic of my latest car project."
+          }
+        ]
+      },
+      {
+        "session": "session_27",
+        "date": "10:49 am on 29 October, 2023",
+        "turns": [
+          {
+            "speaker": "Calvin",
+            "dia_id": "D27:9",
+            "text": "Wow, Dave! Sounds like you're having a blast with your photography. Hope it's bringing you lots of joy. By the way, how is your car project going?"
+          },
+          {
+            "speaker": "Dave",
+            "dia_id": "D27:10",
+            "text": "Hey Calvin, photography has been great for me! The car project is doing well - I just finished restoring it and it looks amazing. Wanna come by and check it out? How's everything with the music? Any updates?"
+          }
+        ]
+      }
+    ],
+    "chinese": [
+      {
+        "session": "session_26",
+        "date": "8:25 pm on 25 October, 2023",
+        "turns": [
+          {
+            "speaker": "戴夫",
+            "img_url": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWn9kFWCXVzFTta3A7aeTMjMfYmkueJcWaxg&usqp=CAU"
+            ],
+            "blip_caption": "a photography of a group of people washing a car in a garage",
+            "query": "car mechanic working under hood",
+            "dia_id": "D26:4",
+            "re-download": true,
+            "text": "很高兴你喜欢波士顿！那里有很棒的建筑和历史。做这件事能让我放空大脑、平静下来。这是我最新的汽车项目的一张照片。"
+          }
+        ]
+      },
+      {
+        "session": "session_27",
+        "date": "10:49 am on 29 October, 2023",
+        "turns": [
+          {
+            "speaker": "卡尔文",
+            "dia_id": "D27:9",
+            "text": "哇，戴夫！听起来你的摄影玩得很开心。希望它能给你带来很多快乐。对了，你的汽车项目进展如何？"
+          },
+          {
+            "speaker": "戴夫",
+            "dia_id": "D27:10",
+            "text": "嘿，卡尔文，摄影对我来说太棒了！汽车项目进展顺利——我刚完成了修复，看起来棒极了。想来我家看看吗？音乐那边怎么样了？有什么新消息吗？"
+          }
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Core-present is not equivalent to deserving exact.",
+    "Independent historical answer/judge runs do not identify causal harm.",
+    "QA evidence and gold may require inference or have ambiguous event identity."
+  ]
+}
