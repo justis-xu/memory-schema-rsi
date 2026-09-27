@@ -1,0 +1,213 @@
+{
+  "scope": "One source-annotated Chinese LoCoMo question; current Chroma and frozen three-query retrieval only; no model calls",
+  "input_sha256": {
+    "dataset": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "retrieval": "eb57da0c43edb09179d5fa40df9afdcd61824210b7ded3e5abc7aca0cd6d20e2"
+  },
+  "current_id_content_user_session_sha256": "61e015ce36e4f137db6c0466d835d4d0cee714a17d9fcdf4e24156c7f25cdbd9",
+  "question": {
+    "question": "乔安娜和内特都欣赏什么的美？",
+    "answer": "大自然",
+    "evidence": [
+      "D11:9",
+      "D28:23"
+    ],
+    "category": 1
+  },
+  "source_turns": [
+    {
+      "session_id": "session_11",
+      "dia_id": "D11:9",
+      "speaker": "乔安娜",
+      "text": "那真的很棒，内特。那个地方的声音和大自然的美让我感到非常平静安宁。其他一切都淡去了，唯一重要的就是当下。"
+    },
+    {
+      "session_id": "session_28",
+      "dia_id": "D28:23",
+      "speaker": "内特",
+      "text": "听起来太棒了！大自然确实总能提醒我们去欣赏身边的美，这样的时刻真的会留在心中。这些小家伙也让我感受到生活中的小确幸。你猜怎么着？我给它们找了个新朋友！"
+    }
+  ],
+  "current_user_memory_count": 195,
+  "source_session_memory_counts": {
+    "session_11": 4,
+    "session_28": 10
+  },
+  "nature_text_memory_count": 6,
+  "nature_text_memories": [
+    {
+      "id": "3b72b542-8b22-4421-ace2-2af788f04d33",
+      "session_id": "session_11",
+      "content": "乔安娜说徒步为她打开了全新的世界，让她感觉像变了个人，大自然总能给她灵感，身处美景中让她觉得能写出一整部电影，并有想写一部戏剧的冲动"
+    },
+    {
+      "id": "4ea576c4-048c-4855-abdd-292e7907889f",
+      "session_id": "session_8",
+      "content": "乔安娜是大自然的超级粉丝，常去徒步，大自然一直是她的避风港，在自然中漫步、聆听声音能让她平静、消除烦恼和压力"
+    },
+    {
+      "id": "56217cd3-ace8-4857-b1cd-b79ef752e9f8",
+      "session_id": "session_8",
+      "content": "内特认为大自然能给人灵感，对他来说陪伴宠物和做爱好是暂时的放松方式"
+    },
+    {
+      "id": "607518f0-1a86-4ba2-9a33-284637fcc3c2",
+      "session_id": "session_1",
+      "content": "乔安娜的爱好包括写作、阅读、看电影和探索大自然，但她不怎么玩电子游戏"
+    },
+    {
+      "id": "6111d2fa-91d2-4811-8039-4a139d8cee66",
+      "session_id": "session_8",
+      "content": "乔安娜在2022年4月16日在自己家乡发现了一条很棒的徒步小径，觉得大自然令人振奋"
+    },
+    {
+      "id": "e196eb2e-997b-4b67-9d7b-76409fa4f1e3",
+      "session_id": "session_28",
+      "content": "乔安娜分享了一张去年夏天（2021年夏）在韦恩堡附近徒步时拍的向日葵日落照片，她说日落和周围美景令人难以置信，是大自然之美的绝佳提醒"
+    }
+  ],
+  "diagnostic_memories": [
+    {
+      "id": "3b72b542-8b22-4421-ace2-2af788f04d33",
+      "session_id": "session_11",
+      "content": "乔安娜说徒步为她打开了全新的世界，让她感觉像变了个人，大自然总能给她灵感，身处美景中让她觉得能写出一整部电影，并有想写一部戏剧的冲动",
+      "positions": {
+        "original": {
+          "vector": null,
+          "reranked": null
+        },
+        "speaker_a": {
+          "vector": 7,
+          "reranked": 11
+        },
+        "speaker_b": {
+          "vector": null,
+          "reranked": null
+        }
+      },
+      "in_merged_top15": false
+    },
+    {
+      "id": "c2fc5c10-5d56-41a2-a389-ec0e0cb3a0d8",
+      "session_id": "session_11",
+      "content": "乔安娜在2022年5月的徒步中拍摄了名为Whispering Falls的美丽瀑布景点照片，那里宁静祥和，流水的声音令她放松",
+      "positions": {
+        "original": {
+          "vector": null,
+          "reranked": null
+        },
+        "speaker_a": {
+          "vector": 43,
+          "reranked": 10
+        },
+        "speaker_b": {
+          "vector": null,
+          "reranked": null
+        }
+      },
+      "in_merged_top15": false
+    },
+    {
+      "id": "e196eb2e-997b-4b67-9d7b-76409fa4f1e3",
+      "session_id": "session_28",
+      "content": "乔安娜分享了一张去年夏天（2021年夏）在韦恩堡附近徒步时拍的向日葵日落照片，她说日落和周围美景令人难以置信，是大自然之美的绝佳提醒",
+      "positions": {
+        "original": {
+          "vector": null,
+          "reranked": null
+        },
+        "speaker_a": {
+          "vector": null,
+          "reranked": null
+        },
+        "speaker_b": {
+          "vector": null,
+          "reranked": null
+        }
+      },
+      "in_merged_top15": false
+    },
+    {
+      "id": "4ea576c4-048c-4855-abdd-292e7907889f",
+      "session_id": "session_8",
+      "content": "乔安娜是大自然的超级粉丝，常去徒步，大自然一直是她的避风港，在自然中漫步、聆听声音能让她平静、消除烦恼和压力",
+      "positions": {
+        "original": {
+          "vector": null,
+          "reranked": null
+        },
+        "speaker_a": {
+          "vector": 13,
+          "reranked": 9
+        },
+        "speaker_b": {
+          "vector": null,
+          "reranked": null
+        }
+      },
+      "in_merged_top15": false
+    },
+    {
+      "id": "56217cd3-ace8-4857-b1cd-b79ef752e9f8",
+      "session_id": "session_8",
+      "content": "内特认为大自然能给人灵感，对他来说陪伴宠物和做爱好是暂时的放松方式",
+      "positions": {
+        "original": {
+          "vector": null,
+          "reranked": null
+        },
+        "speaker_a": {
+          "vector": null,
+          "reranked": null
+        },
+        "speaker_b": {
+          "vector": 1,
+          "reranked": 11
+        }
+      },
+      "in_merged_top15": false
+    }
+  ],
+  "frozen_final_ids": {
+    "original": [
+      "61b45d59-7128-46bb-9989-dbfa4dae5fd8",
+      "203dded2-ee87-484e-95f6-4c5f21347b46",
+      "513275ab-39bf-4f81-8a7e-f1a0b54b875a",
+      "051a0dbd-3acc-48fb-9645-c0a7d3367113",
+      "8265692e-2cf4-4d48-9b16-02ef6939828f",
+      "c0e191a2-7348-4c8c-8150-3cf5a8e975d5",
+      "7c592f60-2579-41c0-90a7-ebe82e779526",
+      "9c1e2d54-e381-4c0c-a997-54dd6a522968",
+      "ef0d18c0-eaf3-4aaa-9f10-699fb8323351",
+      "6e921e42-7eaa-4940-bf0f-a54619f0b040",
+      "41151682-0511-4b51-bf48-4ad7811fdca3",
+      "cda9adff-8113-4344-9063-c9f19bff9978",
+      "b61b4b59-6637-45d8-be43-4862cc91255d",
+      "27525398-5556-41d2-a9ce-3c90e988cad1",
+      "4ff08f9d-62b0-473f-9bd5-928554a020ee"
+    ],
+    "merged": [
+      "61b45d59-7128-46bb-9989-dbfa4dae5fd8",
+      "203dded2-ee87-484e-95f6-4c5f21347b46",
+      "513275ab-39bf-4f81-8a7e-f1a0b54b875a",
+      "051a0dbd-3acc-48fb-9645-c0a7d3367113",
+      "8265692e-2cf4-4d48-9b16-02ef6939828f",
+      "7f0d5b7b-e539-45ea-9514-1b603613e1ff",
+      "9c1e2d54-e381-4c0c-a997-54dd6a522968",
+      "94867d5f-f959-4179-91fa-02298103923b",
+      "6e921e42-7eaa-4940-bf0f-a54619f0b040",
+      "dfb5a7fc-9db4-4e5a-a61f-8dd4272de216",
+      "45facb9f-d1fa-4428-acfd-b7415225c425",
+      "30a4754c-dca4-4d7d-97d3-37dbb1be3c9e",
+      "ab006ac3-0f64-4679-b792-26674b651391",
+      "8d680172-d3e9-4d3b-82fb-d0c92c1bb325",
+      "c0e191a2-7348-4c8c-8150-3cf5a8e975d5"
+    ]
+  },
+  "limits": [
+    "Current memory records do not contain dia_id provenance; semantic alignment to source turns is manual.",
+    "String matches and diagnostic memories do not exhaust all paraphrases in the corpus.",
+    "Frozen retrieval and current memory state are different snapshots; ID/content alignment is inspected here, not all embedding bytes.",
+    "No counterfactual extraction, rerank or answer is run."
+  ]
+}
