@@ -1,0 +1,1981 @@
+{
+  "scope": "English 500 and Chinese 470 LongMemEval-S; literal timestamp comparison and fixed hash-order 12-case bilingual source sample; no model calls",
+  "input_files": {
+    "/Users/xu/git/memory-prompt/eval-datasets/longmemeval-zh/longmemeval_s_cleaned.json": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "/Users/xu/git/memory-prompt/eval-datasets/longmemeval-zh/longmemeval_s_cleaned_zh.json": "e93bd28549d25ba4092034bfe336a92f5fbce7e17693c5672a5f9d3be0d96f1f"
+  },
+  "english_timing_counts": {
+    "questions": 500,
+    "type_single-session-user": 70,
+    "type_multi-session": 133,
+    "type_single-session-preference": 30,
+    "type_temporal-reasoning": 133,
+    "questions_with_later_haystack": 76,
+    "later_haystack_sessions": 1475,
+    "temporal-reasoning_questions_with_later_haystack": 60,
+    "questions_with_later_answer_session": 44,
+    "later_answer_sessions": 75,
+    "temporal-reasoning_questions_with_later_answer_session": 43,
+    "type_knowledge-update": 78,
+    "knowledge-update_questions_with_later_haystack": 16,
+    "knowledge-update_questions_with_later_answer_session": 1,
+    "type_single-session-assistant": 56
+  },
+  "chinese_timing_counts": {
+    "questions": 470,
+    "type_single-session-user": 66,
+    "type_multi-session": 132,
+    "type_single-session-preference": 29,
+    "type_temporal-reasoning": 123,
+    "questions_with_later_haystack": 71,
+    "later_haystack_sessions": 1342,
+    "temporal-reasoning_questions_with_later_haystack": 56,
+    "questions_with_later_answer_session": 41,
+    "later_answer_sessions": 71,
+    "temporal-reasoning_questions_with_later_answer_session": 40,
+    "type_knowledge-update": 68,
+    "knowledge-update_questions_with_later_haystack": 15,
+    "knowledge-update_questions_with_later_answer_session": 1,
+    "type_single-session-assistant": 52
+  },
+  "chinese_later_answer_cases": [
+    {
+      "question_id": "gpt4_2655b836",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/04/10 (Mon) 10:15",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_4be1b6b4_1",
+          "date": "2023/04/10 (Mon) 10:57"
+        },
+        {
+          "session_id": "answer_4be1b6b4_2",
+          "date": "2023/04/10 (Mon) 20:30"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_2487a7cb",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/24 (Wed) 08:02",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_1c6b85ea_1",
+          "date": "2023/05/24 (Wed) 16:55"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_76048e76",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/10 (Fri) 03:39",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_b535969f_1",
+          "date": "2023/03/10 (Fri) 23:04"
+        },
+        {
+          "session_id": "answer_b535969f_2",
+          "date": "2023/03/10 (Fri) 07:55"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_2312f94c",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/15 (Wed) 04:45",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_5328c3c2_2",
+          "date": "2023/03/15 (Wed) 09:44"
+        },
+        {
+          "session_id": "answer_5328c3c2_1",
+          "date": "2023/03/15 (Wed) 15:26"
+        }
+      ]
+    },
+    {
+      "question_id": "0bb5a684",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/01/13 (Fri) 12:09",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_e936197f_2",
+          "date": "2023/01/13 (Fri) 13:59"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_385a5000",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/10 (Fri) 15:30",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_7a4a93f1_2",
+          "date": "2023/03/10 (Fri) 17:13"
+        },
+        {
+          "session_id": "answer_7a4a93f1_1",
+          "date": "2023/03/10 (Fri) 17:13"
+        }
+      ]
+    },
+    {
+      "question_id": "2a1811e2",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/26 (Sun) 12:05",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_1cc3cd0c_1",
+          "date": "2023/03/26 (Sun) 12:48"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_5dcc0aab",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/24 (Wed) 09:14",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_099c1b6c_5",
+          "date": "2023/05/24 (Wed) 18:32"
+        },
+        {
+          "session_id": "answer_099c1b6c_2",
+          "date": "2023/05/24 (Wed) 10:58"
+        },
+        {
+          "session_id": "answer_099c1b6c_4",
+          "date": "2023/05/24 (Wed) 14:49"
+        },
+        {
+          "session_id": "answer_099c1b6c_3",
+          "date": "2023/05/24 (Wed) 20:15"
+        },
+        {
+          "session_id": "answer_099c1b6c_1",
+          "date": "2023/05/24 (Wed) 19:37"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_0b2f1d21",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/25 (Thu) 09:31",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_c4e5d969_1",
+          "date": "2023/05/25 (Thu) 13:38"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_6ed717ea",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/29 (Mon) 08:51",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_d50a8a33_1",
+          "date": "2023/05/29 (Mon) 21:15"
+        },
+        {
+          "session_id": "answer_d50a8a33_2",
+          "date": "2023/05/29 (Mon) 19:41"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_70e84552",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/25 (Thu) 08:03",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_b3070ec4_1",
+          "date": "2023/05/25 (Thu) 14:25"
+        }
+      ]
+    },
+    {
+      "question_id": "a3838d2b",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/11/29 (Wed) 03:31",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_4ffa04a2_1",
+          "date": "2023/11/29 (Wed) 03:49"
+        },
+        {
+          "session_id": "answer_4ffa04a2_6",
+          "date": "2023/11/29 (Wed) 10:18"
+        },
+        {
+          "session_id": "answer_4ffa04a2_4",
+          "date": "2023/11/29 (Wed) 15:28"
+        },
+        {
+          "session_id": "answer_4ffa04a2_3",
+          "date": "2023/11/29 (Wed) 07:51"
+        },
+        {
+          "session_id": "answer_4ffa04a2_5",
+          "date": "2023/11/29 (Wed) 22:12"
+        },
+        {
+          "session_id": "answer_4ffa04a2_2",
+          "date": "2023/11/29 (Wed) 05:08"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_65aabe59",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/25 (Thu) 11:29",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_30dfe889_2",
+          "date": "2023/05/25 (Thu) 19:02"
+        }
+      ]
+    },
+    {
+      "question_id": "982b5123",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/21 (Sun) 10:30",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_ab603dd5_1",
+          "date": "2023/05/21 (Sun) 18:59"
+        },
+        {
+          "session_id": "answer_ab603dd5_2",
+          "date": "2023/05/21 (Sun) 17:13"
+        }
+      ]
+    },
+    {
+      "question_id": "b9cfe692",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/24 (Wed) 08:08",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_5e3bb940_3",
+          "date": "2023/05/24 (Wed) 11:25"
+        },
+        {
+          "session_id": "answer_5e3bb940_2",
+          "date": "2023/05/24 (Wed) 08:41"
+        },
+        {
+          "session_id": "answer_5e3bb940_1",
+          "date": "2023/05/24 (Wed) 22:29"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_4edbafa2",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/07/01 (Sat) 02:36",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_0a00c163_1",
+          "date": "2023/07/01 (Sat) 22:07"
+        },
+        {
+          "session_id": "answer_0a00c163_2",
+          "date": "2023/07/01 (Sat) 06:18"
+        }
+      ]
+    },
+    {
+      "question_id": "e4e14d04",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/28 (Sun) 15:46",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_cf425855_1",
+          "date": "2023/05/28 (Sun) 21:28"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_b4a80587",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/23 (Tue) 04:05",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_b9d9150e_2",
+          "date": "2023/05/23 (Tue) 08:02"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_9a159967",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/04/27 (Thu) 05:28",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_8a42fedf_1",
+          "date": "2023/04/27 (Thu) 09:15"
+        },
+        {
+          "session_id": "answer_8a42fedf_3",
+          "date": "2023/04/27 (Thu) 12:40"
+        }
+      ]
+    },
+    {
+      "question_id": "cc6d1ec1",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/21 (Sun) 19:31",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_be73098b_2",
+          "date": "2023/05/21 (Sun) 20:08"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_8c8961ae",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/28 (Sun) 13:10",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_72d9aa58_1",
+          "date": "2023/05/28 (Sun) 20:06"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_d9af6064",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/28 (Tue) 01:25",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_da704e79_2",
+          "date": "2023/03/28 (Tue) 04:39"
+        },
+        {
+          "session_id": "answer_da704e79_1",
+          "date": "2023/03/28 (Tue) 15:46"
+        }
+      ]
+    },
+    {
+      "question_id": "d01c6aa8",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/27 (Sat) 10:19",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_991d55e5_2",
+          "date": "2023/05/27 (Sat) 22:00"
+        }
+      ]
+    },
+    {
+      "question_id": "993da5e2",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/26 (Fri) 17:49",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_54f0d6f9_2",
+          "date": "2023/05/26 (Fri) 18:55"
+        }
+      ]
+    },
+    {
+      "question_id": "a3045048",
+      "question_type": "temporal-reasoning",
+      "question_date": "2022/05/15 (Sun) 13:45",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_016f6bd4_2",
+          "date": "2022/05/15 (Sun) 14:45"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_cd90e484",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/20 (Sat) 09:28",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_aa930b56_1",
+          "date": "2023/05/20 (Sat) 20:08"
+        },
+        {
+          "session_id": "answer_aa930b56_2",
+          "date": "2023/05/20 (Sat) 22:12"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_4cd9eba1",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/04/19 (Wed) 00:38",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_5fcca8bc_2",
+          "date": "2023/04/19 (Wed) 02:37"
+        },
+        {
+          "session_id": "answer_5fcca8bc_1",
+          "date": "2023/04/19 (Wed) 03:31"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_93f6379c",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/25 (Thu) 08:24",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_544fe66c_1",
+          "date": "2023/05/25 (Thu) 18:32"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_2f56ae70",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/26 (Fri) 00:18",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_7a36e820_2",
+          "date": "2023/05/26 (Fri) 23:40"
+        },
+        {
+          "session_id": "answer_7a36e820_3",
+          "date": "2023/05/26 (Fri) 01:08"
+        },
+        {
+          "session_id": "answer_7a36e820_1",
+          "date": "2023/05/26 (Fri) 08:25"
+        }
+      ]
+    },
+    {
+      "question_id": "6613b389",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/07/07 (Fri) 13:04",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_aaf71ce2_3",
+          "date": "2023/07/07 (Fri) 19:55"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_78cf46a3",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/26 (Fri) 12:55",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_5a78688d_1",
+          "date": "2023/05/26 (Fri) 19:11"
+        },
+        {
+          "session_id": "answer_5a78688d_2",
+          "date": "2023/05/26 (Fri) 18:20"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_0a05b494",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/23 (Tue) 00:30",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_a68db5db_2",
+          "date": "2023/05/23 (Tue) 01:01"
+        },
+        {
+          "session_id": "answer_a68db5db_1",
+          "date": "2023/05/23 (Tue) 05:32"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_1a1dc16d",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/09 (Tue) 10:01",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_faad7d7a_2",
+          "date": "2023/05/09 (Tue) 12:07"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_2f584639",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/30 (Tue) 07:03",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_11a8f823_1",
+          "date": "2023/05/30 (Tue) 09:00"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_213fd887",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/24 (Wed) 14:01",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_53582e7e_2",
+          "date": "2023/05/24 (Wed) 16:56"
+        },
+        {
+          "session_id": "answer_53582e7e_1",
+          "date": "2023/05/24 (Wed) 23:16"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_fe651585",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/17 (Fri) 17:52",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_65600ff6_1",
+          "date": "2023/03/17 (Fri) 18:54"
+        }
+      ]
+    },
+    {
+      "question_id": "8c18457d",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/29 (Wed) 13:43",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_124f5dc3_2",
+          "date": "2023/03/29 (Wed) 21:48"
+        },
+        {
+          "session_id": "answer_124f5dc3_1",
+          "date": "2023/03/29 (Wed) 21:27"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_70e84552_abs",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/21 (Sun) 10:40",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_b3070ec4_abs_2",
+          "date": "2023/05/21 (Sun) 11:30"
+        },
+        {
+          "session_id": "answer_b3070ec4_abs_1",
+          "date": "2023/05/21 (Sun) 17:30"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_c27434e8_abs",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/23 (Tue) 11:26",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_d8e33f5c_abs_1",
+          "date": "2023/05/23 (Tue) 20:21"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_fe651585_abs",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/17 (Fri) 03:09",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_65600ff6_abs_1",
+          "date": "2023/03/17 (Fri) 09:14"
+        },
+        {
+          "session_id": "answer_65600ff6_abs_2",
+          "date": "2023/03/17 (Fri) 03:29"
+        }
+      ]
+    },
+    {
+      "question_id": "2133c1b5",
+      "question_type": "knowledge-update",
+      "question_date": "2023/10/15 (Sun) 08:39",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_52382508_2",
+          "date": "2023/10/15 (Sun) 20:50"
+        }
+      ]
+    }
+  ],
+  "english_later_answer_cases": [
+    {
+      "question_id": "gpt4_2655b836",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/04/10 (Mon) 10:15",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_4be1b6b4_1",
+          "date": "2023/04/10 (Mon) 10:57"
+        },
+        {
+          "session_id": "answer_4be1b6b4_2",
+          "date": "2023/04/10 (Mon) 20:30"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_2487a7cb",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/24 (Wed) 08:02",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_1c6b85ea_1",
+          "date": "2023/05/24 (Wed) 16:55"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_76048e76",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/10 (Fri) 03:39",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_b535969f_1",
+          "date": "2023/03/10 (Fri) 23:04"
+        },
+        {
+          "session_id": "answer_b535969f_2",
+          "date": "2023/03/10 (Fri) 07:55"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_2312f94c",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/15 (Wed) 04:45",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_5328c3c2_2",
+          "date": "2023/03/15 (Wed) 09:44"
+        },
+        {
+          "session_id": "answer_5328c3c2_1",
+          "date": "2023/03/15 (Wed) 15:26"
+        }
+      ]
+    },
+    {
+      "question_id": "0bb5a684",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/01/13 (Fri) 12:09",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_e936197f_2",
+          "date": "2023/01/13 (Fri) 13:59"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_385a5000",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/10 (Fri) 15:30",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_7a4a93f1_2",
+          "date": "2023/03/10 (Fri) 17:13"
+        },
+        {
+          "session_id": "answer_7a4a93f1_1",
+          "date": "2023/03/10 (Fri) 17:13"
+        }
+      ]
+    },
+    {
+      "question_id": "2a1811e2",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/26 (Sun) 12:05",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_1cc3cd0c_1",
+          "date": "2023/03/26 (Sun) 12:48"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_5dcc0aab",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/24 (Wed) 09:14",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_099c1b6c_5",
+          "date": "2023/05/24 (Wed) 18:32"
+        },
+        {
+          "session_id": "answer_099c1b6c_2",
+          "date": "2023/05/24 (Wed) 10:58"
+        },
+        {
+          "session_id": "answer_099c1b6c_4",
+          "date": "2023/05/24 (Wed) 14:49"
+        },
+        {
+          "session_id": "answer_099c1b6c_3",
+          "date": "2023/05/24 (Wed) 20:15"
+        },
+        {
+          "session_id": "answer_099c1b6c_1",
+          "date": "2023/05/24 (Wed) 19:37"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_0b2f1d21",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/25 (Thu) 09:31",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_c4e5d969_1",
+          "date": "2023/05/25 (Thu) 13:38"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_6ed717ea",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/29 (Mon) 08:51",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_d50a8a33_1",
+          "date": "2023/05/29 (Mon) 21:15"
+        },
+        {
+          "session_id": "answer_d50a8a33_2",
+          "date": "2023/05/29 (Mon) 19:41"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_70e84552",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/25 (Thu) 08:03",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_b3070ec4_1",
+          "date": "2023/05/25 (Thu) 14:25"
+        }
+      ]
+    },
+    {
+      "question_id": "a3838d2b",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/11/29 (Wed) 03:31",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_4ffa04a2_1",
+          "date": "2023/11/29 (Wed) 03:49"
+        },
+        {
+          "session_id": "answer_4ffa04a2_6",
+          "date": "2023/11/29 (Wed) 10:18"
+        },
+        {
+          "session_id": "answer_4ffa04a2_4",
+          "date": "2023/11/29 (Wed) 15:28"
+        },
+        {
+          "session_id": "answer_4ffa04a2_3",
+          "date": "2023/11/29 (Wed) 07:51"
+        },
+        {
+          "session_id": "answer_4ffa04a2_5",
+          "date": "2023/11/29 (Wed) 22:12"
+        },
+        {
+          "session_id": "answer_4ffa04a2_2",
+          "date": "2023/11/29 (Wed) 05:08"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_65aabe59",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/25 (Thu) 11:29",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_30dfe889_2",
+          "date": "2023/05/25 (Thu) 19:02"
+        }
+      ]
+    },
+    {
+      "question_id": "982b5123",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/21 (Sun) 10:30",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_ab603dd5_1",
+          "date": "2023/05/21 (Sun) 18:59"
+        },
+        {
+          "session_id": "answer_ab603dd5_2",
+          "date": "2023/05/21 (Sun) 17:13"
+        }
+      ]
+    },
+    {
+      "question_id": "b9cfe692",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/24 (Wed) 08:08",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_5e3bb940_3",
+          "date": "2023/05/24 (Wed) 11:25"
+        },
+        {
+          "session_id": "answer_5e3bb940_2",
+          "date": "2023/05/24 (Wed) 08:41"
+        },
+        {
+          "session_id": "answer_5e3bb940_1",
+          "date": "2023/05/24 (Wed) 22:29"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_4edbafa2",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/07/01 (Sat) 02:36",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_0a00c163_1",
+          "date": "2023/07/01 (Sat) 22:07"
+        },
+        {
+          "session_id": "answer_0a00c163_2",
+          "date": "2023/07/01 (Sat) 06:18"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_483dd43c",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/29 (Mon) 08:33",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_fb793c87_1",
+          "date": "2023/05/29 (Mon) 09:49"
+        }
+      ]
+    },
+    {
+      "question_id": "e4e14d04",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/28 (Sun) 15:46",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_cf425855_1",
+          "date": "2023/05/28 (Sun) 21:28"
+        }
+      ]
+    },
+    {
+      "question_id": "c9f37c46",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/20 (Sat) 00:44",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_cdba3d9f_1",
+          "date": "2023/05/20 (Sat) 12:45"
+        },
+        {
+          "session_id": "answer_cdba3d9f_2",
+          "date": "2023/05/20 (Sat) 09:41"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_b4a80587",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/23 (Tue) 04:05",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_b9d9150e_2",
+          "date": "2023/05/23 (Tue) 08:02"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_9a159967",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/04/27 (Thu) 05:28",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_8a42fedf_1",
+          "date": "2023/04/27 (Thu) 09:15"
+        },
+        {
+          "session_id": "answer_8a42fedf_3",
+          "date": "2023/04/27 (Thu) 12:40"
+        }
+      ]
+    },
+    {
+      "question_id": "cc6d1ec1",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/21 (Sun) 19:31",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_be73098b_2",
+          "date": "2023/05/21 (Sun) 20:08"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_8c8961ae",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/28 (Sun) 13:10",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_72d9aa58_1",
+          "date": "2023/05/28 (Sun) 20:06"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_d9af6064",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/28 (Tue) 01:25",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_da704e79_2",
+          "date": "2023/03/28 (Tue) 04:39"
+        },
+        {
+          "session_id": "answer_da704e79_1",
+          "date": "2023/03/28 (Tue) 15:46"
+        }
+      ]
+    },
+    {
+      "question_id": "d01c6aa8",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/27 (Sat) 10:19",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_991d55e5_2",
+          "date": "2023/05/27 (Sat) 22:00"
+        }
+      ]
+    },
+    {
+      "question_id": "993da5e2",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/26 (Fri) 17:49",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_54f0d6f9_2",
+          "date": "2023/05/26 (Fri) 18:55"
+        }
+      ]
+    },
+    {
+      "question_id": "a3045048",
+      "question_type": "temporal-reasoning",
+      "question_date": "2022/05/15 (Sun) 13:45",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_016f6bd4_2",
+          "date": "2022/05/15 (Sun) 14:45"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_cd90e484",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/20 (Sat) 09:28",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_aa930b56_1",
+          "date": "2023/05/20 (Sat) 20:08"
+        },
+        {
+          "session_id": "answer_aa930b56_2",
+          "date": "2023/05/20 (Sat) 22:12"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_4cd9eba1",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/04/19 (Wed) 00:38",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_5fcca8bc_2",
+          "date": "2023/04/19 (Wed) 02:37"
+        },
+        {
+          "session_id": "answer_5fcca8bc_1",
+          "date": "2023/04/19 (Wed) 03:31"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_93f6379c",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/25 (Thu) 08:24",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_544fe66c_1",
+          "date": "2023/05/25 (Thu) 18:32"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_2f56ae70",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/26 (Fri) 00:18",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_7a36e820_2",
+          "date": "2023/05/26 (Fri) 23:40"
+        },
+        {
+          "session_id": "answer_7a36e820_3",
+          "date": "2023/05/26 (Fri) 01:08"
+        },
+        {
+          "session_id": "answer_7a36e820_1",
+          "date": "2023/05/26 (Fri) 08:25"
+        }
+      ]
+    },
+    {
+      "question_id": "6613b389",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/07/07 (Fri) 13:04",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_aaf71ce2_3",
+          "date": "2023/07/07 (Fri) 19:55"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_78cf46a3",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/26 (Fri) 12:55",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_5a78688d_1",
+          "date": "2023/05/26 (Fri) 19:11"
+        },
+        {
+          "session_id": "answer_5a78688d_2",
+          "date": "2023/05/26 (Fri) 18:20"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_0a05b494",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/23 (Tue) 00:30",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_a68db5db_2",
+          "date": "2023/05/23 (Tue) 01:01"
+        },
+        {
+          "session_id": "answer_a68db5db_1",
+          "date": "2023/05/23 (Tue) 05:32"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_1a1dc16d",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/09 (Tue) 10:01",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_faad7d7a_2",
+          "date": "2023/05/09 (Tue) 12:07"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_2f584639",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/30 (Tue) 07:03",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_11a8f823_1",
+          "date": "2023/05/30 (Tue) 09:00"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_213fd887",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/24 (Wed) 14:01",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_53582e7e_2",
+          "date": "2023/05/24 (Wed) 16:56"
+        },
+        {
+          "session_id": "answer_53582e7e_1",
+          "date": "2023/05/24 (Wed) 23:16"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_5438fa52",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/27 (Sat) 16:21",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_b10f3828_1",
+          "date": "2023/05/27 (Sat) 21:39"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_fe651585",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/17 (Fri) 17:52",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_65600ff6_1",
+          "date": "2023/03/17 (Fri) 18:54"
+        }
+      ]
+    },
+    {
+      "question_id": "8c18457d",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/29 (Wed) 13:43",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_124f5dc3_2",
+          "date": "2023/03/29 (Wed) 21:48"
+        },
+        {
+          "session_id": "answer_124f5dc3_1",
+          "date": "2023/03/29 (Wed) 21:27"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_70e84552_abs",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/21 (Sun) 10:40",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_b3070ec4_abs_2",
+          "date": "2023/05/21 (Sun) 11:30"
+        },
+        {
+          "session_id": "answer_b3070ec4_abs_1",
+          "date": "2023/05/21 (Sun) 17:30"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_c27434e8_abs",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/05/23 (Tue) 11:26",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_d8e33f5c_abs_1",
+          "date": "2023/05/23 (Tue) 20:21"
+        }
+      ]
+    },
+    {
+      "question_id": "gpt4_fe651585_abs",
+      "question_type": "temporal-reasoning",
+      "question_date": "2023/03/17 (Fri) 03:09",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_65600ff6_abs_1",
+          "date": "2023/03/17 (Fri) 09:14"
+        },
+        {
+          "session_id": "answer_65600ff6_abs_2",
+          "date": "2023/03/17 (Fri) 03:29"
+        }
+      ]
+    },
+    {
+      "question_id": "2133c1b5",
+      "question_type": "knowledge-update",
+      "question_date": "2023/10/15 (Sun) 08:39",
+      "later_answer_sessions": [
+        {
+          "session_id": "answer_52382508_2",
+          "date": "2023/10/15 (Sun) 20:50"
+        }
+      ]
+    }
+  ],
+  "fixed_source_sample": [
+    {
+      "question_id": "gpt4_4edbafa2",
+      "question_type": "temporal-reasoning",
+      "has_removed_background": true,
+      "removed_background_ids": [
+        "2ba7fdd0_2",
+        "7a7a4bf0_3",
+        "ultrachat_19593"
+      ],
+      "question_date": "2023/07/01 (Sat) 02:36",
+      "english": {
+        "question": "What was the date on which I attended the first BBQ event in June?",
+        "answer": "June 3rd",
+        "answer_sources": [
+          {
+            "session_id": "answer_0a00c163_1",
+            "date": "2023/07/01 (Sat) 22:07",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm looking for some recommendations on BBQ sauce brands. I recently used up my favorite Sweet Baby Ray's at my friend's place last Saturday, which was on the 17th of June, and I need to restock."
+              }
+            ]
+          },
+          {
+            "session_id": "answer_0a00c163_2",
+            "date": "2023/07/01 (Sat) 06:18",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "Hi! I'm looking for some recommendations on BBQ sauce brands. I've been using Sweet Baby Ray's and love it, but I want to try something new. I attended a backyard BBQ party at my colleague's house on the 3rd of June, and they had an amazing selection of BBQ sauces."
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "我六月参加的第一场烧烤活动是哪一天？",
+        "answer": "6月3日",
+        "answer_sources": [
+          {
+            "session_id": "answer_0a00c163_1",
+            "date": "2023/07/01 (Sat) 22:07",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我想找一些烧烤酱品牌的推荐。上周六，也就是6月17日，我在朋友家用完了我最爱的甜宝贝雷（Sweet Baby Ray's），现在需要补货了。"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_0a00c163_2",
+            "date": "2023/07/01 (Sat) 06:18",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "嗨！我想请大家推荐一些烧烤酱品牌。我一直在用甜宝贝雷烧烤酱，很喜欢，但我想尝试点新东西。6月3日我参加了同事家的后院烧烤聚会，他们那里的烧烤酱品种多得惊人。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "bcbe585f",
+      "question_type": "temporal-reasoning",
+      "has_removed_background": true,
+      "removed_background_ids": [
+        "ultrachat_554443",
+        "abe4ec94_2",
+        "ultrachat_183785",
+        "ultrachat_189394"
+      ],
+      "question_date": "2023/05/01 (Mon) 23:16",
+      "english": {
+        "question": "How many weeks ago did I attend a bird watching workshop at the local Audubon society?",
+        "answer": 4,
+        "answer_sources": [
+          {
+            "session_id": "answer_43ba3965_1",
+            "date": "2023/04/01 (Sat) 19:22",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm planning a trip to the nearby wildlife refuge this weekend and I'm wondering if you can give me some info on what birds I might see this time of year. By the way, I just got back from a bird watching workshop at the local Audubon society today, which was really informative."
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "我参加当地奥杜邦协会的观鸟工作坊是多少周以前的事了？",
+        "answer": 4,
+        "answer_sources": [
+          {
+            "session_id": "answer_43ba3965_1",
+            "date": "2023/04/01 (Sat) 19:22",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我打算这周末去附近的一个野生动物保护区，想问问你能不能给我一些信息，看看这个时节我能看到哪些鸟。对了，我今天刚参加了当地奥杜邦协会举办的观鸟工作坊，收获很大。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "gpt4_e414231f",
+      "question_type": "temporal-reasoning",
+      "has_removed_background": true,
+      "removed_background_ids": [
+        "sharegpt_Rn9PjoJ_0"
+      ],
+      "question_date": "2023/03/21 (Tue) 21:43",
+      "english": {
+        "question": "Which bike did I fixed or serviced the past weekend?",
+        "answer": "road bike",
+        "answer_sources": [
+          {
+            "session_id": "answer_e28c1f0e_1",
+            "date": "2023/03/15 (Wed) 08:43",
+            "marked_turns": []
+          },
+          {
+            "session_id": "answer_e28c1f0e_2",
+            "date": "2023/03/19 (Sun) 07:08",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm thinking of scheduling a maintenance check for my road bike at the local bike shop, but I'm also considering upgrading my pedals to clipless pedals first. Speaking of which, I decided to upgrade my road bike's pedals to clipless pedals today, specifically the Shimano Ultegra pedals. Can you walk me through the process of installing them?"
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "上个周末我修好或保养的是哪辆自行车？",
+        "answer": "公路车",
+        "answer_sources": [
+          {
+            "session_id": "answer_e28c1f0e_1",
+            "date": "2023/03/15 (Wed) 08:43",
+            "marked_turns": []
+          },
+          {
+            "session_id": "answer_e28c1f0e_2",
+            "date": "2023/03/19 (Sun) 07:08",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我想给公路车安排一次维护检查，去当地的车店，但我也在考虑先把踏板升级成自锁脚踏。说到这个，我今天决定把公路车的踏板升级成自锁脚踏，具体是禧玛诺Ultegra踏板。能带我了解一下安装流程吗？"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "gpt4_cd90e484",
+      "question_type": "temporal-reasoning",
+      "has_removed_background": true,
+      "removed_background_ids": [
+        "6043dcf6_1",
+        "sharegpt_XIimoNW_0"
+      ],
+      "question_date": "2023/05/20 (Sat) 09:28",
+      "english": {
+        "question": "How long did I use my new binoculars before I saw the American goldfinches returning to the area?",
+        "answer": "Two weeks",
+        "answer_sources": [
+          {
+            "session_id": "answer_aa930b56_1",
+            "date": "2023/05/20 (Sat) 20:08",
+            "marked_turns": [
+              {
+                "turn_index": 4,
+                "role": "user",
+                "text": "I've been trying to focus on bird shapes and silhouettes, as you suggested. I noticed that my new binoculars have really helped me get a better look at the birds, especially when they're far away. Speaking of my new binoculars, I remember that I got them exactly three weeks ago, after months of waiting. I was using my friend's old pair before, but they were heavy and the image wasn't very clear."
+              }
+            ]
+          },
+          {
+            "session_id": "answer_aa930b56_2",
+            "date": "2023/05/20 (Sat) 22:12",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm looking for some tips on improving my bird identification skills. I've been listening to bird calls online for about a month now, and it's been helping, but I'm still not confident in my abilities. By the way, I did manage to sneak in some birding time a week ago when I took a walk around my neighborhood after dinner. I saw a few common birds like robins and sparrows, but nothing too exciting. Except, I did notice that the American goldfinches seem to be returning to the area, which is always a nice sign of spring."
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "在我看到美洲金翅雀回到这个地区之前，我用新双筒望远镜用了多久？",
+        "answer": "两周",
+        "answer_sources": [
+          {
+            "session_id": "answer_aa930b56_1",
+            "date": "2023/05/20 (Sat) 20:08",
+            "marked_turns": [
+              {
+                "turn_index": 4,
+                "role": "user",
+                "text": "按照你的建议，我一直在尝试关注鸟的体型和轮廓。我注意到新双筒望远镜真的帮助我更清楚地观察鸟类，尤其是它们在远处的时候。说到新望远镜，我记得正好是三个月前……不对，是三个星期前买的，之前等了好几个月。在那之前我用的是朋友的一副旧望远镜，但很重，成像也不太清晰。"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_aa930b56_2",
+            "date": "2023/05/20 (Sat) 22:12",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我想找一些提升鸟类识别能力的技巧。我已经在网上听鸟叫大约一个月了，确实有帮助，但我对自己的水平还是没什么信心。顺便说一下，一周前晚饭后我在小区附近散步时，还挤出了点观鸟时间。我看到了几种常见的鸟，比如知更鸟和麻雀，但没什么太令人兴奋的。不过，我确实注意到美洲金翅雀似乎正回到这个地区，这总是春天到来的好兆头。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "gpt4_d31cdae3",
+      "question_type": "temporal-reasoning",
+      "has_removed_background": false,
+      "removed_background_ids": [],
+      "question_date": "2023/05/22 (Mon) 16:56",
+      "english": {
+        "question": "Which trip did the narrator take first, the solo trip to Europe or the family road trip across the American Southwest?",
+        "answer": "The family road trip across the American Southwest",
+        "answer_sources": [
+          {
+            "session_id": "answer_8464304d_1",
+            "date": "2023/05/22 (Mon) 11:56",
+            "marked_turns": [
+              {
+                "turn_index": 10,
+                "role": "user",
+                "text": "I think I'll spend at least half a day at the Deutsches Museum, there's just so much to see and learn. By the way, speaking of my travels, I was just thinking about my solo trip to Europe last summer, where I spent two weeks backpacking through Italy, Switzerland, and Germany. It was such an amazing experience, and I'm so glad I got to visit Munich during that trip. Anyway, back to the Deutsches Museum - are there any restaurants or cafes near the museum that you'd recommend for lunch?"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_8464304d_2",
+            "date": "2023/05/22 (Mon) 00:37",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm trying to plan a trip to Arizona and I was wondering if you could recommend some must-see attractions and activities. By the way, I've been to the Grand Canyon before with my family on a road trip across the American Southwest a few years ago, but I'm looking to explore more of the state on my own this time."
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "叙述者先进行的是哪次旅行，是独自去欧洲的旅行，还是全家穿越美国西南部的公路旅行？",
+        "answer": "全家穿越美国西南部的公路旅行",
+        "answer_sources": [
+          {
+            "session_id": "answer_8464304d_1",
+            "date": "2023/05/22 (Mon) 11:56",
+            "marked_turns": [
+              {
+                "turn_index": 10,
+                "role": "user",
+                "text": "我想我会在德意志博物馆待上至少半天，要看要学的东西实在太多了。对了，说起旅行，我刚才还在想我去年夏天的欧洲独自旅行，那次我花了两个星期背包游历了意大利、瑞士和德国。那是一次非常美妙的经历，我很高兴在旅途中去了慕尼黑。好了，回到德意志博物馆——博物馆附近有什么你推荐的午餐餐厅或咖啡馆吗？"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_8464304d_2",
+            "date": "2023/05/22 (Mon) 00:37",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我正在计划去亚利桑那旅行，想知道你能不能推荐一些必看的景点和活动。顺便说一下，几年前我和家人在穿越美国西南部的公路旅行中已经去过科罗拉多大峡谷了，但这次我想独自去探索这个州的更多地方。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "gpt4_6ed717ea",
+      "question_type": "temporal-reasoning",
+      "has_removed_background": false,
+      "removed_background_ids": [],
+      "question_date": "2023/05/29 (Mon) 08:51",
+      "english": {
+        "question": "Which item did I purchase first, the dog bed for Max or the training pads for Luna?",
+        "answer": "Training pads for Luna",
+        "answer_sources": [
+          {
+            "session_id": "answer_d50a8a33_1",
+            "date": "2023/05/29 (Mon) 21:15",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm looking for some advice on dog arthritis. I recently got a new Orthopedic Memory Foam dog bed for my golden retriever, Max, about three weeks ago from Petco, and it seems to be helping with his arthritis. Do you have any other recommendations for managing his condition?"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_d50a8a33_2",
+            "date": "2023/05/29 (Mon) 19:41",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm thinking of getting some more supplies for my puppy, Luna. She's still in potty-training, and I've been using those eco-friendly training pads from Chewy.com. I got a set of 10 for $25 about a month ago, and they've been a lifesaver. Do you have any recommendations for other potty-training aids or tips?"
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "我先买的是哪样东西，是给马克斯买的狗窝，还是给露娜买的训练垫？",
+        "answer": "给露娜买的训练垫",
+        "answer_sources": [
+          {
+            "session_id": "answer_d50a8a33_1",
+            "date": "2023/05/29 (Mon) 21:15",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我想咨询一下狗狗关节炎方面的建议。大约三周前，我在 Petco 给我的金毛马克斯买了一张新的矫形记忆棉狗窝，似乎对他的关节炎有帮助。你还有什么其他管理他病情的建议吗？"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_d50a8a33_2",
+            "date": "2023/05/29 (Mon) 19:41",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我想再给我的小狗露娜买些用品。她还在进行如厕训练，我一直在用Chewy.com上的环保训练垫。大约一个月前我花25美元买了一包10片的，它们真是帮了大忙。你有没有其他如厕训练用品或技巧推荐？"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "07741c45",
+      "question_type": "knowledge-update",
+      "has_removed_background": true,
+      "removed_background_ids": [
+        "4c2bd0fe_1"
+      ],
+      "question_date": "2023/06/23 (Fri) 07:31",
+      "english": {
+        "question": "Where do I currently keep my old sneakers?",
+        "answer": "in a shoe rack in my closet",
+        "answer_sources": [
+          {
+            "session_id": "answer_7e9ad7b4_1",
+            "date": "2023/05/25 (Thu) 10:04",
+            "marked_turns": [
+              {
+                "turn_index": 2,
+                "role": "user",
+                "text": "I've heard of Teva and Merrell, they're great brands. I'll check out their latest collections. By the way, I need to take care of my old sneakers, I've been keeping them under my bed for storage, and they're starting to smell."
+              }
+            ]
+          },
+          {
+            "session_id": "answer_7e9ad7b4_2",
+            "date": "2023/05/29 (Mon) 15:01",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm thinking of buying a new pair of sandals with better quality straps. Can you recommend some good brands or stores that offer durable sandals? By the way, I need to organize my closet this weekend, and I'm looking forward to get rid of some of my old sneakers in a shoe rack in it, they're currently taking up space."
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "我现在把旧运动鞋放在哪里？",
+        "answer": "放在我衣柜里的鞋架上",
+        "answer_sources": [
+          {
+            "session_id": "answer_7e9ad7b4_1",
+            "date": "2023/05/25 (Thu) 10:04",
+            "marked_turns": [
+              {
+                "turn_index": 2,
+                "role": "user",
+                "text": "我听说过 Teva 和迈乐，都是很棒的品牌。我会去看看他们的最新系列。顺便说一下，我需要处理一下我的旧运动鞋，我一直把它们藏在床底下存放，现在开始有味道了。"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_7e9ad7b4_2",
+            "date": "2023/05/29 (Mon) 15:01",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我想买一双新的凉鞋，鞋带质量要好一点的。你能推荐一些质量好、凉鞋耐用的品牌或商店吗？顺便说一句，这周末我要整理衣柜，打算把一些旧运动鞋收进里面的鞋架上，它们现在太占地方了。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "b6019101",
+      "question_type": "knowledge-update",
+      "has_removed_background": true,
+      "removed_background_ids": [
+        "ultrachat_146343",
+        "afac7290_1",
+        "71f2f490_3",
+        "sharegpt_6kDZTZ2_0"
+      ],
+      "question_date": "2023/06/17 (Sat) 16:20",
+      "english": {
+        "question": "How many MCU films did I watch in the last 3 months?",
+        "answer": "5",
+        "answer_sources": [
+          {
+            "session_id": "answer_67074b4b_1",
+            "date": "2023/05/20 (Sat) 04:54",
+            "marked_turns": [
+              {
+                "turn_index": 4,
+                "role": "user",
+                "text": "I've actually watched 4 MCU films in the last 3 months, and I think Spider-Man: Homecoming would be a great choice for our family movie night. Can you give me some suggestions for snacks and activities that would complement the movie?"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_67074b4b_2",
+            "date": "2023/05/29 (Mon) 02:47",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm planning a movie marathon with my family over the upcoming long weekend and I want to include some classic movies from my childhood. Can you give me some suggestions on what to watch? By the way, I've been on a roll with movies lately - I've watched 12 films in the last 3 months, including 5 MCU films, which is a lot for me!"
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "过去3个月我看了几部MCU电影？",
+        "answer": "5",
+        "answer_sources": [
+          {
+            "session_id": "answer_67074b4b_1",
+            "date": "2023/05/20 (Sat) 04:54",
+            "marked_turns": [
+              {
+                "turn_index": 4,
+                "role": "user",
+                "text": "其实过去3个月我已经看了4部MCU电影了，我觉得《蜘蛛侠：英雄归来》会是我们家庭电影之夜的绝佳选择。你能推荐一些和这部电影搭配的零食和活动吗？"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_67074b4b_2",
+            "date": "2023/05/29 (Mon) 02:47",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我打算在即将到来的长周末和家人一起办一场电影马拉松，想加入一些我童年时代的经典电影。你能给我一些观影建议吗？顺便说一下，我最近看电影很勤——过去3个月看了12部，包括5部漫威电影宇宙（MCU）的电影，对我来说这可不少！"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "6071bd76",
+      "question_type": "knowledge-update",
+      "has_removed_background": true,
+      "removed_background_ids": [
+        "ultrachat_431164",
+        "ultrachat_551846",
+        "ultrachat_35536",
+        "01ecd4fa_5"
+      ],
+      "question_date": "2023/07/30 (Sun) 05:53",
+      "english": {
+        "question": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+        "answer": "You switched to less water (5 ounces) per tablespoon of coffee.",
+        "answer_sources": [
+          {
+            "session_id": "answer_4dac77cb_1",
+            "date": "2023/02/11 (Sat) 11:41",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm thinking of trying out a new coffee recipe, but I'm not sure what type of coffee beans would pair well with citrus notes. Can you recommend some options? By the way, I've been experimenting with my French press and I've found that 1 tablespoon of coffee for every 6 ounces of water is the perfect ratio for me."
+              }
+            ]
+          },
+          {
+            "session_id": "answer_4dac77cb_2",
+            "date": "2023/06/30 (Fri) 13:14",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm thinking of trying out a new tea blend this weekend. Do you have any recommendations for a relaxing tea that's similar to chamomile? By the way, I'm planning to brew a fresh pot of coffee in the morning, and I'm feeling excited to use my new beans - I've got my French press ratio down to a science: 1 tablespoon of coffee for every 5 ounces of water."
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "关于我法压壶的粉水比，我后来是改成每汤匙咖啡粉配更多水了，还是更少水了？",
+        "answer": "你改成了每汤匙咖啡粉配更少的水（5盎司）。",
+        "answer_sources": [
+          {
+            "session_id": "answer_4dac77cb_1",
+            "date": "2023/02/11 (Sat) 11:41",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我想尝试一种新的咖啡配方，但不确定哪种咖啡豆能和柑橘风味搭配得好。你能推荐几个选择吗？顺便说一下，我一直在用法压壶做实验，发现每6盎司水配1汤匙咖啡粉是适合我的完美比例。"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_4dac77cb_2",
+            "date": "2023/06/30 (Fri) 13:14",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我这周末想试试新的混合茶。你有什么和洋甘菊类似的放松类茶推荐吗？顺便说一下，我打算早上煮一壶新鲜咖啡，很期待用我的新咖啡豆——法压壶的粉水比我已经完全掌握了：每5盎司水配1汤匙咖啡粉。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "c6853660",
+      "question_type": "knowledge-update",
+      "has_removed_background": true,
+      "removed_background_ids": [
+        "cf6f69a1"
+      ],
+      "question_date": "2023/06/11 (Sun) 21:37",
+      "english": {
+        "question": "Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?",
+        "answer": "You increased the limit (from one cup to two cups)",
+        "answer_sources": [
+          {
+            "session_id": "answer_626e93c4_1",
+            "date": "2023/05/25 (Thu) 12:35",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm trying to make my morning routine more efficient. Can you give me some tips on how to optimize my coffee brewing method? By the way, I've switched to a darker roast and cut back to just one cup in the morning, which has been really helping me feel more focused."
+              }
+            ]
+          },
+          {
+            "session_id": "answer_626e93c4_2",
+            "date": "2023/05/26 (Fri) 19:25",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm trying to decide on a new coffee maker, can you recommend any good ones? I'm currently using a drip coffee maker, but I'm open to exploring other options. By the way, I'm thinking of changing my morning coffee limit to two cups, do you think that's a good idea?"
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "我最近是把早上的咖啡杯数限制调高了还是调低了？",
+        "answer": "你调高了限制（从一杯增加到两杯）",
+        "answer_sources": [
+          {
+            "session_id": "answer_626e93c4_1",
+            "date": "2023/05/25 (Thu) 12:35",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我想让我的晨间流程更高效。能给我一些优化咖啡冲泡方法的建议吗？顺便说一句，我最近换成了深烘焙咖啡，而且早上只喝一杯，这真的让我感觉注意力更集中了。"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_626e93c4_2",
+            "date": "2023/05/26 (Fri) 19:25",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我在考虑买一台新的咖啡机，能推荐几款好的吗？我现在用的是滴滤式咖啡机，但也愿意尝试其他选择。顺便说一下，我想把早上的咖啡限量改成两杯，你觉得这是个好主意吗？"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "a2f3aa27",
+      "question_type": "knowledge-update",
+      "has_removed_background": false,
+      "removed_background_ids": [],
+      "question_date": "2023/06/15 (Thu) 23:26",
+      "english": {
+        "question": "How many followers do I have on Instagram now?",
+        "answer": 1300,
+        "answer_sources": [
+          {
+            "session_id": "answer_5126c02d_1",
+            "date": "2023/05/25 (Thu) 05:26",
+            "marked_turns": [
+              {
+                "turn_index": 2,
+                "role": "user",
+                "text": "I've been doing some of these already, like posting regularly and using a consistent aesthetic. It's great to know I'm on the right track. Speaking of which, I'm curious to know if there's a way to see which posts are performing well and which ones aren't. Do you know if Instagram Insights can help me with that? And by the way, I've got 1250 followers on Instagram now, so it'd be great to get some insights on how to optimize my content for them."
+              }
+            ]
+          },
+          {
+            "session_id": "answer_5126c02d_2",
+            "date": "2023/05/25 (Thu) 09:28",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "I'm looking to create a new Instagram post about a recent industry event I attended. Can you help me come up with a catchy caption that will encourage engagement, considering my audience is mostly from the US, UK, and Australia? By the way, I've been meaning to check my current follower count - I think I'm close to 1300 now."
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "我现在 Instagram 上有多少粉丝？",
+        "answer": 1300,
+        "answer_sources": [
+          {
+            "session_id": "answer_5126c02d_1",
+            "date": "2023/05/25 (Thu) 05:26",
+            "marked_turns": [
+              {
+                "turn_index": 2,
+                "role": "user",
+                "text": "其实我已经在做其中一些了，比如定期发帖和保持统一的视觉风格。很高兴知道自己方向是对的。说到这个，我很好奇有没有办法看出哪些帖子表现好、哪些不好。你知道 Instagram Insights 能帮上忙吗？另外，我现在 Instagram 上有 1250 个粉丝了，如果能给我一些针对他们优化内容的建议就太好了。"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_5126c02d_2",
+            "date": "2023/05/25 (Thu) 09:28",
+            "marked_turns": [
+              {
+                "turn_index": 0,
+                "role": "user",
+                "text": "我想发一条关于我最近参加的行业活动的新 Instagram 帖子。你能帮我想一个吸引人、能促进互动的文案吗？我的受众主要来自美国、英国和澳大利亚。顺便说一句，我一直想看看我现在的粉丝数——我觉得我快到 1300 了。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "6aeb4375",
+      "question_type": "knowledge-update",
+      "has_removed_background": false,
+      "removed_background_ids": [],
+      "question_date": "2023/10/22 (Sun) 15:38",
+      "english": {
+        "question": "How many Korean restaurants have I tried in my city?",
+        "answer": "four",
+        "answer_sources": [
+          {
+            "session_id": "answer_3f9693b7_1",
+            "date": "2023/08/11 (Fri) 09:09",
+            "marked_turns": [
+              {
+                "turn_index": 8,
+                "role": "user",
+                "text": "By the way, speaking of noodles, have you tried any good Korean restaurants in your city lately? I've tried three different ones recently, and each has its own unique flavor and style."
+              }
+            ]
+          },
+          {
+            "session_id": "answer_3f9693b7_2",
+            "date": "2023/09/30 (Sat) 15:06",
+            "marked_turns": [
+              {
+                "turn_index": 2,
+                "role": "user",
+                "text": "I think I'll go with kimchi and bokkeumbap. By the way, have you tried any good Korean restaurants in my city lately? I've tried four different ones so far, and I'm always looking for new recommendations."
+              }
+            ]
+          }
+        ]
+      },
+      "chinese": {
+        "question": "我在自己所在的城市已经试过多少家韩国餐厅了？",
+        "answer": "四家",
+        "answer_sources": [
+          {
+            "session_id": "answer_3f9693b7_1",
+            "date": "2023/08/11 (Fri) 09:09",
+            "marked_turns": [
+              {
+                "turn_index": 8,
+                "role": "user",
+                "text": "对了，说到面条，你最近在你所在的城市有吃到什么好吃的韩国餐厅吗？我最近试了三家，每家都有自己独特的风味和风格。"
+              }
+            ]
+          },
+          {
+            "session_id": "answer_3f9693b7_2",
+            "date": "2023/09/30 (Sat) 15:06",
+            "marked_turns": [
+              {
+                "turn_index": 2,
+                "role": "user",
+                "text": "我决定选泡菜和炒饭。顺便问一下，你最近在我所在的城市吃过什么不错的韩国餐厅吗？到目前为止我已经试过四家了，总是在寻找新的推荐。"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Later timestamps all require interpretation of question_date time semantics; a same-day later session is not necessarily later by the benchmark intended date-only granularity.",
+    "has_answer marks source turns, not semantic entailment of the gold answer.",
+    "The 12 cases are a reproducible diagnostic sample, not an estimate of error prevalence."
+  ]
+}
