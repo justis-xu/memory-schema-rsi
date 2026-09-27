@@ -1,0 +1,1707 @@
+{
+  "scope": "All eight previously question-text-selected Chinese two-person category-1 cases; bilingual gold/evidence, adjacent source turns and current memories in evidence sessions; no model calls",
+  "input_sha256": {
+    "zh": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "en": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "cohort": "eb57da0c43edb09179d5fa40df9afdcd61824210b7ded3e5abc7aca0cd6d20e2"
+  },
+  "current_memory_signature": "61e015ce36e4f137db6c0466d835d4d0cee714a17d9fcdf4e24156c7f25cdbd9",
+  "cases": [
+    {
+      "case_id": "locomo_conv-26_qa55",
+      "user_id": "zhfull:locomo:conv-26",
+      "zh_question": "卡罗琳和梅拉妮都画过什么主题？",
+      "zh_answer": "日落",
+      "en_question": "What subject have Caroline and Melanie both painted?",
+      "en_answer": "Sunsets",
+      "evidence_ids": [
+        "D14:5",
+        "D8:6"
+      ],
+      "zh_evidence_with_neighbors": [
+        {
+          "dia_id": "D8:6",
+          "session_id": "session_8",
+          "speaker": "梅拉妮",
+          "text": "最近我们喜欢一起画画，尤其是以大自然为灵感的画。这是上周末我们的最新作品。",
+          "blip_caption": "a photo of a painting of a sunset with a palm tree",
+          "previous_turn": {
+            "dia_id": "D8:5",
+            "speaker": "卡罗琳",
+            "text": "哇，真可爱！那个杯子好萌。看到孩子们通过艺术展现自己的个性真是太棒了。除了陶艺之外，你还和他们一起做哪些创意项目？"
+          },
+          "next_turn": {
+            "dia_id": "D8:7",
+            "speaker": "卡罗琳",
+            "text": "哇，梅尔，这幅画太棒了！色彩好大胆，真正凸显了大自然的美。这是你们一起画的吗？"
+          }
+        },
+        {
+          "dia_id": "D14:5",
+          "session_id": "session_14",
+          "speaker": "卡罗琳",
+          "text": "没有，还没试过。我一直忙着画画——这是我刚完成的作品。",
+          "blip_caption": "a photo of a painting of a sunset on a small easel",
+          "previous_turn": {
+            "dia_id": "D14:4",
+            "speaker": "梅拉妮",
+            "text": "是啊，我昨天在陶艺课上做的。我很喜欢！陶艺既放松又有创意。你试过吗？"
+          },
+          "next_turn": {
+            "dia_id": "D14:6",
+            "speaker": "梅拉妮",
+            "text": "哇，卡罗琳，看起来太美了！那些颜色好鲜艳，真像一场真实的日落。你是什么灵感让你画了这幅画？"
+          }
+        }
+      ],
+      "en_evidence_with_neighbors": [
+        {
+          "dia_id": "D8:6",
+          "session_id": "session_8",
+          "speaker": "Melanie",
+          "text": "We love painting together lately, especially nature-inspired ones. Here's our latest work from last weekend.",
+          "blip_caption": "a photo of a painting of a sunset with a palm tree",
+          "previous_turn": {
+            "dia_id": "D8:5",
+            "speaker": "Caroline",
+            "text": "Aww, that's so sweet! That cup is so cute. It's awesome to see how kids show their personalities through art. What other creative projects do you do with them, besides pottery?"
+          },
+          "next_turn": {
+            "dia_id": "D8:7",
+            "speaker": "Caroline",
+            "text": "Wow Mel, that painting's amazing! The colors are so bold and it really highlights the beauty of nature. Y'all work on it together?"
+          }
+        },
+        {
+          "dia_id": "D14:5",
+          "session_id": "session_14",
+          "speaker": "Caroline",
+          "text": "Nah, I haven't. I've been busy painting - here's something I just finished.",
+          "blip_caption": "a photo of a painting of a sunset on a small easel",
+          "previous_turn": {
+            "dia_id": "D14:4",
+            "speaker": "Melanie",
+            "text": "Yeah, I made it in pottery class yesterday. I love it! Pottery's so relaxing and creative. Have you tried it yet?"
+          },
+          "next_turn": {
+            "dia_id": "D14:6",
+            "speaker": "Melanie",
+            "text": "Wow Caroline, that looks amazing! Those colors are so vivid, it really looks like a real sunset. What gave you the idea to paint it?"
+          }
+        }
+      ],
+      "current_evidence_session_memories": [
+        {
+          "id": "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+          "session_id": "session_8",
+          "content": "卡罗琳在2023年6月底至7月初（几周前）参加了一场骄傲游行，身边都是接纳和赞美她的人，她感到无比自豪、被接受和快乐，称这是她最珍贵的回忆之一"
+        },
+        {
+          "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+          "session_id": "session_8",
+          "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静"
+        },
+        {
+          "id": "1ebaa089-9feb-4828-a972-4dd151e2928f",
+          "session_id": "session_14",
+          "content": "卡罗琳于2023年9月（对话次月）筹备一场LGBTQ艺术展，将展出自己的画作，希望展示LGBTQ艺术家的才华并传播理解与接纳"
+        },
+        {
+          "id": "1fca1a15-6f00-4467-89a4-27382584884c",
+          "session_id": "session_14",
+          "content": "卡罗琳还没尝试过陶艺，她的艺术创作一直以画画为主"
+        },
+        {
+          "id": "268b0881-a634-43ca-b230-c5466617353a",
+          "session_id": "session_14",
+          "content": "梅拉妮最喜欢画风景和静物，热爱大自然，计划画几幅以秋天景色为灵感的作品"
+        },
+        {
+          "id": "28dc3c22-5a24-4ee4-b736-fa4f93b7bb3f",
+          "session_id": "session_14",
+          "content": "卡罗琳珍视一幅彩虹旗壁画，因为它体现了跨性别群体的勇气和力量，画中的鹰象征自由和自豪，代表她自己和他人的坚韧；找到一个接纳、爱护、支持她的跨性别群体对她意义重大"
+        },
+        {
+          "id": "29c8496b-83a9-47b7-aa46-3c33aaa62e9e",
+          "session_id": "session_14",
+          "content": "梅拉妮和家人一起去流浪者收容所做志愿者，看到有些人被忽视很难受，但感到他们做出了改变"
+        },
+        {
+          "id": "2b624cc0-657d-4c6a-9837-269ce8550ca4",
+          "session_id": "session_14",
+          "content": "卡罗琳于2023年8月完成了一幅日落海滩画作，灵感来自她上周（2023年8月中旬）去海边看太阳沉入地平线的经历，那些绚丽的色彩既震撼又让人平静"
+        },
+        {
+          "id": "444a158f-f7e8-4dc2-aa22-cead845f1cb8",
+          "session_id": "session_8",
+          "content": "梅拉妮正在进行搬家，家人在这个过程中帮了很多忙，给了她满满的爱和支持"
+        },
+        {
+          "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+          "session_id": "session_8",
+          "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式"
+        },
+        {
+          "id": "55feb3da-4b18-4405-a8f1-9cb9825cc3fa",
+          "session_id": "session_8",
+          "content": "梅拉妮一家在2023年7月中旬又去森林露营了一次，在篝火旁烤棉花糖；他们还喜欢在山里徒步和探索森林，她认为这是亲近大自然、增进感情的方式"
+        },
+        {
+          "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+          "session_id": "session_8",
+          "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子"
+        },
+        {
+          "id": "5c43f1b2-8289-4513-9e28-914dedd5ae03",
+          "session_id": "session_14",
+          "content": "梅拉妮最近在陶艺课上做了一个带花卉图案的紫色碗/盘子，她很喜欢，觉得陶艺既放松又有创意"
+        },
+        {
+          "id": "7f5e4bd6-9c47-4afc-8f16-0980d82343de",
+          "session_id": "session_8",
+          "content": "梅拉妮的花卉是她们婚礼布置的重要部分，总是让她想起婚礼那一天；她回忆婚礼充满爱与欢乐，所爱的所有人都在场庆祝，而和伴侣结婚并承诺永远在一起是最棒的部分"
+        },
+        {
+          "id": "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+          "session_id": "session_8",
+          "content": "卡罗琳于2023年7月14日（上周五）参加了一次关于领养的委员会会议，觉得既鼓舞人心又令人感动——有很多人都想为有需要的孩子创造充满爱的家，这让她更加坚定了要领养的决心"
+        },
+        {
+          "id": "aa653bd2-c401-4b06-bc91-89ca34363058",
+          "session_id": "session_14",
+          "content": "画花是卡罗琳最喜欢的绘画题材之一，艺术给她带来快乐，帮助她表达情感、定格美好瞬间"
+        },
+        {
+          "id": "b88125e4-6065-4384-9be3-a397a47dabbd",
+          "session_id": "session_14",
+          "content": "卡罗琳想做一件象征团结、庆祝彼此差异的新艺术作品，类似她为教堂制作的彩绘玻璃窗"
+        },
+        {
+          "id": "c4d11b80-1b80-4192-b3cf-1082164ffb20",
+          "session_id": "session_14",
+          "content": "卡罗琳为一座当地教堂制作了一扇彩绘玻璃窗，主题是时间改变我们的生活，展现她作为跨性别女性的历程以及接受成长与改变，寓意每个人内心都藏着发现真正潜能的钥匙"
+        },
+        {
+          "id": "d3af3e2f-67c6-44e4-ae84-7a4c6da343e6",
+          "session_id": "session_14",
+          "content": "卡罗琳于2023年8月中旬去徒步时与一些人闹得不愉快，感到很心烦，并试着向他们道歉"
+        },
+        {
+          "id": "d5c8f69e-ec99-4bd1-b63a-fcdf9d689016",
+          "session_id": "session_8",
+          "content": "蓝色是卡罗琳最喜欢的颜色，让她感到放松"
+        },
+        {
+          "id": "e023cdac-38fa-4426-992c-7f83ed4c8a88",
+          "session_id": "session_8",
+          "content": "卡罗琳表示骄傲游行经历中最好的是意识到自己可以无所畏惧地做自己，并有勇气进行转变；能够真实地表达自我、加上大家的支持，让她感到自由，她为自己在漫长旅程中取得的进步感到骄傲"
+        },
+        {
+          "id": "f69a31d2-1f1e-4529-bdd1-918f5eb3e806",
+          "session_id": "session_14",
+          "content": "卡罗琳在2023年8月下旬家附近散步时看到一条为骄傲月铺设的彩虹人行道，觉得它色彩鲜艳、充满欢迎氛围，提醒她爱与接纳无处不在"
+        }
+      ],
+      "whole_conversation_title_mentions": null,
+      "original_top15_ids": [
+        "12515f6f-9c39-4f6e-9485-bb6621da2554",
+        "c4d11b80-1b80-4192-b3cf-1082164ffb20",
+        "64e65e18-3b0e-4e64-9145-97b5608c65cd",
+        "268b0881-a634-43ca-b230-c5466617353a",
+        "427e9a22-a52f-4c2c-ba62-de9303794a03",
+        "66a656c4-7dfb-4c22-9aec-b5122d29f11d",
+        "aa653bd2-c401-4b06-bc91-89ca34363058",
+        "2fe2215c-e092-4528-8aaf-af0adba4d8e9",
+        "6165c0bd-747e-415d-9c50-6d82d5411326",
+        "206ea82e-8571-45e5-a0b5-af8bf58aeec5",
+        "ca3af241-c336-4089-8ca4-a2496adf2c87",
+        "459ffafa-6850-49f2-b4f7-66e64e542482",
+        "06d165ef-044f-40e7-88e8-0d5c72780c8c",
+        "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+        "c3738d68-536a-48a0-accf-c62b814913ad"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa18",
+      "user_id": "zhfull:locomo:conv-30",
+      "zh_question": "乔恩和吉娜都是出于自己热爱的事情创业的吗？",
+      "zh_answer": "是",
+      "en_question": "Do Jon and Gina start businesses out of what they love?",
+      "en_answer": "Yes",
+      "evidence_ids": [
+        "D1:4",
+        "D6:8"
+      ],
+      "zh_evidence_with_neighbors": [
+        {
+          "dia_id": "D1:4",
+          "session_id": "session_1",
+          "speaker": "乔恩",
+          "text": "听到这个消息很难过！我要开一家舞蹈工作室，因为我对舞蹈充满热情，能与他人分享会很棒。",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D1:3",
+            "speaker": "吉娜",
+            "text": "对丢掉工作的事很遗憾，乔恩，不过自己创业听起来太棒了！不幸的是，我这个月也丢了在 Door Dash 的工作。你打算做什么生意？"
+          },
+          "next_turn": {
+            "dia_id": "D1:5",
+            "speaker": "吉娜",
+            "text": "真酷，乔恩！你是怎么进入这一行的？"
+          }
+        },
+        {
+          "dia_id": "D6:8",
+          "session_id": "session_6",
+          "speaker": "吉娜",
+          "text": "谢谢！我热衷于时尚潮流和淘独特的单品。而且，我想把对舞蹈和时尚的热爱结合起来，所以这是个完美的组合。",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D6:7",
+            "speaker": "乔恩",
+            "text": "恭喜！太棒了！是什么让你想到开网店的？"
+          },
+          "next_turn": {
+            "dia_id": "D6:9",
+            "speaker": "乔恩",
+            "text": "哇，真棒！把你的两个兴趣融合进一家店，太酷了。祝你好运！"
+          }
+        }
+      ],
+      "en_evidence_with_neighbors": [
+        {
+          "dia_id": "D1:4",
+          "session_id": "session_1",
+          "speaker": "Jon",
+          "text": "Sorry to hear that! I'm starting a dance studio 'cause I'm passionate about dancing and it'd be great to share it with others.",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D1:3",
+            "speaker": "Gina",
+            "text": "Sorry about your job Jon, but starting your own business sounds awesome! Unfortunately, I also lost my job at Door Dash this month. What business are you thinking of?"
+          },
+          "next_turn": {
+            "dia_id": "D1:5",
+            "speaker": "Gina",
+            "text": "That's cool, Jon! What got you into this biz?"
+          }
+        },
+        {
+          "dia_id": "D6:8",
+          "session_id": "session_6",
+          "speaker": "Gina",
+          "text": "Thanks! I'm passionate about fashion trends and finding unique pieces. Plus, I wanted to blend my love for dance and fashion, so it was a perfect match.",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D6:7",
+            "speaker": "Jon",
+            "text": "Congrats! That's awesome! What gave you the idea to start the online store?"
+          },
+          "next_turn": {
+            "dia_id": "D6:9",
+            "speaker": "Jon",
+            "text": "Wow, that's awesome! Combining your two interests into a store is super cool. Best of luck with it!"
+          }
+        }
+      ],
+      "current_evidence_session_memories": [
+        {
+          "id": "0d8e6624-802d-4167-b7d3-3746bd16c393",
+          "session_id": "session_1",
+          "content": "乔恩理想中的舞蹈工作室是一个俯瞰大海（水边）的开放空间，他在一张照片中分享了这个概念。"
+        },
+        {
+          "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+          "session_id": "session_1",
+          "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。"
+        },
+        {
+          "id": "4762791a-a099-4dd1-9971-dc9e1f4a11fb",
+          "session_id": "session_1",
+          "content": "乔恩的舞蹈团队正在完成一支编舞，将于2023年2月（下个月）在附近的节日上表演，他们将穿着白色裙子在舞台上表演。"
+        },
+        {
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "session_id": "session_1",
+          "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。"
+        },
+        {
+          "id": "5931c7af-9d38-4bfa-a6f0-4d8e8179c4b3",
+          "session_id": "session_6",
+          "content": "吉娜的网上服装店于2023年3月16日左右正式开张，这是她梦想已久的事；开店动机是她热衷时尚潮流和淘独特单品，并希望把对舞蹈和时尚的热爱结合起来"
+        },
+        {
+          "id": "59c4a905-0755-48b6-b9cf-200fe3da8f2f",
+          "session_id": "session_1",
+          "content": "吉娜（Gina）也在2023年1月那个月失去了她在 Door Dash 的工作。"
+        },
+        {
+          "id": "5bead6cd-1f98-401d-acd1-965086a2804d",
+          "session_id": "session_6",
+          "content": "乔恩表示吉娜的成功和毅力激励着他继续创业前行，两人面对相似的创业挑战，像舞伴一样互相支持、庆祝每一个成就，约好一起走向成功（2023年3月16日）"
+        },
+        {
+          "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+          "session_id": "session_1",
+          "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。"
+        },
+        {
+          "id": "79f267de-2235-4325-af8e-6c8c4763897e",
+          "session_id": "session_6",
+          "content": "截至2023年3月16日，乔恩仍在经营舞蹈工作室，他表示虽然失去工作很难受、创业不断遇到新挑战，但现在正活在梦想中，坚信最终都是值得的，一定会成功"
+        },
+        {
+          "id": "9fbb9b83-a653-40e9-882e-d0afacce9e98",
+          "session_id": "session_1",
+          "content": "去年（2022年），乔恩的舞蹈团队在当地舞蹈比赛中获得第一名；一张他在舞台上穿西装表演的照片记录了这一时刻。"
+        },
+        {
+          "id": "b5e16073-b382-47f6-a293-b194661eaca7",
+          "session_id": "session_1",
+          "content": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。"
+        },
+        {
+          "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+          "session_id": "session_1",
+          "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。"
+        },
+        {
+          "id": "c6cedb30-527e-4379-9e59-d8294a48410c",
+          "session_id": "session_6",
+          "content": "截至2023年3月16日，吉娜（Gina）自失去 Door Dash 工作后日子过得有些艰难，情绪低落"
+        },
+        {
+          "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+          "session_id": "session_1",
+          "content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。"
+        },
+        {
+          "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+          "session_id": "session_1",
+          "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。"
+        },
+        {
+          "id": "f06f9146-ce1c-4433-b527-c2027bcdb4da",
+          "session_id": "session_6",
+          "content": "乔恩（Jon）于2023年3月初（约3月9日那周）开始去健身房锻炼，为的是在创业路上保持身体状态，他表示需要平衡好一切但进展还不错"
+        }
+      ],
+      "whole_conversation_title_mentions": null,
+      "original_top15_ids": [
+        "5651babb-7658-4e24-8dd2-77907367bd6e",
+        "5931c7af-9d38-4bfa-a6f0-4d8e8179c4b3",
+        "418ed457-c66e-42aa-8d07-3277e60001d8",
+        "7eeab192-83c1-4d04-a833-bc014270d4d3",
+        "198933a8-1c27-4c06-ac74-8c03c01e3c79",
+        "8492ec99-94bc-4afd-be62-b427b264b531",
+        "20444ab5-c7f7-4859-a841-a18f9dae322c",
+        "0a6a14af-0836-4821-b30c-ff35c50e71b1",
+        "2dbc9b32-0695-492f-b06e-9c1ada25554f",
+        "6728b9b7-05fb-43df-9a44-5099a49b8f17",
+        "0e4e7516-a78f-4885-b138-39489ea9ea11",
+        "e3049c9c-1066-48e4-a2ad-836d0408e25c",
+        "597ba4d2-aae1-403e-b2f1-81bab35f546b",
+        "5bead6cd-1f98-401d-acd1-965086a2804d",
+        "b5e16073-b382-47f6-a293-b194661eaca7"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa27",
+      "user_id": "zhfull:locomo:conv-30",
+      "zh_question": "乔恩和吉娜都参加过舞蹈比赛吗？",
+      "zh_answer": "是",
+      "en_question": "Did Jon and Gina both participate in dance competitions?",
+      "en_answer": "Yes",
+      "evidence_ids": [
+        "D1:14",
+        "D14:14",
+        "D1:16",
+        "D1:17",
+        "D9:10"
+      ],
+      "zh_evidence_with_neighbors": [
+        {
+          "dia_id": "D1:14",
+          "session_id": "session_1",
+          "speaker": "乔恩",
+          "text": "哇，我也很兴奋！这一定会很棒的！",
+          "blip_caption": "a photography of a man in a suit is performing a dance",
+          "previous_turn": {
+            "dia_id": "D1:13",
+            "speaker": "吉娜",
+            "text": "听起来不错，乔恩！下周五没问题。让我们跳起来吧！"
+          },
+          "next_turn": {
+            "dia_id": "D1:15",
+            "speaker": "吉娜",
+            "text": "哇！你得到了什么？"
+          }
+        },
+        {
+          "dia_id": "D1:16",
+          "session_id": "session_1",
+          "speaker": "乔恩",
+          "text": "哇，那张照片是去年我的舞蹈团队在当地比赛中夺冠时拍的。站在舞台上真是太棒了！我特别想把那种激情传递给其他人。吉娜，你参加过舞蹈比赛或演出吗？",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D1:15",
+            "speaker": "吉娜",
+            "text": "哇！你得到了什么？"
+          },
+          "next_turn": {
+            "dia_id": "D1:17",
+            "speaker": "吉娜",
+            "text": "我以前参加过一些舞蹈比赛和演出——我最喜欢的回忆是十五岁时我的团队在地区赛中赢得第一名。那种成就感太棒了！"
+          }
+        },
+        {
+          "dia_id": "D1:17",
+          "session_id": "session_1",
+          "speaker": "吉娜",
+          "text": "我以前参加过一些舞蹈比赛和演出——我最喜欢的回忆是十五岁时我的团队在地区赛中赢得第一名。那种成就感太棒了！",
+          "blip_caption": "a photography of a couple of people standing next to each other",
+          "previous_turn": {
+            "dia_id": "D1:16",
+            "speaker": "乔恩",
+            "text": "哇，那张照片是去年我的舞蹈团队在当地比赛中夺冠时拍的。站在舞台上真是太棒了！我特别想把那种激情传递给其他人。吉娜，你参加过舞蹈比赛或演出吗？"
+          },
+          "next_turn": {
+            "dia_id": "D1:18",
+            "speaker": "乔恩",
+            "text": "哇！赢得第一名太厉害了！你们当时跳的是什么舞？"
+          }
+        },
+        {
+          "dia_id": "D9:10",
+          "session_id": "session_9",
+          "speaker": "吉娜",
+          "text": "嘿，乔恩！我支持你——舞蹈是表达自我、寻找快乐的好方式。这是我舞蹈比赛的一座奖杯，它提醒着我付出的努力、坚持和它带来的快乐。",
+          "blip_caption": "a photo of a trophy with a glass globe on top",
+          "previous_turn": {
+            "dia_id": "D9:9",
+            "speaker": "乔恩",
+            "text": "太好了，吉娜！我很高兴舞蹈对我们俩都有如此特殊的意义。这是一种很棒的表达自我的方式。我小时候很喜欢和朋友们一起上课，那些回忆非常珍贵。很开心现在还能通过自己的工作室享受跳舞。谢谢你一直陪伴着我。"
+          },
+          "next_turn": {
+            "dia_id": "D9:11",
+            "speaker": "乔恩",
+            "text": "哇！真漂亮！谢谢你的支持，这对我来说意义重大。"
+          }
+        },
+        {
+          "dia_id": "D14:14",
+          "session_id": "session_14",
+          "speaker": "吉娜",
+          "text": "好样的，乔恩！别放弃，记住，失败会让你离成功更近。这是我跳舞时的一张照片——那段路很艰难，但很值得！",
+          "blip_caption": "a photo of a group of young women posing for a picture",
+          "previous_turn": {
+            "dia_id": "D14:13",
+            "speaker": "乔恩",
+            "text": "谢谢！无论如何我都不会放弃。你的鼓励真的激励着我继续前进。"
+          },
+          "next_turn": {
+            "dia_id": "D14:15",
+            "speaker": "乔恩",
+            "text": "哇，这张照片太棒了！你们看起来很棒，对跳舞充满热情。这让我想起我有多热爱表演。谢谢你分享！"
+          }
+        }
+      ],
+      "en_evidence_with_neighbors": [
+        {
+          "dia_id": "D1:14",
+          "session_id": "session_1",
+          "speaker": "Jon",
+          "text": "Wow, I'm excited too! This is gonna be great!",
+          "blip_caption": "a photography of a man in a suit is performing a dance",
+          "previous_turn": {
+            "dia_id": "D1:13",
+            "speaker": "Gina",
+            "text": "Sounds great, Jon! Next Friday works. Let's boogie!"
+          },
+          "next_turn": {
+            "dia_id": "D1:15",
+            "speaker": "Gina",
+            "text": "Wow! What did you get?"
+          }
+        },
+        {
+          "dia_id": "D1:16",
+          "session_id": "session_1",
+          "speaker": "Jon",
+          "text": "Woah, that pic's from when my dance crew took home first in a local comp last year. It was amazing up on that stage! I'm super keen to spread that intensity with other peeps. Gina, you ever been in any dance comps or shows?",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D1:15",
+            "speaker": "Gina",
+            "text": "Wow! What did you get?"
+          },
+          "next_turn": {
+            "dia_id": "D1:17",
+            "speaker": "Gina",
+            "text": "I used to compete in a few dance competitions and shows - my fav memory was when my team won first place at a regionals at age fifteen. It was an awesome feeling of accomplishment!"
+          }
+        },
+        {
+          "dia_id": "D1:17",
+          "session_id": "session_1",
+          "speaker": "Gina",
+          "text": "I used to compete in a few dance competitions and shows - my fav memory was when my team won first place at a regionals at age fifteen. It was an awesome feeling of accomplishment!",
+          "blip_caption": "a photography of a couple of people standing next to each other",
+          "previous_turn": {
+            "dia_id": "D1:16",
+            "speaker": "Jon",
+            "text": "Woah, that pic's from when my dance crew took home first in a local comp last year. It was amazing up on that stage! I'm super keen to spread that intensity with other peeps. Gina, you ever been in any dance comps or shows?"
+          },
+          "next_turn": {
+            "dia_id": "D1:18",
+            "speaker": "Jon",
+            "text": "Wow! Winning first place is amazing! What dance were you doing?"
+          }
+        },
+        {
+          "dia_id": "D9:10",
+          "session_id": "session_9",
+          "speaker": "Gina",
+          "text": "Hey Jon! Got your back - dance is awesome for expressing yourself and finding happiness. Here's one of my trophies from a dance contest, nice reminder of the hard work, dedication and joy it brings.",
+          "blip_caption": "a photo of a trophy with a glass globe on top",
+          "previous_turn": {
+            "dia_id": "D9:9",
+            "speaker": "Jon",
+            "text": "Nice, Gina! I'm happy that dance has such a special meaning to both of us. It's a really cool way to express ourselves. I loved taking lessons with my friends when I was younger. Those memories are so precious. So glad I can still enjoy it with my own studio. Thanks for always being there for me."
+          },
+          "next_turn": {
+            "dia_id": "D9:11",
+            "speaker": "Jon",
+            "text": "Wow! It looks awesome! Thanks for the support, it really means a lot."
+          }
+        },
+        {
+          "dia_id": "D14:14",
+          "session_id": "session_14",
+          "speaker": "Gina",
+          "text": "Way to go, Jon! Don't quit, remember, failures lead you closer to success. Here's a pic from when I was dancing - it was a tough road, but it was worth it!",
+          "blip_caption": "a photo of a group of young women posing for a picture",
+          "previous_turn": {
+            "dia_id": "D14:13",
+            "speaker": "Jon",
+            "text": "Thanks! I won't quit, no matter what. Your encouragement really motivates me to keep going."
+          },
+          "next_turn": {
+            "dia_id": "D14:15",
+            "speaker": "Jon",
+            "text": "Wow, that's an awesome pic! You guys look great and passionate about dancing. Reminds me how much I love performing. Thanks for sharing!"
+          }
+        }
+      ],
+      "current_evidence_session_memories": [
+        {
+          "id": "0a6a14af-0836-4821-b30c-ff35c50e71b1",
+          "session_id": "session_14",
+          "content": "截至2023年6月16日，吉娜的网上服装店经营得很不错，她正在努力扩大客户群，并表示当自己的老板、做自己喜欢的事感觉很棒"
+        },
+        {
+          "id": "0d8e6624-802d-4167-b7d3-3746bd16c393",
+          "session_id": "session_1",
+          "content": "乔恩理想中的舞蹈工作室是一个俯瞰大海（水边）的开放空间，他在一张照片中分享了这个概念。"
+        },
+        {
+          "id": "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+          "session_id": "session_1",
+          "content": "乔恩和吉娜计划在2023年1月27日（下周五）见面，一起跳舞并互相展示他们的舞蹈动作。"
+        },
+        {
+          "id": "17e447b9-a729-40ab-83a6-4fd586d65fa0",
+          "session_id": "session_9",
+          "content": "截至2023年4月9日，乔恩表示跳舞让他无比快乐，如今能与学生分享这份快乐，看到学生们不断进步让他特别高兴；他分享了一张女子在舞蹈工作室跳钢管舞的照片"
+        },
+        {
+          "id": "2de70226-54ab-432a-af42-c43c1ca3a176",
+          "session_id": "session_14",
+          "content": "吉娜给乔恩的创业建议：保持热情、专注和坚韧，相信自己坚持下去，同时保持开放心态、不断学习和进步（2023年6月16日）"
+        },
+        {
+          "id": "3f548823-9546-4a8a-8a3d-299b16b943b6",
+          "session_id": "session_14",
+          "content": "截至2023年6月16日，乔恩一直在为舞蹈工作室做推广，并采纳吉娜的建议开始在社交媒体上发布自己的舞蹈视频，已经引起了一点轰动"
+        },
+        {
+          "id": "418ed457-c66e-42aa-8d07-3277e60001d8",
+          "session_id": "session_9",
+          "content": "截至2023年4月9日，乔恩表示失去银行工作虽然难受，但给了他去做自己热爱之事（经营舞蹈工作室）的动力，他下定决心要把工作室经营好"
+        },
+        {
+          "id": "4762791a-a099-4dd1-9971-dc9e1f4a11fb",
+          "session_id": "session_1",
+          "content": "乔恩的舞蹈团队正在完成一支编舞，将于2023年2月（下个月）在附近的节日上表演，他们将穿着白色裙子在舞台上表演。"
+        },
+        {
+          "id": "5651babb-7658-4e24-8dd2-77907367bd6e",
+          "session_id": "session_1",
+          "content": "乔恩从童年起就对舞蹈充满热情，他认为这是缓解压力、表达自我的方式；他想开一家舞蹈工作室，与他人分享舞蹈带来的快乐。"
+        },
+        {
+          "id": "59c4a905-0755-48b6-b9cf-200fe3da8f2f",
+          "session_id": "session_1",
+          "content": "吉娜（Gina）也在2023年1月那个月失去了她在 Door Dash 的工作。"
+        },
+        {
+          "id": "6bbd05be-7725-41a1-9c18-227a0a962c5e",
+          "session_id": "session_14",
+          "content": "乔恩表示无论如何都不会放弃，吉娜的鼓励激励着他继续前进，知道她在背后支持让他更有动力坚持，也不会让她失望（2023年6月16日）"
+        },
+        {
+          "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+          "session_id": "session_1",
+          "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。"
+        },
+        {
+          "id": "9fbb9b83-a653-40e9-882e-d0afacce9e98",
+          "session_id": "session_1",
+          "content": "去年（2022年），乔恩的舞蹈团队在当地舞蹈比赛中获得第一名；一张他在舞台上穿西装表演的照片记录了这一时刻。"
+        },
+        {
+          "id": "a231b871-ee0c-4175-abd4-214872c6bcda",
+          "session_id": "session_9",
+          "content": "乔恩表示以前特别害怕别人怎么看自己，但后来明白了自己的快乐才是最重要的；对他来说跳舞是表达自我、寻找快乐的方式，虽然不容易但也是最美好的事"
+        },
+        {
+          "id": "b3d94f83-867f-4e20-b66c-619a118088fb",
+          "session_id": "session_9",
+          "content": "吉娜拥有一座舞蹈比赛奖杯（带玻璃球顶），她用它提醒自己付出的努力、坚持和舞蹈带来的快乐；她还回忆自己以前超喜欢待在练功房里，分享了一张一群年轻女性在芭蕾教室的旧照"
+        },
+        {
+          "id": "b5e16073-b382-47f6-a293-b194661eaca7",
+          "session_id": "session_1",
+          "content": "乔恩（Jon）于2023年1月19日失去了他的银行工作，并决定创办自己的公司——一家舞蹈工作室。"
+        },
+        {
+          "id": "c6782327-971c-4a45-9fa3-a39718941a99",
+          "session_id": "session_1",
+          "content": "乔恩下班后与一个小型舞者团队排练，表演从现代舞到嘻哈舞的各种风格。"
+        },
+        {
+          "id": "c86b7955-d016-46ef-9c37-ad71029001ea",
+          "session_id": "session_14",
+          "content": "吉娜于2023年6月16日分享了自己跳舞比赛时的一张照片，称那段路很艰难但很值得；乔恩看到后深受触动，想起自己对表演的热爱"
+        },
+        {
+          "id": "cd69ce5e-058f-426b-a996-297947e10da5",
+          "session_id": "session_1",
+          "content": "吉娜也用舞蹈来缓解压力；她15岁时最喜欢的回忆是她的团队在地区舞蹈比赛中获得第一名。"
+        },
+        {
+          "id": "d5cb5264-f92a-48d9-af5d-5042c8e35cdd",
+          "session_id": "session_14",
+          "content": "乔恩于2023年6月15日获得一位超厉害的商业大咖的指导，备受鼓舞，更有干劲去追逐舞蹈工作室的梦想"
+        },
+        {
+          "id": "de05e5e3-0d0a-4651-9638-1d5b0c3f9c43",
+          "session_id": "session_14",
+          "content": "吉娜建议乔恩利用社交媒体渠道和与网红合作来做营销、扩大影响力（2023年6月16日）"
+        },
+        {
+          "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+          "session_id": "session_1",
+          "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。"
+        },
+        {
+          "id": "e289c576-813d-4230-b8b3-7d3720971358",
+          "session_id": "session_9",
+          "content": "截至2023年4月9日，乔恩正把对舞蹈的热爱变成一门生意，在舞蹈工作室投入了大量时间，他的学生们已经表现出色，他甚至还在向学生们学习；他分享了一张舞者在红色背景舞台上排练的照片"
+        },
+        {
+          "id": "e3049c9c-1066-48e4-a2ad-836d0408e25c",
+          "session_id": "session_9",
+          "content": "乔恩小时候很喜欢和朋友们一起上舞蹈课，那些回忆非常珍贵；很开心现在能通过自己的舞蹈工作室继续享受跳舞"
+        }
+      ],
+      "whole_conversation_title_mentions": null,
+      "original_top15_ids": [
+        "c86b7955-d016-46ef-9c37-ad71029001ea",
+        "9fbb9b83-a653-40e9-882e-d0afacce9e98",
+        "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+        "cd69ce5e-058f-426b-a996-297947e10da5",
+        "18251b9f-f071-458a-a610-c6684ac95a45",
+        "b3d94f83-867f-4e20-b66c-619a118088fb",
+        "0fb9a5c6-75f2-4024-9525-e8116c237aea",
+        "54e104ab-f693-45bf-a6ca-48b57ef28a86",
+        "e6f27662-b069-4f8c-b48c-beed429c5961",
+        "387c7cd4-3660-4823-8016-dcd7a2bd918b",
+        "7063f8d7-4ba9-408d-acbb-1771d448e885",
+        "3f548823-9546-4a8a-8a3d-299b16b943b6",
+        "0e4e7516-a78f-4885-b138-39489ea9ea11",
+        "72c1939a-c0be-463d-bb94-481e0779fa2a",
+        "4762791a-a099-4dd1-9971-dc9e1f4a11fb"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa3",
+      "user_id": "zhfull:locomo:conv-41",
+      "zh_question": "约翰和玛丽亚都做过什么类型的志愿服务？",
+      "zh_answer": "在流浪者收容所做志愿者",
+      "en_question": "What type of volunteering have John and Maria both done?",
+      "en_answer": "Volunteering at a homeless shelter",
+      "evidence_ids": [
+        "D3:5",
+        "D2:1"
+      ],
+      "zh_evidence_with_neighbors": [
+        {
+          "dia_id": "D2:1",
+          "session_id": "session_2",
+          "speaker": "玛丽亚",
+          "text": "嘿，约翰，我们好几天没聊了。这期间，我昨天把我的旧车捐给了我做志愿者的一个无家可归者收容所。活动进行得怎么样？我很想听听。",
+          "blip_caption": null,
+          "previous_turn": null,
+          "next_turn": {
+            "dia_id": "D2:2",
+            "speaker": "约翰",
+            "text": "嗨，玛丽亚！到目前为止挺有意思的。我一直在和一些人建立联系，听取他们的意见。"
+          }
+        },
+        {
+          "dia_id": "D3:5",
+          "session_id": "session_3",
+          "speaker": "约翰",
+          "text": "我们举办了一些活动，见到了一些人。我们去了一个无家可归者收容所分发食物和物资。看到他们脸上的笑容，我们知道我们真的带来了改变。我们还为有需要的孩子组织了一次玩具募捐。看到社区齐心协力传递快乐，真是美妙。",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D3:4",
+            "speaker": "玛丽亚",
+            "text": "很高兴听到这些！和志同道合的人分享这些东西总是很鼓舞人心。对了，你有机会和他们中的一些人线下见面吗？\n"
+          },
+          "next_turn": {
+            "dia_id": "D3:6",
+            "speaker": "玛丽亚",
+            "text": "听起来很棒，约翰。很高兴看到你带来的改变。你对未来的项目有什么想法吗？"
+          }
+        }
+      ],
+      "en_evidence_with_neighbors": [
+        {
+          "dia_id": "D2:1",
+          "session_id": "session_2",
+          "speaker": "Maria",
+          "text": "Hey John, been a few days since we chatted. In the meantime, I donated my old car to a homeless shelter I volunteer at yesterday. How's the campaign going? I'm keen to hearabout it.",
+          "blip_caption": null,
+          "previous_turn": null,
+          "next_turn": {
+            "dia_id": "D2:2",
+            "speaker": "John",
+            "text": "Hi Maria! It's been an interesting ride so far. I've been networking with some people to get their input."
+          }
+        },
+        {
+          "dia_id": "D3:5",
+          "session_id": "session_3",
+          "speaker": "John",
+          "text": "We held some events and got to meet some people. We went to a homeless shelter to give out food and supplies. Seeing the smiles on their faces, we knew we made a real difference. We also organized a toy drive for kids in need. It was amazing seeing the community come together to spread some joy.",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D3:4",
+            "speaker": "Maria",
+            "text": "That's great to hear! It's always inspiring to share thos things with like-minded individuals. By the way, have you had the chance to meet any of them in person?\n"
+          },
+          "next_turn": {
+            "dia_id": "D3:6",
+            "speaker": "Maria",
+            "text": "That sounds great, John. It's nice to see the difference you're making. Do you have any ideas for future projects?"
+          }
+        }
+      ],
+      "current_evidence_session_memories": [
+        {
+          "id": "2cca2ad5-142f-48c9-96b4-bbe0cefd3695",
+          "session_id": "session_2",
+          "content": "约翰的家人是他永不放弃的原因，家人的爱给他力量，帮助他保持内心平衡，是他困难时刻的依靠"
+        },
+        {
+          "id": "31120315-eaf5-4d46-b1eb-bc5bea31b7d4",
+          "session_id": "session_2",
+          "content": "玛丽亚家人口不多，喜欢和朋友们一起看电影、远足以及在家举办游戏之夜"
+        },
+        {
+          "id": "431289df-dc0d-4a5e-ab42-f76ebdd23471",
+          "session_id": "session_2",
+          "content": "约翰截至2022年12月22日在练跆拳道"
+        },
+        {
+          "id": "4e63029c-78d9-446a-b9c5-49e0a36fb78b",
+          "session_id": "session_2",
+          "content": "约翰一家晚餐时一起做披萨，挑选配料并分享美食，他觉得一起做披萨的过程特别开心"
+        },
+        {
+          "id": "5f80b1cf-2422-4078-8da2-3f1c052fc207",
+          "session_id": "session_3",
+          "content": "玛丽亚于2022年12月在海滩拍了日落照片，看日落让她感到宁静、与大自然相连，并学会珍惜生活中的小小瞬间"
+        },
+        {
+          "id": "723acd30-1bb6-4948-91b7-16de87a0db60",
+          "session_id": "session_2",
+          "content": "玛丽亚于2022年12月21日把她的旧车捐给了自己做志愿者的无家可归者收容所"
+        },
+        {
+          "id": "7aef3cf9-4643-4fb3-8d45-d5187867707c",
+          "session_id": "session_3",
+          "content": "约翰最近没通过军队能力测试，之后一直感到有些压力大"
+        },
+        {
+          "id": "bdb28053-0602-4711-8601-fef445b5874f",
+          "session_id": "session_3",
+          "content": "约翰的服务小组去了一个无家可归者收容所分发食物和物资，并组织了一次为有需要的孩子的玩具募捐活动，社区齐心协力传递快乐"
+        },
+        {
+          "id": "c8e4dfd4-ef77-40d1-b9e9-588bea78d715",
+          "session_id": "session_3",
+          "content": "约翰于2022年12月下旬加入了一个专注于服务的线上小组，这段经历让他情感丰富，小组成员都有鼓舞人心的故事，让他感到有联系和使命感"
+        },
+        {
+          "id": "c9c46d4e-ba76-400f-bb09-6f48ed939bef",
+          "session_id": "session_2",
+          "content": "玛丽亚最近做了桃子酥皮派，觉得非常好吃"
+        },
+        {
+          "id": "cb84b354-19b6-4460-b36f-94311dfb2d25",
+          "session_id": "session_2",
+          "content": "约翰与家人在公园野餐和荡秋千，喜欢攀爬、滑滑梯和玩游戏，认为这是增进感情、尽情玩乐的好方式"
+        },
+        {
+          "id": "d40487e7-dc18-4870-bdca-0ab1bf294d55",
+          "session_id": "session_3",
+          "content": "约翰小时候有一台胶片相机，拍过很多海滩照片"
+        },
+        {
+          "id": "e7a6d481-5027-4c26-ae6b-18091f8059ed",
+          "session_id": "session_2",
+          "content": "约翰截至2022年12月22日一直在与当地人建立联系并听取他们的意见，其中一个人的故事点燃了他改善所在地区教育的热情"
+        },
+        {
+          "id": "ec5f2c55-79d2-4e10-b845-af9ad898d217",
+          "session_id": "session_3",
+          "content": "约翰的小组正在头脑风暴一些项目，帮助服务水平低下的社区获得教育、导师指导、职业培训和简历制作方面的资源，目标是帮助人们实现自己的抱负"
+        }
+      ],
+      "whole_conversation_title_mentions": null,
+      "original_top15_ids": [
+        "79c78509-1b4d-4545-9a21-27ed103d1aeb",
+        "2c0449c0-45eb-4e4d-b790-56f07fdfd5e0",
+        "bdb28053-0602-4711-8601-fef445b5874f",
+        "e2f0bad9-1675-4f9e-af31-57cd02625aab",
+        "8764ff72-5daa-477a-b123-d9cfc43a959e",
+        "dc1709fd-5750-4d08-b807-9ef66101e821",
+        "17fd169a-4942-4327-92f6-7723096f2d27",
+        "51db97a3-6d33-4bc3-8b96-ec369c4a8643",
+        "79cb43db-bd89-40ac-8a6e-c20277e6cfd1",
+        "c2a9d88e-47ed-439a-90c0-e9d16f55a252",
+        "179fc1e6-fa76-494d-b49e-56a6a45c62cf",
+        "43ef26e5-b253-426c-998e-efabd093faf5",
+        "dcefd8f8-29ad-43b0-a076-d66dd449dc0f",
+        "8f3bb2af-c46b-4887-a183-049164ca854f",
+        "d7bbdcaf-71fc-4c84-b6b7-d2007d0c127f"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa42",
+      "user_id": "zhfull:locomo:conv-42",
+      "zh_question": "乔安娜和内特都看过哪些电影？",
+      "zh_answer": "《小妇人》、《指环王》",
+      "en_question": "What movies have both Joanna and Nate seen?",
+      "en_answer": "\"Little Women\", \"Lord of the Rings\"",
+      "evidence_ids": [
+        "D3:17",
+        "D10:1",
+        "D22:8"
+      ],
+      "zh_evidence_with_neighbors": [
+        {
+          "dia_id": "D3:17",
+          "session_id": "session_3",
+          "speaker": "乔安娜",
+          "text": "我刚看了《小妇人》，太棒了！这是一个关于姐妹情、爱和追逐梦想的精彩故事。绝对必看！",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D3:16",
+            "speaker": "内特",
+            "text": "最近没有。有什么好片推荐吗？"
+          },
+          "next_turn": {
+            "dia_id": "D3:18",
+            "speaker": "内特",
+            "text": "哦，听起来很棒！我肯定会把它加到片单里。谢谢推荐！"
+          }
+        },
+        {
+          "dia_id": "D10:1",
+          "session_id": "session_10",
+          "speaker": "乔安娜",
+          "text": "嘿内特，最近怎么样？我听了你的推荐，昨晚看了《指环王》三部曲！太棒了！",
+          "blip_caption": "a photo of a person holding a book openhemer",
+          "previous_turn": null,
+          "next_turn": {
+            "dia_id": "D10:2",
+            "speaker": "内特",
+            "text": "很高兴你喜欢！它可能是有史以来最伟大的三部曲！至于我，生活还行，就是在忙这个。"
+          }
+        },
+        {
+          "dia_id": "D22:8",
+          "session_id": "session_22",
+          "speaker": "内特",
+          "text": "我最近看了《小妇人》，非常棒！演技很出色，剧情特别引人入胜。绝对是一部好片！",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D22:7",
+            "speaker": "乔安娜",
+            "text": "能歇歇、减减压真是太棒了！你最近看过什么好电影吗？我正需要一些推荐呢！"
+          },
+          "next_turn": {
+            "dia_id": "D22:9",
+            "speaker": "乔安娜",
+            "text": "真高兴你喜欢！那是我之前推荐给你的。我也看了，它真的很打动我。它把姐妹情、爱和追逐梦想这些主题都展现得特别好。对了，我上周完成了自己那本书的写作。熬了好多个深夜、改了一遍又一遍，终于写完了。我特别自豪！迫不及待想看看接下来会怎样。"
+          }
+        }
+      ],
+      "en_evidence_with_neighbors": [
+        {
+          "dia_id": "D3:17",
+          "session_id": "session_3",
+          "speaker": "Joanna",
+          "text": "I just watched \"Little Women\" and it was amazing! It's a great story about sisterhood, love, and reaching for your dreams. Definitely a must-see!",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D3:16",
+            "speaker": "Nate",
+            "text": "Not recently. Any good ones you'd recommend?"
+          },
+          "next_turn": {
+            "dia_id": "D3:18",
+            "speaker": "Nate",
+            "text": "Oh, that sounds like a great one! I'll definitely add it to my list. Thanks for the recommendation!"
+          }
+        },
+        {
+          "dia_id": "D10:1",
+          "session_id": "session_10",
+          "speaker": "Joanna",
+          "text": "Hey Nate, how's it going? I took your reccomendation and watched \"The Lord of the Rings\" Trilogy last night! It was awesome!",
+          "blip_caption": "a photo of a person holding a book openhemer",
+          "previous_turn": null,
+          "next_turn": {
+            "dia_id": "D10:2",
+            "speaker": "Nate",
+            "text": "Glad to hear you enjoyed it! It's probably the greatest trilogy of all time! As for me, life's been ok, just taking care of this."
+          }
+        },
+        {
+          "dia_id": "D22:8",
+          "session_id": "session_22",
+          "speaker": "Nate",
+          "text": "I watched \"Little Women\" recently, and it was great! The acting was awesome and the story was so captivating. Definitely a good one!",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D22:7",
+            "speaker": "Joanna",
+            "text": "Taking breaks and reducing stress is pretty nice! Have you watched any good movies recently? I could use some recommendations!"
+          },
+          "next_turn": {
+            "dia_id": "D22:9",
+            "speaker": "Joanna",
+            "text": "I'm so glad you enjoyed it! I recommended it to you a while back. I watched it too and it really spoke to me. Themes like sisterhood, love, and chasing dreams were explored so well. By the way, I finished up my writing for my book last week. Put in a ton of late nights and edits but finally got it done. I'm so proud of it! Can't wait to see what happens next."
+          }
+        }
+      ],
+      "current_evidence_session_memories": [
+        {
+          "id": "1c1cc9d4-de48-4211-b01f-4f9b71497f6f",
+          "session_id": "session_22",
+          "content": "内特在2022年9月底（约9月29日当周）赢得了一场超大型电子游戏锦标赛并获得奖金，他到现在都不敢相信赚了那么多钱"
+        },
+        {
+          "id": "2021a0f9-c9dc-4ae0-b197-811bbab90bf3",
+          "session_id": "session_22",
+          "content": "乔安娜于2022年9月底（约9月29日当周）完成了自己那本书的写作，经过无数个深夜和反复修改，她为此特别自豪"
+        },
+        {
+          "id": "203dded2-ee87-484e-95f6-4c5f21347b46",
+          "session_id": "session_10",
+          "content": "乔安娜很喜欢内特之前推荐的椰子（椰奶）配料，认为烹饪和烘焙是她的创意出口，享受在厨房实验并让无乳制品甜点同样美味，看到大家品尝时的笑脸很有成就感"
+        },
+        {
+          "id": "30cf581b-2e0d-4b85-a6d9-f537acf317d9",
+          "session_id": "session_22",
+          "content": "内特为乔安娜制作了一块写有励志语录的白板（画有箭头和文字），希望她在需要鼓励时可以看看；他称鼓励成就了自己的电竞事业，想把这份爱传递下去"
+        },
+        {
+          "id": "41151682-0511-4b51-bf48-4ad7811fdca3",
+          "session_id": "session_3",
+          "content": "乔安娜看完电影《小妇人》（Little Women），觉得太棒了，认为这是关于姐妹情、爱和追逐梦想的精彩故事，绝对必看，并向内特推荐了它"
+        },
+        {
+          "id": "5b85d272-e060-4a52-bc79-0bee27757a32",
+          "session_id": "session_3",
+          "content": "内特在2022年2月初尝试做了椰奶冰淇淋，味道香浓顺滑、非常成功，可能会成为他的新最爱零食，他还想尝试不同的口味和配料"
+        },
+        {
+          "id": "61b45d59-7128-46bb-9989-dbfa4dae5fd8",
+          "session_id": "session_22",
+          "content": "内特看了《小妇人》并觉得非常棒，称赞演技出色、剧情引人入胜；乔安娜确认这是她之前推荐给他的，她也看过并认为影片把姐妹情、爱和追逐梦想的主题展现得特别好"
+        },
+        {
+          "id": "6b13780e-85c3-4971-a376-76806d2b9586",
+          "session_id": "session_22",
+          "content": "乔安娜刚为写作俱乐部的一位女士制作了一个可爱的小书签（书本造型、顶部有植物装饰），她特别热爱做手工，并知道那位女士也一样"
+        },
+        {
+          "id": "7489c560-5a59-4786-815d-627fad6c6230",
+          "session_id": "session_10",
+          "content": "乔安娜除了剧本项目外，还在为朋友和家人试验无乳制品甜点食谱，最近做了一个无乳制品香草蛋糕，配草莓夹心和椰奶糖霜"
+        },
+        {
+          "id": "7766520c-bf40-4d89-bb54-e539cb3c60b8",
+          "session_id": "session_3",
+          "content": "截至2022年2月7日，乔安娜寄给电影节的剧本这几天一直萦绕在心头，情绪在如释重负、兴奋和担忧之间起伏，祈祷有制片人或导演喜欢它并让它登上大银幕"
+        },
+        {
+          "id": "78b1fb65-eef1-40a9-8268-42da0c3981d3",
+          "session_id": "session_10",
+          "content": "内特在2022年4月25日前后赢下了他的第二个锦标赛，这次是本地《街头霸王》锦标赛；他通常玩CS:GO，但常和朋友们玩《街头霸王》，发现自己很擅长，决赛时肾上腺素飙升并与对手握手"
+        },
+        {
+          "id": "7c592f60-2579-41c0-90a7-ebe82e779526",
+          "session_id": "session_10",
+          "content": "内特称赞乔安娜做无乳制品甜点很有天赋"
+        },
+        {
+          "id": "9f13428c-1ee7-4575-9600-b1425f16b709",
+          "session_id": "session_22",
+          "content": "乔安娜于2022年10月5日试做了她最新的无乳制品食谱——巧克力覆盆子挞，深受家人欢迎，她喜欢混搭各种口味并不断尝试新东西"
+        },
+        {
+          "id": "b61b4b59-6637-45d8-be43-4862cc91255d",
+          "session_id": "session_10",
+          "content": "乔安娜在2022年5月1日晚观看了内特推荐的《指环王》三部曲，觉得非常棒"
+        },
+        {
+          "id": "c106b443-224f-49fb-9a76-254f94495215",
+          "session_id": "session_22",
+          "content": "内特把锦标赛奖金的一部分存了起来，暂无具体用途，没有大计划，手头有闲钱让他感到轻松无压力，可以安心享受电影和游戏"
+        },
+        {
+          "id": "cb5a5c8a-9486-4cb9-a9ca-e920fb022004",
+          "session_id": "session_10",
+          "content": "内特经常在自己的游戏房里练游戏，游戏一直是他的生活重心，最近还赢了几场比赛"
+        },
+        {
+          "id": "cda9adff-8113-4344-9063-c9f19bff9978",
+          "session_id": "session_3",
+          "content": "内特把《小妇人》加到了自己的观影片单里，并答应看完后第一时间告诉乔安娜感受；乔安娜乐于随时为内特推荐电影"
+        },
+        {
+          "id": "f3b04165-bcaa-4552-aec0-70ff4b7e71e1",
+          "session_id": "session_3",
+          "content": "内特喜欢椰奶，也喜欢巧克力和混合莓果口味的无乳制品甜点，前几天还做了一个加莓果的无乳制品巧克力蛋糕"
+        }
+      ],
+      "whole_conversation_title_mentions": {
+        "zh_lord_of_the_rings": [
+          {
+            "dia_id": "D10:1",
+            "speaker": "乔安娜",
+            "text": "嘿内特，最近怎么样？我听了你的推荐，昨晚看了《指环王》三部曲！太棒了！"
+          }
+        ],
+        "en_lord_of_the_rings": [
+          {
+            "dia_id": "D10:1",
+            "speaker": "Joanna",
+            "text": "Hey Nate, how's it going? I took your reccomendation and watched \"The Lord of the Rings\" Trilogy last night! It was awesome!"
+          }
+        ]
+      },
+      "original_top15_ids": [
+        "61b45d59-7128-46bb-9989-dbfa4dae5fd8",
+        "051a0dbd-3acc-48fb-9645-c0a7d3367113",
+        "41151682-0511-4b51-bf48-4ad7811fdca3",
+        "cda9adff-8113-4344-9063-c9f19bff9978",
+        "b61b4b59-6637-45d8-be43-4862cc91255d",
+        "8d680172-d3e9-4d3b-82fb-d0c92c1bb325",
+        "8265692e-2cf4-4d48-9b16-02ef6939828f",
+        "6e921e42-7eaa-4940-bf0f-a54619f0b040",
+        "9c1e2d54-e381-4c0c-a997-54dd6a522968",
+        "5a1b996e-1939-4b9e-9005-1ed0efb7344d",
+        "42d133a1-31c8-4730-a113-d1e8af8dffe0",
+        "461c01b5-6e32-4eae-a4e9-d212f73ea57d",
+        "1fd5d2e7-c42b-4829-8201-9e80ec6c92ba",
+        "c1a713ce-bd4a-42c7-8904-80ef46835865",
+        "d77a7160-6cab-4755-9210-54bdf5cef265"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa56",
+      "user_id": "zhfull:locomo:conv-42",
+      "zh_question": "内特和乔安娜都喜欢什么动物？",
+      "zh_answer": "乌龟。",
+      "en_question": "What animal do both Nate and Joanna like?",
+      "en_answer": "Turtles.",
+      "evidence_ids": [
+        "D5:6",
+        "D26:9"
+      ],
+      "zh_evidence_with_neighbors": [
+        {
+          "dia_id": "D5:6",
+          "session_id": "session_5",
+          "speaker": "内特",
+          "text": "我很喜欢乌龟。它们很独特，慢悠悠的节奏和匆忙的生活形成了很好的反差。而且它们好养又让人心静。看看我随手拍的这一刻！",
+          "blip_caption": "a photography of three turtles sitting on rocks in a pond",
+          "previous_turn": {
+            "dia_id": "D5:5",
+            "speaker": "乔安娜",
+            "text": "这张照片太可爱了！它们在外面看起来总是那么放松。你当初为什么选择养它们当宠物？"
+          },
+          "next_turn": {
+            "dia_id": "D5:7",
+            "speaker": "乔安娜",
+            "text": "它们看起来好安详！这些小生物能带来这么多平静和快乐，真是神奇。照顾它们麻烦吗？"
+          }
+        },
+        {
+          "dia_id": "D26:9",
+          "session_id": "session_26",
+          "speaker": "乔安娜",
+          "text": "谢谢你，内特！它们让我想到力量和坚持。它们在艰难时刻激励着我——很高兴你也觉得这很鼓舞人心！",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D26:8",
+            "speaker": "内特",
+            "text": "你对写作显然充满热情，有趣的是故事主角还是只乌龟！它们的坚韧真是鼓舞人心！鼓起勇气，在写作上继续挑战自己。写得真好！"
+          },
+          "next_turn": {
+            "dia_id": "D26:10",
+            "speaker": "内特",
+            "text": "怎么说呢，我就是喜欢乌龟。那么，你最近怎么样？"
+          }
+        }
+      ],
+      "en_evidence_with_neighbors": [
+        {
+          "dia_id": "D5:6",
+          "session_id": "session_5",
+          "speaker": "Nate",
+          "text": "I'm drawn to turtles. They're unique and their slow pace is a nice change from the rush of life. They're also low-maintenance and calming. Check out this moment I snapped!",
+          "blip_caption": "a photography of three turtles sitting on rocks in a pond",
+          "previous_turn": {
+            "dia_id": "D5:5",
+            "speaker": "Joanna",
+            "text": "That pic's adorable! They always look so relaxed outside. What made you choose them as pets?"
+          },
+          "next_turn": {
+            "dia_id": "D5:7",
+            "speaker": "Joanna",
+            "text": "They look so peaceful! It's amazing how these creatures bring so much calm and joy. Is taking care of them tough?"
+          }
+        },
+        {
+          "dia_id": "D26:9",
+          "session_id": "session_26",
+          "speaker": "Joanna",
+          "text": "Thanks, Nate! They make me think of strength and perseverance. They help motivate me in tough times - glad you find that inspiring!",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D26:8",
+            "speaker": "Nate",
+            "text": "You obviously have a passion for writing, and it's funny the story was about a turtle! Their resilience is so inspiring! Take courage and keep pushing yourself with your writing. Great job!"
+          },
+          "next_turn": {
+            "dia_id": "D26:10",
+            "speaker": "Nate",
+            "text": "What can I say, I love turtles. So, what's been happening with you?"
+          }
+        }
+      ],
+      "current_evidence_session_memories": [
+        {
+          "id": "1d0bde88-fd59-4197-8604-08176dba5a42",
+          "session_id": "session_26",
+          "content": "2022年11月初，乔安娜与电影制片人约了会面并进展非常顺利：她自信地阐述了剧本和构想，制片人对其中自我发现的元素很感兴趣，她感到被认真对待，对未来充满希望和灵感"
+        },
+        {
+          "id": "1e950f16-cc34-4c19-9b44-624d13b6b648",
+          "session_id": "session_26",
+          "content": "乔安娜10岁时写过一个关于一只勇敢的小乌龟的故事——小乌龟虽害怕却依然去探索世界，寻找勇气和敢于冒险的主题至今仍是她写作的一部分"
+        },
+        {
+          "id": "22e90eeb-9fc7-4300-8284-e511593f8624",
+          "session_id": "session_26",
+          "content": "乌龟让乔安娜想到力量和坚持，在艰难时刻激励着她；她目前还在做一个虽有挑战但很有成就感的项目"
+        },
+        {
+          "id": "2f202a90-b805-4d9d-9401-11285c6b1298",
+          "session_id": "session_5",
+          "content": "内特觉得乌龟好养又让人心静，慢悠悠的节奏与匆忙生活形成很好的反差；照顾乌龟只需保持生活区域干净、按时喂食、确保有足够光照"
+        },
+        {
+          "id": "3191ca33-a124-4d8a-afce-ccf80ae8a4d4",
+          "session_id": "session_5",
+          "content": "内特答应给乔安娜发自己乌龟的照片，让她不用靠太近也能看着乌龟长大；乔安娜表示已经特别关注这些小家伙"
+        },
+        {
+          "id": "52438d88-09b3-45e0-a64f-0b33468bbc4f",
+          "session_id": "session_5",
+          "content": "乔安娜不能吃乳制品，因此吃不了冰淇淋，但她对甜食来者不拒；她请内特推荐不含乳制品的冰淇淋食谱，并收到了内特用椰奶做的食谱"
+        },
+        {
+          "id": "70f57ad7-11ee-4a5e-9148-0ddca548787f",
+          "session_id": "session_26",
+          "content": "内特一直在帮朋友们在国际游戏锦标赛上刷新高分纪录，他很喜欢用自己技能带来改变的感觉"
+        },
+        {
+          "id": "85cdd494-38a1-4e47-803f-1e361f75aadf",
+          "session_id": "session_5",
+          "content": "乔安娜感谢内特在整个剧本过程中一直支持她，认为有个人支持是一种福分，这给了她继续前进的动力"
+        },
+        {
+          "id": "8cf2a872-c96a-498a-83c8-4cdccf1af848",
+          "session_id": "session_26",
+          "content": "乔安娜计划于2022年11月5日去内特家尝他自制的无乳糖椰奶冰淇淋，并会带上自己的食谱一起分享甜点，包括她的巧克力覆盆子蛋糕（内特一直想尝）"
+        },
+        {
+          "id": "a9e45fb6-55cf-4d6d-a469-d6840873c268",
+          "session_id": "session_5",
+          "content": "乔安娜最近发现自己对蟑螂过敏（2022年3月左右），加上已有的动物过敏症，她担心以后可能无法养宠物"
+        },
+        {
+          "id": "acb0f1d2-5e00-4e1a-a982-abf2ed0bf4bd",
+          "session_id": "session_26",
+          "content": "乔安娜上周（约2022年10月底）翻出了记有早期作品的旧笔记本，看到自己作为创作者的成长历程，深受触动"
+        },
+        {
+          "id": "b9b83fd9-1def-4a42-85ba-ab2ff077747b",
+          "session_id": "session_5",
+          "content": "乔安娜于2022年3月18日前后完成了她的第二个剧本，心情复杂：如释重负又对未来焦虑，既兴奋又害怕，希望作品能被关注并搬上大银幕，期间一直有希望和怀疑在拉锯，难以完全放松"
+        },
+        {
+          "id": "ecfd4654-e018-44a1-9009-f6a7befd68f6",
+          "session_id": "session_5",
+          "content": "内特在2022年2月给朋友做了巧克力和香草双色旋涡的冰淇淋（含椰奶、巧克力旋涡和杏仁块），朋友们特别喜欢，并答应把椰奶冰淇淋食谱发给乔安娜"
+        },
+        {
+          "id": "edb31664-e951-465c-a359-63f2868a4529",
+          "session_id": "session_5",
+          "content": "截至2022年3月，乔安娜正在为剧本做大量调研并不断拓展人脉，虽然辛苦但下定决心要把剧本做成"
+        }
+      ],
+      "whole_conversation_title_mentions": null,
+      "original_top15_ids": [
+        "a8338a2e-77eb-43a7-9e5d-2e76b76d82be",
+        "3191ca33-a124-4d8a-afce-ccf80ae8a4d4",
+        "c4e4fa4a-5b5a-4570-b624-a16a52fc1639",
+        "5a1b996e-1939-4b9e-9005-1ed0efb7344d",
+        "27525398-5556-41d2-a9ce-3c90e988cad1",
+        "057561e0-5177-40d7-8e90-e1ad01379564",
+        "1f276a49-9557-4614-80d5-47d337908737",
+        "461c01b5-6e32-4eae-a4e9-d212f73ea57d",
+        "4ff08f9d-62b0-473f-9bd5-928554a020ee",
+        "8d680172-d3e9-4d3b-82fb-d0c92c1bb325",
+        "56217cd3-ace8-4857-b1cd-b79ef752e9f8",
+        "bafcd936-ca90-4d58-b028-f844a84bab34",
+        "802c9ff0-ef1e-4a93-a47e-07a6004482ca",
+        "92b7b4c1-51aa-403b-83e9-b8889e746907",
+        "42d133a1-31c8-4730-a113-d1e8af8dffe0"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa71",
+      "user_id": "zhfull:locomo:conv-42",
+      "zh_question": "乔安娜和内特都欣赏什么的美？",
+      "zh_answer": "大自然",
+      "en_question": "What do both Joanna and Nate appreciate the beauty of?",
+      "en_answer": "Nature",
+      "evidence_ids": [
+        "D11:9",
+        "D28:23"
+      ],
+      "zh_evidence_with_neighbors": [
+        {
+          "dia_id": "D11:9",
+          "session_id": "session_11",
+          "speaker": "乔安娜",
+          "text": "那真的很棒，内特。那个地方的声音和大自然的美让我感到非常平静安宁。其他一切都淡去了，唯一重要的就是当下。",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D11:8",
+            "speaker": "内特",
+            "text": "真希望我也能在场！你的徒步听起来太好玩了。"
+          },
+          "next_turn": {
+            "dia_id": "D11:10",
+            "speaker": "内特",
+            "text": "那真好。很高兴你找到了一个能让你平静下来的地方——大自然确实能让人从喧嚣中抽离出来。"
+          }
+        },
+        {
+          "dia_id": "D28:23",
+          "session_id": "session_28",
+          "speaker": "内特",
+          "text": "听起来太棒了！大自然确实总能提醒我们去欣赏身边的美，这样的时刻真的会留在心中。这些小家伙也让我感受到生活中的小确幸。你猜怎么着？我给它们找了个新朋友！",
+          "blip_caption": "a photo of three turtles sitting on a rock in a pond",
+          "previous_turn": {
+            "dia_id": "D28:22",
+            "speaker": "乔安娜",
+            "text": "谢谢，内特！那是去年夏天在韦恩堡附近徒步时拍的。日落和周围的美景简直令人难以置信。那真是大自然之美的一个绝佳提醒。"
+          },
+          "next_turn": {
+            "dia_id": "D28:24",
+            "speaker": "乔安娜",
+            "text": "哇，是什么让你决定养第三只的？"
+          }
+        }
+      ],
+      "en_evidence_with_neighbors": [
+        {
+          "dia_id": "D11:9",
+          "session_id": "session_11",
+          "speaker": "Joanna",
+          "text": "It was awesome, Nate. The sound of that place and the beauty of nature made me so calm and peaceful. Everything else faded away and all that mattered was the present.",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D11:8",
+            "speaker": "Nate",
+            "text": "I wish I could have been there! Your hikes sound like a blast."
+          },
+          "next_turn": {
+            "dia_id": "D11:10",
+            "speaker": "Nate",
+            "text": "That's great. Glad you found a spot that calms you down - nature sure can be a break from the craziness."
+          }
+        },
+        {
+          "dia_id": "D28:23",
+          "session_id": "session_28",
+          "speaker": "Nate",
+          "text": "That sounds incredible! Nature truly has a way of reminding us to appreciate the beauty around us, and moments like those really stay with you. These critters also make me appreciate life's little joys. And guess what? I got them a new friend!",
+          "blip_caption": "a photo of three turtles sitting on a rock in a pond",
+          "previous_turn": {
+            "dia_id": "D28:22",
+            "speaker": "Joanna",
+            "text": "Thanks, Nate! I took that pic on a hike last summer near Fort Wayne. The sunset and the surrounding beauty were just incredible. It was an awesome reminder of nature's beauty."
+          },
+          "next_turn": {
+            "dia_id": "D28:24",
+            "speaker": "Joanna",
+            "text": "Wow, what made you get a third?"
+          }
+        }
+      ],
+      "current_evidence_session_memories": [
+        {
+          "id": "00cbc789-f0a8-4ccc-81a0-fcc62385d2c5",
+          "session_id": "session_28",
+          "content": "内特的游戏锦标赛于2022年11月初被推迟，他期间尝试了烹饪，自制了椰奶冰淇淋（加了糖屑导致颜色有些变化）"
+        },
+        {
+          "id": "3237f878-44b7-40b1-ad6e-7c6da343f1e7",
+          "session_id": "session_28",
+          "content": "内特收到了几个新游戏战队的邀请，正在考虑在下次锦标赛之后加入一个新战队，认为这是重大决定但已准备好改变"
+        },
+        {
+          "id": "37846afd-0482-4be3-9aa0-55a964f364dd",
+          "session_id": "session_11",
+          "content": "乔安娜在2022年5月上旬再次去徒步，在镇上发现了几条更棒的步道，并自称感觉成了徒步专家"
+        },
+        {
+          "id": "3b72b542-8b22-4421-ace2-2af788f04d33",
+          "session_id": "session_11",
+          "content": "乔安娜说徒步为她打开了全新的世界，让她感觉像变了个人，大自然总能给她灵感，身处美景中让她觉得能写出一整部电影，并有想写一部戏剧的冲动"
+        },
+        {
+          "id": "4478e407-a3d8-4e4a-8f70-b062fc23cc0b",
+          "session_id": "session_28",
+          "content": "乔安娜建议内特在发布YouTube视频前先看看其他人的视频，了解观众喜好；内特回复已经在这样做了"
+        },
+        {
+          "id": "5a1b996e-1939-4b9e-9005-1ed0efb7344d",
+          "session_id": "session_28",
+          "content": "乔安娜对乌龟过敏，只能隔一段距离看乌龟；她和内特约好明天（2022年11月10日）见面，可能一起看乔安娜的一部电影或去公园"
+        },
+        {
+          "id": "5bae3438-5df1-4533-a588-95f58fd20930",
+          "session_id": "session_11",
+          "content": "内特和乔安娜约定改天一起去徒步她发现的步道，内特说说不定还会开始构思戏剧并出版自己的剧本"
+        },
+        {
+          "id": "5faf13d1-7970-477f-993d-7fae619b67a4",
+          "session_id": "session_28",
+          "content": "乔安娜一直在写一个剧本并制定了把它拍成电影的计划；2022年11月8日她向一些制片人做了推介，制片人非常喜欢，这给了她很大的信心提升"
+        },
+        {
+          "id": "6b5b1996-471c-47dd-8e18-85ca98b1b818",
+          "session_id": "session_28",
+          "content": "内特又买了一只乌龟作为新朋友，现在养了三只乌龟；他说乌龟给他带来快乐和宁静，且缸够大可以养三只"
+        },
+        {
+          "id": "8667b278-a72b-4ca1-aad9-d3c51107acfd",
+          "session_id": "session_28",
+          "content": "内特开始为YouTube制作游戏内容，动机是自己是游戏视频的忠实粉丝，希望分享对游戏的热爱并与其他游戏爱好者交流；这对他来说是全新领域"
+        },
+        {
+          "id": "9d95de07-58fd-4b0d-8392-7f1b04fd1f95",
+          "session_id": "session_28",
+          "content": "内特参加的锦标赛（约2022年11月9日前）表现艰难，没进决赛，但他保持积极心态，希望下次赢回来"
+        },
+        {
+          "id": "c2fc5c10-5d56-41a2-a389-ec0e0cb3a0d8",
+          "session_id": "session_11",
+          "content": "乔安娜在2022年5月的徒步中拍摄了名为Whispering Falls的美丽瀑布景点照片，那里宁静祥和，流水的声音令她放松"
+        },
+        {
+          "id": "e196eb2e-997b-4b67-9d7b-76409fa4f1e3",
+          "session_id": "session_28",
+          "content": "乔安娜分享了一张去年夏天（2021年夏）在韦恩堡附近徒步时拍的向日葵日落照片，她说日落和周围美景令人难以置信，是大自然之美的绝佳提醒"
+        },
+        {
+          "id": "f3f43b40-5092-4a37-bc77-57deef5ead76",
+          "session_id": "session_28",
+          "content": "乔安娜在做一个新项目——一部以中西部小镇为背景的悬疑惊悚片，对她来说是个很好的创意出口，她感觉停不下来写作"
+        }
+      ],
+      "whole_conversation_title_mentions": null,
+      "original_top15_ids": [
+        "61b45d59-7128-46bb-9989-dbfa4dae5fd8",
+        "203dded2-ee87-484e-95f6-4c5f21347b46",
+        "513275ab-39bf-4f81-8a7e-f1a0b54b875a",
+        "051a0dbd-3acc-48fb-9645-c0a7d3367113",
+        "8265692e-2cf4-4d48-9b16-02ef6939828f",
+        "c0e191a2-7348-4c8c-8150-3cf5a8e975d5",
+        "7c592f60-2579-41c0-90a7-ebe82e779526",
+        "9c1e2d54-e381-4c0c-a997-54dd6a522968",
+        "ef0d18c0-eaf3-4aaa-9f10-699fb8323351",
+        "6e921e42-7eaa-4940-bf0f-a54619f0b040",
+        "41151682-0511-4b51-bf48-4ad7811fdca3",
+        "cda9adff-8113-4344-9063-c9f19bff9978",
+        "b61b4b59-6637-45d8-be43-4862cc91255d",
+        "27525398-5556-41d2-a9ce-3c90e988cad1",
+        "4ff08f9d-62b0-473f-9bd5-928554a020ee"
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa3",
+      "user_id": "zhfull:locomo:conv-47",
+      "zh_question": "詹姆斯和约翰都养宠物吗？",
+      "zh_answer": "否",
+      "en_question": "Do both James and John have pets?",
+      "en_answer": "No",
+      "evidence_ids": [
+        "D1:12",
+        "D2:18"
+      ],
+      "zh_evidence_with_neighbors": [
+        {
+          "dia_id": "D1:12",
+          "session_id": "session_1",
+          "speaker": "詹姆斯",
+          "text": "那会很酷！比如，我们可以写一个给狗用的应用。顺便说一下，这是我的狗。",
+          "blip_caption": "a photo of two dogs are tied to a fence with a leash",
+          "previous_turn": {
+            "dia_id": "D1:11",
+            "speaker": "约翰",
+            "text": "也许将来我们可以一起开发移动应用？你觉得这个主意怎么样？"
+          },
+          "next_turn": {
+            "dia_id": "D1:13",
+            "speaker": "约翰",
+            "text": "哇，它们太可爱了！你的宠物叫什么名字？你对这个应用有什么计划？"
+          }
+        },
+        {
+          "dia_id": "D2:18",
+          "session_id": "session_2",
+          "speaker": "约翰",
+          "text": "哇，它们太可爱了！宠物是最好的——它们肯定会让生活变得更好。我特别想养一只，但我还没准备好。总有一天会养的！",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D2:17",
+            "speaker": "詹姆斯",
+            "text": "它们会坐下、停留、握手、打滚这些把戏。这是黛西等着吃零食的照片。我做了很多训练，它们学得很快。它们就像我的家人。"
+          },
+          "next_turn": {
+            "dia_id": "D2:19",
+            "speaker": "詹姆斯",
+            "text": "养宠物对你来说真的很合适！它们能带来很多爱和陪伴。如果你有兴趣，我可以帮你找到最适合你的——你一定会成为很棒的宠物主人！"
+          }
+        }
+      ],
+      "en_evidence_with_neighbors": [
+        {
+          "dia_id": "D1:12",
+          "session_id": "session_1",
+          "speaker": "James",
+          "text": "It would be cool! For example, we could write some kind of application for dogs. By the way, my dogs.",
+          "blip_caption": "a photo of two dogs are tied to a fence with a leash",
+          "previous_turn": {
+            "dia_id": "D1:11",
+            "speaker": "John",
+            "text": "Maybe in the future we will develop mobile applications together? Do you like the idea?"
+          },
+          "next_turn": {
+            "dia_id": "D1:13",
+            "speaker": "John",
+            "text": "Aww, they're adorable! What are the names of your pets? And what are your plans for the app?"
+          }
+        },
+        {
+          "dia_id": "D2:18",
+          "session_id": "session_2",
+          "speaker": "John",
+          "text": "Aww, they're adorable! Pets are the best - they must make life so much better. I want one so bad, but I'm not there yet. Someday!",
+          "blip_caption": null,
+          "previous_turn": {
+            "dia_id": "D2:17",
+            "speaker": "James",
+            "text": "They can do tricks like sit, stay, paw, and rollover. Here's a picture of Daisy waiting for a treat. I've done lots of training and they've picked it up fast. They're like my family."
+          },
+          "next_turn": {
+            "dia_id": "D2:19",
+            "speaker": "James",
+            "text": "A pet would truly be great for you! They bring so much love and companionship. If you're interested, I can help find the perfect one for you - you'd make a great pet parent!"
+          }
+        }
+      ],
+      "current_evidence_session_memories": [
+        {
+          "id": "0aab44df-b49e-4e09-9f49-d97b088f232f",
+          "session_id": "session_1",
+          "content": "詹姆斯在2022年3月16日去打保龄球，打出了两次全中，他非常热爱保龄球"
+        },
+        {
+          "id": "26c9a81b-1b4a-4320-a2ca-2ecec91857ad",
+          "session_id": "session_1",
+          "content": "詹姆斯热爱电子游戏，游戏是他最大的激励来源，也帮助他在漫长的一天后放松"
+        },
+        {
+          "id": "352dea76-d9d4-4572-b018-51490b0afa83",
+          "session_id": "session_1",
+          "content": "詹姆斯正在开发一款电脑游戏，这是他从小就一直想做的事——小时候他画过主角（一个在飞机上的女孩）的草图并画漫画，现在想把故事做成游戏；游戏结合了他最热爱的游戏和讲故事两件事"
+        },
+        {
+          "id": "3537aa1a-3578-4d74-97e0-87dd2ca5ea9a",
+          "session_id": "session_1",
+          "content": "詹姆斯做事的动力来自创造某样东西并看着它成真带来的巨大成就感；他把所有目标记在笔记本上，每完成一项就勾掉"
+        },
+        {
+          "id": "450dd1ed-8c63-4ad1-82b2-0ef0db81e7d3",
+          "session_id": "session_1",
+          "content": "詹姆斯考虑凭借约翰的HTML知识邀请他帮忙做游戏中的东西，约翰表示愿意合作"
+        },
+        {
+          "id": "4ef034bb-1f70-4caa-9519-e89dd5bd3d7e",
+          "session_id": "session_2",
+          "content": "詹姆斯在2022年3月20日左右创建了一个游戏角色并加入了一个新的在线游戏平台，很喜欢探索和与其他玩家聊天，感觉自己是一个超酷的在线社区的一员"
+        },
+        {
+          "id": "5997c687-8272-4ed1-b2fe-a4aa872f2fa5",
+          "session_id": "session_2",
+          "content": "詹姆斯的两只狗（包括名叫黛西的狗）学会了坐下、停留、握手、打滚等把戏，詹姆斯对它们做了很多训练，它们学得很快；他还分享了黛西等着吃零食的照片"
+        },
+        {
+          "id": "6548a9ab-b404-4b30-9db1-bd7597b3f46c",
+          "session_id": "session_1",
+          "content": "詹姆斯养了两条狗，分别叫马克斯和黛西"
+        },
+        {
+          "id": "73dc831a-f200-467a-96cb-32997958b9d5",
+          "session_id": "session_1",
+          "content": "詹姆斯上次玩老虎机时玩得太投入，钱包被人从口袋里偷走了"
+        },
+        {
+          "id": "85a6a9ca-3b1d-477e-af28-82a68cd7b3b0",
+          "session_id": "session_1",
+          "content": "约翰不喜欢保龄球，觉得自己手指太粗不适合；他想开始锻炼，比如早上跑步"
+        },
+        {
+          "id": "880fefb1-673f-4ef7-bbe8-8a85217ca0a1",
+          "session_id": "session_1",
+          "content": "詹姆斯和约翰计划一起开发一个给狗用的移动应用：一个遛狗和宠物护理应用，目标是把宠物主人和可靠的遛狗人联系起来并提供宠物护理信息，其独特之处是个性化功能——用户可以添加自家狗狗的偏好和需求"
+        },
+        {
+          "id": "92008d4e-8999-4446-a408-1b9703d1a742",
+          "session_id": "session_1",
+          "content": "约翰刚报了一个编程班，几年前用HTML和CSS写过代码，想通过课程重温技能"
+        },
+        {
+          "id": "9a8757ef-085a-4e23-a833-7830f1d58b87",
+          "session_id": "session_2",
+          "content": "詹姆斯最近在尝试不同风格的游戏，喜欢通过尝试新鲜事物来挑战自己（2022年3月）"
+        },
+        {
+          "id": "9e1b17ba-0c8a-4dfb-8bf1-6015e7494f41",
+          "session_id": "session_1",
+          "content": "詹姆斯体验过VR游戏，觉得真实感不可思议；他试过几次VR的约翰约他下周六（2022年3月19日左右）一起去玩VR游戏，两人说定了"
+        },
+        {
+          "id": "a46217c7-a97f-42f5-a428-db82751abc9e",
+          "session_id": "session_1",
+          "content": "詹姆斯在2022年3月中旬沉迷于《巫师3》，特别喜欢其剧情和氛围"
+        },
+        {
+          "id": "ae13684e-97c5-4385-9cac-ca69b4ba31a4",
+          "session_id": "session_1",
+          "content": "约翰和一位游戏开发者合作开发了一款线上桌游，计划很快发布试玩版并告知詹姆斯以听取反馈"
+        },
+        {
+          "id": "b367719d-bf8d-4e0b-b268-7357462d8435",
+          "session_id": "session_2",
+          "content": "约翰表示很想养宠物但还没准备好，詹姆斯主动提出可以帮他找到最适合他的宠物，约翰表示感谢并会记住这个提议"
+        },
+        {
+          "id": "bb4cc32c-ba77-4f5d-8fce-b4642e8f58bb",
+          "session_id": "session_1",
+          "content": "詹姆斯和家人于2022年11月正在进行公路旅行，拜访了朋友乔什和马克，玩得很开心；他们在途中还做了一件好事"
+        },
+        {
+          "id": "c3a6dd10-3cb0-49dd-99b4-7629165924d2",
+          "session_id": "session_2",
+          "content": "詹姆斯说与其他玩家交流游戏技巧、策略和故事很棒，游戏能把不同背景的人聚在一起，在艰难时期游戏一直是他的避难所，感到不堪重负时游戏是他的首选，就像心理治疗一样"
+        },
+        {
+          "id": "e2be0e1d-431e-41b7-8f68-5ac36f3be985",
+          "session_id": "session_2",
+          "content": "约翰在2022年3月迷上了金属探测器寻宝的新爱好，会带着金属探测器沿海滩散步，大多找到瓶盖和硬币，有一次甚至找到了一枚金戒指"
+        },
+        {
+          "id": "f29ba70a-9cc8-4d94-9208-79dedd024d67",
+          "session_id": "session_1",
+          "content": "詹姆斯在大学时试过编程，现在编程成了他的全部工作；他使用过Python和C++，建过一个网站，还制作过游戏模组（包括一个提升游戏画面效果的画面增强模组）"
+        },
+        {
+          "id": "fd9d41b8-0063-4213-b399-8aebafca8984",
+          "session_id": "session_2",
+          "content": "詹姆斯分享了他的两只狗在公园里玩球的照片，说狗狗们给他生活带来很多快乐，是他最棒的伙伴，就像他的家人"
+        }
+      ],
+      "whole_conversation_title_mentions": null,
+      "original_top15_ids": [
+        "b367719d-bf8d-4e0b-b268-7357462d8435",
+        "6548a9ab-b404-4b30-9db1-bd7597b3f46c",
+        "91d44c55-43e3-4883-9079-352f88f02523",
+        "01db7a40-7462-4079-8110-e349f45fcca8",
+        "43669e37-e324-4969-a83e-beb442a54461",
+        "5997c687-8272-4ed1-b2fe-a4aa872f2fa5",
+        "f8817927-6a8d-4da0-bf93-21bac85ed54e",
+        "f5ddae9f-e638-4ff1-83f4-9cecea766d2c",
+        "99c7125b-b0d4-403f-9632-06dcd8e7cd04",
+        "2214de4d-c06e-470f-934a-e2758735ba60",
+        "383c98e2-8581-477d-ac3b-f3a11769a682",
+        "26dcf6b9-cb32-4cdb-8d48-af13777f81bc",
+        "ec0c5da0-570b-473b-aaa6-ebdac0031aa2",
+        "fd9d41b8-0063-4213-b399-8aebafca8984",
+        "d6c2c813-3450-4e82-bfbe-9787ed3f8c5f"
+      ]
+    }
+  ],
+  "limits": [
+    "Evidence IDs can omit background turns necessary to interpret a reference or status.",
+    "Current memory records lack exact dia_id provenance; evidence-session grouping does not prove turn-to-memory derivation.",
+    "Only the fixed eight question-text-selected cases are audited; no population rate is estimated."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "method": "Manual source-aware classification of the eight previously question-text-selected cases. Direct means the required relation is explicit in annotated turns or a necessary adjacent turn; contextual inference and image caption are separated. This is not an automated truth label or a corpus frequency estimate.",
+  "source_packet": "results/analysis/m2_multi_entity_source_closure_20260927.json",
+  "cases": [
+    {
+      "case_id": "locomo_conv-26_qa55",
+      "source_status": "supported_by_image_captions",
+      "memory_status": "both_sunset_paintings_present_in_current_memory",
+      "note": "D8:6 and D14:5 text says painting but sunset appears in the image captions; current memories encode both sunset paintings. Text-only source auditing would miss the decisive modality."
+    },
+    {
+      "case_id": "locomo_conv-30_qa18",
+      "source_status": "supported_with_adjacent_context",
+      "memory_status": "both_motivations_present",
+      "note": "Jon D1:4 directly says dance passion motivates a studio; Gina D6:8 names fashion/dance passions and D6:6 confirms the online store opened. Current memories retain both."
+    },
+    {
+      "case_id": "locomo_conv-30_qa27",
+      "source_status": "supported_directly",
+      "memory_status": "both_competition_histories_present",
+      "note": "D1:16 and D1:17 directly state Jon's and Gina's prior competition participation; current same-session memories retain it."
+    },
+    {
+      "case_id": "locomo_conv-41_qa3",
+      "source_status": "supported_directly",
+      "memory_status": "both_shelter_service_facts_present",
+      "note": "Maria D2:1 volunteers at a homeless shelter; John D3:5 says his group went to a shelter to distribute food and supplies. Current memories preserve each relation. Toy fundraising is John's separate activity, not proven shared."
+    },
+    {
+      "case_id": "locomo_conv-42_qa42",
+      "source_status": "gold_partly_unsupported",
+      "memory_status": "little_women_both_confirmed_lotr_nate_only_recommended",
+      "note": "Little Women has direct watched statements for both speakers. The only Lord of the Rings mention in both whole Chinese and English conversations is Joanna D10:1: she watched it on Nate's recommendation. Recommendation does not establish that Nate watched it. Current memory likewise says Joanna watched/Nate recommended; the gold-required shared watched status is not directly supported."
+    },
+    {
+      "case_id": "locomo_conv-42_qa56",
+      "source_status": "plausible_preference_inference",
+      "memory_status": "nate_like_explicit_joanna_positive_response_retained",
+      "note": "Nate says he likes turtles at D5:6 and D26:10. Joanna D26:9 says turtles remind and inspire her; this is positive attitude but not the explicit verb like. Current memories preserve that asymmetry."
+    },
+    {
+      "case_id": "locomo_conv-42_qa71",
+      "source_status": "supported_directly",
+      "memory_status": "nate_appreciates_nature_beauty_relation_not_preserved",
+      "note": "D11:9 and D28:23 directly support the shared nature beauty answer; current session_28 memories keep Joanna's nature-beauty photo but omit Nate's appreciation relation. See dedicated trace."
+    },
+    {
+      "case_id": "locomo_conv-47_qa3",
+      "source_status": "supported_direct_negative",
+      "memory_status": "james_owns_dogs_john_not_yet_ready_preserved",
+      "note": "James identifies his dog at D1:12; John D2:18 says he wants a pet but is not yet ready. Current memories preserve this status distinction."
+    }
+  ]
+}
