@@ -14,6 +14,7 @@ graph_enabled 是对照实验开关：Mem0 Only（false）vs Mem0 + Graph（true
 from __future__ import annotations
 
 import logging
+import hashlib
 import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
@@ -27,6 +28,29 @@ from schema_rsi.evaluation.retriever import GraphRetriever, Mem0Retriever
 from schema_rsi.memory.base import MemoryBackend, MemoryRecord
 
 logger = logging.getLogger(__name__)
+
+
+def _jev_context_snapshot(memories: list[MemoryRecord]) -> list[dict]:
+    """Freeze the exact ordered records seen by the answerer at a Jev decision."""
+    return [
+        {
+            "id": m.id,
+            "content": m.content,
+            "content_sha256": hashlib.sha256((m.content or "").encode()).hexdigest(),
+            "session_date": (m.metadata or {}).get("session_date"),
+            "session_id": (m.metadata or {}).get("session_id"),
+            "via": (m.metadata or {}).get("via"),
+        }
+        for m in memories
+    ]
+
+
+def _jev_graph_pool_snapshot(memories: list[dict]) -> list[dict]:
+    return [
+        {"id": m.get("id"), "via": m.get("via"), "support": m.get("support"),
+         "content_sha256": hashlib.sha256((m.get("content") or "").encode()).hexdigest()}
+        for m in memories
+    ]
 
 
 class EvaluationPipeline:
@@ -239,20 +263,46 @@ class EvaluationPipeline:
         jev_stop_info: dict | None = None
         if (getattr(self, "jev_stop", False) and use_graph and graph_mode == "fused"
                 and graph_seed_k):
+            from schema_rsi.llm.laya import LayaClient
+
+            first_context = _jev_context_snapshot(answer_memories)
+            first_pool = _jev_graph_pool_snapshot(graph_memories)
+            digest = " | ".join((m.content or "")[:60] for m in answer_memories[:15])
+            jev_stop_info = {
+                "trace_version": 1,
+                "first_context": first_context,
+                "first_graph_pool": first_pool,
+                "first_decision_state": LayaClient.evidence_state(case.question, digest),
+                "first_digest_sha256": hashlib.sha256(digest.encode()).hexdigest(),
+            }
             try:
                 laya = self._laya()
-                digest = " | ".join((m.content or "")[:60] for m in answer_memories[:15])
                 p_suff = laya.evidence_sufficient(case.question, digest)
+                jev_stop_info["first_raw"] = p_suff
+                jev_stop_info["first"] = round(p_suff, 2)
                 if p_suff < 0.4:
                     answer_memories, graph_memories = self._evidence_expand(
                         case, user_id, retrieved, graph_memories, per_node, pool, context_budget)
                     digest2 = " | ".join((m.content or "")[:60] for m in answer_memories[:15])
+                    jev_stop_info.update({
+                        "expanded": True,
+                        "second_context": _jev_context_snapshot(answer_memories),
+                        "second_graph_pool": _jev_graph_pool_snapshot(graph_memories),
+                        "second_decision_state": LayaClient.evidence_state(case.question, digest2),
+                        "second_digest_sha256": hashlib.sha256(digest2.encode()).hexdigest(),
+                    })
                     p2 = laya.evidence_sufficient(case.question, digest2)
-                    jev_stop_info = {"first": round(p_suff, 2), "second": round(p2, 2), "expanded": True}
+                    jev_stop_info["second_raw"] = p2
+                    jev_stop_info["second"] = round(p2, 2)
                 else:
-                    jev_stop_info = {"first": round(p_suff, 2), "expanded": False}
+                    jev_stop_info["expanded"] = False
             except Exception as e:  # noqa: BLE001
+                jev_stop_info["error_type"] = type(e).__name__
                 logger.warning("jev_stop failed: %s", str(e)[:100])
+
+        if use_graph and graph_mode == "fused":
+            final_graph_ids = {g.get("id") for g in graph_memories}
+            graph_context_ids = [m.id for m in answer_memories if m.id in final_graph_ids]
 
         # Answer：可选多采样（self-consistency）——LLM 作答方差 ±1~2 题，
         # 采样多次后由 judge 多数票选出最终答案，显著稳定结果

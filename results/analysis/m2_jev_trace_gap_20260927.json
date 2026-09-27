@@ -1,0 +1,29 @@
+{
+  "scope": "Historical Chinese Jev archive field coverage; read-only, zero model calls",
+  "arms": {
+    "decider": {
+      "path": "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+      "rows": 1980,
+      "scored": 1980,
+      "expanded": 1091,
+      "first_context_logged": 0,
+      "first_state_logged": 0,
+      "second_context_logged": 0,
+      "expanded_graph_context_ids_stale": 530
+    },
+    "laya": {
+      "path": "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+      "rows": 1979,
+      "scored": 1977,
+      "expanded": 246,
+      "first_context_logged": 0,
+      "first_state_logged": 0,
+      "second_context_logged": 0,
+      "expanded_graph_context_ids_stale": 132
+    }
+  },
+  "limits": [
+    "These files precede the new trace contract and cannot reconstruct the missing first context",
+    "Final graph membership is inferred by intersection of final answer IDs with archived final graph candidate IDs"
+  ]
+}

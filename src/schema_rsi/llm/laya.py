@@ -166,7 +166,12 @@ class LayaClient:
         """证据充足判定（Jev-Mem 的停止准则）：返回 [0,1]。"""
         qs = {"sufficient": {"type": "noul",
                              "instructions": "The context above contains ALL specific facts needed to answer the question completely and precisely (every list item, exact date, and exact value)."}}
-        state = f"Question: {question}\n\nContext:\n{context_digest[:950]}"
+        state = self.evidence_state(question, context_digest)
         out = self.decide(state, qs)
         p = ((out.get("answers") or {}).get("sufficient") or {}).get("noul")
         return float(p) if isinstance(p, (int, float)) else 0.5
+
+    @staticmethod
+    def evidence_state(question: str, context_digest: str) -> str:
+        """Return the exact state body sent to /v1/decisions for evidence scoring."""
+        return f"Question: {question}\n\nContext:\n{context_digest[:950]}"[:1000]
