@@ -1,0 +1,18 @@
+{
+  "method": "Manual source-aware label of 32 frozen-context answers. core_hit means all gold-required answer elements are explicitly given as the shared or yes/no answer; it does not imply the whole answer is free of unsupported additions.",
+  "source_answer_file": "results/analysis/m2_multi_entity_cohort_answer_poc_20260927.json",
+  "call_order_each_case": ["base", "merge", "merge", "base"],
+  "cases": [
+    {"case_id": "locomo_conv-26_qa55", "required": "日落", "core_hit": [true, true, true, true], "notes": "Gold relies on both speakers' image captions at D8:6 and D14:5; the text alone does not name the sunset in either turn. Both arms use the same 15 IDs in different order. Several answers add other supposed shared painting themes without equivalent cross-person support."},
+    {"case_id": "locomo_conv-30_qa18", "required": "两人均因热爱创业", "core_hit": [true, true, true, true], "notes": "Both arms answer yes; longer merge answers do not show a new necessary fact."},
+    {"case_id": "locomo_conv-30_qa27", "required": "两人均参加过舞蹈比赛", "core_hit": [true, true, true, true], "notes": "Both arms answer yes. Both arms use the same 15 IDs in different order."},
+    {"case_id": "locomo_conv-41_qa3", "required": "两人都在流浪者/无家可归者收容所做志愿服务", "core_hit": [true, true, true, true], "notes": "Original top five already retain direct joint-shelter memory. Merge displaced three Maria shelter memories but retained others. Merge second repeat additionally lists toy drive as a shared activity although visible memory attributes it to John's group; this is an unsupported sharedness claim."},
+    {"case_id": "locomo_conv-42_qa42", "required": "两人都看过《小妇人》和《指环王》", "core_hit": [false, true, true, true], "notes": "First base answer names only Little Women as confirmed shared, mentioning LOTR separately without clearly saying Nate watched it. Second base answer gets both. First merge answer incorrectly includes Eternal Sunshine among films both watched, although Nate only planned to watch it. Second merge answer gets both and correctly excludes that film. Thus core gain is one repeat, with one separate extra false shared film."},
+    {"case_id": "locomo_conv-42_qa56", "required": "乌龟", "core_hit": [true, true, true, true], "notes": "All say turtles. Second merge repeat also claims both like dogs; the visible context does not establish this as a shared animal. Gold D5:6 and D26:9 support turtles."},
+    {"case_id": "locomo_conv-42_qa71", "required": "大自然", "core_hit": [false, false, false, false], "notes": "Neither context exposes the original source turns D11:9 and D28:23 as a clear shared nature-beauty fact. Base answers instead discuss films; merge answers discuss small peaceful moments."},
+    {"case_id": "locomo_conv-47_qa3", "required": "否；詹姆斯养宠物、约翰当时不养", "core_hit": [true, true, true, true], "notes": "Both arms preserve the direct John non-owner and James owner memories in their top ten and answer the negation correctly. Dog-fundraiser and dog-app additions did not cause this anticipated false positive."}
+  ],
+  "core_hits": {"base": 13, "merge": 14, "calls_each": 16},
+  "candidate_set_identical_but_order_changed": ["locomo_conv-26_qa55", "locomo_conv-30_qa27"],
+  "limitations": ["This is a small preselected pattern cohort, not a population accuracy estimate", "Different context order is a confound, including in the two identical-ID cases", "Manual labels target the required answer and selected extra claims, not an exhaustive factual audit of every sentence", "Some required facts depend on image captions; raw text-only evidence is insufficient"]
+}
