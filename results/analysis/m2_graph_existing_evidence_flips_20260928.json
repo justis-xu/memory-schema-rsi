@@ -1,0 +1,1085 @@
+{
+  "scope": "Post-hoc three-case diagnostic of historical Chinese graph-only exact flips; independent runs; no model calls",
+  "input_paths": {
+    "base": "/Users/xu/git/memory-schema-rsi/results_zh/zhfull_locomo_20260925_164645.jsonl",
+    "graph": "/Users/xu/git/memory-schema-rsi/results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+    "base_grade": "/Users/xu/git/memory-schema-rsi/results/precision_regrade_base.jsonl",
+    "graph_grade": "/Users/xu/git/memory-schema-rsi/results/precision_regrade_graph.jsonl",
+    "english": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10.json",
+    "chinese": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json"
+  },
+  "input_sha256": {
+    "base": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59",
+    "graph": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "base_grade": "0a4bef376de18c4ef1242c893ab27f2cfa7133445885265fbcb05521acf9bb0b",
+    "graph_grade": "9fa3a5f25d3fdf21dd173e60a3d1db55177e362cb4f4b9ad145eb37107284d05",
+    "english": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d"
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-41_qa84",
+      "source": {
+        "english": {
+          "question": "What did Maria participate in last weekend before April 10, 2023?",
+          "answer": "a 5K charity run",
+          "evidence_ids": [
+            "D10:10"
+          ],
+          "turns": [
+            {
+              "dia_id": "D10:10",
+              "session": "session_10",
+              "session_date": "12:24 am on 7 April, 2023",
+              "speaker": "Maria",
+              "text": "Last weekend I did something new that had an impact on me. I participated in a 5K charity run for a homeless shelter. It was awesome being surrounded by people all there for the same cause. There's something special about the energy and sense of unity. It was truly rewarding and reminded me why I'm passionate about charity work.",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        },
+        "chinese": {
+          "question": "在2023年4月10日之前的上周末，玛丽亚参加了什么活动？",
+          "answer": "一场5公里慈善跑",
+          "evidence_ids": [
+            "D10:10"
+          ],
+          "turns": [
+            {
+              "dia_id": "D10:10",
+              "session": "session_10",
+              "session_date": "12:24 am on 7 April, 2023",
+              "speaker": "玛丽亚",
+              "text": "上周末我做了一件对我产生影响的新事情。我参加了一场为流浪者收容所举办的5公里慈善跑。周围都是为同一个目标而来的人，感觉太棒了。那种能量和团结感有种特别的意义。这真的很有意义，让我想起了自己为什么热爱慈善工作。",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        }
+      },
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "答案明确指出参加了一场5公里（5K）慈善跑，包含了金标准答案的全部要素。"
+      },
+      "base_answer": "玛丽亚在无家者收容所参与组织了为收容者准备的聚餐活动，帮忙准备食物，与志愿者们一起让大家共同用餐。",
+      "graph_answer": "答案：在2023年4月10日之前的上周末（2023年4月1日至2日），玛丽亚参加了一场为流浪者收容所（无家可归者收容所）筹款的5K慈善跑。她觉得与为了共同目标而团结一致的人们一起奔跑，充满了能量和情谊，令人深受鼓舞，这提醒了她自己为何热爱慈善工作。",
+      "same_ranked_prefix_count": 11,
+      "shared_id_count": 13,
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "5b3944da-6fdf-42cb-96ee-6b01367259a0",
+          "route": "vector",
+          "content": "Maria ran a 5K charity race for a homeless shelter on the weekend of April 1-2, 2023, and found the energy and solidarity of running with people united for one cause deeply meaningful and a reminder of why she loves charity work",
+          "session_id": "session_10",
+          "session_date": "12:24 am on 7 April, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "2c56755a-febf-482a-8588-644b7a2f5797",
+          "route": "vector",
+          "content": "Maria shared a photo from the week of April 3, 2023 showing volunteers gathered around a table filled with food at the homeless shelter; her group organized a meal for shelter residents, with Maria helping prepare everything, and seeing everyone eat together and support each other filled her with warmth and hope",
+          "session_id": "session_11",
+          "session_date": "6:13 pm on 10 April, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "f13cff4b-535f-4f21-86aa-3b5a190f5c8d",
+          "route": "vector",
+          "content": "Maria attended a charity event on Friday, February 3, 2023, where she helped distribute meals to people in need; she found it deeply meaningful and heartwarming, a reminder of the power of compassion",
+          "session_id": "session_6",
+          "session_date": "2:33 pm on 5 February, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "5106f659-69c1-45fc-893a-8eec4d507888",
+          "route": "vector",
+          "content": "Maria recently gave several speeches at the homeless shelter where she volunteers (around early April 2023), finding it deeply fulfilling, and other volunteers praised her highly",
+          "session_id": "session_11",
+          "session_date": "6:13 pm on 10 April, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "e67d8948-c771-4e08-a0ac-d50a19792b65",
+          "route": "vector",
+          "content": "Maria volunteered at a homeless shelter running a children's activity around mid-January 2023, describing it as a great experience",
+          "session_id": "session_5",
+          "session_date": "1:17 pm on 28 January, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "33467c2e-bd61-49d3-804a-dabe4f6772a9",
+          "route": "vector",
+          "content": "Maria continues volunteering at a homeless shelter as of late February 2023, finding it very meaningful",
+          "session_id": "session_7",
+          "session_date": "8:55 pm on 25 February, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+          "route": "vector",
+          "content": "Maria agreed to attend the flood-recovery community meeting and continue working with User to improve their neighborhood, calling User's helping spirit inspiring",
+          "session_id": "session_23",
+          "session_date": "6:29 pm on 7 July, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "02788142-5bf7-4cff-95b4-6637b1807f93",
+          "route": "vector",
+          "content": "Maria (John's friend) recently started taking a poetry class as of early April 2023, which helps her express her feelings in words; the process has been bumpy but she feels good about it",
+          "session_id": "session_9",
+          "session_date": "9:36 am on 2 April, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "f0bbb806-5f63-4f4a-92fa-e5e4491c9f09",
+          "route": "vector",
+          "content": "While volunteering at a homeless shelter around February 24, 2023, Maria met a remarkable woman named Jean who had been through divorce, job loss, and homelessness, yet remained optimistic and resilient, teaching Maria about gratitude and connection",
+          "session_id": "session_7",
+          "session_date": "8:55 pm on 25 February, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "429c783b-8816-4fca-b4f7-e9e3497e1e5e",
+          "route": "vector",
+          "content": "Maria cooked dinner with her mom the night before May 4, 2023, making salads, sandwiches, and homemade desserts, with her favorite being a banana split sundae she enjoyed after a day of volunteering",
+          "session_id": "session_13",
+          "session_date": "3:18 pm on 4 May, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "d89cf00a-5fe3-490e-b2a7-c2ea7e1bacc4",
+          "route": "vector",
+          "content": "Maria has recently been taking solitary walks in a nearby park, which has made a big difference for her",
+          "session_id": "session_22",
+          "session_date": "6:59 pm on 5 July, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "b39e768d-bedb-448d-af9e-222b4e6ea92b",
+          "route": "vector",
+          "content": "Maria recently took a creative writing class around February 2023 and found it very inspiring",
+          "session_id": "session_7",
+          "session_date": "8:55 pm on 25 February, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "07d0128b-c5eb-4a7f-a5d6-2b9d160fbd01",
+          "route": "vector",
+          "content": "玛丽亚在2023年7月中旬的前一个周末和教会朋友去野餐，在树下放松、玩游戏（如你演我猜和寻宝游戏）、吃美食，大家笑得很开心",
+          "session_id": "session_24",
+          "session_date": "3:34 pm on 17 July, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "9647cf98-1cd9-493d-9573-ad1817cd44aa",
+          "route": "vector",
+          "content": "Maria volunteers at a shelter; as of April 2023 she finds it rewarding but challenging, as growing demand for help can feel overwhelming",
+          "session_id": "session_12",
+          "session_date": "7:34 pm on 18 April, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "bb545888-7919-4fcb-9525-6df195d82bf2",
+          "route": "vector",
+          "content": "Maria (friend of John) volunteers at a homeless shelter, keeps fit, and recently started aerial yoga classes, which she finds great",
+          "session_id": "session_1",
+          "session_date": "11:01 am on 17 December, 2022"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "5b3944da-6fdf-42cb-96ee-6b01367259a0",
+          "route": "vector",
+          "content": "Maria ran a 5K charity race for a homeless shelter on the weekend of April 1-2, 2023, and found the energy and solidarity of running with people united for one cause deeply meaningful and a reminder of why she loves charity work",
+          "session_id": "session_10",
+          "session_date": "12:24 am on 7 April, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "2c56755a-febf-482a-8588-644b7a2f5797",
+          "route": "vector",
+          "content": "Maria shared a photo from the week of April 3, 2023 showing volunteers gathered around a table filled with food at the homeless shelter; her group organized a meal for shelter residents, with Maria helping prepare everything, and seeing everyone eat together and support each other filled her with warmth and hope",
+          "session_id": "session_11",
+          "session_date": "6:13 pm on 10 April, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "f13cff4b-535f-4f21-86aa-3b5a190f5c8d",
+          "route": "vector",
+          "content": "Maria attended a charity event on Friday, February 3, 2023, where she helped distribute meals to people in need; she found it deeply meaningful and heartwarming, a reminder of the power of compassion",
+          "session_id": "session_6",
+          "session_date": "2:33 pm on 5 February, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "5106f659-69c1-45fc-893a-8eec4d507888",
+          "route": "vector",
+          "content": "Maria recently gave several speeches at the homeless shelter where she volunteers (around early April 2023), finding it deeply fulfilling, and other volunteers praised her highly",
+          "session_id": "session_11",
+          "session_date": "6:13 pm on 10 April, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "e67d8948-c771-4e08-a0ac-d50a19792b65",
+          "route": "vector",
+          "content": "Maria volunteered at a homeless shelter running a children's activity around mid-January 2023, describing it as a great experience",
+          "session_id": "session_5",
+          "session_date": "1:17 pm on 28 January, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "33467c2e-bd61-49d3-804a-dabe4f6772a9",
+          "route": "vector",
+          "content": "Maria continues volunteering at a homeless shelter as of late February 2023, finding it very meaningful",
+          "session_id": "session_7",
+          "session_date": "8:55 pm on 25 February, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "d0b66813-5e5e-4dca-914e-c7510aeb6281",
+          "route": "vector",
+          "content": "Maria agreed to attend the flood-recovery community meeting and continue working with User to improve their neighborhood, calling User's helping spirit inspiring",
+          "session_id": "session_23",
+          "session_date": "6:29 pm on 7 July, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "02788142-5bf7-4cff-95b4-6637b1807f93",
+          "route": "vector",
+          "content": "Maria (John's friend) recently started taking a poetry class as of early April 2023, which helps her express her feelings in words; the process has been bumpy but she feels good about it",
+          "session_id": "session_9",
+          "session_date": "9:36 am on 2 April, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "f0bbb806-5f63-4f4a-92fa-e5e4491c9f09",
+          "route": "vector",
+          "content": "While volunteering at a homeless shelter around February 24, 2023, Maria met a remarkable woman named Jean who had been through divorce, job loss, and homelessness, yet remained optimistic and resilient, teaching Maria about gratitude and connection",
+          "session_id": "session_7",
+          "session_date": "8:55 pm on 25 February, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "429c783b-8816-4fca-b4f7-e9e3497e1e5e",
+          "route": "vector",
+          "content": "Maria cooked dinner with her mom the night before May 4, 2023, making salads, sandwiches, and homemade desserts, with her favorite being a banana split sundae she enjoyed after a day of volunteering",
+          "session_id": "session_13",
+          "session_date": "3:18 pm on 4 May, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "d89cf00a-5fe3-490e-b2a7-c2ea7e1bacc4",
+          "route": "vector",
+          "content": "Maria has recently been taking solitary walks in a nearby park, which has made a big difference for her",
+          "session_id": "session_22",
+          "session_date": "6:59 pm on 5 July, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "8a9c45be-ade6-4ad0-b2f5-0e2c0a965b21",
+          "route": "graph",
+          "content": "At the charity event, Maria spoke with a man named David and was moved by his story of hardship; she later connected him with a nearby organization providing housing and assistance to homeless people",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "b39e768d-bedb-448d-af9e-222b4e6ea92b",
+          "route": "vector",
+          "content": "Maria recently took a creative writing class around February 2023 and found it very inspiring",
+          "session_id": "session_7",
+          "session_date": "8:55 pm on 25 February, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "07d0128b-c5eb-4a7f-a5d6-2b9d160fbd01",
+          "route": "vector",
+          "content": "玛丽亚在2023年7月中旬的前一个周末和教会朋友去野餐，在树下放松、玩游戏（如你演我猜和寻宝游戏）、吃美食，大家笑得很开心",
+          "session_id": "session_24",
+          "session_date": "3:34 pm on 17 July, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "c1021616-42ae-4b64-86e2-0f25b99ee2cc",
+          "route": "graph",
+          "content": "Maria (John's friend) recently started volunteering once a month at a local dog shelter, in addition to her work at the homeless shelter",
+          "session_id": null,
+          "session_date": null
+        }
+      ],
+      "gained": [
+        {
+          "rank": 12,
+          "id": "8a9c45be-ade6-4ad0-b2f5-0e2c0a965b21",
+          "route": "graph",
+          "content": "At the charity event, Maria spoke with a man named David and was moved by his story of hardship; she later connected him with a nearby organization providing housing and assistance to homeless people",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 15,
+          "id": "c1021616-42ae-4b64-86e2-0f25b99ee2cc",
+          "route": "graph",
+          "content": "Maria (John's friend) recently started volunteering once a month at a local dog shelter, in addition to her work at the homeless shelter",
+          "session_id": null,
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 14,
+          "id": "9647cf98-1cd9-493d-9573-ad1817cd44aa",
+          "route": "vector",
+          "content": "Maria volunteers at a shelter; as of April 2023 she finds it rewarding but challenging, as growing demand for help can feel overwhelming",
+          "session_id": "session_12",
+          "session_date": "7:34 pm on 18 April, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "bb545888-7919-4fcb-9525-6df195d82bf2",
+          "route": "vector",
+          "content": "Maria (friend of John) volunteers at a homeless shelter, keeps fit, and recently started aerial yoga classes, which she finds great",
+          "session_id": "session_1",
+          "session_date": "11:01 am on 17 December, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa135",
+      "source": {
+        "english": {
+          "question": "What setback did Melanie face in October 2023?",
+          "answer": "She got hurt and had to take a break from pottery.",
+          "evidence_ids": [
+            "D17:8"
+          ],
+          "turns": [
+            {
+              "dia_id": "D17:8",
+              "session": "session_17",
+              "session_date": "10:31 am on 13 October, 2023",
+              "speaker": "Melanie",
+              "text": "Thanks for the tip, Caroline. Doing research and readying myself emotionally makes sense. I'll do that. BTW, recently I had a setback. Last month I got hurt and had to take a break from pottery, which I use for self-expression and peace.",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        },
+        "chinese": {
+          "question": "2023年10月梅拉妮遇到了什么挫折？",
+          "answer": "她受了伤，不得不暂停陶艺。",
+          "evidence_ids": [
+            "D17:8"
+          ],
+          "turns": [
+            {
+              "dia_id": "D17:8",
+              "session": "session_17",
+              "session_date": "10:31 am on 13 October, 2023",
+              "speaker": "梅拉妮",
+              "text": "谢谢你的建议，卡罗琳。做调查和调整心态确实有道理。我会照做的。顺便说一下，我最近遇到了一点挫折。上个月我受了伤，不得不暂停陶艺——那是我用来自我表达和获得平静的方式。",
+              "query": null,
+              "blip_caption": null
+            }
+          ]
+        }
+      },
+      "base_grade": "wrong",
+      "graph_grade": "exact",
+      "base_judge": null,
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "答案包含了金牌答案中的所有事实（受伤并暂停陶艺），并有额外细节。"
+      },
+      "base_answer": "2023年10月梅拉妮在公路旅行途中遭遇了车祸——安全气囊弹出，她的儿子出了事故，全家人都很害怕，所幸孩子安然无恙。",
+      "graph_answer": "梅拉妮在2023年10月中旬的公路旅行中遭遇车祸（安全气囊弹出，儿子出了事故但安然无恙），全家人都很害怕；同时她还因9月的受伤而不得不暂停陶艺。",
+      "same_ranked_prefix_count": 9,
+      "shared_id_count": 14,
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+          "route": "vector",
+          "content": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末）公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇事故，全家人都吓坏了，所幸孩子没事。梅拉妮形容这是一次可怕但已过去的经历，并让她感悟到生命宝贵、要珍惜家人",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+          "route": "vector",
+          "content": "梅拉妮在2023年10月20日的公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性",
+          "session_id": "session_19",
+          "session_date": "9:55 am on 22 October, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+          "route": "vector",
+          "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间",
+          "session_id": "session_17",
+          "session_date": "10:31 am on 13 October, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "137a6569-6e2e-4878-97d5-71289efc1f4a",
+          "route": "vector",
+          "content": "梅拉妮在2023年9月受了伤，不得不暂停陶艺——那是她用来自我表达和获得平静的方式，这让她很难受",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "2ec90c89-e8d4-4fd1-80bd-2eca86fb2c2f",
+          "route": "vector",
+          "content": "车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "29c8496b-83a9-47b7-aa46-3c33aaa62e9e",
+          "route": "vector",
+          "content": "梅拉妮和家人一起去流浪者收容所做志愿者，看到有些人被忽视很难受，但感到他们做出了改变",
+          "session_id": "session_14",
+          "session_date": "1:33 pm on 25 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "444a158f-f7e8-4dc2-aa22-cead845f1cb8",
+          "route": "vector",
+          "content": "梅拉妮正在进行搬家，家人在这个过程中帮了很多忙，给了她满满的爱和支持",
+          "session_id": "session_8",
+          "session_date": "1:51 pm on 15 July, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "152651b0-3166-44fb-81dc-e338cec9bda7",
+          "route": "vector",
+          "content": "梅拉妮的一个朋友去年收养了孩子，过程漫长但如今全家很幸福；梅拉妮受此启发觉得也许自己也应该收养，并向卡罗琳询问了入门建议",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+          "route": "vector",
+          "content": "梅拉妮于2023年10月初（对话前一周）画了一幅日落画，灵感来自日落，鲜艳的颜色让她感到平静",
+          "session_id": "session_17",
+          "session_date": "10:31 am on 13 October, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "ef55dd2f-2fb7-4d79-a161-13f8f8507f51",
+          "route": "vector",
+          "content": "梅拉妮有一个朋友去年（约2022年）收养了孩子，过程漫长但如今他们和新孩子非常幸福，这让梅拉妮觉得自己也许也应该考虑收养",
+          "session_id": "session_17",
+          "session_date": "10:31 am on 13 October, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "65dc20b5-1cc1-4c95-ac07-40f204046256",
+          "route": "vector",
+          "content": "2023年10月19日（公路旅行后的次日），梅拉妮和孩子们去山里徒步，孩子们很喜欢，她说这是公路旅行后放松的好方式",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "afb6c064-969a-497d-932d-ec1fde376700",
+          "route": "vector",
+          "content": "梅拉妮一家在科罗拉多大峡谷玩得很开心，她于2023年10月21日买了彩绘木制家庭人偶，让她想起家人之间的爱",
+          "session_id": "session_19",
+          "session_date": "9:55 am on 22 October, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+          "route": "vector",
+          "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静",
+          "session_id": "session_8",
+          "session_date": "1:51 pm on 15 July, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+          "route": "vector",
+          "content": "梅拉妮做艺术已有七年，找到了自己真正的灵感来源：绘画和陶艺；她于2023年9月分享了自己制作的带复杂花纹和紫色釉面的陶艺碗作品照片",
+          "session_id": "session_16",
+          "session_date": "12:09 am on 13 September, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "ea3768ac-ad62-449c-9f14-b25c5b4c239c",
+          "route": "vector",
+          "content": "梅拉妮（梅尔）自2023年7月初以来跑得更远了，买了几双新跑步鞋（粉色/紫色跑鞋）；她跑步是为了减压和放空大脑，认为跑步对心态和心理健康大有好处",
+          "session_id": "session_7",
+          "session_date": "4:33 pm on 12 July, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+          "route": "vector",
+          "content": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末）公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇事故，全家人都吓坏了，所幸孩子没事。梅拉妮形容这是一次可怕但已过去的经历，并让她感悟到生命宝贵、要珍惜家人",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+          "route": "vector",
+          "content": "梅拉妮在2023年10月20日的公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性",
+          "session_id": "session_19",
+          "session_date": "9:55 am on 22 October, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+          "route": "vector",
+          "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间",
+          "session_id": "session_17",
+          "session_date": "10:31 am on 13 October, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "137a6569-6e2e-4878-97d5-71289efc1f4a",
+          "route": "vector",
+          "content": "梅拉妮在2023年9月受了伤，不得不暂停陶艺——那是她用来自我表达和获得平静的方式，这让她很难受",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "2ec90c89-e8d4-4fd1-80bd-2eca86fb2c2f",
+          "route": "vector",
+          "content": "车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "29c8496b-83a9-47b7-aa46-3c33aaa62e9e",
+          "route": "vector",
+          "content": "梅拉妮和家人一起去流浪者收容所做志愿者，看到有些人被忽视很难受，但感到他们做出了改变",
+          "session_id": "session_14",
+          "session_date": "1:33 pm on 25 August, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "444a158f-f7e8-4dc2-aa22-cead845f1cb8",
+          "route": "vector",
+          "content": "梅拉妮正在进行搬家，家人在这个过程中帮了很多忙，给了她满满的爱和支持",
+          "session_id": "session_8",
+          "session_date": "1:51 pm on 15 July, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "152651b0-3166-44fb-81dc-e338cec9bda7",
+          "route": "vector",
+          "content": "梅拉妮的一个朋友去年收养了孩子，过程漫长但如今全家很幸福；梅拉妮受此启发觉得也许自己也应该收养，并向卡罗琳询问了入门建议",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "dbe74bc6-26d1-47a3-8e09-c7172710fae3",
+          "route": "vector",
+          "content": "梅拉妮于2023年10月初（对话前一周）画了一幅日落画，灵感来自日落，鲜艳的颜色让她感到平静",
+          "session_id": "session_17",
+          "session_date": "10:31 am on 13 October, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "3f8d7567-dcac-4cc4-8af5-2e0245684373",
+          "route": "graph",
+          "content": "梅拉妮意识到自我关怀的重要性，认为照顾好自己才能更好地照顾家人，把自我关怀视为一段旅程",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "ef55dd2f-2fb7-4d79-a161-13f8f8507f51",
+          "route": "vector",
+          "content": "梅拉妮有一个朋友去年（约2022年）收养了孩子，过程漫长但如今他们和新孩子非常幸福，这让梅拉妮觉得自己也许也应该考虑收养",
+          "session_id": "session_17",
+          "session_date": "10:31 am on 13 October, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "65dc20b5-1cc1-4c95-ac07-40f204046256",
+          "route": "vector",
+          "content": "2023年10月19日（公路旅行后的次日），梅拉妮和孩子们去山里徒步，孩子们很喜欢，她说这是公路旅行后放松的好方式",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "afb6c064-969a-497d-932d-ec1fde376700",
+          "route": "vector",
+          "content": "梅拉妮一家在科罗拉多大峡谷玩得很开心，她于2023年10月21日买了彩绘木制家庭人偶，让她想起家人之间的爱",
+          "session_id": "session_19",
+          "session_date": "9:55 am on 22 October, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+          "route": "vector",
+          "content": "梅拉妮表示她在慢慢寻找内心平静的过程中，创造力和家人让她保持平静",
+          "session_id": "session_8",
+          "session_date": "1:51 pm on 15 July, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "570bc0f9-d83c-4e30-92da-a3afb5e83554",
+          "route": "vector",
+          "content": "梅拉妮做艺术已有七年，找到了自己真正的灵感来源：绘画和陶艺；她于2023年9月分享了自己制作的带复杂花纹和紫色釉面的陶艺碗作品照片",
+          "session_id": "session_16",
+          "session_date": "12:09 am on 13 September, 2023"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 10,
+          "id": "3f8d7567-dcac-4cc4-8af5-2e0245684373",
+          "route": "graph",
+          "content": "梅拉妮意识到自我关怀的重要性，认为照顾好自己才能更好地照顾家人，把自我关怀视为一段旅程",
+          "session_id": null,
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 15,
+          "id": "ea3768ac-ad62-449c-9f14-b25c5b4c239c",
+          "route": "vector",
+          "content": "梅拉妮（梅尔）自2023年7月初以来跑得更远了，买了几双新跑步鞋（粉色/紫色跑鞋）；她跑步是为了减压和放空大脑，认为跑步对心态和心理健康大有好处",
+          "session_id": "session_7",
+          "session_date": "4:33 pm on 12 July, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa41",
+      "source": {
+        "english": {
+          "question": "What are the breeds of Audrey's dogs?",
+          "answer": "Mongrel mixed with Lab for Pepper and Panda. Mongrel mixed with Chihuahua for Precious and Pixie.",
+          "evidence_ids": [
+            "D19:12",
+            "D26:13"
+          ],
+          "turns": [
+            {
+              "dia_id": "D19:12",
+              "session": "session_19",
+              "session_date": "5:53 pm on 24 September, 2023",
+              "speaker": "Audrey",
+              "text": "They're all mutts. Two of them are Jack Russell mixes and the other two are Chihuahua mixes. And yea, I believe so! Some dog breeds do bond better than others.",
+              "query": "mixed breed dogs sitting blanket park",
+              "blip_caption": "a photography of a group of dogs tied to a leash on a brick walkway"
+            },
+            {
+              "dia_id": "D26:13",
+              "session": "session_26",
+              "session_date": "2:36 pm on 28 October, 2023",
+              "speaker": "Audrey",
+              "text": "Thanks! They're all mutts, but Pepper and Panda are Lab mixes, and Precious and Pixie are Chihuahua mixes. I really need that. I can't wait the day they're all back to normal.",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D10:7",
+              "session": "session_10",
+              "session_date": "8:32 pm on 3 July, 2023",
+              "speaker": "Audrey",
+              "text": "They're all mutts. Two of them are Jack Russell mixes and the other two are Chihuahua mixes. They love running and playing fetch, you should see them sometimes.",
+              "query": "dogs curled up together",
+              "blip_caption": "a photo of two dogs curled up in a dog bed"
+            }
+          ]
+        },
+        "chinese": {
+          "question": "奥黛丽的狗狗是什么品种？",
+          "answer": "Pepper和Panda是混种拉布拉多犬。Precious和Pixie是混种吉娃娃。",
+          "evidence_ids": [
+            "D19:12",
+            "D26:13"
+          ],
+          "turns": [
+            {
+              "dia_id": "D19:12",
+              "session": "session_19",
+              "session_date": "5:53 pm on 24 September, 2023",
+              "speaker": "奥黛丽",
+              "text": "它们都是串串狗。其中两只是杰克罗素梗串，另外两只是吉娃娃串。对，我相信是这样！有些狗品种确实比其他品种更容易与人亲近。",
+              "query": "mixed breed dogs sitting blanket park",
+              "blip_caption": "a photography of a group of dogs tied to a leash on a brick walkway"
+            },
+            {
+              "dia_id": "D26:13",
+              "session": "session_26",
+              "session_date": "2:36 pm on 28 October, 2023",
+              "speaker": "奥黛丽",
+              "text": "谢谢！它们都是混种狗，Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血。我真的需要这些鼓励。我等不及它们全部恢复正常的那一天了。",
+              "query": null,
+              "blip_caption": null
+            },
+            {
+              "dia_id": "D10:7",
+              "session": "session_10",
+              "session_date": "8:32 pm on 3 July, 2023",
+              "speaker": "奥黛丽",
+              "text": "它们都是串串。其中两只是杰克罗素梗串，另外两只是吉娃娃串。它们喜欢跑步和玩接球游戏，你真该有机会看看。",
+              "query": "dogs curled up together",
+              "blip_caption": "a photo of two dogs curled up in a dog bed"
+            }
+          ]
+        }
+      },
+      "base_grade": "partial",
+      "graph_grade": "exact",
+      "base_judge": {
+        "grade": "partial",
+        "missing": [
+          "The answer enumerates conflicting alternatives (Jack Russell mixes vs Lab mixes) instead of definitively stating Pepper和Panda是拉布拉多混血"
+        ],
+        "reason": "Contains the correct breeds as one of two hedged alternatives rather than a definitive, precise answer."
+      },
+      "graph_judge": {
+        "grade": "exact",
+        "missing": [],
+        "reason": "所有四只狗及其品种混合（Pepper/Panda 为拉布拉多犬，Precious/Pixie 为吉娃娃）均正确且完整地列出。"
+      },
+      "base_answer": "奥黛丽的狗狗们都是串串狗（混种狗）。关于具体品种，记忆中有两种说法：较晚且多次提到的记录称两只是杰克罗素梗串、两只是吉娃娃串（Pepper、Panda、Precious、Pixie，都是3岁）；另有10月的记录称 Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血。",
+      "graph_answer": "奥黛丽的四只狗狗都是混种狗：Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血。",
+      "same_ranked_prefix_count": 7,
+      "shared_id_count": 11,
+      "base_context": [
+        {
+          "rank": 1,
+          "id": "58e2d35c-d906-4bd6-8be0-19d0c920088c",
+          "route": "vector",
+          "content": "奥黛丽的四只狗狗都是串串狗：两只是杰克罗素梗串，两只是吉娃娃串。她相信有些狗品种确实比其他品种更容易与人亲近",
+          "session_id": "session_19",
+          "session_date": "5:53 pm on 24 September, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "6c344bc1-b41a-4d27-a0d6-8718d8e4c32a",
+          "route": "vector",
+          "content": "奥黛丽的狗狗品种：Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血，都是混种狗",
+          "session_id": "session_26",
+          "session_date": "2:36 pm on 28 October, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "8c29f9b1-cdb9-4f36-ac10-0a5126df562f",
+          "route": "vector",
+          "content": "奥黛丽的四只狗狗都是3岁的串串：两只是杰克罗素梗串，两只是吉娃娃串。它们最喜欢跑步和玩接球游戏",
+          "session_id": "session_10",
+          "session_date": "8:32 pm on 3 July, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "74b3079e-3033-467d-bcc8-40347c358299",
+          "route": "vector",
+          "content": "奥黛丽的狗狗们是城市狗；她经常带它们探索新的公园和小径，一起冒险",
+          "session_id": "session_1",
+          "session_date": "1:10 pm on 27 March, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "81b900d9-59ce-4a86-8a2e-247af6446eca",
+          "route": "vector",
+          "content": "奥黛丽给城市狗狗主人的建议：要确保有足够的时间和精力照顾狗狗，它们需要大量关注和遛弯，像德国牧羊犬这样的狗尤其需要消耗很多精力",
+          "session_id": "session_14",
+          "session_date": "11:05 am on 4 August, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "0a91150b-2e44-44b7-8776-af970675299c",
+          "route": "vector",
+          "content": "2023年4月初，奥黛丽 (Audrey) 领养了一只名叫Pixie的小狗，她是一只白色的小狗，非常可爱，让全家忙个不停",
+          "session_id": "session_2",
+          "session_date": "2:42 pm on 2 April, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "39c4c495-fc94-40e9-8fbb-a4e1248f5f0d",
+          "route": "vector",
+          "content": "奥黛丽 (Audrey) 养了三只狗——佩珀 (Pepper)、普雷舍斯 (Precious) 和潘达 (Panda)——已经养了三年，她说没有它们活不下去",
+          "session_id": "session_1",
+          "session_date": "1:10 pm on 27 March, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "5e40b8ce-8063-4bcf-903e-c029d5d02c96",
+          "route": "vector",
+          "content": "奥黛丽 (Audrey) 有四只狗狗，照顾它们、确保它们开心健康占去了她大部分空闲时间",
+          "session_id": "session_6",
+          "session_date": "2:03 pm on 11 May, 2023"
+        },
+        {
+          "rank": 9,
+          "id": "9a453ea8-a00e-415a-808c-cb4b25894e82",
+          "route": "vector",
+          "content": "奥黛丽的狗狗们对捡球游戏和飞盘特别疯狂，喜欢跑来跑去和结识其他狗狗，可以连续跑好几个小时",
+          "session_id": "session_23",
+          "session_date": "4:22 pm on 13 October, 2023"
+        },
+        {
+          "rank": 10,
+          "id": "7ba4ab05-61f7-4673-9436-42211ec5aa8e",
+          "route": "vector",
+          "content": "奥黛丽的四只狗狗各有独特个性：老大最悠闲像个睿智的老者，老二总是随时准备玩游戏，老三有时调皮但喜欢依偎撒娇，最小的充满活力、乐于冒险",
+          "session_id": "session_13",
+          "session_date": "3:52 pm on 27 July, 2023"
+        },
+        {
+          "rank": 11,
+          "id": "76c52e74-45b1-4c7d-a03a-2db7b237d721",
+          "route": "vector",
+          "content": "奥黛丽说她狗狗们是她的全世界，给她的狗狗们满满的爱和幸福；有它们在身边，大自然让她感到平静、治愈",
+          "session_id": "session_10",
+          "session_date": "8:32 pm on 3 July, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "9cc73ff8-b933-4078-97ed-325342aa5917",
+          "route": "vector",
+          "content": "奥黛丽的手臂上有一个狗狗和向日葵图案的纹身，代表她对她家狗狗们的爱和大自然之美；她是因为与狗狗们感情深厚、它们让她特别开心而决定纹的，想在狗狗不在身边时也能看到它们开心的样子",
+          "session_id": "session_3",
+          "session_date": "4:19 pm on 16 April, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "e8057023-5a1f-43aa-85eb-2d272e56d2e7",
+          "route": "vector",
+          "content": "奥黛丽的狗狗们总是依偎在她最喜欢的毯子上一起睡觉，尤其在午睡时间，它们是最好的朋友，总是互相陪伴，看到它们在一起让她特别开心",
+          "session_id": "session_15",
+          "session_date": "9:58 pm on 16 August, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "440eadbb-d76c-4184-8951-556b7fecb11e",
+          "route": "vector",
+          "content": "奥黛丽的狗狗们喜欢在她的花园里跑来跑去、探索玩耍，她觉得非常可爱；它们只和自家的毛孩子们一起玩",
+          "session_id": "session_19",
+          "session_date": "5:53 pm on 24 September, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "cc8a2b80-a487-4d12-a2e4-f363d93c4766",
+          "route": "vector",
+          "content": "奥黛丽分享了一张狗狗戴生日帽的照片，其中一只小狗戴着绿帽子；安德鲁称赞它看起来很精神",
+          "session_id": "session_19",
+          "session_date": "5:53 pm on 24 September, 2023"
+        }
+      ],
+      "graph_context": [
+        {
+          "rank": 1,
+          "id": "58e2d35c-d906-4bd6-8be0-19d0c920088c",
+          "route": "vector",
+          "content": "奥黛丽的四只狗狗都是串串狗：两只是杰克罗素梗串，两只是吉娃娃串。她相信有些狗品种确实比其他品种更容易与人亲近",
+          "session_id": "session_19",
+          "session_date": "5:53 pm on 24 September, 2023"
+        },
+        {
+          "rank": 2,
+          "id": "6c344bc1-b41a-4d27-a0d6-8718d8e4c32a",
+          "route": "vector",
+          "content": "奥黛丽的狗狗品种：Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血，都是混种狗",
+          "session_id": "session_26",
+          "session_date": "2:36 pm on 28 October, 2023"
+        },
+        {
+          "rank": 3,
+          "id": "8c29f9b1-cdb9-4f36-ac10-0a5126df562f",
+          "route": "vector",
+          "content": "奥黛丽的四只狗狗都是3岁的串串：两只是杰克罗素梗串，两只是吉娃娃串。它们最喜欢跑步和玩接球游戏",
+          "session_id": "session_10",
+          "session_date": "8:32 pm on 3 July, 2023"
+        },
+        {
+          "rank": 4,
+          "id": "74b3079e-3033-467d-bcc8-40347c358299",
+          "route": "vector",
+          "content": "奥黛丽的狗狗们是城市狗；她经常带它们探索新的公园和小径，一起冒险",
+          "session_id": "session_1",
+          "session_date": "1:10 pm on 27 March, 2023"
+        },
+        {
+          "rank": 5,
+          "id": "81b900d9-59ce-4a86-8a2e-247af6446eca",
+          "route": "vector",
+          "content": "奥黛丽给城市狗狗主人的建议：要确保有足够的时间和精力照顾狗狗，它们需要大量关注和遛弯，像德国牧羊犬这样的狗尤其需要消耗很多精力",
+          "session_id": "session_14",
+          "session_date": "11:05 am on 4 August, 2023"
+        },
+        {
+          "rank": 6,
+          "id": "0a91150b-2e44-44b7-8776-af970675299c",
+          "route": "vector",
+          "content": "2023年4月初，奥黛丽 (Audrey) 领养了一只名叫Pixie的小狗，她是一只白色的小狗，非常可爱，让全家忙个不停",
+          "session_id": "session_2",
+          "session_date": "2:42 pm on 2 April, 2023"
+        },
+        {
+          "rank": 7,
+          "id": "39c4c495-fc94-40e9-8fbb-a4e1248f5f0d",
+          "route": "vector",
+          "content": "奥黛丽 (Audrey) 养了三只狗——佩珀 (Pepper)、普雷舍斯 (Precious) 和潘达 (Panda)——已经养了三年，她说没有它们活不下去",
+          "session_id": "session_1",
+          "session_date": "1:10 pm on 27 March, 2023"
+        },
+        {
+          "rank": 8,
+          "id": "49569387-e5c4-4db4-9fc5-646b885da652",
+          "route": "graph",
+          "content": "Pixie花了几天时间才适应奥黛丽的其他狗狗（佩珀、普雷舍斯和潘达），但现在它们已经是很棒的朋友，喜欢一起玩耍、在家里四处探索",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 9,
+          "id": "7e620293-8a3e-4077-8c94-42424bd641fa",
+          "route": "graph",
+          "content": "截至2023年5月初，奥黛丽忙着照顾和陪伴她的狗狗们（佩珀、普雷舍斯、潘达和皮克西），她觉得真的很有满足感，并表示自上次聊天以来没有其他新变化",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 10,
+          "id": "50fc5445-084f-4945-8b9a-3ec8d8869404",
+          "route": "graph",
+          "content": "奥黛丽和她的狗狗们因为忙于照顾小狗Pixie，还没来得及去之前讨论的福克斯霍洛 (Foxhollow) 远足地点（截至2023年4月初）",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 11,
+          "id": "5e40b8ce-8063-4bcf-903e-c029d5d02c96",
+          "route": "vector",
+          "content": "奥黛丽 (Audrey) 有四只狗狗，照顾它们、确保它们开心健康占去了她大部分空闲时间",
+          "session_id": "session_6",
+          "session_date": "2:03 pm on 11 May, 2023"
+        },
+        {
+          "rank": 12,
+          "id": "986645e9-4556-4cee-a2c0-f036e3a48638",
+          "route": "graph",
+          "content": "奥黛丽的四只狗都有自己最爱放松的地方：Pepper喜欢窝在沙发上，Pixie总是蜷在自己的窝里，Precious有她的椅子，Panda喜欢在他的地毯上放松",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 13,
+          "id": "9a453ea8-a00e-415a-808c-cb4b25894e82",
+          "route": "vector",
+          "content": "奥黛丽的狗狗们对捡球游戏和飞盘特别疯狂，喜欢跑来跑去和结识其他狗狗，可以连续跑好几个小时",
+          "session_id": "session_23",
+          "session_date": "4:22 pm on 13 October, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "7ba4ab05-61f7-4673-9436-42211ec5aa8e",
+          "route": "vector",
+          "content": "奥黛丽的四只狗狗各有独特个性：老大最悠闲像个睿智的老者，老二总是随时准备玩游戏，老三有时调皮但喜欢依偎撒娇，最小的充满活力、乐于冒险",
+          "session_id": "session_13",
+          "session_date": "3:52 pm on 27 July, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "76c52e74-45b1-4c7d-a03a-2db7b237d721",
+          "route": "vector",
+          "content": "奥黛丽说她狗狗们是她的全世界，给她的狗狗们满满的爱和幸福；有它们在身边，大自然让她感到平静、治愈",
+          "session_id": "session_10",
+          "session_date": "8:32 pm on 3 July, 2023"
+        }
+      ],
+      "gained": [
+        {
+          "rank": 8,
+          "id": "49569387-e5c4-4db4-9fc5-646b885da652",
+          "route": "graph",
+          "content": "Pixie花了几天时间才适应奥黛丽的其他狗狗（佩珀、普雷舍斯和潘达），但现在它们已经是很棒的朋友，喜欢一起玩耍、在家里四处探索",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 9,
+          "id": "7e620293-8a3e-4077-8c94-42424bd641fa",
+          "route": "graph",
+          "content": "截至2023年5月初，奥黛丽忙着照顾和陪伴她的狗狗们（佩珀、普雷舍斯、潘达和皮克西），她觉得真的很有满足感，并表示自上次聊天以来没有其他新变化",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 10,
+          "id": "50fc5445-084f-4945-8b9a-3ec8d8869404",
+          "route": "graph",
+          "content": "奥黛丽和她的狗狗们因为忙于照顾小狗Pixie，还没来得及去之前讨论的福克斯霍洛 (Foxhollow) 远足地点（截至2023年4月初）",
+          "session_id": null,
+          "session_date": null
+        },
+        {
+          "rank": 12,
+          "id": "986645e9-4556-4cee-a2c0-f036e3a48638",
+          "route": "graph",
+          "content": "奥黛丽的四只狗都有自己最爱放松的地方：Pepper喜欢窝在沙发上，Pixie总是蜷在自己的窝里，Precious有她的椅子，Panda喜欢在他的地毯上放松",
+          "session_id": null,
+          "session_date": null
+        }
+      ],
+      "lost": [
+        {
+          "rank": 12,
+          "id": "9cc73ff8-b933-4078-97ed-325342aa5917",
+          "route": "vector",
+          "content": "奥黛丽的手臂上有一个狗狗和向日葵图案的纹身，代表她对她家狗狗们的爱和大自然之美；她是因为与狗狗们感情深厚、它们让她特别开心而决定纹的，想在狗狗不在身边时也能看到它们开心的样子",
+          "session_id": "session_3",
+          "session_date": "4:19 pm on 16 April, 2023"
+        },
+        {
+          "rank": 13,
+          "id": "e8057023-5a1f-43aa-85eb-2d272e56d2e7",
+          "route": "vector",
+          "content": "奥黛丽的狗狗们总是依偎在她最喜欢的毯子上一起睡觉，尤其在午睡时间，它们是最好的朋友，总是互相陪伴，看到它们在一起让她特别开心",
+          "session_id": "session_15",
+          "session_date": "9:58 pm on 16 August, 2023"
+        },
+        {
+          "rank": 14,
+          "id": "440eadbb-d76c-4184-8951-556b7fecb11e",
+          "route": "vector",
+          "content": "奥黛丽的狗狗们喜欢在她的花园里跑来跑去、探索玩耍，她觉得非常可爱；它们只和自家的毛孩子们一起玩",
+          "session_id": "session_19",
+          "session_date": "5:53 pm on 24 September, 2023"
+        },
+        {
+          "rank": 15,
+          "id": "cc8a2b80-a487-4d12-a2e4-f363d93c4766",
+          "route": "vector",
+          "content": "奥黛丽分享了一张狗狗戴生日帽的照片，其中一只小狗戴着绿帽子；安德鲁称赞它看起来很精神",
+          "session_id": "session_19",
+          "session_date": "5:53 pm on 24 September, 2023"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Three hand-picked cases do not estimate the frequency of this mechanism in the 57 eligible flips.",
+    "Changed tail context and independent answer generations cannot be separated retrospectively.",
+    "Source turns are evidence, not proof that every memory extraction or gold answer is correct."
+  ]
+}
