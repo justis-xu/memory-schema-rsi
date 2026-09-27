@@ -1,0 +1,552 @@
+{
+  "scope": "Current conv-43 Chroma memories and existing extraction caches; isolated in-process GraphBuilder S1/S2 + GraphRetriever; no HugeGraph, reranker, answerer or model calls",
+  "case_id": "locomo_conv-43_qa25",
+  "question": "蒂姆和约翰拥有什么相似的运动收藏品？",
+  "user_id": "zhfull:locomo:conv-43",
+  "current_chroma_logic_sha256": "61e015ce36e4f137db6c0466d835d4d0cee714a17d9fcdf4e24156c7f25cdbd9",
+  "current_chroma_file_sha256_before": "57152cd4b7632b940c373218e1bfc05175ce9f85ff23c2c73dfb03517a652cd9",
+  "current_chroma_file_sha256_after": "57152cd4b7632b940c373218e1bfc05175ce9f85ff23c2c73dfb03517a652cd9",
+  "conv43_count": 211,
+  "structured_cache_count": 199,
+  "topic_cache_count": 209,
+  "structured_cache_sha256": "95265ac274243c67f3199bf048c98b3d5916a5e097b51c223c1146cfaede549d",
+  "topic_cache_sha256": "f845ab40a07374eb6b0a9caff35e4dbb82b798e340cf7f48b534a5c49c0371f4",
+  "embedding_cache_count": 211,
+  "embedding_cache_sha256": "bae1c42acba31b67a56b43d996e207237b8c0a122dcba3d78a1277a05520d2e4",
+  "prior_vector_db_sha256_before": "183dd964cf0958c7cab08ec28c0ddca622c5da9bcb6d55713da608fe3aa6f9f6",
+  "seed_ids": [
+    "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+    "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+    "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+    "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+    "2e8d4d31-385a-4786-b3c6-c9fcb7320def"
+  ],
+  "excluded_vector_ids": [
+    "0ca6a8a3-49e4-41a0-9c36-5608fcd8340d",
+    "1acb6522-5397-4a62-8624-5f209f1bf34c",
+    "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+    "2e8d4d31-385a-4786-b3c6-c9fcb7320def",
+    "3d9696ac-a639-4862-980b-dc534b960d18",
+    "4e5abf64-a6e5-43fb-939e-a853809328cb",
+    "511649c4-ae44-44e0-b0ec-788d21dc4355",
+    "6713b6ee-bfd5-4f2a-8aff-5a3ce55c5ed5",
+    "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+    "bece7fc2-ba6d-4ef3-84bc-b38e4ea09b3a",
+    "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+    "d243ee6b-24ab-402b-b7d2-aace0f038a5d",
+    "f4738650-a474-43f7-bf8b-88e5d6ff2101",
+    "f74dfc6f-4ec9-458a-a0a6-fc3c07560328",
+    "ffefd5b9-b385-4618-983c-9bd545d408a7"
+  ],
+  "signed_ball_entity_neighbor_ids": [
+    "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+    "219b4c97-f2af-4734-a4f4-1d93ebe19f99"
+  ],
+  "graph_counts": {
+    "vertices": 713,
+    "edges": 1577,
+    "labels": {
+      "Memory": 211,
+      "Entity": 194,
+      "Event": 119,
+      "Preference": 159,
+      "Concept": 30
+    }
+  },
+  "s2_sorted_order": {
+    "john_rank": 7,
+    "candidate_count": 30,
+    "candidates": [
+      {
+        "id": "0203a396-023b-4604-816d-e13a497c55a3",
+        "content": "约翰（John）所在的篮球队在2023年12月初与一支强队进行了一场艰难的比赛并获胜，全队乘坐消防车庆祝胜利，他认为最精彩的是球队在球场内外建立的情谊",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "concept:sports",
+          "concept:achievements"
+        ],
+        "support": 3,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "04291dc1-5a0b-4fa6-ad37-f152d087398d",
+        "content": "约翰（John）是一名棒球运动员，于2024年1月上旬（'上周'）与一家知名饮料公司签下了代言合同，称这是梦想成真，感觉所有训练和努力都得到了回报",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "concept:sports",
+          "concept:achievements"
+        ],
+        "support": 3,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "0a3693bd-6407-4584-9b63-a4fda5a49d81",
+        "content": "约翰（John）的篮球队在2023年秋季赛季经历了激烈比赛，既有惨痛失利也有精彩胜利，面对强队互相支持、绝不放弃，最终赢得了一个奖杯，他觉得辛勤付出得到了回报",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "concept:sports",
+          "concept:achievements"
+        ],
+        "support": 3,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "0f8de77b-2e05-45a9-a0a4-34d624bf8b5b",
+        "content": "约翰认为力量训练能增强肌肉、提高爆发力并预防受伤；加入力量训练改变了他的比赛，提高了投篮命中率、敏捷性和速度，给了他面对挑战的信心",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "concept:sports",
+          "concept:fitness"
+        ],
+        "support": 3,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "15ea510a-b175-42d4-bcce-3d9b08669fad",
+        "content": "篮球对约翰仍然很重要，他每天练习训练来保持状态和提高，无法想象没有篮球的生活，篮球是他的热爱",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "concept:sports",
+          "concept:fitness"
+        ],
+        "support": 3,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "1847372a-3c20-4c79-abf2-8a971c927ba9",
+        "content": "约翰（John）提出等他的赛季结束后可能顺路去爱尔兰看蒂姆，并同意如果去的话会告知蒂姆",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "concept:friends",
+          "entity:Tim"
+        ],
+        "support": 3,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+        "content": "约翰（John）的队友们在2023年8月见面时送给他一个签名篮球，签名象征他们的友谊和感激之情；这个球提醒他为什么开始打篮球以及他的篮球之路，激励他保持坚强、全力以赴",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:sports",
+          "concept:friends",
+          "entity:signed basketball"
+        ],
+        "support": 3,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "4ec9f852-edb0-40fa-ace0-d285f6b17fd4",
+        "content": "约翰在白板上写激励性格言和策略来帮助自己在艰苦训练中保持专注和动力，桌上还放着一块提醒自己相信能力的牌匾，实物提醒帮助他保持动力",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:约翰",
+          "concept:emotions",
+          "concept:fitness"
+        ],
+        "support": 3,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "57e83652-686d-45cb-952d-cf66e718e739",
+        "content": "约翰曾在一场重要的篮球比赛中搞砸，很难接受，但他没有沉溺于此，而是努力变得更好，认识到坚韧是关键、承认错误很重要，并努力成为优秀的球员和队友",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:约翰",
+          "entity:篮球",
+          "concept:emotions"
+        ],
+        "support": 3,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+        "content": "约翰在2023年6月中旬刚打完一场篮球比赛并分享了比赛现场照片，他表示能在场上做热爱的事情感觉真好，每次上场都全力以赴",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:约翰",
+          "entity:篮球",
+          "preference:21:zhfull:locomo:conv-43:约翰|like|篮球"
+        ],
+        "support": 3,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "050d6d54-3907-4ebf-aee5-59f15d8cbf0d",
+        "content": "约翰（John）于2023年6月开始探索代言机会，目前正在考虑耐克（Nike）和安德玛（Under Armour）等运动品牌，也愿意探索符合他价值观和兴趣的其他品牌，他感到兴奋且有成就感",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "concept:sports"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "08e2ae89-965a-4668-a290-dd160b20d60e",
+        "content": "约翰和妻子于2023年11月初出发去欧洲短期度假，约翰向蒂姆询问推荐；蒂姆推荐他们去参观欧洲的城堡",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "entity:Tim"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "1124c537-329b-4f5c-bd20-33919a08f41c",
+        "content": "约翰的工作与篮球相关，现场观看比赛的氛围让他感到'正是这样的时刻让我热爱我的工作'，他分享了比赛现场观众的照片",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "concept:sports"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "1bb299a3-5fd4-420d-9472-975600a158fe",
+        "content": "约翰（John）在2023年12月中旬仍在从不久前的伤病中恢复，因伤错过了一些比赛、没能帮到队伍，他每天都做物理治疗康复练习并尽力保持活动",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:John",
+          "concept:sports"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "00e9d949-4f9b-4b1d-8248-96852ed3a6bb",
+        "content": "蒂姆开始学弹钢琴，虽然有个学习曲线，但看到自己进步很有成就感；他最喜欢弹的是一首他非常喜欢的电影的主题曲",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:hobby",
+          "entity:Tim"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "03a3796a-febb-47c4-964d-0d7cb75ecdf1",
+        "content": "蒂姆几年前（约2021年）去过伦敦一个哈利·波特相关的景点并参加了游览，感觉就像走进哈利·波特电影一样，体验非常棒",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:hobby",
+          "entity:Tim"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+        "content": "蒂姆（Tim）正在读一套关于友谊和忠诚主题的奇幻系列小说，觉得很鼓舞人心，但尚未读《权力的游戏》系列以外的乔治·R·R·马丁其他作品",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:hobby",
+          "entity:Tim"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "137b900b-84a9-4965-9f46-f0b67d388dcf",
+        "content": "约翰的首要篮球目标是赢得总冠军，同时也想在球场之外有所作为，通过慈善或激励他人回馈",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:sports",
+          "entity:约翰"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "1a240463-b254-4e3c-b654-849617378f9b",
+        "content": "蒂姆喜欢看勒布朗·詹姆斯打球；几年前一场总决赛中勒布朗的史诗级盖帽（2016年总决赛第七场追防伊戈达拉把球按在篮板上）彻底改变了比赛并最终获胜，这种永不放弃的精神让蒂姆深受鼓舞，也让他热爱体育",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:sports",
+          "entity:Tim"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "1ddb628b-dce0-44ba-a333-c780ec3f98d5",
+        "content": "约翰（John）在2023年10月开始在队里指导年轻队员，把技术和知识分享给他们，觉得特别有成就感，也以此在休赛期保持与比赛的联系；虽然因队员各不相同而有挑战，但看着他们成长和实现目标让他觉得非常值得",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:sports",
+          "concept:achievements"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "1edf4fdb-bb14-48f4-a471-273d18237d64",
+        "content": "约翰的球队赛季揭幕战在2023年5月底（对话日期的一周后），他的目标是提高投篮命中率，一直在为此刻苦训练",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:sports",
+          "concept:fitness"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "2f4781dd-4fff-4ca0-ab23-3e9a6debe06a",
+        "content": "约翰从小和爸爸一起看NBA比赛并梦想在大球场上打球；十岁时爸爸给他报了本地联赛，此后初中、高中坚持打篮球，之后拿到大学奖学金，大学毕业后被一支球队选中，实现童年梦想",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:sports",
+          "entity:约翰"
+        ],
+        "support": 2,
+        "anchor_memory_id": "d243ee6b-24ab-402b-b7d2-aace0f038a5d"
+      },
+      {
+        "id": "074401d8-fa72-451a-8ea9-3b4874fdf883",
+        "content": "约翰有一群无论如何都支持他的朋友，家人也总在他身边，与家人聚会带给他极大的快乐",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:约翰",
+          "concept:friends"
+        ],
+        "support": 2,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "468b7a3e-ce92-4bbe-89dc-c8ddbc04ce67",
+        "content": "约翰（John）通过篮球行业的人脉和营销技巧与大品牌建立联系，认为人脉关系在拿代言方面起很大作用",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:约翰",
+          "entity:篮球"
+        ],
+        "support": 2,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "60a9e230-be64-4d2f-8a42-81943bd7c05a",
+        "content": "约翰于2023年8月中旬回了趟家，与家人和老朋友们聚会，一起开心地聊童年的往事，怀念美好的旧时光",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:约翰",
+          "concept:friends"
+        ],
+        "support": 2,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "688f8e28-1f86-4b91-a412-93971a6d9aca",
+        "content": "约翰最近重读完《牧羊少年奇幻之旅》（The Alchemist），认为非常鼓舞人心，让他重新思考追逐梦想和寻找属于自己的宝藏，读完感到充满动力和希望",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:约翰",
+          "concept:emotions"
+        ],
+        "support": 2,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "990bf11a-acc2-40e7-98ab-9fa03420e048",
+        "content": "约翰上赛季扭伤了脚踝，需要休息并接受物理治疗，无法上场比赛和帮助球队，他专注于康复并增强身体，认为这段身心挑战让他认识到耐心和毅力的重要性",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "entity:约翰",
+          "entity:篮球"
+        ],
+        "support": 2,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "03425545-f53f-4f81-997b-e60165215fc4",
+        "content": "蒂姆（Tim）于2023年8月开始为一家在线杂志撰写关于奇幻小说的文章，分析角色、主题并做书籍推荐，这个机会来自他在奇幻文学论坛上的发现；杂志社很喜欢他的想法，他为此感到非常有成就感",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:achievements",
+          "entity:Tim"
+        ],
+        "support": 2,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "c5e9ab15-5049-4588-abfd-4339319330e9",
+        "content": "约翰（John）在2023年12月15日（周五）在健身房迎来康复里程碑：能在跑步机上无痛地慢跑一段时间，他感到松了一口气和巨大的成就感",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:achievements",
+          "concept:fitness"
+        ],
+        "support": 2,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      },
+      {
+        "id": "1e57dad3-62d8-48e6-b509-ffdda3c61894",
+        "content": "约翰（John）和妻子为庆祝康复进展，在2023年12月中旬与亲朋好友办了一次小型聚会，大家玩得特别开心，约翰感谢朋友蒂姆的支持和鼓励，并表示会继续努力、保持积极心态",
+        "user_id": "zhfull:locomo:conv-43",
+        "via": [
+          "concept:friends",
+          "entity:Tim"
+        ],
+        "support": 2,
+        "anchor_memory_id": "f74dfc6f-4ec9-458a-a0a6-fc3c07560328"
+      }
+    ]
+  },
+  "s1_sorted_order": {
+    "john_rank": null,
+    "candidate_count": 30,
+    "uncapped_john_rank": 40,
+    "uncapped_candidate_count": 40
+  },
+  "s2_sorted_order_uncapped_john_rank": 7,
+  "s2_sorted_order_uncapped_candidate_count": 81,
+  "s2_reverse_order_john_rank": null,
+  "s2v8_sorted_order": {
+    "john_rank": 6,
+    "candidate_count": 30,
+    "uncapped_john_rank": 6,
+    "uncapped_candidate_count": 96
+  },
+  "s2v8_reverse_order_john_rank": null,
+  "s2v8_random_order_john_ranks": [
+    1,
+    10,
+    null,
+    1,
+    null,
+    null,
+    null,
+    6,
+    null,
+    19,
+    6,
+    1,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    13,
+    null
+  ],
+  "s2v8_random_order_john_present_count": 8,
+  "s2_random_order_john_ranks": [
+    2,
+    6,
+    30,
+    1,
+    28,
+    null,
+    28,
+    6,
+    null,
+    27,
+    9,
+    2,
+    30,
+    null,
+    null,
+    null,
+    null,
+    27,
+    24,
+    null,
+    null,
+    2,
+    1,
+    30,
+    null,
+    null,
+    null,
+    null,
+    28,
+    null,
+    29,
+    28,
+    null,
+    1,
+    29,
+    25,
+    8,
+    2,
+    null,
+    null,
+    null,
+    null,
+    28,
+    null,
+    29,
+    1,
+    2,
+    null,
+    null,
+    28
+  ],
+  "s2_random_order_uncapped_john_ranks": [
+    2,
+    6,
+    30,
+    1,
+    28,
+    69,
+    28,
+    6,
+    62,
+    27,
+    9,
+    2,
+    30,
+    70,
+    68,
+    69,
+    70,
+    27,
+    24,
+    73,
+    67,
+    2,
+    1,
+    30,
+    72,
+    78,
+    74,
+    70,
+    28,
+    71,
+    29,
+    28,
+    69,
+    1,
+    29,
+    25,
+    8,
+    2,
+    67,
+    77,
+    70,
+    72,
+    28,
+    75,
+    29,
+    1,
+    2,
+    75,
+    70,
+    28
+  ],
+  "s2_random_order_john_present_count": 29,
+  "limits": [
+    "Cache entries have no source content hash and missing IDs were not newly extracted.",
+    "LocalGraph preserves insertion order, while HugeGraph edge enumeration order is not verified.",
+    "S2+V8 replay uses cached embeddings and the production k-means helper but does not run the final fused reranker or answerer.",
+    "The frozen vector seed list came from a prior current-library probe; this is not a same-run live retrieval."
+  ]
+}
