@@ -1,0 +1,171 @@
+{
+  "scope": "Current Chinese Chroma IDs vs three graph caches; no model or graph calls",
+  "current_memory_count": 1995,
+  "current_zhfull_memory_count": 1800,
+  "current_id_content_user_session_sha256": "61e015ce36e4f137db6c0466d835d4d0cee714a17d9fcdf4e24156c7f25cdbd9",
+  "current_users": {
+    "nf53:locomo:conv-42": 195,
+    "zhfull:locomo:conv-26": 138,
+    "zhfull:locomo:conv-30": 102,
+    "zhfull:locomo:conv-41": 209,
+    "zhfull:locomo:conv-42": 195,
+    "zhfull:locomo:conv-43": 211,
+    "zhfull:locomo:conv-44": 186,
+    "zhfull:locomo:conv-47": 197,
+    "zhfull:locomo:conv-48": 224,
+    "zhfull:locomo:conv-49": 161,
+    "zhfull:locomo:conv-50": 177
+  },
+  "caches": {
+    "structured": {
+      "file_sha256": "95265ac274243c67f3199bf048c98b3d5916a5e097b51c223c1146cfaede549d",
+      "cache_key_count": 1705,
+      "current_id_covered_count": 581,
+      "current_id_missing_count": 1414,
+      "current_zhfull_id_covered_count": 581,
+      "current_zhfull_id_missing_count": 1219,
+      "stale_key_count": 1124,
+      "missing_by_user": {
+        "nf53:locomo:conv-42": 195,
+        "zhfull:locomo:conv-26": 1,
+        "zhfull:locomo:conv-30": 22,
+        "zhfull:locomo:conv-41": 209,
+        "zhfull:locomo:conv-42": 195,
+        "zhfull:locomo:conv-43": 12,
+        "zhfull:locomo:conv-44": 21,
+        "zhfull:locomo:conv-47": 197,
+        "zhfull:locomo:conv-48": 224,
+        "zhfull:locomo:conv-49": 161,
+        "zhfull:locomo:conv-50": 177
+      }
+    },
+    "topic": {
+      "file_sha256": "f845ab40a07374eb6b0a9caff35e4dbb82b798e340cf7f48b534a5c49c0371f4",
+      "cache_key_count": 1769,
+      "current_id_covered_count": 633,
+      "current_id_missing_count": 1362,
+      "current_zhfull_id_covered_count": 633,
+      "current_zhfull_id_missing_count": 1167,
+      "stale_key_count": 1136,
+      "missing_by_user": {
+        "nf53:locomo:conv-42": 195,
+        "zhfull:locomo:conv-26": 1,
+        "zhfull:locomo:conv-30": 1,
+        "zhfull:locomo:conv-41": 209,
+        "zhfull:locomo:conv-42": 195,
+        "zhfull:locomo:conv-43": 2,
+        "zhfull:locomo:conv-47": 197,
+        "zhfull:locomo:conv-48": 224,
+        "zhfull:locomo:conv-49": 161,
+        "zhfull:locomo:conv-50": 177
+      }
+    },
+    "memory_embeddings": {
+      "file_sha256": "bae1c42acba31b67a56b43d996e207237b8c0a122dcba3d78a1277a05520d2e4",
+      "cache_key_count": 1786,
+      "current_id_covered_count": 637,
+      "current_id_missing_count": 1358,
+      "current_zhfull_id_covered_count": 637,
+      "current_zhfull_id_missing_count": 1163,
+      "stale_key_count": 1149,
+      "missing_by_user": {
+        "nf53:locomo:conv-42": 195,
+        "zhfull:locomo:conv-41": 209,
+        "zhfull:locomo:conv-42": 195,
+        "zhfull:locomo:conv-47": 197,
+        "zhfull:locomo:conv-48": 224,
+        "zhfull:locomo:conv-49": 161,
+        "zhfull:locomo:conv-50": 177
+      }
+    }
+  },
+  "selected_pair": {
+    "Tim": {
+      "id": "219b4c97-f2af-4734-a4f4-1d93ebe19f99",
+      "current_memory": {
+        "content": "蒂姆最珍视的宝贝是一个由他最喜欢的球员签名的篮球（装在展示盒中），它提醒着他所有的努力",
+        "user_id": "zhfull:locomo:conv-43",
+        "session_id": "session_16"
+      },
+      "structured": {
+        "entities": [
+          {
+            "name": "Tim",
+            "type": "person"
+          },
+          {
+            "name": "signed basketball",
+            "type": "object"
+          },
+          {
+            "name": "favorite player",
+            "type": "person"
+          }
+        ],
+        "events": [],
+        "preferences": [],
+        "relationships": [
+          {
+            "from_entity": "Tim",
+            "relation": "owns",
+            "to_entity": "signed basketball"
+          }
+        ]
+      },
+      "topics": [
+        "sports",
+        "emotions"
+      ],
+      "embedding_cached": true
+    },
+    "John": {
+      "id": "1ffbf4d6-dbe0-4dd9-8ace-54850bbd24cc",
+      "current_memory": {
+        "content": "约翰（John）的队友们在2023年8月见面时送给他一个签名篮球，签名象征他们的友谊和感激之情；这个球提醒他为什么开始打篮球以及他的篮球之路，激励他保持坚强、全力以赴",
+        "user_id": "zhfull:locomo:conv-43",
+        "session_id": "session_7"
+      },
+      "structured": {
+        "entities": [
+          {
+            "name": "John",
+            "type": "person"
+          },
+          {
+            "name": "signed basketball",
+            "type": "object"
+          },
+          {
+            "name": "basketball",
+            "type": "activity"
+          }
+        ],
+        "events": [
+          {
+            "name": "teammates gave John a signed basketball",
+            "date": "2023-08",
+            "participants": "John, teammates"
+          }
+        ],
+        "preferences": [],
+        "relationships": [
+          {
+            "from_entity": "John",
+            "relation": "owns",
+            "to_entity": "signed basketball"
+          }
+        ]
+      },
+      "topics": [
+        "sports",
+        "friends"
+      ],
+      "embedding_cached": true
+    }
+  },
+  "limits": [
+    "Caches keyed only by memory ID; cache membership does not prove extracted claims are source faithful",
+    "Current Chroma content may have changed while an ID stayed the same; caches have no source content hash",
+    "No isolated graph was constructed"
+  ]
+}
