@@ -1,0 +1,73 @@
+{
+  "scope": "Manual source-level labels for the fixed four-question ABBA date-order POC; not a judge score or population estimate",
+  "answer_poc": "results/analysis/m2_chronological_order_answer_poc_20260927.json",
+  "label_rule": "core_time_supported asks whether the answer gives the time warranted by the cited original turn and its session date; extra_precision_or_claim records material qualifiers and added details separately",
+  "summary": {
+    "cases": 4,
+    "answer_calls": 16,
+    "legacy_core_time_supported": "8/8",
+    "chronological_core_time_supported": "8/8",
+    "case_level_clear_gain": 0,
+    "case_level_clear_harm": 0,
+    "prompt_tokens": 36952,
+    "completion_tokens": 1127
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-42_qa20",
+      "source_turns": ["D12:3"],
+      "source_finding": "May 20, 2022 session introduces Max as a new family member; May 2022 is supported, exact adoption day is not stated.",
+      "core_time": "2022年5月",
+      "call_labels": [
+        {"call": 1, "arm": "legacy", "core_time_supported": true},
+        {"call": 2, "arm": "chronological", "core_time_supported": true},
+        {"call": 3, "arm": "chronological", "core_time_supported": true},
+        {"call": 4, "arm": "legacy", "core_time_supported": true}
+      ],
+      "extra_precision_or_claim": "All four use around May 20; the source supports the month and a nearby date, not an exact adoption day.",
+      "order_conclusion": "No clear gain or harm in required time fact."
+    },
+    {
+      "case_id": "locomo_conv-48_qa2",
+      "source_turns": ["D1:5", "D2:1"],
+      "source_finding": "Deborah says her mother died a few years before the January 2023 conversation; her father died two days before the January 27, 2023 session. The parents' dates must remain distinct.",
+      "core_time": "2023年前的几年；母亲具体日期未知",
+      "call_labels": [
+        {"call": 1, "arm": "legacy", "core_time_supported": true},
+        {"call": 2, "arm": "chronological", "core_time_supported": true},
+        {"call": 3, "arm": "chronological", "core_time_supported": true},
+        {"call": 4, "arm": "legacy", "core_time_supported": true}
+      ],
+      "extra_precision_or_claim": "Chronological call 2 and legacy call 4 explicitly distinguish the father's January 25 death; this detail is sourced but unnecessary to answer. Legacy call 1 adds a broad 2022-or-earlier bound; it does not give a specific unsupported mother date.",
+      "order_conclusion": "Both orders preserve the mother/father distinction when stated; no stable order effect."
+    },
+    {
+      "case_id": "locomo_conv-41_qa59",
+      "source_turns": ["D30:6"],
+      "source_finding": "John says in an August 2023 session that he camped with Max last summer, so summer 2022. The campfire photo detail comes from the same turn's image caption/query, not its Chinese text.",
+      "core_time": "2022年夏天",
+      "call_labels": [
+        {"call": 1, "arm": "legacy", "core_time_supported": true},
+        {"call": 2, "arm": "chronological", "core_time_supported": true},
+        {"call": 3, "arm": "chronological", "core_time_supported": true},
+        {"call": 4, "arm": "legacy", "core_time_supported": true}
+      ],
+      "extra_precision_or_claim": "Some calls mention a campfire photo, which is in D30:6 English image fields; that detail does not change the required time fact.",
+      "order_conclusion": "No clear gain or harm in required time fact."
+    },
+    {
+      "case_id": "locomo_conv-50_qa26",
+      "source_turns": ["D15:12"],
+      "source_finding": "Calvin says on August 22, 2023 that he recorded a podcast yesterday with friends, resolving to August 21, 2023.",
+      "core_time": "2023年8月21日",
+      "call_labels": [
+        {"call": 1, "arm": "legacy", "core_time_supported": true},
+        {"call": 2, "arm": "chronological", "core_time_supported": true},
+        {"call": 3, "arm": "chronological", "core_time_supported": true},
+        {"call": 4, "arm": "legacy", "core_time_supported": true}
+      ],
+      "extra_precision_or_claim": "Calls 3 and 4 add the podcast topic, also present in D15:12.",
+      "order_conclusion": "No clear gain or harm in required time fact."
+    }
+  ]
+}

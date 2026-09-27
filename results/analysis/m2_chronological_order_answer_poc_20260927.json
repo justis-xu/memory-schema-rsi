@@ -1,0 +1,438 @@
+{
+  "scope": "Four previously selected/source-audited Chinese temporal questions; frozen no-graph top15; only context date order changes; ABBA; no judge",
+  "source_retrieval": "results/analysis/m2_current_zh_stratified_retrieval_20260927.json",
+  "source_retrieval_sha256": "35326da5323ba8ff8a4f93fac2f03718800083fe5b47cc4909c537f9eb4282bb",
+  "dataset_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "case_ids": [
+    "locomo_conv-42_qa20",
+    "locomo_conv-48_qa2",
+    "locomo_conv-41_qa59",
+    "locomo_conv-50_qa26"
+  ],
+  "order_each_case": [
+    "legacy",
+    "chronological",
+    "chronological",
+    "legacy"
+  ],
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_answer_calls": 16,
+  "logical_store_before": {
+    "embedding_count": 1995,
+    "logical_sha256": "6cb9cbfce210981cb4ee8ac8ae0ca9f0afb5dad4ade1668ba068ec067650a0f9"
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-42_qa20",
+      "question": "内特是什么时候领养马克斯的？",
+      "gold": "2022年5月",
+      "reference_date": "2022-11-11T00:06:00",
+      "context_ids": [
+        "274f54d5-061a-4209-9500-a076ebc8c71b",
+        "00cb343d-a464-48c7-9436-41c6ec941922",
+        "f1a3924e-d4ca-4bbe-ac4e-84feb45290a8",
+        "a13c9c90-484a-45a5-ad10-b9d8afa3b599",
+        "5ba9c146-dec1-40ab-b6bf-de51041292bc",
+        "a5e17e9a-b404-42f4-9fba-79efdd2c2781",
+        "d5d03f01-7af1-47fb-bcc8-9009121217c2",
+        "75b8da4b-af0c-42fc-86b6-76405e6f13a7",
+        "767ee73b-9800-4af5-b413-e8e797bf1013",
+        "f2dfcadb-4502-45a6-a4ba-c5bfe33d242f",
+        "2a427daf-55af-454a-854f-d52e963849aa",
+        "5b85d272-e060-4a52-bc79-0bee27757a32",
+        "acedf2b2-3308-4457-80c1-1cb42f5e262e",
+        "9a942d15-6ef8-4d8c-9248-a6ff84b2ac34",
+        "ad42e2e1-85b0-4560-ab9b-6fc3fbea619d"
+      ],
+      "context_sha256": "e03054c9354c3dc01f2213ee10bb51513313359cb673a7fe83cbe2b207096204",
+      "ordered_ids": {
+        "legacy": [
+          "a13c9c90-484a-45a5-ad10-b9d8afa3b599",
+          "2a427daf-55af-454a-854f-d52e963849aa",
+          "acedf2b2-3308-4457-80c1-1cb42f5e262e",
+          "9a942d15-6ef8-4d8c-9248-a6ff84b2ac34",
+          "d5d03f01-7af1-47fb-bcc8-9009121217c2",
+          "f1a3924e-d4ca-4bbe-ac4e-84feb45290a8",
+          "00cb343d-a464-48c7-9436-41c6ec941922",
+          "767ee73b-9800-4af5-b413-e8e797bf1013",
+          "75b8da4b-af0c-42fc-86b6-76405e6f13a7",
+          "f2dfcadb-4502-45a6-a4ba-c5bfe33d242f",
+          "a5e17e9a-b404-42f4-9fba-79efdd2c2781",
+          "ad42e2e1-85b0-4560-ab9b-6fc3fbea619d",
+          "274f54d5-061a-4209-9500-a076ebc8c71b",
+          "5ba9c146-dec1-40ab-b6bf-de51041292bc",
+          "5b85d272-e060-4a52-bc79-0bee27757a32"
+        ],
+        "chronological": [
+          "f1a3924e-d4ca-4bbe-ac4e-84feb45290a8",
+          "5b85d272-e060-4a52-bc79-0bee27757a32",
+          "9a942d15-6ef8-4d8c-9248-a6ff84b2ac34",
+          "a5e17e9a-b404-42f4-9fba-79efdd2c2781",
+          "f2dfcadb-4502-45a6-a4ba-c5bfe33d242f",
+          "ad42e2e1-85b0-4560-ab9b-6fc3fbea619d",
+          "274f54d5-061a-4209-9500-a076ebc8c71b",
+          "00cb343d-a464-48c7-9436-41c6ec941922",
+          "767ee73b-9800-4af5-b413-e8e797bf1013",
+          "a13c9c90-484a-45a5-ad10-b9d8afa3b599",
+          "2a427daf-55af-454a-854f-d52e963849aa",
+          "acedf2b2-3308-4457-80c1-1cb42f5e262e",
+          "75b8da4b-af0c-42fc-86b6-76405e6f13a7",
+          "d5d03f01-7af1-47fb-bcc8-9009121217c2",
+          "5ba9c146-dec1-40ab-b6bf-de51041292bc"
+        ]
+      },
+      "prompt_sha256": {
+        "legacy": "db17314c14a3785d8ba3c41832bacb8a64f624684bc666b71c40581f3a6b3d16",
+        "chronological": "4d4cd816e76e951afbcbdd26ce5a8de490d09d3175225a8b5b2afaebe8da8366"
+      },
+      "calls": [
+        {
+          "arm": "legacy",
+          "answer": "2022年5月20日前后",
+          "usage": {
+            "prompt_tokens": 2285,
+            "completion_tokens": 10
+          }
+        },
+        {
+          "arm": "chronological",
+          "answer": "内特大约在2022年5月中旬领养了马克斯（2022年5月20日前后）。",
+          "answer_latency_s": 1.418,
+          "usage": {
+            "prompt_tokens": 2285,
+            "completion_tokens": 55
+          }
+        },
+        {
+          "arm": "chronological",
+          "answer": "内特在2022年5月20日前后领养了名叫马克斯（Max）的狗。",
+          "answer_latency_s": 1.784,
+          "usage": {
+            "prompt_tokens": 2285,
+            "completion_tokens": 28
+          }
+        },
+        {
+          "arm": "legacy",
+          "answer": "内特在2022年5月20日前后领养了名叫马克斯（Max）的狗。",
+          "usage": {
+            "prompt_tokens": 2285,
+            "completion_tokens": 28
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa2",
+      "question": "黛博拉的母亲是什么时候去世的？",
+      "gold": "2023年前的几年",
+      "reference_date": "2023-09-20T10:17:00",
+      "context_ids": [
+        "8511340e-a302-4aca-bfab-e066c0d825a1",
+        "4b7a62e1-8410-4be3-bdaa-caddc69440e7",
+        "53330642-0df8-47e7-9a80-7730d6b95834",
+        "c6ff20f6-ece4-490a-92ea-55d0e89b97ac",
+        "99d6eab8-68fd-4c27-89c8-41023a60ad8a",
+        "7629bb61-f99b-4f4b-8bda-467536d0dada",
+        "ffbdc043-e1f8-4f0b-a9b8-4fa4e229fe65",
+        "b41c9621-4262-4188-92cc-b29a3f962a63",
+        "669b69d5-9cfe-4e6f-be9c-3c322a261cdc",
+        "c67ca95e-435c-4cb6-a57b-79ca48ce8cd6",
+        "ee3c8cb2-da86-4131-8526-1d3bf3abd002",
+        "fbda71da-e5d9-46c9-85dd-efc8fafcc06b",
+        "b32c49f7-1ec2-45d3-919b-0f05aa24c52b",
+        "af5f1fb4-ae6a-420c-9983-c607f3ed1dc8",
+        "40f5e14c-ce1a-475b-9cfe-207e14a00bd0"
+      ],
+      "context_sha256": "a8b4a06b7dbb425c74e5c3e230bb7e610e15570351378a30c115c652110dd923",
+      "ordered_ids": {
+        "legacy": [
+          "4b7a62e1-8410-4be3-bdaa-caddc69440e7",
+          "b41c9621-4262-4188-92cc-b29a3f962a63",
+          "53330642-0df8-47e7-9a80-7730d6b95834",
+          "8511340e-a302-4aca-bfab-e066c0d825a1",
+          "c67ca95e-435c-4cb6-a57b-79ca48ce8cd6",
+          "40f5e14c-ce1a-475b-9cfe-207e14a00bd0",
+          "c6ff20f6-ece4-490a-92ea-55d0e89b97ac",
+          "669b69d5-9cfe-4e6f-be9c-3c322a261cdc",
+          "fbda71da-e5d9-46c9-85dd-efc8fafcc06b",
+          "ee3c8cb2-da86-4131-8526-1d3bf3abd002",
+          "b32c49f7-1ec2-45d3-919b-0f05aa24c52b",
+          "99d6eab8-68fd-4c27-89c8-41023a60ad8a",
+          "7629bb61-f99b-4f4b-8bda-467536d0dada",
+          "ffbdc043-e1f8-4f0b-a9b8-4fa4e229fe65",
+          "af5f1fb4-ae6a-420c-9983-c607f3ed1dc8"
+        ],
+        "chronological": [
+          "8511340e-a302-4aca-bfab-e066c0d825a1",
+          "c67ca95e-435c-4cb6-a57b-79ca48ce8cd6",
+          "40f5e14c-ce1a-475b-9cfe-207e14a00bd0",
+          "99d6eab8-68fd-4c27-89c8-41023a60ad8a",
+          "7629bb61-f99b-4f4b-8bda-467536d0dada",
+          "ffbdc043-e1f8-4f0b-a9b8-4fa4e229fe65",
+          "af5f1fb4-ae6a-420c-9983-c607f3ed1dc8",
+          "c6ff20f6-ece4-490a-92ea-55d0e89b97ac",
+          "ee3c8cb2-da86-4131-8526-1d3bf3abd002",
+          "b32c49f7-1ec2-45d3-919b-0f05aa24c52b",
+          "669b69d5-9cfe-4e6f-be9c-3c322a261cdc",
+          "fbda71da-e5d9-46c9-85dd-efc8fafcc06b",
+          "4b7a62e1-8410-4be3-bdaa-caddc69440e7",
+          "53330642-0df8-47e7-9a80-7730d6b95834",
+          "b41c9621-4262-4188-92cc-b29a3f962a63"
+        ]
+      },
+      "prompt_sha256": {
+        "legacy": "9913f540507dbfed23c1656f9494639348c5306a1729f1253e89b16ac4800240",
+        "chronological": "f84536ddea3dc8b1d0b91ad3657d69f85848a17b623d4766567d1b2bd8f8a042"
+      },
+      "calls": [
+        {
+          "arm": "legacy",
+          "answer": "黛博拉（黛布）的母亲是在几年前去世的（相对于2023年初的对话而言），具体在2022年或更早之前。",
+          "usage": {
+            "prompt_tokens": 2295,
+            "completion_tokens": 123
+          }
+        },
+        {
+          "arm": "chronological",
+          "answer": "黛博拉（黛布）的母亲是在几年前去世的（早于2023年初的对话记录，具体日期未提及）。注意：2023年1月25日去世的是黛布的父亲。",
+          "answer_latency_s": 5.061,
+          "usage": {
+            "prompt_tokens": 2295,
+            "completion_tokens": 178
+          }
+        },
+        {
+          "arm": "chronological",
+          "answer": "黛布（黛博拉）的母亲是在几年前去世的——大约在2023年1月的对话之前若干年（具体日期未记录）。",
+          "answer_latency_s": 9.17,
+          "usage": {
+            "prompt_tokens": 2295,
+            "completion_tokens": 332
+          }
+        },
+        {
+          "arm": "legacy",
+          "answer": "黛博拉的母亲在几年前去世（具体日期未记录，但早于2023年1月的对话，早于其父亲2023年1月25日去世的时间）。",
+          "usage": {
+            "prompt_tokens": 2295,
+            "completion_tokens": 117
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa59",
+      "question": "约翰是什么时候带马克斯去露营的？",
+      "gold": "2022年夏天",
+      "reference_date": "2023-08-16T11:08:00",
+      "context_ids": [
+        "d8dd4b98-ecd8-412d-b1ef-fdfca560943e",
+        "e2a8324f-3823-4420-9d1f-577fdaf0add1",
+        "3c25d58d-32e5-4abb-8774-92a9775122e6",
+        "e41ad086-7a97-4f47-a124-f07ba73e8df6",
+        "3719e448-130f-4f97-bf5a-b6d7b10493a5",
+        "59b6c677-c1f6-4e63-b55d-04d3fe3ad81f",
+        "f39be5e6-5ee9-4dd3-b995-a6baf51a01f2",
+        "01ed7b5d-64dc-4e3d-a2c4-a2949d45a0a0",
+        "1609b51f-32ca-4329-815c-e5b4c56512b5",
+        "7b16f6b5-51fa-426c-b927-26d10b154892",
+        "fdd3da31-61c3-4372-b85c-6d6aba9d3728",
+        "1a7f75de-4b71-42b6-9b6c-4aec29e0ca18",
+        "60c767a2-c340-42a8-ad8a-b472902fefd5",
+        "ceb1a846-9b6f-45f8-8ae9-959e07e65e6b",
+        "bc256942-e0eb-497e-a9bf-8d3bfa877360"
+      ],
+      "context_sha256": "b3668d404b7fc842830ae62a2970e00699a6da966c4f79d763f98ea7b1fc2242",
+      "ordered_ids": {
+        "legacy": [
+          "3c25d58d-32e5-4abb-8774-92a9775122e6",
+          "3719e448-130f-4f97-bf5a-b6d7b10493a5",
+          "1609b51f-32ca-4329-815c-e5b4c56512b5",
+          "e2a8324f-3823-4420-9d1f-577fdaf0add1",
+          "bc256942-e0eb-497e-a9bf-8d3bfa877360",
+          "60c767a2-c340-42a8-ad8a-b472902fefd5",
+          "7b16f6b5-51fa-426c-b927-26d10b154892",
+          "1a7f75de-4b71-42b6-9b6c-4aec29e0ca18",
+          "d8dd4b98-ecd8-412d-b1ef-fdfca560943e",
+          "fdd3da31-61c3-4372-b85c-6d6aba9d3728",
+          "e41ad086-7a97-4f47-a124-f07ba73e8df6",
+          "ceb1a846-9b6f-45f8-8ae9-959e07e65e6b",
+          "01ed7b5d-64dc-4e3d-a2c4-a2949d45a0a0",
+          "59b6c677-c1f6-4e63-b55d-04d3fe3ad81f",
+          "f39be5e6-5ee9-4dd3-b995-a6baf51a01f2"
+        ],
+        "chronological": [
+          "3c25d58d-32e5-4abb-8774-92a9775122e6",
+          "59b6c677-c1f6-4e63-b55d-04d3fe3ad81f",
+          "f39be5e6-5ee9-4dd3-b995-a6baf51a01f2",
+          "e41ad086-7a97-4f47-a124-f07ba73e8df6",
+          "ceb1a846-9b6f-45f8-8ae9-959e07e65e6b",
+          "01ed7b5d-64dc-4e3d-a2c4-a2949d45a0a0",
+          "60c767a2-c340-42a8-ad8a-b472902fefd5",
+          "3719e448-130f-4f97-bf5a-b6d7b10493a5",
+          "1609b51f-32ca-4329-815c-e5b4c56512b5",
+          "7b16f6b5-51fa-426c-b927-26d10b154892",
+          "1a7f75de-4b71-42b6-9b6c-4aec29e0ca18",
+          "bc256942-e0eb-497e-a9bf-8d3bfa877360",
+          "e2a8324f-3823-4420-9d1f-577fdaf0add1",
+          "d8dd4b98-ecd8-412d-b1ef-fdfca560943e",
+          "fdd3da31-61c3-4372-b85c-6d6aba9d3728"
+        ]
+      },
+      "prompt_sha256": {
+        "legacy": "01955ad2a5d7292a056d5066b5f8e0e804009bccdc649cd63c23a72cd6d1fc4d",
+        "chronological": "9cdaa95b7cb24e65f8248eee151ccc3c06990d618b5f2eeba1a05013731620cc"
+      },
+      "calls": [
+        {
+          "arm": "legacy",
+          "answer": "ANSWER：约翰在2022年夏天带马克斯去露营，一起远足、游泳、在篝火旁合影，觉得那是一次宁静美好的经历。",
+          "usage": {
+            "prompt_tokens": 2313,
+            "completion_tokens": 37
+          }
+        },
+        {
+          "arm": "chronological",
+          "answer": "2022年夏天（去年夏天）。",
+          "answer_latency_s": 0.991,
+          "usage": {
+            "prompt_tokens": 2313,
+            "completion_tokens": 10
+          }
+        },
+        {
+          "arm": "chronological",
+          "answer": "2022年夏天（约翰和马克斯一起露营，远足、游泳、篝火旁合影）。",
+          "answer_latency_s": 1.285,
+          "usage": {
+            "prompt_tokens": 2313,
+            "completion_tokens": 29
+          }
+        },
+        {
+          "arm": "legacy",
+          "answer": "回忆：2022年夏天和马克斯露营；其中一条（8月13日）说“去年夏天（2022年）”。\n\n回答：约翰是在2022年夏天带马克斯去露营的。他们一起远足、游泳，并在篝火旁合影，约翰认为那是一次非常宁静美好的经历。",
+          "usage": {
+            "prompt_tokens": 2313,
+            "completion_tokens": 69
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa26",
+      "question": "卡尔文是什么时候和朋友录播客的？",
+      "gold": "2023年8月21日",
+      "reference_date": "2023-11-17T10:54:00",
+      "context_ids": [
+        "347585eb-e81e-4ee8-a075-3b001887523c",
+        "8880332e-975e-452d-bf01-38e14b0a2d65",
+        "2086da69-d96c-43b6-861d-e8613171c2fe",
+        "50de96ea-6e14-4344-9e3a-c91866bc320f",
+        "07270261-9d46-4165-a9a2-7b89ea5a4272",
+        "25a4c08f-7eff-4cd1-af61-c4c69a953cb3",
+        "4fccebc8-eda9-45d9-a3a7-79e03a554b2a",
+        "d0c7be14-db50-450b-b577-003a02cd8e7e",
+        "1068c39e-c50d-4e56-85a5-c18631c6dc0b",
+        "f6fed4de-d8cf-4b4c-a65f-50903282af97",
+        "8376013a-d5da-424a-948a-ab27167e6c5a",
+        "348fb3da-3c66-47c5-8cd7-a3fa940a36af",
+        "4a2c3d76-185f-49df-8f6b-9094cc3d97fc",
+        "011dc202-9506-4188-b349-17b97b6d2b6b",
+        "7324fe6b-bf53-4c9c-8833-1d51087b20b8"
+      ],
+      "context_sha256": "2709704a6da4e94f491d833d70a977e1ea3e84c365f6d6e140f17d04039b8372",
+      "ordered_ids": {
+        "legacy": [
+          "2086da69-d96c-43b6-861d-e8613171c2fe",
+          "4a2c3d76-185f-49df-8f6b-9094cc3d97fc",
+          "1068c39e-c50d-4e56-85a5-c18631c6dc0b",
+          "348fb3da-3c66-47c5-8cd7-a3fa940a36af",
+          "347585eb-e81e-4ee8-a075-3b001887523c",
+          "8880332e-975e-452d-bf01-38e14b0a2d65",
+          "8376013a-d5da-424a-948a-ab27167e6c5a",
+          "011dc202-9506-4188-b349-17b97b6d2b6b",
+          "07270261-9d46-4165-a9a2-7b89ea5a4272",
+          "4fccebc8-eda9-45d9-a3a7-79e03a554b2a",
+          "50de96ea-6e14-4344-9e3a-c91866bc320f",
+          "25a4c08f-7eff-4cd1-af61-c4c69a953cb3",
+          "7324fe6b-bf53-4c9c-8833-1d51087b20b8",
+          "d0c7be14-db50-450b-b577-003a02cd8e7e",
+          "f6fed4de-d8cf-4b4c-a65f-50903282af97"
+        ],
+        "chronological": [
+          "50de96ea-6e14-4344-9e3a-c91866bc320f",
+          "011dc202-9506-4188-b349-17b97b6d2b6b",
+          "4fccebc8-eda9-45d9-a3a7-79e03a554b2a",
+          "d0c7be14-db50-450b-b577-003a02cd8e7e",
+          "07270261-9d46-4165-a9a2-7b89ea5a4272",
+          "347585eb-e81e-4ee8-a075-3b001887523c",
+          "8880332e-975e-452d-bf01-38e14b0a2d65",
+          "8376013a-d5da-424a-948a-ab27167e6c5a",
+          "2086da69-d96c-43b6-861d-e8613171c2fe",
+          "f6fed4de-d8cf-4b4c-a65f-50903282af97",
+          "4a2c3d76-185f-49df-8f6b-9094cc3d97fc",
+          "25a4c08f-7eff-4cd1-af61-c4c69a953cb3",
+          "7324fe6b-bf53-4c9c-8833-1d51087b20b8",
+          "1068c39e-c50d-4e56-85a5-c18631c6dc0b",
+          "348fb3da-3c66-47c5-8cd7-a3fa940a36af"
+        ]
+      },
+      "prompt_sha256": {
+        "legacy": "b25e497505df9611ee1ca2ed9b8fbe8d0f1c714811687a69fef45ba537fd0061",
+        "chronological": "f11408a010226a9ec2b9160046b0bf14e23dffc2629ed86def76042484099ad2"
+      },
+      "calls": [
+        {
+          "arm": "legacy",
+          "answer": "2023年8月21日",
+          "usage": {
+            "prompt_tokens": 2345,
+            "completion_tokens": 13
+          }
+        },
+        {
+          "arm": "chronological",
+          "answer": "2023年8月21日",
+          "answer_latency_s": 1.324,
+          "usage": {
+            "prompt_tokens": 2345,
+            "completion_tokens": 37
+          }
+        },
+        {
+          "arm": "chronological",
+          "answer": "卡尔文于2023年8月21日和朋友录了一期播客，讨论飞速发展的说唱行业。",
+          "answer_latency_s": 1.506,
+          "usage": {
+            "prompt_tokens": 2345,
+            "completion_tokens": 30
+          }
+        },
+        {
+          "arm": "legacy",
+          "answer": "卡尔文于2023年8月21日和朋友录了一期播客，讨论了飞速发展的说唱行业。",
+          "usage": {
+            "prompt_tokens": 2345,
+            "completion_tokens": 31
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "A fixed four-question mechanism sample, not an accuracy estimate",
+    "Only date order changes; no graph candidate, date recovery or rerank change",
+    "No judge calls; source-based manual labels follow separately"
+  ],
+  "logical_store_after": {
+    "embedding_count": 1995,
+    "logical_sha256": "6cb9cbfce210981cb4ee8ac8ae0ca9f0afb5dad4ade1668ba068ec067650a0f9"
+  },
+  "logical_store_unchanged": true,
+  "completed": true
+}
