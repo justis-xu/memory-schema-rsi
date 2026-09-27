@@ -1,0 +1,99 @@
+{
+  "scope": "Manual labels for fixed 12/57 SHA sample; fact availability is not causal answer gain",
+  "labels": [
+    {
+      "case_id": "locomo_conv-49_qa32",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base slot 1 and base answer already say Evan loses keys weekly; gained graph memories discuss health and Sam's phone.",
+      "score_note": "Base judge penalizes '几乎每周' and broader '丢东西'; graph answer uses unhedged weekly keys."
+    },
+    {
+      "case_id": "locomo_conv-49_qa85",
+      "base_core_answer_present": false,
+      "graph_new_necessary_fact": true,
+      "basis": "Base has years of painting and watercolor in separate memories; gained graph slot 13 joins watercolor with starting years ago, supported by D1:14-17.",
+      "score_note": "Graph answer specifies watercolor; base only says painting. Historical version only; current no-graph retrieval already has the joined relation."
+    },
+    {
+      "case_id": "locomo_conv-44_qa109",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base answer already says exploration of nature; gained graph memory concerns breeds and fetch.",
+      "score_note": "Base judge penalizes extra comfort category, graph judge accepts outdoor elaboration."
+    },
+    {
+      "case_id": "locomo_conv-48_qa83",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base slots 1/2/8 cover workshop-like seminars, internship, and virtual presentation; gained graph memories are other projects/plans.",
+      "score_note": "Chinese source says 研讨会 for English workshops; base judge rejects the term, graph judge accepts the same term."
+    },
+    {
+      "case_id": "locomo_conv-26_qa41",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base slot 1 and answer already give approximately July 18; gained graph memory is a June workshop.",
+      "score_note": "Base '约' penalized, graph unhedged date accepted. English 'last Tues' on July 20 is rendered 上周二 in Chinese, which can refer to July 11 under literal calendar-week reading."
+    },
+    {
+      "case_id": "locomo_conv-42_qa60",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Both answers already infer Nintendo Switch from the game/Nintendo clues; gained graph memory is a Street Fighter tournament.",
+      "score_note": "Gold names Xenoblade 2/Switch, while marked English/Chinese source says Xenoblade Chronicles without '2' and does not state console ownership; inference relies on external game knowledge."
+    },
+    {
+      "case_id": "locomo_conv-41_qa40",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base slots 1/2 and answer already name Kyle and Sara; gained graph memories concern dog Max.",
+      "score_note": "Base judge rejects cautious 'mentioned names include', graph judge accepts a response that also limits itself to names mentioned in memory."
+    },
+    {
+      "case_id": "locomo_conv-49_qa139",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base slot 1 and both answers say GPS tracker for the keys; gained graph memory is a fitness tracker.",
+      "score_note": "Base judge rejects GPS追踪器 versus gold GPS传感器; graph judge accepts GPS追踪器 as equivalent."
+    },
+    {
+      "case_id": "locomo_conv-26_qa71",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base slot 2 and answer name Becoming Nicole; source D7:11 recommends it and D17:10 says Melanie read the recommended book; gained graph memory concerns adoption agency.",
+      "score_note": "Base answer hedges '应该是' and mixes English/Chinese title, graph answer states the same title decisively."
+    },
+    {
+      "case_id": "locomo_conv-43_qa85",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base slot 1 and answer already name the Harry Potter trivia contest, with '激烈' in the answer body; gained graph memory concerns childhood basketball.",
+      "score_note": "Base judge says intensity missing; graph judge treats '激烈' as nonessential."
+    },
+    {
+      "case_id": "locomo_conv-41_qa21",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base slots 1/3 and answer already contain East Coast and Pacific Northwest; gained graph memory concerns community meeting.",
+      "score_note": "Both answers add California and West County; base judge penalizes additional regions, graph judge accepts them."
+    },
+    {
+      "case_id": "locomo_conv-41_qa91",
+      "base_core_answer_present": true,
+      "graph_new_necessary_fact": false,
+      "basis": "Base slot 1 and answer already say convention with coworkers focused on using technology for community good; gained graph memories are yoga, pizza, and charity events.",
+      "score_note": "Base judge requires literal 科技向善大会 name, graph judge accepts the same descriptive fact."
+    }
+  ],
+  "counts": {
+    "sampled": 12,
+    "base_core_answer_present": 11,
+    "graph_new_necessary_fact": 1
+  },
+  "limits": [
+    "Labels use source and final contexts in fixed historical runs; they do not establish causal graph benefit.",
+    "The 12-case fixed random sample is small and drawn from a score-selected 57-case cohort; counts are descriptive only.",
+    "Gold/source ambiguity in conv-26_qa41 and conv-42_qa60 must be kept separate from retrieval effects."
+  ]
+}
