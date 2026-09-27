@@ -1,0 +1,88 @@
+{
+  "scope": "Read-only literal month comparison in aligned LoCoMo English/Chinese gold answers; no model calls",
+  "total_qa": 1986,
+  "single_month_comparable": 206,
+  "mismatch_count": 1,
+  "mismatches": [
+    {
+      "case_id": "locomo_conv-30_qa15",
+      "category": 2,
+      "english": {
+        "question": "When did Jon host a dance competition?",
+        "gold": "May, 2023",
+        "month": 5
+      },
+      "chinese": {
+        "question": "乔恩什么时候举办了舞蹈比赛？",
+        "gold": "2023年七月",
+        "month": 7
+      },
+      "evidence_ids": [
+        "D8:13"
+      ],
+      "chinese_source_evidence": [
+        {
+          "turn_id": "D8:13",
+          "session_date": "1:26 pm on 3 April, 2023",
+          "speaker": "乔恩",
+          "text": "谢谢，吉娜！我正在扩展舞蹈工作室的社交媒体影响力，并为当地学校和社区中心提供工作坊和课程。下个月我还会举办一场舞蹈比赛，展示本地人才，为我的工作室带来更多关注。所有的努力都有了回报——我看到了进步，舞者们也非常兴奋。能给大家提供一个通过舞蹈表达自我的平台，这种感觉太棒了！"
+        }
+      ]
+    }
+  ],
+  "eight_chinese_main_run_exposure": [
+    {
+      "path": "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+      "expected": "2023年七月",
+      "prediction": "回答：乔恩计划于2023年5月举办舞蹈比赛，届时他的舞蹈工作室和其他几所学校将展示他们的舞蹈编排、表演和评审，以展示本地人才。",
+      "judge_correct": false
+    },
+    {
+      "path": "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+      "expected": "2023年七月",
+      "prediction": "乔恩在2023年3月举办了舞蹈比赛（他当时正为此做准备，希望展示舞技并获得认可）；此外他还计划在2023年5月再举办一场舞蹈比赛。",
+      "judge_correct": false
+    },
+    {
+      "path": "results_zh/zhfull_fused_locomo_20260925_161049.jsonl",
+      "expected": "2023年七月",
+      "prediction": "乔恩的舞蹈比赛计划在2023年5月举办（他此前还为2023年3月的一场舞蹈比赛做过准备）。",
+      "judge_correct": false
+    },
+    {
+      "path": "results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+      "expected": "2023年七月",
+      "prediction": "乔恩计划/举办舞蹈比赛的时间是2023年5月（2023年4月3日他提到此计划并邀请吉娜观看，吉娜已答应）。此外他还为2023年3月的一场舞蹈比赛做过准备。",
+      "judge_correct": false
+    },
+    {
+      "path": "results_zh/zhfull_fused_locomo_20260925_195248.jsonl",
+      "expected": "2023年七月",
+      "prediction": "乔恩计划在2023年5月举办舞蹈比赛——他的舞蹈工作室和其他学校将带来精彩表演，这是由评审和表演组成的夜晚，旨在展示本地人才并为工作室吸引关注，他还邀请了吉娜到场观看。",
+      "judge_correct": false
+    },
+    {
+      "path": "results_zh/zhfull_locomo_20260925_115806.jsonl",
+      "expected": "2023年七月",
+      "prediction": "乔恩计划在2023年5月举办舞蹈比赛（2023年4月3日提到，他的舞蹈工作室和其他学校将参加，吉娜也已答应去看演出）。",
+      "judge_correct": false
+    },
+    {
+      "path": "results_zh/zhfull_locomo_20260925_151059.jsonl",
+      "expected": "2023年七月",
+      "prediction": "2023年5月（另曾为2023年3月的舞蹈比赛做准备）",
+      "judge_correct": false
+    },
+    {
+      "path": "results_zh/zhfull_locomo_20260925_164645.jsonl",
+      "expected": "2023年七月",
+      "prediction": "乔恩的舞蹈比赛安排在2023年5月举办（2023年4月3日他计划并邀请吉娜到场观看）。此外，他还为2023年3月在附近举行的一场舞蹈比赛做过准备。",
+      "judge_correct": false
+    }
+  ],
+  "limits": [
+    "Only gold answers with exactly one full English month name and one Chinese month expression were compared",
+    "The other 1,780 QA were not ruled free of translation errors",
+    "Historical judge outcomes are observational; correcting the dataset would require a separate versioned evaluation"
+  ]
+}

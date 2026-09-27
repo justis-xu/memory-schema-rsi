@@ -1,0 +1,464 @@
+{
+  "scope": "Random fixed sample of matched archived Chinese temporal nonexact cases; source packets only, no model calls",
+  "seed": 20260927,
+  "sample_size": 12,
+  "eligible_size": 149,
+  "inputs": [
+    "results_zh/zhfull_locomo_20260925_115806.jsonl",
+    "results/precision_regrade_zhfull.jsonl",
+    "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json"
+  ],
+  "sampled_ids": [
+    "locomo_conv-42_qa7",
+    "locomo_conv-49_qa39",
+    "locomo_conv-44_qa37",
+    "locomo_conv-41_qa27",
+    "locomo_conv-30_qa13",
+    "locomo_conv-30_qa15",
+    "locomo_conv-49_qa59",
+    "locomo_conv-47_qa66",
+    "locomo_conv-47_qa39",
+    "locomo_conv-41_qa13",
+    "locomo_conv-44_qa34",
+    "locomo_conv-42_qa22"
+  ],
+  "cases": [
+    {
+      "case_id": "locomo_conv-42_qa7",
+      "question": "乔安娜是什么时候完成她的第一部剧本的？",
+      "gold": "2022年1月23日之前的那个星期五",
+      "pred": "乔安娜于2022年1月中旬完成了她的第一个完整电影剧本，并于1月21日（周五）把它打印了出来。",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D2:3",
+          "session_date": "2:01 pm on 23 January, 2022",
+          "speaker": "乔安娜",
+          "text": "呼！我终于完成了我的第一个完整电影剧本，上周五打印出来了。我已经写了好一阵子，终于全部完成真是如释重负！",
+          "caption": "a photography of a book with a page of text on it",
+          "query": "screenplay laptop"
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "b2f77505-14cf-4713-b9c9-25d9ae60e2d9",
+          "content": "乔安娜 (Joanna) 于2022年1月中旬完成了她的第一个完整电影剧本，并于1月21日（周五）打印出来，剧本融合了剧情和爱情元素，她感到如释重负、兴奋又有些焦虑",
+          "session_date": "2:01 pm on 23 January, 2022"
+        },
+        {
+          "memory_id": "103a0c4f-3e7c-4dfb-b4fe-1535ae1cc0e4",
+          "content": "乔安娜 (Joanna) 已于2022年5月前完成剧本创作，回顾那段艰难日子时认为正是那些快乐时刻让旅程值得；她计划让内特看剧本并很看重他的意见",
+          "session_date": "3:00 pm on 25 May, 2022"
+        },
+        {
+          "memory_id": "4abe1e44-fca2-4c24-9fab-935ed7ffd927",
+          "content": "乔安娜 (Joanna) 于2022年9月底（约9月29日当周）完成了她自己那本书的写作，经过无数个深夜和多轮修改，她感到非常自豪并期待接下来会怎样",
+          "session_date": "11:15 am on 6 October, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa39",
+      "question": "萨姆第一次和第二次看医生之间相隔了几个月？",
+      "gold": "3",
+      "pred": "** 大约3个月",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D2:6",
+          "session_date": "7:11 pm on 24 May, 2023",
+          "speaker": "萨姆",
+          "text": "谢谢，埃文。谢谢你的好意，不过几天前我去医生那里做了个体检，哎呀，体重状况不太好。还挺让人警醒的。",
+          "caption": null,
+          "query": null
+        },
+        {
+          "turn_id": "D7:2",
+          "session_date": "4:20 pm on 15 August, 2023",
+          "speaker": "萨姆",
+          "text": "嘿埃文，听到这事我很难过。我能想象这对你来说有多不容易。我这段时间也不轻松。这周过得很艰难，还去看了医生，这算是给我敲了个警钟，要更好地照顾自己。好的一面是，我正在上烹饪课，学习做更健康的饭菜。",
+          "caption": null,
+          "query": null
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "e3117b73-a385-4a64-830a-cdfd9fe988dd",
+          "content": "Sam had a rough week and went to the doctor for a checkup a few days before May 24, 2023, receiving discouraging news about his weight that he found alarming",
+          "session_date": "7:11 pm on 24 May, 2023"
+        },
+        {
+          "memory_id": "c6109bcc-194e-47ba-9805-12a41403c9f1",
+          "content": "Sam已经很长时间没有看医生了，但计划预约一次，以咨询均衡饮食计划和低强度运动建议（截至2024年1月）",
+          "session_date": "12:17 am on 10 January, 2024"
+        },
+        {
+          "memory_id": "6dcd2e4f-ccd6-4274-a119-ea15e49a2bcc",
+          "content": "Sam had a physical checkup on Monday (around October 2, 2023) where the doctor said his weight poses a serious health risk that will worsen if he doesn't make changes soon; he feels real pressure now and finds this period difficult",
+          "session_date": "3:09 pm on 8 October, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa37",
+      "question": "奥黛丽是什么时候在公园出事故的？",
+      "gold": "2023年10月19日至24日之间",
+      "pred": "2023年10月中旬（约10月16-20日）",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D25:2",
+          "session_date": "10:14 am on 24 October, 2023",
+          "speaker": "奥黛丽",
+          "text": "嘿！哈，很高兴你们在品酒会上玩得开心。是啊，尝试新东西挺酷的。对了，上周我经历了一场意外的小冒险。我在公园和我的狗狗们玩耍时出了点事故。用一只手臂照顾它们挺麻烦的，但我们在努力应对。你最近怎么样？有什么新爱好吗？",
+          "caption": "a photo of a person with a cast on their arm and arm in a cast",
+          "query": "broken arm cast"
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "54eb308d-9709-4911-a6c8-3a1969acfa9a",
+          "content": "2023年10月中旬（约10月16-20日），奥黛丽在公园和狗狗们玩耍时出了意外，一只手臂打了石膏，用一只手臂照顾狗狗们很麻烦，但她们在努力应对，她每天都在好转",
+          "session_date": "10:14 am on 24 October, 2023"
+        },
+        {
+          "memory_id": "33297eec-bdae-41d4-9843-521239e677cb",
+          "content": "2023年9月15日（周五），奥黛丽在公园遛狗时，一只小狗被事物吸引拽得太用力导致牵引绳断裂（红色伸缩牵引绳，黑色手柄）。她担心狗跑丢受伤，追了上去并在出事前抓住了它。这次经历提醒她出门要多加小心",
+          "session_date": "5:53 pm on 24 September, 2023"
+        },
+        {
+          "memory_id": "50e3182a-3282-4791-bbca-671893de0c18",
+          "content": "2023年6月1日，奥黛丽带她的四只狗狗去了公园，它们不用牵引绳四处奔跑玩耍。看着狗狗们的快乐让她满心欢喜、内心安宁",
+          "session_date": "11:27 am on 2 June, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa27",
+      "question": "约翰是什么时候和退伍军人们开派对的？",
+      "gold": "2023年5月20日之前的那个周五",
+      "pred": "约翰在2023年5月12日左右（5月中旬）举办了一个小型聚会，邀请退伍军人们分享他们的故事，帮助他们建立联系和友谊。",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D15:11",
+          "session_date": "7:38 pm on 20 May, 2023",
+          "speaker": "约翰",
+          "text": "太好了，玛丽亚！我就知道你会支持。有你的帮助，我们能产生真正的影响。非常感谢！这是上周五和一些对此非常兴奋的退伍军人的照片。他们的支持让我充满动力。",
+          "caption": "a photography of a man shaking hands with a soldier in uniform",
+          "query": "group of veterans smiling and shaking hands"
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "304faeea-4994-44c3-a66e-e1b10c174ef5",
+          "content": "Around Friday May 12, 2023, John hosted a small gathering where veterans shared their stories; it helped them build connections and camaraderie, and John found their smiles and new friendships heartwarming",
+          "session_date": "7:38 pm on 20 May, 2023"
+        },
+        {
+          "memory_id": "309c9e35-674a-450f-9350-a2251ec2b21f",
+          "content": "John participated in a rally advocating for veterans' rights around early July 2023, motivated by his deep respect for military service members and belief in standing up for what he believes in; he found it inspiring to be around like-minded people",
+          "session_date": "8:43 pm on 3 July, 2023"
+        },
+        {
+          "memory_id": "81362012-007b-494f-bc1f-74be8f9e4ac1",
+          "content": "John在2023年8月初邀请家人和朋友加入他参加的虚拟互助小组，为军人做宣传，看到大家团结支持服役人员让他非常感动",
+          "session_date": "6:20 pm on 3 August, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa13",
+      "question": "吉娜什么时候开了她的网上服装店？",
+      "gold": "2023年3月16日",
+      "pred": "吉娜的网上服装店于2023年3月16日左右正式开张（3月中旬）。",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D6:6",
+          "session_date": "2:35 pm on 16 March, 2023",
+          "speaker": "吉娜",
+          "text": "耶！我的网上服装店开张了！这是我梦想已久的事——等不及想看看会怎样！",
+          "caption": "a photo of a computer screen showing a book and a pair of shoes",
+          "query": "online clothing store website screenshot"
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "5931c7af-9d38-4bfa-a6f0-4d8e8179c4b3",
+          "content": "吉娜的网上服装店于2023年3月16日左右正式开张，这是她梦想已久的事；开店动机是她热衷时尚潮流和淘独特单品，并希望把对舞蹈和时尚的热爱结合起来",
+          "session_date": "2:35 pm on 16 March, 2023"
+        },
+        {
+          "memory_id": "597ba4d2-aae1-403e-b2f1-81bab35f546b",
+          "content": "2023年4月25日，吉娜告诉乔恩她不久前开了一家卖衣服的网店，失去工作后想掌控自己的命运，这条路艰难但非常有收获",
+          "session_date": "11:24 am on 25 April, 2023"
+        },
+        {
+          "memory_id": "25be9ad4-ffa0-4bc4-a219-7041966a2ee5",
+          "content": "截至2023年7月21日，吉娜为自己的服装店建了一个方便顾客下单的新网站，过程不易但她很享受",
+          "session_date": "5:44 pm on 21 July, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-30_qa15",
+      "question": "乔恩什么时候举办了舞蹈比赛？",
+      "gold": "2023年七月",
+      "pred": "乔恩计划在2023年5月举办舞蹈比赛（2023年4月3日提到，他的舞蹈工作室和其他学校将参加，吉娜也已答应去看演出）。",
+      "grade": "wrong",
+      "evidence": [
+        {
+          "turn_id": "D8:13",
+          "session_date": "1:26 pm on 3 April, 2023",
+          "speaker": "乔恩",
+          "text": "谢谢，吉娜！我正在扩展舞蹈工作室的社交媒体影响力，并为当地学校和社区中心提供工作坊和课程。下个月我还会举办一场舞蹈比赛，展示本地人才，为我的工作室带来更多关注。所有的努力都有了回报——我看到了进步，舞者们也非常兴奋。能给大家提供一个通过舞蹈表达自我的平台，这种感觉太棒了！",
+          "caption": null,
+          "query": null
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "a3b329c4-54cc-4036-a9e4-632cc34d5ca9",
+          "content": "乔恩计划在2023年5月举办一场舞蹈比赛，他的舞蹈工作室和其他一些学校将带来最棒的舞步，呈现充满表演和评审的夜晚，旨在展示本地人才并为工作室带来更多关注；他邀请吉娜到场，吉娜已答应去看演出",
+          "session_date": "1:26 pm on 3 April, 2023"
+        },
+        {
+          "memory_id": "18251b9f-f071-458a-a610-c6684ac95a45",
+          "content": "乔恩正在为2023年3月在他附近举行的一场舞蹈比赛做准备，把这视为展示舞技并希望获得舞蹈圈伙伴认可的机会，他对此非常兴奋",
+          "session_date": "10:43 am on 4 February, 2023"
+        },
+        {
+          "memory_id": "9fbb9b83-a653-40e9-882e-d0afacce9e98",
+          "content": "去年（2022年），乔恩的舞蹈团队在当地舞蹈比赛中获得第一名；一张他在舞台上穿西装表演的照片记录了这一时刻。",
+          "session_date": "4:04 pm on 20 January, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-49_qa59",
+      "question": "萨姆和他的朋友决定什么时候去玩皮划艇？",
+      "gold": "2023年10月14日",
+      "pred": "萨姆和他的朋友决定在2023年10月14日左右（10月中旬）去太浩湖（Lake Tahoe）玩皮划艇。",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D13:10",
+          "session_date": "4:07 pm on 14 October, 2023",
+          "speaker": "萨姆",
+          "text": "谢谢你的建议，我和我的伙伴马上就要去湖上划皮划艇了，我们现在就去试试！",
+          "caption": null,
+          "query": null
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "8ca50d2d-3ce6-4c3c-9198-b1bcdcff23ad",
+          "content": "Sam and his partner planned a kayaking trip at Lake Tahoe around mid-October 2023, a spot known for kayaking with clear water and beautiful scenery",
+          "session_date": "4:07 pm on 14 October, 2023"
+        },
+        {
+          "memory_id": "f5461992-ae36-4980-99e1-f58fd4e25c80",
+          "content": "Sam had never tried kayaking but decided to try it around October 14, 2023, viewing it as a fun way to exercise and enjoy nature; he was considering different outdoor activities",
+          "session_date": "4:07 pm on 14 October, 2023"
+        },
+        {
+          "memory_id": "cd2cf555-47b6-4f11-b66b-d5993056ab47",
+          "content": "Evan offered to plan a kayaking trip with Sam and pick a cool spot if Sam enjoys his first kayaking experience",
+          "session_date": "4:07 pm on 14 October, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa66",
+      "question": "约翰是什么时候和一位游戏开发者合作一个项目的？",
+      "gold": "2022年11月5日至6日",
+      "pred": "约翰在2022年11月初的周末与一位游戏开发者合作开发了一款线上桌游。",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D31:2",
+          "session_date": "8:57 pm on 7 November, 2022",
+          "speaker": "约翰",
+          "text": "嘿，詹姆斯！听起来太棒了！我这个周末过得超级开心——我和一位游戏开发者合作做了一个项目，看到我的想法变成现实真是太棒了。这是一次不可思议的经历！",
+          "caption": "a photo of a wooden board game with four pieces of wood and four pieces of colored balls",
+          "query": "family game night collaboration online game"
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "28d7a13e-0e38-4399-8c1c-20ba7024ed6d",
+          "content": "约翰在2022年11月初的周末与一位游戏开发者合作开发了一款线上桌游，并表示看到自己的想法变成现实是一次不可思议的经历",
+          "session_date": "8:57 pm on 7 November, 2022"
+        },
+        {
+          "memory_id": "48cf8274-8b44-45b4-ae4e-e2cf68b4d517",
+          "content": "In the week before August 21, 2022, John collaborated on a project with another member of his online programming group; they had complementary strengths and helped each other create something great",
+          "session_date": "3:57 pm on 21 August, 2022"
+        },
+        {
+          "memory_id": "a6d19b64-39a8-4fd4-880a-a28cc681f52e",
+          "content": "As of August 2022, John and his younger siblings are working together on a programming project: a simple text adventure game that helps the siblings practice coding skills while having fun; John is very proud of them",
+          "session_date": "9:18 pm on 26 August, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-47_qa39",
+      "question": "约翰是什么时候开始IT工作的？",
+      "gold": "2019",
+      "pred": "约翰大约在2019年8月开始他的IT工作（他于2022年8月初辞职，当时已做了3年）。",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D18:1",
+          "session_date": "1:45 pm on 6 August, 2022",
+          "speaker": "约翰",
+          "text": "嘿，詹姆斯，很高兴能聊上！好久不见了，是吧？我做了个重大决定——最近辞掉了干了3年的IT工作。挺不容易的，但我想做点有意义的事。现在有了这份新工作，我对自己的决定很满意。我超爱这份新工作！",
+          "caption": null,
+          "query": null
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "2dfbf3fc-17d4-4623-8899-eecfc5c30e2c",
+          "content": "James's friend John got his dream job after many interviews and late nights, with the offer received around June 13, 2022; he starts work the following month (July 2022)",
+          "session_date": "4:30 pm on 13 June, 2022"
+        },
+        {
+          "memory_id": "39e39edf-c059-4fe2-b3b0-7b1b2cadc87b",
+          "content": "In early August 2022, John (the friend) quit his IT job after 3 years; he was scared at first but felt he needed a change to focus on work aligned with his values and passions, and is very happy with his new job",
+          "session_date": "1:45 pm on 6 August, 2022"
+        },
+        {
+          "memory_id": "40d0987f-711e-4e35-8d4b-0f5ceaa4bdc1",
+          "content": "James's friend John enrolled in a programming class around March 2022 to relearn coding, having written some HTML and CSS a few years ago",
+          "session_date": "3:47 pm on 17 March, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-41_qa13",
+      "question": "玛丽亚的祖母是什么时候去世的？",
+      "gold": "2023年3月6日的前一周",
+      "pred": "玛丽亚的祖母大约在2023年2月底/3月初去世。",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D8:1",
+          "session_date": "6:03 pm on 6 March, 2023",
+          "speaker": "玛丽亚",
+          "text": "嘿，约翰，好久没和你聊了。上周我奶奶去世了，这段时间真的很难熬。我在努力保持积极，但真的很不容易。你最近怎么样？",
+          "caption": "a photo of a bride and groom walking down the street",
+          "query": null
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "1985e633-f350-4810-b4c6-b097c96e6d58",
+          "content": "Maria's grandmother passed away around late February/early March 2023; Maria found it very difficult and was struggling to stay positive",
+          "session_date": "6:03 pm on 6 March, 2023"
+        },
+        {
+          "memory_id": "4d42879d-3dbb-4585-b03b-2cfecaf33030",
+          "content": "Maria went through a difficult period in June 2023 but focused on the positive side and relied on the support of friends and family, whose encouragement and presence made her feel reassured",
+          "session_date": "12:21 am on 27 June, 2023"
+        },
+        {
+          "memory_id": "b1745325-72d5-4fc7-9531-70e97aaa9d2c",
+          "content": "Maria finds balance in life by taking care of herself physically, emotionally, and mentally through exercise, listening to music, and spending time with loved ones; she says she learned this lesson the hard way last year (2022)",
+          "session_date": "3:18 pm on 4 May, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-44_qa34",
+      "question": "安德鲁领养托比和巴迪之间隔了几个月？",
+      "gold": "三个月",
+      "pred": "约3个月（2023年7月到2023年10月）",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D12:1",
+          "session_date": "10:05 am on 11 July, 2023",
+          "speaker": "安德鲁",
+          "text": "嘿！自从我们上次聊过后发生了好多变化——来见见托比，我的小狗。他是个开心果，我实在忍不住把他带回家了，尽管在城市生活。你最近怎么样？",
+          "caption": "a photo of a dog sitting on a leash in a room",
+          "query": "new puppy toby city"
+        },
+        {
+          "turn_id": "D24:2",
+          "session_date": "6:12 pm on 19 October, 2023",
+          "speaker": "安德鲁",
+          "text": "嗨，奥黛丽！宠物真的能让我们的生活更美好，对吧？说到这个，我有个超棒的消息——我最近又从收容所领养了一只小狗。他是最棒的。",
+          "caption": "a photo of a dog sitting on a couch with a bowl of food",
+          "query": "cute dog playing chew toy buddy"
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "2fc07743-1620-4f3b-8311-5a3b64f8069d",
+          "content": "安德鲁于2023年10月中旬从收容所又领养了一只小狗，取名巴迪（Buddy），因为他是安德鲁的好伙伴，安德鲁希望巴迪和托比也能成为好伙伴",
+          "session_date": "6:12 pm on 19 October, 2023"
+        },
+        {
+          "memory_id": "c24e0872-d014-4f91-8eba-dc4626cf991d",
+          "content": "奥黛丽表示她和狗狗们之间有很深的感情，它们对她来说就是全世界，她觉得自己能有它们非常幸运，希望它们尽可能快乐；她还建议安德鲁培养和托比的感情需要时间，别着急",
+          "session_date": "12:24 am on 24 August, 2023"
+        },
+        {
+          "memory_id": "6eccd7fe-3a70-4729-8e3f-34f1b6be358d",
+          "content": "截至2023年10月中旬，巴迪在新家适应良好，但还需要时间适应新环境和托比，托比也需要时间才能和巴迪相处好；安德鲁说养宠物带来很多幸福和陪伴",
+          "session_date": "6:12 pm on 19 October, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa22",
+      "question": "乔安娜是什么时候开始写她的第三部剧本的？",
+      "gold": "2022年5月",
+      "pred": "乔安娜的第三部剧本是在2022年上半年构思并开始创作的，她构思了很长时间才动笔，最终于2022年5月20日完成。这部剧本对她非常个人化，主题关于失去、身份认同和联结。",
+      "grade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D12:13",
+          "session_date": "7:49 pm on 20 May, 2022",
+          "speaker": "内特",
+          "text": "哇，看起来很棒，乔安娜！这是你的第三部作品吗？",
+          "caption": null,
+          "query": null
+        },
+        {
+          "turn_id": "D12:14",
+          "session_date": "7:49 pm on 20 May, 2022",
+          "speaker": "乔安娜",
+          "text": "是的！我选择写这个是因为它对我非常个人化。它关于失去、身份认同和联结。这个故事我构思了很久，才终于鼓起勇气把它写出来。虽然很难，但我非常自豪。",
+          "caption": null,
+          "query": null
+        }
+      ],
+      "top3": [
+        {
+          "memory_id": "8ebbf56c-9d00-432f-996e-fbb2c12039f1",
+          "content": "乔安娜 (Joanna) 在2022年5月20日完成了她的第三个剧本，这个题材对她非常个人化，主题关于失去、身份认同和联结，她构思了很久才鼓起勇气写出来，过程很难但感到非常自豪",
+          "session_date": "7:49 pm on 20 May, 2022"
+        },
+        {
+          "memory_id": "2b426e64-2a42-469b-8b41-44fff895acfc",
+          "content": "乔安娜 (Joanna) 在2022年2月下旬等待第一个剧本电影节消息期间开始写新剧本，讲述一个三十岁女人在经历失去后踏上自我发现之旅和公路旅行以治愈成长的故事，这是她自己的故事，灵感来自她的个人经历和自我发现之旅",
+          "session_date": "1:07 pm on 25 February, 2022"
+        },
+        {
+          "memory_id": "01e9e195-ae06-4280-a29f-fbf7c2a1de41",
+          "content": "乔安娜 (Joanna) 正在写另一部电影剧本，是一个充满波折的爱情故事，灵感来自她做的一个梦，她希望能把它搬上大银幕（2022年11月上旬）",
+          "session_date": "8:10 pm on 7 November, 2022"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Benchmark-listed evidence may omit relevant neighboring turns or identify the wrong event",
+    "The packet contains source text, not automatic semantic judgments",
+    "Twelve cases do not establish a population error rate"
+  ]
+}
