@@ -1,0 +1,330 @@
+{
+  "scope": "Matched archived Chinese no-graph run and precision regrade; read-only, no model calls",
+  "inputs": [
+    "results_zh/zhfull_locomo_20260925_115806.jsonl",
+    "results/precision_regrade_zhfull.jsonl",
+    "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json"
+  ],
+  "counts": {
+    "raw": 1982,
+    "graded": 1982,
+    "matched_prediction": 1972,
+    "temporal": 321,
+    "nonexact": 149,
+    "gold_has_year_month": 107,
+    "gold_month_in_top15_and_multiple_date_literals": 80,
+    "strict_gold_literal_in_top15_and_multiple_date_literals": 35
+  },
+  "broad_case_ids": [
+    "locomo_conv-26_qa21",
+    "locomo_conv-26_qa31",
+    "locomo_conv-26_qa33",
+    "locomo_conv-26_qa35",
+    "locomo_conv-26_qa36",
+    "locomo_conv-26_qa41",
+    "locomo_conv-26_qa5",
+    "locomo_conv-26_qa57",
+    "locomo_conv-26_qa58",
+    "locomo_conv-26_qa74",
+    "locomo_conv-26_qa8",
+    "locomo_conv-26_qa9",
+    "locomo_conv-30_qa12",
+    "locomo_conv-30_qa13",
+    "locomo_conv-30_qa19",
+    "locomo_conv-30_qa20",
+    "locomo_conv-30_qa33",
+    "locomo_conv-30_qa37",
+    "locomo_conv-30_qa7",
+    "locomo_conv-41_qa48",
+    "locomo_conv-41_qa55",
+    "locomo_conv-41_qa58",
+    "locomo_conv-41_qa61",
+    "locomo_conv-42_qa15",
+    "locomo_conv-42_qa20",
+    "locomo_conv-42_qa22",
+    "locomo_conv-42_qa24",
+    "locomo_conv-42_qa3",
+    "locomo_conv-42_qa33",
+    "locomo_conv-42_qa35",
+    "locomo_conv-42_qa36",
+    "locomo_conv-42_qa39",
+    "locomo_conv-42_qa40",
+    "locomo_conv-42_qa45",
+    "locomo_conv-42_qa48",
+    "locomo_conv-42_qa54",
+    "locomo_conv-42_qa64",
+    "locomo_conv-42_qa7",
+    "locomo_conv-42_qa77",
+    "locomo_conv-43_qa10",
+    "locomo_conv-43_qa23",
+    "locomo_conv-43_qa37",
+    "locomo_conv-43_qa47",
+    "locomo_conv-43_qa55",
+    "locomo_conv-43_qa56",
+    "locomo_conv-43_qa6",
+    "locomo_conv-43_qa60",
+    "locomo_conv-43_qa68",
+    "locomo_conv-44_qa1",
+    "locomo_conv-44_qa25",
+    "locomo_conv-44_qa37",
+    "locomo_conv-44_qa5",
+    "locomo_conv-44_qa55",
+    "locomo_conv-44_qa57",
+    "locomo_conv-48_qa21",
+    "locomo_conv-48_qa29",
+    "locomo_conv-48_qa45",
+    "locomo_conv-48_qa51",
+    "locomo_conv-48_qa52",
+    "locomo_conv-48_qa56",
+    "locomo_conv-48_qa60",
+    "locomo_conv-48_qa66",
+    "locomo_conv-48_qa71",
+    "locomo_conv-48_qa81",
+    "locomo_conv-49_qa63",
+    "locomo_conv-49_qa66",
+    "locomo_conv-49_qa74",
+    "locomo_conv-49_qa76",
+    "locomo_conv-50_qa0",
+    "locomo_conv-50_qa10",
+    "locomo_conv-50_qa12",
+    "locomo_conv-50_qa16",
+    "locomo_conv-50_qa2",
+    "locomo_conv-50_qa25",
+    "locomo_conv-50_qa35",
+    "locomo_conv-50_qa50",
+    "locomo_conv-50_qa65",
+    "locomo_conv-50_qa68",
+    "locomo_conv-50_qa8",
+    "locomo_conv-50_qa9"
+  ],
+  "strict_case_ids": [
+    "locomo_conv-26_qa35",
+    "locomo_conv-26_qa74",
+    "locomo_conv-30_qa12",
+    "locomo_conv-30_qa13",
+    "locomo_conv-30_qa19",
+    "locomo_conv-30_qa33",
+    "locomo_conv-42_qa20",
+    "locomo_conv-42_qa22",
+    "locomo_conv-42_qa35",
+    "locomo_conv-42_qa48",
+    "locomo_conv-43_qa10",
+    "locomo_conv-43_qa23",
+    "locomo_conv-43_qa47",
+    "locomo_conv-43_qa55",
+    "locomo_conv-43_qa56",
+    "locomo_conv-43_qa6",
+    "locomo_conv-43_qa60",
+    "locomo_conv-44_qa25",
+    "locomo_conv-44_qa5",
+    "locomo_conv-44_qa57",
+    "locomo_conv-48_qa45",
+    "locomo_conv-48_qa51",
+    "locomo_conv-48_qa52",
+    "locomo_conv-48_qa66",
+    "locomo_conv-48_qa71",
+    "locomo_conv-48_qa81",
+    "locomo_conv-49_qa66",
+    "locomo_conv-49_qa74",
+    "locomo_conv-50_qa12",
+    "locomo_conv-50_qa16",
+    "locomo_conv-50_qa35",
+    "locomo_conv-50_qa50",
+    "locomo_conv-50_qa65",
+    "locomo_conv-50_qa68",
+    "locomo_conv-50_qa8"
+  ],
+  "selected_source_packets": [
+    {
+      "case_id": "locomo_conv-50_qa12",
+      "question": "卡尔文在东京的演唱会是什么时候？",
+      "gold": "2023年5月的最后一周",
+      "prediction": "卡尔文在2023年5月下旬（与Frank Ocean巡演期间）和2023年10月（巡演后期）都曾在东京举办演唱会，其中2023年10月的东京演出现场气氛尤为热烈，他分享了当晚的照片，感觉全城的人都出来了。",
+      "regrade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D6:11",
+          "listed_as_gold_evidence": true,
+          "session_date": "11:50 am on 16 May, 2023",
+          "speaker": "卡尔文",
+          "text": "谢谢戴夫！我超级期待这个月在东京的演出。能向全新的观众展示我的音乐，希望能扩大我的粉丝群，肯定会很棒！"
+        },
+        {
+          "turn_id": "D7:1",
+          "listed_as_gold_evidence": true,
+          "session_date": "6:06 pm on 31 May, 2023",
+          "speaker": "卡尔文",
+          "text": "嘿，戴夫！好久没聊了，发生了好多事。上周和弗兰克一起巡演简直太疯狂了。东京太不可思议了——观众嗨到爆。表演的时候我感觉自己充满了活力，简直无法用言语表达。"
+        }
+      ],
+      "top_memories": [
+        {
+          "id": "1686dfb9-d19f-4aff-bad8-816701a9c686",
+          "content": "卡尔文超级期待2023年5月在东京的演出，希望向全新观众展示音乐并扩大粉丝群，并答应演出后告诉戴夫情况",
+          "session_date": "11:50 am on 16 May, 2023"
+        },
+        {
+          "id": "a5e00eda-44e7-4d7a-8bdc-321fe916cfde",
+          "content": "卡尔文于2023年5月下旬（5月31日前一周）与弗兰克·奥申 (Frank Ocean) 一起在东京巡演，观众非常热情，他表演时感到充满活力，形容那是最极致的享受",
+          "session_date": "6:06 pm on 31 May, 2023"
+        },
+        {
+          "id": "58ca2b04-ce9c-4ef4-889d-dbc9e73f244a",
+          "content": "卡尔文 (Calvin) 于2023年4月20日前的周末在东京参加了一个很棒的音乐活动，没看到乐队演出，但遇到了很多有才华的艺人和音乐业内人士，收获满满",
+          "session_date": "4:15 pm on 20 April, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa16",
+      "question": "戴夫是什么时候去山区旅行的？",
+      "gold": "2023年7月",
+      "prediction": "戴夫在2023年9月去新罕布什尔州白山（White Mountains）旅行，并在10月29日分享了他当时拍摄的瀑布照片。",
+      "regrade": "wrong",
+      "evidence": [
+        {
+          "turn_id": "D8:10",
+          "listed_as_gold_evidence": true,
+          "session_date": "2:31 pm on 9 June, 2023",
+          "speaker": "戴夫",
+          "text": "我订了下个月去山区的旅行！终于能看到那些雄伟的山峰了！一定会是一次很棒的经历！"
+        }
+      ],
+      "top_memories": [
+        {
+          "id": "50254de7-b62f-474a-b2e5-8dcfdef33b4e",
+          "content": "戴夫在2023年7月中旬刚和朋友们完成一次自驾游，欣赏乡村风景，在蜿蜒的路上开车让他重新找回对汽车的热爱，也是远离工作混乱的美好休息",
+          "session_date": "6:38 pm on 21 July, 2023"
+        },
+        {
+          "id": "a98ed3ea-f911-4666-92ae-15f4904cc492",
+          "content": "戴夫分享了一张上个月（2023年9月）在新罕布什尔州白山拍摄的瀑布照片",
+          "session_date": "10:49 am on 29 October, 2023"
+        },
+        {
+          "id": "ed3b98f7-4f26-4414-a087-633134c80852",
+          "content": "戴夫（Dave）最近开始玩摄影，主要拍摄住处附近的风景，感觉棒极了；他在2023年11月新买了一台复古相机，认为它能帮他把特别的瞬间拍得非常清晰",
+          "session_date": "10:54 am on 17 November, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-43_qa23",
+      "question": "蒂姆什么时候参加图书大会？",
+      "gold": "2023年9月",
+      "prediction": "蒂姆于2023年10月初（约10月6日那一周）在英国参加了哈利·波特大会（他曾计划在2023年9月参加图书大会）。",
+      "regrade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D7:6",
+          "listed_as_gold_evidence": true,
+          "session_date": "7:54 pm on 17 August, 2023",
+          "speaker": "蒂姆",
+          "text": "近期没有什么大型活动，但我希望下个月能参加一个图书大会。那是一个由作者、出版商和书迷组成的有趣聚会，我们会讨论最喜欢的小说和新书。我很期待，因为它能帮我更深入地了解文学，并与文学建立更紧密的联系。"
+        }
+      ],
+      "top_memories": [
+        {
+          "id": "8432ae70-9aad-4815-ba60-7a521afd96ad",
+          "content": "蒂姆（Tim）希望参加一个下个月（2023年9月）的图书大会，那是一个由作者、出版商和书迷组成的聚会，大家会讨论最喜欢的小说和新书，他期待借此更深入地了解文学并与文学建立更紧密的联系",
+          "session_date": "7:54 pm on 17 August, 2023"
+        },
+        {
+          "id": "bd972e77-4065-42eb-88b3-9f873971bdc0",
+          "content": "蒂姆（Tim）于2023年6月14日晚加入了一个奇幻文学论坛，与他人畅聊自己最喜欢的书籍，感觉特别尽兴、收获满满",
+          "session_date": "5:08 pm on 15 June, 2023"
+        },
+        {
+          "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+          "content": "蒂姆（Tim）于2023年10月初（约10月6日那一周）去英国参加了一场哈利·波特大会，遇到很多同样热爱哈利·波特的人，感觉像神奇的大家庭，深受鼓舞、焕发新活力，认为对奇幻事物的热情拉近了他与世界各地的人的距离",
+          "session_date": "1:50 pm on 13 October, 2023"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-42_qa22",
+      "question": "乔安娜是什么时候开始写她的第三部剧本的？",
+      "gold": "2022年5月",
+      "prediction": "乔安娜的第三部剧本是在2022年上半年构思并开始创作的，她构思了很长时间才动笔，最终于2022年5月20日完成。这部剧本对她非常个人化，主题关于失去、身份认同和联结。",
+      "regrade": "partial",
+      "evidence": [
+        {
+          "turn_id": "D12:13",
+          "listed_as_gold_evidence": true,
+          "session_date": "7:49 pm on 20 May, 2022",
+          "speaker": "内特",
+          "text": "哇，看起来很棒，乔安娜！这是你的第三部作品吗？"
+        },
+        {
+          "turn_id": "D12:14",
+          "listed_as_gold_evidence": true,
+          "session_date": "7:49 pm on 20 May, 2022",
+          "speaker": "乔安娜",
+          "text": "是的！我选择写这个是因为它对我非常个人化。它关于失去、身份认同和联结。这个故事我构思了很久，才终于鼓起勇气把它写出来。虽然很难，但我非常自豪。"
+        }
+      ],
+      "top_memories": [
+        {
+          "id": "8ebbf56c-9d00-432f-996e-fbb2c12039f1",
+          "content": "乔安娜 (Joanna) 在2022年5月20日完成了她的第三个剧本，这个题材对她非常个人化，主题关于失去、身份认同和联结，她构思了很久才鼓起勇气写出来，过程很难但感到非常自豪",
+          "session_date": "7:49 pm on 20 May, 2022"
+        },
+        {
+          "id": "2b426e64-2a42-469b-8b41-44fff895acfc",
+          "content": "乔安娜 (Joanna) 在2022年2月下旬等待第一个剧本电影节消息期间开始写新剧本，讲述一个三十岁女人在经历失去后踏上自我发现之旅和公路旅行以治愈成长的故事，这是她自己的故事，灵感来自她的个人经历和自我发现之旅",
+          "session_date": "1:07 pm on 25 February, 2022"
+        },
+        {
+          "id": "01e9e195-ae06-4280-a29f-fbf7c2a1de41",
+          "content": "乔安娜 (Joanna) 正在写另一部电影剧本，是一个充满波折的爱情故事，灵感来自她做的一个梦，她希望能把它搬上大银幕（2022年11月上旬）",
+          "session_date": "8:10 pm on 7 November, 2022"
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-48_qa71",
+      "question": "黛博拉是什么时候参加社区聚会的？",
+      "gold": "2023年8月的最后一周",
+      "prediction": "2023年9月1日",
+      "regrade": "wrong",
+      "evidence": [
+        {
+          "turn_id": "D24:1",
+          "listed_as_gold_evidence": true,
+          "session_date": "2:14 pm on 3 September, 2023",
+          "speaker": "黛博拉",
+          "text": "嘿，乔琳，来叙叙旧。上周我去了一个很棒的活动，目的是互相支持——挺鼓舞人心的。你最近有和谁联系吗？"
+        },
+        {
+          "turn_id": "D24:3",
+          "listed_as_gold_evidence": false,
+          "session_date": "2:14 pm on 3 September, 2023",
+          "speaker": "黛博拉",
+          "text": "我也很忙——上周五去参加了一个社区聚会。我们分享了彼此的故事，能感受到我们之间的联系真好。这让我想到人际关系有多重要。你呢，这方面的情况怎么样？"
+        }
+      ],
+      "top_memories": [
+        {
+          "id": "e55fce31-3e28-4d80-998e-7bc7d789fe79",
+          "content": "黛布在2023年8月底参加了一个旨在互相支持的鼓舞人心的活动，并在2023年9月1日（上周五）参加了一个社区聚会，大家分享彼此的故事，让她感受到人际联系的重要性",
+          "session_date": "2:14 pm on 3 September, 2023"
+        },
+        {
+          "id": "e7ecdc44-9190-4feb-a2c0-e8b2207e05ca",
+          "content": "黛布于2023年9月16日（对话前一天）和邻居一起为社区办了一个免费的园艺课，各个年龄段的人都来参加，她感到非常兴奋和美好",
+          "session_date": "1:24 pm on 17 September, 2023"
+        },
+        {
+          "id": "0e2133a0-01d4-4cec-a0c6-7be05b1d0ade",
+          "content": "黛布在社区里开设了一个瑜伽班，并于2023年3月10日（对话当周周五）为邻居们上了第一节课；邻居们很感兴趣并乐于参与，她还分享了一张大家在一起的合影",
+          "session_date": "11:22 am on 13 March, 2023"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Date literal matching does not establish that the memory concerns the asked event",
+    "Five source packets were selected for mechanism diversity, not random sampling",
+    "No date-order counterfactual or answer calls were run"
+  ]
+}
