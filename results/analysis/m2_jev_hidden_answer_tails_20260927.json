@@ -1,0 +1,740 @@
+{
+  "scope": "Literal Chinese gold substring screen in exact-reconstructible non-expanded historical Jev states; four source-audited cases selected post screen; no model calls",
+  "screen_rule": "2<=stripped gold chars<=15; gold appears in at least one full final-context memory, no first-60 memory prefix contains the full literal; first score numeric and no expansion",
+  "input_sha256": {
+    "dataset": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "decider": "9b7b37187181dd4ce7e161cd0ab93daad2d9dadde02da2020084c3dc210e4935",
+    "laya": "c47f83182b18d0d5187c28b59a14deda00d0b059c73fe5ea05ae807d8adeaf2d"
+  },
+  "arms": {
+    "decider": {
+      "path": "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+      "scored_unexpanded_count": 889,
+      "literal_screen_match_count": 2,
+      "literal_screen_matches": [
+        {
+          "case_id": "locomo_conv-42_qa102",
+          "question": "内特喜欢哪些无乳制品甜点的口味？",
+          "gold_literal": "巧克力和混合莓果",
+          "first_score": 0.65,
+          "strict_exact": false
+        },
+        {
+          "case_id": "locomo_conv-44_qa7",
+          "question": "奥黛丽领养Pixie和她领养另外三只狗之间隔了几年？",
+          "gold_literal": "三年",
+          "first_score": 0.48,
+          "strict_exact": false
+        }
+      ],
+      "source_audit_cases": [
+        {
+          "case_id": "locomo_conv-42_qa102",
+          "question": "内特喜欢哪些无乳制品甜点的口味？",
+          "gold": "巧克力和混合莓果",
+          "predicted_answer": "内特喜欢的无乳制品甜点口味包括：椰奶（尤其是椰奶冰淇淋——顺滑绵密带热带椰香，他的最爱）、巧克力（如无乳制品巧克力慕斯，形容超级绵密、味道和真的一样；还有无乳制品巧克力蛋糕）以及混合莓果口味。",
+          "first_score": 0.65,
+          "expanded": false,
+          "strict_exact": false,
+          "source_evidence": [
+            {
+              "dia_id": "D3:10",
+              "session_id": "session_3",
+              "speaker": "内特",
+              "text": "我喜欢椰奶，不过也喜欢巧克力和混合莓果口味。",
+              "blip_caption": null
+            }
+          ],
+          "digest": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样 | 内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料 | 乔安娜 (Joanna) 分享了另一个喜欢的无乳制品食谱：用蓝莓、椰奶和无麸质挞皮做的甜点，绵密美味；内特表示一定要试试 | 内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成 | 乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点 | 内特 (Nate) 于2022年6月17日（上周五）做了纯素（无乳制品）椰奶冰淇淋，分给了纯素饮食小组的一些人，反馈很棒 | 内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的 | 内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳 | 内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果 | Around August 2022, Nate developed a new coconut milk ice cr | 内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待 | 内特 (Nate) 于2022年4月17日分享了椰奶冰淇淋配方：用椰奶、香草精、糖和一小撮盐制作，在冰箱冷藏后放入冰淇淋 | 乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发 | 乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月 | 内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+          "digest_sha256": "455c83b6bf4af2991139481904ec88a74bb6e96d3e3af8c35d03f09772c1049c",
+          "context": [
+            {
+              "rank": 1,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "prefix": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 2,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "prefix": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料",
+              "tail": "；他喜欢椰奶、巧克力和混合莓果口味",
+              "gold_literal_start": 67
+            },
+            {
+              "rank": 3,
+              "id": "06e2ef9c-7f13-4f58-8777-dfbfc2027d17",
+              "prefix": "乔安娜 (Joanna) 分享了另一个喜欢的无乳制品食谱：用蓝莓、椰奶和无麸质挞皮做的甜点，绵密美味；内特表示一定要试试",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 4,
+              "id": "6d342639-84b6-4d79-a8ba-2b515b5cf1ad",
+              "prefix": "内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成",
+              "tail": "品照片",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 5,
+              "id": "42f50b8f-d7c8-4f80-ae59-6aa6424f5571",
+              "prefix": "乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 6,
+              "id": "7942fb25-bf57-4769-8d78-53d2f61048b8",
+              "prefix": "内特 (Nate) 于2022年6月17日（上周五）做了纯素（无乳制品）椰奶冰淇淋，分给了纯素饮食小组的一些人，反馈很棒",
+              "tail": "；他答应在2022年6月25日把食谱发给乔安娜",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 7,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "prefix": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的",
+              "tail": "满足感",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 8,
+              "id": "103dc4a0-4711-4508-b231-9e28f34c3a39",
+              "prefix": "内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳",
+              "tail": "制品冰淇淋食谱（2022年2月下旬）",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 9,
+              "id": "8af51773-4f22-440d-90df-a8b4f6a4bbd0",
+              "prefix": "内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 10,
+              "id": "3bddf0e3-d1c4-426f-bfcf-db3635432f13",
+              "prefix": "Around August 2022, Nate developed a new coconut milk ice cr",
+              "tail": "eam recipe that is creamy, rich, and dairy-free, and sent Joanna the recipe at her request; Joanna loves his coconut milk ice cream",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 11,
+              "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+              "prefix": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 12,
+              "id": "4624cccb-b798-46c2-8861-35cf5b936bc3",
+              "prefix": "内特 (Nate) 于2022年4月17日分享了椰奶冰淇淋配方：用椰奶、香草精、糖和一小撮盐制作，在冰箱冷藏后放入冰淇淋",
+              "tail": "机冷冻到可挖球的程度；这是无乳制品配方，因为乔安娜乳糖不耐受正需要",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 13,
+              "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+              "prefix": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发",
+              "tail": "给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 14,
+              "id": "2d143585-5296-4136-8885-95e68e0364c8",
+              "prefix": "乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月",
+              "tail": "14日分享了照片",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 15,
+              "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+              "prefix": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+              "tail": "",
+              "gold_literal_start": -1
+            }
+          ]
+        }
+      ]
+    },
+    "laya": {
+      "path": "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+      "scored_unexpanded_count": 1731,
+      "literal_screen_match_count": 8,
+      "literal_screen_matches": [
+        {
+          "case_id": "locomo_conv-41_qa111",
+          "question": "玛丽亚一直在尝试什么瑜伽活动来提高力量和耐力？",
+          "gold_literal": "昆达里尼瑜伽",
+          "first_score": 0.97,
+          "strict_exact": false
+        },
+        {
+          "case_id": "locomo_conv-42_qa98",
+          "question": "乔安娜的第一个剧本是什么类型？",
+          "gold_literal": "剧情和爱情",
+          "first_score": 0.89,
+          "strict_exact": false
+        },
+        {
+          "case_id": "locomo_conv-42_qa102",
+          "question": "内特喜欢哪些无乳制品甜点的口味？",
+          "gold_literal": "巧克力和混合莓果",
+          "first_score": 0.98,
+          "strict_exact": false
+        },
+        {
+          "case_id": "locomo_conv-44_qa7",
+          "question": "奥黛丽领养Pixie和她领养另外三只狗之间隔了几年？",
+          "gold_literal": "三年",
+          "first_score": 0.97,
+          "strict_exact": false
+        },
+        {
+          "case_id": "locomo_conv-44_qa114",
+          "question": "安德鲁星期天要去进行什么类型的约会？",
+          "gold_literal": "野餐约会",
+          "first_score": 0.52,
+          "strict_exact": false
+        },
+        {
+          "case_id": "locomo_conv-47_qa122",
+          "question": "詹姆斯每节烹饪课付多少钱？",
+          "gold_literal": "$10",
+          "first_score": 0.92,
+          "strict_exact": false
+        },
+        {
+          "case_id": "locomo_conv-48_qa26",
+          "question": "乔琳在2023年1月读了哪本书？",
+          "gold_literal": "尼尔·斯蒂芬森的《雪崩",
+          "first_score": 0.95,
+          "strict_exact": false
+        },
+        {
+          "case_id": "locomo_conv-50_qa155",
+          "question": "卡尔文和他在晚宴上遇到的那位很酷的艺术家聊了什么？",
+          "gold_literal": "音乐和艺术",
+          "first_score": 0.83,
+          "strict_exact": false
+        }
+      ],
+      "source_audit_cases": [
+        {
+          "case_id": "locomo_conv-42_qa102",
+          "question": "内特喜欢哪些无乳制品甜点的口味？",
+          "gold": "巧克力和混合莓果",
+          "predicted_answer": "内特喜欢的无乳制品甜点口味包括：椰奶（椰子）、巧克力和混合莓果。",
+          "first_score": 0.98,
+          "expanded": false,
+          "strict_exact": false,
+          "source_evidence": [
+            {
+              "dia_id": "D3:10",
+              "session_id": "session_3",
+              "speaker": "内特",
+              "text": "我喜欢椰奶，不过也喜欢巧克力和混合莓果口味。",
+              "blip_caption": null
+            }
+          ],
+          "digest": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样 | 内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料 | 乔安娜 (Joanna) 分享了另一个喜欢的无乳制品食谱：用蓝莓、椰奶和无麸质挞皮做的甜点，绵密美味；内特表示一定要试试 | 内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成 | 乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点 | 内特 (Nate) 于2022年6月17日（上周五）做了纯素（无乳制品）椰奶冰淇淋，分给了纯素饮食小组的一些人，反馈很棒 | 内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的 | 内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳 | 内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果 | Around August 2022, Nate developed a new coconut milk ice cr | 内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待 | 内特 (Nate) 于2022年4月17日分享了椰奶冰淇淋配方：用椰奶、香草精、糖和一小撮盐制作，在冰箱冷藏后放入冰淇淋 | 乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发 | 乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月 | 内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+          "digest_sha256": "455c83b6bf4af2991139481904ec88a74bb6e96d3e3af8c35d03f09772c1049c",
+          "context": [
+            {
+              "rank": 1,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "prefix": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 2,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "prefix": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料",
+              "tail": "；他喜欢椰奶、巧克力和混合莓果口味",
+              "gold_literal_start": 67
+            },
+            {
+              "rank": 3,
+              "id": "06e2ef9c-7f13-4f58-8777-dfbfc2027d17",
+              "prefix": "乔安娜 (Joanna) 分享了另一个喜欢的无乳制品食谱：用蓝莓、椰奶和无麸质挞皮做的甜点，绵密美味；内特表示一定要试试",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 4,
+              "id": "6d342639-84b6-4d79-a8ba-2b515b5cf1ad",
+              "prefix": "内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成",
+              "tail": "品照片",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 5,
+              "id": "42f50b8f-d7c8-4f80-ae59-6aa6424f5571",
+              "prefix": "乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 6,
+              "id": "7942fb25-bf57-4769-8d78-53d2f61048b8",
+              "prefix": "内特 (Nate) 于2022年6月17日（上周五）做了纯素（无乳制品）椰奶冰淇淋，分给了纯素饮食小组的一些人，反馈很棒",
+              "tail": "；他答应在2022年6月25日把食谱发给乔安娜",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 7,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "prefix": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的",
+              "tail": "满足感",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 8,
+              "id": "103dc4a0-4711-4508-b231-9e28f34c3a39",
+              "prefix": "内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳",
+              "tail": "制品冰淇淋食谱（2022年2月下旬）",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 9,
+              "id": "8af51773-4f22-440d-90df-a8b4f6a4bbd0",
+              "prefix": "内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 10,
+              "id": "3bddf0e3-d1c4-426f-bfcf-db3635432f13",
+              "prefix": "Around August 2022, Nate developed a new coconut milk ice cr",
+              "tail": "eam recipe that is creamy, rich, and dairy-free, and sent Joanna the recipe at her request; Joanna loves his coconut milk ice cream",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 11,
+              "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+              "prefix": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 12,
+              "id": "4624cccb-b798-46c2-8861-35cf5b936bc3",
+              "prefix": "内特 (Nate) 于2022年4月17日分享了椰奶冰淇淋配方：用椰奶、香草精、糖和一小撮盐制作，在冰箱冷藏后放入冰淇淋",
+              "tail": "机冷冻到可挖球的程度；这是无乳制品配方，因为乔安娜乳糖不耐受正需要",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 13,
+              "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+              "prefix": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发",
+              "tail": "给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 14,
+              "id": "2d143585-5296-4136-8885-95e68e0364c8",
+              "prefix": "乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月",
+              "tail": "14日分享了照片",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 15,
+              "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+              "prefix": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+              "tail": "",
+              "gold_literal_start": -1
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-44_qa114",
+          "question": "安德鲁星期天要去进行什么类型的约会？",
+          "gold": "野餐约会",
+          "predicted_answer": "野餐约会（和女朋友在2023年10月29日周日去野餐）。",
+          "first_score": 0.52,
+          "expanded": false,
+          "strict_exact": false,
+          "source_evidence": [
+            {
+              "dia_id": "D26:20",
+              "session_id": "session_26",
+              "speaker": "安德鲁",
+              "text": "太好了！周六怎么样？我们可以带点零食，一起开心地探索。因为周日我要和我女朋友去野餐约会。",
+              "blip_caption": null
+            }
+          ],
+          "digest": "奥黛丽和安德鲁约定于2023年10月28日（周六）带狗狗们一起去附近一条对狗狗友好、风景优美的步道徒步，两人都会带零食； | 安德鲁和他的女朋友计划在2023年8月4日那个周末去露营，好几个月没有亲近大自然了 | 安德鲁和他女朋友喜欢在城里发掘新的吃饭地方，作为尝试新东西、在漫长一周后放松的方式 | 2023年10月21-22日的周末，安德鲁和女朋友去参加了一场葡萄酒品鉴会，尝了很多独特的葡萄酒并学到了很多，他没想到自 | 安德鲁通常每个周末至少逃离城市一次去远足，把这当作他急需的放松方式；大自然对他来说就是治愈，他喜欢被绿色环绕或站在山顶呼 | 安德鲁在2023年8月中旬的周末和女朋友去附近一个湖钓鱼，钓到了几条鱼，玩得很开心。他养了一只小狗托比，分享了一张托比戴 | 安德鲁计划在2023年8月去远足，并邀请奥黛丽带着她的狗狗们一起参加，托比也将和奥黛丽的狗狗们第一次见面 | 奥黛丽和安德鲁计划先探索湖边那条风景优美的步道，步道附近有一个湖，适合带狗狗们安静地玩一天；安德鲁分享了步道和湖的照片 | 2023年10月中旬，安德鲁计划周末去一家前几天刚开张的新咖啡馆，那里视野和氛围都很棒；他还推荐了一家附近新开的可以俯瞰 | 安德鲁和女朋友在2023年11月初的周末去骑自行车，在城外发现了一个很棒的公园，很喜欢远离城市置身大自然的感觉 | 2023年4月初，奥黛丽 (Audrey) 用蓝莓做了几样她最爱的点心（蓝莓玛芬），并与安德鲁约定找时间办一个糕点派对， | 安德鲁和巴迪喜欢一起散步和探索新的徒步小径，巴迪对大自然的一切都很兴奋；安德鲁计划很快带托比和巴迪两只狗一起去小径 | 2023年5月上旬（对话前周末），安德鲁和几个朋友以及他的女朋友一起去徒步了一次，地点是他们最近发现的地方，他觉得大自然 | 2023年6月上旬（对话前一周），奥黛丽找到了一个遛狗的好地方——一个小公园，有一条被树木环绕的小径，景色很美，她的狗也 | 奥黛丽推荐了狗狗公园作为结识狗狗玩伴的好地方，它就在她们平时散步的公园旁边，有很多树和长椅，可以坐在那儿看狗狗们玩耍；安",
+          "digest_sha256": "078bc0a75c91f8cab498c49462f1e25972388e9733def9a764bbb7da9e5183c9",
+          "context": [
+            {
+              "rank": 1,
+              "id": "ffc82c33-6a13-4930-9330-0bb34332869f",
+              "prefix": "奥黛丽和安德鲁约定于2023年10月28日（周六）带狗狗们一起去附近一条对狗狗友好、风景优美的步道徒步，两人都会带零食；",
+              "tail": "安德鲁周日（10月29日）要和女朋友去野餐约会",
+              "gold_literal_start": 79
+            },
+            {
+              "rank": 2,
+              "id": "80960341-3671-412a-a610-f8e0b9185223",
+              "prefix": "安德鲁和他的女朋友计划在2023年8月4日那个周末去露营，好几个月没有亲近大自然了",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 3,
+              "id": "c282c52a-f301-41f9-bcf1-890cc4b8d07f",
+              "prefix": "安德鲁和他女朋友喜欢在城里发掘新的吃饭地方，作为尝试新东西、在漫长一周后放松的方式",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 4,
+              "id": "b36bc77e-217e-406c-8cf0-d33e7dea6c10",
+              "prefix": "2023年10月21-22日的周末，安德鲁和女朋友去参加了一场葡萄酒品鉴会，尝了很多独特的葡萄酒并学到了很多，他没想到自",
+              "tail": "己会这么喜欢，并表示这提醒他要走出舒适区",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 5,
+              "id": "218524ad-9a61-42ae-8436-4e4933ed83c7",
+              "prefix": "安德鲁通常每个周末至少逃离城市一次去远足，把这当作他急需的放松方式；大自然对他来说就是治愈，他喜欢被绿色环绕或站在山顶呼",
+              "tail": "吸新鲜空气的宁静与振奋感",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 6,
+              "id": "8a7db361-28c4-4463-b3a6-b62ed80cbd22",
+              "prefix": "安德鲁在2023年8月中旬的周末和女朋友去附近一个湖钓鱼，钓到了几条鱼，玩得很开心。他养了一只小狗托比，分享了一张托比戴",
+              "tail": "着牵引绳坐在地板上的照片，说很爱托比，并计划带托比一起户外探险",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 7,
+              "id": "abc444b8-3052-464c-8622-f57204e1b75d",
+              "prefix": "安德鲁计划在2023年8月去远足，并邀请奥黛丽带着她的狗狗们一起参加，托比也将和奥黛丽的狗狗们第一次见面",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 8,
+              "id": "bd8b386e-3317-4e6a-8e94-2f690008e435",
+              "prefix": "奥黛丽和安德鲁计划先探索湖边那条风景优美的步道，步道附近有一个湖，适合带狗狗们安静地玩一天；安德鲁分享了步道和湖的照片",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 9,
+              "id": "45a00619-eddf-4a40-bfe9-e31a61a57d9a",
+              "prefix": "2023年10月中旬，安德鲁计划周末去一家前几天刚开张的新咖啡馆，那里视野和氛围都很棒；他还推荐了一家附近新开的可以俯瞰",
+              "tail": "城市景观的屋顶酒吧",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 10,
+              "id": "591838e8-347c-4684-a851-4d9e3c0b4267",
+              "prefix": "安德鲁和女朋友在2023年11月初的周末去骑自行车，在城外发现了一个很棒的公园，很喜欢远离城市置身大自然的感觉",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 11,
+              "id": "98bd13a7-5d1c-4519-910c-4756aedadaee",
+              "prefix": "2023年4月初，奥黛丽 (Audrey) 用蓝莓做了几样她最爱的点心（蓝莓玛芬），并与安德鲁约定找时间办一个糕点派对，",
+              "tail": "她的狗狗们也会参加",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 12,
+              "id": "72027e82-5868-4108-a0db-af3232570bec",
+              "prefix": "安德鲁和巴迪喜欢一起散步和探索新的徒步小径，巴迪对大自然的一切都很兴奋；安德鲁计划很快带托比和巴迪两只狗一起去小径",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 13,
+              "id": "19e71a08-03fd-4124-a02a-f507dc7b9811",
+              "prefix": "2023年5月上旬（对话前周末），安德鲁和几个朋友以及他的女朋友一起去徒步了一次，地点是他们最近发现的地方，他觉得大自然",
+              "tail": "宁静、让人放松。他有女朋友这一事实是新信息",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 14,
+              "id": "7a390caf-5862-4688-9e94-5aaa86e25915",
+              "prefix": "2023年6月上旬（对话前一周），奥黛丽找到了一个遛狗的好地方——一个小公园，有一条被树木环绕的小径，景色很美，她的狗也",
+              "tail": "很喜欢。她邀请安德鲁一起和狗狗们去那里散步，安德鲁很乐意",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 15,
+              "id": "324b3dd9-b967-4fdd-98e4-8897f2d943b6",
+              "prefix": "奥黛丽推荐了狗狗公园作为结识狗狗玩伴的好地方，它就在她们平时散步的公园旁边，有很多树和长椅，可以坐在那儿看狗狗们玩耍；安",
+              "tail": "德鲁表示一定要去看看",
+              "gold_literal_start": -1
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-47_qa122",
+          "question": "詹姆斯每节烹饪课付多少钱？",
+          "gold": "$10",
+          "predicted_answer": "10美元。",
+          "first_score": 0.92,
+          "expanded": false,
+          "strict_exact": false,
+          "source_evidence": [
+            {
+              "dia_id": "D23:15",
+              "session_id": "session_23",
+              "speaker": "詹姆斯",
+              "text": "每节课只要10美元，非常便宜！我还在那里做了蛋白霜，他们还教了我们怎么做面团。",
+              "blip_caption": null
+            }
+          ],
+          "digest": "Around September 2, 2022, James enrolled in a cooking class  | In his first cooking classes, James made simple dishes and a | On Thursday, April 14, 2022, James did a programming project | As of June 13, 2022, James's course project involves develop | James is working on an indie computer game based on a charac | James's friend John enrolled in a programming class around M | James started a course around June 2022 that combines his lo | As of April 2022, John (James's friend) has been taking free | James may invite John to help with parts of his indie game u | James reads a gaming magazine full of tutorials and develope | James's reminiscent of campfire camping trips with friends w | On Friday, April 29, 2022, James hit a frustrating bug in th | Funds from John's May 2022 CS:GO charity tournament went pri | John offered to send James resources and tutorials about the | James and his friend John discussed developing a mobile app ",
+          "digest_sha256": "b3e733e6df745e0c438d8e977967b64e4042b84d07626d38cd142a66af4230df",
+          "context": [
+            {
+              "rank": 1,
+              "id": "b5e5b707-5808-4097-8ce3-a20c0ce5f37d",
+              "prefix": "Around September 2, 2022, James enrolled in a cooking class ",
+              "tail": "even though he never liked cooking, wanting to learn something new; lessons cost only $10 per class",
+              "gold_literal_start": 146
+            },
+            {
+              "rank": 2,
+              "id": "25a6c434-0483-4b8c-9612-2b93ce886ada",
+              "prefix": "In his first cooking classes, James made simple dishes and a",
+              "tail": " great omelet on his first try, plus meringue, and learned to make dough; he hopes to cook something for John once he improves",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 3,
+              "id": "ae7a03ab-0918-46e6-9ee3-bd936ce79f28",
+              "prefix": "On Thursday, April 14, 2022, James did a programming project",
+              "tail": " with a gaming friend, combining coding and gaming to create a virtual world inspired by 'The Witcher 3'; he found seeing their ideas become real very fulfilling",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 4,
+              "id": "d05c18aa-a56d-4962-80e3-8ac52de831bd",
+              "prefix": "As of June 13, 2022, James's course project involves develop",
+              "tail": "ing a new part of a football simulator, where James is responsible for building the player database — a difficult task he successfully accomplished",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 5,
+              "id": "b5c3830c-0fe3-4b92-90f1-626a6d1b1875",
+              "prefix": "James is working on an indie computer game based on a charac",
+              "tail": "ter he has wanted to create since childhood, when he drew comics and sketches of the protagonist (concept art of a girl in a plane), combining his loves of gaming and storytelling",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 6,
+              "id": "40d0987f-711e-4e35-8d4b-0f5ceaa4bdc1",
+              "prefix": "James's friend John enrolled in a programming class around M",
+              "tail": "arch 2022 to relearn coding, having written some HTML and CSS a few years ago",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 7,
+              "id": "2f426134-6d22-4365-b7b1-02aef58a090e",
+              "prefix": "James started a course around June 2022 that combines his lo",
+              "tail": "ve of gaming and programming; he finds it fun and challenging and it deepened his passion for both",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 8,
+              "id": "dae5d462-d41f-4261-a72d-f82f1c51fd27",
+              "prefix": "As of April 2022, John (James's friend) has been taking free",
+              "tail": "lance programming jobs to sharpen his coding skills, finding them challenging but determined to improve",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 9,
+              "id": "cb77f531-d177-479c-8652-c4dc9ffa66f7",
+              "prefix": "James may invite John to help with parts of his indie game u",
+              "tail": "sing John's HTML knowledge, and John agreed to collaborate",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 10,
+              "id": "effed2fd-1094-4d58-9284-bb797af40a2a",
+              "prefix": "James reads a gaming magazine full of tutorials and develope",
+              "tail": "r interviews that he says has helped improve his game development skills",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 11,
+              "id": "74a0968b-f6ec-4a99-91ad-e3d489e28c40",
+              "prefix": "James's reminiscent of campfire camping trips with friends w",
+              "tail": "hen seeing John's portable smoker",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 12,
+              "id": "c920d97e-8cff-406c-a05b-009ed3ded147",
+              "prefix": "On Friday, April 29, 2022, James hit a frustrating bug in th",
+              "tail": "e programming project he'd worked on for weeks that broke the game mechanics; after hours of failed debugging he fixed it by collaborating with a group of friends",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 13,
+              "id": "09a2fa8a-79db-4349-93de-7e395e1d7e37",
+              "prefix": "Funds from John's May 2022 CS:GO charity tournament went pri",
+              "tail": "marily to a stray dog shelter near his street, with leftover money used to buy ingredients to cook meals for homeless people, who were very happy about it.",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 14,
+              "id": "d06cd264-73f2-4fca-91b8-2c6c0179a605",
+              "prefix": "John offered to send James resources and tutorials about the",
+              "tail": " new programming methods and techniques he learned, and encouraged James to ask him questions anytime",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 15,
+              "id": "d72a0149-d619-4be0-8ac6-fbf863ebefdc",
+              "prefix": "James and his friend John discussed developing a mobile app ",
+              "tail": "together for dog walking and pet care, connecting pet owners with reliable dog walkers and providing pet care information",
+              "gold_literal_start": -1
+            }
+          ]
+        },
+        {
+          "case_id": "locomo_conv-48_qa26",
+          "question": "乔琳在2023年1月读了哪本书？",
+          "gold": "尼尔·斯蒂芬森的《雪崩》",
+          "predicted_answer": "在2023年1月，乔琳阅读了《人类简史》（Sapiens，她当时正沉迷其中）和尼尔·斯蒂芬森的《雪崩》（Snow Crash，她在2023年1月下旬一口气读完了）。\n\n答案：2023年1月，乔琳读了《人类简史》和尼尔·斯蒂芬森的《雪崩》（其中《雪崩》是2023年1月下旬一口气读完的）。",
+          "first_score": 0.95,
+          "expanded": false,
+          "strict_exact": false,
+          "source_evidence": [
+            {
+              "dia_id": "D4:23",
+              "session_id": "session_4",
+              "speaker": "乔琳",
+              "text": "两周前，我一口气读完了尼尔·斯蒂芬森的《雪崩》！",
+              "blip_caption": null
+            }
+          ],
+          "digest": "乔琳最近迷上了《人类简史》一书，喜欢它对人类历史及科技如何影响人类的探讨；她还于2023年1月下旬（对话前两周）一口气读 | 乔琳曾在浴室里读过一本关于自我发现的书，非常有共鸣，她觉得自己的浴室很有美感 | 乔琳见面 Café 前需要整理书柜里的工程教科书，之后才有空赴约 | 乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4 | 乔琳向黛布推荐了Switch上的《塞尔达传说：旷野之息》（开放世界）和《集合啦！动物森友会》（治愈可爱），并提到《胡闹厨 | 黛布通过工作坊和书籍开始接触正念，如今正念已成为她生活中很大的一部分；她向乔琳推荐了正念 | 乔琳（工程师）在2023年1月底（对话于2023年2月4日前一周）完成了一个重要里程碑：她通过大量规划和研究，为一个有需 | 乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片 | 乔琳在2023年2月9日的对话中分享了她的计划本草图照片——一本工程笔记本，其中有带笔记的一页，记录了她的志愿STEM项 | 乔琳养了一株新植物（盆栽），把它当作照顾好自己、拥抱新开始的提醒 | 黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书 | 乔琳对绿色科技很感兴趣，认为它可以为欠发达地区带来改变，她想深入研究并看看自己能做什么贡献。 | 乔琳在2023年8月开始尝试时间管理方法——子弹笔记（bullet journal），用它追踪任务和保持条理，划掉清单任 | 乔琳是一名工程师，她在2023年1月中旬（约1月16日那周）完成了一个电气工程项目，尽管工作量很大。 | 乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战",
+          "digest_sha256": "d3a3137499724cf5c2b7b1d679206d1dbb0d2ed5be44daac07be9cc794f30d43",
+          "context": [
+            {
+              "rank": 1,
+              "id": "2527b4b0-45dc-4796-8e32-a175af3323f4",
+              "prefix": "乔琳最近迷上了《人类简史》一书，喜欢它对人类历史及科技如何影响人类的探讨；她还于2023年1月下旬（对话前两周）一口气读",
+              "tail": "完了尼尔·斯蒂芬森的《雪崩》，并读了一个关于人克服重重挑战取得成功的故事，深受鼓舞。",
+              "gold_literal_start": 62
+            },
+            {
+              "rank": 2,
+              "id": "14b5b648-5b05-4d2f-8088-fe32669b6c8a",
+              "prefix": "乔琳曾在浴室里读过一本关于自我发现的书，非常有共鸣，她觉得自己的浴室很有美感",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 3,
+              "id": "a0a619e4-00fc-4aad-bfa7-094ca35f5078",
+              "prefix": "乔琳见面 Café 前需要整理书柜里的工程教科书，之后才有空赴约",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 4,
+              "id": "f806ef60-5f11-49fe-b50e-ac1100b6883f",
+              "prefix": "乔琳和她都喜欢玩电子游戏；她上周（2023年1月中旬）和伴侣一起在主机上玩了《底特律》，并计划下周六（约2023年2月4",
+              "tail": "日）玩《Walking Dead》；乔琳小时候就自己学会了打游戏",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 5,
+              "id": "6a8be76b-6f76-44d3-a53a-1edd9a8a4376",
+              "prefix": "乔琳向黛布推荐了Switch上的《塞尔达传说：旷野之息》（开放世界）和《集合啦！动物森友会》（治愈可爱），并提到《胡闹厨",
+              "tail": "房2》是很好的联机合作游戏——她和伴侣经常用它打赌，乔琳赢过三个大披萨",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 6,
+              "id": "be0e6dd3-857f-4f99-8cd0-2a96db787e91",
+              "prefix": "黛布通过工作坊和书籍开始接触正念，如今正念已成为她生活中很大的一部分；她向乔琳推荐了正念",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 7,
+              "id": "7ce9e4c1-c5a3-4a53-8fcc-f5ef8cfcc8f0",
+              "prefix": "乔琳（工程师）在2023年1月底（对话于2023年2月4日前一周）完成了一个重要里程碑：她通过大量规划和研究，为一个有需",
+              "tail": "要的农村社区设计并建造了一台可持续的水净化器。看到它运转并为社区提供干净的水让她感到无比满足，觉得自己做了一件有意义的好事。",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 8,
+              "id": "83683963-a7d3-4df5-8a2b-3d2f3454fd75",
+              "prefix": "乔琳在艰难时期靠宠物蛇苏茜和电子游戏来安慰和消遣，她分享了一张宠物蛇蜷在手臂上的照片",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 9,
+              "id": "db0fb2fd-4721-4e3a-936e-b034db9aec5e",
+              "prefix": "乔琳在2023年2月9日的对话中分享了她的计划本草图照片——一本工程笔记本，其中有带笔记的一页，记录了她的志愿STEM项",
+              "tail": "目想法。",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 10,
+              "id": "99a358ca-af75-4db7-872b-292eed3fa036",
+              "prefix": "乔琳养了一株新植物（盆栽），把它当作照顾好自己、拥抱新开始的提醒",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 11,
+              "id": "49ffa49d-8dfe-486b-8fa9-9d822f82f79d",
+              "prefix": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 12,
+              "id": "1cd55e29-e74a-48c9-9244-f55e60461658",
+              "prefix": "乔琳对绿色科技很感兴趣，认为它可以为欠发达地区带来改变，她想深入研究并看看自己能做什么贡献。",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 13,
+              "id": "aa223067-097e-4734-a05c-bcde9d9683c3",
+              "prefix": "乔琳在2023年8月开始尝试时间管理方法——子弹笔记（bullet journal），用它追踪任务和保持条理，划掉清单任",
+              "tail": "务时感到特别满足，并分享了一张带有她最喜欢的名言的排版截图",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 14,
+              "id": "400291e2-89b7-414a-827b-7a2d54fcdf23",
+              "prefix": "乔琳是一名工程师，她在2023年1月中旬（约1月16日那周）完成了一个电气工程项目，尽管工作量很大。",
+              "tail": "",
+              "gold_literal_start": -1
+            },
+            {
+              "rank": 15,
+              "id": "ff075bc8-c3d2-40ef-8784-ef9f8746c927",
+              "prefix": "乔琳和伴侣最喜欢一起玩合作游戏《It Takes Two》，这是个有趣的团队策略游戏，还挺有竞技性；他们认为一起迎接挑战",
+              "tail": "、完成艰难成就是增进感情、变得更亲密的好方式",
+              "gold_literal_start": -1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Literal nonvisibility does not prove all paraphrases or implied facts are absent from the digest.",
+    "Screen excludes expanded cases because first ordered context was not archived, and excludes long/multi-part gold strings.",
+    "Strict exact scores and model answers are archived observations, not effects of changing Jev input.",
+    "The four detailed cases were selected after seeing the screen; no population prevalence follows."
+  ]
+}

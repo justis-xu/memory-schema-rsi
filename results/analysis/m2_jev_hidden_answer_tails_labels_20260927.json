@@ -1,0 +1,26 @@
+{
+  "method": "Manual source-aware review of four post-screen Chinese Jev laya cases. The labels describe visibility of the answer-bearing relation in the reconstructed first-60-character digest, not the model's internal knowledge or a causal effect.",
+  "packet": "results/analysis/m2_jev_hidden_answer_tails_20260927.json",
+  "cases": [
+    {
+      "case_id": "locomo_conv-42_qa102",
+      "visibility": "partly_visible_but_required_preference_tail_only",
+      "note": "Digest shows Nate likes chocolate mousse and has made berry-containing cake, but the explicit preference for mixed berry flavor is only in memory 917b9dd4 after character 60. D3:10 directly states chocolate and mixed berry flavor preference."
+    },
+    {
+      "case_id": "locomo_conv-44_qa114",
+      "visibility": "required_event_tail_only",
+      "note": "Digest's first memory covers Saturday hiking with Audrey; its tail alone says Andrew has a Sunday picnic date with his girlfriend. D26:20 directly supports the latter. Other digest prefixes discuss different outings, not this Sunday date type."
+    },
+    {
+      "case_id": "locomo_conv-47_qa122",
+      "visibility": "required_price_tail_only",
+      "note": "Digest says James enrolled in cooking class but gives no lesson price. The $10 amount is after character 60 of memory b5e5b707; D23:15 directly says each class costs 10 dollars."
+    },
+    {
+      "case_id": "locomo_conv-48_qa26",
+      "visibility": "required_book_title_tail_only_with_visible_distractor",
+      "note": "Digest first memory says Jolene read a book in late January but cuts before Snow Crash and its author; Sapiens remains visible at the beginning. D4:23 directly says she read Snow Crash two weeks before the February conversation. Answerer listed both titles, so old strict exact=false is not a Jev visibility label."
+    }
+  ]
+}
