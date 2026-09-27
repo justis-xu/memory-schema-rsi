@@ -1,0 +1,207 @@
+{
+  "scope": "Old mixed-language frozen 15-memory answer POC; one slot changed per arm; zero judge calls",
+  "source_packet": "results/analysis/m2_graph_positive_mechanisms_20260927.json",
+  "source_packet_sha256": "6c97b95ec1aac04b6b4cab8153b3f90c74448a37ef343aef3c9463f4708cb043",
+  "graph_run_sha256": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_calls": 10,
+  "max_completion_tokens_per_call": 1200,
+  "prompt_template": "official LoCoMo answer prompt, numbered fixed order, dates omitted for content-only swap",
+  "cases": [
+    {
+      "case_id": "locomo_conv-49_qa85",
+      "question": "埃文几年前开始做什么来减压？",
+      "gold_for_manual_label_only": "水彩画",
+      "source_evidence_ids": [
+        "D1:14"
+      ],
+      "replace_rank": 15,
+      "removed_memory": {
+        "rank": 15,
+        "id": "c1e914bc-1004-47c1-9a3f-07c7fa1bc4b2",
+        "content": "Evan建议低强度运动如游泳、瑜伽和散步，并分享了他从附近一家餐厅获得沙拉灵感制作的沙拉（含鸡肉、牛油果、番茄、玉米和奶酪）",
+        "route": "vector",
+        "session_date": "12:17 am on 10 January, 2024"
+      },
+      "arms": {
+        "base": {
+          "added_memory": null,
+          "context_ids": [
+            "f07268f7-ebe0-4c11-83ae-bc6cf753175a",
+            "7b763964-63ad-431c-bdd6-b6682503b2e8",
+            "0792cd2a-23a2-4817-adcf-fecac44cee3d",
+            "006a2c21-85e0-4a23-a8b8-0a42642db147",
+            "f58e5519-0f07-40a1-8865-eefd7a1f53e6",
+            "af7f85f9-2f5d-4dbd-ad55-290799b7ac26",
+            "6af405ae-0daa-43b8-9e05-a172072c1c2f",
+            "79fbccb3-9096-4129-b5f9-99229b61cdc6",
+            "4a73d479-bcfc-4d6d-970e-eec1db920667",
+            "807e98ce-b6c8-4bc5-8bba-7b6419613b95",
+            "8ea42f81-6e0e-44b4-89fc-634782a11053",
+            "37dfe81b-5235-4b18-960e-6118572ceecc",
+            "40085b1b-9ce7-4f05-a0e1-20d4bb9c3018",
+            "b2b800b6-4525-4beb-9cf8-467fb99e067e",
+            "c1e914bc-1004-47c1-9a3f-07c7fa1bc4b2"
+          ],
+          "prompt_sha256": "24713d13c16ea8fe80a6448701b340dae4010d8e54cb173c658d8598b0602549"
+        },
+        "target": {
+          "added_memory": {
+            "rank": 15,
+            "id": "dbc78f1e-fe6b-4b63-b279-d6cba1c6e2db",
+            "content": "User took up watercolor painting a few years ago after a friend introduced him and gave him some tips, and immediately became passionate about it; he shared a watercolor painting of a cactus in the desert",
+            "route": "graph",
+            "session_date": null
+          },
+          "context_ids": [
+            "f07268f7-ebe0-4c11-83ae-bc6cf753175a",
+            "7b763964-63ad-431c-bdd6-b6682503b2e8",
+            "0792cd2a-23a2-4817-adcf-fecac44cee3d",
+            "006a2c21-85e0-4a23-a8b8-0a42642db147",
+            "f58e5519-0f07-40a1-8865-eefd7a1f53e6",
+            "af7f85f9-2f5d-4dbd-ad55-290799b7ac26",
+            "6af405ae-0daa-43b8-9e05-a172072c1c2f",
+            "79fbccb3-9096-4129-b5f9-99229b61cdc6",
+            "4a73d479-bcfc-4d6d-970e-eec1db920667",
+            "807e98ce-b6c8-4bc5-8bba-7b6419613b95",
+            "8ea42f81-6e0e-44b4-89fc-634782a11053",
+            "37dfe81b-5235-4b18-960e-6118572ceecc",
+            "40085b1b-9ce7-4f05-a0e1-20d4bb9c3018",
+            "b2b800b6-4525-4beb-9cf8-467fb99e067e",
+            "dbc78f1e-fe6b-4b63-b279-d6cba1c6e2db"
+          ],
+          "prompt_sha256": "e3846e7150953586fe7c9f162f70cef5e8325a79070855f35fc4033d153e02b6"
+        },
+        "placebo": {
+          "added_memory": {
+            "rank": 15,
+            "id": "b8fc79ba-90b9-4cd6-8d7b-f3ba8b34e5ae",
+            "content": "Sam started a new diet and exercise plan on Monday, August 21, 2023, and reported it was going very well; he shared a before-and-after photo of his healthy eating (a bowl of beef and vegetables) hoping to inspire others to make better choices",
+            "route": "graph",
+            "session_date": null
+          },
+          "context_ids": [
+            "f07268f7-ebe0-4c11-83ae-bc6cf753175a",
+            "7b763964-63ad-431c-bdd6-b6682503b2e8",
+            "0792cd2a-23a2-4817-adcf-fecac44cee3d",
+            "006a2c21-85e0-4a23-a8b8-0a42642db147",
+            "f58e5519-0f07-40a1-8865-eefd7a1f53e6",
+            "af7f85f9-2f5d-4dbd-ad55-290799b7ac26",
+            "6af405ae-0daa-43b8-9e05-a172072c1c2f",
+            "79fbccb3-9096-4129-b5f9-99229b61cdc6",
+            "4a73d479-bcfc-4d6d-970e-eec1db920667",
+            "807e98ce-b6c8-4bc5-8bba-7b6419613b95",
+            "8ea42f81-6e0e-44b4-89fc-634782a11053",
+            "37dfe81b-5235-4b18-960e-6118572ceecc",
+            "40085b1b-9ce7-4f05-a0e1-20d4bb9c3018",
+            "b2b800b6-4525-4beb-9cf8-467fb99e067e",
+            "b8fc79ba-90b9-4cd6-8d7b-f3ba8b34e5ae"
+          ],
+          "prompt_sha256": "00040116b027544a23cf16ebed75f2dcfe11b0b94fd35da0488e999caf1746ab"
+        }
+      },
+      "order": [
+        "base",
+        "target",
+        "placebo",
+        "placebo",
+        "target",
+        "base"
+      ],
+      "calls": [
+        {
+          "call_index": 1,
+          "arm": "base",
+          "error_type": "RateLimitError",
+          "http_status": 429
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-50_qa124",
+      "question": "戴夫觉得什么活动很有成就感，就像卡尔文对音乐节的热情一样？",
+      "gold_for_manual_label_only": "修理东西",
+      "source_evidence_ids": [
+        "D23:11"
+      ],
+      "replace_rank": 12,
+      "removed_memory": {
+        "rank": 12,
+        "id": "d4457eed-04e1-4cdf-a5d7-0eac186737e6",
+        "content": "戴夫在波士顿音乐节上最喜欢的乐队是Aerosmith，他终于现场看到了他们，圆了看到最喜欢乐队现场演出的梦想，觉得是非常美妙的体验，但没有机会在演出后与他们见面",
+        "route": "vector",
+        "session_date": "4:45 pm on 26 March, 2023"
+      },
+      "arms": {
+        "base": {
+          "added_memory": null,
+          "context_ids": [
+            "6978e878-7947-4160-9ed2-6bef81570fc8",
+            "94e120e7-c330-46a4-bc09-bb0bad95dd2f",
+            "e771797b-0e46-48e5-86b6-284a218a6249",
+            "6ac1203b-be22-4fce-8a30-9fcc3a31d96a",
+            "24af0043-27e2-400c-b182-eae001d5b73c",
+            "310fe5af-e8e6-4c7c-840c-749fd2de776f",
+            "0d4f84ce-21dd-4009-92ea-572d1c3c7b15",
+            "b6c85038-5d37-49eb-8d8e-72feef961bb2",
+            "1d1b3ace-47c8-419b-8cb9-19b70136c16b",
+            "74c4d1b5-fd03-4f1b-aaed-cd6413c77f97",
+            "d136cb1d-6fb8-482b-92c1-e3f05bf987c4",
+            "d4457eed-04e1-4cdf-a5d7-0eac186737e6",
+            "870f93cd-c220-45f2-96af-8e606dd747b6",
+            "4002694b-7c44-4668-8b71-bea9575d7fe5",
+            "ab0bfb0e-af65-4f57-a11e-cb4af500e3d9"
+          ],
+          "prompt_sha256": "a3d3ef369f64a1150f29f4ad34fc7408f45144a8faf278da3d42a134f56698dc"
+        },
+        "distractor": {
+          "added_memory": {
+            "id": "6eb8af39-c052-4b17-bab0-d40254862427",
+            "content": "戴夫最近加入了一支摇滚乐队，一直在练习吉他，并分享了乐队成员们一起演奏乐器的合照",
+            "user_id": "zhfull:locomo:conv-50",
+            "via": [
+              "concept:hobby",
+              "entity:戴夫"
+            ],
+            "support": 2,
+            "anchor_memory_id": "6978e878-7947-4160-9ed2-6bef81570fc8",
+            "rank": 12
+          },
+          "context_ids": [
+            "6978e878-7947-4160-9ed2-6bef81570fc8",
+            "94e120e7-c330-46a4-bc09-bb0bad95dd2f",
+            "e771797b-0e46-48e5-86b6-284a218a6249",
+            "6ac1203b-be22-4fce-8a30-9fcc3a31d96a",
+            "24af0043-27e2-400c-b182-eae001d5b73c",
+            "310fe5af-e8e6-4c7c-840c-749fd2de776f",
+            "0d4f84ce-21dd-4009-92ea-572d1c3c7b15",
+            "b6c85038-5d37-49eb-8d8e-72feef961bb2",
+            "1d1b3ace-47c8-419b-8cb9-19b70136c16b",
+            "74c4d1b5-fd03-4f1b-aaed-cd6413c77f97",
+            "d136cb1d-6fb8-482b-92c1-e3f05bf987c4",
+            "6eb8af39-c052-4b17-bab0-d40254862427",
+            "870f93cd-c220-45f2-96af-8e606dd747b6",
+            "4002694b-7c44-4668-8b71-bea9575d7fe5",
+            "ab0bfb0e-af65-4f57-a11e-cb4af500e3d9"
+          ],
+          "prompt_sha256": "1e1a7851e24343ab25707efeb13cd638480bc37ae1505a003e950707f01a0b11"
+        }
+      },
+      "order": [
+        "base",
+        "distractor",
+        "distractor",
+        "base"
+      ],
+      "calls": []
+    }
+  ],
+  "limits": [
+    "Retrospectively selected cases, not a prevalence or overall graph effect estimate.",
+    "Old mixed-language memories, not current pure-Chinese memory store.",
+    "A one-slot swap tests candidate content, not graph traversal, retrieval, or reranking.",
+    "Two responses per arm are a diagnostic stability check, not a variance estimate."
+  ],
+  "stopped_after_failure": true
+}

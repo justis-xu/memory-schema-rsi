@@ -1,0 +1,126 @@
+{
+  "scope": "Read-only old Graph/vector source trace and current Chinese Chroma metadata; no model/retrieval/graph calls",
+  "paths": {
+    "english_data": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10.json",
+    "chinese_data": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
+    "archive": "/Users/xu/git/memory-schema-rsi/results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+    "current_chroma": "/Users/xu/git/memory-schema-rsi/data/vector_store_zh/chroma/chroma.sqlite3"
+  },
+  "sha256": {
+    "english_data": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese_data": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "archive": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "current_chroma": "019e9abc2158825ce9ab7aea865ccaef0fffe5dde6a4871fa074ff3c03b78fd8"
+  },
+  "case_id": "locomo_conv-49_qa85",
+  "question": "埃文几年前开始做什么来减压？",
+  "english_source": {
+    "session_date": "1:47 pm on 18 May, 2023",
+    "turns": [
+      {
+        "dia_id": "D1:14",
+        "speaker": "Evan",
+        "text": "Yep, it's a great stress-buster. I started doing this a few years back."
+      },
+      {
+        "dia_id": "D1:15",
+        "speaker": "Sam",
+        "text": "Wow, that's impressive! How did you get into watercolor painting?"
+      },
+      {
+        "dia_id": "D1:16",
+        "speaker": "Evan",
+        "text": "My friend got me into it and gave me some advice, and I was hooked right away!"
+      },
+      {
+        "dia_id": "D1:17",
+        "speaker": "Sam",
+        "text": "Wow! I hope I can find something I'm as passionate about as you are with watercolor painting."
+      }
+    ]
+  },
+  "chinese_source": {
+    "session_date": "1:47 pm on 18 May, 2023",
+    "turns": [
+      {
+        "dia_id": "D1:14",
+        "speaker": "埃文",
+        "text": "是啊，它是很好的减压方式。我几年前开始画的。"
+      },
+      {
+        "dia_id": "D1:15",
+        "speaker": "萨姆",
+        "text": "哇，真厉害！你是怎么开始画水彩画的？"
+      },
+      {
+        "dia_id": "D1:16",
+        "speaker": "埃文",
+        "text": "我朋友带我入门的，还给了我一些建议，我一下子就迷上了！"
+      },
+      {
+        "dia_id": "D1:17",
+        "speaker": "萨姆",
+        "text": "哇！希望我也能找到像你对水彩画这样让我充满热情的东西。"
+      }
+    ]
+  },
+  "archived_graph_candidate": {
+    "id": "dbc78f1e-fe6b-4b63-b279-d6cba1c6e2db",
+    "content": "User took up watercolor painting a few years ago after a friend introduced him and gave him some tips, and immediately became passionate about it; he shared a watercolor painting of a cactus in the desert",
+    "user_id": "zhfull:locomo:conv-49",
+    "via": [
+      "entity:Evan",
+      "concept:arts",
+      "entity:watercolor painting"
+    ],
+    "support": 3,
+    "anchor_memory_id": "f07268f7-ebe0-4c11-83ae-bc6cf753175a"
+  },
+  "archived_vector_same_id": {
+    "id": "dbc78f1e-fe6b-4b63-b279-d6cba1c6e2db",
+    "content": "User took up watercolor painting a few years ago after a friend introduced him and gave him some tips, and immediately became passionate about it; he shared a watercolor painting of a cactus in the desert",
+    "score": 0.46679200358894074,
+    "metadata": {
+      "session_date": "1:47 pm on 18 May, 2023",
+      "case_id": "locomo_conv-49_qa0",
+      "benchmark": "locomo",
+      "session_id": "session_1",
+      "user_id": "zhfull:locomo:conv-49"
+    }
+  },
+  "archived_first_anchor_vector": {
+    "id": "f07268f7-ebe0-4c11-83ae-bc6cf753175a",
+    "content": "Evan has been painting for several years, and it helps him find calm; he told Sam painting is great for stress relief though it won't help with weight loss, and also recommended exercise",
+    "score": 0.5629259154810016,
+    "metadata": {
+      "session_date": "7:11 pm on 24 May, 2023",
+      "session_id": "session_2",
+      "benchmark": "locomo",
+      "case_id": "locomo_conv-49_qa0",
+      "user_id": "zhfull:locomo:conv-49"
+    }
+  },
+  "current_chinese_same_relation_memories": [
+    {
+      "id": "e3762a39-169b-45be-9aa6-c8053f882d16",
+      "content": "User几年前开始画水彩画，是朋友带他入门并给了建议，他一下子就迷上了，视画画为很好的减压方式",
+      "metadata": {
+        "benchmark": "locomo",
+        "case_id": "locomo_conv-49_qa0",
+        "created_at": "2026-09-26T00:43:07.208503+00:00",
+        "data": "User几年前开始画水彩画，是朋友带他入门并给了建议，他一下子就迷上了，视画画为很好的减压方式",
+        "hash": "d7b08b034e3a5358d83681bbfe086ded",
+        "session_date": "1:47 pm on 18 May, 2023",
+        "session_id": "session_1",
+        "text_lemmatized": "User几年前开始画水彩画，是朋友带他入门并给了建议，他一下子就迷上了，视画画为很好的减压方式",
+        "updated_at": "2026-09-26T00:43:07.208503+00:00",
+        "user_id": "zhfull:locomo:conv-49"
+      }
+    }
+  ],
+  "limits": [
+    "Archived Graph via list is aggregated and anchor_memory_id stores the first anchor; it is not a per-edge traversal trace.",
+    "Current Chinese memory has a new ID and is not the same frozen run as the archived graph candidate.",
+    "Current memory presence does not establish current vector top-15 exposure or answer gain."
+  ]
+}
