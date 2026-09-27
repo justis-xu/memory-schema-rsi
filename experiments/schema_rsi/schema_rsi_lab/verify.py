@@ -71,6 +71,8 @@ def verify_answer(client, question: str, answer: str, memories: list[MemoryRecor
                 continue
             if 1 <= index <= len(memories) and memories[index - 1].id not in support_ids:
                 support_ids.append(memories[index - 1].id)
+    if status == "supported" and not support_ids:
+        return Verdict("uncertain", "supported verdict lacks valid support_indices", "")
     return Verdict(status, str(obj.get("reason", ""))[:500],
                    str(obj.get("search_query", ""))[:200], True, tuple(support_ids))
 
@@ -142,7 +144,7 @@ def repair_case(case: dict, memories: dict[str, dict], graph: LifecycleGraph,
     second = verify_answer(verifier_client, case["question"], proposal, records(selected))
     result["model_calls"] += int(second.model_called)
     result["second_verdict"] = second.__dict__
-    if second.status == "supported":
+    if second.status == "supported" and second.support_ids:
         result["accepted"] = True
         result["final_answer"] = proposal
         result["support_ids"] = list(second.support_ids)

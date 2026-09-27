@@ -1,0 +1,111 @@
+{
+  "scope": "Historical English conv-26 RSI accepted-repair provenance plus deterministic current parser probe; no model calls or production writes",
+  "archived": {
+    "original": {
+      "path": "experiments/schema_rsi/runs/conv26_verify_repair_final.jsonl",
+      "file_sha256": "72acf02e7ff991c3d5a75d2bd2b44c151b0627b8e88f842e727e429000478dcc",
+      "rows": 15,
+      "accepted": [
+        {
+          "case_id": "locomo_conv-26_qa133",
+          "verdict_status": "supported",
+          "verdict_keys": [
+            "reason",
+            "search_query",
+            "status"
+          ],
+          "support_ids_present": false,
+          "final_correct_archived": true
+        },
+        {
+          "case_id": "locomo_conv-26_qa140",
+          "verdict_status": "supported",
+          "verdict_keys": [
+            "reason",
+            "search_query",
+            "status"
+          ],
+          "support_ids_present": false,
+          "final_correct_archived": true
+        }
+      ]
+    },
+    "optimized": {
+      "path": "experiments/schema_rsi/runs/conv26_source_optimized.jsonl",
+      "file_sha256": "d1b0bbbd7d92f97d033c65e767b3a7b102bde5eff0a6cdb5f75cab91a7b967ff",
+      "rows": 2,
+      "accepted": [
+        {
+          "case_id": "locomo_conv-26_qa133",
+          "verdict_status": "supported",
+          "verdict_keys": [
+            "reason",
+            "search_query",
+            "status"
+          ],
+          "support_ids_present": false,
+          "final_correct_archived": true
+        },
+        {
+          "case_id": "locomo_conv-26_qa140",
+          "verdict_status": "supported",
+          "verdict_keys": [
+            "reason",
+            "search_query",
+            "status"
+          ],
+          "support_ids_present": false,
+          "final_correct_archived": true
+        }
+      ]
+    }
+  },
+  "synthetic_parser_cases": [
+    {
+      "support_indices": [],
+      "raw_status": "supported",
+      "parsed_status": "uncertain",
+      "parsed_support_ids": [],
+      "current_accept_predicate": false,
+      "prior_accept_predicate": true
+    },
+    {
+      "support_indices": [
+        999
+      ],
+      "raw_status": "supported",
+      "parsed_status": "uncertain",
+      "parsed_support_ids": [],
+      "current_accept_predicate": false,
+      "prior_accept_predicate": true
+    },
+    {
+      "support_indices": [
+        "bad"
+      ],
+      "raw_status": "supported",
+      "parsed_status": "uncertain",
+      "parsed_support_ids": [],
+      "current_accept_predicate": false,
+      "prior_accept_predicate": true
+    },
+    {
+      "support_indices": [
+        1
+      ],
+      "raw_status": "supported",
+      "parsed_status": "supported",
+      "parsed_support_ids": [
+        "m1"
+      ],
+      "current_accept_predicate": true,
+      "prior_accept_predicate": true
+    }
+  ],
+  "limits": [
+    "Older archived verdicts predate the support_indices contract; absence of IDs is not proof that the answers lacked source support.",
+    "Synthetic malformed verifier replies test control flow, not a measured model error rate.",
+    "A valid support ID only proves a memory was named, not that it genuinely supports the answer or maps to a source turn.",
+    "This experimental verifier is separate from the production Chinese evaluation pipeline."
+  ]
+}
