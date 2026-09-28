@@ -1,0 +1,245 @@
+{
+  "current_source": [
+    {
+      "id": "anchor",
+      "content": "讨论旧话题。"
+    },
+    {
+      "id": "changed",
+      "content": "现在只讨论新话题。"
+    },
+    {
+      "id": "replacement",
+      "content": "新增的替代记忆。"
+    }
+  ],
+  "graph": {
+    "vertices": [
+      {
+        "label": "Memory",
+        "key": "anchor",
+        "properties": {
+          "memory_id": "anchor",
+          "content": "讨论旧话题。",
+          "user_id": "合成用户",
+          "session_id": "synthetic",
+          "source": "mem0",
+          "session_date": ""
+        }
+      },
+      {
+        "label": "Memory",
+        "key": "deleted",
+        "properties": {
+          "memory_id": "deleted",
+          "content": "已经从当前记忆清单删除的旧事实。",
+          "user_id": "合成用户",
+          "session_id": "synthetic",
+          "source": "mem0",
+          "session_date": ""
+        }
+      },
+      {
+        "label": "Memory",
+        "key": "changed",
+        "properties": {
+          "memory_id": "changed",
+          "content": "现在只讨论新话题。",
+          "user_id": "合成用户",
+          "session_id": "synthetic",
+          "source": "mem0",
+          "session_date": ""
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "4:合成用户:旧话题",
+        "properties": {
+          "entity_id": "4:合成用户:旧话题",
+          "name": "旧话题",
+          "type": "other"
+        }
+      },
+      {
+        "label": "Memory",
+        "key": "replacement",
+        "properties": {
+          "memory_id": "replacement",
+          "content": "新增的替代记忆。",
+          "user_id": "合成用户",
+          "session_id": "synthetic",
+          "source": "mem0",
+          "session_date": ""
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "4:合成用户:新话题",
+        "properties": {
+          "entity_id": "4:合成用户:新话题",
+          "name": "新话题",
+          "type": "other"
+        }
+      },
+      {
+        "label": "Memory",
+        "key": "other-owner",
+        "properties": {
+          "memory_id": "other-owner",
+          "content": "其他用户事实",
+          "user_id": "另一个用户"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "anchor",
+        "to_label": "Entity",
+        "to_key": "4:合成用户:旧话题",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "deleted",
+        "to_label": "Entity",
+        "to_key": "4:合成用户:旧话题",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "changed",
+        "to_label": "Entity",
+        "to_key": "4:合成用户:旧话题",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "anchor",
+        "to_label": "Entity",
+        "to_key": "4:合成用户:旧话题",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "changed",
+        "to_label": "Entity",
+        "to_key": "4:合成用户:新话题",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "replacement",
+        "to_label": "Entity",
+        "to_key": "4:合成用户:新话题",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "other-owner",
+        "to_label": "Entity",
+        "to_key": "4:合成用户:旧话题",
+        "properties": {}
+      }
+    ]
+  },
+  "fused_candidates": [
+    {
+      "id": "deleted",
+      "content": "已经从当前记忆清单删除的旧事实。",
+      "user_id": "合成用户",
+      "session_id": "synthetic",
+      "session_date": "",
+      "via": [
+        "entity:旧话题"
+      ],
+      "support": 1,
+      "anchor_memory_id": "anchor"
+    }
+  ],
+  "bypass_candidates": [
+    {
+      "id": "deleted",
+      "content": "已经从当前记忆清单删除的旧事实。",
+      "user_id": "合成用户",
+      "session_id": "synthetic",
+      "session_date": "",
+      "via": "entity:旧话题",
+      "anchor_memory_id": "anchor"
+    },
+    {
+      "id": "changed",
+      "content": "现在只讨论新话题。",
+      "user_id": "合成用户",
+      "session_id": "synthetic",
+      "session_date": "",
+      "via": "entity:旧话题",
+      "anchor_memory_id": "anchor"
+    }
+  ],
+  "expansion_candidates": [
+    {
+      "id": "deleted",
+      "content": "已经从当前记忆清单删除的旧事实。",
+      "user_id": "合成用户",
+      "session_id": "synthetic",
+      "session_date": "",
+      "via": [
+        "entity:旧话题"
+      ],
+      "support": 1,
+      "anchor_memory_id": "anchor"
+    },
+    {
+      "id": "changed",
+      "content": "现在只讨论新话题。",
+      "user_id": "合成用户",
+      "session_id": "synthetic",
+      "session_date": "",
+      "via": [
+        "entity:旧话题"
+      ],
+      "support": 1,
+      "anchor_memory_id": "anchor"
+    }
+  ],
+  "expansion_context_ids": [
+    "deleted"
+  ],
+  "converted_fused_records": [
+    {
+      "id": "deleted",
+      "content": "已经从当前记忆清单删除的旧事实。"
+    }
+  ],
+  "observations": {
+    "deleted_vertex_retained": true,
+    "deleted_id_absent_from_current_source": true,
+    "deleted_id_fused_candidate": true,
+    "deleted_id_bypass_candidate": true,
+    "same_id_new_content_visible_via_old_entity": true,
+    "cross_owner_rejected_both_paths": true,
+    "deleted_id_enters_real_expansion_context_with_stub_ranker": true
+  },
+  "scope": "Synthetic actual GraphBuilder/GraphRetriever/Jev expansion replay; fake graph transport and deterministic ranking; zero model/service calls.",
+  "limits": [
+    "Not a live HugeGraph snapshot or historical failure rate.",
+    "Stub ranker demonstrates acceptance only, not actual candidate ranking or answer harm.",
+    "No model extraction, embedding or cluster reassignment executed."
+  ],
+  "code_sha256": {
+    "src/schema_rsi/graph/builder.py": "e5d65f6df8e34c89ac3e13058dd8f6efdfecdc9d8f7c9ad8f7b3fef8eed650a6",
+    "src/schema_rsi/graph/hugegraph_store.py": "576b27f2b57998707b8e7acfd34c244a2db255945ee30500ee68bcbb2aa044cf",
+    "src/schema_rsi/evaluation/retriever.py": "9ef1874491ca98ef96eafb65d4c5460f9ad620fa4c28df1a56d27477d9fa4717",
+    "src/schema_rsi/evaluation/pipeline.py": "afd6b58e5ff2e749c6daab9cfe0285fd808bbeb8e25975f51e1ff18f9b4cdfc2",
+    "scripts/build_graph_zh.py": "96f7b045aa688673a78f655005b803c7b45ba3455dc8356b5d0c00e9d7bc9603",
+    "src/schema_rsi/graph/variants.py": "1c491df78bd17e2e6bbdb91b48c75e02c6513b1ccadadee986777a99d70eb234"
+  }
+}
