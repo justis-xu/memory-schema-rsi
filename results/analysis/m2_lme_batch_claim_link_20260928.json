@@ -1,0 +1,320 @@
+{
+  "scope": "五道固定中文 LongMemEval 题的人工诊断子句到实际 ingest_case 输入批次的合法定位",
+  "dataset_path": "/Users/xu/git/memory-prompt/eval-datasets/longmemeval-zh/longmemeval_s_cleaned_zh.json",
+  "dataset_sha256": "e93bd28549d25ba4092034bfe336a92f5fbce7e17693c5672a5f9d3be0d96f1f",
+  "source_claims": "results/analysis/m2_lme_clause_support_20260928.json",
+  "source_trace": "results/analysis/m2_ingest_source_trace_20260928.json",
+  "checks": {
+    "all_232_batch_ids_match_archived_trace": true,
+    "all_claim_witnesses_match_traced_input_text_and_role": true,
+    "recorder_returned_no_memories": true,
+    "all_history_batches_replayed_without_gold_input_fields": true
+  },
+  "cases": [
+    {
+      "question_id": "71315a70",
+      "history_batch_count": 53,
+      "claims": [
+        {
+          "claim_id": "earlier_ocean_five_to_six",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_c44b9df4_1",
+              "batch_id": "4bdec40150d22bb9743dabf204bd083d095961d286fa3dfebfff4df1925a3b8c",
+              "source_ref": "turn:4",
+              "role": "user",
+              "source_content_sha256": "6131df69aef9389ab5c462f9299a877c99ca60292bb3aa57241e499bfaa1fbbb"
+            }
+          ]
+        },
+        {
+          "claim_id": "later_ocean_ten_to_twelve",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_c44b9df4_2",
+              "batch_id": "a7c2566720054ad509120813ea0b8483b64a2a65f9a530820fdf18a51b3ded4b",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "62ebb76c7b384f17874739afbda7cb239b09980fe89a765154a27877d696d573"
+            },
+            {
+              "session_id": "answer_c44b9df4_2",
+              "batch_id": "a7c2566720054ad509120813ea0b8483b64a2a65f9a530820fdf18a51b3ded4b",
+              "source_ref": "turn:10",
+              "role": "user",
+              "source_content_sha256": "3a22b8b23e9f195f1b217322ece58af4a47b2fa0184af066590f76b286cb8fc3"
+            }
+          ]
+        },
+        {
+          "claim_id": "sum_ocean_fifteen_to_eighteen",
+          "source_support": "absent",
+          "witnesses": [
+            {
+              "session_id": "answer_c44b9df4_1",
+              "batch_id": "4bdec40150d22bb9743dabf204bd083d095961d286fa3dfebfff4df1925a3b8c",
+              "source_ref": "turn:4",
+              "role": "user",
+              "source_content_sha256": "6131df69aef9389ab5c462f9299a877c99ca60292bb3aa57241e499bfaa1fbbb"
+            },
+            {
+              "session_id": "answer_c44b9df4_2",
+              "batch_id": "a7c2566720054ad509120813ea0b8483b64a2a65f9a530820fdf18a51b3ded4b",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "62ebb76c7b384f17874739afbda7cb239b09980fe89a765154a27877d696d573"
+            }
+          ]
+        },
+        {
+          "claim_id": "sunset_separate_project",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_c44b9df4_2",
+              "batch_id": "a7c2566720054ad509120813ea0b8483b64a2a65f9a530820fdf18a51b3ded4b",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "62ebb76c7b384f17874739afbda7cb239b09980fe89a765154a27877d696d573"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "031748ae",
+      "history_batch_count": 45,
+      "claims": [
+        {
+          "claim_id": "early_five_engineers_plus_manager",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_8748f791_1",
+              "batch_id": "72ac11cd90d82ce73de765ec5543a29177e71f54cfb68b292de712c7a2067e65",
+              "source_ref": "turn:4",
+              "role": "user",
+              "source_content_sha256": "d4e997bc0991d232abdf1d46831ef4ba24e9c45c3a931b3ccb8c888505a57778"
+            }
+          ]
+        },
+        {
+          "claim_id": "early_corrected_four_engineers",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_8748f791_1",
+              "batch_id": "72ac11cd90d82ce73de765ec5543a29177e71f54cfb68b292de712c7a2067e65",
+              "source_ref": "turn:10",
+              "role": "user",
+              "source_content_sha256": "49658529e11fda828d1b8fccf4c63548fef86062aee01776e378c34737357a1a"
+            }
+          ]
+        },
+        {
+          "claim_id": "current_five_engineers",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_8748f791_2",
+              "batch_id": "88d7a150eeaa4ad012f33790869965981f462fa37b4535d118e916dbf6478919",
+              "source_ref": "turn:2",
+              "role": "user",
+              "source_content_sha256": "743cec54adc694eb1dcbde67f83d53bbcbb34cef472066160f990c76db26f20e"
+            }
+          ]
+        },
+        {
+          "claim_id": "four_includes_self",
+          "source_support": "partial",
+          "witnesses": [
+            {
+              "session_id": "answer_8748f791_1",
+              "batch_id": "72ac11cd90d82ce73de765ec5543a29177e71f54cfb68b292de712c7a2067e65",
+              "source_ref": "turn:10",
+              "role": "user",
+              "source_content_sha256": "49658529e11fda828d1b8fccf4c63548fef86062aee01776e378c34737357a1a"
+            },
+            {
+              "session_id": "answer_8748f791_1",
+              "batch_id": "72ac11cd90d82ce73de765ec5543a29177e71f54cfb68b292de712c7a2067e65",
+              "source_ref": "turn:11",
+              "role": "assistant",
+              "source_content_sha256": "d77b7f9d15632bc70bba4c2e1d2b42b3652565c77115760dfde433c80f45da3a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "50635ada",
+      "history_batch_count": 46,
+      "claims": [
+        {
+          "claim_id": "silver_eligible",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_dcd74827_1",
+              "batch_id": "a44bec0ecc8d7857ef5f09ed070927a659580d1ae26e0d3141a96ae2c359f47c",
+              "source_ref": "turn:4",
+              "role": "user",
+              "source_content_sha256": "3c7dc5e0bdf6a9d0ad2fa53f4489f1cb89a686f211a41871385c3021acc28ec4"
+            }
+          ]
+        },
+        {
+          "claim_id": "silver_attained",
+          "source_support": "partial",
+          "witnesses": [
+            {
+              "session_id": "answer_dcd74827_1",
+              "batch_id": "a44bec0ecc8d7857ef5f09ed070927a659580d1ae26e0d3141a96ae2c359f47c",
+              "source_ref": "turn:4",
+              "role": "user",
+              "source_content_sha256": "3c7dc5e0bdf6a9d0ad2fa53f4489f1cb89a686f211a41871385c3021acc28ec4"
+            }
+          ]
+        },
+        {
+          "claim_id": "gold_attained",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_dcd74827_2",
+              "batch_id": "7a0b43867de22e03e5d5510efcde47ddebac6235d134589cfe825a5174d3dfd3",
+              "source_ref": "turn:2",
+              "role": "user",
+              "source_content_sha256": "7e85bd3bbce3b644f37afa5b49c657ec7c98a6b4765920642c3e0efa81d74b68"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "0ddfec37",
+      "history_batch_count": 48,
+      "claims": [
+        {
+          "claim_id": "first_three_months_fifteen",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_a22b654d_1",
+              "batch_id": "e33743e1f8e399e3de4625204af1e1deb7374735d0ba7d7be06257dfae2d0470",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "75aee1ed2e15be9d44d2d01e89269fd4a4814adf72428031c48c3fbf3a5ca2c2"
+            }
+          ]
+        },
+        {
+          "claim_id": "later_added_twenty",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_a22b654d_2",
+              "batch_id": "be3b8a44d25ae14c380ce9570bdd1e5ba9888ddb9b6c4b28d9674bd162c72d0c",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "7f9a1c665be29db7e85ad58285653ea9bd77036d3d53881fc99faf7ccca13b8a"
+            }
+          ]
+        },
+        {
+          "claim_id": "current_total_thirty_five",
+          "source_support": "partial",
+          "witnesses": [
+            {
+              "session_id": "answer_a22b654d_1",
+              "batch_id": "e33743e1f8e399e3de4625204af1e1deb7374735d0ba7d7be06257dfae2d0470",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "75aee1ed2e15be9d44d2d01e89269fd4a4814adf72428031c48c3fbf3a5ca2c2"
+            },
+            {
+              "session_id": "answer_a22b654d_2",
+              "batch_id": "be3b8a44d25ae14c380ce9570bdd1e5ba9888ddb9b6c4b28d9674bd162c72d0c",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "7f9a1c665be29db7e85ad58285653ea9bd77036d3d53881fc99faf7ccca13b8a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "f685340e",
+      "history_batch_count": 40,
+      "claims": [
+        {
+          "claim_id": "earlier_weekly_tennis",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_25df025b_1",
+              "batch_id": "245fee34fc97ee131dd14a080c604406a64484245f3989fdcb2d6be3ca80de7a",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "b717764897c30794520957ea8d8c7c6c2fa78d7caa6cfba0169f019212fde9f3"
+            }
+          ]
+        },
+        {
+          "claim_id": "earlier_sunday_plan",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_25df025b_1",
+              "batch_id": "245fee34fc97ee131dd14a080c604406a64484245f3989fdcb2d6be3ca80de7a",
+              "source_ref": "turn:6",
+              "role": "user",
+              "source_content_sha256": "0720bf87ff0250746c16e931c3a30ae0fe307c3965c5fdcfe7b173aefee29949"
+            }
+          ]
+        },
+        {
+          "claim_id": "earlier_every_sunday",
+          "source_support": "partial",
+          "witnesses": [
+            {
+              "session_id": "answer_25df025b_1",
+              "batch_id": "245fee34fc97ee131dd14a080c604406a64484245f3989fdcb2d6be3ca80de7a",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "b717764897c30794520957ea8d8c7c6c2fa78d7caa6cfba0169f019212fde9f3"
+            },
+            {
+              "session_id": "answer_25df025b_1",
+              "batch_id": "245fee34fc97ee131dd14a080c604406a64484245f3989fdcb2d6be3ca80de7a",
+              "source_ref": "turn:6",
+              "role": "user",
+              "source_content_sha256": "0720bf87ff0250746c16e931c3a30ae0fe307c3965c5fdcfe7b173aefee29949"
+            }
+          ]
+        },
+        {
+          "claim_id": "current_alternate_sundays",
+          "source_support": "full",
+          "witnesses": [
+            {
+              "session_id": "answer_25df025b_2",
+              "batch_id": "731d1f5709ade0ecbe5ff5152d4669b4e763d5f6d6fc9ce0dfbec918b9b9f47f",
+              "source_ref": "turn:0",
+              "role": "user",
+              "source_content_sha256": "35a88d5221346b7144b5c18603d57a019bb4273d5b5f0454401fa13e268e447c"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "batch_id 是输入内容身份，不是运行/重试 ID。",
+    "合法 source_ref 与正文一致仍不证明子句语义得到支持；支持强度来自人工侧车。",
+    "Recorder 返回空列表，没有实际 Mem0 输出事实或自动来源映射。",
+    "仅本机这一份 HF 文件通过 SHA；图、缓存、模型及当前记忆库未参与运行。"
+  ]
+}

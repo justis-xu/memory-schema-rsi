@@ -24,7 +24,7 @@
 
 ## 数据和环境边界
 
-当前仓库的 `.venv` 可导入 `schema_rsi`，本地 Chroma 目录与 `.env` 存在；但旧报告所用 `/Users/xu/git/eval-datasets/longmemeval-zh/longmemeval_s_cleaned_zh.json` 在本机已不存在。本阶段只依赖仓库内保存了原话和位置的 packet，脚本会核对每个引用位置及关键文本，并记录 packet SHA。**不能据此宣称重新跑通完整适配器、提取器或 batch_id 映射。** 当前 Chroma、图服务和模型状态没有参与本阶段判断，旧快照也不能作为当前状态。
+当前仓库的 `.venv` 可导入 `schema_rsi`，本地 Chroma 目录与 `.env` 存在。本侧车构造时，旧报告使用的 `/Users/xu/git/eval-datasets/longmemeval-zh/longmemeval_s_cleaned_zh.json` 路径在本机不存在，因此本阶段只依赖仓库内保存原话和位置的 packet。**后续已在 `/Users/xu/git/memory-prompt/eval-datasets/longmemeval-zh/` 找到 SHA 完全相同的中英文原文件，并完成 232 批真实写入路径的 Recorder 对账；见 `docs/m2_lme_batch_claim_link_zh.md`。** 本侧车本身仍不是提取器输出或语义对齐。
 
 ## 结论、置信度、下一步优化建议
 
