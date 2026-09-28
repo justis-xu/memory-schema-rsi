@@ -26,7 +26,7 @@ CLAIMS = {
     ],
     "f87df58f-81e4-46e4-a2bc-22e62b98c625": [
         ("公路旅行期间儿子遭遇事故但平安", "session_18", ["D18:1", "D18:3"], "full", "原话为事故，未明确事故类型"),
-        ("事故是车祸", "session_18", ["D18:1"], "partial", "原话为事故，图片说明为车内仪表盘；不能单凭它确定事故类型"),
+        ("事故是车祸", "session_18", ["D18:1"], "partial", "文字原话仅说事故；同轮图片 query 标注 car accident，提取输入包含它，但不是本人文字自述"),
         ("事故发生在2023年10月20日", "session_18", ["D18:1"], "absent", "10月20日是回忆事故的会话日；原话说上周末"),
         ("梅拉妮因此更珍惜家人", "session_18", ["D18:3"], "full", "本人明确自述"),
         ("孩子们起初害怕但表现坚强", "session_18", ["D18:7"], "full", "本人明确自述"),
@@ -103,7 +103,8 @@ def main():
             for dia_id in refs:
                 turn, = [t for t in c[source_session] if t["dia_id"] == dia_id]
                 witness.append({"session_id": source_session, "dia_id": dia_id, "speaker": turn["speaker"],
-                                "text": turn["text"], "blip_caption": turn.get("blip_caption")})
+                                "text": turn["text"], "blip_caption": turn.get("blip_caption"),
+                                "image_query": turn.get("query")})
             rows.append({"fact_zh": fact, "support": support, "note": note, "source_turns": witness})
         origins = sorted({w["session_id"] for row in rows for w in row["source_turns"]})
         assert len(origins) == 1
@@ -114,7 +115,7 @@ def main():
                        "origin_matches_written_session": origins[0] == memory["session_id"], "claims": rows,
                        "same_topic_source_session_records": carriers,
                        "written_session_turns": [{"dia_id": t["dia_id"], "speaker": t["speaker"], "text": t["text"],
-                                                  "blip_caption": t.get("blip_caption")}
+                                                  "blip_caption": t.get("blip_caption"), "image_query": t.get("query")}
                                                  for t in c[memory["session_id"]]]
                        if origins[0] != memory["session_id"] else None})
     counts = {"memories": len(output), "claims": sum(len(x["claims"]) for x in output),

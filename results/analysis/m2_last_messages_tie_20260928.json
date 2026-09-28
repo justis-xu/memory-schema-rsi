@@ -1,0 +1,163 @@
+{
+  "scope": "Offline replay of actual SQLiteManager.save_messages/get_last_messages over all 10 Chinese LoCoMo conversations; no LLM, no real database writes",
+  "source_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "history_db_sha256": "1ff74b302cadaebcdec0850587bb4821e2024e3cabbfffaba8c1c51ef1eb61cd",
+  "code_sha256": {
+    "third_party/mem0-src/mem0/memory/storage.py": "5f5ecdadd2b260fd14f36a0f338336eb760275465dd1056a99a47e1ef07702bd",
+    "third_party/mem0-src/mem0/memory/main.py": "5b1b75e2f00aca7bd368a6e9cd5905145d60fd05a0e36d6b1ef3e2f1b4f28ca1",
+    "src/schema_rsi/benchmarks/locomo.py": "5d7b0b640acb2be644fa99f5f38beecfe559fbfaca44b475014b4adffd3a034f",
+    "src/schema_rsi/evaluation/pipeline.py": "943f7cb9cb6fa75a0730736803fdcc98318dc4d3b3f820fe4d8fd308864ff15c"
+  },
+  "counts": {
+    "conversations": 10,
+    "sessions": 272,
+    "batches_longer_than_ten_messages": 272,
+    "first_ten_retained": 272,
+    "last_ten_retained": 0,
+    "current_history_surviving_message_rows": 130
+  },
+  "target_replays": {
+    "conv-26": {
+      "source_session": "session_18",
+      "next_written_session": "session_19",
+      "batch_message_count": 25,
+      "retained_dia_ids_after_source_session": [
+        "date_anchor_or_other",
+        "D18:1",
+        "D18:2",
+        "D18:3",
+        "D18:4",
+        "D18:5",
+        "D18:6",
+        "D18:7",
+        "D18:8",
+        "D18:9"
+      ],
+      "source_dia_ids_present": [
+        "D18:1",
+        "D18:3",
+        "D18:7"
+      ],
+      "fixed_sql": {
+        "current_order_selected_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "rowid_tiebreak_selected_positions": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    },
+    "conv-41": {
+      "source_session": "session_31",
+      "next_written_session": "session_32",
+      "batch_message_count": 24,
+      "retained_dia_ids_after_source_session": [
+        "date_anchor_or_other",
+        "D31:1",
+        "D31:2",
+        "D31:3",
+        "D31:4",
+        "D31:5",
+        "D31:6",
+        "D31:7",
+        "D31:8",
+        "D31:9"
+      ],
+      "source_dia_ids_present": [
+        "D31:1",
+        "D31:9"
+      ],
+      "fixed_sql": {
+        "current_order_selected_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "rowid_tiebreak_selected_positions": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      }
+    }
+  },
+  "history_add_records": {
+    "conv-26": [
+      {
+        "memory_id": "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "event": "ADD",
+        "created_at": "2026-09-25T03:11:38.930409+00:00",
+        "content": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末）公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇事故，全家人都吓坏了，所幸孩子没事。梅拉妮形容这是一次可怕但已过去的经历，并让她感悟到生命宝贵、要珍惜家人"
+      },
+      {
+        "memory_id": "2ec90c89-e8d4-4fd1-80bd-2eca86fb2c2f",
+        "event": "ADD",
+        "created_at": "2026-09-25T03:11:38.930439+00:00",
+        "content": "车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱"
+      },
+      {
+        "memory_id": "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "event": "ADD",
+        "created_at": "2026-09-25T03:11:46.617363+00:00",
+        "content": "梅拉妮在2023年10月20日的公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性"
+      }
+    ],
+    "conv-41": [
+      {
+        "memory_id": "21519f92-6587-4616-926b-120da1779306",
+        "event": "ADD",
+        "created_at": "2026-09-26T00:28:25.541415+00:00",
+        "content": "约翰从2023年8月起在当地一所学校做志愿导师，辅导学生学习，看到自己能帮到学生很有成就感"
+      },
+      {
+        "memory_id": "0467de53-751f-4955-9bf3-5b19ded453cc",
+        "event": "ADD",
+        "created_at": "2026-09-26T00:28:25.541445+00:00",
+        "content": "约翰辅导的学生表现很好，自信和技能都有实实在在的提高；2023年8月上旬有一个学生特别兴奋地给他看自己的作文，让约翰觉得非常骄傲"
+      },
+      {
+        "memory_id": "3e495438-a164-4250-ab0f-9f479a67a7dc",
+        "event": "ADD",
+        "created_at": "2026-09-26T00:28:40.672960+00:00",
+        "content": "约翰在学校做志愿导师期间，学生的自信和技能都有明显提高；约2023年8月初，一个学生兴奋地向他展示自己的作文，让约翰感到非常自豪"
+      }
+    ]
+  },
+  "limits": [
+    "重放的是当前源码和同版中文数据，不是2026-09-25提取调用的原始请求/回复",
+    "旧库仅保留每owner最近10条消息，history记录ADD但不保存实际Existing Memories检索或LLM输出",
+    "rowid并列排序原型只验证缓存位置变化；Existing Memories通道仍可能让旧事实进入提取提示"
+  ]
+}
