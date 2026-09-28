@@ -1,0 +1,35 @@
+{
+  "scope": "Manual source packet for sole conv26 current cache-missing Memory; no model or graph writes",
+  "memory_id": "64e65e18-3b0e-4e64-9145-97b5608c65cd",
+  "source_path": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
+  "source_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "session_date": "3:31 pm on 23 August, 2023",
+  "turns": [
+    {
+      "speaker": "梅拉妮",
+      "img_url": [
+        "https://warpedtable.com/cdn/shop/products/F331B563-AB73-430A-A6DF-3C5E0F91A4D8.jpg"
+      ],
+      "blip_caption": "a photo of a horse painted on a wooden wall",
+      "query": "horse painting",
+      "dia_id": "D13:8",
+      "text": "哇，听起来真棒——我同意，马很了不起。这是我最近画的一幅马的画。"
+    },
+    {
+      "speaker": "卡罗琳",
+      "dia_id": "D13:9",
+      "text": "哇，梅拉妮，太惊艳了！我喜欢所有的细节，还有你把马的优雅和力量都表现出来了。你喜欢画动物吗？"
+    },
+    {
+      "speaker": "梅拉妮",
+      "dia_id": "D13:10",
+      "text": "谢谢你，卡罗琳！很高兴你喜欢。是的，我很喜欢。画动物让人平静又特别。马真是优雅！你也喜欢画画吗？"
+    }
+  ],
+  "manual_observation": "D13:9 asks about drawing animals; D13:10 affirmative response and calm/special feeling; D13:8 recent horse painting, wooden wall detail only image caption.",
+  "limits": [
+    "One targeted source packet, not a semantic audit of all cached extraction.",
+    "No retrieval or answer gain measured.",
+    "Original extraction request/response and factual turn mapping remain unavailable."
+  ]
+}
