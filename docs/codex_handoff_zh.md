@@ -1,5 +1,7 @@
 # Codex 分析交接文档（2026-09-26 中断现场）
 
+> **2026-09-28 跨机器接续入口：** [另一台电脑研究交接与项目记忆](m2_cross_machine_handoff_zh.md)。按用户模板整理了最新研究状态、来源账接口、证据限制与下一波工作；本机仍暂停。下文保留历次交接，不以早期下一步覆盖最新恢复点。
+
 > 来源：~/.codex/sessions/2026/09/26/rollout-...12-54-21（额度耗尽中断，46.8M input tokens）。
 
 > 实体产物已入库：`scripts/audit_*.py`（8 个）、`docs/{deep_retrospective,jev_score_audit,rsi_evidence_audit}_zh.md`、`results/analysis/`（10+ 机器结果）。
@@ -167,3 +169,5 @@
 - 2026-09-28 中文LME写入顺序接口审计见 `docs/m2_lme_ingest_order_zh.md`、`scripts/m2_audit_lme_ingest_order.py`、`results/analysis/m2_lme_ingest_order_20260928.json`。新文件相邻排序统计470题191（temporal123/update68）有2809时分倒序，全部同日/跨日0，非旧问时刻倒置统计，时分意图未知不直接排序修复。五固定update真实adapter+ingest_method全历史Recorder232calls/2368原消息，role/content/场顺序/date锚逐项验证，两个答案场均早后晚，同场纠错位置保留；不初始化Mem0/Chroma/模型，不执行提取。不支持五题跨日倒序归因。消息只有role/content、metadata场级，无显式turn/事实支持指针；输入全文次序仍可冻结复原，不能称来源全丢失，真正缺输出事实对齐。gold标记不入调用（展开答案场trace仅离线oracle）；来源账需全部batch无gold记录。下一步增加批次来源账及事实支持接口，不把合法指针当语义正确；同场纠错/历史窗/累计区间对照。零模型/库图写入，无中文性能结论。
 
 - 2026-09-28 用户要求“先收尾 然后暂停”。来源账接口已收尾，见 `docs/m2_ingest_source_trace_zh.md`、`src/schema_rsi/evaluation/source_trace.py`、pipeline可选source_trace_sink、`scripts/m2_verify_ingest_source_trace.py`、`results/analysis/m2_ingest_source_trace_20260928.json`。input批次含实际messages/date锚/owner/session/源位置与LoCoMo图片通道，outcome返回ID或backend_error/write_unknown；事实支持not_provided，不是语义对齐/自动归并。内容batch指纹不含gold、并非独立重试运行ID；sink异常传播，输入失败未调用backend、输出失败可能已写入，不盲重试。默认脚本不自动启用，默认请求不变。5中文LME232批2368消息+LoCoMo42全29批629消息，总261/2997两遍请求逐项一致；追踪新tests+两个adapter文件11 passed，零模型/真实库图写入。提交推送后暂停，不推进下一阶段；恢复从事实级源对齐及中文纠错/历史窗/活动直证/限定语对照，当前总体净收益仍未知，暂停非整体完成。
+
+- 2026-09-28 用户要求按使命模板输出另一台电脑交接并全部推送。新增 `docs/m2_cross_machine_handoff_zh.md`：研究基线2147fed，来源账已实现但事实语义对齐未完成，下一波从子句支持/限定语/更新操作推进；明确本地HF/数据库/图/服务需重核，不将Git同步当环境同步；保留阶段证据边界、持续研究规则与本机暂停状态。本次仅文档交接，未运行新实验。
