@@ -1,0 +1,814 @@
+{
+  "scope": "Accepted historical tiny-fixture transitions plus one synthetic real EvolutionEngine gate control; no model/answer calls",
+  "historical": [
+    {
+      "run": "experiments/schema_rsi/runs/run-20260923T000107786191Z",
+      "dataset_sha256": "12773bcb83778dafd2194b0f5afb9070881bab56bee7f94bc02d5609f90a1969",
+      "accepted_transitions": [
+        {
+          "stage": "broad",
+          "schema_id": "acec39245540",
+          "previous_schema_id": "1912665a4c3f",
+          "splits": {
+            "train": {
+              "gained_cases": 1,
+              "harmed_cases": 0,
+              "cases_losing_any_gold_id": 0,
+              "rows": [
+                {
+                  "case_id": "train_direct_a",
+                  "before_recall": 0.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [
+                    "a4"
+                  ],
+                  "before_selected": [
+                    "a1",
+                    "a2",
+                    "a3",
+                    "a6"
+                  ],
+                  "after_selected": [
+                    "a1",
+                    "a2",
+                    "a4",
+                    "a3"
+                  ]
+                },
+                {
+                  "case_id": "train_hub_a",
+                  "before_recall": 0.0,
+                  "after_recall": 0.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [],
+                  "before_selected": [
+                    "a2",
+                    "a1",
+                    "a3",
+                    "a4"
+                  ],
+                  "after_selected": [
+                    "a2",
+                    "a1",
+                    "a3",
+                    "a4"
+                  ]
+                }
+              ]
+            },
+            "validation": {
+              "gained_cases": 1,
+              "harmed_cases": 0,
+              "cases_losing_any_gold_id": 0,
+              "rows": [
+                {
+                  "case_id": "validation_direct_b",
+                  "before_recall": 0.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [
+                    "b4"
+                  ],
+                  "before_selected": [
+                    "b1",
+                    "b2",
+                    "b3",
+                    "b6"
+                  ],
+                  "after_selected": [
+                    "b1",
+                    "b2",
+                    "b4",
+                    "b3"
+                  ]
+                },
+                {
+                  "case_id": "validation_hub_b",
+                  "before_recall": 0.0,
+                  "after_recall": 0.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [],
+                  "before_selected": [
+                    "b2",
+                    "b1",
+                    "b3",
+                    "b4"
+                  ],
+                  "after_selected": [
+                    "b2",
+                    "b1",
+                    "b3",
+                    "b4"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "stage": "deep:1",
+          "schema_id": "a420e262523b",
+          "previous_schema_id": "acec39245540",
+          "splits": {
+            "train": {
+              "gained_cases": 1,
+              "harmed_cases": 0,
+              "cases_losing_any_gold_id": 0,
+              "rows": [
+                {
+                  "case_id": "train_direct_a",
+                  "before_recall": 1.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [],
+                  "before_selected": [
+                    "a1",
+                    "a2",
+                    "a4",
+                    "a3"
+                  ],
+                  "after_selected": [
+                    "a1",
+                    "a2",
+                    "a4",
+                    "a3"
+                  ]
+                },
+                {
+                  "case_id": "train_hub_a",
+                  "before_recall": 0.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [
+                    "a5"
+                  ],
+                  "before_selected": [
+                    "a2",
+                    "a1",
+                    "a3",
+                    "a4"
+                  ],
+                  "after_selected": [
+                    "a2",
+                    "a1",
+                    "a5",
+                    "a3"
+                  ]
+                }
+              ]
+            },
+            "validation": {
+              "gained_cases": 1,
+              "harmed_cases": 0,
+              "cases_losing_any_gold_id": 0,
+              "rows": [
+                {
+                  "case_id": "validation_direct_b",
+                  "before_recall": 1.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [],
+                  "before_selected": [
+                    "b1",
+                    "b2",
+                    "b4",
+                    "b3"
+                  ],
+                  "after_selected": [
+                    "b1",
+                    "b2",
+                    "b4",
+                    "b3"
+                  ]
+                },
+                {
+                  "case_id": "validation_hub_b",
+                  "before_recall": 0.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [
+                    "b5"
+                  ],
+                  "before_selected": [
+                    "b2",
+                    "b1",
+                    "b3",
+                    "b4"
+                  ],
+                  "after_selected": [
+                    "b2",
+                    "b1",
+                    "b5",
+                    "b3"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "artifact_sha256": {
+        "experiments/schema_rsi/runs/run-20260923T000107786191Z/wiki/impact.jsonl": "94f789178f6a1ee98c8c3d1998179a3b9e0fb0dec6e1cb77df3664d3c27cbbef",
+        "experiments/schema_rsi/runs/run-20260923T000107786191Z/raw/trials.jsonl": "644e1f56dedc264ad41b582e200f295fc69529d7c9fef8725002a265825b81a7",
+        "experiments/schema_rsi/runs/run-20260923T000107786191Z/input.json": "356a6fda08624c7ad345dab8fae8b275d1700e4664928aeadbbeead1156d23a0"
+      }
+    },
+    {
+      "run": "experiments/schema_rsi/runs/run-20260923T000649010998Z",
+      "dataset_sha256": "12773bcb83778dafd2194b0f5afb9070881bab56bee7f94bc02d5609f90a1969",
+      "accepted_transitions": [
+        {
+          "stage": "broad",
+          "schema_id": "acec39245540",
+          "previous_schema_id": "1912665a4c3f",
+          "splits": {
+            "train": {
+              "gained_cases": 1,
+              "harmed_cases": 0,
+              "cases_losing_any_gold_id": 0,
+              "rows": [
+                {
+                  "case_id": "train_direct_a",
+                  "before_recall": 0.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [
+                    "a4"
+                  ],
+                  "before_selected": [
+                    "a1",
+                    "a2",
+                    "a3",
+                    "a6"
+                  ],
+                  "after_selected": [
+                    "a1",
+                    "a2",
+                    "a4",
+                    "a3"
+                  ]
+                },
+                {
+                  "case_id": "train_hub_a",
+                  "before_recall": 0.0,
+                  "after_recall": 0.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [],
+                  "before_selected": [
+                    "a2",
+                    "a1",
+                    "a3",
+                    "a4"
+                  ],
+                  "after_selected": [
+                    "a2",
+                    "a1",
+                    "a3",
+                    "a4"
+                  ]
+                }
+              ]
+            },
+            "validation": {
+              "gained_cases": 1,
+              "harmed_cases": 0,
+              "cases_losing_any_gold_id": 0,
+              "rows": [
+                {
+                  "case_id": "validation_direct_b",
+                  "before_recall": 0.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [
+                    "b4"
+                  ],
+                  "before_selected": [
+                    "b1",
+                    "b2",
+                    "b3",
+                    "b6"
+                  ],
+                  "after_selected": [
+                    "b1",
+                    "b2",
+                    "b4",
+                    "b3"
+                  ]
+                },
+                {
+                  "case_id": "validation_hub_b",
+                  "before_recall": 0.0,
+                  "after_recall": 0.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [],
+                  "before_selected": [
+                    "b2",
+                    "b1",
+                    "b3",
+                    "b4"
+                  ],
+                  "after_selected": [
+                    "b2",
+                    "b1",
+                    "b3",
+                    "b4"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "stage": "deep:1",
+          "schema_id": "a420e262523b",
+          "previous_schema_id": "acec39245540",
+          "splits": {
+            "train": {
+              "gained_cases": 1,
+              "harmed_cases": 0,
+              "cases_losing_any_gold_id": 0,
+              "rows": [
+                {
+                  "case_id": "train_direct_a",
+                  "before_recall": 1.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [],
+                  "before_selected": [
+                    "a1",
+                    "a2",
+                    "a4",
+                    "a3"
+                  ],
+                  "after_selected": [
+                    "a1",
+                    "a2",
+                    "a4",
+                    "a3"
+                  ]
+                },
+                {
+                  "case_id": "train_hub_a",
+                  "before_recall": 0.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [
+                    "a5"
+                  ],
+                  "before_selected": [
+                    "a2",
+                    "a1",
+                    "a3",
+                    "a4"
+                  ],
+                  "after_selected": [
+                    "a2",
+                    "a1",
+                    "a5",
+                    "a3"
+                  ]
+                }
+              ]
+            },
+            "validation": {
+              "gained_cases": 1,
+              "harmed_cases": 0,
+              "cases_losing_any_gold_id": 0,
+              "rows": [
+                {
+                  "case_id": "validation_direct_b",
+                  "before_recall": 1.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [],
+                  "before_selected": [
+                    "b1",
+                    "b2",
+                    "b4",
+                    "b3"
+                  ],
+                  "after_selected": [
+                    "b1",
+                    "b2",
+                    "b4",
+                    "b3"
+                  ]
+                },
+                {
+                  "case_id": "validation_hub_b",
+                  "before_recall": 0.0,
+                  "after_recall": 1.0,
+                  "lost_gold_ids": [],
+                  "gained_gold_ids": [
+                    "b5"
+                  ],
+                  "before_selected": [
+                    "b2",
+                    "b1",
+                    "b3",
+                    "b4"
+                  ],
+                  "after_selected": [
+                    "b2",
+                    "b1",
+                    "b5",
+                    "b3"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "artifact_sha256": {
+        "experiments/schema_rsi/runs/run-20260923T000649010998Z/wiki/impact.jsonl": "ce220592262e85617b9cebc4912a60e0c3714259d73b3f7b22c3e0b5a0e3e17d",
+        "experiments/schema_rsi/runs/run-20260923T000649010998Z/raw/trials.jsonl": "821810c55e480f09288382fd902469898e8224cbea1e8f70edb3801b8cf9cb9b",
+        "experiments/schema_rsi/runs/run-20260923T000649010998Z/input.json": "1178a2c6e06c696f9e48f6a60e4e499b6fb12133ff2c0869b1c1ce14686ef574"
+      }
+    }
+  ],
+  "synthetic_control": {
+    "input": {
+      "nodes": [
+        {
+          "id": "t1",
+          "user_id": "t",
+          "kind": "M"
+        },
+        {
+          "id": "t2",
+          "user_id": "t",
+          "kind": "M"
+        },
+        {
+          "id": "t3",
+          "user_id": "t",
+          "kind": "M"
+        },
+        {
+          "id": "t4",
+          "user_id": "t",
+          "kind": "M"
+        },
+        {
+          "id": "t5",
+          "user_id": "t",
+          "kind": "M"
+        },
+        {
+          "id": "t6",
+          "user_id": "t",
+          "kind": "M"
+        },
+        {
+          "id": "v1",
+          "user_id": "v",
+          "kind": "M"
+        },
+        {
+          "id": "v2",
+          "user_id": "v",
+          "kind": "M"
+        },
+        {
+          "id": "v3",
+          "user_id": "v",
+          "kind": "M"
+        },
+        {
+          "id": "v4",
+          "user_id": "v",
+          "kind": "M"
+        },
+        {
+          "id": "v5",
+          "user_id": "v",
+          "kind": "M"
+        },
+        {
+          "id": "v6",
+          "user_id": "v",
+          "kind": "M"
+        },
+        {
+          "id": "x1",
+          "user_id": "x",
+          "kind": "M"
+        },
+        {
+          "id": "x2",
+          "user_id": "x",
+          "kind": "M"
+        },
+        {
+          "id": "x3",
+          "user_id": "x",
+          "kind": "M"
+        },
+        {
+          "id": "x4",
+          "user_id": "x",
+          "kind": "M"
+        },
+        {
+          "id": "x5",
+          "user_id": "x",
+          "kind": "M"
+        },
+        {
+          "id": "x6",
+          "user_id": "x",
+          "kind": "M"
+        }
+      ],
+      "edges": [
+        {
+          "source": "t1",
+          "target": "t5",
+          "channel": "r0",
+          "score": 1.0
+        },
+        {
+          "source": "v1",
+          "target": "v5",
+          "channel": "r0",
+          "score": 1.0
+        },
+        {
+          "source": "x1",
+          "target": "x5",
+          "channel": "r0",
+          "score": 1.0
+        }
+      ],
+      "cases": [
+        {
+          "id": "train_gain_a",
+          "user_id": "t",
+          "split": "train",
+          "base_ranked": [
+            "t1",
+            "t2",
+            "t3",
+            "t4",
+            "t5",
+            "t6"
+          ],
+          "gold": [
+            "t5"
+          ]
+        },
+        {
+          "id": "train_gain_b",
+          "user_id": "t",
+          "split": "train",
+          "base_ranked": [
+            "t1",
+            "t2",
+            "t3",
+            "t4",
+            "t5",
+            "t6"
+          ],
+          "gold": [
+            "t5"
+          ]
+        },
+        {
+          "id": "train_harm",
+          "user_id": "t",
+          "split": "train",
+          "base_ranked": [
+            "t1",
+            "t2",
+            "t3",
+            "t4",
+            "t5",
+            "t6"
+          ],
+          "gold": [
+            "t4"
+          ]
+        },
+        {
+          "id": "validation_gain_a",
+          "user_id": "v",
+          "split": "validation",
+          "base_ranked": [
+            "v1",
+            "v2",
+            "v3",
+            "v4",
+            "v5",
+            "v6"
+          ],
+          "gold": [
+            "v5"
+          ]
+        },
+        {
+          "id": "validation_gain_b",
+          "user_id": "v",
+          "split": "validation",
+          "base_ranked": [
+            "v1",
+            "v2",
+            "v3",
+            "v4",
+            "v5",
+            "v6"
+          ],
+          "gold": [
+            "v5"
+          ]
+        },
+        {
+          "id": "validation_harm",
+          "user_id": "v",
+          "split": "validation",
+          "base_ranked": [
+            "v1",
+            "v2",
+            "v3",
+            "v4",
+            "v5",
+            "v6"
+          ],
+          "gold": [
+            "v4"
+          ]
+        },
+        {
+          "id": "test_gain_a",
+          "user_id": "x",
+          "split": "test",
+          "base_ranked": [
+            "x1",
+            "x2",
+            "x3",
+            "x4",
+            "x5",
+            "x6"
+          ],
+          "gold": [
+            "x5"
+          ]
+        },
+        {
+          "id": "test_gain_b",
+          "user_id": "x",
+          "split": "test",
+          "base_ranked": [
+            "x1",
+            "x2",
+            "x3",
+            "x4",
+            "x5",
+            "x6"
+          ],
+          "gold": [
+            "x5"
+          ]
+        },
+        {
+          "id": "test_harm",
+          "user_id": "x",
+          "split": "test",
+          "base_ranked": [
+            "x1",
+            "x2",
+            "x3",
+            "x4",
+            "x5",
+            "x6"
+          ],
+          "gold": [
+            "x4"
+          ]
+        }
+      ]
+    },
+    "accepted": true,
+    "event": {
+      "stage": "synthetic_control",
+      "proposal": "mean_gain_with_one_harm",
+      "schema_id": "acec39245540",
+      "train": {
+        "split": "train",
+        "cases": 3,
+        "recall": 0.6666666666666666,
+        "baseline_recall": 0.3333333333333333,
+        "delta": 0.3333333333333333,
+        "mean_edge_visits": 1.0,
+        "max_edge_visits": 1,
+        "mean_graph_added": 1.0,
+        "arcs": 6,
+        "mean_traversal_ms": 0.0030972684423128762
+      },
+      "validation": {
+        "split": "validation",
+        "cases": 3,
+        "recall": 0.6666666666666666,
+        "baseline_recall": 0.3333333333333333,
+        "delta": 0.3333333333333333,
+        "mean_edge_visits": 1.0,
+        "max_edge_visits": 1,
+        "mean_graph_added": 1.0,
+        "arcs": 6,
+        "mean_traversal_ms": 0.0024304414788881936
+      },
+      "accepted": true,
+      "reason": "accepted",
+      "previous_schema_id": "1912665a4c3f"
+    },
+    "validation": {
+      "split": "validation",
+      "cases": 3,
+      "recall": 0.6666666666666666,
+      "baseline_recall": 0.3333333333333333,
+      "delta": 0.3333333333333333,
+      "mean_edge_visits": 1.0,
+      "max_edge_visits": 1,
+      "mean_graph_added": 1.0,
+      "arcs": 6,
+      "mean_traversal_ms": 0.0024304414788881936
+    },
+    "paired_validation": {
+      "gained_cases": 2,
+      "harmed_cases": 1,
+      "cases_losing_any_gold_id": 1,
+      "rows": [
+        {
+          "case_id": "validation_gain_a",
+          "before_recall": 0.0,
+          "after_recall": 1.0,
+          "lost_gold_ids": [],
+          "gained_gold_ids": [
+            "v5"
+          ],
+          "before_selected": [
+            "v1",
+            "v2",
+            "v3",
+            "v4"
+          ],
+          "after_selected": [
+            "v1",
+            "v2",
+            "v5",
+            "v3"
+          ]
+        },
+        {
+          "case_id": "validation_gain_b",
+          "before_recall": 0.0,
+          "after_recall": 1.0,
+          "lost_gold_ids": [],
+          "gained_gold_ids": [
+            "v5"
+          ],
+          "before_selected": [
+            "v1",
+            "v2",
+            "v3",
+            "v4"
+          ],
+          "after_selected": [
+            "v1",
+            "v2",
+            "v5",
+            "v3"
+          ]
+        },
+        {
+          "case_id": "validation_harm",
+          "before_recall": 1.0,
+          "after_recall": 0.0,
+          "lost_gold_ids": [
+            "v4"
+          ],
+          "gained_gold_ids": [],
+          "before_selected": [
+            "v1",
+            "v2",
+            "v3",
+            "v4"
+          ],
+          "after_selected": [
+            "v1",
+            "v2",
+            "v5",
+            "v3"
+          ]
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Historical validation case details reconstructed with matching fixture SHA and current deterministic evaluator, not original archived per-case validation logs.",
+    "Synthetic gains/harm ratio is constructed, not benchmark frequency.",
+    "Gold-ID loss is not necessarily an answer error.",
+    "No production gate changed; mean-gain objective and zero-harm policy are distinct choices."
+  ]
+}

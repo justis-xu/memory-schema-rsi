@@ -21,6 +21,27 @@ class Limits:
     arc_penalty: float = 0.001
 
 
+def case_impact(previous: list[dict], candidate: list[dict]) -> dict:
+    """Expose per-case evidence changes; do not change the mean-utility objective."""
+    old = {row["case_id"]: row for row in previous}
+    if set(old) != {row["case_id"] for row in candidate}:
+        raise ValueError("case impact requires the same paired cases")
+    gained, harmed, lost = [], [], []
+    for row in candidate:
+        before = old[row["case_id"]]
+        if set(before["gold"]) != set(row["gold"]):
+            raise ValueError("case impact gold changed across trial")
+        if row["recall"] > before["recall"]:
+            gained.append(row["case_id"])
+        elif row["recall"] < before["recall"]:
+            harmed.append(row["case_id"])
+        lost_ids = sorted(set(row["gold"]) & (set(before["selected"]) - set(row["selected"])))
+        if lost_ids:
+            lost.append({"case_id": row["case_id"], "lost_gold_ids": lost_ids})
+    return {"gained_case_ids": gained, "harmed_case_ids": harmed,
+            "cases_losing_gold": lost, "comparison": "previous_active_schema"}
+
+
 class EvolutionEngine:
     """Deterministic proposer/curriculum with an objective validation gate.
 
@@ -218,10 +239,10 @@ class EvolutionEngine:
         improved = False
         # Keep validation as a gate rather than a free search objective.
         for _, name, schema in ranked[:8]:
-            train, _ = self._evaluate(schema, "train")
-            validation, _ = self._evaluate(schema, "validation")
-            active_train, _ = self._evaluate(self.active, "train")
-            active_validation, _ = self._evaluate(self.active, "validation")
+            train, train_rows = self._evaluate(schema, "train")
+            validation, validation_rows = self._evaluate(schema, "validation")
+            active_train, active_train_rows = self._evaluate(self.active, "train")
+            active_validation, active_validation_rows = self._evaluate(self.active, "validation")
             density = validation["arcs"] / self.data.memory_count
             reason = "accepted"
             if validation["delta"] < self.limits.min_validation_gain:
@@ -240,6 +261,8 @@ class EvolutionEngine:
                 "train": train, "validation": validation,
                 "accepted": accepted, "reason": reason,
                 "previous_schema_id": self.active.id,
+                "case_impact": {"train": case_impact(active_train_rows, train_rows),
+                                "validation": case_impact(active_validation_rows, validation_rows)},
             }
             self._append_jsonl("wiki/impact.jsonl", event)
             self._impact.append(event)
