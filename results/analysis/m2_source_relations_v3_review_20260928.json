@@ -1,0 +1,79 @@
+{
+  "review_type": "manual_fact_and_provenance_audit",
+  "run_file": "results/analysis/m2_source_relations_v3_20260928.json",
+  "model_calls": 6,
+  "prompt_tokens": 1950,
+  "completion_tokens": 368,
+  "criteria": {
+    "pointer_legal": "每个输出 source_turn_id 在该固定片段内存在",
+    "pointer_sufficient": "所引 turn 集直接支持实际输出的主体、关系、对象和限定语",
+    "cross_turn_relation_preserved": "若输出关系承接前问或前话，是否把该轮也列为来源",
+    "fact_preserved": "样本中确有来源支持的具体事实没有被弱化或遗漏",
+    "anti_harm": "不得把 caption 当本人自述、不得把未回答的最爱问题写成肯定偏好"
+  },
+  "cases": [
+    {
+      "fixture_id": "animal_question_caption_real",
+      "base": {
+        "pointer_legal": true,
+        "pointer_sufficient": true,
+        "cross_turn_relation_preserved": false,
+        "reason": "D13:10 的“我很喜欢”与“画动物让人平静”足以支持实际输出，但未记录该回答承接的 D13:9 问题。",
+        "fact_preserved": true,
+        "anti_harm": true
+      },
+      "source_policy": {
+        "pointer_legal": true,
+        "pointer_sufficient": true,
+        "cross_turn_relation_preserved": true,
+        "reason": "喜欢画动物同时引用 D13:9 和 D13:10；最近画马引用 D13:8。relation=喜欢画动物 与 object=画动物重复，结构仍需规范。",
+        "fact_preserved": true,
+        "anti_harm": true
+      },
+      "channel_result": "两臂均未提取 caption 独有的木板墙事实，因此未检验 image_caption 字段是否能正确使用；只观察到未误称看过图片。"
+    },
+    {
+      "fixture_id": "gina_agreement_real",
+      "base": {
+        "pointer_legal": true,
+        "pointer_sufficient": true,
+        "cross_turn_relation_preserved": false,
+        "reason": "D1:9 对现代舞的正面评价足以支持实际输出的“喜欢”；但“我也是”承接 D1:8 中的最爱表述，未记录跨轮关系。",
+        "fact_preserved": false,
+        "omission": "吉娜的“现代舞是最爱”被弱化为喜欢。",
+        "anti_harm": true
+      },
+      "source_policy": {
+        "pointer_legal": true,
+        "pointer_sufficient": true,
+        "cross_turn_relation_preserved": true,
+        "reason": "吉娜喜欢现代舞引用 D1:8+D1:9，主体没有错挂；但输出仍只写喜欢。",
+        "fact_preserved": false,
+        "omission": "吉娜的“现代舞是最爱”仍被弱化为喜欢。",
+        "anti_harm": true
+      }
+    },
+    {
+      "fixture_id": "question_only_synthetic",
+      "base": {
+        "pointer_legal": true,
+        "pointer_sufficient": true,
+        "fact_preserved": true,
+        "anti_harm": true,
+        "reason": "输出空 facts；未把问题写成内特的偏好。"
+      },
+      "source_policy": {
+        "pointer_legal": true,
+        "pointer_sufficient": true,
+        "fact_preserved": true,
+        "anti_harm": true,
+        "reason": "输出空 facts；未把问题写成内特的偏好。"
+      }
+    }
+  ],
+  "limits": [
+    "人工事实判断是定向验收，不是全库质量估计。",
+    "每臂每例只有一次输出，不能判定稳定性或因果收益。",
+    "没有调用答题或评分模型；无法推断答案收益。"
+  ]
+}
