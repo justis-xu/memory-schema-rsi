@@ -1,0 +1,727 @@
+{
+  "scope": "Current Chinese Chroma outputs; first two SHA256(ID)-sorted records with >25 characters from each of four chosen conversations. Human claim labels; diagnostic sample only.",
+  "source_path": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json",
+  "source_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "db_path": "/Users/xu/git/memory-schema-rsi/data/vector_store_zh/chroma/chroma.sqlite3",
+  "db_sha256": "a11ea801fbb44674ee0779dc00b048c86f0d4f97fb214b4aa930d170b586e13e",
+  "counts": {
+    "memories": 8,
+    "claims": 19,
+    "written_origin_mismatch": 2,
+    "full": 16,
+    "partial": 2,
+    "absent": 1
+  },
+  "items": [
+    {
+      "conversation": "conv-26",
+      "memory": {
+        "embedding_id": "ef55dd2f-2fb7-4d79-a161-13f8f8507f51",
+        "content": "梅拉妮有一个朋友去年（约2022年）收养了孩子，过程漫长但如今他们和新孩子非常幸福，这让梅拉妮觉得自己也许也应该考虑收养",
+        "owner": "zhfull:locomo:conv-26",
+        "session_id": "session_17",
+        "session_date": "10:31 am on 13 October, 2023",
+        "attributed_to": "assistant"
+      },
+      "written_session_date": "10:31 am on 13 October, 2023",
+      "supported_origin_session": "session_17",
+      "origin_session_date": "10:31 am on 13 October, 2023",
+      "origin_matches_written_session": true,
+      "claims": [
+        {
+          "fact_zh": "朋友去年收养，过程漫长，如今一家幸福",
+          "support": "full",
+          "note": "梅拉妮本人叙述",
+          "source_turns": [
+            {
+              "session_id": "session_17",
+              "dia_id": "D17:4",
+              "speaker": "梅拉妮",
+              "text": "有啊，我一个朋友去年收养了孩子。过程很长，但现在他们和新孩子过得超级幸福。这让我觉得也许我也应该这么做！",
+              "blip_caption": null
+            }
+          ]
+        },
+        {
+          "fact_zh": "梅拉妮因此考虑自己也收养",
+          "support": "full",
+          "note": "保留也许的计划模态",
+          "source_turns": [
+            {
+              "session_id": "session_17",
+              "dia_id": "D17:4",
+              "speaker": "梅拉妮",
+              "text": "有啊，我一个朋友去年收养了孩子。过程很长，但现在他们和新孩子过得超级幸福。这让我觉得也许我也应该这么做！",
+              "blip_caption": null
+            }
+          ]
+        }
+      ],
+      "same_topic_source_session_records": [],
+      "written_session_turns": null
+    },
+    {
+      "conversation": "conv-26",
+      "memory": {
+        "embedding_id": "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "content": "梅拉妮在2023年10月20日的公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性",
+        "owner": "zhfull:locomo:conv-26",
+        "session_id": "session_19",
+        "session_date": "9:55 am on 22 October, 2023",
+        "attributed_to": "assistant"
+      },
+      "written_session_date": "9:55 am on 22 October, 2023",
+      "supported_origin_session": "session_18",
+      "origin_session_date": "6:55 pm on 20 October, 2023",
+      "origin_matches_written_session": false,
+      "claims": [
+        {
+          "fact_zh": "公路旅行期间儿子遭遇事故但平安",
+          "support": "full",
+          "note": "原话为事故，未明确事故类型",
+          "source_turns": [
+            {
+              "session_id": "session_18",
+              "dia_id": "D18:1",
+              "speaker": "梅拉妮",
+              "text": "嘿卡罗琳，上周末那次公路旅行太疯狂了！我儿子出事故的时候，我们都吓坏了。幸好他没事，真是不幸中的万幸。那真是一次可怕的经历，好在一切都过去了。自从我们上次聊天以来，你过得怎么样？",
+              "blip_caption": "a photo of a car dashboard with a white cloth and a steering wheel"
+            },
+            {
+              "session_id": "session_18",
+              "dia_id": "D18:3",
+              "speaker": "梅拉妮",
+              "text": "是啊，我们的旅行开局就不顺。出事故的时候我真的吓坏了。还好我儿子没事，这也提醒我生命是宝贵的，要珍惜家人。",
+              "blip_caption": null
+            }
+          ]
+        },
+        {
+          "fact_zh": "事故是车祸",
+          "support": "partial",
+          "note": "原话为事故，图片说明为车内仪表盘；不能单凭它确定事故类型",
+          "source_turns": [
+            {
+              "session_id": "session_18",
+              "dia_id": "D18:1",
+              "speaker": "梅拉妮",
+              "text": "嘿卡罗琳，上周末那次公路旅行太疯狂了！我儿子出事故的时候，我们都吓坏了。幸好他没事，真是不幸中的万幸。那真是一次可怕的经历，好在一切都过去了。自从我们上次聊天以来，你过得怎么样？",
+              "blip_caption": "a photo of a car dashboard with a white cloth and a steering wheel"
+            }
+          ]
+        },
+        {
+          "fact_zh": "事故发生在2023年10月20日",
+          "support": "absent",
+          "note": "10月20日是回忆事故的会话日；原话说上周末",
+          "source_turns": [
+            {
+              "session_id": "session_18",
+              "dia_id": "D18:1",
+              "speaker": "梅拉妮",
+              "text": "嘿卡罗琳，上周末那次公路旅行太疯狂了！我儿子出事故的时候，我们都吓坏了。幸好他没事，真是不幸中的万幸。那真是一次可怕的经历，好在一切都过去了。自从我们上次聊天以来，你过得怎么样？",
+              "blip_caption": "a photo of a car dashboard with a white cloth and a steering wheel"
+            }
+          ]
+        },
+        {
+          "fact_zh": "梅拉妮因此更珍惜家人",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_18",
+              "dia_id": "D18:3",
+              "speaker": "梅拉妮",
+              "text": "是啊，我们的旅行开局就不顺。出事故的时候我真的吓坏了。还好我儿子没事，这也提醒我生命是宝贵的，要珍惜家人。",
+              "blip_caption": null
+            }
+          ]
+        },
+        {
+          "fact_zh": "孩子们起初害怕但表现坚强",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_18",
+              "dia_id": "D18:7",
+              "speaker": "梅拉妮",
+              "text": "谢谢！他们很害怕，但我们安慰了他们，告诉他们哥哥会没事的。他们是坚强的孩子。",
+              "blip_caption": null
+            }
+          ]
+        }
+      ],
+      "same_topic_source_session_records": [
+        {
+          "embedding_id": "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+          "content": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末）公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇事故，全家人都吓坏了，所幸孩子没事。梅拉妮形容这是一次可怕但已过去的经历，并让她感悟到生命宝贵、要珍惜家人",
+          "owner": "zhfull:locomo:conv-26",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023",
+          "attributed_to": "assistant"
+        },
+        {
+          "embedding_id": "2ec90c89-e8d4-4fd1-80bd-2eca86fb2c2f",
+          "content": "车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱",
+          "owner": "zhfull:locomo:conv-26",
+          "session_id": "session_18",
+          "session_date": "6:55 pm on 20 October, 2023",
+          "attributed_to": "assistant"
+        }
+      ],
+      "written_session_turns": [
+        {
+          "dia_id": "D19:1",
+          "speaker": "卡罗琳",
+          "text": "哇哦，梅拉妮！我上周五通过了领养机构的面试！我太兴奋也太感激了。这是我朝着组建家庭的目标迈出的一大步。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:2",
+          "speaker": "梅拉妮",
+          "text": "恭喜你，卡罗琳！领养听起来太棒了。我真为你高兴。我昨天买的这些人偶让我想起了家人之间的爱。跟我说说，你对未来有什么憧憬？",
+          "blip_caption": "a photo of a couple of wooden dolls sitting on top of a table"
+        },
+        {
+          "dia_id": "D19:3",
+          "speaker": "卡罗琳",
+          "text": "太感谢了，梅拉妮！真漂亮！它让我深深感受到家庭中蕴含着多少爱——无论是血缘的家人，还是我们自己选择的家人。我希望能组建自己的家庭，为那些从未有过家的孩子们提供一个遮风挡雨的地方。对我来说，领养是一种回馈的方式，也是表达爱与接纳的方式。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:4",
+          "speaker": "梅拉妮",
+          "text": "哇，卡罗琳，这太了不起了。给有需要的孩子一个家，是组建家庭多么有爱的方式啊。这些孩子在新的家里一定会得到满满的关爱，过得幸福快乐。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:5",
+          "speaker": "卡罗琳",
+          "text": "谢谢，梅拉妮。我的梦想是为这些孩子们创造一个安全而有爱的家。爱与接纳应该是每个人的权利，我想让他们体验到这些。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:6",
+          "speaker": "梅拉妮",
+          "text": "我完全同意，卡罗琳。每个人都应该拥有这些。看到你对帮助这些孩子如此充满热情，真的很棒。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:7",
+          "speaker": "卡罗琳",
+          "text": "谢谢，梅尔。找到自我接纳是一个漫长的过程，但现在我已准备好向需要的人提供爱和支持。能够为别人的生活带来积极的改变，让人充满力量。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:8",
+          "speaker": "梅拉妮",
+          "text": "那对你来说一定很艰难，卡罗琳。敬佩你能找到自我接纳，并用自己的经历去帮助别人。你真是坚强又鼓舞人心。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:9",
+          "speaker": "卡罗琳",
+          "text": "谢谢，梅拉妮。转变不容易，获得接纳也不容易，但我从朋友、家人和我敬仰的人那里得到的帮助是无价的。他们在我艰难的时刻给我鼓励，帮我找到了真正的自己。这就是为什么我想把同样的支持传递给任何需要的人。给他人带来安慰、帮助他们成长，让我感到无比快乐。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:10",
+          "speaker": "梅拉妮",
+          "text": "我真为你高兴，卡罗琳。你找到了真实的自我，现在还在帮助别人。你太鼓舞人心了！",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:11",
+          "speaker": "卡罗琳",
+          "text": "谢谢，梅拉妮。你的支持对我意义重大。这段旅程太美妙了，我很感激能分享它，并帮助别人走好他们的旅程。这是一份真正的礼物。",
+          "blip_caption": "a photo of a clock with a green and yellow design on it"
+        },
+        {
+          "dia_id": "D19:12",
+          "speaker": "梅拉妮",
+          "text": "一点没错！我很高兴我们总能互相扶持。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:13",
+          "speaker": "卡罗琳",
+          "text": "很高兴你同意，卡罗琳。感谢身边人的支持。他们的鼓励成就了今天的我。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:14",
+          "speaker": "梅拉妮",
+          "text": "很高兴你得到了支持。做真实的自己真好！",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D19:15",
+          "speaker": "卡罗琳",
+          "text": "是啊，没错！做真实的自己、坦诚地生活是多么自由自在。我们才能真正接纳自己，感到满足。",
+          "blip_caption": "a photo of a painting with the words happiness painted on it"
+        }
+      ]
+    },
+    {
+      "conversation": "conv-41",
+      "memory": {
+        "embedding_id": "0395f295-aa1f-4460-a899-7fa0fa1a7447",
+        "content": "玛丽亚小时候曾和家人自驾游去过俄勒冈州，并分享了一张站在峡谷悬崖边俯瞰风景的照片",
+        "owner": "zhfull:locomo:conv-41",
+        "session_id": "session_18",
+        "session_date": "2:47 pm on 12 June, 2023",
+        "attributed_to": "assistant"
+      },
+      "written_session_date": "2:47 pm on 12 June, 2023",
+      "supported_origin_session": "session_18",
+      "origin_session_date": "2:47 pm on 12 June, 2023",
+      "origin_matches_written_session": true,
+      "claims": [
+        {
+          "fact_zh": "玛丽亚童年与家人自驾游去俄勒冈州",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_18",
+              "dia_id": "D18:3",
+              "speaker": "玛丽亚",
+              "text": "很高兴你能找到慰藉，约翰。那次登山听起来太精彩了。你们登顶了吗？我小时候，我和家人曾经自驾游去过俄勒冈州。",
+              "blip_caption": "a photo of a person standing on a cliff overlooking a canyon"
+            }
+          ]
+        },
+        {
+          "fact_zh": "分享的照片显示有人站在峡谷悬崖边",
+          "support": "full",
+          "note": "图片说明仅称一个人；记忆不能进一步推断这个人就是玛丽亚",
+          "source_turns": [
+            {
+              "session_id": "session_18",
+              "dia_id": "D18:3",
+              "speaker": "玛丽亚",
+              "text": "很高兴你能找到慰藉，约翰。那次登山听起来太精彩了。你们登顶了吗？我小时候，我和家人曾经自驾游去过俄勒冈州。",
+              "blip_caption": "a photo of a person standing on a cliff overlooking a canyon"
+            }
+          ]
+        }
+      ],
+      "same_topic_source_session_records": [],
+      "written_session_turns": null
+    },
+    {
+      "conversation": "conv-41",
+      "memory": {
+        "embedding_id": "3e495438-a164-4250-ab0f-9f479a67a7dc",
+        "content": "约翰在学校做志愿导师期间，学生的自信和技能都有明显提高；约2023年8月初，一个学生兴奋地向他展示自己的作文，让约翰感到非常自豪",
+        "owner": "zhfull:locomo:conv-41",
+        "session_id": "session_32",
+        "session_date": "11:08 am on 16 August, 2023",
+        "attributed_to": null
+      },
+      "written_session_date": "11:08 am on 16 August, 2023",
+      "supported_origin_session": "session_31",
+      "origin_session_date": "3:14 pm on 13 August, 2023",
+      "origin_matches_written_session": false,
+      "claims": [
+        {
+          "fact_zh": "约翰在当地学校做志愿导师",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_31",
+              "dia_id": "D31:1",
+              "speaker": "约翰",
+              "text": "嗨玛丽亚，自上次聊天后，我现在在一所当地学校做志愿导师。看到我能给这些学生带来这么大的帮助，真的很有成就感。",
+              "blip_caption": "a photo of a group of people sitting around a table"
+            }
+          ]
+        },
+        {
+          "fact_zh": "学生自信和技能提高",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_31",
+              "dia_id": "D31:9",
+              "speaker": "约翰",
+              "text": "他们表现很好——他们的自信和技能都有了实实在在的提高。上周看到其中一个学生特别兴奋地给我看他的作文，真是令人惊叹。那是一个值得骄傲的时刻！你的新小狗怎么样了，玛丽亚？",
+              "blip_caption": "a photo of a poster with a picture of a person and a child"
+            }
+          ]
+        },
+        {
+          "fact_zh": "上周一名学生兴奋地展示作文，约翰自豪",
+          "support": "full",
+          "note": "相对时间以8月13日源会话为锚",
+          "source_turns": [
+            {
+              "session_id": "session_31",
+              "dia_id": "D31:9",
+              "speaker": "约翰",
+              "text": "他们表现很好——他们的自信和技能都有了实实在在的提高。上周看到其中一个学生特别兴奋地给我看他的作文，真是令人惊叹。那是一个值得骄傲的时刻！你的新小狗怎么样了，玛丽亚？",
+              "blip_caption": "a photo of a poster with a picture of a person and a child"
+            }
+          ]
+        }
+      ],
+      "same_topic_source_session_records": [
+        {
+          "embedding_id": "21519f92-6587-4616-926b-120da1779306",
+          "content": "约翰从2023年8月起在当地一所学校做志愿导师，辅导学生学习，看到自己能帮到学生很有成就感",
+          "owner": "zhfull:locomo:conv-41",
+          "session_id": "session_31",
+          "session_date": "3:14 pm on 13 August, 2023",
+          "attributed_to": "user"
+        },
+        {
+          "embedding_id": "0467de53-751f-4955-9bf3-5b19ded453cc",
+          "content": "约翰辅导的学生表现很好，自信和技能都有实实在在的提高；2023年8月上旬有一个学生特别兴奋地给他看自己的作文，让约翰觉得非常骄傲",
+          "owner": "zhfull:locomo:conv-41",
+          "session_id": "session_31",
+          "session_date": "3:14 pm on 13 August, 2023",
+          "attributed_to": "user"
+        }
+      ],
+      "written_session_turns": [
+        {
+          "dia_id": "D32:1",
+          "speaker": "约翰",
+          "text": "嘿，玛丽亚！猜猜怎么着？我现在是消防队的一员了。能参与其中并为社区出力，我超级兴奋！",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:2",
+          "speaker": "玛丽亚",
+          "text": "哇，约翰，真了不起！你对做出改变真是充满热情。到目前为止体验怎么样？",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:3",
+          "speaker": "约翰",
+          "text": "他们的敬业精神和团队协作让我印象深刻。光是待在他们身边就让人备受鼓舞！",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:4",
+          "speaker": "玛丽亚",
+          "text": "太棒了。看到那么多人齐心协力一定很震撼吧。",
+          "blip_caption": "a photo of a group of people loading a truck with a fire truck in the back"
+        },
+        {
+          "dia_id": "D32:5",
+          "speaker": "约翰",
+          "text": "确实如此！每个人都很投入。一个团队能在这么重要的事情上取得成功，真是不可思议。我们只花了两个小时。大家努力工作，做了好事——真的很有成就感。",
+          "blip_caption": "a photo of a cardboard box with a sign on it"
+        },
+        {
+          "dia_id": "D32:6",
+          "speaker": "玛丽亚",
+          "text": "哇，约翰！看来大家都很卖力。你们募集到捐款了吗？",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:7",
+          "speaker": "约翰",
+          "text": "是的，我们募集了好多！我们收到了罐头食品、洗漱用品和衣物来提供帮助。能参与其中感觉太好了！",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:8",
+          "speaker": "玛丽亚",
+          "text": "我猜也是！看到大家齐心协力支持当地消防站，真是太好了。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:9",
+          "speaker": "约翰",
+          "text": "你说得对，玛丽亚。能帮上忙，看到大家为这个事业团结起来，真的很棒。这给了我一种使命感和激情。我觉得这才是我真正的人生召唤。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:10",
+          "speaker": "玛丽亚",
+          "text": "太棒了，约翰！很喜欢你新找到的这份热情。你在做很棒的事——继续加油！看到大家为这个事业团结一心真是美好。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:11",
+          "speaker": "约翰",
+          "text": "谢谢你，玛丽亚！你的支持对我意义重大。找到自己的热情竟能产生这么大的影响，真令人惊叹。我会继续努力的。这些捐款甚至帮助买了一辆全新的消防车！",
+          "blip_caption": "a photo of a fire truck parked in a garage with other vehicles"
+        },
+        {
+          "dia_id": "D32:12",
+          "speaker": "玛丽亚",
+          "text": "看看——我们大家都为它捐了款，它看起来棒极了！",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:13",
+          "speaker": "约翰",
+          "text": "谢谢你和我一起参与这件事，玛丽亚。我很感激你的支持。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:14",
+          "speaker": "玛丽亚",
+          "text": "嘿，约翰，我支持你。上周五，我在收容所做志愿者，在前台帮忙。看到人们拿到食物或床铺时脸上的笑容，真的让我感到很温暖。我们有能力改变别人的生活。",
+          "blip_caption": "a photo of a group of people standing around a table filled with food"
+        },
+        {
+          "dia_id": "D32:15",
+          "speaker": "约翰",
+          "text": "玛丽亚，很高兴你在那里找到了成就感。一点小小的善意就能对他人的生活产生这么大的影响，真令人惊叹。让我们一起继续为社区做出改变吧！",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:16",
+          "speaker": "玛丽亚",
+          "text": "对，约翰！让我们继续传播善意。知道我们能给需要的人带去快乐和安慰，真是太好了。",
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D32:17",
+          "speaker": "约翰",
+          "text": "是啊，玛丽亚，让我们互相激励，也激励所有人一起做出改变！团结起来，我们的影响力必将长存。",
+          "blip_caption": null
+        }
+      ]
+    },
+    {
+      "conversation": "conv-43",
+      "memory": {
+        "embedding_id": "0203a396-023b-4604-816d-e13a497c55a3",
+        "content": "约翰（John）所在的篮球队在2023年12月初与一支强队进行了一场艰难的比赛并获胜，全队乘坐消防车庆祝胜利，他认为最精彩的是球队在球场内外建立的情谊",
+        "owner": "zhfull:locomo:conv-43",
+        "session_id": "session_22",
+        "session_date": "7:42 pm on 8 December, 2023",
+        "attributed_to": "assistant"
+      },
+      "written_session_date": "7:42 pm on 8 December, 2023",
+      "supported_origin_session": "session_22",
+      "origin_session_date": "7:42 pm on 8 December, 2023",
+      "origin_matches_written_session": true,
+      "claims": [
+        {
+          "fact_zh": "约翰球队最近与强队比赛并获胜",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:4",
+              "speaker": "约翰",
+              "text": "那只青蛙看起来好好吃！我好多年没吃过了。最近比赛挺激烈的，我们对上了一支强队，很艰难，但我们拼尽全力赢了！有支球队督促我们大家真是太好了。",
+              "blip_caption": "a photo of a group of people riding on top of a fire truck"
+            }
+          ]
+        },
+        {
+          "fact_zh": "全队乘消防车庆祝胜利",
+          "support": "partial",
+          "note": "图片说明只说一群人乘消防车；没有全队身份或庆祝获胜的文字证据",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:4",
+              "speaker": "约翰",
+              "text": "那只青蛙看起来好好吃！我好多年没吃过了。最近比赛挺激烈的，我们对上了一支强队，很艰难，但我们拼尽全力赢了！有支球队督促我们大家真是太好了。",
+              "blip_caption": "a photo of a group of people riding on top of a fire truck"
+            }
+          ]
+        },
+        {
+          "fact_zh": "他最看重球场内外建立的情谊",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_22",
+              "dia_id": "D22:6",
+              "speaker": "约翰",
+              "text": "谢谢！对我来说最棒的是我们在球场上和场下建立起来的情谊。获胜的感觉太棒了，我们付出的所有努力都是值得的。",
+              "blip_caption": "a photography of a group of young men sitting on top of a basketball court"
+            }
+          ]
+        }
+      ],
+      "same_topic_source_session_records": [],
+      "written_session_turns": null
+    },
+    {
+      "conversation": "conv-43",
+      "memory": {
+        "embedding_id": "b0712fd1-0b3a-47a9-aa5b-d2c4f206c8ef",
+        "content": "约翰（John）在2023年10月中旬之前没太多时间读书，但在和蒂姆聊过之后开始读一本书，感觉很棒",
+        "owner": "zhfull:locomo:conv-43",
+        "session_id": "session_14",
+        "session_date": "1:50 pm on 17 October, 2023",
+        "attributed_to": "assistant"
+      },
+      "written_session_date": "1:50 pm on 17 October, 2023",
+      "supported_origin_session": "session_14",
+      "origin_session_date": "1:50 pm on 17 October, 2023",
+      "origin_matches_written_session": true,
+      "claims": [
+        {
+          "fact_zh": "约翰最近没太多时间读书，聊后开始读一本书，感觉好",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_14",
+              "dia_id": "D14:23",
+              "speaker": "约翰",
+              "text": "我最近没太多时间读书，但咱们聊过之后我终于拿起一本书开始读了，感觉太棒了！回头再聊！",
+              "blip_caption": null
+            }
+          ]
+        }
+      ],
+      "same_topic_source_session_records": [],
+      "written_session_turns": null
+    },
+    {
+      "conversation": "conv-47",
+      "memory": {
+        "embedding_id": "c5ee46ff-cc3b-4a19-abe9-9fe607f99161",
+        "content": "詹姆斯通常用语音聊天和团队沟通，因为快速且有助于高效合作",
+        "owner": "zhfull:locomo:conv-47",
+        "session_id": "session_4",
+        "session_date": "2:13 pm on 4 April, 2022",
+        "attributed_to": null
+      },
+      "written_session_date": "2:13 pm on 4 April, 2022",
+      "supported_origin_session": "session_4",
+      "origin_session_date": "2:13 pm on 4 April, 2022",
+      "origin_matches_written_session": true,
+      "claims": [
+        {
+          "fact_zh": "詹姆斯通常用语音聊天与团队沟通，觉得快且高效",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_4",
+              "dia_id": "D4:14",
+              "speaker": "詹姆斯",
+              "text": "我通常用语音聊天和团队沟通。这样很快，有助于我们高效合作。",
+              "blip_caption": null
+            }
+          ]
+        }
+      ],
+      "same_topic_source_session_records": [],
+      "written_session_turns": null
+    },
+    {
+      "conversation": "conv-47",
+      "memory": {
+        "embedding_id": "47ad2f43-3ea1-474e-9e61-d99350de95d8",
+        "content": "詹姆斯开始接触不同类型的游戏，比如RPG和策略游戏，对此感到兴奋，并打算随时向约翰更新探索进展",
+        "owner": "zhfull:locomo:conv-47",
+        "session_id": "session_3",
+        "session_date": "12:40 am on 27 March, 2022",
+        "attributed_to": "user"
+      },
+      "written_session_date": "12:40 am on 27 March, 2022",
+      "supported_origin_session": "session_3",
+      "origin_session_date": "12:40 am on 27 March, 2022",
+      "origin_matches_written_session": true,
+      "claims": [
+        {
+          "fact_zh": "詹姆斯开始尝试RPG与策略游戏并感到兴奋",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_3",
+              "dia_id": "D3:18",
+              "speaker": "詹姆斯",
+              "text": "我现在开始接触不同类型的游戏了，比如RPG和策略游戏。真的很令人兴奋！",
+              "blip_caption": null
+            }
+          ]
+        },
+        {
+          "fact_zh": "他答应向约翰更新探索进展",
+          "support": "full",
+          "note": "本人明确自述",
+          "source_turns": [
+            {
+              "session_id": "session_3",
+              "dia_id": "D3:22",
+              "speaker": "詹姆斯",
+              "text": "好的，约翰！我会随时向你更新我在新游戏类型上的冒险。祝你今天愉快！",
+              "blip_caption": null
+            }
+          ]
+        }
+      ],
+      "same_topic_source_session_records": [],
+      "written_session_turns": null
+    }
+  ],
+  "mismatched_output_answer_context_exposure": {
+    "3e495438-a164-4250-ab0f-9f479a67a7dc": {
+      "by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 0,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 0,
+        "zhfull_fused_locomo_20260925_161049.jsonl": 0,
+        "zhfull_fused_locomo_20260925_172126.jsonl": 0,
+        "zhfull_fused_locomo_20260925_195248.jsonl": 0,
+        "zhfull_locomo_20260925_115806.jsonl": 0,
+        "zhfull_locomo_20260925_151059.jsonl": 0,
+        "zhfull_locomo_20260925_164645.jsonl": 0
+      },
+      "unique_case_ids": []
+    },
+    "f87df58f-81e4-46e4-a2bc-22e62b98c625": {
+      "by_run": {
+        "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": 27,
+        "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": 27,
+        "zhfull_fused_locomo_20260925_161049.jsonl": 27,
+        "zhfull_fused_locomo_20260925_172126.jsonl": 27,
+        "zhfull_fused_locomo_20260925_195248.jsonl": 27,
+        "zhfull_locomo_20260925_115806.jsonl": 28,
+        "zhfull_locomo_20260925_151059.jsonl": 28,
+        "zhfull_locomo_20260925_164645.jsonl": 28
+      },
+      "unique_case_ids": [
+        "locomo_conv-26_qa107",
+        "locomo_conv-26_qa118",
+        "locomo_conv-26_qa119",
+        "locomo_conv-26_qa120",
+        "locomo_conv-26_qa133",
+        "locomo_conv-26_qa135",
+        "locomo_conv-26_qa143",
+        "locomo_conv-26_qa144",
+        "locomo_conv-26_qa145",
+        "locomo_conv-26_qa146",
+        "locomo_conv-26_qa147",
+        "locomo_conv-26_qa148",
+        "locomo_conv-26_qa150",
+        "locomo_conv-26_qa183",
+        "locomo_conv-26_qa191",
+        "locomo_conv-26_qa192",
+        "locomo_conv-26_qa193",
+        "locomo_conv-26_qa194",
+        "locomo_conv-26_qa20",
+        "locomo_conv-26_qa26",
+        "locomo_conv-26_qa44",
+        "locomo_conv-26_qa5",
+        "locomo_conv-26_qa73",
+        "locomo_conv-26_qa74",
+        "locomo_conv-26_qa75",
+        "locomo_conv-26_qa76",
+        "locomo_conv-26_qa77",
+        "locomo_conv-26_qa83"
+      ]
+    }
+  }
+}
