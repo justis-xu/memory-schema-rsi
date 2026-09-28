@@ -1,0 +1,1481 @@
+{
+  "scope": "13 synthetic cases for proposed admission and isolated publication contract; zero external calls/real graph writes",
+  "profile": {
+    "prompt_revision": "synthetic-source-v1",
+    "model_revision": "synthetic-model-v1",
+    "schema": {
+      "name": "memory_graph_s1",
+      "vertex_labels": [
+        {
+          "name": "Memory",
+          "properties": [
+            {
+              "name": "memory_id",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "content",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "user_id",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "session_id",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "session_date",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "source",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            }
+          ],
+          "primary_key": "memory_id",
+          "id_strategy": "AUTOMATIC"
+        },
+        {
+          "name": "Entity",
+          "properties": [
+            {
+              "name": "entity_id",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "name",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "type",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "date",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            }
+          ],
+          "primary_key": "entity_id",
+          "id_strategy": "AUTOMATIC"
+        },
+        {
+          "name": "Event",
+          "properties": [
+            {
+              "name": "event_id",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "name",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "date",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "participants",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "description",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            }
+          ],
+          "primary_key": "event_id",
+          "id_strategy": "AUTOMATIC"
+        },
+        {
+          "name": "Preference",
+          "properties": [
+            {
+              "name": "pref_id",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "subject",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "pref_type",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            },
+            {
+              "name": "object",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            }
+          ],
+          "primary_key": "pref_id",
+          "id_strategy": "AUTOMATIC"
+        }
+      ],
+      "edge_labels": [
+        {
+          "name": "MENTIONS",
+          "source_labels": [
+            "Memory"
+          ],
+          "target_labels": [
+            "Entity"
+          ],
+          "properties": []
+        },
+        {
+          "name": "DESCRIBES_EVENT",
+          "source_labels": [
+            "Memory"
+          ],
+          "target_labels": [
+            "Event"
+          ],
+          "properties": []
+        },
+        {
+          "name": "EXPRESSES_PREFERENCE",
+          "source_labels": [
+            "Memory"
+          ],
+          "target_labels": [
+            "Preference"
+          ],
+          "properties": []
+        },
+        {
+          "name": "PARTICIPATES_IN",
+          "source_labels": [
+            "Entity"
+          ],
+          "target_labels": [
+            "Event"
+          ],
+          "properties": []
+        },
+        {
+          "name": "HAS_PREFERENCE",
+          "source_labels": [
+            "Entity"
+          ],
+          "target_labels": [
+            "Preference"
+          ],
+          "properties": []
+        },
+        {
+          "name": "RELATED_TO",
+          "source_labels": [
+            "Entity"
+          ],
+          "target_labels": [
+            "Entity"
+          ],
+          "properties": [
+            {
+              "name": "relation",
+              "pg_type": "TEXT",
+              "cardinality": "single"
+            }
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "s1MemById",
+          "label": "Memory",
+          "field": "memory_id",
+          "index_type": "SECONDARY"
+        },
+        {
+          "name": "s1MemByUser",
+          "label": "Memory",
+          "field": "user_id",
+          "index_type": "SECONDARY"
+        },
+        {
+          "name": "s1EntById",
+          "label": "Entity",
+          "field": "entity_id",
+          "index_type": "SECONDARY"
+        },
+        {
+          "name": "s1EntByName",
+          "label": "Entity",
+          "field": "name",
+          "index_type": "SECONDARY"
+        },
+        {
+          "name": "s1EvtById",
+          "label": "Event",
+          "field": "event_id",
+          "index_type": "SECONDARY"
+        },
+        {
+          "name": "s1EvtByDate",
+          "label": "Event",
+          "field": "date",
+          "index_type": "SECONDARY"
+        },
+        {
+          "name": "s1PrefById",
+          "label": "Preference",
+          "field": "pref_id",
+          "index_type": "SECONDARY"
+        }
+      ],
+      "version": "s1"
+    },
+    "compiler_revision": "offline-contract-v1"
+  },
+  "cases": [
+    {
+      "name": "delete_and_same_id_relation_replacement",
+      "accepted": true,
+      "reason": null,
+      "old_snapshot_preserved_on_rejection": false,
+      "read": {
+        "route": "active_graph",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "876471e51bbcd5a153a3fbf5ef9900a35b28eed60c92c29c731045088e9804b9",
+        "states": {
+          "anchor": "success_nonempty",
+          "changed": "success_nonempty",
+          "replacement": "success_nonempty"
+        },
+        "extraction_sha256": "c1aebac3c1b020022fad17d09c3ff7c66feda18616c736ccb913185e5767bcfc"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "新话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "replacement",
+            "properties": {
+              "memory_id": "replacement",
+              "content": "新记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:新话题",
+            "properties": {
+              "entity_id": "4:合成用户:新话题",
+              "name": "新话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:新话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "replacement",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:新话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "one_valid_empty_withdraws_old_relations",
+      "accepted": true,
+      "reason": null,
+      "old_snapshot_preserved_on_rejection": false,
+      "read": {
+        "route": "active_graph",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "876471e51bbcd5a153a3fbf5ef9900a35b28eed60c92c29c731045088e9804b9",
+        "states": {
+          "anchor": "success_nonempty",
+          "changed": "success_valid_empty",
+          "replacement": "success_nonempty"
+        },
+        "extraction_sha256": "f83357d8745822c90ed7063f2620a5c60179ff3e2557e6bab7f6225f70f1f934"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "新话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "replacement",
+            "properties": {
+              "memory_id": "replacement",
+              "content": "新记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:新话题",
+            "properties": {
+              "entity_id": "4:合成用户:新话题",
+              "name": "新话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "replacement",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:新话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "all_valid_empty_publishes_memory_only",
+      "accepted": true,
+      "reason": null,
+      "old_snapshot_preserved_on_rejection": false,
+      "read": {
+        "route": "active_graph",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "876471e51bbcd5a153a3fbf5ef9900a35b28eed60c92c29c731045088e9804b9",
+        "states": {
+          "anchor": "success_valid_empty",
+          "changed": "success_valid_empty",
+          "replacement": "success_valid_empty"
+        },
+        "extraction_sha256": "296b8b423cb6a6aca465e7c72e94c32ecc00ac7398c67018b04f906d256a94ec"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic"
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "新话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic"
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "replacement",
+            "properties": {
+              "memory_id": "replacement",
+              "content": "新记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic"
+            }
+          }
+        ],
+        "edges": []
+      }
+    },
+    {
+      "name": "failed_current_extraction_preserves_old_but_disables_stale_read",
+      "accepted": false,
+      "reason": "extraction_failed",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "vector_fallback_version_mismatch",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing_response_id",
+      "accepted": false,
+      "reason": "response_id_set_mismatch",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "vector_fallback_version_mismatch",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "malformed_is_not_valid_empty",
+      "accepted": false,
+      "reason": "invalid_structure_type",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "vector_fallback_version_mismatch",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "invalid_fact_is_not_valid_empty",
+      "accepted": false,
+      "reason": "invalid_fact_fields",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "vector_fallback_version_mismatch",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "same_id_cached_old_content",
+      "accepted": false,
+      "reason": "extraction_fingerprint_mismatch",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "vector_fallback_version_mismatch",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "changed_prompt_invalidates_cached_extraction",
+      "accepted": false,
+      "reason": "extraction_fingerprint_mismatch",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "vector_fallback_version_mismatch",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "duplicate_source_ids",
+      "accepted": false,
+      "reason": "duplicate_or_empty_source_id",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "vector_fallback_version_mismatch",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "foreign_owner_source",
+      "accepted": false,
+      "reason": "source_owner_mismatch",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "vector_fallback_version_mismatch",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "stage_failure_before_pointer_switch",
+      "accepted": false,
+      "reason": "synthetic_stage_failure_before_publish",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "vector_fallback_version_mismatch",
+        "candidates": []
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "failed_refresh_same_source_keeps_valid_previous_read",
+      "accepted": false,
+      "reason": "extraction_failed",
+      "old_snapshot_preserved_on_rejection": true,
+      "read": {
+        "route": "active_graph",
+        "candidates": [
+          {
+            "id": "deleted",
+            "content": "旧记录",
+            "user_id": "合成用户",
+            "session_id": "synthetic",
+            "session_date": "",
+            "via": [
+              "entity:旧话题"
+            ],
+            "support": 1,
+            "anchor_memory_id": "anchor"
+          },
+          {
+            "id": "changed",
+            "content": "旧话题内容",
+            "user_id": "合成用户",
+            "session_id": "synthetic",
+            "session_date": "",
+            "via": [
+              "entity:旧话题"
+            ],
+            "support": 1,
+            "anchor_memory_id": "anchor"
+          }
+        ]
+      },
+      "manifest": {
+        "source_sha256": "c25d63641fc2908532988de6842afa01204c53d425f6d79b3bd001393ff9dc69",
+        "states": {
+          "anchor": "success_nonempty",
+          "deleted": "success_nonempty",
+          "changed": "success_nonempty"
+        },
+        "extraction_sha256": "0ec97f9a9cd04138120f281336783acc6c919006267e58a20b898c4385d19935"
+      },
+      "graph": {
+        "vertices": [
+          {
+            "label": "Memory",
+            "key": "anchor",
+            "properties": {
+              "memory_id": "anchor",
+              "content": "旧话题锚点",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "deleted",
+            "properties": {
+              "memory_id": "deleted",
+              "content": "旧记录",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Memory",
+            "key": "changed",
+            "properties": {
+              "memory_id": "changed",
+              "content": "旧话题内容",
+              "user_id": "合成用户",
+              "session_id": "synthetic",
+              "source": "mem0",
+              "session_date": ""
+            }
+          },
+          {
+            "label": "Entity",
+            "key": "4:合成用户:旧话题",
+            "properties": {
+              "entity_id": "4:合成用户:旧话题",
+              "name": "旧话题",
+              "type": "other"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "anchor",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "deleted",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          },
+          {
+            "label": "MENTIONS",
+            "from_label": "Memory",
+            "from_key": "changed",
+            "to_label": "Entity",
+            "to_key": "4:合成用户:旧话题",
+            "properties": {}
+          }
+        ]
+      }
+    }
+  ],
+  "fingerprint_controls_passed": [
+    "order_invariant",
+    "date_sensitive",
+    "model_sensitive"
+  ],
+  "limits": [
+    "Not integrated into production extractor, build entry or pipeline.",
+    "All-empty handling is an explicit prototype branch.",
+    "Pointer atomicity is in-memory only; HugeGraph version namespaces/transactions not validated.",
+    "Current source snapshot completeness is an assumption, not established by a topK response.",
+    "No answer gain or semantic extraction quality measured."
+  ],
+  "script_sha256": "d6d32020ce6e8723418615cae89066a43ee1de2528cd5b04c517c19718466989"
+}
