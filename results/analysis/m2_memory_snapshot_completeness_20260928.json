@@ -1,0 +1,175 @@
+{
+  "scope": "Read-only SQLite all collection metadata inventory; fake collection executes real Mem0Backend and SDK list/filter implementation; zero network/model calls",
+  "runtime_memory_class_path": "/Users/xu/git/memory-schema-rsi/third_party/mem0-src/mem0/memory/main.py",
+  "mem0_output_limit": 1000,
+  "collections": {
+    "schema_rsi_memories_zh": 1995
+  },
+  "main_collection_total": 1995,
+  "users": [
+    {
+      "user_id": "nf53:locomo:conv-42",
+      "physical_count": 195,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "28071c3656684f3ab3d885b76cf2cfd3a606ea73ae996b39ddcbf91970f208be",
+      "records_sha256": "f9177aa0e8556b0b13f0fa333fd53733f93408b26e6552c3f13b7ffddfa136e0"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-26",
+      "physical_count": 138,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "c6ec9c60c334510526f7e75bd7de6d9bb0ddbd671faa286117df451aa9433373",
+      "records_sha256": "bf4d9326fdbbb20139a0a72ce6235d2064b832b38e643789769697a96f4d6ac9"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-30",
+      "physical_count": 102,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "019c9b7a81e55ae04428c95869004c2e606726de02a9fe2d138aa2255bb5aa36",
+      "records_sha256": "60e49f03f0b20234208a31e2fb38d745eed97af32144d9e18e39b06cf1917d28"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-41",
+      "physical_count": 209,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "ca2ab3407861fc3c9ce83c9473ed7ae2eabf0229ddf9b23a4a3ce89e3781aba1",
+      "records_sha256": "17be7b3c77bf908e1a1f27d0be8895f7c772e868f271b2cab71f62bbe7de7b69"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-42",
+      "physical_count": 195,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "3d4079f074b2808684dba46a9d0e9077154533f93384261a2676d97eeb9c06f8",
+      "records_sha256": "aef86899cf6009635e94b4cdf007e7b76587617cf2405e2a6907879039022544"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-43",
+      "physical_count": 211,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "0155ec8c1a6ab20f24883def752efbbc982a1742e4400721cbb48a9809429f36",
+      "records_sha256": "3c11d0623fa1b623adf707ce3fd4641017027ef8d0592159444a0b0280cd736a"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-44",
+      "physical_count": 186,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "6f1c9e79e583160d0591bc23cfabafff0dd6a40861bd422cdd50e3e766795791",
+      "records_sha256": "e6040f7df11a1e011d9ae237044029206baa7e1f31feb0c3a3a0738fb983fec5"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-47",
+      "physical_count": 197,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "d184e1609679a81b2e36f4c1ce7f07173de3bc7743ed57fcd173d8673f9d21b1",
+      "records_sha256": "5ad744e1bd1656a5ad16da78e3f10dac5e43998a1e016f64d28b3c64f3539472"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-48",
+      "physical_count": 224,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "5b7d5f069aee1f5a0035d279359c15d5ff21e67ba78d3b519f8730c1290d7404",
+      "records_sha256": "e6094b7b9951d749fe0b7f13bde7bf626fd1763a12ae272b1abccba1a954b8b2"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-49",
+      "physical_count": 161,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "b278190e4ccd15529bd9a4f4703ad8ac5bc921b73add501571e3f0ebc16738b9",
+      "records_sha256": "37b02ff221cb715b4313258b8bef482e8d332165257d6fea2e47222e5e89446b"
+    },
+    {
+      "user_id": "zhfull:locomo:conv-50",
+      "physical_count": 177,
+      "expiration_field_count": 0,
+      "expired_count_now": 0,
+      "below_mem0_output_limit": true,
+      "ids_sha256": "96fdae873ad33fef355d11f8f073249a6725076180440bce72387bbd07bd22bc",
+      "records_sha256": "a77c6509f64d864f684c2d4ea6d0f7b2cb1babe9262f4d2b2d5446848dd2a116"
+    }
+  ],
+  "zhfull_locomo_users": 10,
+  "zhfull_locomo_count": 1800,
+  "zhfull_max_user_count": 224,
+  "two_read_logical_sha256": [
+    "13808a30c79164122b5fce7088fa15029de26735c176f0c851340f92a2815feb",
+    "13808a30c79164122b5fce7088fa15029de26735c176f0c851340f92a2815feb"
+  ],
+  "two_reads_equal": true,
+  "synthetic_limit_probes": {
+    "1001_live": {
+      "input_count": 1001,
+      "nonexpired_input_count": 1001,
+      "collection_fetch_limits": [
+        4000
+      ],
+      "returned_count": 1000,
+      "last_returned_id": "999"
+    },
+    "4000_expired_then_10_live": {
+      "input_count": 4010,
+      "nonexpired_input_count": 10,
+      "collection_fetch_limits": [
+        4000
+      ],
+      "returned_count": 0,
+      "last_returned_id": null
+    }
+  },
+  "synthetic_promoted_fields_conversion": {
+    "input": {
+      "id": "probe",
+      "memory": "合成记录",
+      "user_id": "synthetic-owner",
+      "expiration_date": "2030-01-01",
+      "updated_at": "2026-01-01",
+      "created_at": "2025-01-01",
+      "hash": "synthetic-hash",
+      "metadata": {
+        "session_date": "2025-01-01"
+      }
+    },
+    "output_metadata": {
+      "session_date": "2025-01-01",
+      "user_id": "synthetic-owner"
+    },
+    "not_preserved_as_metadata": [
+      "expiration_date",
+      "updated_at",
+      "created_at",
+      "hash"
+    ]
+  },
+  "limits": [
+    "SQLite metadata inventory is not Chroma service/client integration or index consistency proof.",
+    "Two equal reads establish endpoint stability only, not absence of transient writes or a publish/read lock.",
+    "Synthetic limit probes bypass telemetry/public get_all but use its verified fetch/output formulas.",
+    "No evidence that historical runs actually hit the cap or expiration prefix."
+  ],
+  "code_sha256": {
+    "src/schema_rsi/memory/mem0_backend.py": "dbb3d70638829a295b4a85e1e0b3c281a8e579802879168bbd4b7a9f755864df",
+    "src/schema_rsi/memory/chroma_direct.py": "bd7b84e3bb5cdd5a03942279066c3c412051225202191089c776ee8004540bb9",
+    "third_party/mem0-src/mem0/memory/main.py": "5b1b75e2f00aca7bd368a6e9cd5905145d60fd05a0e36d6b1ef3e2f1b4f28ca1",
+    "third_party/mem0-src/mem0/vector_stores/chroma.py": "dce0932308fa20fab95c21ff72c50dea878713846f4ff7f6d2af03b4559a07be",
+    "scripts/build_graph_zh.py": "96f7b045aa688673a78f655005b803c7b45ba3455dc8356b5d0c00e9d7bc9603"
+  }
+}
