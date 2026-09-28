@@ -1,5 +1,7 @@
 # 中文写入回放：历史消息缓存把开头当作“最近 10 条”
 
+> **版本说明：** 本文记录修复前的真实缓存实现；后续代码修复和旧结果重放方式见 [缓存顺序修复](m2_message_cache_order_fix_zh.md)。原审计数据未覆盖。
+
 > 2026-09-28。承接 [实际输出来源抽查](m2_output_origin_sample_zh.md) 的两条前场事实错挂。使用同版 `/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json`、当前真实 `LocomoDataset` 适配器和 vendored Mem0 `SQLiteManager`，在**隔离内存数据库**重放 10 个中文对话的输入与历史消息缓存。脚本 `scripts/m2_audit_last_messages_tie.py`，逐例位置、原始 ADD 时间和文件 SHA 见 `results/analysis/m2_last_messages_tie_20260928.json`。零模型调用、零真实库/图写入，也没有修改生产缓存实现。
 
 ## 直接代码链与重放

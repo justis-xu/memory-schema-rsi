@@ -279,11 +279,15 @@ class SQLiteManager:
                 # Evict old messages beyond the most recent 10 for this scope.
                 # Wrapped in a derived table to force SQLite to materialize the
                 # ORDER BY before the outer NOT IN evaluates it.
+                # A batch shares one created_at value, so break timestamp ties
+                # by insertion order. Otherwise SQLite may retain its first 10
+                # messages instead of the most recent 10.
                 self.connection.execute(
                     """
                     DELETE FROM messages WHERE session_scope = ? AND id NOT IN (
                         SELECT id FROM (
-                            SELECT id FROM messages WHERE session_scope = ? ORDER BY created_at DESC LIMIT 10
+                            SELECT id FROM messages WHERE session_scope = ?
+                            ORDER BY created_at DESC, rowid DESC LIMIT 10
                         )
                     )
                 """,
@@ -297,17 +301,17 @@ class SQLiteManager:
 
     def get_last_messages(self, session_scope: str, limit: int = 10) -> List[Dict[str, Any]]:
         with self._lock:
-            # Subquery picks the latest N rows (DESC + LIMIT), outer query
-            # re-sorts them chronologically (ASC) for the caller.
+            # Select by timestamp and insertion order, then return those rows
+            # chronologically. The same tie-breaker is used during eviction.
             cur = self.connection.execute(
                 """
                 SELECT role, content, name, created_at FROM (
-                    SELECT role, content, name, created_at
+                    SELECT role, content, name, created_at, rowid AS insertion_rowid
                     FROM messages
                     WHERE session_scope = ?
-                    ORDER BY created_at DESC
+                    ORDER BY created_at DESC, rowid DESC
                     LIMIT ?
-                ) ORDER BY created_at ASC
+                ) ORDER BY created_at ASC, insertion_rowid ASC
             """,
                 (session_scope, limit),
             )

@@ -10,7 +10,7 @@ import json
 import sqlite3
 from pathlib import Path
 
-from mem0.memory.storage import SQLiteManager
+from m2_legacy_message_cache import LegacySQLiteManager as SQLiteManager
 
 from schema_rsi.benchmarks.locomo import LocomoDataset
 

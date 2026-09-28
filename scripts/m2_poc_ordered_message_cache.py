@@ -18,6 +18,7 @@ from mem0.memory.utils import parse_messages
 from schema_rsi.benchmarks.locomo import LocomoDataset
 
 from m2_audit_last_messages_tie import batch_messages
+from m2_legacy_message_cache import LegacySQLiteManager
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -81,7 +82,8 @@ def main():
     all_counts = {"sessions": 0, "long_batches": 0, "current_first_ten": 0,
                   "prototype_last_ten": 0, "same_new_message_batches": 0}
     for conv, case in sorted(cases.items()):
-        current = SQLiteManager(":memory:")
+        # Reproduce the historical pre-fix arm; SQLiteManager now has the fix.
+        current = LegacySQLiteManager(":memory:")
         ordered = OrderedSQLiteManager(":memory:")
         scope = f"user_id=zhfull:locomo:{conv}"
         for session in case.history:

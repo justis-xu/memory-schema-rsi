@@ -1,0 +1,79 @@
+{
+  "scope": "isolated in-memory replay of Chinese LoCoMo; no model or real store writes",
+  "source_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "history_db_sha256_before": "1ff74b302cadaebcdec0850587bb4821e2024e3cabbfffaba8c1c51ef1eb61cd",
+  "history_db_sha256_after": "1ff74b302cadaebcdec0850587bb4821e2024e3cabbfffaba8c1c51ef1eb61cd",
+  "production_storage_sha256": "ca9e1eda8b403e22954624aa25f453258bbd90ce06589a69924a66238e59c2f5",
+  "historical_storage_sha256": "5f5ecdadd2b260fd14f36a0f338336eb760275465dd1056a99a47e1ef07702bd",
+  "counts": {
+    "conversations": 10,
+    "sessions": 272,
+    "long_batches": 272,
+    "legacy_first_ten": 272,
+    "fixed_last_ten": 272
+  },
+  "target_examples": {
+    "conv-26:session_18": {
+      "legacy_dia_ids": [
+        "date_anchor",
+        "D18:1",
+        "D18:2",
+        "D18:3",
+        "D18:4",
+        "D18:5",
+        "D18:6",
+        "D18:7",
+        "D18:8",
+        "D18:9"
+      ],
+      "fixed_dia_ids": [
+        "D18:15",
+        "D18:16",
+        "D18:17",
+        "D18:18",
+        "D18:19",
+        "D18:20",
+        "D18:21",
+        "D18:22",
+        "D18:23",
+        "D18:24"
+      ]
+    },
+    "conv-41:session_31": {
+      "legacy_dia_ids": [
+        "date_anchor",
+        "D31:1",
+        "D31:2",
+        "D31:3",
+        "D31:4",
+        "D31:5",
+        "D31:6",
+        "D31:7",
+        "D31:8",
+        "D31:9"
+      ],
+      "fixed_dia_ids": [
+        "D31:14",
+        "D31:15",
+        "D31:16",
+        "D31:17",
+        "D31:18",
+        "D31:19",
+        "D31:20",
+        "D31:21",
+        "D31:22",
+        "D31:23"
+      ]
+    }
+  },
+  "archived_replay_equal": {
+    "m2_last_messages_tie_20260928.json": true,
+    "m2_carryover_cache_eligibility_20260928.json": true,
+    "m2_ordered_message_cache_poc_20260928.json": true
+  },
+  "limits": [
+    "Real historical extraction input and model output were not frozen.",
+    "Correct cache order does not prevent old facts entering through Existing Memories.",
+    "No extraction or QA benefit is measured here."
+  ]
+}

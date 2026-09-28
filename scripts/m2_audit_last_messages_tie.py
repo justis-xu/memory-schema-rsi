@@ -1,7 +1,7 @@
 """Replay Mem0's ten-message cache on Chinese LoCoMo input, without a model.
 
-Uses the installed vendored SQLiteManager in isolated in-memory databases.
-The fixed SQL comparison is a diagnostic prototype; production code is not edited.
+Replays the archived pre-fix SQLiteManager SQL in isolated in-memory databases.
+The fixed SQL comparison remains a diagnostic prototype.
 """
 
 import hashlib
@@ -9,7 +9,7 @@ import json
 import sqlite3
 from pathlib import Path
 
-from mem0.memory.storage import SQLiteManager
+from m2_legacy_message_cache import LegacySQLiteManager as SQLiteManager, STORAGE_SHA256_BEFORE_FIX
 
 from schema_rsi.benchmarks.base import parse_session_date
 from schema_rsi.benchmarks.locomo import LocomoDataset
@@ -127,6 +127,9 @@ def main():
                    "旧库仅保留每owner最近10条消息，history记录ADD但不保存实际Existing Memories检索或LLM输出",
                    "rowid并列排序原型只验证缓存位置变化；Existing Memories通道仍可能让旧事实进入提取提示"],
     }
+    # Keep the archived code identity in the historical replay even after the
+    # production storage implementation is repaired.
+    payload["code_sha256"]["third_party/mem0-src/mem0/memory/storage.py"] = STORAGE_SHA256_BEFORE_FIX
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps(payload["counts"], ensure_ascii=False))
 

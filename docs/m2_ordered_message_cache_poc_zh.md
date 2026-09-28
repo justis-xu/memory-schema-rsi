@@ -1,5 +1,7 @@
 # 历史消息缓存顺序：离线输入对照与反伤边界
 
+> **版本说明：** 本文的“当前实现”是修复前版本；修复后的生产存储和旧审计兼容验证见 [缓存顺序修复](m2_message_cache_order_fix_zh.md)。原 POC 结果未覆盖。
+
 > 2026-09-28。承接 [缓存顺序审计](m2_last_messages_tie_zh.md) 和 [12 对来源资格复核](m2_carryover_cache_eligibility_zh.md)。脚本 `scripts/m2_poc_ordered_message_cache.py` 在内存 SQLite 中对照当前 `SQLiteManager` 与只给并列时间戳补 `rowid` 决胜键的原型；逐场、逐事实和两份完整受控提取提示见 `results/analysis/m2_ordered_message_cache_poc_20260928.json`。零模型调用；未改 vendored Mem0、线上记忆、图或检索配置。
 
 ## 控制条件
