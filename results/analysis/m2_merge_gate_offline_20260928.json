@@ -1,0 +1,121 @@
+{
+  "scope": "offline structural write gate on six archived outputs; no model, DB, graph or answer calls",
+  "run_sha256": "1134e192d9673311c62a6521f91b5e8e85a05f6dd6eb91284d10b6e6c551dd79",
+  "counts": {
+    "calls": 6,
+    "structural_pass": 1,
+    "rejected": 5
+  },
+  "outcomes": [
+    {
+      "call_index": 1,
+      "fixture_id": "tim_writing_castle",
+      "arm": "base",
+      "parse_status": "strict_json",
+      "fact_count": 11,
+      "verdict": "reject",
+      "reasons": [
+        {
+          "code": "cross_case_memory_id",
+          "fact_index": 5
+        },
+        {
+          "code": "cross_case_memory_id",
+          "fact_index": 5
+        },
+        {
+          "code": "partial_fact_accepted_without_review",
+          "fact_index": 9
+        }
+      ]
+    },
+    {
+      "call_index": 2,
+      "fixture_id": "tim_writing_castle",
+      "arm": "source_policy",
+      "parse_status": "fenced_json_diagnostic_only",
+      "fact_count": 13,
+      "verdict": "reject",
+      "reasons": [
+        {
+          "code": "invalid_strict_json"
+        },
+        {
+          "code": "source_only_fact_called_retraction",
+          "fact_index": 6
+        },
+        {
+          "code": "source_only_fact_called_retraction",
+          "fact_index": 11
+        }
+      ]
+    },
+    {
+      "call_index": 3,
+      "fixture_id": "melanie_pottery",
+      "arm": "source_policy",
+      "parse_status": "strict_json",
+      "fact_count": 5,
+      "verdict": "reject",
+      "reasons": [
+        {
+          "code": "partial_fact_accepted_without_review",
+          "fact_index": 1
+        }
+      ]
+    },
+    {
+      "call_index": 4,
+      "fixture_id": "melanie_pottery",
+      "arm": "base",
+      "parse_status": "strict_json",
+      "fact_count": 4,
+      "verdict": "structural_pass",
+      "reasons": []
+    },
+    {
+      "call_index": 5,
+      "fixture_id": "road_companion_current",
+      "arm": "base",
+      "parse_status": "strict_json",
+      "fact_count": 7,
+      "verdict": "reject",
+      "reasons": [
+        {
+          "code": "partial_fact_accepted_without_review",
+          "fact_index": 1
+        }
+      ]
+    },
+    {
+      "call_index": 6,
+      "fixture_id": "road_companion_current",
+      "arm": "source_policy",
+      "parse_status": "strict_json",
+      "fact_count": 8,
+      "verdict": "reject",
+      "reasons": [
+        {
+          "code": "partial_fact_accepted_without_review",
+          "fact_index": 0
+        }
+      ]
+    }
+  ],
+  "manual_comparison": {
+    "structural_pass_call_index": 4,
+    "known_semantic_omission": "陶艺基础臂遗漏本人同轮“但我还好”限定语；结构门槛仍放行",
+    "not_a_runtime_oracle": true
+  },
+  "counterfactual_sensitivity_not_model_output": {
+    "mutation": "remove only the unrelated partial 2022 date fact from road base output",
+    "friend_claims_remaining": 3,
+    "gate_verdict_after_mutation": "structural_pass",
+    "meaning": "A structural pass would not prove the accepted friend identity is supported."
+  },
+  "limits": [
+    "The gate verifies syntax and claimed IDs/actions only, not semantic entailment or memory-text coverage.",
+    "Rejecting partial results is a conservative offline policy, not a measured production threshold.",
+    "All source sessions were supplied in the prior model POC; retrieval and QA benefit remain untested."
+  ]
+}
