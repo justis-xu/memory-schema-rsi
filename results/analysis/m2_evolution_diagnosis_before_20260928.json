@@ -1,0 +1,917 @@
+{
+  "scope": "Five synthetic real EvolutionEngine diagnosis controls, no model calls or live graph writes",
+  "phase": "before",
+  "results": {
+    "disabled_first": {
+      "input": {
+        "nodes": [
+          {
+            "id": "m1",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m2",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m3",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m4",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m5",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "h1",
+            "user_id": "synthetic",
+            "kind": "H"
+          },
+          {
+            "id": "h2",
+            "user_id": "synthetic",
+            "kind": "H"
+          }
+        ],
+        "edges": [
+          {
+            "source": "m1",
+            "target": "m5",
+            "channel": "r0",
+            "score": 0.8
+          },
+          {
+            "source": "m1",
+            "target": "m5",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "cases": [
+          {
+            "id": "train_case",
+            "user_id": "synthetic",
+            "split": "train",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "validation_case",
+            "user_id": "synthetic",
+            "split": "validation",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "test_case",
+            "user_id": "synthetic",
+            "split": "test",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          }
+        ]
+      },
+      "schema": {
+        "channels": [
+          {
+            "id": "r1",
+            "max_degree": 3,
+            "min_score": 0,
+            "weight": 1.0
+          }
+        ],
+        "seed_k": 2,
+        "context_k": 4,
+        "graph_slots": 1,
+        "max_hops": 1,
+        "max_visits": 1,
+        "hop_discount": 0.8
+      },
+      "compiled": {
+        "m1": [
+          {
+            "target": "m5",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "m5": [
+          {
+            "target": "m1",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ]
+      },
+      "train_rows": [
+        {
+          "case_id": "train_case",
+          "selected": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "baseline": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "gold": [
+            "m5"
+          ],
+          "recall": 0.0,
+          "baseline_recall": 0.0,
+          "graph_added": [],
+          "edge_visits": 1,
+          "expanded_nodes": 1
+        }
+      ],
+      "diagnosis": {
+        "round_patterns": {
+          "channel_missing": 1
+        },
+        "missing_channels": {
+          "r0": 1
+        },
+        "examples": {
+          "channel_missing": [
+            "train_case"
+          ]
+        },
+        "cumulative_patterns": {
+          "channel_missing": 1
+        },
+        "cumulative_missing_channels": {
+          "r0": 1
+        }
+      }
+    },
+    "enabled_first": {
+      "input": {
+        "nodes": [
+          {
+            "id": "m1",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m2",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m3",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m4",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m5",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "h1",
+            "user_id": "synthetic",
+            "kind": "H"
+          },
+          {
+            "id": "h2",
+            "user_id": "synthetic",
+            "kind": "H"
+          }
+        ],
+        "edges": [
+          {
+            "source": "m1",
+            "target": "m5",
+            "channel": "r1",
+            "score": 0.8
+          },
+          {
+            "source": "m1",
+            "target": "m5",
+            "channel": "r0",
+            "score": 0.8
+          }
+        ],
+        "cases": [
+          {
+            "id": "train_case",
+            "user_id": "synthetic",
+            "split": "train",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "validation_case",
+            "user_id": "synthetic",
+            "split": "validation",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "test_case",
+            "user_id": "synthetic",
+            "split": "test",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          }
+        ]
+      },
+      "schema": {
+        "channels": [
+          {
+            "id": "r1",
+            "max_degree": 3,
+            "min_score": 0,
+            "weight": 1.0
+          }
+        ],
+        "seed_k": 2,
+        "context_k": 4,
+        "graph_slots": 1,
+        "max_hops": 1,
+        "max_visits": 1,
+        "hop_discount": 0.8
+      },
+      "compiled": {
+        "m1": [
+          {
+            "target": "m5",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "m5": [
+          {
+            "target": "m1",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ]
+      },
+      "train_rows": [
+        {
+          "case_id": "train_case",
+          "selected": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "baseline": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "gold": [
+            "m5"
+          ],
+          "recall": 0.0,
+          "baseline_recall": 0.0,
+          "graph_added": [],
+          "edge_visits": 1,
+          "expanded_nodes": 1
+        }
+      ],
+      "diagnosis": {
+        "round_patterns": {
+          "budget_or_rank": 1
+        },
+        "missing_channels": {},
+        "examples": {
+          "budget_or_rank": [
+            "train_case"
+          ]
+        },
+        "cumulative_patterns": {
+          "budget_or_rank": 1
+        },
+        "cumulative_missing_channels": {}
+      }
+    },
+    "enabled_two_hop_alternative": {
+      "input": {
+        "nodes": [
+          {
+            "id": "m1",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m2",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m3",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m4",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m5",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "h1",
+            "user_id": "synthetic",
+            "kind": "H"
+          },
+          {
+            "id": "h2",
+            "user_id": "synthetic",
+            "kind": "H"
+          }
+        ],
+        "edges": [
+          {
+            "source": "m1",
+            "target": "m5",
+            "channel": "r0",
+            "score": 0.8
+          },
+          {
+            "source": "m1",
+            "target": "h1",
+            "channel": "r1",
+            "score": 0.8
+          },
+          {
+            "source": "h1",
+            "target": "m5",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "cases": [
+          {
+            "id": "train_case",
+            "user_id": "synthetic",
+            "split": "train",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "validation_case",
+            "user_id": "synthetic",
+            "split": "validation",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "test_case",
+            "user_id": "synthetic",
+            "split": "test",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          }
+        ]
+      },
+      "schema": {
+        "channels": [
+          {
+            "id": "r1",
+            "max_degree": 3,
+            "min_score": 0,
+            "weight": 1.0
+          }
+        ],
+        "seed_k": 2,
+        "context_k": 4,
+        "graph_slots": 1,
+        "max_hops": 1,
+        "max_visits": 1,
+        "hop_discount": 0.8
+      },
+      "compiled": {
+        "h1": [
+          {
+            "target": "m1",
+            "channel": "r1",
+            "score": 0.8
+          },
+          {
+            "target": "m5",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "m1": [
+          {
+            "target": "h1",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "m5": [
+          {
+            "target": "h1",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ]
+      },
+      "train_rows": [
+        {
+          "case_id": "train_case",
+          "selected": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "baseline": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "gold": [
+            "m5"
+          ],
+          "recall": 0.0,
+          "baseline_recall": 0.0,
+          "graph_added": [],
+          "edge_visits": 1,
+          "expanded_nodes": 1
+        }
+      ],
+      "diagnosis": {
+        "round_patterns": {
+          "channel_missing": 1
+        },
+        "missing_channels": {
+          "r0": 1
+        },
+        "examples": {
+          "channel_missing": [
+            "train_case"
+          ]
+        },
+        "cumulative_patterns": {
+          "channel_missing": 1
+        },
+        "cumulative_missing_channels": {
+          "r0": 1
+        }
+      }
+    },
+    "threshold_pruned": {
+      "input": {
+        "nodes": [
+          {
+            "id": "m1",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m2",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m3",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m4",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m5",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "h1",
+            "user_id": "synthetic",
+            "kind": "H"
+          },
+          {
+            "id": "h2",
+            "user_id": "synthetic",
+            "kind": "H"
+          }
+        ],
+        "edges": [
+          {
+            "source": "m1",
+            "target": "m5",
+            "channel": "r1",
+            "score": 0.4
+          }
+        ],
+        "cases": [
+          {
+            "id": "train_case",
+            "user_id": "synthetic",
+            "split": "train",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "validation_case",
+            "user_id": "synthetic",
+            "split": "validation",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "test_case",
+            "user_id": "synthetic",
+            "split": "test",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          }
+        ]
+      },
+      "schema": {
+        "channels": [
+          {
+            "id": "r1",
+            "max_degree": 3,
+            "min_score": 0.5,
+            "weight": 1.0
+          }
+        ],
+        "seed_k": 2,
+        "context_k": 4,
+        "graph_slots": 1,
+        "max_hops": 1,
+        "max_visits": 1,
+        "hop_discount": 0.8
+      },
+      "compiled": {},
+      "train_rows": [
+        {
+          "case_id": "train_case",
+          "selected": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "baseline": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "gold": [
+            "m5"
+          ],
+          "recall": 0.0,
+          "baseline_recall": 0.0,
+          "graph_added": [],
+          "edge_visits": 0,
+          "expanded_nodes": 2
+        }
+      ],
+      "diagnosis": {
+        "round_patterns": {
+          "budget_or_rank": 1
+        },
+        "missing_channels": {},
+        "examples": {
+          "budget_or_rank": [
+            "train_case"
+          ]
+        },
+        "cumulative_patterns": {
+          "budget_or_rank": 1
+        },
+        "cumulative_missing_channels": {}
+      }
+    },
+    "three_hop_pool_path": {
+      "input": {
+        "nodes": [
+          {
+            "id": "m1",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m2",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m3",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m4",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "m5",
+            "user_id": "synthetic",
+            "kind": "M"
+          },
+          {
+            "id": "h1",
+            "user_id": "synthetic",
+            "kind": "H"
+          },
+          {
+            "id": "h2",
+            "user_id": "synthetic",
+            "kind": "H"
+          }
+        ],
+        "edges": [
+          {
+            "source": "m1",
+            "target": "h1",
+            "channel": "r1",
+            "score": 0.8
+          },
+          {
+            "source": "h1",
+            "target": "h2",
+            "channel": "r1",
+            "score": 0.8
+          },
+          {
+            "source": "h2",
+            "target": "m5",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "cases": [
+          {
+            "id": "train_case",
+            "user_id": "synthetic",
+            "split": "train",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "validation_case",
+            "user_id": "synthetic",
+            "split": "validation",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          },
+          {
+            "id": "test_case",
+            "user_id": "synthetic",
+            "split": "test",
+            "base_ranked": [
+              "m1",
+              "m2",
+              "m3",
+              "m4",
+              "m5"
+            ],
+            "gold": [
+              "m5"
+            ]
+          }
+        ]
+      },
+      "schema": {
+        "channels": [
+          {
+            "id": "r1",
+            "max_degree": 3,
+            "min_score": 0,
+            "weight": 1.0
+          }
+        ],
+        "seed_k": 2,
+        "context_k": 4,
+        "graph_slots": 1,
+        "max_hops": 1,
+        "max_visits": 1,
+        "hop_discount": 0.8
+      },
+      "compiled": {
+        "h1": [
+          {
+            "target": "h2",
+            "channel": "r1",
+            "score": 0.8
+          },
+          {
+            "target": "m1",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "h2": [
+          {
+            "target": "h1",
+            "channel": "r1",
+            "score": 0.8
+          },
+          {
+            "target": "m5",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "m1": [
+          {
+            "target": "h1",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ],
+        "m5": [
+          {
+            "target": "h2",
+            "channel": "r1",
+            "score": 0.8
+          }
+        ]
+      },
+      "train_rows": [
+        {
+          "case_id": "train_case",
+          "selected": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "baseline": [
+            "m1",
+            "m2",
+            "m3",
+            "m4"
+          ],
+          "gold": [
+            "m5"
+          ],
+          "recall": 0.0,
+          "baseline_recall": 0.0,
+          "graph_added": [],
+          "edge_visits": 1,
+          "expanded_nodes": 1
+        }
+      ],
+      "diagnosis": {
+        "round_patterns": {
+          "candidate_pool_gap": 1
+        },
+        "missing_channels": {},
+        "examples": {
+          "candidate_pool_gap": [
+            "train_case"
+          ]
+        },
+        "cumulative_patterns": {
+          "candidate_pool_gap": 1
+        },
+        "cumulative_missing_channels": {}
+      }
+    }
+  },
+  "code_sha256": "1303e9b87a67666141eca9c392aba1b6f03de78e99f16140a7a498a2ae455ff4",
+  "limits": [
+    "No semantic source labels or real benchmark frequency measured.",
+    "Available structural path does not prove fact support or that parameter changes improve answers.",
+    "Three-hop fixture is outside the supported two-hop schema search space."
+  ]
+}

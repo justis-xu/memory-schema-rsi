@@ -119,19 +119,27 @@ class EvolutionEngine:
                         proposals.append((f"broad:{channel}:d{degree}:h{hops}:s{graph_slots}", schema))
         return proposals
 
-    def _shortest_path_channels(self, source_ids: tuple[str, ...], target: str) -> tuple[str, ...] | None:
-        """Diagnostic only; reads the fixed candidate pool, never query gold to build edges."""
+    def _shortest_path_channels(self, source_ids: tuple[str, ...], target: str, *,
+                                compiled: bool = False, enabled_only: bool = False) -> tuple[str, ...] | None:
+        """Positive-score reachability within the supported two-hop horizon."""
         neighbors: dict[str, list[tuple[str, str]]] = defaultdict(list)
-        for edge in self.data.edges:
-            neighbors[edge.source].append((edge.target, edge.channel))
-            neighbors[edge.target].append((edge.source, edge.channel))
+        if compiled:
+            for source, arcs in self._graph(self.active).adjacency.items():
+                neighbors[source].extend((arc.target, arc.channel) for arc in arcs if arc.score > 0)
+        else:
+            enabled = {channel.id for channel in self.active.channels}
+            for edge in self.data.edges:
+                if edge.score <= 0 or (enabled_only and edge.channel not in enabled):
+                    continue
+                neighbors[edge.source].append((edge.target, edge.channel))
+                neighbors[edge.target].append((edge.source, edge.channel))
         frontier = deque((source, ()) for source in source_ids)
         visited = set(source_ids)
         while frontier:
             node_id, channels = frontier.popleft()
             if len(channels) >= 2:
                 continue
-            for next_id, channel in neighbors.get(node_id, []):
+            for next_id, channel in sorted(neighbors.get(node_id, [])):
                 if next_id in visited:
                     continue
                 path = (*channels, channel)
@@ -155,24 +163,28 @@ class EvolutionEngine:
                 if gold_id in row["baseline"]:
                     reason = "displaced_baseline_evidence"
                 else:
-                    path = self._shortest_path_channels(
-                        case.base_ranked[:self.seed_k], gold_id,
-                    )
-                    if path is None:
-                        reason = "candidate_pool_gap"
-                    elif set(path).difference(enabled):
-                        reason = "channel_missing"
-                        round_channels.update(set(path).difference(enabled))
-                    elif len(path) > self.active.max_hops:
-                        reason = "hop_limit"
+                    seeds = case.base_ranked[:self.seed_k]
+                    path = self._shortest_path_channels(seeds, gold_id, compiled=True)
+                    if path is not None:
+                        reason = "hop_limit" if len(path) > self.active.max_hops else "budget_or_rank"
+                    elif self._shortest_path_channels(seeds, gold_id, enabled_only=True) is not None:
+                        reason = "compile_filter_or_degree"
                     else:
-                        reason = "budget_or_rank"
+                        path = self._shortest_path_channels(seeds, gold_id)
+                        if path is None:
+                            reason = "candidate_pool_gap"
+                        else:
+                            reason = "channel_missing"
+                            round_channels.update(set(path).difference(enabled))
                 round_patterns[reason] += 1
                 if len(examples[reason]) < 5:
                     examples[reason].append(case.id)
         self._patterns.update(round_patterns)
         self._missing_channels.update(round_channels)
         diagnosis = {
+            "path_horizon": 2,
+            "diagnostic_seed_k": self.seed_k,
+            "target_semantics": "unvalidated_evidence_ids",
             "round_patterns": dict(round_patterns),
             "missing_channels": dict(round_channels),
             "examples": dict(examples),
