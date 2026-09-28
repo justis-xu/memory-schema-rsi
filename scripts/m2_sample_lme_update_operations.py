@@ -53,6 +53,9 @@ def main():
     for value in cases.values():
         assert {s['session_id'] for s in value['chinese']['answer_sessions']} == {
             s['session_id'] for s in value['english']['answer_sessions']}
+    # Frozen historical judgments. The f685340e "weekly Sundays" inference was
+    # later corrected by m2_lme_clause_support_zh.md; keep this map unchanged so
+    # the archived packet remains reproducible.
     judgments = {
         '031748ae': {'operation': 'in_session_correction_then_cross_session_update',
                      'required_values': ['initially leads 4 engineers', 'now leads 5 engineers'],

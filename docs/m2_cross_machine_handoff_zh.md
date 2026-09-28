@@ -40,7 +40,7 @@
 - 当前无图重排已找回曼城、番茄工作法等旧图桥接事实，不能继续把旧缺口当当前缺口。签名篮球人工补约翰记忆的 ABBA 仅是定向机制证据，非自动策略或总体收益。相关阶段从 `docs/codex_handoff_zh.md` 定位。
 - 中文 HF 覆盖：LoCoMo 英中均 1,986 QA/5,882 turn；中文 LongMemEval-S 保留 470/500 题，共同题中 293 题共少 460 背景场次。历史 LongMemEval 结果为小规模英文，不能混算中文效果。见 `docs/m2_hf_dataset_coverage_zh.md`。
 - 来源通道/匿名对象须审慎：内特龙封面仅 image query，不能直接认定文字明确最爱或两处匿名系列同一；《That》译成“那部”的 gold、Silver 的 eligible 与实际取得均有口径歧义。详见 `docs/m2_preference_source_channels_zh.md`、`docs/m2_nate_book_disambiguation_zh.md`。先核来源和评分口径，不把这些失分统一当图/Jev问题。
-- 最新五题中文 LongMemEval 知识更新源审计见 `docs/m2_lme_update_operations_zh.md`：工程师同场 5→4 纠错与跨场 5 要区分；棒球 15/新增 20 需历史窗，不能统一覆盖或相加；周日/隔周日要保历史；雕塑累计区间 5–6→10–12 不能相加，并区分另一个计划对象。
+- 最新五题中文 LongMemEval 知识更新源审计见 `docs/m2_lme_update_operations_zh.md`：工程师同场 5→4 纠错与跨场 5 要区分；棒球 15/新增 20 需历史窗，不能统一覆盖或相加；网球旧场明确每周活动、另有一次周日计划，新场明确隔周日，旧“每周日”gold 精度缺直接源证（后续更正见 `docs/m2_lme_clause_support_zh.md`）；雕塑累计区间 5–6→10–12 不能相加，并区分另一个计划对象。
 - 写入顺序回放见 `docs/m2_lme_ingest_order_zh.md`：上述五题 232 批、2,368 条真实消息的角色、内容、顺序和日期锚保留。全 470 题发现的 2,809 个相邻时分倒序全在同日，跨日为零；时分意图未知，不直接排序修复。输入可复原，真正缺口是输出事实对齐。
 
 其他已核专项、适用版本与限制见 `docs/m2_*.md`、`results/analysis/m2_*`、`scripts/m2_*.py`。只读相关材料，但不能仅凭报告就宣布全量历史审完。

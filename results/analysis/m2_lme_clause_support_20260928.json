@@ -1,0 +1,364 @@
+{
+  "scope": "五道固定中文 LongMemEval 知识更新题的人工子句来源支持；只用已归档答案场源话",
+  "source_packet": "results/analysis/m2_lme_update_operations_20260928.json",
+  "source_packet_sha256": "65478327b47d25891b87e9e644735ee4389197952d9b396f10052809c8ad5e54",
+  "support_definition": {
+    "full": "所引用户原话在其限定语和时间窗内直接支持该子句",
+    "partial": "原话支持部分内容，但某个限定、身份、总量或取得关系未直接闭合",
+    "absent": "所引原话不支持该子句，或其时间/累计关系与子句冲突"
+  },
+  "counts": {
+    "full": 13,
+    "partial": 4,
+    "absent": 1
+  },
+  "cases": [
+    {
+      "question_id": "031748ae",
+      "question": "我刚升任高级软件工程师的时候带领多少名工程师？我现在带领多少名工程师？",
+      "gold": "当你刚开始担任高级软件工程师时，你带领4名工程师。现在，你带领5名工程师。",
+      "claims": [
+        {
+          "claim_id": "early_five_engineers_plus_manager",
+          "claim": "早场曾说五名工程师加一名经理",
+          "source_support": "full",
+          "manual_reason": "同场后来由用户纠正，不再作为初始带领人数",
+          "witnesses": [
+            {
+              "session_id": "answer_8748f791_1",
+              "session_date": "2023/05/11 (Thu) 02:02",
+              "source_ref": "turn:4",
+              "role": "user",
+              "text": "我觉得 City View Rooftop 听起来是个不错的选择。你觉得他们有针对企业团队的折扣或套餐吗？另外顺便说一下，我打算邀请我的经理雷切尔一起来，所以我们将是5名工程师加一位经理。"
+            }
+          ]
+        },
+        {
+          "claim_id": "early_corrected_four_engineers",
+          "claim": "刚任职时带领四名工程师",
+          "source_support": "full",
+          "manual_reason": "用户在同场明确纠正；优先于早场未纠正数字",
+          "witnesses": [
+            {
+              "session_id": "answer_8748f791_1",
+              "session_date": "2023/05/11 (Thu) 02:02",
+              "source_ref": "turn:10",
+              "role": "user",
+              "text": "抱歉造成了混淆！作为高级软件工程师，我在新职位上带领一个4人的工程师团队。所以我们会有4名工程师，加上我的经理雷切尔，一共5人参加团建。"
+            }
+          ]
+        },
+        {
+          "claim_id": "current_five_engineers",
+          "claim": "后来带领五名工程师",
+          "source_support": "full",
+          "manual_reason": "跨场的新带领人数，不能覆盖历史四名",
+          "witnesses": [
+            {
+              "session_id": "answer_8748f791_2",
+              "session_date": "2023/10/24 (Tue) 13:53",
+              "source_ref": "turn:2",
+              "role": "user",
+              "text": "这个清单太棒了！我打算选择团队徒步这个选项。你知道附近有没有适合6人团体的公园或自然保护区吗？顺便说一下，我担任高级软件工程师已经有一段时间了，尤其喜欢现在带领一个五人工程师团队——到目前为止是非常棒的体验，我很期待看到他们在我指导下如何成长。"
+            }
+          ]
+        },
+        {
+          "claim_id": "four_includes_self",
+          "claim": "早场四名工程师包含用户本人",
+          "source_support": "partial",
+          "manual_reason": "用户只说带领四人；含本人是助手后续概括，不能作为用户明确来源",
+          "witnesses": [
+            {
+              "session_id": "answer_8748f791_1",
+              "session_date": "2023/05/11 (Thu) 02:02",
+              "source_ref": "turn:10",
+              "role": "user",
+              "text": "抱歉造成了混淆！作为高级软件工程师，我在新职位上带领一个4人的工程师团队。所以我们会有4名工程师，加上我的经理雷切尔，一共5人参加团建。"
+            },
+            {
+              "session_id": "answer_8748f791_1",
+              "session_date": "2023/05/11 (Thu) 02:02",
+              "source_ref": "turn:11",
+              "role": "assistant",
+              "text": "谢谢你说明清楚。\n\n那么，总结一下：你正在策划一个5人团建，包括你们团队的4名工程师（含你本人）和你的经理雷切尔。你在考虑把 City View Rooftop 作为场地，并对他们的企业团建套餐感兴趣。你还在考虑团建的形式和日程安排，包括促进团队合作的结构化活动。\n\n我很乐意继续帮你筹划这次活动。如果你还有其他问题或需要进一步的建议，随时问我！"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "0ddfec37",
+      "question": "我收藏的第一个三个月里，一共增加了多少颗签名棒球？",
+      "gold": "15",
+      "claims": [
+        {
+          "claim_id": "first_three_months_fifteen",
+          "claim": "开始收藏三个月时共有十五颗签名棒球",
+          "source_support": "full",
+          "manual_reason": "第十五颗是该时间窗的收藏数量",
+          "witnesses": [
+            {
+              "session_id": "answer_a22b654d_1",
+              "session_date": "2023/07/11 (Tue) 14:38",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想了解一下迈克·特劳特（Mike Trout）的最新数据。你能告诉我他目前的打击率和本赛季的本垒打数吗？顺便说一下，我上周刚收到他签名的棒球，这是我收藏中的一件珍品——从三个月前开始收藏以来，这已经是我第15颗签名棒球了！"
+            }
+          ]
+        },
+        {
+          "claim_id": "later_added_twenty",
+          "claim": "后来几个月新增二十颗签名棒球",
+          "source_support": "full",
+          "manual_reason": "新增量属于较晚时间窗，不替换早期十五颗",
+          "witnesses": [
+            {
+              "session_id": "answer_a22b654d_2",
+              "session_date": "2023/12/30 (Sat) 02:28",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想了解一下本市即将举办的体育纪念品拍卖会。你知道接下来几周有哪些比较值得关注的吗？对了，我刚结束周末旅行回来，抽出时间整理了我的收藏——过去几个月我新增了20个签名棒球，太疯狂了！"
+            }
+          ]
+        },
+        {
+          "claim_id": "current_total_thirty_five",
+          "claim": "现在总共有三十五颗签名棒球",
+          "source_support": "partial",
+          "manual_reason": "15 加 20 需假设两窗口衔接且期间无出售或其他变动；原话未直接给当前总量",
+          "witnesses": [
+            {
+              "session_id": "answer_a22b654d_1",
+              "session_date": "2023/07/11 (Tue) 14:38",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想了解一下迈克·特劳特（Mike Trout）的最新数据。你能告诉我他目前的打击率和本赛季的本垒打数吗？顺便说一下，我上周刚收到他签名的棒球，这是我收藏中的一件珍品——从三个月前开始收藏以来，这已经是我第15颗签名棒球了！"
+            },
+            {
+              "session_id": "answer_a22b654d_2",
+              "session_date": "2023/12/30 (Sat) 02:28",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想了解一下本市即将举办的体育纪念品拍卖会。你知道接下来几周有哪些比较值得关注的吗？对了，我刚结束周末旅行回来，抽出时间整理了我的收藏——过去几个月我新增了20个签名棒球，太疯狂了！"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "f685340e",
+      "question": "我以前和朋友们在本地公园多久打一次网球？现在是多久一次？",
+      "gold": "以前，你和朋友们每周日都在本地公园打网球。现在，你们每隔一周的周日打一次。",
+      "claims": [
+        {
+          "claim_id": "earlier_weekly_tennis",
+          "claim": "过去每周与朋友打网球",
+          "source_support": "full",
+          "manual_reason": "原话有每周频率，但没有说固定在周日",
+          "witnesses": [
+            {
+              "session_id": "answer_25df025b_1",
+              "session_date": "2023/03/11 (Sat) 18:01",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想在网上买几双新的运动袜，但不知道该选哪个牌子。你能给我推荐一下吗？顺便说一下，上周日我在本地公园看到有人在打网球，让我想起了我和朋友们每周的网球活动。"
+            }
+          ]
+        },
+        {
+          "claim_id": "earlier_sunday_plan",
+          "claim": "当时计划这周日与朋友在本地公园打网球",
+          "source_support": "full",
+          "manual_reason": "一次计划，不自动等于每周日惯例",
+          "witnesses": [
+            {
+              "session_id": "answer_25df025b_1",
+              "session_date": "2023/03/11 (Sat) 18:01",
+              "source_ref": "turn:6",
+              "role": "user",
+              "text": "对，我打算这周日和朋友们在本地公园打网球。"
+            }
+          ]
+        },
+        {
+          "claim_id": "earlier_every_sunday",
+          "claim": "过去每周日都与朋友在本地公园打网球",
+          "source_support": "partial",
+          "manual_reason": "每周频率加一次周日计划不足以确定固定星期；中英文原话均如此，gold 的周日精度更强",
+          "witnesses": [
+            {
+              "session_id": "answer_25df025b_1",
+              "session_date": "2023/03/11 (Sat) 18:01",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想在网上买几双新的运动袜，但不知道该选哪个牌子。你能给我推荐一下吗？顺便说一下，上周日我在本地公园看到有人在打网球，让我想起了我和朋友们每周的网球活动。"
+            },
+            {
+              "session_id": "answer_25df025b_1",
+              "session_date": "2023/03/11 (Sat) 18:01",
+              "source_ref": "turn:6",
+              "role": "user",
+              "text": "对，我打算这周日和朋友们在本地公园打网球。"
+            }
+          ]
+        },
+        {
+          "claim_id": "current_alternate_sundays",
+          "claim": "现在每隔一周的周日在附近公园与朋友打网球",
+          "source_support": "full",
+          "manual_reason": "新场直接说明惯常频率",
+          "witnesses": [
+            {
+              "session_id": "answer_25df025b_2",
+              "session_date": "2023/07/30 (Sun) 04:03",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想规划一下周末。你能推荐一些我家附近的慢跑路线吗？哦对了，这个周日我打算和朋友们在附近的公园打网球，我们每隔一周都会这样。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "50635ada",
+      "question": "在我获得当前等级之前，我在美联航的常旅客等级是什么？",
+      "gold": "Premier Silver（银卡会员）",
+      "claims": [
+        {
+          "claim_id": "silver_eligible",
+          "claim": "早期已有资格获得 Premier Silver",
+          "source_support": "full",
+          "manual_reason": "资格模态是用户原话",
+          "witnesses": [
+            {
+              "session_id": "answer_dcd74827_1",
+              "session_date": "2022/09/16 (Fri) 17:22",
+              "source_ref": "turn:4",
+              "role": "user",
+              "text": "我刚刚在美联航积累了 20,000 英里，终于有资格获得 Premier Silver 等级了。你能告诉我用里程兑换一张从华盛顿特区到洛杉矶的单程经济舱机票需要多少里程吗？"
+            }
+          ]
+        },
+        {
+          "claim_id": "silver_attained",
+          "claim": "早期已经取得 Premier Silver 会员等级",
+          "source_support": "partial",
+          "manual_reason": "原话只明确有资格；gold 以前一等级指代 Silver，取得关系未直接闭合",
+          "witnesses": [
+            {
+              "session_id": "answer_dcd74827_1",
+              "session_date": "2022/09/16 (Fri) 17:22",
+              "source_ref": "turn:4",
+              "role": "user",
+              "text": "我刚刚在美联航积累了 20,000 英里，终于有资格获得 Premier Silver 等级了。你能告诉我用里程兑换一张从华盛顿特区到洛杉矶的单程经济舱机票需要多少里程吗？"
+            }
+          ]
+        },
+        {
+          "claim_id": "gold_attained",
+          "claim": "后来已经达到 Premier Gold 会员等级",
+          "source_support": "full",
+          "manual_reason": "用户在后场明确说达到",
+          "witnesses": [
+            {
+              "session_id": "answer_dcd74827_2",
+              "session_date": "2023/05/30 (Tue) 08:58",
+              "source_ref": "turn:2",
+              "role": "user",
+              "text": "我从华盛顿特区出发，日期比较灵活。我想订经济舱，预算大约 400 美元。对了，我有美联航 MileagePlus 账户——刚达到 Premier Gold 会员等级。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "71315a70",
+      "question": "我在我的抽象海洋雕塑上花了多少小时？",
+      "gold": "10-12小时",
+      "claims": [
+        {
+          "claim_id": "earlier_ocean_five_to_six",
+          "claim": "同一抽象海洋雕塑早期已投入约五至六小时",
+          "source_support": "full",
+          "manual_reason": "已投入的累计区间",
+          "witnesses": [
+            {
+              "session_id": "answer_c44b9df4_1",
+              "session_date": "2023/06/11 (Sun) 03:51",
+              "source_ref": "turn:4",
+              "role": "user",
+              "text": "我一直在家创作一件抽象海洋雕塑，到目前为止已经花了大约5-6个小时。你有什么技巧可以帮我在雕塑上实现风化的浮木效果吗？比如一些营造质感和色彩的技法，让它看起来更有被海水侵蚀的感觉？"
+            }
+          ]
+        },
+        {
+          "claim_id": "later_ocean_ten_to_twelve",
+          "claim": "该抽象海洋雕塑后来累计投入十至十二小时",
+          "source_support": "full",
+          "manual_reason": "后场两次确认，仍是累计区间",
+          "witnesses": [
+            {
+              "session_id": "answer_c44b9df4_2",
+              "session_date": "2023/06/17 (Sat) 09:26",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想创作一件以日落为灵感的雕塑。你有什么技巧可以教我如何用黏土表现天空的色彩和质感吗？顺便说一句，我最近在我的抽象海洋雕塑上花了不少时间——已经投入了10-12个小时，目前还在创作中。"
+            },
+            {
+              "session_id": "answer_c44b9df4_2",
+              "session_date": "2023/06/17 (Sat) 09:26",
+              "source_ref": "turn:10",
+              "role": "user",
+              "text": "我的抽象海洋雕塑已经投入了10-12个小时，我很期待在下一件作品中尝试新的技法和材料。我想我会在下一件雕塑中尝试融入一些海洋拾得物，比如海玻璃或海滩卵石。谢谢你的建议和灵感！"
+            }
+          ]
+        },
+        {
+          "claim_id": "sum_ocean_fifteen_to_eighteen",
+          "claim": "该雕塑累计投入十五至十八小时",
+          "source_support": "absent",
+          "manual_reason": "两次说的都是同一项目已投入的累计区间，不能相加",
+          "witnesses": [
+            {
+              "session_id": "answer_c44b9df4_1",
+              "session_date": "2023/06/11 (Sun) 03:51",
+              "source_ref": "turn:4",
+              "role": "user",
+              "text": "我一直在家创作一件抽象海洋雕塑，到目前为止已经花了大约5-6个小时。你有什么技巧可以帮我在雕塑上实现风化的浮木效果吗？比如一些营造质感和色彩的技法，让它看起来更有被海水侵蚀的感觉？"
+            },
+            {
+              "session_id": "answer_c44b9df4_2",
+              "session_date": "2023/06/17 (Sat) 09:26",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想创作一件以日落为灵感的雕塑。你有什么技巧可以教我如何用黏土表现天空的色彩和质感吗？顺便说一句，我最近在我的抽象海洋雕塑上花了不少时间——已经投入了10-12个小时，目前还在创作中。"
+            }
+          ]
+        },
+        {
+          "claim_id": "sunset_separate_project",
+          "claim": "日落雕塑是另一个计划对象",
+          "source_support": "full",
+          "manual_reason": "后场先问日落作品技巧，随即另提已经在做的抽象海洋雕塑",
+          "witnesses": [
+            {
+              "session_id": "answer_c44b9df4_2",
+              "session_date": "2023/06/17 (Sat) 09:26",
+              "source_ref": "turn:0",
+              "role": "user",
+              "text": "我想创作一件以日落为灵感的雕塑。你有什么技巧可以教我如何用黏土表现天空的色彩和质感吗？顺便说一句，我最近在我的抽象海洋雕塑上花了不少时间——已经投入了10-12个小时，目前还在创作中。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "这是人工诊断 oracle，不是提取器实际输出事实的自动对齐，也不进入运行提取或检索输入。",
+    "仅对历史 packet 中两场指定答案来源作语义审计，未穷尽各题所有背景场次。",
+    "source_ref 是已归档答案场内的零起始 turn 位置；当前本机 HF 原文件缺失，无法重算完整 batch_id 与真实适配器请求。",
+    "支持强度是按明确用户原话作保守判断；gold 可比原话更具体，不能直接当训练接受条件。",
+    "没有模型调用、真实记忆库或图写入，也没有中文答题表现测量。"
+  ]
+}
