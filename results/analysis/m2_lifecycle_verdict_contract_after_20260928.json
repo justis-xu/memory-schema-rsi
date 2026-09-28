@@ -1,0 +1,161 @@
+{
+  "scope": "Seven synthetic evaluator response modes through actual LifecycleRSI; five independent conversations, paired two cases each; no model/API calls",
+  "phase": "after",
+  "code_sha256": "e1fbb87347b57ff0cf4df7a8db3e5a15b7b25f7fe0d6f3470b63004b0bd609a7",
+  "cases": [
+    {
+      "id": "q0_0",
+      "conversation_id": "c0",
+      "baseline_correct": false
+    },
+    {
+      "id": "q0_1",
+      "conversation_id": "c0",
+      "baseline_correct": true
+    },
+    {
+      "id": "q1_0",
+      "conversation_id": "c1",
+      "baseline_correct": false
+    },
+    {
+      "id": "q1_1",
+      "conversation_id": "c1",
+      "baseline_correct": true
+    },
+    {
+      "id": "q2_0",
+      "conversation_id": "c2",
+      "baseline_correct": false
+    },
+    {
+      "id": "q2_1",
+      "conversation_id": "c2",
+      "baseline_correct": true
+    },
+    {
+      "id": "q3_0",
+      "conversation_id": "c3",
+      "baseline_correct": false
+    },
+    {
+      "id": "q3_1",
+      "conversation_id": "c3",
+      "baseline_correct": true
+    },
+    {
+      "id": "q4_0",
+      "conversation_id": "c4",
+      "baseline_correct": false
+    },
+    {
+      "id": "q4_1",
+      "conversation_id": "c4",
+      "baseline_correct": true
+    }
+  ],
+  "results": {
+    "valid_complete": {
+      "completed": true,
+      "policy_promoted": true,
+      "validation_events": [
+        {
+          "proposal": "verify_only",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 0,
+            "net": 1,
+            "accuracy": 1.0,
+            "mean_model_calls": 2.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": true,
+          "reason": "validation_gain_without_regression"
+        }
+      ],
+      "test": {
+        "cases": 2,
+        "fixed": 1,
+        "harmed": 0,
+        "net": 1,
+        "accuracy": 1.0,
+        "mean_model_calls": 2.0,
+        "mean_edge_visits": 10.0
+      }
+    },
+    "explicit_harm": {
+      "completed": true,
+      "policy_promoted": false,
+      "validation_events": [
+        {
+          "proposal": "verify_only",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 1,
+            "net": 0,
+            "accuracy": 0.5,
+            "mean_model_calls": 2.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": false,
+          "reason": "validation_gate_rejected"
+        },
+        {
+          "proposal": "verified_success_paths",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 1,
+            "net": 0,
+            "accuracy": 0.5,
+            "mean_model_calls": 2.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": false,
+          "reason": "validation_gate_rejected"
+        }
+      ],
+      "test": {
+        "cases": 2,
+        "fixed": 1,
+        "harmed": 1,
+        "net": 0,
+        "accuracy": 0.5,
+        "mean_model_calls": 2.0,
+        "mean_edge_visits": 10.0
+      }
+    },
+    "unknown_verdict": {
+      "completed": false,
+      "error_type": "ValueError",
+      "reason": "evaluation requires boolean correct"
+    },
+    "string_verdict": {
+      "completed": false,
+      "error_type": "ValueError",
+      "reason": "evaluation requires boolean correct"
+    },
+    "missing_call_count": {
+      "completed": false,
+      "error_type": "ValueError",
+      "reason": "evaluation requires nonnegative integer model_calls"
+    },
+    "negative_call_count": {
+      "completed": false,
+      "error_type": "ValueError",
+      "reason": "evaluation requires nonnegative integer model_calls"
+    },
+    "missing_visit_count": {
+      "completed": false,
+      "error_type": "ValueError",
+      "reason": "evaluation requires nonnegative integer edge_visits"
+    }
+  },
+  "limits": [
+    "Injected evaluator outcomes/costs, not observed model failures or historical rates.",
+    "No Chinese answer or learned experience effect measured.",
+    "Does not evaluate independent EvolutionEngine evidence-recall gate."
+  ]
+}

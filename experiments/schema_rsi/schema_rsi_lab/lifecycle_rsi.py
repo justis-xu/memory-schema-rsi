@@ -34,6 +34,15 @@ def split_conversations(cases: list[dict]) -> dict[str, list[dict]]:
 def _summary(rows: list[dict]) -> dict:
     if not rows:
         raise ValueError("empty evaluation")
+    # Unknown verdicts/costs cannot establish zero harm or satisfy a cost gate.
+    for row in rows:
+        for field in ("correct", "baseline_correct"):
+            if type(row.get(field)) is not bool:
+                raise ValueError(f"evaluation requires boolean {field}")
+        for field in ("model_calls", "edge_visits"):
+            value = row.get(field)
+            if type(value) is not int or value < 0:
+                raise ValueError(f"evaluation requires nonnegative integer {field}")
     ids = [str(row["id"]) for row in rows]
     if len(set(ids)) != len(ids):
         raise ValueError("duplicate evaluation case")
@@ -41,8 +50,8 @@ def _summary(rows: list[dict]) -> dict:
     harmed = sum(row["correct"] is False and row["baseline_correct"] is True for row in rows)
     return {"cases": len(rows), "fixed": fixed, "harmed": harmed, "net": fixed - harmed,
             "accuracy": sum(row["correct"] is True for row in rows) / len(rows),
-            "mean_model_calls": sum(int(row.get("model_calls", 0)) for row in rows) / len(rows),
-            "mean_edge_visits": sum(int(row.get("edge_visits", 0)) for row in rows) / len(rows)}
+            "mean_model_calls": sum(row["model_calls"] for row in rows) / len(rows),
+            "mean_edge_visits": sum(row["edge_visits"] for row in rows) / len(rows)}
 
 
 class LifecycleRSI:

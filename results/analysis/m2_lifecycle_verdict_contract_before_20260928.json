@@ -1,0 +1,281 @@
+{
+  "scope": "Seven synthetic evaluator response modes through actual LifecycleRSI; five independent conversations, paired two cases each; no model/API calls",
+  "phase": "before",
+  "code_sha256": "9c20462886911b7d9282b1b08383980c9fa5b2dccf98ce52888090dbb67c1757",
+  "cases": [
+    {
+      "id": "q0_0",
+      "conversation_id": "c0",
+      "baseline_correct": false
+    },
+    {
+      "id": "q0_1",
+      "conversation_id": "c0",
+      "baseline_correct": true
+    },
+    {
+      "id": "q1_0",
+      "conversation_id": "c1",
+      "baseline_correct": false
+    },
+    {
+      "id": "q1_1",
+      "conversation_id": "c1",
+      "baseline_correct": true
+    },
+    {
+      "id": "q2_0",
+      "conversation_id": "c2",
+      "baseline_correct": false
+    },
+    {
+      "id": "q2_1",
+      "conversation_id": "c2",
+      "baseline_correct": true
+    },
+    {
+      "id": "q3_0",
+      "conversation_id": "c3",
+      "baseline_correct": false
+    },
+    {
+      "id": "q3_1",
+      "conversation_id": "c3",
+      "baseline_correct": true
+    },
+    {
+      "id": "q4_0",
+      "conversation_id": "c4",
+      "baseline_correct": false
+    },
+    {
+      "id": "q4_1",
+      "conversation_id": "c4",
+      "baseline_correct": true
+    }
+  ],
+  "results": {
+    "valid_complete": {
+      "completed": true,
+      "policy_promoted": true,
+      "validation_events": [
+        {
+          "proposal": "verify_only",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 0,
+            "net": 1,
+            "accuracy": 1.0,
+            "mean_model_calls": 2.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": true,
+          "reason": "validation_gain_without_regression"
+        }
+      ],
+      "test": {
+        "cases": 2,
+        "fixed": 1,
+        "harmed": 0,
+        "net": 1,
+        "accuracy": 1.0,
+        "mean_model_calls": 2.0,
+        "mean_edge_visits": 10.0
+      }
+    },
+    "explicit_harm": {
+      "completed": true,
+      "policy_promoted": false,
+      "validation_events": [
+        {
+          "proposal": "verify_only",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 1,
+            "net": 0,
+            "accuracy": 0.5,
+            "mean_model_calls": 2.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": false,
+          "reason": "validation_gate_rejected"
+        },
+        {
+          "proposal": "verified_success_paths",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 1,
+            "net": 0,
+            "accuracy": 0.5,
+            "mean_model_calls": 2.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": false,
+          "reason": "validation_gate_rejected"
+        }
+      ],
+      "test": {
+        "cases": 2,
+        "fixed": 1,
+        "harmed": 1,
+        "net": 0,
+        "accuracy": 0.5,
+        "mean_model_calls": 2.0,
+        "mean_edge_visits": 10.0
+      }
+    },
+    "unknown_verdict": {
+      "completed": true,
+      "policy_promoted": true,
+      "validation_events": [
+        {
+          "proposal": "verify_only",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 0,
+            "net": 1,
+            "accuracy": 0.5,
+            "mean_model_calls": 2.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": true,
+          "reason": "validation_gain_without_regression"
+        }
+      ],
+      "test": {
+        "cases": 2,
+        "fixed": 1,
+        "harmed": 0,
+        "net": 1,
+        "accuracy": 0.5,
+        "mean_model_calls": 2.0,
+        "mean_edge_visits": 10.0
+      }
+    },
+    "string_verdict": {
+      "completed": true,
+      "policy_promoted": true,
+      "validation_events": [
+        {
+          "proposal": "verify_only",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 0,
+            "net": 1,
+            "accuracy": 0.5,
+            "mean_model_calls": 2.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": true,
+          "reason": "validation_gain_without_regression"
+        }
+      ],
+      "test": {
+        "cases": 2,
+        "fixed": 1,
+        "harmed": 0,
+        "net": 1,
+        "accuracy": 0.5,
+        "mean_model_calls": 2.0,
+        "mean_edge_visits": 10.0
+      }
+    },
+    "missing_call_count": {
+      "completed": true,
+      "policy_promoted": true,
+      "validation_events": [
+        {
+          "proposal": "verify_only",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 0,
+            "net": 1,
+            "accuracy": 1.0,
+            "mean_model_calls": 0.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": true,
+          "reason": "validation_gain_without_regression"
+        }
+      ],
+      "test": {
+        "cases": 2,
+        "fixed": 1,
+        "harmed": 0,
+        "net": 1,
+        "accuracy": 1.0,
+        "mean_model_calls": 0.0,
+        "mean_edge_visits": 10.0
+      }
+    },
+    "negative_call_count": {
+      "completed": true,
+      "policy_promoted": true,
+      "validation_events": [
+        {
+          "proposal": "verify_only",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 0,
+            "net": 1,
+            "accuracy": 1.0,
+            "mean_model_calls": -1.0,
+            "mean_edge_visits": 10.0
+          },
+          "accepted": true,
+          "reason": "validation_gain_without_regression"
+        }
+      ],
+      "test": {
+        "cases": 2,
+        "fixed": 1,
+        "harmed": 0,
+        "net": 1,
+        "accuracy": 1.0,
+        "mean_model_calls": -1.0,
+        "mean_edge_visits": 10.0
+      }
+    },
+    "missing_visit_count": {
+      "completed": true,
+      "policy_promoted": true,
+      "validation_events": [
+        {
+          "proposal": "verify_only",
+          "validation": {
+            "cases": 2,
+            "fixed": 1,
+            "harmed": 0,
+            "net": 1,
+            "accuracy": 1.0,
+            "mean_model_calls": 2.0,
+            "mean_edge_visits": 0.0
+          },
+          "accepted": true,
+          "reason": "validation_gain_without_regression"
+        }
+      ],
+      "test": {
+        "cases": 2,
+        "fixed": 1,
+        "harmed": 0,
+        "net": 1,
+        "accuracy": 1.0,
+        "mean_model_calls": 2.0,
+        "mean_edge_visits": 0.0
+      }
+    }
+  },
+  "limits": [
+    "Injected evaluator outcomes/costs, not observed model failures or historical rates.",
+    "No Chinese answer or learned experience effect measured.",
+    "Does not evaluate independent EvolutionEngine evidence-recall gate."
+  ]
+}
