@@ -1,0 +1,128 @@
+{
+  "scope": "Extraction-only Chinese prompt diagnostic; new common JSON contract, not faithful replay of historical Mem0 extraction",
+  "max_calls": 14,
+  "max_tokens_per_call": 1200,
+  "temperature": 0.0,
+  "retry_count": 0,
+  "stop_on_first_failure": true,
+  "fixture_sha256": "1d0f4e47e3d74b36b6877da75dabf734f12a6849de78d9f20cf2b8c6b7ec56d0",
+  "base_template": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n",
+  "source_policy_addition": "额外来源约束：\n- 联合阅读提问、回答、反问和赞同。明确“我也是”可承接上一人的偏好，但必须保留各自主体，引用两轮。\n- 若只用近期经历回答“最爱”提问，保留“在被问最爱时介绍”的语境，标question_context并引用提问和回答；不升级唯一或永久最爱。\n- 只有提问而未回答不能形成该偏好事实；明确否定不能转为肯定。\n- 常玩、职业主打、读过、做过不自动等于最爱。不要把另一人的偏好转移给本人。\n- 仅提取来源所支持的关系，不用外部知识补排名或属性。\n",
+  "requests": [
+    {
+      "fixture_id": "gina_agreement_real",
+      "arm": "base",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n\n会话日期：4:04 pm on 20 January, 2023\n对话：\n[D1:8] 乔恩: 太好了，吉娜！我喜欢所有舞蹈，但现代舞是我的最爱。它太有表现力、太有力量了！你最喜欢什么？\n[D1:9] 吉娜: 对，我也是！现代舞非常有表现力又优雅——真的很打动我。",
+      "user_sha256": "8e85fbfb3a94a9c33cd3b7c430352867e5f6b9b25e9e501b1ce5ffe44a915634"
+    },
+    {
+      "fixture_id": "gina_agreement_real",
+      "arm": "source_policy",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n额外来源约束：\n- 联合阅读提问、回答、反问和赞同。明确“我也是”可承接上一人的偏好，但必须保留各自主体，引用两轮。\n- 若只用近期经历回答“最爱”提问，保留“在被问最爱时介绍”的语境，标question_context并引用提问和回答；不升级唯一或永久最爱。\n- 只有提问而未回答不能形成该偏好事实；明确否定不能转为肯定。\n- 常玩、职业主打、读过、做过不自动等于最爱。不要把另一人的偏好转移给本人。\n- 仅提取来源所支持的关系，不用外部知识补排名或属性。\n\n会话日期：4:04 pm on 20 January, 2023\n对话：\n[D1:8] 乔恩: 太好了，吉娜！我喜欢所有舞蹈，但现代舞是我的最爱。它太有表现力、太有力量了！你最喜欢什么？\n[D1:9] 吉娜: 对，我也是！现代舞非常有表现力又优雅——真的很打动我。",
+      "user_sha256": "4b7ac9934f787b42e800ad450ea1803305dbe2cef5eadff56ee864ef0813bb1d"
+    },
+    {
+      "fixture_id": "nate_question_context_real",
+      "arm": "source_policy",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n额外来源约束：\n- 联合阅读提问、回答、反问和赞同。明确“我也是”可承接上一人的偏好，但必须保留各自主体，引用两轮。\n- 若只用近期经历回答“最爱”提问，保留“在被问最爱时介绍”的语境，标question_context并引用提问和回答；不升级唯一或永久最爱。\n- 只有提问而未回答不能形成该偏好事实；明确否定不能转为肯定。\n- 常玩、职业主打、读过、做过不自动等于最爱。不要把另一人的偏好转移给本人。\n- 仅提取来源所支持的关系，不用外部知识补排名或属性。\n\n会话日期：8:10 pm on 7 November, 2022\n对话：\n[D27:22] 乔安娜: 有道理！一切都靠练习，不是吗？那你最喜欢的游戏是什么？\n[D27:23] 内特: 对！我最近在玩一款超棒的奇幻角色扮演游戏，叫\"Xenoblade Chronicles\"（异度神剑），特别好玩！如果你没玩过，我强烈推荐。",
+      "user_sha256": "c83576ca7329e5e460ce4c7c5875128b345deba873f71581282189c57e92eb7d"
+    },
+    {
+      "fixture_id": "nate_question_context_real",
+      "arm": "base",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n\n会话日期：8:10 pm on 7 November, 2022\n对话：\n[D27:22] 乔安娜: 有道理！一切都靠练习，不是吗？那你最喜欢的游戏是什么？\n[D27:23] 内特: 对！我最近在玩一款超棒的奇幻角色扮演游戏，叫\"Xenoblade Chronicles\"（异度神剑），特别好玩！如果你没玩过，我强烈推荐。",
+      "user_sha256": "d5207ac881dd1435144e50c601c095b3d97760b1894478f1104194a90d9d01c1"
+    },
+    {
+      "fixture_id": "question_only_synthetic",
+      "arm": "base",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n\n会话日期：unspecified\n对话：\n[S1] 乔安娜: 你最喜欢的游戏是什么？\n[S2] 内特: 这次先不聊游戏。",
+      "user_sha256": "40b89b4487c7a7e8248d371c58bd31e0e87d552a78b9663b45859cf59829ba94"
+    },
+    {
+      "fixture_id": "question_only_synthetic",
+      "arm": "source_policy",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n额外来源约束：\n- 联合阅读提问、回答、反问和赞同。明确“我也是”可承接上一人的偏好，但必须保留各自主体，引用两轮。\n- 若只用近期经历回答“最爱”提问，保留“在被问最爱时介绍”的语境，标question_context并引用提问和回答；不升级唯一或永久最爱。\n- 只有提问而未回答不能形成该偏好事实；明确否定不能转为肯定。\n- 常玩、职业主打、读过、做过不自动等于最爱。不要把另一人的偏好转移给本人。\n- 仅提取来源所支持的关系，不用外部知识补排名或属性。\n\n会话日期：unspecified\n对话：\n[S1] 乔安娜: 你最喜欢的游戏是什么？\n[S2] 内特: 这次先不聊游戏。",
+      "user_sha256": "2cce8b2774debd001636e9c5e48317fe4ffb1a218f852407b68003862d65135a"
+    },
+    {
+      "fixture_id": "disagreement_synthetic",
+      "arm": "source_policy",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n额外来源约束：\n- 联合阅读提问、回答、反问和赞同。明确“我也是”可承接上一人的偏好，但必须保留各自主体，引用两轮。\n- 若只用近期经历回答“最爱”提问，保留“在被问最爱时介绍”的语境，标question_context并引用提问和回答；不升级唯一或永久最爱。\n- 只有提问而未回答不能形成该偏好事实；明确否定不能转为肯定。\n- 常玩、职业主打、读过、做过不自动等于最爱。不要把另一人的偏好转移给本人。\n- 仅提取来源所支持的关系，不用外部知识补排名或属性。\n\n会话日期：unspecified\n对话：\n[S1] 乔恩: 现代舞是我的最爱。你呢？\n[S2] 吉娜: 我不是，我最爱的是街舞。",
+      "user_sha256": "0fff8a5a21c78c0261195c7c7e16632004ff813be4a1d468922ae95b126053cd"
+    },
+    {
+      "fixture_id": "disagreement_synthetic",
+      "arm": "base",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n\n会话日期：unspecified\n对话：\n[S1] 乔恩: 现代舞是我的最爱。你呢？\n[S2] 吉娜: 我不是，我最爱的是街舞。",
+      "user_sha256": "dacb4567f9895beeb75c90dc74e07db9b26ea0e96e5398f07552838d4e5cdd81"
+    },
+    {
+      "fixture_id": "usual_not_favorite_synthetic",
+      "arm": "base",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n\n会话日期：unspecified\n对话：\n[S1] 内特: 我职业上通常玩CS:GO，但没有说它是我的最爱。最近我在玩异度神剑，觉得很好玩。",
+      "user_sha256": "6fa8f59d6c371bb89a72c1ecc34591e35c4c055b4f9d508e292702702a4797dc"
+    },
+    {
+      "fixture_id": "usual_not_favorite_synthetic",
+      "arm": "source_policy",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n额外来源约束：\n- 联合阅读提问、回答、反问和赞同。明确“我也是”可承接上一人的偏好，但必须保留各自主体，引用两轮。\n- 若只用近期经历回答“最爱”提问，保留“在被问最爱时介绍”的语境，标question_context并引用提问和回答；不升级唯一或永久最爱。\n- 只有提问而未回答不能形成该偏好事实；明确否定不能转为肯定。\n- 常玩、职业主打、读过、做过不自动等于最爱。不要把另一人的偏好转移给本人。\n- 仅提取来源所支持的关系，不用外部知识补排名或属性。\n\n会话日期：unspecified\n对话：\n[S1] 内特: 我职业上通常玩CS:GO，但没有说它是我的最爱。最近我在玩异度神剑，觉得很好玩。",
+      "user_sha256": "a82db4d30ca30918e39a4f29cd41cd09648c8b31dd556129fb059d28800c6294"
+    },
+    {
+      "fixture_id": "made_not_favorite_synthetic",
+      "arm": "source_policy",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n额外来源约束：\n- 联合阅读提问、回答、反问和赞同。明确“我也是”可承接上一人的偏好，但必须保留各自主体，引用两轮。\n- 若只用近期经历回答“最爱”提问，保留“在被问最爱时介绍”的语境，标question_context并引用提问和回答；不升级唯一或永久最爱。\n- 只有提问而未回答不能形成该偏好事实；明确否定不能转为肯定。\n- 常玩、职业主打、读过、做过不自动等于最爱。不要把另一人的偏好转移给本人。\n- 仅提取来源所支持的关系，不用外部知识补排名或属性。\n\n会话日期：unspecified\n对话：\n[S1] 内特: 昨天我做了莓果巧克力蛋糕，还没有吃过它。",
+      "user_sha256": "fd85dda54edaf2a44ab918daca9fa85d3839a5552930d4120063b7f2296a3c98"
+    },
+    {
+      "fixture_id": "made_not_favorite_synthetic",
+      "arm": "base",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n\n会话日期：unspecified\n对话：\n[S1] 内特: 昨天我做了莓果巧克力蛋糕，还没有吃过它。",
+      "user_sha256": "f767fe7682e8a3a225d0fe9e3e904e580b4ce82e803d22d62101b6fd8b9a38ad"
+    },
+    {
+      "fixture_id": "explicit_favorite_synthetic",
+      "arm": "base",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n\n会话日期：unspecified\n对话：\n[S1] 约翰: 我最喜欢的披萨是夏威夷披萨。",
+      "user_sha256": "268950900429785c9b71f4fa462cd7d5caee08f2d6594bfd7f4ad4ca2baf88e6"
+    },
+    {
+      "fixture_id": "explicit_favorite_synthetic",
+      "arm": "source_policy",
+      "system": "你是事实提取器。仅输出有效JSON。",
+      "user": "从对话提取人物事实，用简体中文。只输出JSON对象，格式：\n{\"facts\":[{\"subject\":\"人物\",\"relation\":\"关系\",\"object\":\"对象\",\"support_type\":\"支持方式\",\"source_turn_ids\":[\"轮次ID\"]}]}\n每条写一个关系，保留人名、作品名、否定、日期等信息。没有可提取事实则facts为空数组。\n支持方式可写direct、agreement、question_context、inference。source_turn_ids必须使用输入中的轮次ID。\n额外来源约束：\n- 联合阅读提问、回答、反问和赞同。明确“我也是”可承接上一人的偏好，但必须保留各自主体，引用两轮。\n- 若只用近期经历回答“最爱”提问，保留“在被问最爱时介绍”的语境，标question_context并引用提问和回答；不升级唯一或永久最爱。\n- 只有提问而未回答不能形成该偏好事实；明确否定不能转为肯定。\n- 常玩、职业主打、读过、做过不自动等于最爱。不要把另一人的偏好转移给本人。\n- 仅提取来源所支持的关系，不用外部知识补排名或属性。\n\n会话日期：unspecified\n对话：\n[S1] 约翰: 我最喜欢的披萨是夏威夷披萨。",
+      "user_sha256": "29edcde4a9459f9a4520d82620cde4b7973da7df03cd0ae810618e309a1e2c35"
+    }
+  ],
+  "calls": [
+    {
+      "call_index": 1,
+      "fixture_id": "gina_agreement_real",
+      "arm": "base",
+      "error_type": "RateLimitError",
+      "http_status": 429
+    }
+  ],
+  "limits": [
+    "One response per arm does not establish stability or causal answer gain.",
+    "Synthetic controls are not real dataset observations.",
+    "Prompt arms share a new structured output contract; no historical baseline reproduction.",
+    "No Memory/Graph writes or retrieval/answer/judge calls."
+  ],
+  "model": "glm-5.3-flash",
+  "stopped_after_failure": true
+}

@@ -1,0 +1,119 @@
+{
+  "dataset_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "fixtures": [
+    {
+      "fixture_id": "gina_agreement_real",
+      "origin": "real_dataset_snippet",
+      "conversation": "conv-30",
+      "session_date": "4:04 pm on 20 January, 2023",
+      "turns": [
+        {
+          "dia_id": "D1:8",
+          "speaker": "乔恩",
+          "text": "太好了，吉娜！我喜欢所有舞蹈，但现代舞是我的最爱。它太有表现力、太有力量了！你最喜欢什么？"
+        },
+        {
+          "dia_id": "D1:9",
+          "speaker": "吉娜",
+          "text": "对，我也是！现代舞非常有表现力又优雅——真的很打动我。"
+        }
+      ],
+      "manual_acceptance_zh": "保留乔恩和吉娜最爱现代舞，吉娜赞同须引用D1:8和D1:9，不错人"
+    },
+    {
+      "fixture_id": "nate_question_context_real",
+      "origin": "real_dataset_snippet",
+      "conversation": "conv-42",
+      "session_date": "8:10 pm on 7 November, 2022",
+      "turns": [
+        {
+          "dia_id": "D27:22",
+          "speaker": "乔安娜",
+          "text": "有道理！一切都靠练习，不是吗？那你最喜欢的游戏是什么？"
+        },
+        {
+          "dia_id": "D27:23",
+          "speaker": "内特",
+          "text": "对！我最近在玩一款超棒的奇幻角色扮演游戏，叫\"Xenoblade Chronicles\"（异度神剑），特别好玩！如果你没玩过，我强烈推荐。"
+        }
+      ],
+      "manual_acceptance_zh": "保留内特被问最爱时介绍异度神剑及近期玩/推荐，引用D27:22/23；不升级唯一最爱"
+    },
+    {
+      "fixture_id": "question_only_synthetic",
+      "origin": "synthetic_counterfactual_control_not_dataset",
+      "session_date": "unspecified",
+      "turns": [
+        {
+          "dia_id": "S1",
+          "speaker": "乔安娜",
+          "text": "你最喜欢的游戏是什么？"
+        },
+        {
+          "dia_id": "S2",
+          "speaker": "内特",
+          "text": "这次先不聊游戏。"
+        }
+      ],
+      "manual_acceptance_zh": "不得生成内特最爱游戏事实"
+    },
+    {
+      "fixture_id": "disagreement_synthetic",
+      "origin": "synthetic_counterfactual_control_not_dataset",
+      "session_date": "unspecified",
+      "turns": [
+        {
+          "dia_id": "S1",
+          "speaker": "乔恩",
+          "text": "现代舞是我的最爱。你呢？"
+        },
+        {
+          "dia_id": "S2",
+          "speaker": "吉娜",
+          "text": "我不是，我最爱的是街舞。"
+        }
+      ],
+      "manual_acceptance_zh": "保留乔恩现代舞/吉娜街舞；不得吉娜现代舞最爱"
+    },
+    {
+      "fixture_id": "usual_not_favorite_synthetic",
+      "origin": "synthetic_counterfactual_control_not_dataset",
+      "session_date": "unspecified",
+      "turns": [
+        {
+          "dia_id": "S1",
+          "speaker": "内特",
+          "text": "我职业上通常玩CS:GO，但没有说它是我的最爱。最近我在玩异度神剑，觉得很好玩。"
+        }
+      ],
+      "manual_acceptance_zh": "保存职业常玩与近期游玩；不得无条件最爱"
+    },
+    {
+      "fixture_id": "made_not_favorite_synthetic",
+      "origin": "synthetic_counterfactual_control_not_dataset",
+      "session_date": "unspecified",
+      "turns": [
+        {
+          "dia_id": "S1",
+          "speaker": "内特",
+          "text": "昨天我做了莓果巧克力蛋糕，还没有吃过它。"
+        }
+      ],
+      "manual_acceptance_zh": "保存做过与未吃；不得喜欢或最爱"
+    },
+    {
+      "fixture_id": "explicit_favorite_synthetic",
+      "origin": "synthetic_counterfactual_control_not_dataset",
+      "session_date": "unspecified",
+      "turns": [
+        {
+          "dia_id": "S1",
+          "speaker": "约翰",
+          "text": "我最喜欢的披萨是夏威夷披萨。"
+        }
+      ],
+      "manual_acceptance_zh": "应保留约翰最爱夏威夷披萨及直接来源"
+    }
+  ],
+  "scope": "Two real source snippets, five synthetic controls; not benchmark prevalence"
+}
