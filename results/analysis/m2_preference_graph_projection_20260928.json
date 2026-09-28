@@ -1,0 +1,636 @@
+{
+  "scope": "Two-case cache freshness and four Memory S1 recording-store projection, plus synthetic field/collision probe; zero external calls and no real graph writes",
+  "live_store_logical_signature": {
+    "embedding_count": 1995,
+    "id_content_user_session_sha256": "6cb9cbfce210981cb4ee8ac8ae0ca9f0afb5dad4ade1668ba068ec067650a0f9"
+  },
+  "snapshot_id_content_reconfirmed": true,
+  "cache_coverage_for_current_ids": [
+    {
+      "user_id": "zhfull:locomo:conv-30",
+      "current_memory_count": 102,
+      "cache_id_hits": 80,
+      "cache_id_misses": 22
+    },
+    {
+      "user_id": "zhfull:locomo:conv-42",
+      "current_memory_count": 195,
+      "cache_id_hits": 0,
+      "cache_id_misses": 195
+    }
+  ],
+  "selected_memories": [
+    {
+      "id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+      "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+      "metadata": {
+        "user_id": "zhfull:locomo:conv-30",
+        "session_id": "session_1",
+        "session_date": "4:04 pm on 20 January, 2023"
+      },
+      "cached_extraction": {
+        "entities": [
+          {
+            "name": "Jon",
+            "type": "person"
+          },
+          {
+            "name": "modern dance",
+            "type": "activity"
+          }
+        ],
+        "events": [],
+        "preferences": [
+          {
+            "subject": "Jon",
+            "pref_type": "like",
+            "object": "all dance styles"
+          },
+          {
+            "subject": "Jon",
+            "pref_type": "prefer",
+            "object": "modern dance"
+          }
+        ],
+        "relationships": []
+      }
+    },
+    {
+      "id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+      "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+      "metadata": {
+        "user_id": "zhfull:locomo:conv-30",
+        "session_id": "session_1",
+        "session_date": "4:04 pm on 20 January, 2023"
+      },
+      "cached_extraction": {
+        "entities": [
+          {
+            "name": "Gina",
+            "type": "person"
+          },
+          {
+            "name": "Finding Freedom",
+            "type": "activity"
+          }
+        ],
+        "events": [],
+        "preferences": [],
+        "relationships": [
+          {
+            "from_entity": "Gina",
+            "relation": "member_of",
+            "to_entity": "Finding Freedom"
+          }
+        ]
+      }
+    },
+    {
+      "id": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+      "content": "内特 (Nate) 最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他玩这款游戏是因为朋友们推荐，且他是任天堂游戏的忠实粉丝（2022年11月上旬）",
+      "metadata": {
+        "user_id": "zhfull:locomo:conv-42",
+        "session_id": "session_27",
+        "session_date": ""
+      },
+      "cached_extraction": {
+        "entities": [
+          {
+            "name": "Nate",
+            "type": "person"
+          },
+          {
+            "name": "Xenoblade Chronicles",
+            "type": "activity"
+          },
+          {
+            "name": "Nintendo",
+            "type": "organization"
+          }
+        ],
+        "events": [],
+        "preferences": [
+          {
+            "subject": "Nate",
+            "pref_type": "like",
+            "object": "Xenoblade Chronicles"
+          },
+          {
+            "subject": "Nate",
+            "pref_type": "like",
+            "object": "Nintendo games"
+          }
+        ],
+        "relationships": []
+      }
+    },
+    {
+      "id": "c6aaa7b8-b700-423c-99f6-9f47c6a11ad7",
+      "content": "内特最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他是任天堂游戏的忠实粉丝，玩这款游戏是因为朋友们向他推荐",
+      "metadata": {
+        "user_id": "zhfull:locomo:conv-42",
+        "session_id": "session_27",
+        "session_date": "8:10 pm on 7 November, 2022"
+      },
+      "cached_extraction": null
+    }
+  ],
+  "actual_cached_projection": {
+    "counts": {
+      "Memory": 4,
+      "Entity": 7,
+      "Event": 0,
+      "Preference": 4
+    },
+    "vertices": [
+      {
+        "label": "Memory",
+        "key": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+        "properties": {
+          "memory_id": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+          "content": "乔恩喜欢所有的舞蹈风格，但现代舞是他的最爱，因为它非常有表现力和力量感。",
+          "user_id": "zhfull:locomo:conv-30",
+          "session_id": "session_1",
+          "source": "mem0",
+          "session_date": "4:04 pm on 20 January, 2023"
+        }
+      },
+      {
+        "label": "Memory",
+        "key": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+        "properties": {
+          "memory_id": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+          "content": "吉娜的团队表演了一支名为 'Finding Freedom' (寻找自由) 的现代舞。",
+          "user_id": "zhfull:locomo:conv-30",
+          "session_id": "session_1",
+          "source": "mem0",
+          "session_date": "4:04 pm on 20 January, 2023"
+        }
+      },
+      {
+        "label": "Memory",
+        "key": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+        "properties": {
+          "memory_id": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+          "content": "内特 (Nate) 最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他玩这款游戏是因为朋友们推荐，且他是任天堂游戏的忠实粉丝（2022年11月上旬）",
+          "user_id": "zhfull:locomo:conv-42",
+          "session_id": "session_27",
+          "source": "mem0",
+          "session_date": ""
+        }
+      },
+      {
+        "label": "Memory",
+        "key": "c6aaa7b8-b700-423c-99f6-9f47c6a11ad7",
+        "properties": {
+          "memory_id": "c6aaa7b8-b700-423c-99f6-9f47c6a11ad7",
+          "content": "内特最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他是任天堂游戏的忠实粉丝，玩这款游戏是因为朋友们向他推荐",
+          "user_id": "zhfull:locomo:conv-42",
+          "session_id": "session_27",
+          "source": "mem0",
+          "session_date": "8:10 pm on 7 November, 2022"
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "21:zhfull:locomo:conv-30:jon",
+        "properties": {
+          "entity_id": "21:zhfull:locomo:conv-30:jon",
+          "name": "Jon",
+          "type": "person"
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "21:zhfull:locomo:conv-30:modern dance",
+        "properties": {
+          "entity_id": "21:zhfull:locomo:conv-30:modern dance",
+          "name": "modern dance",
+          "type": "activity"
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "21:zhfull:locomo:conv-30:gina",
+        "properties": {
+          "entity_id": "21:zhfull:locomo:conv-30:gina",
+          "name": "Gina",
+          "type": "person"
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "21:zhfull:locomo:conv-30:finding freedom",
+        "properties": {
+          "entity_id": "21:zhfull:locomo:conv-30:finding freedom",
+          "name": "Finding Freedom",
+          "type": "activity"
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "21:zhfull:locomo:conv-42:nate",
+        "properties": {
+          "entity_id": "21:zhfull:locomo:conv-42:nate",
+          "name": "Nate",
+          "type": "person"
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "21:zhfull:locomo:conv-42:xenoblade chronicles",
+        "properties": {
+          "entity_id": "21:zhfull:locomo:conv-42:xenoblade chronicles",
+          "name": "Xenoblade Chronicles",
+          "type": "activity"
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "21:zhfull:locomo:conv-42:nintendo",
+        "properties": {
+          "entity_id": "21:zhfull:locomo:conv-42:nintendo",
+          "name": "Nintendo",
+          "type": "organization"
+        }
+      },
+      {
+        "label": "Preference",
+        "key": "21:zhfull:locomo:conv-30:jon|like|all dance styles",
+        "properties": {
+          "pref_id": "21:zhfull:locomo:conv-30:jon|like|all dance styles",
+          "subject": "Jon",
+          "pref_type": "like",
+          "object": "all dance styles"
+        }
+      },
+      {
+        "label": "Preference",
+        "key": "21:zhfull:locomo:conv-30:jon|prefer|modern dance",
+        "properties": {
+          "pref_id": "21:zhfull:locomo:conv-30:jon|prefer|modern dance",
+          "subject": "Jon",
+          "pref_type": "prefer",
+          "object": "modern dance"
+        }
+      },
+      {
+        "label": "Preference",
+        "key": "21:zhfull:locomo:conv-42:nate|like|xenoblade chronicles",
+        "properties": {
+          "pref_id": "21:zhfull:locomo:conv-42:nate|like|xenoblade chronicles",
+          "subject": "Nate",
+          "pref_type": "like",
+          "object": "Xenoblade Chronicles"
+        }
+      },
+      {
+        "label": "Preference",
+        "key": "21:zhfull:locomo:conv-42:nate|like|nintendo games",
+        "properties": {
+          "pref_id": "21:zhfull:locomo:conv-42:nate|like|nintendo games",
+          "subject": "Nate",
+          "pref_type": "like",
+          "object": "Nintendo games"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+        "to_label": "Entity",
+        "to_key": "21:zhfull:locomo:conv-30:jon",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+        "to_label": "Entity",
+        "to_key": "21:zhfull:locomo:conv-30:modern dance",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+        "to_label": "Entity",
+        "to_key": "21:zhfull:locomo:conv-30:gina",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "7063f8d7-4ba9-408d-acbb-1771d448e885",
+        "to_label": "Entity",
+        "to_key": "21:zhfull:locomo:conv-30:finding freedom",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+        "to_label": "Entity",
+        "to_key": "21:zhfull:locomo:conv-42:nate",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+        "to_label": "Entity",
+        "to_key": "21:zhfull:locomo:conv-42:xenoblade chronicles",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+        "to_label": "Entity",
+        "to_key": "21:zhfull:locomo:conv-42:nintendo",
+        "properties": {}
+      },
+      {
+        "label": "RELATED_TO",
+        "from_label": "Entity",
+        "from_key": "21:zhfull:locomo:conv-30:gina",
+        "to_label": "Entity",
+        "to_key": "21:zhfull:locomo:conv-30:finding freedom",
+        "properties": {
+          "relation": "member_of"
+        }
+      },
+      {
+        "label": "EXPRESSES_PREFERENCE",
+        "from_label": "Memory",
+        "from_key": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+        "to_label": "Preference",
+        "to_key": "21:zhfull:locomo:conv-30:jon|like|all dance styles",
+        "properties": {}
+      },
+      {
+        "label": "HAS_PREFERENCE",
+        "from_label": "Entity",
+        "from_key": "21:zhfull:locomo:conv-30:jon",
+        "to_label": "Preference",
+        "to_key": "21:zhfull:locomo:conv-30:jon|like|all dance styles",
+        "properties": {}
+      },
+      {
+        "label": "EXPRESSES_PREFERENCE",
+        "from_label": "Memory",
+        "from_key": "e093b97c-78a8-4fb6-88db-285d47314f4f",
+        "to_label": "Preference",
+        "to_key": "21:zhfull:locomo:conv-30:jon|prefer|modern dance",
+        "properties": {}
+      },
+      {
+        "label": "HAS_PREFERENCE",
+        "from_label": "Entity",
+        "from_key": "21:zhfull:locomo:conv-30:jon",
+        "to_label": "Preference",
+        "to_key": "21:zhfull:locomo:conv-30:jon|prefer|modern dance",
+        "properties": {}
+      },
+      {
+        "label": "EXPRESSES_PREFERENCE",
+        "from_label": "Memory",
+        "from_key": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+        "to_label": "Preference",
+        "to_key": "21:zhfull:locomo:conv-42:nate|like|xenoblade chronicles",
+        "properties": {}
+      },
+      {
+        "label": "HAS_PREFERENCE",
+        "from_label": "Entity",
+        "from_key": "21:zhfull:locomo:conv-42:nate",
+        "to_label": "Preference",
+        "to_key": "21:zhfull:locomo:conv-42:nate|like|xenoblade chronicles",
+        "properties": {}
+      },
+      {
+        "label": "EXPRESSES_PREFERENCE",
+        "from_label": "Memory",
+        "from_key": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+        "to_label": "Preference",
+        "to_key": "21:zhfull:locomo:conv-42:nate|like|nintendo games",
+        "properties": {}
+      },
+      {
+        "label": "HAS_PREFERENCE",
+        "from_label": "Entity",
+        "from_key": "21:zhfull:locomo:conv-42:nate",
+        "to_label": "Preference",
+        "to_key": "21:zhfull:locomo:conv-42:nate|like|nintendo games",
+        "properties": {}
+      }
+    ]
+  },
+  "synthetic_raw_extraction": {
+    "synthetic_strong": {
+      "entities": [
+        {
+          "name": "测试人物",
+          "type": "person"
+        }
+      ],
+      "events": [],
+      "relationships": [],
+      "preferences": [
+        {
+          "subject": "测试人物",
+          "pref_type": "like",
+          "object": "测试作品",
+          "support_strength": "explicit_favorite",
+          "source_turn_ids": [
+            "S1"
+          ],
+          "source_date": "2026-01-01"
+        }
+      ]
+    },
+    "synthetic_weak": {
+      "entities": [
+        {
+          "name": "测试人物",
+          "type": "person"
+        }
+      ],
+      "events": [],
+      "relationships": [],
+      "preferences": [
+        {
+          "subject": "测试人物",
+          "pref_type": "like",
+          "object": "测试作品",
+          "support_strength": "recently_read",
+          "source_turn_ids": [
+            "S2"
+          ],
+          "source_date": "2026-01-01"
+        }
+      ]
+    }
+  },
+  "synthetic_normalized_extraction": {
+    "synthetic_strong": {
+      "entities": [
+        {
+          "name": "测试人物",
+          "type": "person"
+        }
+      ],
+      "events": [],
+      "preferences": [
+        {
+          "subject": "测试人物",
+          "pref_type": "like",
+          "object": "测试作品"
+        }
+      ],
+      "relationships": []
+    },
+    "synthetic_weak": {
+      "entities": [
+        {
+          "name": "测试人物",
+          "type": "person"
+        }
+      ],
+      "events": [],
+      "preferences": [
+        {
+          "subject": "测试人物",
+          "pref_type": "like",
+          "object": "测试作品"
+        }
+      ],
+      "relationships": []
+    }
+  },
+  "synthetic_projection": {
+    "counts": {
+      "Memory": 2,
+      "Entity": 1,
+      "Event": 0,
+      "Preference": 1
+    },
+    "vertices": [
+      {
+        "label": "Memory",
+        "key": "synthetic_strong",
+        "properties": {
+          "memory_id": "synthetic_strong",
+          "content": "合成记录，仅验证结构字段。",
+          "user_id": "synthetic-owner",
+          "session_id": "s",
+          "source": "mem0",
+          "session_date": ""
+        }
+      },
+      {
+        "label": "Memory",
+        "key": "synthetic_weak",
+        "properties": {
+          "memory_id": "synthetic_weak",
+          "content": "合成记录，仅验证结构字段。",
+          "user_id": "synthetic-owner",
+          "session_id": "s",
+          "source": "mem0",
+          "session_date": ""
+        }
+      },
+      {
+        "label": "Entity",
+        "key": "15:synthetic-owner:测试人物",
+        "properties": {
+          "entity_id": "15:synthetic-owner:测试人物",
+          "name": "测试人物",
+          "type": "person"
+        }
+      },
+      {
+        "label": "Preference",
+        "key": "15:synthetic-owner:测试人物|like|测试作品",
+        "properties": {
+          "pref_id": "15:synthetic-owner:测试人物|like|测试作品",
+          "subject": "测试人物",
+          "pref_type": "like",
+          "object": "测试作品"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "synthetic_strong",
+        "to_label": "Entity",
+        "to_key": "15:synthetic-owner:测试人物",
+        "properties": {}
+      },
+      {
+        "label": "MENTIONS",
+        "from_label": "Memory",
+        "from_key": "synthetic_weak",
+        "to_label": "Entity",
+        "to_key": "15:synthetic-owner:测试人物",
+        "properties": {}
+      },
+      {
+        "label": "EXPRESSES_PREFERENCE",
+        "from_label": "Memory",
+        "from_key": "synthetic_strong",
+        "to_label": "Preference",
+        "to_key": "15:synthetic-owner:测试人物|like|测试作品",
+        "properties": {}
+      },
+      {
+        "label": "HAS_PREFERENCE",
+        "from_label": "Entity",
+        "from_key": "15:synthetic-owner:测试人物",
+        "to_label": "Preference",
+        "to_key": "15:synthetic-owner:测试人物|like|测试作品",
+        "properties": {}
+      },
+      {
+        "label": "EXPRESSES_PREFERENCE",
+        "from_label": "Memory",
+        "from_key": "synthetic_weak",
+        "to_label": "Preference",
+        "to_key": "15:synthetic-owner:测试人物|like|测试作品",
+        "properties": {}
+      },
+      {
+        "label": "HAS_PREFERENCE",
+        "from_label": "Entity",
+        "from_key": "15:synthetic-owner:测试人物",
+        "to_label": "Preference",
+        "to_key": "15:synthetic-owner:测试人物|like|测试作品",
+        "properties": {}
+      }
+    ]
+  },
+  "observations": {
+    "current_nate_id_cached": false,
+    "normalized_preferences_drop_support_and_source_fields": true,
+    "synthetic_different_strength_preferences_merge_to_single_node": true
+  },
+  "input_sha256": {
+    "data/graph_zh/structured_cache.json": "95265ac274243c67f3199bf048c98b3d5916a5e097b51c223c1146cfaede549d",
+    "results/analysis/m2_gina_preference_storage_20260928.json": "b08d99e0f4d92835d8560e72aa5de4fec4db60eed8b607541d669bad8cd5aa20",
+    "results/analysis/m2_nate_preference_storage_20260928.json": "915ed7d6f64d0415c2c4bf669f042a5b41c1dd0745f207c62ec26f8158cfbf48",
+    "src/schema_rsi/graph/builder.py": "e5d65f6df8e34c89ac3e13058dd8f6efdfecdc9d8f7c9ad8f7b3fef8eed650a6",
+    "src/schema_rsi/graph/extractor_s1.py": "e5468cc7f476f1b151b8259985f5dd9468305cea6b9a6339df834ac1c33cedcb",
+    "src/schema_rsi/graph/schema.py": "80ff00e21a8417450631cf846d204a382c5d178af54c2a6d6e99d3a5a7e3ff2f",
+    "src/schema_rsi/evaluation/retriever.py": "9ef1874491ca98ef96eafb65d4c5460f9ad620fa4c28df1a56d27477d9fa4717"
+  },
+  "limits": [
+    "Replay uses recording store, not the current live graph snapshot.",
+    "Cache existence does not establish original input body/model/prompt identity.",
+    "Synthetic collision is a code-contract result, not observed benchmark harm.",
+    "No retrieval, extraction or answer quality measured."
+  ]
+}
