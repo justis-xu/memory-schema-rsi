@@ -1,0 +1,33 @@
+{
+  "scope": "Supplemental read-only whole-graph label/owner aggregation; no graph writes or model calls",
+  "captured_at_utc": "2026-09-28T00:35:10.878281+00:00",
+  "queries": {
+    "vertex_label_counts": "g.V().groupCount().by(label)",
+    "memory_owner_counts": "g.V().hasLabel('Memory').groupCount().by('user_id')",
+    "edge_label_counts": "g.E().groupCount().by(label)"
+  },
+  "results": {
+    "vertex_label_counts": [
+      {
+        "Memory": 182
+      }
+    ],
+    "memory_owner_counts": [
+      {
+        "longmemeval_s:e47becba": 47,
+        "longmemeval_s:51a45a95": 58,
+        "locomo:locomo_conv-26_qa0": 21,
+        "longmemeval_s:118b2229": 56
+      }
+    ],
+    "edge_label_counts": [
+      {
+        "RELATED_TO": 150
+      }
+    ]
+  },
+  "limits": [
+    "Current configured graph instance only, not all other instances/hosts.",
+    "No reset cause or historical state inferred."
+  ]
+}
