@@ -1,0 +1,4314 @@
+{
+  "scope": "Second fixed source review, not a population or causal estimate; zero model calls",
+  "selection": {
+    "seed": "m2_preference_relation_sample_20260928|",
+    "ranked_eligible_ids": [
+      "locomo_conv-48_qa25",
+      "locomo_conv-26_qa103",
+      "locomo_conv-48_qa106",
+      "locomo_conv-30_qa39",
+      "locomo_conv-47_qa87",
+      "locomo_conv-48_qa90",
+      "locomo_conv-42_qa156",
+      "locomo_conv-42_qa95",
+      "locomo_conv-42_qa75",
+      "locomo_conv-50_qa46",
+      "locomo_conv-43_qa65",
+      "locomo_conv-42_qa155",
+      "locomo_conv-43_qa134",
+      "locomo_conv-42_qa102",
+      "locomo_conv-26_qa19",
+      "locomo_conv-44_qa20",
+      "locomo_conv-42_qa90",
+      "locomo_conv-47_qa86",
+      "locomo_conv-42_qa91",
+      "locomo_conv-43_qa96",
+      "locomo_conv-42_qa115",
+      "locomo_conv-30_qa41",
+      "locomo_conv-48_qa172",
+      "locomo_conv-43_qa70",
+      "locomo_conv-42_qa113",
+      "locomo_conv-50_qa6",
+      "locomo_conv-50_qa113",
+      "locomo_conv-50_qa72",
+      "locomo_conv-42_qa114",
+      "locomo_conv-43_qa167",
+      "locomo_conv-48_qa118",
+      "locomo_conv-47_qa129",
+      "locomo_conv-43_qa35",
+      "locomo_conv-30_qa40",
+      "locomo_conv-48_qa140",
+      "locomo_conv-43_qa11",
+      "locomo_conv-43_qa99",
+      "locomo_conv-49_qa108",
+      "locomo_conv-42_qa197",
+      "locomo_conv-47_qa121",
+      "locomo_conv-49_qa14",
+      "locomo_conv-48_qa156",
+      "locomo_conv-42_qa96"
+    ],
+    "previous_first_ten": [
+      "locomo_conv-48_qa25",
+      "locomo_conv-26_qa103",
+      "locomo_conv-48_qa106",
+      "locomo_conv-30_qa39",
+      "locomo_conv-47_qa87",
+      "locomo_conv-48_qa90",
+      "locomo_conv-42_qa156",
+      "locomo_conv-42_qa95",
+      "locomo_conv-42_qa75",
+      "locomo_conv-50_qa46"
+    ],
+    "explicit_exclusions": {
+      "locomo_conv-43_qa96": "Earlier theme-song/film source bridge audit"
+    },
+    "selected_ids": [
+      "locomo_conv-43_qa65",
+      "locomo_conv-42_qa155",
+      "locomo_conv-43_qa134",
+      "locomo_conv-42_qa102",
+      "locomo_conv-26_qa19",
+      "locomo_conv-44_qa20",
+      "locomo_conv-42_qa90",
+      "locomo_conv-47_qa86",
+      "locomo_conv-42_qa91",
+      "locomo_conv-42_qa115"
+    ]
+  },
+  "input_paths": {
+    "base": "/Users/xu/git/memory-schema-rsi/results_zh/zhfull_locomo_20260925_164645.jsonl",
+    "graph": "/Users/xu/git/memory-schema-rsi/results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+    "base_grade": "/Users/xu/git/memory-schema-rsi/results/precision_regrade_base.jsonl",
+    "graph_grade": "/Users/xu/git/memory-schema-rsi/results/precision_regrade_graph.jsonl",
+    "english_data": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10.json",
+    "chinese_data": "/Users/xu/git/memory-prompt/eval-datasets/locomo-zh/locomo10_zh.json"
+  },
+  "input_sha256": {
+    "base": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59",
+    "graph": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "base_grade": "0a4bef376de18c4ef1242c893ab27f2cfa7133445885265fbcb05521acf9bb0b",
+    "graph_grade": "9fa3a5f25d3fdf21dd173e60a3d1db55177e362cb4f4b9ad145eb37107284d05",
+    "english_data": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "chinese_data": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "screen": "6631e506a543f80485a3908035c1ee352846e425c7b50a57b031b3633c54bf8e"
+  },
+  "cases": [
+    {
+      "case_id": "locomo_conv-43_qa65",
+      "source": {
+        "english": {
+          "question": "What fantasy movies does Tim like?",
+          "answer": "Lord of the Rings, Harry Potter, and Star Wars.",
+          "evidence": [
+            {
+              "dia_id": "D8:16",
+              "session": "session_8",
+              "session_date": "4:29 pm on 21 August, 2023",
+              "window": [
+                {
+                  "dia_id": "D8:13",
+                  "speaker": "John",
+                  "text": "Wow! You're staying busy and having fun. Learning to play this is awesome - it's such a beautiful instrument. Do you have any favorite songs you like playing on it?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:14",
+                  "speaker": "Tim",
+                  "text": "Thanks! I love playing different songs on the piano, but my favorite one to jam to is a theme from a movie I really enjoy. It brings back lots of great memories.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:15",
+                  "speaker": "John",
+                  "text": "Wow, that's cool! Music really has a way of bringing back memories and evoking emotions, doesn't it? Almost like taking us back in time. Could you tell me more about that film and the memories it brings up for you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:16",
+                  "speaker": "Tim",
+                  "text": "Yeah, \"Harry Potter and the Philosopher's Stone\" is special to me. It was the first movie from the series and brings back some great memories. Watching it with my family was amazing. It was so magical!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:17",
+                  "speaker": "John",
+                  "text": "Wow, that sounds great, Tim! I love that first movie too, I even have the whole collection! It was so magical! Must've been a dream watching it with your family.",
+                  "query": "harry potter dvd collection",
+                  "blip_caption": "a photo of a dvd cover with a castle in the background"
+                },
+                {
+                  "dia_id": "D8:18",
+                  "speaker": "Tim",
+                  "text": "It was really a dream come true! Watching that movie with my family was awesome, we'd all get comfy with snacks and a blanket and be totally absorbed. Such a special memory!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:19",
+                  "speaker": "John",
+                  "text": "Cool! Cherish those family moments - they're so irreplaceable. Family time is great! Mine gets together all the time too.",
+                  "query": null,
+                  "blip_caption": "a photo of a group of people standing around a kitchen table"
+                }
+              ]
+            },
+            {
+              "dia_id": "D8:18",
+              "session": "session_8",
+              "session_date": "4:29 pm on 21 August, 2023",
+              "window": [
+                {
+                  "dia_id": "D8:15",
+                  "speaker": "John",
+                  "text": "Wow, that's cool! Music really has a way of bringing back memories and evoking emotions, doesn't it? Almost like taking us back in time. Could you tell me more about that film and the memories it brings up for you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:16",
+                  "speaker": "Tim",
+                  "text": "Yeah, \"Harry Potter and the Philosopher's Stone\" is special to me. It was the first movie from the series and brings back some great memories. Watching it with my family was amazing. It was so magical!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:17",
+                  "speaker": "John",
+                  "text": "Wow, that sounds great, Tim! I love that first movie too, I even have the whole collection! It was so magical! Must've been a dream watching it with your family.",
+                  "query": "harry potter dvd collection",
+                  "blip_caption": "a photo of a dvd cover with a castle in the background"
+                },
+                {
+                  "dia_id": "D8:18",
+                  "speaker": "Tim",
+                  "text": "It was really a dream come true! Watching that movie with my family was awesome, we'd all get comfy with snacks and a blanket and be totally absorbed. Such a special memory!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:19",
+                  "speaker": "John",
+                  "text": "Cool! Cherish those family moments - they're so irreplaceable. Family time is great! Mine gets together all the time too.",
+                  "query": null,
+                  "blip_caption": "a photo of a group of people standing around a kitchen table"
+                },
+                {
+                  "dia_id": "D8:20",
+                  "speaker": "Tim",
+                  "text": "Family time means a lot to me. This photo is from a special day when we all got together to eat. It was a great day full of love and laughter!",
+                  "query": "Thanksgiving family photo",
+                  "blip_caption": "a photo of a family sitting on a couch in front of a fireplace"
+                },
+                {
+                  "dia_id": "D8:21",
+                  "speaker": "John",
+                  "text": "Wow, that looks like such a great day! Do you have any favorite Thanksgiving traditions?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D26:28",
+              "session": "session_26",
+              "session_date": "3:35 pm on 26 December, 2023",
+              "window": [
+                {
+                  "dia_id": "D26:25",
+                  "speaker": "John",
+                  "text": "Thanks! I'm really glad I can make a difference. Have you been doing anything new in your free time?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:26",
+                  "speaker": "Tim",
+                  "text": "In my downtime, I still love to get lost in good books, and this series is one of my favorites. It's a magical world to escape to.",
+                  "query": "harry potter book stack",
+                  "blip_caption": "a photo of a collection of harry potter books on a desk"
+                },
+                {
+                  "dia_id": "D26:27",
+                  "speaker": "John",
+                  "text": "That's awesome! Have you seen all the Harry Potter movies? I'm a fan too!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:28",
+                  "speaker": "Tim",
+                  "text": "Yeah, I have! Watching them and seeing how they compare to the books is awesome. It's amazing to watch the story come alive. Have you seen all of them?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:29",
+                  "speaker": "John",
+                  "text": "I'm a total movie fan! Seeing it all come alive on the big screen is awesome, and a great way to relax.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:30",
+                  "speaker": "Tim",
+                  "text": "Yeah, watching movies is a fun way to relax. We love having movie marathons with our friends.",
+                  "query": "movie night friends popcorn harry potter",
+                  "blip_caption": "a photography of three guys sitting on a couch watching a movie"
+                },
+                {
+                  "dia_id": "D26:31",
+                  "speaker": "John",
+                  "text": "Sounds like a blast! Movie marathons with friends and popcorn, right? So, what's your favorite genre?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D26:32",
+              "session": "session_26",
+              "session_date": "3:35 pm on 26 December, 2023",
+              "window": [
+                {
+                  "dia_id": "D26:29",
+                  "speaker": "John",
+                  "text": "I'm a total movie fan! Seeing it all come alive on the big screen is awesome, and a great way to relax.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:30",
+                  "speaker": "Tim",
+                  "text": "Yeah, watching movies is a fun way to relax. We love having movie marathons with our friends.",
+                  "query": "movie night friends popcorn harry potter",
+                  "blip_caption": "a photography of three guys sitting on a couch watching a movie"
+                },
+                {
+                  "dia_id": "D26:31",
+                  "speaker": "John",
+                  "text": "Sounds like a blast! Movie marathons with friends and popcorn, right? So, what's your favorite genre?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:32",
+                  "speaker": "Tim",
+                  "text": "I'm a huge fan of this genre! Epic adventures and magical worlds are my thing. Here's a pic of my favorite, Lord of the Rings!",
+                  "query": "fantasy movie poster lord of the rings",
+                  "blip_caption": "a photo of a poster of a group of people with a sword"
+                },
+                {
+                  "dia_id": "D26:33",
+                  "speaker": "John",
+                  "text": "Wow, that's great! Are there any new fantasy movies that you're excited about?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:34",
+                  "speaker": "Tim",
+                  "text": "Woo-hoo! There's a new fantasy TV series coming out next month - can't wait!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:35",
+                  "speaker": "John",
+                  "text": "What's it called? I'm always down for something new.",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D27:21",
+              "session": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "window": [
+                {
+                  "dia_id": "D27:18",
+                  "speaker": "John",
+                  "text": "That's awesome! I totally understand why reading means so much to you. It's amazing how much playing a game can help us grow. Thanks for showing us your collection! Which one do you like best that takes you to another world?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:19",
+                  "speaker": "Tim",
+                  "text": "Harry Potter is my favorite book. It's so immersive!",
+                  "query": null,
+                  "blip_caption": "a photo of a collection of movies and dvds on a carpet"
+                },
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "John",
+                  "text": "Cool! Glad you're enjoying that book! Do you have any favorite fantasy movies as well? These are mine.",
+                  "query": "fantasy movies dvd collection carpet",
+                  "blip_caption": "a photo of a collection of star wars movies on a table"
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "Tim",
+                  "text": "Definitely Star Wars! It's my favorite and never gets old. What about you, do you have any favorite fantasy films?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "John",
+                  "text": "I'm a huge fan of Lord of the Rings! The adventure, the world, and the characters are awesome.",
+                  "query": "lord of the rings dvd collection",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D27:23",
+                  "speaker": "Tim",
+                  "text": "Wow, me too! That's an awesome collection! Have you watched them heaps? Got any favorite characters from those movies?",
+                  "query": null,
+                  "blip_caption": "a photo of a bookcase filled with dvds and games"
+                },
+                {
+                  "dia_id": "D27:24",
+                  "speaker": "John",
+                  "text": "Thanks! I've watched a bunch of them and they're inspiring. My favorite character is Aragorn, he grows so much throughout the story.",
+                  "query": null,
+                  "blip_caption": "a photo of a bookmark with a picture of a woman kissing a man"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "蒂姆喜欢哪些奇幻电影？",
+          "answer": "《指环王》、《哈利·波特》和《星球大战》。",
+          "evidence": [
+            {
+              "dia_id": "D8:16",
+              "session": "session_8",
+              "session_date": "4:29 pm on 21 August, 2023",
+              "window": [
+                {
+                  "dia_id": "D8:13",
+                  "speaker": "约翰",
+                  "text": "哇！你过得又充实又开心。学弹钢琴太棒了——那是这么美的乐器。你有什么特别喜欢弹的曲子吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:14",
+                  "speaker": "蒂姆",
+                  "text": "谢谢！我喜欢在钢琴上弹各种曲子，但我最喜欢弹的是一首我非常喜欢的电影的主题曲。它让我想起很多美好的回忆。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:15",
+                  "speaker": "约翰",
+                  "text": "哇，真酷！音乐真的能把回忆带回眼前、唤起情感，不是吗？就像带我们回到过去一样。能多跟我说说那部电影以及它带给你的回忆吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:16",
+                  "speaker": "蒂姆",
+                  "text": "好啊，《哈利·波特与魔法石》对我来说很特别。它是这个系列的第一部电影，带给我很多美好的回忆。和家人一起看太棒了。真是太神奇了！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:17",
+                  "speaker": "约翰",
+                  "text": "哇，听起来真棒，蒂姆！我也喜欢第一部电影，我甚至收藏了整个系列！真是太神奇了！和家人一起看一定像做梦一样美好。",
+                  "query": "harry potter dvd collection",
+                  "blip_caption": "a photo of a dvd cover with a castle in the background"
+                },
+                {
+                  "dia_id": "D8:18",
+                  "speaker": "蒂姆",
+                  "text": "那真的是梦想成真！和家人一起看那部电影太棒了，我们都会拿着零食、盖上毯子舒舒服服地看，完全沉浸其中。多么特别的回忆啊！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:19",
+                  "speaker": "约翰",
+                  "text": "真酷！珍惜那些和家人在一起的时光——它们是无法替代的。家庭时光很美好！我的家人也经常聚在一起。",
+                  "query": null,
+                  "blip_caption": "a photo of a group of people standing around a kitchen table"
+                }
+              ]
+            },
+            {
+              "dia_id": "D8:18",
+              "session": "session_8",
+              "session_date": "4:29 pm on 21 August, 2023",
+              "window": [
+                {
+                  "dia_id": "D8:15",
+                  "speaker": "约翰",
+                  "text": "哇，真酷！音乐真的能把回忆带回眼前、唤起情感，不是吗？就像带我们回到过去一样。能多跟我说说那部电影以及它带给你的回忆吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:16",
+                  "speaker": "蒂姆",
+                  "text": "好啊，《哈利·波特与魔法石》对我来说很特别。它是这个系列的第一部电影，带给我很多美好的回忆。和家人一起看太棒了。真是太神奇了！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:17",
+                  "speaker": "约翰",
+                  "text": "哇，听起来真棒，蒂姆！我也喜欢第一部电影，我甚至收藏了整个系列！真是太神奇了！和家人一起看一定像做梦一样美好。",
+                  "query": "harry potter dvd collection",
+                  "blip_caption": "a photo of a dvd cover with a castle in the background"
+                },
+                {
+                  "dia_id": "D8:18",
+                  "speaker": "蒂姆",
+                  "text": "那真的是梦想成真！和家人一起看那部电影太棒了，我们都会拿着零食、盖上毯子舒舒服服地看，完全沉浸其中。多么特别的回忆啊！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D8:19",
+                  "speaker": "约翰",
+                  "text": "真酷！珍惜那些和家人在一起的时光——它们是无法替代的。家庭时光很美好！我的家人也经常聚在一起。",
+                  "query": null,
+                  "blip_caption": "a photo of a group of people standing around a kitchen table"
+                },
+                {
+                  "dia_id": "D8:20",
+                  "speaker": "蒂姆",
+                  "text": "家庭时光对我来说意义重大。这张照片是我们全家聚在一起吃饭的一个特别日子。那是充满爱和欢笑的美好一天！",
+                  "query": "Thanksgiving family photo",
+                  "blip_caption": "a photo of a family sitting on a couch in front of a fireplace"
+                },
+                {
+                  "dia_id": "D8:21",
+                  "speaker": "约翰",
+                  "text": "哇，看起来真是美好的一天！你有什么喜欢的感恩节传统吗？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D26:28",
+              "session": "session_26",
+              "session_date": "3:35 pm on 26 December, 2023",
+              "window": [
+                {
+                  "dia_id": "D26:25",
+                  "speaker": "约翰",
+                  "text": "谢谢！我很高兴自己能做出改变。你空闲时间有做什么新的事情吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:26",
+                  "speaker": "蒂姆",
+                  "text": "闲暇时，我仍然喜欢沉浸在好书里，这个系列是我的最爱之一。那是一个可以让人暂时逃离现实的魔法世界。",
+                  "query": "harry potter book stack",
+                  "blip_caption": "a photo of a collection of harry potter books on a desk"
+                },
+                {
+                  "dia_id": "D26:27",
+                  "speaker": "约翰",
+                  "text": "太棒了！你看过所有《哈里·波特》的电影吗？我也是粉丝！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:28",
+                  "speaker": "蒂姆",
+                  "text": "是的，看过！看这些电影并与原著进行比较感觉很棒。看着故事鲜活起来真是太神奇了。你全都看过吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:29",
+                  "speaker": "约翰",
+                  "text": "我是个十足的电影迷！看到一切在大银幕上鲜活起来真是太棒了，也是很好的放松方式。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:30",
+                  "speaker": "蒂姆",
+                  "text": "是啊，看电影是很好的放松方式。我们喜欢和朋友们一起办电影马拉松。",
+                  "query": "movie night friends popcorn harry potter",
+                  "blip_caption": "a photography of three guys sitting on a couch watching a movie"
+                },
+                {
+                  "dia_id": "D26:31",
+                  "speaker": "约翰",
+                  "text": "听起来很过瘾！和朋友一起看电影马拉松、吃爆米花，对吧？那你最喜欢什么类型的电影？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D26:32",
+              "session": "session_26",
+              "session_date": "3:35 pm on 26 December, 2023",
+              "window": [
+                {
+                  "dia_id": "D26:29",
+                  "speaker": "约翰",
+                  "text": "我是个十足的电影迷！看到一切在大银幕上鲜活起来真是太棒了，也是很好的放松方式。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:30",
+                  "speaker": "蒂姆",
+                  "text": "是啊，看电影是很好的放松方式。我们喜欢和朋友们一起办电影马拉松。",
+                  "query": "movie night friends popcorn harry potter",
+                  "blip_caption": "a photography of three guys sitting on a couch watching a movie"
+                },
+                {
+                  "dia_id": "D26:31",
+                  "speaker": "约翰",
+                  "text": "听起来很过瘾！和朋友一起看电影马拉松、吃爆米花，对吧？那你最喜欢什么类型的电影？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:32",
+                  "speaker": "蒂姆",
+                  "text": "我是这个类型的超级粉丝！史诗般的冒险和魔法世界是我的最爱。这是我最喜欢的《指环王》的图片！",
+                  "query": "fantasy movie poster lord of the rings",
+                  "blip_caption": "a photo of a poster of a group of people with a sword"
+                },
+                {
+                  "dia_id": "D26:33",
+                  "speaker": "约翰",
+                  "text": "哇，太好了！有什么让你期待的新奇幻电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:34",
+                  "speaker": "蒂姆",
+                  "text": "太棒了！下个月要出一部新的奇幻电视剧——迫不及待了！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D26:35",
+                  "speaker": "约翰",
+                  "text": "叫什么名字？我随时乐于尝试新东西。",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D27:21",
+              "session": "session_27",
+              "session_date": "5:26 pm on 2 January, 2024",
+              "window": [
+                {
+                  "dia_id": "D27:18",
+                  "speaker": "约翰",
+                  "text": "太棒了！我完全理解阅读对你为什么这么重要。玩游戏能帮助我们成长真是奇妙。谢谢你给我们看你的收藏！哪一本最能带你进入另一个世界？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:19",
+                  "speaker": "蒂姆",
+                  "text": "《哈利·波特》是我最喜欢的书。太让人沉浸其中了！",
+                  "query": null,
+                  "blip_caption": "a photo of a collection of movies and dvds on a carpet"
+                },
+                {
+                  "dia_id": "D27:20",
+                  "speaker": "约翰",
+                  "text": "酷！很高兴你喜欢那本书！你还有喜欢的奇幻电影吗？这些是我的。",
+                  "query": "fantasy movies dvd collection carpet",
+                  "blip_caption": "a photo of a collection of star wars movies on a table"
+                },
+                {
+                  "dia_id": "D27:21",
+                  "speaker": "蒂姆",
+                  "text": "当然是《星球大战》！它是我最喜欢的，百看不厌。你呢，有喜欢的奇幻电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D27:22",
+                  "speaker": "约翰",
+                  "text": "我是《指环王》的超级粉丝！那些冒险、世界观和角色都太棒了。",
+                  "query": "lord of the rings dvd collection",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D27:23",
+                  "speaker": "蒂姆",
+                  "text": "哇，我也是！这收藏太棒了！你看了很多遍吗？有喜欢的角色吗？",
+                  "query": null,
+                  "blip_caption": "a photo of a bookcase filled with dvds and games"
+                },
+                {
+                  "dia_id": "D27:24",
+                  "speaker": "约翰",
+                  "text": "谢谢！我看了不少遍，很励志。我最喜欢的角色是阿拉贡，他在整个故事中成长了很多。",
+                  "query": null,
+                  "blip_caption": "a photo of a bookmark with a picture of a woman kissing a man"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "蒂姆喜欢的奇幻电影包括：\n\n- **《哈利·波特》系列**（尤其《哈利·波特与魔法石》，他看过所有电影并喜欢与原著比较，常和家人一起观看）\n- **《指环王》**（他最爱的之一，朋友电影马拉松常看的类型；他还收藏了中土世界地图）\n- **《星球大战》系列**（他最喜欢的系列，百看不厌）\n- **《时光之轮》**（2024年1月新奇幻电视剧，他非常期待）\n\n此外，他和朋友们办电影马拉松时喜欢史诗冒险和魔法世界类型的电影；假日期间他一家还爱看《小鬼当家》《Elf》和《The Santa Clause》等节日电影。他写奇幻文章时也特别钟情于《哈利·波特》和《权力的游戏》两部作品。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+              "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+              "content": "蒂姆（Tim）写奇幻文章时特别喜欢《哈利·波特》和《权力的游戏》，对这两部作品完全着迷，可以永远聊下去",
+              "route": "vector",
+              "session_date": "4:17 pm on 2 August, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+              "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+              "route": "vector",
+              "session_date": "10:22 am on 21 November, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+              "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "9d717fa9-9e17-4171-b3ee-c31236749a40",
+              "content": "蒂姆（Tim）闲暇时仍喜欢读书，《哈利·波特》系列是他的最爱之一，认为那是可以让人暂时逃离现实的魔法世界；他也看过所有《哈利·波特》的电影，喜欢将电影与原著比较",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "e5298e7a-052a-41d5-9c67-1da47589696c",
+              "content": "《哈利·波特与魔法石》对蒂姆来说很特别，是该系列的第一部电影，他常和家人一起拿着零食、盖上毯子舒舒服服地看，带给他很多美好回忆",
+              "route": "vector",
+              "session_date": "4:29 pm on 21 August, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "bf804a98-6b84-40fa-8a7e-23793ae3ae70",
+              "content": "蒂姆有一张《指环王》中土世界的地图，上面能看到各种不同的国度和地区，他喜欢奇幻故事让人足不出户就能探索其他文化和风景",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 8,
+              "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+              "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 9,
+              "id": "e1addb3c-0fc9-4f48-bbb4-435134132183",
+              "content": "蒂姆家假日期间喜欢看《小鬼当家》《Elf》和《The Santa Clause》等节日电影，这些电影带来很多欢笑并让他们充满节日气氛",
+              "route": "vector",
+              "session_date": "4:29 pm on 21 August, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+              "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+              "route": "vector",
+              "session_date": "9:52 am on 1 December, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+              "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+              "route": "vector",
+              "session_date": "9:52 am on 1 December, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "0d01722b-8551-4dd4-a380-08270eb4fa9a",
+              "content": "蒂姆（Tim）非常期待2024年1月即将推出的新奇幻电视剧《时光之轮》，该剧改编自他非常喜爱的一套书，他等不及要追这部剧",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+              "content": "蒂姆（Tim）于2023年10月初（约10月6日那一周）去英国参加了一场哈利·波特大会，遇到很多同样热爱哈利·波特的人，感觉像神奇的大家庭，深受鼓舞、焕发新活力，认为对奇幻事物的热情拉近了他与世界各地的人的距离",
+              "route": "vector",
+              "session_date": "1:50 pm on 13 October, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "df795392-83c3-4203-892c-c51c003b7b9e",
+              "content": "蒂姆（Tim）从未参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种不同的魔法世界里",
+              "route": "vector",
+              "session_date": "2:52 pm on 31 August, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+              "content": "蒂姆（Tim）正在做一个哈利·波特粉丝项目，并与一位哈利·波特粉丝朋友合作，于2023年5月中旬开始讨论构思创意",
+              "route": "vector",
+              "session_date": "7:48 pm on 21 May, 2023"
+            }
+          ],
+          "grade": "exact"
+        },
+        "graph": {
+          "answer": "蒂姆喜欢的奇幻电影/剧集包括《哈利·波特》系列（尤其是《哈利·波特与魔法石》）、《指环王》、《星球大战》系列，以及即将播出的奇幻剧《时光之轮》。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+              "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+              "content": "蒂姆（Tim）写奇幻文章时特别喜欢《哈利·波特》和《权力的游戏》，对这两部作品完全着迷，可以永远聊下去",
+              "route": "vector",
+              "session_date": "4:17 pm on 2 August, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+              "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+              "route": "vector",
+              "session_date": "10:22 am on 21 November, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+              "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "9d717fa9-9e17-4171-b3ee-c31236749a40",
+              "content": "蒂姆（Tim）闲暇时仍喜欢读书，《哈利·波特》系列是他的最爱之一，认为那是可以让人暂时逃离现实的魔法世界；他也看过所有《哈利·波特》的电影，喜欢将电影与原著比较",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "e5298e7a-052a-41d5-9c67-1da47589696c",
+              "content": "《哈利·波特与魔法石》对蒂姆来说很特别，是该系列的第一部电影，他常和家人一起拿着零食、盖上毯子舒舒服服地看，带给他很多美好回忆",
+              "route": "vector",
+              "session_date": "4:29 pm on 21 August, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "bf804a98-6b84-40fa-8a7e-23793ae3ae70",
+              "content": "蒂姆有一张《指环王》中土世界的地图，上面能看到各种不同的国度和地区，他喜欢奇幻故事让人足不出户就能探索其他文化和风景",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 8,
+              "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+              "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 9,
+              "id": "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+              "content": "蒂姆展示了自己的藏书书架，上面有一张来自MinaLima的图片——MinaLima是为哈利·波特电影制作道具的工作室，蒂姆很喜欢他们的作品，觉得像在家里拥有魔法世界的一角",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 10,
+              "id": "e1addb3c-0fc9-4f48-bbb4-435134132183",
+              "content": "蒂姆家假日期间喜欢看《小鬼当家》《Elf》和《The Santa Clause》等节日电影，这些电影带来很多欢笑并让他们充满节日气氛",
+              "route": "vector",
+              "session_date": "4:29 pm on 21 August, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+              "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+              "route": "vector",
+              "session_date": "9:52 am on 1 December, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "1acb6522-5397-4a62-8624-5f209f1bf34c",
+              "content": "蒂姆和约翰都喜爱奇幻书籍和电影，认为这些书能带他们去不同的世界、暂时逃离现实、享受精彩的冒险，这是他们友谊的共同爱好",
+              "route": "vector",
+              "session_date": "9:52 am on 1 December, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "eb23bfe9-cd70-4fed-a36e-dffd624aa7f1",
+              "content": "蒂姆认为J.K. 罗琳是非常鼓舞人心的作家，欣赏她细节丰富、创意十足的叙事，并总是为自己的写作记下她风格方面的笔记，他分享了一张翻旧的《哈利·波特与魔法石》的照片",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 14,
+              "id": "0d01722b-8551-4dd4-a380-08270eb4fa9a",
+              "content": "蒂姆（Tim）非常期待2024年1月即将推出的新奇幻电视剧《时光之轮》，该剧改编自他非常喜爱的一套书，他等不及要追这部剧",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+              "content": "蒂姆（Tim）于2023年10月初（约10月6日那一周）去英国参加了一场哈利·波特大会，遇到很多同样热爱哈利·波特的人，感觉像神奇的大家庭，深受鼓舞、焕发新活力，认为对奇幻事物的热情拉近了他与世界各地的人的距离",
+              "route": "vector",
+              "session_date": "1:50 pm on 13 October, 2023"
+            }
+          ],
+          "grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa155",
+      "source": {
+        "english": {
+          "question": "What is Nate's favorite dish from the cooking show he hosted?",
+          "answer": "Coconut milk ice cream",
+          "evidence": [
+            {
+              "dia_id": "D21:6",
+              "session": "session_21",
+              "session_date": "1:43 pm on 14 September, 2022",
+              "window": [
+                {
+                  "dia_id": "D21:3",
+                  "speaker": "Joanna",
+                  "text": "Thanks for the sympathy, Nate. Nothing was recoverable, but now I have an external drive for backups. I never want to go through this again. So, how have you been? Making anything cool?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:4",
+                  "speaker": "Nate",
+                  "text": "Hey Joanna, I'm no writer like you, but something pretty awesome happened. Last Monday I got to teach people vegan ice cream recipes on my own cooking show! It was a bit nerve-wracking to put myself out there, but it was a blast. Plus, I picked up a few new recipes!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:5",
+                  "speaker": "Joanna",
+                  "text": "Way to go, Nate! Congrats on the cooking show, I'll definitely be tuning in! What's your favorite dish from the show?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:6",
+                  "speaker": "Nate",
+                  "text": "Coconut milk ice cream is at the top of my list. It's so smooth and creamy with a tropical coconut twist. Plus, it's dairy-free for people who can't have lactose or who want vegan options. Here's a snap of the ice cream I made.",
+                  "query": "coconut milk ice cream",
+                  "blip_caption": "a photography of a bowl of ice cream with a spoon on a table"
+                },
+                {
+                  "dia_id": "D21:7",
+                  "speaker": "Joanna",
+                  "text": "Wow, that looks amazing, Nate! I love the color and texture. It's great that you're making these options. Could you share the recipe? I'd love to try making it sometime!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:8",
+                  "speaker": "Nate",
+                  "text": "Yeah sure! Would love to share it. Let's spread the joy of dairy-free options! Let me know when you make it!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:9",
+                  "speaker": "Joanna",
+                  "text": "Cool, Nate! Gonna give it a go. Dairy-free is a must for me, especially for desserts. Last Friday, I made a deeeelish dessert with almond milk - it was good! Got any favs when it comes to dairy-free desserts?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "内特主持的烹饪节目中他最喜欢的菜是什么？",
+          "answer": "椰奶冰淇淋",
+          "evidence": [
+            {
+              "dia_id": "D21:6",
+              "session": "session_21",
+              "session_date": "1:43 pm on 14 September, 2022",
+              "window": [
+                {
+                  "dia_id": "D21:3",
+                  "speaker": "乔安娜",
+                  "text": "谢谢你的同情，内特。什么都没恢复出来，不过现在我有一个外接硬盘用于备份。我再也不想经历这种事了。那么，你最近怎么样？有做什么很酷的东西吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:4",
+                  "speaker": "内特",
+                  "text": "嘿乔安娜，我虽然不像你那样是作家，但发生了一件很棒的事。上个星期一，我在自己的烹饪节目上教大家纯素冰淇淋的做法！把自己展示出来有点让人紧张，但非常开心。而且我还学到了几个新食谱！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:5",
+                  "speaker": "乔安娜",
+                  "text": "干得好，内特！恭喜你的烹饪节目，我肯定会收看的！你在节目里最喜欢哪道菜？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:6",
+                  "speaker": "内特",
+                  "text": "椰奶冰淇淋排在我清单的首位。它非常顺滑绵密，带有热带椰香。而且它不含乳制品，适合乳糖不耐或想要纯素选择的人。这是我做的冰淇淋的照片。",
+                  "query": "coconut milk ice cream",
+                  "blip_caption": "a photography of a bowl of ice cream with a spoon on a table"
+                },
+                {
+                  "dia_id": "D21:7",
+                  "speaker": "乔安娜",
+                  "text": "哇，看起来太棒了，内特！我喜欢它的颜色和质地。你做这些选择真好。你能分享一下食谱吗？我以后很想试着做做看！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:8",
+                  "speaker": "内特",
+                  "text": "当然可以！很乐意分享。让我们传播无乳制品选择的快乐！做好之后告诉我！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D21:9",
+                  "speaker": "乔安娜",
+                  "text": "好的，内特！我要试试看。无乳制品对我来说是必须的，尤其是甜点。上个星期五，我用杏仁奶做了一道超——级美味的甜点——很好吃！说到无乳制品甜点，你有什么最爱吗？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "coconut milk ice cream —椰奶冰淇淋",
+          "context": [
+            {
+              "rank": 1,
+              "id": "6d342639-84b6-4d79-a8ba-2b515b5cf1ad",
+              "content": "内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成品照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "4582471e-1fba-48a9-9dac-40d786bde176",
+              "content": "内特 (Nate) 于2022年9月初的一个星期一在自己的烹饪节目上教观众做纯素冰淇淋，虽然有点紧张但非常开心，还在节目中学到了几个新食谱",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "8837211c-167e-48d9-a112-1c131acc1fdd",
+              "content": "内特 (Nate) 在2022年11月上旬尝试了烹饪，制作了自制椰子冰淇淋（加了糖屑，颜色有点变化），当时他的游戏锦标赛被推迟",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+              "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "813e1d8a-bb4e-4b34-bddf-b6aea7cde430",
+              "content": "乔安娜 (Joanna) 非常喜欢内特 (Nate) 做的甜点，称赞他的厨艺很棒，并表示试吃后会随时向他汇报反馈",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "content": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的满足感",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "d25cdce4-74e3-49c0-a2cf-0ba27e51313d",
+              "content": "内特 (Nate) 的两只乌龟吃蔬菜、水果和昆虫的混合食物，饮食多样化；他最喜欢看它们吃水果，因为它们会特别兴奋，他还喜欢抱着它们",
+              "route": "vector",
+              "session_date": "8:16 pm on 25 October, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "2cd5cce0-34e3-4244-9a9b-7e7d70467fb8",
+              "content": "内特 (Nate) 希望将来能和乔安娜一起烘焙或做饭，觉得这能让他们更亲密",
+              "route": "vector",
+              "session_date": "6:03 pm on 5 September, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "fd655e9b-b45b-4cc2-a5f5-3db349a9d6c1",
+              "content": "内特 (Nate) 答应把椰奶冰淇淋食谱分享给乔安娜，乔安娜表示很想试着做，并答应做好后告诉他",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "eda3f637-f21c-4190-bec7-5706b1904004",
+              "content": "内特 (Nate) 的游戏锦标赛在2022年11月初被推迟，他利用空闲时间自制了椰奶冰淇淋，但这次糖屑把颜色弄变了",
+              "route": "vector",
+              "session_date": "5:54 pm on 9 November, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "ed734737-8ef1-45cf-b98e-fb54da511ba5",
+              "content": "内特 (Nate) 于2022年4月17日再次分享了宠物乌龟的照片（乌龟和碗里的草莓一起玩耍），并表示有时会把乌龟带到厨房看他做食物；乔安娜特别喜欢他的乌龟",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "bdcadb45-8bd8-4dbe-a911-c1587f187bdd",
+              "content": "内特 (Nate) 说自己身处大自然等酷地方时只会陷入沉思，想想人生或新菜谱",
+              "route": "vector",
+              "session_date": "3:35 pm on 12 May, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "ca638e19-3640-4f6e-8059-d96a0f36b5b4",
+              "content": "内特 (Nate) 的最爱之一是《指环王》(Lord of the Rings) 三部曲，他称赞其世界观构建、战斗和叙事令人叹为观止",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            }
+          ],
+          "grade": "exact"
+        },
+        "graph": {
+          "answer": "椰奶冰淇淋",
+          "context": [
+            {
+              "rank": 1,
+              "id": "6d342639-84b6-4d79-a8ba-2b515b5cf1ad",
+              "content": "内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成品照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "4582471e-1fba-48a9-9dac-40d786bde176",
+              "content": "内特 (Nate) 于2022年9月初的一个星期一在自己的烹饪节目上教观众做纯素冰淇淋，虽然有点紧张但非常开心，还在节目中学到了几个新食谱",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "8837211c-167e-48d9-a112-1c131acc1fdd",
+              "content": "内特 (Nate) 在2022年11月上旬尝试了烹饪，制作了自制椰子冰淇淋（加了糖屑，颜色有点变化），当时他的游戏锦标赛被推迟",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "f19471e0-6ae0-423b-9f4f-8fa423bff553",
+              "content": "内特称赞乔安娜做无乳制品甜点非常有天赋，说她的蛋糕看起来很棒",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 7,
+              "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+              "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "8af51773-4f22-440d-90df-a8b4f6a4bbd0",
+              "content": "内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 9,
+              "id": "813e1d8a-bb4e-4b34-bddf-b6aea7cde430",
+              "content": "乔安娜 (Joanna) 非常喜欢内特 (Nate) 做的甜点，称赞他的厨艺很棒，并表示试吃后会随时向他汇报反馈",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+              "content": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 11,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "content": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的满足感",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "42f50b8f-d7c8-4f80-ae59-6aa6424f5571",
+              "content": "乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 13,
+              "id": "d25cdce4-74e3-49c0-a2cf-0ba27e51313d",
+              "content": "内特 (Nate) 的两只乌龟吃蔬菜、水果和昆虫的混合食物，饮食多样化；他最喜欢看它们吃水果，因为它们会特别兴奋，他还喜欢抱着它们",
+              "route": "vector",
+              "session_date": "8:16 pm on 25 October, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "103dc4a0-4711-4508-b231-9e28f34c3a39",
+              "content": "内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳制品冰淇淋食谱（2022年2月下旬）",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 15,
+              "id": "2cd5cce0-34e3-4244-9a9b-7e7d70467fb8",
+              "content": "内特 (Nate) 希望将来能和乔安娜一起烘焙或做饭，觉得这能让他们更亲密",
+              "route": "vector",
+              "session_date": "6:03 pm on 5 September, 2022"
+            }
+          ],
+          "grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-43_qa134",
+      "source": {
+        "english": {
+          "question": "What is one of Tim's favorite fantasy TV shows, as mentioned on November 11, 2023?",
+          "answer": "\"That\"",
+          "evidence": [
+            {
+              "dia_id": "D17:10",
+              "session": "session_17",
+              "session_date": "3:36 pm on 11 November, 2023",
+              "window": [
+                {
+                  "dia_id": "D17:7",
+                  "speaker": "John",
+                  "text": "Nature sure is powerful and beautiful! It's really humbling to witness such sights.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:8",
+                  "speaker": "Tim",
+                  "text": "Yeah! It always makes us realize how huge the world is and how special it is. These moments really show us the beauty around us. Anyways, have you read or watched anything good recently?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:9",
+                  "speaker": "John",
+                  "text": "Yep, I just finished this amazing fantasy series. It was a wild ride with so many twists. The author is amazing at creating awesome storylines and characters - I love getting lost in those fantasy worlds.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:10",
+                  "speaker": "Tim",
+                  "text": "That's amazing! Same here. There's something special about being lost in an awesome fantasy realm and seeing what happens. It's like an escape. \"That\" is one of my favorite fantasy shows. Have you seen it?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:11",
+                  "speaker": "John",
+                  "text": "Yeah, I saw \"That\"! It's amazing to see those worlds and characters come alive. It's a great way to escape reality!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:12",
+                  "speaker": "Tim",
+                  "text": "Yeah, it's awesome how books and movies can take you away. A great escape, right?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:13",
+                  "speaker": "John",
+                  "text": "Definitely, it's like a mental break, giving our minds a rest and letting them wander. So refreshing!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "正如2023年11月11日所提到的，蒂姆最喜欢的奇幻电视剧之一是什么？",
+          "answer": "\"那部\"",
+          "evidence": [
+            {
+              "dia_id": "D17:10",
+              "session": "session_17",
+              "session_date": "3:36 pm on 11 November, 2023",
+              "window": [
+                {
+                  "dia_id": "D17:7",
+                  "speaker": "约翰",
+                  "text": "大自然确实既强大又美丽！能亲眼目睹这样的景色真让人感到谦卑。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:8",
+                  "speaker": "蒂姆",
+                  "text": "是啊！它总能让我们意识到世界有多广阔、多么特别。这些时刻真正向我们展示了身边的美。话说回来，你最近有读到或看到什么好东西吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:9",
+                  "speaker": "约翰",
+                  "text": "有，我刚读完一套非常棒的奇幻系列小说。情节跌宕起伏，反转特别多。这位作者很擅长创造精彩的故事情节和人物——我就是喜欢沉浸在那样的奇幻世界里。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:10",
+                  "speaker": "蒂姆",
+                  "text": "太棒了！我也一样。沉浸在一个精彩的奇幻王国里、看看会发生什么，这种感觉非常特别。就像一种逃离。《That》是我最喜欢的奇幻剧之一。你看过吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:11",
+                  "speaker": "约翰",
+                  "text": "看过，《That》！看到那些世界和人物活灵活现地呈现在眼前真是太棒了。这是逃离现实的好方法！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:12",
+                  "speaker": "蒂姆",
+                  "text": "是啊，书籍和电影能带你远离现实，真的很神奇。是一种很好的放松方式，对吧？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D17:13",
+                  "speaker": "约翰",
+                  "text": "绝对是，就像一次精神休假，让大脑得到休息，任其徜徉。太提神了！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "《That》（约翰也看过，两人都喜欢这类作品带来的沉浸感）",
+          "context": [
+            {
+              "rank": 1,
+              "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+              "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+              "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+              "route": "vector",
+              "session_date": "10:22 am on 21 November, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+              "content": "蒂姆（Tim）写奇幻文章时特别喜欢《哈利·波特》和《权力的游戏》，对这两部作品完全着迷，可以永远聊下去",
+              "route": "vector",
+              "session_date": "4:17 pm on 2 August, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "0d01722b-8551-4dd4-a380-08270eb4fa9a",
+              "content": "蒂姆（Tim）非常期待2024年1月即将推出的新奇幻电视剧《时光之轮》，该剧改编自他非常喜爱的一套书，他等不及要追这部剧",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "9d717fa9-9e17-4171-b3ee-c31236749a40",
+              "content": "蒂姆（Tim）闲暇时仍喜欢读书，《哈利·波特》系列是他的最爱之一，认为那是可以让人暂时逃离现实的魔法世界；他也看过所有《哈利·波特》的电影，喜欢将电影与原著比较",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+              "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+              "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+              "route": "vector",
+              "session_date": "9:52 am on 1 December, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "31e7385d-3b47-4572-a963-8c13b8bbcf7c",
+              "content": "蒂姆（Tim）照例一直在读书，截至2023年11月11日分享了他一本翻旧的《冰与火之歌：剑刃风暴》（A Storm of Swords）的照片",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+              "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 10,
+              "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+              "content": "蒂姆（Tim）于2023年10月初（约10月6日那一周）去英国参加了一场哈利·波特大会，遇到很多同样热爱哈利·波特的人，感觉像神奇的大家庭，深受鼓舞、焕发新活力，认为对奇幻事物的热情拉近了他与世界各地的人的距离",
+              "route": "vector",
+              "session_date": "1:50 pm on 13 October, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+              "content": "蒂姆（Tim）正在读一套关于友谊和忠诚主题的奇幻系列小说，觉得很鼓舞人心，但尚未读《权力的游戏》系列以外的乔治·R·R·马丁其他作品",
+              "route": "vector",
+              "session_date": "7:42 pm on 8 December, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+              "content": "蒂姆（Tim）于2023年7月上旬在加利福尼亚州与一位《哈利·波特》粉丝聊得很开心，感到周围都是志同道合的人充满爱意，体验非常神奇",
+              "route": "vector",
+              "session_date": "4:21 pm on 16 July, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "b784b7cf-0c8d-4a31-a4ea-4e79a176299d",
+              "content": "蒂姆（Tim）于2023年12月初读完了《魔龙的狂舞》（A Dance with Dragons），认为故事精彩并强烈推荐",
+              "route": "vector",
+              "session_date": "7:42 pm on 8 December, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "df795392-83c3-4203-892c-c51c003b7b9e",
+              "content": "蒂姆（Tim）从未参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种不同的魔法世界里",
+              "route": "vector",
+              "session_date": "2:52 pm on 31 August, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+              "content": "蒂姆（Tim）正在做一个哈利·波特粉丝项目，并与一位哈利·波特粉丝朋友合作，于2023年5月中旬开始讨论构思创意",
+              "route": "vector",
+              "session_date": "7:48 pm on 21 May, 2023"
+            }
+          ],
+          "grade": "wrong"
+        },
+        "graph": {
+          "answer": "《That》",
+          "context": [
+            {
+              "rank": 1,
+              "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+              "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+              "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+              "route": "vector",
+              "session_date": "10:22 am on 21 November, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+              "content": "蒂姆（Tim）写奇幻文章时特别喜欢《哈利·波特》和《权力的游戏》，对这两部作品完全着迷，可以永远聊下去",
+              "route": "vector",
+              "session_date": "4:17 pm on 2 August, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "0d01722b-8551-4dd4-a380-08270eb4fa9a",
+              "content": "蒂姆（Tim）非常期待2024年1月即将推出的新奇幻电视剧《时光之轮》，该剧改编自他非常喜爱的一套书，他等不及要追这部剧",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "9d717fa9-9e17-4171-b3ee-c31236749a40",
+              "content": "蒂姆（Tim）闲暇时仍喜欢读书，《哈利·波特》系列是他的最爱之一，认为那是可以让人暂时逃离现实的魔法世界；他也看过所有《哈利·波特》的电影，喜欢将电影与原著比较",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+              "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+              "route": "vector",
+              "session_date": "3:35 pm on 26 December, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+              "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+              "route": "vector",
+              "session_date": "9:52 am on 1 December, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "31e7385d-3b47-4572-a963-8c13b8bbcf7c",
+              "content": "蒂姆（Tim）照例一直在读书，截至2023年11月11日分享了他一本翻旧的《冰与火之歌：剑刃风暴》（A Storm of Swords）的照片",
+              "route": "vector",
+              "session_date": "3:36 pm on 11 November, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+              "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+              "route": "vector",
+              "session_date": "5:26 pm on 2 January, 2024"
+            },
+            {
+              "rank": 10,
+              "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+              "content": "蒂姆（Tim）于2023年10月初（约10月6日那一周）去英国参加了一场哈利·波特大会，遇到很多同样热爱哈利·波特的人，感觉像神奇的大家庭，深受鼓舞、焕发新活力，认为对奇幻事物的热情拉近了他与世界各地的人的距离",
+              "route": "vector",
+              "session_date": "1:50 pm on 13 October, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "e5298e7a-052a-41d5-9c67-1da47589696c",
+              "content": "《哈利·波特与魔法石》对蒂姆来说很特别，是该系列的第一部电影，他常和家人一起拿着零食、盖上毯子舒舒服服地看，带给他很多美好回忆",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 12,
+              "id": "3d9696ac-a639-4862-980b-dc534b960d18",
+              "content": "蒂姆收藏了很多哈利·波特等纪念物，这对他来说是一种逃离现实的方式，让他感觉自己走进了书里；他计划以后去更多哈利·波特主题的地方",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 13,
+              "id": "e1addb3c-0fc9-4f48-bbb4-435134132183",
+              "content": "蒂姆家假日期间喜欢看《小鬼当家》《Elf》和《The Santa Clause》等节日电影，这些电影带来很多欢笑并让他们充满节日气氛",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 14,
+              "id": "eb23bfe9-cd70-4fed-a36e-dffd624aa7f1",
+              "content": "蒂姆认为J.K. 罗琳是非常鼓舞人心的作家，欣赏她细节丰富、创意十足的叙事，并总是为自己的写作记下她风格方面的笔记，他分享了一张翻旧的《哈利·波特与魔法石》的照片",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 15,
+              "id": "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+              "content": "蒂姆（Tim）正在读一套关于友谊和忠诚主题的奇幻系列小说，觉得很鼓舞人心，但尚未读《权力的游戏》系列以外的乔治·R·R·马丁其他作品",
+              "route": "vector",
+              "session_date": "7:42 pm on 8 December, 2023"
+            }
+          ],
+          "grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa102",
+      "source": {
+        "english": {
+          "question": "Which dairy-free dessert flavors does Nate enjoy?",
+          "answer": "chocolate and mixed berry",
+          "evidence": [
+            {
+              "dia_id": "D3:10",
+              "session": "session_3",
+              "session_date": "9:27 am on 7 February, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:7",
+                  "speaker": "Joanna",
+                  "text": "Great! I love when you try something new and it actually works out. Will you give it another go?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:8",
+                  "speaker": "Nate",
+                  "text": "Yep, it could be fun! I'm looking forward to trying out different flavors and toppings.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:9",
+                  "speaker": "Joanna",
+                  "text": "Yum! Sounds great. Got any favorite flavors for dairy-free desserts?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:10",
+                  "speaker": "Nate",
+                  "text": "I love coconut milk, but I also enjoy chocolate and mixed berry flavors.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:11",
+                  "speaker": "Joanna",
+                  "text": "Wow, those sound great! Who can say no to chocolate and berries? I'm tempted to try dairy-free flavors now!",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of cake with berries on a plate"
+                },
+                {
+                  "dia_id": "D3:12",
+                  "speaker": "Nate",
+                  "text": "Well I also made a dairy-free chocolate cake with berries on it the other day, maybe you would like that!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:13",
+                  "speaker": "Joanna",
+                  "text": "Wow! That sounds yummy! You're so talented. Thanks for sharing your amazing creations! I should really try making one or just pay you a visit and try one for myself!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "内特喜欢哪些无乳制品甜点的口味？",
+          "answer": "巧克力和混合莓果",
+          "evidence": [
+            {
+              "dia_id": "D3:10",
+              "session": "session_3",
+              "session_date": "9:27 am on 7 February, 2022",
+              "window": [
+                {
+                  "dia_id": "D3:7",
+                  "speaker": "乔安娜",
+                  "text": "太好了！我就喜欢你尝试新东西还真能成功的感觉。你会再做一次吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:8",
+                  "speaker": "内特",
+                  "text": "会啊，应该挺好玩！我很期待尝试不同的口味和配料。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:9",
+                  "speaker": "乔安娜",
+                  "text": "真馋人！听起来很棒。有没有什么特别喜欢的无乳制品甜点口味？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:10",
+                  "speaker": "内特",
+                  "text": "我喜欢椰奶，不过也喜欢巧克力和混合莓果口味。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:11",
+                  "speaker": "乔安娜",
+                  "text": "哇，听起来都不错！谁能拒绝巧克力和莓果呢？我现在都想试试无乳制品口味了！",
+                  "query": null,
+                  "blip_caption": "a photo of a piece of cake with berries on a plate"
+                },
+                {
+                  "dia_id": "D3:12",
+                  "speaker": "内特",
+                  "text": "嗯，我前几天还做了一个无乳制品巧克力蛋糕，上面加了莓果，你可能会喜欢！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D3:13",
+                  "speaker": "乔安娜",
+                  "text": "哇！听起来太好吃了！你太有才了。谢谢你分享你的精彩作品！我真该自己试着做一个，或者干脆去你家拜访，亲自尝一个！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "内特喜欢的无乳制品甜点口味包括：椰奶（椰子）、巧克力、混合莓果、香草，以及无乳制品巧克力慕斯。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "06e2ef9c-7f13-4f58-8777-dfbfc2027d17",
+              "content": "乔安娜 (Joanna) 分享了另一个喜欢的无乳制品食谱：用蓝莓、椰奶和无麸质挞皮做的甜点，绵密美味；内特表示一定要试试",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "6d342639-84b6-4d79-a8ba-2b515b5cf1ad",
+              "content": "内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成品照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "42f50b8f-d7c8-4f80-ae59-6aa6424f5571",
+              "content": "乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "7942fb25-bf57-4769-8d78-53d2f61048b8",
+              "content": "内特 (Nate) 于2022年6月17日（上周五）做了纯素（无乳制品）椰奶冰淇淋，分给了纯素饮食小组的一些人，反馈很棒；他答应在2022年6月25日把食谱发给乔安娜",
+              "route": "vector",
+              "session_date": "10:55 am on 24 June, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "content": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的满足感",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "103dc4a0-4711-4508-b231-9e28f34c3a39",
+              "content": "内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳制品冰淇淋食谱（2022年2月下旬）",
+              "route": "vector",
+              "session_date": "6:59 pm on 18 March, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "8af51773-4f22-440d-90df-a8b4f6a4bbd0",
+              "content": "内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "9e497904-46a2-4a9e-9cd2-b33fed4cdf9b",
+              "content": "内特表示一直想尝尝乔安娜做的巧克力覆盆子蛋糕，乔安娜答应拜访时带给他",
+              "route": "vector",
+              "session_date": "3:56 pm on 4 November, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "3bddf0e3-d1c4-426f-bfcf-db3635432f13",
+              "content": "Around August 2022, Nate developed a new coconut milk ice cream recipe that is creamy, rich, and dairy-free, and sent Joanna the recipe at her request; Joanna loves his coconut milk ice cream",
+              "route": "vector",
+              "session_date": "6:12 pm on 14 August, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+              "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "4624cccb-b798-46c2-8861-35cf5b936bc3",
+              "content": "内特 (Nate) 于2022年4月17日分享了椰奶冰淇淋配方：用椰奶、香草精、糖和一小撮盐制作，在冰箱冷藏后放入冰淇淋机冷冻到可挖球的程度；这是无乳制品配方，因为乔安娜乳糖不耐受正需要",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+              "content": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "2d143585-5296-4136-8885-95e68e0364c8",
+              "content": "乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月14日分享了照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            }
+          ],
+          "grade": "partial"
+        },
+        "graph": {
+          "answer": "内特喜欢的无乳制品甜点口味包括：椰奶（椰子）、巧克力和混合莓果。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "917b9dd4-c029-45c9-9139-7de8f24dce92",
+              "content": "内特 (Nate) 在2022年2月初尝试自制了椰奶冰淇淋，味道香浓顺滑，他为此感到骄傲，并计划再做一些不同的口味和配料；他喜欢椰奶、巧克力和混合莓果口味",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "06e2ef9c-7f13-4f58-8777-dfbfc2027d17",
+              "content": "乔安娜 (Joanna) 分享了另一个喜欢的无乳制品食谱：用蓝莓、椰奶和无麸质挞皮做的甜点，绵密美味；内特表示一定要试试",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "6d342639-84b6-4d79-a8ba-2b515b5cf1ad",
+              "content": "内特 (Nate) 在烹饪节目中最喜欢的菜是椰奶冰淇淋，形容它顺滑绵密、带有热带椰香、适合乳糖不耐或纯素人群，并分享了成品照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "42f50b8f-d7c8-4f80-ae59-6aa6424f5571",
+              "content": "乔安娜非常喜欢内特推荐的椰子（椰奶），认为它很适合做无乳制品甜点",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "7942fb25-bf57-4769-8d78-53d2f61048b8",
+              "content": "内特 (Nate) 于2022年6月17日（上周五）做了纯素（无乳制品）椰奶冰淇淋，分给了纯素饮食小组的一些人，反馈很棒；他答应在2022年6月25日把食谱发给乔安娜",
+              "route": "vector",
+              "session_date": "10:55 am on 24 June, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "31f7a1e7-da62-47c2-9511-ff3f2287fa19",
+              "content": "内特 (Nate) 在2022年2月下旬给朋友做了巧克力和香草双色旋涡的冰淇淋，朋友们特别喜欢，他从做甜点中获得了很大的满足感",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "103dc4a0-4711-4508-b231-9e28f34c3a39",
+              "content": "内特 (Nate) 之前给朋友做过巧克力香草双色旋涡冰淇淋，朋友们特别喜欢，并应乔安娜的请求答应发给她一个用椰奶做的无乳制品冰淇淋食谱（2022年2月下旬）",
+              "route": "vector",
+              "session_date": "6:59 pm on 18 March, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "8af51773-4f22-440d-90df-a8b4f6a4bbd0",
+              "content": "内特 (Nate) 在2022年2月初几天前做了一个无乳制品巧克力蛋糕，上面加了莓果",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "3bddf0e3-d1c4-426f-bfcf-db3635432f13",
+              "content": "Around August 2022, Nate developed a new coconut milk ice cream recipe that is creamy, rich, and dairy-free, and sent Joanna the recipe at her request; Joanna loves his coconut milk ice cream",
+              "route": "vector",
+              "session_date": "6:12 pm on 14 August, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "87664afc-347b-4e94-9ecd-3ff06052e388",
+              "content": "内特 (Nate) 正热衷于尝试各种口味，制作了色彩缤纷的椰奶冰淇淋碗并分享给乔安娜，邀请她品尝，乔安娜接受并表示期待",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "4624cccb-b798-46c2-8861-35cf5b936bc3",
+              "content": "内特 (Nate) 于2022年4月17日分享了椰奶冰淇淋配方：用椰奶、香草精、糖和一小撮盐制作，在冰箱冷藏后放入冰淇淋机冷冻到可挖球的程度；这是无乳制品配方，因为乔安娜乳糖不耐受正需要",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "b5170d4e-047e-4dac-814b-12293e2302aa",
+              "content": "乔安娜 (Joanna) 不能吃乳制品，因此在2022年2月下旬向内特 (Nate) 索要无乳制品冰淇淋食谱；内特答应发给她一个用椰奶做的食谱，并热爱制作无乳制品甜点",
+              "route": "vector",
+              "session_date": "1:07 pm on 25 February, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "2d143585-5296-4136-8885-95e68e0364c8",
+              "content": "乔安娜 (Joanna) 最爱的无乳制品甜食是巧克力覆盆子挞，有杏仁粉挞皮、巧克力甘纳许和新鲜覆盆子，她于2022年9月14日分享了照片",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "696b89e0-223f-4be6-a406-900ccff2e97f",
+              "content": "内特 (Nate) 于2022年4月17日分享了他做的无乳制品冰淇淋照片（配有红色糖屑），并表示乔安娜随时可以要配方",
+              "route": "vector",
+              "session_date": "6:44 pm on 17 April, 2022"
+            }
+          ],
+          "grade": "partial"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-26_qa19",
+      "source": {
+        "english": {
+          "question": "What do Melanie's kids like?",
+          "answer": "dinosaurs, nature",
+          "evidence": [
+            {
+              "dia_id": "D6:6",
+              "session": "session_6",
+              "session_date": "8:18 pm on 6 July, 2023",
+              "window": [
+                {
+                  "dia_id": "D6:3",
+                  "speaker": "Caroline",
+                  "text": "Since our last chat, I've been looking into counseling or mental health work more. I'm passionate about helping people and making a positive impact. It's tough, but really rewarding too. Anything new happening with you?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:4",
+                  "speaker": "Melanie",
+                  "text": "That's awesome, Caroline! Congrats on following your dreams. Yesterday I took the kids to the museum - it was so cool spending time with them and seeing their eyes light up!",
+                  "query": "kids laughing dinosaur exhibit museum",
+                  "blip_caption": "a photography of two children playing in a water play area"
+                },
+                {
+                  "dia_id": "D6:5",
+                  "speaker": "Caroline",
+                  "text": "Melanie, that's a great pic! That must have been awesome. What were they so stoked about?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:6",
+                  "speaker": "Melanie",
+                  "text": "They were stoked for the dinosaur exhibit! They love learning about animals and the bones were so cool. It reminds me why I love being a mom.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:7",
+                  "speaker": "Caroline",
+                  "text": "Being a mom is awesome. I'm creating a library for when I have kids. I'm really looking forward to reading to them and opening up their minds.",
+                  "query": "bookshelf childrens books library",
+                  "blip_caption": "a photo of a bookcase filled with books and toys"
+                },
+                {
+                  "dia_id": "D6:8",
+                  "speaker": "Melanie",
+                  "text": "Sounds great! What kind of books you got in your library?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:9",
+                  "speaker": "Caroline",
+                  "text": "I've got lots of kids' books- classics, stories from different cultures, educational books, all of that. What's a favorite book you remember from your childhood?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D4:8",
+              "session": "session_4",
+              "session_date": "10:37 am on 27 June, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:5",
+                  "speaker": "Caroline",
+                  "text": "Yep, Melanie! I've got some other stuff with sentimental value, like my hand-painted bowl. A friend made it for my 18th birthday ten years ago. The pattern and colors are awesome-- it reminds me of art and self-expression.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:6",
+                  "speaker": "Melanie",
+                  "text": "That sounds great, Caroline! It's awesome having stuff around that make us think of good connections and times. Actually, I just took my fam camping in the mountains last week - it was a really nice time together!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:7",
+                  "speaker": "Caroline",
+                  "text": "Sounds great, Mel. Glad you made some new family mems. How was it? Anything fun?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:8",
+                  "speaker": "Melanie",
+                  "text": "It was an awesome time, Caroline! We explored nature, roasted marshmallows around the campfire and even went on a hike. The view from the top was amazing! The 2 younger kids love nature. It was so special having these moments together as a family - I'll never forget it!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:9",
+                  "speaker": "Caroline",
+                  "text": "That's awesome, Melanie! Family moments like that are so special. Glad y'all had such a great time.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:10",
+                  "speaker": "Melanie",
+                  "text": "Thanks, Caroline! Family time matters to me. What's up with you lately?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:11",
+                  "speaker": "Caroline",
+                  "text": "Lately, I've been looking into counseling and mental health as a career. I want to help people who have gone through the same things as me.",
+                  "query": null,
+                  "blip_caption": "a photo of a book shelf with many books on it"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "梅拉妮的孩子们喜欢什么？",
+          "answer": "恐龙、大自然",
+          "evidence": [
+            {
+              "dia_id": "D6:6",
+              "session": "session_6",
+              "session_date": "8:18 pm on 6 July, 2023",
+              "window": [
+                {
+                  "dia_id": "D6:3",
+                  "speaker": "卡罗琳",
+                  "text": "自从上次聊天后，我一直在深入研究心理咨询或心理健康方面的工作。我热心于帮助他人、产生积极的影响。这条路不容易，但也非常有意义。你那边有什么新鲜事吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:4",
+                  "speaker": "梅拉妮",
+                  "text": "太棒了，卡罗琳！恭喜你追逐梦想。昨天我带孩子们去了博物馆——和他们在一起度过时光，看着他们眼睛发光，真是太棒了！",
+                  "query": "kids laughing dinosaur exhibit museum",
+                  "blip_caption": "a photography of two children playing in a water play area"
+                },
+                {
+                  "dia_id": "D6:5",
+                  "speaker": "卡罗琳",
+                  "text": "梅拉妮，这张照片拍得真好！那一定很棒吧。他们为什么那么兴奋？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:6",
+                  "speaker": "梅拉妮",
+                  "text": "他们是冲着恐龙展览去的！他们喜欢了解动物，那些骨头太酷了。这让我想起自己为什么喜欢当妈妈。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:7",
+                  "speaker": "卡罗琳",
+                  "text": "当妈妈真了不起。我正在为将来有了孩子建一个小图书馆。我非常期待给他们读书、开阔他们的眼界。",
+                  "query": "bookshelf childrens books library",
+                  "blip_caption": "a photo of a bookcase filled with books and toys"
+                },
+                {
+                  "dia_id": "D6:8",
+                  "speaker": "梅拉妮",
+                  "text": "听起来真好！你的图书馆里都放了什么书？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D6:9",
+                  "speaker": "卡罗琳",
+                  "text": "我有很多童书——经典作品、来自不同文化的故事、教育类书籍，应有尽有。你童年时记得最喜欢的一本书是什么？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D4:8",
+              "session": "session_4",
+              "session_date": "10:37 am on 27 June, 2023",
+              "window": [
+                {
+                  "dia_id": "D4:5",
+                  "speaker": "卡罗琳",
+                  "text": "有的,梅拉妮!我还有一些有感情意义的物品,比如我那个手绘碗。那是我朋友十年前为我18岁生日做的。图案和颜色都很棒——它让我想起艺术和自我表达。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:6",
+                  "speaker": "梅拉妮",
+                  "text": "听起来真不错,卡罗琳!身边有能让我们想起美好联结和时光的东西真的很棒。其实,上周我刚带家人去山里露营了——那是一段非常美好的共处时光!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:7",
+                  "speaker": "卡罗琳",
+                  "text": "听起来很棒,梅尔。很高兴你们创造了新的家庭回忆。怎么样?有什么好玩的吗?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:8",
+                  "speaker": "梅拉妮",
+                  "text": "那是一段超棒的时光,卡罗琳!我们探索了大自然,在篝火旁烤棉花糖,还去徒步了。山顶的景色美极了!两个小的孩子都热爱大自然。一家人一起拥有这些时刻太特别了——我永远不会忘记!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:9",
+                  "speaker": "卡罗琳",
+                  "text": "太棒了,梅拉妮!那样的家庭时光非常珍贵。很高兴你们玩得这么开心。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:10",
+                  "speaker": "梅拉妮",
+                  "text": "谢谢,卡罗琳!家庭时光对我来说很重要。你最近怎么样?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D4:11",
+                  "speaker": "卡罗琳",
+                  "text": "最近,我一直在考虑把心理咨询和心理健康作为职业。我想帮助那些经历过和我同样事情的人。",
+                  "query": null,
+                  "blip_caption": "a photo of a book shelf with many books on it"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "梅拉妮的孩子们喜欢大自然类的活动：露营（烤棉花糖、篝火讲故事）、徒步登山、探索森林和户外；也喜欢画画等艺术创作（尤其大自然主题）和陶艺工作坊；还喜欢海滩玩飞盘、放风筝，以及看恐龙展览（对动物和恐龙骨头感兴趣），并热爱户外演唱会等活动。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "64393dc0-b146-4e40-a411-7bf1d540c910",
+              "content": "梅拉妮于2023年7月5日带孩子们去博物馆看恐龙展览，孩子们喜欢了解动物、觉得骨头很酷，这让她想起自己为什么喜欢当妈妈",
+              "route": "vector",
+              "session_date": "8:18 pm on 6 July, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+              "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+              "route": "vector",
+              "session_date": "1:51 pm on 15 July, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+              "content": "梅拉妮于2023年6月中旬（对话前一周）带家人去山里露营，一起探索大自然、在篝火旁烤棉花糖并徒步，山顶景色很美，她两个年幼的孩子都热爱大自然，她认为这次家庭共处时光非常难忘",
+              "route": "vector",
+              "session_date": "10:37 am on 27 June, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "55feb3da-4b18-4405-a8f1-9cb9825cc3fa",
+              "content": "梅拉妮一家在2023年7月中旬又去森林露营了一次，在篝火旁烤棉花糖；他们还喜欢在山里徒步和探索森林，她认为这是亲近大自然、增进感情的方式",
+              "route": "vector",
+              "session_date": "1:51 pm on 15 July, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "0319c2f7-bfaa-4705-be23-453c21e142a3",
+              "content": "Melanie（对话伙伴）于2023年8月13日晚带女儿们庆祝生日，观看了一场户外演唱会，孩子们玩得开心；梅拉妮还曾在之前带孩子去海滩玩飞盘、放风筝",
+              "route": "vector",
+              "session_date": "2:24 pm on 14 August, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "65dc20b5-1cc1-4c95-ac07-40f204046256",
+              "content": "2023年10月19日（公路旅行后的次日），梅拉妮和孩子们去山里徒步，孩子们很喜欢，她说这是公路旅行后放松的好方式",
+              "route": "vector",
+              "session_date": "6:55 pm on 20 October, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+              "content": "梅拉妮的孩子们对暑假兴奋极了，她们计划在2023年6月（下个月）去露营",
+              "route": "vector",
+              "session_date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "de3a1918-0ba7-4586-853f-5badfd2f1922",
+              "content": "梅拉妮在2023年9月初的几周前带孩子们去露营，探索森林、徒步，还在篝火边烤棉花糖、讲故事，大家玩得很尽兴，并分享了一张秋天黄叶小路的照片",
+              "route": "vector",
+              "session_date": "12:09 am on 13 September, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "2ec90c89-e8d4-4fd1-80bd-2eca86fb2c2f",
+              "content": "车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱",
+              "route": "vector",
+              "session_date": "6:55 pm on 20 October, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "1e149940-ab2d-4a38-a50c-20a4c99a4d1e",
+              "content": "梅拉妮既喜欢巴赫和莫扎特等古典音乐，也喜欢埃德·希兰（Ed Sheeran）的《Perfect》等现代音乐",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "4fd3f599-54da-4f9e-865f-c865e22f600f",
+              "content": "梅拉妮于2023年8月27日（对话前一天）带孩子们去公园玩，孩子们在户外探索玩耍很开心",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+              "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子",
+              "route": "vector",
+              "session_date": "1:51 pm on 15 July, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "4b6c96d1-5e14-4b85-b2a9-3a48d04b2ad9",
+              "content": "梅拉妮分享了一张家人在海滩露营的篝火照片，表示家人很喜欢露营，露营让他们更亲近",
+              "route": "vector",
+              "session_date": "8:18 pm on 6 July, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "97f3a4fc-ea2e-4e8d-9f49-402d63a83d9d",
+              "content": "截至2023年7月17日，梅拉妮和孩子们刚又完成了一幅画，延续了他们之前一起创作大自然灵感画作的习惯",
+              "route": "vector",
+              "session_date": "2:31 pm on 17 July, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "9a6d251f-1392-4457-a610-97d093f303f0",
+              "content": "梅拉妮一家最近去了海滩（2023年7月），三个孩子玩得很开心；他们不常去海滩，通常一年只去一两次",
+              "route": "vector",
+              "session_date": "8:56 pm on 20 July, 2023"
+            }
+          ],
+          "grade": "exact"
+        },
+        "graph": {
+          "answer": "梅拉妮的孩子们喜欢大自然相关活动：露营（在篝火旁烤棉花糖、听故事）、徒步（山里、森林探索）、海滩玩耍（飞盘、放风筝），还喜欢画画和陶艺等创意活动、参观博物馆看恐龙展览、户外探索公园、户外演唱会。总体上他们热爱大自然和户外家庭活动。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "64393dc0-b146-4e40-a411-7bf1d540c910",
+              "content": "梅拉妮于2023年7月5日带孩子们去博物馆看恐龙展览，孩子们喜欢了解动物、觉得骨头很酷，这让她想起自己为什么喜欢当妈妈",
+              "route": "vector",
+              "session_date": "8:18 pm on 6 July, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "459ffafa-6850-49f2-b4f7-66e64e542482",
+              "content": "梅拉妮最近喜欢和孩子们一起画画，尤其偏爱以大自然为灵感的创作；2023年7月初（上周末）他们一起画了一幅色彩大胆的落日与棕榈树画作，她认为一起创作是很好的感情联络方式",
+              "route": "vector",
+              "session_date": "1:51 pm on 15 July, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+              "content": "梅拉妮于2023年6月中旬（对话前一周）带家人去山里露营，一起探索大自然、在篝火旁烤棉花糖并徒步，山顶景色很美，她两个年幼的孩子都热爱大自然，她认为这次家庭共处时光非常难忘",
+              "route": "vector",
+              "session_date": "10:37 am on 27 June, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "55feb3da-4b18-4405-a8f1-9cb9825cc3fa",
+              "content": "梅拉妮一家在2023年7月中旬又去森林露营了一次，在篝火旁烤棉花糖；他们还喜欢在山里徒步和探索森林，她认为这是亲近大自然、增进感情的方式",
+              "route": "vector",
+              "session_date": "1:51 pm on 15 July, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "0319c2f7-bfaa-4705-be23-453c21e142a3",
+              "content": "Melanie（对话伙伴）于2023年8月13日晚带女儿们庆祝生日，观看了一场户外演唱会，孩子们玩得开心；梅拉妮还曾在之前带孩子去海滩玩飞盘、放风筝",
+              "route": "vector",
+              "session_date": "2:24 pm on 14 August, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "65dc20b5-1cc1-4c95-ac07-40f204046256",
+              "content": "2023年10月19日（公路旅行后的次日），梅拉妮和孩子们去山里徒步，孩子们很喜欢，她说这是公路旅行后放松的好方式",
+              "route": "vector",
+              "session_date": "6:55 pm on 20 October, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+              "content": "梅拉妮的孩子们对暑假兴奋极了，她们计划在2023年6月（下个月）去露营",
+              "route": "vector",
+              "session_date": "1:14 pm on 25 May, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "de3a1918-0ba7-4586-853f-5badfd2f1922",
+              "content": "梅拉妮在2023年9月初的几周前带孩子们去露营，探索森林、徒步，还在篝火边烤棉花糖、讲故事，大家玩得很尽兴，并分享了一张秋天黄叶小路的照片",
+              "route": "vector",
+              "session_date": "12:09 am on 13 September, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "2ec90c89-e8d4-4fd1-80bd-2eca86fb2c2f",
+              "content": "车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱",
+              "route": "vector",
+              "session_date": "6:55 pm on 20 October, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "1e149940-ab2d-4a38-a50c-20a4c99a4d1e",
+              "content": "梅拉妮既喜欢巴赫和莫扎特等古典音乐，也喜欢埃德·希兰（Ed Sheeran）的《Perfect》等现代音乐",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "4fd3f599-54da-4f9e-865f-c865e22f600f",
+              "content": "梅拉妮于2023年8月27日（对话前一天）带孩子们去公园玩，孩子们在户外探索玩耍很开心",
+              "route": "vector",
+              "session_date": "3:19 pm on 28 August, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "59d2b19f-d95d-4da8-9764-eef2117f6cb0",
+              "content": "梅拉妮于2023年7月14日（上周五）带孩子们参加了一个陶艺工作坊，一家人各自做了自己的陶罐；孩子们非常兴奋，其中一个孩子做了一个带有狗脸图案的杯子",
+              "route": "vector",
+              "session_date": "1:51 pm on 15 July, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "4b6c96d1-5e14-4b85-b2a9-3a48d04b2ad9",
+              "content": "梅拉妮分享了一张家人在海滩露营的篝火照片，表示家人很喜欢露营，露营让他们更亲近",
+              "route": "vector",
+              "session_date": "8:18 pm on 6 July, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "97f3a4fc-ea2e-4e8d-9f49-402d63a83d9d",
+              "content": "截至2023年7月17日，梅拉妮和孩子们刚又完成了一幅画，延续了他们之前一起创作大自然灵感画作的习惯",
+              "route": "vector",
+              "session_date": "2:31 pm on 17 July, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "9a6d251f-1392-4457-a610-97d093f303f0",
+              "content": "梅拉妮一家最近去了海滩（2023年7月），三个孩子玩得很开心；他们不常去海滩，通常一年只去一两次",
+              "route": "vector",
+              "session_date": "8:56 pm on 20 July, 2023"
+            }
+          ],
+          "grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-44_qa20",
+      "source": {
+        "english": {
+          "question": "Which meat does Audrey prefer eating more than others?",
+          "answer": "chicken",
+          "evidence": [
+            {
+              "dia_id": "D10:13",
+              "session": "session_10",
+              "session_date": "8:32 pm on 3 July, 2023",
+              "window": [
+                {
+                  "dia_id": "D10:10",
+                  "speaker": "Andrew",
+                  "text": "They look adorable! Doggy playdates sound like a lot of fun. Glad they all get along.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:11",
+                  "speaker": "Audrey",
+                  "text": "Thanks! They really are my universe. So anything new you've been into lately?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:12",
+                  "speaker": "Andrew",
+                  "text": "Lately I've been finding new hobbies since I can't hike. I've been getting into cooking more and trying out new recipes - it's been enjoyable. Do you enjoy cooking? Any favorite recipes?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:13",
+                  "speaker": "Audrey",
+                  "text": "I love cooking! My favorite recipe is Chicken Pot Pie. It's so cozy and delicious, especially on a cold day. If you want, I can share the recipe with you.",
+                  "query": "homemade chicken pot pie",
+                  "blip_caption": "a photo of a pie on a wooden board with a knife"
+                },
+                {
+                  "dia_id": "D10:14",
+                  "speaker": "Andrew",
+                  "text": "Mmm that looks nice! Mind sharing the recipe so I can give it a try? What inspired you to make it?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:15",
+                  "speaker": "Audrey",
+                  "text": "Sure! Let me send you the recipe in a bit. You really should give it a try! It's my family's recipe that's been around for years. The flavors always remind me of my grandma's kitchen - makes me think of all the conversations we used to have at the table. I hope you like it! Oh, and how's the cooking going?",
+                  "query": null,
+                  "blip_caption": "a photo of a pie with a lattice on top of it"
+                },
+                {
+                  "dia_id": "D10:16",
+                  "speaker": "Andrew",
+                  "text": "Thanks! I'll give it a try. Cooking has been helping me de-stress and be creative. I'm still a rookie, but I'm having fun experimenting. So what makes you like cooking so much?",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D10:23",
+              "session": "session_10",
+              "session_date": "8:32 pm on 3 July, 2023",
+              "window": [
+                {
+                  "dia_id": "D10:20",
+                  "speaker": "Andrew",
+                  "text": "Ooo, that looks great! Cooking can be so calming, right? What's your go-to ingredient in the kitchen?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:21",
+                  "speaker": "Audrey",
+                  "text": "Yeah! Cooking is definitely calming. Garlic is my go-to ingredient. I love the smell and taste it adds to dishes.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:22",
+                  "speaker": "Andrew",
+                  "text": "Garlic is indeed delicious! Do you have a favorite dish that you like to make with it? If so, would you like to share the recipe?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:23",
+                  "speaker": "Audrey",
+                  "text": "Sure! Roasted Chicken is one of my favorites - sure I'll send you the recipe in a bit.",
+                  "query": "roasted garlic chicken",
+                  "blip_caption": "a photography of a pan of chicken and potatoes on a stove"
+                },
+                {
+                  "dia_id": "D10:24",
+                  "speaker": "Andrew",
+                  "text": "Wow I can't wait to make it! That looks amazing. What inspired you to make it?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:25",
+                  "speaker": "Audrey",
+                  "text": "I'm glad you're interested! This recipe is based on my love for Mediterranean flavors. It's a tasty dish that's easy to make and loaded with healthy stuff like chicken, garlic, lemon, and herbs. It's my favorite comfort meal!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:26",
+                  "speaker": "Andrew",
+                  "text": "Wow, that sounds delicious and healthy! I'm always looking for new meal ideas, especially ones that are healthier. Really appreciate you sharing this with me, thanks!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "奥黛丽最喜欢吃哪种肉？",
+          "answer": "鸡肉",
+          "evidence": [
+            {
+              "dia_id": "D10:13",
+              "session": "session_10",
+              "session_date": "8:32 pm on 3 July, 2023",
+              "window": [
+                {
+                  "dia_id": "D10:10",
+                  "speaker": "安德鲁",
+                  "text": "它们看起来太可爱了！狗狗聚会听起来很有意思。很高兴它们都相处融洽。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:11",
+                  "speaker": "奥黛丽",
+                  "text": "谢谢！它们真的是我的全世界。你最近有什么新爱好吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:12",
+                  "speaker": "安德鲁",
+                  "text": "最近因为不能去徒步，我在发掘新爱好。我越来越喜欢做饭，尝试新菜谱——挺享受的。你喜欢做饭吗？有什么喜欢的菜谱吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:13",
+                  "speaker": "奥黛丽",
+                  "text": "我爱做饭！我最喜欢的菜谱是鸡肉锅派。特别温馨美味，尤其是冷天的时候。如果你愿意，我可以把菜谱分享给你。",
+                  "query": "homemade chicken pot pie",
+                  "blip_caption": "a photo of a pie on a wooden board with a knife"
+                },
+                {
+                  "dia_id": "D10:14",
+                  "speaker": "安德鲁",
+                  "text": "嗯，看起来不错！方便把菜谱分享给我试试吗？是什么让你想做这道菜的？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:15",
+                  "speaker": "奥黛丽",
+                  "text": "当然！我待会儿把菜谱发给你。你真的应该试试！这是我家的祖传菜谱，传了很多年了。那些味道总让我想起我奶奶的厨房——让我想起我们以前在餐桌上的所有交谈。希望你喜欢！哦，对了，你做饭进展如何？",
+                  "query": null,
+                  "blip_caption": "a photo of a pie with a lattice on top of it"
+                },
+                {
+                  "dia_id": "D10:16",
+                  "speaker": "安德鲁",
+                  "text": "谢谢！我会试试的。做饭帮我减压，还能发挥创意。我还是个新手，但实验的过程很有趣。那么你为什么这么喜欢做饭呢？",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            },
+            {
+              "dia_id": "D10:23",
+              "session": "session_10",
+              "session_date": "8:32 pm on 3 July, 2023",
+              "window": [
+                {
+                  "dia_id": "D10:20",
+                  "speaker": "安德鲁",
+                  "text": "哦，看起来太棒了！做饭真的能让人平静，对吧？你在厨房里最离不开的食材是什么？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:21",
+                  "speaker": "奥黛丽",
+                  "text": "是啊！做饭绝对让人平静。大蒜是我的必备食材。我喜欢它给菜肴增添的香味和味道。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:22",
+                  "speaker": "安德鲁",
+                  "text": "大蒜确实美味！你有没有一道最喜欢用它做的菜？如果有，愿意分享菜谱吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:23",
+                  "speaker": "奥黛丽",
+                  "text": "当然！烤鸡是我的最爱之一——我待会儿把菜谱发给你。",
+                  "query": "roasted garlic chicken",
+                  "blip_caption": "a photography of a pan of chicken and potatoes on a stove"
+                },
+                {
+                  "dia_id": "D10:24",
+                  "speaker": "安德鲁",
+                  "text": "哇，等不及要做了！看起来太棒了。是什么让你想做这道菜的？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:25",
+                  "speaker": "奥黛丽",
+                  "text": "很高兴你感兴趣！这个菜谱源于我对地中海风味的喜爱。这道菜美味又容易做，富含鸡肉、大蒜、柠檬和香草等健康食材。这是我最喜欢的治愈系美食！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D10:26",
+                  "speaker": "安德鲁",
+                  "text": "哇，听起来又美味又健康！我一直在寻找新的餐点灵感，尤其是更健康的。非常感谢你和我分享，谢谢！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "鸡肉 —她最爱的两道菜（含大蒜、柠檬、香草的烤鸡，以及祖传的鸡肉锅派）都以鸡肉为主。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "26cdfc6b-6dec-4787-a234-481e6e43e47f",
+              "content": "奥黛丽的必备食材是大蒜，她喜欢它给菜肴增添的香味和味道。她最喜欢的用大蒜做的菜之一是烤鸡（含鸡肉、大蒜、柠檬、香草），菜谱源于她对地中海风味的喜爱，美味易做又健康，是她的治愈系美食。她也答应分享这个菜谱",
+              "route": "vector",
+              "session_date": "8:32 pm on 3 July, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "8076fcb1-e6db-452b-85f3-36c5b48682f4",
+              "content": "奥黛丽最喜欢的菜谱是鸡肉锅派，特别温馨美味，尤其冷天爱吃。这是她家的祖传菜谱，传了很多年，那些味道让她想起奶奶的厨房和以前在餐桌上的交谈。她答应待会儿把菜谱分享给对方",
+              "route": "vector",
+              "session_date": "8:32 pm on 3 July, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "1f9fb979-b82c-4558-998b-e22f8956f54b",
+              "content": "奥黛丽在2023年5月国家公园徒步时拍了很多照片，其中她最喜欢的之一是一张日落山景与两匹马在围栏田野里吃草的照片；她还说大自然总能让她振作起来、心怀感激",
+              "route": "vector",
+              "session_date": "11:27 am on 2 June, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "8eb50251-b0ef-4bfb-b192-1dffa30ee041",
+              "content": "受安德鲁寿司经历的启发，奥黛丽在2023年10月24日当天打算晚饭点寿司吃",
+              "route": "vector",
+              "session_date": "10:14 am on 24 October, 2023"
+            },
+            {
+              "rank": 5,
+              "id": "9adb54ee-cdbb-460a-90e8-77ad299f5cc8",
+              "content": "奥黛丽热爱做饭，喜欢尝试新菜谱、在厨房做实验——对她来说像一种逃避，减压效果很好还能让创意流淌。她喜欢放音乐、倒一杯葡萄酒，在厨房里随性发挥，觉得像自我关爱、很治愈",
+              "route": "vector",
+              "session_date": "8:32 pm on 3 July, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "2b368b75-6856-42a4-bf65-67cd0e6d366e",
+              "content": "奥黛丽小时候常和马克斯在附近长时间散步，探索新的小路，它喜欢边走边嗅来嗅去、标记地盘。她和马克斯非常亲密，会把烦恼和希望都说给它听，那些日子是她最喜欢的回忆之一",
+              "route": "vector",
+              "session_date": "3:52 pm on 27 July, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "98bd13a7-5d1c-4519-910c-4756aedadaee",
+              "content": "2023年4月初，奥黛丽 (Audrey) 用蓝莓做了几样她最爱的点心（蓝莓玛芬），并与安德鲁约定找时间办一个糕点派对，她的狗狗们也会参加",
+              "route": "vector",
+              "session_date": "4:19 pm on 16 April, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "76c52e74-45b1-4c7d-a03a-2db7b237d721",
+              "content": "奥黛丽说她狗狗们是她的全世界，给她的狗狗们满满的爱和幸福；有它们在身边，大自然让她感到平静、治愈",
+              "route": "vector",
+              "session_date": "8:32 pm on 3 July, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "9a453ea8-a00e-415a-808c-cb4b25894e82",
+              "content": "奥黛丽的狗狗们对捡球游戏和飞盘特别疯狂，喜欢跑来跑去和结识其他狗狗，可以连续跑好几个小时",
+              "route": "vector",
+              "session_date": "4:22 pm on 13 October, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "39c4c495-fc94-40e9-8fbb-a4e1248f5f0d",
+              "content": "奥黛丽 (Audrey) 养了三只狗——佩珀 (Pepper)、普雷舍斯 (Precious) 和潘达 (Panda)——已经养了三年，她说没有它们活不下去",
+              "route": "vector",
+              "session_date": "1:10 pm on 27 March, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "e8057023-5a1f-43aa-85eb-2d272e56d2e7",
+              "content": "奥黛丽的狗狗们总是依偎在她最喜欢的毯子上一起睡觉，尤其在午睡时间，它们是最好的朋友，总是互相陪伴，看到它们在一起让她特别开心",
+              "route": "vector",
+              "session_date": "9:58 pm on 16 August, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "edb0aa0a-5dba-4c82-a640-24b69f9b2b10",
+              "content": "奥黛丽表示狗狗们对她来说就是一切，虽然照顾它们很有挑战，但她一定会让它们健康快乐，给它们最好的",
+              "route": "vector",
+              "session_date": "2:36 pm on 28 October, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "ef7f7abd-b850-4926-bc5a-400c48eff409",
+              "content": "奥黛丽表示她的狗狗们生活得很好，到处探索、认识新朋友，感受到被爱和安全感；她非常感激狗狗们成为她生活和家庭的一部分，带来很多欢乐和陪伴",
+              "route": "vector",
+              "session_date": "9:02 am on 22 November, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "9dda1968-7e82-4e59-8f5d-fd2ae1ceb074",
+              "content": "马克斯是奥黛丽童年时的狗，精力充沛、喜欢玩捡球游戏，她与它有很多美好回忆",
+              "route": "vector",
+              "session_date": "3:52 pm on 27 July, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "c9e0d716-0261-4d43-a1b7-eec7973c1b42",
+              "content": "奥黛丽的狗狗们去远足时会兴奋不已，喜欢探索新气味、置身大自然——那是它们的快乐之地，从摇摆的尾巴就能看出它们有多喜欢",
+              "route": "vector",
+              "session_date": "5:41 pm on 3 May, 2023"
+            }
+          ],
+          "grade": "exact"
+        },
+        "graph": {
+          "answer": "**第 1-3 步：** 相关记忆：2023年7月3日，Audrey最喜欢的用大蒜做的菜之一是烤鸡；同日她最喜欢的菜谱是鸡肉锅派。两者均为鸡肉。\n\n**第 4-7 步：** 鸡肉出现于她最喜欢的菜谱中，且明确是肉类。\n\n回答：鸡肉（鸡肉——正如她最爱的菜肴中所见，如烤鸡和祖传的鸡肉锅派）",
+          "context": [
+            {
+              "rank": 1,
+              "id": "26cdfc6b-6dec-4787-a234-481e6e43e47f",
+              "content": "奥黛丽的必备食材是大蒜，她喜欢它给菜肴增添的香味和味道。她最喜欢的用大蒜做的菜之一是烤鸡（含鸡肉、大蒜、柠檬、香草），菜谱源于她对地中海风味的喜爱，美味易做又健康，是她的治愈系美食。她也答应分享这个菜谱",
+              "route": "vector",
+              "session_date": "8:32 pm on 3 July, 2023"
+            },
+            {
+              "rank": 2,
+              "id": "8076fcb1-e6db-452b-85f3-36c5b48682f4",
+              "content": "奥黛丽最喜欢的菜谱是鸡肉锅派，特别温馨美味，尤其冷天爱吃。这是她家的祖传菜谱，传了很多年，那些味道让她想起奶奶的厨房和以前在餐桌上的交谈。她答应待会儿把菜谱分享给对方",
+              "route": "vector",
+              "session_date": "8:32 pm on 3 July, 2023"
+            },
+            {
+              "rank": 3,
+              "id": "1f9fb979-b82c-4558-998b-e22f8956f54b",
+              "content": "奥黛丽在2023年5月国家公园徒步时拍了很多照片，其中她最喜欢的之一是一张日落山景与两匹马在围栏田野里吃草的照片；她还说大自然总能让她振作起来、心怀感激",
+              "route": "vector",
+              "session_date": "11:27 am on 2 June, 2023"
+            },
+            {
+              "rank": 4,
+              "id": "8c29f9b1-cdb9-4f36-ac10-0a5126df562f",
+              "content": "奥黛丽的四只狗狗都是3岁的串串：两只是杰克罗素梗串，两只是吉娃娃串。它们最喜欢跑步和玩接球游戏",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 5,
+              "id": "8eb50251-b0ef-4bfb-b192-1dffa30ee041",
+              "content": "受安德鲁寿司经历的启发，奥黛丽在2023年10月24日当天打算晚饭点寿司吃",
+              "route": "vector",
+              "session_date": "10:14 am on 24 October, 2023"
+            },
+            {
+              "rank": 6,
+              "id": "9adb54ee-cdbb-460a-90e8-77ad299f5cc8",
+              "content": "奥黛丽热爱做饭，喜欢尝试新菜谱、在厨房做实验——对她来说像一种逃避，减压效果很好还能让创意流淌。她喜欢放音乐、倒一杯葡萄酒，在厨房里随性发挥，觉得像自我关爱、很治愈",
+              "route": "vector",
+              "session_date": "8:32 pm on 3 July, 2023"
+            },
+            {
+              "rank": 7,
+              "id": "2b368b75-6856-42a4-bf65-67cd0e6d366e",
+              "content": "奥黛丽小时候常和马克斯在附近长时间散步，探索新的小路，它喜欢边走边嗅来嗅去、标记地盘。她和马克斯非常亲密，会把烦恼和希望都说给它听，那些日子是她最喜欢的回忆之一",
+              "route": "vector",
+              "session_date": "3:52 pm on 27 July, 2023"
+            },
+            {
+              "rank": 8,
+              "id": "98bd13a7-5d1c-4519-910c-4756aedadaee",
+              "content": "2023年4月初，奥黛丽 (Audrey) 用蓝莓做了几样她最爱的点心（蓝莓玛芬），并与安德鲁约定找时间办一个糕点派对，她的狗狗们也会参加",
+              "route": "vector",
+              "session_date": "4:19 pm on 16 April, 2023"
+            },
+            {
+              "rank": 9,
+              "id": "76c52e74-45b1-4c7d-a03a-2db7b237d721",
+              "content": "奥黛丽说她狗狗们是她的全世界，给她的狗狗们满满的爱和幸福；有它们在身边，大自然让她感到平静、治愈",
+              "route": "vector",
+              "session_date": "8:32 pm on 3 July, 2023"
+            },
+            {
+              "rank": 10,
+              "id": "9a453ea8-a00e-415a-808c-cb4b25894e82",
+              "content": "奥黛丽的狗狗们对捡球游戏和飞盘特别疯狂，喜欢跑来跑去和结识其他狗狗，可以连续跑好几个小时",
+              "route": "vector",
+              "session_date": "4:22 pm on 13 October, 2023"
+            },
+            {
+              "rank": 11,
+              "id": "39c4c495-fc94-40e9-8fbb-a4e1248f5f0d",
+              "content": "奥黛丽 (Audrey) 养了三只狗——佩珀 (Pepper)、普雷舍斯 (Precious) 和潘达 (Panda)——已经养了三年，她说没有它们活不下去",
+              "route": "vector",
+              "session_date": "1:10 pm on 27 March, 2023"
+            },
+            {
+              "rank": 12,
+              "id": "e8057023-5a1f-43aa-85eb-2d272e56d2e7",
+              "content": "奥黛丽的狗狗们总是依偎在她最喜欢的毯子上一起睡觉，尤其在午睡时间，它们是最好的朋友，总是互相陪伴，看到它们在一起让她特别开心",
+              "route": "vector",
+              "session_date": "9:58 pm on 16 August, 2023"
+            },
+            {
+              "rank": 13,
+              "id": "edb0aa0a-5dba-4c82-a640-24b69f9b2b10",
+              "content": "奥黛丽表示狗狗们对她来说就是一切，虽然照顾它们很有挑战，但她一定会让它们健康快乐，给它们最好的",
+              "route": "vector",
+              "session_date": "2:36 pm on 28 October, 2023"
+            },
+            {
+              "rank": 14,
+              "id": "76384c4c-a437-4243-bc46-4964c43bbd3a",
+              "content": "奥黛丽带狗狗出去时通常玩捡球或飞盘，狗狗们喜欢追着跑；她还会在公园里和其他狗主人举办狗狗聚会，这既是她与人社交的机会，也让狗狗结识新朋友",
+              "route": "vector",
+              "session_date": "5:41 pm on 3 May, 2023"
+            },
+            {
+              "rank": 15,
+              "id": "ef7f7abd-b850-4926-bc5a-400c48eff409",
+              "content": "奥黛丽表示她的狗狗们生活得很好，到处探索、认识新朋友，感受到被爱和安全感；她非常感激狗狗们成为她生活和家庭的一部分，带来很多欢乐和陪伴",
+              "route": "vector",
+              "session_date": "9:02 am on 22 November, 2023"
+            }
+          ],
+          "grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa90",
+      "source": {
+        "english": {
+          "question": "What is Nate's favorite movie trilogy?",
+          "answer": "Lord of the Rings",
+          "evidence": [
+            {
+              "dia_id": "D9:12",
+              "session": "session_9",
+              "session_date": "7:44 pm on 21 April, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:9",
+                  "speaker": "Joanna",
+                  "text": "Thanks Nate! I'm gonna keep writing, but if acting calls out I might give it a try. I really enjoy dramas and emotionally-driven films. What about you? What inspires your passion?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:10",
+                  "speaker": "Nate",
+                  "text": "I love fantasy and sci-fi movies, they're a great escape and get my imagination going. Playing video games is a great way to express my creativity and passion.",
+                  "query": "video game controller",
+                  "blip_caption": "a photography of a black xbox controller sitting on top of a wooden table"
+                },
+                {
+                  "dia_id": "D9:11",
+                  "speaker": "Joanna",
+                  "text": "That's awesome! I love how video games can really spark your imagination. Do you have a favorite fantasy or sci-fi movie?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:12",
+                  "speaker": "Nate",
+                  "text": "Yeah, for sure! This trilogy is one of my faves. The world building, battles, and storytelling always blow me away!",
+                  "query": "lord of the rings trilogy dvd boxset",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D9:13",
+                  "speaker": "Joanna",
+                  "text": "Wow, that's great to hear! What books do you enjoy? I'm always up for some new book recommendations.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:14",
+                  "speaker": "Nate",
+                  "text": "I love this series. It has adventures, magic, and great characters - it's a must-read!",
+                  "query": "fantasy novels dragon cover series",
+                  "blip_caption": "a photo of a bunch of books on a table"
+                },
+                {
+                  "dia_id": "D9:15",
+                  "speaker": "Joanna",
+                  "text": "Heard of that series! It's been on my list forever. Thanks for the recommendation, Nate. I'm definitely going to check it out!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "内特最喜欢的电影三部曲是什么？",
+          "answer": "指环王",
+          "evidence": [
+            {
+              "dia_id": "D9:12",
+              "session": "session_9",
+              "session_date": "7:44 pm on 21 April, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:9",
+                  "speaker": "乔安娜",
+                  "text": "谢谢你，内特！我会继续写作，但如果表演在召唤我，我也许会试一试。我特别喜欢剧情片和情感驱动的电影。你呢？是什么激发了你的热情？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:10",
+                  "speaker": "内特",
+                  "text": "我喜欢奇幻和科幻电影，它们是很好的 escape，能激发我的想象力。玩电子游戏是表达我的创造力和热情的好方式。",
+                  "query": "video game controller",
+                  "blip_caption": "a photography of a black xbox controller sitting on top of a wooden table"
+                },
+                {
+                  "dia_id": "D9:11",
+                  "speaker": "乔安娜",
+                  "text": "太棒了！我喜欢电子游戏能真正点燃想象力的那种感觉。你有最喜欢的奇幻或科幻电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:12",
+                  "speaker": "内特",
+                  "text": "有，当然有！那部三部曲是我的最爱之一。它的世界观构建、战斗和叙事总是让我叹为观止！",
+                  "query": "lord of the rings trilogy dvd boxset",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D9:13",
+                  "speaker": "乔安娜",
+                  "text": "哇，很高兴听到这些！你喜欢什么书？我随时欢迎新的书籍推荐。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:14",
+                  "speaker": "内特",
+                  "text": "我喜欢这套系列。它有冒险、魔法和出色的角色——必读之作！",
+                  "query": "fantasy novels dragon cover series",
+                  "blip_caption": "a photo of a bunch of books on a table"
+                },
+                {
+                  "dia_id": "D9:15",
+                  "speaker": "乔安娜",
+                  "text": "听说过那套系列！它在我的书单上已经很久了。谢谢你的推荐，内特。我一定要去读读看！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "《指环王》(The Lord of the Rings) 三部曲",
+          "context": [
+            {
+              "rank": 1,
+              "id": "ca638e19-3640-4f6e-8059-d96a0f36b5b4",
+              "content": "内特 (Nate) 的最爱之一是《指环王》(Lord of the Rings) 三部曲，他称赞其世界观构建、战斗和叙事令人叹为观止",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "daf0f259-61f7-49d8-8d6d-e833390f147c",
+              "content": "乔安娜于2022年5月1日晚看了内特推荐的《指环王》三部曲，觉得非常棒",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "b9464336-c7df-4227-9c4e-eab329c03194",
+              "content": "内特 (Nate) 表示他可能会去看乔安娜推荐的《美丽心灵的永恒阳光》",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "eb4eda0b-be7f-4707-b8ed-353bf850b830",
+              "content": "内特 (Nate) 喜欢奇幻和科幻电影，认为它们是很好的escape、能激发想象力，他还喜欢玩电子游戏作为表达创造力和热情的方式",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "0a72d8a7-dcb3-4c86-9b14-4ea2733266a4",
+              "content": "内特 (Nate) 的主要爱好是玩电子游戏和看电影，他喜欢动作片和科幻片，因为喜欢酷炫的特效，也喜欢看经典电影",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "1bc4d60b-c739-4d9e-863e-b745a93b92f7",
+              "content": "内特 (Nate) 最近看了《盗梦空间》，觉得其中的反转和梦境情节让他大开眼界；他还在一直玩《Cyberpunk 2077》，很喜欢它的未来主义背景和玩法",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "196287c7-7a3c-4989-9b2b-2c7642b8abf6",
+              "content": "内特 (Nate) 最喜欢的超级英雄是钢铁侠，喜欢他的科技感和讽刺的幽默，他房间里摆着钢铁侠手办作为提醒自己继续为目标努力的物品",
+              "route": "vector",
+              "session_date": "2:12 pm on 5 June, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "3953c07b-e304-4ab1-8765-757b4e9c5f6a",
+              "content": "内特 (Nate) 真诚地向乔安娜推荐了一套太空歌剧 (space opera) 书系列，称赞其中有精彩的战斗场面、有趣的角色和很棒的情节，是他最喜欢的书之一；乔安娜打算把这套书加到自己的书单里",
+              "route": "vector",
+              "session_date": "10:57 am on 22 August, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+              "content": "内特 (Nate) 最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他玩这款游戏是因为朋友们推荐，且他是任天堂游戏的忠实粉丝（2022年11月上旬）",
+              "route": "vector",
+              "session_date": "8:10 pm on 7 November, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "70910177-19ce-4d8b-ae41-36c832177166",
+              "content": "内特 (Nate) 向乔安娜推荐了一套奇幻小说系列（冒险、魔法和出色的角色），称其为必读之作；乔安娜表示这套书已在她的书单上很久了，打算去读并之后告诉内特感想",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "d25cdce4-74e3-49c0-a2cf-0ba27e51313d",
+              "content": "内特 (Nate) 的两只乌龟吃蔬菜、水果和昆虫的混合食物，饮食多样化；他最喜欢看它们吃水果，因为它们会特别兴奋，他还喜欢抱着它们",
+              "route": "vector",
+              "session_date": "8:16 pm on 25 October, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "02b59c74-f38c-4a33-aad7-3ab6169d326f",
+              "content": "内特 (Nate) 很喜欢养宠物乌龟：它们很酷、让他感到平静、不需要太多照料，他喜欢看它们晒太阳，觉得乌龟像禅宗大师，提醒他放慢脚步欣赏生活中的小事",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "3c80ae50-c625-474c-931f-d487f3c13ebc",
+              "content": "内特 (Nate) 的两只乌龟性格不同：一只更爱冒险，另一只更内敛；他觉得它们是很棒的伙伴，让他很开心，并从小时候起就喜欢乌龟、对它们了如指掌",
+              "route": "vector",
+              "session_date": "8:16 pm on 25 October, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "a57f25ac-d462-4fe0-b426-7e962d8c24fa",
+              "content": "内特 (Nate) 养了两只宠物乌龟，名字叫Mario和Luigi；他和乌龟待在一起帮他保持平静，尤其是在锦标赛失利等艰难时期",
+              "route": "vector",
+              "session_date": "6:03 pm on 5 September, 2022"
+            }
+          ],
+          "grade": "exact"
+        },
+        "graph": {
+          "answer": "《指环王》(Lord of the Rings) 三部曲",
+          "context": [
+            {
+              "rank": 1,
+              "id": "ca638e19-3640-4f6e-8059-d96a0f36b5b4",
+              "content": "内特 (Nate) 的最爱之一是《指环王》(Lord of the Rings) 三部曲，他称赞其世界观构建、战斗和叙事令人叹为观止",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "daf0f259-61f7-49d8-8d6d-e833390f147c",
+              "content": "乔安娜于2022年5月1日晚看了内特推荐的《指环王》三部曲，觉得非常棒",
+              "route": "vector",
+              "session_date": "11:54 am on 2 May, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "b9464336-c7df-4227-9c4e-eab329c03194",
+              "content": "内特 (Nate) 表示他可能会去看乔安娜推荐的《美丽心灵的永恒阳光》",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "dd35ed5f-e76e-4b55-8018-2e0705aea57e",
+              "content": "乔安娜 (Joanna) 向内特推荐了《美丽心灵的永恒阳光》(Eternal Sunshine of the Spotless Mind)，一部关于记忆和感情关系的爱情剧情片",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 5,
+              "id": "eb4eda0b-be7f-4707-b8ed-353bf850b830",
+              "content": "内特 (Nate) 喜欢奇幻和科幻电影，认为它们是很好的escape、能激发想象力，他还喜欢玩电子游戏作为表达创造力和热情的方式",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "0a72d8a7-dcb3-4c86-9b14-4ea2733266a4",
+              "content": "内特 (Nate) 的主要爱好是玩电子游戏和看电影，他喜欢动作片和科幻片，因为喜欢酷炫的特效，也喜欢看经典电影",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "e7fa6398-5062-4b18-b7e2-f3f386ac64ac",
+              "content": "乔安娜 (Joanna) 在2022年2月初看了电影《小妇人》(Little Women)，认为它太棒了，是关于姐妹情、爱和追逐梦想的精彩故事，并强烈推荐给内特",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 8,
+              "id": "1bc4d60b-c739-4d9e-863e-b745a93b92f7",
+              "content": "内特 (Nate) 最近看了《盗梦空间》，觉得其中的反转和梦境情节让他大开眼界；他还在一直玩《Cyberpunk 2077》，很喜欢它的未来主义背景和玩法",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "196287c7-7a3c-4989-9b2b-2c7642b8abf6",
+              "content": "内特 (Nate) 最喜欢的超级英雄是钢铁侠，喜欢他的科技感和讽刺的幽默，他房间里摆着钢铁侠手办作为提醒自己继续为目标努力的物品",
+              "route": "vector",
+              "session_date": "2:12 pm on 5 June, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "3953c07b-e304-4ab1-8765-757b4e9c5f6a",
+              "content": "内特 (Nate) 真诚地向乔安娜推荐了一套太空歌剧 (space opera) 书系列，称赞其中有精彩的战斗场面、有趣的角色和很棒的情节，是他最喜欢的书之一；乔安娜打算把这套书加到自己的书单里",
+              "route": "vector",
+              "session_date": "10:57 am on 22 August, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+              "content": "内特 (Nate) 最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他玩这款游戏是因为朋友们推荐，且他是任天堂游戏的忠实粉丝（2022年11月上旬）",
+              "route": "vector",
+              "session_date": "8:10 pm on 7 November, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "70910177-19ce-4d8b-ae41-36c832177166",
+              "content": "内特 (Nate) 向乔安娜推荐了一套奇幻小说系列（冒险、魔法和出色的角色），称其为必读之作；乔安娜表示这套书已在她的书单上很久了，打算去读并之后告诉内特感想",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "d25cdce4-74e3-49c0-a2cf-0ba27e51313d",
+              "content": "内特 (Nate) 的两只乌龟吃蔬菜、水果和昆虫的混合食物，饮食多样化；他最喜欢看它们吃水果，因为它们会特别兴奋，他还喜欢抱着它们",
+              "route": "vector",
+              "session_date": "8:16 pm on 25 October, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "02b59c74-f38c-4a33-aad7-3ab6169d326f",
+              "content": "内特 (Nate) 很喜欢养宠物乌龟：它们很酷、让他感到平静、不需要太多照料，他喜欢看它们晒太阳，觉得乌龟像禅宗大师，提醒他放慢脚步欣赏生活中的小事",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "a4a56535-ae31-4767-a756-2672d9039145",
+              "content": "内特 (Nate) 的无乳制品甜点最爱是椰奶冰淇淋和无乳制品巧克力慕斯，形容慕斯超级绵密、味道和真的一样",
+              "route": "vector",
+              "session_date": "1:43 pm on 14 September, 2022"
+            }
+          ],
+          "grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-47_qa86",
+      "source": {
+        "english": {
+          "question": "What type of pizza is James' favorite?",
+          "answer": "Pepperoni",
+          "evidence": [
+            {
+              "dia_id": "D9:18",
+              "session": "session_9",
+              "session_date": "7:01 pm on 4 May, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:15",
+                  "speaker": "John",
+                  "text": "Wow, James! Love hearing about the joy that furry friends bring into your life. What else brings you happiness?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:16",
+                  "speaker": "James",
+                  "text": "My pets, computer games, travel and pizza are all that bring me happiness in life.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:17",
+                  "speaker": "John",
+                  "text": "Pizza? Cool, I love pizza too! Which one do you love the most?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:18",
+                  "speaker": "James",
+                  "text": "Pepperoni of course! An amazing combination of spicy salami and cheese.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:19",
+                  "speaker": "John",
+                  "text": "Cool, but my favorite thing is Hawaiian pizza. This combination of sweet and salty delights me! What other pizza do you like?",
+                  "query": "the witcher 3 game case",
+                  "blip_caption": "a photography of a pizza with pineapples and ham on a wooden board"
+                },
+                {
+                  "dia_id": "D9:20",
+                  "speaker": "James",
+                  "text": "I like also cheese pizza and prosciutto.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:21",
+                  "speaker": "John",
+                  "text": "Haven't tried prosciutto yet, but I've heard it`s great!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "詹姆斯最喜欢的披萨是哪种？",
+          "answer": "意式辣香肠披萨",
+          "evidence": [
+            {
+              "dia_id": "D9:18",
+              "session": "session_9",
+              "session_date": "7:01 pm on 4 May, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:15",
+                  "speaker": "约翰",
+                  "text": "哇，詹姆斯！真喜欢听你说这些毛茸茸的朋友给你生活带来的快乐。还有什么能给你带来幸福？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:16",
+                  "speaker": "詹姆斯",
+                  "text": "我的宠物、电脑游戏、旅行和披萨，就是我生活中所有能给我带来幸福的东西。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:17",
+                  "speaker": "约翰",
+                  "text": "披萨？酷，我也爱披萨！你最喜欢哪种？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:18",
+                  "speaker": "詹姆斯",
+                  "text": "当然是意式辣香肠披萨！辣香肠和奶酪的绝妙组合。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:19",
+                  "speaker": "约翰",
+                  "text": "不错，但我最爱的是夏威夷披萨。这种甜咸结合让我着迷！你还喜欢别的什么披萨？",
+                  "query": "the witcher 3 game case",
+                  "blip_caption": "a photography of a pizza with pineapples and ham on a wooden board"
+                },
+                {
+                  "dia_id": "D9:20",
+                  "speaker": "詹姆斯",
+                  "text": "我还喜欢芝士披萨和火腿披萨。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:21",
+                  "speaker": "约翰",
+                  "text": "帕尔玛火腿我还没试过，但听说很棒！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "意式辣香肠（pepperoni）披萨",
+          "context": [
+            {
+              "rank": 1,
+              "id": "455deff6-b9f4-46c2-9aa4-ffd7cec1e993",
+              "content": "James's favorite pizza is pepperoni (意式辣香肠) pizza for the combination of pepperoni and cheese; he also likes cheese pizza and ham pizza",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "cad53005-80cf-4c67-816c-60e2a3c46310",
+              "content": "John's favorite pizza is Hawaiian pizza — he loves the sweet and savory combination of pineapple and ham",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "9d167811-1f8f-4300-ac6c-8f0e10273adc",
+              "content": "John said he would try parma ham pizza after James recommended it and assured him he wouldn't regret it (early May 2022)",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "24f39806-a4fb-47d9-9b03-37af385bfc60",
+              "content": "James's sources of happiness are his pets, computer games, traveling, and pizza",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "a66f1d5e-a1f6-4d27-b38c-577d316bd665",
+              "content": "James loves traveling; he went to Italy in 2021 and found it beautiful with great food, and has also visited Turkey and Mexico — Italy, Turkey, and Mexico are the only countries he has been to",
+              "route": "vector",
+              "session_date": "9:32 pm on 20 April, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "2bef1c5f-d808-43c5-840b-d169618c0f57",
+              "content": "James is a die-hard Liverpool fan — he says there's no better sport than football and no better club than Liverpool, never misses their matches, and hopes they win the league next season",
+              "route": "vector",
+              "session_date": "4:30 pm on 13 June, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "6913e449-91e6-4922-8c84-570b2d64b0e8",
+              "content": "As of April 2022, James regularly plays Apex Legends with his team; it is his favorite game, with great graphics and a super-fast pace that makes it stand out among games",
+              "route": "vector",
+              "session_date": "2:13 pm on 4 April, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "74a0968b-f6ec-4a99-91ad-e3d489e28c40",
+              "content": "James's reminiscent of campfire camping trips with friends when seeing John's portable smoker",
+              "route": "vector",
+              "session_date": "8:56 pm on 20 September, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "66485a2a-04ac-4daa-a250-81f1c52570ed",
+              "content": "James's dog Daisy is a Labrador who loves playing with toys but loves eating the most; she is extremely loyal",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "f22db71c-3886-414e-b949-99d8fc236bde",
+              "content": "James enjoys reading, especially wrapped in a blanket on cold winter days, though in summer he prefers more thrilling activities",
+              "route": "vector",
+              "session_date": "5:13 pm on 9 July, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "544789a0-3b46-4d6f-8a14-44c6217989c9",
+              "content": "James is currently addicted to playing 'The Witcher 3' as of March 2022, loving its story and atmosphere",
+              "route": "vector",
+              "session_date": "3:47 pm on 17 March, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "baf70447-cf9f-4a06-9915-8ec5d1c395fa",
+              "content": "As a child, James played Nintendo's Super Mario and The Legend of Zelda for hours on his first game console, which ignited his lifelong passion for gaming",
+              "route": "vector",
+              "session_date": "7:36 pm on 21 October, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "4b3de218-4ec2-4128-a3c0-ddf43dea9194",
+              "content": "James still occasionally skateboards and even taught his dog to balance on a skateboard; the dog loves it, chases and runs alongside the board, and it serves as good exercise",
+              "route": "vector",
+              "session_date": "9:49 am on 22 July, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "c7189fa7-1dcd-4ef1-b282-e229fe66bbb3",
+              "content": "As of July 2022, James has developed an interest in extreme sports as a way to step away from his hobbies and find balance",
+              "route": "vector",
+              "session_date": "5:13 pm on 9 July, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "e41c7995-1f4e-4878-8462-6e68a2f90cbd",
+              "content": "James went bowling on March 16, 2022 and bowled two strikes; he loves bowling",
+              "route": "vector",
+              "session_date": "3:47 pm on 17 March, 2022"
+            }
+          ],
+          "grade": "exact"
+        },
+        "graph": {
+          "answer": "意式辣香肠（pepperoni）披萨——他喜欢辣香肠与奶酪的组合；他也喜欢奶酪披萨和火腿披萨。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "455deff6-b9f4-46c2-9aa4-ffd7cec1e993",
+              "content": "James's favorite pizza is pepperoni (意式辣香肠) pizza for the combination of pepperoni and cheese; he also likes cheese pizza and ham pizza",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "cad53005-80cf-4c67-816c-60e2a3c46310",
+              "content": "John's favorite pizza is Hawaiian pizza — he loves the sweet and savory combination of pineapple and ham",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "9d167811-1f8f-4300-ac6c-8f0e10273adc",
+              "content": "John said he would try parma ham pizza after James recommended it and assured him he wouldn't regret it (early May 2022)",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "24f39806-a4fb-47d9-9b03-37af385bfc60",
+              "content": "James's sources of happiness are his pets, computer games, traveling, and pizza",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "a66f1d5e-a1f6-4d27-b38c-577d316bd665",
+              "content": "James loves traveling; he went to Italy in 2021 and found it beautiful with great food, and has also visited Turkey and Mexico — Italy, Turkey, and Mexico are the only countries he has been to",
+              "route": "vector",
+              "session_date": "9:32 pm on 20 April, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "2bef1c5f-d808-43c5-840b-d169618c0f57",
+              "content": "James is a die-hard Liverpool fan — he says there's no better sport than football and no better club than Liverpool, never misses their matches, and hopes they win the league next season",
+              "route": "vector",
+              "session_date": "4:30 pm on 13 June, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "6913e449-91e6-4922-8c84-570b2d64b0e8",
+              "content": "As of April 2022, James regularly plays Apex Legends with his team; it is his favorite game, with great graphics and a super-fast pace that makes it stand out among games",
+              "route": "vector",
+              "session_date": "2:13 pm on 4 April, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "74a0968b-f6ec-4a99-91ad-e3d489e28c40",
+              "content": "James's reminiscent of campfire camping trips with friends when seeing John's portable smoker",
+              "route": "vector",
+              "session_date": "8:56 pm on 20 September, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "131ba502-d160-47e8-93ca-61a6005bfbd7",
+              "content": "As of April 2022, James is eager to try new game genres, particularly RPGs and MOBAs like Skyrim and League of Legends, and agreed to report back to John after trying them",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 10,
+              "id": "66485a2a-04ac-4daa-a250-81f1c52570ed",
+              "content": "James's dog Daisy is a Labrador who loves playing with toys but loves eating the most; she is extremely loyal",
+              "route": "vector",
+              "session_date": "7:01 pm on 4 May, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "f22db71c-3886-414e-b949-99d8fc236bde",
+              "content": "James enjoys reading, especially wrapped in a blanket on cold winter days, though in summer he prefers more thrilling activities",
+              "route": "vector",
+              "session_date": "5:13 pm on 9 July, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "544789a0-3b46-4d6f-8a14-44c6217989c9",
+              "content": "James is currently addicted to playing 'The Witcher 3' as of March 2022, loving its story and atmosphere",
+              "route": "vector",
+              "session_date": "3:47 pm on 17 March, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "baf70447-cf9f-4a06-9915-8ec5d1c395fa",
+              "content": "As a child, James played Nintendo's Super Mario and The Legend of Zelda for hours on his first game console, which ignited his lifelong passion for gaming",
+              "route": "vector",
+              "session_date": "7:36 pm on 21 October, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "4b3de218-4ec2-4128-a3c0-ddf43dea9194",
+              "content": "James still occasionally skateboards and even taught his dog to balance on a skateboard; the dog loves it, chases and runs alongside the board, and it serves as good exercise",
+              "route": "vector",
+              "session_date": "9:49 am on 22 July, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "c7189fa7-1dcd-4ef1-b282-e229fe66bbb3",
+              "content": "As of July 2022, James has developed an interest in extreme sports as a way to step away from his hobbies and find balance",
+              "route": "vector",
+              "session_date": "5:13 pm on 9 July, 2022"
+            }
+          ],
+          "grade": "exact"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa91",
+      "source": {
+        "english": {
+          "question": "What is Nate's favorite book series about?",
+          "answer": "dragons",
+          "evidence": [
+            {
+              "dia_id": "D9:14",
+              "session": "session_9",
+              "session_date": "7:44 pm on 21 April, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:11",
+                  "speaker": "Joanna",
+                  "text": "That's awesome! I love how video games can really spark your imagination. Do you have a favorite fantasy or sci-fi movie?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:12",
+                  "speaker": "Nate",
+                  "text": "Yeah, for sure! This trilogy is one of my faves. The world building, battles, and storytelling always blow me away!",
+                  "query": "lord of the rings trilogy dvd boxset",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D9:13",
+                  "speaker": "Joanna",
+                  "text": "Wow, that's great to hear! What books do you enjoy? I'm always up for some new book recommendations.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:14",
+                  "speaker": "Nate",
+                  "text": "I love this series. It has adventures, magic, and great characters - it's a must-read!",
+                  "query": "fantasy novels dragon cover series",
+                  "blip_caption": "a photo of a bunch of books on a table"
+                },
+                {
+                  "dia_id": "D9:15",
+                  "speaker": "Joanna",
+                  "text": "Heard of that series! It's been on my list forever. Thanks for the recommendation, Nate. I'm definitely going to check it out!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:16",
+                  "speaker": "Nate",
+                  "text": "No problem, glad to see an interest. Let me know what you think when you check it out.",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:17",
+                  "speaker": "Joanna",
+                  "text": "Thanks Nate! I'll definitely let you know my thoughts. Take care and have a great day!",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "内特最喜欢的书系列是关于什么的？",
+          "answer": "龙",
+          "evidence": [
+            {
+              "dia_id": "D9:14",
+              "session": "session_9",
+              "session_date": "7:44 pm on 21 April, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:11",
+                  "speaker": "乔安娜",
+                  "text": "太棒了！我喜欢电子游戏能真正点燃想象力的那种感觉。你有最喜欢的奇幻或科幻电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:12",
+                  "speaker": "内特",
+                  "text": "有，当然有！那部三部曲是我的最爱之一。它的世界观构建、战斗和叙事总是让我叹为观止！",
+                  "query": "lord of the rings trilogy dvd boxset",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                },
+                {
+                  "dia_id": "D9:13",
+                  "speaker": "乔安娜",
+                  "text": "哇，很高兴听到这些！你喜欢什么书？我随时欢迎新的书籍推荐。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:14",
+                  "speaker": "内特",
+                  "text": "我喜欢这套系列。它有冒险、魔法和出色的角色——必读之作！",
+                  "query": "fantasy novels dragon cover series",
+                  "blip_caption": "a photo of a bunch of books on a table"
+                },
+                {
+                  "dia_id": "D9:15",
+                  "speaker": "乔安娜",
+                  "text": "听说过那套系列！它在我的书单上已经很久了。谢谢你的推荐，内特。我一定要去读读看！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:16",
+                  "speaker": "内特",
+                  "text": "不客气，很高兴你有兴趣。你读完之后告诉我你的想法。",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:17",
+                  "speaker": "乔安娜",
+                  "text": "谢谢你，内特！我一定会告诉你我的感想。保重，祝你度过美好的一天！",
+                  "query": null,
+                  "blip_caption": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "内特最喜欢的书系列是一套太空歌剧（space opera），他以精彩的战斗场面、有趣的角色和很棒的情节称赞它，是他最喜欢的书之一。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "3953c07b-e304-4ab1-8765-757b4e9c5f6a",
+              "content": "内特 (Nate) 真诚地向乔安娜推荐了一套太空歌剧 (space opera) 书系列，称赞其中有精彩的战斗场面、有趣的角色和很棒的情节，是他最喜欢的书之一；乔安娜打算把这套书加到自己的书单里",
+              "route": "vector",
+              "session_date": "10:57 am on 22 August, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "ca638e19-3640-4f6e-8059-d96a0f36b5b4",
+              "content": "内特 (Nate) 的最爱之一是《指环王》(Lord of the Rings) 三部曲，他称赞其世界观构建、战斗和叙事令人叹为观止",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "d05b2a80-6678-43f2-894a-d5bc67cf61be",
+              "content": "乔安娜 (Joanna) 推荐内特读一套奇幻系列小说来放松；内特选择了萨拉·J·马斯 (Sarah J. Maas) 的《荆棘与玫瑰之庭》(A Court of Thorns and Roses)，乔安娜表示这套很棒并期待他读完后的感想",
+              "route": "vector",
+              "session_date": "10:57 am on 22 August, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "70910177-19ce-4d8b-ae41-36c832177166",
+              "content": "内特 (Nate) 向乔安娜推荐了一套奇幻小说系列（冒险、魔法和出色的角色），称其为必读之作；乔安娜表示这套书已在她的书单上很久了，打算去读并之后告诉内特感想",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "eb4eda0b-be7f-4707-b8ed-353bf850b830",
+              "content": "内特 (Nate) 喜欢奇幻和科幻电影，认为它们是很好的escape、能激发想象力，他还喜欢玩电子游戏作为表达创造力和热情的方式",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "02b59c74-f38c-4a33-aad7-3ab6169d326f",
+              "content": "内特 (Nate) 很喜欢养宠物乌龟：它们很酷、让他感到平静、不需要太多照料，他喜欢看它们晒太阳，觉得乌龟像禅宗大师，提醒他放慢脚步欣赏生活中的小事",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "3c80ae50-c625-474c-931f-d487f3c13ebc",
+              "content": "内特 (Nate) 的两只乌龟性格不同：一只更爱冒险，另一只更内敛；他觉得它们是很棒的伙伴，让他很开心，并从小时候起就喜欢乌龟、对它们了如指掌",
+              "route": "vector",
+              "session_date": "8:16 pm on 25 October, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "1bc4d60b-c739-4d9e-863e-b745a93b92f7",
+              "content": "内特 (Nate) 最近看了《盗梦空间》，觉得其中的反转和梦境情节让他大开眼界；他还在一直玩《Cyberpunk 2077》，很喜欢它的未来主义背景和玩法",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "b9464336-c7df-4227-9c4e-eab329c03194",
+              "content": "内特 (Nate) 表示他可能会去看乔安娜推荐的《美丽心灵的永恒阳光》",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "0a72d8a7-dcb3-4c86-9b14-4ea2733266a4",
+              "content": "内特 (Nate) 的主要爱好是玩电子游戏和看电影，他喜欢动作片和科幻片，因为喜欢酷炫的特效，也喜欢看经典电影",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "196287c7-7a3c-4989-9b2b-2c7642b8abf6",
+              "content": "内特 (Nate) 最喜欢的超级英雄是钢铁侠，喜欢他的科技感和讽刺的幽默，他房间里摆着钢铁侠手办作为提醒自己继续为目标努力的物品",
+              "route": "vector",
+              "session_date": "2:12 pm on 5 June, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "d25cdce4-74e3-49c0-a2cf-0ba27e51313d",
+              "content": "内特 (Nate) 的两只乌龟吃蔬菜、水果和昆虫的混合食物，饮食多样化；他最喜欢看它们吃水果，因为它们会特别兴奋，他还喜欢抱着它们",
+              "route": "vector",
+              "session_date": "8:16 pm on 25 October, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+              "content": "内特 (Nate) 最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他玩这款游戏是因为朋友们推荐，且他是任天堂游戏的忠实粉丝（2022年11月上旬）",
+              "route": "vector",
+              "session_date": "8:10 pm on 7 November, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "a57f25ac-d462-4fe0-b426-7e962d8c24fa",
+              "content": "内特 (Nate) 养了两只宠物乌龟，名字叫Mario和Luigi；他和乌龟待在一起帮他保持平静，尤其是在锦标赛失利等艰难时期",
+              "route": "vector",
+              "session_date": "6:03 pm on 5 September, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "ad18f54d-5035-4515-919d-d471c5a2f6e4",
+              "content": "内特 (Nate) 表示养乌龟并不麻烦，只需保持生活区域干净、按时喂食并确保足够光照即可，他认为乌龟慢悠悠的节奏与匆忙的生活形成很好的反差，好养又让人心静",
+              "route": "vector",
+              "session_date": "6:59 pm on 18 March, 2022"
+            }
+          ],
+          "grade": "wrong"
+        },
+        "graph": {
+          "answer": "内特最喜欢的书系列是一套太空歌剧 (space opera) 系列，其中有精彩的战斗场面、有趣的角色和很棒的情节（2022年8月22日他向乔安娜推荐的）。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "3953c07b-e304-4ab1-8765-757b4e9c5f6a",
+              "content": "内特 (Nate) 真诚地向乔安娜推荐了一套太空歌剧 (space opera) 书系列，称赞其中有精彩的战斗场面、有趣的角色和很棒的情节，是他最喜欢的书之一；乔安娜打算把这套书加到自己的书单里",
+              "route": "vector",
+              "session_date": "10:57 am on 22 August, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "ca638e19-3640-4f6e-8059-d96a0f36b5b4",
+              "content": "内特 (Nate) 的最爱之一是《指环王》(Lord of the Rings) 三部曲，他称赞其世界观构建、战斗和叙事令人叹为观止",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "d05b2a80-6678-43f2-894a-d5bc67cf61be",
+              "content": "乔安娜 (Joanna) 推荐内特读一套奇幻系列小说来放松；内特选择了萨拉·J·马斯 (Sarah J. Maas) 的《荆棘与玫瑰之庭》(A Court of Thorns and Roses)，乔安娜表示这套很棒并期待他读完后的感想",
+              "route": "vector",
+              "session_date": "10:57 am on 22 August, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "70910177-19ce-4d8b-ae41-36c832177166",
+              "content": "内特 (Nate) 向乔安娜推荐了一套奇幻小说系列（冒险、魔法和出色的角色），称其为必读之作；乔安娜表示这套书已在她的书单上很久了，打算去读并之后告诉内特感想",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "eb4eda0b-be7f-4707-b8ed-353bf850b830",
+              "content": "内特 (Nate) 喜欢奇幻和科幻电影，认为它们是很好的escape、能激发想象力，他还喜欢玩电子游戏作为表达创造力和热情的方式",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "e7fa6398-5062-4b18-b7e2-f3f386ac64ac",
+              "content": "乔安娜 (Joanna) 在2022年2月初看了电影《小妇人》(Little Women)，认为它太棒了，是关于姐妹情、爱和追逐梦想的精彩故事，并强烈推荐给内特",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 7,
+              "id": "02b59c74-f38c-4a33-aad7-3ab6169d326f",
+              "content": "内特 (Nate) 很喜欢养宠物乌龟：它们很酷、让他感到平静、不需要太多照料，他喜欢看它们晒太阳，觉得乌龟像禅宗大师，提醒他放慢脚步欣赏生活中的小事",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "3c80ae50-c625-474c-931f-d487f3c13ebc",
+              "content": "内特 (Nate) 的两只乌龟性格不同：一只更爱冒险，另一只更内敛；他觉得它们是很棒的伙伴，让他很开心，并从小时候起就喜欢乌龟、对它们了如指掌",
+              "route": "vector",
+              "session_date": "8:16 pm on 25 October, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "dd35ed5f-e76e-4b55-8018-2e0705aea57e",
+              "content": "乔安娜 (Joanna) 向内特推荐了《美丽心灵的永恒阳光》(Eternal Sunshine of the Spotless Mind)，一部关于记忆和感情关系的爱情剧情片",
+              "route": "graph",
+              "session_date": null
+            },
+            {
+              "rank": 10,
+              "id": "1bc4d60b-c739-4d9e-863e-b745a93b92f7",
+              "content": "内特 (Nate) 最近看了《盗梦空间》，觉得其中的反转和梦境情节让他大开眼界；他还在一直玩《Cyberpunk 2077》，很喜欢它的未来主义背景和玩法",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "b9464336-c7df-4227-9c4e-eab329c03194",
+              "content": "内特 (Nate) 表示他可能会去看乔安娜推荐的《美丽心灵的永恒阳光》",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "0a72d8a7-dcb3-4c86-9b14-4ea2733266a4",
+              "content": "内特 (Nate) 的主要爱好是玩电子游戏和看电影，他喜欢动作片和科幻片，因为喜欢酷炫的特效，也喜欢看经典电影",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "196287c7-7a3c-4989-9b2b-2c7642b8abf6",
+              "content": "内特 (Nate) 最喜欢的超级英雄是钢铁侠，喜欢他的科技感和讽刺的幽默，他房间里摆着钢铁侠手办作为提醒自己继续为目标努力的物品",
+              "route": "vector",
+              "session_date": "2:12 pm on 5 June, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "d25cdce4-74e3-49c0-a2cf-0ba27e51313d",
+              "content": "内特 (Nate) 的两只乌龟吃蔬菜、水果和昆虫的混合食物，饮食多样化；他最喜欢看它们吃水果，因为它们会特别兴奋，他还喜欢抱着它们",
+              "route": "vector",
+              "session_date": "8:16 pm on 25 October, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "0877eae7-ffe9-44cf-b7ac-97a7384e84a0",
+              "content": "内特 (Nate) 最近在玩奇幻角色扮演游戏《Xenoblade Chronicles》（异度神剑），觉得特别好玩并强烈推荐；他玩这款游戏是因为朋友们推荐，且他是任天堂游戏的忠实粉丝（2022年11月上旬）",
+              "route": "vector",
+              "session_date": "8:10 pm on 7 November, 2022"
+            }
+          ],
+          "grade": "wrong"
+        }
+      }
+    },
+    {
+      "case_id": "locomo_conv-42_qa115",
+      "source": {
+        "english": {
+          "question": "What kind of films does Joanna enjoy?",
+          "answer": "Dramas and emotionally-driven films",
+          "evidence": [
+            {
+              "dia_id": "D9:9",
+              "session": "session_9",
+              "session_date": "7:44 pm on 21 April, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:6",
+                  "speaker": "Nate",
+                  "text": "Sounds like you had an interesting time on stage! It's always a learning experience. Have you ever considered going back to acting? Is that you in the photo?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:7",
+                  "speaker": "Joanna",
+                  "text": "Yeah, that's me in that photo! Acting was my first passion, but now I really shine in writing. It helps me express myself in a new way, but who knows, maybe I'll go back to acting someday. Never say never!",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:8",
+                  "speaker": "Nate",
+                  "text": "Go for it! Follow your passion for writing, but if acting really makes you happy, give it a shot as well. Who knows what'll happen! Any particular movies that spark your writing?",
+                  "query": null,
+                  "blip_caption": "a photo of a turtle laying on a bed of rocks and gravel"
+                },
+                {
+                  "dia_id": "D9:9",
+                  "speaker": "Joanna",
+                  "text": "Thanks Nate! I'm gonna keep writing, but if acting calls out I might give it a try. I really enjoy dramas and emotionally-driven films. What about you? What inspires your passion?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:10",
+                  "speaker": "Nate",
+                  "text": "I love fantasy and sci-fi movies, they're a great escape and get my imagination going. Playing video games is a great way to express my creativity and passion.",
+                  "query": "video game controller",
+                  "blip_caption": "a photography of a black xbox controller sitting on top of a wooden table"
+                },
+                {
+                  "dia_id": "D9:11",
+                  "speaker": "Joanna",
+                  "text": "That's awesome! I love how video games can really spark your imagination. Do you have a favorite fantasy or sci-fi movie?",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:12",
+                  "speaker": "Nate",
+                  "text": "Yeah, for sure! This trilogy is one of my faves. The world building, battles, and storytelling always blow me away!",
+                  "query": "lord of the rings trilogy dvd boxset",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                }
+              ]
+            }
+          ]
+        },
+        "chinese": {
+          "question": "乔安娜喜欢什么类型的电影？",
+          "answer": "剧情片和情感驱动的电影",
+          "evidence": [
+            {
+              "dia_id": "D9:9",
+              "session": "session_9",
+              "session_date": "7:44 pm on 21 April, 2022",
+              "window": [
+                {
+                  "dia_id": "D9:6",
+                  "speaker": "内特",
+                  "text": "听起来你在舞台上度过了一段有趣的时光！这总是一种学习的经历。你有没有考虑过重返表演？照片里那个人是你吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:7",
+                  "speaker": "乔安娜",
+                  "text": "对，那张照片里是我！表演是我的第一份热情，但现在我在写作方面真正大放异彩。它帮助我以新的方式表达自己，不过谁知道呢，也许有一天我会重回表演。永远别说永不！",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:8",
+                  "speaker": "内特",
+                  "text": "去追吧！坚持你对写作的热情，但如果表演真的让你快乐，也不妨尝试一下。谁知道会发生什么呢！有什么特别的电影能激发你的写作灵感吗？",
+                  "query": null,
+                  "blip_caption": "a photo of a turtle laying on a bed of rocks and gravel"
+                },
+                {
+                  "dia_id": "D9:9",
+                  "speaker": "乔安娜",
+                  "text": "谢谢你，内特！我会继续写作，但如果表演在召唤我，我也许会试一试。我特别喜欢剧情片和情感驱动的电影。你呢？是什么激发了你的热情？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:10",
+                  "speaker": "内特",
+                  "text": "我喜欢奇幻和科幻电影，它们是很好的 escape，能激发我的想象力。玩电子游戏是表达我的创造力和热情的好方式。",
+                  "query": "video game controller",
+                  "blip_caption": "a photography of a black xbox controller sitting on top of a wooden table"
+                },
+                {
+                  "dia_id": "D9:11",
+                  "speaker": "乔安娜",
+                  "text": "太棒了！我喜欢电子游戏能真正点燃想象力的那种感觉。你有最喜欢的奇幻或科幻电影吗？",
+                  "query": null,
+                  "blip_caption": null
+                },
+                {
+                  "dia_id": "D9:12",
+                  "speaker": "内特",
+                  "text": "有，当然有！那部三部曲是我的最爱之一。它的世界观构建、战斗和叙事总是让我叹为观止！",
+                  "query": "lord of the rings trilogy dvd boxset",
+                  "blip_caption": "a photo of a shelf with a lot of books on it"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "historical_runs": {
+        "base": {
+          "answer": "乔安娜偏爱剧情片和浪漫喜剧，尤其喜欢剧情片和情感驱动的电影（如《美丽心灵的永恒阳光》《小妇人》），这类作品能激发她的写作灵感。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "d45bfbdc-2f5d-4478-9b30-6abf946dafd7",
+              "content": "乔安娜 (Joanna) 偏爱剧情片和浪漫喜剧，喜欢沉浸在意境和情节中",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "7196c04f-8332-46fa-b29d-9b6069a6f58e",
+              "content": "乔安娜 (Joanna) 特别喜欢剧情片和情感驱动的电影，这些作品激发她的写作灵感",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "d52452e6-ba2f-4bb9-b1ab-1434337cae98",
+              "content": "乔安娜 (Joanna) 大约在2019年初次观看《美丽心灵的永恒阳光》，专门买了实体光盘，看过几遍，它是她最喜欢的电影之一，她非常喜欢它的创意和演技",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "dd35ed5f-e76e-4b55-8018-2e0705aea57e",
+              "content": "乔安娜 (Joanna) 向内特推荐了《美丽心灵的永恒阳光》(Eternal Sunshine of the Spotless Mind)，一部关于记忆和感情关系的爱情剧情片",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "e7fa6398-5062-4b18-b7e2-f3f386ac64ac",
+              "content": "乔安娜 (Joanna) 在2022年2月初看了电影《小妇人》(Little Women)，认为它太棒了，是关于姐妹情、爱和追逐梦想的精彩故事，并强烈推荐给内特",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "117dad11-9133-4e88-9e18-63f6c87dab09",
+              "content": "乔安娜 (Joanna) 正在开发一个新项目：一部以中西部小镇为背景的悬疑惊悚片剧本，她视之为很好的创意出口",
+              "route": "vector",
+              "session_date": "5:54 pm on 9 November, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "0042b4d6-65d3-4c71-8ec7-6c3d6b15dcbe",
+              "content": "乔安娜 (Joanna) 最喜欢的超级英雄是蜘蛛侠，她喜欢彼得·帕克在当英雄和做普通人之间的挣扎，不过她对任何超级英雄都没有抵抗力，觉得每个英雄都有自己超酷的故事和超能力",
+              "route": "vector",
+              "session_date": "2:12 pm on 5 June, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "61ac94c4-28b8-4241-8580-6cf118012cca",
+              "content": "乔安娜 (Joanna) 表示自己喜欢写悲伤和失去的主题，虽然需要展现脆弱、深入挖掘这些主题很可怕，但她发现忠于自己时写得最好，认为有意义的故事源于个人经历和感受",
+              "route": "vector",
+              "session_date": "7:49 pm on 20 May, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "1e95916e-a8af-4840-9050-8fb695c22db1",
+              "content": "乔安娜 (Joanna) 的爱好包括写作、阅读、看电影和探索大自然；她不怎么玩电子游戏",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "1dd4f69f-33d8-4267-bbee-2bc3e172bfdf",
+              "content": "乔安娜 (Joanna) 前几天（约2022年10月初）看了一部经典电影，觉得故事扣人心弦、演员出色，会打9分或10分（满分10分）",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "b2f77505-14cf-4713-b9c9-25d9ae60e2d9",
+              "content": "乔安娜 (Joanna) 于2022年1月中旬完成了她的第一个完整电影剧本，并于1月21日（周五）打印出来，剧本融合了剧情和爱情元素，她感到如释重负、兴奋又有些焦虑",
+              "route": "vector",
+              "session_date": "2:01 pm on 23 January, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "01e9e195-ae06-4280-a29f-fbf7c2a1de41",
+              "content": "乔安娜 (Joanna) 正在写另一部电影剧本，是一个充满波折的爱情故事，灵感来自她做的一个梦，她希望能把它搬上大银幕（2022年11月上旬）",
+              "route": "vector",
+              "session_date": "8:10 pm on 7 November, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "f78be491-f8fd-4dd0-983c-3a3c2ae549ff",
+              "content": "乔安娜 (Joanna) 于2022年11月10日前后开始拍摄她自己创作的公路旅行剧本的电影，称每天在片场都很棒、充满可能性，能展示自己的构想让她感到奇妙",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "e2f480f7-714d-444e-8154-481a398ffeca",
+              "content": "乔安娜 (Joanna) 有一个舒适的客厅观影布置，包括沙发、好毯子和可调暗的灯，她觉得在舒服的沙发上看电影特别安宁，并对这类提升生活品质的小物件特别上心",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "09555d87-bebc-4da7-9673-b32916106688",
+              "content": "乔安娜 (Joanna) 表示写作和和朋友玩是让她快乐的事，写作帮助她创造充满精彩人物的奇幻世界、表达情感，是她无法想象没有的热情所在",
+              "route": "vector",
+              "session_date": "2:01 pm on 23 January, 2022"
+            }
+          ],
+          "grade": "partial"
+        },
+        "graph": {
+          "answer": "乔安娜偏爱剧情片和浪漫喜剧，尤其喜欢情感驱动的剧情片（这些作品能激发她的写作灵感）。",
+          "context": [
+            {
+              "rank": 1,
+              "id": "d45bfbdc-2f5d-4478-9b30-6abf946dafd7",
+              "content": "乔安娜 (Joanna) 偏爱剧情片和浪漫喜剧，喜欢沉浸在意境和情节中",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 2,
+              "id": "7196c04f-8332-46fa-b29d-9b6069a6f58e",
+              "content": "乔安娜 (Joanna) 特别喜欢剧情片和情感驱动的电影，这些作品激发她的写作灵感",
+              "route": "vector",
+              "session_date": "7:44 pm on 21 April, 2022"
+            },
+            {
+              "rank": 3,
+              "id": "d52452e6-ba2f-4bb9-b1ab-1434337cae98",
+              "content": "乔安娜 (Joanna) 大约在2019年初次观看《美丽心灵的永恒阳光》，专门买了实体光盘，看过几遍，它是她最喜欢的电影之一，她非常喜欢它的创意和演技",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 4,
+              "id": "dd35ed5f-e76e-4b55-8018-2e0705aea57e",
+              "content": "乔安娜 (Joanna) 向内特推荐了《美丽心灵的永恒阳光》(Eternal Sunshine of the Spotless Mind)，一部关于记忆和感情关系的爱情剧情片",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 5,
+              "id": "e7fa6398-5062-4b18-b7e2-f3f386ac64ac",
+              "content": "乔安娜 (Joanna) 在2022年2月初看了电影《小妇人》(Little Women)，认为它太棒了，是关于姐妹情、爱和追逐梦想的精彩故事，并强烈推荐给内特",
+              "route": "vector",
+              "session_date": "9:27 am on 7 February, 2022"
+            },
+            {
+              "rank": 6,
+              "id": "117dad11-9133-4e88-9e18-63f6c87dab09",
+              "content": "乔安娜 (Joanna) 正在开发一个新项目：一部以中西部小镇为背景的悬疑惊悚片剧本，她视之为很好的创意出口",
+              "route": "vector",
+              "session_date": "5:54 pm on 9 November, 2022"
+            },
+            {
+              "rank": 7,
+              "id": "0042b4d6-65d3-4c71-8ec7-6c3d6b15dcbe",
+              "content": "乔安娜 (Joanna) 最喜欢的超级英雄是蜘蛛侠，她喜欢彼得·帕克在当英雄和做普通人之间的挣扎，不过她对任何超级英雄都没有抵抗力，觉得每个英雄都有自己超酷的故事和超能力",
+              "route": "vector",
+              "session_date": "2:12 pm on 5 June, 2022"
+            },
+            {
+              "rank": 8,
+              "id": "61ac94c4-28b8-4241-8580-6cf118012cca",
+              "content": "乔安娜 (Joanna) 表示自己喜欢写悲伤和失去的主题，虽然需要展现脆弱、深入挖掘这些主题很可怕，但她发现忠于自己时写得最好，认为有意义的故事源于个人经历和感受",
+              "route": "vector",
+              "session_date": "7:49 pm on 20 May, 2022"
+            },
+            {
+              "rank": 9,
+              "id": "1e95916e-a8af-4840-9050-8fb695c22db1",
+              "content": "乔安娜 (Joanna) 的爱好包括写作、阅读、看电影和探索大自然；她不怎么玩电子游戏",
+              "route": "vector",
+              "session_date": "7:31 pm on 21 January, 2022"
+            },
+            {
+              "rank": 10,
+              "id": "1dd4f69f-33d8-4267-bbee-2bc3e172bfdf",
+              "content": "乔安娜 (Joanna) 前几天（约2022年10月初）看了一部经典电影，觉得故事扣人心弦、演员出色，会打9分或10分（满分10分）",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 11,
+              "id": "b2f77505-14cf-4713-b9c9-25d9ae60e2d9",
+              "content": "乔安娜 (Joanna) 于2022年1月中旬完成了她的第一个完整电影剧本，并于1月21日（周五）打印出来，剧本融合了剧情和爱情元素，她感到如释重负、兴奋又有些焦虑",
+              "route": "vector",
+              "session_date": "2:01 pm on 23 January, 2022"
+            },
+            {
+              "rank": 12,
+              "id": "01e9e195-ae06-4280-a29f-fbf7c2a1de41",
+              "content": "乔安娜 (Joanna) 正在写另一部电影剧本，是一个充满波折的爱情故事，灵感来自她做的一个梦，她希望能把它搬上大银幕（2022年11月上旬）",
+              "route": "vector",
+              "session_date": "8:10 pm on 7 November, 2022"
+            },
+            {
+              "rank": 13,
+              "id": "f78be491-f8fd-4dd0-983c-3a3c2ae549ff",
+              "content": "乔安娜 (Joanna) 于2022年11月10日前后开始拍摄她自己创作的公路旅行剧本的电影，称每天在片场都很棒、充满可能性，能展示自己的构想让她感到奇妙",
+              "route": "vector",
+              "session_date": "12:06 am on 11 November, 2022"
+            },
+            {
+              "rank": 14,
+              "id": "e2f480f7-714d-444e-8154-481a398ffeca",
+              "content": "乔安娜 (Joanna) 有一个舒适的客厅观影布置，包括沙发、好毯子和可调暗的灯，她觉得在舒服的沙发上看电影特别安宁，并对这类提升生活品质的小物件特别上心",
+              "route": "vector",
+              "session_date": "10:58 am on 9 October, 2022"
+            },
+            {
+              "rank": 15,
+              "id": "b9464336-c7df-4227-9c4e-eab329c03194",
+              "content": "内特 (Nate) 表示他可能会去看乔安娜推荐的《美丽心灵的永恒阳光》",
+              "route": "graph",
+              "session_date": null
+            }
+          ],
+          "grade": "partial"
+        }
+      }
+    }
+  ],
+  "designated_evidence_overlap_with_previous_batch": [
+    {
+      "case_id": "locomo_conv-42_qa102",
+      "previous_case_id": "locomo_conv-42_qa75",
+      "shared_designated_evidence": [
+        "D3:10"
+      ]
+    }
+  ],
+  "limits": [
+    "Windows include three turns on either side, not full-conversation semantic audit.",
+    "Questions share source sessions and are not independent samples.",
+    "Historical runs are separate; answer differences are not isolated Graph effects.",
+    "Manual support judgments must be read separately from raw packets."
+  ]
+}
