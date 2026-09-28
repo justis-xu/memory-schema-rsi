@@ -1,0 +1,814 @@
+{
+  "scope": "two historical Chinese merge packets and one current Chinese source audit; not historical Mem0 replay",
+  "source_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "inventory_sha256": "9fc686509fec561e93114da1ed1c7e7324c747e47133044af7f6f0204f16bd23",
+  "witnesses_sha256": "f77ff9b8bb12019ddc5b280398704e8c60f9cacc4d2b53da09acc0c3b84185c6",
+  "max_calls": 6,
+  "max_tokens_per_call": 2200,
+  "temperature": 0.0,
+  "sdk_max_retries": 0,
+  "stop_on_first_failure": true,
+  "requests": [
+    {
+      "fixture_id": "tim_writing_castle",
+      "arm": "base",
+      "system": "你是中文事实核查与记忆归并器。仅输出有效 JSON。",
+      "user": "请用简体中文根据“候选记忆”和“来源对话”输出逐事实核查表，只输出有效 JSON：\n{\"facts\":[{\"case_id\":\"病例ID\",\"claim_zh\":\"单一事实\",\"support\":\"full/partial/absent\",\"source_turn_ids\":[\"D场:轮\"],\"source_session_id\":\"session_N 或 null\",\"source_speakers\":[\"说话者\"],\"covered_by_memory_ids\":[\"记忆ID\"],\"action\":\"保留/合并/撤回\"}]}\n把复合内容拆成可独立核查的最小事实；同一事实若出现在多个记忆版本，用 covered_by_memory_ids 标明。来源对话中没有证据的主张也列出并标 absent/撤回。不要用候选记忆本身充当来源。来源字段必须引用输入中的真实 turn。\n\n候选记忆：\n[{\"case_id\": \"conv-43_de89be96dda6\", \"memory_id\": \"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\", \"write_session_id\": \"session_15\", \"content\": \"蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作带给他巨大快乐\"}, {\"case_id\": \"conv-43_de89be96dda6\", \"memory_id\": \"3325426c-88b6-46e2-b7bb-d1303bce5de1\", \"write_session_id\": \"session_16\", \"content\": \"蒂姆正在写一部奇幻小说，进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作能创造一个全新的世界，带给他很多快乐\"}, {\"case_id\": \"conv-43_c95588df7268\", \"memory_id\": \"e0cdd401-d61b-4636-9640-9733e52cf2e6\", \"write_session_id\": \"session_15\", \"content\": \"蒂姆的写作灵感来自书籍、电影和现实生活经历，阅读关于英国城堡的内容给了他很多灵感，某些作者对他来说像灵感宝库\"}, {\"case_id\": \"conv-43_c95588df7268\", \"memory_id\": \"bd5e05ac-8fff-4146-9701-0796790c5f10\", \"write_session_id\": \"session_16\", \"content\": \"蒂姆的写作灵感来源包括书籍、电影和现实生活经历；阅读关于英国城堡的内容给了他很多灵感，他梦想有一天能去参观英国城堡\"}]\n来源对话：\n## session_15 日期：5:51 pm on 21 October, 2023\n[D15:1 text] 蒂姆：嘿，约翰！有段时间没和你聊了，不过想告诉你我读了一本关于英国城堡的超棒的书。太有意思了，让我大为震撼！我梦想有一天能去参观它们。\n[D15:2 text] 约翰：嘿，蒂姆！很高兴收到你的消息。了解不同的文化、观赏历史建筑让我着迷。参观城堡确实在我的愿望清单上。看看这一座，多美的景色啊！我特别期待探索世界、体验这些美丽的地方。说到这个，你的奇幻小说写得怎么样了？\n[D15:2 image_caption] a photo of a man sitting on a bench overlooking a cliff\n[D15:2 image_query] castle scotland\n[D15:3 text] 蒂姆：那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！\n[D15:4 text] 约翰：太好了！很高兴你的写作进展顺利。看到一切逐渐成形一定很令人激动。继续加油！你的故事有什么特别的灵感来源吗？\n[D15:5 text] 蒂姆：谢谢！书籍、电影和现实生活经历都能激发我的创造力。比如，阅读关于英国城堡的内容给了我很多灵感。另外，某些作者对我来说就像灵感宝库。与自己喜爱的事物产生联结，让写作更有乐趣。\n[D15:6 text] 约翰：哇！听起来是很棒的组合。有没有哪位作家的作品特别能启发你？\n[D15:7 text] 蒂姆：J.K. 罗琳是一位非常鼓舞人心的作家。她的书细节丰富、叙事极具创意，非常引人入胜。她绝对能把读者带入另一个世界，让人产生强烈的感受。我总是在为自己的写作记下她风格方面的笔记。\n[D15:7 image_caption] a photo of a book with a page in it on a table\n[D15:7 image_query] harry potter sorcerer's stone well-read copy\n[D15:8 text] 约翰：真酷！你读她的作品多久了？\n[D15:9 text] 蒂姆：我已经读她的作品很长时间了。她的故事一直陪伴着我，至今仍激励着我。她的写作有一种特别的东西，真的能打动我。\n[D15:10 text] 约翰：哇，有些作家确实对我们有这么大的影响！他们成为我们生活的一部分，影响着我们的兴趣。你有最喜欢的 J.K. 罗琳的名言吗？\n[D15:11 text] 蒂姆：有！有一句 J.K. 罗琳的话我特别喜欢：\"点亮灯光——幸福就藏在最黑暗的时刻里。\"这就是我在艰难时期保持希望的方式。\n[D15:12 text] 约翰：好棒的名言！它提醒我们要保持积极，即使在困难时期也要找到快乐。当事情变得艰难时，它就是一盏指路明灯。谢谢你和我分享！\n[D15:12 image_caption] a photo of a white board with a drawing of arrows and words\n[D15:12 image_query] inspirational quote whiteboard\n[D15:13 text] 蒂姆：干得漂亮，约翰！你在那块白板上写了什么？\n[D15:14 text] 约翰：我在白板上写了一些激励性的格言和策略，帮助我保持专注、完成艰苦的训练。它真的帮助我保持动力、不断进步。\n[D15:15 text] 蒂姆：太棒了！视觉提醒和策略确实有助于保持动力。你有这些格言在艰苦训练时激励自己，真的很酷。\n[D15:15 image_caption] a photo of a woman holding a plaque in front of a wall\n[D15:16 text] 约翰：我放在桌上的这块牌匾时刻提醒我要相信自己。它帮助我相信自己的能力，面对任何障碍。像这样的实物提醒真的能帮我保持动力。\n[D15:16 image_caption] a photography of a desk with a laptop and a lightbox that says make it happen\n[D15:16 image_query] plaque believe power within motivation\n[D15:17 text] 蒂姆：太棒了！在充满挑战的时期，是什么让你保持动力？\n[D15:18 text] 约翰：队友们对我的信任以及我提升技能的热情让我坚持下去，即使情况变得艰难。我不想让他们失望。\n[D15:18 image_caption] a photo of a group of women soccer players huddle together\n[D15:18 image_query] team huddle game\n[D15:19 text] 蒂姆：真好！你觉得是什么让他们成为这么好的支持？\n[D15:20 text] 约翰：他们总是支持我，即使我犯了错误。他们的鼓励让我继续前进。\n[D15:21 text] 蒂姆：这很关键，拥有强大的支持网络确实能帮助我们实现目标。在体育之外，你也有可以依靠的人吗？\n[D15:21 image_caption] a photo of a group of people hiking through a forest\n[D15:22 text] 约翰：有，我很幸运——我有一群超级支持我的人，无论如何都陪在我身边。\n[D15:23 text] 蒂姆：太好了！有能鼓舞我们的人是必不可少的。我很感激有支持我的朋友和家人——这非常重要。\n[D15:23 image_caption] a photo of a group of women sitting on the grass eating\n[D15:23 image_query] group friends beach picnic\n[D15:24 text] 约翰：有爱我们的人支持是非常重要的。我的家人总是在我身边。\n[D15:24 image_caption] a photo of a group of people standing around a kitchen table\n[D15:24 image_query] family dinner\n[D15:25 text] 蒂姆：哇，看看这张合影里的一群人！这些是你的家人朋友吗？\n[D15:26 text] 约翰：是的，当然！那是我的家人在聚会。和他们在一起带给我极大的快乐，也让我记住什么才是重要的。我的队友们就像我的第二个家庭。\n[D15:26 image_caption] a photo of a group of people standing on a basketball court\n[D15:26 image_query] group of basketball players cheering on sidelines\n[D15:27 text] 蒂姆：看起来很有趣！你们还一起做什么？\n[D15:27 image_caption] a photo of a group of kids playing a game of basketball\n[D15:28 text] 约翰：就是和朋友家人聚会时常做的事——看电影、出去吃饭。那你平时最喜欢做什么娱乐活动？\n[D15:29 text] 蒂姆：我喜欢和朋友家人一起自驾游，探索、徒步，或者玩桌游。空闲时间，我喜欢捧一本好书蜷缩着读，逃离现实、沉浸在不同的世界里。这就是我想说的。\n[D15:29 image_caption] a photo of a fire in a fireplace with a dog standing next to it\n[D15:29 image_query] campfire group people\n[D15:30 text] 约翰：对，我完全理解！捧着书窝着是我的放松时间。离开球场的时候，烹饪对我来说就是疗愈。这是发挥创造力、尝试不同口味的好方法，同时也能休息一下。这是一张我做饭的照片。\n[D15:30 image_caption] a photo of a slow cooker filled with a mixture of food\n[D15:30 image_query] cooking meal\n[D15:31 text] 蒂姆：那道慢炖菜看起来真美味！烹饪是放松和发挥创造力的好方式。你有什么拿手食谱可以给我看看吗？\n[D15:32 text] 约翰：当然有！我经常做这道好吃的蜂蜜蒜香鸡配烤蔬菜。这是我最喜欢的菜之一。我总是在尝试新食谱，如果你想要推荐就告诉我！\n[D15:32 image_caption] a photo of a pan of chicken and vegetables cooking on a stove\n[D15:33 text] 蒂姆：嗯，听起来太美味了，约翰！能把食谱给我吗？\n[D15:34 text] 约翰：没问题！我可以把它写下来寄给你。\n[D15:35 text] 蒂姆：迫不及待想试做了。谢谢分享食谱！\n[D15:36 text] 约翰：不客气。希望你做得开心！做好了告诉我结果哦。\n[D15:37 text] 蒂姆：一定！谢谢。和你聊天很开心。保重！\n[D15:38 text] 约翰：和你聊天很愉快。回头再聊！\n## session_16 日期：11:41 am on 6 November, 2023\n[D16:1 text] 蒂姆：嘿约翰，好久不见！希望你一切都好。自上次聊天以来，发生了一些事。上周，我遇到了一个巨大的写作难题——卡在一个情节转折上，怎么也找不到出路。真是令人抓狂，但我一直坚持，最终思路又畅通了。\n[D16:2 text] 约翰：嘿蒂姆！很高兴收到你的消息。是啊，我明白那有多烦人！但你坚持下来了，真棒。我在球场上也一样。就是得想办法咬牙坚持，让事情保持运转。熬过去之后，就更有满足感，对吧？\n[D16:3 text] 蒂姆：是啊！过程很难，但一旦过去，那种感觉太棒了。这正是它美妙之处——先有挣扎，然后是满足。\n[D16:4 text] 约翰：没错！挣扎让它值得。就像体育里那样，胜利才显得格外甜美！挑战促使我们成长、变得更好。\n[D16:5 text] 蒂姆：克服挑战能磨炼意志，推动个人成长。重要的是旅程和学到的内容，而不只是赢。这对我是个很好的提醒。你提到的那个运动，有什么例子吗？\n[D16:6 text] 约翰：有啊，去年有一场篮球赛，我们在第四节大幅落后。我们不得不拼尽全力，不断追赶，最终翻盘，终场哨响起时太震撼了。那种感觉难以忘怀。\n[D16:7 text] 蒂姆：哇，那感觉一定难以置信！你真的展现了决心和毅力。那场比赛你有照片或纪念品吗？我很想看看！顺便说，我也有个特别的东西——这是我最珍视的宝贝，一个由我最喜欢的球员签名的篮球。它提醒着我所有的努力。\n[D16:7 image_caption] a photo of a basketball in a case with a signed ball\n[D16:7 image_query] basketball signed by favorite basketball player\n[D16:8 text] 约翰：哇！你最喜欢的球员有什么鼓舞人心的地方？你和他们有什么特别的故事或时刻吗？\n[D16:9 text] 蒂姆：我就是爱看勒布朗打球。几年前有一场总决赛，他有一次史诗级的盖帽彻底改变了比赛，最后还赢了下来。看他那样拼尽全力真是太鼓舞人心了——永不放弃，你懂吧？\n[D16:10 text] 约翰：记得'16年总决赛第七场那次史诗级盖帽吗？他追防伊戈达拉，把球按在了篮板上。正是那种决心和拼劲让我热爱篮球。\n[D16:11 text] 蒂姆：对，就是那次！太精彩了。那样的时刻让我热爱体育，也敬佩球员们的决心和拼劲。\n[D16:12 text] 约翰：勒布朗那些展现决心和拼劲的时刻太不可思议了。这也是我喜欢打球、挑战自己的原因。你永远不知道那些特别的时刻什么时候会出现，但能参与其中总是很有趣。\n[D16:13 text] 蒂姆：那些特别的时刻让一切都很值得。能成为更宏大事物的一部分，感受到喜悦和成就感，真是太棒了。继续加油，在球场上创造更多那样的时刻吧！\n[D16:14 text] 约翰：说到特别的时刻，我和妻子刚出发去欧洲度假！虽然短暂但一定很美好。你去过，有什么推荐吗？\n[D16:15 text] 蒂姆：太好了！祝你们俩玩得开心。我推荐去参观一些城堡，它们真的太神奇了！\n[D16:16 text] 约翰：谢谢！我们一定会去看看的。祝你追求的一切都顺利。保重！\n[D16:17 text] 蒂姆：谢谢！你也是，伙计。放轻松，继续努力。保重，保持联系！",
+      "user_sha256": "b34c33c95ce86aea2eadab5cac33c6c5cc6f6a123e01e185bb9a000ae5799953"
+    },
+    {
+      "fixture_id": "tim_writing_castle",
+      "arm": "source_policy",
+      "system": "你是中文事实核查与记忆归并器。仅输出有效 JSON。",
+      "user": "请用简体中文根据“候选记忆”和“来源对话”输出逐事实核查表，只输出有效 JSON：\n{\"facts\":[{\"case_id\":\"病例ID\",\"claim_zh\":\"单一事实\",\"support\":\"full/partial/absent\",\"source_turn_ids\":[\"D场:轮\"],\"source_session_id\":\"session_N 或 null\",\"source_speakers\":[\"说话者\"],\"covered_by_memory_ids\":[\"记忆ID\"],\"action\":\"保留/合并/撤回\"}]}\n把复合内容拆成可独立核查的最小事实；同一事实若出现在多个记忆版本，用 covered_by_memory_ids 标明。来源对话中没有证据的主张也列出并标 absent/撤回。不要用候选记忆本身充当来源。来源字段必须引用输入中的真实 turn。\n额外来源与反伤规则：\n- 区分事实首次出现的来源场次与候选记忆写入场次；后一场重述旧事，不会自动改变原始来源日期。\n- 旧版遗漏而新版包含的有源细节要保留；新版遗漏的旧版有源细节也要保留，不能取较短版本覆盖。\n- 区分本人明确自述、他人猜测、图片附带文字。不能把他人推测写成本人自述，图片 caption 也不等于看过原图。\n- 保留“但还好”、愿望、时间范围等限定语，不把部分支持升格成确定结论。\n- “我们”未说明同行者身份时保留旅行事实，但撤回具体同行者身份；不要依据人物关系猜测。\n- 每个被接受的事实都给足以支持其主体、对象和限定语的 turn；无法支持时用 absent/撤回，不凭常识补足。\n\n候选记忆：\n[{\"case_id\": \"conv-43_de89be96dda6\", \"memory_id\": \"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\", \"write_session_id\": \"session_15\", \"content\": \"蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作带给他巨大快乐\"}, {\"case_id\": \"conv-43_de89be96dda6\", \"memory_id\": \"3325426c-88b6-46e2-b7bb-d1303bce5de1\", \"write_session_id\": \"session_16\", \"content\": \"蒂姆正在写一部奇幻小说，进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作能创造一个全新的世界，带给他很多快乐\"}, {\"case_id\": \"conv-43_c95588df7268\", \"memory_id\": \"e0cdd401-d61b-4636-9640-9733e52cf2e6\", \"write_session_id\": \"session_15\", \"content\": \"蒂姆的写作灵感来自书籍、电影和现实生活经历，阅读关于英国城堡的内容给了他很多灵感，某些作者对他来说像灵感宝库\"}, {\"case_id\": \"conv-43_c95588df7268\", \"memory_id\": \"bd5e05ac-8fff-4146-9701-0796790c5f10\", \"write_session_id\": \"session_16\", \"content\": \"蒂姆的写作灵感来源包括书籍、电影和现实生活经历；阅读关于英国城堡的内容给了他很多灵感，他梦想有一天能去参观英国城堡\"}]\n来源对话：\n## session_15 日期：5:51 pm on 21 October, 2023\n[D15:1 text] 蒂姆：嘿，约翰！有段时间没和你聊了，不过想告诉你我读了一本关于英国城堡的超棒的书。太有意思了，让我大为震撼！我梦想有一天能去参观它们。\n[D15:2 text] 约翰：嘿，蒂姆！很高兴收到你的消息。了解不同的文化、观赏历史建筑让我着迷。参观城堡确实在我的愿望清单上。看看这一座，多美的景色啊！我特别期待探索世界、体验这些美丽的地方。说到这个，你的奇幻小说写得怎么样了？\n[D15:2 image_caption] a photo of a man sitting on a bench overlooking a cliff\n[D15:2 image_query] castle scotland\n[D15:3 text] 蒂姆：那座城堡看起来太棒了！希望有一天我能去参观。我的写作进展顺利：我正在写一部奇幻小说，虽然有点紧张但太令人兴奋了！我所有的努力都得到了回报。写作带来这么多快乐，它能创造一个全新的世界，真是不可思议。非常感谢你对我的信任！\n[D15:4 text] 约翰：太好了！很高兴你的写作进展顺利。看到一切逐渐成形一定很令人激动。继续加油！你的故事有什么特别的灵感来源吗？\n[D15:5 text] 蒂姆：谢谢！书籍、电影和现实生活经历都能激发我的创造力。比如，阅读关于英国城堡的内容给了我很多灵感。另外，某些作者对我来说就像灵感宝库。与自己喜爱的事物产生联结，让写作更有乐趣。\n[D15:6 text] 约翰：哇！听起来是很棒的组合。有没有哪位作家的作品特别能启发你？\n[D15:7 text] 蒂姆：J.K. 罗琳是一位非常鼓舞人心的作家。她的书细节丰富、叙事极具创意，非常引人入胜。她绝对能把读者带入另一个世界，让人产生强烈的感受。我总是在为自己的写作记下她风格方面的笔记。\n[D15:7 image_caption] a photo of a book with a page in it on a table\n[D15:7 image_query] harry potter sorcerer's stone well-read copy\n[D15:8 text] 约翰：真酷！你读她的作品多久了？\n[D15:9 text] 蒂姆：我已经读她的作品很长时间了。她的故事一直陪伴着我，至今仍激励着我。她的写作有一种特别的东西，真的能打动我。\n[D15:10 text] 约翰：哇，有些作家确实对我们有这么大的影响！他们成为我们生活的一部分，影响着我们的兴趣。你有最喜欢的 J.K. 罗琳的名言吗？\n[D15:11 text] 蒂姆：有！有一句 J.K. 罗琳的话我特别喜欢：\"点亮灯光——幸福就藏在最黑暗的时刻里。\"这就是我在艰难时期保持希望的方式。\n[D15:12 text] 约翰：好棒的名言！它提醒我们要保持积极，即使在困难时期也要找到快乐。当事情变得艰难时，它就是一盏指路明灯。谢谢你和我分享！\n[D15:12 image_caption] a photo of a white board with a drawing of arrows and words\n[D15:12 image_query] inspirational quote whiteboard\n[D15:13 text] 蒂姆：干得漂亮，约翰！你在那块白板上写了什么？\n[D15:14 text] 约翰：我在白板上写了一些激励性的格言和策略，帮助我保持专注、完成艰苦的训练。它真的帮助我保持动力、不断进步。\n[D15:15 text] 蒂姆：太棒了！视觉提醒和策略确实有助于保持动力。你有这些格言在艰苦训练时激励自己，真的很酷。\n[D15:15 image_caption] a photo of a woman holding a plaque in front of a wall\n[D15:16 text] 约翰：我放在桌上的这块牌匾时刻提醒我要相信自己。它帮助我相信自己的能力，面对任何障碍。像这样的实物提醒真的能帮我保持动力。\n[D15:16 image_caption] a photography of a desk with a laptop and a lightbox that says make it happen\n[D15:16 image_query] plaque believe power within motivation\n[D15:17 text] 蒂姆：太棒了！在充满挑战的时期，是什么让你保持动力？\n[D15:18 text] 约翰：队友们对我的信任以及我提升技能的热情让我坚持下去，即使情况变得艰难。我不想让他们失望。\n[D15:18 image_caption] a photo of a group of women soccer players huddle together\n[D15:18 image_query] team huddle game\n[D15:19 text] 蒂姆：真好！你觉得是什么让他们成为这么好的支持？\n[D15:20 text] 约翰：他们总是支持我，即使我犯了错误。他们的鼓励让我继续前进。\n[D15:21 text] 蒂姆：这很关键，拥有强大的支持网络确实能帮助我们实现目标。在体育之外，你也有可以依靠的人吗？\n[D15:21 image_caption] a photo of a group of people hiking through a forest\n[D15:22 text] 约翰：有，我很幸运——我有一群超级支持我的人，无论如何都陪在我身边。\n[D15:23 text] 蒂姆：太好了！有能鼓舞我们的人是必不可少的。我很感激有支持我的朋友和家人——这非常重要。\n[D15:23 image_caption] a photo of a group of women sitting on the grass eating\n[D15:23 image_query] group friends beach picnic\n[D15:24 text] 约翰：有爱我们的人支持是非常重要的。我的家人总是在我身边。\n[D15:24 image_caption] a photo of a group of people standing around a kitchen table\n[D15:24 image_query] family dinner\n[D15:25 text] 蒂姆：哇，看看这张合影里的一群人！这些是你的家人朋友吗？\n[D15:26 text] 约翰：是的，当然！那是我的家人在聚会。和他们在一起带给我极大的快乐，也让我记住什么才是重要的。我的队友们就像我的第二个家庭。\n[D15:26 image_caption] a photo of a group of people standing on a basketball court\n[D15:26 image_query] group of basketball players cheering on sidelines\n[D15:27 text] 蒂姆：看起来很有趣！你们还一起做什么？\n[D15:27 image_caption] a photo of a group of kids playing a game of basketball\n[D15:28 text] 约翰：就是和朋友家人聚会时常做的事——看电影、出去吃饭。那你平时最喜欢做什么娱乐活动？\n[D15:29 text] 蒂姆：我喜欢和朋友家人一起自驾游，探索、徒步，或者玩桌游。空闲时间，我喜欢捧一本好书蜷缩着读，逃离现实、沉浸在不同的世界里。这就是我想说的。\n[D15:29 image_caption] a photo of a fire in a fireplace with a dog standing next to it\n[D15:29 image_query] campfire group people\n[D15:30 text] 约翰：对，我完全理解！捧着书窝着是我的放松时间。离开球场的时候，烹饪对我来说就是疗愈。这是发挥创造力、尝试不同口味的好方法，同时也能休息一下。这是一张我做饭的照片。\n[D15:30 image_caption] a photo of a slow cooker filled with a mixture of food\n[D15:30 image_query] cooking meal\n[D15:31 text] 蒂姆：那道慢炖菜看起来真美味！烹饪是放松和发挥创造力的好方式。你有什么拿手食谱可以给我看看吗？\n[D15:32 text] 约翰：当然有！我经常做这道好吃的蜂蜜蒜香鸡配烤蔬菜。这是我最喜欢的菜之一。我总是在尝试新食谱，如果你想要推荐就告诉我！\n[D15:32 image_caption] a photo of a pan of chicken and vegetables cooking on a stove\n[D15:33 text] 蒂姆：嗯，听起来太美味了，约翰！能把食谱给我吗？\n[D15:34 text] 约翰：没问题！我可以把它写下来寄给你。\n[D15:35 text] 蒂姆：迫不及待想试做了。谢谢分享食谱！\n[D15:36 text] 约翰：不客气。希望你做得开心！做好了告诉我结果哦。\n[D15:37 text] 蒂姆：一定！谢谢。和你聊天很开心。保重！\n[D15:38 text] 约翰：和你聊天很愉快。回头再聊！\n## session_16 日期：11:41 am on 6 November, 2023\n[D16:1 text] 蒂姆：嘿约翰，好久不见！希望你一切都好。自上次聊天以来，发生了一些事。上周，我遇到了一个巨大的写作难题——卡在一个情节转折上，怎么也找不到出路。真是令人抓狂，但我一直坚持，最终思路又畅通了。\n[D16:2 text] 约翰：嘿蒂姆！很高兴收到你的消息。是啊，我明白那有多烦人！但你坚持下来了，真棒。我在球场上也一样。就是得想办法咬牙坚持，让事情保持运转。熬过去之后，就更有满足感，对吧？\n[D16:3 text] 蒂姆：是啊！过程很难，但一旦过去，那种感觉太棒了。这正是它美妙之处——先有挣扎，然后是满足。\n[D16:4 text] 约翰：没错！挣扎让它值得。就像体育里那样，胜利才显得格外甜美！挑战促使我们成长、变得更好。\n[D16:5 text] 蒂姆：克服挑战能磨炼意志，推动个人成长。重要的是旅程和学到的内容，而不只是赢。这对我是个很好的提醒。你提到的那个运动，有什么例子吗？\n[D16:6 text] 约翰：有啊，去年有一场篮球赛，我们在第四节大幅落后。我们不得不拼尽全力，不断追赶，最终翻盘，终场哨响起时太震撼了。那种感觉难以忘怀。\n[D16:7 text] 蒂姆：哇，那感觉一定难以置信！你真的展现了决心和毅力。那场比赛你有照片或纪念品吗？我很想看看！顺便说，我也有个特别的东西——这是我最珍视的宝贝，一个由我最喜欢的球员签名的篮球。它提醒着我所有的努力。\n[D16:7 image_caption] a photo of a basketball in a case with a signed ball\n[D16:7 image_query] basketball signed by favorite basketball player\n[D16:8 text] 约翰：哇！你最喜欢的球员有什么鼓舞人心的地方？你和他们有什么特别的故事或时刻吗？\n[D16:9 text] 蒂姆：我就是爱看勒布朗打球。几年前有一场总决赛，他有一次史诗级的盖帽彻底改变了比赛，最后还赢了下来。看他那样拼尽全力真是太鼓舞人心了——永不放弃，你懂吧？\n[D16:10 text] 约翰：记得'16年总决赛第七场那次史诗级盖帽吗？他追防伊戈达拉，把球按在了篮板上。正是那种决心和拼劲让我热爱篮球。\n[D16:11 text] 蒂姆：对，就是那次！太精彩了。那样的时刻让我热爱体育，也敬佩球员们的决心和拼劲。\n[D16:12 text] 约翰：勒布朗那些展现决心和拼劲的时刻太不可思议了。这也是我喜欢打球、挑战自己的原因。你永远不知道那些特别的时刻什么时候会出现，但能参与其中总是很有趣。\n[D16:13 text] 蒂姆：那些特别的时刻让一切都很值得。能成为更宏大事物的一部分，感受到喜悦和成就感，真是太棒了。继续加油，在球场上创造更多那样的时刻吧！\n[D16:14 text] 约翰：说到特别的时刻，我和妻子刚出发去欧洲度假！虽然短暂但一定很美好。你去过，有什么推荐吗？\n[D16:15 text] 蒂姆：太好了！祝你们俩玩得开心。我推荐去参观一些城堡，它们真的太神奇了！\n[D16:16 text] 约翰：谢谢！我们一定会去看看的。祝你追求的一切都顺利。保重！\n[D16:17 text] 蒂姆：谢谢！你也是，伙计。放轻松，继续努力。保重，保持联系！",
+      "user_sha256": "9455502c1157271636b59a50bead77a0294a6bffa3118e02be83b0150ddcfd02"
+    },
+    {
+      "fixture_id": "melanie_pottery",
+      "arm": "source_policy",
+      "system": "你是中文事实核查与记忆归并器。仅输出有效 JSON。",
+      "user": "请用简体中文根据“候选记忆”和“来源对话”输出逐事实核查表，只输出有效 JSON：\n{\"facts\":[{\"case_id\":\"病例ID\",\"claim_zh\":\"单一事实\",\"support\":\"full/partial/absent\",\"source_turn_ids\":[\"D场:轮\"],\"source_session_id\":\"session_N 或 null\",\"source_speakers\":[\"说话者\"],\"covered_by_memory_ids\":[\"记忆ID\"],\"action\":\"保留/合并/撤回\"}]}\n把复合内容拆成可独立核查的最小事实；同一事实若出现在多个记忆版本，用 covered_by_memory_ids 标明。来源对话中没有证据的主张也列出并标 absent/撤回。不要用候选记忆本身充当来源。来源字段必须引用输入中的真实 turn。\n额外来源与反伤规则：\n- 区分事实首次出现的来源场次与候选记忆写入场次；后一场重述旧事，不会自动改变原始来源日期。\n- 旧版遗漏而新版包含的有源细节要保留；新版遗漏的旧版有源细节也要保留，不能取较短版本覆盖。\n- 区分本人明确自述、他人猜测、图片附带文字。不能把他人推测写成本人自述，图片 caption 也不等于看过原图。\n- 保留“但还好”、愿望、时间范围等限定语，不把部分支持升格成确定结论。\n- “我们”未说明同行者身份时保留旅行事实，但撤回具体同行者身份；不要依据人物关系猜测。\n- 每个被接受的事实都给足以支持其主体、对象和限定语的 turn；无法支持时用 absent/撤回，不凭常识补足。\n\n候选记忆：\n[{\"case_id\": \"conv-26_444350391e64\", \"memory_id\": \"8642315d-3c4c-4c9e-a333-7f29093b90fc\", \"write_session_id\": \"session_17\", \"content\": \"梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间\"}, {\"case_id\": \"conv-26_444350391e64\", \"memory_id\": \"137a6569-6e2e-4878-97d5-71289efc1f4a\", \"write_session_id\": \"session_18\", \"content\": \"梅拉妮在2023年9月受了伤，不得不暂停陶艺——那是她用来自我表达和获得平静的方式，这让她很难受\"}]\n来源对话：\n## session_17 日期：10:31 am on 13 October, 2023\n[D17:1 text] 卡罗琳：嘿，梅尔，最近怎么样？好久不见！我刚联系了我的导师咨询收养的建议。我已经准备好当妈妈，分享我的爱与家庭了。这感觉很棒。你有什么新鲜事吗？有什么激动人心的事情发生吗？\n[D17:2 text] 梅拉妮：嘿，卡罗琳！很高兴收到你的消息！哇，这真是一段了不起的旅程。恭喜你！\n[D17:3 text] 卡罗琳：谢谢你，梅拉妮！我很兴奋能开启这个新篇章。收养孩子并为需要的孩子提供一个安全、有爱的家一直是我的梦想。你有收养方面的经验吗，或者认识经历过收养流程的人吗？\n[D17:4 text] 梅拉妮：有啊，我一个朋友去年收养了孩子。过程很长，但现在他们和新孩子过得超级幸福。这让我觉得也许我也应该这么做！\n[D17:5 text] 卡罗琳：你朋友的事真是太好了！过程可能很艰辛，但非常值得。这是扩大家庭、表达爱意的好方式。如果你真的去做了，告诉我——我很乐意尽我所能帮忙。\n[D17:6 text] 梅拉妮：谢谢，卡罗琳！感谢你的帮助。有什么入门建议吗？\n[D17:7 text] 卡罗琳：有！先做好调查，找一家收养机构或律师。他们会帮助你完成流程并提供所有信息。准备好推荐信、财务信息和体检等文件。别忘了做好心理准备，因为等待的过程可能很煎熬。不过最终一切都是值得的。\n[D17:8 text] 梅拉妮：谢谢你的建议，卡罗琳。做调查和调整心态确实有道理。我会照做的。顺便说一下，我最近遇到了一点挫折。上个月我受了伤，不得不暂停陶艺——那是我用来自我表达和获得平静的方式。\n[D17:9 text] 卡罗琳：哦天哪，听到这个很难过，梅拉妮。希望你没大事。陶艺是很好的放松方式，暂停一定很不好受。需要帮忙吗？\n[D17:10 text] 梅拉妮：谢谢，卡罗琳。确实挺难受的，但我还好。我一直在读你之前推荐的那本书，还画画来打发时间。\n[D17:11 text] 卡罗琳：很高兴你有创作的出口。有画作可以展示吗？我很想看看。\n[D17:12 text] 梅拉妮：有啊，这是我上周画的一幅。灵感来自日落。这些颜色让我感到平静。你最近在艺术上有什么进展吗？\n[D17:12 image_caption] a photo of a painting of a sunset with a pink sky\n[D17:12 image_query] landscape painting vibrant purple sunset autumn\n[D17:13 text] 卡罗琳：哇，梅尔，这画太美了！我喜欢这些颜色和那份悠闲的日落氛围。是什么让你画了它？我最近在尝试抽象风格。那种感觉很自由，把感受直接画在画布上，不需要太多计划。就像是一种很酷的自我表达方式。\n[D17:14 text] 梅拉妮：谢谢，卡罗琳！我画它是因为它能让我平静。我也画过一幅抽象画，你看看！我喜欢艺术让我们宣泄情感的方式。\n[D17:14 image_caption] a photo of a painting on a wall with a blue background\n[D17:14 image_query] abstract painting vibrant colors\n[D17:15 text] 卡罗琳：哇，画得真好！那蓝色为整幅画增色不少。你想表达什么样的情感？\n[D17:16 text] 梅拉妮：我想用宁静的蓝色条纹来表现安详。蓝色能让我平静，所以我想让这幅画既有宁静的氛围，又有丰富的鲜艳色彩。\n[D17:17 text] 卡罗琳：嗯，确实很让人平静。艺术能表达情感真是太棒了。对了，上周五我去了一场诗歌朗诵会——非常震撼！你去过吗？\n[D17:17 image_caption] a photo of a poster on a wall in a classroom\n[D17:18 text] 梅拉妮：没有，从没去过那种活动。是关于什么的？为什么那么特别？\n[D17:19 text] 卡罗琳：那是一场跨性别诗歌朗诵会，跨性别者通过诗歌分享他们的故事。它格外特别，因为那是一个可以安全自我表达的空间，听别人分享并庆祝自己的身份真的很振奋人心。\n[D17:19 image_caption] a photography of a sign that says trans lives matter\n[D17:19 image_query] transgender poetry reading trans pride flags\n[D17:20 text] 梅拉妮：哇，听起来太棒了！活动是什么样的？那些海报很棒！\n[D17:21 text] 卡罗琳：整个房间充满了能量和支持的氛围！那些海报太惊艳了，满是骄傲和力量！这激励我也创作了一些艺术作品。\n[D17:21 image_caption] a photo of a drawing of a woman in a dress\n[D17:21 image_query] transgender flag drawing\n[D17:22 text] 梅拉妮：太棒了，卡罗琳！是你画的吗？它对你意味着什么？\n[D17:23 text] 卡罗琳：谢谢，梅拉妮！对，是我画的。它代表自由和真实。它就像一个提醒，让我始终保持真实的自我，拥抱我的女性身份。\n[D17:24 text] 梅拉妮：我很喜欢。展现真实的自我是最美好的事。\n[D17:25 text] 卡罗琳：没错，梅拉妮！做自己感觉真好。这是一场不断学习和成长的冒险。\n[D17:26 text] 梅拉妮：是啊，卡罗琳。人生就是学习和探索。很高兴我们能一起踏上这段旅程。\n## session_18 日期：6:55 pm on 20 October, 2023\n[D18:1 text] 梅拉妮：嘿卡罗琳，上周末那次公路旅行太疯狂了！我儿子出事故的时候，我们都吓坏了。幸好他没事，真是不幸中的万幸。那真是一次可怕的经历，好在一切都过去了。自从我们上次聊天以来，你过得怎么样？\n[D18:1 image_caption] a photo of a car dashboard with a white cloth and a steering wheel\n[D18:1 image_query] car accident damaged car airbags deployed roadtrip\n[D18:2 text] 卡罗琳：哎呀，关于事故的事真抱歉！对你们来说一定很受创伤吧。谢天谢地你儿子没事。生活真像过山车啊。\n[D18:3 text] 梅拉妮：是啊，我们的旅行开局就不顺。出事故的时候我真的吓坏了。还好我儿子没事，这也提醒我生命是宝贵的，要珍惜家人。\n[D18:4 text] 卡罗琳：很高兴你儿子没事，梅拉妮。生活难以预料，但这样的时刻让我们意识到所爱之人有多重要。家人就是一切。\n[D18:5 text] 梅拉妮：你说得对，卡罗琳。家人对我来说超级重要。尤其是在事故之后，我想了很多，知道自己多么需要他们。他们就是我的全世界，我很感激拥有他们。还好，他们在科罗拉多大峡谷玩得很开心！\n[D18:5 image_caption] a photo of two children standing on a rocky cliff overlooking a canyon\n[D18:5 image_query] grand canyon family photo\n[D18:6 text] 卡罗琳：孩子们看起来真可爱，梅尔！我敢说他们带来很多欢乐。他们是怎么应对那场事故的？\n[D18:7 text] 梅拉妮：谢谢！他们很害怕，但我们安慰了他们，告诉他们哥哥会没事的。他们是坚强的孩子。\n[D18:8 text] 卡罗琳：孩子们在困境中的适应力真是惊人。他们有一种了不起的恢复能力。\n[D18:9 text] 梅拉妮：他们真的很棒。真希望我也能那么坚强。不过他们给了我坚持下去的力量。\n[D18:10 text] 卡罗琳：我们所爱的人给我们力量去迎接任何挑战——这太奇妙了！\n[D18:11 text] 梅拉妮：是啊，卡罗琳，完全同意。他们是我最大的动力和支柱。\n[D18:12 text] 卡罗琳：看到你对家人的爱真让人感动，梅拉妮。他们真的是你的依靠。\n[D18:13 text] 梅拉妮：谢谢，卡罗琳。他们是真正的支撑。我非常感激他们。\n[D18:14 text] 卡罗琳：很高兴有人可以依靠，梅拉妮。这能在艰难时刻帮上大忙。\n[D18:15 text] 梅拉妮：是啊，当然。有家人在身边帮助很大。这让艰难的日子变得容易一些。\n[D18:15 image_caption] a photography of a woman and a child walking on a trail\n[D18:15 image_query] family hiking mountains\n[D18:16 text] 卡罗琳：哇，好棒的照片！是最近拍的吗？看起来你们都玩得很开心！\n[D18:17 text] 梅拉妮：谢谢，卡罗琳！对，就是昨天拍的！孩子们很喜欢，这是公路旅行后放松的好方式。\n[D18:18 text] 卡罗琳：很高兴你们开车之后能放松休息一下。大自然确实能让我们焕然一新，对吧？\n[D18:19 text] 梅拉妮：绝对是的！它真的能帮我 reset 充电。我喜欢和家人一起露营，因为大自然带来如此宁静安详的感觉。\n[D18:19 image_caption] a photo of a sunset over a body of water\n[D18:20 text] 卡罗琳：哇，太棒了！你最喜欢和家人露营的哪一点？\n[D18:21 text] 梅拉妮：那是一个能活在当下、彼此相聚的机会。我们通过讲故事、篝火和大自然增进感情。伴着鸟鸣和清新空气的气味醒来是那么宁静——它总能净化我的心灵。\n[D18:22 text] 卡罗琳：真是宁静又让人心静，梅拉妮！我能想象在大自然中醒来的样子。你能和家人共度这样宁静而优质的时光，真是太好了。\n[D18:23 text] 梅拉妮：谢谢，卡罗琳！这是很棒的时刻。大自然加高质量陪伴，无可匹敌！\n[D18:24 text] 卡罗琳：是啊，完全同意！这些都是无价之宝。你真幸运！",
+      "user_sha256": "998daf8ee8ca54246dfb609bbb4b4a5490b6fe98c1d84f2631e4688c08d9fabc"
+    },
+    {
+      "fixture_id": "melanie_pottery",
+      "arm": "base",
+      "system": "你是中文事实核查与记忆归并器。仅输出有效 JSON。",
+      "user": "请用简体中文根据“候选记忆”和“来源对话”输出逐事实核查表，只输出有效 JSON：\n{\"facts\":[{\"case_id\":\"病例ID\",\"claim_zh\":\"单一事实\",\"support\":\"full/partial/absent\",\"source_turn_ids\":[\"D场:轮\"],\"source_session_id\":\"session_N 或 null\",\"source_speakers\":[\"说话者\"],\"covered_by_memory_ids\":[\"记忆ID\"],\"action\":\"保留/合并/撤回\"}]}\n把复合内容拆成可独立核查的最小事实；同一事实若出现在多个记忆版本，用 covered_by_memory_ids 标明。来源对话中没有证据的主张也列出并标 absent/撤回。不要用候选记忆本身充当来源。来源字段必须引用输入中的真实 turn。\n\n候选记忆：\n[{\"case_id\": \"conv-26_444350391e64\", \"memory_id\": \"8642315d-3c4c-4c9e-a333-7f29093b90fc\", \"write_session_id\": \"session_17\", \"content\": \"梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间\"}, {\"case_id\": \"conv-26_444350391e64\", \"memory_id\": \"137a6569-6e2e-4878-97d5-71289efc1f4a\", \"write_session_id\": \"session_18\", \"content\": \"梅拉妮在2023年9月受了伤，不得不暂停陶艺——那是她用来自我表达和获得平静的方式，这让她很难受\"}]\n来源对话：\n## session_17 日期：10:31 am on 13 October, 2023\n[D17:1 text] 卡罗琳：嘿，梅尔，最近怎么样？好久不见！我刚联系了我的导师咨询收养的建议。我已经准备好当妈妈，分享我的爱与家庭了。这感觉很棒。你有什么新鲜事吗？有什么激动人心的事情发生吗？\n[D17:2 text] 梅拉妮：嘿，卡罗琳！很高兴收到你的消息！哇，这真是一段了不起的旅程。恭喜你！\n[D17:3 text] 卡罗琳：谢谢你，梅拉妮！我很兴奋能开启这个新篇章。收养孩子并为需要的孩子提供一个安全、有爱的家一直是我的梦想。你有收养方面的经验吗，或者认识经历过收养流程的人吗？\n[D17:4 text] 梅拉妮：有啊，我一个朋友去年收养了孩子。过程很长，但现在他们和新孩子过得超级幸福。这让我觉得也许我也应该这么做！\n[D17:5 text] 卡罗琳：你朋友的事真是太好了！过程可能很艰辛，但非常值得。这是扩大家庭、表达爱意的好方式。如果你真的去做了，告诉我——我很乐意尽我所能帮忙。\n[D17:6 text] 梅拉妮：谢谢，卡罗琳！感谢你的帮助。有什么入门建议吗？\n[D17:7 text] 卡罗琳：有！先做好调查，找一家收养机构或律师。他们会帮助你完成流程并提供所有信息。准备好推荐信、财务信息和体检等文件。别忘了做好心理准备，因为等待的过程可能很煎熬。不过最终一切都是值得的。\n[D17:8 text] 梅拉妮：谢谢你的建议，卡罗琳。做调查和调整心态确实有道理。我会照做的。顺便说一下，我最近遇到了一点挫折。上个月我受了伤，不得不暂停陶艺——那是我用来自我表达和获得平静的方式。\n[D17:9 text] 卡罗琳：哦天哪，听到这个很难过，梅拉妮。希望你没大事。陶艺是很好的放松方式，暂停一定很不好受。需要帮忙吗？\n[D17:10 text] 梅拉妮：谢谢，卡罗琳。确实挺难受的，但我还好。我一直在读你之前推荐的那本书，还画画来打发时间。\n[D17:11 text] 卡罗琳：很高兴你有创作的出口。有画作可以展示吗？我很想看看。\n[D17:12 text] 梅拉妮：有啊，这是我上周画的一幅。灵感来自日落。这些颜色让我感到平静。你最近在艺术上有什么进展吗？\n[D17:12 image_caption] a photo of a painting of a sunset with a pink sky\n[D17:12 image_query] landscape painting vibrant purple sunset autumn\n[D17:13 text] 卡罗琳：哇，梅尔，这画太美了！我喜欢这些颜色和那份悠闲的日落氛围。是什么让你画了它？我最近在尝试抽象风格。那种感觉很自由，把感受直接画在画布上，不需要太多计划。就像是一种很酷的自我表达方式。\n[D17:14 text] 梅拉妮：谢谢，卡罗琳！我画它是因为它能让我平静。我也画过一幅抽象画，你看看！我喜欢艺术让我们宣泄情感的方式。\n[D17:14 image_caption] a photo of a painting on a wall with a blue background\n[D17:14 image_query] abstract painting vibrant colors\n[D17:15 text] 卡罗琳：哇，画得真好！那蓝色为整幅画增色不少。你想表达什么样的情感？\n[D17:16 text] 梅拉妮：我想用宁静的蓝色条纹来表现安详。蓝色能让我平静，所以我想让这幅画既有宁静的氛围，又有丰富的鲜艳色彩。\n[D17:17 text] 卡罗琳：嗯，确实很让人平静。艺术能表达情感真是太棒了。对了，上周五我去了一场诗歌朗诵会——非常震撼！你去过吗？\n[D17:17 image_caption] a photo of a poster on a wall in a classroom\n[D17:18 text] 梅拉妮：没有，从没去过那种活动。是关于什么的？为什么那么特别？\n[D17:19 text] 卡罗琳：那是一场跨性别诗歌朗诵会，跨性别者通过诗歌分享他们的故事。它格外特别，因为那是一个可以安全自我表达的空间，听别人分享并庆祝自己的身份真的很振奋人心。\n[D17:19 image_caption] a photography of a sign that says trans lives matter\n[D17:19 image_query] transgender poetry reading trans pride flags\n[D17:20 text] 梅拉妮：哇，听起来太棒了！活动是什么样的？那些海报很棒！\n[D17:21 text] 卡罗琳：整个房间充满了能量和支持的氛围！那些海报太惊艳了，满是骄傲和力量！这激励我也创作了一些艺术作品。\n[D17:21 image_caption] a photo of a drawing of a woman in a dress\n[D17:21 image_query] transgender flag drawing\n[D17:22 text] 梅拉妮：太棒了，卡罗琳！是你画的吗？它对你意味着什么？\n[D17:23 text] 卡罗琳：谢谢，梅拉妮！对，是我画的。它代表自由和真实。它就像一个提醒，让我始终保持真实的自我，拥抱我的女性身份。\n[D17:24 text] 梅拉妮：我很喜欢。展现真实的自我是最美好的事。\n[D17:25 text] 卡罗琳：没错，梅拉妮！做自己感觉真好。这是一场不断学习和成长的冒险。\n[D17:26 text] 梅拉妮：是啊，卡罗琳。人生就是学习和探索。很高兴我们能一起踏上这段旅程。\n## session_18 日期：6:55 pm on 20 October, 2023\n[D18:1 text] 梅拉妮：嘿卡罗琳，上周末那次公路旅行太疯狂了！我儿子出事故的时候，我们都吓坏了。幸好他没事，真是不幸中的万幸。那真是一次可怕的经历，好在一切都过去了。自从我们上次聊天以来，你过得怎么样？\n[D18:1 image_caption] a photo of a car dashboard with a white cloth and a steering wheel\n[D18:1 image_query] car accident damaged car airbags deployed roadtrip\n[D18:2 text] 卡罗琳：哎呀，关于事故的事真抱歉！对你们来说一定很受创伤吧。谢天谢地你儿子没事。生活真像过山车啊。\n[D18:3 text] 梅拉妮：是啊，我们的旅行开局就不顺。出事故的时候我真的吓坏了。还好我儿子没事，这也提醒我生命是宝贵的，要珍惜家人。\n[D18:4 text] 卡罗琳：很高兴你儿子没事，梅拉妮。生活难以预料，但这样的时刻让我们意识到所爱之人有多重要。家人就是一切。\n[D18:5 text] 梅拉妮：你说得对，卡罗琳。家人对我来说超级重要。尤其是在事故之后，我想了很多，知道自己多么需要他们。他们就是我的全世界，我很感激拥有他们。还好，他们在科罗拉多大峡谷玩得很开心！\n[D18:5 image_caption] a photo of two children standing on a rocky cliff overlooking a canyon\n[D18:5 image_query] grand canyon family photo\n[D18:6 text] 卡罗琳：孩子们看起来真可爱，梅尔！我敢说他们带来很多欢乐。他们是怎么应对那场事故的？\n[D18:7 text] 梅拉妮：谢谢！他们很害怕，但我们安慰了他们，告诉他们哥哥会没事的。他们是坚强的孩子。\n[D18:8 text] 卡罗琳：孩子们在困境中的适应力真是惊人。他们有一种了不起的恢复能力。\n[D18:9 text] 梅拉妮：他们真的很棒。真希望我也能那么坚强。不过他们给了我坚持下去的力量。\n[D18:10 text] 卡罗琳：我们所爱的人给我们力量去迎接任何挑战——这太奇妙了！\n[D18:11 text] 梅拉妮：是啊，卡罗琳，完全同意。他们是我最大的动力和支柱。\n[D18:12 text] 卡罗琳：看到你对家人的爱真让人感动，梅拉妮。他们真的是你的依靠。\n[D18:13 text] 梅拉妮：谢谢，卡罗琳。他们是真正的支撑。我非常感激他们。\n[D18:14 text] 卡罗琳：很高兴有人可以依靠，梅拉妮。这能在艰难时刻帮上大忙。\n[D18:15 text] 梅拉妮：是啊，当然。有家人在身边帮助很大。这让艰难的日子变得容易一些。\n[D18:15 image_caption] a photography of a woman and a child walking on a trail\n[D18:15 image_query] family hiking mountains\n[D18:16 text] 卡罗琳：哇，好棒的照片！是最近拍的吗？看起来你们都玩得很开心！\n[D18:17 text] 梅拉妮：谢谢，卡罗琳！对，就是昨天拍的！孩子们很喜欢，这是公路旅行后放松的好方式。\n[D18:18 text] 卡罗琳：很高兴你们开车之后能放松休息一下。大自然确实能让我们焕然一新，对吧？\n[D18:19 text] 梅拉妮：绝对是的！它真的能帮我 reset 充电。我喜欢和家人一起露营，因为大自然带来如此宁静安详的感觉。\n[D18:19 image_caption] a photo of a sunset over a body of water\n[D18:20 text] 卡罗琳：哇，太棒了！你最喜欢和家人露营的哪一点？\n[D18:21 text] 梅拉妮：那是一个能活在当下、彼此相聚的机会。我们通过讲故事、篝火和大自然增进感情。伴着鸟鸣和清新空气的气味醒来是那么宁静——它总能净化我的心灵。\n[D18:22 text] 卡罗琳：真是宁静又让人心静，梅拉妮！我能想象在大自然中醒来的样子。你能和家人共度这样宁静而优质的时光，真是太好了。\n[D18:23 text] 梅拉妮：谢谢，卡罗琳！这是很棒的时刻。大自然加高质量陪伴，无可匹敌！\n[D18:24 text] 卡罗琳：是啊，完全同意！这些都是无价之宝。你真幸运！",
+      "user_sha256": "c65662aa8371c746c1b2da9f0197b464c73eb2f28dd1f85d64b5256598cdea06"
+    },
+    {
+      "fixture_id": "road_companion_current",
+      "arm": "base",
+      "system": "你是中文事实核查与记忆归并器。仅输出有效 JSON。",
+      "user": "请用简体中文根据“候选记忆”和“来源对话”输出逐事实核查表，只输出有效 JSON：\n{\"facts\":[{\"case_id\":\"病例ID\",\"claim_zh\":\"单一事实\",\"support\":\"full/partial/absent\",\"source_turn_ids\":[\"D场:轮\"],\"source_session_id\":\"session_N 或 null\",\"source_speakers\":[\"说话者\"],\"covered_by_memory_ids\":[\"记忆ID\"],\"action\":\"保留/合并/撤回\"}]}\n把复合内容拆成可独立核查的最小事实；同一事实若出现在多个记忆版本，用 covered_by_memory_ids 标明。来源对话中没有证据的主张也列出并标 absent/撤回。不要用候选记忆本身充当来源。来源字段必须引用输入中的真实 turn。\n\n候选记忆：\n[{\"case_id\": \"current_conv-41_509b61c0\", \"memory_id\": \"509b61c0-35da-4fe7-94a0-e6924cf50f07\", \"write_session_id\": \"session_11\", \"content\": \"约翰去年（约2022年）和朋友进行过一次公路旅行，探索了太平洋西北部的海岸线并去了几个国家公园，他分享了一张山峦日落与鲜花的照片，认为大自然的美令人叹为观止、带来平静与灵感\"}]\n来源对话：\n## session_11 日期：6:13 pm on 10 April, 2023\n[D11:1 text] 约翰：嘿，玛丽亚，好几天没聊了。这一周过得挺疯狂，上周五上班路上我的车抛锚了。正想办法修车，但挺不容易的，钱包也吃不消。不过我还是保持积极，在寻找解决办法。\n[D11:2 text] 玛丽亚：哦，约翰，真倒霉。这肯定不好受，但你这么积极的态度让我很佩服。坚持下去——艰难的日子总会过去，而你足够坚强，一定能挺过去！\n[D11:3 text] 约翰：谢谢你，玛丽亚。你的鼓励对我意义重大。是啊，车子出问题和钱的问题让人头疼，但我会保持积极，想办法解决。这张照片让我想起我们去年的一次公路旅行；虽然路上有些颠簸，但依然充满美丽和希望。\n[D11:3 image_caption] a photography of a mountain with a sunset and flowers in the foreground\n[D11:3 image_query] road beautiful sunset\n[D11:4 text] 玛丽亚：哇，照片真棒！你们那次公路旅行去了哪里？\n[D11:5 text] 约翰：谢谢！我们探索了太平洋西北部的海岸线，还去了几个很酷的国家公园。大自然的美真是令人叹为观止！\n[D11:6 text] 玛丽亚：哇，那一定很棒！能欣赏大自然、找到内心的平静真是太好了。你真幸运能有这样的体验。\n[D11:7 text] 约翰：是啊，太美妙了。那些壮丽的景色真的会让人深思。\n[D11:8 text] 玛丽亚：大自然能帮我们理清思路，提醒我们即使在困难时期也有美好存在。珍惜那些平静的时刻吧。\n[D11:9 text] 约翰：是啊，玛丽亚。那种平静和美好太珍贵了，尤其是在艰难的时候。它们给了我们继续前行的力量和灵感。你最近有什么新鲜事吗？\n[D11:10 text] 玛丽亚：我最近在我做志愿服务的流浪者收容所做了几次演讲。真的很有成就感，其他志愿者也给了我很多夸赞。这让我再次意识到与他人连接、帮助他人是多么重要。而且，我买了一条十字架项链，感觉离我的信仰更近了——这让我很开心。\n[D11:11 text] 约翰：太棒了，玛丽亚！你真的在改变世界。与他人连接、帮助他人能给你带来这么多快乐，真让人赞叹。继续保持！\n[D11:12 text] 玛丽亚：谢谢你，约翰！能真正带来改变真是太好了。看到影响、听到感激的话让我充满喜悦。收容所里的人们对我来说已经像家人一样了。能认识他们我真的感到很幸运。\n[D11:13 text] 约翰：哇，玛丽亚，你做的事情真的太了不起了。你的善意不断扩散，建立起如此美好的关系！\n[D11:14 text] 玛丽亚：谢谢你，约翰。建立关系、见证善意确实能带来改变。这是一张上周的照片。看到大家聚在一起，我心里暖暖的，充满了希望。\n[D11:14 image_caption] a photo of a group of people standing around a table filled with food\n[D11:14 image_query] homeless shelter volunteers\n[D11:15 text] 约翰：哇，大家能聚在一起真是太好了。你一定出了不少好点子！你在那里都做些什么？\n[D11:16 text] 玛丽亚：我们为收容所的居民组织了一顿饭，我帮忙准备各种东西。看到大家围坐在一起吃饭、互相支持，感觉真的很棒。\n[D11:17 text] 约翰：哇，玛丽亚，太棒了！你让每个人都感到那么舒适，这一定特别有成就感。你真的在带来改变！\n[D11:18 text] 玛丽亚：是啊，能帮助大家聚在一起，营造一种舒适感和社区氛围，真的很好。看到人们互相支持，是种特别的感受。\n[D11:19 text] 约翰：确实如此，玛丽亚。那真好。它给了我们希望，提醒我们并不孤单。谢谢你成为一股积极的力量。\n[D11:20 text] 玛丽亚：不客气，约翰！能感受到这种社区归属感真好。谢谢你的美言，对我意义重大。\n[D11:21 text] 约翰：很高兴能帮上忙，玛丽亚。回头再聊。保重！",
+      "user_sha256": "489d16951e944cf229cc96bf4f4653784cd426ae37004857ab7805faadeae3ad"
+    },
+    {
+      "fixture_id": "road_companion_current",
+      "arm": "source_policy",
+      "system": "你是中文事实核查与记忆归并器。仅输出有效 JSON。",
+      "user": "请用简体中文根据“候选记忆”和“来源对话”输出逐事实核查表，只输出有效 JSON：\n{\"facts\":[{\"case_id\":\"病例ID\",\"claim_zh\":\"单一事实\",\"support\":\"full/partial/absent\",\"source_turn_ids\":[\"D场:轮\"],\"source_session_id\":\"session_N 或 null\",\"source_speakers\":[\"说话者\"],\"covered_by_memory_ids\":[\"记忆ID\"],\"action\":\"保留/合并/撤回\"}]}\n把复合内容拆成可独立核查的最小事实；同一事实若出现在多个记忆版本，用 covered_by_memory_ids 标明。来源对话中没有证据的主张也列出并标 absent/撤回。不要用候选记忆本身充当来源。来源字段必须引用输入中的真实 turn。\n额外来源与反伤规则：\n- 区分事实首次出现的来源场次与候选记忆写入场次；后一场重述旧事，不会自动改变原始来源日期。\n- 旧版遗漏而新版包含的有源细节要保留；新版遗漏的旧版有源细节也要保留，不能取较短版本覆盖。\n- 区分本人明确自述、他人猜测、图片附带文字。不能把他人推测写成本人自述，图片 caption 也不等于看过原图。\n- 保留“但还好”、愿望、时间范围等限定语，不把部分支持升格成确定结论。\n- “我们”未说明同行者身份时保留旅行事实，但撤回具体同行者身份；不要依据人物关系猜测。\n- 每个被接受的事实都给足以支持其主体、对象和限定语的 turn；无法支持时用 absent/撤回，不凭常识补足。\n\n候选记忆：\n[{\"case_id\": \"current_conv-41_509b61c0\", \"memory_id\": \"509b61c0-35da-4fe7-94a0-e6924cf50f07\", \"write_session_id\": \"session_11\", \"content\": \"约翰去年（约2022年）和朋友进行过一次公路旅行，探索了太平洋西北部的海岸线并去了几个国家公园，他分享了一张山峦日落与鲜花的照片，认为大自然的美令人叹为观止、带来平静与灵感\"}]\n来源对话：\n## session_11 日期：6:13 pm on 10 April, 2023\n[D11:1 text] 约翰：嘿，玛丽亚，好几天没聊了。这一周过得挺疯狂，上周五上班路上我的车抛锚了。正想办法修车，但挺不容易的，钱包也吃不消。不过我还是保持积极，在寻找解决办法。\n[D11:2 text] 玛丽亚：哦，约翰，真倒霉。这肯定不好受，但你这么积极的态度让我很佩服。坚持下去——艰难的日子总会过去，而你足够坚强，一定能挺过去！\n[D11:3 text] 约翰：谢谢你，玛丽亚。你的鼓励对我意义重大。是啊，车子出问题和钱的问题让人头疼，但我会保持积极，想办法解决。这张照片让我想起我们去年的一次公路旅行；虽然路上有些颠簸，但依然充满美丽和希望。\n[D11:3 image_caption] a photography of a mountain with a sunset and flowers in the foreground\n[D11:3 image_query] road beautiful sunset\n[D11:4 text] 玛丽亚：哇，照片真棒！你们那次公路旅行去了哪里？\n[D11:5 text] 约翰：谢谢！我们探索了太平洋西北部的海岸线，还去了几个很酷的国家公园。大自然的美真是令人叹为观止！\n[D11:6 text] 玛丽亚：哇，那一定很棒！能欣赏大自然、找到内心的平静真是太好了。你真幸运能有这样的体验。\n[D11:7 text] 约翰：是啊，太美妙了。那些壮丽的景色真的会让人深思。\n[D11:8 text] 玛丽亚：大自然能帮我们理清思路，提醒我们即使在困难时期也有美好存在。珍惜那些平静的时刻吧。\n[D11:9 text] 约翰：是啊，玛丽亚。那种平静和美好太珍贵了，尤其是在艰难的时候。它们给了我们继续前行的力量和灵感。你最近有什么新鲜事吗？\n[D11:10 text] 玛丽亚：我最近在我做志愿服务的流浪者收容所做了几次演讲。真的很有成就感，其他志愿者也给了我很多夸赞。这让我再次意识到与他人连接、帮助他人是多么重要。而且，我买了一条十字架项链，感觉离我的信仰更近了——这让我很开心。\n[D11:11 text] 约翰：太棒了，玛丽亚！你真的在改变世界。与他人连接、帮助他人能给你带来这么多快乐，真让人赞叹。继续保持！\n[D11:12 text] 玛丽亚：谢谢你，约翰！能真正带来改变真是太好了。看到影响、听到感激的话让我充满喜悦。收容所里的人们对我来说已经像家人一样了。能认识他们我真的感到很幸运。\n[D11:13 text] 约翰：哇，玛丽亚，你做的事情真的太了不起了。你的善意不断扩散，建立起如此美好的关系！\n[D11:14 text] 玛丽亚：谢谢你，约翰。建立关系、见证善意确实能带来改变。这是一张上周的照片。看到大家聚在一起，我心里暖暖的，充满了希望。\n[D11:14 image_caption] a photo of a group of people standing around a table filled with food\n[D11:14 image_query] homeless shelter volunteers\n[D11:15 text] 约翰：哇，大家能聚在一起真是太好了。你一定出了不少好点子！你在那里都做些什么？\n[D11:16 text] 玛丽亚：我们为收容所的居民组织了一顿饭，我帮忙准备各种东西。看到大家围坐在一起吃饭、互相支持，感觉真的很棒。\n[D11:17 text] 约翰：哇，玛丽亚，太棒了！你让每个人都感到那么舒适，这一定特别有成就感。你真的在带来改变！\n[D11:18 text] 玛丽亚：是啊，能帮助大家聚在一起，营造一种舒适感和社区氛围，真的很好。看到人们互相支持，是种特别的感受。\n[D11:19 text] 约翰：确实如此，玛丽亚。那真好。它给了我们希望，提醒我们并不孤单。谢谢你成为一股积极的力量。\n[D11:20 text] 玛丽亚：不客气，约翰！能感受到这种社区归属感真好。谢谢你的美言，对我意义重大。\n[D11:21 text] 约翰：很高兴能帮上忙，玛丽亚。回头再聊。保重！",
+      "user_sha256": "01d0b3e2cda1a780313113055d50e8cdbb997ae9601a333c8cae8d12d23d85ab"
+    }
+  ],
+  "calls": [
+    {
+      "call_index": 1,
+      "fixture_id": "tim_writing_castle",
+      "arm": "base",
+      "raw_response": "{\"facts\":[{\"case_id\":\"conv-43_de89be96dda6\",\"claim_zh\":\"蒂姆正在写一部奇幻小说\",\"support\":\"full\",\"source_turn_ids\":[\"D15:3\"],\"source_session_id\":\"session_15\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\",\"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_de89be96dda6\",\"claim_zh\":\"截至2023年10月21日，蒂姆的奇幻小说写作进展顺利\",\"support\":\"full\",\"source_turn_ids\":[\"D15:3\"],\"source_session_id\":\"session_15\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\",\"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_de89be96dda6\",\"claim_zh\":\"蒂姆对写作虽然有点紧张但很兴奋\",\"support\":\"full\",\"source_turn_ids\":[\"D15:3\"],\"source_session_id\":\"session_15\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\",\"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_de89be96dda6\",\"claim_zh\":\"蒂姆觉得所有努力都得到了回报\",\"support\":\"full\",\"source_turn_ids\":[\"D15:3\"],\"source_session_id\":\"session_15\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\",\"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_de89be96dda6\",\"claim_zh\":\"写作带给蒂姆巨大快乐，并能创造一个全新的世界\",\"support\":\"full\",\"source_turn_ids\":[\"D15:3\"],\"source_session_id\":\"session_15\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\",\"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_de89be96dda6\",\"claim_zh\":\"蒂姆的写作灵感来自书籍、电影和现实生活经历\",\"support\":\"full\",\"source_turn_ids\":[\"D15:5\"],\"source_session_id\":\"session_15\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"e0cdd401-d61b-4636-9640-9733e52cf2e6\",\"bd5e05ac-8fff-4146-9701-0796790c5f10\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_c95588df7268\",\"claim_zh\":\"阅读关于英国城堡的内容给了蒂姆很多灵感\",\"support\":\"full\",\"source_turn_ids\":[\"D15:5\"],\"source_session_id\":\"session_15\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"e0cdd401-d61b-4636-9640-9733e52cf2e6\",\"bd5e05ac-8fff-4146-9701-0796790c5f10\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_c95588df7268\",\"claim_zh\":\"某些作者对蒂姆来说像灵感宝库（如J.K.罗琳）\",\"support\":\"full\",\"source_turn_ids\":[\"D15:5\",\"D15:7\"],\"source_session_id\":\"session_15\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"e0cdd401-d61b-4636-9640-9733e52cf2e6\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_c95588df7268\",\"claim_zh\":\"蒂姆梦想有一天能去参观英国城堡\",\"support\":\"full\",\"source_turn_ids\":[\"D15:1\"],\"source_session_id\":\"session_15\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"bd5e05ac-8fff-4146-9701-0796790c5f10\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_de89be96dda6\",\"claim_zh\":\"截至2023年11月6日，蒂姆写作进展顺利且兴奋（session_16版本）\",\"support\":\"partial\",\"source_turn_ids\":[\"D16:1\"],\"source_session_id\":\"session_16\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\"action\":\"合并\"},{\"case_id\":\"conv-43_de89be96dda6\",\"claim_zh\":\"session_16中蒂姆提到遇到写作瓶颈（情节转折卡住）但坚持后思路恢复畅通\",\"support\":\"full\",\"source_turn_ids\":[\"D16:1\",\"D16:3\"],\"source_session_id\":\"session_16\",\"source_speakers\":[\"蒂姆\"],\"covered_by_memory_ids\":[\"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\"action\":\"合并\"}]}",
+      "usage": {
+        "prompt_tokens": 3247,
+        "completion_tokens": 1441
+      },
+      "parsed_response": {
+        "facts": [
+          {
+            "case_id": "conv-43_de89be96dda6",
+            "claim_zh": "蒂姆正在写一部奇幻小说",
+            "support": "full",
+            "source_turn_ids": [
+              "D15:3"
+            ],
+            "source_session_id": "session_15",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+              "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_de89be96dda6",
+            "claim_zh": "截至2023年10月21日，蒂姆的奇幻小说写作进展顺利",
+            "support": "full",
+            "source_turn_ids": [
+              "D15:3"
+            ],
+            "source_session_id": "session_15",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+              "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_de89be96dda6",
+            "claim_zh": "蒂姆对写作虽然有点紧张但很兴奋",
+            "support": "full",
+            "source_turn_ids": [
+              "D15:3"
+            ],
+            "source_session_id": "session_15",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+              "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_de89be96dda6",
+            "claim_zh": "蒂姆觉得所有努力都得到了回报",
+            "support": "full",
+            "source_turn_ids": [
+              "D15:3"
+            ],
+            "source_session_id": "session_15",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+              "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_de89be96dda6",
+            "claim_zh": "写作带给蒂姆巨大快乐，并能创造一个全新的世界",
+            "support": "full",
+            "source_turn_ids": [
+              "D15:3"
+            ],
+            "source_session_id": "session_15",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+              "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_de89be96dda6",
+            "claim_zh": "蒂姆的写作灵感来自书籍、电影和现实生活经历",
+            "support": "full",
+            "source_turn_ids": [
+              "D15:5"
+            ],
+            "source_session_id": "session_15",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+              "bd5e05ac-8fff-4146-9701-0796790c5f10"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_c95588df7268",
+            "claim_zh": "阅读关于英国城堡的内容给了蒂姆很多灵感",
+            "support": "full",
+            "source_turn_ids": [
+              "D15:5"
+            ],
+            "source_session_id": "session_15",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+              "bd5e05ac-8fff-4146-9701-0796790c5f10"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_c95588df7268",
+            "claim_zh": "某些作者对蒂姆来说像灵感宝库（如J.K.罗琳）",
+            "support": "full",
+            "source_turn_ids": [
+              "D15:5",
+              "D15:7"
+            ],
+            "source_session_id": "session_15",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "e0cdd401-d61b-4636-9640-9733e52cf2e6"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_c95588df7268",
+            "claim_zh": "蒂姆梦想有一天能去参观英国城堡",
+            "support": "full",
+            "source_turn_ids": [
+              "D15:1"
+            ],
+            "source_session_id": "session_15",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "bd5e05ac-8fff-4146-9701-0796790c5f10"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_de89be96dda6",
+            "claim_zh": "截至2023年11月6日，蒂姆写作进展顺利且兴奋（session_16版本）",
+            "support": "partial",
+            "source_turn_ids": [
+              "D16:1"
+            ],
+            "source_session_id": "session_16",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-43_de89be96dda6",
+            "claim_zh": "session_16中蒂姆提到遇到写作瓶颈（情节转折卡住）但坚持后思路恢复畅通",
+            "support": "full",
+            "source_turn_ids": [
+              "D16:1",
+              "D16:3"
+            ],
+            "source_session_id": "session_16",
+            "source_speakers": [
+              "蒂姆"
+            ],
+            "covered_by_memory_ids": [
+              "3325426c-88b6-46e2-b7bb-d1303bce5de1"
+            ],
+            "action": "合并"
+          }
+        ]
+      },
+      "json_parse_ok": true
+    },
+    {
+      "call_index": 2,
+      "fixture_id": "tim_writing_castle",
+      "arm": "source_policy",
+      "raw_response": "```json\n{\n  \"facts\": [\n    {\n      \"case_id\": \"conv-43_de89be96dda6\",\n      \"claim_zh\": \"蒂姆正在写一部奇幻小说\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:3\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\", \"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\n      \"action\": \"合并\"\n    },\n    {\n      \"case_id\": \"conv-43_de89be96dda6\",\n      \"claim_zh\": \"截至2023年10月21日，蒂姆的写作进展顺利\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:3\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\"],\n      \"action\": \"保留\"\n    },\n    {\n      \"case_id\": \"conv-43_de89be96dda6\",\n      \"claim_zh\": \"蒂姆写奇幻小说时虽然有点紧张但非常兴奋\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:3\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\", \"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\n      \"action\": \"合并\"\n    },\n    {\n      \"case_id\": \"conv-43_de89be96dda6\",\n      \"claim_zh\": \"蒂姆觉得他所有的努力都得到了回报\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:3\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\", \"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\n      \"action\": \"合并\"\n    },\n    {\n      \"case_id\": \"conv-43_de89be96dda6\",\n      \"claim_zh\": \"蒂姆认为写作能创造一个全新的世界\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:3\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\n      \"action\": \"保留\"\n    },\n    {\n      \"case_id\": \"conv-43_de89be96dda6\",\n      \"claim_zh\": \"写作给蒂姆带来很多快乐\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:3\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"ba8d6bda-96c4-4304-be57-cdbbfefdb84f\", \"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\n      \"action\": \"合并\"\n    },\n    {\n      \"case_id\": \"conv-43_de89be96dda6\",\n      \"claim_zh\": \"截至2023年11月6日的对话，蒂姆上周曾卡在一个情节转折上，坚持后思路恢复畅通\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D16:1\"],\n      \"source_session_id\": \"session_16\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [],\n      \"action\": \"撤回\"\n    },\n    {\n      \"case_id\": \"conv-43_c95588df7268\",\n      \"claim_zh\": \"蒂姆的写作灵感来自书籍、电影和现实生活经历\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:5\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"e0cdd401-d61b-4636-9640-9733e52cf2e6\", \"bd5e05ac-8fff-4146-9701-0796790c5f10\"],\n      \"action\": \"合并\"\n    },\n    {\n      \"case_id\": \"conv-43_c95588df7268\",\n      \"claim_zh\": \"阅读关于英国城堡的内容给了蒂姆很多写作灵感\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:5\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"e0cdd401-d61b-4636-9640-9733e52cf2e6\", \"bd5e05ac-8fff-4146-9701-0796790c5f10\"],\n      \"action\": \"合并\"\n    },\n    {\n      \"case_id\": \"conv-43_c95588df7268\",\n      \"claim_zh\": \"某些作者对蒂姆来说像灵感宝库\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:5\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"e0cdd401-d61b-4636-9640-9733e52cf2e6\"],\n      \"action\": \"保留\"\n    },\n    {\n      \"case_id\": \"conv-43_c95588df7268\",\n      \"claim_zh\": \"蒂姆梦想有一天能去参观英国城堡\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:1\", \"D15:3\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"bd5e05ac-8fff-4146-9701-0796790c5f10\"],\n      \"action\": \"保留\"\n    },\n    {\n      \"case_id\": \"conv-43_c95588df7268\",\n      \"claim_zh\": \"蒂姆读过J.K.罗琳的作品并记下她写作风格的笔记\",\n      \"support\": \"full\",\n      \"source_turn_ids\": [\"D15:7\", \"D15:9\"],\n      \"source_session_id\": \"session_15\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [],\n      \"action\": \"撤回\"\n    },\n    {\n      \"case_id\": \"conv-43_de89be96dda6\",\n      \"claim_zh\": \"session_16版本声称截至2023年11月6日写作进展顺利，但来源对话仅提及上周卡壳与解决，未直接重申进展顺利\",\n      \"support\": \"partial\",\n      \"source_turn_ids\": [\"D16:1\"],\n      \"source_session_id\": \"session_16\",\n      \"source_speakers\": [\"蒂姆\"],\n      \"covered_by_memory_ids\": [\"3325426c-88b6-46e2-b7bb-d1303bce5de1\"],\n      \"action\": \"撤回\"\n    }\n  ]\n}\n```",
+      "usage": {
+        "prompt_tokens": 3436,
+        "completion_tokens": 2008
+      },
+      "json_parse_ok": false
+    },
+    {
+      "call_index": 3,
+      "fixture_id": "melanie_pottery",
+      "arm": "source_policy",
+      "raw_response": "{\"facts\":[{\"case_id\":\"conv-26_444350391e64\",\"claim_zh\":\"梅拉妮在受伤前一个月（对话称“上个月”）受了伤，不得不暂停陶艺\",\"support\":\"full\",\"source_turn_ids\":[\"D17:8\"],\"source_session_id\":\"session_17\",\"source_speakers\":[\"梅拉妮\"],\"covered_by_memory_ids\":[\"8642315d-3c4c-4c9e-a333-7f29093b90fc\",\"137a6569-6e2e-4878-97d5-71289efc1f4a\"],\"action\":\"合并\"},{\"case_id\":\"conv-26_444350391e64\",\"claim_zh\":\"梅拉妮受伤的时间是2023年9月（据13 October 2023对话中“上个月”推断）\",\"support\":\"partial\",\"source_turn_ids\":[\"D17:8\"],\"source_session_id\":\"session_17\",\"source_speakers\":[\"梅拉妮\"],\"covered_by_memory_ids\":[\"8642315d-3c4c-4c9e-a333-7f29093b90fc\",\"137a6569-6e2e-4878-97d5-71289efc1f4a\"],\"action\":\"合并\"},{\"case_id\":\"conv-26_444350391e64\",\"claim_zh\":\"陶艺是梅拉妮用于自我表达和获得平静的方式\",\"support\":\"full\",\"source_turn_ids\":[\"D17:8\"],\"source_session_id\":\"session_17\",\"source_speakers\":[\"梅拉妮\"],\"covered_by_memory_ids\":[\"8642315d-3c4c-4c9e-a333-7f29093b90fc\",\"137a6569-6e2e-4878-97d5-71289efc1f4a\"],\"action\":\"合并\"},{\"case_id\":\"conv-26_444350391e64\",\"claim_zh\":\"暂停陶艺让梅拉妮挺难受，但她还好\",\"support\":\"full\",\"source_turn_ids\":[\"D17:10\"],\"source_session_id\":\"session_17\",\"source_speakers\":[\"梅拉妮\"],\"covered_by_memory_ids\":[\"137a6569-6e2e-4878-97d5-71289efc1f4a\"],\"action\":\"合并\"},{\"case_id\":\"conv-26_444350391e64\",\"claim_zh\":\"梅拉妮受伤后目前通过读书和画画打发时间\",\"support\":\"full\",\"source_turn_ids\":[\"D17:10\"],\"source_session_id\":\"session_17\",\"source_speakers\":[\"梅拉妮\"],\"covered_by_memory_ids\":[\"8642315d-3c4c-4c9e-a333-7f29093b90fc\"],\"action\":\"保留\"}]}",
+      "usage": {
+        "prompt_tokens": 2752,
+        "completion_tokens": 665
+      },
+      "parsed_response": {
+        "facts": [
+          {
+            "case_id": "conv-26_444350391e64",
+            "claim_zh": "梅拉妮在受伤前一个月（对话称“上个月”）受了伤，不得不暂停陶艺",
+            "support": "full",
+            "source_turn_ids": [
+              "D17:8"
+            ],
+            "source_session_id": "session_17",
+            "source_speakers": [
+              "梅拉妮"
+            ],
+            "covered_by_memory_ids": [
+              "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "137a6569-6e2e-4878-97d5-71289efc1f4a"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-26_444350391e64",
+            "claim_zh": "梅拉妮受伤的时间是2023年9月（据13 October 2023对话中“上个月”推断）",
+            "support": "partial",
+            "source_turn_ids": [
+              "D17:8"
+            ],
+            "source_session_id": "session_17",
+            "source_speakers": [
+              "梅拉妮"
+            ],
+            "covered_by_memory_ids": [
+              "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "137a6569-6e2e-4878-97d5-71289efc1f4a"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-26_444350391e64",
+            "claim_zh": "陶艺是梅拉妮用于自我表达和获得平静的方式",
+            "support": "full",
+            "source_turn_ids": [
+              "D17:8"
+            ],
+            "source_session_id": "session_17",
+            "source_speakers": [
+              "梅拉妮"
+            ],
+            "covered_by_memory_ids": [
+              "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "137a6569-6e2e-4878-97d5-71289efc1f4a"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-26_444350391e64",
+            "claim_zh": "暂停陶艺让梅拉妮挺难受，但她还好",
+            "support": "full",
+            "source_turn_ids": [
+              "D17:10"
+            ],
+            "source_session_id": "session_17",
+            "source_speakers": [
+              "梅拉妮"
+            ],
+            "covered_by_memory_ids": [
+              "137a6569-6e2e-4878-97d5-71289efc1f4a"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-26_444350391e64",
+            "claim_zh": "梅拉妮受伤后目前通过读书和画画打发时间",
+            "support": "full",
+            "source_turn_ids": [
+              "D17:10"
+            ],
+            "source_session_id": "session_17",
+            "source_speakers": [
+              "梅拉妮"
+            ],
+            "covered_by_memory_ids": [
+              "8642315d-3c4c-4c9e-a333-7f29093b90fc"
+            ],
+            "action": "保留"
+          }
+        ]
+      },
+      "json_parse_ok": true
+    },
+    {
+      "call_index": 4,
+      "fixture_id": "melanie_pottery",
+      "arm": "base",
+      "raw_response": "{\"facts\":[{\"case_id\":\"conv-26_444350391e64\",\"claim_zh\":\"梅拉妮上个月受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式\",\"support\":\"full\",\"source_turn_ids\":[\"D17:8\"],\"source_session_id\":\"session_17\",\"source_speakers\":[\"梅拉妮\"],\"covered_by_memory_ids\":[\"8642315d-3c4c-4c9e-a333-7f29093b90fc\",\"137a6569-6e2e-4878-97d5-71289efc1f4a\"],\"action\":\"合并\"},{\"case_id\":\"conv-26_444350391e64\",\"claim_zh\":\"受伤发生在2023年9月\",\"support\":\"full\",\"source_turn_ids\":[\"D17:8\"],\"source_session_id\":\"session_17\",\"source_speakers\":[\"梅拉妮\"],\"covered_by_memory_ids\":[\"8642315d-3c4c-4c9e-a333-7f29093b90fc\",\"137a6569-6e2e-4878-97d5-71289efc1f4a\"],\"action\":\"合并\"},{\"case_id\":\"conv-26_444350391e64\",\"claim_zh\":\"梅拉妮目前通过读书和画画打发时间\",\"support\":\"full\",\"source_turn_ids\":[\"D17:10\"],\"source_session_id\":\"session_17\",\"source_speakers\":[\"梅拉妮\"],\"covered_by_memory_ids\":[\"8642315d-3c4c-4c9e-a333-7f29093b90fc\"],\"action\":\"合并\"},{\"case_id\":\"conv-26_444350391e64\",\"claim_zh\":\"暂停陶艺让梅拉妮很难受\",\"support\":\"full\",\"source_turn_ids\":[\"D17:10\"],\"source_session_id\":\"session_17\",\"source_speakers\":[\"梅拉妮\"],\"covered_by_memory_ids\":[\"137a6569-6e2e-4878-97d5-71289efc1f4a\"],\"action\":\"合并\"}]}",
+      "usage": {
+        "prompt_tokens": 2563,
+        "completion_tokens": 458
+      },
+      "parsed_response": {
+        "facts": [
+          {
+            "case_id": "conv-26_444350391e64",
+            "claim_zh": "梅拉妮上个月受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式",
+            "support": "full",
+            "source_turn_ids": [
+              "D17:8"
+            ],
+            "source_session_id": "session_17",
+            "source_speakers": [
+              "梅拉妮"
+            ],
+            "covered_by_memory_ids": [
+              "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "137a6569-6e2e-4878-97d5-71289efc1f4a"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-26_444350391e64",
+            "claim_zh": "受伤发生在2023年9月",
+            "support": "full",
+            "source_turn_ids": [
+              "D17:8"
+            ],
+            "source_session_id": "session_17",
+            "source_speakers": [
+              "梅拉妮"
+            ],
+            "covered_by_memory_ids": [
+              "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+              "137a6569-6e2e-4878-97d5-71289efc1f4a"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-26_444350391e64",
+            "claim_zh": "梅拉妮目前通过读书和画画打发时间",
+            "support": "full",
+            "source_turn_ids": [
+              "D17:10"
+            ],
+            "source_session_id": "session_17",
+            "source_speakers": [
+              "梅拉妮"
+            ],
+            "covered_by_memory_ids": [
+              "8642315d-3c4c-4c9e-a333-7f29093b90fc"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "conv-26_444350391e64",
+            "claim_zh": "暂停陶艺让梅拉妮很难受",
+            "support": "full",
+            "source_turn_ids": [
+              "D17:10"
+            ],
+            "source_session_id": "session_17",
+            "source_speakers": [
+              "梅拉妮"
+            ],
+            "covered_by_memory_ids": [
+              "137a6569-6e2e-4878-97d5-71289efc1f4a"
+            ],
+            "action": "合并"
+          }
+        ]
+      },
+      "json_parse_ok": true
+    },
+    {
+      "call_index": 5,
+      "fixture_id": "road_companion_current",
+      "arm": "base",
+      "raw_response": "{\"facts\":[\n{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰去年与朋友进行过一次公路旅行\",\"support\":\"full\",\"source_turn_ids\":[\"D11:3\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"保留\"},\n{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"公路旅行发生在约2022年\",\"support\":\"partial\",\"source_turn_ids\":[\"D11:3\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"保留\"},\n{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰和朋友探索了太平洋西北部的海岸线\",\"support\":\"full\",\"source_turn_ids\":[\"D11:5\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"保留\"},\n{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰和朋友去了几个国家公园\",\"support\":\"full\",\"source_turn_ids\":[\"D11:5\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"保留\"},\n{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰分享了一张山峦日落与鲜花的照片\",\"support\":\"full\",\"source_turn_ids\":[\"D11:3\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"保留\"},\n{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰认为大自然的美令人叹为观止\",\"support\":\"full\",\"source_turn_ids\":[\"D11:5\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"保留\"},\n{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰认为大自然带来平静与灵感\",\"support\":\"full\",\"source_turn_ids\":[\"D11:9\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"保留\"}\n]}",
+      "usage": {
+        "prompt_tokens": 1269,
+        "completion_tokens": 675
+      },
+      "parsed_response": {
+        "facts": [
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰去年与朋友进行过一次公路旅行",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:3"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "保留"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "公路旅行发生在约2022年",
+            "support": "partial",
+            "source_turn_ids": [
+              "D11:3"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "保留"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰和朋友探索了太平洋西北部的海岸线",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:5"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "保留"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰和朋友去了几个国家公园",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:5"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "保留"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰分享了一张山峦日落与鲜花的照片",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:3"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "保留"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰认为大自然的美令人叹为观止",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:5"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "保留"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰认为大自然带来平静与灵感",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:9"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "保留"
+          }
+        ]
+      },
+      "json_parse_ok": true
+    },
+    {
+      "call_index": 6,
+      "fixture_id": "road_companion_current",
+      "arm": "source_policy",
+      "raw_response": "{\"facts\":[{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰去年和朋友进行过一次公路旅行\",\"support\":\"partial\",\"source_turn_ids\":[\"D11:3\",\"D11:4\",\"D11:5\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\",\"玛丽亚\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"合并\"},{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰的公路旅行同行者是朋友\",\"support\":\"absent\",\"source_turn_ids\":[\"D11:3\",\"D11:5\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"撤回\"},{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰公路旅行的年份约为2022年\",\"support\":\"absent\",\"source_turn_ids\":[\"D11:3\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"撤回\"},{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"公路旅行中约翰探索了太平洋西北部的海岸线\",\"support\":\"full\",\"source_turn_ids\":[\"D11:5\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"合并\"},{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"公路旅行中约翰去了几个国家公园\",\"support\":\"full\",\"source_turn_ids\":[\"D11:5\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"合并\"},{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰分享了一张山峦日落与鲜花的照片\",\"support\":\"full\",\"source_turn_ids\":[\"D11:3\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"合并\"},{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰认为大自然的美令人叹为观止\",\"support\":\"full\",\"source_turn_ids\":[\"D11:5\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"合并\"},{\"case_id\":\"current_conv-41_509b61c0\",\"claim_zh\":\"约翰表示大自然带来平静与灵感，尤其在艰难时候\",\"support\":\"full\",\"source_turn_ids\":[\"D11:9\"],\"source_session_id\":\"session_11\",\"source_speakers\":[\"约翰\"],\"covered_by_memory_ids\":[\"509b61c0-35da-4fe7-94a0-e6924cf50f07\"],\"action\":\"合并\"}]}",
+      "usage": {
+        "prompt_tokens": 1458,
+        "completion_tokens": 850
+      },
+      "parsed_response": {
+        "facts": [
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰去年和朋友进行过一次公路旅行",
+            "support": "partial",
+            "source_turn_ids": [
+              "D11:3",
+              "D11:4",
+              "D11:5"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰",
+              "玛丽亚"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰的公路旅行同行者是朋友",
+            "support": "absent",
+            "source_turn_ids": [
+              "D11:3",
+              "D11:5"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "撤回"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰公路旅行的年份约为2022年",
+            "support": "absent",
+            "source_turn_ids": [
+              "D11:3"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "撤回"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "公路旅行中约翰探索了太平洋西北部的海岸线",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:5"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "公路旅行中约翰去了几个国家公园",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:5"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰分享了一张山峦日落与鲜花的照片",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:3"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰认为大自然的美令人叹为观止",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:5"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "合并"
+          },
+          {
+            "case_id": "current_conv-41_509b61c0",
+            "claim_zh": "约翰表示大自然带来平静与灵感，尤其在艰难时候",
+            "support": "full",
+            "source_turn_ids": [
+              "D11:9"
+            ],
+            "source_session_id": "session_11",
+            "source_speakers": [
+              "约翰"
+            ],
+            "covered_by_memory_ids": [
+              "509b61c0-35da-4fe7-94a0-e6924cf50f07"
+            ],
+            "action": "合并"
+          }
+        ]
+      },
+      "json_parse_ok": true
+    }
+  ],
+  "limits": [
+    "Full source sessions are supplied: this tests source interpretation, not source retrieval.",
+    "Human fact inventory and QA gold are never included in model requests.",
+    "No Memory/Graph/retrieval/answer/judge writes or calls; one response per arm is not an effect estimate."
+  ],
+  "fixtures": [
+    {
+      "fixture_id": "tim_writing_castle",
+      "origin": "historical_chinese_memory_pair",
+      "case_ids": [
+        "conv-43_de89be96dda6",
+        "conv-43_c95588df7268"
+      ],
+      "candidates": [
+        {
+          "case_id": "conv-43_de89be96dda6",
+          "memory_id": "ba8d6bda-96c4-4304-be57-cdbbfefdb84f",
+          "write_session_id": "session_15",
+          "content": "蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作带给他巨大快乐"
+        },
+        {
+          "case_id": "conv-43_de89be96dda6",
+          "memory_id": "3325426c-88b6-46e2-b7bb-d1303bce5de1",
+          "write_session_id": "session_16",
+          "content": "蒂姆正在写一部奇幻小说，进展顺利，虽然有点紧张但很兴奋，觉得所有努力都得到了回报，写作能创造一个全新的世界，带给他很多快乐"
+        },
+        {
+          "case_id": "conv-43_c95588df7268",
+          "memory_id": "e0cdd401-d61b-4636-9640-9733e52cf2e6",
+          "write_session_id": "session_15",
+          "content": "蒂姆的写作灵感来自书籍、电影和现实生活经历，阅读关于英国城堡的内容给了他很多灵感，某些作者对他来说像灵感宝库"
+        },
+        {
+          "case_id": "conv-43_c95588df7268",
+          "memory_id": "bd5e05ac-8fff-4146-9701-0796790c5f10",
+          "write_session_id": "session_16",
+          "content": "蒂姆的写作灵感来源包括书籍、电影和现实生活经历；阅读关于英国城堡的内容给了他很多灵感，他梦想有一天能去参观英国城堡"
+        }
+      ],
+      "source_sessions": [
+        "session_15",
+        "session_16"
+      ],
+      "source_conversation": "conv-43"
+    },
+    {
+      "fixture_id": "melanie_pottery",
+      "origin": "historical_chinese_memory_pair",
+      "case_ids": [
+        "conv-26_444350391e64"
+      ],
+      "candidates": [
+        {
+          "case_id": "conv-26_444350391e64",
+          "memory_id": "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+          "write_session_id": "session_17",
+          "content": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺——那是她用于自我表达和获得平静的方式。她目前通过读书和画画打发时间"
+        },
+        {
+          "case_id": "conv-26_444350391e64",
+          "memory_id": "137a6569-6e2e-4878-97d5-71289efc1f4a",
+          "write_session_id": "session_18",
+          "content": "梅拉妮在2023年9月受了伤，不得不暂停陶艺——那是她用来自我表达和获得平静的方式，这让她很难受"
+        }
+      ],
+      "source_sessions": [
+        "session_17",
+        "session_18"
+      ],
+      "source_conversation": "conv-26"
+    },
+    {
+      "fixture_id": "road_companion_current",
+      "origin": "current_chinese_memory_source_audit",
+      "case_ids": [
+        "current_conv-41_509b61c0"
+      ],
+      "candidates": [
+        {
+          "case_id": "current_conv-41_509b61c0",
+          "memory_id": "509b61c0-35da-4fe7-94a0-e6924cf50f07",
+          "write_session_id": "session_11",
+          "content": "约翰去年（约2022年）和朋友进行过一次公路旅行，探索了太平洋西北部的海岸线并去了几个国家公园，他分享了一张山峦日落与鲜花的照片，认为大自然的美令人叹为观止、带来平静与灵感"
+        }
+      ],
+      "source_sessions": [
+        "session_11"
+      ],
+      "source_conversation": "conv-41"
+    }
+  ],
+  "model": "glm-5.3-flash",
+  "completed_planned_calls": true
+}
