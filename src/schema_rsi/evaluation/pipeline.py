@@ -18,6 +18,7 @@ import hashlib
 import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
+from typing import Callable
 
 from schema_rsi.benchmarks.base import BenchmarkCase
 from schema_rsi.config import Settings, get_settings
@@ -85,7 +86,8 @@ class EvaluationPipeline:
 
     # ---- ingest ----
 
-    def ingest_case(self, case: BenchmarkCase, *, max_turns: int | None = None, user_id: str | None = None) -> int:
+    def ingest_case(self, case: BenchmarkCase, *, max_turns: int | None = None, user_id: str | None = None,
+                    source_trace_sink: Callable[[dict], None] | None = None) -> int:
         """把 case 的 history（可截断）按 session 写入 Mem0，返回新增记忆条数。
 
         user_id 默认按 user_id_strategy 生成；同 conversation 的多个 QA 可显式传同一个
@@ -93,6 +95,10 @@ class EvaluationPipeline:
 
         容错：按 session 粒度捕获失败（如 LLM 供应商内容过滤），跳过并记录到
         self.ingest_errors，不中断整体 ingest。
+
+        source_trace_sink 可记录无 gold 的输入批次和 backend 返回记录 ID。
+        sink 异常向调用者传播；输入留痕失败时不写该批，结果留痕失败时
+        backend 可能已经写入，调用者不得据此假定写入未发生。
         """
         user_id = user_id or self.case_user_id(case)
         added = 0
@@ -123,6 +129,15 @@ class EvaluationPipeline:
                         ),
                     }
                 ] + messages
+            batch_id = None
+            if source_trace_sink is not None:
+                from schema_rsi.evaluation.source_trace import build_source_batch
+
+                batch = build_source_batch(benchmark=case.benchmark, user_id=user_id,
+                                           session=session, turns=turns, messages=messages)
+                batch_id = batch['batch_id']
+                source_trace_sink({'event': 'batch_input', 'case_id': case.case_id, 'batch': batch})
+            outcome = None
             try:
                 records = self.backend.add_memory(
                     user_id,
@@ -147,6 +162,16 @@ class EvaluationPipeline:
                 logger.warning(
                     "ingest 跳过 %s session=%s: %s", case.case_id, session.get("session_id"), str(e)[:120]
                 )
+                outcome = {'status': 'backend_error', 'error_type': type(e).__name__,
+                           'write_completion': 'unknown'}
+            else:
+                if source_trace_sink is not None:
+                    outcome = {'status': 'backend_returned', 'returned_record_count': len(records),
+                               'returned_record_ids': [r.id for r in records],
+                               'fact_support_status': 'not_provided'}
+            if source_trace_sink is not None:
+                source_trace_sink({'event': 'batch_outcome', 'case_id': case.case_id,
+                                   'batch_id': batch_id, **outcome})
         return added
 
     def case_user_id(self, case: BenchmarkCase) -> str:
