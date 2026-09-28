@@ -1,0 +1,786 @@
+{
+  "scope": "Isolated source-input intervention: current SQLiteManager versus a rowid-tiebroken in-memory prototype; no model or real store writes",
+  "source_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "inventory_sha256": "9fc686509fec561e93114da1ed1c7e7324c747e47133044af7f6f0204f16bd23",
+  "all_session_checks": {
+    "sessions": 272,
+    "long_batches": 272,
+    "current_first_ten": 272,
+    "prototype_last_ten": 272,
+    "same_new_message_batches": 272
+  },
+  "fact_eligibility_counts": {
+    "current_cache_source_facts": 31,
+    "ordered_cache_source_facts": 7,
+    "supported_later_facts": 32,
+    "pairs_with_any_source_in_ordered_cache": 3
+  },
+  "pairs": [
+    {
+      "pair_id": "conv-41_051a88fcd77c",
+      "batch_message_count": 22,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D22:1",
+        "D22:2",
+        "D22:3",
+        "D22:4",
+        "D22:5",
+        "D22:6",
+        "D22:7",
+        "D22:8",
+        "D22:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D22:12",
+        "D22:13",
+        "D22:14",
+        "D22:15",
+        "D22:16",
+        "D22:17",
+        "D22:18",
+        "D22:19",
+        "D22:20",
+        "D22:21"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-41_051a88fcd77c:1",
+          "claim_zh": "约翰分享家人照片，家人激励他为改变而努力",
+          "source_dia_ids": [
+            "D22:5",
+            "D22:7"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-41_051a88fcd77c:2",
+          "claim_zh": "照片来自女儿萨拉生日时的旅行",
+          "source_dia_ids": [
+            "D22:7"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-41_051a88fcd77c:3",
+          "claim_zh": "照片显示家人在秋天铁轨上合影",
+          "source_dia_ids": [
+            "D22:5"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-41_051a88fcd77c:4",
+          "claim_zh": "困难时约翰会看照片提醒自己为何努力",
+          "source_dia_ids": [
+            "D22:9"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-44_0c8afd94ba05",
+      "batch_message_count": 14,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D22:1",
+        "D22:2",
+        "D22:3",
+        "D22:4",
+        "D22:5",
+        "D22:6",
+        "D22:7",
+        "D22:8",
+        "D22:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D22:4",
+        "D22:5",
+        "D22:6",
+        "D22:7",
+        "D22:8",
+        "D22:9",
+        "D22:10",
+        "D22:11",
+        "D22:12",
+        "D22:13"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-44_0c8afd94ba05:1",
+          "claim_zh": "奥黛丽用瓶盖、纽扣、坏首饰等回收材料制作首饰",
+          "source_dia_ids": [
+            "D22:5"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": true
+        },
+        {
+          "fact_id": "conv-44_0c8afd94ba05:2",
+          "claim_zh": "她认为这体现创造力、可持续发展，每件作品有故事",
+          "source_dia_ids": [
+            "D22:5"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": true
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-44_9b37baddbb91",
+      "batch_message_count": 20,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D15:1",
+        "D15:2",
+        "D15:3",
+        "D15:4",
+        "D15:5",
+        "D15:6",
+        "D15:7",
+        "D15:8",
+        "D15:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D15:10",
+        "D15:11",
+        "D15:12",
+        "D15:13",
+        "D15:14",
+        "D15:15",
+        "D15:16",
+        "D15:17",
+        "D15:18",
+        "D15:19"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-44_9b37baddbb91:1",
+          "claim_zh": "奥黛丽想过再养狗，但认为当前四只已够",
+          "source_dia_ids": [
+            "D15:3"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-44_9b37baddbb91:2",
+          "claim_zh": "四只狗让她很忙，她要照顾好每一只",
+          "source_dia_ids": [
+            "D15:3"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-44_b514edf1ce25",
+      "batch_message_count": 14,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D22:1",
+        "D22:2",
+        "D22:3",
+        "D22:4",
+        "D22:5",
+        "D22:6",
+        "D22:7",
+        "D22:8",
+        "D22:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D22:4",
+        "D22:5",
+        "D22:6",
+        "D22:7",
+        "D22:8",
+        "D22:9",
+        "D22:10",
+        "D22:11",
+        "D22:12",
+        "D22:13"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-44_b514edf1ce25:1",
+          "claim_zh": "奥黛丽做首饰先是爱好，后来开始出售",
+          "source_dia_ids": [
+            "D22:7"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": true
+        },
+        {
+          "fact_id": "conv-44_b514edf1ce25:2",
+          "claim_zh": "她把部分利润捐给动物收容所",
+          "source_dia_ids": [
+            "D22:7",
+            "D22:9"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": true
+        },
+        {
+          "fact_id": "conv-44_b514edf1ce25:4",
+          "claim_zh": "首饰制作使用回收材料",
+          "source_dia_ids": [
+            "D22:5"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": true
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-43_de89be96dda6",
+      "batch_message_count": 39,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D15:1",
+        "D15:2",
+        "D15:3",
+        "D15:4",
+        "D15:5",
+        "D15:6",
+        "D15:7",
+        "D15:8",
+        "D15:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D15:29",
+        "D15:30",
+        "D15:31",
+        "D15:32",
+        "D15:33",
+        "D15:34",
+        "D15:35",
+        "D15:36",
+        "D15:37",
+        "D15:38"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-43_de89be96dda6:1",
+          "claim_zh": "蒂姆正在写奇幻小说，写作进展顺利",
+          "source_dia_ids": [
+            "D15:3"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-43_de89be96dda6:2",
+          "claim_zh": "他对此有些紧张但很兴奋，觉得努力得到回报",
+          "source_dia_ids": [
+            "D15:3"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-43_de89be96dda6:3",
+          "claim_zh": "写作能创造全新世界",
+          "source_dia_ids": [
+            "D15:3"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-43_de89be96dda6:4",
+          "claim_zh": "写作带给蒂姆快乐",
+          "source_dia_ids": [
+            "D15:3"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-43_269540f8e596",
+      "batch_message_count": 41,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D27:1",
+        "D27:2",
+        "D27:3",
+        "D27:4",
+        "D27:5",
+        "D27:6",
+        "D27:7",
+        "D27:8",
+        "D27:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D27:31",
+        "D27:32",
+        "D27:33",
+        "D27:34",
+        "D27:35",
+        "D27:36",
+        "D27:37",
+        "D27:38",
+        "D27:39",
+        "D27:40"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-43_269540f8e596:1",
+          "claim_zh": "蒂姆加入志趣相投的环球旅行者群体",
+          "source_dia_ids": [
+            "D27:1"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-43_269540f8e596:2",
+          "claim_zh": "认识他们、听旅行经历使他高兴",
+          "source_dia_ids": [
+            "D27:1"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-26_444350391e64",
+      "batch_message_count": 27,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D17:1",
+        "D17:2",
+        "D17:3",
+        "D17:4",
+        "D17:5",
+        "D17:6",
+        "D17:7",
+        "D17:8",
+        "D17:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D17:17",
+        "D17:18",
+        "D17:19",
+        "D17:20",
+        "D17:21",
+        "D17:22",
+        "D17:23",
+        "D17:24",
+        "D17:25",
+        "D17:26"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-26_444350391e64:1",
+          "claim_zh": "梅拉妮上月受伤，暂停用来自我表达和获得平静的陶艺",
+          "source_dia_ids": [
+            "D17:8"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-26_444350391e64:2",
+          "claim_zh": "暂停陶艺让梅拉妮难受",
+          "source_dia_ids": [
+            "D17:10"
+          ],
+          "current_cache_has_source": false,
+          "ordered_cache_has_source": false
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-43_c95588df7268",
+      "batch_message_count": 39,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D15:1",
+        "D15:2",
+        "D15:3",
+        "D15:4",
+        "D15:5",
+        "D15:6",
+        "D15:7",
+        "D15:8",
+        "D15:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D15:29",
+        "D15:30",
+        "D15:31",
+        "D15:32",
+        "D15:33",
+        "D15:34",
+        "D15:35",
+        "D15:36",
+        "D15:37",
+        "D15:38"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-43_c95588df7268:1",
+          "claim_zh": "蒂姆的写作灵感来自书、电影和现实经历",
+          "source_dia_ids": [
+            "D15:5"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-43_c95588df7268:2",
+          "claim_zh": "阅读英国城堡给了他写作灵感",
+          "source_dia_ids": [
+            "D15:5"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-43_c95588df7268:4",
+          "claim_zh": "蒂姆梦想参观英国城堡",
+          "source_dia_ids": [
+            "D15:1",
+            "D15:3"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-43_d9a2fb3f97f7",
+      "batch_message_count": 16,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D9:1",
+        "D9:2",
+        "D9:3",
+        "D9:4",
+        "D9:5",
+        "D9:6",
+        "D9:7",
+        "D9:8",
+        "D9:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D9:6",
+        "D9:7",
+        "D9:8",
+        "D9:9",
+        "D9:10",
+        "D9:11",
+        "D9:12",
+        "D9:13",
+        "D9:14",
+        "D9:15"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-43_d9a2fb3f97f7:1",
+          "claim_zh": "蒂姆从未参加过运动队",
+          "source_dia_ids": [
+            "D9:5"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-43_d9a2fb3f97f7:2",
+          "claim_zh": "他更喜欢阅读奇幻小说并沉浸于魔法世界",
+          "source_dia_ids": [
+            "D9:5"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-41_e94a25c4f01c",
+      "batch_message_count": 22,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D11:1",
+        "D11:2",
+        "D11:3",
+        "D11:4",
+        "D11:5",
+        "D11:6",
+        "D11:7",
+        "D11:8",
+        "D11:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D11:12",
+        "D11:13",
+        "D11:14",
+        "D11:15",
+        "D11:16",
+        "D11:17",
+        "D11:18",
+        "D11:19",
+        "D11:20",
+        "D11:21"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-41_e94a25c4f01c:1",
+          "claim_zh": "约翰上一年参加过一次公路旅行",
+          "source_dia_ids": [
+            "D11:3"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-41_e94a25c4f01c:2",
+          "claim_zh": "旅途探索太平洋西北部海岸线和多个国家公园",
+          "source_dia_ids": [
+            "D11:5"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-41_e94a25c4f01c:3",
+          "claim_zh": "自然景色令他赞叹、深思，带来平静和灵感",
+          "source_dia_ids": [
+            "D11:5",
+            "D11:7",
+            "D11:9"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        }
+      ],
+      "unsupported_later_fact_ids": [
+        "conv-41_e94a25c4f01c:5"
+      ]
+    },
+    {
+      "pair_id": "conv-47_abc3c4fb4edf",
+      "batch_message_count": 15,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D12:1",
+        "D12:2",
+        "D12:3",
+        "D12:4",
+        "D12:5",
+        "D12:6",
+        "D12:7",
+        "D12:8",
+        "D12:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D12:5",
+        "D12:6",
+        "D12:7",
+        "D12:8",
+        "D12:9",
+        "D12:10",
+        "D12:11",
+        "D12:12",
+        "D12:13",
+        "D12:14"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-47_abc3c4fb4edf:1",
+          "claim_zh": "约翰在本地比赛得了第二名",
+          "source_dia_ids": [
+            "D12:4"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-47_abc3c4fb4edf:2",
+          "claim_zh": "虽未夺冠，他获得奖金和奖杯",
+          "source_dia_ids": [
+            "D12:6",
+            "D12:8"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": true
+        },
+        {
+          "fact_id": "conv-47_abc3c4fb4edf:3",
+          "claim_zh": "他为努力得到回报感到激动",
+          "source_dia_ids": [
+            "D12:6"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": true
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    },
+    {
+      "pair_id": "conv-47_12946f1346c5",
+      "batch_message_count": 22,
+      "current_cached_dia_ids": [
+        "date_anchor",
+        "D7:1",
+        "D7:2",
+        "D7:3",
+        "D7:4",
+        "D7:5",
+        "D7:6",
+        "D7:7",
+        "D7:8",
+        "D7:9"
+      ],
+      "ordered_cached_dia_ids": [
+        "D7:12",
+        "D7:13",
+        "D7:14",
+        "D7:15",
+        "D7:16",
+        "D7:17",
+        "D7:18",
+        "D7:19",
+        "D7:20",
+        "D7:21"
+      ],
+      "facts": [
+        {
+          "fact_id": "conv-47_12946f1346c5:1",
+          "claim_zh": "詹姆斯带狗远足并探索林中小径",
+          "source_dia_ids": [
+            "D7:2",
+            "D7:4"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        },
+        {
+          "fact_id": "conv-47_12946f1346c5:3",
+          "claim_zh": "他喜欢脚下树叶声，散步使他理清思绪、放松",
+          "source_dia_ids": [
+            "D7:8"
+          ],
+          "current_cache_has_source": true,
+          "ordered_cache_has_source": false
+        }
+      ],
+      "unsupported_later_fact_ids": []
+    }
+  ],
+  "controlled_prompt_checks": {
+    "conv-26": {
+      "source_session": "session_18",
+      "written_session": "session_19",
+      "controlled_existing_memories": [
+        {
+          "id": "0",
+          "text": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末）公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇事故，全家人都吓坏了，所幸孩子没事。梅拉妮形容这是一次可怕但已过去的经历，并让她感悟到生命宝贵、要珍惜家人"
+        },
+        {
+          "id": "1",
+          "text": "车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱"
+        }
+      ],
+      "new_messages_sha256": "ce5b174d1de0cb726bfe5c235620b9c9ab0f644104f7b8a993769e624a25f21b",
+      "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+      "only_last_k_section_changed": true,
+      "current_user_prompt_sha256": "2cea1945590c700d846bf46ea590b34ecb6467b62e474dbd221bd225fd96b2b6",
+      "ordered_user_prompt_sha256": "90b0ce6db8e32b98c3fcd70af449566df7d340a6a6cd160bc71b5374e42b210e",
+      "current_last_k_dia_ids": [
+        "date_anchor",
+        "D18:1",
+        "D18:2",
+        "D18:3",
+        "D18:4",
+        "D18:5",
+        "D18:6",
+        "D18:7",
+        "D18:8",
+        "D18:9"
+      ],
+      "ordered_last_k_dia_ids": [
+        "D18:15",
+        "D18:16",
+        "D18:17",
+        "D18:18",
+        "D18:19",
+        "D18:20",
+        "D18:21",
+        "D18:22",
+        "D18:23",
+        "D18:24"
+      ],
+      "current_user_prompt": "## Summary\n\n\n## Last k Messages\nsystem: Conversation date: 2023-10-20T18:55:00. Use this date to resolve relative time expressions like 'yesterday', 'next month', 'in three weeks'.\nassistant: 嘿卡罗琳，上周末那次公路旅行太疯狂了！我儿子出事故的时候，我们都吓坏了。幸好他没事，真是不幸中的万幸。那真是一次可怕的经历，好在一切都过去了。自从我们上次聊天以来，你过得怎么样？ [shared image: car accident damaged car airbags deployed roadtrip | a photo of a car dashboard with a white cloth and a steering wheel]\nuser: 哎呀，关于事故的事真抱歉！对你们来说一定很受创伤吧。谢天谢地你儿子没事。生活真像过山车啊。\nassistant: 是啊，我们的旅行开局就不顺。出事故的时候我真的吓坏了。还好我儿子没事，这也提醒我生命是宝贵的，要珍惜家人。\nuser: 很高兴你儿子没事，梅拉妮。生活难以预料，但这样的时刻让我们意识到所爱之人有多重要。家人就是一切。\nassistant: 你说得对，卡罗琳。家人对我来说超级重要。尤其是在事故之后，我想了很多，知道自己多么需要他们。他们就是我的全世界，我很感激拥有他们。还好，他们在科罗拉多大峡谷玩得很开心！ [shared image: grand canyon family photo | a photo of two children standing on a rocky cliff overlooking a canyon]\nuser: 孩子们看起来真可爱，梅尔！我敢说他们带来很多欢乐。他们是怎么应对那场事故的？\nassistant: 谢谢！他们很害怕，但我们安慰了他们，告诉他们哥哥会没事的。他们是坚强的孩子。\nuser: 孩子们在困境中的适应力真是惊人。他们有一种了不起的恢复能力。\nassistant: 他们真的很棒。真希望我也能那么坚强。不过他们给了我坚持下去的力量。\n\n\n## Recently Extracted Memories\n[]\n\n## Existing Memories\n[{\"id\": \"0\", \"text\": \"梅拉妮一家在2023年10月中旬（10月20日对话前的上周末）公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇事故，全家人都吓坏了，所幸孩子没事。梅拉妮形容这是一次可怕但已过去的经历，并让她感悟到生命宝贵、要珍惜家人\"}, {\"id\": \"1\", \"text\": \"车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱\"}]\n\n## New Messages\nsystem: Conversation date: 2023-10-22T09:55:00. Use this date to resolve relative time expressions like 'yesterday', 'next month', 'in three weeks'.\nuser: 哇哦，梅拉妮！我上周五通过了领养机构的面试！我太兴奋也太感激了。这是我朝着组建家庭的目标迈出的一大步。\nassistant: 恭喜你，卡罗琳！领养听起来太棒了。我真为你高兴。我昨天买的这些人偶让我想起了家人之间的爱。跟我说说，你对未来有什么憧憬？ [shared image: painted ceramic family figurine | a photo of a couple of wooden dolls sitting on top of a table]\nuser: 太感谢了，梅拉妮！真漂亮！它让我深深感受到家庭中蕴含着多少爱——无论是血缘的家人，还是我们自己选择的家人。我希望能组建自己的家庭，为那些从未有过家的孩子们提供一个遮风挡雨的地方。对我来说，领养是一种回馈的方式，也是表达爱与接纳的方式。\nassistant: 哇，卡罗琳，这太了不起了。给有需要的孩子一个家，是组建家庭多么有爱的方式啊。这些孩子在新的家里一定会得到满满的关爱，过得幸福快乐。\nuser: 谢谢，梅拉妮。我的梦想是为这些孩子们创造一个安全而有爱的家。爱与接纳应该是每个人的权利，我想让他们体验到这些。\nassistant: 我完全同意，卡罗琳。每个人都应该拥有这些。看到你对帮助这些孩子如此充满热情，真的很棒。\nuser: 谢谢，梅尔。找到自我接纳是一个漫长的过程，但现在我已准备好向需要的人提供爱和支持。能够为别人的生活带来积极的改变，让人充满力量。\nassistant: 那对你来说一定很艰难，卡罗琳。敬佩你能找到自我接纳，并用自己的经历去帮助别人。你真是坚强又鼓舞人心。\nuser: 谢谢，梅拉妮。转变不容易，获得接纳也不容易，但我从朋友、家人和我敬仰的人那里得到的帮助是无价的。他们在我艰难的时刻给我鼓励，帮我找到了真正的自己。这就是为什么我想把同样的支持传递给任何需要的人。给他人带来安慰、帮助他们成长，让我感到无比快乐。\nassistant: 我真为你高兴，卡罗琳。你找到了真实的自我，现在还在帮助别人。你太鼓舞人心了！\nuser: 谢谢，梅拉妮。你的支持对我意义重大。这段旅程太美妙了，我很感激能分享它，并帮助别人走好他们的旅程。这是一份真正的礼物。 [shared image:  | a photo of a clock with a green and yellow design on it]\nassistant: 一点没错！我很高兴我们总能互相扶持。\nuser: 很高兴你同意，卡罗琳。感谢身边人的支持。他们的鼓励成就了今天的我。\nassistant: 很高兴你得到了支持。做真实的自己真好！\nuser: 是啊，没错！做真实的自己、坦诚地生活是多么自由自在。我们才能真正接纳自己，感到满足。 [shared image: painting vibrant colors happiness self-expression | a photo of a painting with the words happiness painted on it]\n\n\n## Observation Date\n2026-09-25\n\n## Current Date\n2026-09-25\n\n# Output:",
+      "ordered_user_prompt": "## Summary\n\n\n## Last k Messages\nassistant: 是啊，当然。有家人在身边帮助很大。这让艰难的日子变得容易一些。 [shared image: family hiking mountains | a photography of a woman and a child walking on a trail]\nuser: 哇，好棒的照片！是最近拍的吗？看起来你们都玩得很开心！\nassistant: 谢谢，卡罗琳！对，就是昨天拍的！孩子们很喜欢，这是公路旅行后放松的好方式。\nuser: 很高兴你们开车之后能放松休息一下。大自然确实能让我们焕然一新，对吧？\nassistant: 绝对是的！它真的能帮我 reset 充电。我喜欢和家人一起露营，因为大自然带来如此宁静安详的感觉。 [shared image:  | a photo of a sunset over a body of water]\nuser: 哇，太棒了！你最喜欢和家人露营的哪一点？\nassistant: 那是一个能活在当下、彼此相聚的机会。我们通过讲故事、篝火和大自然增进感情。伴着鸟鸣和清新空气的气味醒来是那么宁静——它总能净化我的心灵。\nuser: 真是宁静又让人心静，梅拉妮！我能想象在大自然中醒来的样子。你能和家人共度这样宁静而优质的时光，真是太好了。\nassistant: 谢谢，卡罗琳！这是很棒的时刻。大自然加高质量陪伴，无可匹敌！\nuser: 是啊，完全同意！这些都是无价之宝。你真幸运！\n\n\n## Recently Extracted Memories\n[]\n\n## Existing Memories\n[{\"id\": \"0\", \"text\": \"梅拉妮一家在2023年10月中旬（10月20日对话前的上周末）公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇事故，全家人都吓坏了，所幸孩子没事。梅拉妮形容这是一次可怕但已过去的经历，并让她感悟到生命宝贵、要珍惜家人\"}, {\"id\": \"1\", \"text\": \"车祸之后，梅拉妮一家继续在科罗拉多大峡谷游玩，孩子们玩得很开心；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，梅拉妮说孩子们是她坚持下去的最大动力和支柱\"}]\n\n## New Messages\nsystem: Conversation date: 2023-10-22T09:55:00. Use this date to resolve relative time expressions like 'yesterday', 'next month', 'in three weeks'.\nuser: 哇哦，梅拉妮！我上周五通过了领养机构的面试！我太兴奋也太感激了。这是我朝着组建家庭的目标迈出的一大步。\nassistant: 恭喜你，卡罗琳！领养听起来太棒了。我真为你高兴。我昨天买的这些人偶让我想起了家人之间的爱。跟我说说，你对未来有什么憧憬？ [shared image: painted ceramic family figurine | a photo of a couple of wooden dolls sitting on top of a table]\nuser: 太感谢了，梅拉妮！真漂亮！它让我深深感受到家庭中蕴含着多少爱——无论是血缘的家人，还是我们自己选择的家人。我希望能组建自己的家庭，为那些从未有过家的孩子们提供一个遮风挡雨的地方。对我来说，领养是一种回馈的方式，也是表达爱与接纳的方式。\nassistant: 哇，卡罗琳，这太了不起了。给有需要的孩子一个家，是组建家庭多么有爱的方式啊。这些孩子在新的家里一定会得到满满的关爱，过得幸福快乐。\nuser: 谢谢，梅拉妮。我的梦想是为这些孩子们创造一个安全而有爱的家。爱与接纳应该是每个人的权利，我想让他们体验到这些。\nassistant: 我完全同意，卡罗琳。每个人都应该拥有这些。看到你对帮助这些孩子如此充满热情，真的很棒。\nuser: 谢谢，梅尔。找到自我接纳是一个漫长的过程，但现在我已准备好向需要的人提供爱和支持。能够为别人的生活带来积极的改变，让人充满力量。\nassistant: 那对你来说一定很艰难，卡罗琳。敬佩你能找到自我接纳，并用自己的经历去帮助别人。你真是坚强又鼓舞人心。\nuser: 谢谢，梅拉妮。转变不容易，获得接纳也不容易，但我从朋友、家人和我敬仰的人那里得到的帮助是无价的。他们在我艰难的时刻给我鼓励，帮我找到了真正的自己。这就是为什么我想把同样的支持传递给任何需要的人。给他人带来安慰、帮助他们成长，让我感到无比快乐。\nassistant: 我真为你高兴，卡罗琳。你找到了真实的自我，现在还在帮助别人。你太鼓舞人心了！\nuser: 谢谢，梅拉妮。你的支持对我意义重大。这段旅程太美妙了，我很感激能分享它，并帮助别人走好他们的旅程。这是一份真正的礼物。 [shared image:  | a photo of a clock with a green and yellow design on it]\nassistant: 一点没错！我很高兴我们总能互相扶持。\nuser: 很高兴你同意，卡罗琳。感谢身边人的支持。他们的鼓励成就了今天的我。\nassistant: 很高兴你得到了支持。做真实的自己真好！\nuser: 是啊，没错！做真实的自己、坦诚地生活是多么自由自在。我们才能真正接纳自己，感到满足。 [shared image: painting vibrant colors happiness self-expression | a photo of a painting with the words happiness painted on it]\n\n\n## Observation Date\n2026-09-25\n\n## Current Date\n2026-09-25\n\n# Output:"
+    },
+    "conv-41": {
+      "source_session": "session_31",
+      "written_session": "session_32",
+      "controlled_existing_memories": [
+        {
+          "id": "0",
+          "text": "约翰从2023年8月起在当地一所学校做志愿导师，辅导学生学习，看到自己能帮到学生很有成就感"
+        },
+        {
+          "id": "1",
+          "text": "约翰辅导的学生表现很好，自信和技能都有实实在在的提高；2023年8月上旬有一个学生特别兴奋地给他看自己的作文，让约翰觉得非常骄傲"
+        }
+      ],
+      "new_messages_sha256": "2c893e42268979ddddf98351380feeb3b3415be8d0d3f16a033ba17c95bc1444",
+      "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+      "only_last_k_section_changed": true,
+      "current_user_prompt_sha256": "e873f642d21c5a673729be19daf0680572663d4ccb358baef74ef6af4b2abd84",
+      "ordered_user_prompt_sha256": "c7950b4e0991a3f548ac86c874e817ac683240e77dfd7069066a2dc711bd8650",
+      "current_last_k_dia_ids": [
+        "date_anchor",
+        "D31:1",
+        "D31:2",
+        "D31:3",
+        "D31:4",
+        "D31:5",
+        "D31:6",
+        "D31:7",
+        "D31:8",
+        "D31:9"
+      ],
+      "ordered_last_k_dia_ids": [
+        "D31:14",
+        "D31:15",
+        "D31:16",
+        "D31:17",
+        "D31:18",
+        "D31:19",
+        "D31:20",
+        "D31:21",
+        "D31:22",
+        "D31:23"
+      ],
+      "current_user_prompt": "## Summary\n\n\n## Last k Messages\nsystem: Conversation date: 2023-08-13T15:14:00. Use this date to resolve relative time expressions like 'yesterday', 'next month', 'in three weeks'.\nuser: 嗨玛丽亚，自上次聊天后，我现在在一所当地学校做志愿导师。看到我能给这些学生带来这么大的帮助，真的很有成就感。 [shared image:  | a photo of a group of people sitting around a table]\nassistant: 哇，约翰！你在做很棒的事情。帮助孩子们学习，为你点赞！另外说一句，我上周刚从收容所领养了一只可爱的小狗。她给我带来了太多快乐！能为她提供一个家，我觉得很幸福。 [shared image: puppy animal shelter adoption | a photography of a black puppy sitting in the grass looking at the camera]\nuser: 哇，玛丽亚，太可爱了！她叫什么名字？她和你的另一只狗相处得怎么样？\nassistant: 她叫Shadow！她充满活力，总能让我脸上露出笑容。她为我的生活增添了色彩。她们相处得很好。 [shared image:  | a photo of a dog sitting in the grass with a leash]\nuser: 啊，听起来太讨人喜欢了！动物真的能带来很多快乐和爱，不是吗？你小时候养过宠物吗？\nassistant: 没有，我没养过。但有一个毛茸茸的伙伴确实让我的日子明亮了不少。\nuser: 确实如此！我回头也得看看我附近的收容所，家里能有一只新的小狗就太好了。\nassistant: 是啊，约翰！宠物特别能让你感受到被爱。有它们在身边真好，它们带来太多快乐！你的辅导项目进展如何？学生们有进步吗？\nuser: 他们表现很好——他们的自信和技能都有了实实在在的提高。上周看到其中一个学生特别兴奋地给我看他的作文，真是令人惊叹。那是一个值得骄傲的时刻！你的新小狗怎么样了，玛丽亚？ [shared image: students mentoring program whiteboard project | a photo of a poster with a picture of a person and a child]\n\n\n## Recently Extracted Memories\n[]\n\n## Existing Memories\n[{\"id\": \"0\", \"text\": \"约翰从2023年8月起在当地一所学校做志愿导师，辅导学生学习，看到自己能帮到学生很有成就感\"}, {\"id\": \"1\", \"text\": \"约翰辅导的学生表现很好，自信和技能都有实实在在的提高；2023年8月上旬有一个学生特别兴奋地给他看自己的作文，让约翰觉得非常骄傲\"}]\n\n## New Messages\nsystem: Conversation date: 2023-08-16T11:08:00. Use this date to resolve relative time expressions like 'yesterday', 'next month', 'in three weeks'.\nuser: 嘿，玛丽亚！猜猜怎么着？我现在是消防队的一员了。能参与其中并为社区出力，我超级兴奋！\nassistant: 哇，约翰，真了不起！你对做出改变真是充满热情。到目前为止体验怎么样？\nuser: 他们的敬业精神和团队协作让我印象深刻。光是待在他们身边就让人备受鼓舞！\nassistant: 太棒了。看到那么多人齐心协力一定很震撼吧。 [shared image:  | a photo of a group of people loading a truck with a fire truck in the back]\nuser: 确实如此！每个人都很投入。一个团队能在这么重要的事情上取得成功，真是不可思议。我们只花了两个小时。大家努力工作，做了好事——真的很有成就感。 [shared image: group of people lifting heavy object | a photo of a cardboard box with a sign on it]\nassistant: 哇，约翰！看来大家都很卖力。你们募集到捐款了吗？\nuser: 是的，我们募集了好多！我们收到了罐头食品、洗漱用品和衣物来提供帮助。能参与其中感觉太好了！\nassistant: 我猜也是！看到大家齐心协力支持当地消防站，真是太好了。\nuser: 你说得对，玛丽亚。能帮上忙，看到大家为这个事业团结起来，真的很棒。这给了我一种使命感和激情。我觉得这才是我真正的人生召唤。\nassistant: 太棒了，约翰！很喜欢你新找到的这份热情。你在做很棒的事——继续加油！看到大家为这个事业团结一心真是美好。\nuser: 谢谢你，玛丽亚！你的支持对我意义重大。找到自己的热情竟能产生这么大的影响，真令人惊叹。我会继续努力的。这些捐款甚至帮助买了一辆全新的消防车！ [shared image: firetruck | a photo of a fire truck parked in a garage with other vehicles]\nassistant: 看看——我们大家都为它捐了款，它看起来棒极了！\nuser: 谢谢你和我一起参与这件事，玛丽亚。我很感激你的支持。\nassistant: 嘿，约翰，我支持你。上周五，我在收容所做志愿者，在前台帮忙。看到人们拿到食物或床铺时脸上的笑容，真的让我感到很温暖。我们有能力改变别人的生活。 [shared image:  | a photo of a group of people standing around a table filled with food]\nuser: 玛丽亚，很高兴你在那里找到了成就感。一点小小的善意就能对他人的生活产生这么大的影响，真令人惊叹。让我们一起继续为社区做出改变吧！\nassistant: 对，约翰！让我们继续传播善意。知道我们能给需要的人带去快乐和安慰，真是太好了。\nuser: 是啊，玛丽亚，让我们互相激励，也激励所有人一起做出改变！团结起来，我们的影响力必将长存。\n\n\n## Observation Date\n2026-09-25\n\n## Current Date\n2026-09-25\n\n# Output:",
+      "ordered_user_prompt": "## Summary\n\n\n## Last k Messages\nassistant: 是啊，它们真的能安慰我们，让我们以一种别人做不到的方式感到被理解。它们给我们带来这么多快乐，真是不可思议。\nuser: 是啊，动物给我们带来平静和理解，而且我们总能依靠它们。这真是无价的。\nassistant: 完全正确，约翰。它们永远陪在我们身边。\nuser: 是啊，我的家人很棒——我、我太太和孩子们。即使在艰难的时候，他们也总是支持我。真是最美好的事。 [shared image: wife kids | a photo of a family posing for a picture in the park]\nassistant: 那张照片好可爱！你们都喜欢一起做些什么活动？\nuser: 谢谢，玛丽亚！我们喜欢户外活动——远足、逛公园、野餐——此外还会在家玩桌游和看电影之夜。 [shared image: family playing board games | a photo of two children sitting at a table with a board game]\nassistant: 听起来太开心了，约翰！和家人共度时光非常重要，这些听起来都很完美。祝你们玩得开心！\nuser: 谢谢，玛丽亚！我现在要去陪他们了。祝你今天愉快！\nassistant: 享受你的家庭时光，约翰！祝你有美好的一天！\nuser: 谢谢，玛丽亚！你也一样！注意安全！\n\n\n## Recently Extracted Memories\n[]\n\n## Existing Memories\n[{\"id\": \"0\", \"text\": \"约翰从2023年8月起在当地一所学校做志愿导师，辅导学生学习，看到自己能帮到学生很有成就感\"}, {\"id\": \"1\", \"text\": \"约翰辅导的学生表现很好，自信和技能都有实实在在的提高；2023年8月上旬有一个学生特别兴奋地给他看自己的作文，让约翰觉得非常骄傲\"}]\n\n## New Messages\nsystem: Conversation date: 2023-08-16T11:08:00. Use this date to resolve relative time expressions like 'yesterday', 'next month', 'in three weeks'.\nuser: 嘿，玛丽亚！猜猜怎么着？我现在是消防队的一员了。能参与其中并为社区出力，我超级兴奋！\nassistant: 哇，约翰，真了不起！你对做出改变真是充满热情。到目前为止体验怎么样？\nuser: 他们的敬业精神和团队协作让我印象深刻。光是待在他们身边就让人备受鼓舞！\nassistant: 太棒了。看到那么多人齐心协力一定很震撼吧。 [shared image:  | a photo of a group of people loading a truck with a fire truck in the back]\nuser: 确实如此！每个人都很投入。一个团队能在这么重要的事情上取得成功，真是不可思议。我们只花了两个小时。大家努力工作，做了好事——真的很有成就感。 [shared image: group of people lifting heavy object | a photo of a cardboard box with a sign on it]\nassistant: 哇，约翰！看来大家都很卖力。你们募集到捐款了吗？\nuser: 是的，我们募集了好多！我们收到了罐头食品、洗漱用品和衣物来提供帮助。能参与其中感觉太好了！\nassistant: 我猜也是！看到大家齐心协力支持当地消防站，真是太好了。\nuser: 你说得对，玛丽亚。能帮上忙，看到大家为这个事业团结起来，真的很棒。这给了我一种使命感和激情。我觉得这才是我真正的人生召唤。\nassistant: 太棒了，约翰！很喜欢你新找到的这份热情。你在做很棒的事——继续加油！看到大家为这个事业团结一心真是美好。\nuser: 谢谢你，玛丽亚！你的支持对我意义重大。找到自己的热情竟能产生这么大的影响，真令人惊叹。我会继续努力的。这些捐款甚至帮助买了一辆全新的消防车！ [shared image: firetruck | a photo of a fire truck parked in a garage with other vehicles]\nassistant: 看看——我们大家都为它捐了款，它看起来棒极了！\nuser: 谢谢你和我一起参与这件事，玛丽亚。我很感激你的支持。\nassistant: 嘿，约翰，我支持你。上周五，我在收容所做志愿者，在前台帮忙。看到人们拿到食物或床铺时脸上的笑容，真的让我感到很温暖。我们有能力改变别人的生活。 [shared image:  | a photo of a group of people standing around a table filled with food]\nuser: 玛丽亚，很高兴你在那里找到了成就感。一点小小的善意就能对他人的生活产生这么大的影响，真令人惊叹。让我们一起继续为社区做出改变吧！\nassistant: 对，约翰！让我们继续传播善意。知道我们能给需要的人带去快乐和安慰，真是太好了。\nuser: 是啊，玛丽亚，让我们互相激励，也激励所有人一起做出改变！团结起来，我们的影响力必将长存。\n\n\n## Observation Date\n2026-09-25\n\n## Current Date\n2026-09-25\n\n# Output:"
+    }
+  },
+  "limits": [
+    "Retained source turn is an input opportunity, not evidence that the extractor emitted the fact from it",
+    "Existing Memories are held to two known old carriers only for prompt controls; historical top-10 retrieval and custom instructions are not reconstructed",
+    "Only source positions and prompt sections are tested, not extraction quality, downstream retrieval or answer effect"
+  ]
+}

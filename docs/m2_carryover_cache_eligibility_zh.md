@@ -1,5 +1,7 @@
 # 12 对跨场重复记忆：历史消息缓存能覆盖多少旧源事实
 
+> **后续定量边界：** 有序缓存离线对照见 [m2_ordered_message_cache_poc_zh.md](m2_ordered_message_cache_poc_zh.md)。改留末尾 10 条后，旧源缓存可见性为 7/32，部分短场次仍有旧源；下文“消除前场开头事实”应按具体 turn 是否仍在末尾窗口判断。
+
 > 2026-09-28。沿用此前已人工回源的固定 12 对及中文 LoCoMo 原文件，不重抽样、不重新估全库重复率。脚本 `scripts/m2_audit_carryover_cache_eligibility.py` 用真实 `SQLiteManager` 在内存库回放各源会话，核历史 ADD 顺序，另把旧逐事实表中的两个复合标签拆准；逐对机器结果、订正后 39 项事实表和离线合并契约在 `results/analysis/m2_carryover_cache_eligibility_20260928.json`。零模型调用、零真实库/图写入。
 
 ## 先订正旧事实标签
