@@ -1,0 +1,592 @@
+{
+  "scope": "Fixed conv-26_qa74, eight archived Chinese runs with identical visible 15-memory final context; manual date wording audit, no model calls",
+  "sources": {
+    "zh": {
+      "session_date": "6:55 pm on 20 October, 2023",
+      "turn": {
+        "speaker": "梅拉妮",
+        "img_url": [
+          "https://i.redd.it/dl8dki2hm3k81.jpg"
+        ],
+        "blip_caption": "a photo of a car dashboard with a white cloth and a steering wheel",
+        "query": "car accident damaged car airbags deployed roadtrip",
+        "dia_id": "D18:1",
+        "text": "嘿卡罗琳，上周末那次公路旅行太疯狂了！我儿子出事故的时候，我们都吓坏了。幸好他没事，真是不幸中的万幸。那真是一次可怕的经历，好在一切都过去了。自从我们上次聊天以来，你过得怎么样？"
+      },
+      "hike_turns": [
+        {
+          "speaker": "梅拉妮",
+          "img_url": [
+            "https://live.staticflickr.com/8358/29211988243_82023c5524_b.jpg"
+          ],
+          "blip_caption": "a photography of a woman and a child walking on a trail",
+          "query": "family hiking mountains",
+          "dia_id": "D18:15",
+          "re-download": true,
+          "text": "是啊，当然。有家人在身边帮助很大。这让艰难的日子变得容易一些。"
+        },
+        {
+          "speaker": "卡罗琳",
+          "dia_id": "D18:16",
+          "text": "哇，好棒的照片！是最近拍的吗？看起来你们都玩得很开心！"
+        },
+        {
+          "speaker": "梅拉妮",
+          "dia_id": "D18:17",
+          "text": "谢谢，卡罗琳！对，就是昨天拍的！孩子们很喜欢，这是公路旅行后放松的好方式。"
+        }
+      ],
+      "qa": {
+        "question": "梅拉妮一家是什么时候去公路旅行的？",
+        "evidence": [
+          "D18:1"
+        ],
+        "category": 2,
+        "answer": "2023年10月20日之前的那个周末"
+      }
+    },
+    "en": {
+      "session_date": "6:55 pm on 20 October, 2023",
+      "turn": {
+        "speaker": "Melanie",
+        "img_url": [
+          "https://i.redd.it/dl8dki2hm3k81.jpg"
+        ],
+        "blip_caption": "a photo of a car dashboard with a white cloth and a steering wheel",
+        "query": "car accident damaged car airbags deployed roadtrip",
+        "dia_id": "D18:1",
+        "text": "Hey Caroline, that roadtrip this past weekend was insane! We were all freaked when my son got into an accident. We were so lucky he was okay. It was a real scary experience. Thankfully it's over now. What's been up since we last talked?"
+      },
+      "hike_turns": [
+        {
+          "speaker": "Melanie",
+          "img_url": [
+            "https://live.staticflickr.com/8358/29211988243_82023c5524_b.jpg"
+          ],
+          "blip_caption": "a photography of a woman and a child walking on a trail",
+          "query": "family hiking mountains",
+          "dia_id": "D18:15",
+          "re-download": true,
+          "text": "Yeah for sure. Having my fam around helps a lot. It makes hard times easier."
+        },
+        {
+          "speaker": "Caroline",
+          "dia_id": "D18:16",
+          "text": "Wow, great pic! Is that recent? Looks like you all had fun!"
+        },
+        {
+          "speaker": "Melanie",
+          "dia_id": "D18:17",
+          "text": "Thanks, Caroline! Yup, we just did it yesterday! The kids loved it and it was a nice way to relax after the road trip."
+        }
+      ],
+      "qa": {
+        "question": "When did Melanie's family go on a roadtrip?",
+        "answer": "The weekend before 20 October 2023",
+        "evidence": [
+          "D18:1"
+        ],
+        "category": 2
+      }
+    }
+  },
+  "source_sha256": {
+    "zh": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "en": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4"
+  },
+  "calendar": {
+    "report_day": "2023-10-20",
+    "weekday": "Friday",
+    "ordinary_previous_weekend": [
+      "2023-10-14",
+      "2023-10-15"
+    ]
+  },
+  "common_context_sha256": "8deeb0cb547e9023e1efc249ad1116065e0c588ca4cfafce790b44a4ddba8cd1",
+  "common_context": [
+    {
+      "id": "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+      "content": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末）公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇事故，全家人都吓坏了，所幸孩子没事。梅拉妮形容这是一次可怕但已过去的经历，并让她感悟到生命宝贵、要珍惜家人",
+      "metadata": {
+        "benchmark": "locomo",
+        "session_date": "6:55 pm on 20 October, 2023",
+        "case_id": "locomo_conv-26_qa0",
+        "session_id": "session_18",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+      "content": "梅拉妮在2023年10月20日的公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性",
+      "metadata": {
+        "session_date": "9:55 am on 22 October, 2023",
+        "case_id": "locomo_conv-26_qa0",
+        "benchmark": "locomo",
+        "session_id": "session_19",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+      "content": "卡罗琳和梅拉妮于2023年8月商定计划在当年夏天来一次特别出游，可能是家庭出游或就她们两人一起亲近自然、叙旧",
+      "metadata": {
+        "session_date": "1:50 pm on 17 August, 2023",
+        "case_id": "locomo_conv-26_qa0",
+        "session_id": "session_12",
+        "benchmark": "locomo",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "65dc20b5-1cc1-4c95-ac07-40f204046256",
+      "content": "2023年10月19日（公路旅行后的次日），梅拉妮和孩子们去山里徒步，孩子们很喜欢，她说这是公路旅行后放松的好方式",
+      "metadata": {
+        "case_id": "locomo_conv-26_qa0",
+        "session_date": "6:55 pm on 20 October, 2023",
+        "benchmark": "locomo",
+        "session_id": "session_18",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+      "content": "梅拉妮全家在2023年7月初（对话两个周末前）去露营，她度过了一个安静的周末，很享受放下一切陪伴孩子们的时光",
+      "metadata": {
+        "session_date": "2:31 pm on 17 July, 2023",
+        "session_id": "session_9",
+        "case_id": "locomo_conv-26_qa0",
+        "benchmark": "locomo",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+      "content": "梅拉妮的孩子们对暑假兴奋极了，她们计划在2023年6月（下个月）去露营",
+      "metadata": {
+        "case_id": "locomo_conv-26_qa0",
+        "benchmark": "locomo",
+        "session_id": "session_2",
+        "session_date": "1:14 pm on 25 May, 2023",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+      "content": "梅拉妮一家的夏日传统是家庭露营之旅，他们烤棉花糖、围篝火讲故事，这是他们夏天的重头戏",
+      "metadata": {
+        "session_id": "session_10",
+        "benchmark": "locomo",
+        "session_date": "8:56 pm on 20 July, 2023",
+        "case_id": "locomo_conv-26_qa0",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+      "content": "梅拉妮于2023年6月中旬（对话前一周）带家人去山里露营，一起探索大自然、在篝火旁烤棉花糖并徒步，山顶景色很美，她两个年幼的孩子都热爱大自然，她认为这次家庭共处时光非常难忘",
+      "metadata": {
+        "benchmark": "locomo",
+        "case_id": "locomo_conv-26_qa0",
+        "session_id": "session_4",
+        "session_date": "10:37 am on 27 June, 2023",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "de3a1918-0ba7-4586-853f-5badfd2f1922",
+      "content": "梅拉妮在2023年9月初的几周前带孩子们去露营，探索森林、徒步，还在篝火边烤棉花糖、讲故事，大家玩得很尽兴，并分享了一张秋天黄叶小路的照片",
+      "metadata": {
+        "session_date": "12:09 am on 13 September, 2023",
+        "benchmark": "locomo",
+        "session_id": "session_16",
+        "case_id": "locomo_conv-26_qa0",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "afb6c064-969a-497d-932d-ec1fde376700",
+      "content": "梅拉妮一家在科罗拉多大峡谷玩得很开心，她于2023年10月21日买了彩绘木制家庭人偶，让她想起家人之间的爱",
+      "metadata": {
+        "benchmark": "locomo",
+        "case_id": "locomo_conv-26_qa0",
+        "session_date": "9:55 am on 22 October, 2023",
+        "session_id": "session_19",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "c40fb182-e28f-40d1-8537-defda073f4f7",
+      "content": "梅拉妮和丈夫以及孩子们在2023年6月初去公园野餐，一起玩游戏、吃美食，她感到特别开心，认为与家人在一起的时光让她真正感到充满活力和幸福",
+      "metadata": {
+        "benchmark": "locomo",
+        "session_id": "session_3",
+        "session_date": "7:55 pm on 9 June, 2023",
+        "case_id": "locomo_conv-26_qa0",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "9a6d251f-1392-4457-a610-97d093f303f0",
+      "content": "梅拉妮一家最近去了海滩（2023年7月），三个孩子玩得很开心；他们不常去海滩，通常一年只去一两次",
+      "metadata": {
+        "case_id": "locomo_conv-26_qa0",
+        "session_id": "session_10",
+        "session_date": "8:56 pm on 20 July, 2023",
+        "benchmark": "locomo",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "4fd3f599-54da-4f9e-865f-c865e22f600f",
+      "content": "梅拉妮于2023年8月27日（对话前一天）带孩子们去公园玩，孩子们在户外探索玩耍很开心",
+      "metadata": {
+        "session_date": "3:19 pm on 28 August, 2023",
+        "benchmark": "locomo",
+        "case_id": "locomo_conv-26_qa0",
+        "session_id": "session_15",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "0319c2f7-bfaa-4705-be23-453c21e142a3",
+      "content": "Melanie（对话伙伴）于2023年8月13日晚带女儿们庆祝生日，观看了一场户外演唱会，孩子们玩得开心；梅拉妮还曾在之前带孩子去海滩玩飞盘、放风筝",
+      "metadata": {
+        "session_date": "2:24 pm on 14 August, 2023",
+        "case_id": "locomo_conv-26_qa0",
+        "benchmark": "locomo",
+        "session_id": "session_11",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    },
+    {
+      "id": "cf4e3728-fa86-49b8-bbe4-54810130882e",
+      "content": "梅拉妮永远难忘去年（2022年）露营时全家一起看英仙座流星雨的经历——清澈繁星的天空下全家许愿，让她感到与宇宙融为一体、渺小而充满敬畏",
+      "metadata": {
+        "benchmark": "locomo",
+        "session_date": "8:56 pm on 20 July, 2023",
+        "case_id": "locomo_conv-26_qa0",
+        "session_id": "session_10",
+        "user_id": "zhfull:locomo:conv-26"
+      }
+    }
+  ],
+  "key_context_positions": {
+    "source_session_memory": {
+      "id": "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+      "zero_based": 0
+    },
+    "later_misdated_memory": {
+      "id": "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+      "zero_based": 1
+    },
+    "hike_next_day_relation_memory": {
+      "id": "65dc20b5-1cc1-4c95-ac07-40f204046256",
+      "zero_based": 3,
+      "manual_source_note_zh": "D18:17只说徒步/照片昨天、是公路旅行后放松；没有说公路旅行后的次日"
+    }
+  },
+  "counts": {
+    "runs": 8,
+    "all_judge_true": 8,
+    "manual_date_labels": {
+      "explicit_report_day_as_trip_day": 2,
+      "source_compatible_core": 3,
+      "unsupported_weekday_precision": 3
+    }
+  },
+  "runs": [
+    {
+      "run_file": "results_zh/zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+      "case_record_sha256": "ff03149197e6ddf290da4659e7955b9bd85187f18bc96bec3b59e16b6b57068e",
+      "graph_enabled": true,
+      "graph_context_ids": [],
+      "context_sha256": "8deeb0cb547e9023e1efc249ad1116065e0c588ca4cfafce790b44a4ddba8cd1",
+      "answer_context_ids": [
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+        "65dc20b5-1cc1-4c95-ac07-40f204046256",
+        "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+        "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "c40fb182-e28f-40d1-8537-defda073f4f7",
+        "9a6d251f-1392-4457-a610-97d093f303f0",
+        "4fd3f599-54da-4f9e-865f-c865e22f600f",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e"
+      ],
+      "predicted_answer": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末，约2023年10月18-19日）去公路旅行，途中发生了车祸；10月19日她们还在科罗拉多大峡谷游玩。",
+      "metrics": {
+        "token_f1": 0.0,
+        "contains": false,
+        "exact": false,
+        "judge_votes": [
+          true
+        ],
+        "judge_correct": true
+      },
+      "manual_date_label": "unsupported_weekday_precision",
+      "manual_reason_zh": "把上周末约成10月18–19日，和周末日历不一致"
+    },
+    {
+      "run_file": "results_zh/zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+      "case_record_sha256": "3bbcbd3f4836f1e0c4aad7076b4a66b28e62a57e8695f7eb131f615a5fdf33c0",
+      "graph_enabled": true,
+      "graph_context_ids": [],
+      "context_sha256": "8deeb0cb547e9023e1efc249ad1116065e0c588ca4cfafce790b44a4ddba8cd1",
+      "answer_context_ids": [
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+        "65dc20b5-1cc1-4c95-ac07-40f204046256",
+        "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+        "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "c40fb182-e28f-40d1-8537-defda073f4f7",
+        "9a6d251f-1392-4457-a610-97d093f303f0",
+        "4fd3f599-54da-4f9e-865f-c865e22f600f",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e"
+      ],
+      "predicted_answer": "2023年10月中旬，即2023年10月20日（对话前的一个周末），途中遭遇了车祸；之后（10月19日）梅拉妮和孩子们还去山里徒步放松。",
+      "metrics": {
+        "token_f1": 0.0,
+        "contains": false,
+        "exact": false,
+        "judge_votes": [
+          true
+        ],
+        "judge_correct": true
+      },
+      "manual_date_label": "explicit_report_day_as_trip_day",
+      "manual_reason_zh": "把10月20日写成出游日"
+    },
+    {
+      "run_file": "results_zh/zhfull_fused_locomo_20260925_161049.jsonl",
+      "case_record_sha256": "4e2680f8f3c1daa33a96e8eb8a3e9f7999237d847d0ac9d4225869ca25c276b1",
+      "graph_enabled": true,
+      "graph_context_ids": [],
+      "context_sha256": "8deeb0cb547e9023e1efc249ad1116065e0c588ca4cfafce790b44a4ddba8cd1",
+      "answer_context_ids": [
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+        "65dc20b5-1cc1-4c95-ac07-40f204046256",
+        "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+        "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "c40fb182-e28f-40d1-8537-defda073f4f7",
+        "9a6d251f-1392-4457-a610-97d093f303f0",
+        "4fd3f599-54da-4f9e-865f-c865e22f600f",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e"
+      ],
+      "predicted_answer": "梅拉妮一家是在2023年10月中旬（约2023年10月19日前不久的上周末）去公路旅行的，旅途中发生了车祸。",
+      "metrics": {
+        "token_f1": 0.0,
+        "contains": false,
+        "exact": false,
+        "judge_votes": [
+          true
+        ],
+        "judge_correct": true
+      },
+      "manual_date_label": "source_compatible_core",
+      "manual_reason_zh": "保留上周末；10月19日前不久虽宽泛但未明确改成当天"
+    },
+    {
+      "run_file": "results_zh/zhfull_fused_locomo_20260925_172126.jsonl",
+      "case_record_sha256": "7c8c9c249f01f9b943df565564a7342bbed79d09c7cdee213c8ea67d831a4618",
+      "graph_enabled": true,
+      "graph_context_ids": [],
+      "context_sha256": "8deeb0cb547e9023e1efc249ad1116065e0c588ca4cfafce790b44a4ddba8cd1",
+      "answer_context_ids": [
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+        "65dc20b5-1cc1-4c95-ac07-40f204046256",
+        "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+        "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "c40fb182-e28f-40d1-8537-defda073f4f7",
+        "9a6d251f-1392-4457-a610-97d093f303f0",
+        "4fd3f599-54da-4f9e-865f-c865e22f600f",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e"
+      ],
+      "predicted_answer": "2023年10月中旬（10月20日对话前的上周末，即2023年10月中下旬之际），梅拉妮一家进行了公路旅行，途中遭遇车祸，之后于10月19日和孩子们去山里徒步。",
+      "metrics": {
+        "token_f1": 0.0,
+        "contains": false,
+        "exact": false,
+        "judge_votes": [
+          true
+        ],
+        "judge_correct": true
+      },
+      "manual_date_label": "source_compatible_core",
+      "manual_reason_zh": "保留10月20日前的上周末，未给出冲突的具体日"
+    },
+    {
+      "run_file": "results_zh/zhfull_fused_locomo_20260925_195248.jsonl",
+      "case_record_sha256": "123f244b5b43dc15f00d742e0a2d04a0c4793d661284293e60574ca11846d2d3",
+      "graph_enabled": true,
+      "graph_context_ids": [],
+      "context_sha256": "8deeb0cb547e9023e1efc249ad1116065e0c588ca4cfafce790b44a4ddba8cd1",
+      "answer_context_ids": [
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+        "65dc20b5-1cc1-4c95-ac07-40f204046256",
+        "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+        "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "c40fb182-e28f-40d1-8537-defda073f4f7",
+        "9a6d251f-1392-4457-a610-97d093f303f0",
+        "4fd3f599-54da-4f9e-865f-c865e22f600f",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e"
+      ],
+      "predicted_answer": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末，即10月19日之前）进行了公路旅行，旅途中发生了车祸；之后他们还游览了科罗拉多大峡谷，并于10月19日去山里徒步。",
+      "metrics": {
+        "token_f1": 0.0,
+        "contains": false,
+        "exact": false,
+        "judge_votes": [
+          true
+        ],
+        "judge_correct": true
+      },
+      "manual_date_label": "source_compatible_core",
+      "manual_reason_zh": "保留10月20日前的上周末，未给出冲突的具体日"
+    },
+    {
+      "run_file": "results_zh/zhfull_locomo_20260925_115806.jsonl",
+      "case_record_sha256": "876f6cbdd49d514027f899498cf1ae9b29cc7935cf8e220913af5ad895b24304",
+      "graph_enabled": false,
+      "graph_context_ids": [],
+      "context_sha256": "8deeb0cb547e9023e1efc249ad1116065e0c588ca4cfafce790b44a4ddba8cd1",
+      "answer_context_ids": [
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+        "65dc20b5-1cc1-4c95-ac07-40f204046256",
+        "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+        "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "c40fb182-e28f-40d1-8537-defda073f4f7",
+        "9a6d251f-1392-4457-a610-97d093f303f0",
+        "4fd3f599-54da-4f9e-865f-c865e22f600f",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e"
+      ],
+      "predicted_answer": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末，约2023年10月19日前后）去公路旅行，旅途中发生了车祸。",
+      "metrics": {
+        "token_f1": 0.0,
+        "contains": false,
+        "exact": false,
+        "judge_votes": [
+          true
+        ],
+        "judge_correct": true
+      },
+      "manual_date_label": "unsupported_weekday_precision",
+      "manual_reason_zh": "虽写上周末，又约成10月19日前后"
+    },
+    {
+      "run_file": "results_zh/zhfull_locomo_20260925_151059.jsonl",
+      "case_record_sha256": "1c880dd92a791ff86795d48bdb2309db9d3567ef8b386efd45745128694c9db1",
+      "graph_enabled": false,
+      "graph_context_ids": [],
+      "context_sha256": "8deeb0cb547e9023e1efc249ad1116065e0c588ca4cfafce790b44a4ddba8cd1",
+      "answer_context_ids": [
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+        "65dc20b5-1cc1-4c95-ac07-40f204046256",
+        "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+        "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "c40fb182-e28f-40d1-8537-defda073f4f7",
+        "9a6d251f-1392-4457-a610-97d093f303f0",
+        "4fd3f599-54da-4f9e-865f-c865e22f600f",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e"
+      ],
+      "predicted_answer": "2023年10月中旬（约10月20日前后，10月19日徒步是其后一天，说明公路旅行大约在10月18日–20日期间）。",
+      "metrics": {
+        "token_f1": 0.0,
+        "contains": false,
+        "exact": false,
+        "judge_votes": [
+          true
+        ],
+        "judge_correct": true
+      },
+      "manual_date_label": "unsupported_weekday_precision",
+      "manual_reason_zh": "把旅行推成10月18–20日期间，并以19日徒步倒推"
+    },
+    {
+      "run_file": "results_zh/zhfull_locomo_20260925_164645.jsonl",
+      "case_record_sha256": "55757c38306f74d83b5d9bc3e6e5608b846525677c73f5a019b0a7a1d06739dd",
+      "graph_enabled": false,
+      "graph_context_ids": [],
+      "context_sha256": "8deeb0cb547e9023e1efc249ad1116065e0c588ca4cfafce790b44a4ddba8cd1",
+      "answer_context_ids": [
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+        "65dc20b5-1cc1-4c95-ac07-40f204046256",
+        "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+        "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "c40fb182-e28f-40d1-8537-defda073f4f7",
+        "9a6d251f-1392-4457-a610-97d093f303f0",
+        "4fd3f599-54da-4f9e-865f-c865e22f600f",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e"
+      ],
+      "predicted_answer": "2023年10月20日（10月中旬），在公路旅行中发生了车祸；次日（10月19日徒步说法与此前日程略有出入，但旅行本身为10月20日前后）。",
+      "metrics": {
+        "token_f1": 0.0,
+        "contains": false,
+        "exact": false,
+        "judge_votes": [
+          true
+        ],
+        "judge_correct": true
+      },
+      "manual_date_label": "explicit_report_day_as_trip_day",
+      "manual_reason_zh": "直接答10月20日并称旅行本身在该日前后"
+    }
+  ],
+  "limits": [
+    "Same visible context ID/content/metadata does not prove byte-identical historical prompts, model state, or judge state",
+    "Wrong or unsupported date wording in an answer does not prove the later memory alone caused it; the earlier correct memory was also present",
+    "Single question and eight correlated runs do not estimate judge-wide false-positive rate"
+  ]
+}
