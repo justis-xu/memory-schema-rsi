@@ -1,0 +1,69 @@
+{
+  "scope": "Current-ID cache keys in ten local zhfull:locomo users; raw cached S1 objects, before normalization or graph projection; read-only.",
+  "cache_path": "data/graph_zh/structured_cache.json",
+  "cache_sha256": "95265ac274243c67f3199bf048c98b3d5916a5e097b51c223c1146cfaede549d",
+  "current_source_logical_sha256_before": "282af8cc6fedc91788347d7e24a7c3263746113c22eb25b8d1c9d61b4dfd63f0",
+  "current_source_logical_sha256_after": "282af8cc6fedc91788347d7e24a7c3263746113c22eb25b8d1c9d61b4dfd63f0",
+  "current_source_count": 1800,
+  "current_cache_hits": 581,
+  "current_cache_misses": 1219,
+  "source_fields_checked": [
+    "dia_id",
+    "source_channel",
+    "source_date",
+    "source_ref",
+    "source_session_id",
+    "source_turn_ids",
+    "support_strength",
+    "support_type"
+  ],
+  "raw_top_level_key_counts": {
+    "entities": 581,
+    "events": 581,
+    "preferences": 581,
+    "relationships": 581
+  },
+  "raw_item_key_counts_by_kind": {
+    "entities": {
+      "name": 1482,
+      "type": 1482
+    },
+    "events": {
+      "date": 270,
+      "name": 351,
+      "participants": 351
+    },
+    "preferences": {
+      "object": 400,
+      "pref_type": 400,
+      "subject": 400
+    },
+    "relationships": {
+      "from_entity": 299,
+      "relation": 299,
+      "to_entity": 299
+    }
+  },
+  "raw_item_counts_by_kind": {
+    "entities": 1482,
+    "events": 351,
+    "preferences": 400,
+    "relationships": 299
+  },
+  "raw_item_total": 2532,
+  "items_with_checked_source_fields_by_kind": {
+    "entities": 0,
+    "events": 0,
+    "preferences": 0,
+    "relationships": 0
+  },
+  "memories_with_checked_source_fields": 0,
+  "malformed_entry_refs": [],
+  "source_unchanged_during_audit": true,
+  "limits": [
+    "Only listed source-field keys are checked; a semantically encoded source hidden in free text is not assessed.",
+    "Field absence does not imply every structured item is factually wrong.",
+    "Cache hit by ID does not prove extraction input, model, or prompt version matches current memory text.",
+    "A human sidecar may contain source evidence, but it is not part of this raw cache or current S1 graph path."
+  ]
+}
