@@ -1,5 +1,7 @@
 # Graph、Jev、RSI 中文记忆复盘：当前能决策什么
 
+> **最终阅读入口（2026-09-30）：** [跨机结论与证据索引](m2_cross_machine_final_index_zh.md)整合本仓和 `memory-prompt` 的后续结论；本文保留 2026-09-29 的原有时间和证据边界。
+
 > 2026-09-29。本报告更新 2026-09-26 的 [`m2_integrated_retrospective_zh.md`](m2_integrated_retrospective_zh.md)，以已归档的代码、逐题结果、中文原话和最近的隔离写入为证据；不是新增总体评测。零新增模型调用、零库/图写入。旧报告和旧分数保留，以下结论只在注明的样本与版本内成立。
 
 ## 总判断
