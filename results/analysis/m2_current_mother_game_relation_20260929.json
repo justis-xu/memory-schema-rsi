@@ -1,0 +1,581 @@
+{
+  "scope": "Current pure-Chinese one-question vector top45 and rerank top15; no Graph, answer, or judge.",
+  "case_id": "locomo_conv-48_qa172",
+  "question": "乔琳和她妈妈在任天堂Wii上最喜欢玩的游戏之一是什么？",
+  "gold_for_review_only": "《怪物猎人：世界》",
+  "source_dataset_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "source_turns": [
+    {
+      "dia_id": "D24:8",
+      "speaker": "乔琳",
+      "text": "我是自学的，不过我爸一直很支持我，我妈还会和我一起玩游戏。",
+      "blip_caption": "a photo of a nintendo wii game system with a game on the screen",
+      "query": "video game screenshot playing with mom"
+    },
+    {
+      "dia_id": "D24:9",
+      "speaker": "黛博拉",
+      "text": "太棒了！听起来你从父母那里得到了很多支持。你最喜欢和妈妈玩什么游戏？",
+      "blip_caption": null,
+      "query": null
+    },
+    {
+      "dia_id": "D24:10",
+      "speaker": "乔琳",
+      "text": "我最喜欢的之一是《Monster 亨特: World》。那身临其境的剧情和开放世界玩法太棒了！",
+      "blip_caption": null,
+      "query": null
+    }
+  ],
+  "user_id": "zhfull:locomo:conv-48",
+  "target_memory_id": "f1455645-db16-42df-a737-cb52619de275",
+  "target_current_memory": {
+    "id": "f1455645-db16-42df-a737-cb52619de275",
+    "content": "乔琳最喜欢和妈妈一起玩的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，视游戏为减压和暂时逃离生活的方式",
+    "session_id": "session_24",
+    "session_date": "2:14 pm on 3 September, 2023"
+  },
+  "logical_source_before": {
+    "embedding_count": 1995,
+    "id_content_user_session_sha256": "72a9ee59055533dfdbeb9aa58527dbdc565c2e191c4e0e5e06194b0e42ab97e1"
+  },
+  "vector_k": 45,
+  "final_k": 15,
+  "max_embedding_calls": 1,
+  "max_logical_rerank_calls": 1,
+  "max_rerank_http_attempts": 2,
+  "embedding_model": "qwen3.7-text-embedding-flash",
+  "rerank_model": "qwen3.7-text-rerank",
+  "calls": {
+    "embedding": 1,
+    "logical_rerank": 1
+  },
+  "limits": [
+    "Source relation uses D24:8-10; Wii appears in the D24:8 image caption, not in the quoted text.",
+    "Candidate presence does not establish an answer or a graph/Jev benefit.",
+    "The current source is not an immutable historical run snapshot."
+  ],
+  "vector_top45": [
+    {
+      "rank": 1,
+      "id": "9966d6fe-734a-4507-8dea-d7d1f5102f66",
+      "content": "乔琳10岁时父母给她买了她人生中第一台游戏机（任天堂），这是她对电子游戏热爱的开始；她是自学的，父亲一直很支持她，母亲还会和她一起玩游戏",
+      "session_id": "session_24",
+      "session_date": "2:14 pm on 3 September, 2023",
+      "distance": 0.6318439245223999
+    },
+    {
+      "rank": 2,
+      "id": "f1455645-db16-42df-a737-cb52619de275",
+      "content": "乔琳最喜欢和妈妈一起玩的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，视游戏为减压和暂时逃离生活的方式",
+      "session_id": "session_24",
+      "session_date": "2:14 pm on 3 September, 2023",
+      "distance": 0.647318959236145
+    },
+    {
+      "rank": 3,
+      "id": "92eff024-cc55-49e9-930b-ca19f4cdad8a",
+      "content": "乔琳与她的伴侣一起在主机上玩游戏，两人对游戏都很着迷；上周（2023年1月中旬）他们一起玩了《底特律》；乔琳从孩子时期就自己学会了玩游戏；他们计划在2023年1月28日（下周六）玩《Walking Dead》",
+      "session_id": "session_2",
+      "session_date": "9:49 am on 27 January, 2023",
+      "distance": 0.6707953810691833
+    },
+    {
+      "rank": 4,
+      "id": "692450fb-3c5e-4413-ad11-f964b18683d6",
+      "content": "乔琳有一位伴侣（男朋友），两人经常一起打游戏，乔琳觉得和他们玩游戏非常有趣",
+      "session_id": "session_2",
+      "session_date": "9:49 am on 27 January, 2023",
+      "distance": 0.7240695357322693
+    },
+    {
+      "rank": 5,
+      "id": "119255f0-2577-4920-9ae8-494e660934bc",
+      "content": "乔琳最近游戏打得挺艰难，幸好她的伙伴也喜欢玩游戏并帮她保持对目标的专注；两人喜欢一起玩《It takes two》，一个有趣且有竞技性的团队策略游戏，享受一起完成艰难成就、增进感情",
+      "session_id": "session_15",
+      "session_date": "7:37 pm on 9 July, 2023",
+      "distance": 0.7468134164810181
+    },
+    {
+      "rank": 6,
+      "id": "2290dda6-70d6-447c-9d28-a6f66921c986",
+      "content": "乔琳忙碌一天后会和伴侣一起打电子游戏放松，这让两人更亲密",
+      "session_id": "session_12",
+      "session_date": "4:30 pm on 9 April, 2023",
+      "distance": 0.7481726408004761
+    },
+    {
+      "rank": 7,
+      "id": "2af936f8-5031-44c5-866b-cd803546bcf7",
+      "content": "乔琳和伴侣经常用《胡闹厨房2》打赌，她赢过三个大披萨",
+      "session_id": "session_19",
+      "session_date": "12:52 am on 19 August, 2023",
+      "distance": 0.7606378197669983
+    },
+    {
+      "rank": 8,
+      "id": "3485659d-5f7e-438c-9816-da8f3fbd5ae5",
+      "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力和柔软黄油饼干",
+      "session_id": "session_29",
+      "session_date": "1:24 pm on 17 September, 2023",
+      "distance": 0.7677497863769531
+    },
+    {
+      "rank": 9,
+      "id": "26bfebdc-bdde-411b-850b-dd3c81ea0c7b",
+      "content": "乔琳在艰难时期靠宠物蛇苏茜的陪伴获得安慰，电子游戏也是她的消遣方式",
+      "session_id": "session_16",
+      "session_date": "9:26 am on 1 August, 2023",
+      "distance": 0.7687053680419922
+    },
+    {
+      "rank": 10,
+      "id": "3d4a0b28-db4e-4abf-b959-39f07551c510",
+      "content": "乔琳没有考虑重新练瑜伽，她和伴侣计划一起玩主机游戏",
+      "session_id": "session_3",
+      "session_date": "7:03 pm on 1 February, 2023",
+      "distance": 0.771516740322113
+    },
+    {
+      "rank": 11,
+      "id": "0e60bab4-2102-438d-a10c-57db822e7f95",
+      "content": "乔琳热衷于提出新想法、提高效率、用工程才能做好事，并牢记妈妈强调的帮助他人的价值",
+      "session_id": "session_22",
+      "session_date": "5:33 pm on 26 August, 2023",
+      "distance": 0.7737975120544434
+    },
+    {
+      "rank": 12,
+      "id": "71b40f82-60fa-4073-9529-99421dfd21b7",
+      "content": "乔琳推荐了几个电子游戏：《塞尔达传说：旷野之息》（Switch上的开放世界游戏）、《集合啦！动物森友会》（治愈可爱）、以及《胡闹厨房2》（搞笑混乱的联机合作游戏）",
+      "session_id": "session_19",
+      "session_date": "12:52 am on 19 August, 2023",
+      "distance": 0.8099689483642578
+    },
+    {
+      "rank": 13,
+      "id": "8e77c162-17d0-40f8-a6b2-08f5e3c7b106",
+      "content": "乔琳的最新子弹笔记排版上写有她最喜欢的一句励志名言，这张照片对她来说像小提醒，激励她坚持目标、永不放弃",
+      "session_id": "session_18",
+      "session_date": "2:58 pm on 16 August, 2023",
+      "distance": 0.8184518814086914
+    },
+    {
+      "rank": 14,
+      "id": "5f285239-4232-4c94-9f17-b07ab54dcf0c",
+      "content": "乔琳的妈妈已经去世，她教会乔琳坚持不懈；乔琳伴侣的爸爸也已去世，示范了坚定决心；乔琳学工程，伴侣从事创作事业，他们通过追求各自的热爱来纪念他们",
+      "session_id": "session_22",
+      "session_date": "5:33 pm on 26 August, 2023",
+      "distance": 0.845184326171875
+    },
+    {
+      "rank": 15,
+      "id": "c67ca95e-435c-4cb6-a57b-79ca48ce8cd6",
+      "content": "乔琳的母亲于2022年（对话前一年）去世；乔琳分享了一张母亲房子里自己房间的照片（有长椅和窗户），那里有很多回忆",
+      "session_id": "session_1",
+      "session_date": "4:06 pm on 23 January, 2023",
+      "distance": 0.845724880695343
+    },
+    {
+      "rank": 16,
+      "id": "a9792ba8-0216-46d9-8afd-495b4ac2a6a1",
+      "content": "黛布最近玩了一个关于猫的卡牌游戏（不记得名字），玩法是从牌堆抽牌并用其攻击对手，她想和乔琳一起玩这个游戏",
+      "session_id": "session_27",
+      "session_date": "2:18 pm on 12 September, 2023",
+      "distance": 0.8505458235740662
+    },
+    {
+      "rank": 17,
+      "id": "01c44d62-4379-4f70-a840-3255c803d026",
+      "content": "乔琳在2023年8月17日给伴侣买了一台游戏机作为礼物（照片显示是一台黑色Xbox，旁边有尤达摆件），伴侣玩得很开心，甚至都会玩了",
+      "session_id": "session_19",
+      "session_date": "12:52 am on 19 August, 2023",
+      "distance": 0.8513137698173523
+    },
+    {
+      "rank": 18,
+      "id": "91261b1f-9237-4413-b824-dca5729d6819",
+      "content": "乔琳通常在自己房间里放松、安心休息，那是她忙碌一天后宁静休憩、放松充电的小天地",
+      "session_id": "session_28",
+      "session_date": "3:09 pm on 15 September, 2023",
+      "distance": 0.8837743401527405
+    },
+    {
+      "rank": 19,
+      "id": "9504398e-7248-412e-9448-07bbbba1c2f4",
+      "content": "乔琳的笔记本里有一句激励她的话，提醒她抛弃消极、专注于成长和保持积极",
+      "session_id": "session_23",
+      "session_date": "11:46 am on 30 August, 2023",
+      "distance": 0.8938579559326172
+    },
+    {
+      "rank": 20,
+      "id": "46b463f0-f4a2-44c3-b320-2b64f58d21b6",
+      "content": "乔琳在2023年8月中旬得到主机新游戏《战地1》",
+      "session_id": "session_20",
+      "session_date": "9:11 am on 21 August, 2023",
+      "distance": 0.8998849987983704
+    },
+    {
+      "rank": 21,
+      "id": "b689d90b-aa5e-44da-a2cf-fe1c0a29ccd9",
+      "content": "乔琳最喜欢的安慰食物之一是千层面；她的学习和考试事务繁多，感到压力",
+      "session_id": "session_8",
+      "session_date": "7:18 pm on 2 March, 2023",
+      "distance": 0.911346435546875
+    },
+    {
+      "rank": 22,
+      "id": "10f42cfe-40eb-44ce-9fb6-056455436fcd",
+      "content": "乔琳在2023年7月正努力把锻炼安排进学习计划里，觉得挺难但也很有趣",
+      "session_id": "session_15",
+      "session_date": "7:37 pm on 9 July, 2023",
+      "distance": 0.9186185002326965
+    },
+    {
+      "rank": 23,
+      "id": "a3c7fc81-c8d3-4c98-b63d-f002e5c6980e",
+      "content": "乔琳一边读工程学院，一边照顾伴侣的视频游戏相关事务，压力很大；她通过做瑜伽和冥想来保持平静",
+      "session_id": "session_7",
+      "session_date": "4:50 pm on 25 February, 2023",
+      "distance": 0.924602210521698
+    },
+    {
+      "rank": 24,
+      "id": "77ff8eb4-0540-418f-91d9-7deb41c86806",
+      "content": "乔琳的伴侣已故的父亲示范了坚定决心；乔琳的妈妈教她坚持不懈、永不放弃；这些价值观指引着乔琳和伴侣追求各自的热爱（乔琳学工程，伴侣从事创作事业）",
+      "session_id": "session_23",
+      "session_date": "11:46 am on 30 August, 2023",
+      "distance": 0.9312335848808289
+    },
+    {
+      "rank": 25,
+      "id": "01f94896-0fd1-4aa7-b07e-d779154a8f2f",
+      "content": "黛布鼓励乔琳在追求目标的同时享受旅程、给自己留时间寻找乐趣，并表示会一直支持她",
+      "session_id": "session_21",
+      "session_date": "9:34 am on 24 August, 2023",
+      "distance": 0.9341232180595398
+    },
+    {
+      "rank": 26,
+      "id": "061ba09a-c301-4b82-a624-cfec400acbaf",
+      "content": "乔琳的大项目很难，但她一直在坚持推进，并感谢黛布的支持",
+      "session_id": "session_25",
+      "session_date": "8:31 pm on 6 September, 2023",
+      "distance": 0.9404914975166321
+    },
+    {
+      "rank": 27,
+      "id": "2a23496f-f30b-4dae-9ff3-2c6056833ca2",
+      "content": "乔琳养蛇是因为对爬行动物很着迷，觉得蛇是完美宠物；照顾蛇让她平静，也是亲近自然的方式",
+      "session_id": "session_15",
+      "session_date": "7:37 pm on 9 July, 2023",
+      "distance": 0.9498469233512878
+    },
+    {
+      "rank": 28,
+      "id": "f9f35e3b-c552-4389-a4f0-9f3f1d59d0f0",
+      "content": "乔琳和伴侣是在大学的一门工程课上认识的，先成为朋友，友谊后来发展成恋爱关系，两人还喜欢一起做工程项目",
+      "session_id": "session_7",
+      "session_date": "4:50 pm on 25 February, 2023",
+      "distance": 0.9548289179801941
+    },
+    {
+      "rank": 29,
+      "id": "c817412e-d486-4400-a06f-7508f21e11c7",
+      "content": "乔琳的浴室很有美感，她曾在浴室里读过一本关于自我发现的书，感觉非常有共鸣",
+      "session_id": "session_29",
+      "session_date": "1:24 pm on 17 September, 2023",
+      "distance": 0.9565069675445557
+    },
+    {
+      "rank": 30,
+      "id": "b60fa0bf-0f37-4a2f-92c9-80c42b772cca",
+      "content": "黛布以前玩过一些电子游戏但已经很久没玩，她认为游戏是忙碌一天后放松的好方式；她以前常和丈夫一起轮流玩游戏，最喜欢一起玩侦探游戏",
+      "session_id": "session_19",
+      "session_date": "12:52 am on 19 August, 2023",
+      "distance": 0.9593759775161743
+    },
+    {
+      "rank": 31,
+      "id": "d2e2e49f-f93f-4dd4-a604-2b8e5e0397f3",
+      "content": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒，玩得很开心，感到很放松（附有朋友举杯和食物、红酒的照片）",
+      "session_id": "session_6",
+      "session_date": "4:12 pm on 22 February, 2023",
+      "distance": 0.9676060676574707
+    },
+    {
+      "rank": 32,
+      "id": "faa4ba27-2ce9-4637-bf28-9b61ca9ed742",
+      "content": "乔琳在2023年8月底养了一株新植物，作为照顾好自己、拥抱新的开始的提醒",
+      "session_id": "session_23",
+      "session_date": "11:46 am on 30 August, 2023",
+      "distance": 0.9723929166793823
+    },
+    {
+      "rank": 33,
+      "id": "676c57a2-84eb-4d45-bf00-ac4fc0d95838",
+      "content": "乔琳（assistant）最近专注于学业和与伴侣的感情，两人计划去海边小旅行作为放松方式",
+      "session_id": "session_24",
+      "session_date": "2:14 pm on 3 September, 2023",
+      "distance": 0.9750161170959473
+    },
+    {
+      "rank": 34,
+      "id": "1b2166fd-fea1-4bcc-9b95-d46c80105157",
+      "content": "用户名叫黛布，她有一个朋友乔琳，两人于2023年1月23日的对话中初次认识",
+      "session_id": "session_1",
+      "session_date": "4:06 pm on 23 January, 2023",
+      "distance": 0.9772412180900574
+    },
+    {
+      "rank": 35,
+      "id": "6710a382-2d9a-4e69-a6bb-f9d41207ee9f",
+      "content": "乔琳有一个被树木环绕的湖泊隐秘宝地，在那里感到特别平和安宁；她喜欢散步感受自然并拍摄风景照片，两人约定改天一起去那里",
+      "session_id": "session_15",
+      "session_date": "7:37 pm on 9 July, 2023",
+      "distance": 0.9893902540206909
+    },
+    {
+      "rank": 36,
+      "id": "e06b560a-a1b5-4f21-b7bb-e33a860ca75c",
+      "content": "实习对乔琳的生活产生了积极影响：激发了她对工程学的热爱，与热爱工作的人相处激励她保持专注、继续为梦想努力",
+      "session_id": "session_13",
+      "session_date": "3:56 pm on 6 June, 2023",
+      "distance": 0.9911353588104248
+    },
+    {
+      "rank": 37,
+      "id": "003eb6f9-3b40-4bc5-91df-0872e1195cc4",
+      "content": "乔琳养蛇，觉得和蛇在一起的宝贵时光教会她放慢脚步、与自己保持协调",
+      "session_id": "session_12",
+      "session_date": "4:30 pm on 9 April, 2023",
+      "distance": 0.9932299852371216
+    },
+    {
+      "rank": 38,
+      "id": "9f858349-324d-4fa9-9982-74b52b21edea",
+      "content": "乔琳（黛布的朋友）的目标是在自己的领域取得成功并产生积极影响，为此一直在学习、参加研讨会和拓展人脉",
+      "session_id": "session_21",
+      "session_date": "9:34 am on 24 August, 2023",
+      "distance": 0.9937007427215576
+    },
+    {
+      "rank": 39,
+      "id": "41460471-9d98-417a-873d-0824b3f76a00",
+      "content": "截至2023年8月，乔琳的工程学学习进展顺利，她强调平衡生活对自己来说是关键",
+      "session_id": "session_19",
+      "session_date": "12:52 am on 19 August, 2023",
+      "distance": 0.994461715221405
+    },
+    {
+      "rank": 40,
+      "id": "091c0495-31ec-4890-a148-72d189386a6e",
+      "content": "乔琳感谢黛博拉的专辑推荐，答应去听《Sleep》",
+      "session_id": "session_11",
+      "session_date": "4:03 pm on 28 March, 2023",
+      "distance": 0.9991733431816101
+    },
+    {
+      "rank": 41,
+      "id": "bd39b53f-4342-46b5-8ab1-a4563ff2caec",
+      "content": "乔琳有宠物蛇：一条叫苏茜，蛇总能让她平静、让她开心；第二条蛇叫塞拉菲姆，一年前（约2022年）她在巴黎买的；塞拉菲姆曾趁她打游戏时溜出笼子蜷在她身边",
+      "session_id": "session_2",
+      "session_date": "9:49 am on 27 January, 2023",
+      "distance": 1.0000780820846558
+    },
+    {
+      "rank": 42,
+      "id": "54b9ab89-5306-4b7f-9c88-468d201501ae",
+      "content": "乔琳在2023年6月表示实习期间很难找到工作与生活的平衡，一直埋头苦干，难以腾出时间发展爱好和放松",
+      "session_id": "session_13",
+      "session_date": "3:56 pm on 6 June, 2023",
+      "distance": 1.0015311241149902
+    },
+    {
+      "rank": 43,
+      "id": "6bec2654-3991-4a1d-ad50-1c1f8ecf762e",
+      "content": "乔琳在2023年3月22日表示正在使用番茄工作法（工作25分钟、休息5分钟）避免过度疲劳，但仍难以分清任务轻重缓急，任务一多就无从下手",
+      "session_id": "session_10",
+      "session_date": "5:35 pm on 22 March, 2023",
+      "distance": 1.0025078058242798
+    },
+    {
+      "rank": 44,
+      "id": "0f7ab2a9-367d-49c6-a3ff-54328344d85e",
+      "content": "乔琳在2023年2月表示一直想试试在海滩上练瑜伽，黛布分享了在巴厘岛海滩练瑜伽的美妙体验并推荐她尝试",
+      "session_id": "session_6",
+      "session_date": "4:12 pm on 22 February, 2023",
+      "distance": 1.0036309957504272
+    },
+    {
+      "rank": 45,
+      "id": "a9b79b72-487a-44bd-a4bd-dae5e130723f",
+      "content": "乔琳和伴侣在里约热内卢参观了一座古老寺庙，走了令人惊艳的楼梯，还参加了很多远足活动",
+      "session_id": "session_23",
+      "session_date": "11:46 am on 30 August, 2023",
+      "distance": 1.0038175582885742
+    }
+  ],
+  "target_vector_rank": 2,
+  "rerank_top15": [
+    {
+      "rank": 1,
+      "id": "119255f0-2577-4920-9ae8-494e660934bc",
+      "content": "乔琳最近游戏打得挺艰难，幸好她的伙伴也喜欢玩游戏并帮她保持对目标的专注；两人喜欢一起玩《It takes two》，一个有趣且有竞技性的团队策略游戏，享受一起完成艰难成就、增进感情",
+      "session_id": "session_15",
+      "session_date": "7:37 pm on 9 July, 2023",
+      "distance": 0.7468134164810181,
+      "vector_rank": 5,
+      "rerank_score": 0.871271012950133
+    },
+    {
+      "rank": 2,
+      "id": "f1455645-db16-42df-a737-cb52619de275",
+      "content": "乔琳最喜欢和妈妈一起玩的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，视游戏为减压和暂时逃离生活的方式",
+      "session_id": "session_24",
+      "session_date": "2:14 pm on 3 September, 2023",
+      "distance": 0.647318959236145,
+      "vector_rank": 2,
+      "rerank_score": 0.7620229118085597
+    },
+    {
+      "rank": 3,
+      "id": "2af936f8-5031-44c5-866b-cd803546bcf7",
+      "content": "乔琳和伴侣经常用《胡闹厨房2》打赌，她赢过三个大披萨",
+      "session_id": "session_19",
+      "session_date": "12:52 am on 19 August, 2023",
+      "distance": 0.7606378197669983,
+      "vector_rank": 7,
+      "rerank_score": 0.7259522258512136
+    },
+    {
+      "rank": 4,
+      "id": "71b40f82-60fa-4073-9529-99421dfd21b7",
+      "content": "乔琳推荐了几个电子游戏：《塞尔达传说：旷野之息》（Switch上的开放世界游戏）、《集合啦！动物森友会》（治愈可爱）、以及《胡闹厨房2》（搞笑混乱的联机合作游戏）",
+      "session_id": "session_19",
+      "session_date": "12:52 am on 19 August, 2023",
+      "distance": 0.8099689483642578,
+      "vector_rank": 12,
+      "rerank_score": 0.6541569951296983
+    },
+    {
+      "rank": 5,
+      "id": "92eff024-cc55-49e9-930b-ca19f4cdad8a",
+      "content": "乔琳与她的伴侣一起在主机上玩游戏，两人对游戏都很着迷；上周（2023年1月中旬）他们一起玩了《底特律》；乔琳从孩子时期就自己学会了玩游戏；他们计划在2023年1月28日（下周六）玩《Walking Dead》",
+      "session_id": "session_2",
+      "session_date": "9:49 am on 27 January, 2023",
+      "distance": 0.6707953810691833,
+      "vector_rank": 3,
+      "rerank_score": 0.6443990923476544
+    },
+    {
+      "rank": 6,
+      "id": "a9792ba8-0216-46d9-8afd-495b4ac2a6a1",
+      "content": "黛布最近玩了一个关于猫的卡牌游戏（不记得名字），玩法是从牌堆抽牌并用其攻击对手，她想和乔琳一起玩这个游戏",
+      "session_id": "session_27",
+      "session_date": "2:18 pm on 12 September, 2023",
+      "distance": 0.8505458235740662,
+      "vector_rank": 16,
+      "rerank_score": 0.5899770166564758
+    },
+    {
+      "rank": 7,
+      "id": "9966d6fe-734a-4507-8dea-d7d1f5102f66",
+      "content": "乔琳10岁时父母给她买了她人生中第一台游戏机（任天堂），这是她对电子游戏热爱的开始；她是自学的，父亲一直很支持她，母亲还会和她一起玩游戏",
+      "session_id": "session_24",
+      "session_date": "2:14 pm on 3 September, 2023",
+      "distance": 0.6318439245223999,
+      "vector_rank": 1,
+      "rerank_score": 0.5712359755170772
+    },
+    {
+      "rank": 8,
+      "id": "2290dda6-70d6-447c-9d28-a6f66921c986",
+      "content": "乔琳忙碌一天后会和伴侣一起打电子游戏放松，这让两人更亲密",
+      "session_id": "session_12",
+      "session_date": "4:30 pm on 9 April, 2023",
+      "distance": 0.7481726408004761,
+      "vector_rank": 6,
+      "rerank_score": 0.5520811171363209
+    },
+    {
+      "rank": 9,
+      "id": "26bfebdc-bdde-411b-850b-dd3c81ea0c7b",
+      "content": "乔琳在艰难时期靠宠物蛇苏茜的陪伴获得安慰，电子游戏也是她的消遣方式",
+      "session_id": "session_16",
+      "session_date": "9:26 am on 1 August, 2023",
+      "distance": 0.7687053680419922,
+      "vector_rank": 9,
+      "rerank_score": 0.4813366718101095
+    },
+    {
+      "rank": 10,
+      "id": "0e60bab4-2102-438d-a10c-57db822e7f95",
+      "content": "乔琳热衷于提出新想法、提高效率、用工程才能做好事，并牢记妈妈强调的帮助他人的价值",
+      "session_id": "session_22",
+      "session_date": "5:33 pm on 26 August, 2023",
+      "distance": 0.7737975120544434,
+      "vector_rank": 11,
+      "rerank_score": 0.4397030419301317
+    },
+    {
+      "rank": 11,
+      "id": "692450fb-3c5e-4413-ad11-f964b18683d6",
+      "content": "乔琳有一位伴侣（男朋友），两人经常一起打游戏，乔琳觉得和他们玩游戏非常有趣",
+      "session_id": "session_2",
+      "session_date": "9:49 am on 27 January, 2023",
+      "distance": 0.7240695357322693,
+      "vector_rank": 4,
+      "rerank_score": 0.43339912340139514
+    },
+    {
+      "rank": 12,
+      "id": "46b463f0-f4a2-44c3-b320-2b64f58d21b6",
+      "content": "乔琳在2023年8月中旬得到主机新游戏《战地1》",
+      "session_id": "session_20",
+      "session_date": "9:11 am on 21 August, 2023",
+      "distance": 0.8998849987983704,
+      "vector_rank": 20,
+      "rerank_score": 0.43328020486542795
+    },
+    {
+      "rank": 13,
+      "id": "3d4a0b28-db4e-4abf-b959-39f07551c510",
+      "content": "乔琳没有考虑重新练瑜伽，她和伴侣计划一起玩主机游戏",
+      "session_id": "session_3",
+      "session_date": "7:03 pm on 1 February, 2023",
+      "distance": 0.771516740322113,
+      "vector_rank": 10,
+      "rerank_score": 0.4303805086941903
+    },
+    {
+      "rank": 14,
+      "id": "b689d90b-aa5e-44da-a2cf-fe1c0a29ccd9",
+      "content": "乔琳最喜欢的安慰食物之一是千层面；她的学习和考试事务繁多，感到压力",
+      "session_id": "session_8",
+      "session_date": "7:18 pm on 2 March, 2023",
+      "distance": 0.911346435546875,
+      "vector_rank": 21,
+      "rerank_score": 0.3845046384129325
+    },
+    {
+      "rank": 15,
+      "id": "003eb6f9-3b40-4bc5-91df-0872e1195cc4",
+      "content": "乔琳养蛇，觉得和蛇在一起的宝贵时光教会她放慢脚步、与自己保持协调",
+      "session_id": "session_12",
+      "session_date": "4:30 pm on 9 April, 2023",
+      "distance": 0.9932299852371216,
+      "vector_rank": 37,
+      "rerank_score": 0.3735432931821112
+    }
+  ],
+  "rerank_endpoint_style": "dashscope native text-rerank",
+  "target_final_rank": 2,
+  "stopped_after_failure": false,
+  "logical_source_after": {
+    "embedding_count": 1995,
+    "id_content_user_session_sha256": "72a9ee59055533dfdbeb9aa58527dbdc565c2e191c4e0e5e06194b0e42ab97e1"
+  },
+  "logical_source_unchanged": true
+}
