@@ -1,0 +1,29 @@
+{
+  "scope": "两场归档中文原话的单对话 CLI 可选 JSONL 来源账离线回放",
+  "source_packet_sha256": "65478327b47d25891b87e9e644735ee4389197952d9b396f10052809c8ad5e54",
+  "config_file_sha256": "431ba8d9074f4683e8e6149d92e72cdf01dd967d30908e28b30ff90ee8615adb",
+  "trace_file_sha256": "ba642848b840f02f7395b5dc476d3535a9fe900be9df0d435186f98fd885026c",
+  "event_types": [
+    "run_started",
+    "batch_input",
+    "batch_outcome",
+    "batch_input",
+    "batch_outcome",
+    "run_completed"
+  ],
+  "backend_requests_unchanged": true,
+  "batch_ids": [
+    "72ac11cd90d82ce73de765ec5543a29177e71f54cfb68b292de712c7a2067e65",
+    "88d7a150eeaa4ad012f33790869965981f462fa37b4535d118e916dbf6478919"
+  ],
+  "returned_content_sha256": [
+    "6c852a8904775a24a814cd90860298563d3c40fe0ce2e71023615a814067b042",
+    "29fb04fa5a72e01d9e0c8d93b8175ef746ce3a5723fd2bb69b7a017f41fecb18"
+  ],
+  "source_file_unchanged": true,
+  "limits": [
+    "Recorder 注入上一阶段 POC 的中文事实，不是历史 Mem0 实际提取。",
+    "临时 JSONL 仅用于离线验证，机器结果留存其指纹和事件结构。",
+    "入口只加了显式单对话留痕选项；全量评测脚本仍未开启。"
+  ]
+}

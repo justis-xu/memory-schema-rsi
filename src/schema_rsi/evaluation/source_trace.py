@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
+from pathlib import Path
 
 
 def build_source_batch(*, benchmark: str, user_id: str, session: dict,
@@ -47,3 +49,26 @@ def snapshot_returned_records(records: list) -> list[dict]:
             'event': metadata.get('event'),
         })
     return snapshots
+
+
+class JsonlTraceSink:
+    """Exclusive, per-event durable JSONL sink for opt-in local ingest traces."""
+
+    def __init__(self, path: str | Path):
+        self.path = Path(path)
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self._file = self.path.open('x', encoding='utf-8')
+
+    def __call__(self, event: dict) -> None:
+        self._file.write(json.dumps(event, ensure_ascii=False, separators=(',', ':')) + '\n')
+        self._file.flush()
+        os.fsync(self._file.fileno())
+
+    def close(self) -> None:
+        self._file.close()
+
+    def __enter__(self) -> 'JsonlTraceSink':
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback) -> None:
+        self.close()
