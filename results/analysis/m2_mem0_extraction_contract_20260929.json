@@ -1,0 +1,25 @@
+{
+  "scope": "当前中文 Mem0 提取配置与两场合成事实的离线持久化探针",
+  "config_sha256": "431ba8d9074f4683e8e6149d92e72cdf01dd967d30908e28b30ff90ee8615adb",
+  "custom_prompt_sha256": "92a5e29e6e47b2c6d7db7f13f4c9b51fe27e8ef7cd555bb2295fa5e062585896",
+  "prompt_checks": {
+    "fixed_today_2026_09_26": true,
+    "instructs_array_of_strings": true,
+    "includes_literal_messages_placeholder": true,
+    "instructs_assistant_extraction": true,
+    "instructs_false_public_origin_reply": true
+  },
+  "model_calls": 0,
+  "embedding_http_calls": 0,
+  "answer_or_judge_calls": 0,
+  "control": {
+    "input_link_target_is_first_record": true,
+    "first_and_second_distinct": true,
+    "second_raw_payload_has_attributed_to_user": true,
+    "second_raw_payload_has_linked_memory_ids": false,
+    "second_wrapper_has_attributed_to": false,
+    "second_wrapper_has_linked_memory_ids": false,
+    "second_wrapper_has_session_date": true,
+    "persisted_record_count": 2
+  }
+}
