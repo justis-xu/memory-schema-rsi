@@ -1,0 +1,52 @@
+{
+  "scope": "固定两例四次中文提取的人工逐例核查；只评提取，不评答题",
+  "call_count": 4,
+  "json_parse_ok_count": 4,
+  "cases": [
+    {
+      "call_index": 1,
+      "fixture": "lme_engineer",
+      "arm": "base",
+      "source_turn_ids_valid": true,
+      "retained_supported_core": ["新职位带领4名工程师", "经理雷切尔参加团建", "联系萨曼莎仍为计划", "结构化活动仍为计划"],
+      "failures": [
+        {"kind": "unsupported_inclusion", "claim_fragment": "4名工程师（含本人）", "source": "turn:10仅说带领一个4人的工程师团队；含本人只在AI助理turn:11的总结中出现"},
+        {"kind": "assistant_detail_promoted", "claim_fragment": "City View Rooftop 的活动经理萨曼莎", "source": "用户turn:6/8只说联系萨曼莎；其活动经理职位来自AI助理turn:5"},
+        {"kind": "incomplete_correction_provenance", "claim_fragment": "曾称5名工程师加经理", "source": "该句只标turn:10，实际旧值在turn:4；turn:10只能支持新值和纠正关系"}
+      ]
+    },
+    {
+      "call_index": 2,
+      "fixture": "lme_engineer",
+      "arm": "source_policy",
+      "source_turn_ids_valid": true,
+      "retained_supported_core": ["新职位带领4名工程师", "经理雷切尔参加团建", "联系萨曼莎仍为计划", "结构化活动仍为可能计划", "旧值与新值分别引用turn:4/10"],
+      "failures": [
+        {"kind": "unsupported_inclusion", "claim_fragment": "4名工程师（含本人）", "source": "turn:10没有说明是否包含用户；该解释仅见AI助理turn:11。提示明确禁止补此关系，仍失败"}
+      ]
+    },
+    {
+      "call_index": 3,
+      "fixture": "locomo_two_humans",
+      "arm": "source_policy",
+      "source_turn_ids_valid": true,
+      "retained_supported_core": ["安德鲁本人承诺带奥黛丽看河边路线", "奥黛丽表达想去看路线"],
+      "failures": [
+        {"kind": "detail_weakened", "claim_fragment": "奥黛丽等不及想去并期待欣赏风景", "source": "D20:40有明确期待，输出概括为想去，少了情绪和欣赏风景细节"}
+      ]
+    },
+    {
+      "call_index": 4,
+      "fixture": "locomo_two_humans",
+      "arm": "base",
+      "source_turn_ids_valid": true,
+      "retained_supported_core": ["安德鲁D20:37/39分别承诺带路", "奥黛丽D20:38请求、D20:40明确期待"],
+      "failures": []
+    }
+  ],
+  "cross_case_findings": ["两臂均未因LoCoMo的assistant载体角色删除安德鲁本人事实", "两臂均把LongMemEval中未由用户确认的含本人关系当事实", "加强来源规则消除了本例的萨曼莎职位升格并改善旧值指针，但未消除核心包含关系错误", "四次单样本输出不能估计改进率、稳定性或Graph/Jev/RSI答题收益"],
+  "model_calls": 4,
+  "answer_calls": 0,
+  "judge_calls": 0,
+  "memory_or_graph_writes": 0
+}
