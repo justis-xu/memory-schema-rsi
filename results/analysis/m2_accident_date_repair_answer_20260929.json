@@ -1,0 +1,164 @@
+{
+  "scope": "Two source-selected Chinese LoCoMo cases from one archived fixed 15-slot context; only the unsupported date phrase in one memory is repaired. ABBA per case; zero judge calls.",
+  "source_run": "results_zh/zhfull_fused_locomo_20260925_161049.jsonl",
+  "source_run_sha256": "1834c9fdc69c7697d290d24ab1f0d7a9f5c2a5857892695a75e0628b87dd22ab",
+  "source_audit": "results/analysis/m2_output_origin_sample_20260928.json",
+  "source_audit_sha256": "b7fbd05e1ea444e1402b69c1e7742e3a3eaab01eff36e77005315f8a409d1323",
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_answer_calls": 8,
+  "max_completion_tokens_per_call": 1500,
+  "order_per_case": [
+    "original",
+    "date_repaired",
+    "date_repaired",
+    "original"
+  ],
+  "target_memory_id": "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+  "original_phrase": "在2023年10月20日的公路旅行中",
+  "repaired_phrase": "在2023年10月20日谈话前的上周末公路旅行中",
+  "cases": [
+    {
+      "case_id": "locomo_conv-26_qa74",
+      "question": "梅拉妮一家是什么时候去公路旅行的？",
+      "gold_for_posthoc_review_only": "2023年10月20日之前的那个周末",
+      "target_rank": 2,
+      "context_ids": [
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+        "65dc20b5-1cc1-4c95-ac07-40f204046256",
+        "f11fe9d3-872e-4ad9-8137-b6ab8464fd7b",
+        "71ea5742-4d7d-4fde-af11-24113f7bb56a",
+        "4885cf7c-4c99-4d66-906a-24f0ad780cde",
+        "f3ae4672-2945-4ea9-88ab-8502ed2be0bb",
+        "de3a1918-0ba7-4586-853f-5badfd2f1922",
+        "afb6c064-969a-497d-932d-ec1fde376700",
+        "c40fb182-e28f-40d1-8537-defda073f4f7",
+        "9a6d251f-1392-4457-a610-97d093f303f0",
+        "4fd3f599-54da-4f9e-865f-c865e22f600f",
+        "0319c2f7-bfaa-4705-be23-453c21e142a3",
+        "cf4e3728-fa86-49b8-bbe4-54810130882e"
+      ],
+      "prompt_sha256": {
+        "original": "ad094c9b932578098ddfbd1410b19b26cc299863aa00df68793d0c6311352579",
+        "date_repaired": "92254ed2752aa1289c949c914d666ce73058f2b719b72b50a2d586a808097fa7"
+      },
+      "original_target_text": "梅拉妮在2023年10月20日的公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性",
+      "repaired_target_text": "梅拉妮在2023年10月20日谈话前的上周末公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性",
+      "calls": [
+        {
+          "index": 1,
+          "arm": "original",
+          "answer": "梅拉妮一家是在2023年10月中旬（约10月20日前后，10月19日还在途中/次日徒步）去公路旅行的。",
+          "usage": {
+            "prompt_tokens": 2329,
+            "completion_tokens": 38
+          }
+        },
+        {
+          "index": 2,
+          "arm": "date_repaired",
+          "answer": "2023年10月中旬（大约10月中旬的上周末，即10月19日之前，车祸发生于10月20日谈话前的上周末）。",
+          "usage": {
+            "prompt_tokens": 2333,
+            "completion_tokens": 36
+          }
+        },
+        {
+          "index": 3,
+          "arm": "date_repaired",
+          "answer": "梅拉妮一家在2023年10月中旬（10月20日谈话前的上周末）去公路旅行，旅途中发生了车祸；之后于10月19日去山里徒步，10月21日在科罗拉多大峡谷游玩。",
+          "usage": {
+            "prompt_tokens": 2333,
+            "completion_tokens": 55
+          }
+        },
+        {
+          "index": 4,
+          "arm": "original",
+          "answer": "梅拉妮一家于2023年10月20日去公路旅行（途中发生了车祸）。",
+          "usage": {
+            "prompt_tokens": 2329,
+            "completion_tokens": 25
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa144",
+      "question": "梅拉妮的儿子是如何应对那场事故的？",
+      "gold_for_posthoc_review_only": "他很害怕，但家人给了他安慰",
+      "target_rank": 1,
+      "context_ids": [
+        "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+        "2ec90c89-e8d4-4fd1-80bd-2eca86fb2c2f",
+        "7da557c9-eb9c-4392-b9c5-2ac9863d2695",
+        "846921c3-b6db-4879-9f05-4499084b5510",
+        "fdc0edd7-de96-45f1-9cc5-f18b8a715160",
+        "8642315d-3c4c-4c9e-a333-7f29093b90fc",
+        "15e15a90-e502-47ab-b1c6-2c82a49ce7ce",
+        "b6264989-18d4-47ac-885d-80841ab97f92",
+        "137a6569-6e2e-4878-97d5-71289efc1f4a",
+        "3f8d7567-dcac-4cc4-8af5-2e0245684373",
+        "ef55dd2f-2fb7-4d79-a161-13f8f8507f51",
+        "444a158f-f7e8-4dc2-aa22-cead845f1cb8",
+        "29c8496b-83a9-47b7-aa46-3c33aaa62e9e",
+        "86251053-f0d3-4dde-9f5c-312dea4e9aee",
+        "eac75b26-f77e-4832-89a2-b2a29a54069f"
+      ],
+      "prompt_sha256": {
+        "original": "208d416a0a159e5ee9b8ccb2ef32744850dceb4d992cd3bc02964bbd512f1614",
+        "date_repaired": "a9725a0d385368218f8f361360dd103a65854418a96e462d68323cfb0f72f1b6"
+      },
+      "original_target_text": "梅拉妮在2023年10月20日的公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性",
+      "repaired_target_text": "梅拉妮在2023年10月20日谈话前的上周末公路旅行中遭遇车祸，她的儿子出了事故但安然无恙，这让她深受触动，更加珍惜家人；孩子们起初很害怕但表现得坚强有韧性",
+      "calls": [
+        {
+          "index": 5,
+          "arm": "original",
+          "answer": "梅拉妮的儿子在车祸中安然无恙；孩子们起初很害怕，但经安慰后表现出坚强、有韧性的适应力。梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "usage": {
+            "prompt_tokens": 2235,
+            "completion_tokens": 102
+          }
+        },
+        {
+          "index": 6,
+          "arm": "date_repaired",
+          "answer": "梅拉妮的儿子在事故中平安无事；孩子们起初很害怕，但经过安慰后表现出坚强的适应力和韧性。",
+          "usage": {
+            "prompt_tokens": 2239,
+            "completion_tokens": 72
+          }
+        },
+        {
+          "index": 7,
+          "arm": "date_repaired",
+          "answer": "事故发生后，梅拉妮的两个年幼孩子起初很害怕，但经过安慰后表现出坚强的适应力和韧性，她儿子安然无恙。梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "usage": {
+            "prompt_tokens": 2239,
+            "completion_tokens": 49
+          }
+        },
+        {
+          "index": 8,
+          "arm": "original",
+          "answer": "梅拉妮的儿子在车祸中安然无恙，平安无事。两个孩子起初很害怕，但在安慰后表现出坚强的适应力和韧性，这让梅拉妮深受触动，更加珍惜家人。",
+          "usage": {
+            "prompt_tokens": 2235,
+            "completion_tokens": 45
+          }
+        }
+      ]
+    }
+  ],
+  "calls_sent": 8,
+  "limits": [
+    "Old archived context; current pure-Chinese memory-store and retrieval quality are not tested.",
+    "Source repair changes the one memory body only; its session_19 metadata remains source-misaligned.",
+    "Two fixed questions and two answers per arm cannot estimate a population effect or noise distribution.",
+    "A response difference cannot by itself establish that this one memory caused the historical answer."
+  ],
+  "stopped_after_failure": false
+}
