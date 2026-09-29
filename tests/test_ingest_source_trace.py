@@ -31,10 +31,11 @@ def case():
         metadata={'raw': {'api_key': 'credential sentinel'}})
 
 
-def run(c, backend, sink=None, max_turns=None):
+def run(c, backend, sink=None, max_turns=None, **trace_ids):
     pipeline = EvaluationPipeline.__new__(EvaluationPipeline)
     pipeline.backend = backend
-    return pipeline.ingest_case(c, user_id='u', source_trace_sink=sink, max_turns=max_turns)
+    return pipeline.ingest_case(c, user_id='u', source_trace_sink=sink,
+                                max_turns=max_turns, **trace_ids)
 
 
 def test_source_trace_preserves_request_and_excludes_gold():
@@ -67,6 +68,29 @@ def test_batch_identity_changes_on_source_and_owner_but_not_gold():
     owner = build_source_batch(benchmark=c.benchmark, user_id='other', session=c.history[0],
                               turns=c.history[0]['turns'], messages=b['input_messages'])
     assert owner['batch_id'] != changed[0]['batch']['batch_id']
+
+
+def test_same_batch_is_distinguishable_across_runs_and_attempts():
+    runs = []
+    for run_id, attempt_id in [('run-a', 'first'), ('run-a', 'retry'), ('run-b', 'first')]:
+        backend, events = Backend(), []
+        run(case(), backend, events.append, trace_run_id=run_id,
+            trace_attempt_id=attempt_id)
+        assert [(e['run_id'], e['attempt_id']) for e in events] == [(run_id, attempt_id)] * 2
+        assert events[0]['batch']['batch_id'] == events[1]['batch_id']
+        runs.append((backend.calls, events[0]['batch']['batch_id']))
+    assert runs[0][0] == runs[1][0] == runs[2][0]
+    assert runs[0][1] == runs[1][1] == runs[2][1]
+
+
+@pytest.mark.parametrize('trace_ids', [
+    {'trace_run_id': ''}, {'trace_attempt_id': '  '}, {'trace_run_id': 7},
+])
+def test_invalid_trace_identity_fails_before_backend_call(trace_ids):
+    backend = Backend()
+    with pytest.raises(ValueError, match='must be a nonempty string'):
+        run(case(), backend, [].append, **trace_ids)
+    assert backend.calls == []
 
 
 def test_truncation_and_sink_mutation_do_not_change_backend_input():

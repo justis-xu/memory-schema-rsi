@@ -1,0 +1,71 @@
+{
+  "scope": "固定中文 LongMemEval 工程师人数题的三次 Recorder 回放；无模型和库图写入",
+  "question_id": "031748ae",
+  "source_sha256": "f8af9e1aa5b62cd117249c05575774a0ade69b91c9a3385653d706ebb8129590",
+  "old_source_sha256": "e93bd28549d25ba4092034bfe336a92f5fbce7e17693c5672a5f9d3be0d96f1f",
+  "source_file_sha_changed": true,
+  "old_ordered_batch_ids_match": false,
+  "old_matching_batch_count": 40,
+  "old_mismatched_batches": [
+    {
+      "call_index": 20,
+      "session_id": "920fa36f",
+      "old_batch_id": "e1e74a9841023ebc0824dde57a3838e1e8dba1045ca29de17d8ab1dff5d4e56d",
+      "current_batch_id": "0c183f0161cba5f01b4c7a27252819e0f4d79afebe984595bbefe0ff15fc0bec"
+    },
+    {
+      "call_index": 24,
+      "session_id": "c86a22a2_2",
+      "old_batch_id": "41310ce5ad6d7c4f6211a5fecbca28b08d93e24f13cd974e3181e1651cb8ab1b",
+      "current_batch_id": "033a8258c31ff90c6cf13dee58400e58c49df2ea05aa216b6973b77613ec792c"
+    },
+    {
+      "call_index": 30,
+      "session_id": "eff063bb_2",
+      "old_batch_id": "f86e401962c50e00c420a7d22542b44070e221bb1a24fc676f2a3a23af58f09d",
+      "current_batch_id": "0d313c6f091b7e213e3f4d3313b8bb43f34f9e96fd2387dacd2e824045a8e76b"
+    },
+    {
+      "call_index": 42,
+      "session_id": "sharegpt_BvuMJIh_0",
+      "old_batch_id": "50099c2a4032cb7eb94bf6764b2c063c1220916510c6361f7ac9e2976c682daf",
+      "current_batch_id": "f219052853482154d6c62a309d5ee525f983c1eb8ecd752e26a3e1edb3a7f190"
+    },
+    {
+      "call_index": 44,
+      "session_id": "c36f4196",
+      "old_batch_id": "f4364ba4413c4230f4fe08a7dc8132322075ca163d21d4e36797e46ece354033",
+      "current_batch_id": "d54d6e733da8686f06b273415b9c1a5eb81e97d6fb3d370eed5558a397398080"
+    }
+  ],
+  "answer_source_call_indices": [
+    0,
+    6
+  ],
+  "answer_source_batches_match": true,
+  "identities": [
+    {
+      "run_id": "run-a",
+      "attempt_id": "first"
+    },
+    {
+      "run_id": "run-a",
+      "attempt_id": "retry"
+    },
+    {
+      "run_id": "run-b",
+      "attempt_id": "first"
+    }
+  ],
+  "batch_count_per_replay": 45,
+  "all_backend_requests_identical": true,
+  "all_ordered_batch_ids_identical": true,
+  "all_input_outcome_events_paired": true,
+  "ordered_batch_ids_sha256": "9a9738870ccd719f13b3f4989119fadffc613c26a4a7b61bc01fdaeaf69cfc9e",
+  "limits": [
+    "Recorder 没有实际提取输出；身份字段由调用者提供，现有运行脚本未启用。",
+    "相同 run/attempt 标签可被调用者重复使用，接口本身不保证全局唯一。",
+    "当前中文 HF 整文件指纹与旧报告不同；固定题是否变化以批次 ID 对账为准。",
+    "合法批次与运行身份不构成逐事实来源语义支持或答题收益。"
+  ]
+}

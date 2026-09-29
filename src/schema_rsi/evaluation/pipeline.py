@@ -87,7 +87,9 @@ class EvaluationPipeline:
     # ---- ingest ----
 
     def ingest_case(self, case: BenchmarkCase, *, max_turns: int | None = None, user_id: str | None = None,
-                    source_trace_sink: Callable[[dict], None] | None = None) -> int:
+                    source_trace_sink: Callable[[dict], None] | None = None,
+                    trace_run_id: str | None = None,
+                    trace_attempt_id: str | None = None) -> int:
         """把 case 的 history（可截断）按 session 写入 Mem0，返回新增记忆条数。
 
         user_id 默认按 user_id_strategy 生成；同 conversation 的多个 QA 可显式传同一个
@@ -97,9 +99,20 @@ class EvaluationPipeline:
         self.ingest_errors，不中断整体 ingest。
 
         source_trace_sink 可记录无 gold 的输入批次和 backend 返回记录 ID。
+        调用者可为同一输入的不同运行/重试提供 trace_run_id、trace_attempt_id；
+        两者不参与 batch_id，也不传入 backend。未传时保留旧事件格式。
         sink 异常向调用者传播；输入留痕失败时不写该批，结果留痕失败时
         backend 可能已经写入，调用者不得据此假定写入未发生。
         """
+        if source_trace_sink is not None:
+            for name, value in (("trace_run_id", trace_run_id), ("trace_attempt_id", trace_attempt_id)):
+                if value is not None and (not isinstance(value, str) or not value.strip()):
+                    raise ValueError(f"{name} must be a nonempty string")
+        trace_identity = {}
+        if trace_run_id is not None:
+            trace_identity["run_id"] = trace_run_id
+        if trace_attempt_id is not None:
+            trace_identity["attempt_id"] = trace_attempt_id
         user_id = user_id or self.case_user_id(case)
         added = 0
         self.ingest_errors: list[dict] = getattr(self, "ingest_errors", [])
@@ -136,7 +149,8 @@ class EvaluationPipeline:
                 batch = build_source_batch(benchmark=case.benchmark, user_id=user_id,
                                            session=session, turns=turns, messages=messages)
                 batch_id = batch['batch_id']
-                source_trace_sink({'event': 'batch_input', 'case_id': case.case_id, 'batch': batch})
+                source_trace_sink({'event': 'batch_input', 'case_id': case.case_id,
+                                   **trace_identity, 'batch': batch})
             outcome = None
             try:
                 records = self.backend.add_memory(
@@ -171,7 +185,7 @@ class EvaluationPipeline:
                                'fact_support_status': 'not_provided'}
             if source_trace_sink is not None:
                 source_trace_sink({'event': 'batch_outcome', 'case_id': case.case_id,
-                                   'batch_id': batch_id, **outcome})
+                                   **trace_identity, 'batch_id': batch_id, **outcome})
         return added
 
     def case_user_id(self, case: BenchmarkCase) -> str:
