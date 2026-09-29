@@ -1,0 +1,3343 @@
+{
+  "scope": "Eight archived zhfull runs; rows whose final answer_context_ids include the fixed source-misdated memory. Literal date mentions are not causal attribution or semantic error labels.",
+  "source_path": "results/analysis/m2_output_origin_sample_20260928.json",
+  "source_sha256": "b7fbd05e1ea444e1402b69c1e7742e3a3eaab01eff36e77005315f8a409d1323",
+  "memory_id": "f87df58f-81e4-46e4-a2bc-22e62b98c625",
+  "archived_run_sha256": {
+    "zhfull_fused_jevdec_locomo_20260925_202122.jsonl": "9b7b37187181dd4ce7e161cd0ab93daad2d9dadde02da2020084c3dc210e4935",
+    "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl": "c47f83182b18d0d5187c28b59a14deda00d0b059c73fe5ea05ae807d8adeaf2d",
+    "zhfull_fused_locomo_20260925_161049.jsonl": "1834c9fdc69c7697d290d24ab1f0d7a9f5c2a5857892695a75e0628b87dd22ab",
+    "zhfull_fused_locomo_20260925_172126.jsonl": "3e6c111ddae884f43244b44dd7a4f26b2b7d7fa29946191d6db943ecf4af85a9",
+    "zhfull_fused_locomo_20260925_195248.jsonl": "0ce065680459a1df81a096506aa1e34f38d3225d7d4d97ed95a812ddce8beac8",
+    "zhfull_locomo_20260925_115806.jsonl": "93064eba9874433683793124caf3078509e9253ee396a3d89d8baefb256217b4",
+    "zhfull_locomo_20260925_151059.jsonl": "b7a10b0630188354bc1bdf8bf2e7bcda341e77f6fda744dd6b0478e968b751f4",
+    "zhfull_locomo_20260925_164645.jsonl": "78ccace0833b08ac9fd8eb6e5efe153e6148d98a800a4c000db4e14df8707a59"
+  },
+  "counts": {
+    "runs": 8,
+    "unique_questions": 28,
+    "answer_exposures": 219,
+    "answers_mentioning_oct20": 32,
+    "questions_with_oct20_mention": 14
+  },
+  "questions": [
+    {
+      "case_id": "locomo_conv-26_qa5",
+      "question": "梅拉妮是什么时候参加慈善长跑比赛的？",
+      "expected_answer": "2023年5月25日之前的那个周日",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮于2023年5月20日参加了心理健康公益慈善跑（比赛前一周六，她在5月25日的对话中提到此事）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "2023年5月20日，梅拉妮（梅尔）参加了一场心理健康公益跑（慈善长跑），她认为活动很有意义并发人深省。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮于2023年5月20日（周六）参加了心理健康公益跑（慈善长跑活动）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "2023年5月20日",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "2023年5月20日",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "2023年5月20日",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮于2023年5月20日（对话前一周六）参加了心理健康公益跑/慈善长跑活动。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "2023年5月20日（心理健康公益跑）",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa20",
+      "question": "梅拉妮是什么时候去博物馆的？",
+      "expected_answer": "2023年7月5日",
+      "exposure_count": 3,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮于2023年7月5日带孩子们去博物馆看了恐龙展览。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "2023年7月5日",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 1.0,
+            "contains": true,
+            "exact": true,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "梅拉妮于2023年7月5日带孩子们去博物馆看恐龙展览。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa26",
+      "question": "梅拉妮是什么时候读《没有什么是不可能的》这本书的？",
+      "expected_answer": "2022",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "2023年10月左右（2023年9月受伤暂停陶艺后，梅拉妮通过读书打发时间，此时读了这本书）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "回答：根据现有记忆，梅拉妮并没有提到过《没有什么是不可能的》这本书。\n\n记忆中确实记录了她受伤后通过“读书”打发时间，但她明确提到的书是《夏洛的网》，那是她小时候最爱读的书，而不是《没有什么是不可能的》。\n\n由于无法从现有记忆中找到这本书的具体阅读时间，无法确定梅拉妮是什么时候读《没有什么是不可能的》的。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "记忆中没有关于梅拉妮读《没有什么是不可能的》这本书的时间记录。唯一记录的阅读相关内容是：她小时候最爱读《夏洛的网》（2023年7月对话中提到），以及在2023年9月受伤暂停陶艺后通过读书和画画打发时间。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "记忆中未提及梅拉妮读过《没有什么是不可能的》这本书（她提到的唯一具体书籍是小时候读的《夏洛的网》）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "记忆中没有关于梅拉妮读《没有什么是不可能的》的记录。唯一提及的书是她小时候最爱读的《夏洛的网》，她曾在2023年7月6日谈到这本书。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "记忆中没有关于梅拉妮读《没有什么是不可能的》这本书的记录。唯一提及的书是她小时候最爱读的《夏洛的网》。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "记忆中没有关于梅拉妮读《没有什么是不可能的》这本书的时间记录。已知的是她受伤后（2023年9月起）通过读书打发时间，且每天都有阅读习惯，但无法确定这本书的具体阅读时间。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "记忆中没有关于《没有什么是不可能的》这本书的直接记录。可以确定的相关信息是：梅拉妮自2023年9月受伤暂停陶艺后，一直通过读书打发时间，因此她读这本书最可能是在2023年9月至10月这段养伤期间。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa44",
+      "question": "梅拉妮女儿的生日是什么时候？",
+      "expected_answer": "8月13日",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮女儿的生日是2023年8月13日前后（2023年8月中旬），当晚全家观看了一场户外演唱会来庆祝。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "梅拉妮女儿的生日在8月中旬——她在2023年8月13日为女儿们庆祝了生日。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮女儿的生日在8月中旬（2023年8月13日她带女儿们庆祝生日）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "梅拉妮女儿的生日大约在8月13日——她于2023年8月13日晚带女儿们庆祝生日，观看了一场户外演唱会。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "8月13日（2023年8月13日，梅拉妮带女儿们庆祝生日并看了户外演唱会）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.5,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮女儿的生日在2023年8月中旬左右（她于2023年8月13日为女儿庆祝了生日）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "**步骤 1-3：** 相关记忆：2023年8月14日——梅拉妮于8月13日晚带女儿们庆祝生日，观看户外演唱会。\n\n**步骤 4-7：** 女儿们的生日庆祝在2023年8月13日晚举行。\n\n回答：梅拉妮女儿们的生日大约在2023年8月13日——那天晚上她带女儿们庆祝生日，一起观看了户外演唱会。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "梅拉妮女儿的生日在8月中旬——她于2023年8月13日晚为女儿们庆祝了生日。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa73",
+      "question": "梅拉妮是什么时候受伤的？",
+      "expected_answer": "2023年9月",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮是在2023年9月受的伤（因此不得不暂停陶艺）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "梅拉妮是在2023年9月受伤的，因此不得不暂停了她喜爱的陶艺。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮是在2023年9月受伤的。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "2023年9月",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 1.0,
+            "contains": true,
+            "exact": true,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "梅拉妮于2023年9月受了伤（不得不暂停陶艺）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮是在2023年9月受伤的（上个月，即2023年10月对话前一个月），因此不得不暂停陶艺。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮是在2023年9月受伤的（上个月，即2023年10月对话前约一个月），受伤后不得不暂停陶艺。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "梅拉妮是在2023年9月受伤的。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa74",
+      "question": "梅拉妮一家是什么时候去公路旅行的？",
+      "expected_answer": "2023年10月20日之前的那个周末",
+      "exposure_count": 8,
+      "oct20_mention_count": 7,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末，约2023年10月18-19日）去公路旅行，途中发生了车祸；10月19日她们还在科罗拉多大峡谷游玩。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "2023年10月中旬，即2023年10月20日（对话前的一个周末），途中遭遇了车祸；之后（10月19日）梅拉妮和孩子们还去山里徒步放松。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮一家是在2023年10月中旬（约2023年10月19日前不久的上周末）去公路旅行的，旅途中发生了车祸。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "2023年10月中旬（10月20日对话前的上周末，即2023年10月中下旬之际），梅拉妮一家进行了公路旅行，途中遭遇车祸，之后于10月19日和孩子们去山里徒步。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末，即10月19日之前）进行了公路旅行，旅途中发生了车祸；之后他们还游览了科罗拉多大峡谷，并于10月19日去山里徒步。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮一家在2023年10月中旬（10月20日对话前的上周末，约2023年10月19日前后）去公路旅行，旅途中发生了车祸。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "2023年10月中旬（约10月20日前后，10月19日徒步是其后一天，说明公路旅行大约在10月18日–20日期间）。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "2023年10月20日（10月中旬），在公路旅行中发生了车祸；次日（10月19日徒步说法与此前日程略有出入，但旅行本身为10月20日前后）。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa75",
+      "question": "梅拉妮有几个孩子？",
+      "expected_answer": "3",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "扫描记忆：5月提到“两个年幼的孩子”露营，7月20日明确“三个孩子”去海滩，8月带“女儿们”庆祝生日，10月车祸中“儿子”平安——综合来看她有三个孩子（包括儿子和女儿们）。\n\n回答：梅拉妮有三个孩子。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "根据记忆，梅拉妮有三个孩子：2023年7月的海滩之旅提到“三个孩子玩得很开心”；提到两个年幼的女儿（露营、看户外演唱会、小女儿迈出第一步），以及车祸中出事的儿子。\n\n答案：梅拉妮有三个孩子。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮有三个孩子（包括两个女儿和一个儿子）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "梅拉妮有三个孩子——包括两个女儿和一个儿子。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "梅拉妮有三个孩子。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮有三个孩子（包括两个年幼的孩子和至少一个儿子、一个女儿）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮有三个孩子（2023年7月海滩之行中提到“三个孩子”；她也提到两个年幼的孩子和儿子）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "三个孩子",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa76",
+      "question": "公路旅行之后，梅拉妮是什么时候去徒步的？",
+      "expected_answer": "2023年10月19日",
+      "exposure_count": 8,
+      "oct20_mention_count": 1,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "2023年10月19日（公路旅行后的次日）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.6667,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "2023年10月19日，即公路旅行（10月中旬，对话于10月20日）的次日，梅拉妮带着孩子们去山里徒步。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.2857,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "2023年10月19日（公路旅行车祸的次日）",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.6667,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "在2023年10月19日，即公路旅行发生车祸后的次日，梅拉妮和孩子们去山里徒步。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "公路旅行后的次日，即2023年10月19日，梅拉妮带孩子们去山里徒步，作为公路旅行后放松的方式。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "2023年10月19日（公路旅行后的次日）",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.6667,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "2023年10月19日，即公路旅行的次日，梅拉妮带孩子们去山里徒步。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.5,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "2023年10月19日（车祸公路旅行的次日）",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.6667,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa77",
+      "question": "梅拉妮近期还会再去公路旅行吗？",
+      "expected_answer": "可能不会；因为这次旅行很不顺利",
+      "exposure_count": 8,
+      "oct20_mention_count": 2,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "很可能近期不会再去了。她2023年10月中旬的公路旅行刚遭遇车祸（安全气囊弹出、儿子出事），全家人都吓坏了；虽然孩子平安、之后还在科罗拉多大峡谷游玩，但这次可怕的经历刚过去几天（截至2023年10月22日），负面体验会让近期再次公路旅行的可能性很低。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "很可能短期内不会。梅拉妮在2023年10月20日的公路旅行中遭遇了车祸，全家都被吓坏了，这次可怕的经历让她深受触动、更加珍惜家人。尽管他们之后继续在大峡谷游玩并徒步放松，但经历这种惊吓后，她近期再进行公路旅行的意愿可能是\"很可能不会\"。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "很可能不会。梅拉妮一家最近的公路旅行（2023年10月中下旬）途中发生了车祸——安全气囊弹出，儿子遭遇事故，全家人都吓坏了。虽然孩子安然无恙，事后她们还继续在大峡谷游玩，但这是一次可怕的经历，离现在（2023年10月22日）非常近。根据近期负面经历 outweigh 历史正面模式的推理，她近期不太可能再安排公路旅行。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "很可能短期内不会。她最近一次（2023年10月中旬）公路旅行中发生了可怕的车祸，全家受到惊吓，短期内她不太愿意再去公路旅行。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "很可能不会。梅拉妮最近一次公路旅行（2023年10月中旬）途中遭遇了车祸，安全气囊弹出，儿子出事（所幸没事），全家人都吓坏了。这是一次可怕的经历，考虑到这一近期负面体验，她短期内不太可能很快再去公路旅行。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "很可能短期内不会。梅拉妮2023年10月20日的公路旅行中遭遇了车祸，安全气囊弹出，儿子出事（所幸无恙），全家人都吓坏了。虽然她之前喜欢公路旅行并在车祸后继续去了大峡谷游玩，但这次可怕的经历刚发生不久，近期再次进行公路旅行的可能性很小。她反而倾向于选择更平静的活动，如山中徒步，来放松和珍惜与家人相处的时光。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "根据记忆，2023年10月中旬的公路旅行途中发生了一场可怕的车祸（安全气囊弹出，儿子遭遇事故，全家人吓坏了），所幸孩子没事。虽然之后一家人继续在大峡谷游玩、并徒步放松，但这是最近一次非常负面的经历。按因果推断，车祸带来的惊吓让她短期内不太可能很快再次组织公路旅行。\n\nANSWER：很可能短期内不会再去了。这次公路旅行刚发生车祸，全家人吓坏了，虽然她感悟到要珍惜家人，但如此近期且惊险的负面经历使她近期再次公路旅行的可能性不大。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "很可能短期内不会再去了。她2023年10月中旬的公路旅行中遭遇了可怕的车祸，虽然全家平安，但这一负面经历（以及随后改以山中徒步作为放松方式）表明她近期更可能选择徒步等更安心的活动，而非很快再次公路旅行。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa83",
+      "question": "慈善跑之后梅拉妮意识到了什么？",
+      "expected_answer": "自我关怀很重要",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮在2023年5月20日参加心理健康公益跑后，意识到这次活动很有意义并发人深省，促使她认真思考如何照顾自己的心理健康。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "她意识到了认真思考如何照顾心理健康的重要性（认为心理健康公益跑很有意义、发人深省）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "慈善跑之后，梅拉妮意识到活动很有意义、发人深省，促使她认真思考如何照顾自己的心理健康（并认识到自我关怀的重要性——照顾好自己才能更好地照顾家人）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "慈善跑之后，梅拉妮意识到这场活动很有意义且发人深省，促使她认真思考如何照顾自己的心理健康（并进一步认识到自我关怀的重要性，即照顾好自己才能更好地照顾家人）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "她意识到要认真思考如何照顾自己的心理健康，并认识到照顾好自己（自我关怀）的重要性，这样才能更好地照顾家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "慈善跑（2023年5月20日）之后，梅拉妮认为活动很有意义并发人深省，促使她认真思考如何照顾自己的心理健康。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "慈善跑（2023年5月20日的心理健康公益跑）之后，梅拉妮意识到活动很有意义并发人深省，促使她认真思考如何照顾自己的心理健康。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "慈善跑之后，梅拉妮意识到心理健康的重要，促使她认真思考如何照顾自己的心理健康。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa107",
+      "question": "梅拉妮开始跑步的原因是什么？",
+      "expected_answer": "为了减压、放空头脑",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮跑步是为了减压和放空大脑，她认为跑步对心态和心理健康大有好处。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "梅拉妮开始跑步是为了减压和放空大脑，她认为跑步对心态和心理健康大有好处。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮跑步是为了减压和放空大脑，她认为跑步对心态和心理健康大有好处。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "梅拉妮跑步是为了减压和放空大脑，她认为跑步对心态和心理健康大有好处。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "梅拉妮开始跑步是为了减压和放空大脑，她认为跑步对心态和心理健康大有好处。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮开始跑步是为了减压和放空大脑，她认为跑步对心态和心理健康大有好处。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮开始跑步是为了减压、放空大脑，她认为跑步对心态和心理健康大有好处。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "答案：梅拉妮开始跑步是为了缓解压力和清空大脑——她认为跑步对她的心态和心理健康非常有好处。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa118",
+      "question": "去年露营旅行时梅拉妮和家人看到了什么？",
+      "expected_answer": "英仙座流星雨",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "他们看到了英仙座流星雨（Perseid meteor shower）——2022年露营时，在清澈繁星的天空下全家一起观看流星并许愿，梅拉妮感到与宇宙融为一体、渺小而充满敬畏。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "去年（2022年）露营旅行时，梅拉妮和家人一起看到了英仙座流星雨——在清澈繁星的天空下全家许愿，她感到与宇宙融为一体。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "英仙座流星雨（Perseid meteor shower）",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.4,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "去年（2022年）露营旅行时，梅拉妮和家人一起观看了英仙座流星雨——在清澈繁星的天空下全家一起许愿，让她感到与宇宙融为一体、渺小而充满敬畏。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "梅拉妮和家人在去年（2022年）露营时看到了英仙座流星雨——在清澈繁星的天空下全家一起看流星并许愿，让她感到与宇宙融为一体。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "英仙座流星雨",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 1.0,
+            "contains": true,
+            "exact": true,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "去年（2022年）露营时，梅拉妮一家在清澈繁星的天空下一起观看了英仙座流星雨，全家对着流星许愿。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "梅拉妮和家人在2022年（去年）露营时看到了英仙座流星雨——在清澈繁星的天空下全家一起许愿，令她感到与宇宙融为一体、渺小而充满敬畏。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": true,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa119",
+      "question": "看流星雨时梅拉妮有什么感受？",
+      "expected_answer": "对宇宙充满敬畏",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "看流星雨（2022年露营时全家一起看英仙座流星雨）时，梅拉妮感到与宇宙融为一体，既渺小又充满敬畏，那段经历让她永生难忘。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "回答：看英仙座流星雨时，梅拉妮在清澈繁星的天空下与全家人一起许愿，感到自己与宇宙融为一体，既渺小又充满敬畏，这段经历让她永生难忘。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "看英仙座流星雨时（2022年露营期间），梅拉妮感到与宇宙融为一体，感到自己渺小而充满敬畏，整个经历令她永生难忘。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "看英仙座流星雨时，梅拉妮感到与宇宙融为一体、渺小而充满敬畏。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "梅拉妮说那是难忘的经历——清澈繁星的天空下全家一起许愿，让她感到与宇宙融为一体，既渺小又充满敬畏。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "她感到与宇宙融为一体、渺小而充满敬畏，全家在清澈繁星的天空下许愿，成为她永远难忘的珍贵回忆。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "看流星雨时，梅拉妮感到与宇宙融为一体，觉得自己渺小而充满敬畏。那是2022年露营时全家一起看英仙座流星雨，在清澈繁星的天空下全家一起许愿，这段经历让她永远难忘。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "梅拉妮看流星雨时感到与宇宙融为一体、渺小而充满敬畏。那是2022年全家露营时一起观看英仙座流星雨的经历——在清澈繁星的天空下全家一起许愿，这让她永远难忘。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa120",
+      "question": "梅拉妮最近庆祝了谁的生日？",
+      "expected_answer": "梅拉妮的女儿",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "她的女儿们（带女儿们去户外演唱会庆祝生日）",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "梅拉妮最近庆祝了她女儿们的生日——她于2023年8月13日带女儿们庆祝生日，一起观看了户外演唱会，孩子们玩得很开心。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮于2023年8月13日晚带女儿们庆祝了她们的生日（女儿们的生日）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "梅拉妮最近庆祝了她女儿们（ daughters'）的生日——她在2023年8月13日晚带女儿们庆祝生日，一起观看了一场户外演唱会，孩子们玩得很开心。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "她的女儿们",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮庆祝了她的女儿们的生日——2023年8月13日晚她带女儿们庆祝生日，观看了一场户外演唱会。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "她的女儿们（女儿们的生日）",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "梅拉妮最近庆祝了女儿们的生日——2023年8月13日晚她带女儿们看户外演唱会庆祝生日。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa133",
+      "question": "梅拉妮在咖啡馆看到了什么警示标志？",
+      "expected_answer": "一块写着有人无法离开的牌子",
+      "exposure_count": 8,
+      "oct20_mention_count": 6,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "记忆中没有关于梅拉妮在咖啡馆看到警示标志的记录，无法从现有记忆中给出该信息。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "记忆中没有关于梅拉妮在咖啡馆看到警示标志的记录；与她相关的“警示”是2023年10月20日的车祸经历，提醒她珍惜生命和家人。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "记忆中没有关于梅拉妮在咖啡馆看到警示标志的具体记录。相关的“警示”内容是2023年10月20日公路旅行中的车祸经历——安全气囊弹出、儿子遭遇事故，这件事让她深受震撼，感悟到生命宝贵、要珍惜家人。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "记忆中最接近的警示信息来自梅拉妮2023年10月20日公路旅行途中的车祸——安全气囊弹出，儿子遭遇事故但安然无恙。这次可怕的经历成为对她的警示，让她感悟到生命宝贵、要珍惜家人（孩子们在科罗拉多大峡谷继续游玩时表现出坚强的适应力）。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "记忆中没有提到梅拉妮在咖啡馆看到警示标志；相关的警示性事件是2023年10月20日左右公路旅行中的车祸（安全气囊弹出，儿子平安无事），让她感悟生命宝贵、要珍惜家人。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "扫描所有记忆：没有一条记忆提到梅拉妮在咖啡馆看到警示标志。与她相关的\"警示/发人深省\"的内容只有两处：一是2023年5月的心理健康公益跑让她认真思考心理健康；二是2023年10月20日公路旅行途中的车祸（安全气囊弹出、儿子遭遇事故但平安无事），这让她深受触动、感悟到生命宝贵、要珍惜家人。\n\nANSWER：记忆中没有记录梅拉妮在咖啡馆看到的具体警示标志。与\"警示\"最相关的事件是2023年10月20日她在公路旅行中遭遇的车祸——这场事故成了对她的警醒，让她意识到生命宝贵、要珍惜家人。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "记忆中没有提到梅拉妮在咖啡馆看到警示标志的具体内容，无法从现有记忆中得出。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "根据现有记忆，没有记录梅拉妮在咖啡馆看到警示标志的信息。记忆中与\"警示/警醒\"相关的是她2023年5月参加心理健康公益跑，以及2023年10月20日公路旅行途中遭遇车祸（安全气囊弹出，所幸儿子平安无事）这一令她深受触动的经历。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa135",
+      "question": "2023年10月梅拉妮遇到了什么挫折？",
+      "expected_answer": "她受了伤，不得不暂停陶艺。",
+      "exposure_count": 8,
+      "oct20_mention_count": 1,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "2023年10月梅拉妮一家在公路旅行中遭遇车祸（儿子出了事故但安然无恙），同时她因9月受伤仍暂停着陶艺创作。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "2023年10月梅拉妮在公路旅行途中遭遇了一场车祸——安全气囊弹出，她儿子出了事故，全家人都被吓坏了；所幸孩子没事，她也因此更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "2023年10月梅拉妮一家在公路旅行中遭遇车祸，安全气囊弹出，儿子出了事故，但所幸孩子没事，全家人都很惊吓，梅拉妮因此更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "梅拉妮在2023年10月中旬的公路旅行中遭遇车祸（安全气囊弹出，儿子出了事故但安然无恙），全家人都很害怕；同时她还因9月的受伤而不得不暂停陶艺。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "2023年10月，梅拉妮一家在公路旅行途中（10月中旬，10月20日对话前的上周末）遭遇了一场车祸，安全气囊弹出，她的儿子出了事故，全家人都吓坏了，所幸孩子安然无恙。这次经历让她深受触动，感悟到生命宝贵、要更加珍惜家人。（此外，她还因2023年9月的伤势不得不暂停陶艺，这也让她很难受。）",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "2023年10月梅拉妮遇到的挫折主要是她在公路旅行中遭遇的车祸（安全气囊弹出，儿子出了事故但安然无恙），同时她此前（2023年9月）的伤势还迫使她暂停了她热爱的陶艺活动。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "2023年10月，梅拉妮一家在公路旅行途中（10月中旬，前往科罗拉多大峡谷的路上）遭遇了一场车祸，安全气囊弹出，她的儿子出了事故。全家人都吓坏了，所幸孩子安然无恙。这次经历让她感悟到生命宝贵、更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "2023年10月梅拉妮在公路旅行途中遭遇了车祸——安全气囊弹出，她的儿子出了事故，全家人都很害怕，所幸孩子安然无恙。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa143",
+      "question": "梅拉妮的儿子在公路旅行中发生了什么？",
+      "expected_answer": "他遭遇了一场事故",
+      "exposure_count": 8,
+      "oct20_mention_count": 1,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮的儿子在2023年10月中旬的公路旅行途中遭遇了一场车祸，安全气囊弹出。所幸他安然无恙，全家人虽然都吓坏了，但孩子没有受伤。梅拉妮形容这是一次可怕但已过去的经历，孩子们起初很害怕但表现得坚强有韧性，这件事让她更加感悟到生命宝贵、要珍惜家人。之后全家继续在科罗拉多大峡谷游玩。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "梅拉妮的儿子在2023年10月中旬的公路旅行途中遭遇了一场车祸，安全气囊弹出，但所幸孩子平安无事。梅拉妮形容这是一次可怕但已过去的经历，孩子们起初很害怕，但表现出了坚强的适应力。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮的儿子在2023年10月中旬的公路旅行中遭遇了一场车祸，安全气囊弹出，所幸他没有受伤、安然无恙。全家人当时都吓坏了，孩子们起初很害怕，但事后表现出坚强的适应力。这次事故让梅拉妮深受触动，感悟到生命宝贵、要珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "梅拉妮一家在2023年10月中旬的公路旅行途中发生了一场车祸，安全气囊弹出，她儿子遭遇了事故，全家人都吓坏了。所幸她的儿子平安无事（安然无恙）。梅拉妮形容这是一次可怕但已过去的经历，此事让她更加感悟到生命宝贵、要珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "梅拉妮的儿子在2023年10月中旬的公路旅行中遭遇车祸（安全气囊弹出），但安然无恙、没有受伤。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮的儿子在2023年10月中旬的公路旅行中遭遇了一场车祸（安全气囊弹出），但安然无恙，没有受伤。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮的儿子在2023年10月中旬的公路旅行途中遭遇了车祸，安全气囊弹出，全家人都吓坏了，所幸他安然无恙，没有受伤。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "在2023年10月20日的公路旅行中，梅拉妮一家发生了一场车祸，安全气囊弹出，她的儿子遭遇了事故，全家人都吓坏了，所幸儿子安然无恙。梅拉妮形容这是一次可怕但已经过去的经历，此事让她更加感悟到生命宝贵、要珍惜家人。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa144",
+      "question": "梅拉妮的儿子是如何应对那场事故的？",
+      "expected_answer": "他很害怕，但家人给了他安慰",
+      "exposure_count": 8,
+      "oct20_mention_count": 3,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "两个年幼的孩子起初很害怕，但在被安慰后表现出坚强的适应力和韧性，她的儿子也安然无恙。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "她儿子起初很害怕，但经过安慰后表现出坚强的适应力，并且平安无事，没有受伤。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮的儿子在2023年10月20日公路旅行的车祸中安然无恙（安全气囊弹出但孩子没事）。她的两个年幼孩子起初很害怕，但经过安慰后表现出坚强的适应力和韧性，孩子们也是梅拉妮坚持下去的最大动力和支柱。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "儿子在车祸中安然无恙。梅拉妮说他一开始害怕，但经安慰后表现得坚强、有适应力/韧性。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "车祸后，梅拉妮的两个年幼的孩子起初很害怕，但经过安慰后表现得坚强、有适应力和韧性；她的儿子安然无恙，平安无事。梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮的两个年幼孩子起初很害怕，但经过安慰后表现出坚强的适应力和韧性；她儿子在事故中安然无恙。梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮的儿子在2023年10月20日公路旅行的车祸中遭遇事故，但安然无恙、平安无事。事故发生后，他和另一个年幼的孩子起初很害怕，但在安慰之后表现出了坚强的适应力和韧性。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "梅拉妮的儿子在事故中安然无恙。据2023年10月20日和22日的记忆，两个孩子起初很害怕，但经过安慰后表现出坚强的适应力和韧性；梅拉妮说孩子们是她坚持下去的最大动力，这场事故也让她更加珍惜家人。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa145",
+      "question": "事故发生后，梅拉妮对家人有什么感受？",
+      "expected_answer": "家人很重要，对她来说就是全世界",
+      "exposure_count": 8,
+      "oct20_mention_count": 1,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮对家人更加珍惜和感恩——车祸让她感悟到生命宝贵、要珍惜家人，庆幸儿子平安无事，觉得家人就是一切，并把孩子们视为她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "车祸后（发生在2023年10月中旬，10月20日对话前的上周末，安全气囊弹出），梅拉妮深感生命宝贵，更加珍惜家人。她庆幸儿子平安无事，表示孩子们是她坚持下去的最大动力和支柱，认为家人就是一切。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "事故发生后，梅拉妮深感生命宝贵、家人就是一切，对儿子平安无事感到庆幸和宽慰，更加珍惜家人，并称孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "车祸（儿子安然无恙）后，梅拉妮深受触动，感悟到生命宝贵、要更加珍惜家人；她说孩子们是她坚持下去的最大动力和支柱，庆幸全家人平安，认为家人就是一切。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "车祸（2023年10月中旬的公路旅行中）后，梅拉妮深感生命宝贵，更加珍惜家人。她庆幸儿子平安无事，并表示孩子们是她坚持下去的最大动力和支柱——两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "事故发生后，梅拉妮深感生命宝贵、更加珍惜家人，认为孩子们是她坚持下去的最大动力和支柱；孩子们在惊吓后表现出的坚强韧性让她欣慰，全家继续在大峡谷游玩，她更加感恩与家人共度的时光。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "车祸（2023年10月，儿子安然无恙）后，梅拉妮深受触动，感悟到生命宝贵，更加珍惜家人；她认为家人就是一切，孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "车祸后，梅拉妮感悟到生命宝贵，更加珍惜家人，认为家人就是一切；孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa146",
+      "question": "梅拉妮的孩子们是如何应对那场事故的？",
+      "expected_answer": "他们虽然害怕，但很坚强",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "两个年幼的孩子起初很害怕，但在安慰后表现出坚强的适应力（有韧性）；儿子在事故中安然无恙。梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "两个年幼的孩子起初很害怕，但在安慰之后表现得坚强、有韧性，后来继续在大峡谷玩得很开心。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "孩子们起初很害怕，但在安慰之后表现出坚强的适应力和韧性；儿子在车祸中安然无恙，孩子们成为梅拉妮坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "事故发生后，梅拉妮的孩子们起初很害怕，但在安慰之后表现出了坚强的适应力（韧性强），一家人继续在大峡谷游玩，孩子们玩得很开心。梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "两个年幼的孩子起初很害怕，但在安慰后表现出坚强的适应力/韧性，儿子安然无恙。梅拉妮说孩子们是她坚持下去的最大动力，车祸也让她更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "两个年幼的孩子起初很害怕，但在被安慰后表现出坚强的适应力和韧性，后来在继续游览科罗拉多大峡谷时玩得很开心。梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮的两个年幼孩子起初很害怕，但在安慰后表现出坚强的适应力（韧性）。事故后全家继续在大峡谷游玩，孩子们玩得很开心；梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "两个年幼的孩子起初很害怕，但在安慰之后表现出坚强的适应力和韧性，儿子安然无恙，梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa147",
+      "question": "事故发生后梅拉妮有什么感受？",
+      "expected_answer": "对家人充满感激和感恩",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "事故发生后，梅拉妮感到非常害怕，形容这是一次可怕的经历，但庆幸儿子平安无事，全家人都没事。这次经历让她深受触动，感悟到生命宝贵、要更加珍惜家人。同时，她看到孩子们起初虽然害怕，但后来表现得坚强、有韧性，说孩子们是她坚持下去的最大动力和支柱。她当时也很难受，因为2023年9月受伤后不得不暂停了陶艺——那是她用来表达自我和获得平静的方式。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "事故后梅拉妮感到非常害怕和难受，但庆幸儿子平安无事。她形容这是一次“可怕但已过去”的经历，事故让她深受触动，感悟到生命宝贵，更加珍惜家人；孩子们起初很害怕但表现出坚强的适应力，孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "车祸后梅拉妮感到害怕和难受，但庆幸儿子平安无事。这次经历让她深受触动，感悟到生命宝贵，更加珍惜家人；孩子们起初很害怕，但看到他们坚强的适应力，她说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "梅拉妮感到害怕和震惊，但庆幸儿子安然无恙；这次可怕但已过去的经历让她感悟到生命宝贵，更加珍惜家人，并视孩子们为她坚持下去的最大动力。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "事故后梅拉妮感到非常害怕，形容这是可怕的经历，但儿子平安无事让她如释重负；这让她感悟到生命宝贵、更加珍惜家人，并为孩子们在恐惧后展现的坚强韧性感到动容，孩子们成了她坚持下去的最大动力。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "车祸后梅拉妮形容这是一次可怕但已经过去的经历。所幸儿子安然无恙，这让她深受触动，感悟到生命宝贵，更加珍惜家人。她表示孩子们是她坚持下去的最大动力和支柱；她提到两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，全家随后继续在科罗拉多大峡谷游玩。卡罗琳也对梅拉妮儿子平安无事表示庆幸和宽慰，认为家人就是一切。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮觉得这次事故非常可怕，全家人都吓坏了，但也因为儿子安然无恙而感到庆幸和宽慰。这次经历让她深受触动，感悟到生命宝贵、要珍惜家人，并表示孩子们是她坚持下去的最大动力。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "车祸发生后，梅拉妮感到非常害怕（形容这是一次可怕的经历），但也很庆幸和宽慰，因为儿子平安无事。这次事故让她深受触动，感悟到生命的宝贵，更加珍惜家人，并表示孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa148",
+      "question": "孩子们喜欢大峡谷，梅拉妮对此有什么反应？",
+      "expected_answer": "她很开心也很感恩",
+      "exposure_count": 8,
+      "oct20_mention_count": 1,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮很欣慰孩子们在大峡谷玩得开心；孩子们起初害怕但后来表现出坚强的适应力，她深受触动，说孩子们是她坚持下去的最大动力和支柱，并更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "梅拉妮对孩子们在大峡谷玩得开心感到欣慰和开心。尤其在之前（2023年10月20日）公路旅行中遭遇车祸、儿子安然无恙之后，她深受触动，更加珍惜家人。她说孩子们是坚持下去的最大动力和支柱，并为孩子们起初害怕但最终表现出坚强有韧性的适应力而感动。她还买了一组彩绘木制家庭人偶，以纪念这次旅行，因为它让她想起家人之间的爱。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮看到孩子们在大峡谷玩得很开心，非常欣慰——她于2023年10月21日买了彩绘木制家庭人偶，说这让她想起家人之间的爱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "梅拉妮看到孩子们在大峡谷玩得开心，感到很欣慰；她对车祸中儿子平安无事尤其庆幸和感激，说孩子们是她坚持下去的最大动力和支柱，这件事让她更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "梅拉妮看到孩子们在大峡谷玩得开心，感到很欣慰——她表示孩子们是她坚持下去的最大动力和支柱。孩子们起初很害怕，但在安慰后表现出坚强的适应力，这让她深受触动，也更加珍惜与家人在一起的时光。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮看到孩子们在大峡谷玩得开心，感到欣慰和幸福。孩子们起初有些害怕，但经她安慰后表现出了坚强的适应力，这让她深受触动——她说孩子们是她坚持下去的最大动力和支柱。这次经历也让她更加珍惜家人之间的爱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮看到孩子们在大峡谷玩得很开心，感到十分欣慰和高兴。尤其在车祸之后，她庆幸儿子平安无事，孩子们起初虽害怕但表现出坚强的适应力，这让她深受触动，更加珍惜家人——她说孩子们是她坚持下去的最大动力和支柱。她还买了彩绘木制家庭人偶，让它提醒自己家人之间的爱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "梅拉妮看到孩子们在大峡谷玩得很开心，感到非常欣慰，她说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa150",
+      "question": "对于家人的支持，梅拉妮有什么感受？",
+      "expected_answer": "她非常感激他们",
+      "exposure_count": 8,
+      "oct20_mention_count": 1,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "梅拉妮深感幸运和感激，家人给她满满的爱与支持，激励她、让她保持动力，是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "梅拉妮对家人的支持深感幸运和感激。她说丈夫和孩子们激励着她、让她保持动力；搬新家时家人帮了很多忙，给了她满满的爱和支持；孩子们是她坚持下去的最大动力和支柱，与家人在一起的时光让她真正感到充满活力和幸福。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "梅拉妮对家人的支持深怀感激，感到幸运和幸福。她表示丈夫和孩子们激励着她、让她保持动力（2023年6月）；搬家时家人帮了很多忙，给了她满满的爱和支持（2023年7月）；车祸后孩子们是她坚持下去的最大动力和支柱，这次经历让她更感悟到生命宝贵、要珍惜家人（2023年10月）。总体而言，与家人在一起的时光让她真正感到充满活力和幸福。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "梅拉妮深感幸运和感恩——家人（丈夫和孩子们）激励着她、让她保持动力；搬家时家人帮了很多忙，给了她满满的爱和支持；车祸后家人平安让她感悟到生命宝贵、要珍惜家人，孩子们是她坚持下去的最大动力和支柱。她认为与家人在一起的时光让她真正感到充满活力和幸福，家人就是一切。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "梅拉妮对家人的支持深怀感激，觉得非常幸运有丈夫和孩子们的支持——他们激励她、让她保持动力。搬家时家人帮了很多忙，给了她满满的爱和支持；她认为照顾好自己才能更好地照顾家人，而与家人在一起的时光让她真正感到充满活力和幸福。尤其在2023年10月的车祸后，孩子们虽起初害怕却表现出坚强的适应力，这让她深感生命宝贵、更加珍惜家人，并说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "梅拉妮深感幸运与感激。她表示有丈夫和孩子们的支持，他们激励着她、让她保持动力（2023年6月）；搬家过程中家人帮了很多忙，给了她满满的爱和支持；她认为与家人在一起的时光让她真正感到充满活力和幸福，车祸后更体会到孩子们是她坚持下去的最大动力，让她更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "梅拉妮深深感激并珍视家人的支持。她表示很幸运有丈夫和孩子们的支持，他们激励着她、让她保持动力，与家人在一起的时光让她真正感到充满活力和幸福。尤其在2023年10月20日的车祸（儿子出了事故但安然无恙）之后，她感悟到生命宝贵、要珍惜家人，认为孩子们是她坚持下去的最大动力和支柱；搬家期间家人也给了她满满的爱和支持。她认为家人就是一切。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "梅拉妮深感幸运和感激——她说自己很幸运有丈夫和孩子们的支持，他们激励着她、让她保持动力（2023年6月）。搬家过程中家人给了她满满的爱和支持（2023年7月）。车祸之后，她更加感悟到生命宝贵、要珍惜家人，并说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa183",
+      "question": "哪首歌激励梅拉妮变得勇敢？",
+      "expected_answer": "",
+      "exposure_count": 8,
+      "oct20_mention_count": 0,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "相关记忆：萨拉·巴雷耶斯（Sara Bareilles）的《Brave》——一首关于勇敢、为正义而奋斗的歌，每次听到都会让人想起自己走过的路和取得的进步。虽然记忆将其归功于 Caroline，但它是记忆中唯一关于勇敢/鼓舞人心的歌，也是梅拉妮（Melanie）音乐记忆中最符合的一首。\n\n回答：萨拉·巴雷耶斯（Sara Bareilles）的《Brave》",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "根据记忆，与\"勇敢\"相关的歌曲是 Sara Bareilles 的《Brave》——但它激励的是卡罗琳而非梅拉妮。梅拉妮本人喜欢的音乐是巴赫、莫扎特等古典音乐以及 Ed Sheeran 的《Perfect》，没有记录显示某首歌激励她变得勇敢。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "记忆中没有关于哪首歌激励梅拉妮变得勇敢的信息——相关的歌曲信息（《Brave》激励勇敢）属于卡罗琳，不是梅拉妮。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "萨拉·巴雷耶斯（Sara Bareilles）的《Brave》——这首歌讲述勇敢并为正义而战（注意：相关记忆主要将此歌归于卡罗琳）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "Sara Bareilles的《Brave》",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "萨拉·巴雷耶斯（Sara Bareilles）的《Brave》——这首歌讲的是勇敢并为正义而战，听了让人想起自己走过的路和取得的进步（该记忆中此歌的特殊意义主要归属于对话者卡罗琳，但它是记忆中唯一与\"变勇敢\"相关的歌曲）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "萨拉·巴雷耶斯（Sara Bareilles）的《Brave》——这是一首关于勇敢、为正义而战的歌（记忆中该特殊意义归于卡罗琳；梅拉妮本人喜欢的则是古典音乐和《Perfect》等现代歌曲）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "《Brave》，作者：Sara Bareilles — 但请注意，这段记忆是关于卡罗琳的，而不是梅拉妮。没有记忆表明梅拉妮受到某首勇敢歌曲的启发。\n\n回答：《Brave》，作者：Sara Bareilles",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa191",
+      "question": "卡罗琳的儿子在公路旅行中发生了什么？",
+      "expected_answer": "",
+      "exposure_count": 8,
+      "oct20_mention_count": 4,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "那是梅拉妮（而非卡罗琳）的儿子——他们在2023年10月20日的公路旅行中遭遇车祸，安全气囊弹出，但孩子安然无恙。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "相关记忆表明，梅拉妮（而非卡罗琳）的儿子在2023年10月20日的公路旅行中发生了车祸。安全气囊弹出，但她的儿子安然无恙。全家人都吓坏了，但梅拉妮很庆幸他没事，这次经历让她更加珍惜家人。\n\n回答：卡罗琳的儿子没有发生任何事——根据记忆，是梅拉妮的儿子在2023年10月20日的公路旅行中出了车祸（安全气囊弹出），但他安然无恙，全家人平安。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "记忆中提到的是梅拉妮（Melanie）的儿子（不是卡罗琳的儿子）在2023年10月中旬的公路旅行中遭遇了车祸，安全气囊弹出，全家人都被吓坏了，但孩子安然无恙。卡罗琳得知后表示庆幸和宽慰，认为家人就是一切。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "在2023年10月20日的公路旅行中，梅拉妮一家发生了一场车祸，安全气囊弹出，梅拉妮的儿子遭遇了事故，全家人都吓坏了。所幸儿子安然无恙。车祸后一家人继续在大峡谷游玩，次日还去山里徒步。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "公路旅行中的儿子是梅拉妮的，不是卡罗琳的。他在2023年10月中旬的车祸中出了事故（安全气囊弹出），但安然无恙。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "卡罗琳没有儿子——记忆中出事故的是梅拉妮的儿子。在2023年10月中旬的公路旅行中，梅拉妮一家遭遇车祸，安全气囊弹出，她的儿子出了事故但安然无恙（全家人都吓坏了），之后全家继续在科罗拉多大峡谷游玩。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "记忆中没有关于卡罗琳儿子的记录——发生公路旅行车祸的是梅拉妮的儿子，他在2023年10月中旬的车祸中出了事故（安全气囊弹出），但安然无恙，家人都平安。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "在2023年10月20日的公路旅行中，梅拉妮一家发生了车祸，安全气囊弹出，她的儿子遭遇了事故，但安然无恙（孩子没事），全家都被吓坏了，梅拉妮形容这是可怕但已过去的经历，并感悟到生命的宝贵、要珍惜家人。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa192",
+      "question": "卡罗琳的儿子是如何应对那场事故的？",
+      "expected_answer": "",
+      "exposure_count": 8,
+      "oct20_mention_count": 2,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "相关记忆显示，车祸发生在梅拉妮（Melanie）一家身上，而不是卡罗琳（Caroline）。梅拉妮的儿子在事故中安然无恙；全家都很害怕，但她的儿子平安无事，梅拉妮庆幸并感到宽慰，表示家人就是一切。\n\n回答：那场事故其实发生在梅拉妮一家身上，而非卡罗琳。梅拉妮的儿子在2023年10月20日公路旅行途中的车祸中安然无恙——尽管安全气囊弹出、全家人都被吓坏了，孩子没有受伤，卡罗琳也为他平安无事感到庆幸和宽慰。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "事故中的孩子（梅拉妮的儿子，而非卡罗琳的儿子）安然无恙。两个年幼的孩子起初很害怕，但在安慰之后表现出坚强的适应力，随后一家人继续在大峡谷游玩，孩子们玩得很开心。卡罗琳则对梅拉妮儿子平安无事表达了庆幸和宽慰。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "事故涉及的是梅拉妮的儿子（而非卡罗琳的）：他安然无恙，孩子们起初很害怕，但在安慰后表现得坚强、有韧性。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "首先需要澄清：那场车祸是梅拉妮的家人遭遇的，不是卡罗琳的。梅拉妮的儿子在2023年10月20日公路旅行途中的车祸中出了事故，但安然无恙；孩子们起初很害怕，但经过安慰后表现得坚强、有韧性，一家人还继续在大峡谷游玩。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "儿子在事故中安然无恙；家人（包括孩子）起初很害怕，但经安慰后表现得坚强、适应力强。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "回答：事故发生在梅拉妮（Melanie）的儿子身上，而不是卡罗琳的儿子（卡罗琳并未参与车祸——她只是对梅拉妮的儿子平安无事感到宽慰）。根据记忆中的信息，梅拉妮的两个年幼的孩子起初在事故后很害怕，但在安慰后表现出了坚强的适应力和韧性。梅拉妮说，孩子们是她坚持下去的最大动力和支柱。\n\n回答：事故是梅拉妮的儿子遭遇的（卡罗琳只是为此感到庆幸和宽慰）。他安然无恙，起初很害怕，但经安慰后表现出了坚强的适应力和韧性。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "事故涉及的是梅拉妮的儿子而非卡罗琳的儿子——他安然无事，两个年幼的孩子起初害怕，但经安慰后表现出坚强的适应力，让梅拉妮倍感宽慰。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "卡罗琳并没有儿子涉及这场事故——遭遇车祸的是梅拉妮一家。梅拉妮的儿子在事故（2023年10月中旬公路旅行中，安全气囊弹出）中安然无恙；两个年幼的孩子起初很害怕，但经安慰后表现出坚强的适应力，孩子们是梅拉妮坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa193",
+      "question": "事故之后，卡罗琳对家人有什么感受？",
+      "expected_answer": "",
+      "exposure_count": 8,
+      "oct20_mention_count": 1,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "事故之后，卡罗琳对梅拉妮车祸中儿子平安无事感到庆幸和宽慰，认为“家人就是一切”，车祸让梅拉妮一家更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "Caroline感到庆幸和宽慰，因为梅拉妮的儿子在车祸中平安无事；她认为家人就是一切，更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "事故之后，卡罗琳对梅拉妮车祸中儿子平安无事表示庆幸和宽慰，认为家人就是一切（即更加珍视家人）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "卡罗琳对梅拉妮车祸中儿子平安无事感到庆幸和宽慰，认为家人就是一切。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "卡罗琳对梅拉妮车祸中儿子平安无事表示庆幸和宽慰，认为家人就是一切（家人无比珍贵）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "卡罗琳对梅拉妮车祸中儿子平安无事感到庆幸和宽慰，并认为家人就是一切（家人非常宝贵，要珍惜）。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "答案：卡罗琳对梅拉妮车祸中儿子平安无事表示庆幸和宽慰，并认为家人就是一切。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "在查看了记忆之后，2023年10月20日的车祸涉及梅拉妮的家人，但卡罗琳做出了回应。10月20日，卡罗琳对梅拉妮车祸中儿子平安无事表示庆幸和宽慰，认为家人就是一切。\n\n回答：卡罗琳（在得知朋友梅拉妮车祸中儿子安然无恙后）感到庆幸和宽慰，并感悟到家人就是一切——即家人是最重要的。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "locomo_conv-26_qa194",
+      "question": "卡罗琳的孩子们是如何应对那场事故的？",
+      "expected_answer": "",
+      "exposure_count": 8,
+      "oct20_mention_count": 1,
+      "answer_instances": [
+        {
+          "run": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+          "predicted_answer": "那场车祸其实发生在梅拉妮（而非卡罗琳）一家身上。据记忆，两个年幼的孩子起初很害怕，但在安慰之后表现出了坚强的适应力和韧性，梅拉妮说孩子们是她坚持下去的最大动力和支柱。卡罗琳作为朋友，对梅拉妮的儿子在车祸中平安无事表示了庆幸和宽慰，认为家人就是一切。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+          "predicted_answer": "事故涉及的是梅拉妮的孩子，不是卡罗琳的。车祸发生后，两个年幼的孩子起初很害怕，但在安慰后表现出坚强的适应力和韧性；梅拉妮的儿子平安无事，孩子们成为她坚持下去的最大动力。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_161049.jsonl",
+          "predicted_answer": "ANSWER：根据记忆，那场车祸其实是梅拉妮（卡罗琳的朋友）一家的经历，而不是卡罗琳的孩子。梅拉妮的两个年幼孩子起初很害怕，但在安慰后表现出坚强的适应力/韧性，她的儿子在事故中安然无恙。孩子们成为梅拉妮坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_172126.jsonl",
+          "predicted_answer": "那场车祸其实发生在梅拉妮（Melanie）一家，而非卡罗琳的孩子。根据记忆，梅拉妮的两个年幼孩子起初很害怕，但在安慰之后表现出坚强的适应力和韧性。她的儿子在事故中平安无事。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_fused_locomo_20260925_195248.jsonl",
+          "predicted_answer": "两个年幼的孩子起初很害怕，但经过安慰后表现得坚强、有韧性，很快适应了情况；梅拉妮说孩子们是她坚持下去的最大动力。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_115806.jsonl",
+          "predicted_answer": "ANSWER：事故发生在梅拉妮一家（而非卡罗琳的孩子）身上。2023年10月中旬公路旅行途中发生车祸后，两个孩子起初很害怕，但在安慰之后表现出了坚强的适应力和韧性。梅拉妮说孩子们是她坚持下去的最大动力和支柱。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_151059.jsonl",
+          "predicted_answer": "严格来说，那场车祸发生在梅拉妮（Melanie）一家，而非卡罗琳（卡罗琳尚未有孩子，她正计划通过领养组建家庭）。据记忆，梅拉妮的两个年幼孩子起初很害怕，但经过安慰后表现出坚强的适应力和韧性；她儿子在事故中平安无事。梅拉妮说孩子们是她坚持下去的最大动力和支柱，这次经历让她更加珍惜家人。",
+          "mentions_oct20": false,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              true
+            ],
+            "judge_correct": true
+          }
+        },
+        {
+          "run": "zhfull_locomo_20260925_164645.jsonl",
+          "predicted_answer": "ANSWER：那场车祸其实是梅拉妮（Melanie）一家经历的，而不是卡罗琳的。事故发生在2023年10月中旬/10月20日左右的公路旅行途中。梅拉妮的两个年幼孩子起初很害怕，但在大人的安慰下表现出了坚强的适应力和韧性，之后一家人继续在大峡谷游玩，孩子们玩得很开心。",
+          "mentions_oct20": true,
+          "metrics": {
+            "token_f1": 0.0,
+            "contains": false,
+            "exact": false,
+            "judge_votes": [
+              false
+            ],
+            "judge_correct": false
+          }
+        }
+      ]
+    }
+  ]
+}
