@@ -98,7 +98,8 @@ class EvaluationPipeline:
         容错：按 session 粒度捕获失败（如 LLM 供应商内容过滤），跳过并记录到
         self.ingest_errors，不中断整体 ingest。
 
-        source_trace_sink 可记录无 gold 的输入批次和 backend 返回记录 ID。
+        source_trace_sink 可记录无 gold 的输入批次及 backend 返回记录的
+        ID、正文、正文指纹和有限场次元数据；这些仍不是逐事实来源支持。
         调用者可为同一输入的不同运行/重试提供 trace_run_id、trace_attempt_id；
         两者不参与 batch_id，也不传入 backend。未传时保留旧事件格式。
         sink 异常向调用者传播；输入留痕失败时不写该批，结果留痕失败时
@@ -180,8 +181,11 @@ class EvaluationPipeline:
                            'write_completion': 'unknown'}
             else:
                 if source_trace_sink is not None:
+                    from schema_rsi.evaluation.source_trace import snapshot_returned_records
+
                     outcome = {'status': 'backend_returned', 'returned_record_count': len(records),
                                'returned_record_ids': [r.id for r in records],
+                               'returned_records': snapshot_returned_records(records),
                                'fact_support_status': 'not_provided'}
             if source_trace_sink is not None:
                 source_trace_sink({'event': 'batch_outcome', 'case_id': case.case_id,

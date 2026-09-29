@@ -15,12 +15,17 @@ class Backend:
     def __init__(self, fail=False):
         self.calls = []
         self.fail = fail
+        self.last_record = None
 
     def add_memory(self, user_id, messages, metadata=None):
         self.calls.append(copy.deepcopy((user_id, messages, metadata)))
         if self.fail:
             raise RuntimeError('backend failure')
-        return [MemoryRecord('m1', '工程师人数已更正', {'user_id': user_id})]
+        self.last_record = MemoryRecord('m1', '工程师人数已更正',
+                                        {'user_id': user_id, 'session_id': 's',
+                                         'session_date': '2023/05/11', 'event': 'ADD',
+                                         'private': 'not copied'})
+        return [self.last_record]
 
 
 def case():
@@ -47,8 +52,23 @@ def test_source_trace_preserves_request_and_excludes_gold():
     assert [t['source_ref'] for t in batch['source_turns']] == ['turn:0', 'turn:1']
     assert batch['input_messages'] == traced.calls[0][1]
     assert events[1]['returned_record_ids'] == ['m1']
+    snapshot = events[1]['returned_records'][0]
+    assert snapshot['id'] == 'm1' and snapshot['content'] == '工程师人数已更正'
+    assert snapshot['session_id'] == 's' and snapshot['session_date'] == '2023/05/11'
+    assert snapshot['event'] == 'ADD' and 'private' not in snapshot
+    import hashlib
+    assert snapshot['content_sha256'] == hashlib.sha256('工程师人数已更正'.encode()).hexdigest()
     assert events[1]['fact_support_status'] == 'not_provided'
     assert 'sentinel' not in str(events) and 'has_answer' not in str(events)
+
+
+def test_returned_record_snapshot_is_detached_from_sink_mutation():
+    backend = Backend()
+    def sink(event):
+        if event['event'] == 'batch_outcome':
+            event['returned_records'][0]['content'] = 'mutated by sink'
+    run(case(), backend, sink)
+    assert backend.last_record.content == '工程师人数已更正'
 
 
 def test_batch_identity_changes_on_source_and_owner_but_not_gold():

@@ -1,0 +1,41 @@
+{
+  "scope": "两场真实中文来源 + 注入的上一阶段模型事实文本；Recorder 验证可选返回正文快照",
+  "source_packet_sha256": "65478327b47d25891b87e9e644735ee4389197952d9b396f10052809c8ad5e54",
+  "injected_fact_run_sha256": "7bdd46a428d62a0fb5a3f69b9a8686edf92348f597805b8f75ab1b1471b99890",
+  "unchanged_backend_requests": true,
+  "input_outcome_pairs": [
+    {
+      "batch_id": "b19eeda8985198f2bc0a490e0dae4516863c35588ceb05e1b03e9c9e594ad6b7",
+      "session_id": "answer_8748f791_1",
+      "source_turn_count": 2,
+      "returned_record": {
+        "id": "offline:answer_8748f791_1",
+        "content": "用户 带领的工程师团队人数 4名（answer_8748f791_1 场次）",
+        "content_sha256": "267191efcd0696224d49ed8c96d0f5e1d008366f6d186ed2be848bf28d323943",
+        "session_id": "answer_8748f791_1",
+        "session_date": "2023/05/11 (Thu) 02:02",
+        "event": "ADD"
+      },
+      "fact_support_status": "not_provided"
+    },
+    {
+      "batch_id": "da835b6ffdec211c4dfd7ba33b9b2f036c366e0cff52c60b19d73246b09870e3",
+      "session_id": "answer_8748f791_2",
+      "source_turn_count": 1,
+      "returned_record": {
+        "id": "offline:answer_8748f791_2",
+        "content": "用户 带领的工程师团队人数 五名（answer_8748f791_2 场次（2023/10/24））",
+        "content_sha256": "ca605f3692627c91c75edbe626f1821517786270213d007ceebeb0edc274231d",
+        "session_id": "answer_8748f791_2",
+        "session_date": "2023/10/24 (Tue) 13:53",
+        "event": "ADD"
+      },
+      "fact_support_status": "not_provided"
+    }
+  ],
+  "limits": [
+    "注入事实取自上一阶段新 JSON 提取 POC，并非历史 Mem0.add 实际返回。",
+    "事件保存正文和指纹只保证事后可见当次返回文本，尚无逐子句来源语义支持。",
+    "调用者仍需持久化 sink；默认评测运行没有自动开启。"
+  ]
+}

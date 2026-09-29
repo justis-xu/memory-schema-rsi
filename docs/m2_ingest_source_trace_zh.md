@@ -2,6 +2,8 @@
 
 2026-09-28。用户要求先收尾、然后暂停。本阶段完成此前已开始的来源追踪接口及验证，不启动下一轮分析或模型试验。
 
+> 2026-09-29 后续扩展：可选 `batch_outcome` 已增加返回记忆的当次正文与指纹，并支持调用者提供运行/重试身份；见 `docs/m2_returned_record_trace_zh.md` 与 `docs/m2_trace_run_identity_zh.md`。下文保留 2026-09-28 实现时的状态。
+
 ## 已实现与适用范围
 
 `EvaluationPipeline.ingest_case` 新增可选 `source_trace_sink`，调用者可持久化两类事件：

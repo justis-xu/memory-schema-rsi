@@ -30,3 +30,20 @@ def build_source_batch(*, benchmark: str, user_id: str, session: dict,
     batch['batch_id'] = hashlib.sha256(encoded.encode()).hexdigest()
     batch['fact_support_status'] = 'not_provided'
     return batch
+
+
+def snapshot_returned_records(records: list) -> list[dict]:
+    """Freeze backend-returned text for later fact alignment, without full metadata."""
+    snapshots = []
+    for record in records:
+        content = record.content or ''
+        metadata = record.metadata or {}
+        snapshots.append({
+            'id': record.id,
+            'content': content,
+            'content_sha256': hashlib.sha256(content.encode()).hexdigest(),
+            'session_id': metadata.get('session_id'),
+            'session_date': metadata.get('session_date'),
+            'event': metadata.get('event'),
+        })
+    return snapshots
