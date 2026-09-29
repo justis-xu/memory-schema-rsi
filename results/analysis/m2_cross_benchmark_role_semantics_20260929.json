@@ -1,0 +1,73 @@
+{
+  "scope": "同一role/attributed_to字符串在两个中文基准中的来源语义；当前Chroma只读快照",
+  "input_sha256": {
+    "locomo_zh": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "chroma_sqlite": "57152cd4b7632b940c373218e1bfc05175ce9f85ff23c2c73dfb03517a652cd9",
+    "isolated_lme_trace": "ffc3f711033ddfd7bb28c6b96c60dc7feb6901538d5b7522ea9b215f5536e389"
+  },
+  "source_adapter_semantics": {
+    "locomo": "speaker_a映射user、speaker_b映射assistant；两者均为数据集对话人物",
+    "longmemeval_s": "原文件role为user/assistant；assistant是助理回复，不是另一位命名的人类speaker"
+  },
+  "chroma_counts": {
+    "all_records": 1995,
+    "zhfull_locomo_records": 1800,
+    "zhfull_locomo_attributed_to": {
+      "user": 960,
+      "assistant": 689,
+      "missing": 151
+    },
+    "owner_count": 10
+  },
+  "locomo_witness": {
+    "memory_id": "7d5bc1cd-026d-4baf-b6cf-007667a72128",
+    "content": "约翰（John）刚与明尼苏达狼队（Minnesota Wolves）篮球队签约，担任得分后卫，对新赛季充满期待（约2023年5月）",
+    "owner": "zhfull:locomo:conv-43",
+    "session_id": "session_1",
+    "attributed_to": "assistant",
+    "speaker_a": "蒂姆",
+    "speaker_b": "约翰",
+    "source_turns": [
+      {
+        "dia_id": "D1:3",
+        "speaker": "约翰",
+        "text": "太棒了！我刚和一支新球队签约——对新赛季很期待！"
+      },
+      {
+        "dia_id": "D1:5",
+        "speaker": "约翰",
+        "text": "明尼苏达狼队！我等不及要和他们一起打球了！"
+      },
+      {
+        "dia_id": "D1:7",
+        "speaker": "约翰",
+        "text": "我是球队的得分后卫，我们的赛季揭幕战就在下周——太兴奋了！"
+      }
+    ],
+    "related_qa": [
+      {
+        "qa_index": 71,
+        "question": "约翰在2023年5月21日和哪支球队签约了？",
+        "answer": "明尼苏达狼队",
+        "evidence": [
+          "D1:5"
+        ]
+      },
+      {
+        "qa_index": 72,
+        "question": "约翰在签约的球队中打什么位置？",
+        "answer": "得分后卫",
+        "evidence": [
+          "D1:7"
+        ]
+      }
+    ]
+  },
+  "lme_assistant_turns_in_isolated_case": 6,
+  "model_calls": 0,
+  "limits": [
+    "Chroma计数只是当前快照的模型标签分布，不是真实来源类型的人工准确率。",
+    "真人LoCoMo例子证明不能跨基准统一过滤assistant；不证明该记忆是答题唯一载体。",
+    "LongMemEval助理回复可能被用户后来确认；需逐子句看原话，不能只凭role整条删除。"
+  ]
+}
