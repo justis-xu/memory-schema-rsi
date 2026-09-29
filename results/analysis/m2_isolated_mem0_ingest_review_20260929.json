@@ -1,0 +1,59 @@
+{
+  "scope": "固定中文 LongMemEval 工程师早场，当前 Mem0 V3 单场真实写入后的逐条人工回源",
+  "question_id": "031748ae",
+  "session_id": "answer_8748f791_1",
+  "source_turn_reference": "results/analysis/m2_isolated_mem0_ingest_trace_20260929.jsonl 的 batch_input.source_turns，turn_index 从 0 起",
+  "returned_record_count": 5,
+  "full_record_count": 2,
+  "partial_record_count": 3,
+  "review": [
+    {
+      "record_index": 0,
+      "record_id": "181750ae-4234-4dcb-9866-9f1203254da3",
+      "support": "full",
+      "source_turns": [10],
+      "reason": "用户明确说新职位是高级软件工程师，带领4人的工程师团队；2023年5月取自本场日期。"
+    },
+    {
+      "record_index": 1,
+      "record_id": "4559369b-7159-4a8e-9a2b-a4e870f2eeaf",
+      "support": "partial",
+      "source_turns": [4, 10, 11],
+      "supported_clauses": ["经理叫雷切尔", "计划邀请经理", "纠正后的团建合计5人、其中4名工程师"],
+      "unsupported_clauses": ["4名工程师含用户本人"],
+      "reason": "用户 turn:10 没说4人是否含本人；该括号说明来自助手 turn:11，不能升格为用户自述。"
+    },
+    {
+      "record_index": 2,
+      "record_id": "c10953fb-3100-4d67-958e-2e6154102320",
+      "support": "full",
+      "source_turns": [0, 2, 4],
+      "reason": "用户当场策划团建，喜欢户外游戏并举巨型叠叠乐，称 City View Rooftop 听起来是不错选择；“倾向”是这一偏好的概括。"
+    },
+    {
+      "record_index": 3,
+      "record_id": "7bb25ad5-23ff-41f8-a0bc-72012464b926",
+      "support": "partial",
+      "source_turns": [5, 6, 8, 10],
+      "supported_clauses": ["用户在纠正前表示会联系萨曼莎询问6人套餐"],
+      "unsupported_clauses": ["萨曼莎是 City View Rooftop 的活动经理", "套餐具体内容、价格、邮箱与电话是用户确认事实"],
+      "time_scope_issue": "6人询价意向在 turn:10 被5人总数纠正，写入正文没有标旧计划或已纠正。",
+      "reason": "职位、报价和联系方式只由助手 turn:5 声称；用户重复的是联系与询价意向，未确认服务细节。"
+    },
+    {
+      "record_index": 4,
+      "record_id": "47c046d3-571e-49dd-9d1d-e092a4441384",
+      "support": "partial",
+      "source_turns": [7, 8],
+      "supported_clauses": ["用户可能计划一些结构化活动促进团队合作"],
+      "unsupported_clauses": ["破冰游戏等具体结构化形式已由用户选择", "用户倾向结合自由交流时间"],
+      "reason": "用户 turn:8 只说可能考虑结构化活动；例子与自由交流安排来自助手 turn:7 的建议。"
+    }
+  ],
+  "source_fact_preservation": {
+    "latest_team_size": "保留：turn:10 的4名工程师、团建合计5人写入了记录0和1",
+    "earlier_team_size": "turn:4 的5名工程师加1经理属于被纠正的旧说法；输出没有当成现行人数，但记录3仍保留未标旧态的6人询价意向"
+  },
+  "trace_gap": "batch_outcome 的5条 returned_records 均未携带 session_id/session_date；同ID隔离库 inventory 有两项元数据。batch_input 只能证明这一场次经过写入，无法证明逐条或逐子句语义来源。",
+  "answer_or_judge_calls": 0
+}
