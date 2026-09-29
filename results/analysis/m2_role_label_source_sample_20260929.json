@@ -1,0 +1,327 @@
+{
+  "scope": "当前中文LoCoMo每个owner固定哈希抽一条assistant标签记忆，人工回源说话者与渠道",
+  "selection": {
+    "seed": "m2_role_sample_20260929|",
+    "one_per_owner": true,
+    "candidate_count": 689,
+    "selected_count": 10
+  },
+  "input_sha256": {
+    "dataset": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+    "chroma_sqlite": "57152cd4b7632b940c373218e1bfc05175ce9f85ff23c2c73dfb03517a652cd9"
+  },
+  "cases": [
+    {
+      "conversation": "conv-26",
+      "memory_id": "fa565253-0ae1-472b-b399-eaeea2bbc68b",
+      "content": "卡罗琳的对话对象名为梅拉妮（梅尔），她被孩子和工作忙得团团转，并计划带孩子去游泳",
+      "written_session": "session_1",
+      "attributed_to": "assistant",
+      "speaker_a": "卡罗琳",
+      "speaker_b": "梅拉妮",
+      "source_witnesses": [
+        {
+          "dia_id": "D1:2",
+          "speaker": "梅拉妮",
+          "role_in_adapter": "assistant",
+          "text": "嘿，卡罗琳！很高兴见到你！我被孩子和工作忙得团团转。你呢？有什么新鲜事吗？",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D1:18",
+          "speaker": "梅拉妮",
+          "role_in_adapter": "assistant",
+          "text": "是的，卡罗琳。照顾好自己很重要。我要带孩子去游泳了。回头聊！",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ],
+      "manual_note": "梅拉妮本人：工作孩子忙、带孩子游泳；对话对象姓名来自会话角色。",
+      "requires_other_speaker_or_channel": false
+    },
+    {
+      "conversation": "conv-30",
+      "memory_id": "6f9753ba-94d9-4392-b1cd-25f7b7219b58",
+      "content": "吉娜几年前纹了一个纹身，代表自由——跳舞时不担心别人怎么看的自由，图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'），提醒她追随热情、表达自我",
+      "written_session": "session_5",
+      "attributed_to": "assistant",
+      "speaker_a": "乔恩",
+      "speaker_b": "吉娜",
+      "source_witnesses": [
+        {
+          "dia_id": "D5:12",
+          "speaker": "乔恩",
+          "role_in_adapter": "user",
+          "text": "谢谢你，吉娜。你的帮助对我意义重大。我会继续努力，保持乐观。",
+          "image_query": "motivational quote \"everything you want is on the other side of fear\"",
+          "blip_caption": "a photography of a cartoon character with a quote about fear"
+        },
+        {
+          "dia_id": "D5:13",
+          "speaker": "吉娜",
+          "role_in_adapter": "assistant",
+          "text": "这句话让我在艰难时期保持积极。我们有时候都需要一点激励，对吧？我甚至把它纹成了纹身来提醒自己。",
+          "image_query": null,
+          "blip_caption": "a photo of a woman standing on a balcony with a blue dress"
+        },
+        {
+          "dia_id": "D5:15",
+          "speaker": "吉娜",
+          "role_in_adapter": "assistant",
+          "text": "谢谢！这个纹身是几年前纹的，它代表自由——跳舞时不担心别人怎么看。它提醒我要追随自己的热情，表达自我。",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ],
+      "manual_note": "吉娜本人说纹身含义；具体英文名言来自乔恩上一轮图片query，属跨说话者且跨渠道组合。",
+      "requires_other_speaker_or_channel": true
+    },
+    {
+      "conversation": "conv-41",
+      "memory_id": "ae46e7bc-f13d-4e32-9429-bf40be19288c",
+      "content": "玛丽亚曾去佛罗里达海滩度假，那里的色彩很美，和家人坐在海边时心中充满感激",
+      "written_session": "session_19",
+      "attributed_to": "assistant",
+      "speaker_a": "约翰",
+      "speaker_b": "玛丽亚",
+      "source_witnesses": [
+        {
+          "dia_id": "D19:23",
+          "speaker": "玛丽亚",
+          "role_in_adapter": "assistant",
+          "text": "有的，约翰！我有一张在佛罗里达度假的照片。那里的色彩太美了，和家人坐在那里时，我心中充满感激。正是在这样的时刻，我们创造出最美好的回忆，你懂吗？",
+          "image_query": "beach sunset",
+          "blip_caption": "a photography of a sunset over a body of water with a bird flying in the distance"
+        }
+      ],
+      "manual_note": "玛丽亚本人说佛罗里达度假和与家人感激。",
+      "requires_other_speaker_or_channel": false
+    },
+    {
+      "conversation": "conv-42",
+      "memory_id": "5b85d272-e060-4a52-bc79-0bee27757a32",
+      "content": "内特在2022年2月初尝试做了椰奶冰淇淋，味道香浓顺滑、非常成功，可能会成为他的新最爱零食，他还想尝试不同的口味和配料",
+      "written_session": "session_3",
+      "attributed_to": "assistant",
+      "speaker_a": "乔安娜",
+      "speaker_b": "内特",
+      "source_witnesses": [
+        {
+          "dia_id": "D3:4",
+          "speaker": "内特",
+          "role_in_adapter": "assistant",
+          "text": "谢谢，乔安娜。我这边没什么大变化，不过我刚刚发现自己可以做椰奶冰淇淋，就试了一下。味道其实挺不错的，我为自己感到骄傲。",
+          "image_query": "homemade coconut milk ice cream",
+          "blip_caption": "a photo of a bowl of ice cream with a spoon in it"
+        },
+        {
+          "dia_id": "D3:6",
+          "speaker": "内特",
+          "role_in_adapter": "assistant",
+          "text": "超好吃！又香浓又顺滑——可能会成为我的新最爱零食！",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D3:8",
+          "speaker": "内特",
+          "role_in_adapter": "assistant",
+          "text": "会啊，应该挺好玩！我很期待尝试不同的口味和配料。",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ],
+      "manual_note": "内特本人说尝试椰奶冰淇淋、口味和未来配料。",
+      "requires_other_speaker_or_channel": false
+    },
+    {
+      "conversation": "conv-43",
+      "memory_id": "1edf4fdb-bb14-48f4-a471-273d18237d64",
+      "content": "约翰的球队赛季揭幕战在2023年5月底（对话日期的一周后），他的目标是提高投篮命中率，一直在为此刻苦训练",
+      "written_session": "session_1",
+      "attributed_to": "assistant",
+      "speaker_a": "蒂姆",
+      "speaker_b": "约翰",
+      "source_witnesses": [
+        {
+          "dia_id": "D1:7",
+          "speaker": "约翰",
+          "role_in_adapter": "assistant",
+          "text": "我是球队的得分后卫，我们的赛季揭幕战就在下周——太兴奋了！",
+          "image_query": "basketball jersey collection",
+          "blip_caption": "a photo of a bunch of basketball jerseys laying on a bed"
+        },
+        {
+          "dia_id": "D1:9",
+          "speaker": "约翰",
+          "role_in_adapter": "assistant",
+          "text": "有，我的目标是提高我的投篮命中率。一直在努力训练，一定能做到。",
+          "image_query": "basketball hoop shooting percentage",
+          "blip_caption": "a photo of two men standing next to a basketball machine"
+        }
+      ],
+      "manual_note": "约翰本人说下周揭幕、目标命中率和训练。",
+      "requires_other_speaker_or_channel": false
+    },
+    {
+      "conversation": "conv-44",
+      "memory_id": "f282b741-7fa1-4364-9449-804255409c61",
+      "content": "安德鲁答应带奥黛丽看看河边最好的骑行路线，这一带有多条路线，两人都很期待这次出行",
+      "written_session": "session_20",
+      "attributed_to": "assistant",
+      "speaker_a": "奥黛丽",
+      "speaker_b": "安德鲁",
+      "source_witnesses": [
+        {
+          "dia_id": "D20:37",
+          "speaker": "安德鲁",
+          "role_in_adapter": "assistant",
+          "text": "有，河边有几条很棒的路线。我带你看看我最喜欢的几条！",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D20:38",
+          "speaker": "奥黛丽",
+          "role_in_adapter": "user",
+          "text": "听起来太好了！你能带我看看河边最好的骑行路线吗？谢谢！",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D20:39",
+          "speaker": "安德鲁",
+          "role_in_adapter": "assistant",
+          "text": "没问题。这一带有好多路线。我会给你看那附近最好的骑行路线。出门走走、欣赏风景一定很棒。",
+          "image_query": null,
+          "blip_caption": null
+        },
+        {
+          "dia_id": "D20:40",
+          "speaker": "奥黛丽",
+          "role_in_adapter": "user",
+          "text": "听起来太棒了！等不及要去看看那些骑行路线、欣赏风景了。一定会很过瘾！",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ],
+      "manual_note": "安德鲁承诺带路，奥黛丽回应期待；“两人都期待”需要两位真人话轮。",
+      "requires_other_speaker_or_channel": true
+    },
+    {
+      "conversation": "conv-47",
+      "memory_id": "4600f304-7206-4b42-84ca-dabcd4f8f5ba",
+      "content": "约翰购买了一些新设备并翻新了游戏桌，他的游戏配置包括：一台配备强大显卡的游戏电脑、游戏椅、键盘和沉浸式音效的耳机，游戏让他保持专注和动力",
+      "written_session": "session_20",
+      "attributed_to": "assistant",
+      "speaker_a": "詹姆斯",
+      "speaker_b": "约翰",
+      "source_witnesses": [
+        {
+          "dia_id": "D20:9",
+          "speaker": "约翰",
+          "role_in_adapter": "assistant",
+          "text": "哇，詹姆斯！有朋友一起打游戏真好。顺便说一下，我买了一些新设备，还翻新了我的游戏桌。",
+          "image_query": "gaming programming setup desk monitors coding books shelf",
+          "blip_caption": "a photo of a desk with a computer and a keyboard"
+        },
+        {
+          "dia_id": "D20:10",
+          "speaker": "詹姆斯",
+          "role_in_adapter": "user",
+          "text": "酷！你现在都有什么样的游戏装备？我有一套配置：游戏电脑、键盘、鼠标和一把舒适的椅子——这样连续玩几个小时游戏就轻松多了！",
+          "image_query": "gaming setup computer keyboard mouse chair",
+          "blip_caption": "a photo of a gaming desk with a computer and a gaming chair"
+        },
+        {
+          "dia_id": "D20:11",
+          "speaker": "约翰",
+          "role_in_adapter": "assistant",
+          "text": "不错的配置，詹姆斯！我也有类似的游戏椅和键盘。我现在用的是一台配备强大显卡的游戏电脑，可以玩高配置要求的游戏。我还有一个耳机，音效很沉浸。游戏一直是我很棒的消遣方式——它让我在其他方面也能保持专注和动力。",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ],
+      "manual_note": "约翰本人说买设备、翻新桌面，并确认自己有类似椅子键盘和新电脑耳机。",
+      "requires_other_speaker_or_channel": false
+    },
+    {
+      "conversation": "conv-48",
+      "memory_id": "d2e2e49f-f93f-4dd4-a604-2b8e5e0397f3",
+      "content": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒，玩得很开心，感到很放松（附有朋友举杯和食物、红酒的照片）",
+      "written_session": "session_6",
+      "attributed_to": "assistant",
+      "speaker_a": "黛博拉",
+      "speaker_b": "乔琳",
+      "source_witnesses": [
+        {
+          "dia_id": "D6:1",
+          "speaker": "乔琳",
+          "role_in_adapter": "assistant",
+          "text": "嘿，黛博拉，我超级兴奋！昨晚出去玩得很开心——和朋友一起吃了晚饭，还喝了点小酒。真高兴能放松一下。你呢？",
+          "image_query": "friends toast drinks",
+          "blip_caption": "a photo of a plate of food and a glass of wine"
+        }
+      ],
+      "manual_note": "乔琳本人说昨晚聚餐饮酒放松；朋友举杯/食物/酒杯来自该轮图片query/caption，红酒颜色未由文字辅助字段直接支持。",
+      "requires_other_speaker_or_channel": true
+    },
+    {
+      "conversation": "conv-49",
+      "memory_id": "d76fa4e5-4d02-4f25-a2b0-a6b7e5481f93",
+      "content": "《教父》（The Godfather）DVD套装是萨姆用来'治愈心情'的电影，萨姆在2023年11月21日分享了一张它的照片",
+      "written_session": "session_17",
+      "attributed_to": "assistant",
+      "speaker_a": "埃文",
+      "speaker_b": "萨姆",
+      "source_witnesses": [
+        {
+          "dia_id": "D17:5",
+          "speaker": "萨姆",
+          "role_in_adapter": "assistant",
+          "text": "谢谢，埃文。我最近没怎么尝试新东西，不过我昨天看了这个。它一直是我用来'治愈心情'的电影。对了，你说过经历了一场健康危机——你现在怎么样？",
+          "image_query": "the godfather dvd box set",
+          "blip_caption": "a photo of a book with a picture of a man on it"
+        }
+      ],
+      "manual_note": "萨姆本人说电影治愈心情；《教父》DVD名称仅由该轮图片query给出。",
+      "requires_other_speaker_or_channel": true
+    },
+    {
+      "conversation": "conv-50",
+      "memory_id": "65c1f3e2-3662-4daf-80b6-19ede2c6587f",
+      "content": "戴夫于2023年9月14日左右和乐队即兴演奏，音乐源源不断，排练非常开心；但他们太投入忘了录音，没有留下演奏录音",
+      "written_session": "session_19",
+      "attributed_to": "assistant",
+      "speaker_a": "卡尔文",
+      "speaker_b": "戴夫",
+      "source_witnesses": [
+        {
+          "dia_id": "D19:1",
+          "speaker": "戴夫",
+          "role_in_adapter": "assistant",
+          "text": "嘿卡尔文！好久没聊了！有个酷消息要分享——昨晚太爽了！我和乐队一起即兴演奏，音乐源源不断地流淌。排练真是太开心了！另外，上周末我在波士顿有机会参加了一场摇滚音乐会。快看看那氛围有多棒！",
+          "image_query": null,
+          "blip_caption": "a photography of a band performing on stage with bright lights"
+        },
+        {
+          "dia_id": "D19:3",
+          "speaker": "戴夫",
+          "role_in_adapter": "assistant",
+          "text": "嘿卡尔文！真希望我们录了那次即兴演奏，但我们太投入了，完全忘了这回事。",
+          "image_query": null,
+          "blip_caption": null
+        }
+      ],
+      "manual_note": "戴夫本人说即兴演奏开心且因投入而忘记录音。",
+      "requires_other_speaker_or_channel": false
+    }
+  ],
+  "model_calls": 0,
+  "limits": [
+    "事后人工选择见证turn；标签不是全句独立语义蕴含自动判断。",
+    "每个owner只取一条，不能估689条的混写比例。",
+    "其它说话者或图片query参与事实，不等于该条整句无源。"
+  ]
+}
