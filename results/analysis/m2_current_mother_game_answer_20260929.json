@@ -1,0 +1,58 @@
+{
+  "scope": "Current pure-Chinese fixed no-graph top15; two repeated answer calls, no judge, no retrieval or graph calls.",
+  "retrieval_artifact": "results/analysis/m2_current_mother_game_relation_20260929.json",
+  "retrieval_sha256": "00e2cd09ae1e517131049a56fc941e6758b52bfd66492d0838d5011248101328",
+  "dataset_sha256": "3e3d9aa70c59c35b0254553314e15a0df4a340a2aea7d3781b95c7d1944c7f5d",
+  "case_id": "locomo_conv-48_qa172",
+  "question": "乔琳和她妈妈在任天堂Wii上最喜欢玩的游戏之一是什么？",
+  "gold_for_posthoc_review_only": "《怪物猎人：世界》",
+  "context_ids": [
+    "119255f0-2577-4920-9ae8-494e660934bc",
+    "f1455645-db16-42df-a737-cb52619de275",
+    "2af936f8-5031-44c5-866b-cd803546bcf7",
+    "71b40f82-60fa-4073-9529-99421dfd21b7",
+    "92eff024-cc55-49e9-930b-ca19f4cdad8a",
+    "a9792ba8-0216-46d9-8afd-495b4ac2a6a1",
+    "9966d6fe-734a-4507-8dea-d7d1f5102f66",
+    "2290dda6-70d6-447c-9d28-a6f66921c986",
+    "26bfebdc-bdde-411b-850b-dd3c81ea0c7b",
+    "0e60bab4-2102-438d-a10c-57db822e7f95",
+    "692450fb-3c5e-4413-ad11-f964b18683d6",
+    "46b463f0-f4a2-44c3-b320-2b64f58d21b6",
+    "3d4a0b28-db4e-4abf-b959-39f07551c510",
+    "b689d90b-aa5e-44da-a2cf-fe1c0a29ccd9",
+    "003eb6f9-3b40-4bc5-91df-0872e1195cc4"
+  ],
+  "target_rank": 2,
+  "reference_date": "2023-09-20T10:17:00",
+  "prompt_sha256": "d85c276939f3a528f32098d9d7e9f2760dff3885379620d7387f99722e8f904c",
+  "model": "glm-5.3-flash",
+  "temperature": 0.0,
+  "max_answer_calls": 2,
+  "max_completion_tokens_per_call": 1500,
+  "calls_sent": 2,
+  "calls": [
+    {
+      "index": 1,
+      "answer": "《Monster Hunter: World》",
+      "usage": {
+        "prompt_tokens": 2187,
+        "completion_tokens": 8
+      }
+    },
+    {
+      "index": 2,
+      "answer": "《Monster Hunter: World》",
+      "usage": {
+        "prompt_tokens": 2187,
+        "completion_tokens": 11
+      }
+    }
+  ],
+  "limits": [
+    "One source-selected question and two generations cannot estimate system accuracy or stable net benefit.",
+    "Wii appears in source image caption but not the frozen final memory text; an answer can still copy it from the question.",
+    "A correct game name does not prove all answer clauses have source support."
+  ],
+  "stopped_after_failure": false
+}
