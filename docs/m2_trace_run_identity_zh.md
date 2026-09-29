@@ -2,6 +2,8 @@
 
 > 2026-09-29。代码改动在 `EvaluationPipeline.ingest_case`；离线复核脚本 `scripts/m2_verify_trace_run_identity.py`，机器结果 `results/analysis/m2_trace_run_identity_20260929.json`。零模型调用，Recorder 不写记忆库或图。
 
+> 后续同日复核发现当前忽略数据文件又有新指纹；五题的下一读取快照及逐批对照见 `docs/m2_lme_source_version_drift_zh.md`。本页的 `f8af...` 只代表本阶段读取时的文件版本。
+
 ## 问题与固定范围
 
 旧来源账的 `batch_id` 是输入内容指纹。同样输入执行两次，或失败后重试，事件里的 `batch_id` 相同；原事件没有运行和尝试身份。后续做中文小提取时，仅靠这个指纹无法区分哪次输出或失败属于哪次尝试。

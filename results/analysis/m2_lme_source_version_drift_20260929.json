@@ -1,0 +1,854 @@
+{
+  "scope": "五道固定中文 LongMemEval 知识更新题；当前文件与 2026-09-28 归档输入逐批对照",
+  "captured_at_utc": "2026-09-29T10:47:50.330512+00:00",
+  "current_source_sha256": "e92eeb57e10976a0ef7d545422e91afeea722c43a22987dda7946c2e10f95395",
+  "prior_current_source_sha256": "f8af9e1aa5b62cd117249c05575774a0ade69b91c9a3385653d706ebb8129590",
+  "old_source_sha256": "e93bd28549d25ba4092034bfe336a92f5fbce7e17693c5672a5f9d3be0d96f1f",
+  "source_file_sha_changed": true,
+  "summary": {
+    "case_count": 5,
+    "batch_count": 232,
+    "changed_batch_count": 37,
+    "changed_answer_source_batch_count": 5,
+    "changed_answer_source_turn_count": 10,
+    "witness_count": 23,
+    "witness_role_text_match_count": 23
+  },
+  "cases": [
+    {
+      "question_id": "71315a70",
+      "batch_count": 53,
+      "matching_batch_count": 41,
+      "changed_batches": [
+        {
+          "call_index": 3,
+          "session_id": "answer_c44b9df4_1",
+          "old_batch_id": "4bdec40150d22bb9743dabf204bd083d095961d286fa3dfebfff4df1925a3b8c",
+          "current_batch_id": "f44f1cd21559c1de72c356c18a431895f2b10e08bd559cc3b8169203d2a420a6",
+          "old_message_sha256": "680da396e1fffec3f15c1367c96ccd66ae9968b9b5672dfed599ff89740f68f5",
+          "current_message_sha256": "bf5e96f2a95540832ba09fd5f516f9e2b6614a5b61afd8aa8a12193b57e40eb1",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 4,
+          "session_id": "4ad82121_2",
+          "old_batch_id": "e535446ebd62a3014a99e31d99ab8b68db66f05ada649c0f6268a23cfd1ef898",
+          "current_batch_id": "e2eb11c6034399d813c74a949faf1ff82cf3021478613527cbf03329f49a61cb",
+          "old_message_sha256": "da31310099bc4e204cc7c9c82a28dc75daf93f00f7c932cf0901d6104584f3b9",
+          "current_message_sha256": "ffedb28896f27e36d54f75e70637c572b94ab6371d6b5c8244f4d71b6dfab2f7",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 8,
+          "session_id": "6028dbf9",
+          "old_batch_id": "d8fe1741580c1204edaa6725ae9f0ba8cee3a6d0a02071b4c4c187298141159e",
+          "current_batch_id": "5dcc136e95642f4caba904acfdbd86546bc670db920ff41dd330a364f62ac81a",
+          "old_message_sha256": "7e68808c960e81c5291c94f93fc13b5012c75fc816fde129104eff18857594d0",
+          "current_message_sha256": "08ba68f7f7ae7076b1b8ae0f52b29edb33df54a01da5b7303b7d7260ab6e9fa0",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 11,
+          "session_id": "a08fbe88_1",
+          "old_batch_id": "78c105bc63c423a2419dd2bcf53a13a0d4e226fa12e8495ff4ffd0e5146d65ea",
+          "current_batch_id": "7a0e38b076ce860c310131b8350e1fd24a0b7fe132ca62a27a941772d57d64b4",
+          "old_message_sha256": "0438de04c18b867ac0f784273562bd47c688f49c072f6a685aa8ed22adc31a0c",
+          "current_message_sha256": "cb6eaea63274bae7c893bd5f6ac7f6f63fce9f13040327267a56d13f5f1af0b5",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 12,
+          "session_id": "ultrachat_42515",
+          "old_batch_id": "2001643728f7ae6e129a31fe4c29c91291242747958927a8fe7bcd88a4ba938b",
+          "current_batch_id": "b621a9a467f80fa78c230db09f5d77fedf8625da7a109cc0e8645e40db8c04de",
+          "old_message_sha256": "5574730058b473de7d9c2fc405f586f386df1da77a48df333e7e9d29df2b82b0",
+          "current_message_sha256": "6d2c8c3b8d25d5652c3eb49983d7f171e84195606db28c6cc913fcc8a2b2544a",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 17,
+          "session_id": "ea27c6f5_1",
+          "old_batch_id": "88483ed0e3617c770dc7da4522f1efb12432efeb238b21aefbc38276be213aa8",
+          "current_batch_id": "5a6b52cdb4d426f3d94a4c6ce79dbe4826d1138391d35b406237ae405bf73327",
+          "old_message_sha256": "7cd49871fe26cfce5bf7be2f771820176aa6f3b56868c3907471964201a0f94c",
+          "current_message_sha256": "b1e0c7ea87bc1689b9c2cb15266d42e38618e8055ffe281ba49b964413df6654",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 20,
+          "session_id": "773aebbd_1",
+          "old_batch_id": "d22c58217295c5b55686ede1105d20fe85d8773cbe48a4061741b3171b2c780c",
+          "current_batch_id": "e7fc230b223c77dbec6bab3f26f4591f5b36c96481eb7939e1cf30f8fd92bf92",
+          "old_message_sha256": "888925a48d5c102f910d05745aaf892345f50a924c3fc602cad04deb9155c219",
+          "current_message_sha256": "3a8a0c70e554b3ea30c5151cdb26e350db37ec600824ca2a8d17978bb7b03ee3",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 25,
+          "session_id": "464c3bb4",
+          "old_batch_id": "e0a66ecb59c80c2f1ff211cc09b6e89e5b13fd5be708ae1474788abf12f16cb8",
+          "current_batch_id": "16de902c5ab86c01e7c21d085f07ef1fc29f132ea6c697045c64744df958df34",
+          "old_message_sha256": "ad62f4e5a656f1a1e31c845a01cbadadb431ea38981d704cdece00cbda32f6be",
+          "current_message_sha256": "6ed034c50312aa2ae576e89601525127dc155421cf2f2776466393ce949501a7",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 28,
+          "session_id": "44202c74_2",
+          "old_batch_id": "6af0e1b54003aa9d1be8e37d977bc87c70122028d233e762e35a94ab5b4ba2c6",
+          "current_batch_id": "3fa7a6edd4a0a38d6d9dd3ba8f22077bb8f269b0107d2f63210af75aefe09c78",
+          "old_message_sha256": "b017ed1e631985c34223a4c3d0aaf10ca4773d48937325ae3e418ccc19527cc5",
+          "current_message_sha256": "d2f1d0bffd949de8b948da1a3e692367ecca069067feac071af4875ac9d8e5f8",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 29,
+          "session_id": "answer_c44b9df4_2",
+          "old_batch_id": "a7c2566720054ad509120813ea0b8483b64a2a65f9a530820fdf18a51b3ded4b",
+          "current_batch_id": "76ad3d8fcf82db2e9ac139e27821cb875adee831ce35e88426ffde0704815e7c",
+          "old_message_sha256": "5c97d08eb775f840a37bc7753f9bf1b5fc6649734c3feb08d7cfe5c8839117ff",
+          "current_message_sha256": "9675f4a55a8e8b7d6e82c64c944f77ca0e32fdbf4c739918e110ae8d720eeb89",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 46,
+          "session_id": "c86a22a2_2",
+          "old_batch_id": "0dc2ef54028bfe85286b5aa6c560385fedc84ea2b77356bdae2940f372cfed99",
+          "current_batch_id": "cd005dc71721b846457ccd7b9aa790fa68f79afdc54bde0175bbc100c14d1b22",
+          "old_message_sha256": "2e51a2d2632b91ea8de7d24b38f7c31542f734a57c5a5459524a34b410a11873",
+          "current_message_sha256": "698bec3e3806c8a517d01df0423ae457e03bdcd806e2a8d8f6959ccf0073a259",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 50,
+          "session_id": "41743aae_1",
+          "old_batch_id": "4d824bd4f4f37bf690d24689c38eed2661c3420ba1b87a9bb70bd9e5271c0ce4",
+          "current_batch_id": "d6fedfbe2b8faa7c531c131c2d7e5deb38b395716f9c3fdcd32fbec259da88d3",
+          "old_message_sha256": "86bd540e6c1ed238642cd2e8368854d12905c515985437bafbf7ff3eca449895",
+          "current_message_sha256": "d751a539dc4bd14188f3be64e58e98da8bace575c91fc65970c4052b91e8c945",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        }
+      ],
+      "answer_source_call_indices": [
+        3,
+        29
+      ],
+      "answer_source_batches_changed": [
+        {
+          "call_index": 3,
+          "session_id": "answer_c44b9df4_1",
+          "old_batch_id": "4bdec40150d22bb9743dabf204bd083d095961d286fa3dfebfff4df1925a3b8c",
+          "current_batch_id": "f44f1cd21559c1de72c356c18a431895f2b10e08bd559cc3b8169203d2a420a6",
+          "old_message_sha256": "680da396e1fffec3f15c1367c96ccd66ae9968b9b5672dfed599ff89740f68f5",
+          "current_message_sha256": "bf5e96f2a95540832ba09fd5f516f9e2b6614a5b61afd8aa8a12193b57e40eb1",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 29,
+          "session_id": "answer_c44b9df4_2",
+          "old_batch_id": "a7c2566720054ad509120813ea0b8483b64a2a65f9a530820fdf18a51b3ded4b",
+          "current_batch_id": "76ad3d8fcf82db2e9ac139e27821cb875adee831ce35e88426ffde0704815e7c",
+          "old_message_sha256": "5c97d08eb775f840a37bc7753f9bf1b5fc6649734c3feb08d7cfe5c8839117ff",
+          "current_message_sha256": "9675f4a55a8e8b7d6e82c64c944f77ca0e32fdbf4c739918e110ae8d720eeb89",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        }
+      ],
+      "answer_source_turn_changes": [
+        {
+          "session_id": "answer_c44b9df4_1",
+          "source_ref": "turn:3",
+          "old_role": "assistant",
+          "current_role": "assistant",
+          "old_text_sha256": "4ef3951fb43be429c6ac34df55b0354e6e1a708f9520f30dd4d876e218fb76ab",
+          "current_text_sha256": "5d3b4af49db9e736addeb3202b425b8f19b46f4538193d3d6d8d4d70098e1bed",
+          "edits": [
+            {
+              "op": "delete",
+              "old": " ",
+              "current": ""
+            },
+            {
+              "op": "delete",
+              "old": " ",
+              "current": ""
+            }
+          ]
+        },
+        {
+          "session_id": "answer_c44b9df4_2",
+          "source_ref": "turn:3",
+          "old_role": "assistant",
+          "current_role": "assistant",
+          "old_text_sha256": "b2fc1f8a46a65a73d8a9ce615b6ef5c64ea882506dcccd0d9a158ebea938b05c",
+          "current_text_sha256": "f4e3ad582d79a89156f2fb0941776aa69d283d717c40b797ba413d2371946b4e",
+          "edits": [
+            {
+              "op": "delete",
+              "old": " ",
+              "current": ""
+            }
+          ]
+        }
+      ],
+      "witness_checks": [
+        {
+          "claim_id": "earlier_ocean_five_to_six",
+          "session_id": "answer_c44b9df4_1",
+          "source_ref": "turn:4",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "later_ocean_ten_to_twelve",
+          "session_id": "answer_c44b9df4_2",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "later_ocean_ten_to_twelve",
+          "session_id": "answer_c44b9df4_2",
+          "source_ref": "turn:10",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "sum_ocean_fifteen_to_eighteen",
+          "session_id": "answer_c44b9df4_1",
+          "source_ref": "turn:4",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "sum_ocean_fifteen_to_eighteen",
+          "session_id": "answer_c44b9df4_2",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "sunset_separate_project",
+          "session_id": "answer_c44b9df4_2",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        }
+      ]
+    },
+    {
+      "question_id": "031748ae",
+      "batch_count": 45,
+      "matching_batch_count": 38,
+      "changed_batches": [
+        {
+          "call_index": 20,
+          "session_id": "920fa36f",
+          "old_batch_id": "e1e74a9841023ebc0824dde57a3838e1e8dba1045ca29de17d8ab1dff5d4e56d",
+          "current_batch_id": "0c183f0161cba5f01b4c7a27252819e0f4d79afebe984595bbefe0ff15fc0bec",
+          "old_message_sha256": "fe1b15c6abac34d63e02189406c2180dc9015648d1951808f641a27fad6d8db3",
+          "current_message_sha256": "e16eb6de14df88437cbe68b839dae6871b03309d9ba652c44eb1f57875eafa89",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 21,
+          "session_id": "e0f71050_2",
+          "old_batch_id": "53254d50686750a03083c170b7e605ff1a9247e05736465ab01bf9289b22f7f9",
+          "current_batch_id": "08ee9422e45c4d4f871c7bd302dbd2083fba80e3c68ce7d486c41af1b0954d52",
+          "old_message_sha256": "05c8cd454738e871ba2cc0ed2df7f4e714d3f400fade3de2f177810612c5f988",
+          "current_message_sha256": "4c6d365e0a3a0396cc4445f3581900c6f5ffe5152fa5cce751141083e67bd8fa",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 24,
+          "session_id": "c86a22a2_2",
+          "old_batch_id": "41310ce5ad6d7c4f6211a5fecbca28b08d93e24f13cd974e3181e1651cb8ab1b",
+          "current_batch_id": "033a8258c31ff90c6cf13dee58400e58c49df2ea05aa216b6973b77613ec792c",
+          "old_message_sha256": "eaf65aca18a85e30f7c6b7272e66e665d218574a5900ad657e0fd0e941f5c851",
+          "current_message_sha256": "fd136bb8cf32c0adef5ae6fd5d64ae239fa47c48c7592021ee5f0ffcfe2991e8",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 26,
+          "session_id": "90403fb9_2",
+          "old_batch_id": "4044d51f3495c33dd02706105e2e50e705cff66c308682007f3f4456d340a0c4",
+          "current_batch_id": "83f10dcda4f6182144dc5e1b030242aa09863f93689327ee082d69217359afed",
+          "old_message_sha256": "bbccae211cc340eedf6d8bbe2afd0f26f70bcbaec3e0a1153101082835b8ff50",
+          "current_message_sha256": "fd95f688fdc3fe365d90773fcbccdfd53b4afc3b55e1352e03caa2caa7816818",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 30,
+          "session_id": "eff063bb_2",
+          "old_batch_id": "f86e401962c50e00c420a7d22542b44070e221bb1a24fc676f2a3a23af58f09d",
+          "current_batch_id": "0d313c6f091b7e213e3f4d3313b8bb43f34f9e96fd2387dacd2e824045a8e76b",
+          "old_message_sha256": "e2eacd48098382722e2ad9d02c9782ff4c9775bc9ade4652ac574c5fec6e9cbb",
+          "current_message_sha256": "309d9d6d6bfc7921c6cb19c3704395dc656da535b54bf6db7b74cf1d9b1e245b",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 42,
+          "session_id": "sharegpt_BvuMJIh_0",
+          "old_batch_id": "50099c2a4032cb7eb94bf6764b2c063c1220916510c6361f7ac9e2976c682daf",
+          "current_batch_id": "f219052853482154d6c62a309d5ee525f983c1eb8ecd752e26a3e1edb3a7f190",
+          "old_message_sha256": "3aed8586701802f14a04c2bad855547870f429903f1a213ad0a0414b14e618d7",
+          "current_message_sha256": "41ba02f3a8a425ae72efcced4494ecbef65cf5d1f1a2a281269ec591e070b256",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 44,
+          "session_id": "c36f4196",
+          "old_batch_id": "f4364ba4413c4230f4fe08a7dc8132322075ca163d21d4e36797e46ece354033",
+          "current_batch_id": "d54d6e733da8686f06b273415b9c1a5eb81e97d6fb3d370eed5558a397398080",
+          "old_message_sha256": "8cb54bf7bb8f12fbd4faf25aadeedb1cd21a46b6213af9c3c166c010a4aaa562",
+          "current_message_sha256": "31444380d58477c147bee909411e5a3c1c8867f418027b69a6fcc50bcb95006a",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        }
+      ],
+      "answer_source_call_indices": [
+        0,
+        6
+      ],
+      "answer_source_batches_changed": [],
+      "answer_source_turn_changes": [],
+      "witness_checks": [
+        {
+          "claim_id": "early_five_engineers_plus_manager",
+          "session_id": "answer_8748f791_1",
+          "source_ref": "turn:4",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "early_corrected_four_engineers",
+          "session_id": "answer_8748f791_1",
+          "source_ref": "turn:10",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "current_five_engineers",
+          "session_id": "answer_8748f791_2",
+          "source_ref": "turn:2",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "four_includes_self",
+          "session_id": "answer_8748f791_1",
+          "source_ref": "turn:10",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "four_includes_self",
+          "session_id": "answer_8748f791_1",
+          "source_ref": "turn:11",
+          "role_match": true,
+          "text_match": true
+        }
+      ]
+    },
+    {
+      "question_id": "50635ada",
+      "batch_count": 46,
+      "matching_batch_count": 39,
+      "changed_batches": [
+        {
+          "call_index": 4,
+          "session_id": "a0b8b0ad_1",
+          "old_batch_id": "9628fa88011e138e05e476b1427866aaa24ca8d87c18b37fd73c16a729568cfd",
+          "current_batch_id": "50b4a921c8c6de9c1e5529fbcf19c4521ac8a024ea5a5d74f2387c33c54bda25",
+          "old_message_sha256": "f657c3b9afe185c2ccf4248ef0d6d3baa6cb0ccd5d62175fa294969d1305bac7",
+          "current_message_sha256": "ec5ce947b9d0d23ae2ad148d212589e609b34e7b96956a4c5bd2ca5b915079b1",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 7,
+          "session_id": "sharegpt_BAHXiar_14",
+          "old_batch_id": "df40716409dfa69c54e345ee534a9128c57a7b1e6bd5da6925d834c94f72391b",
+          "current_batch_id": "f84ee42080a7ec9e3ee880be8b635928b310cc9f91d05f031ff8e739f3a76cc6",
+          "old_message_sha256": "89fbbf519c552b7b1acbaddcb6a747ad022830c6029db2728eba5552152368bd",
+          "current_message_sha256": "1014265b02ca74d82a0cdf2d6523e2264296d97e72fb21864fee8f718a472ae6",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 19,
+          "session_id": "answer_dcd74827_1",
+          "old_batch_id": "a44bec0ecc8d7857ef5f09ed070927a659580d1ae26e0d3141a96ae2c359f47c",
+          "current_batch_id": "194e8816fda712b290884030c0fed4d7ff3ad609414cb9de63c5a138315b2b68",
+          "old_message_sha256": "12f345fe9c3a642e9a0da34354083fdb57624bee60c9bf187765e9256ca3fc3d",
+          "current_message_sha256": "5f7e86ace0dc8c787f75551731103ba44fbd6a886a8bb16e9e11ecec19e4fb2e",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 22,
+          "session_id": "8c25f527",
+          "old_batch_id": "b41ff53cf5d38100b8a992fde406b53eb40a138610b6d1c196ea05068fb3b3d8",
+          "current_batch_id": "c837f161ad3cb9e4ab2dd75572bccf03ecd240372626c5b730a14af06e86b42c",
+          "old_message_sha256": "d5aa7672d6649aeeeacf32ecb0d221437f5a236da8b558a323034626698516a9",
+          "current_message_sha256": "e25edddad293bbe76d922c4c519063927059dbdc408e4cc35d1060a403fc3a44",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 24,
+          "session_id": "42bcee92_2",
+          "old_batch_id": "7c6e2ae0dd355f313067590d7149ec4a67437bb374e6bf268babb8bf11afabac",
+          "current_batch_id": "470eacbeb0eefafac3672c938e0ba74b375bd4316dc55f95664fbbbe59b4a632",
+          "old_message_sha256": "86495b2c728544d53619575b223a942951fa19bff2425b37a874a7a514bb8e1d",
+          "current_message_sha256": "3740ba17d9824944ec011cc09279b9fb281b9dd009064b3b84f6e5fe471a4b6e",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 27,
+          "session_id": "6a5b5a78",
+          "old_batch_id": "4e07be82b4b58073f76f55087c65ade9dc62a4109275cef422bd8d8673136fd4",
+          "current_batch_id": "186cc8365e02cf295f8013666f3c46416676275b1e89595ac2f3f56bcdc1fcf4",
+          "old_message_sha256": "188ddee0565ed205aa36319f7b4d69d936ca39e3a30139af24d3d75b33fe2bfc",
+          "current_message_sha256": "6600415af584917f3617082964d9e91abe6d9c9a5c489d5534816b07466d6305",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 29,
+          "session_id": "35bc3132_2",
+          "old_batch_id": "e74c5b5027397f91b11ae71c34f1a64843ddefb396407ef02cc68b0ad4cfbd26",
+          "current_batch_id": "779b835e11b6343375ed1e693c774c0ac7c2261b2ba872fba81afd62719af475",
+          "old_message_sha256": "2ac29b667957a889a6c2921f9cf851956acd157c71fd37856229f0addb952011",
+          "current_message_sha256": "0099c270e6e76bffe95b1aa68bcc13f2a7dd8ebee64c5293732d6efa7512ea3e",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        }
+      ],
+      "answer_source_call_indices": [
+        19,
+        40
+      ],
+      "answer_source_batches_changed": [
+        {
+          "call_index": 19,
+          "session_id": "answer_dcd74827_1",
+          "old_batch_id": "a44bec0ecc8d7857ef5f09ed070927a659580d1ae26e0d3141a96ae2c359f47c",
+          "current_batch_id": "194e8816fda712b290884030c0fed4d7ff3ad609414cb9de63c5a138315b2b68",
+          "old_message_sha256": "12f345fe9c3a642e9a0da34354083fdb57624bee60c9bf187765e9256ca3fc3d",
+          "current_message_sha256": "5f7e86ace0dc8c787f75551731103ba44fbd6a886a8bb16e9e11ecec19e4fb2e",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        }
+      ],
+      "answer_source_turn_changes": [
+        {
+          "session_id": "answer_dcd74827_1",
+          "source_ref": "turn:7",
+          "old_role": "assistant",
+          "current_role": "assistant",
+          "old_text_sha256": "c241abc21b3092bbd66c2a1aa4047b5bb5c8ad9bd88e7f9b3232c6c38037103e",
+          "current_text_sha256": "b716f2a3910c1cb63687fa1325db1f70ed2322d040272f930199a5d0ab27e3c3",
+          "edits": [
+            {
+              "op": "replace",
+              "old": "蔡斯",
+              "current": "Chase"
+            }
+          ]
+        },
+        {
+          "session_id": "answer_dcd74827_1",
+          "source_ref": "turn:8",
+          "old_role": "user",
+          "current_role": "user",
+          "old_text_sha256": "04a51c17a1d13ffaecb46b7573a71e59c6c72c2686b7f3baea9a72a2a74d6e21",
+          "current_text_sha256": "530fd47734b6dd38de8a06c30b2e9050d6e6d08c33c80462eecd149e10f6aedb",
+          "edits": [
+            {
+              "op": "replace",
+              "old": "蔡斯",
+              "current": " Chase"
+            }
+          ]
+        },
+        {
+          "session_id": "answer_dcd74827_1",
+          "source_ref": "turn:9",
+          "old_role": "assistant",
+          "current_role": "assistant",
+          "old_text_sha256": "79144084de1660727be2fc983271bd49d0c099ae5cfd28b92de2c772ccb960c8",
+          "current_text_sha256": "efadd22375591f9c1144673d57b78731eda8baf5d69395dfb896c0127cbf69ad",
+          "edits": [
+            {
+              "op": "replace",
+              "old": "蔡斯",
+              "current": " Chase"
+            },
+            {
+              "op": "replace",
+              "old": "蔡斯",
+              "current": " Chase"
+            }
+          ]
+        }
+      ],
+      "witness_checks": [
+        {
+          "claim_id": "silver_eligible",
+          "session_id": "answer_dcd74827_1",
+          "source_ref": "turn:4",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "silver_attained",
+          "session_id": "answer_dcd74827_1",
+          "source_ref": "turn:4",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "gold_attained",
+          "session_id": "answer_dcd74827_2",
+          "source_ref": "turn:2",
+          "role_match": true,
+          "text_match": true
+        }
+      ]
+    },
+    {
+      "question_id": "0ddfec37",
+      "batch_count": 48,
+      "matching_batch_count": 44,
+      "changed_batches": [
+        {
+          "call_index": 7,
+          "session_id": "sharegpt_UyBTuTv_0",
+          "old_batch_id": "3f5ca870356e76f5975d398deb0f345ca990eacfa280cd5cd3c4f6128fa478aa",
+          "current_batch_id": "78bc717c2968dbc9382ef3817c0b297b75e5629204d8a80a8038288526cea9cc",
+          "old_message_sha256": "28e13e93ca0633041cd501c20633f805357b6103ea6c194bf32aca37bcab2b0f",
+          "current_message_sha256": "79467d105474e5ade5579627f94a7f61292f4b9389efcd71d2dcd119c226229f",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 11,
+          "session_id": "c2c11c8c_5",
+          "old_batch_id": "491159a314a27f085a35c04612d5553e10c2f45532d56edfe39a05939143cc1e",
+          "current_batch_id": "92a75a2a5dfacd8eb0019b58d386ce576b73f2048ab58457cc0b5b0192770518",
+          "old_message_sha256": "315cd5daa0fb9377997f6b6a75f7220f4394b46b2493ae33c2362e54f1fcf660",
+          "current_message_sha256": "4aa72ac1d0d820f0b44b4d200361aec58757ae702d21f0749321d84e6b70bd8f",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 16,
+          "session_id": "answer_a22b654d_1",
+          "old_batch_id": "e33743e1f8e399e3de4625204af1e1deb7374735d0ba7d7be06257dfae2d0470",
+          "current_batch_id": "1ff8e5db0bed34a09f832e82b46320ac2c3ebbd846226282b639eaaec6c24a91",
+          "old_message_sha256": "e89e24fc176ded98502858b0149c0afcc76c96076d62b42c9c9384046baa47d7",
+          "current_message_sha256": "12de39f87390089d1721b1beb0c492e1181650af9351e1771b4f22458873af74",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 47,
+          "session_id": "sharegpt_QJYt7XW_0",
+          "old_batch_id": "36d85265ed43c7b9fd8fdb11389855d014aa40b6dab86cab4a9888a6bd432ead",
+          "current_batch_id": "8d453f4e22a0938f4318ff9779e7e4a7086d0d5071f1448350227cc48857cafc",
+          "old_message_sha256": "517ec2f1fb87d8b07ee16576cf42ed5ea0f71ed262818bf35332dcaf55b5cf2d",
+          "current_message_sha256": "b1873d0aa6d7b30d665cb78276de0455c3b693ad6954d8da359029780eeba171",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        }
+      ],
+      "answer_source_call_indices": [
+        16,
+        30
+      ],
+      "answer_source_batches_changed": [
+        {
+          "call_index": 16,
+          "session_id": "answer_a22b654d_1",
+          "old_batch_id": "e33743e1f8e399e3de4625204af1e1deb7374735d0ba7d7be06257dfae2d0470",
+          "current_batch_id": "1ff8e5db0bed34a09f832e82b46320ac2c3ebbd846226282b639eaaec6c24a91",
+          "old_message_sha256": "e89e24fc176ded98502858b0149c0afcc76c96076d62b42c9c9384046baa47d7",
+          "current_message_sha256": "12de39f87390089d1721b1beb0c492e1181650af9351e1771b4f22458873af74",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        }
+      ],
+      "answer_source_turn_changes": [
+        {
+          "session_id": "answer_a22b654d_1",
+          "source_ref": "turn:1",
+          "old_role": "assistant",
+          "current_role": "assistant",
+          "old_text_sha256": "90ea08a4e3b9ad9a6a59427bb042205bbd85b2d099da799766c4155bc5b53645",
+          "current_text_sha256": "0c47e435dc8abcb0d0743377b69a9b23f7ed5761b7d28228847e74f6764ab621",
+          "edits": [
+            {
+              "op": "delete",
+              "old": " ",
+              "current": ""
+            }
+          ]
+        },
+        {
+          "session_id": "answer_a22b654d_1",
+          "source_ref": "turn:5",
+          "old_role": "assistant",
+          "current_role": "assistant",
+          "old_text_sha256": "10ca0b221e9e1167305b8de418ce95c285a073a4864cd3dabd3cb3612bc84e18",
+          "current_text_sha256": "9a18b70dcd4e9b2c31a4f3a9a0bab8c5c50204a0641fcf449b8ddec8d57db276",
+          "edits": [
+            {
+              "op": "delete",
+              "old": " ",
+              "current": ""
+            }
+          ]
+        },
+        {
+          "session_id": "answer_a22b654d_1",
+          "source_ref": "turn:10",
+          "old_role": "user",
+          "current_role": "user",
+          "old_text_sha256": "92e1e2c9f9e4a7fb6da209c4088812db371c3b41730174be743c48ad111eda2d",
+          "current_text_sha256": "13dc8bd16ccdc2ac0153fb1ff9619c52e6dd92a07d36f25f7864003ce9c60dbb",
+          "edits": [
+            {
+              "op": "delete",
+              "old": " ",
+              "current": ""
+            },
+            {
+              "op": "delete",
+              "old": " ",
+              "current": ""
+            }
+          ]
+        },
+        {
+          "session_id": "answer_a22b654d_1",
+          "source_ref": "turn:11",
+          "old_role": "assistant",
+          "current_role": "assistant",
+          "old_text_sha256": "ecb3204567647bded7a5c18df2a898099b23904a3dc8b8ccdceb9480551b0106",
+          "current_text_sha256": "5996706085bc94457bffb47828cf07fad55161ac16d6d72b461804d644d9e45d",
+          "edits": [
+            {
+              "op": "delete",
+              "old": " ",
+              "current": ""
+            }
+          ]
+        }
+      ],
+      "witness_checks": [
+        {
+          "claim_id": "first_three_months_fifteen",
+          "session_id": "answer_a22b654d_1",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "later_added_twenty",
+          "session_id": "answer_a22b654d_2",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "current_total_thirty_five",
+          "session_id": "answer_a22b654d_1",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "current_total_thirty_five",
+          "session_id": "answer_a22b654d_2",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        }
+      ]
+    },
+    {
+      "question_id": "f685340e",
+      "batch_count": 40,
+      "matching_batch_count": 33,
+      "changed_batches": [
+        {
+          "call_index": 11,
+          "session_id": "ad175dc4_2",
+          "old_batch_id": "8b824b256427f6c7533f117508d69f6b01c4d4446a2a2e354284432769b204db",
+          "current_batch_id": "f3584f4285399b22773139955af830204201ce8981015e4108e223a1f0b3e2c7",
+          "old_message_sha256": "089734c24534ee208e55b0a90ca77e1316e2b3d8df433b57cfd3941d17980756",
+          "current_message_sha256": "7d8efe0601074ac6ed4a91243e8eb02797eef86a75a68ab95e876d1eb82dd59c",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 16,
+          "session_id": "ultrachat_430597",
+          "old_batch_id": "97ca9ae41c9f94db31f54fe09018fd22431cba57a2e07f433de973c57b3b102f",
+          "current_batch_id": "1c7d8cdb41d18c9354a0c7850a01943ad82dc28de28850bc1593303fd5e728e3",
+          "old_message_sha256": "6ec420f7c85c458dc9db926419765f47244e48cdac2a43b7ef57fc185caf0fd9",
+          "current_message_sha256": "194891294e13610bef51e2b8fdfe531b405b07e0003c6b85aecf050bf1d4670f",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 24,
+          "session_id": "e862f726_1",
+          "old_batch_id": "3586fa931b0607b5d50d721e3933387dd00ef9389f08fd5ab90b436d8577f8a2",
+          "current_batch_id": "2b091fcc092b4e37bef163f5623674a94d6ec1c7bf8a0aed15c78db63f6a9897",
+          "old_message_sha256": "83bb890785d38181057e79cb35a5bfa4aa1251a6749ade142c7aba6e58034fcf",
+          "current_message_sha256": "5db092d8abe58c09e0213ff543db9470538d9d063e55922b1a859bdc613f44ef",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 28,
+          "session_id": "c07ae000_2",
+          "old_batch_id": "39cd1d798379db014cfa57d6d0a70d974c7f917a35cc8f006b790c7dfda7b0a0",
+          "current_batch_id": "43bf21362adace153de7f5158ce638b390844c384056f5c1aecdc032493133aa",
+          "old_message_sha256": "b252f7379722001b67bd0acab166878f08328a20f85bf9ae8153cb5ea20c01e9",
+          "current_message_sha256": "b4a9e440449c4fe03aa8da491590d8bbd3aaf35d5948338ec09f2af0dba8f378",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 30,
+          "session_id": "60fdb334_1",
+          "old_batch_id": "e4b6037e8198feb435aeed94a1b8fbe4643c8849f1a139520438422fd27c2952",
+          "current_batch_id": "213c734edc4a6e7c84dc63ce75e18ed36823f4a96af016a03925938d273f8596",
+          "old_message_sha256": "f75436f5fdb54d55c3b00d48008902c91fccf3407e082866022964be54faddc4",
+          "current_message_sha256": "0503dc16114c963faadf4f6154e6e6fe60ab03e54e8366f61e5f7418b5dee11c",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 34,
+          "session_id": "sharegpt_ZNEat6k_144",
+          "old_batch_id": "84f666c57a69616ca8760eaa458a4f336193fb93cb17c88b55dea067ef24f397",
+          "current_batch_id": "0ffe31d90757fd6b3cd3c14c9facf4269c0396694c7a2f858e8e85cfd22969f0",
+          "old_message_sha256": "4ea4d6b7196487a029b3f2afc83847b8438a47abda31968ca85dc68021e52497",
+          "current_message_sha256": "bd778804c1f3bb95f1c058140e8cbeccfbacee5bc1ed124167ed4d9dbde76378",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        },
+        {
+          "call_index": 37,
+          "session_id": "answer_25df025b_2",
+          "old_batch_id": "731d1f5709ade0ecbe5ff5152d4669b4e763d5f6d6fc9ce0dfbec918b9b9f47f",
+          "current_batch_id": "367d384ba821fedebc3199fcb203f1f4323c78c16ec1903739539f9f418ff5d8",
+          "old_message_sha256": "e4440e490c34f4d3ce97b4f2bb4b5d40f2d07a4fb9265503306e779751273d1a",
+          "current_message_sha256": "e2d8adb239df83f490cb89e0906feffa713bd1a0c01f646976616f9e26e6e4b3",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        }
+      ],
+      "answer_source_call_indices": [
+        1,
+        37
+      ],
+      "answer_source_batches_changed": [
+        {
+          "call_index": 37,
+          "session_id": "answer_25df025b_2",
+          "old_batch_id": "731d1f5709ade0ecbe5ff5152d4669b4e763d5f6d6fc9ce0dfbec918b9b9f47f",
+          "current_batch_id": "367d384ba821fedebc3199fcb203f1f4323c78c16ec1903739539f9f418ff5d8",
+          "old_message_sha256": "e4440e490c34f4d3ce97b4f2bb4b5d40f2d07a4fb9265503306e779751273d1a",
+          "current_message_sha256": "e2d8adb239df83f490cb89e0906feffa713bd1a0c01f646976616f9e26e6e4b3",
+          "message_payload_changed": true,
+          "session_id_date_and_message_count_unchanged": true
+        }
+      ],
+      "answer_source_turn_changes": [
+        {
+          "session_id": "answer_25df025b_2",
+          "source_ref": "turn:7",
+          "old_role": "assistant",
+          "current_role": "assistant",
+          "old_text_sha256": "44dbdd02808731df791abaf884349c7eb4df49f269b78d2b868ec7c62f99c3a1",
+          "current_text_sha256": "6bafc4b548f2da1acfb7a3a4559ad15537db1f7827220288db5557adad42e6ca",
+          "edits": [
+            {
+              "op": "delete",
+              "old": " ",
+              "current": ""
+            }
+          ]
+        }
+      ],
+      "witness_checks": [
+        {
+          "claim_id": "earlier_weekly_tennis",
+          "session_id": "answer_25df025b_1",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "earlier_sunday_plan",
+          "session_id": "answer_25df025b_1",
+          "source_ref": "turn:6",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "earlier_every_sunday",
+          "session_id": "answer_25df025b_1",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "earlier_every_sunday",
+          "session_id": "answer_25df025b_1",
+          "source_ref": "turn:6",
+          "role_match": true,
+          "text_match": true
+        },
+        {
+          "claim_id": "current_alternate_sundays",
+          "session_id": "answer_25df025b_2",
+          "source_ref": "turn:0",
+          "role_match": true,
+          "text_match": true
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "旧完整 HF 文件未保存；旧答案来源场次的逐轮正文另有归档，可定位这些场次的变更轮次。其他变更批次不能还原旧正文或原因。",
+    "当前中文文件在本轮与上一轮间继续变化，本结果严格对应 current_source_sha256 所标识的读取快照。",
+    "只比较既有五题和其已审来源 turn，不估全 470 题或中文 Graph/Jev/RSI 净收益。",
+    "Recorder 返回空输出；没有真实提取、逐事实自动对齐、答题或库图写入。"
+  ]
+}
