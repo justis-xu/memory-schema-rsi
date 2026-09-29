@@ -1,0 +1,143 @@
+{
+  "scope": "Current local zhfull:locomo: 10-user Chroma snapshot only; configured Mem0Backend.get_all_memories versus direct SQLite ID/content/user/session/date enumeration; no source or graph writes.",
+  "db_path": "data/vector_store_zh/chroma/chroma.sqlite3",
+  "get_all_limit": 1000,
+  "logical_source_sha256_before": "282af8cc6fedc91788347d7e24a7c3263746113c22eb25b8d1c9d61b4dfd63f0",
+  "logical_source_sha256_after": "282af8cc6fedc91788347d7e24a7c3263746113c22eb25b8d1c9d61b4dfd63f0",
+  "source_unchanged_during_audit": true,
+  "users": [
+    {
+      "user_id": "zhfull:locomo:conv-26",
+      "sqlite_count": 138,
+      "get_all_count": 138,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    },
+    {
+      "user_id": "zhfull:locomo:conv-30",
+      "sqlite_count": 102,
+      "get_all_count": 102,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    },
+    {
+      "user_id": "zhfull:locomo:conv-41",
+      "sqlite_count": 209,
+      "get_all_count": 209,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    },
+    {
+      "user_id": "zhfull:locomo:conv-42",
+      "sqlite_count": 195,
+      "get_all_count": 195,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    },
+    {
+      "user_id": "zhfull:locomo:conv-43",
+      "sqlite_count": 211,
+      "get_all_count": 211,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    },
+    {
+      "user_id": "zhfull:locomo:conv-44",
+      "sqlite_count": 186,
+      "get_all_count": 186,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    },
+    {
+      "user_id": "zhfull:locomo:conv-47",
+      "sqlite_count": 197,
+      "get_all_count": 197,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    },
+    {
+      "user_id": "zhfull:locomo:conv-48",
+      "sqlite_count": 224,
+      "get_all_count": 224,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    },
+    {
+      "user_id": "zhfull:locomo:conv-49",
+      "sqlite_count": 161,
+      "get_all_count": 161,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    },
+    {
+      "user_id": "zhfull:locomo:conv-50",
+      "sqlite_count": 177,
+      "get_all_count": 177,
+      "below_get_all_limit": true,
+      "duplicate_returned_ids": 0,
+      "missing_ids": [],
+      "extra_ids": [],
+      "content_mismatch_ids": [],
+      "user_session_date_mismatch_ids": [],
+      "matches_current_sqlite": true
+    }
+  ],
+  "totals": {
+    "users": 10,
+    "sqlite_memories": 1800,
+    "get_all_memories": 1800,
+    "users_matching_sqlite": 10
+  },
+  "complete_for_current_local_snapshot": true,
+  "limits": [
+    "A before/after logical fingerprint does not lock out concurrent writes between the two reads.",
+    "The SQLite source is a current local snapshot, not a frozen historical ingest snapshot.",
+    "ID and text completeness do not establish structured extraction success or graph relationship provenance.",
+    "get_all excludes expired records by default; equality here applies to the currently visible records."
+  ]
+}
