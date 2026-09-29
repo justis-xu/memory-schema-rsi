@@ -1,0 +1,633 @@
+{
+  "scope": "四次固定中文提取输出的逐事实人工源审；不评价答题收益",
+  "run_sha256": "7bdd46a428d62a0fb5a3f69b9a8686edf92348f597805b8f75ab1b1471b99890",
+  "reviewed_calls": 4,
+  "reviewed_output_facts": 22,
+  "all_cited_refs_legal": true,
+  "strict_json_calls": 3,
+  "calls": [
+    {
+      "question_id": "031748ae",
+      "arm": "base",
+      "raw_response_sha256": "7a3628bf30d738bd9d08f22671dba420507b6066079a186253d6c499e3919808",
+      "strict_json": true,
+      "review_parse_recovery": null,
+      "fact_count": 6,
+      "facts": [
+        {
+          "output_index": 0,
+          "fact": {
+            "subject": "用户",
+            "relation": "职位",
+            "object": "高级软件工程师",
+            "time_scope": "answer_8748f791_2 turn:2（已有一段时间）",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_8748f791_2:turn:2"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_2:turn:2",
+              "role": "user",
+              "text": "这个清单太棒了！我打算选择团队徒步这个选项。你知道附近有没有适合6人团体的公园或自然保护区吗？顺便说一下，我担任高级软件工程师已经有一段时间了，尤其喜欢现在带领一个五人工程师团队——到目前为止是非常棒的体验，我很期待看到他们在我指导下如何成长。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "后场本人明确提到高级软件工程师职位。"
+        },
+        {
+          "output_index": 1,
+          "fact": {
+            "subject": "用户",
+            "relation": "带领团队",
+            "object": "五人工程师团队",
+            "time_scope": "answer_8748f791_2 turn:2（现在）",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_8748f791_2:turn:2"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_2:turn:2",
+              "role": "user",
+              "text": "这个清单太棒了！我打算选择团队徒步这个选项。你知道附近有没有适合6人团体的公园或自然保护区吗？顺便说一下，我担任高级软件工程师已经有一段时间了，尤其喜欢现在带领一个五人工程师团队——到目前为止是非常棒的体验，我很期待看到他们在我指导下如何成长。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "后场本人明确说现在带领五人工程师团队。"
+        },
+        {
+          "output_index": 2,
+          "fact": {
+            "subject": "用户",
+            "relation": "带领团队",
+            "object": "4名工程师",
+            "time_scope": "answer_8748f791_1 turn:10（新职位）",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_8748f791_1:turn:10"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_1:turn:10",
+              "role": "user",
+              "text": "抱歉造成了混淆！作为高级软件工程师，我在新职位上带领一个4人的工程师团队。所以我们会有4名工程师，加上我的经理雷切尔，一共5人参加团建。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "早场本人明确纠正为带领四名；输出事实正确，但 status 未记纠正关系。"
+        },
+        {
+          "output_index": 3,
+          "fact": {
+            "subject": "用户",
+            "relation": "经理",
+            "object": "雷切尔",
+            "time_scope": "answer_8748f791_1 turn:4",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_8748f791_1:turn:4",
+              "answer_8748f791_1:turn:10"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_1:turn:4",
+              "role": "user",
+              "text": "我觉得 City View Rooftop 听起来是个不错的选择。你觉得他们有针对企业团队的折扣或套餐吗？另外顺便说一下，我打算邀请我的经理雷切尔一起来，所以我们将是5名工程师加一位经理。"
+            },
+            {
+              "source_ref": "answer_8748f791_1:turn:10",
+              "role": "user",
+              "text": "抱歉造成了混淆！作为高级软件工程师，我在新职位上带领一个4人的工程师团队。所以我们会有4名工程师，加上我的经理雷切尔，一共5人参加团建。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "早场本人两次称雷切尔为经理。"
+        },
+        {
+          "output_index": 4,
+          "fact": {
+            "subject": "用户",
+            "relation": "计划参加团建",
+            "object": "City View Rooftop",
+            "time_scope": "answer_8748f791_1 turn:4",
+            "status": "计划",
+            "source_turn_ids": [
+              "answer_8748f791_1:turn:4",
+              "answer_8748f791_1:turn:8"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_1:turn:4",
+              "role": "user",
+              "text": "我觉得 City View Rooftop 听起来是个不错的选择。你觉得他们有针对企业团队的折扣或套餐吗？另外顺便说一下，我打算邀请我的经理雷切尔一起来，所以我们将是5名工程师加一位经理。"
+            },
+            {
+              "source_ref": "answer_8748f791_1:turn:8",
+              "role": "user",
+              "text": "我会联系萨曼莎，询问6人企业团建套餐的事宜。我也会考虑团建的形式和日程安排，可能计划一些结构化活动来促进团队合作。顺便问一下，作为高级软件工程师的新职位，我带了多少名工程师？"
+            }
+          ],
+          "manual_support": "partial",
+          "manual_reason": "用户说场地听起来不错、会联系对接人询问；‘计划参加团建’比已定计划更强。"
+        },
+        {
+          "output_index": 5,
+          "fact": {
+            "subject": "用户",
+            "relation": "计划团队出游活动",
+            "object": "团队徒步",
+            "time_scope": "answer_8748f791_2 turn:2",
+            "status": "计划",
+            "source_turn_ids": [
+              "answer_8748f791_2:turn:2"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_2:turn:2",
+              "role": "user",
+              "text": "这个清单太棒了！我打算选择团队徒步这个选项。你知道附近有没有适合6人团体的公园或自然保护区吗？顺便说一下，我担任高级软件工程师已经有一段时间了，尤其喜欢现在带领一个五人工程师团队——到目前为止是非常棒的体验，我很期待看到他们在我指导下如何成长。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "后场本人明确选团队徒步。"
+        }
+      ],
+      "core_checks": {
+        "early_corrected_four_retained": true,
+        "later_five_retained": true,
+        "early_correction_link_explicit": false,
+        "retracted_five_as_current": false,
+        "unsupported_or_overstated_extra": true,
+        "failure_reasons": [
+          "早场四人只写普通陈述，未记五人被纠正。",
+          "场地‘计划参加’强于源话意向。"
+        ]
+      }
+    },
+    {
+      "question_id": "031748ae",
+      "arm": "source_policy",
+      "raw_response_sha256": "12c52f88ef8eb52ed6cdbf2be65bc661de81ec0b06dfe034be5a9961a771c131",
+      "strict_json": true,
+      "review_parse_recovery": null,
+      "fact_count": 7,
+      "facts": [
+        {
+          "output_index": 0,
+          "fact": {
+            "subject": "用户",
+            "relation": "职位",
+            "object": "高级软件工程师（新职位）",
+            "time_scope": "answer_8748f791_1 场次",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_8748f791_1:turn:8",
+              "answer_8748f791_1:turn:10"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_1:turn:8",
+              "role": "user",
+              "text": "我会联系萨曼莎，询问6人企业团建套餐的事宜。我也会考虑团建的形式和日程安排，可能计划一些结构化活动来促进团队合作。顺便问一下，作为高级软件工程师的新职位，我带了多少名工程师？"
+            },
+            {
+              "source_ref": "answer_8748f791_1:turn:10",
+              "role": "user",
+              "text": "抱歉造成了混淆！作为高级软件工程师，我在新职位上带领一个4人的工程师团队。所以我们会有4名工程师，加上我的经理雷切尔，一共5人参加团建。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "早场本人明确称新职位为高级软件工程师。"
+        },
+        {
+          "output_index": 1,
+          "fact": {
+            "subject": "用户",
+            "relation": "带领的工程师团队人数",
+            "object": "4名",
+            "time_scope": "answer_8748f791_1 场次",
+            "status": "纠正后的陈述（纠正此前5名的说法）",
+            "source_turn_ids": [
+              "answer_8748f791_1:turn:4",
+              "answer_8748f791_1:turn:10"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_1:turn:4",
+              "role": "user",
+              "text": "我觉得 City View Rooftop 听起来是个不错的选择。你觉得他们有针对企业团队的折扣或套餐吗？另外顺便说一下，我打算邀请我的经理雷切尔一起来，所以我们将是5名工程师加一位经理。"
+            },
+            {
+              "source_ref": "answer_8748f791_1:turn:10",
+              "role": "user",
+              "text": "抱歉造成了混淆！作为高级软件工程师，我在新职位上带领一个4人的工程师团队。所以我们会有4名工程师，加上我的经理雷切尔，一共5人参加团建。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "早场先说五名工程师加经理，后本人明确纠正为四名工程师；来源链完整。"
+        },
+        {
+          "output_index": 2,
+          "fact": {
+            "subject": "用户",
+            "relation": "邀请",
+            "object": "经理雷切尔",
+            "time_scope": "answer_8748f791_1 场次",
+            "status": "计划",
+            "source_turn_ids": [
+              "answer_8748f791_1:turn:4"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_1:turn:4",
+              "role": "user",
+              "text": "我觉得 City View Rooftop 听起来是个不错的选择。你觉得他们有针对企业团队的折扣或套餐吗？另外顺便说一下，我打算邀请我的经理雷切尔一起来，所以我们将是5名工程师加一位经理。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "早场本人说打算邀请经理雷切尔。"
+        },
+        {
+          "output_index": 3,
+          "fact": {
+            "subject": "用户",
+            "relation": "倾向选择的团建场地",
+            "object": "City View Rooftop",
+            "time_scope": "answer_8748f791_1 场次",
+            "status": "意向/计划",
+            "source_turn_ids": [
+              "answer_8748f791_1:turn:4"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_1:turn:4",
+              "role": "user",
+              "text": "我觉得 City View Rooftop 听起来是个不错的选择。你觉得他们有针对企业团队的折扣或套餐吗？另外顺便说一下，我打算邀请我的经理雷切尔一起来，所以我们将是5名工程师加一位经理。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "用户称场地听起来不错，作意向表述可接受。"
+        },
+        {
+          "output_index": 4,
+          "fact": {
+            "subject": "用户",
+            "relation": "计划联系的对接人",
+            "object": "City View Rooftop 活动经理萨曼莎",
+            "time_scope": "answer_8748f791_1 场次",
+            "status": "计划",
+            "source_turn_ids": [
+              "answer_8748f791_1:turn:8"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_1:turn:8",
+              "role": "user",
+              "text": "我会联系萨曼莎，询问6人企业团建套餐的事宜。我也会考虑团建的形式和日程安排，可能计划一些结构化活动来促进团队合作。顺便问一下，作为高级软件工程师的新职位，我带了多少名工程师？"
+            }
+          ],
+          "manual_support": "partial",
+          "manual_reason": "用户只说会联系萨曼莎；‘City View Rooftop 活动经理’身份来自助手 turn:5，所引用户 turn:8 不能独立支持。"
+        },
+        {
+          "output_index": 5,
+          "fact": {
+            "subject": "用户",
+            "relation": "带领的工程师团队人数",
+            "object": "五名",
+            "time_scope": "answer_8748f791_2 场次（2023/10/24）",
+            "status": "陈述（跨场新值）",
+            "source_turn_ids": [
+              "answer_8748f791_2:turn:2"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_2:turn:2",
+              "role": "user",
+              "text": "这个清单太棒了！我打算选择团队徒步这个选项。你知道附近有没有适合6人团体的公园或自然保护区吗？顺便说一下，我担任高级软件工程师已经有一段时间了，尤其喜欢现在带领一个五人工程师团队——到目前为止是非常棒的体验，我很期待看到他们在我指导下如何成长。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "后场本人明确说现在带领五人工程师团队。"
+        },
+        {
+          "output_index": 6,
+          "fact": {
+            "subject": "用户",
+            "relation": "计划的团队出游活动",
+            "object": "团队徒步，需容纳6人",
+            "time_scope": "answer_8748f791_2 场次",
+            "status": "计划",
+            "source_turn_ids": [
+              "answer_8748f791_2:turn:0",
+              "answer_8748f791_2:turn:2"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_8748f791_2:turn:0",
+              "role": "user",
+              "text": "我正在策划一次团队出游，需要一些有趣的户外活动推荐，要能容纳6个人。"
+            },
+            {
+              "source_ref": "answer_8748f791_2:turn:2",
+              "role": "user",
+              "text": "这个清单太棒了！我打算选择团队徒步这个选项。你知道附近有没有适合6人团体的公园或自然保护区吗？顺便说一下，我担任高级软件工程师已经有一段时间了，尤其喜欢现在带领一个五人工程师团队——到目前为止是非常棒的体验，我很期待看到他们在我指导下如何成长。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "后场本人说需容纳六人并选团队徒步。"
+        }
+      ],
+      "core_checks": {
+        "early_corrected_four_retained": true,
+        "later_five_retained": true,
+        "early_correction_link_explicit": true,
+        "retracted_five_as_current": false,
+        "unsupported_or_overstated_extra": true,
+        "failure_reasons": [
+          "萨曼莎的活动经理身份来自助手，所引用户轮次仅说会联系她。"
+        ]
+      }
+    },
+    {
+      "question_id": "f685340e",
+      "arm": "source_policy",
+      "raw_response_sha256": "98b59d13dde6a6aa622984d0e27cab87d3dae8ebd738169fcc64b9b6ef337471",
+      "strict_json": true,
+      "review_parse_recovery": null,
+      "fact_count": 5,
+      "facts": [
+        {
+          "output_index": 0,
+          "fact": {
+            "subject": "用户",
+            "relation": "打网球伙伴",
+            "object": "朋友们",
+            "time_scope": "未限定",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_25df025b_1:turn:0"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_25df025b_1:turn:0",
+              "role": "user",
+              "text": "我想在网上买几双新的运动袜，但不知道该选哪个牌子。你能给我推荐一下吗？顺便说一下，上周日我在本地公园看到有人在打网球，让我想起了我和朋友们每周的网球活动。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "早场本人说与朋友们每周打网球。"
+        },
+        {
+          "output_index": 1,
+          "fact": {
+            "subject": "用户",
+            "relation": "上周日看到",
+            "object": "本地公园有人在打网球",
+            "time_scope": "2023/03/11场对话的上周日",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_25df025b_1:turn:0"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_25df025b_1:turn:0",
+              "role": "user",
+              "text": "我想在网上买几双新的运动袜，但不知道该选哪个牌子。你能给我推荐一下吗？顺便说一下，上周日我在本地公园看到有人在打网球，让我想起了我和朋友们每周的网球活动。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "早场本人说上周日在公园看到别人打网球。"
+        },
+        {
+          "output_index": 2,
+          "fact": {
+            "subject": "用户",
+            "relation": "计划打网球",
+            "object": "和朋友们在本地公园打网球",
+            "time_scope": "2023/03/12（当周周日）",
+            "status": "计划",
+            "source_turn_ids": [
+              "answer_25df025b_1:turn:6"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_25df025b_1:turn:6",
+              "role": "user",
+              "text": "对，我打算这周日和朋友们在本地公园打网球。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "早场本人计划本周日与朋友打球；场次日期可锚到 2023-03-12。"
+        },
+        {
+          "output_index": 3,
+          "fact": {
+            "subject": "用户",
+            "relation": "计划打网球",
+            "object": "和朋友们在附近的公园打网球",
+            "time_scope": "2023/07/30当周日",
+            "status": "计划",
+            "source_turn_ids": [
+              "answer_25df025b_2:turn:0"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_25df025b_2:turn:0",
+              "role": "user",
+              "text": "我想规划一下周末。你能推荐一些我家附近的慢跑路线吗？哦对了，这个周日我打算和朋友们在附近的公园打网球，我们每隔一周都会这样。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "后场本人计划当天周日与朋友在附近公园打球。"
+        },
+        {
+          "output_index": 4,
+          "fact": {
+            "subject": "用户",
+            "relation": "网球活动频率",
+            "object": "每隔一周一次",
+            "time_scope": "截至2023/07/30",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_25df025b_2:turn:0"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_25df025b_2:turn:0",
+              "role": "user",
+              "text": "我想规划一下周末。你能推荐一些我家附近的慢跑路线吗？哦对了，这个周日我打算和朋友们在附近的公园打网球，我们每隔一周都会这样。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "后场本人说每隔一周这样打球；输出却未保留惯常星期日限定。"
+        }
+      ],
+      "core_checks": {
+        "early_weekly_retained": false,
+        "early_every_sunday_asserted": false,
+        "later_alternate_weekly_retained": true,
+        "later_sunday_habit_retained": false,
+        "failure_reasons": [
+          "漏早场每周与朋友打球。",
+          "后场‘每隔一周的周日’只留下每隔一周。"
+        ]
+      }
+    },
+    {
+      "question_id": "f685340e",
+      "arm": "base",
+      "raw_response_sha256": "742e1bcc650b056478f1d6509acc013b96b17813cdf419d34dd5db822d0519ed",
+      "strict_json": false,
+      "review_parse_recovery": "markdown_json_fence",
+      "fact_count": 4,
+      "facts": [
+        {
+          "output_index": 0,
+          "fact": {
+            "subject": "人物",
+            "relation": "每周活动",
+            "object": "与朋友们打网球",
+            "time_scope": "answer_25df025b_1 周日活动",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_25df025b_1:turn:0"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_25df025b_1:turn:0",
+              "role": "user",
+              "text": "我想在网上买几双新的运动袜，但不知道该选哪个牌子。你能给我推荐一下吗？顺便说一下，上周日我在本地公园看到有人在打网球，让我想起了我和朋友们每周的网球活动。"
+            }
+          ],
+          "manual_support": "partial",
+          "manual_reason": "每周打球有源；time_scope 写‘周日活动’把一次周日观察/计划推成惯常星期。"
+        },
+        {
+          "output_index": 1,
+          "fact": {
+            "subject": "人物",
+            "relation": "计划",
+            "object": "与朋友们在本地公园打网球",
+            "time_scope": "answer_25df025b_1 这个周日",
+            "status": "计划",
+            "source_turn_ids": [
+              "answer_25df025b_1:turn:6"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_25df025b_1:turn:6",
+              "role": "user",
+              "text": "对，我打算这周日和朋友们在本地公园打网球。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "早场本人计划本周日与朋友打球。"
+        },
+        {
+          "output_index": 2,
+          "fact": {
+            "subject": "人物",
+            "relation": "计划",
+            "object": "与朋友们在附近公园打网球",
+            "time_scope": "answer_25df025b_2 这个周日",
+            "status": "计划",
+            "source_turn_ids": [
+              "answer_25df025b_2:turn:0"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_25df025b_2:turn:0",
+              "role": "user",
+              "text": "我想规划一下周末。你能推荐一些我家附近的慢跑路线吗？哦对了，这个周日我打算和朋友们在附近的公园打网球，我们每隔一周都会这样。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "后场本人计划当天周日与朋友打球。"
+        },
+        {
+          "output_index": 3,
+          "fact": {
+            "subject": "人物",
+            "relation": "活动频率",
+            "object": "每隔一周与朋友们打网球",
+            "time_scope": "answer_25df025b_2",
+            "status": "陈述",
+            "source_turn_ids": [
+              "answer_25df025b_2:turn:0"
+            ]
+          },
+          "source_refs_legal": true,
+          "cited_source_turns": [
+            {
+              "source_ref": "answer_25df025b_2:turn:0",
+              "role": "user",
+              "text": "我想规划一下周末。你能推荐一些我家附近的慢跑路线吗？哦对了，这个周日我打算和朋友们在附近的公园打网球，我们每隔一周都会这样。"
+            }
+          ],
+          "manual_support": "full",
+          "manual_reason": "后场本人说每隔一周这样打球；输出未保留惯常星期日限定。"
+        }
+      ],
+      "core_checks": {
+        "early_weekly_retained": true,
+        "early_every_sunday_asserted": true,
+        "later_alternate_weekly_retained": true,
+        "later_sunday_habit_retained": false,
+        "failure_reasons": [
+          "原始输出带 Markdown 代码围栏，非严格 JSON。",
+          "旧每周活动被写成周日活动，来源不支持固定周日。",
+          "后场惯常星期日限定丢失。"
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "人工支持标签是离线诊断 oracle，不是自动验收器。",
+    "代码围栏响应仅为离线审查剥除围栏，原始协议失败仍保留。",
+    "定向两题每臂一次，不能估模型稳定性、总体收益或答题正确率。"
+  ]
+}
