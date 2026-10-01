@@ -1,0 +1,1538 @@
+{
+ "scope": "图配对评测预冻结选题包：A=图换入缺失于当前 top-15（≤10），B=直证不得挤出（≤10）。",
+ "method": "当前检索探针（向量45→rerank 15）；A=57 正例换入 ID 缺失；B=4 证据病例+同上下文翻分证据链接。",
+ "dispute_excluded": {
+  "locomo_conv-48_qa36": "translation_semantic",
+  "locomo_conv-43_qa166": "flip_source_ambiguous",
+  "locomo_conv-47_qa61": "flip_source_ambiguous"
+ },
+ "a_candidate_count": 57,
+ "b_candidate_count": 4,
+ "selected_count": 14,
+ "models": {
+  "embedding": "qwen3.7-text-embedding-flash",
+  "rerank": "qwen3.7-text-rerank"
+ },
+ "frozen_questions": [
+  {
+   "case_id": "locomo_conv-49_qa85",
+   "group": "A",
+   "question": "埃文几年前开始做什么来减压？",
+   "gold": "水彩画",
+   "graph_swapin_missing_from_current": [
+    "c7e85494-6aa4-40e6-ab12-6914a1d4c41f",
+    "dbc78f1e-fe6b-4b63-b279-d6cba1c6e2db"
+   ],
+   "labeled_graph_new_necessary_fact": true,
+   "label_basis": "Base has years of painting and watercolor in separate memories; gained graph slot 13 joins watercolor with starting years ago, supported by D1:14-17.",
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "e95705c0-365d-448e-8130-06d855506bf2",
+     "content_sha": "1720f7654db4ad108aa422e5811140c66c6cb2468863edbf4fe46f84ce425eb1",
+     "content": "Evan膝盖受伤期间通过画水彩画消磨时间，认为这是放松心情、沉浸在色彩中的悠闲方式",
+     "session_id": "session_11"
+    },
+    {
+     "id": "1aa5f524-d096-4d76-891f-1ab041a61460",
+     "content_sha": "ac9d7c3389c25447ff932643f225c3edb9a8a948b4f9766a001ffb42090ddf2f",
+     "content": "Evan压力大时会用画画或开车兜风来减压和寻求慰藉，觉得这些方法很有帮助",
+     "session_id": "session_10"
+    },
+    {
+     "id": "e3762a39-169b-45be-9aa6-c8053f882d16",
+     "content_sha": "66a844009247ddf2a11eed89bab079ddeaa0d3fefba1f71ea7970c10d675ca7b",
+     "content": "User几年前开始画水彩画，是朋友带他入门并给了建议，他一下子就迷上了，视画画为很好的减压方式",
+     "session_id": "session_1"
+    },
+    {
+     "id": "3c3b3251-40cd-4642-a537-2f2b7fe87aff",
+     "content_sha": "f11bc5078f5ed82c868d089dd8e14456a8b4b83345355d7fa2b8d18a063f5e1c",
+     "content": "Evan一直在考虑尝试瑜伽，认为这是一种温和又有效的减压和提升柔韧性的方式，并在Sam的建议下决定去试试",
+     "session_id": "session_18"
+    },
+    {
+     "id": "fabd98b3-1cb0-454e-8517-d4f80c991bb1",
+     "content_sha": "ed744aa1d136010008dcd149a42a1aceddcc76e964229456b7ae88d6a8e0017e",
+     "content": "Evan在绘画课上学习水彩，老师强调观察自然、画你所见；他觉得绘画能帮他找到内心的平静、表达自我，是从日常压力中放松的方式",
+     "session_id": "session_8"
+    },
+    {
+     "id": "df7ba9e5-605c-450e-880e-5da7aa381af4",
+     "content_sha": "c39b0cacedaa3253c3e54ab9fdf35b610e49212aa8e45992d32d39921d773d5d",
+     "content": "Evan买了一棵盆栽（bonsai tree），因为它象征着力量和韧性，照顾它激励他在艰难时期坚持下去",
+     "session_id": "session_5"
+    },
+    {
+     "id": "fe181ca6-dbb4-4742-abd4-d46792520c79",
+     "content_sha": "8e3b9fb35c5eabc0ccde4cef552e70b01307829165fdffc587d31d9d7a9863cf",
+     "content": "Evan开始了新的饮食计划：每天只吃两块姜味饼干（ginger snaps），即使家庭聚会也坚持执行",
+     "session_id": "session_23"
+    },
+    {
+     "id": "26098c4e-286e-406f-997d-34a2a10081d4",
+     "content_sha": "69c3715eb6064f57b5f8a879fb2f740e9c51aa395122f21340d62598d5e94259",
+     "content": "Evan的沙拉灵感来自附近一家餐厅；他建议低强度运动可以选择游泳、瑜伽和散步，并分享了自己做瑜伽帮助缓解压力、保持柔韧性的经验",
+     "session_id": "session_24"
+    },
+    {
+     "id": "534efeb0-6263-4051-8b97-dbf9505af682",
+     "content_sha": "e3684fb585fe0e93ff7354c2ec0bdcd29f391d7d22ceacf3161c981d2aebff71",
+     "content": "Evan在2023年10月14日左右画完了一幅日落画，表示画画能帮他放松",
+     "session_id": "session_13"
+    },
+    {
+     "id": "f1f94b90-e62b-4990-8086-04f48a66803d",
+     "content_sha": "b56bf54eaa279782bf328a00dbdc0db35351412ba5a3df39c10d4682ab43327c",
+     "content": "Evan通常画心里想的东西或感受，可以是美好回忆或想去的地方，把绘画视为不用语言表达自己和情感的艺术方式",
+     "session_id": "session_11"
+    },
+    {
+     "id": "6c5d4240-74f4-4a00-b5ac-dc6764cfee21",
+     "content_sha": "d15a3d290ef7c245bf3b4f7b28896ab8906eb981c2ab1c2dc369b245c4a22395",
+     "content": "Evan最喜欢的活动之一是去海边散步看日落，既能锻炼身体又让人平静",
+     "session_id": "session_24"
+    },
+    {
+     "id": "f8a587d1-3976-4529-9ec0-056c37e18d39",
+     "content_sha": "753cc8aac563700fd433af194e510c4f4309d1dcc57c3e20378b962066f7c006",
+     "content": "Evan几天前（约2023年8月中旬）开始上绘画课，非常享受；他报班是为了找到志同道合的人、展示自己的能力，并认为技艺总可以提升",
+     "session_id": "session_8"
+    },
+    {
+     "id": "9136f7af-1321-4913-be3a-f01ce2281b27",
+     "content_sha": "0e2a638bbc0894934c739938d287bf526802bbefbb85d8c07b9f356175bbd842",
+     "content": "Sam决定尝试画画来减压并保持动力，会在之后告诉Evan结果；Evan建议画画之外还要锻炼，因为画画对减肥没有直接帮助",
+     "session_id": "session_2"
+    },
+    {
+     "id": "1438fa52-5fe9-4483-9cd0-f29f5f559fda",
+     "content_sha": "a9faef38c1fc2ed7fa6efe0470be5ea7ea8e6b44841a0aa30e28cacb24d860a4",
+     "content": "Evan去年春天（2023年）情绪有点低落时，看到公园里盛开的鲜艳粉色花朵照片让他露出了笑容；他喜欢在小事中寻找快乐和小确幸，尤其在艰难时期",
+     "session_id": "session_25"
+    },
+    {
+     "id": "97539298-a2c6-467a-a9eb-387a41896489",
+     "content_sha": "6f98f45f583494a54b02250bb306f9ca8e8a257c35e745b626d5ab346226a7f9",
+     "content": "Sam表示瑜伽对自己的柔韧性和压力水平有奇效，推荐Evan尝试，并表示愿意在瑜伽技巧等方面提供帮助",
+     "session_id": "session_18"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-50_qa124",
+   "group": "A",
+   "question": "戴夫觉得什么活动很有成就感，就像卡尔文对音乐节的热情一样？",
+   "gold": "修理东西",
+   "graph_swapin_missing_from_current": [
+    "1eff687f-7cf6-4d1e-b41c-5e37b1979c27",
+    "2aa11224-e886-4dae-af9d-7043a0fd1a66",
+    "317a9071-d642-42ed-9a36-cbb0bea1a419",
+    "68c181dc-6f2c-4ebe-815b-2db92390fcb4",
+    "6bd76270-3430-41d2-9494-a117ad7b307f",
+    "9a6f7938-25be-4568-a324-0142a256bd62",
+    "c8a0abdc-8cab-48a9-a413-2b14286121a9"
+   ],
+   "labeled_graph_new_necessary_fact": false,
+   "label_basis": null,
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "0c207b3d-8344-4df6-837e-e81e10288e2f",
+     "content_sha": "2b034cfbf3063403d26955c2d0a2e3d18a8ad480b95c25d3255b4b2b9f0eefcf",
+     "content": "戴夫的汽车维修店承接各种业务，从日常保养到经典车整体修复；他修车特别有成就感，喜欢看到车辆的蜕变，也乐于帮人们保持车辆良好状态，并邀请卡尔文有空去店里坐坐",
+     "session_id": "session_4"
+    },
+    {
+     "id": "19c4d0d9-02f6-40e2-ad7c-b1517199d968",
+     "content_sha": "46ad265bcd320070a8b72757cda8f5d0361a1392e3a51fcf774bf04bd8e37d7b",
+     "content": "戴夫表示在车库里干活一整天后手上沾满油污，但他喜欢把破旧的东西变成美好的东西，这些小小的成功让他感到自豪和满足",
+     "session_id": "session_21"
+    },
+    {
+     "id": "3e1f9c8c-3cbf-4cbc-bf93-3d12a549bda2",
+     "content_sha": "b45beb5d5d4074b1b8efaa7eac54ef004b1da814a7511a256b4b36b7b6a79270",
+     "content": "戴夫表示修车对他不仅是爱好更是一种热情，像一种疗法、逃离日常压力的方式；把坏掉的东西变成很棒的东西是他的职业，也是他从小到大的目标，修复的成就感让他热爱这份工作",
+     "session_id": "session_22"
+    },
+    {
+     "id": "a206e6f7-1020-4751-b0b5-c229e0db072d",
+     "content_sha": "a1c2fe61838180b239332a6ff3d1b1fd55eeb31a1859c016578104339c25842e",
+     "content": "戴夫（卡尔文的朋友）于2023年9月1日左右从圣弗朗西斯科回到，带回了关于汽车改装的心得和知识，并想与卡尔文分享；他表示修好别人的车让他有成就感、自豪和目标感",
+     "session_id": "session_17"
+    },
+    {
+     "id": "43e654c2-59df-40dd-8205-78ddff397c68",
+     "content_sha": "695c38c3f0c1ceb1739143c90273969fedcd14e21298aef2a516d78c76ba7453",
+     "content": "戴夫表示很高兴能给人们带来快乐，会继续修车和做音乐；卡尔文称赞他修车是一门艺术、很有才华，鼓励他继续做热爱的事",
+     "session_id": "session_19"
+    },
+    {
+     "id": "800e49ba-ac9e-44db-acd8-8d477987ab17",
+     "content_sha": "05c074da12975170261ec88074fb93bff0903b27d9050b6bda950708bcf28021",
+     "content": "卡尔文理解并称赞戴夫修车给他人带来的满足感，把戴夫比作帮车主解决问题的'超级英雄'，并鼓励戴夫为能给他人带来快乐而骄傲",
+     "session_id": "session_17"
+    },
+    {
+     "id": "e298c090-7d16-4e1c-9048-7793936546d0",
+     "content_sha": "8b9282e0b5a06a9a8a87ae61e26671b359079defc9974bc32d5c35ef6d6e933c",
+     "content": "戴夫是一名汽车工程师，10岁时爸爸带他去了人生中第一次车展，从此着迷；做汽车相关的事能让他放空大脑、平静下来",
+     "session_id": "session_27"
+    },
+    {
+     "id": "6b09a2c6-0f32-4ae7-9627-d8644d086243",
+     "content_sha": "bcb8c97eacb02e240ffb0b14b634b250e49a8b2c586377c78b8d7c217841484f",
+     "content": "戴夫最近和朋友们自驾游回来，在蜿蜒的乡村公路上欣赏风景、开车聊天，感觉彻底恢复了活力，这让他重新找回对汽车和事业的热爱，并认为长时间的工作都变得值得",
+     "session_id": "session_11"
+    },
+    {
+     "id": "92cd7d10-c9cc-4d1e-b08f-1b6fcde18e93",
+     "content_sha": "27c2b7162f4ef4f09b6ef986de24828255934d3c467ff85bffd1909dc600c61f",
+     "content": "戴夫是一名汽车工程师；他10岁时爸爸带他去了人生中第一次车展，从此着迷，一直把汽车工程当作爱好",
+     "session_id": "session_26"
+    },
+    {
+     "id": "83c27caf-0c27-432a-8577-8d5589871683",
+     "content_sha": "bcf042b0632c35b37e0048175fe9f15d549d370f3a893fc1c046dfc1f990a9a1",
+     "content": "戴夫于2023年3月19日左右的周末去波士顿参加了一个音乐节，现场有很多乐队演出，气氛热烈；他一直以来的梦想是现场看自己最喜欢的乐队演出，这次终于实现了。",
+     "session_id": "session_2"
+    },
+    {
+     "id": "886cd278-443b-4799-9b5f-3fd80d8d1b4b",
+     "content_sha": "1d46cd503eacbbbe32d7d0ff33c2c04cbb79395efe2229193422cc527f10c11e",
+     "content": "戴夫认为波士顿的音乐圈非常棒，有很多有才华的音乐家和演出场所，他表示会去为卡尔文的波士顿演出加油",
+     "session_id": "session_7"
+    },
+    {
+     "id": "9c4b7f6f-35ce-4911-89b7-f8547f24fd97",
+     "content_sha": "5c5368fddc0b2f29f2ba93f47473e418b4a37f7e39a19a33fb9db1b523b56b28",
+     "content": "戴夫（卡尔文的朋友）最近加入了一支摇滚乐队，一直在练习弹吉他，并分享了乐队成员一起演奏乐器的照片",
+     "session_id": "session_9"
+    },
+    {
+     "id": "3ec52a3f-02ed-4bf3-8783-933cb491012b",
+     "content_sha": "eff691afe0480efc65b770f4d9270f5bac20db8404727b42debf8e60ccf654f6",
+     "content": "戴夫上个月（2023年9月）在演唱会度过了美好时光，认为音乐有连接人们、创造回忆的力量，并拍摄了现场观众的照片",
+     "session_id": "session_25"
+    },
+    {
+     "id": "5e0e1d9d-4d42-453e-b7cb-a178e8bd6079",
+     "content_sha": "8f8e2f825f23107ae4963a1abd7f87c2bca1f77fdb503b74f56d9196e569aa57",
+     "content": "卡尔文和戴夫互相鼓励，认同努力、奉献和进步是实现目标的关键，约定永不放弃、继续为各自的目标（音乐与修车）奋斗",
+     "session_id": "session_21"
+    },
+    {
+     "id": "a61a4e5e-e6a3-4298-b92a-97d0ede8d688",
+     "content_sha": "552b71488c1eafc56e481e0bb4d9bcfc65920cec614b4bb4d4a8c12ad430e8d7",
+     "content": "戴夫（卡尔文的朋友）最近去底特律参加了一个会议，学到了很多，觉得特别棒",
+     "session_id": "session_26"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-48_qa83",
+   "group": "A",
+   "question": "乔琳参加了哪些职业活动来积累本领域的经验？",
+   "gold": "在虚拟会议上做报告、参加工作坊、在公司实习",
+   "graph_swapin_missing_from_current": [
+    "081b64f8-cfd5-46a5-ac9f-eea6094daf8a",
+    "39e2c5e3-f925-48a8-b572-7c3b48b4a16e",
+    "7ce9e4c1-c5a3-4a53-8fcc-f5ef8cfcc8f0",
+    "a24292a4-594b-4b4c-b980-4297cd1efabf",
+    "d6e621fb-b097-46c4-9a26-e2b54b2439eb",
+    "db0fb2fd-4721-4e3a-936e-b034db9aec5e"
+   ],
+   "labeled_graph_new_necessary_fact": false,
+   "label_basis": "Base slots 1/2/8 cover workshop-like seminars, internship, and virtual presentation; gained graph memories are other projects/plans.",
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "9f858349-324d-4fa9-9982-74b52b21edea",
+     "content_sha": "94ba5c410a79f65d6c9ee8f2c00e61d21e707f0b6116f55205132a622fe37b3c",
+     "content": "乔琳（黛布的朋友）的目标是在自己的领域取得成功并产生积极影响，为此一直在学习、参加研讨会和拓展人脉",
+     "session_id": "session_21"
+    },
+    {
+     "id": "211ec1ec-a73a-4d8e-9f53-7fa197678b2a",
+     "content_sha": "db44bdab9cf2584b1709d0323de955070939312f4a7de9479817b5365973b839",
+     "content": "乔琳于2023年6月在一家知名工程公司开始实习，与建筑工人团队共事；她认为这是检验技能和积累实际经验的绝佳机会，最喜欢能把所学应用到实际项目中、看到想法变成现实",
+     "session_id": "session_13"
+    },
+    {
+     "id": "321bd0d4-3708-4441-955c-6c72dffca42d",
+     "content_sha": "86258917cde40c38f30ff26725c06c8cd82ccc1ab49d7d5d902f9554a1c9e67a",
+     "content": "乔琳正专注于学习并积累更多经验，还在考虑多做一些实习来提升技能",
+     "session_id": "session_22"
+    },
+    {
+     "id": "99699b6f-3b2b-4cc5-8479-8476fc9fb5de",
+     "content_sha": "da0865b068e6b47f10a5a3fbb5e821fb954240bc04e6908ccd94806ee13a6219",
+     "content": "乔琳是一名电气工程相关从业者，在2023年1月中旬（对话前一周）完成了一个电气工程项目，花费了很多功夫",
+     "session_id": "session_1"
+    },
+    {
+     "id": "c9c2c71f-140b-492f-9264-66bc1317e828",
+     "content_sha": "a323673427b6359caaa207388497546ab81215a99c36a5c5be1abb5ba421ef2f",
+     "content": "乔琳在2023年9月15日（上周五）上了一节潜水课，玩得很开心，找到了一个可以一起探索的潜水点，希望有一天能成为认证潜水员",
+     "session_id": "session_29"
+    },
+    {
+     "id": "e06b560a-a1b5-4f21-b7bb-e33a860ca75c",
+     "content_sha": "1bff78a838203c07d5b5f6205ef23da0cb56d30bd4f96d3c88f280445c358c54",
+     "content": "实习对乔琳的生活产生了积极影响：激发了她对工程学的热爱，与热爱工作的人相处激励她保持专注、继续为梦想努力",
+     "session_id": "session_13"
+    },
+    {
+     "id": "f3b2b7a0-d8c8-4c35-acc1-bc48716952fa",
+     "content_sha": "66f3eb36552ce8fad894e4dc8a619a9a2d2a0af14a77c2e3e919b8a1ee96e356",
+     "content": "乔琳的职业目标是通过创造可持续的解决方案继续从事工程工作，为有需要的社区带来积极影响，用她的工作为让世界变得更美好贡献一份力量。",
+     "session_id": "session_4"
+    },
+    {
+     "id": "6320aa07-c8f3-4dd9-92c2-baa9298da133",
+     "content_sha": "e0355f26c6cfc282723e5125860920e930dd660c8bfa828c6ded80ca045d3b50",
+     "content": "乔琳在静修期间的工程项目上做出了成果，想出了一些很棒的解决方案，对此非常兴奋",
+     "session_id": "session_5"
+    },
+    {
+     "id": "afc00eb3-0037-4a3d-ac38-18394996ae46",
+     "content_sha": "1c84c7ce365dc55931d89b2381a2d22dec3fea78a51fd92caeff6c651418c936",
+     "content": "乔琳想参与专注于社会事业的组织，对可持续倡议和为环境问题开发创新解决方案感兴趣",
+     "session_id": "session_22"
+    },
+    {
+     "id": "c96d99a2-0c2d-44dd-8cb6-295e8834b628",
+     "content_sha": "5ebb687c1825f94d2425ee68f8b4e77a0ac0a258adabf0d06f746fec0ef144e8",
+     "content": "乔琳最近有机会在一个线上会议上做演讲并得到积极反馈，她感到激动，认为这证实了她正走在正确的道路上",
+     "session_id": "session_22"
+    },
+    {
+     "id": "003eb6f9-3b40-4bc5-91df-0872e1195cc4",
+     "content_sha": "b6ae46359dc8207f46c695b708c5403c26bd1880acb083626e92eeb3e1313a18",
+     "content": "乔琳养蛇，觉得和蛇在一起的宝贵时光教会她放慢脚步、与自己保持协调",
+     "session_id": "session_12"
+    },
+    {
+     "id": "16446030-ca26-48da-a71d-2f97c480838d",
+     "content_sha": "651eb29496d0e37afba5107677b41192c3eda6d66fe5581a33c0777a0e949827",
+     "content": "乔琳最近（2023年8月）有机会在一个线上会议上做演讲并得到积极反馈，她非常激动，认为这证实了她走在正确的道路上",
+     "session_id": "session_21"
+    },
+    {
+     "id": "668910d9-49ee-489c-b583-cfe00ec529e0",
+     "content_sha": "df196b93d4e66181e7ab0564850fc10202defe724c651d2a185be75911dda69c",
+     "content": "乔琳是工程专业学生，未来目标是做能给社区带来真正改变的项目，对可持续倡议和环境问题的创新解决方案感兴趣，还想参与专注社会事业的组织",
+     "session_id": "session_23"
+    },
+    {
+     "id": "77b21058-36e7-48d3-8268-84d7aa3c6612",
+     "content_sha": "8e9367bc40fcbb7fb79d7fd1362890d2b78cf62899b2d1c5f65250c15fb1ab3b",
+     "content": "乔琳在2023年8月考虑再做几段实习来进一步提升自己的技能",
+     "session_id": "session_21"
+    },
+    {
+     "id": "a9b79b72-487a-44bd-a4bd-dae5e130723f",
+     "content_sha": "30ebfc8e348b22987833055f517c29b558d4319d6c2c07257d3f0ceb6a091a21",
+     "content": "乔琳和伴侣在里约热内卢参观了一座古老寺庙，走了令人惊艳的楼梯，还参加了很多远足活动",
+     "session_id": "session_23"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-26_qa8",
+   "group": "A",
+   "question": "卡罗琳是什么时候在一所学校演讲的？",
+   "gold": "2023年6月9日之前的那一周",
+   "graph_swapin_missing_from_current": [
+    "4726ac6f-474b-4795-b1b5-e73d6016b428",
+    "4dd89362-9f60-4aca-b927-b7556baf99e6",
+    "784e5545-ce5d-4a7f-a937-ff6a172906b1",
+    "a8199f58-f750-44c9-8f2d-e1599cbd8fd3",
+    "cfd8268a-c56a-4c4b-8cbc-627e4ad86bac"
+   ],
+   "labeled_graph_new_necessary_fact": false,
+   "label_basis": null,
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "180f6a43-668c-4ca7-8932-d23db4774c35",
+     "content_sha": "33f155b01e28c09127b64fde539161ea113fb50f3a3df607da83481471b95aa4",
+     "content": "卡罗琳于2023年6月初（对话前一周）在学校活动中分享了自己的跨性别历程，鼓励学生参与LGBTQ社群并成为更好的盟友，演讲让她感到充满力量，并反思了自三年前（约2020年）开始性别转变以来走过的路程",
+     "session_id": "session_3"
+    },
+    {
+     "id": "b9f04d44-a0c7-4467-92bd-9bcdf0783b94",
+     "content_sha": "69ccc0c92d0e7379fa350674b4b73dd10523f470a2b29036d6b7ffc8a39dec58",
+     "content": "卡罗琳于2023年10月6日（对话当周周五）参加了一场跨性别诗歌朗诵会，跨性别者通过诗歌分享故事；那是一个安全自我表达的空间，现场充满能量与支持氛围，海报满含骄傲和力量",
+     "session_id": "session_17"
+    },
+    {
+     "id": "1170bc8e-b34b-4733-b62d-ad686f1c9d89",
+     "content_sha": "f7e1d79ac5ed55488444fc68bf39259a348b1d0e04052ef4cfb7ade944b47aa8",
+     "content": "卡罗琳于2023年7月8-9日的周末参加了一个面向LGBTQ青少年的导师项目，认为帮助社群非常有意义，遇到了很多坚韧、令人鼓舞的年轻人",
+     "session_id": "session_9"
+    },
+    {
+     "id": "5a4c691f-e4aa-496f-93b6-b0955bec183c",
+     "content_sha": "737f5548820ca97f8013ddf2d7b79ba4b41a3752c9c68afc9e4d10173f851634",
+     "content": "卡罗琳所在的青年中心计划于2023年9月为孩子们组织一场才艺表演，卡罗琳非常期待看到大家玩得开心并为自己的才艺感到自豪",
+     "session_id": "session_15"
+    },
+    {
+     "id": "731ab848-95f3-496a-b884-28184b4b84a5",
+     "content_sha": "fb08c747d159fa1a9f163c53525e85146b233a139f815d71a7614838f6ea4b27",
+     "content": "卡罗琳于2023年8月11日（周五）参加了一场骄傲游行，感受到充满活力和爱的氛围，感到自豪，并深受激励要继续为平等和LGBTQ权利发声",
+     "session_id": "session_11"
+    },
+    {
+     "id": "416338bd-1cfe-4a5b-959e-88fa592e9683",
+     "content_sha": "699367a2ffa5c93e0cbd61430dfcbaab77fa16b9eace82374d8a86df9c5f9c07",
+     "content": "卡罗琳于2023年7月10日（对话前两天）参加了一场LGBTQ大会，结识了经历过类似旅程的人，感到友好且完全被接纳，更加认识到为跨性别权利奋斗和传播意识的重要性",
+     "session_id": "session_7"
+    },
+    {
+     "id": "9159cc06-86ac-4a03-be8d-aae6230d85fa",
+     "content_sha": "f75ff0b7199884369586c5063ce4f64d3a9a10273737a3d86779577688993910",
+     "content": "卡罗琳和她指导的跨性别青少年于2023年6月一起参加了一场LGBTQ骄傲活动，度过了美好时光；最令卡罗琳感动的是看到孩子看到大家支持时脸上焕发光彩的时刻",
+     "session_id": "session_9"
+    },
+    {
+     "id": "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+     "content_sha": "f86f6b0168a9c9677074c8235450dd06a2d5142085001596bf5c333e1a64ea26",
+     "content": "卡罗琳在2023年6月底至7月初（几周前）参加了一场骄傲游行，身边都是接纳和赞美她的人，她感到无比自豪、被接受和快乐，称这是她最珍贵的回忆之一",
+     "session_id": "session_8"
+    },
+    {
+     "id": "fb97cf3e-f459-489f-86e3-569f12f0ac41",
+     "content_sha": "77286efa95ec8d4a37c85dc306bbc67784241a12079f6bd5df77e9a4cebbc171",
+     "content": "卡罗琳自2023年7月初以来一直在深入研究心理咨询或心理健康方面的工作，她热心于帮助他人、产生积极的影响，认为这条路虽不容易但非常有意义",
+     "session_id": "session_6"
+    },
+    {
+     "id": "c7c58a4a-d827-47c0-8bbf-7e30f9dec1c9",
+     "content_sha": "24e892aead121481309193a4467d2131440ec2f0754a0ad922b121ac7f251d56",
+     "content": "卡罗琳计划于2023年8月举办一场LGBTQ艺术展，展出自己的画作",
+     "session_id": "session_9"
+    },
+    {
+     "id": "f69a31d2-1f1e-4529-bdd1-918f5eb3e806",
+     "content_sha": "c9a5424c693708679a4abe3c4c419ca9fc2be4767c06e7f299a06f15959bb45c",
+     "content": "卡罗琳在2023年8月下旬家附近散步时看到一条为骄傲月铺设的彩虹人行道，觉得它色彩鲜艳、充满欢迎氛围，提醒她爱与接纳无处不在",
+     "session_id": "session_14"
+    },
+    {
+     "id": "02056f25-5c34-4e71-bc61-281199c30645",
+     "content_sha": "99a2be15cf5b0ea9b4139740fef45111e3d2cee48a6f0175953a85d7d2e6fb46",
+     "content": "卡罗琳计划参加2023年7月的跨性别者大会，期待见到社群其他成员并了解更多倡导工作",
+     "session_id": "session_5"
+    },
+    {
+     "id": "249bfbbf-0e40-40ba-833f-f6aaa0d439c7",
+     "content_sha": "09f046f22b5171d7585cdc085f268adcdb8918e27b1a9eccbfa74adb6fffede4",
+     "content": "卡罗琳大约五年前（约2018年）开始弹木吉他，弹吉他帮助她抒发情绪、表达自己并沉浸于情感中，她觉得演奏和唱歌很治愈和振奋",
+     "session_id": "session_15"
+    },
+    {
+     "id": "a7b5ce7b-651a-41a5-bb9d-9bc088830e8d",
+     "content_sha": "3b3076f35ed8c55b226f92a04a1d96d3c416a831b075d636f72464155cb5d814",
+     "content": "卡罗琳于2023年8月下旬（8月23日当周）向领养机构提交了领养申请，朝成为妈妈迈出第一步。她感到兴奋又紧张，领养咨询/援助小组给了她很多帮助",
+     "session_id": "session_13"
+    },
+    {
+     "id": "e7753964-a35f-44e0-b637-fdaf295446d7",
+     "content_sha": "763cde1f38c1b3fcdc08ab9d1267c0cc1331fd904e051e15d7b38abdc12438a4",
+     "content": "卡罗琳于2023年10月联系了她的导师咨询收养建议，表示自己已准备好当妈妈，收养孩子并为需要的孩子提供安全有爱的家一直是她的梦想",
+     "session_id": "session_17"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-26_qa81",
+   "group": "A",
+   "question": "卡罗琳近期想搬回她的祖国吗？",
+   "gold": "不想；她正在办理领养孩子的手续。",
+   "graph_swapin_missing_from_current": [
+    "02056f25-5c34-4e71-bc61-281199c30645",
+    "416338bd-1cfe-4a5b-959e-88fa592e9683",
+    "4dd89362-9f60-4aca-b927-b7556baf99e6",
+    "951d15ad-1184-4e91-8403-b5abb93867bd"
+   ],
+   "labeled_graph_new_necessary_fact": false,
+   "label_basis": null,
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "19eafa36-b494-45c9-ac45-4f288aa0fa30",
+     "content_sha": "2e965da7ed9670551906eed90b49502e935c5930915df18f98b5f5bf16935dca",
+     "content": "卡罗琳珍藏着一条项链（十字架与心形吊坠），是她小时候在瑞典祖国的家乡时奶奶送给她的礼物，代表着爱、信念和力量，提醒她不忘自己的根以及家人的爱和支持",
+     "session_id": "session_4"
+    },
+    {
+     "id": "b51dc166-50eb-4fc2-8a56-f1e585e8bcf1",
+     "content_sha": "40ad93ce498bff0965eff42bec4d434de0c810257100507351e8198f886b7ccd",
+     "content": "卡罗琳的朋友们认识4年了，自从她离开祖国搬来现居地；他们的爱与帮助对她非常重要，尤其在那次痛苦的分手之后，她对自己的支持体系（朋友、家人和导师）心怀感恩",
+     "session_id": "session_3"
+    },
+    {
+     "id": "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+     "content_sha": "a78d59db8a59a7a4d9f3d0e66117c7d9079a3c406bd79730512732cc1d7c37c8",
+     "content": "卡罗琳正在研究收养机构，希望拥有一个家庭、给需要的孩子一个充满爱的家，这是她一直以来的梦想",
+     "session_id": "session_2"
+    },
+    {
+     "id": "a26453c9-029b-4469-ad78-92a2547543cd",
+     "content_sha": "cae570ed8becbbb696349064d76b997aa561c2682bcc832d27ecef69d56e037b",
+     "content": "卡罗琳计划继续学业并探索职业选择，希望从事心理咨询或心理健康方面的工作，帮助有类似困扰的人",
+     "session_id": "session_1"
+    },
+    {
+     "id": "e1d4aaff-9f75-4038-ad6a-adea6c83e671",
+     "content_sha": "02419f98cb5f4caa26464674b3741e146726f088282f2ca3efc0fd840cf85929",
+     "content": "在2023年10月20日的对话中，卡罗琳表示正在咨询导师、准备通过收养成为母亲，这是她一直以来的梦想，为需要的孩子提供一个安全有爱的家；她建议梅拉妮（若考虑收养）先找收养机构或律师，准备好推荐信、财务信息和体检文件，并做好等待煎熬的心理准备",
+     "session_id": "session_18"
+    },
+    {
+     "id": "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+     "content_sha": "f86f6b0168a9c9677074c8235450dd06a2d5142085001596bf5c333e1a64ea26",
+     "content": "卡罗琳在2023年6月底至7月初（几周前）参加了一场骄傲游行，身边都是接纳和赞美她的人，她感到无比自豪、被接受和快乐，称这是她最珍贵的回忆之一",
+     "session_id": "session_8"
+    },
+    {
+     "id": "292941f2-e2aa-447c-b041-d73fae0738d4",
+     "content_sha": "5bd2f93ef11ab871921589ebdf8dcb40b0c45a614e2d30b6c31875cbdb3548e1",
+     "content": "卡罗琳仍在研究心理咨询和心理健康方面的职业选择，她认为让人们有可以倾诉的对象很重要；她曾经历过心理健康方面的挣扎，得到的支持帮助了她，因此想像当初被帮助那样帮助其他人",
+     "session_id": "session_7"
+    },
+    {
+     "id": "e7753964-a35f-44e0-b637-fdaf295446d7",
+     "content_sha": "763cde1f38c1b3fcdc08ab9d1267c0cc1331fd904e051e15d7b38abdc12438a4",
+     "content": "卡罗琳于2023年10月联系了她的导师咨询收养建议，表示自己已准备好当妈妈，收养孩子并为需要的孩子提供安全有爱的家一直是她的梦想",
+     "session_id": "session_17"
+    },
+    {
+     "id": "cddb7913-c433-46cd-a87e-c7d029eef28b",
+     "content_sha": "f7dff3b711b7196681beefcd51f83a1e8618e74fe35d5267392670adce0d072f",
+     "content": "卡罗琳即将成为单亲父母，她承认这会很艰难，但已准备好迎接挑战，为需要家庭的孩子组建一个充满爱的家，并对朋友和导师的支持心怀感激",
+     "session_id": "session_2"
+    },
+    {
+     "id": "a7b5ce7b-651a-41a5-bb9d-9bc088830e8d",
+     "content_sha": "3b3076f35ed8c55b226f92a04a1d96d3c416a831b075d636f72464155cb5d814",
+     "content": "卡罗琳于2023年8月下旬（8月23日当周）向领养机构提交了领养申请，朝成为妈妈迈出第一步。她感到兴奋又紧张，领养咨询/援助小组给了她很多帮助",
+     "session_id": "session_13"
+    },
+    {
+     "id": "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+     "content_sha": "7d2d725072767ae0a3b483d2198196987ebf253962fc2739c6b2b3b50f192092",
+     "content": "卡罗琳和梅拉妮于2023年8月商定计划在当年夏天来一次特别出游，可能是家庭出游或就她们两人一起亲近自然、叙旧",
+     "session_id": "session_12"
+    },
+    {
+     "id": "b88125e4-6065-4384-9be3-a397a47dabbd",
+     "content_sha": "5e668fe7cac3c2c806dad11385c1162194c17d93b41d8127b1bf5362907e6e58",
+     "content": "卡罗琳想做一件象征团结、庆祝彼此差异的新艺术作品，类似她为教堂制作的彩绘玻璃窗",
+     "session_id": "session_14"
+    },
+    {
+     "id": "7a763b85-c73f-4ae8-a234-b7d74a0a4b34",
+     "content_sha": "64ee0835b7770a759af08b0dabc7057f620bc92e85f4dc64779e6a7bd606003b",
+     "content": "卡罗琳正在为将来有了孩子建一个小图书馆，期待给孩子读书、开阔他们的眼界，收藏包括经典童书、来自不同文化的故事和教育类书籍",
+     "session_id": "session_6"
+    },
+    {
+     "id": "171a6fa1-0d36-43ea-8ef4-ed19e73df18a",
+     "content_sha": "887f697bfc43548d393daadace96b7ff0c5d2d4a49804223a0e5e5bead84e85a",
+     "content": "卡罗琳重视真实地活着并帮助他人忠于自我，身边有倡导LGBTQ权益的支持者给了她自由的感觉",
+     "session_id": "session_13"
+    },
+    {
+     "id": "38263e2e-e979-4b47-8490-e16df3aab064",
+     "content_sha": "87a6ceb7dc7284af2063b3109db67edb7d45f91a01c08dda9bc7d06eef584306",
+     "content": "卡罗琳希望通过领养为从未有过家的孩子提供一个安全有爱的家，认为领养是一种回馈和表达爱与接纳的方式",
+     "session_id": "session_19"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-42_qa126",
+   "group": "A",
+   "question": "内特为游戏聚会上的每个人准备了什么特别的物品？",
+   "gold": "定制的游戏手柄装饰",
+   "graph_swapin_missing_from_current": [
+    "103dc4a0-4711-4508-b231-9e28f34c3a39",
+    "7942fb25-bf57-4769-8d78-53d2f61048b8",
+    "b5170d4e-047e-4dac-814b-12293e2302aa",
+    "d8b5aaea-ae01-4f1f-9ffc-810e9b0fef37"
+   ],
+   "labeled_graph_new_necessary_fact": false,
+   "label_basis": null,
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "767ee73b-9800-4af5-b413-e8e797bf1013",
+     "content_sha": "de7364b12639da924c3129ffac12f069cbce51952c83a780c4b23ed7fcba5b31",
+     "content": "内特计划在2022年6月中旬（两周后的周末）组织一场游戏派对，会邀请锦标赛上新认识的朋友以及老朋友和队友，并准备给大家定制的手柄装饰以感谢他们的到来",
+     "session_id": "session_14"
+    },
+    {
+     "id": "aea72f6d-af90-45a6-9349-a96fc1bba4f8",
+     "content_sha": "4f46f7ea5302ae6ab043a387d2a79ad3097724911b2bc06df5816ecc8db488c7",
+     "content": "内特送的定制手柄装饰大部分朋友都喜欢，虽然不能确定他们是否都会继续使用",
+     "session_id": "session_16"
+    },
+    {
+     "id": "27525398-5556-41d2-a9ce-3c90e988cad1",
+     "content_sha": "b3052041b34533581f0d1c1fe866d36878b2793414cdba1ef48d5c657bf3df8c",
+     "content": "内特送给乔安娜一个毛绒小狗玩具，用来提醒她那些美好平静的感觉；乔安娜表示会全心全意珍惜这个小家伙",
+     "session_id": "session_13"
+    },
+    {
+     "id": "e424346c-8a28-48e7-8c79-ae4d4e86eaaa",
+     "content_sha": "01e5d2e13609228cbfa4464c670d6ad649eb8e1b50b5eb7edc03174f094d0d73",
+     "content": "内特分享了一张紫色和蓝色、带有星空图案设计的游戏手柄照片",
+     "session_id": "session_14"
+    },
+    {
+     "id": "9a942d15-6ef8-4d8c-9248-a6ff84b2ac34",
+     "content_sha": "a363d844be875dec0a9f504e7db8bd338c1ac9599c6156503317a5829d75d1d9",
+     "content": "内特在2022年2月25日前后为朋友做了巧克力与香草双色旋涡的椰奶冰淇淋，朋友们特别喜欢",
+     "session_id": "session_4"
+    },
+    {
+     "id": "38da4348-9596-4654-b067-409e1d28d022",
+     "content_sha": "8fd7ca653a958b655f726fd03ca9b4b69023d345d761e067b548cb67d2df0456",
+     "content": "内特最喜欢的超级英雄是钢铁侠，喜欢他的科技感和讽刺的幽默；他买了一个钢铁侠手办摆在房间里，提醒自己要继续为目标努力",
+     "session_id": "session_15"
+    },
+    {
+     "id": "6b5b1996-471c-47dd-8e18-85ca98b1b818",
+     "content_sha": "d658abf1d7165ae1ab95b09ecc620c7d24fb8e59e3507199fc7dffe90bc41301",
+     "content": "内特又买了一只乌龟作为新朋友，现在养了三只乌龟；他说乌龟给他带来快乐和宁静，且缸够大可以养三只",
+     "session_id": "session_28"
+    },
+    {
+     "id": "0f3b1a4a-6ab5-496a-8649-2e4050cd48c4",
+     "content_sha": "0f817767164f9dfc8ae74008c6075877c05dfd2b593e86d51e994ef1f93f470b",
+     "content": "内特考虑也做一个像乔安娜那样的软木板灵感板，认为这是件非常有价值的事",
+     "session_id": "session_15"
+    },
+    {
+     "id": "00cbc789-f0a8-4ccc-81a0-fcc62385d2c5",
+     "content_sha": "ac5023f120a6074d7efe1d505c57782431db0296678b2a60a2cd233979360936",
+     "content": "内特的游戏锦标赛于2022年11月初被推迟，他期间尝试了烹饪，自制了椰奶冰淇淋（加了糖屑导致颜色有些变化）",
+     "session_id": "session_28"
+    },
+    {
+     "id": "acedf2b2-3308-4457-80c1-1cb42f5e262e",
+     "content_sha": "878c3ca1ebdf936a17a21829d1c225ec9b2c11622ea939bacf8a50a515abcfb8",
+     "content": "内特为他的宠物龟们换了一个更大的新鱼缸（2022年8月），空间大多了，它们看起来开心极了；内特说陪伴宠物让他打完一天游戏回家时感觉更平静",
+     "session_id": "session_19"
+    },
+    {
+     "id": "92b7b4c1-51aa-403b-83e9-b8889e746907",
+     "content_sha": "71ace96f9f47130d7c8ce3f509ed6cdb5eb631ad77cf39ac5b6a178b0e32717c",
+     "content": "内特上次和乔安娜见面时注意到她包上别着一个蜘蛛侠胸针",
+     "session_id": "session_15"
+    },
+    {
+     "id": "5c6bf6e2-a660-4186-a5a0-1f8209dd3232",
+     "content_sha": "a07b3b30b94c2de12fa1fc304b3b0fa747309e2975dfe98021fa3495e01c57e1",
+     "content": "内特在游戏展会上交了一些同样热爱游戏的朋友，他们已经约好一起玩游戏；他还遇到了玩他喜欢的那款桌游的人并加入了他们，大家很合得来",
+     "session_id": "session_23"
+    },
+    {
+     "id": "cda9adff-8113-4344-9063-c9f19bff9978",
+     "content_sha": "cc0dad0c20b1d0c64b9ee8b7249a59aae1b55efa6348b3f0d79509d8c514b491",
+     "content": "内特把《小妇人》加到了自己的观影片单里，并答应看完后第一时间告诉乔安娜感受；乔安娜乐于随时为内特推荐电影",
+     "session_id": "session_3"
+    },
+    {
+     "id": "802c9ff0-ef1e-4a93-a47e-07a6004482ca",
+     "content_sha": "450d354070ecb426853e8f78713a7db93b0a48e2485c2f1be5f57f00f8f1f41e",
+     "content": "乔安娜很喜欢内特做的椰奶冰淇淋，收到了内特分享的新食谱，计划用它给家人做美味的食物，并答应告诉内特制作进展",
+     "session_id": "session_18"
+    },
+    {
+     "id": "736c5c35-ef45-4d30-a6fe-4f8b83bfd2cb",
+     "content_sha": "89410c9b849d3058574bb4674a07196928ebf2d3a26911538f729fcaf9f4c1e6",
+     "content": "内特在游戏展会上玩了桌游《卡坦岛》并超喜欢它——这是一个建立定居点并交易资源的策略游戏，既可以竞技也可以休闲；他表示玩游戏是他逃避生活烦恼的方式，不会拼得你死我活",
+     "session_id": "session_23"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-43_qa134",
+   "group": "A",
+   "question": "正如2023年11月11日所提到的，蒂姆最喜欢的奇幻电视剧之一是什么？",
+   "gold": "\"那部\"",
+   "graph_swapin_missing_from_current": [
+    "3d9696ac-a639-4862-980b-dc534b960d18",
+    "e1addb3c-0fc9-4f48-bbb4-435134132183",
+    "e5298e7a-052a-41d5-9c67-1da47589696c",
+    "eb23bfe9-cd70-4fed-a36e-dffd624aa7f1"
+   ],
+   "labeled_graph_new_necessary_fact": false,
+   "label_basis": null,
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+     "content_sha": "c419d3e5873348e30113563b513dd2a1bfef35023c798e85814bf51e90c21f5f",
+     "content": "蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验",
+     "session_id": "session_17"
+    },
+    {
+     "id": "92cbbc81-e98c-4835-baef-193be35bf90b",
+     "content_sha": "75cdae4f6bde483bfafb0ca8f5bc54a44c8f3612ccadec0f1d6575500a3e56cb",
+     "content": "蒂姆最喜欢《哈利·波特》和《权力的游戏》，喜欢它们带他前往别处的感觉",
+     "session_id": "session_19"
+    },
+    {
+     "id": "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+     "content_sha": "8e14fbe8481b4c7b5a8100b00d4550ef5dd43abe9375ee7144b1e9a24a2e9b4b",
+     "content": "蒂姆（Tim）写奇幻文章时特别喜欢《哈利·波特》和《权力的游戏》，对这两部作品完全着迷，可以永远聊下去",
+     "session_id": "session_4"
+    },
+    {
+     "id": "0d01722b-8551-4dd4-a380-08270eb4fa9a",
+     "content_sha": "d2e3f6535f7546a35317e455cb8865e60f008b07d780cc0051f235a72d515ba9",
+     "content": "蒂姆（Tim）非常期待2024年1月即将推出的新奇幻电视剧《时光之轮》，该剧改编自他非常喜爱的一套书，他等不及要追这部剧",
+     "session_id": "session_26"
+    },
+    {
+     "id": "9d717fa9-9e17-4171-b3ee-c31236749a40",
+     "content_sha": "62431d6aad972adf0dfcd75f5f96ad6940734b1b1ab85a4d3f3efe52b1882106",
+     "content": "蒂姆（Tim）闲暇时仍喜欢读书，《哈利·波特》系列是他的最爱之一，认为那是可以让人暂时逃离现实的魔法世界；他也看过所有《哈利·波特》的电影，喜欢将电影与原著比较",
+     "session_id": "session_26"
+    },
+    {
+     "id": "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+     "content_sha": "969965f92b96c91f462ab6852843c702d740223405ae967eae0fee82176bc8ee",
+     "content": "蒂姆（Tim）和朋友们喜欢一起办电影马拉松，他是史诗冒险和魔法世界类型电影的超级粉丝，《指环王》是他的最爱之一",
+     "session_id": "session_26"
+    },
+    {
+     "id": "f8697c06-d00f-4818-bb75-a17465dbfc87",
+     "content_sha": "6d5ebb3b242625540ffea3f9faeb756380b4bb9d3541dabc92473e3d97346987",
+     "content": "蒂姆刚整理了自己的书架，上面摆满了他最喜欢的奇幻小说，包括《哈利·波特》《权力的游戏》《指环王》和《霍比特人》，他说这是一段奇妙的旅程",
+     "session_id": "session_20"
+    },
+    {
+     "id": "31e7385d-3b47-4572-a963-8c13b8bbcf7c",
+     "content_sha": "0a63afe363341fbf79da9459b5dd7ca7819f8c61485a478bd095bd2c5d5b9add",
+     "content": "蒂姆（Tim）照例一直在读书，截至2023年11月11日分享了他一本翻旧的《冰与火之歌：剑刃风暴》（A Storm of Swords）的照片",
+     "session_id": "session_17"
+    },
+    {
+     "id": "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+     "content_sha": "62d3d25a59519dda507b0b2b2e51dc8e9dcda57b394b0a758e5273d42638d423",
+     "content": "蒂姆最喜欢《星球大战》系列，百看不厌",
+     "session_id": "session_27"
+    },
+    {
+     "id": "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+     "content_sha": "2bf66b23cab11358e9e32ba594ff06966906c8045988cfab475bb5144b005293",
+     "content": "蒂姆（Tim）于2023年10月初（约10月6日那一周）去英国参加了一场哈利·波特大会，遇到很多同样热爱哈利·波特的人，感觉像神奇的大家庭，深受鼓舞、焕发新活力，认为对奇幻事物的热情拉近了他与世界各地的人的距离",
+     "session_id": "session_13"
+    },
+    {
+     "id": "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+     "content_sha": "f1eae6e58f41fa504306e4799f2e0adeec8ed90964625240a6186a517748ae79",
+     "content": "蒂姆（Tim）正在读一套关于友谊和忠诚主题的奇幻系列小说，觉得很鼓舞人心，但尚未读《权力的游戏》系列以外的乔治·R·R·马丁其他作品",
+     "session_id": "session_22"
+    },
+    {
+     "id": "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+     "content_sha": "66a4c02bf4631b9161e7237f077cbeb2164961652ff63d2f6cbeba3569dd5c5b",
+     "content": "蒂姆（Tim）于2023年7月上旬在加利福尼亚州与一位《哈利·波特》粉丝聊得很开心，感到周围都是志同道合的人充满爱意，体验非常神奇",
+     "session_id": "session_3"
+    },
+    {
+     "id": "b784b7cf-0c8d-4a31-a4ea-4e79a176299d",
+     "content_sha": "6a83b0f1843963637f336bf8a0f82f82e77b09c06512176581c21367c136c330",
+     "content": "蒂姆（Tim）于2023年12月初读完了《魔龙的狂舞》（A Dance with Dragons），认为故事精彩并强烈推荐",
+     "session_id": "session_22"
+    },
+    {
+     "id": "df795392-83c3-4203-892c-c51c003b7b9e",
+     "content_sha": "f88c60b8f2c8113ffa6362dbb6f49f946cf96c8038a2080b2bfe2e94c5cb8fb0",
+     "content": "蒂姆（Tim）从未参加过运动队，更喜欢阅读和奇幻小说，喜欢沉浸在各种不同的魔法世界里",
+     "session_id": "session_10"
+    },
+    {
+     "id": "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+     "content_sha": "6fae469ad73b53cd132cfe6e33f3812ceb1a2f2bf2ae6180175495147b23ef41",
+     "content": "蒂姆（Tim）正在做一个哈利·波特粉丝项目，并与一位哈利·波特粉丝朋友合作，于2023年5月中旬开始讨论构思创意",
+     "session_id": "session_1"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-44_qa41",
+   "group": "A",
+   "question": "奥黛丽的狗狗是什么品种？",
+   "gold": "Pepper和Panda是混种拉布拉多犬。Precious和Pixie是混种吉娃娃。",
+   "graph_swapin_missing_from_current": [
+    "49569387-e5c4-4db4-9fc5-646b885da652",
+    "50fc5445-084f-4945-8b9a-3ec8d8869404",
+    "7e620293-8a3e-4077-8c94-42424bd641fa",
+    "986645e9-4556-4cee-a2c0-f036e3a48638"
+   ],
+   "labeled_graph_new_necessary_fact": false,
+   "label_basis": null,
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "58e2d35c-d906-4bd6-8be0-19d0c920088c",
+     "content_sha": "39c6870b5e4dba60dcd0c8d3de68bb668d08d1ecf1fb4e748d9c9752b275c62b",
+     "content": "奥黛丽的四只狗狗都是串串狗：两只是杰克罗素梗串，两只是吉娃娃串。她相信有些狗品种确实比其他品种更容易与人亲近",
+     "session_id": "session_19"
+    },
+    {
+     "id": "6c344bc1-b41a-4d27-a0d6-8718d8e4c32a",
+     "content_sha": "23c50b2cfa681f1bd683025d3aeb4dae280ab821c63bf279310de8d6f4d930b1",
+     "content": "奥黛丽的狗狗品种：Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血，都是混种狗",
+     "session_id": "session_26"
+    },
+    {
+     "id": "8c29f9b1-cdb9-4f36-ac10-0a5126df562f",
+     "content_sha": "09b5befbc8c27f49ca586acad4861117f2d5d0a240db240e756f140cba7b7a4d",
+     "content": "奥黛丽的四只狗狗都是3岁的串串：两只是杰克罗素梗串，两只是吉娃娃串。它们最喜欢跑步和玩接球游戏",
+     "session_id": "session_10"
+    },
+    {
+     "id": "74b3079e-3033-467d-bcc8-40347c358299",
+     "content_sha": "7d25b6f274cec0d885f53a005292a0993ff39e551782c8bf40da5f70b5d962d2",
+     "content": "奥黛丽的狗狗们是城市狗；她经常带它们探索新的公园和小径，一起冒险",
+     "session_id": "session_1"
+    },
+    {
+     "id": "81b900d9-59ce-4a86-8a2e-247af6446eca",
+     "content_sha": "d93683b8fc3b327dc3511f84306009a2fff488168a9b2d2b49ffdc318cc2e8b3",
+     "content": "奥黛丽给城市狗狗主人的建议：要确保有足够的时间和精力照顾狗狗，它们需要大量关注和遛弯，像德国牧羊犬这样的狗尤其需要消耗很多精力",
+     "session_id": "session_14"
+    },
+    {
+     "id": "0a91150b-2e44-44b7-8776-af970675299c",
+     "content_sha": "1f4083f9075d25b8b0440c336fa913d67d6f22bff2b45c64a1be05a6bdb1776a",
+     "content": "2023年4月初，奥黛丽 (Audrey) 领养了一只名叫Pixie的小狗，她是一只白色的小狗，非常可爱，让全家忙个不停",
+     "session_id": "session_2"
+    },
+    {
+     "id": "39c4c495-fc94-40e9-8fbb-a4e1248f5f0d",
+     "content_sha": "780009759bf6c43aa4bccac490b6fbff4ad73f401daa9e9e1ecbbfb53dbc3641",
+     "content": "奥黛丽 (Audrey) 养了三只狗——佩珀 (Pepper)、普雷舍斯 (Precious) 和潘达 (Panda)——已经养了三年，她说没有它们活不下去",
+     "session_id": "session_1"
+    },
+    {
+     "id": "5e40b8ce-8063-4bcf-903e-c029d5d02c96",
+     "content_sha": "4ec37c61d08cab56f49b6889edbf15b839d9e425ccb71f86d24ace021134ec05",
+     "content": "奥黛丽 (Audrey) 有四只狗狗，照顾它们、确保它们开心健康占去了她大部分空闲时间",
+     "session_id": "session_6"
+    },
+    {
+     "id": "9a453ea8-a00e-415a-808c-cb4b25894e82",
+     "content_sha": "e65c62d6bc0fd7071ccb65ce5541f3f33bac3e644420136a34c2a0d5e232cad7",
+     "content": "奥黛丽的狗狗们对捡球游戏和飞盘特别疯狂，喜欢跑来跑去和结识其他狗狗，可以连续跑好几个小时",
+     "session_id": "session_23"
+    },
+    {
+     "id": "7ba4ab05-61f7-4673-9436-42211ec5aa8e",
+     "content_sha": "d7d8c7ba7e461b0cc42e762c8bfc5a520c654c8dfeba514bac46c2fe3c60be27",
+     "content": "奥黛丽的四只狗狗各有独特个性：老大最悠闲像个睿智的老者，老二总是随时准备玩游戏，老三有时调皮但喜欢依偎撒娇，最小的充满活力、乐于冒险",
+     "session_id": "session_13"
+    },
+    {
+     "id": "76c52e74-45b1-4c7d-a03a-2db7b237d721",
+     "content_sha": "64abbce821558fb89d11c43da94d41ed6ca7e61ddc1b750075defcf139490a73",
+     "content": "奥黛丽说她狗狗们是她的全世界，给她的狗狗们满满的爱和幸福；有它们在身边，大自然让她感到平静、治愈",
+     "session_id": "session_10"
+    },
+    {
+     "id": "9cc73ff8-b933-4078-97ed-325342aa5917",
+     "content_sha": "b33be5e74d98d4bc421ae7cdc37c7a3860552b0d40e5f07a10e008961ef241bb",
+     "content": "奥黛丽的手臂上有一个狗狗和向日葵图案的纹身，代表她对她家狗狗们的爱和大自然之美；她是因为与狗狗们感情深厚、它们让她特别开心而决定纹的，想在狗狗不在身边时也能看到它们开心的样子",
+     "session_id": "session_3"
+    },
+    {
+     "id": "e8057023-5a1f-43aa-85eb-2d272e56d2e7",
+     "content_sha": "80a6af8b10ed3d9063b3b6f9fa41e0a76df63bf9536d73cdc0f6ffcd2d740e8d",
+     "content": "奥黛丽的狗狗们总是依偎在她最喜欢的毯子上一起睡觉，尤其在午睡时间，它们是最好的朋友，总是互相陪伴，看到它们在一起让她特别开心",
+     "session_id": "session_15"
+    },
+    {
+     "id": "440eadbb-d76c-4184-8951-556b7fecb11e",
+     "content_sha": "a36634de19591432a58294774cf9a3f774eb78826ae0ae2e9a2fb76fa05d2878",
+     "content": "奥黛丽的狗狗们喜欢在她的花园里跑来跑去、探索玩耍，她觉得非常可爱；它们只和自家的毛孩子们一起玩",
+     "session_id": "session_19"
+    },
+    {
+     "id": "cc8a2b80-a487-4d12-a2e4-f363d93c4766",
+     "content_sha": "2503b37606eafefb0282ed8c13f0d7695cb0ed9bcb9f473c968e6b720ad1adab",
+     "content": "奥黛丽分享了一张狗狗戴生日帽的照片，其中一只小狗戴着绿帽子；安德鲁称赞它看起来很精神",
+     "session_id": "session_19"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-47_qa6",
+   "group": "A",
+   "question": "詹姆斯住在康涅狄格州吗？",
+   "gold": "很可能是",
+   "graph_swapin_missing_from_current": [
+    "04fcff32-3726-4471-af72-73021fe72312",
+    "a1e812c7-b1d3-484a-8a14-3f1e74615039",
+    "cae012ff-4504-4323-95f9-a4db2aaae5e5",
+    "e72ed138-1557-43ba-bd84-1ac80a239b31"
+   ],
+   "labeled_graph_new_necessary_fact": false,
+   "label_basis": null,
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "91d44c55-43e3-4883-9079-352f88f02523",
+     "content_sha": "b6aacff08175229d5a4b0e8ec12d1c2951f35e135da6b8fd239d495e7b7dba6a",
+     "content": "詹姆斯在2022年4月5日左右从康涅狄格州斯坦福德的一家收容所领养了一只小狗，取名内德，有它陪伴家里日子开心多了（附有狗和猫坐在狗窝上的照片）",
+     "session_id": "session_6"
+    },
+    {
+     "id": "1b98b851-0734-4ce1-bc3b-ded5599225b9",
+     "content_sha": "61b6ff03eb2d4bce0c66e362bc3a8ec3dd6ca34ca53ce44673a6abd80250b535",
+     "content": "詹姆斯和萨曼莎于2022年10月底决定搬到一起住，这是两人深思熟虑后共同做出的决定",
+     "session_id": "session_29"
+    },
+    {
+     "id": "f3829420-cd96-446d-8b0a-936005b34bc9",
+     "content_sha": "7466519143edd95086ed6040e1d031594f3c3591d4eeecb1beb68f827834660c",
+     "content": "詹姆斯和萨曼莎租了一间离McGee's酒吧不远的公寓，他们非常喜欢那家酒吧，选公寓的标准之一就是附近有这家酒吧",
+     "session_id": "session_29"
+    },
+    {
+     "id": "6792b0f2-5c48-4d41-8408-822df3b19454",
+     "content_sha": "5f46ada4815f4ad60ee1446ddd735125cc179a0049f06209b90e98b22b20aeca",
+     "content": "詹姆斯在2022年11月4日（对话日期前一天）和家人以及他的狗狗们开始了一次公路旅行，享受与毛孩子们一起探索新地方、亲近大自然",
+     "session_id": "session_30"
+    },
+    {
+     "id": "99c7125b-b0d4-403f-9632-06dcd8e7cd04",
+     "content_sha": "1261df4560d439c239cdfc5c7e72df524bfee8ce291a8c4283175cb2d4cd0a12",
+     "content": "詹姆斯在2022年8月9日带他的三只狗去海边游玩，和其他养狗的人一起玩乐、增进感情",
+     "session_id": "session_19"
+    },
+    {
+     "id": "bb4cc32c-ba77-4f5d-8fce-b4642e8f58bb",
+     "content_sha": "3343296f1b08d4a37b090f3a38652c57d6c055d08f7a2334a48ca38a37d23a52",
+     "content": "詹姆斯和家人于2022年11月正在进行公路旅行，拜访了朋友乔什和马克，玩得很开心；他们在途中还做了一件好事",
+     "session_id": "session_1"
+    },
+    {
+     "id": "d48e598d-4976-494a-8dc9-194237d75c3d",
+     "content_sha": "d74cfba0da48517b0f49dff97bd8758360e750d39efe29744aafc5442e176ad6",
+     "content": "詹姆斯说宠物、电脑游戏、旅行和披萨是他生活中所有能带来幸福的东西",
+     "session_id": "session_9"
+    },
+    {
+     "id": "718698e8-eb44-454a-918b-03076bd787a5",
+     "content_sha": "4b22877e6e3f0207841f2b4a1960fb3fe193b6f4bfcd65a9290192023cedb2e6",
+     "content": "詹姆斯和约翰在2022年4月约定明年（2023年）一起旅行，詹姆斯开始寻找可以同去的国家",
+     "session_id": "session_6"
+    },
+    {
+     "id": "35b80d51-432a-430a-b763-19281c7cdcc4",
+     "content_sha": "efe411f8653e830d84ae2d504f472d71b9831db22ec3121b32dd10778e8a88bd",
+     "content": "詹姆斯买了去多伦多的机票，2022年7月11日晚出发，还计划去温哥华，打算2022年7月20日回来，并答应给约翰带纪念品；这将是詹姆斯到访的第四个国家",
+     "session_id": "session_16"
+    },
+    {
+     "id": "59009b00-ef26-4701-bebd-b25b9dbd99ef",
+     "content_sha": "844f884a2f5ea418e678b9207651bb33a7022d4a08ef6a5c3f26fe568ceaf2fc",
+     "content": "詹姆斯喜欢亲近大自然，享受脚下树叶沙沙作响的声音和宁静的氛围，认为在大自然中能帮他理清思绪、放松心情",
+     "session_id": "session_7"
+    },
+    {
+     "id": "3bb18475-d387-4b04-b2c6-a4958af3a396",
+     "content_sha": "4e5d51b2cec0e9f301007856805748160369a7451558f7a5ed80d965924e9799",
+     "content": "詹姆斯去过意大利、土耳其和墨西哥三个国家；他喜欢旅行，称赞意大利风景美丽、美食很棒（约2021年去的意大利）",
+     "session_id": "session_6"
+    },
+    {
+     "id": "3189d305-aa17-47e5-9327-4e5c07dce7d9",
+     "content_sha": "85df8578791e2bdd92f1a5fb631af338a1d72d9b7be8dedb2b9c8055279d9066",
+     "content": "詹姆斯在安静的公园独处时通常会带一本书放松，觉得这像逃离现实，能帮助他理清思绪、找到内心的平静",
+     "session_id": "session_14"
+    },
+    {
+     "id": "26dcf6b9-cb32-4cdb-8d48-af13777f81bc",
+     "content_sha": "9514e5ac850b3cca36618f705fabd76385c96943c9d3a17917092152703b54d4",
+     "content": "詹姆斯说宠物是他快乐的源泉，会一直照顾好它们",
+     "session_id": "session_18"
+    },
+    {
+     "id": "2ed0c8fe-824f-4070-8a34-2749748cb76b",
+     "content_sha": "a8593facb5f1991e9ec1c771bda99092a2faecb89382ab9fac37f545a429e536",
+     "content": "詹姆斯在2022年4月3日参加了一个线上游戏锦标赛，感到紧张刺激又好玩，并分享了现场照片",
+     "session_id": "session_4"
+    },
+    {
+     "id": "345dfdb2-dc62-41fe-b056-c2d09ffe284f",
+     "content_sha": "1eba0dd949941ca3013932033175df52b2104d59be1f2ac14f98bc7696cd2aa1",
+     "content": "詹姆斯在2022年3月下旬买了一套最新的游戏主机，画面效果惊艳，常在下班后玩新游戏放松，并与热爱游戏的朋友联机",
+     "session_id": "session_3"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-49_qa72",
+   "group": "A",
+   "question": "萨姆在2023年12月时隔很久重新开始了什么活动？",
+   "gold": "徒步",
+   "graph_swapin_missing_from_current": [
+    "37dfe81b-5235-4b18-960e-6118572ceecc",
+    "7c9cfdb1-aa06-40b7-b014-bd0ff73ed901",
+    "8520306b-5df8-46be-8afb-805b3c284a39",
+    "b8fc79ba-90b9-4cd6-8d7b-f3ba8b34e5ae"
+   ],
+   "labeled_graph_new_necessary_fact": false,
+   "label_basis": null,
+   "old_outcome": "graph_only",
+   "dispute": null,
+   "current_top15_frozen": [
+    {
+     "id": "6d63ef35-55db-413c-acb4-28a89d368544",
+     "content_sha": "8cfa529acdebae9f6e9d7ece3174a754f1e5d4c6adb9050572d9f2a0d6cc9711",
+     "content": "Sam在2023年12月22日（周五）带朋友们去了一次徒步旅行，越来越享受健康的生活方式，并分享了山顶徒步的照片",
+     "session_id": "session_22"
+    },
+    {
+     "id": "21026870-28ab-4acf-929a-64772252d3de",
+     "content_sha": "456d4bc3c56f610fa26258e0f43aa429cece0f9f0a4c39c4cd595d28260218c1",
+     "content": "Sam在2023年12月4日参加了一次慧俪轻体（Weight Watchers）聚会，觉得很有启发，学到了一些技巧，还分享了一张受欢迎的彩色思慕雪碗（水果和酸奶）的照片",
+     "session_id": "session_18"
+    },
+    {
+     "id": "048980df-3677-42bc-b74b-03f3fa36af73",
+     "content_sha": "998a9ae807192d210686b3e824c762721c06d678542b95e7fbf537d2c143e10e",
+     "content": "萨姆最近开始喜欢晨跑，认为这是理清思绪的好办法",
+     "session_id": "session_21"
+    },
+    {
+     "id": "28e97e62-874e-4d9e-bb2c-bfc8f108f318",
+     "content_sha": "9c6b12e9e9e5967c793522b353d0ff6e815fdc86e127d30e5f06cea15ef9c372",
+     "content": "萨姆几天前（2023年12月下旬）去看了一场展览，并分享了一幅启发他的画作照片（一位女士手持花束遮在脸前）",
+     "session_id": "session_21"
+    },
+    {
+     "id": "043e0a3b-b534-4c8d-953e-68b315cfd634",
+     "content_sha": "8ea2a8838fd9565a87e2a6dd38dd6aeae681f3b10d47b7a931148f1f4ae7a258",
+     "content": "Evan和Sam约定回头再聚，Sam会尝试新爱好（画画）并随时告诉E进展",
+     "session_id": "session_1"
+    },
+    {
+     "id": "90f7a80d-e342-4884-96ff-a849ca428fe6",
+     "content_sha": "e254c6f4b25bdce4f8a3a8458b52d19e76ecac9f73379caef225def9a7547bad",
+     "content": "Sam决定从2023年7月28日起去健身房定期锻炼，认为越早开始就能越早看到回报",
+     "session_id": "session_4"
+    },
+    {
+     "id": "01e91b06-8de5-4e0c-8eea-df3e8c511417",
+     "content_sha": "fd8b685c324adbce011c399f8c8dbd0d7a84048bf5c34132a3c2d48eb2bd76b7",
+     "content": "Sam开始吃得健康，并分享了健康饮食（如水果碗）的照片",
+     "session_id": "session_11"
+    },
+    {
+     "id": "8b43e964-9b71-4eab-bfe6-e5c08108dcc6",
+     "content_sha": "32ad530c268a5efe849ba8392be4011b3741e9cc97fb0b63192a3c2a9fb7be57",
+     "content": "萨姆（Sam）在2023年11月成为其小组的慧俪轻体（Weight Watchers）教练，为此感到自豪，认为这是追求更健康道路上的重要一步，希望当教练能帮助自己保持动力并帮助他人坚持",
+     "session_id": "session_16"
+    },
+    {
+     "id": "659c65a7-5322-44ad-84e1-d594b5fb235f",
+     "content_sha": "c9eddf5fd7db0e6682283b31dd63ebf841ca5ea34899d020b5c6f29fac1cf180",
+     "content": "Sam（对话中的朋友）喜欢徒步但已经很久没去，十岁那年曾和爸爸一起徒步，走了很远的路，是一段美好而特别的回忆",
+     "session_id": "session_1"
+    },
+    {
+     "id": "20630668-ce59-45a2-8d2e-8b1a82c7df72",
+     "content_sha": "9cba9fa58776933ccf350901a3b17325cb9acb2b6d92f5d535110b58ad3b9549",
+     "content": "Sam在2023年8月19日左右宣布开始节食、过上更健康的生活，虽然很难但一直在坚持，并分享了健康沙拉（菠菜、牛油果、草莓）的照片",
+     "session_id": "session_8"
+    },
+    {
+     "id": "0e5b1968-fd76-48dd-946a-4d4f4fd70b51",
+     "content_sha": "dcce22bad73cb3f0a1a49c16e7e2b56090098c835015d916f592a41ac6312280",
+     "content": "Sam在2023年8月21日（上周一）开始了新的饮食和锻炼计划，效果明显，感觉非常好",
+     "session_id": "session_9"
+    },
+    {
+     "id": "08f5bf5d-ab54-4904-a9f0-29178d2f3bd5",
+     "content_sha": "8336205f3ee98ae102e325687bc29bddc53f9b05223274357778bcd993f6358e",
+     "content": "Sam在上周末（约2023年10月14-15日）因剧烈胃痛去了急诊室，诊断出胃炎，觉得挺吓人；Sam把这当作警钟，决定开始重视健康，比如吃得更营养、规律锻炼",
+     "session_id": "session_14"
+    },
+    {
+     "id": "2642146c-16c3-478c-b1c3-604750eac869",
+     "content_sha": "b08f758ee573ce31132865ae1b41facdc03bf2c93102c10051fb63e54b7a6fc5",
+     "content": "Evan和Sam在2023年12月17日前有一段时间没联系，双方都经历了艰难时期",
+     "session_id": "session_20"
+    },
+    {
+     "id": "ae81b4d9-782a-4ca0-b5ab-01309679b867",
+     "content_sha": "9b9923613d4edc2d5bd607ea13ebbb348d5098e90b6dc8168950d246cfed3b6c",
+     "content": "Sam在2023年7月21日（上周五）被朋友们嘲笑体重，感到很受伤，因此决心做出改变、改善健康并多运动",
+     "session_id": "session_4"
+    },
+    {
+     "id": "96fc0bd2-c714-447a-bd1b-ddd97deda8ec",
+     "content_sha": "fa5456e38629fbee0488b9e1b28ec381aa1dea1d3fd577ea9742f35f5bdc6fa2",
+     "content": "Sam在2023年8月21日开始了一个新的饮食和锻炼计划，效果明显，感觉好极了，并分享了节食前后的身材对比照片（包括牛肉蔬菜餐和Healthy Choice健康食品），希望以此激励他人做出更健康的选择",
+     "session_id": "session_10"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-43_qa152",
+   "group": "B",
+   "question": "约翰在哪类比赛中创下了职业生涯助攻新高？",
+   "gold": "篮球",
+   "must_not_evict": [
+    "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+    "9fb43dc3-df46-4bf2-adef-99767e5ab070"
+   ],
+   "evidence_sessions": [
+    "session_23"
+   ],
+   "old_outcome": "baseline_only",
+   "dispute": null,
+   "is_named_evidence_case": true,
+   "current_top15_frozen": [
+    {
+     "id": "9fb43dc3-df46-4bf2-adef-99767e5ab070",
+     "content_sha": "5d4a4efbe0e6957734e1795830c1b1d506888eee69e3a265de03d1a7e8fccb9d",
+     "content": "约翰（John）在2023年12月8日（周五）对阵宿敌的大比赛中创下了职业生涯助攻新高，他很享受为队友创造机会、看到他们成功的感觉，球馆气氛热烈，那晚令人难忘",
+     "session_id": "session_23"
+    },
+    {
+     "id": "f3929709-4c0f-4279-99ff-944dc0ee5c6e",
+     "content_sha": "3c54b5feaa4c469e2d49535ca94311bcc3bd5596abde23855c54876f6c8fc266",
+     "content": "约翰（John）在2023年7月上旬的一场篮球比赛中得了40分，创个人生涯最高分，球队艰难赢下比赛，赛后全队在一家餐厅庆祝，回顾激烈瞬间，感觉累坏了但特别开心",
+     "session_id": "session_3"
+    },
+    {
+     "id": "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+     "content_sha": "979610c28bdd1fa22b189af53cf931b1b7178f8552a6dfbd9fa808767f2bf7d4",
+     "content": "约翰（John）职业生涯最喜欢的一场比赛是第四节还落后10分时他投进了压哨绝杀球赢得比赛，他称这是令人热血沸腾的经历，这样的时刻让他热爱篮球",
+     "session_id": "session_23"
+    },
+    {
+     "id": "57e83652-686d-45cb-952d-cf66e718e739",
+     "content_sha": "e2b45a1726a36e1673a339dc807aa824af9d41200e942d6c3c32d9cf3d0165a1",
+     "content": "约翰曾在一场重要的篮球比赛中搞砸，很难接受，但他没有沉溺于此，而是努力变得更好，认识到坚韧是关键、承认错误很重要，并努力成为优秀的球员和队友",
+     "session_id": "session_19"
+    },
+    {
+     "id": "6fdb79eb-2f34-4cb7-8232-897d22bbc426",
+     "content_sha": "99e3e6cee5e32a9de298b410d45c6d73f58632dcd94a9f79876bccc358461f81",
+     "content": "约翰在高中当了四年的女子篮球队队友，和队友们一起打球很长时间",
+     "session_id": "session_9"
+    },
+    {
+     "id": "3cd04cfb-33f0-4881-ada7-1922529a8741",
+     "content_sha": "9bd34b103c691dc3bb3fb12beb2e4c427518805b2762f12d979fab0263aff4ac",
+     "content": "约翰目前的篮球目标是提升投篮、在球场上产生更大影响力、成为被认为稳定发挥并帮助球队的球员",
+     "session_id": "session_11"
+    },
+    {
+     "id": "1124c537-329b-4f5c-bd20-33919a08f41c",
+     "content_sha": "767157e35f6e96351b60229d829411ff534f557e7a6047da282b5d7a27704113",
+     "content": "约翰的工作与篮球相关，现场观看比赛的氛围让他感到'正是这样的时刻让我热爱我的工作'，他分享了比赛现场观众的照片",
+     "session_id": "session_12"
+    },
+    {
+     "id": "04291dc1-5a0b-4fa6-ad37-f152d087398d",
+     "content_sha": "87328bbc1b3fafc1e8ae829cac928c33e48157dd60dec10389da1bc5370860c4",
+     "content": "约翰（John）是一名棒球运动员，于2024年1月上旬（'上周'）与一家知名饮料公司签下了代言合同，称这是梦想成真，感觉所有训练和努力都得到了回报",
+     "session_id": "session_29"
+    },
+    {
+     "id": "6eb755dd-bb3d-4dec-af5c-f2066c0faf2c",
+     "content_sha": "d3c583c78a9a41775b26de444f168d2a8055135519f0d15026751b40636cd534",
+     "content": "约翰（John）去年（约2022年）有一场篮球赛在第四节大幅落后，球队拼尽全力追赶并最终翻盘，终场哨响起时他觉得难以忘怀",
+     "session_id": "session_16"
+    },
+    {
+     "id": "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+     "content_sha": "6628129f16917fe2729cc35e297fd2c6e43111428055194baf2b30d4931fc97c",
+     "content": "约翰在2023年6月中旬刚打完一场篮球比赛并分享了比赛现场照片，他表示能在场上做热爱的事情感觉真好，每次上场都全力以赴",
+     "session_id": "session_2"
+    },
+    {
+     "id": "e293f456-be11-4be7-9c92-81173a51ce03",
+     "content_sha": "dce5aab8851f7346044797c18e79a2f21449df1978564f994cebd5d17e773ef4",
+     "content": "约翰（John）在2023年12月之前赢得了一个篮球冠军奖杯，他觉得夺冠的感觉太棒了",
+     "session_id": "session_21"
+    },
+    {
+     "id": "5627d94f-bc5d-4ac9-9878-cf8b75567651",
+     "content_sha": "ebf5b51d1557bab67f5ffebfa6ced7ccdd523076a3386775abf5bbd4f411bb4a",
+     "content": "约翰热爱职业篮球，认为它是持续的挑战让他不断成长，与队友打球和球迷欢呼带给他巨大的满足感和人生目标",
+     "session_id": "session_11"
+    },
+    {
+     "id": "0a3693bd-6407-4584-9b63-a4fda5a49d81",
+     "content_sha": "f4dc2db8f8853b33a3daea0f3a28fb7c92fad5eb3cfcddcfb044bfc5b1558350",
+     "content": "约翰（John）的篮球队在2023年秋季赛季经历了激烈比赛，既有惨痛失利也有精彩胜利，面对强队互相支持、绝不放弃，最终赢得了一个奖杯，他觉得辛勤付出得到了回报",
+     "session_id": "session_13"
+    },
+    {
+     "id": "137b900b-84a9-4965-9f46-f0b67d388dcf",
+     "content_sha": "fcb01f6adcc35a610fcf449ce3f659f0aeaa64e074eb4f1a8fdcfaa634e937e8",
+     "content": "约翰的首要篮球目标是赢得总冠军，同时也想在球场之外有所作为，通过慈善或激励他人回馈",
+     "session_id": "session_6"
+    },
+    {
+     "id": "6be7f3c2-958d-41f3-ac51-4d11a9d419b1",
+     "content_sha": "adf2925a5142cf9f8eb5cbb25e6f213b84f124fd9d449828e2ed80dce985df34",
+     "content": "约翰（John）打职业篮球快一年了（截至2023年12月），这段旅程充满挑战和成长，他觉得非常美妙；他的队友们来自世界各地",
+     "session_id": "session_21"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-50_qa61",
+   "group": "B",
+   "question": "戴夫在福特野马上花费了多长时间？",
+   "gold": "将近两个月",
+   "must_not_evict": [
+    "19c4d0d9-02f6-40e2-ad7c-b1517199d968",
+    "3c945eb1-f276-4ea0-9cbe-0f83d8174518",
+    "6e10cd21-faea-4b1f-9e48-416048982338",
+    "bc5b379f-7d59-4e25-97f1-ec697b04b1ce"
+   ],
+   "evidence_sessions": [
+    "session_14",
+    "session_20",
+    "session_21"
+   ],
+   "old_outcome": "baseline_only",
+   "dispute": null,
+   "is_named_evidence_case": true,
+   "current_top15_frozen": [
+    {
+     "id": "14566373-c52f-4f4d-8ab1-ac9d45b9c388",
+     "content_sha": "9e609bd446eeda3c789f22afc1fdcf3d517dbb343d1a2da11c44eb51d2531087",
+     "content": "戴夫于2023年10月下旬（对话前一周）找到一辆红色汽车，当时状况很糟，但他看出了潜力，花很长时间将其修复，对结果很满意",
+     "session_id": "session_28"
+    },
+    {
+     "id": "bc5b379f-7d59-4e25-97f1-ec697b04b1ce",
+     "content_sha": "89d4cb0ee528ca41757b7d4f4a65c51bf4703df66949ecc01851296669e30d0b",
+     "content": "戴夫正在修复一辆老式福特Mustang（目前发动机损坏，在树林中的照片），他希望2023年9月底前全部修好，认为看着它从破烂变成美车的蜕变是值得的",
+     "session_id": "session_14"
+    },
+    {
+     "id": "6e10cd21-faea-4b1f-9e48-416048982338",
+     "content_sha": "6045d62db2269516ca8e15b2fac7f6f38510d8c12cbddc3d55724c2089efcf96",
+     "content": "戴夫（卡尔文的朋友）的汽车项目遇到麻烦：他修复的老款野马发动机一启动就发出奇怪噪音，尽管投入了大量心血，他感到非常失望（2023年9月22日左右）",
+     "session_id": "session_20"
+    },
+    {
+     "id": "3c945eb1-f276-4ea0-9cbe-0f83d8174518",
+     "content_sha": "9fcf8128c0b314e26e0ecf9a009d3b92dab6bd63555ba9850ebdfb2aa35a8b3f",
+     "content": "戴夫（卡尔文的朋友）正在修复一辆从废品场找到的福特野马，车当时状况很差但他相信有潜力；修复完成后他分享了照片，称让旧车重获新生让人非常满足和自豪",
+     "session_id": "session_21"
+    },
+    {
+     "id": "753470fd-702f-4380-9814-ffa9590f53d6",
+     "content_sha": "133a4dab4498dc2b84bbe09b6889c78dd486854355ffb75a24f54674589408eb",
+     "content": "戴夫于2023年4月中旬的周末去了一个车展，觉得经典车很有魅力、人们对修复经典车投入的心血令人惊叹，并展示了一辆绿色Mustang的照片；他因此痴迷汽车工程",
+     "session_id": "session_3"
+    },
+    {
+     "id": "19c4d0d9-02f6-40e2-ad7c-b1517199d968",
+     "content_sha": "46ad265bcd320070a8b72757cda8f5d0361a1392e3a51fcf774bf04bd8e37d7b",
+     "content": "戴夫表示在车库里干活一整天后手上沾满油污，但他喜欢把破旧的东西变成美好的东西，这些小小的成功让他感到自豪和满足",
+     "session_id": "session_21"
+    },
+    {
+     "id": "4c992475-1ae9-4eb2-9ef9-e9e0527d4bd5",
+     "content_sha": "a32fa4d66089d4e6cf77b69efbf064b7fc0c204676dbe6e5eaffd97a852f58e0",
+     "content": "戴夫于2023年10月6日（上周五）去看了车展，看到许多超棒的车还能玩改车，玩得很开心，并分享了车展上与Mustang引擎合影的照片",
+     "session_id": "session_22"
+    },
+    {
+     "id": "96572229-3a68-4b00-a296-4f068da8307e",
+     "content_sha": "dff029f89922fc5f594d72d2e5c797d10973b0c1bc287a6e87bf6977c0f5d9d4",
+     "content": "戴夫从小学起就和爸爸一起修车，觉得翻新汽车是一种治疗、能带来成就感；小时候曾和爸爸花了一个夏天翻新一辆旧车，过程辛苦但看到共同完成的成果非常满足，并分享了一张父子修车的老照片",
+     "session_id": "session_12"
+    },
+    {
+     "id": "066d2dd5-d0f9-4c03-a21f-827fced07fd3",
+     "content_sha": "76a8841117484e5bb1562ec7d1c620b504200791d0b4de8759eb8656b325b64a",
+     "content": "戴夫去年（约2022年）翻新了一辆车并卖给了一位收藏家，目前正在进行一个新的、有挑战性的汽车项目",
+     "session_id": "session_25"
+    },
+    {
+     "id": "4399c7f7-5f75-48ed-98bb-468034bf1c5a",
+     "content_sha": "809414356cb4bb5bac949a36ec1cd2cae977a7fc2d3f4403c37628c307910fbd",
+     "content": "戴夫的汽修店于2023年5月9日左右（开业一周前）正式开业，他邀请了一些朋友来庆祝，能分享对汽车的热爱并帮大家修车让他特别激动",
+     "session_id": "session_6"
+    },
+    {
+     "id": "66f46996-9cef-433d-a107-6678a50fd8a5",
+     "content_sha": "a6c1a069c86f428625c3892b270fc3d644844cc95bb571757440f041734639e0",
+     "content": "戴夫于2023年5月3日左右宣布与一个本地修车厂合作，与优秀的机械师们共事并分享汽车知识，正参与一个有挑战性但很酷的汽车项目",
+     "session_id": "session_5"
+    },
+    {
+     "id": "09780d2e-317e-4659-aaf0-934e86d62cf4",
+     "content_sha": "c90e6700b5e42b38d4203e8705de4e97dd85eb1ac973edf61e00d33a86d99ac3",
+     "content": "戴夫从十岁起就痴迷机器的运作方式，因在邻居车库里发现一辆旧车并获准修理而开启了对汽车工程的热爱，享受把车从报废修到高速运转的成就感，此后一直修车",
+     "session_id": "session_25"
+    },
+    {
+     "id": "bbf070f9-9a19-47cf-bb7c-09754020f5e4",
+     "content_sha": "682fb2b0759ea08c37ba3d8cc48a10c4ad35db5df80f401ddbc9087bca5856e4",
+     "content": "戴夫于2023年5月下旬修好了邻居一辆发动机出问题的车，他表示修车对自己来说不难且有治愈效果",
+     "session_id": "session_7"
+    },
+    {
+     "id": "9b6204b9-39e6-406d-b089-9d3f2bdd2465",
+     "content_sha": "0cdb9243d4776e5264cafa0b8f60b157225e086ebd86c9bd3e15809860010135",
+     "content": "戴夫认为汽车翻新最难的部分是需要极大耐心和对细节的格外用心，但回报是值得的；他把修车视为表达自我的出口和平静绿洲，每次修车都像重新与自我连接",
+     "session_id": "session_25"
+    },
+    {
+     "id": "2835cbca-e001-4078-9284-36536828fd79",
+     "content_sha": "d78c0c37d56a178cf9093f7d8776cceae05210f93f9b0ae008c0b453ee6c0dc2",
+     "content": "戴夫正在修复一辆漂亮的古董车并分享了与车的合影，看到车重获新生非常有成就感，尤其人们看到成品时的反应让所有辛苦都值得",
+     "session_id": "session_19"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-48_qa90",
+   "group": "B",
+   "question": "乔琳最喜欢的书有哪些？",
+   "gold": "《人类简史》、尼尔·斯蒂芬森的《雪崩》",
+   "must_not_evict": [
+    "6486926b-2ee7-4b64-bed2-c55022b98087",
+    "6fbeaac5-881b-4882-a18e-313c74e31911"
+   ],
+   "evidence_sessions": [
+    "session_4"
+   ],
+   "old_outcome": "baseline_only",
+   "dispute": null,
+   "is_named_evidence_case": true,
+   "current_top15_frozen": [
+    {
+     "id": "6fbeaac5-881b-4882-a18e-313c74e31911",
+     "content_sha": "7e30c6c092d664887a6fa322ad15810e305735bdfeaf14a4df26b8471091b4a2",
+     "content": "乔琳最近迷上了《人类简史》一书，认为它对人类历史以及科技如何影响人类做了引人入胜的探讨，给了她很多思考。她还分享了自己的书架照片，上面有很多工程书籍。",
+     "session_id": "session_4"
+    },
+    {
+     "id": "6486926b-2ee7-4b64-bed2-c55022b98087",
+     "content_sha": "c85072793d519d19d4216e009559b904bf9849f2b274e26ea35e441abf09aa4d",
+     "content": "乔琳在2023年1月中旬（对话前两周）一口气读完了尼尔·斯蒂芬森的《雪崩》。她还读了一个讲一个人尽管面临重重挑战仍取得成功的故事，深受启发，相信只要相信并努力，一切皆有可能。",
+     "session_id": "session_4"
+    },
+    {
+     "id": "c817412e-d486-4400-a06f-7508f21e11c7",
+     "content_sha": "2e1827535110463921c426c461bf1e505f3ad9b0a4bd6194dd82c6d2c9d9d50d",
+     "content": "乔琳的浴室很有美感，她曾在浴室里读过一本关于自我发现的书，感觉非常有共鸣",
+     "session_id": "session_29"
+    },
+    {
+     "id": "f1455645-db16-42df-a737-cb52619de275",
+     "content_sha": "e25e9dcad5d9d4d43611de0af14be3b20fe653694632cde82c23463d132dc7eb",
+     "content": "乔琳最喜欢和妈妈一起玩的游戏之一是《Monster Hunter: World》，她喜欢其身临其境的剧情和开放世界玩法，视游戏为减压和暂时逃离生活的方式",
+     "session_id": "session_24"
+    },
+    {
+     "id": "71b40f82-60fa-4073-9529-99421dfd21b7",
+     "content_sha": "b2e7890009ec9da4da94eecccc99d500df7ebfe7c17e859ea0eb25db9cd330da",
+     "content": "乔琳推荐了几个电子游戏：《塞尔达传说：旷野之息》（Switch上的开放世界游戏）、《集合啦！动物森友会》（治愈可爱）、以及《胡闹厨房2》（搞笑混乱的联机合作游戏）",
+     "session_id": "session_19"
+    },
+    {
+     "id": "b689d90b-aa5e-44da-a2cf-fe1c0a29ccd9",
+     "content_sha": "ce74a4981df1db7c37c33cd51aac8a753dc670f7eb867e3f3d6c50f3953e890a",
+     "content": "乔琳最喜欢的安慰食物之一是千层面；她的学习和考试事务繁多，感到压力",
+     "session_id": "session_8"
+    },
+    {
+     "id": "2af936f8-5031-44c5-866b-cd803546bcf7",
+     "content_sha": "44a2e67b041fb72b041a2ca1a55e437ce9e34561c87a4485dd5aef585d0f686f",
+     "content": "乔琳和伴侣经常用《胡闹厨房2》打赌，她赢过三个大披萨",
+     "session_id": "session_19"
+    },
+    {
+     "id": "474801c6-867d-43de-a80e-10b0c4041fc2",
+     "content_sha": "4f779b641eade68fef8e395bbc3753d414c7c2c39e3e9cc9d9b1cfc6dd991d70",
+     "content": "黛布请乔琳在咖啡之约时顺便帮她带几本有趣的书",
+     "session_id": "session_26"
+    },
+    {
+     "id": "3485659d-5f7e-438c-9816-da8f3fbd5ae5",
+     "content_sha": "76c99f9b9d823a75d87a6ef594348ae18a37c3a1697ef35069e0fd7d28fdccc8",
+     "content": "乔琳以前和一个亲近的人一起烤过饼干，她最喜欢温热绵软的巧克力和柔软黄油饼干",
+     "session_id": "session_29"
+    },
+    {
+     "id": "44710e0a-1a4c-465d-bdfc-d81a7fe1b0f9",
+     "content_sha": "a65507acb205049c5b4aaa0701a26686a7dc6f00bd1b4bd53a7cd6c7cc6e8173",
+     "content": "黛布和乔琳约定2023年9月15日（星期五）下午5点在乔琳最爱的咖啡馆见面喝咖啡、吃新鲜糕点并叙旧；乔琳在那之前要先整理书柜里的工程教科书",
+     "session_id": "session_26"
+    },
+    {
+     "id": "003eb6f9-3b40-4bc5-91df-0872e1195cc4",
+     "content_sha": "b6ae46359dc8207f46c695b708c5403c26bd1880acb083626e92eeb3e1313a18",
+     "content": "乔琳养蛇，觉得和蛇在一起的宝贵时光教会她放慢脚步、与自己保持协调",
+     "session_id": "session_12"
+    },
+    {
+     "id": "0e60bab4-2102-438d-a10c-57db822e7f95",
+     "content_sha": "932fde51205d88fe31e534d6ce808318e63ea3a3f17dd4e5e7be13f63fa27625",
+     "content": "乔琳热衷于提出新想法、提高效率、用工程才能做好事，并牢记妈妈强调的帮助他人的价值",
+     "session_id": "session_22"
+    },
+    {
+     "id": "26bfebdc-bdde-411b-850b-dd3c81ea0c7b",
+     "content_sha": "a479fbcddfd17736739acbcdbc900d265eec33afb57d5dc838d2455ecd7227bb",
+     "content": "乔琳在艰难时期靠宠物蛇苏茜的陪伴获得安慰，电子游戏也是她的消遣方式",
+     "session_id": "session_16"
+    },
+    {
+     "id": "a46ff00d-6c12-4e8f-8b6c-66252c011788",
+     "content_sha": "bb550582fb75c523767b428a6fdbc7cd051b2977a7b9ae1396982464cd9d3ff7",
+     "content": "乔琳分享了她设计的冥想语录笔记本（两张照片：蓝色封面和白色条纹的笔记本），灵感来自她对太空和发动机的热爱，设计带有星系和电路等元素",
+     "session_id": "session_17"
+    },
+    {
+     "id": "acc847f8-cd8a-420b-b799-01ecc5293369",
+     "content_sha": "437bede96887260c5e1d95e6c69960813932891576c3a0f4485556bee0a39689",
+     "content": "乔琳认为在各种事物中看到艺术与设计让她对问题有了独特的视角，这也给她的工程项目带来灵感",
+     "session_id": "session_17"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-41_qa86",
+   "group": "B",
+   "question": "约翰做了什么事让他的钱包吃不消？",
+   "gold": "他的车抛锚了",
+   "must_not_evict": [
+    "dccbdd97-4ac6-4028-8068-840070dcabff"
+   ],
+   "evidence_sessions": [
+    "session_11"
+   ],
+   "old_outcome": "baseline_only",
+   "dispute": null,
+   "is_named_evidence_case": true,
+   "current_top15_frozen": [
+    {
+     "id": "2266b983-264c-4562-8f72-f1d2aa25d49b",
+     "content_sha": "3e2418faca5b9805512c9f8e22b6e0f1bbabdcdab25a9d13922c599e65ee7c86",
+     "content": "约翰于2023年2月初开始帮忙为社区食物募集活动出力，帮助失业的人，起因是看到失业对邻居的影响；反响和志愿者人数都超出了预期",
+     "session_id": "session_6"
+    },
+    {
+     "id": "1512066b-5bbe-455f-ab5f-bfd41aa8ed67",
+     "content_sha": "44068c09070c66454f1848da202da82c41acb7571cb01bef4272638de80b9234",
+     "content": "2022年（去年），约翰帮忙翻修了老家一个破旧的社区中心，花了不少功夫，看到它对社区产生的积极影响和大家的齐心协力，觉得一切都值得",
+     "session_id": "session_28"
+    },
+    {
+     "id": "bdb28053-0602-4711-8601-fef445b5874f",
+     "content_sha": "891d4973629ccab94fbafd7996e117f9c9fb49dbb25f0ffb9be51eb73e5cc2a2",
+     "content": "约翰的服务小组去了一个无家可归者收容所分发食物和物资，并组织了一次为有需要的孩子的玩具募捐活动，社区齐心协力传递快乐",
+     "session_id": "session_3"
+    },
+    {
+     "id": "197c1dc7-9a1b-4f13-ba5c-cdc9becf6da9",
+     "content_sha": "be3bd96d044001a8f9d7c558963dd94f6459cb6c6e2b43ec57819d10b39b0c74",
+     "content": "约翰在消防队首次出警中与队友齐心协力从一栋着火的大楼里救出了一家人，场面混乱但惊险刺激，帮上忙让他觉得一切都值得",
+     "session_id": "session_26"
+    },
+    {
+     "id": "eedd9b8b-f1e9-4316-9c23-19ca3b620682",
+     "content_sha": "286347842c4298e6b0341ad02663d126754fafeca0acd3fd4a2cc7b51a2bf0a6",
+     "content": "约翰于2023年8月初的周末在社区组织了一场5公里慈善跑，为退伍军人及其家人筹款并筹到了善款，活动来了很多人，他感到身边有众多支持者",
+     "session_id": "session_29"
+    },
+    {
+     "id": "6fe799e4-9243-479f-ac94-79a257e55a5d",
+     "content_sha": "198ae3bcbd89e7f87414d5e03b3baf7bb3728634efd3ca024f6756c229b3d597",
+     "content": "约翰在练自由搏击，它让他精力充沛",
+     "session_id": "session_1"
+    },
+    {
+     "id": "8528c86f-b2be-40bb-98a5-4940ac590e58",
+     "content_sha": "93306809eab1f50d4f58100dcc146f88e6ed7f56047319e518a60ea7928bb3e2",
+     "content": "约翰所在的消防队募捐活动收到了大量捐款，包括罐头食品、洗漱用品和衣物，捐款甚至帮助买了一辆全新的消防车（2023年8月）",
+     "session_id": "session_32"
+    },
+    {
+     "id": "ceb1a846-9b6f-45f8-8ae9-959e07e65e6b",
+     "content_sha": "cb0eddfb734b4bd567b7ce86651b2233365340a9e346f771662c0f5521533e7f",
+     "content": "约翰在2023年5月3日（前一天）给孩子们做了苹果派（配香草冰淇淋）",
+     "session_id": "session_13"
+    },
+    {
+     "id": "35071f9e-c480-44bc-8c30-6087812bbd0d",
+     "content_sha": "993bc05f2d2f92a6800837dd4785f61b7bb0d1f3259f372335957f8551fbaed1",
+     "content": "约翰丢掉了在机械工程公司的工作，公司倒闭了（2023年8月初），他从未料到会这样，日子一直很难熬，但他在努力保持乐观",
+     "session_id": "session_28"
+    },
+    {
+     "id": "eb2241bf-e4bd-4ce3-b622-a10091a114c7",
+     "content_sha": "17cb1a6faad26b488b16fdb12a131c6502dbd39ac38960361f489cde59d13f9e",
+     "content": "约翰组织5公里慈善跑的过程中面临挑战，尤其是拉赞助很困难，需要通过不同方式联系多家企业，最终找到很棒的赞助商使活动大获成功",
+     "session_id": "session_29"
+    },
+    {
+     "id": "093b7fec-7081-40dc-a897-a7d9c90dbbcf",
+     "content_sha": "84d3dc8149d2dfcd8416791e2969ca51566b2afd4d121c20becf7511b8bae612",
+     "content": "约翰在2023年4月初的上周末在当地一所学校的招聘会上做志愿者，看到资源匮乏对孩子们梦想的影响令人震撼，帮助这些孩子是一次非常有意义的经历。",
+     "session_id": "session_10"
+    },
+    {
+     "id": "dccbdd97-4ac6-4028-8068-840070dcabff",
+     "content_sha": "e6be5e6225e1b679405bf13b819f5d2cf4838ccdc004e365a9ec6ae39521bd5c",
+     "content": "约翰的车在2023年4月7日（上周五）上班路上抛锚了，正在修车，费用负担较重，但他保持积极态度寻找解决办法",
+     "session_id": "session_11"
+    },
+    {
+     "id": "46b7c813-f812-4f1f-8334-33e01a70e6dd",
+     "content_sha": "7b6ef073d6cdf6c7e6fbc7d0eb883698bf110916d648c74acd7dfffd950f83f0",
+     "content": "约翰认为教育对成功的社会至关重要，主张为学校争取更多资金和资源；他有孩子，并认为自己的孩子拥有很多而别的孩子却没有，为此感到心痛，觉得孩子们值得更好的条件",
+     "session_id": "session_5"
+    },
+    {
+     "id": "c8e8ae34-81ca-440f-9add-a44889f8aa81",
+     "content_sha": "7140f63a279d99d5a78dc4c571f1609acbf731edfea25b4c9aa4eb8de1978ad5",
+     "content": "约翰有一种为国家和社区服务的强烈愿望，竞选公职是他发挥影响力的机会",
+     "session_id": "session_6"
+    },
+    {
+     "id": "9cee58e9-a51c-4482-8dc2-0a949b1d59ed",
+     "content_sha": "d5c73ab66e18d7a6e883130b2e6f327f69885aaf62b8212a644f3e48c1d5ce55",
+     "content": "约翰通常在正常工作时间工作，但有时会把工作带回家；他努力安排好时间确保在重要的事情上都在场，认为关键是找到平衡、让那些时刻有意义",
+     "session_id": "session_19"
+    }
+   ]
+  }
+ ],
+ "pack_sha256": "edab47d9c9e1feabddeb9227144ad3c800d3d91e3207de5b0fc01e5bf00c25ce"
+}
