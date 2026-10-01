@@ -28,6 +28,7 @@ from __future__ import annotations
 import hashlib
 import json
 import sys
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -67,6 +68,37 @@ class Budget:
     def use_llm(self, n: int = 1) -> None:
         self.llm += n
         assert self.llm <= LLM_BUDGET, f"超出 LLM 预算 {self.llm}>{LLM_BUDGET}"
+
+
+class RateLimitedClient:
+    """全局最小调用间隔 + 429 有界退避（30/60/120s，最多 4 次）。
+
+    2026-10-01 全量建图在 4 并发下撞 coding 端点速率限制（error 1302），
+    这是对平台限流的合规等待，非盲目重试。"""
+
+    def __init__(self, inner, min_interval: float = 1.5):
+        self._inner = inner
+        self._lock = threading.Lock()
+        self._min_interval = min_interval
+        self._last = 0.0
+
+    def complete(self, *args, **kwargs):
+        for attempt in range(4):
+            with self._lock:
+                wait = self._min_interval - (time.time() - self._last)
+                if wait > 0:
+                    time.sleep(wait)
+                self._last = time.time()
+            try:
+                return self._inner.complete(*args, **kwargs)
+            except Exception as e:  # noqa: BLE001
+                if "RateLimit" in type(e).__name__ or "429" in str(e)[:80]:
+                    backoff = 30 * (2 ** attempt)
+                    print(f"    [429] 退避 {backoff}s（第 {attempt + 1}/4 次）", flush=True)
+                    time.sleep(backoff)
+                    continue
+                raise
+        raise RuntimeError("429 退避耗尽")
 
 
 def gate_one(client, budget: Budget, gi: dict, valid_refs: set[str]) -> dict:
@@ -143,10 +175,11 @@ def main() -> int:
     store = LocalGraphStore(GRAPH_PATH)
     backend = Mem0Backend(settings)
     builder = GraphBuilder(store)
-    extractor = StructuredExtractor(settings)
-    topic_extractor = TopicExtractor(settings)
-    client = make_chat_client(settings)
-    client._client = client._client.with_options(max_retries=0, timeout=60)
+    raw_client = make_chat_client(settings)
+    raw_client._client = raw_client._client.with_options(max_retries=0, timeout=60)
+    client = RateLimitedClient(raw_client)
+    extractor = StructuredExtractor(settings, client=RateLimitedClient(raw_client))
+    topic_extractor = TopicExtractor(settings, client=RateLimitedClient(raw_client))
     budget = Budget()
     gate_cache = load_gate_cache()
     gate_sink = GATE_CACHE.open("a", encoding="utf-8")
