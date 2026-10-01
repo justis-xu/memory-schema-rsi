@@ -104,18 +104,24 @@ class RateLimitedClient:
 def gate_one(client, budget: Budget, gi: dict, valid_refs: set[str]) -> dict:
     user = (f"源话轮（判定唯一依据）：\n{fmt_source_turns(gi)}\n\n{fmt_candidate(gi)}\n\n"
             "请输出逐子句判定 JSON。")
-    budget.use_llm()
-    raw, _ = client.complete(system=SYSTEM_V2, user=user, max_tokens=2048)
-    try:
-        verdict = parse_verdict(raw)
-    except Exception:
+    verdict = None
+    last_err = None
+    for attempt in range(3):
         budget.use_llm()
-        raw, _ = client.complete(
-            system=SYSTEM_V2,
-            user=user + "\n\n你上次的输出无法解析为要求的 JSON。重新输出严格 JSON，"
-            "以 { 开头以 } 结尾，不要任何围栏、说明或尾随文字。",
-            max_tokens=2048)
-        verdict = parse_verdict(raw)
+        raw, _ = client.complete(system=SYSTEM_V2, user=user, max_tokens=2048)
+        try:
+            verdict = parse_verdict(raw)
+            break
+        except Exception as e:  # noqa: BLE001
+            last_err = f"{type(e).__name__}: {str(e)[:100]} | head={raw[:120]}"
+            user = (f"源话轮（判定唯一依据）：\n{fmt_source_turns(gi)}\n\n{fmt_candidate(gi)}\n\n"
+                    f"你上次的输出不合规（{last_err}）。重新输出严格 JSON 对象："
+                    "clauses 数组 + record_action(keep|split|withdraw)，不要围栏或尾随文字。")
+    if verdict is None:
+        # 解析降级：单条记忆待核，不炸整体构建（记录在 guard_log）
+        return {"admission_status": "待核", "source_refs": [],
+                "withdrawn_qualifiers": [], "record_action": "withdraw",
+                "clause_count": 0, "guard_log": [f"parse_failed: {last_err}"]}
     gated, log = guard_v3(verdict, gi)
     refs: set[str] = set()
     wq: list[str] = []

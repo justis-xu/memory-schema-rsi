@@ -32,3 +32,4 @@ data/chroma_*/
 # misc
 .DS_Store
 .zcode/
+data/graph_indep/
