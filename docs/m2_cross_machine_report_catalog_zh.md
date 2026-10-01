@@ -2,9 +2,9 @@
 
 > 2026-09-30 的文件目录快照；由 `scripts/m2_build_cross_machine_report_catalog.py` 读取两仓 `docs/m2_*_zh.md` 生成。只列阶段报告，不修改或删除原文件；原始机器账与复算脚本请从各报告进入。清单含两仓当时全部匹配文件，未来新增报告须重生成。
 
-**合计 153 份报告。** 想先看结论，请回到[跨机最终索引](m2_cross_machine_final_index_zh.md)。
+**合计 160 份报告。** 想先看结论，请回到[跨机最终索引](m2_cross_machine_final_index_zh.md)。
 
-## memory-schema-rsi（130 份）
+## memory-schema-rsi（137 份）
 
 | 报告 | 标题 |
 | --- | --- |
@@ -37,11 +37,15 @@
 | [m2_current_zh_stratified_retrieval_zh.md](m2_current_zh_stratified_retrieval_zh.md) | 当前中文 LoCoMo：预先固定 20 题后的原话与检索核查 |
 | [m2_current_zh_watercolor_retrieval_zh.md](m2_current_zh_watercolor_retrieval_zh.md) | 当前纯中文无图检索已送入水彩画关系 |
 | [m2_date_poc_eligibility_zh.md](m2_date_poc_eligibility_zh.md) | “补回图日期”小 POC 的真实中文题筛选 |
+| [m2_dispute_registry_zh.md](m2_dispute_registry_zh.md) | 争议题登记表与不可恢复项台账 |
 | [m2_evolution_case_regression_zh.md](m2_evolution_case_regression_zh.md) | Schema演化平均收益门控与逐题证据损失 |
 | [m2_evolution_diagnosis_paths_zh.md](m2_evolution_diagnosis_paths_zh.md) | RSI训练诊断：活动路径优先与两跳边界 |
 | [m2_evoontology_evidence_mapping_zh.md](m2_evoontology_evidence_mapping_zh.md) | EvoOntology 放到中文记忆实验里：先补来源映射，再决定演化哪一层 |
 | [m2_fact_level_funnel_zh.md](m2_fact_level_funnel_zh.md) | 中文错题的事实级漏斗：来源会话进了 top-15，关键事实仍可能卡在不同环节 |
+| [m2_fact_source_gate_v3_zh.md](m2_fact_source_gate_v3_zh.md) | 事实来源门 v3：确定性守卫使部署形态通过停止门 |
+| [m2_fact_source_gate_zh.md](m2_fact_source_gate_zh.md) | 事实来源门离线 POC：逐子句判定在固定 23 条上未过停止门 |
 | [m2_fact_support_sidecar_zh.md](m2_fact_support_sidecar_zh.md) | 四道中文题的逐事实来源侧车表：同样失分，断点不同 |
+| [m2_final_research_verdict_zh.md](m2_final_research_verdict_zh.md) | 研究终局报告：Graph、Jev、RSI 中文记忆复盘的最终结论 |
 | [m2_frozen_graph_swaps_poc_zh.md](m2_frozen_graph_swaps_poc_zh.md) | 冻结中文旧上下文的单槽替换：图事实能救题，直证丢失会反伤 |
 | [m2_gina_preference_storage_zh.md](m2_gina_preference_storage_zh.md) | 吉娜“我也是”的偏好关系：从最终槽追到当前完整Memory（2026-09-28） |
 | [m2_graph_candidate_current_admission_zh.md](m2_graph_candidate_current_admission_zh.md) | 历史图候选迁入当前中文库的准入边界 |
@@ -62,6 +66,7 @@
 | [m2_historical_run_coverage_zh.md](m2_historical_run_coverage_zh.md) | 历史运行覆盖矩阵：中文配对分母与缺失日志 |
 | [m2_image_query_ablation_poc_zh.md](m2_image_query_ablation_poc_zh.md) | 两次提取调用：移除一条错误图片搜索词后，月份回到钟楼 |
 | [m2_image_query_provenance_zh.md](m2_image_query_provenance_zh.md) | 图片 `query` 被当作事实输入：来源到错误记忆的追踪 |
+| [m2_independent_graph_eval_zh.md](m2_independent_graph_eval_zh.md) | 独立中文图冻结配对评测：A 组收益病例不足，反伤保护成立 |
 | [m2_ingest_conv_trace_entry_zh.md](m2_ingest_conv_trace_entry_zh.md) | 单对话中文写入入口：可选持久化来源与返回正文账 |
 | [m2_ingest_source_trace_zh.md](m2_ingest_source_trace_zh.md) | 写入来源账接口收尾与研究暂停交接 |
 | [m2_integrated_retrospective_20260929_zh.md](m2_integrated_retrospective_20260929_zh.md) | Graph、Jev、RSI 中文记忆复盘：当前能决策什么 |
@@ -78,6 +83,7 @@
 | [m2_live_graph_source_version_zh.md](m2_live_graph_source_version_zh.md) | 当前图实例的中文数据就绪状态 |
 | [m2_lme_batch_claim_link_zh.md](m2_lme_batch_claim_link_zh.md) | 五道中文知识更新题：子句证据落到实际写入批次 |
 | [m2_lme_clause_support_zh.md](m2_lme_clause_support_zh.md) | 中文知识更新五题：子句到源话的支持强度 |
+| [m2_lme_graph_boundary_zh.md](m2_lme_graph_boundary_zh.md) | LongMemEval 中文侧图适用边界（收缩记录） |
 | [m2_lme_ingest_order_zh.md](m2_lme_ingest_order_zh.md) | 中文 LongMemEval 写入顺序：排除跨日倒序，定位事实来源缺口 |
 | [m2_lme_question_time_and_source_zh.md](m2_lme_question_time_and_source_zh.md) | 中文 LongMemEval-S：提问时间与答案来源语义审计（2026-09-27） |
 | [m2_lme_source_version_drift_zh.md](m2_lme_source_version_drift_zh.md) | 五道中文知识更新题：当前源文件相对旧来源账的版本漂移 |
@@ -114,6 +120,7 @@
 | [m2_returned_record_trace_zh.md](m2_returned_record_trace_zh.md) | 来源账补齐返回正文快照：为输出事实回源保留当次文本 |
 | [m2_role_aware_extraction_zh.md](m2_role_aware_extraction_zh.md) | 两类 `assistant` 角色的来源提取：固定两例四次小验收 |
 | [m2_role_label_source_sample_zh.md](m2_role_label_source_sample_zh.md) | 当前中文 LoCoMo：十条 `assistant` 标签记忆的逐条来源 |
+| [m2_rsi_acceptor_replay_zh.md](m2_rsi_acceptor_replay_zh.md) | RSI 经验接受器离线重放：事实门与关键词门各拒 5 条但集合不同 |
 | [m2_rsi_verifier_attribution_gate_zh.md](m2_rsi_verifier_attribution_gate_zh.md) | RSI 验证器接受门槛：没有可定位支持 ID 时不提交修复 |
 | [m2_s1_partial_extraction_gate_zh.md](m2_s1_partial_extraction_gate_zh.md) | S1构图入口：部分提取失败与完整性门槛（2026-09-28） |
 | [m2_signed_ball_graph_replay_zh.md](m2_signed_ball_graph_replay_zh.md) | 当前中文签名篮球题：图桥存在，但候选截断不稳 |
