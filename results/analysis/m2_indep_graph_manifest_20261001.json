@@ -1,0 +1,51 @@
+{
+ "scope": "独立中文图构建（SQLite 本地图+来源门 v3 准入），与共享 8080 实例零接触。",
+ "config": "config/locomo_zh_indep.yaml",
+ "graph_path": "data/graph_indep/graph.sqlite3",
+ "graph_sha256": "39128ea9a10e421f02335b2fedc58141fa09f5756f55a3bb69879aff4f9287ef",
+ "vertex_counts": {
+  "Memory": 1698,
+  "Entity": 1552,
+  "Event": 1009,
+  "Preference": 1089,
+  "Concept": 260
+ },
+ "edge_counts": {
+  "MENTIONS": 4287,
+  "DESCRIBES_EVENT": 1017,
+  "EXPRESSES_PREFERENCE": 1158,
+  "RELATED_TO": 431,
+  "PARTICIPATES_IN": 1260,
+  "HAS_PREFERENCE": 1082,
+  "HAS_TOPIC": 3618,
+  "V8_IN_CLUSTER": 1698
+ },
+ "gate_tally": {
+  "weaken": 694,
+  "sourced": 516,
+  "待核": 488
+ },
+ "gate_cache_size": 1698,
+ "budget": {
+  "llm_calls_gate": 1320,
+  "llm_cap": 3600,
+  "cache_delta": {
+   "structured_cache.json": 987,
+   "topic_cache.json": 965,
+   "memory_embeddings.json": 986
+  },
+  "note": "cache_delta 即提取/主题/嵌入的补差调用量上限（含失败重试为 0 的约定）"
+ },
+ "convs": [
+  "conv-26",
+  "conv-41",
+  "conv-42",
+  "conv-43",
+  "conv-44",
+  "conv-47",
+  "conv-48",
+  "conv-49",
+  "conv-50"
+ ],
+ "shared_instance_untouched": "本脚本未引用 8080 端点；基线顶点数见 m2_indep_build_baseline_8080.json"
+}

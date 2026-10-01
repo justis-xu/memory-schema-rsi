@@ -1,0 +1,2001 @@
+{
+ "scope": "独立中文图冻结配对评测：base=冻结当前 top-15，graph=向量池∪图融合候选统一 rerank；ABBA×4 作答 + 同模型官方 judge；人工事实核另做。",
+ "pack_sha256": "edab47d9c9e1feabddeb9227144ad3c800d3d91e3207de5b0fc01e5bf00c25ce",
+ "graph_sha256": "ed0c8ecc4c912db53568ba9bc12b5cadd8b560c230c7c3f51d27d65b37203f9a",
+ "model": "glm-5.3-flash",
+ "order": [
+  "base",
+  "graph",
+  "graph",
+  "base",
+  "base",
+  "graph",
+  "graph",
+  "base"
+ ],
+ "call_cap": 260,
+ "limits": [
+  "独立图为 S1（Entity/Event/Preference），无 S2 主题与 v8cluster；与旧混合语言运行不同构。",
+  "裁判=答题同模型（glm-5.3-flash），两臂同裁判内比；独立裁判为后续项。",
+  "温度 0 重复作答度量服务端噪声，非全方差；人工事实核不可省。"
+ ],
+ "cases": [
+  {
+   "case_id": "locomo_conv-49_qa85",
+   "group": "A",
+   "question": "埃文几年前开始做什么来减压？",
+   "gold": "水彩画",
+   "user_id": "zhfull:locomo:conv-49",
+   "base_context_ids": [
+    "e95705c0-365d-448e-8130-06d855506bf2",
+    "1aa5f524-d096-4d76-891f-1ab041a61460",
+    "e3762a39-169b-45be-9aa6-c8053f882d16",
+    "3c3b3251-40cd-4642-a537-2f2b7fe87aff",
+    "fabd98b3-1cb0-454e-8517-d4f80c991bb1",
+    "df7ba9e5-605c-450e-880e-5da7aa381af4",
+    "fe181ca6-dbb4-4742-abd4-d46792520c79",
+    "26098c4e-286e-406f-997d-34a2a10081d4",
+    "534efeb0-6263-4051-8b97-dbf9505af682",
+    "f1f94b90-e62b-4990-8086-04f48a66803d",
+    "6c5d4240-74f4-4a00-b5ac-dc6764cfee21",
+    "f8a587d1-3976-4529-9ec0-056c37e18d39",
+    "9136f7af-1321-4913-be3a-f01ce2281b27",
+    "1438fa52-5fe9-4483-9cd0-f29f5f559fda",
+    "97539298-a2c6-467a-a9eb-387a41896489"
+   ],
+   "graph_context_ids": [
+    "e95705c0-365d-448e-8130-06d855506bf2",
+    "1aa5f524-d096-4d76-891f-1ab041a61460",
+    "e3762a39-169b-45be-9aa6-c8053f882d16",
+    "3c3b3251-40cd-4642-a537-2f2b7fe87aff",
+    "fabd98b3-1cb0-454e-8517-d4f80c991bb1",
+    "df7ba9e5-605c-450e-880e-5da7aa381af4",
+    "fe181ca6-dbb4-4742-abd4-d46792520c79",
+    "26098c4e-286e-406f-997d-34a2a10081d4",
+    "534efeb0-6263-4051-8b97-dbf9505af682",
+    "f1f94b90-e62b-4990-8086-04f48a66803d",
+    "6c5d4240-74f4-4a00-b5ac-dc6764cfee21",
+    "f8a587d1-3976-4529-9ec0-056c37e18d39",
+    "9136f7af-1321-4913-be3a-f01ce2281b27",
+    "1438fa52-5fe9-4483-9cd0-f29f5f559fda",
+    "97539298-a2c6-467a-a9eb-387a41896489"
+   ],
+   "swapped_in": [],
+   "swapped_out": [],
+   "must_not_evict": [],
+   "prompt_sha256": {
+    "base": "b03bc0546d6ff09383d624017a006b4ade860dbcff816a1ea99228de3ebf5d39",
+    "graph": "b03bc0546d6ff09383d624017a006b4ade860dbcff816a1ea99228de3ebf5d39"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "Memories 3 and 4 (and 2) are relevant. Memory 3: User began watercolor painting a few years ago, introduced by a friend, and finds it a great stress-reliever.\n\nANSWER: 画水彩画（几年前由朋友带入门开始画水彩画，并视其为很好的减压方式）。",
+     "usage": {
+      "prompt_tokens": 1999,
+      "completion_tokens": 72
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer states 埃文几年前开始画水彩画来减压，与金标准'水彩画'一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "Memory 3: 几年前朋友带他入门开始画水彩画，作为减压方式。\n\nANSWER: 埃文几年前开始画水彩画来减压——是朋友带他入门并给了建议，他一下子就迷上了，视画画为很好的减压方式。",
+     "usage": {
+      "prompt_tokens": 1999,
+      "completion_tokens": 61
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成答案明确提到埃文几年前开始画水彩画减压，与金答案完全一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "Relevant memories: #3 (a few years ago, a friend introduced him to it, and he became hooked, treating painting as a way to relieve stress), supported by #1, #5, #9, #10.\n\nANSWER: 埃文几年前开始画水彩画来减压。是朋友带他入门并给了建议，他一下子就迷上了，把画画视为很好的减压方式，能帮他放松心情、找到内心的平静和表达自我。",
+     "usage": {
+      "prompt_tokens": 1999,
+      "completion_tokens": 99
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer states he started watercolor painting to relieve stress, matching the gold answer ex"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "ANSWER: Evan几年前开始画水彩画（是朋友带他入门的），他把画画视为很好的减压方式。",
+     "usage": {
+      "prompt_tokens": 1999,
+      "completion_tokens": 27
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确指出Evan几年前开始画水彩画来减压，与黄金答案完全一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "ANSWER: 埃文几年前开始画水彩画来减压。是朋友带他入门并给了建议，他一下子就迷上了，并视画画为很好的减压方式。",
+     "usage": {
+      "prompt_tokens": 1999,
+      "completion_tokens": 41
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer explicitly states Evan started watercolor painting to relieve stress, matching the g"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "Memory 3 directly states Evan started painting watercolors a few years ago, introduced by a friend, and views it as a good way to relieve stress.\n\nANSWER: 画水彩画（几年前在朋友带动下开始，视其为很好的减压方式）",
+     "usage": {
+      "prompt_tokens": 1999,
+      "completion_tokens": 55
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确提到了 Evan 在几年前开始画水彩画，这与标准答案“水彩画”完全一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "Relevant: memory 3 (几年前开始画水彩画，朋友带入门，视为减压方式) and memory 2 (用画画减压).\n\nANSWER: Evan几年前在朋友的带领和建议下开始画水彩画，一下子就迷上了，并将其视为很好的减压方式。",
+     "usage": {
+      "prompt_tokens": 1999,
+      "completion_tokens": 60
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案正确指出了埃文几年前开始画水彩画来减压，与金标准答案一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "相关记忆：Evan几年前经朋友介绍开始画水彩画，一下子迷上了，并将其视为很好的减压方式。\n\nANSWER: 画水彩画",
+     "usage": {
+      "prompt_tokens": 1999,
+      "completion_tokens": 35
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确提到了 Evan 开始画水彩画作为减压方式，与黄金答案（水彩画）一致。\", \"label\": \"CORRECT\"}"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-50_qa124",
+   "group": "A",
+   "question": "戴夫觉得什么活动很有成就感，就像卡尔文对音乐节的热情一样？",
+   "gold": "修理东西",
+   "user_id": "zhfull:locomo:conv-50",
+   "base_context_ids": [
+    "0c207b3d-8344-4df6-837e-e81e10288e2f",
+    "19c4d0d9-02f6-40e2-ad7c-b1517199d968",
+    "3e1f9c8c-3cbf-4cbc-bf93-3d12a549bda2",
+    "a206e6f7-1020-4751-b0b5-c229e0db072d",
+    "43e654c2-59df-40dd-8205-78ddff397c68",
+    "800e49ba-ac9e-44db-acd8-8d477987ab17",
+    "e298c090-7d16-4e1c-9048-7793936546d0",
+    "6b09a2c6-0f32-4ae7-9627-d8644d086243",
+    "92cd7d10-c9cc-4d1e-b08f-1b6fcde18e93",
+    "83c27caf-0c27-432a-8577-8d5589871683",
+    "886cd278-443b-4799-9b5f-3fd80d8d1b4b",
+    "9c4b7f6f-35ce-4911-89b7-f8547f24fd97",
+    "3ec52a3f-02ed-4bf3-8783-933cb491012b",
+    "5e0e1d9d-4d42-453e-b7cb-a178e8bd6079",
+    "a61a4e5e-e6a3-4298-b92a-97d0ede8d688"
+   ],
+   "graph_context_ids": [
+    "0c207b3d-8344-4df6-837e-e81e10288e2f",
+    "8480bcb0-4f06-4fd9-8bf8-c46015ac810f",
+    "19c4d0d9-02f6-40e2-ad7c-b1517199d968",
+    "3e1f9c8c-3cbf-4cbc-bf93-3d12a549bda2",
+    "a206e6f7-1020-4751-b0b5-c229e0db072d",
+    "ddf46708-660f-4362-8dbe-f996a6fa3b8d",
+    "43e654c2-59df-40dd-8205-78ddff397c68",
+    "800e49ba-ac9e-44db-acd8-8d477987ab17",
+    "e298c090-7d16-4e1c-9048-7793936546d0",
+    "6b09a2c6-0f32-4ae7-9627-d8644d086243",
+    "92cd7d10-c9cc-4d1e-b08f-1b6fcde18e93",
+    "83c27caf-0c27-432a-8577-8d5589871683",
+    "4399c7f7-5f75-48ed-98bb-468034bf1c5a",
+    "886cd278-443b-4799-9b5f-3fd80d8d1b4b",
+    "9c4b7f6f-35ce-4911-89b7-f8547f24fd97"
+   ],
+   "swapped_in": [
+    {
+     "id": "8480bcb0-4f06-4fd9-8bf8-c46015ac810f",
+     "content": "戴夫对修理东西充满热情，不只是爱好，修理让坏东西重新运转给他成就感和目标感，就像赋予它第二次生命，让他感到有力量和快乐",
+     "via": [
+      "entity:戴夫",
+      "concept:emotions",
+      "concept:hobby"
+     ],
+     "support": 3,
+     "admission_status": "待核"
+    },
+    {
+     "id": "ddf46708-660f-4362-8dbe-f996a6fa3b8d",
+     "content": "戴夫的梦想是修复经典汽车，开维修店是朝着这个目标迈进的一步；他喜欢经典车的设计和工艺，去年曾修复过一辆车，让车重获新生让他激动不已",
+     "via": [
+      "entity:戴夫",
+      "entity:汽车维修店",
+      "concept:career",
+      "concept:transport",
+      "concept:hobby"
+     ],
+     "support": 5,
+     "admission_status": "weaken"
+    },
+    {
+     "id": "4399c7f7-5f75-48ed-98bb-468034bf1c5a",
+     "content": "戴夫的汽修店于2023年5月9日左右（开业一周前）正式开业，他邀请了一些朋友来庆祝，能分享对汽车的热爱并帮大家修车让他特别激动",
+     "via": [
+      "entity:戴夫",
+      "concept:career",
+      "concept:friends",
+      "preference:21:zhfull:locomo:conv-50:戴夫|like|汽车"
+     ],
+     "support": 4,
+     "admission_status": "待核"
+    }
+   ],
+   "swapped_out": [
+    {
+     "id": "3ec52a3f-02ed-4bf3-8783-933cb491012b",
+     "content_sha": "eff691afe0480efc65b770f4d9270f5bac20db8404727b42debf8e60ccf654f6",
+     "content": "戴夫上个月（2023年9月）在演唱会度过了美好时光，认为音乐有连接人们、创造回忆的力量，并拍摄了现场观众的照片",
+     "session_id": "session_25"
+    },
+    {
+     "id": "5e0e1d9d-4d42-453e-b7cb-a178e8bd6079",
+     "content_sha": "8f8e2f825f23107ae4963a1abd7f87c2bca1f77fdb503b74f56d9196e569aa57",
+     "content": "卡尔文和戴夫互相鼓励，认同努力、奉献和进步是实现目标的关键，约定永不放弃、继续为各自的目标（音乐与修车）奋斗",
+     "session_id": "session_21"
+    },
+    {
+     "id": "a61a4e5e-e6a3-4298-b92a-97d0ede8d688",
+     "content_sha": "552b71488c1eafc56e481e0bb4d9bcfc65920cec614b4bb4d4a8c12ad430e8d7",
+     "content": "戴夫（卡尔文的朋友）最近去底特律参加了一个会议，学到了很多，觉得特别棒",
+     "session_id": "session_26"
+    }
+   ],
+   "must_not_evict": [],
+   "prompt_sha256": {
+    "base": "a9cdf844d76f66b4557a84436d9c3120bb1b0b0dce1b92a7dfd6ddb55e0427d0",
+    "graph": "ac676c7572e067500d89bbc882d70b922ebce2a4c1b4fe9e0b7588762e7424de"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "ANSWER: 修车（汽车维修/修复）——戴夫觉得修好别人的车让他很有成就感、自豪和目标感，就像卡尔文对音乐节的热情一样。",
+     "usage": {
+      "prompt_tokens": 2138,
+      "completion_tokens": 40
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"修车是修理东西的一种具体形式，属于同一核心概念。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "修车（汽车维修）——戴夫觉得修好别人的车、让坏掉的东西重新运转很有成就感和自豪感，就像卡尔文对音乐节的热情一样。\n\nANSWER: 修车",
+     "usage": {
+      "prompt_tokens": 2167,
+      "completion_tokens": 44
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"修车（汽车维修）属于“修理东西”这一核心概念的具体形式，语义上与黄金答案一致，因此判为正确。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "ANSWER: 修车（尤其是修复经典汽车，把坏掉的东西修好、让车重获新生）让戴夫觉得很有成就感，就像卡尔文对音乐节的热情一样。",
+     "usage": {
+      "prompt_tokens": 2167,
+      "completion_tokens": 43
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"修车是修理东西的一种具体形式，属于同一核心概念的更具体表述，因此算作正确改写。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "ANSWER: 修车（汽车维修/修复）。戴夫觉得修好别人的车、把破旧的东西修好让他很有成就感、自豪和目标感，就像卡尔文对音乐节（音乐）的热情一样。",
+     "usage": {
+      "prompt_tokens": 2138,
+      "completion_tokens": 49
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"修车是修理东西的一种具体形式，与黄金答案的核心概念相同。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "修车（汽车维修/修复）。戴夫多次表示修好别人的车让他有成就感、自豪和目标感，如同卡尔文对音乐的热情一样，他还把修车视为一种疗法、逃离压力的方式。",
+     "usage": {
+      "prompt_tokens": 2138,
+      "completion_tokens": 47
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"修车是修理东西的具体例子，与金答案“修理东西”属于同一核心概念。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "ANSWER: 修车（修理/修复汽车）。戴夫多次表示修好别人的车、把坏掉的东西修好并让它重获新生，会给他成就感、自豪感和目标感，就像卡尔文对音乐的热情一样。",
+     "usage": {
+      "prompt_tokens": 2167,
+      "completion_tokens": 52
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案将修车/修理物品认定为戴夫的成就感来源，这包含了“修理东西”这一核心概念，因此是正确答案的释义。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "ANSWER: 修车（汽车维修/修复）。戴夫多次表示修理和修复汽车让他很有成就感和自豪感，把坏掉的东西变成美好的东西就像赋予它第二次生命，这份热情可以类比卡尔文对音乐节的热情。",
+     "usage": {
+      "prompt_tokens": 2167,
+      "completion_tokens": 53
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"修理汽车是修理东西的一个具体实例，因此生成的答案捕捉到了与黄金答案相同的核心概念。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "ANSWER: 修车（汽车维修/修复）——戴夫觉得修好别人的车很有成就感、自豪和目标感，就像卡尔文对音乐节的热情一样。",
+     "usage": {
+      "prompt_tokens": 2138,
+      "completion_tokens": 39
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"修车是“修理东西”的具体实例，属于同一核心概念。\", \"label\": \"CORRECT\"}"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-48_qa83",
+   "group": "A",
+   "question": "乔琳参加了哪些职业活动来积累本领域的经验？",
+   "gold": "在虚拟会议上做报告、参加工作坊、在公司实习",
+   "user_id": "zhfull:locomo:conv-48",
+   "base_context_ids": [
+    "9f858349-324d-4fa9-9982-74b52b21edea",
+    "211ec1ec-a73a-4d8e-9f53-7fa197678b2a",
+    "321bd0d4-3708-4441-955c-6c72dffca42d",
+    "99699b6f-3b2b-4cc5-8479-8476fc9fb5de",
+    "c9c2c71f-140b-492f-9264-66bc1317e828",
+    "e06b560a-a1b5-4f21-b7bb-e33a860ca75c",
+    "f3b2b7a0-d8c8-4c35-acc1-bc48716952fa",
+    "6320aa07-c8f3-4dd9-92c2-baa9298da133",
+    "afc00eb3-0037-4a3d-ac38-18394996ae46",
+    "c96d99a2-0c2d-44dd-8cb6-295e8834b628",
+    "003eb6f9-3b40-4bc5-91df-0872e1195cc4",
+    "16446030-ca26-48da-a71d-2f97c480838d",
+    "668910d9-49ee-489c-b583-cfe00ec529e0",
+    "77b21058-36e7-48d3-8268-84d7aa3c6612",
+    "a9b79b72-487a-44bd-a4bd-dae5e130723f"
+   ],
+   "graph_context_ids": [
+    "9f858349-324d-4fa9-9982-74b52b21edea",
+    "211ec1ec-a73a-4d8e-9f53-7fa197678b2a",
+    "321bd0d4-3708-4441-955c-6c72dffca42d",
+    "99699b6f-3b2b-4cc5-8479-8476fc9fb5de",
+    "dcfa4853-7374-4397-ac92-b9de47eb0520",
+    "c9c2c71f-140b-492f-9264-66bc1317e828",
+    "9738adb3-7c4d-4bb0-be15-0f094e63c39a",
+    "e06b560a-a1b5-4f21-b7bb-e33a860ca75c",
+    "f3b2b7a0-d8c8-4c35-acc1-bc48716952fa",
+    "6320aa07-c8f3-4dd9-92c2-baa9298da133",
+    "afc00eb3-0037-4a3d-ac38-18394996ae46",
+    "c96d99a2-0c2d-44dd-8cb6-295e8834b628",
+    "003eb6f9-3b40-4bc5-91df-0872e1195cc4",
+    "16446030-ca26-48da-a71d-2f97c480838d",
+    "668910d9-49ee-489c-b583-cfe00ec529e0"
+   ],
+   "swapped_in": [
+    {
+     "id": "dcfa4853-7374-4397-ac92-b9de47eb0520",
+     "content": "乔琳在2023年1月底（对话前一周，约2023年1月27日）完成了一个重要工程里程碑：经过大量规划和研究，为一个有需要的农村社区设计和建造了一台可持续水净化器。看到它运转并提供干净的水让她感到无比满足和有使命感，情绪如释重负又自豪。",
+     "via": [
+      "entity:乔琳",
+      "concept:career",
+      "concept:emotions",
+      "concept:achievements"
+     ],
+     "support": 4,
+     "admission_status": "weaken"
+    },
+    {
+     "id": "9738adb3-7c4d-4bb0-be15-0f094e63c39a",
+     "content": "乔琳的工程学教授给她布置了一个大型机器人项目（2023年2月初进行中），项目很难但有趣，让她发挥创造力和锻炼解决问题的能力；她起初百感交集（既兴奋又紧张），现在非常享受，觉得像解谜题，看着机器人逐步成型很有满足感",
+     "via": [
+      "entity:乔琳",
+      "concept:education",
+      "concept:emotions"
+     ],
+     "support": 3,
+     "admission_status": "待核"
+    }
+   ],
+   "swapped_out": [
+    {
+     "id": "77b21058-36e7-48d3-8268-84d7aa3c6612",
+     "content_sha": "8e9367bc40fcbb7fb79d7fd1362890d2b78cf62899b2d1c5f65250c15fb1ab3b",
+     "content": "乔琳在2023年8月考虑再做几段实习来进一步提升自己的技能",
+     "session_id": "session_21"
+    },
+    {
+     "id": "a9b79b72-487a-44bd-a4bd-dae5e130723f",
+     "content_sha": "30ebfc8e348b22987833055f517c29b558d4319d6c2c07257d3f0ceb6a091a21",
+     "content": "乔琳和伴侣在里约热内卢参观了一座古老寺庙，走了令人惊艳的楼梯，还参加了很多远足活动",
+     "session_id": "session_23"
+    }
+   ],
+   "must_not_evict": [],
+   "prompt_sha256": {
+    "base": "79e85f875a375007ea575516f6a0820ec9afb6a7d763903f91d7a35b73f67ebf",
+    "graph": "27fee242abc2e8554fc223482befe376700396176014a625dcd9b0a8d8e650fc"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "ANSWER: 乔琳参加的职业活动包括：2023年6月在一家知名工程公司开始实习，与建筑工人团队共事，把所学应用到实际项目中；2023年1月中旬完成了一个电气工程项目；2023年8月在一次线上会议上做演讲并获得积极反馈；此外她还在静修期间的工程项目上做出成果，并考虑再做几段实习来进一步提升技能。",
+     "usage": {
+      "prompt_tokens": 1998,
+      "completion_tokens": 82
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案提到了在公司实习和在虚拟/线上会议上做演讲，涵盖了至少两个金标准答案项目。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "ANSWER: 乔琳参加的职业活动包括：在一家知名工程公司实习（2023年6月开始，与建筑工人团队共事，将所学应用于实际项目），并考虑多做一些实习来提升技能；完成电气工程项目（2023年1月中旬）和为农村社区设计可持续水净化器（2023年1月底）；进行大型机器人项目（2023年2月，教授布置）；在2023年8月的线上会议上做演讲并获得积极反馈；还通过学习、参加研讨会和拓展人脉来积累经验。",
+     "usage": {
+      "prompt_tokens": 2083,
+      "completion_tokens": 115
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer includes both the internship (实习) and the online conference presentation (线上会议演讲), p"
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "ANSWER: 乔琳积累职业经验的活动包括：2023年6月在一家知名工程公司开始实习（与建筑工人团队共事）；完成电气工程项目（2023年1月）；设计并建造可持续水净化器（2023年1月底）；参加线上会议并做演讲、获得积极反馈（2023年8月）；参加静修并在工程项目上取得成果；以及参与教授布置的大型机器人项目（2023年2月初）。",
+     "usage": {
+      "prompt_tokens": 2083,
+      "completion_tokens": 96
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案包含与黄金答案匹配的“在公司实习”和“在会议上做演讲”这两个正确项，因此根据至少包含一个正确项的规则，答案正确。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "ANSWER: 乔琳参加的职业活动包括：1) 实习——2023年6月在一家知名工程公司开始实习，与建筑工人团队共事，把所学应用到实际项目中（并考虑多做几段实习提升技能）；2) 完成电气工程项目——2023年1月中旬完成一个花费很多功夫的电气工程项目；3) 在线上会议上做演讲——2023年8月做演讲并获得积极反馈；4) 学习、参加研讨会和拓展人脉；5) 在静修期间做工程项目，想出了一些很棒的解决方案。",
+     "usage": {
+      "prompt_tokens": 1998,
+      "completion_tokens": 120
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成答案中包含实习和线上会议演讲，与金标准中的实习和在虚拟会议上做报告重合。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "ANSWER: 乔琳通过实习（2023年6月在知名工程公司实习，与建筑工人团队共事）、完成电气工程项目（2023年1月）、参加研讨会、拓展人脉、持续学习，以及在2023年8月的线上会议上做演讲并获积极反馈，来积累本领域的经验。她还考虑再做几段实习。",
+     "usage": {
+      "prompt_tokens": 1998,
+      "completion_tokens": 75
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成答案涵盖了虚拟会议演讲、研讨会和实习等核心项目，与标准答案匹配。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "根据记忆，乔琳为积累本领域经验参加的职业活动包括：\n\n1. **实习** — 2023年6月在一家知名工程公司开始实习，与建筑工人团队共事，把所学应用到实际项目中；实习还激发了她对工程学的热爱（记忆2、8）。\n2. **学术工程项目** — 完成电气工程项目（2023年1月），设计和建造可持续水净化器（2023年1月底），以及教授布置的大型机器人项目（2023年2月初）（记忆4、5、7）。\n3. **线上会议演讲** — 2023年8月在一次线上会议上做演讲并获得积极反馈（记忆12、14）。\n4. **学习和参加研讨会** — 通过学习、参加研讨会和拓展人脉来提升自己（记忆1、3）。\n5. **静修期间的工程项目** — 在静修期间做出了工程成果，想出很棒的解决方案（记忆10）。\n\nANSWER: 乔琳通过在知名工程公司实习（2023年6月）、完成电气工程项目和可持续水净化器设计建造、进行大型机器人项目、在线上会议做演讲（2023年8月）、参加静修并做出工程成果，以及持续学习、参加研讨会和拓展人脉等方式来积累本领域的经验。",
+     "usage": {
+      "prompt_tokens": 2083,
+      "completion_tokens": 271
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案包含了金标答案中的实习、虚拟会议演讲和工作坊/研讨会三项内容，全部命中。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "ANSWER: 乔琳为积累本领域经验参加的职业活动包括：\n\n1. **实习**：2023年6月在一家知名工程公司开始实习，与建筑工人团队合作，把所学应用到实际项目中；她认为实习激发了她对工程学的热爱，还在考虑多做实习提升技能。\n2. **完成工程项目**：2023年1月中旬完成一个电气工程项目；2023年1月底为农村社区设计并建造了可持续水净化器；2023年2月初着手教授布置的大型机器人项目。\n3. **参加学习与研讨会**：持续学习、参加研讨会并拓展人脉。\n4. **线上会议演讲**：2023年8月（最近一次）在线上会议上做演讲并获得积极反馈。\n5. **参加静修**：在静修期间的工程项目上想出了很好的解决方案。",
+     "usage": {
+      "prompt_tokens": 2083,
+      "completion_tokens": 173
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案包含了金答案中的实习、研讨会/工作坊和线上会议演讲等核心项目，语义完全对应。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "ANSWER: 乔琳为积累本领域经验参加的职业活动包括：1) 实习——2023年6月在一家知名工程公司开始实习，与建筑工人团队共事，把所学应用到实际项目中，并考虑再做几段实习（2023年8月）；2) 完成电气工程项目（2023年1月中旬）；3) 在线上会议上做演讲（2023年8月）并获得积极反馈；4) 在静修期间参与工程项目并想出很棒的解决方案；5) 持续学习、参加研讨会和拓展人脉。",
+     "usage": {
+      "prompt_tokens": 1998,
+      "completion_tokens": 123
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer includes internship and presenting at online meetings, which match the gold items (在"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-26_qa8",
+   "aborted": "retrieval_drift",
+   "drift_ids": [
+    "f69a31d2-1f1e-4529-bdd1-918f5eb3e806"
+   ]
+  },
+  {
+   "case_id": "locomo_conv-26_qa81",
+   "group": "A",
+   "question": "卡罗琳近期想搬回她的祖国吗？",
+   "gold": "不想；她正在办理领养孩子的手续。",
+   "user_id": "zhfull:locomo:conv-26",
+   "base_context_ids": [
+    "19eafa36-b494-45c9-ac45-4f288aa0fa30",
+    "b51dc166-50eb-4fc2-8a56-f1e585e8bcf1",
+    "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+    "a26453c9-029b-4469-ad78-92a2547543cd",
+    "e1d4aaff-9f75-4038-ad6a-adea6c83e671",
+    "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+    "292941f2-e2aa-447c-b041-d73fae0738d4",
+    "e7753964-a35f-44e0-b637-fdaf295446d7",
+    "cddb7913-c433-46cd-a87e-c7d029eef28b",
+    "a7b5ce7b-651a-41a5-bb9d-9bc088830e8d",
+    "077fc6b5-3fde-42a8-847a-8ba0a4a7be66",
+    "b88125e4-6065-4384-9be3-a397a47dabbd",
+    "7a763b85-c73f-4ae8-a234-b7d74a0a4b34",
+    "171a6fa1-0d36-43ea-8ef4-ed19e73df18a",
+    "38263e2e-e979-4b47-8490-e16df3aab064"
+   ],
+   "graph_context_ids": [
+    "19eafa36-b494-45c9-ac45-4f288aa0fa30",
+    "b51dc166-50eb-4fc2-8a56-f1e585e8bcf1",
+    "cd4610ff-5dd9-429d-8c51-94a4afe3e901",
+    "a26453c9-029b-4469-ad78-92a2547543cd",
+    "e1d4aaff-9f75-4038-ad6a-adea6c83e671",
+    "0650bfba-73ec-4a90-821f-d9c38ef67ce7",
+    "416338bd-1cfe-4a5b-959e-88fa592e9683",
+    "4dd89362-9f60-4aca-b927-b7556baf99e6",
+    "02056f25-5c34-4e71-bc61-281199c30645",
+    "292941f2-e2aa-447c-b041-d73fae0738d4",
+    "e7753964-a35f-44e0-b637-fdaf295446d7",
+    "cddb7913-c433-46cd-a87e-c7d029eef28b",
+    "a7b5ce7b-651a-41a5-bb9d-9bc088830e8d",
+    "951d15ad-1184-4e91-8403-b5abb93867bd",
+    "077fc6b5-3fde-42a8-847a-8ba0a4a7be66"
+   ],
+   "swapped_in": [
+    {
+     "id": "416338bd-1cfe-4a5b-959e-88fa592e9683",
+     "content": "卡罗琳于2023年7月10日（对话前两天）参加了一场LGBTQ大会，结识了经历过类似旅程的人，感到友好且完全被接纳，更加认识到为跨性别权利奋斗和传播意识的重要性",
+     "via": [
+      "entity:Caroline",
+      "concept:community",
+      "concept:identity"
+     ],
+     "support": 3,
+     "admission_status": "weaken"
+    },
+    {
+     "id": "4dd89362-9f60-4aca-b927-b7556baf99e6",
+     "content": "卡罗琳于2023年6月下旬（约6月26日那周）参加了一场LGBTQ+骄傲游行，感到开心并有强烈的归属感，感叹社群的成长壮大",
+     "via": [
+      "concept:emotions",
+      "entity:卡罗琳",
+      "concept:community",
+      "concept:identity"
+     ],
+     "support": 4,
+     "admission_status": "weaken"
+    },
+    {
+     "id": "02056f25-5c34-4e71-bc61-281199c30645",
+     "content": "卡罗琳计划参加2023年7月的跨性别者大会，期待见到社群其他成员并了解更多倡导工作",
+     "via": [
+      "concept:plans",
+      "entity:卡罗琳",
+      "concept:community",
+      "concept:identity"
+     ],
+     "support": 4,
+     "admission_status": "weaken"
+    },
+    {
+     "id": "951d15ad-1184-4e91-8403-b5abb93867bd",
+     "content": "卡罗琳正认真考虑从事心理咨询和心理健康职业，方向是为跨性别者服务，帮助他们接纳自我并支持其心理健康，因为她自己接受的咨询和支持曾改善了她的生活，她想帮助有类似经历的人",
+     "via": [
+      "entity:卡罗琳",
+      "entity:心理咨询",
+      "concept:career",
+      "concept:health",
+      "concept:identity"
+     ],
+     "support": 5,
+     "admission_status": "sourced"
+    }
+   ],
+   "swapped_out": [
+    {
+     "id": "b88125e4-6065-4384-9be3-a397a47dabbd",
+     "content_sha": "5e668fe7cac3c2c806dad11385c1162194c17d93b41d8127b1bf5362907e6e58",
+     "content": "卡罗琳想做一件象征团结、庆祝彼此差异的新艺术作品，类似她为教堂制作的彩绘玻璃窗",
+     "session_id": "session_14"
+    },
+    {
+     "id": "7a763b85-c73f-4ae8-a234-b7d74a0a4b34",
+     "content_sha": "64ee0835b7770a759af08b0dabc7057f620bc92e85f4dc64779e6a7bd606003b",
+     "content": "卡罗琳正在为将来有了孩子建一个小图书馆，期待给孩子读书、开阔他们的眼界，收藏包括经典童书、来自不同文化的故事和教育类书籍",
+     "session_id": "session_6"
+    },
+    {
+     "id": "171a6fa1-0d36-43ea-8ef4-ed19e73df18a",
+     "content_sha": "887f697bfc43548d393daadace96b7ff0c5d2d4a49804223a0e5e5bead84e85a",
+     "content": "卡罗琳重视真实地活着并帮助他人忠于自我，身边有倡导LGBTQ权益的支持者给了她自由的感觉",
+     "session_id": "session_13"
+    },
+    {
+     "id": "38263e2e-e979-4b47-8490-e16df3aab064",
+     "content_sha": "87a6ceb7dc7284af2063b3109db67edb7d45f91a01c08dda9bc7d06eef584306",
+     "content": "卡罗琳希望通过领养为从未有过家的孩子提供一个安全有爱的家，认为领养是一种回馈和表达爱与接纳的方式",
+     "session_id": "session_19"
+    }
+   ],
+   "must_not_evict": [],
+   "prompt_sha256": {
+    "base": "7bb82132b687b4536713cb07d14b887cea66c722dd6916e2c1169fac5e5de46b",
+    "graph": "f55ac83f11b66ebda14aa901f83510248ad76e29e549687f75fca10838a1fb69"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "ANSWER: 没有。记忆显示卡罗琳并没有计划搬回祖国瑞典——她四年前离开祖国搬到现在居住的地方，朋友的支持对她非常重要，而且她近期的生活规划都围绕现居地展开：2023年8月下旬向领养机构提交申请、准备当单亲妈妈、为孩子建小图书馆、探索心理咨询职业等。这些都表明她打算留在现居地，而不是搬回瑞典。",
+     "usage": {
+      "prompt_tokens": 2156,
+      "completion_tokens": 143
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的回答与黄金答案的核心事实一致，即卡罗琳近期不打算搬回祖国（并正确提及了领养手续），因此是正确的。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "扫描：记忆1提到她小时候在瑞典的家乡，记忆2提到她四年前离开祖国搬到现在住的地方。其他记忆都是关于收养、职业规划、骄傲游行、与梅拉妮的出游计划——都指向她在现居地扎根的未来。\n\n没有一条记忆提到她想搬回瑞典。相反，她的近期计划（申请收养、从事心理咨询职业、夏天出游）都建立在当前所在地。\n\n回答：没有。虽然卡罗琳来自瑞典并珍视家乡回忆，但她近期没有搬回祖国的计划——她正计划在现居地收养孩子、继续学业并从事心理健康方面的工作。",
+     "usage": {
+      "prompt_tokens": 2199,
+      "completion_tokens": 173
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer correctly states she does not want to move back and mentions her adoption plans, mat"
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "相关记忆：记忆1显示卡罗琳的祖国是瑞典，小时候在那里长大；记忆2显示她离开祖国搬到了现居地，朋友们认识4年。没有任何记忆提到她想搬回瑞典。相反，记忆3、5、11、12、13显示她正在现居地积极办理收养、准备成为单亲妈妈，记忆4、10、14显示她计划在当地继续学业并从事心理咨询职业——这些都表明她计划留在现居地。\n\n回答：不，没有迹象表明卡罗琳近期想搬回祖国（瑞典）。记忆显示她4年前离开祖国搬到现居地后一直在此生活，并且正在当地推进收养申请、规划心理咨询职业和继续学业，这些计划都以留在现居地为前提。",
+     "usage": {
+      "prompt_tokens": 2199,
+      "completion_tokens": 189
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成答案与黄金答案一致，均表明卡罗琳近期不想搬回祖国，且都在办理/推进收养孩子的手续。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "扫描记忆：没有提到她有搬回祖国的计划。相反，记忆显示她四年前离开祖国搬到现在的地方，朋友们在那里支持她；她正在当地推进领养申请、建小图书馆、继续学业等，说明她计划留在现居地。\n\nANSWER: 没有。记忆中没有卡罗琳想搬回祖国（瑞典）的任何迹象。她虽然珍视在祖国的根（奶奶送的项链），但四年前搬到现居地后一直在此生活，并正在当地推进收养申请、建儿童图书馆、规划学业和职业，显然打算留在现居地。",
+     "usage": {
+      "prompt_tokens": 2156,
+      "completion_tokens": 168
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer correctly states she does not want to move back and is pursuing adoption, matching t"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "步骤：所有记忆都显示卡罗琳离开祖国（瑞典）后住在现居地，朋友们认识4年，她正在当地推进领养申请、职业规划、为孩子建图书馆等——没有任何记忆显示她想搬回瑞典。恰恰相反，她的规划（领养、学业、艺术作品、图书馆）都立足于现居地。\n\n回答：没有证据表明卡罗琳想搬回祖国。相反，她的近期计划都是在现居地展开的：2023年8月下旬提交了领养申请、准备成为单亲妈妈、继续探索心理咨询/心理健康方面的职业，还在为孩子建小图书馆。她珍惜故乡的回忆（奶奶送的项链），但目前并无搬回瑞典的打算。",
+     "usage": {
+      "prompt_tokens": 2156,
+      "completion_tokens": 187
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer agrees she does not want to move back, citing her adoption plans as in the gold answ"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "没有证据表明卡罗琳近期想搬回祖国瑞典。记忆显示她的根在瑞典（珍藏着奶奶从家乡送她的项链），但她已在新家园扎根：朋友们认识4年、她正提交领养申请组建家庭、计划从事心理咨询职业，并计划2023年夏天与梅拉妮出游。她怀念自己的根，但生活重心在现居地。\n\nANSWER: 不。卡罗琳虽然珍惜在瑞典的家乡回忆（如奶奶送的项链），但没有任何记忆显示她想搬回祖国。相反，她正积极在现居地建设未来——申请领养孩子、规划心理咨询职业，并与朋友保持紧密联系。",
+     "usage": {
+      "prompt_tokens": 2199,
+      "completion_tokens": 192
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案与黄金答案一致，均表明卡罗琳近期不打算搬回祖国，并提到了她的领养手续。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "扫描记忆：卡罗琳来自瑞典，多年前离开祖国搬到现居地（记忆1、2）。她的近期计划全部围绕现居生活：2023年8月提交领养申请（记忆13）、规划职业（记忆4、10、14）、与梅拉妮计划夏日出游（记忆15）、感恩当地的朋友支持体系（记忆2、12）。没有任何记忆显示她想搬回瑞典。\n\nANSWER: 没有。记忆中没有任何迹象表明卡罗琳近期想搬回祖国瑞典。相反，她正在现居地积极规划未来——提交领养申请准备成为单亲妈妈、探索心理咨询职业、与朋友和导师建立支持体系。虽然她珍藏奶奶送的项链以不忘自己的根，但这更多是情感上的联结，而非搬回祖国的打算。",
+     "usage": {
+      "prompt_tokens": 2199,
+      "completion_tokens": 226
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The answer correctly states Caroline does not want to move back to her home country and mentions the adop"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "扫描记忆：关于卡罗琳的计划，记忆提到继续学业、心理咨询职业、收养孩子、夏季出游、艺术作品、建小图书馆——均无搬回瑞典的计划。她离开祖国已4年，且在现居地有朋友、导师等支持体系。\n\nANSWER: 没有。记忆中没有任何迹象表明卡罗琳想搬回祖国瑞典。相反，她自离开祖国已4年，在现居地建立了稳固的生活和支持体系（朋友、导师、领养咨询小组），近期的计划都是围绕现居地展开的——继续学业、从事心理咨询工作、申请收养孩子并为未来的家建小图书馆。",
+     "usage": {
+      "prompt_tokens": 2156,
+      "completion_tokens": 172
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的回答表示卡罗琳不想搬回祖国，并提到她正在办理领养手续，与标准答案的核心内容相符。\", \"label\": \"CORRECT\"}"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-42_qa126",
+   "aborted": "retrieval_drift",
+   "drift_ids": [
+    "736c5c35-ef45-4d30-a6fe-4f8b83bfd2cb"
+   ]
+  },
+  {
+   "case_id": "locomo_conv-43_qa134",
+   "group": "A",
+   "question": "正如2023年11月11日所提到的，蒂姆最喜欢的奇幻电视剧之一是什么？",
+   "gold": "\"那部\"",
+   "user_id": "zhfull:locomo:conv-43",
+   "base_context_ids": [
+    "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+    "92cbbc81-e98c-4835-baef-193be35bf90b",
+    "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+    "0d01722b-8551-4dd4-a380-08270eb4fa9a",
+    "9d717fa9-9e17-4171-b3ee-c31236749a40",
+    "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+    "f8697c06-d00f-4818-bb75-a17465dbfc87",
+    "31e7385d-3b47-4572-a963-8c13b8bbcf7c",
+    "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+    "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+    "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+    "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+    "b784b7cf-0c8d-4a31-a4ea-4e79a176299d",
+    "df795392-83c3-4203-892c-c51c003b7b9e",
+    "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64"
+   ],
+   "graph_context_ids": [
+    "aae114a6-d224-48a4-ba5b-2fab1cc0e51a",
+    "92cbbc81-e98c-4835-baef-193be35bf90b",
+    "8827b1f0-5b69-408d-b948-0920cd1e4c9c",
+    "0d01722b-8551-4dd4-a380-08270eb4fa9a",
+    "9d717fa9-9e17-4171-b3ee-c31236749a40",
+    "cba697a1-39a4-4012-b03b-6a4dec990dc7",
+    "f8697c06-d00f-4818-bb75-a17465dbfc87",
+    "31e7385d-3b47-4572-a963-8c13b8bbcf7c",
+    "5b81c7fe-9fc0-4a94-be91-b1eb1834ce80",
+    "70b6785b-0b50-4dc3-8544-172d63d2dba9",
+    "20d1882d-9581-4ce5-b0ea-7d1882e59b5b",
+    "636cf2f0-67be-48b8-9f7b-8c9db3972171",
+    "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+    "b784b7cf-0c8d-4a31-a4ea-4e79a176299d",
+    "df795392-83c3-4203-892c-c51c003b7b9e"
+   ],
+   "swapped_in": [
+    {
+     "id": "c27d3c8d-d5c8-4b57-9220-7365bc3a82b6",
+     "content": "蒂姆展示了自己的藏书书架，上面有一张来自MinaLima的图片——MinaLima是为哈利·波特电影制作道具的工作室，蒂姆很喜欢他们的作品，觉得像在家里拥有魔法世界的一角",
+     "via": [
+      "concept:arts",
+      "entity:哈利·波特",
+      "entity:蒂姆",
+      "concept:reading"
+     ],
+     "support": 4,
+     "admission_status": "weaken"
+    }
+   ],
+   "swapped_out": [
+    {
+     "id": "c8ecc8d4-600e-48bf-a0df-bdfcad22ad64",
+     "content_sha": "6fae469ad73b53cd132cfe6e33f3812ceb1a2f2bf2ae6180175495147b23ef41",
+     "content": "蒂姆（Tim）正在做一个哈利·波特粉丝项目，并与一位哈利·波特粉丝朋友合作，于2023年5月中旬开始讨论构思创意",
+     "session_id": "session_1"
+    }
+   ],
+   "must_not_evict": [],
+   "prompt_sha256": {
+    "base": "7d570fd54ed32333a2cf03fd308fe719bfc19c648b2bd6651546de98b9c592b8",
+    "graph": "2474e455279b4911d53a4100689e0c46feb09d7d0b80cfae7fa1fd7dcc1b9fa3"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "ANSWER: 蒂姆最喜欢的奇幻电视剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验。",
+     "usage": {
+      "prompt_tokens": 2135,
+      "completion_tokens": 64
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案将那部电视剧称为 'That'（《That》），这与原文中提到的 '那部' 指代的电视剧名称相符，因此对那部奇幻电视剧的指代是正确的。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "The memory explicitly dated November 11, 2023 (memory 8, about the well-worn book) connects to memory 1: Tim's favorite fantasy TV series is one called《That》(That), which John also watched and both enjoyed for its immersive, escapist experience.\n\nANSWER: 《That》",
+     "usage": {
+      "prompt_tokens": 2150,
+      "completion_tokens": 66
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer identifies Tim's favorite fantasy TV series as 《That》, matching the gold answer's \\\""
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "ANSWER: 蒂姆最喜欢的奇幻电视剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢它带来的沉浸感和逃离现实的体验。",
+     "usage": {
+      "prompt_tokens": 2150,
+      "completion_tokens": 154
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案提到了《That》，它对应的是金句答案“那部”，确认了相同的实体。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "阅读记忆 1 和 2，蒂姆最喜欢的奇幻剧：《That》（与约翰共同喜欢的剧集）以及《权力的游戏》和《哈利·波特》。尽管该剧集的标题是泛指，但记忆 1 是直接匹配的结果。\n\n回答：蒂姆最喜欢的奇幻电视剧之一是一部名为《That》的剧集（他也与约翰一起观看并共同欣赏）——而《权力的游戏》是他提到的另一部最爱。",
+     "usage": {
+      "prompt_tokens": 2135,
+      "completion_tokens": 90
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的回答明确指出了《That》（\"那部\"），与黄金答案相匹配，并附有额外细节。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "扫描记忆：记忆1直接回答了这个问题——蒂姆最喜欢的奇幻剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢它的沉浸感。记忆4提到他期待2024年1月推出的《时光之轮》，但截至2023年11月那还是即将上映的剧，不是已是最爱。记忆2、3是书籍/原著系列，不是电视剧。\n\nANSWER: 《That》（一部蒂姆最喜欢的奇幻电视剧，约翰也看过，两人都喜欢它带来的沉浸感和逃离现实的体验）",
+     "usage": {
+      "prompt_tokens": 2135,
+      "completion_tokens": 215
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer identifies the show as 《That》, which matches the gold answer '那部' (\\\"That\\\"), the sa"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "ANSWER：《That》——根据记忆，蒂姆最喜欢的奇幻电视剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验。",
+     "usage": {
+      "prompt_tokens": 2150,
+      "completion_tokens": 84
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案直接识别了与金标答案相同的剧集《That》（“那部”），因此指代对象相同。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "ANSWER: 《That》——蒂姆最喜欢的奇幻电视剧之一是一部名为《That》的作品，约翰也看过，两人都喜欢这类作品带来的沉浸感和逃离现实的体验。",
+     "usage": {
+      "prompt_tokens": 2150,
+      "completion_tokens": 73
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer references the same show title 《That》/ \\\"那部\\\" as the gold answer, identifying the sa"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "ANSWER: 蒂姆最喜欢的奇幻电视剧之一是一部名为《That》的作品（约翰也看过，两人都喜欢其沉浸感和逃离现实的体验）。",
+     "usage": {
+      "prompt_tokens": 2135,
+      "completion_tokens": 122
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案正确指出了那部名为《That》（“那部”）的奇幻电视剧，与黄金答案相符。\", \"label\": \"CORRECT\"}"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-44_qa41",
+   "group": "A",
+   "question": "奥黛丽的狗狗是什么品种？",
+   "gold": "Pepper和Panda是混种拉布拉多犬。Precious和Pixie是混种吉娃娃。",
+   "user_id": "zhfull:locomo:conv-44",
+   "base_context_ids": [
+    "58e2d35c-d906-4bd6-8be0-19d0c920088c",
+    "6c344bc1-b41a-4d27-a0d6-8718d8e4c32a",
+    "8c29f9b1-cdb9-4f36-ac10-0a5126df562f",
+    "74b3079e-3033-467d-bcc8-40347c358299",
+    "81b900d9-59ce-4a86-8a2e-247af6446eca",
+    "0a91150b-2e44-44b7-8776-af970675299c",
+    "39c4c495-fc94-40e9-8fbb-a4e1248f5f0d",
+    "5e40b8ce-8063-4bcf-903e-c029d5d02c96",
+    "9a453ea8-a00e-415a-808c-cb4b25894e82",
+    "7ba4ab05-61f7-4673-9436-42211ec5aa8e",
+    "76c52e74-45b1-4c7d-a03a-2db7b237d721",
+    "9cc73ff8-b933-4078-97ed-325342aa5917",
+    "e8057023-5a1f-43aa-85eb-2d272e56d2e7",
+    "440eadbb-d76c-4184-8951-556b7fecb11e",
+    "cc8a2b80-a487-4d12-a2e4-f363d93c4766"
+   ],
+   "graph_context_ids": [
+    "58e2d35c-d906-4bd6-8be0-19d0c920088c",
+    "6c344bc1-b41a-4d27-a0d6-8718d8e4c32a",
+    "8c29f9b1-cdb9-4f36-ac10-0a5126df562f",
+    "74b3079e-3033-467d-bcc8-40347c358299",
+    "81b900d9-59ce-4a86-8a2e-247af6446eca",
+    "0a91150b-2e44-44b7-8776-af970675299c",
+    "39c4c495-fc94-40e9-8fbb-a4e1248f5f0d",
+    "49569387-e5c4-4db4-9fc5-646b885da652",
+    "7e620293-8a3e-4077-8c94-42424bd641fa",
+    "50fc5445-084f-4945-8b9a-3ec8d8869404",
+    "5e40b8ce-8063-4bcf-903e-c029d5d02c96",
+    "986645e9-4556-4cee-a2c0-f036e3a48638",
+    "9a453ea8-a00e-415a-808c-cb4b25894e82",
+    "7ba4ab05-61f7-4673-9436-42211ec5aa8e",
+    "76c52e74-45b1-4c7d-a03a-2db7b237d721"
+   ],
+   "swapped_in": [
+    {
+     "id": "49569387-e5c4-4db4-9fc5-646b885da652",
+     "content": "Pixie花了几天时间才适应奥黛丽的其他狗狗（佩珀、普雷舍斯和潘达），但现在它们已经是很棒的朋友，喜欢一起玩耍、在家里四处探索",
+     "via": [
+      "concept:pets",
+      "entity:Panda",
+      "entity:Pepper",
+      "entity:Pixie",
+      "entity:Precious"
+     ],
+     "support": 5,
+     "admission_status": "待核"
+    },
+    {
+     "id": "7e620293-8a3e-4077-8c94-42424bd641fa",
+     "content": "截至2023年5月初，奥黛丽忙着照顾和陪伴她的狗狗们（佩珀、普雷舍斯、潘达和皮克西），她觉得真的很有满足感，并表示自上次聊天以来没有其他新变化",
+     "via": [
+      "concept:pets",
+      "entity:Panda",
+      "entity:Pepper",
+      "entity:Pixie",
+      "entity:Precious",
+      "entity:Audrey"
+     ],
+     "support": 6,
+     "admission_status": "待核"
+    },
+    {
+     "id": "50fc5445-084f-4945-8b9a-3ec8d8869404",
+     "content": "奥黛丽和她的狗狗们因为忙于照顾小狗Pixie，还没来得及去之前讨论的福克斯霍洛 (Foxhollow) 远足地点（截至2023年4月初）",
+     "via": [
+      "concept:pets",
+      "entity:Pixie",
+      "entity:Audrey",
+      "concept:outdoors"
+     ],
+     "support": 4,
+     "admission_status": "待核"
+    },
+    {
+     "id": "986645e9-4556-4cee-a2c0-f036e3a48638",
+     "content": "奥黛丽的四只狗都有自己最爱放松的地方：Pepper喜欢窝在沙发上，Pixie总是蜷在自己的窝里，Precious有她的椅子，Panda喜欢在他的地毯上放松",
+     "via": [
+      "entity:Panda",
+      "entity:Pepper",
+      "entity:Pixie",
+      "entity:Precious"
+     ],
+     "support": 4,
+     "admission_status": "sourced"
+    }
+   ],
+   "swapped_out": [
+    {
+     "id": "9cc73ff8-b933-4078-97ed-325342aa5917",
+     "content_sha": "b33be5e74d98d4bc421ae7cdc37c7a3860552b0d40e5f07a10e008961ef241bb",
+     "content": "奥黛丽的手臂上有一个狗狗和向日葵图案的纹身，代表她对她家狗狗们的爱和大自然之美；她是因为与狗狗们感情深厚、它们让她特别开心而决定纹的，想在狗狗不在身边时也能看到它们开心的样子",
+     "session_id": "session_3"
+    },
+    {
+     "id": "e8057023-5a1f-43aa-85eb-2d272e56d2e7",
+     "content_sha": "80a6af8b10ed3d9063b3b6f9fa41e0a76df63bf9536d73cdc0f6ffcd2d740e8d",
+     "content": "奥黛丽的狗狗们总是依偎在她最喜欢的毯子上一起睡觉，尤其在午睡时间，它们是最好的朋友，总是互相陪伴，看到它们在一起让她特别开心",
+     "session_id": "session_15"
+    },
+    {
+     "id": "440eadbb-d76c-4184-8951-556b7fecb11e",
+     "content_sha": "a36634de19591432a58294774cf9a3f774eb78826ae0ae2e9a2fb76fa05d2878",
+     "content": "奥黛丽的狗狗们喜欢在她的花园里跑来跑去、探索玩耍，她觉得非常可爱；它们只和自家的毛孩子们一起玩",
+     "session_id": "session_19"
+    },
+    {
+     "id": "cc8a2b80-a487-4d12-a2e4-f363d93c4766",
+     "content_sha": "2503b37606eafefb0282ed8c13f0d7695cb0ed9bcb9f473c968e6b720ad1adab",
+     "content": "奥黛丽分享了一张狗狗戴生日帽的照片，其中一只小狗戴着绿帽子；安德鲁称赞它看起来很精神",
+     "session_id": "session_19"
+    }
+   ],
+   "must_not_evict": [],
+   "prompt_sha256": {
+    "base": "c1c0b14a3b9856b06a3839a1cfad7a642c6cc7c545599a860d1d49b89ee1a5e1",
+    "graph": "484341b2d014458a22b00b1ad210922843f950b04ab2ecc5a280e5310698b278"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "ANSWER: 奥黛丽的四只狗狗都是串串狗（混种狗）。根据记忆，其中两只是杰克罗素梗串（或一说拉布拉多混血，如Pepper和Panda），另外两只是吉娃娃串（如Precious和Pixie），且都是3岁左右。",
+     "usage": {
+      "prompt_tokens": 2128,
+      "completion_tokens": 101
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer correctly names Pepper, Panda as Lab mixes and Precious, Pixie as Chihuahua mixes, m"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "奥黛丽养了四只狗，都是混种狗（串串）。根据不同记忆，它们是：\n\n- **Pepper 和 Panda**：拉布拉多混血\n- **Precious 和 Pixie**：吉娃娃混血\n\nANSWER: 奥黛丽的四只狗狗都是串串狗（混种）：Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血。",
+     "usage": {
+      "prompt_tokens": 2147,
+      "completion_tokens": 95
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案准确匹配了金答案的内容：Pepper和Panda是拉布拉多混血，Precious和Pixie是吉娃娃混血。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "ANSWER: 奥黛丽的四只狗狗都是串串（混种狗）：两只是拉布拉多混血（Pepper 和 Panda），两只是吉娃娃混血（Precious 和 Pixie）。",
+     "usage": {
+      "prompt_tokens": 2147,
+      "completion_tokens": 47
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案准确地列出了相同的四只狗及其混种（拉布拉多混血 Pepper 和 Panda，吉娃娃混血 Precious 和 Pixie），与黄金答案完全一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "ANSWER: 奥黛丽的四只狗狗都是串串狗（混种）。根据记忆，Pepper 和 Panda 是拉布拉多混血（也有一说杰克罗素梗串），Precious 和 Pixie 是吉娃娃混血，全部约3岁。",
+     "usage": {
+      "prompt_tokens": 2128,
+      "completion_tokens": 60
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案正确地提到了 Pepper、Panda 是拉布拉多混种，Precious 和 Pixie 是吉娃娃混种，与黄金答案中的项目相匹配。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "根据记忆：奥黛丽的四只狗狗都是串串狗（混种）。具体来说，Pepper（佩珀）和 Panda（潘达）是拉布拉多混血，Precious（普雷舍斯）和 Pixie（皮克茜）是吉娃娃混血。\n\nANSWER: 奥黛丽的四只狗狗都是串串狗——Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血。",
+     "usage": {
+      "prompt_tokens": 2128,
+      "completion_tokens": 158
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案与金答案完全匹配：Pepper和Panda是拉布拉多混种，Precious和Pixie是吉娃娃混种。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "奥黛丽的四只狗都是混种狗（串串）。根据记忆，Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血。\n\nANSWER: 都是混种狗——Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血。",
+     "usage": {
+      "prompt_tokens": 2147,
+      "completion_tokens": 71
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案与黄金答案完全匹配：Pepper和Panda是拉布拉多混种，Precious和Pixie是吉娃娃混种。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "奥黛丽的狗狗都是混种狗（串串）：Pepper 和 Panda 是拉布拉多混血，Precious 和 Pixie 是吉娃娃混血。\n\nANSWER: 四只狗狗都是串串（混种狗）——Pepper和Panda是拉布拉多混血，Precious和Pixie是吉娃娃混血。",
+     "usage": {
+      "prompt_tokens": 2147,
+      "completion_tokens": 74
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案准确地指出了 Pepper 和 Panda 是拉布拉多混血，以及 Precious 和 Pixie 是吉娃娃混血，与金标答案完全一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "ANSWER: 奥黛丽的四只狗狗都是串串狗（混种狗）。根据记忆，它们是两只杰克罗素梗混血和两只吉娃娃混血（其中Pixie是2023年4月初领养的白色吉娃娃混血小狗，另一处记忆提到Pepper和Panda是拉布拉多混血）。它们都是3岁左右，喜欢跑步和玩接球游戏。",
+     "usage": {
+      "prompt_tokens": 2128,
+      "completion_tokens": 142
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer mentions both the labrador mixes (Pepper and Panda) and chihuahua mixes (Pixie) matc"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-47_qa6",
+   "group": "A",
+   "question": "詹姆斯住在康涅狄格州吗？",
+   "gold": "很可能是",
+   "user_id": "zhfull:locomo:conv-47",
+   "base_context_ids": [
+    "91d44c55-43e3-4883-9079-352f88f02523",
+    "1b98b851-0734-4ce1-bc3b-ded5599225b9",
+    "f3829420-cd96-446d-8b0a-936005b34bc9",
+    "6792b0f2-5c48-4d41-8408-822df3b19454",
+    "99c7125b-b0d4-403f-9632-06dcd8e7cd04",
+    "bb4cc32c-ba77-4f5d-8fce-b4642e8f58bb",
+    "d48e598d-4976-494a-8dc9-194237d75c3d",
+    "718698e8-eb44-454a-918b-03076bd787a5",
+    "35b80d51-432a-430a-b763-19281c7cdcc4",
+    "59009b00-ef26-4701-bebd-b25b9dbd99ef",
+    "3bb18475-d387-4b04-b2c6-a4958af3a396",
+    "3189d305-aa17-47e5-9327-4e5c07dce7d9",
+    "26dcf6b9-cb32-4cdb-8d48-af13777f81bc",
+    "2ed0c8fe-824f-4070-8a34-2749748cb76b",
+    "345dfdb2-dc62-41fe-b056-c2d09ffe284f"
+   ],
+   "graph_context_ids": [
+    "91d44c55-43e3-4883-9079-352f88f02523",
+    "01db7a40-7462-4079-8110-e349f45fcca8",
+    "1b98b851-0734-4ce1-bc3b-ded5599225b9",
+    "f3829420-cd96-446d-8b0a-936005b34bc9",
+    "6792b0f2-5c48-4d41-8408-822df3b19454",
+    "edc6754a-dc23-4e4b-a251-5d26117cb776",
+    "99c7125b-b0d4-403f-9632-06dcd8e7cd04",
+    "bb4cc32c-ba77-4f5d-8fce-b4642e8f58bb",
+    "6aa72491-b4a8-4ccc-b1e8-861eaf4f33f0",
+    "6b13ed98-f3f5-4c48-b7ba-ec844d9396f1",
+    "d48e598d-4976-494a-8dc9-194237d75c3d",
+    "fd9d41b8-0063-4213-b399-8aebafca8984",
+    "718698e8-eb44-454a-918b-03076bd787a5",
+    "35b80d51-432a-430a-b763-19281c7cdcc4",
+    "59009b00-ef26-4701-bebd-b25b9dbd99ef"
+   ],
+   "swapped_in": [
+    {
+     "id": "01db7a40-7462-4079-8110-e349f45fcca8",
+     "content": "詹姆斯在2022年4月上旬（约4月5日那周）从斯坦福德的一家收容所领养了一只小狗，取名叫内德，小狗让家里的日子开心多了",
+     "via": [
+      "entity:内德",
+      "entity:斯坦福德",
+      "concept:pets",
+      "concept:family"
+     ],
+     "support": 4,
+     "admission_status": "weaken"
+    },
+    {
+     "id": "edc6754a-dc23-4e4b-a251-5d26117cb776",
+     "content": "詹姆斯按计划于2022年7月11日晚出发前往多伦多旅行，旅行一切顺利，还去了努克（Nuuk）这座城市并在那里待了不少时间，实现了去该国家的愿望",
+     "via": [
+      "concept:travel",
+      "entity:多伦多",
+      "event:出发前往多伦多旅行",
+      "concept:achievements"
+     ],
+     "support": 4,
+     "admission_status": "待核"
+    },
+    {
+     "id": "6aa72491-b4a8-4ccc-b1e8-861eaf4f33f0",
+     "content": "詹姆斯在2022年6月18日晚上拍了一张马克斯、黛西和内德三只狗在草地上的合照，背景有树木",
+     "via": [
+      "entity:内德",
+      "concept:outdoors"
+     ],
+     "support": 2,
+     "admission_status": "weaken"
+    },
+    {
+     "id": "6b13ed98-f3f5-4c48-b7ba-ec844d9396f1",
+     "content": "詹姆斯的公寓在2022年10月18日左右停电了几个小时，当时他正玩到某游戏的重大揭秘情节；因忘记存档丢失了部分进度，此后他学会了要经常存档",
+     "via": [
+      "concept:home",
+      "entity:James",
+      "entity:apartment"
+     ],
+     "support": 3,
+     "admission_status": "weaken"
+    },
+    {
+     "id": "fd9d41b8-0063-4213-b399-8aebafca8984",
+     "content": "詹姆斯分享了他的两只狗在公园里玩球的照片，说狗狗们给他生活带来很多快乐，是他最棒的伙伴，就像他的家人",
+     "via": [
+      "concept:emotions",
+      "concept:pets",
+      "entity:狗",
+      "concept:family",
+      "entity:公园"
+     ],
+     "support": 5,
+     "admission_status": "sourced"
+    }
+   ],
+   "swapped_out": [
+    {
+     "id": "3bb18475-d387-4b04-b2c6-a4958af3a396",
+     "content_sha": "4e5d51b2cec0e9f301007856805748160369a7451558f7a5ed80d965924e9799",
+     "content": "詹姆斯去过意大利、土耳其和墨西哥三个国家；他喜欢旅行，称赞意大利风景美丽、美食很棒（约2021年去的意大利）",
+     "session_id": "session_6"
+    },
+    {
+     "id": "3189d305-aa17-47e5-9327-4e5c07dce7d9",
+     "content_sha": "85df8578791e2bdd92f1a5fb631af338a1d72d9b7be8dedb2b9c8055279d9066",
+     "content": "詹姆斯在安静的公园独处时通常会带一本书放松，觉得这像逃离现实，能帮助他理清思绪、找到内心的平静",
+     "session_id": "session_14"
+    },
+    {
+     "id": "26dcf6b9-cb32-4cdb-8d48-af13777f81bc",
+     "content_sha": "9514e5ac850b3cca36618f705fabd76385c96943c9d3a17917092152703b54d4",
+     "content": "詹姆斯说宠物是他快乐的源泉，会一直照顾好它们",
+     "session_id": "session_18"
+    },
+    {
+     "id": "2ed0c8fe-824f-4070-8a34-2749748cb76b",
+     "content_sha": "a8593facb5f1991e9ec1c771bda99092a2faecb89382ab9fac37f545a429e536",
+     "content": "詹姆斯在2022年4月3日参加了一个线上游戏锦标赛，感到紧张刺激又好玩，并分享了现场照片",
+     "session_id": "session_4"
+    },
+    {
+     "id": "345dfdb2-dc62-41fe-b056-c2d09ffe284f",
+     "content_sha": "1eba0dd949941ca3013932033175df52b2104d59be1f2ac14f98bc7696cd2aa1",
+     "content": "詹姆斯在2022年3月下旬买了一套最新的游戏主机，画面效果惊艳，常在下班后玩新游戏放松，并与热爱游戏的朋友联机",
+     "session_id": "session_3"
+    }
+   ],
+   "must_not_evict": [],
+   "prompt_sha256": {
+    "base": "9ea5ebd741290ae38374c756b252efc3d84a87cd256c1b817931bff4d28a23a3",
+    "graph": "34041b247e6512ef29ce8ae79a8458a3a3fa85b27321d2ffed89b23206451962"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "相关记忆：记忆1显示詹姆斯在2022年4月从康涅狄格州斯坦福德的收容所领养了小狗内德，说明他当时住在康涅狄格州斯坦福德附近。\n\nANSWER: 是的，詹姆斯住在康涅狄格州（他从康涅狄格州斯坦福德的一家收容所领养了小狗内德）。",
+     "usage": {
+      "prompt_tokens": 2072,
+      "completion_tokens": 128
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成答案确认詹姆斯住在康涅狄格州，与金标答案“很可能是”语义一致，属于正确召回。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "收容所位于康涅狄格州斯坦福德，他于2022年4月在那里领养了小狗内德——附近收容所的收养行为表明詹姆斯住在康涅狄格州。\n\n回答：是的，很可能。詹姆斯住在康涅狄格州——他从斯坦福德（康涅狄格州）的一家收容所领养了他的小狗内德，而且他通常在这一地区活动。",
+     "usage": {
+      "prompt_tokens": 2131,
+      "completion_tokens": 120
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案与黄金答案一致，均得出詹姆斯很可能居住在康涅狄格州的结论，并提供了支持性细节。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "相关信息：记忆1和2提到詹姆斯在康涅狄格州斯坦福德的一家收容所领养了小狗内德；记忆4提到他和萨曼莎搬到一起租了公寓。从收容所领养宠物通常在当地进行，说明他当时住在康涅狄格州。\n\nANSWER: 是的，有证据表明詹姆斯住在康涅狄格州——他于2022年4月从康涅狄格州斯坦福德的一家收容所领养了小狗内德，说明他当时居住在该州（后来他与萨曼莎搬进了离McGee's酒吧不远的公寓）。",
+     "usage": {
+      "prompt_tokens": 2131,
+      "completion_tokens": 151
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The gold answer is 'very likely' (yes, likely) and the generated answer affirms he lived in Connecticut w"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "ANSWER：不是。记忆显示詹姆斯住在康涅狄格州斯坦福德的收容所只是领养小狗内德的地点，并没有证据表明詹姆斯本人住在康涅狄格州。他后来（2022年10月底）与萨曼莎搬到一起住，租了离McGee's酒吧不远的公寓。",
+     "usage": {
+      "prompt_tokens": 2072,
+      "completion_tokens": 71
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"黄金答案说詹姆斯很可能住在康涅狄格州，而生成的答案明确否认他住在那里，两者含义相反。\", \"label\": \"WRONG\"}"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "扫描记忆：只有记忆1提到康涅狄格州——詹姆斯于2022年4月从康涅狄格州斯坦福德的一家收容所领养了小狗内德。没有记忆说他本人住在康涅狄格州；记忆2-3显示他和萨曼莎搬进了一间公寓（地点只在McGee's酒吧附近提到）。\n\nANSWER: 没有证据表明詹姆斯住在康涅狄格州。唯一的相关信息是他于2022年4月从康涅狄格州斯坦福德的一家收容所领养了小狗内德，但这并不代表他住在那里。他目前和萨曼莎合住一间靠近McGee's酒吧的公寓。",
+     "usage": {
+      "prompt_tokens": 2072,
+      "completion_tokens": 204
+     },
+     "judge_correct": false,
+     "judge_note": "```json\n{\"reasoning\": \"The gold answer concludes James very likely lives in Connecticut, while the generated answer clai"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "扫描：Memory 1和2提到詹姆斯从康涅狄格州斯坦福德的一家收容所领养了小狗内德。Memory 4提到他租的公寓在McGee's酒吧附近。没有直接记忆明确说他住在康涅狄格州。\n\n实体验证：都是詹姆斯本人的相关记忆。\n\n综合：他曾从康涅狄格州斯坦福德的收容所领养狗，这暗示他可能住在康涅狄格州（或附近地区），但没有记忆直接说明他的居住地。\n\nANSWER: 很可能是的。詹姆斯从康涅狄格州斯坦福德的一家收容所领养了小狗内德（2022年4月），这表明他住在康涅狄格州（或其附近），不过记忆中没有直接陈述他的居住地。",
+     "usage": {
+      "prompt_tokens": 2131,
+      "completion_tokens": 225
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案最终回答“很可能是的”，与黄金答案“很可能是”一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "根据记忆，詹姆斯曾于2022年4月从康涅狄格州斯坦福德的一家收容所领养了小狗内德，说明他很可能住在康涅狄格州斯坦福德附近地区。\n\nANSWER: 很可能是的——詹姆斯从康涅狄格州斯坦福德的一家收容所领养了小狗内德，这表明他住在康涅狄格州（斯坦福德附近）。",
+     "usage": {
+      "prompt_tokens": 2131,
+      "completion_tokens": 177
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"Both answers convey the same conclusion that James very likely lives in Connecticut, with the generated a"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "相关记忆：memory 1提到他从康涅狄格州斯坦福德的一家收容所领养了小狗内德——说明他当时在该地区。Memory 2-3提到他2022年10月底和萨曼莎搬到一起住，租了一间离McGee's酒吧不远的公寓（McGee's是纽约的酒吧）。\n\nANSWER: 记忆没有直接说他住在康涅狄格州。他在2022年4月从康涅狄格州斯坦福德的收容所领养了狗内德，说明当时他在该地区；但2022年10月底他和萨曼莎搬到一起，租了一间离McGee's酒吧不远的公寓（该酒吧在纽约），所以目前他很可能住在纽约附近而非康涅狄格州。",
+     "usage": {
+      "prompt_tokens": 2072,
+      "completion_tokens": 203
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"The gold answer says he most likely lives in Connecticut, while the generated answer concludes he likely "
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-49_qa72",
+   "group": "A",
+   "question": "萨姆在2023年12月时隔很久重新开始了什么活动？",
+   "gold": "徒步",
+   "user_id": "zhfull:locomo:conv-49",
+   "base_context_ids": [
+    "6d63ef35-55db-413c-acb4-28a89d368544",
+    "21026870-28ab-4acf-929a-64772252d3de",
+    "048980df-3677-42bc-b74b-03f3fa36af73",
+    "28e97e62-874e-4d9e-bb2c-bfc8f108f318",
+    "043e0a3b-b534-4c8d-953e-68b315cfd634",
+    "90f7a80d-e342-4884-96ff-a849ca428fe6",
+    "01e91b06-8de5-4e0c-8eea-df3e8c511417",
+    "8b43e964-9b71-4eab-bfe6-e5c08108dcc6",
+    "659c65a7-5322-44ad-84e1-d594b5fb235f",
+    "20630668-ce59-45a2-8d2e-8b1a82c7df72",
+    "0e5b1968-fd76-48dd-946a-4d4f4fd70b51",
+    "08f5bf5d-ab54-4904-a9f0-29178d2f3bd5",
+    "2642146c-16c3-478c-b1c3-604750eac869",
+    "ae81b4d9-782a-4ca0-b5ab-01309679b867",
+    "96fc0bd2-c714-447a-bd1b-ddd97deda8ec"
+   ],
+   "graph_context_ids": [
+    "6d63ef35-55db-413c-acb4-28a89d368544",
+    "21026870-28ab-4acf-929a-64772252d3de",
+    "048980df-3677-42bc-b74b-03f3fa36af73",
+    "28e97e62-874e-4d9e-bb2c-bfc8f108f318",
+    "043e0a3b-b534-4c8d-953e-68b315cfd634",
+    "90f7a80d-e342-4884-96ff-a849ca428fe6",
+    "01e91b06-8de5-4e0c-8eea-df3e8c511417",
+    "8b43e964-9b71-4eab-bfe6-e5c08108dcc6",
+    "659c65a7-5322-44ad-84e1-d594b5fb235f",
+    "20630668-ce59-45a2-8d2e-8b1a82c7df72",
+    "0e5b1968-fd76-48dd-946a-4d4f4fd70b51",
+    "08f5bf5d-ab54-4904-a9f0-29178d2f3bd5",
+    "2642146c-16c3-478c-b1c3-604750eac869",
+    "ae81b4d9-782a-4ca0-b5ab-01309679b867",
+    "96fc0bd2-c714-447a-bd1b-ddd97deda8ec"
+   ],
+   "swapped_in": [],
+   "swapped_out": [],
+   "must_not_evict": [],
+   "prompt_sha256": {
+    "base": "d889e2c726bdea33b652a7a8c5b90de38442d0d94ff768b5d3106a26a1e0aaf4",
+    "graph": "d889e2c726bdea33b652a7a8c5b90de38442d0d94ff768b5d3106a26a1e0aaf4"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "相关记忆：#9 提到Sam喜欢徒步但很久没去；#1 显示2023年12月22日Sam带朋友们去徒步旅行，是时隔很久的重拾。\n\nANSWER: 徒步旅行。Sam在2023年12月22日带朋友们重新去了一次徒步旅行（他小时候喜欢徒步但已很久没去），并越来越享受健康的生活方式。",
+     "usage": {
+      "prompt_tokens": 2081,
+      "completion_tokens": 82
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案给出了徒步旅行，与黄金答案中的徒步相同。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "记忆1：2023年12月22日Sam带朋友们去徒步旅行；记忆9：Sam喜欢徒步但很久没去了。结合来看，时隔很久重新开始的活动是徒步。\n\nANSWER: 徒步旅行。Sam很久没去徒步（这是他从小的美好回忆，十岁曾和爸爸一起徒步），在2023年12月22日重新带朋友们去了一次徒步旅行，还分享了山顶的照片。",
+     "usage": {
+      "prompt_tokens": 2081,
+      "completion_tokens": 122
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确指出Sam在2023年12月22日重新开始徒步，与黄金答案“徒步”完全一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "相关记忆：#9（喜欢徒步但很久没去）和#1（2023年12月22日带朋友徒步）。结合起来：萨姆重新开始了徒步。\n\nANSWER: 徒步——萨姆在2023年12月22日（周五）时隔很久重新带朋友们去了一次徒步旅行。",
+     "usage": {
+      "prompt_tokens": 2081,
+      "completion_tokens": 95
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案正确识别了徒步这一活动，与金标准答案完全一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "Relevant memories: #1 (Dec 22, 2023 带朋友徒步，很久没去), #9 (Sam 喜欢徒步但很久没去).\n\nANSWER: 徒步旅行（2023年12月22日，Sam时隔很久再次带朋友们去徒步）。",
+     "usage": {
+      "prompt_tokens": 2081,
+      "completion_tokens": 65
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer correctly identifies hiking (徒步) as the activity Sam resumed in December 2023 after "
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "Memories 9 (久未徒步) and 1 (2023年12月22日带朋友徒步) 相互印证。\n\nANSWER: 徒步旅行 — Sam在2023年12月22日时隔很久重新去徒步，带朋友们去了山顶徒步并分享了照片。",
+     "usage": {
+      "prompt_tokens": 2081,
+      "completion_tokens": 61
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成答案明确提到“徒步旅行”，与金答案“徒步”指同一活动。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "Relevant memories: #9 (likes hiking but hasn't gone in a long time) and #1 (Dec 22, 2023 took friends hiking, photo from the summit).\n\nANSWER: 徒步旅行 — Sam在2023年12月22日带朋友们重新去徒步，这是他时隔很久再次进行的活动。",
+     "usage": {
+      "prompt_tokens": 2081,
+      "completion_tokens": 71
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确提到徒步（hiking），与黄金答案一致，且补充了2023年12月22日的具体细节。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "ANSWER: 萨姆在2023年12月22日（周五）时隔很久重新开始了徒步旅行（徒步活动），并分享了山顶徒步的照片，越来越享受健康的生活方式。",
+     "usage": {
+      "prompt_tokens": 2081,
+      "completion_tokens": 66
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确指出萨姆在2023年12月重新开始了徒步活动，与金标准答案“徒步”完全一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "记忆9：Sam喜欢徒步但很久没去。记忆1：2023年12月22日带朋友去徒步，重新开始。\n\nANSWER: 徒步旅行",
+     "usage": {
+      "prompt_tokens": 2081,
+      "completion_tokens": 38
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案匹配黄金答案'徒步'，指出萨姆在2023年12月22日重新开始了徒步旅行。\", \"label\": \"CORRECT\"}"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-43_qa152",
+   "group": "B",
+   "question": "约翰在哪类比赛中创下了职业生涯助攻新高？",
+   "gold": "篮球",
+   "user_id": "zhfull:locomo:conv-43",
+   "base_context_ids": [
+    "9fb43dc3-df46-4bf2-adef-99767e5ab070",
+    "f3929709-4c0f-4279-99ff-944dc0ee5c6e",
+    "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+    "57e83652-686d-45cb-952d-cf66e718e739",
+    "6fdb79eb-2f34-4cb7-8232-897d22bbc426",
+    "3cd04cfb-33f0-4881-ada7-1922529a8741",
+    "1124c537-329b-4f5c-bd20-33919a08f41c",
+    "04291dc1-5a0b-4fa6-ad37-f152d087398d",
+    "6eb755dd-bb3d-4dec-af5c-f2066c0faf2c",
+    "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+    "e293f456-be11-4be7-9c92-81173a51ce03",
+    "5627d94f-bc5d-4ac9-9878-cf8b75567651",
+    "0a3693bd-6407-4584-9b63-a4fda5a49d81",
+    "137b900b-84a9-4965-9f46-f0b67d388dcf",
+    "6be7f3c2-958d-41f3-ac51-4d11a9d419b1"
+   ],
+   "graph_context_ids": [
+    "9fb43dc3-df46-4bf2-adef-99767e5ab070",
+    "f3929709-4c0f-4279-99ff-944dc0ee5c6e",
+    "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+    "57e83652-686d-45cb-952d-cf66e718e739",
+    "85800f05-2954-4c6e-bfd9-a4c56e7ba9ee",
+    "6fdb79eb-2f34-4cb7-8232-897d22bbc426",
+    "3cd04cfb-33f0-4881-ada7-1922529a8741",
+    "1124c537-329b-4f5c-bd20-33919a08f41c",
+    "2f4781dd-4fff-4ca0-ab23-3e9a6debe06a",
+    "04291dc1-5a0b-4fa6-ad37-f152d087398d",
+    "6eb755dd-bb3d-4dec-af5c-f2066c0faf2c",
+    "9ccc77c2-b0e3-443a-81ff-f715d0e00224",
+    "e289c248-c3b1-4913-a40b-a537003da975",
+    "e293f456-be11-4be7-9c92-81173a51ce03",
+    "5627d94f-bc5d-4ac9-9878-cf8b75567651"
+   ],
+   "swapped_in": [
+    {
+     "id": "85800f05-2954-4c6e-bfd9-a4c56e7ba9ee",
+     "content": "约翰（John）在2023年8月2日之前的一周打了一场超级激烈的篮球比赛，球队以微弱分差获胜，他投进了最后一个球并听到观众欢呼，感到非常兴奋；他分享了比赛现场照片（球馆内激烈比赛、制胜一投、欢呼人群）",
+     "via": [
+      "entity:basketball",
+      "entity:John",
+      "concept:achievements",
+      "concept:sports"
+     ],
+     "support": 4,
+     "admission_status": "weaken"
+    },
+    {
+     "id": "2f4781dd-4fff-4ca0-ab23-3e9a6debe06a",
+     "content": "约翰从小和爸爸一起看NBA比赛并梦想在大球场上打球；十岁时爸爸给他报了本地联赛，此后初中、高中坚持打篮球，之后拿到大学奖学金，大学毕业后被一支球队选中，实现童年梦想",
+     "via": [
+      "concept:sports",
+      "entity:约翰",
+      "concept:career"
+     ],
+     "support": 3,
+     "admission_status": "sourced"
+    },
+    {
+     "id": "e289c248-c3b1-4913-a40b-a537003da975",
+     "content": "约翰（John）小时候常在户外练几个小时篮球，梦想着打大赛，那是他排解怀疑和压力的方式；篮球一直是他人生的重要部分，让他能做真实的自己并追求热爱",
+     "via": [
+      "entity:basketball",
+      "preference:21:zhfull:locomo:conv-43:john|like|basketball",
+      "concept:identity"
+     ],
+     "support": 3,
+     "admission_status": "待核"
+    }
+   ],
+   "swapped_out": [
+    {
+     "id": "0a3693bd-6407-4584-9b63-a4fda5a49d81",
+     "content_sha": "f4dc2db8f8853b33a3daea0f3a28fb7c92fad5eb3cfcddcfb044bfc5b1558350",
+     "content": "约翰（John）的篮球队在2023年秋季赛季经历了激烈比赛，既有惨痛失利也有精彩胜利，面对强队互相支持、绝不放弃，最终赢得了一个奖杯，他觉得辛勤付出得到了回报",
+     "session_id": "session_13"
+    },
+    {
+     "id": "137b900b-84a9-4965-9f46-f0b67d388dcf",
+     "content_sha": "fcb01f6adcc35a610fcf449ce3f659f0aeaa64e074eb4f1a8fdcfaa634e937e8",
+     "content": "约翰的首要篮球目标是赢得总冠军，同时也想在球场之外有所作为，通过慈善或激励他人回馈",
+     "session_id": "session_6"
+    },
+    {
+     "id": "6be7f3c2-958d-41f3-ac51-4d11a9d419b1",
+     "content_sha": "adf2925a5142cf9f8eb5cbb25e6f213b84f124fd9d449828e2ed80dce985df34",
+     "content": "约翰（John）打职业篮球快一年了（截至2023年12月），这段旅程充满挑战和成长，他觉得非常美妙；他的队友们来自世界各地",
+     "session_id": "session_21"
+    }
+   ],
+   "must_not_evict": [
+    "67fe1e5b-c753-4409-83b8-3042a6a66fc2",
+    "9fb43dc3-df46-4bf2-adef-99767e5ab070"
+   ],
+   "prompt_sha256": {
+    "base": "ecdaa146eb7f9a414d0f4bc087853ffd29e3945c645af503f80a706ed6297d4b",
+    "graph": "de52f18c219354c4ed1f9a596f8d18392cbecafc16900df9a07c2d5085860b44"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "ANSWER: 约翰在2023年12月8日（周五）对阵宿敌的大比赛（篮球比赛）中创下了职业生涯助攻新高。",
+     "usage": {
+      "prompt_tokens": 2129,
+      "completion_tokens": 36
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案提到篮球比赛，与金标准答案篮球一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "ANSWER: 约翰在2023年12月8日（周五）对阵宿敌的大比赛（宿敌对决/rivalry比赛）中创下了职业生涯助攻新高。",
+     "usage": {
+      "prompt_tokens": 2181,
+      "completion_tokens": 41
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"金牌答案是篮球，而生成的答案却描述了一场比赛的日期/背景，没有提及篮球，因此不匹配。\", \"label\": \"WRONG\"}"
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "ANSWER：约翰在2023年12月8日对阵宿敌的大比赛（与宿敌队伍的重要对决）中创下了职业生涯助攻新高。",
+     "usage": {
+      "prompt_tokens": 2181,
+      "completion_tokens": 34
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"The gold answer states the game type is basketball, but the generated answer only mentions a game against"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "在一场对阵宿敌的大比赛中（2023年12月8日）。\n\nANSWER: 约翰在2023年12月8日（周五）对阵宿敌的大比赛中创下了职业生涯助攻新高。",
+     "usage": {
+      "prompt_tokens": 2129,
+      "completion_tokens": 48
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"The generated answer mentions a big game against a rival but never identifies the competition type as bas"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "ANSWER: 在2023年12月8日对阵宿敌的大比赛（重要对手的比赛）中创下了职业生涯助攻新高。",
+     "usage": {
+      "prompt_tokens": 2129,
+      "completion_tokens": 30
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"黄金答案是篮球（比赛类型），但生成的答案描述了一场比赛的日期和对手，却从未提及篮球或任何与篮球相关的比赛类型，因此没有任何正确项。\", \"label\": \"WRONG\"}"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "ANSWER: 约翰在2023年12月8日（周五）对阵宿敌的大比赛（德比/宿敌对决）中创下了职业生涯助攻新高。",
+     "usage": {
+      "prompt_tokens": 2181,
+      "completion_tokens": 40
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"金答案是篮球，而生成答案只提到德比大比赛，没有提到篮球或任何比赛类别，因此没有覆盖金答案的正确项。\", \"label\": \"WRONG\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "根据记忆1，约翰在2023年12月8日（周五）的一场对阵宿敌的大比赛中创下了职业生涯助攻新高。\n\nANSWER: 在对阵宿敌的一场重要篮球比赛（大战）中创下了职业生涯助攻新高。",
+     "usage": {
+      "prompt_tokens": 2181,
+      "completion_tokens": 51
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer states the record was set in a big basketball game, matching the gold answer's categ"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "回答：约翰在2023年12月8日（周五）对阵宿敌的大比赛（ rivalry rivalry game，即对阵宿敌的重要篮球比赛）中创下了职业生涯助攻新高。",
+     "usage": {
+      "prompt_tokens": 2129,
+      "completion_tokens": 41
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成答案明确提到这是一场篮球比赛，与金答案“篮球”的核心概念一致。\", \"label\": \"CORRECT\"}"
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-50_qa61",
+   "group": "B",
+   "question": "戴夫在福特野马上花费了多长时间？",
+   "gold": "将近两个月",
+   "user_id": "zhfull:locomo:conv-50",
+   "base_context_ids": [
+    "14566373-c52f-4f4d-8ab1-ac9d45b9c388",
+    "bc5b379f-7d59-4e25-97f1-ec697b04b1ce",
+    "6e10cd21-faea-4b1f-9e48-416048982338",
+    "3c945eb1-f276-4ea0-9cbe-0f83d8174518",
+    "753470fd-702f-4380-9814-ffa9590f53d6",
+    "19c4d0d9-02f6-40e2-ad7c-b1517199d968",
+    "4c992475-1ae9-4eb2-9ef9-e9e0527d4bd5",
+    "96572229-3a68-4b00-a296-4f068da8307e",
+    "066d2dd5-d0f9-4c03-a21f-827fced07fd3",
+    "4399c7f7-5f75-48ed-98bb-468034bf1c5a",
+    "66f46996-9cef-433d-a107-6678a50fd8a5",
+    "09780d2e-317e-4659-aaf0-934e86d62cf4",
+    "bbf070f9-9a19-47cf-bb7c-09754020f5e4",
+    "9b6204b9-39e6-406d-b089-9d3f2bdd2465",
+    "2835cbca-e001-4078-9284-36536828fd79"
+   ],
+   "graph_context_ids": [
+    "14566373-c52f-4f4d-8ab1-ac9d45b9c388",
+    "bc5b379f-7d59-4e25-97f1-ec697b04b1ce",
+    "6e10cd21-faea-4b1f-9e48-416048982338",
+    "3c945eb1-f276-4ea0-9cbe-0f83d8174518",
+    "753470fd-702f-4380-9814-ffa9590f53d6",
+    "19c4d0d9-02f6-40e2-ad7c-b1517199d968",
+    "4c992475-1ae9-4eb2-9ef9-e9e0527d4bd5",
+    "96572229-3a68-4b00-a296-4f068da8307e",
+    "066d2dd5-d0f9-4c03-a21f-827fced07fd3",
+    "4399c7f7-5f75-48ed-98bb-468034bf1c5a",
+    "66f46996-9cef-433d-a107-6678a50fd8a5",
+    "09780d2e-317e-4659-aaf0-934e86d62cf4",
+    "bbf070f9-9a19-47cf-bb7c-09754020f5e4",
+    "9b6204b9-39e6-406d-b089-9d3f2bdd2465",
+    "2835cbca-e001-4078-9284-36536828fd79"
+   ],
+   "swapped_in": [],
+   "swapped_out": [],
+   "must_not_evict": [
+    "19c4d0d9-02f6-40e2-ad7c-b1517199d968",
+    "3c945eb1-f276-4ea0-9cbe-0f83d8174518",
+    "6e10cd21-faea-4b1f-9e48-416048982338",
+    "bc5b379f-7d59-4e25-97f1-ec697b04b1ce"
+   ],
+   "prompt_sha256": {
+    "base": "a04967d16ce6013d49b0dcf46bc98dda0f068fc92a1616eeb653d6ed6268b064",
+    "graph": "a04967d16ce6013d49b0dcf46bc98dda0f068fc92a1616eeb653d6ed6268b064"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "**推理过程：**\n- 记忆4：戴夫从废品场找到一辆福特野马，状况很差，修复完成后分享了照片，非常有满足感。\n- 记忆2：他希望2023年9月底前全部修好，目前发动机损坏。\n- 记忆3：2023年9月22日左右，发动机一启动就发出奇怪噪音，遇到麻烦。\n- 记忆1：2023年10月下旬，他找到了（这辆）红色汽车并花了很长时间修复，对结果满意。\n- 结合：他从找到破烂的野马（约2022年）到修复完成，经历了发动机故障等波折，整个过程持续了大约一年多。\n\n**ANSWER:** 戴夫在福特野马上花费了大约一年多的时间——从2022年左右从废品场找到这辆状况很糟的野马开始，经过修复中的挫折（2023年9月发动机出现奇怪噪音），最终在2023年完成修复并让这辆旧车重获新生。",
+     "usage": {
+      "prompt_tokens": 2195,
+      "completion_tokens": 443
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"金标准答案说将近两个月，而生成答案声称大约一年多，两者明显不一致。\", \"label\": \"WRONG\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "回顧記憶：戴夫從廢品場找到一輛狀況很差的紅色福特野馬（約2023年10月前的幾個月開始修復），目標在2023年9月底前全部修好；2023年9月22日左右引擎出現問題，之後修復完成並分享照片。可見這項修復工程持續了幾個月（數月），而非幾天。\n\nANSWER: 戴夫在福特野馬上花費了數個月的時間——從發現那輛狀況很差的野馬開始修復，一直持續到2023年9月底前完工（期間9月下旬還遇到引擎出問題的挫折），整個修復歷時大約幾個月。",
+     "usage": {
+      "prompt_tokens": 2195,
+      "completion_tokens": 329
+     },
+     "judge_correct": true,
+     "judge_note": "```json\n{\"reasoning\": \"「數個月」與「將近兩個月」屬於同一時間範疇，且50%容差內可接受，語義重疊足夠。\", \"label\": \"CORRECT\"}\n```"
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "**第 1 步 — 扫描：** 记忆 2、3、4 涉及野马（Mustang）的修复；记忆 1（2023年10月下旬找到一辆红色汽车）、9（2022年翻新卖掉）相关但对象可能不同。\n\n**第 2 步 — 实体核对：** 记忆 2、3、4 均明确指戴夫修复的老款福特野马（Ford Mustang），正确。\n\n**第 3 步 — 综合：** 记忆 2 显示戴夫在 2023 年 9 月底前希望全部修好（发动机还在修）；记忆 3（9月22日左右）发动机仍有噪音；记忆 4 显示修复最终完成并分享照片。时间跨度从找到废品场野马（2023年内）到 2023 年 9 月底/之后完工。\n\n**第 4-5 步：** 没有明确起始日期，但目标是 2023 年 9 月底前完成，项目贯穿 2023 年。\n\n**回答：** 记忆中没有精确的起止日期，但可确定戴夫的野马修复项目贯穿 2023 年大部分时间——他计划在 2023 年 9 月底前全部修好，期间（2023年9月下旬）发动机仍出问题，最终修复完成。即大约花了大半年的时间（约 2023 年初至 2023 年 9 月底前后）才完成。",
+     "usage": {
+      "prompt_tokens": 2195,
+      "completion_tokens": 491
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"The gold answer is 'nearly two months', but the generated answer estimates several months (most of 2023),"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "相关记忆：记忆2显示戴夫正在修复老式福特Mustang，希望在2023年9月底前全部修好；记忆3显示2023年9月22日左右发动机出问题；记忆1显示他在2023年10月下旬（前一周）找到（红色）车并花长时间修复完成；记忆4显示他从废品场找到这辆状况很差的野马，修复完成后分享照片。\n\n综合来看，戴夫在2023年找到这辆福特野马并开始修复，期间经历发动机故障等波折，到2023年10月下旬修复完成并分享成果，整个修复过程大约持续了几个月（约从2023年发现车辆到2023年9月底目标完成、至10月下旬最终修好）。他在2022年还曾翻新过另一辆车卖给收藏家，但那是不同的项目。\n\nANSWER: 戴夫在福特野马上花费了大约几个月的时间——从2023年发现这辆状况很糟的野马并开始修复，中间经历发动机故障，到2023年10月下旬修复完成，历时约数月（不到一年）。",
+     "usage": {
+      "prompt_tokens": 2195,
+      "completion_tokens": 568
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案称耗时“几个月”，而黄金答案称“将近两个月”——两者都在同一直观持续时间的范围内，属于合理的释义，尽管稍显模糊。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "戴夫修复福特野马的时间线：他从废品场找到这辆车（状况很差），目标是2023年9月底前全部修好；2023年9月22日左右发动机出现奇怪噪音造成挫折，随后他继续修复并最终完成，2023年10月下旬分享成品照片，表示非常满足和自豪。因此整个修复过程持续了大约一年以内，从开始修复到完工大约花了他2023年的大半年时间，按他自己的计划是在约2023年9月底完成，实际因发动机问题延至2023年10月下旬才彻底完工。\n\nANSWER: 戴夫在福特野马上花了大约一年时间（从找到报废车开始修复，原计划2023年9月底完工，实际因发动机故障延至2023年10月下旬才最终完成修复）。",
+     "usage": {
+      "prompt_tokens": 2195,
+      "completion_tokens": 386
+     },
+     "judge_correct": false,
+     "judge_note": "```json\n{\"reasoning\": \"黄金答案是将近两个月，而生成答案称花费约一年时间，时间跨度差异远超容忍范围，未包含正确信息。\", \"label\": \"WRONG\"}\n```"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "回顾记忆：戴夫于2023年10月下旬从废品场找到一辆红色福特野马，当时状况很差（记忆1、4）；9月22日左右发动机修复遇到问题（记忆3），他原希望9月底前全部修好（记忆2）。从找到车（2023年10月下旬）到修复完成并分享照片，大约花了几个月的时间。另外记忆9提到他在约2022年（去年）也翻新过一辆车并卖给收藏家，但那辆与野马项目不是同一辆。\n\nANSWER: 戴夫大约花了几个月时间修复这辆福特野马——从2023年10月下旬在废品场找到这辆状况很糟的车开始，投入大量心血修复（期间9月还遇到发动机故障的挫折），直到修复完成让旧车重获新生。",
+     "usage": {
+      "prompt_tokens": 2195,
+      "completion_tokens": 388
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"Gold说将近两个月，生成答案说大约几个月，同属于同一时间量级且在50%时长容忍范围内。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "根据记忆：戴夫从废品场找到这辆状况很差的福特野马后开始修复（记忆4），希望能在2023年9月底前全部修好（记忆2），但9月22日左右发动机出现奇怪噪音遇到麻烦（记忆3），最终他花了很长时间将其修复完成并对结果满意（记忆1）。此外，他去年（约2022年）还翻新过一辆车并卖给收藏家。\n\nANSWER: 戴夫在福特野马上花费了很长时间——从废品场找到这辆破车开始，原计划在2023年9月底前全部修复完成，期间还遇到发动机故障的挫折，前后大约花了大半年的修复时间才让这辆野马重获新生。",
+     "usage": {
+      "prompt_tokens": 2195,
+      "completion_tokens": 312
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"The gold answer says nearly two months, but the generated answer claims about half a year, which exceeds "
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "相关记忆：记忆1（2023年10月下旬找到红色Mustang并花很长时间修复）、记忆2（2023年9月底前希望修好）、记忆3（9月22日发动机出问题仍在修）、记忆4（从废品场找到的野马，修复完成后分享照片）。综合来看，野马修复项目贯穿2023年，从年中找到车、9月遇到发动机问题、一直持续到10月下旬修复完成，历时约数月（将近半年）。\n\nANSWER: 戴夫在福特野马上大约花费了2023年中的几个月时间（约半年）——从年中找到并开始修复，经历9月下旬发动机故障的挫折，到2023年10月下旬完成修复。",
+     "usage": {
+      "prompt_tokens": 2195,
+      "completion_tokens": 330
+     },
+     "judge_correct": false,
+     "judge_note": "{\"reasoning\": \"The gold answer says nearly two months, while the generated answer says about half a year, which exceeds "
+    }
+   ]
+  },
+  {
+   "case_id": "locomo_conv-48_qa90",
+   "aborted": "retrieval_drift",
+   "drift_ids": [
+    "a46ff00d-6c12-4e8f-8b6c-66252c011788"
+   ]
+  },
+  {
+   "case_id": "locomo_conv-41_qa86",
+   "group": "B",
+   "question": "约翰做了什么事让他的钱包吃不消？",
+   "gold": "他的车抛锚了",
+   "user_id": "zhfull:locomo:conv-41",
+   "base_context_ids": [
+    "2266b983-264c-4562-8f72-f1d2aa25d49b",
+    "1512066b-5bbe-455f-ab5f-bfd41aa8ed67",
+    "bdb28053-0602-4711-8601-fef445b5874f",
+    "197c1dc7-9a1b-4f13-ba5c-cdc9becf6da9",
+    "eedd9b8b-f1e9-4316-9c23-19ca3b620682",
+    "6fe799e4-9243-479f-ac94-79a257e55a5d",
+    "8528c86f-b2be-40bb-98a5-4940ac590e58",
+    "ceb1a846-9b6f-45f8-8ae9-959e07e65e6b",
+    "35071f9e-c480-44bc-8c30-6087812bbd0d",
+    "eb2241bf-e4bd-4ce3-b622-a10091a114c7",
+    "093b7fec-7081-40dc-a897-a7d9c90dbbcf",
+    "dccbdd97-4ac6-4028-8068-840070dcabff",
+    "46b7c813-f812-4f1f-8334-33e01a70e6dd",
+    "c8e8ae34-81ca-440f-9add-a44889f8aa81",
+    "9cee58e9-a51c-4482-8dc2-0a949b1d59ed"
+   ],
+   "graph_context_ids": [
+    "2266b983-264c-4562-8f72-f1d2aa25d49b",
+    "1512066b-5bbe-455f-ab5f-bfd41aa8ed67",
+    "bdb28053-0602-4711-8601-fef445b5874f",
+    "197c1dc7-9a1b-4f13-ba5c-cdc9becf6da9",
+    "eedd9b8b-f1e9-4316-9c23-19ca3b620682",
+    "6fe799e4-9243-479f-ac94-79a257e55a5d",
+    "8528c86f-b2be-40bb-98a5-4940ac590e58",
+    "ceb1a846-9b6f-45f8-8ae9-959e07e65e6b",
+    "35071f9e-c480-44bc-8c30-6087812bbd0d",
+    "eb2241bf-e4bd-4ce3-b622-a10091a114c7",
+    "093b7fec-7081-40dc-a897-a7d9c90dbbcf",
+    "dccbdd97-4ac6-4028-8068-840070dcabff",
+    "df3a8dcb-53d0-4284-b5ca-3ee4f8518a8e",
+    "46b7c813-f812-4f1f-8334-33e01a70e6dd",
+    "c8e8ae34-81ca-440f-9add-a44889f8aa81"
+   ],
+   "swapped_in": [
+    {
+     "id": "df3a8dcb-53d0-4284-b5ca-3ee4f8518a8e",
+     "content": "约翰分享了一张去年（约2021-2022年）某学校获得拨款后的照片，拨款让学校得以进行必要的修缮和翻新，为学生营造更安全、更现代化的学习环境",
+     "via": [
+      "entity:约翰",
+      "concept:community",
+      "concept:education"
+     ],
+     "support": 3,
+     "admission_status": "sourced"
+    }
+   ],
+   "swapped_out": [
+    {
+     "id": "9cee58e9-a51c-4482-8dc2-0a949b1d59ed",
+     "content_sha": "d5c73ab66e18d7a6e883130b2e6f327f69885aaf62b8212a644f3e48c1d5ce55",
+     "content": "约翰通常在正常工作时间工作，但有时会把工作带回家；他努力安排好时间确保在重要的事情上都在场，认为关键是找到平衡、让那些时刻有意义",
+     "session_id": "session_19"
+    }
+   ],
+   "must_not_evict": [
+    "dccbdd97-4ac6-4028-8068-840070dcabff"
+   ],
+   "prompt_sha256": {
+    "base": "0dd5a4f6e6006139565f8d5cae84a024af1a7e6050572dea1aca5119c8d10125",
+    "graph": "926bd6cc1cce5d888802e6591069784db09de2f82bb1d8e9901f48ac2b5c417b"
+   },
+   "calls": [
+    {
+     "index": 1,
+     "arm": "base",
+     "answer": "相关记忆：约翰2023年4月7日上班路上车抛锚，修车费用负担较重。\n\nANSWER: 约翰的车在2023年4月7日上班路上抛锚了，修车的高额费用让他的钱包吃不消（费用负担较重，但他保持积极态度寻找解决办法）。",
+     "usage": {
+      "prompt_tokens": 2113,
+      "completion_tokens": 71
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确提到约翰的车抛锚了，这与黄金答案的核心事实完全一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 2,
+     "arm": "graph",
+     "answer": "车在2023年4月7日上班路上抛锚，修车费用负担较重，让他的钱包吃不消。\n\nANSWER: 修车费用（他的车抛锚后需要修理，费用让他钱包吃不消）",
+     "usage": {
+      "prompt_tokens": 2117,
+      "completion_tokens": 51
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"The generated answer identifies the same core event—his car breaking down—as what strained his wallet.\", "
+    },
+    {
+     "index": 3,
+     "arm": "graph",
+     "answer": "相关记忆：#12——2023年4月7日他的车在上班路上抛锚，修车费用负担较重。\n\n回答：约翰的车在上班路上抛锚了，高昂的修车费用让他的钱包吃不消。",
+     "usage": {
+      "prompt_tokens": 2117,
+      "completion_tokens": 52
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确指出了同样的核心事实——他的车在上班路上抛锚了，这与标准答案'他的车抛锚了'一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 4,
+     "arm": "base",
+     "answer": "在2023年4月7日（上周五），约翰的车在上班路上抛锚了，修车费用负担较重，这让他的钱包吃不消。\n\nANSWER: 修车费用（他的车在2023年4月7日上班路上抛锚后正在修理，费用高昂，负担较重）。",
+     "usage": {
+      "prompt_tokens": 2113,
+      "completion_tokens": 69
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确提到他的车抛锚了以及由此产生的昂贵维修费用，这与黄金答案的概念相符。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 5,
+     "arm": "base",
+     "answer": "ANSWER：约翰的车在2023年4月7日（上周五）上班路上抛锚了，修车费用对他来说负担很重，让他的钱包吃不消。",
+     "usage": {
+      "prompt_tokens": 2113,
+      "completion_tokens": 64
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案正确识别了同一核心事件——约翰的车抛锚了——以及额外的细节。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 6,
+     "arm": "graph",
+     "answer": "相关记忆：#12 车辆抛锚，修理费用负担较重。\n\n回答：约翰的车在2023年4月7日上班路上抛锚了，修车费用让他的钱包吃不消。",
+     "usage": {
+      "prompt_tokens": 2117,
+      "completion_tokens": 47
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案正确指出了车辆抛锚及相关的经济负担，与金标准答案一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 7,
+     "arm": "graph",
+     "answer": "Memory 12：约翰的车在2023年4月7日上班路上抛锚，修车费用负担沉重。\n\nANSWER: 约翰的车在上班路上抛锚了，修车的费用让他的钱包吃不消。",
+     "usage": {
+      "prompt_tokens": 2117,
+      "completion_tokens": 51
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案正确指出了约翰的车抛锚及其导致的费用负担，与金标准答案语义一致。\", \"label\": \"CORRECT\"}"
+    },
+    {
+     "index": 8,
+     "arm": "base",
+     "answer": "约翰的车在2023年4月7日上班路上抛锚了，正在修理，修车费用负担较重，让他的钱包吃不消。\n\nANSWER: 修车（他的车抛锚后需要支付的昂贵修车费用）。",
+     "usage": {
+      "prompt_tokens": 2113,
+      "completion_tokens": 61
+     },
+     "judge_correct": true,
+     "judge_note": "{\"reasoning\": \"生成的答案明确提到约翰的车抛锚了且修车费用昂贵，与金答案的核心事实一致。\", \"label\": \"CORRECT\"}"
+    }
+   ]
+  }
+ ],
+ "calls_used": 176
+}
