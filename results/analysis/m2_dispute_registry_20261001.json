@@ -1,0 +1,292 @@
+{
+ "scope": "争议题预注册登记表 + 不可恢复项固定台账。后续任何配对实验必须消费本表。",
+ "usage_rules": [
+  "配对选题默认排除 disputes 内全部题；确需使用时按 rule 预注册处理并在结果中标注。",
+  "unrecoverable 项不得反复尝试复原；新增运行必须自带失败记账与留痕。"
+ ],
+ "disputes": [
+  {
+   "case_id": "locomo_conv-26_qa37",
+   "tag": "gold_evidence_unreachable",
+   "source": "results/analysis/gold_evidence_id_audit_20260926.json",
+   "rule": "evidence 引用不可达源 turn；覆盖类指标须先排除或人工核源"
+  },
+  {
+   "case_id": "locomo_conv-42_qa58",
+   "tag": "gold_evidence_unreachable",
+   "source": "results/analysis/gold_evidence_id_audit_20260926.json",
+   "rule": "evidence 引用不可达源 turn；覆盖类指标须先排除或人工核源"
+  },
+  {
+   "case_id": "locomo_conv-42_qa88",
+   "tag": "gold_evidence_unreachable",
+   "source": "results/analysis/gold_evidence_id_audit_20260926.json",
+   "rule": "evidence 引用不可达源 turn；覆盖类指标须先排除或人工核源"
+  },
+  {
+   "case_id": "locomo_conv-43_qa18",
+   "tag": "gold_evidence_unreachable",
+   "source": "results/analysis/gold_evidence_id_audit_20260926.json",
+   "rule": "evidence 引用不可达源 turn；覆盖类指标须先排除或人工核源"
+  },
+  {
+   "case_id": "locomo_conv-47_qa38",
+   "tag": "gold_evidence_unreachable",
+   "source": "results/analysis/gold_evidence_id_audit_20260926.json",
+   "rule": "evidence 引用不可达源 turn；覆盖类指标须先排除或人工核源"
+  },
+  {
+   "case_id": "locomo_conv-49_qa31",
+   "tag": "gold_evidence_unreachable",
+   "source": "results/analysis/gold_evidence_id_audit_20260926.json",
+   "rule": "evidence 引用不可达源 turn；覆盖类指标须先排除或人工核源"
+  },
+  {
+   "case_id": "locomo_conv-49_qa38",
+   "tag": "gold_evidence_unreachable",
+   "source": "results/analysis/gold_evidence_id_audit_20260926.json",
+   "rule": "evidence 引用不可达源 turn；覆盖类指标须先排除或人工核源"
+  },
+  {
+   "case_id": "locomo_conv-49_qa46",
+   "tag": "gold_evidence_unreachable",
+   "source": "results/analysis/gold_evidence_id_audit_20260926.json",
+   "rule": "evidence 引用不可达源 turn；覆盖类指标须先排除或人工核源"
+  },
+  {
+   "case_id": "locomo_conv-50_qa69",
+   "tag": "gold_evidence_unreachable",
+   "source": "results/analysis/gold_evidence_id_audit_20260926.json",
+   "rule": "evidence 引用不可达源 turn；覆盖类指标须先排除或人工核源"
+  },
+  {
+   "case_id": "locomo_conv-43_qa56",
+   "tag": "gold_semantic_mismatch",
+   "source": "results/analysis/gold_evidence_quality_zh.md",
+   "rule": "gold evidence 结构在但语义错接（钢琴→小提琴；D23:2 vs D23:3）；不得用于经验训练或 oracle 超边"
+  },
+  {
+   "case_id": "locomo_conv-43_qa60",
+   "tag": "gold_semantic_mismatch",
+   "source": "results/analysis/gold_evidence_quality_zh.md",
+   "rule": "gold evidence 结构在但语义错接（钢琴→小提琴；D23:2 vs D23:3）；不得用于经验训练或 oracle 超边"
+  },
+  {
+   "case_id": "locomo_conv-50_qa13",
+   "tag": "translation_semantic",
+   "source": "docs/m2_zh_translation_semantic_sample_zh.md",
+   "rule": "翻译语义偏移（如'享受→愿意'）；判分争议须按题面预注册规则处理"
+  },
+  {
+   "case_id": "locomo_conv-48_qa20",
+   "tag": "translation_semantic",
+   "source": "docs/m2_zh_translation_semantic_sample_zh.md",
+   "rule": "翻译语义偏移（如'享受→愿意'）；判分争议须按题面预注册规则处理"
+  },
+  {
+   "case_id": "locomo_conv-26_qa111",
+   "tag": "translation_semantic",
+   "source": "docs/m2_zh_translation_semantic_sample_zh.md",
+   "rule": "翻译语义偏移（如'享受→愿意'）；判分争议须按题面预注册规则处理"
+  },
+  {
+   "case_id": "locomo_conv-44_qa15",
+   "tag": "translation_semantic",
+   "source": "docs/m2_zh_translation_semantic_sample_zh.md",
+   "rule": "翻译语义偏移（如'享受→愿意'）；判分争议须按题面预注册规则处理"
+  },
+  {
+   "case_id": "locomo_conv-48_qa36",
+   "tag": "translation_semantic",
+   "source": "docs/m2_zh_translation_semantic_sample_zh.md",
+   "rule": "翻译语义偏移（如'享受→愿意'）；判分争议须按题面预注册规则处理"
+  },
+  {
+   "case_id": "locomo_conv-42_qa215",
+   "tag": "translation_semantic",
+   "source": "docs/m2_zh_translation_semantic_sample_zh.md",
+   "rule": "翻译语义偏移（如'享受→愿意'）；判分争议须按题面预注册规则处理"
+  },
+  {
+   "case_id": "locomo_conv-43_qa166",
+   "tag": "flip_source_ambiguous",
+   "source": "docs/m2_graph_flip_source_sample_zh.md",
+   "rule": "翻分归因歧义（金标人物错接/题面年份与源不一致/同义判分）"
+  },
+  {
+   "case_id": "locomo_conv-47_qa61",
+   "tag": "flip_source_ambiguous",
+   "source": "docs/m2_graph_flip_source_sample_zh.md",
+   "rule": "翻分归因歧义（金标人物错接/题面年份与源不一致/同义判分）"
+  },
+  {
+   "case_id": "locomo_conv-30_qa69",
+   "tag": "flip_source_ambiguous",
+   "source": "docs/m2_graph_flip_source_sample_zh.md",
+   "rule": "翻分归因歧义（金标人物错接/题面年份与源不一致/同义判分）"
+  },
+  {
+   "case_id": "locomo_conv-42_qa62",
+   "tag": "flip_source_ambiguous",
+   "source": "docs/m2_graph_flip_source_sample_zh.md",
+   "rule": "翻分归因歧义（金标人物错接/题面年份与源不一致/同义判分）"
+  }
+ ],
+ "dispute_counts": {
+  "gold_evidence_unreachable": 9,
+  "gold_semantic_mismatch": 2,
+  "translation_semantic": 6,
+  "flip_source_ambiguous": 4
+ },
+ "missing_case_groups": [
+  {
+   "group": "graph_minus_no_graph",
+   "a": "zhfull_fused_locomo_20260925_161049.jsonl",
+   "b": "zhfull_locomo_20260925_115806.jsonl",
+   "missing_from_either": 9,
+   "sign_robust_to_missing_only": "positive"
+  },
+  {
+   "group": "graph_minus_no_graph",
+   "a": "zhfull_fused_locomo_20260925_161049.jsonl",
+   "b": "zhfull_locomo_20260925_151059.jsonl",
+   "missing_from_either": 10,
+   "sign_robust_to_missing_only": "positive"
+  },
+  {
+   "group": "graph_minus_no_graph",
+   "a": "zhfull_fused_locomo_20260925_161049.jsonl",
+   "b": "zhfull_locomo_20260925_164645.jsonl",
+   "missing_from_either": 12,
+   "sign_robust_to_missing_only": "undetermined"
+  },
+  {
+   "group": "graph_minus_no_graph",
+   "a": "zhfull_fused_locomo_20260925_172126.jsonl",
+   "b": "zhfull_locomo_20260925_115806.jsonl",
+   "missing_from_either": 10,
+   "sign_robust_to_missing_only": "undetermined"
+  },
+  {
+   "group": "graph_minus_no_graph",
+   "a": "zhfull_fused_locomo_20260925_172126.jsonl",
+   "b": "zhfull_locomo_20260925_151059.jsonl",
+   "missing_from_either": 11,
+   "sign_robust_to_missing_only": "undetermined"
+  },
+  {
+   "group": "graph_minus_no_graph",
+   "a": "zhfull_fused_locomo_20260925_172126.jsonl",
+   "b": "zhfull_locomo_20260925_164645.jsonl",
+   "missing_from_either": 13,
+   "sign_robust_to_missing_only": "undetermined"
+  },
+  {
+   "group": "graph_minus_no_graph",
+   "a": "zhfull_fused_locomo_20260925_195248.jsonl",
+   "b": "zhfull_locomo_20260925_115806.jsonl",
+   "missing_from_either": 9,
+   "sign_robust_to_missing_only": "positive"
+  },
+  {
+   "group": "graph_minus_no_graph",
+   "a": "zhfull_fused_locomo_20260925_195248.jsonl",
+   "b": "zhfull_locomo_20260925_151059.jsonl",
+   "missing_from_either": 10,
+   "sign_robust_to_missing_only": "undetermined"
+  },
+  {
+   "group": "graph_minus_no_graph",
+   "a": "zhfull_fused_locomo_20260925_195248.jsonl",
+   "b": "zhfull_locomo_20260925_164645.jsonl",
+   "missing_from_either": 12,
+   "sign_robust_to_missing_only": "undetermined"
+  },
+  {
+   "group": "jev_minus_graph",
+   "a": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+   "b": "zhfull_fused_locomo_20260925_161049.jsonl",
+   "missing_from_either": 11,
+   "sign_robust_to_missing_only": "negative"
+  },
+  {
+   "group": "jev_minus_graph",
+   "a": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+   "b": "zhfull_fused_locomo_20260925_172126.jsonl",
+   "missing_from_either": 12,
+   "sign_robust_to_missing_only": "undetermined"
+  },
+  {
+   "group": "jev_minus_graph",
+   "a": "zhfull_fused_jevdec_locomo_20260925_202122.jsonl",
+   "b": "zhfull_fused_locomo_20260925_195248.jsonl",
+   "missing_from_either": 11,
+   "sign_robust_to_missing_only": "negative"
+  },
+  {
+   "group": "jev_minus_graph",
+   "a": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+   "b": "zhfull_fused_locomo_20260925_161049.jsonl",
+   "missing_from_either": 12,
+   "sign_robust_to_missing_only": "negative"
+  },
+  {
+   "group": "jev_minus_graph",
+   "a": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+   "b": "zhfull_fused_locomo_20260925_172126.jsonl",
+   "missing_from_either": 13,
+   "sign_robust_to_missing_only": "undetermined"
+  },
+  {
+   "group": "jev_minus_graph",
+   "a": "zhfull_fused_jevlaya_locomo_20260925_205035.jsonl",
+   "b": "zhfull_fused_locomo_20260925_195248.jsonl",
+   "missing_from_either": 12,
+   "sign_robust_to_missing_only": "undetermined"
+  }
+ ],
+ "unrecoverable": [
+  {
+   "item": "旧运行 45 道中文缺题的失败日志",
+   "why": "本机归档无对应结构化失败日志，缺题原因不可复原",
+   "source": "docs/m2_missing_case_score_bounds_zh.md",
+   "action": "固定记为不可恢复；后续运行必须自带失败记账"
+  },
+  {
+   "item": "Jev 首判完整有序上下文与服务实际 state",
+   "why": "历史运行未归档首判前后全文、候选与 state，同次反事实不可重建",
+   "source": "docs/m2_jev_expansion_zh.md",
+   "action": "不再从旧档重建；未来运行启用 jev_trace 留痕字段"
+  },
+  {
+   "item": "历史提取调用的完整输入输出日志",
+   "why": "无法定位旧图候选漂移发生于提示遵循/检索上下文/批次保存哪一层",
+   "source": "docs/m2_carryover_fact_merge_zh.md",
+   "action": "固定记为不可恢复；新增运行按 source_trace 契约留痕"
+  },
+  {
+   "item": "mem0 add 返回层 session_id/session_date",
+   "why": "返回结构与库存查询结构不同造成的返回层来源字段缺口（结构限制，非数据丢失）",
+   "source": "docs/m2_isolated_mem0_ingest_zh.md",
+   "action": "以库存查询为准；修复返回层时须验证 ID 与库存元数据一致"
+  },
+  {
+   "item": "旧缓存的内容/模型/提示指纹",
+   "why": "命中无法证明提取成功或来源可信",
+   "source": "docs/m2_current_cache_graph_readiness_zh.md",
+   "action": "旧缓存不得直接发布为当前可靠图；新图必须带 manifest 指纹"
+  },
+  {
+   "item": "跨运行缓存可见性的当时真实请求",
+   "why": "delete_all 清向量不清历史消息的输入路径已隔离回放，但四条未来事实错挂缺当时请求，不能断言单一成因",
+   "source": "https://github.com/justis-xu/memory-prompt/blob/master/docs/m2_cross_run_cache_visibility_zh.md",
+   "action": "标记多成因可能；未来运行先清 owner 历史消息"
+  },
+  {
+   "item": "Jev GPU 决策服务（laya/decider）",
+   "why": "2026-10-01 用户确认实例失效；seetacloud 域名随重开变化",
+   "source": "本阶段运行记录",
+   "action": "Jev 线停车；恢复后先探测域名再续"
+  }
+ ]
+}
