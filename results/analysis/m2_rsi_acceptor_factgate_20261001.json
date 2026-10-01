@@ -1,0 +1,141 @@
+{
+ "scope": "RSI 经验接受器离线重放：事实门(v2+v3) vs 关键词门 vs 全收。",
+ "inputs": {
+  "gains": "/Users/xu/git/memory-prompt/results/analysis/m2_rsi_mined_gains_20260928.json",
+  "kw_replay": "/Users/xu/git/memory-prompt/results/analysis/m2_rsi_accept_gate_replay_20260928.json"
+ },
+ "llm_calls": 9,
+ "llm_cap": 15,
+ "summary": {
+  "experiences": 9,
+  "all_accept_blocked": 0,
+  "kw_gate_blocked": 5,
+  "fact_gate_blocked": 5,
+  "fact_gate_blocked_ids": [
+   "locomo_conv-41_qa132",
+   "locomo_conv-41_qa4",
+   "locomo_conv-42_qa89",
+   "locomo_conv-47_qa148",
+   "locomo_conv-48_qa103"
+  ],
+  "agreement_with_kw_gate": 5,
+  "note": "kw 门按关键词覆盖；事实门按子句语义来源。语义接受但结构 partial 的经验标注 weaken。"
+ },
+ "rows": [
+  {
+   "case_id": "locomo_conv-26_qa124",
+   "peer_id": "locomo_conv-26_qa52",
+   "support_turns": [
+    "D13:4"
+   ],
+   "admission_status": "weaken",
+   "record_action": "split",
+   "withdrawn_qualifiers": [],
+   "accepted": true,
+   "kw_gate_blocked": true
+  },
+  {
+   "case_id": "locomo_conv-30_qa40",
+   "peer_id": "locomo_conv-30_qa39",
+   "support_turns": [
+    "D1:8",
+    "D1:24"
+   ],
+   "admission_status": "sourced",
+   "record_action": "keep",
+   "withdrawn_qualifiers": [],
+   "accepted": true,
+   "kw_gate_blocked": true
+  },
+  {
+   "case_id": "locomo_conv-41_qa132",
+   "peer_id": "locomo_conv-41_qa51",
+   "support_turns": [
+    "D27:4",
+    "D5:8"
+   ],
+   "admission_status": "weaken",
+   "record_action": "split",
+   "withdrawn_qualifiers": [],
+   "accepted": true,
+   "kw_gate_blocked": false
+  },
+  {
+   "case_id": "locomo_conv-41_qa51",
+   "peer_id": "locomo_conv-41_qa132",
+   "support_turns": [
+    "D27:4"
+   ],
+   "admission_status": "待核",
+   "record_action": "split",
+   "withdrawn_qualifiers": [],
+   "accepted": false,
+   "kw_gate_blocked": true
+  },
+  {
+   "case_id": "locomo_conv-41_qa71",
+   "peer_id": "locomo_conv-41_qa4",
+   "support_turns": [
+    "D3:1"
+   ],
+   "admission_status": "待核",
+   "record_action": "split",
+   "withdrawn_qualifiers": [],
+   "accepted": false,
+   "kw_gate_blocked": false
+  },
+  {
+   "case_id": "locomo_conv-42_qa110",
+   "peer_id": "locomo_conv-42_qa89",
+   "support_turns": [
+    "D7:5"
+   ],
+   "admission_status": "待核",
+   "record_action": "withdraw",
+   "withdrawn_qualifiers": [
+    "in early April 2022",
+    "to stand out with a bright, bold color"
+   ],
+   "accepted": false,
+   "kw_gate_blocked": true
+  },
+  {
+   "case_id": "locomo_conv-47_qa66",
+   "peer_id": "locomo_conv-47_qa148",
+   "support_turns": [
+    "D31:2",
+    "D31:4"
+   ],
+   "admission_status": "待核",
+   "record_action": "split",
+   "withdrawn_qualifiers": [],
+   "accepted": false,
+   "kw_gate_blocked": false
+  },
+  {
+   "case_id": "locomo_conv-48_qa22",
+   "peer_id": "locomo_conv-48_qa103",
+   "support_turns": [
+    "D3:4"
+   ],
+   "admission_status": "待核",
+   "record_action": "split",
+   "withdrawn_qualifiers": [],
+   "accepted": false,
+   "kw_gate_blocked": true
+  },
+  {
+   "case_id": "locomo_conv-48_qa92",
+   "peer_id": "locomo_conv-48_qa58",
+   "support_turns": [
+    "D19:8",
+    "D19:10"
+   ],
+   "admission_status": "sourced",
+   "record_action": "keep",
+   "withdrawn_qualifiers": [],
+   "accepted": true,
+   "kw_gate_blocked": false
+  }
+ ]
+}
