@@ -1,0 +1,1456 @@
+{
+ "scope": "阶段1a：守卫 v3 离线重放（零调用）。限定词逐字校验+日期锚政策+引文覆盖率度量。",
+ "v1": {
+  "acceptance": {
+   "keep_team_size": true,
+   "keep_late_only_facts": true,
+   "keep_older_only_details": true,
+   "keep_human_assistant_class": true,
+   "block_unsourced_companions": false,
+   "block_assistant_only_clauses": true,
+   "block_overstated_emotion": false,
+   "no_whole_partial_pass": false
+  },
+  "acceptance_detail": [
+   {
+    "case": "keep_team_size",
+    "expect": "keep",
+    "pass": true,
+    "detail": "A0 纠正后团队规模须保留（v1 raw 曾整条 withdraw 自相矛盾）",
+    "evidence": "gated_v2=keep"
+   },
+   {
+    "case": "keep_late_only_facts",
+    "expect": "keep",
+    "pass": true,
+    "detail": "迟到旧源事实（创造新世界/快乐）须保留",
+    "evidence": "action=keep 命中2子句"
+   },
+   {
+    "case": "keep_older_only_details",
+    "expect": "keep",
+    "pass": true,
+    "detail": "旧版独有细节（城堡/作者/读书画画）不得判无源删除",
+    "evidence": "[True, True]"
+   },
+   {
+    "case": "keep_human_assistant_class",
+    "expect": "keep",
+    "pass": true,
+    "detail": "10 条 assistant 标签真人记忆不得整类拒绝",
+    "evidence": "withdrawn=无; C5(conv-44双真人) action=keep"
+   },
+   {
+    "case": "block_unsourced_companions",
+    "expect": "withdraw",
+    "pass": false,
+    "detail": "无源同行者（家人/玛丽亚）须撤回（weaken 不算达标）",
+    "evidence": "[True, False]"
+   },
+   {
+    "case": "block_assistant_only_clauses",
+    "expect": "withdraw",
+    "pass": true,
+    "detail": "仅助手来源子句（含本人/职位/套餐/联系方式/自由交流）不得 keep",
+    "evidence": "A1坏0 A3坏0 A4坏0"
+   },
+   {
+    "case": "block_overstated_emotion",
+    "expect": "weaken",
+    "pass": false,
+    "detail": "'难受'缺'但我还好'限定须削弱，不得原样 keep",
+    "evidence": "[None, False]"
+   },
+   {
+    "case": "no_whole_partial_pass",
+    "expect": "split",
+    "pass": false,
+    "detail": "partial 记忆禁止整条放行（raw 行为）",
+    "evidence": "raw keep: ['A1']"
+   }
+  ],
+  "stop_gate_raw_form": {
+   "fail_1_whole_partial_pass": true,
+   "fail_1_evidence": [
+    "A1"
+   ],
+   "fail_2_assistant_class_rejection": false,
+   "fail_2_evidence": [],
+   "hallucinated_refs_after_norm": {},
+   "verdict": "FAIL"
+  },
+  "stop_gate_deployed_form": {
+   "fail_1_final_action_keep": [],
+   "fail_2_class_rejection": [],
+   "verdict": "PASS"
+  },
+  "guard_v3_logs": {
+   "A0": [
+    "动作对齐: 全keep→keep"
+   ],
+   "A1": [
+    "限定撤回: '含用户本人' @ 5人包括4名工程师（含用户本人）和经理雷",
+    "动作对齐: keep→split"
+   ],
+   "A2": [
+    "日期锚恢复: 用户在2023年5月为工程师团队策划团建",
+    "动作对齐: 全keep→keep"
+   ],
+   "A4": [
+    "限定撤回: '如破冰游戏、团队合作活动' @ 用户考虑团建形式时倾向计划一些结构化活动"
+   ],
+   "C8": [
+    "限定撤回: 'The Godfather' @ 《教父》（The Godfather）D"
+   ]
+  },
+  "coverage": {
+   "A0": [
+    {
+     "clause_head": "用户是高级软件工程师",
+     "len_core": 10,
+     "longest_span": 7,
+     "coverage": 0.7,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "用户在新职位上",
+     "len_core": 7,
+     "longest_span": 5,
+     "coverage": 0.714,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "带领一个4人的工程师团队",
+     "len_core": 12,
+     "longest_span": 12,
+     "coverage": 1.0,
+     "quotable_strict": true
+    }
+   ],
+   "A1": [
+    {
+     "clause_head": "用户的经理名叫雷切尔",
+     "len_core": 10,
+     "longest_span": 3,
+     "coverage": 0.3,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "用户计划邀请经理雷切尔参加团建",
+     "len_core": 15,
+     "longest_span": 5,
+     "coverage": 0.333,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "团建共有5人参加",
+     "len_core": 8,
+     "longest_span": 4,
+     "coverage": 0.5,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "5人包括4名工程师（含用户本人）和经理雷切尔",
+     "len_core": 20,
+     "longest_span": 6,
+     "coverage": 0.3,
+     "quotable_strict": false
+    }
+   ],
+   "A2": [
+    {
+     "clause_head": "用户在2023年5月为工程师团队策划团建",
+     "len_core": 20,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "用户正在为工程师团队策划团建",
+     "len_core": 14,
+     "longest_span": 7,
+     "coverage": 0.5,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "用户喜欢户外游戏的点子（如巨型叠叠乐）",
+     "len_core": 17,
+     "longest_span": 9,
+     "coverage": 0.529,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "用户倾向选择 City View Rooftop 作为场地",
+     "len_core": 25,
+     "longest_span": 19,
+     "coverage": 0.76,
+     "quotable_strict": true
+    }
+   ],
+   "A3": [
+    {
+     "clause_head": "用户计划联系 City View Rooftop 的活动经理",
+     "len_core": 29,
+     "longest_span": 15,
+     "coverage": 0.517,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "用户计划询问6人企业团建套餐事宜",
+     "len_core": 16,
+     "longest_span": 10,
+     "coverage": 0.625,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "该套餐包括2小时屋顶私人租赁、户外游戏和每位宾客一张免费饮品",
+     "len_core": 41,
+     "longest_span": 14,
+     "coverage": 0.341,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "联系邮箱 events@cityviewrooftop.co",
+     "len_core": 41,
+     "longest_span": 27,
+     "coverage": 0.659,
+     "quotable_strict": true
+    }
+   ],
+   "A4": [
+    {
+     "clause_head": "用户考虑团建形式时倾向计划一些结构化活动（如破冰游戏、团队合",
+     "len_core": 38,
+     "longest_span": 9,
+     "coverage": 0.237,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "同时结合自由交流时间",
+     "len_core": 10,
+     "longest_span": 6,
+     "coverage": 0.6,
+     "quotable_strict": true
+    }
+   ],
+   "B_older_conv-43_de89be96dda6": [
+    {
+     "clause_head": "蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利",
+     "len_core": 28,
+     "longest_span": 9,
+     "coverage": 0.321,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "虽然有点紧张但很兴奋，觉得所有努力都得到了回报",
+     "len_core": 22,
+     "longest_span": 8,
+     "coverage": 0.364,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "写作带给他巨大快乐",
+     "len_core": 9,
+     "longest_span": 3,
+     "coverage": 0.333,
+     "quotable_strict": false
+    }
+   ],
+   "B_later_conv-43_de89be96dda6": [
+    {
+     "clause_head": "蒂姆正在写一部奇幻小说，进展顺利",
+     "len_core": 15,
+     "longest_span": 9,
+     "coverage": 0.6,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "虽然有点紧张但很兴奋",
+     "len_core": 10,
+     "longest_span": 7,
+     "coverage": 0.7,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "觉得所有努力都得到了回报",
+     "len_core": 12,
+     "longest_span": 8,
+     "coverage": 0.667,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "写作能创造一个全新的世界",
+     "len_core": 12,
+     "longest_span": 10,
+     "coverage": 0.833,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "写作带给他很多快乐",
+     "len_core": 9,
+     "longest_span": 3,
+     "coverage": 0.333,
+     "quotable_strict": false
+    }
+   ],
+   "B_older_conv-43_c95588df7268": [
+    {
+     "clause_head": "蒂姆的写作灵感来自书籍、电影和现实生活经历",
+     "len_core": 20,
+     "longest_span": 11,
+     "coverage": 0.55,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "阅读关于英国城堡的内容给了他很多灵感",
+     "len_core": 18,
+     "longest_span": 13,
+     "coverage": 0.722,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "某些作者对他来说像灵感宝库",
+     "len_core": 13,
+     "longest_span": 5,
+     "coverage": 0.385,
+     "quotable_strict": false
+    }
+   ],
+   "B_later_conv-43_c95588df7268": [
+    {
+     "clause_head": "蒂姆的写作灵感来源包括书籍、电影和现实生活经历",
+     "len_core": 22,
+     "longest_span": 11,
+     "coverage": 0.5,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "阅读关于英国城堡的内容给了他很多写作灵感",
+     "len_core": 20,
+     "longest_span": 13,
+     "coverage": 0.65,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "蒂姆梦想有一天能去参观英国城堡",
+     "len_core": 15,
+     "longest_span": 9,
+     "coverage": 0.6,
+     "quotable_strict": true
+    }
+   ],
+   "B_older_conv-26_444350391e64": [
+    {
+     "clause_head": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺",
+     "len_core": 23,
+     "longest_span": 10,
+     "coverage": 0.435,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "陶艺是梅拉妮用于自我表达和获得平静的方式",
+     "len_core": 20,
+     "longest_span": 12,
+     "coverage": 0.6,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "梅拉妮目前通过读书和画画打发时间",
+     "len_core": 16,
+     "longest_span": 4,
+     "coverage": 0.25,
+     "quotable_strict": false
+    }
+   ],
+   "B_later_conv-26_444350391e64": [
+    {
+     "clause_head": "梅拉妮在2023年9月受了伤，不得不暂停陶艺",
+     "len_core": 21,
+     "longest_span": 10,
+     "coverage": 0.476,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "陶艺是她用来自我表达和获得平静的方式",
+     "len_core": 18,
+     "longest_span": 14,
+     "coverage": 0.778,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "受伤暂停陶艺让她很难受",
+     "len_core": 11,
+     "longest_span": 4,
+     "coverage": 0.364,
+     "quotable_strict": false
+    }
+   ],
+   "B_older_conv-41_e94a25c4f01c": [
+    {
+     "clause_head": "John took a road trip last yea",
+     "len_core": 93,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "The trip was with his family",
+     "len_core": 23,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "The trip was in 2022",
+     "len_core": 16,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "He found the natural beauty br",
+     "len_core": 35,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "It brought him reflection",
+     "len_core": 22,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "It brought him inner peace",
+     "len_core": 22,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    }
+   ],
+   "B_later_conv-41_e94a25c4f01c": [
+    {
+     "clause_head": "Around 2022, John and Maria to",
+     "len_core": 35,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "exploring the Pacific Northwes",
+     "len_core": 60,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "an experience he found breatht",
+     "len_core": 43,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    }
+   ],
+   "C0": [
+    {
+     "clause_head": "卡罗琳的对话对象名为梅拉妮（梅尔）",
+     "len_core": 15,
+     "longest_span": 3,
+     "coverage": 0.2,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "她被孩子和工作忙得团团转",
+     "len_core": 12,
+     "longest_span": 11,
+     "coverage": 0.917,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "计划带孩子去游泳",
+     "len_core": 8,
+     "longest_span": 6,
+     "coverage": 0.75,
+     "quotable_strict": true
+    }
+   ],
+   "C1": [
+    {
+     "clause_head": "吉娜几年前纹了一个纹身",
+     "len_core": 11,
+     "longest_span": 4,
+     "coverage": 0.364,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "纹身代表自由——跳舞时不担心别人怎么看的自由",
+     "len_core": 20,
+     "longest_span": 15,
+     "coverage": 0.75,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "纹身图案与一句关于恐惧的励志名言相关（'everything",
+     "len_core": 57,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "纹身提醒她追随热情、表达自我",
+     "len_core": 13,
+     "longest_span": 6,
+     "coverage": 0.462,
+     "quotable_strict": false
+    }
+   ],
+   "C2": [
+    {
+     "clause_head": "玛丽亚曾去佛罗里达海滩度假",
+     "len_core": 13,
+     "longest_span": 4,
+     "coverage": 0.308,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "那里的色彩很美",
+     "len_core": 7,
+     "longest_span": 5,
+     "coverage": 0.714,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "和家人坐在海边时心中充满感激",
+     "len_core": 14,
+     "longest_span": 6,
+     "coverage": 0.429,
+     "quotable_strict": false
+    }
+   ],
+   "C3": [
+    {
+     "clause_head": "内特尝试做了椰奶冰淇淋",
+     "len_core": 11,
+     "longest_span": 5,
+     "coverage": 0.455,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "味道香浓顺滑、非常成功",
+     "len_core": 10,
+     "longest_span": 2,
+     "coverage": 0.2,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "可能会成为他的新最爱零食",
+     "len_core": 12,
+     "longest_span": 6,
+     "coverage": 0.5,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "他还想尝试不同的口味和配料",
+     "len_core": 13,
+     "longest_span": 10,
+     "coverage": 0.769,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "事件发生在2022年2月初",
+     "len_core": 13,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    }
+   ],
+   "C4": [
+    {
+     "clause_head": "约翰的球队赛季揭幕战在下周（约2023年5月底）",
+     "len_core": 22,
+     "longest_span": 5,
+     "coverage": 0.227,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "约翰的目标是提高投篮命中率",
+     "len_core": 13,
+     "longest_span": 6,
+     "coverage": 0.462,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "约翰一直在为提高命中率刻苦训练",
+     "len_core": 15,
+     "longest_span": 3,
+     "coverage": 0.2,
+     "quotable_strict": false
+    }
+   ],
+   "C5": [
+    {
+     "clause_head": "安德鲁答应带奥黛丽看看河边最好的骑行路线",
+     "len_core": 20,
+     "longest_span": 11,
+     "coverage": 0.55,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "这一带有多条骑行路线",
+     "len_core": 10,
+     "longest_span": 4,
+     "coverage": 0.4,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "两人都很期待这次骑行出行",
+     "len_core": 12,
+     "longest_span": 2,
+     "coverage": 0.167,
+     "quotable_strict": false
+    }
+   ],
+   "C6": [
+    {
+     "clause_head": "约翰购买了一些新设备并翻新了游戏桌",
+     "len_core": 17,
+     "longest_span": 7,
+     "coverage": 0.412,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "约翰有一台配备强大显卡的游戏电脑",
+     "len_core": 16,
+     "longest_span": 13,
+     "coverage": 0.812,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "约翰有游戏椅和键盘",
+     "len_core": 9,
+     "longest_span": 6,
+     "coverage": 0.667,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "约翰有一个音效很沉浸的耳机",
+     "len_core": 13,
+     "longest_span": 5,
+     "coverage": 0.385,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "游戏让约翰保持专注和动力",
+     "len_core": 12,
+     "longest_span": 7,
+     "coverage": 0.583,
+     "quotable_strict": false
+    }
+   ],
+   "C7": [
+    {
+     "clause_head": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒",
+     "len_core": 27,
+     "longest_span": 6,
+     "coverage": 0.222,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "玩得很开心，感到很放松",
+     "len_core": 10,
+     "longest_span": 5,
+     "coverage": 0.5,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "附有朋友举杯和食物、红酒的照片",
+     "len_core": 14,
+     "longest_span": 2,
+     "coverage": 0.143,
+     "quotable_strict": false
+    }
+   ],
+   "C8": [
+    {
+     "clause_head": "《教父》（The Godfather）DVD套装是萨姆用来'",
+     "len_core": 33,
+     "longest_span": 9,
+     "coverage": 0.273,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "萨姆分享了一张《教父》DVD套装的照片",
+     "len_core": 19,
+     "longest_span": 2,
+     "coverage": 0.105,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "分享发生在2023年11月21日",
+     "len_core": 16,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    }
+   ],
+   "C9": [
+    {
+     "clause_head": "戴夫于2023年9月14日左右和乐队即兴演奏",
+     "len_core": 22,
+     "longest_span": 4,
+     "coverage": 0.182,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "即兴演奏时音乐源源不断",
+     "len_core": 11,
+     "longest_span": 6,
+     "coverage": 0.545,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "排练非常开心",
+     "len_core": 6,
+     "longest_span": 2,
+     "coverage": 0.333,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "他们太投入忘了录音",
+     "len_core": 9,
+     "longest_span": 4,
+     "coverage": 0.444,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "没有留下演奏录音",
+     "len_core": 8,
+     "longest_span": 2,
+     "coverage": 0.25,
+     "quotable_strict": false
+    }
+   ]
+  }
+ },
+ "v2": {
+  "acceptance": {
+   "keep_team_size": true,
+   "keep_late_only_facts": true,
+   "keep_older_only_details": true,
+   "keep_human_assistant_class": true,
+   "block_unsourced_companions": true,
+   "block_assistant_only_clauses": true,
+   "block_overstated_emotion": true,
+   "no_whole_partial_pass": false
+  },
+  "acceptance_detail": [
+   {
+    "case": "keep_team_size",
+    "expect": "keep",
+    "pass": true,
+    "detail": "A0 纠正后团队规模须保留（v1 raw 曾整条 withdraw 自相矛盾）",
+    "evidence": "gated_v2=keep"
+   },
+   {
+    "case": "keep_late_only_facts",
+    "expect": "keep",
+    "pass": true,
+    "detail": "迟到旧源事实（创造新世界/快乐）须保留",
+    "evidence": "action=keep 命中1子句"
+   },
+   {
+    "case": "keep_older_only_details",
+    "expect": "keep",
+    "pass": true,
+    "detail": "旧版独有细节（城堡/作者/读书画画）不得判无源删除",
+    "evidence": "[True, True]"
+   },
+   {
+    "case": "keep_human_assistant_class",
+    "expect": "keep",
+    "pass": true,
+    "detail": "10 条 assistant 标签真人记忆不得整类拒绝",
+    "evidence": "withdrawn=无; C5(conv-44双真人) action=keep"
+   },
+   {
+    "case": "block_unsourced_companions",
+    "expect": "withdraw",
+    "pass": true,
+    "detail": "无源同行者（家人/玛丽亚）须撤回（weaken 不算达标）",
+    "evidence": "[True, True]"
+   },
+   {
+    "case": "block_assistant_only_clauses",
+    "expect": "withdraw",
+    "pass": true,
+    "detail": "仅助手来源子句（含本人/职位/套餐/联系方式/自由交流）不得 keep",
+    "evidence": "A1坏0 A3坏0 A4坏0"
+   },
+   {
+    "case": "block_overstated_emotion",
+    "expect": "weaken",
+    "pass": true,
+    "detail": "'难受'缺'但我还好'限定须削弱，不得原样 keep",
+    "evidence": "[None, True]"
+   },
+   {
+    "case": "no_whole_partial_pass",
+    "expect": "split",
+    "pass": false,
+    "detail": "partial 记忆禁止整条放行（raw 行为）",
+    "evidence": "raw keep: ['A1']"
+   }
+  ],
+  "stop_gate_raw_form": {
+   "fail_1_whole_partial_pass": true,
+   "fail_1_evidence": [
+    "A1"
+   ],
+   "fail_2_assistant_class_rejection": false,
+   "fail_2_evidence": [],
+   "hallucinated_refs_after_norm": {},
+   "verdict": "FAIL"
+  },
+  "stop_gate_deployed_form": {
+   "fail_1_final_action_keep": [],
+   "fail_2_class_rejection": [],
+   "verdict": "PASS"
+  },
+  "guard_v3_logs": {
+   "A0": [
+    "日期锚恢复: 截至2023年5月",
+    "动作对齐: 全keep→keep"
+   ],
+   "A1": [
+    "限定撤回: '4名工程师含用户本人，加经理雷切尔' @ 团建共5人参加（4名工程师含用户本人，加",
+    "动作对齐: keep→split"
+   ],
+   "A2": [
+    "日期锚恢复: 用户在2023年5月为工程师团队策划团建",
+    "动作对齐: 全keep→keep"
+   ],
+   "A4": [
+    "限定撤回: '如破冰游戏、团队合作活动' @ 用户考虑团建形式时倾向计划一些结构化活动"
+   ],
+   "C8": [
+    "限定撤回: 'The Godfather' @ 《教父》（The Godfather）D"
+   ]
+  },
+  "coverage": {
+   "A0": [
+    {
+     "clause_head": "用户是高级软件工程师",
+     "len_core": 10,
+     "longest_span": 7,
+     "coverage": 0.7,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "用户在新职位上带领一个4人的工程师团队",
+     "len_core": 19,
+     "longest_span": 17,
+     "coverage": 0.895,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "截至2023年5月",
+     "len_core": 9,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    }
+   ],
+   "A1": [
+    {
+     "clause_head": "用户的经理名叫雷切尔",
+     "len_core": 10,
+     "longest_span": 3,
+     "coverage": 0.3,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "用户计划邀请经理雷切尔参加团建",
+     "len_core": 15,
+     "longest_span": 5,
+     "coverage": 0.333,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "团建共5人参加（4名工程师含用户本人，加经理雷切尔）",
+     "len_core": 23,
+     "longest_span": 5,
+     "coverage": 0.217,
+     "quotable_strict": false
+    }
+   ],
+   "A2": [
+    {
+     "clause_head": "用户在2023年5月为工程师团队策划团建",
+     "len_core": 20,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "用户正在为工程师团队策划团建",
+     "len_core": 14,
+     "longest_span": 7,
+     "coverage": 0.5,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "用户喜欢户外游戏的点子（如巨型叠叠乐）",
+     "len_core": 17,
+     "longest_span": 9,
+     "coverage": 0.529,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "用户倾向选择 City View Rooftop 作为场地",
+     "len_core": 25,
+     "longest_span": 15,
+     "coverage": 0.6,
+     "quotable_strict": true
+    }
+   ],
+   "A3": [
+    {
+     "clause_head": "用户计划联系 City View Rooftop 的活动经理",
+     "len_core": 29,
+     "longest_span": 3,
+     "coverage": 0.103,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "询问6人企业团建套餐事宜",
+     "len_core": 12,
+     "longest_span": 10,
+     "coverage": 0.833,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "该套餐包括2小时屋顶私人租赁、户外游戏和每位宾客一张免费饮品",
+     "len_core": 30,
+     "longest_span": 14,
+     "coverage": 0.467,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "该套餐工作日下午500美元起",
+     "len_core": 14,
+     "longest_span": 6,
+     "coverage": 0.429,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "联系邮箱 events@cityviewrooftop.co",
+     "len_core": 41,
+     "longest_span": 27,
+     "coverage": 0.659,
+     "quotable_strict": true
+    }
+   ],
+   "A4": [
+    {
+     "clause_head": "用户考虑团建形式时倾向计划一些结构化活动（如破冰游戏、团队合",
+     "len_core": 38,
+     "longest_span": 9,
+     "coverage": 0.237,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "用户倾向结合自由交流时间",
+     "len_core": 12,
+     "longest_span": 4,
+     "coverage": 0.333,
+     "quotable_strict": false
+    }
+   ],
+   "B_older_conv-43_de89be96dda6": [
+    {
+     "clause_head": "蒂姆正在写一部奇幻小说",
+     "len_core": 11,
+     "longest_span": 9,
+     "coverage": 0.818,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "截至2023年10月21日进展顺利",
+     "len_core": 17,
+     "longest_span": 4,
+     "coverage": 0.235,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "虽然有点紧张但很兴奋",
+     "len_core": 10,
+     "longest_span": 7,
+     "coverage": 0.7,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "觉得所有努力都得到了回报",
+     "len_core": 12,
+     "longest_span": 8,
+     "coverage": 0.667,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "写作带给他巨大快乐",
+     "len_core": 9,
+     "longest_span": 3,
+     "coverage": 0.333,
+     "quotable_strict": false
+    }
+   ],
+   "B_later_conv-43_de89be96dda6": [
+    {
+     "clause_head": "蒂姆正在写一部奇幻小说，进展顺利",
+     "len_core": 15,
+     "longest_span": 9,
+     "coverage": 0.6,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "虽然有点紧张但很兴奋",
+     "len_core": 10,
+     "longest_span": 7,
+     "coverage": 0.7,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "觉得所有努力都得到了回报",
+     "len_core": 12,
+     "longest_span": 8,
+     "coverage": 0.667,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "觉得写作能创造一个全新的世界，带给他很多快乐",
+     "len_core": 21,
+     "longest_span": 10,
+     "coverage": 0.476,
+     "quotable_strict": true
+    }
+   ],
+   "B_older_conv-43_c95588df7268": [
+    {
+     "clause_head": "蒂姆的写作灵感来自书籍、电影和现实生活经历",
+     "len_core": 20,
+     "longest_span": 11,
+     "coverage": 0.55,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "阅读关于英国城堡的内容给了他很多写作灵感",
+     "len_core": 20,
+     "longest_span": 13,
+     "coverage": 0.65,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "某些作者对蒂姆来说像灵感宝库",
+     "len_core": 14,
+     "longest_span": 5,
+     "coverage": 0.357,
+     "quotable_strict": false
+    }
+   ],
+   "B_later_conv-43_c95588df7268": [
+    {
+     "clause_head": "蒂姆的写作灵感来源包括书籍、电影和现实生活经历",
+     "len_core": 22,
+     "longest_span": 11,
+     "coverage": 0.5,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "阅读关于英国城堡的内容给了蒂姆很多写作灵感",
+     "len_core": 21,
+     "longest_span": 13,
+     "coverage": 0.619,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "蒂姆梦想有一天能去参观英国城堡",
+     "len_core": 15,
+     "longest_span": 9,
+     "coverage": 0.6,
+     "quotable_strict": true
+    }
+   ],
+   "B_older_conv-26_444350391e64": [
+    {
+     "clause_head": "梅拉妮上个月受了伤，不得不暂停陶艺——那是她用于自我表达和获",
+     "len_core": 33,
+     "longest_span": 12,
+     "coverage": 0.364,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "她目前通过读书和画画打发时间",
+     "len_core": 14,
+     "longest_span": 4,
+     "coverage": 0.286,
+     "quotable_strict": false
+    }
+   ],
+   "B_later_conv-26_444350391e64": [
+    {
+     "clause_head": "梅拉妮在2023年9月受了伤",
+     "len_core": 14,
+     "longest_span": 3,
+     "coverage": 0.214,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "她不得不暂停陶艺",
+     "len_core": 8,
+     "longest_span": 7,
+     "coverage": 0.875,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "陶艺是她用来自我表达和获得平静的方式",
+     "len_core": 18,
+     "longest_span": 14,
+     "coverage": 0.778,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "这让她很难受",
+     "len_core": 6,
+     "longest_span": 2,
+     "coverage": 0.333,
+     "quotable_strict": false
+    }
+   ],
+   "B_older_conv-41_e94a25c4f01c": [
+    {
+     "clause_head": "John took a road trip last yea",
+     "len_core": 93,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "the road trip was with his fam",
+     "len_core": 27,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "he found the natural beauty br",
+     "len_core": 68,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    }
+   ],
+   "B_later_conv-41_e94a25c4f01c": [
+    {
+     "clause_head": "Around 2022, John and Maria to",
+     "len_core": 35,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "They explored the Pacific Nort",
+     "len_core": 76,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "The experience was breathtakin",
+     "len_core": 47,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    }
+   ],
+   "C0": [
+    {
+     "clause_head": "卡罗琳的对话对象名为梅拉妮（梅尔）",
+     "len_core": 15,
+     "longest_span": 3,
+     "coverage": 0.2,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "她被孩子和工作忙得团团转",
+     "len_core": 12,
+     "longest_span": 11,
+     "coverage": 0.917,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "她计划带孩子去游泳",
+     "len_core": 9,
+     "longest_span": 6,
+     "coverage": 0.667,
+     "quotable_strict": true
+    }
+   ],
+   "C1": [
+    {
+     "clause_head": "吉娜几年前纹了一个纹身",
+     "len_core": 11,
+     "longest_span": 4,
+     "coverage": 0.364,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "纹身代表自由——跳舞时不担心别人怎么看的自由",
+     "len_core": 20,
+     "longest_span": 15,
+     "coverage": 0.75,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "图案与一句关于恐惧的励志名言相关（'everything y",
+     "len_core": 55,
+     "longest_span": 1,
+     "coverage": 0.018,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "纹身提醒她追随热情、表达自我",
+     "len_core": 13,
+     "longest_span": 6,
+     "coverage": 0.462,
+     "quotable_strict": false
+    }
+   ],
+   "C2": [
+    {
+     "clause_head": "玛丽亚曾去佛罗里达海滩度假",
+     "len_core": 13,
+     "longest_span": 4,
+     "coverage": 0.308,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "那里的色彩很美",
+     "len_core": 7,
+     "longest_span": 5,
+     "coverage": 0.714,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "和家人坐在海边时心中充满感激",
+     "len_core": 14,
+     "longest_span": 6,
+     "coverage": 0.429,
+     "quotable_strict": false
+    }
+   ],
+   "C3": [
+    {
+     "clause_head": "内特尝试做了椰奶冰淇淋",
+     "len_core": 11,
+     "longest_span": 5,
+     "coverage": 0.455,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "冰淇淋味道香浓顺滑、非常成功",
+     "len_core": 13,
+     "longest_span": 3,
+     "coverage": 0.231,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "可能会成为他的新最爱零食",
+     "len_core": 12,
+     "longest_span": 6,
+     "coverage": 0.5,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "他还想尝试不同的口味和配料",
+     "len_core": 13,
+     "longest_span": 10,
+     "coverage": 0.769,
+     "quotable_strict": true
+    }
+   ],
+   "C4": [
+    {
+     "clause_head": "约翰的球队赛季揭幕战在下周",
+     "len_core": 13,
+     "longest_span": 5,
+     "coverage": 0.385,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "揭幕战在2023年5月底（对话日期的一周后）",
+     "len_core": 20,
+     "longest_span": 3,
+     "coverage": 0.15,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "约翰的目标是提高投篮命中率",
+     "len_core": 13,
+     "longest_span": 6,
+     "coverage": 0.462,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "约翰一直在为此刻苦训练",
+     "len_core": 11,
+     "longest_span": 3,
+     "coverage": 0.273,
+     "quotable_strict": false
+    }
+   ],
+   "C5": [
+    {
+     "clause_head": "安德鲁答应带奥黛丽看看河边最好的骑行路线",
+     "len_core": 20,
+     "longest_span": 11,
+     "coverage": 0.55,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "这一带有多条骑行路线",
+     "len_core": 10,
+     "longest_span": 4,
+     "coverage": 0.4,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "两人都很期待这次出行",
+     "len_core": 10,
+     "longest_span": 1,
+     "coverage": 0.1,
+     "quotable_strict": false
+    }
+   ],
+   "C6": [
+    {
+     "clause_head": "约翰购买了一些新设备并翻新了他的游戏桌",
+     "len_core": 19,
+     "longest_span": 7,
+     "coverage": 0.368,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "约翰的游戏配置包括一台配备强大显卡的游戏电脑，可以玩高配置要",
+     "len_core": 33,
+     "longest_span": 24,
+     "coverage": 0.727,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "约翰有游戏椅和键盘",
+     "len_core": 9,
+     "longest_span": 6,
+     "coverage": 0.667,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "约翰有一个音效很沉浸的耳机",
+     "len_core": 13,
+     "longest_span": 5,
+     "coverage": 0.385,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "游戏让约翰在其他方面也能保持专注和动力",
+     "len_core": 19,
+     "longest_span": 14,
+     "coverage": 0.737,
+     "quotable_strict": true
+    }
+   ],
+   "C7": [
+    {
+     "clause_head": "乔琳和朋友一起吃晚饭、喝了点小酒，玩得很开心，感到很放松",
+     "len_core": 25,
+     "longest_span": 6,
+     "coverage": 0.24,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "事件发生在2023年2月21日晚",
+     "len_core": 16,
+     "longest_span": 0,
+     "coverage": 0.0,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "附有朋友举杯和食物、红酒的照片",
+     "len_core": 14,
+     "longest_span": 2,
+     "coverage": 0.143,
+     "quotable_strict": false
+    }
+   ],
+   "C8": [
+    {
+     "clause_head": "《教父》（The Godfather）DVD套装是萨姆用来'",
+     "len_core": 33,
+     "longest_span": 9,
+     "coverage": 0.273,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "萨姆在2023年11月21日分享了一张它的照片",
+     "len_core": 23,
+     "longest_span": 2,
+     "coverage": 0.087,
+     "quotable_strict": false
+    }
+   ],
+   "C9": [
+    {
+     "clause_head": "戴夫于2023年9月14日左右和乐队即兴演奏",
+     "len_core": 22,
+     "longest_span": 4,
+     "coverage": 0.182,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "即兴演奏时音乐源源不断地流淌",
+     "len_core": 14,
+     "longest_span": 9,
+     "coverage": 0.643,
+     "quotable_strict": true
+    },
+    {
+     "clause_head": "排练非常开心",
+     "len_core": 6,
+     "longest_span": 2,
+     "coverage": 0.333,
+     "quotable_strict": false
+    },
+    {
+     "clause_head": "他们太投入忘了录音，没有留下演奏录音",
+     "len_core": 17,
+     "longest_span": 4,
+     "coverage": 0.235,
+     "quotable_strict": false
+    }
+   ]
+  }
+ },
+ "coverage_summary": {
+  "v1": {
+   "clauses": 83,
+   "strict_quotable": 35,
+   "mean_coverage": 0.407,
+   "zero_span": 13
+  },
+  "v2": {
+   "clauses": 79,
+   "strict_quotable": 34,
+   "mean_coverage": 0.412,
+   "zero_span": 9
+  }
+ }
+}
