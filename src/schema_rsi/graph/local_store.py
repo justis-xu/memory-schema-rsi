@@ -33,14 +33,24 @@ class LocalGraphStore:
         self._conn.execute(
             "CREATE INDEX IF NOT EXISTS idx_edges_in ON edges (in_label, in_key)"
         )
+        self._conn.execute(
+            "CREATE TABLE IF NOT EXISTS schema_kv (k TEXT PRIMARY KEY, v TEXT)"
+        )
         self._conn.commit()
         self._schema: dict | None = None
-        self._key_props: dict[str, str] = {}
+        self._key_props: dict[str, str] = {
+            k: v for k, v in self._conn.execute("SELECT k, v FROM schema_kv").fetchall()
+        }
 
     # ---- schema ----
     def create_schema(self, schema: GraphSchema) -> None:
         for vl in schema.vertex_labels:
             self._key_props[vl.name] = vl.primary_key or "id"
+        self._conn.executemany(
+            "INSERT OR REPLACE INTO schema_kv (k, v) VALUES (?, ?)",
+            list(self._key_props.items()),
+        )
+        self._conn.commit()
 
     def schema_exists(self, schema: GraphSchema) -> bool:
         return bool(self._key_props)

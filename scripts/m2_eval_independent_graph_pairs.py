@@ -56,9 +56,12 @@ def main() -> int:
     from schema_rsi.llm.rerank import RerankClient
     from schema_rsi.memory import Mem0Backend, MemoryRecord
 
+    from m2_build_independent_graph_zh import RateLimitedClient
+
     settings = get_settings(str(PROJECT_ROOT / "config/locomo_zh.yaml"))
-    answer_client = make_chat_client(settings)
-    answer_client._client = answer_client._client.with_options(max_retries=0, timeout=90)
+    raw_client = make_chat_client(settings)
+    raw_client._client = raw_client._client.with_options(max_retries=0, timeout=90)
+    answer_client = RateLimitedClient(raw_client)
     judge_client = answer_client  # 预注册：同模型裁判（两臂公平内比），独立裁判记为后续项
     backend = Mem0Backend(settings)
     reranker = RerankClient(settings.rerank.base_url, settings.rerank.api_key, settings.rerank.model)
