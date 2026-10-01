@@ -1,0 +1,75 @@
+{
+ "checks": [
+  {
+   "case": "keep_team_size",
+   "expect": "keep",
+   "pass": false,
+   "detail": "A0 纠正后团队规模须保留（v1 raw 曾整条 withdraw 自相矛盾）",
+   "evidence": "gated_v2=split"
+  },
+  {
+   "case": "keep_late_only_facts",
+   "expect": "keep",
+   "pass": true,
+   "detail": "迟到旧源事实（创造新世界/快乐）须保留",
+   "evidence": "action=keep 命中1子句"
+  },
+  {
+   "case": "keep_older_only_details",
+   "expect": "keep",
+   "pass": true,
+   "detail": "旧版独有细节（城堡/作者/读书画画）不得判无源删除",
+   "evidence": "[True, True]"
+  },
+  {
+   "case": "keep_human_assistant_class",
+   "expect": "keep",
+   "pass": true,
+   "detail": "10 条 assistant 标签真人记忆不得整类拒绝",
+   "evidence": "withdrawn=无; C5(conv-44双真人) action=keep"
+  },
+  {
+   "case": "block_unsourced_companions",
+   "expect": "withdraw",
+   "pass": true,
+   "detail": "无源同行者（家人/玛丽亚）须撤回（weaken 不算达标）",
+   "evidence": "[True, True]"
+  },
+  {
+   "case": "block_assistant_only_clauses",
+   "expect": "withdraw",
+   "pass": false,
+   "detail": "仅助手来源子句（含本人/职位/套餐/联系方式/自由交流）不得 keep",
+   "evidence": "A1坏1 A3坏0 A4坏0"
+  },
+  {
+   "case": "block_overstated_emotion",
+   "expect": "weaken",
+   "pass": true,
+   "detail": "'难受'缺'但我还好'限定须削弱，不得原样 keep",
+   "evidence": "[None, True]"
+  },
+  {
+   "case": "no_whole_partial_pass",
+   "expect": "split",
+   "pass": false,
+   "detail": "partial 记忆禁止整条放行（raw 行为）",
+   "evidence": "raw keep: ['A1']"
+  }
+ ],
+ "stop_gate": {
+  "fail_1_whole_partial_pass": true,
+  "fail_1_evidence": [
+   "A1"
+  ],
+  "fail_2_assistant_class_rejection": false,
+  "fail_2_evidence": [],
+  "hallucinated_refs_after_norm": {},
+  "verdict": "FAIL"
+ },
+ "summary": {
+  "passed": 5,
+  "total": 8
+ },
+ "scope": "离线验收对照 m2_fact_gate_run_v2_20261001.json；v2 守卫=引用后缀归一+动作一致性，不改语义判定。"
+}

@@ -1,0 +1,2386 @@
+{
+ "scope": "事实来源门离线 POC 运行账：23 条候选逐子句判定，原始判定与守卫修正分开记录。",
+ "devset_sha256": "1649cf34725d50caa15d2a8527daa42466aa0180a8edb58f35b62da5db12cc82",
+ "model": "glm-5.3-flash",
+ "budget": {
+  "max_calls": 60,
+  "used_calls": 23,
+  "embedding": 0,
+  "graph": 0,
+  "answer_or_judge": 0
+ },
+ "oracle_note": "本文件不含 oracle 对照；oracle 在 devset 中，判定阶段未读取。",
+ "results": [
+  {
+   "input_id": "A0",
+   "group": "A",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2780,
+    "completion_tokens": 303
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "用户是高级软件工程师",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "用户明确自述'作为高级软件工程师，我在新职位上'"
+     },
+     {
+      "clause": "用户在新职位上",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "带领一个4人的工程师团队",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "以纠正后表述为准；早前 turn:4 提到'5名工程师加一位经理'已被 turn:10 纠正为4名工程师（含本人），共5人参加团建"
+     }
+    ],
+    "record_action": "withdraw"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"用户是高级软件工程师\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"turn:10\"], \"speaker\": \"user\", \"channel\": \"text\", \"note\": \"用户明确自述'作为高级软件工程师，我在新职位上'\"}, {\"clause\": \"用户在新职位上\", ",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "用户是高级软件工程师",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "用户明确自述'作为高级软件工程师，我在新职位上'"
+     },
+     {
+      "clause": "用户在新职位上",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "带领一个4人的工程师团队",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "以纠正后表述为准；早前 turn:4 提到'5名工程师加一位经理'已被 turn:10 纠正为4名工程师（含本人），共5人参加团建"
+     }
+    ],
+    "record_action": "withdraw",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "A1",
+   "group": "A",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2788,
+    "completion_tokens": 333
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "用户的经理名叫雷切尔",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:4"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "用户计划邀请经理雷切尔参加团建",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:4"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "团建共有5人参加",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "此前 turn:4 曾说5名工程师加经理共6人，turn:10 纠正为4名工程师加经理共5人，以纠正后为准"
+     },
+     {
+      "clause": "5人包括4名工程师（含用户本人）和经理雷切尔",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10",
+       "turn:11"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "turn:10 用户自述带领4人工程师团队；turn:11 助手总结确认，且与用户 turn:10 表述一致"
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"用户的经理名叫雷切尔\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"turn:4\"], \"speaker\": \"user\", \"channel\": \"text\", \"note\": \"\"}, {\"clause\": \"用户计划邀请经理雷切尔参加团建\", \"support\": \"full\"",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "用户的经理名叫雷切尔",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:4"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "用户计划邀请经理雷切尔参加团建",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:4"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "团建共有5人参加",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "此前 turn:4 曾说5名工程师加经理共6人，turn:10 纠正为4名工程师加经理共5人，以纠正后为准"
+     },
+     {
+      "clause": "5人包括4名工程师（含用户本人）和经理雷切尔",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:10",
+       "turn:11"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "turn:10 用户自述带领4人工程师团队；turn:11 助手总结确认，且与用户 turn:10 表述一致"
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "A2",
+   "group": "A",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2794,
+    "completion_tokens": 323
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "用户在2023年5月为工程师团队策划团建",
+      "support": "absent",
+      "status": "withdraw",
+      "source_refs": [],
+      "speaker": "user",
+      "channel": "text",
+      "note": "源话轮中无任何日期信息；'2023年5月'仅来自记忆写入元数据(written_date)，不属于源话轮内容，不能作为用户自述保留"
+     },
+     {
+      "clause": "用户正在为工程师团队策划团建",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:0"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "用户喜欢户外游戏的点子（如巨型叠叠乐）",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:2"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "用户倾向选择 City View Rooftop 作为场地",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:4",
+       "turn:11"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"用户在2023年5月为工程师团队策划团建\", \"support\": \"absent\", \"status\": \"withdraw\", \"source_refs\": [], \"speaker\": \"user\", \"channel\": \"text\", \"note\": \"源话轮中无任何日期信息；'2023年5月'仅来自记忆写入元数据(written_dat",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "用户在2023年5月为工程师团队策划团建",
+      "support": "absent",
+      "status": "withdraw",
+      "source_refs": [],
+      "speaker": "user",
+      "channel": "text",
+      "note": "源话轮中无任何日期信息；'2023年5月'仅来自记忆写入元数据(written_date)，不属于源话轮内容，不能作为用户自述保留"
+     },
+     {
+      "clause": "用户正在为工程师团队策划团建",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:0"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "用户喜欢户外游戏的点子（如巨型叠叠乐）",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:2"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "用户倾向选择 City View Rooftop 作为场地",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:4",
+       "turn:11"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "split",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "A3",
+   "group": "A",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2829,
+    "completion_tokens": 536
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "用户计划联系 City View Rooftop 的活动经理萨曼莎",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:6",
+       "turn:8",
+       "turn:5"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "用户表示会联系萨曼莎（turn:6、turn:8），但'活动经理萨曼莎'这一身份仅出现在 assistant 话轮（turn:5），无用户确认，'活动经理'身份超出用户来源。"
+     },
+     {
+      "clause": "用户计划询问6人企业团建套餐事宜",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:6",
+       "turn:8",
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "用户在 turn:6/turn:8 确实说询问6人套餐，但该人数在 turn:10 被用户纠正为5人（4名工程师+经理雷切尔），6人属已被纠正的旧表述，不得作为现行事实保留，应更正为5人。"
+     },
+     {
+      "clause": "该套餐包括2小时屋顶私人租赁、户外游戏和每位宾客一张免费饮品券，工作日下午500美元起",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:5"
+      ],
+      "speaker": "assistant",
+      "channel": "text",
+      "note": "套餐内容仅来自 assistant 话轮（turn:5），无任何用户话轮确认，且套餐是否真实存在未经用户核实；作为用户事实应削弱并注明来源为 assistant 推介内容。"
+     },
+     {
+      "clause": "联系邮箱 events@cityviewrooftop.com，电话 555-555-5555",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:5"
+      ],
+      "speaker": "assistant",
+      "channel": "text",
+      "note": "联系方式仅由 assistant 提供（turn:5），无用户确认；电话为占位样式号码，真实性未经核实，不应作为已验证事实保留。"
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"用户计划联系 City View Rooftop 的活动经理萨曼莎\", \"support\": \"partial\", \"status\": \"weaken\", \"source_refs\": [\"turn:6\", \"turn:8\", \"turn:5\"], \"speaker\": \"user\", \"channel\": \"text\", \"note\": \"用户表",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "用户计划联系 City View Rooftop 的活动经理萨曼莎",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:6",
+       "turn:8",
+       "turn:5"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "用户表示会联系萨曼莎（turn:6、turn:8），但'活动经理萨曼莎'这一身份仅出现在 assistant 话轮（turn:5），无用户确认，'活动经理'身份超出用户来源。"
+     },
+     {
+      "clause": "用户计划询问6人企业团建套餐事宜",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:6",
+       "turn:8",
+       "turn:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "用户在 turn:6/turn:8 确实说询问6人套餐，但该人数在 turn:10 被用户纠正为5人（4名工程师+经理雷切尔），6人属已被纠正的旧表述，不得作为现行事实保留，应更正为5人。"
+     },
+     {
+      "clause": "该套餐包括2小时屋顶私人租赁、户外游戏和每位宾客一张免费饮品券，工作日下午500美元起",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:5"
+      ],
+      "speaker": "assistant",
+      "channel": "text",
+      "note": "套餐内容仅来自 assistant 话轮（turn:5），无任何用户话轮确认，且套餐是否真实存在未经用户核实；作为用户事实应削弱并注明来源为 assistant 推介内容。"
+     },
+     {
+      "clause": "联系邮箱 events@cityviewrooftop.com，电话 555-555-5555",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:5"
+      ],
+      "speaker": "assistant",
+      "channel": "text",
+      "note": "联系方式仅由 assistant 提供（turn:5），无用户确认；电话为占位样式号码，真实性未经核实，不应作为已验证事实保留。"
+     }
+    ],
+    "record_action": "split",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "A4",
+   "group": "A",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2788,
+    "completion_tokens": 287
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "用户考虑团建形式时倾向计划一些结构化活动（如破冰游戏、团队合作活动）来促进团队合作",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:8"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "用户在 turn:8 明确表示会考虑团建形式，可能计划一些结构化活动来促进团队合作；'如破冰游戏、团队合作活动'为来源外的举例细节，但核心事实（倾向结构化活动促进团队合作）有用户话轮完整支持"
+     },
+     {
+      "clause": "同时结合自由交流时间",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:7"
+      ],
+      "speaker": "assistant",
+      "channel": "text",
+      "note": "用户本人从未表示要结合自由交流时间；'结构化活动+自由交流分段安排'仅出现在 assistant 话轮 turn:7 的建议中，未经用户确认，不应作为用户偏好保留"
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"用户考虑团建形式时倾向计划一些结构化活动（如破冰游戏、团队合作活动）来促进团队合作\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"turn:8\"], \"speaker\": \"user\", \"channel\": \"text\", \"note\": \"用户在 turn:8 明确表示会考虑团建",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "用户考虑团建形式时倾向计划一些结构化活动（如破冰游戏、团队合作活动）来促进团队合作",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "turn:8"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "用户在 turn:8 明确表示会考虑团建形式，可能计划一些结构化活动来促进团队合作；'如破冰游戏、团队合作活动'为来源外的举例细节，但核心事实（倾向结构化活动促进团队合作）有用户话轮完整支持"
+     },
+     {
+      "clause": "同时结合自由交流时间",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "turn:7"
+      ],
+      "speaker": "assistant",
+      "channel": "text",
+      "note": "用户本人从未表示要结合自由交流时间；'结构化活动+自由交流分段安排'仅出现在 assistant 话轮 turn:7 的建议中，未经用户确认，不应作为用户偏好保留"
+     }
+    ],
+    "record_action": "split",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "B_older_conv-43_de89be96dda6",
+   "group": "B",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2792,
+    "completion_tokens": 181
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "虽然有点紧张但很兴奋，觉得所有努力都得到了回报",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "写作带给他巨大快乐",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D15:3\"], \"speaker\": \"user\", \"channel\": \"text\", \"note\": \"\"}, {\"clause\": \"虽然有点紧张但很兴奋，觉得所有努力",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "蒂姆正在写一部奇幻小说，截至2023年10月21日进展顺利",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "虽然有点紧张但很兴奋，觉得所有努力都得到了回报",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "写作带给他巨大快乐",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "B_later_conv-43_de89be96dda6",
+   "group": "B",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2790,
+    "completion_tokens": 282
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "蒂姆正在写一部奇幻小说，进展顺利",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": "蒂姆自述正在写奇幻小说且进展顺利"
+     },
+     {
+      "clause": "虽然有点紧张但很兴奋",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "觉得所有努力都得到了回报",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "写作能创造一个全新的世界",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "写作带给他很多快乐",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"蒂姆正在写一部奇幻小说，进展顺利\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D15:3\"], \"speaker\": \"蒂姆\", \"channel\": \"text\", \"note\": \"蒂姆自述正在写奇幻小说且进展顺利\"}, {\"clause\": \"虽然有点紧张但很兴奋\", \"su",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "蒂姆正在写一部奇幻小说，进展顺利",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": "蒂姆自述正在写奇幻小说且进展顺利"
+     },
+     {
+      "clause": "虽然有点紧张但很兴奋",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "觉得所有努力都得到了回报",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "写作能创造一个全新的世界",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "写作带给他很多快乐",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:3"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "B_older_conv-43_c95588df7268",
+   "group": "B",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2786,
+    "completion_tokens": 178
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "蒂姆的写作灵感来自书籍、电影和现实生活经历",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "阅读关于英国城堡的内容给了他很多灵感",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "某些作者对他来说像灵感宝库",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"蒂姆的写作灵感来自书籍、电影和现实生活经历\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D15:5\"], \"speaker\": \"蒂姆\", \"channel\": \"text\", \"note\": \"\"}, {\"clause\": \"阅读关于英国城堡的内容给了他很多灵感\", \"suppo",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "蒂姆的写作灵感来自书籍、电影和现实生活经历",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "阅读关于英国城堡的内容给了他很多灵感",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "某些作者对他来说像灵感宝库",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "B_later_conv-43_c95588df7268",
+   "group": "B",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2787,
+    "completion_tokens": 192
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "蒂姆的写作灵感来源包括书籍、电影和现实生活经历",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "阅读关于英国城堡的内容给了他很多写作灵感",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "蒂姆梦想有一天能去参观英国城堡",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:1"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"蒂姆的写作灵感来源包括书籍、电影和现实生活经历\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D15:5\"], \"speaker\": \"蒂姆\", \"channel\": \"text\", \"note\": \"\"}, {\"clause\": \"阅读关于英国城堡的内容给了他很多写作灵感\", \"s",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "蒂姆的写作灵感来源包括书籍、电影和现实生活经历",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "阅读关于英国城堡的内容给了他很多写作灵感",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:5"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "蒂姆梦想有一天能去参观英国城堡",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D15:1"
+      ],
+      "speaker": "蒂姆",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "B_older_conv-26_444350391e64",
+   "group": "B",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2494,
+    "completion_tokens": 451
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D17:8"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "源话轮为梅拉妮自述'上个月我受了伤，不得不暂停陶艺'，核心事实有源；但具体月份'2023年9月'是由会话日期推算，源话轮仅说'上个月'，超出原话表述。"
+     },
+     {
+      "clause": "陶艺是梅拉妮用于自我表达和获得平静的方式",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:8"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "梅拉妮自述'陶艺——那是我用来自我表达和获得平静的方式'，完整受支持。"
+     },
+     {
+      "clause": "梅拉妮目前通过读书和画画打发时间",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:10"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "梅拉妮自述'我一直在读你之前推荐的那本书，还画画来打发时间'，完整受支持。"
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺\", \"support\": \"partial\", \"status\": \"weaken\", \"source_refs\": [\"D17:8\"], \"speaker\": \"梅拉妮\", \"channel\": \"text\", \"note\": \"源话轮为梅拉妮自述'上个月我受了伤，不得不暂停陶艺'，核心事实有",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "梅拉妮上个月（2023年9月）受了伤，不得不暂停陶艺",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D17:8"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "源话轮为梅拉妮自述'上个月我受了伤，不得不暂停陶艺'，核心事实有源；但具体月份'2023年9月'是由会话日期推算，源话轮仅说'上个月'，超出原话表述。"
+     },
+     {
+      "clause": "陶艺是梅拉妮用于自我表达和获得平静的方式",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:8"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "梅拉妮自述'陶艺——那是我用来自我表达和获得平静的方式'，完整受支持。"
+     },
+     {
+      "clause": "梅拉妮目前通过读书和画画打发时间",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:10"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "梅拉妮自述'我一直在读你之前推荐的那本书，还画画来打发时间'，完整受支持。"
+     }
+    ],
+    "record_action": "split",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "B_later_conv-26_444350391e64",
+   "group": "B",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2488,
+    "completion_tokens": 310
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "梅拉妮在2023年9月受了伤，不得不暂停陶艺",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:8"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "D17:8 梅拉妮自述'上个月我受了伤，不得不暂停陶艺'，session_17 时间为2023年10月13日，上个月即2023年9月，时间推算成立。"
+     },
+     {
+      "clause": "陶艺是她用来自我表达和获得平静的方式",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:8"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "D17:8 原话'那是我用来自我表达和获得平静的方式'，完整支持。"
+     },
+     {
+      "clause": "受伤暂停陶艺让她很难受",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:8",
+       "D17:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "D17:8 提及挫折，D17:10 梅拉妮确认'确实挺难受的'。"
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"梅拉妮在2023年9月受了伤，不得不暂停陶艺\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D17:8\"], \"speaker\": \"user\", \"channel\": \"text\", \"note\": \"D17:8 梅拉妮自述'上个月我受了伤，不得不暂停陶艺'，session_17 ",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "梅拉妮在2023年9月受了伤，不得不暂停陶艺",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:8"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "D17:8 梅拉妮自述'上个月我受了伤，不得不暂停陶艺'，session_17 时间为2023年10月13日，上个月即2023年9月，时间推算成立。"
+     },
+     {
+      "clause": "陶艺是她用来自我表达和获得平静的方式",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:8"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "D17:8 原话'那是我用来自我表达和获得平静的方式'，完整支持。"
+     },
+     {
+      "clause": "受伤暂停陶艺让她很难受",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:8",
+       "D17:10"
+      ],
+      "speaker": "user",
+      "channel": "text",
+      "note": "D17:8 提及挫折，D17:10 梅拉妮确认'确实挺难受的'。"
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "B_older_conv-41_e94a25c4f01c",
+   "group": "B",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2382,
+    "completion_tokens": 572
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "John took a road trip last year exploring the Pacific Northwest coastline and visiting several national parks",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D11:5",
+       "D11:3"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "D11:5 明确提到探索太平洋西北部海岸线并去了几个国家公园；D11:3 提到去年公路旅行。"
+     },
+     {
+      "clause": "The trip was with his family",
+      "support": "absent",
+      "status": "withdraw",
+      "source_refs": [],
+      "speaker": "John",
+      "channel": "text",
+      "note": "源话轮仅说'我们'（D11:3/D11:5），未说明同行者是家人，'family'为超出原文的身份补充。"
+     },
+     {
+      "clause": "The trip was in 2022",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D11:3"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "原文仅说'去年'，会话时间为2023年4月，可推断为2022，但原文未明确给出年份，建议保留为'last year'。"
+     },
+     {
+      "clause": "He found the natural beauty breathtaking",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D11:5"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "D11:5 原话'大自然的美真是令人叹为观止'。"
+     },
+     {
+      "clause": "It brought him reflection",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D11:7"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "D11:7 原话'那些壮丽的景色真的会让人深思'。"
+     },
+     {
+      "clause": "It brought him inner peace",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D11:6"
+      ],
+      "speaker": "Maria",
+      "channel": "text",
+      "note": "'找到内心的平静'出自玛丽亚 D11:6 的话轮，约翰本人仅说'太美妙了'（D11:7），'peace'属于对方评价而非约翰自述。"
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"John took a road trip last year exploring the Pacific Northwest coastline and visiting several national parks\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D11:5\", \"",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "John took a road trip last year exploring the Pacific Northwest coastline and visiting several national parks",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D11:5",
+       "D11:3"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "D11:5 明确提到探索太平洋西北部海岸线并去了几个国家公园；D11:3 提到去年公路旅行。"
+     },
+     {
+      "clause": "The trip was with his family",
+      "support": "absent",
+      "status": "withdraw",
+      "source_refs": [],
+      "speaker": "John",
+      "channel": "text",
+      "note": "源话轮仅说'我们'（D11:3/D11:5），未说明同行者是家人，'family'为超出原文的身份补充。"
+     },
+     {
+      "clause": "The trip was in 2022",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D11:3"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "原文仅说'去年'，会话时间为2023年4月，可推断为2022，但原文未明确给出年份，建议保留为'last year'。"
+     },
+     {
+      "clause": "He found the natural beauty breathtaking",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D11:5"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "D11:5 原话'大自然的美真是令人叹为观止'。"
+     },
+     {
+      "clause": "It brought him reflection",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D11:7"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "D11:7 原话'那些壮丽的景色真的会让人深思'。"
+     },
+     {
+      "clause": "It brought him inner peace",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D11:6"
+      ],
+      "speaker": "Maria",
+      "channel": "text",
+      "note": "'找到内心的平静'出自玛丽亚 D11:6 的话轮，约翰本人仅说'太美妙了'（D11:7），'peace'属于对方评价而非约翰自述。"
+     }
+    ],
+    "record_action": "split",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "B_later_conv-41_e94a25c4f01c",
+   "group": "B",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2373,
+    "completion_tokens": 414
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "Around 2022, John and Maria took a road trip",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "session_11:D11:3",
+       "session_11:D11:4",
+       "session_11:D11:5"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "来源写于2023年4月，约翰称'去年的一次公路旅行'，可推为约2022年，'我们'暗示含玛丽亚；时间约数可接受，但该事实来自 session_11 而非 written_session 标注的 session_12，建议更正会话归属"
+     },
+     {
+      "clause": "exploring the Pacific Northwest coastline and several national parks",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "session_11:D11:5"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "约翰明确说'探索了太平洋西北部的海岸线，还去了几个很酷的国家公园'"
+     },
+     {
+      "clause": "an experience he found breathtaking and inspiring",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "session_11:D11:5",
+       "session_11:D11:7"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "'大自然的美真是令人叹为观止'、'那些壮丽的景色真的会让人深思'"
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"Around 2022, John and Maria took a road trip\", \"support\": \"partial\", \"status\": \"weaken\", \"source_refs\": [\"session_11:D11:3\", \"session_11:D11:4\", \"session_11:D11:5\"], \"speaker\"",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "Around 2022, John and Maria took a road trip",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "session_11:D11:3",
+       "session_11:D11:4",
+       "session_11:D11:5"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "来源写于2023年4月，约翰称'去年的一次公路旅行'，可推为约2022年，'我们'暗示含玛丽亚；时间约数可接受，但该事实来自 session_11 而非 written_session 标注的 session_12，建议更正会话归属",
+      "hallucinated_ref": [
+       "session_11:D11:3",
+       "session_11:D11:4",
+       "session_11:D11:5"
+      ]
+     },
+     {
+      "clause": "exploring the Pacific Northwest coastline and several national parks",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "session_11:D11:5"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "约翰明确说'探索了太平洋西北部的海岸线，还去了几个很酷的国家公园'",
+      "hallucinated_ref": [
+       "session_11:D11:5"
+      ]
+     },
+     {
+      "clause": "an experience he found breathtaking and inspiring",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "session_11:D11:5",
+       "session_11:D11:7"
+      ],
+      "speaker": "John",
+      "channel": "text",
+      "note": "'大自然的美真是令人叹为观止'、'那些壮丽的景色真的会让人深思'",
+      "hallucinated_ref": [
+       "session_11:D11:5",
+       "session_11:D11:7"
+      ]
+     }
+    ],
+    "record_action": "split",
+    "guard_log": [
+     "引用不存在源: ['session_11:D11:3', 'session_11:D11:4', 'session_11:D11:5']",
+     "引用不存在源: ['session_11:D11:5']",
+     "引用不存在源: ['session_11:D11:5', 'session_11:D11:7']"
+    ]
+   }
+  },
+  {
+   "input_id": "C0",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 1108,
+    "completion_tokens": 378
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "卡罗琳的对话对象名为梅拉妮（梅尔）",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D1:2",
+       "D1:17"
+      ],
+      "speaker": "梅拉妮/卡罗琳",
+      "channel": "text",
+      "note": "D1:2 梅拉妮自称，D1:17 卡罗琳称其'梅尔'，昵称有源支持"
+     },
+     {
+      "clause": "她被孩子和工作忙得团团转",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D1:2"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "梅拉妮自述"
+     },
+     {
+      "clause": "计划带孩子去游泳",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D1:18"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "梅拉妮自述要去带孩子游泳"
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"卡罗琳的对话对象名为梅拉妮（梅尔）\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D1:2\", \"D1:17\"], \"speaker\": \"梅拉妮/卡罗琳\", \"channel\": \"text\", \"note\": \"D1:2 梅拉妮自称，D1:17 卡罗琳称其'梅尔'，昵称有源支持\"",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "卡罗琳的对话对象名为梅拉妮（梅尔）",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D1:2",
+       "D1:17"
+      ],
+      "speaker": "梅拉妮/卡罗琳",
+      "channel": "text",
+      "note": "D1:2 梅拉妮自称，D1:17 卡罗琳称其'梅尔'，昵称有源支持"
+     },
+     {
+      "clause": "她被孩子和工作忙得团团转",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D1:2"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "梅拉妮自述"
+     },
+     {
+      "clause": "计划带孩子去游泳",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D1:18"
+      ],
+      "speaker": "梅拉妮",
+      "channel": "text",
+      "note": "梅拉妮自述要去带孩子游泳"
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "C1",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 1716,
+    "completion_tokens": 273
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "吉娜几年前纹了一个纹身",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D5:15"
+      ],
+      "speaker": "吉娜",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "纹身代表自由——跳舞时不担心别人怎么看的自由",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D5:15"
+      ],
+      "speaker": "吉娜",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "纹身图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'）",
+      "support": "absent",
+      "status": "withdraw",
+      "source_refs": [],
+      "speaker": "",
+      "channel": "image_query",
+      "note": "该名言仅出现在 D5:12 乔恩发送图片的图片 query 中，吉娜未将纹身与该名言关联；此关联无来源支持"
+     },
+     {
+      "clause": "纹身提醒她追随热情、表达自我",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D5:15"
+      ],
+      "speaker": "吉娜",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"吉娜几年前纹了一个纹身\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D5:15\"], \"speaker\": \"吉娜\", \"channel\": \"text\", \"note\": \"\"}, {\"clause\": \"纹身代表自由——跳舞时不担心别人怎么看的自由\", \"support\": \"",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "吉娜几年前纹了一个纹身",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D5:15"
+      ],
+      "speaker": "吉娜",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "纹身代表自由——跳舞时不担心别人怎么看的自由",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D5:15"
+      ],
+      "speaker": "吉娜",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "纹身图案与一句关于恐惧的励志名言相关（'everything you want is on the other side of fear'）",
+      "support": "absent",
+      "status": "withdraw",
+      "source_refs": [],
+      "speaker": "",
+      "channel": "image_query",
+      "note": "该名言仅出现在 D5:12 乔恩发送图片的图片 query 中，吉娜未将纹身与该名言关联；此关联无来源支持"
+     },
+     {
+      "clause": "纹身提醒她追随热情、表达自我",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D5:15"
+      ],
+      "speaker": "吉娜",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "split",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "C2",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 1850,
+    "completion_tokens": 295
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "玛丽亚曾去佛罗里达海滩度假",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:23"
+      ],
+      "speaker": "玛丽亚",
+      "channel": "text",
+      "note": "D19:23玛丽亚明确说'我有一张在佛罗里达度假的照片'，支持去佛罗里达度假"
+     },
+     {
+      "clause": "那里的色彩很美",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:23"
+      ],
+      "speaker": "玛丽亚",
+      "channel": "text",
+      "note": "D19:23玛丽亚自述'那里的色彩太美了'"
+     },
+     {
+      "clause": "和家人坐在海边时心中充满感激",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:23"
+      ],
+      "speaker": "玛丽亚",
+      "channel": "text",
+      "note": "D19:23玛丽亚自述'和家人坐在那里时，我心中充满感激'"
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"玛丽亚曾去佛罗里达海滩度假\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D19:23\"], \"speaker\": \"玛丽亚\", \"channel\": \"text\", \"note\": \"D19:23玛丽亚明确说'我有一张在佛罗里达度假的照片'，支持去佛罗里达度假\"}, {\"claus",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "玛丽亚曾去佛罗里达海滩度假",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:23"
+      ],
+      "speaker": "玛丽亚",
+      "channel": "text",
+      "note": "D19:23玛丽亚明确说'我有一张在佛罗里达度假的照片'，支持去佛罗里达度假"
+     },
+     {
+      "clause": "那里的色彩很美",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:23"
+      ],
+      "speaker": "玛丽亚",
+      "channel": "text",
+      "note": "D19:23玛丽亚自述'那里的色彩太美了'"
+     },
+     {
+      "clause": "和家人坐在海边时心中充满感激",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:23"
+      ],
+      "speaker": "玛丽亚",
+      "channel": "text",
+      "note": "D19:23玛丽亚自述'和家人坐在那里时，我心中充满感激'"
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "C3",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 1331,
+    "completion_tokens": 366
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "内特尝试做了椰奶冰淇淋",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D3:4",
+       "D3:6"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "味道香浓顺滑、非常成功",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D3:6",
+       "D3:5"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": "香浓顺滑出自D3:6；成功由乔安娜D3:5确认"
+     },
+     {
+      "clause": "可能会成为他的新最爱零食",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D3:6"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "他还想尝试不同的口味和配料",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D3:8"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "事件发生在2022年2月初",
+      "support": "partial",
+      "status": "keep",
+      "source_refs": [
+       "D3:12"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": "源中仅内特说'前几天'做过无乳制品巧克力蛋糕；写入口期为2022年2月7日，'前几天'可推出2月初，但源话轮未明说椰奶冰淇淋的具体时间，属推断细节"
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"内特尝试做了椰奶冰淇淋\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D3:4\", \"D3:6\"], \"speaker\": \"assistant(内特)\", \"channel\": \"text\", \"note\": \"\"}, {\"clause\": \"味道香浓顺滑、非常成功\", \"supp",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "内特尝试做了椰奶冰淇淋",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D3:4",
+       "D3:6"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "味道香浓顺滑、非常成功",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D3:6",
+       "D3:5"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": "香浓顺滑出自D3:6；成功由乔安娜D3:5确认"
+     },
+     {
+      "clause": "可能会成为他的新最爱零食",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D3:6"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "他还想尝试不同的口味和配料",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D3:8"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "事件发生在2022年2月初",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D3:12"
+      ],
+      "speaker": "assistant(内特)",
+      "channel": "text",
+      "note": "源中仅内特说'前几天'做过无乳制品巧克力蛋糕；写入口期为2022年2月7日，'前几天'可推出2月初，但源话轮未明说椰奶冰淇淋的具体时间，属推断细节"
+     }
+    ],
+    "record_action": "split",
+    "guard_log": [
+     "partial keep→weaken: 事件发生在2022年2月初",
+     "存在非 keep 子句，record_action keep→split"
+    ]
+   }
+  },
+  {
+   "input_id": "C4",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 1305,
+    "completion_tokens": 237
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "约翰的球队赛季揭幕战在下周（约2023年5月底）",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D1:7"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": "原文只说揭幕战在下周（D1:7），具体日期/月份为推断，超出原话；应改为'揭幕战在下周'"
+     },
+     {
+      "clause": "约翰的目标是提高投篮命中率",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D1:9"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "约翰一直在为提高命中率刻苦训练",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D1:9"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": "原文为'一直在努力训练'，'刻苦'程度略有加强，但核心有源；可接受为轻微削弱"
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"约翰的球队赛季揭幕战在下周（约2023年5月底）\", \"support\": \"partial\", \"status\": \"weaken\", \"source_refs\": [\"D1:7\"], \"speaker\": \"约翰\", \"channel\": \"text\", \"note\": \"原文只说揭幕战在下周（D1:7），具体日期/月份为推断，超出原话；应改为",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "约翰的球队赛季揭幕战在下周（约2023年5月底）",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D1:7"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": "原文只说揭幕战在下周（D1:7），具体日期/月份为推断，超出原话；应改为'揭幕战在下周'"
+     },
+     {
+      "clause": "约翰的目标是提高投篮命中率",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D1:9"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "约翰一直在为提高命中率刻苦训练",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D1:9"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": "原文为'一直在努力训练'，'刻苦'程度略有加强，但核心有源；可接受为轻微削弱"
+     }
+    ],
+    "record_action": "split",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "C5",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 2039,
+    "completion_tokens": 257
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "安德鲁答应带奥黛丽看看河边最好的骑行路线",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:37",
+       "D20:38",
+       "D20:39"
+      ],
+      "speaker": "安德鲁",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "这一带有多条骑行路线",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:37",
+       "D20:39"
+      ],
+      "speaker": "安德鲁",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "两人都很期待这次骑行出行",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:39",
+       "D20:40"
+      ],
+      "speaker": "安德鲁、奥黛丽",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"安德鲁答应带奥黛丽看看河边最好的骑行路线\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D20:37\", \"D20:38\", \"D20:39\"], \"speaker\": \"安德鲁\", \"channel\": \"text\", \"note\": \"\"}, {\"clause\": \"这一带有多条",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "安德鲁答应带奥黛丽看看河边最好的骑行路线",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:37",
+       "D20:38",
+       "D20:39"
+      ],
+      "speaker": "安德鲁",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "这一带有多条骑行路线",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:37",
+       "D20:39"
+      ],
+      "speaker": "安德鲁",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "两人都很期待这次骑行出行",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:39",
+       "D20:40"
+      ],
+      "speaker": "安德鲁、奥黛丽",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "C6",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 1637,
+    "completion_tokens": 337
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "约翰购买了一些新设备并翻新了游戏桌",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:9"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "约翰有一台配备强大显卡的游戏电脑",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:11"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "约翰有游戏椅和键盘",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:11"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": "约翰自称'也有类似的游戏椅和键盘'"
+     },
+     {
+      "clause": "约翰有一个音效很沉浸的耳机",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:11"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "游戏让约翰保持专注和动力",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:11"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": "原话为'让我在其他方面也能保持专注和动力'"
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"约翰购买了一些新设备并翻新了游戏桌\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D20:9\"], \"speaker\": \"约翰\", \"channel\": \"text\", \"note\": \"\"}, {\"clause\": \"约翰有一台配备强大显卡的游戏电脑\", \"support\": \"",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "约翰购买了一些新设备并翻新了游戏桌",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:9"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "约翰有一台配备强大显卡的游戏电脑",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:11"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "约翰有游戏椅和键盘",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:11"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": "约翰自称'也有类似的游戏椅和键盘'"
+     },
+     {
+      "clause": "约翰有一个音效很沉浸的耳机",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:11"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "游戏让约翰保持专注和动力",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D20:11"
+      ],
+      "speaker": "约翰",
+      "channel": "text",
+      "note": "原话为'让我在其他方面也能保持专注和动力'"
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "C7",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 1115,
+    "completion_tokens": 336
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D6:1"
+      ],
+      "speaker": "乔琳",
+      "channel": "text",
+      "note": "写入时间为2月22日，'昨晚'即2月21日晚，日期可由written_date推得"
+     },
+     {
+      "clause": "玩得很开心，感到很放松",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D6:1"
+      ],
+      "speaker": "乔琳",
+      "channel": "text",
+      "note": "乔琳本人文字自述'真高兴能放松一下'"
+     },
+     {
+      "clause": "附有朋友举杯和食物、红酒的照片",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D6:1"
+      ],
+      "speaker": "乔琳",
+      "channel": "image_query",
+      "note": "来源为图片query 'friends toast drinks' 及图片描述 'a plate of food and a glass of wine'，应标注为图片渠道线索而非文字自述"
+     }
+    ],
+    "record_action": "keep"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D6:1\"], \"speaker\": \"乔琳\", \"channel\": \"text\", \"note\": \"写入时间为2月22日，'昨晚'即2月21日晚，日期可由written_da",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "乔琳在2023年2月21日晚和朋友一起吃晚饭、喝了点小酒",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D6:1"
+      ],
+      "speaker": "乔琳",
+      "channel": "text",
+      "note": "写入时间为2月22日，'昨晚'即2月21日晚，日期可由written_date推得"
+     },
+     {
+      "clause": "玩得很开心，感到很放松",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D6:1"
+      ],
+      "speaker": "乔琳",
+      "channel": "text",
+      "note": "乔琳本人文字自述'真高兴能放松一下'"
+     },
+     {
+      "clause": "附有朋友举杯和食物、红酒的照片",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D6:1"
+      ],
+      "speaker": "乔琳",
+      "channel": "image_query",
+      "note": "来源为图片query 'friends toast drinks' 及图片描述 'a plate of food and a glass of wine'，应标注为图片渠道线索而非文字自述"
+     }
+    ],
+    "record_action": "keep",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "C8",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 1614,
+    "completion_tokens": 353
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "《教父》（The Godfather）DVD套装是萨姆用来'治愈心情'的电影",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:5"
+      ],
+      "speaker": "萨姆（用户）",
+      "channel": "text",
+      "note": "萨姆原话：'它一直是我用来治愈心情的电影'，配合图片query指向教父DVD套装。"
+     },
+     {
+      "clause": "萨姆分享了一张《教父》DVD套装的照片",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D17:5"
+      ],
+      "speaker": "萨姆（用户）",
+      "channel": "image_query",
+      "note": "图片query为 'the godfather dvd box set'，可支持萨姆分享了该图片；但注意来源为图片渠道线索，不应写成萨姆的文字自述。'分享照片'表述可接受但渠道须标注为image_query。"
+     },
+     {
+      "clause": "分享发生在2023年11月21日",
+      "support": "absent",
+      "status": "withdraw",
+      "source_refs": [],
+      "speaker": "-",
+      "channel": "text",
+      "note": "源话轮中没有任何日期信息；written_date 属于元数据而非源话轮内容，按规则不得保留为有源子句。"
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"《教父》（The Godfather）DVD套装是萨姆用来'治愈心情'的电影\", \"support\": \"full\", \"status\": \"keep\", \"source_refs\": [\"D17:5\"], \"speaker\": \"萨姆（用户）\", \"channel\": \"text\", \"note\": \"萨姆原话：'它一直是我用来治愈心情的电影'，",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "《教父》（The Godfather）DVD套装是萨姆用来'治愈心情'的电影",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D17:5"
+      ],
+      "speaker": "萨姆（用户）",
+      "channel": "text",
+      "note": "萨姆原话：'它一直是我用来治愈心情的电影'，配合图片query指向教父DVD套装。"
+     },
+     {
+      "clause": "萨姆分享了一张《教父》DVD套装的照片",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D17:5"
+      ],
+      "speaker": "萨姆（用户）",
+      "channel": "image_query",
+      "note": "图片query为 'the godfather dvd box set'，可支持萨姆分享了该图片；但注意来源为图片渠道线索，不应写成萨姆的文字自述。'分享照片'表述可接受但渠道须标注为image_query。"
+     },
+     {
+      "clause": "分享发生在2023年11月21日",
+      "support": "absent",
+      "status": "withdraw",
+      "source_refs": [],
+      "speaker": "-",
+      "channel": "text",
+      "note": "源话轮中没有任何日期信息；written_date 属于元数据而非源话轮内容，按规则不得保留为有源子句。"
+     }
+    ],
+    "record_action": "split",
+    "guard_log": []
+   }
+  },
+  {
+   "input_id": "C9",
+   "group": "C",
+   "model": "glm-5.3-flash",
+   "usage": {
+    "prompt_tokens": 1141,
+    "completion_tokens": 325
+   },
+   "calls": 1,
+   "raw_verdict": {
+    "clauses": [
+     {
+      "clause": "戴夫于2023年9月14日左右和乐队即兴演奏",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D19:1"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": "戴夫只说'昨晚'即兴演奏，日期2023年9月14日为写入时推断（written_date为凌晨），并非原话表述，日期限定超出源话轮"
+     },
+     {
+      "clause": "即兴演奏时音乐源源不断",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:1"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "排练非常开心",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:1"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "他们太投入忘了录音",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:3"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "没有留下演奏录音",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:3"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "split"
+   },
+   "raw_text_head": "{\"clauses\": [{\"clause\": \"戴夫于2023年9月14日左右和乐队即兴演奏\", \"support\": \"partial\", \"status\": \"weaken\", \"source_refs\": [\"D19:1\"], \"speaker\": \"user(戴夫)\", \"channel\": \"text\", \"note\": \"戴夫只说'昨晚'即兴演奏，日期2023年9月14日为写入时推断",
+   "gated": {
+    "clauses": [
+     {
+      "clause": "戴夫于2023年9月14日左右和乐队即兴演奏",
+      "support": "partial",
+      "status": "weaken",
+      "source_refs": [
+       "D19:1"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": "戴夫只说'昨晚'即兴演奏，日期2023年9月14日为写入时推断（written_date为凌晨），并非原话表述，日期限定超出源话轮"
+     },
+     {
+      "clause": "即兴演奏时音乐源源不断",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:1"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "排练非常开心",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:1"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "他们太投入忘了录音",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:3"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": ""
+     },
+     {
+      "clause": "没有留下演奏录音",
+      "support": "full",
+      "status": "keep",
+      "source_refs": [
+       "D19:3"
+      ],
+      "speaker": "user(戴夫)",
+      "channel": "text",
+      "note": ""
+     }
+    ],
+    "record_action": "split",
+    "guard_log": []
+   }
+  }
+ ]
+}
